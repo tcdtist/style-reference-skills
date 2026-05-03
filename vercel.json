@@ -1,5 +1,4 @@
 {
   "buildCommand": "cd mcp-server && npm run build",
-  "outputDirectory": "mcp-server/dist",
-  "framework": null
+  "outputDirectory": "."
 }
