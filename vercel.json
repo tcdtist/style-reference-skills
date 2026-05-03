@@ -1,15 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "mcp-server/index.ts",
-      "use": "@vercel/node"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/mcp-server/index.ts",
-      "dest": "/mcp-server/index.ts"
-    }
-  ]
+  "buildCommand": "cd mcp-server && npm run build",
+  "outputDirectory": "mcp-server/dist",
+  "framework": null
 }
