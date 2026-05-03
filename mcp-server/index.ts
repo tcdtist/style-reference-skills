@@ -9,8 +9,27 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const SKILLS_DIR = path.join(__dirname, "../skills");
-const INDEX_FILE = path.join(__dirname, "../index.json");
+function resolveExistingPath(candidates: string[]): string {
+  for (const candidate of candidates) {
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+
+  throw new Error(`Unable to resolve file path from: ${candidates.join(", ")}`);
+}
+
+const SKILLS_DIR = resolveExistingPath([
+  path.join(process.cwd(), "skills"),
+  path.join(__dirname, "../skills"),
+  path.join(__dirname, "../../skills"),
+]);
+
+const INDEX_FILE = resolveExistingPath([
+  path.join(process.cwd(), "index.json"),
+  path.join(__dirname, "../index.json"),
+  path.join(__dirname, "../../index.json"),
+]);
 
 // Load index
 let index: any = { brands: [] };
@@ -74,11 +93,17 @@ app.get("/health", (req, res) => {
   res.json({ status: "ok", brands: index.brands.length });
 });
 
+app.get("/api/health", (req, res) => {
+  res.json({ status: "ok", brands: index.brands.length });
+});
+
 // Start server
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.error(`Style Reference API server running on port ${PORT}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.error(`Style Reference API server running on port ${PORT}`);
+  });
+}
 
 export default app;

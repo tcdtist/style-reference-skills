@@ -1,14 +1,12 @@
+// @ts-nocheck
 // Vercel serverless function for brands list
-const fs = require('fs');
-const path = require('path');
+const { loadIndex } = require("./_lib/style-index");
 
 module.exports = (req, res) => {
   try {
-    const indexPath = path.join(__dirname, '../index.json');
-    const indexContent = fs.readFileSync(indexPath, 'utf-8');
-    const index = JSON.parse(indexContent);
+    const index = loadIndex();
     res.json(index.brands);
   } catch (err) {
-    res.status(500).json({ error: 'Failed to load brands' });
+    res.status(500).json({ error: "Failed to load brands" });
   }
 };
