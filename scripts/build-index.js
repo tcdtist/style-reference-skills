@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+// @ts-nocheck
 
 /**
  * Build index.json from skills directory
@@ -13,6 +14,105 @@ const INDEX_FILE = path.join(__dirname, "../index.json");
 /**
  * Extract metadata from DESIGN.md
  */
+function splitFrontmatter(content) {
+  if (!content.startsWith("---\n")) {
+    return { frontmatter: "", body: content };
+  }
+
+  const endIndex = content.indexOf("\n---\n", 4);
+  if (endIndex === -1) {
+    return { frontmatter: "", body: content };
+  }
+
+  return {
+    frontmatter: content.slice(4, endIndex),
+    body: content.slice(endIndex + 5),
+  };
+}
+
+function stripQuotes(value) {
+  return value.replace(/^['"]|['"]$/g, "").trim();
+}
+
+function normalizeDescription(value) {
+  if (!value) {
+    return "";
+  }
+
+  return value.replace(/\s+/g, " ").replace(/\|/g, "").trim();
+}
+
+function parseFrontmatter(frontmatter) {
+  const metadata = {};
+  const lines = frontmatter.split("\n");
+
+  for (let i = 0; i < lines.length; i += 1) {
+    const line = lines[i];
+    const kv = line.match(/^([A-Za-z0-9_-]+):\s*(.*)$/);
+
+    if (!kv) {
+      continue;
+    }
+
+    const key = kv[1];
+    const value = kv[2].trim();
+
+    if (value === "|") {
+      const blockLines = [];
+      for (let j = i + 1; j < lines.length; j += 1) {
+        const blockLine = lines[j];
+
+        if (/^[A-Za-z0-9_-]+:\s*/.test(blockLine) && !/^\s+/.test(blockLine)) {
+          break;
+        }
+
+        if (/^\s+/.test(blockLine)) {
+          blockLines.push(blockLine.trim());
+          i = j;
+        } else if (blockLine.trim() === "") {
+          blockLines.push("");
+          i = j;
+        }
+      }
+
+      metadata[key] = blockLines.join(" ").trim();
+      continue;
+    }
+
+    metadata[key] = stripQuotes(value);
+  }
+
+  return metadata;
+}
+
+function extractNameFromBody(body, fallbackName) {
+  const headingMatch = body.match(/^#\s+(.+)$/m);
+  if (!headingMatch) {
+    return fallbackName;
+  }
+
+  return headingMatch[1]
+    .replace(/^Design System Inspired by\s+/i, "")
+    .replace(/^Design System\s+/i, "")
+    .trim();
+}
+
+function extractDescriptionFromBody(body) {
+  const overviewSection = body.match(
+    /^##\s+Overview\s*\n([\s\S]*?)(\n##\s+|$)/m,
+  );
+  if (!overviewSection) {
+    return "";
+  }
+
+  const firstParagraph = overviewSection[1]
+    .split(/\n\s*\n/)
+    .map((part) => part.trim())
+    .filter(Boolean)[0];
+
+  return normalizeDescription(firstParagraph || "");
+}
+
 function extractMetadata(brandDir) {
   const designMdPath = path.join(SKILLS_DIR, brandDir, "DESIGN.md");
 
@@ -21,36 +121,17 @@ function extractMetadata(brandDir) {
   }
 
   const content = fs.readFileSync(designMdPath, "utf-8");
+  const { frontmatter, body } = splitFrontmatter(content);
+  const metadata = parseFrontmatter(frontmatter);
 
-  // Extract from YAML frontmatter
-  const yamlMatch = content.match(/^---\n([\s\S]*?)\n---/);
-  if (!yamlMatch) {
-    console.log(`  No YAML frontmatter found for ${brandDir}`);
-    return null;
-  }
-
-  const yaml = yamlMatch[1];
-  const metadata = {};
-
-  // Parse YAML manually (simple key-value pairs)
-  const lines = yaml.split("\n");
-  for (const line of lines) {
-    const match = line.match(/^(\w+):\s*(.+)$/);
-    if (match) {
-      metadata[match[1]] = match[2].trim();
-    }
-  }
-
-  // Debug
-  console.log(
-    `  Metadata for ${brandDir}:`,
-    JSON.stringify(metadata).substring(0, 100),
-  );
+  const name = metadata.name || extractNameFromBody(body, brandDir);
+  const description = normalizeDescription(metadata.description || "");
+  const fallbackDescription = extractDescriptionFromBody(body);
 
   return {
     id: brandDir,
-    name: metadata.name || brandDir,
-    description: metadata.description || "",
+    name,
+    description: description || fallbackDescription,
     theme: metadata.theme || "",
     path: `skills/${brandDir}/DESIGN.md`,
   };
@@ -63,7 +144,8 @@ function main() {
   const brands = fs
     .readdirSync(SKILLS_DIR, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
-    .map((dirent) => dirent.name);
+    .map((dirent) => dirent.name)
+    .sort((a, b) => a.localeCompare(b));
 
   const index = {
     version: "1.0.0",
