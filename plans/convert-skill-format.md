@@ -1,22 +1,23 @@
-# Convert SKILL.md Format to Extended Format
+# Convert DESIGN.md Format to Extended Format
 
 ## Overview
 
-Convert existing Google DESIGN.md format files to extended format with additional sections for better AI agent comprehension and end-to-end workflow support.
+Convert existing DESIGN.md files to an extended format with additional sections for better AI agent comprehension and end-to-end workflow support.
 
 ## Current State
 
-- 43 brand DESIGN.md files in `skills/` directory
+- 70 brand DESIGN.md files in `skills/` directory
 - Files use standard Google DESIGN.md format (YAML frontmatter + markdown sections)
 - Missing sections: Motion System, Similar Brands, Quick Start
-- No conversion script exists
+- Conversion script now exists at `scripts/convert-format.js`
 - No manual review process for key brands
 
 ## Target State
 
-All SKILL.md files converted to extended format with:
+All DESIGN.md files converted to extended format with:
+
 - Motion System section
-- Similar Brands section  
+- Similar Brands section
 - Quick Start section
 - Agent Prompt Guide section
 - Maintained YAML frontmatter compatibility
@@ -26,12 +27,14 @@ All SKILL.md files converted to extended format with:
 ## Implementation Plan
 
 ### Phase 1: Analyze Current Format
+
 - Read existing DESIGN.md files to understand structure
 - Document YAML frontmatter fields
 - Identify common markdown sections
 - Create format specification document
 
 ### Phase 2: Design Extended Format
+
 - Define Motion System section structure
 - Define Similar Brands section structure
 - Define Quick Start section structure
@@ -39,6 +42,7 @@ All SKILL.md files converted to extended format with:
 - Ensure backward compatibility with existing YAML fields
 
 ### Phase 3: Build Conversion Script
+
 - Create `scripts/convert-format.js`
 - Parse existing DESIGN.md files
 - Extract existing content
@@ -48,6 +52,7 @@ All SKILL.md files converted to extended format with:
 - Handle edge cases (missing sections, malformed YAML)
 
 ### Phase 4: Manual Review for Key Brands
+
 - Identify key brands (top 10 by popularity/usage)
 - Manually review converted files
 - Fill in accurate content for new sections
@@ -55,18 +60,21 @@ All SKILL.md files converted to extended format with:
 - Update index.json if needed
 
 ### Phase 5: Batch Convert Remaining Files
+
 - Run conversion script on all remaining brands
 - Review automated outputs
 - Fix any conversion errors
 - Ensure all files have consistent structure
 
 ### Phase 6: Update Documentation
+
 - Update README.md with new format description
 - Document conversion process
 - Add examples of extended format
 - Update index.json schema if needed
 
 ### Phase 7: Test Integration
+
 - Test API endpoints still work with new format
 - Test search functionality
 - Test file loading
@@ -74,7 +82,7 @@ All SKILL.md files converted to extended format with:
 
 ## Success Criteria
 
-- All 43 SKILL.md files converted to extended format
+- All 70 DESIGN.md files converted to extended format
 - New sections present in all files with meaningful content
 - Conversion script works for new additions
 - API endpoints still functional

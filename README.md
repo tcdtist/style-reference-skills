@@ -28,13 +28,40 @@ style-reference-skills/
 
 ## Usage
 
-### MCP Server
+### HTTP API
 
-The MCP server provides tools to search and load style references:
+The deployed API provides endpoints to search and load style references:
 
-- `search_style_references` - Search by brand, mood, color
-- `get_style_reference` - Load full DESIGN.md file
-- `list_style_references` - List all available brands
+- `GET /api/health` - Health check
+- `GET /api/brands` - List all available brands
+- `GET /api/brands/:brandId` - Get metadata for a specific brand
+- `GET /api/brands/:brandId/design` - Load full DESIGN.md content for a brand
+- `GET /api/search?q=query` - Search by brand name, description, or ID
+
+Example:
+
+```bash
+curl https://style-reference-skills.vercel.app/api/brands
+curl https://style-reference-skills.vercel.app/api/brands/vercel
+curl https://style-reference-skills.vercel.app/api/brands/vercel/design
+curl https://style-reference-skills.vercel.app/api/search?q=linear
+```
+
+### Scripts
+
+```bash
+# Rebuild index.json from skills/*/DESIGN.md
+node scripts/build-index.js
+
+# Convert DESIGN.md files to extended format (dry run)
+node scripts/convert-format.js
+
+# Apply conversion changes
+node scripts/convert-format.js --write
+
+# Test end-to-end workflow against local or deployed API
+node scripts/test-workflow.js --base-url=https://style-reference-skills.vercel.app
+```
 
 ### Manual Usage
 
