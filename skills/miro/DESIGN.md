@@ -823,3 +823,30 @@ The system runs predominantly flat with strategic depth on hero mockups.
 - Animation/transition timings not extracted; recommend 150–200ms ease
 - Form validation success state not explicitly captured beyond defaults
 - Sticky note color tints inside the actual whiteboard product are richer than what marketing surfaces capture
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `notion` (Notion)
+- `mintlify` (Mintlify)
+- `mongodb` (MongoDB)
+
+## Quick Start
+
+1. Copy `skills/miro/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Miro style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Miro DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

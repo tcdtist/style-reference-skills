@@ -638,3 +638,30 @@ All interactive elements meet WCAG AA (≥ 44×44px). `{component.button-primary
 - **Dialog / modal styling** beyond the locale-selector overlay not visible in the captured surfaces.
 - **Form field styling** for full sign-up / contact forms is not present in the captured surfaces — only inline search and basic text inputs are documented.
 - **Login / authenticated chrome** not in the captured pages.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `playstation` (PlayStation)
+- `minimax` (MiniMax)
+- `pinterest` (Pinterest)
+
+## Quick Start
+
+1. Copy `skills/nvidia/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in NVIDIA style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow NVIDIA DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

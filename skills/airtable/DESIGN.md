@@ -552,3 +552,30 @@ Product UI screenshots inside demo-card grids retain native aspect ratios (typic
 - Form validation states beyond `text-input-focus` are not extracted — error and success states for inputs would need a dedicated form page to confirm.
 - The pricing comparison table's checkmark glyph and column-divider widths are described structurally but not formalized as tokens.
 - The CSS variable `--theme_button-background-primary: #1b61c9` exists at `:root` but is not used as the primary CTA color anywhere on the marketing site. It maps to the link/info color role instead. Documented here so future extractions don't re-trip over the misleading variable name.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `clay` (Clay)
+- `cal` (Cal.com)
+- `claude` (Claude)
+
+## Quick Start
+
+1. Copy `skills/airtable/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Airtable style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Airtable DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

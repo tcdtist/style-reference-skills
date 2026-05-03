@@ -587,3 +587,30 @@ When photography is used (rare — mostly testimonials), avatars crop to perfect
 - Form validation states beyond `{component.text-input-focused}` are not extracted — error / success states would need a sign-up or feedback flow to confirm.
 - The actual Claude product surface (claude.ai chat interface) shares some tokens with the marketing site but adds many product-specific components (chat bubbles, message tools, file upload chips, conversation history sidebar) that are out of scope for this marketing-surface document.
 - The "agent" / "computer use" demo cards on certain pages display animated Claude controlling a browser — the static screenshot doesn't fully capture the animation chrome.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `airtable` (Airtable)
+- `cal` (Cal.com)
+- `clickhouse` (ClickHouse)
+
+## Quick Start
+
+1. Copy `skills/claude/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Claude style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Claude DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

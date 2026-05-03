@@ -449,3 +449,30 @@ Primary CTAs and pills meet comfortable touch sizing through 12px-24px padding a
 - Exact proprietary font files are not bundled; use the documented fallbacks when implementing externally.
 - Mobile screenshots were not regenerated in this public update, so mobile behavior is documented from the desktop system and existing responsive patterns.
 - Some live pages lazy-load content blocks late; blank testimonial placeholders are documented as placeholder skeleton surfaces rather than filled testimonial cards.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `revolut` (Revolut)
+- `claude` (Claude)
+- `intercom` (Intercom)
+
+## Quick Start
+
+1. Copy `skills/cohere/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Cohere style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Cohere DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

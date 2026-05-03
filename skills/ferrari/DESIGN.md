@@ -529,3 +529,30 @@ The radius vocabulary is **sharp by default**. Sharp 0px corners are the brand b
 - In-product surfaces (preowned configurator, F1 telemetry overlays) only partially captured via marketing surfaces.
 - Form validation states beyond focus not visible on captured surfaces.
 - Hypersail yellow tokens are extracted but only appear in the Hypersail sailing program context — documented as scoped accents.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `coinbase` (Coinbase)
+- `elevenlabs` (ElevenLabs)
+- `expo` (Expo)
+
+## Quick Start
+
+1. Copy `skills/ferrari/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Ferrari style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Ferrari DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

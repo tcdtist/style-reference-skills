@@ -634,3 +634,30 @@ The system has **no traditional drop-shadow language**. Surfaces register depth 
 - Logged-in app surfaces (transactions, transfers, account settings) are out of scope — only the public marketing canvas is documented.
 - The wide accent palette (`{colors.accent-teal}` through `{colors.accent-brown}`) is captured from the extracted token set, but exact usage inside product illustrations varies per market and product line; document per-illustration rather than as system buttons.
 - Mobile-app screenshot art direction (phone bezels, status bars) is product-photography territory and not standardised as design tokens.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `minimax` (MiniMax)
+- `meta` (Meta)
+- `raycast` (Raycast)
+
+## Quick Start
+
+1. Copy `skills/revolut/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Revolut style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Revolut DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

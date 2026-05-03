@@ -542,3 +542,30 @@ The defining decorative surface of Framer's marketing — oversized atmospheric 
 - Form-field validation / error styling is not visible on the inspected pages because no error states render in the static screenshots.
 - Dark mode is the only mode — no light-mode adaptation is documented because the marketing site does not ship one.
 - The marketplace template detail page returned sparser CSS variable data than the other pages; surface tokens for that page were inferred from the matching home / gallery treatment rather than extracted directly.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `raycast` (Raycast)
+- `cursor` (Cursor)
+- `intercom` (Intercom)
+
+## Quick Start
+
+1. Copy `skills/framer/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Framer style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Framer DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

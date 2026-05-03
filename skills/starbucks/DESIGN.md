@@ -578,3 +578,30 @@ When refining existing screens generated with this design system:
 - Form error-state full styling (red border weight, icon placement) visible on the tint token but not exhaustively extracted
 - Careers-page specific components (cup-name card, search radio grid) are referenced in token names but not covered by this extraction
 - Starbucks Visa Card / Starbucks-Card (SVC) detailed mockup specs are hinted at by `--svcRoundedCorners` and `--svcShadowFilter` tokens but not fully documented
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `airbnb` (Airbnb)
+- `airtable` (Airtable)
+- `apple` (Apple)
+
+## Quick Start
+
+1. Copy `skills/starbucks/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in starbucks style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow starbucks DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

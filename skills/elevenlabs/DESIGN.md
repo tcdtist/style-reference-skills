@@ -502,3 +502,30 @@ The system uses **hairline + soft drop**. Cards float above the off-white canvas
 - Animation timings (orb drift, waveform pulse, hero entrance) out of scope.
 - In-product surfaces (voice library editor, agent playground) only partially captured via marketing mockups.
 - Form validation states beyond focus not visible on captured surfaces.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `expo` (Expo)
+- `coinbase` (Coinbase)
+- `cursor` (Cursor)
+
+## Quick Start
+
+1. Copy `skills/elevenlabs/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in ElevenLabs style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow ElevenLabs DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

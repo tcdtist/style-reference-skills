@@ -539,3 +539,30 @@ The system uses no heavy shadows. Depth comes from the saturated color contrast 
 - Animation and transition timings (3D illustration parallax on scroll, feature card entrance animations) are not in scope.
 - Form validation states beyond `{component.text-input-focused}` are not extracted.
 - The actual Clay product surface (in-app data tables, formula editor, agent builder) shares some tokens with the marketing site but adds many product-specific components that are out of scope.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `cal` (Cal.com)
+- `airtable` (Airtable)
+- `coinbase` (Coinbase)
+
+## Quick Start
+
+1. Copy `skills/clay/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Clay style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Clay DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

@@ -595,3 +595,30 @@ All interactive elements meet WCAG AA (≥ 44×44px). `{component.button-primary
 - **Authenticated chrome** (logged-in home feed, board pages, profile pages) not in the captured pages — the captured surfaces are the logged-out marketing and search experience.
 - **Pinterest mobile app screens** not in the system documented here — this is the web-only chrome.
 - **Form validation states** (success / error inline messages) not documented; only the focused-state field is captured.
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `ollama` (Ollama)
+- `playstation` (PlayStation)
+- `nvidia` (NVIDIA)
+
+## Quick Start
+
+1. Copy `skills/pinterest/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in Pinterest style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow Pinterest DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

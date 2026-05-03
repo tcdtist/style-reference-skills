@@ -348,3 +348,30 @@ When refining existing screens generated with this design system:
 6. The dark surface hierarchy (black → deep teal → dark forest → forest) creates subtle depth
 7. Shadows are multi-layered — a single `box-shadow` value won't capture the Shopify card feel
 8. `ss03` OpenType feature must be active on all text for typographic consistency
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `airbnb` (Airbnb)
+- `airtable` (Airtable)
+- `apple` (Apple)
+
+## Quick Start
+
+1. Copy `skills/shopify/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in shopify style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow shopify DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

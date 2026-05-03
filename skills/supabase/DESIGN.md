@@ -253,3 +253,30 @@ The green accent (`#3ecf8e`) appears selectively — in the Supabase logo, in li
 5. Hero line-height of 1.00 is the signature typographic move
 6. Pill (9999px) for primary actions, 6px for secondary, 8-16px for cards
 7. HSL with alpha channels creates the sophisticated translucent layering
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `airbnb` (Airbnb)
+- `airtable` (Airtable)
+- `apple` (Apple)
+
+## Quick Start
+
+1. Copy `skills/supabase/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in supabase style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow supabase DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).

@@ -130,44 +130,72 @@
     {
       "id": "figma",
       "name": "Figma",
-      "description": "\"A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.\"",
+      "description": "A confident black-and-white editorial frame interrupted by oversized, hand-cut pastel color blocks. The marketing canvas is rigorously monochrome — figmaSans variable type, pure white surfaces, pure black ink, pill-shaped CTAs — while each story section drops the page into a saturated lime, lavender, cream, mint, or pink panel that reads like a sticky note placed on a clean desk. The result is a design system that feels both technical and joyful — a tool for serious work, made by people who like color.",
       "theme": "",
       "path": "skills/figma/DESIGN.md"
     },
     {
       "id": "framer",
       "name": "Framer",
-      "description": "\"A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.\"",
+      "description": "A confident dark-canvas builder marketing site that treats the page like a working artboard — pure black surfaces, white display type set in GT Walsheim Medium with aggressive negative tracking, and a single confident blue (#0099ff) reserved for hyperlinks and selection states. The page rhythm is broken by oversized vibrant gradient atmosphere panels — magenta, violet, orange spotlights — that act as living showcase tiles, not decoration. Every CTA is a white pill on dark; every card is a translucent or charcoal surface; every section title pulls letter-spacing tight enough to feel like a poster.",
       "theme": "",
       "path": "skills/framer/DESIGN.md"
     },
     {
       "id": "hashicorp",
       "name": "HashiCorp",
-      "description": "\"An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.\"",
+      "description": "An enterprise-infrastructure marketing canvas built around a near-black ground (#000000) and a system of per-product accent colors — Terraform purple, Vault yellow, Consul pink, Waypoint cyan, Vagrant blue — that act as identity tokens rather than decorative palette. Display type is hashicorpSans set in 600/700 with tight 1.17–1.21 line-heights; body type runs the same family at 500 weight with relaxed 1.50–1.71 line-heights. Cards live as charcoal surfaces with 1px translucent gray borders; product showcase cards lift into per-product chromatic gradients. The system reads as confident, technical, and intentionally multi-product — every section quietly signals which HashiCorp tool it represents.",
       "theme": "",
       "path": "skills/hashicorp/DESIGN.md"
     },
     {
       "id": "ibm",
       "name": "IBM",
-      "description": "\"An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.\"",
+      "description": "An enterprise-marketing canvas faithful to Carbon Design System: white surfaces, charcoal type, IBM Blue (#0f62fe) as the single confident accent, and a deliberately flat-square aesthetic where corners stay at 0–4px. Type runs IBM Plex Sans at light weight 300 for display sizes (a brand signature) and 400/600 for body and emphasis. Cards live as thin-bordered tiles with no shadow; sections separate via subtle gray rows. The chrome is square, the typography is light, and the only color in the system is one assertive blue — the result reads as old-world enterprise gravitas reframed for the cloud era.",
       "theme": "",
       "path": "skills/ibm/DESIGN.md"
     },
     {
       "id": "intercom",
       "name": "Intercom",
-      "description": "\"An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.\"",
+      "description": "An editorial customer-service marketing canvas built around a soft cream-white ground, charcoal type set in Saans (Intercom's proprietary geometric sans), and a single confident Fin Orange (#ff5600) reserved for the Fin AI brand. Cards live as floating white tiles with thin hairline borders and minimal radii (8–16px). Display headlines run Saans at weight 500 with measured negative tracking. The system reads as a careful, product-led publication: product screenshots dominate, ornament is rare, and the only place chromatic energy enters is the Fin Orange CTA.",
       "theme": "",
       "path": "skills/intercom/DESIGN.md"
     },
     {
+      "id": "kraken",
+      "name": "Kraken",
+      "description": "",
+      "theme": "",
+      "path": "skills/kraken/DESIGN.md"
+    },
+    {
+      "id": "lamborghini",
+      "name": "Lamborghini",
+      "description": "",
+      "theme": "",
+      "path": "skills/lamborghini/DESIGN.md"
+    },
+    {
       "id": "linear.app",
       "name": "Linear",
-      "description": "\"A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color.\"",
+      "description": "A near-black product-focused marketing canvas built around #010102 (the deepest dark surface of any tool in this collection), light gray text (#f7f8f8), and the signature Linear lavender-blue (#5e6ad2) used as the single chromatic accent. The system reads as software-craft documentation: dense, technical, and quietly luxurious. Display type is set in the Linear custom sans (SF Pro Display fallback) at 500–700 with measured negative tracking. Cards live as charcoal panels (#0f1011) with hairline borders. The accent lavender appears on the brand mark, focus rings, and a few intentional CTAs — never decoratively. Page rhythm leans on product UI screenshots framed in dark panels rather than atmospheric color.",
       "theme": "",
       "path": "skills/linear.app/DESIGN.md"
+    },
+    {
+      "id": "lovable",
+      "name": "Lovable",
+      "description": "",
+      "theme": "",
+      "path": "skills/lovable/DESIGN.md"
+    },
+    {
+      "id": "mastercard",
+      "name": "Mastercard",
+      "description": "",
+      "theme": "",
+      "path": "skills/mastercard/DESIGN.md"
     },
     {
       "id": "meta",
@@ -214,7 +242,7 @@
     {
       "id": "nike",
       "name": "Nike",
-      "description": "|",
+      "description": "A photography-first commerce system built on extreme typographic contrast — towering uppercase Futura display lockups burned into editorial campaign imagery, sitting above a dense, neutral, near-monochrome retail chrome of pill-shaped black CTAs, gray search and tag pills, and tight 8px-grid product cards. The brand's voice is athletic, kinetic, and absolute: pure black, pure white, a single soft surface gray, and a deliberately small set of semantic accents (sale red, success green, restrained category tints) — every chromatic moment is reserved for editorial photography or pricing signal, never decorative chrome.",
       "theme": "",
       "path": "skills/nike/DESIGN.md"
     },
@@ -228,79 +256,240 @@
     {
       "id": "nvidia",
       "name": "NVIDIA",
-      "description": "|",
+      "description": "An engineering-grade marketing system organized around two surface modes — a deep black canvas for hero and footer chapters and a flat paper-white canvas for body content — connected by a single, almost violently saturated NVIDIA Green accent that carries every CTA, every active tab, and the small decorative corner squares that mark out cards. The system is unapologetically angular: 2px radius across every surface, tight bold sans-serif typography in NVIDIA's proprietary EMEA cut, and a hairline gray rule that separates dense multi-column technical content. There is no decorative gradient, no atmospheric mesh, no soft drop shadow — just black, white, gray, and green stacked into a structured editorial grid that scales from product cards to massive industry landing pages without bending its rules.",
       "theme": "",
       "path": "skills/nvidia/DESIGN.md"
     },
     {
       "id": "ollama",
       "name": "Ollama",
-      "description": "|",
+      "description": "An almost defiantly minimal documentation-first system that treats the home page like a Markdown README — paper-white canvas, 36px center-aligned heading, a single black pill CTA, an inline terminal install snippet, and a hand-drawn llama mascot as the only ornamental element. No gradient, no hero photography, no marketing pyrotechnics. The chrome is a tiny utility palette of pure black, pure white, and three neutral grays; every interactive element is fully rounded into a pill (`{rounded.full}`); typography is SF Pro Rounded for headings paired with system sans for body and ui-monospace for code. Pricing tiers, FAQs, and \"your data stays yours\" guarantees all sit on the same flat canvas inside thin-border cards — the system is the documentation, and the documentation is the system.",
       "theme": "",
       "path": "skills/ollama/DESIGN.md"
     },
     {
       "id": "opencode.ai",
       "name": "OpenCode",
-      "description": "|",
+      "description": "A terminal-native marketing system rendered entirely in Berkeley Mono — every word on the page, from the hero headline down to the footer fine print, is monospaced. The page itself reads like a manpage or a static-site README: warm cream canvas (`#fdfcfc`), nearly-black ink (`#201d1d`), 4px-radius rectangles for the few interactive elements, and bracketed `[+]`/`[-]` ASCII markers used as bullets. The brand's only \"visual moment\" is a single dark hero card that mocks up the OpenCode TUI itself — black background, monospaced terminal output, ASCII pipe characters, and a wordmark rendered as block-pixel ASCII. Every section sits as a hairline-bordered text block on the cream canvas with no shadows, no gradients, no decorative imagery, and no non-monospaced character anywhere in the system.",
       "theme": "",
       "path": "skills/opencode.ai/DESIGN.md"
     },
     {
       "id": "pinterest",
       "name": "Pinterest",
-      "description": "|",
+      "description": "A photography-first discovery system organized around the Pinterest Red CTA, the masonry pin grid, and a soft warm-cream chrome that gets out of the imagery's way. The home page is a content-discovery tool wearing the chrome of a magazine publisher: 70px display headlines, friendly Pin Sans typography, fully-rounded pill buttons (16px) on a cream-tinted neutral palette, and a sticky red \"Sign up\" CTA that anchors every viewport. Pin imagery is the system's load-bearing visual element — square, portrait, and landscape pins tile in a column-based masonry grid where each tile is a fully-rounded 16px-radius card, separated by tight 8px gutters. The chrome is otherwise quiet: warm grays, true whites, and a single saturated red — no decorative gradients, no atmospheric backgrounds, no shadows beyond a soft modal scrim.",
       "theme": "",
       "path": "skills/pinterest/DESIGN.md"
     },
     {
       "id": "playstation",
       "name": "PlayStation",
-      "description": "|",
+      "description": "A three-surface marketing system organized around alternating black, white, and PlayStation Blue chapters that scroll past the viewer like a console launch trailer. Each section has a single editorial purpose — hero photography, console product render, PS Plus tier callout, news strip — and each owns one of three full-bleed canvas modes. The chrome is unusually quiet for a gaming brand: bright PlayStation Blue (`#0070d1`) carries every primary CTA as a fully-rounded pill, the proprietary SST face renders display copy at a signature weight 300 (light) for an airy, premium feel, and a crisp 8px-radius secondary card system carries product info on either canvas mode. The system never decorates — no gradient backgrounds on chrome, no atmospheric mesh, no drop shadows beyond a faint section-divide. Imagery does all the heavy lifting: console glamour shots, game key art, and PS Plus tier illustrations occupy 60-90% of every section, with copy compressed into a small editorial slot.",
       "theme": "",
       "path": "skills/playstation/DESIGN.md"
     },
     {
       "id": "posthog",
       "name": "PostHog",
-      "description": "|",
+      "description": "A playful developer-tools system rendered on a warm cream canvas with hand-drawn hedgehog mascots dotted across every page like marginalia in a sketchbook. The chrome reads like a friendly engineering blog: olive-gray ink (#4d4f46) for body, deep olive-charcoal (#23251d) for headlines, IBM Plex Sans Variable typography in tight 1.43-line-height paragraphs, and a single saturated yellow-orange CTA pill (#f7a501) carrying every primary action. The system actively rejects the genre's typical somber dark-tech aesthetic in favor of a creamy, textbook-illustration sensibility — bordered cards stack on the cream canvas with 4–6px radii, doc sidebars use rounded outline-icon mini-illustrations, and the home page leans on cartoon characters (hedgehogs in lab coats, hedgehogs at terminals, hedgehogs in lounge chairs) as its signature decoration. Code samples and product analytics charts live inside white-on-cream cards with thin olive borders; the contrast between the playful illustration and the data-dense product imagery is the brand's signature voice.",
       "theme": "",
       "path": "skills/posthog/DESIGN.md"
     },
     {
       "id": "raycast",
       "name": "Raycast",
-      "description": "|",
+      "description": "Raycast's marketing system reads like an extended product screenshot. The chrome IS the in-product chrome at marketing scale: pure-near-black canvas, hairline 1px borders, command-palette-style cards, Inter typography with the ss03 stylistic set enabled site-wide, white CTA pill, and a small set of saturated category accent colors (yellow / red / green / blue) reserved for extension and feature illustrations. Section rhythm is generous (~96px) but the page never breaks tonal continuity — the whole site sits in one continuous dark mode.",
       "theme": "",
       "path": "skills/raycast/DESIGN.md"
     },
     {
       "id": "renault",
       "name": "Renault",
-      "description": "|",
+      "description": "Renault's web presence pairs the freshly-modernised Renault diamond (the 2021 flat-line rhombus mark) with a stark black-and-white canvas, a signature Sunlight Yellow accent, and the proprietary NouvelR display typeface. The system reads as confident, photography-first automotive — large hero cars on neutral or atmospheric backdrops, square-edged or barely-rounded containers, and a small disciplined palette where every coloured element is intentional. Tile grids, full-bleed banners, and a recurring \"configurator\" surface (white card, yellow accent dots, neutral product chrome) carry the mass-market dealership tone without crossing into luxury.",
       "theme": "",
       "path": "skills/renault/DESIGN.md"
     },
     {
       "id": "replicate",
       "name": "Replicate",
-      "description": "|",
+      "description": "Replicate's marketing surfaces pair the warm-cream developer-tools aesthetic of an indie ML playground with a confident hot-orange brand accent and a signature display typeface (rb-freigeist-neue) sized aggressively large at 72px+. The system reads as \"AI lab notebook crossed with print magazine\": cream and bone surfaces, dark ink type, monospace code wells, irregular hand-drawn-feeling diagrams, and a rich orange used scarcely on the most consequential CTA. Photography of contributors and example outputs is square-ish with mid-radius corners; everything else is borderless or hairline.",
       "theme": "",
       "path": "skills/replicate/DESIGN.md"
     },
     {
       "id": "resend",
       "name": "Resend",
-      "description": "|",
+      "description": "Resend's marketing surfaces sit on a near-pure black canvas with off-white text and a single signature color — the deep editorial-serif Domaine Display headline mark — that gives an otherwise utilitarian developer-tool brand its print-magazine confidence. The system pairs Domaine Display (oversized 76px–96px serif, ss01/ss04/ss11 features on) with ABC Favorit for body and Inter for UI. Surfaces rely on subtle 6–9% opacity gradient glows, hairline 1px borders made from translucent white, and a strict rounded-12px container vocabulary. There is no decorative chrome — just type, code, and atmospheric depth.",
       "theme": "",
       "path": "skills/resend/DESIGN.md"
     },
     {
       "id": "revolut",
       "name": "Revolut",
-      "description": "|",
+      "description": "Revolut's marketing surfaces pair a stark black canvas with the brand's cobalt-violet (`#494fdf`) and a wide accent palette of deep, fully-saturated product colours — teal, light-blue, deep pink, light-green, warning orange. The system reads as fintech-meets-product-brochure: oversized 80px–136px Aeonik Pro display headlines, generous whitespace, photography-led hero bands, and full-width product mockups (cards, phones, terminals) shown as hero objects inside near-black sections. Most surfaces are either black or off-white; pill-shaped buttons and rounded-12/20px content cards carry the consumer-financial-app feel without crossing into playful territory.",
       "theme": "",
       "path": "skills/revolut/DESIGN.md"
+    },
+    {
+      "id": "runwayml",
+      "name": "Runway",
+      "description": "",
+      "theme": "",
+      "path": "skills/runwayml/DESIGN.md"
+    },
+    {
+      "id": "sanity",
+      "name": "Sanity",
+      "description": "",
+      "theme": "",
+      "path": "skills/sanity/DESIGN.md"
+    },
+    {
+      "id": "sentry",
+      "name": "Sentry",
+      "description": "",
+      "theme": "",
+      "path": "skills/sentry/DESIGN.md"
+    },
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "description": "",
+      "theme": "",
+      "path": "skills/shopify/DESIGN.md"
+    },
+    {
+      "id": "spacex",
+      "name": "SpaceX",
+      "description": "",
+      "theme": "",
+      "path": "skills/spacex/DESIGN.md"
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "description": "",
+      "theme": "",
+      "path": "skills/spotify/DESIGN.md"
+    },
+    {
+      "id": "starbucks",
+      "name": "Starbucks",
+      "description": "",
+      "theme": "",
+      "path": "skills/starbucks/DESIGN.md"
+    },
+    {
+      "id": "stripe",
+      "name": "Stripe",
+      "description": "",
+      "theme": "",
+      "path": "skills/stripe/DESIGN.md"
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase",
+      "description": "",
+      "theme": "",
+      "path": "skills/supabase/DESIGN.md"
+    },
+    {
+      "id": "superhuman",
+      "name": "Superhuman",
+      "description": "",
+      "theme": "",
+      "path": "skills/superhuman/DESIGN.md"
+    },
+    {
+      "id": "tesla",
+      "name": "Tesla",
+      "description": "",
+      "theme": "",
+      "path": "skills/tesla/DESIGN.md"
+    },
+    {
+      "id": "theverge",
+      "name": "The Verge",
+      "description": "",
+      "theme": "",
+      "path": "skills/theverge/DESIGN.md"
+    },
+    {
+      "id": "together.ai",
+      "name": "Together AI",
+      "description": "",
+      "theme": "",
+      "path": "skills/together.ai/DESIGN.md"
+    },
+    {
+      "id": "uber",
+      "name": "Uber",
+      "description": "",
+      "theme": "",
+      "path": "skills/uber/DESIGN.md"
+    },
+    {
+      "id": "vercel",
+      "name": "Vercel",
+      "description": "",
+      "theme": "",
+      "path": "skills/vercel/DESIGN.md"
+    },
+    {
+      "id": "vodafone",
+      "name": "Vodafone",
+      "description": "",
+      "theme": "",
+      "path": "skills/vodafone/DESIGN.md"
+    },
+    {
+      "id": "voltagent",
+      "name": "VoltAgent",
+      "description": "",
+      "theme": "",
+      "path": "skills/voltagent/DESIGN.md"
+    },
+    {
+      "id": "warp",
+      "name": "Warp",
+      "description": "",
+      "theme": "",
+      "path": "skills/warp/DESIGN.md"
+    },
+    {
+      "id": "webflow",
+      "name": "Webflow",
+      "description": "",
+      "theme": "",
+      "path": "skills/webflow/DESIGN.md"
+    },
+    {
+      "id": "wired",
+      "name": "WIRED",
+      "description": "",
+      "theme": "",
+      "path": "skills/wired/DESIGN.md"
+    },
+    {
+      "id": "wise",
+      "name": "Wise",
+      "description": "",
+      "theme": "",
+      "path": "skills/wise/DESIGN.md"
+    },
+    {
+      "id": "x.ai",
+      "name": "xAI",
+      "description": "",
+      "theme": "",
+      "path": "skills/x.ai/DESIGN.md"
+    },
+    {
+      "id": "zapier",
+      "name": "Zapier",
+      "description": "",
+      "theme": "",
+      "path": "skills/zapier/DESIGN.md"
     }
   ]
 }

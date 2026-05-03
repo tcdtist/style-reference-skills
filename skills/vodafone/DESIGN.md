@@ -421,3 +421,30 @@ When refining existing screens generated with this design system:
 - The Vodafone corporate typeface is proprietary and cannot be reproduced exactly in open systems; Inter with tightened tracking at display sizes is the closest open substitute
 - Animation and transition timings are intentionally not documented — the site uses them sparingly and the values are not extractable from static analysis
 - The share ticker's exact number styling (separators, currency glyph) is documented from the investor-page screenshot; other regional variants may display differently
+
+## Motion System
+
+- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
+- Animate only transform and opacity where possible; avoid layout-shifting animations.
+- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
+- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
+
+## Similar Brands
+
+- `airbnb` (Airbnb)
+- `airtable` (Airtable)
+- `apple` (Apple)
+
+## Quick Start
+
+1. Copy `skills/vodafone/DESIGN.md` into your target project context.
+2. Ask the agent: "Build [screen type] in vodafone style using the DESIGN tokens and component patterns."
+3. Implement colors/typography/spacing tokens first, then components, then visual polish.
+4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
+
+## Agent Prompt Guide
+
+- Start prompts with explicit scope: page type, target audience, and conversion goal.
+- Mention the style anchor directly: "Follow vodafone DESIGN system exactly".
+- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
+- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).
