@@ -1,119 +1,103 @@
-# Design System Inspired by Webflow
+---
+version: alpha
+name: Webflow
+description: Webflow's design system projects confident utility through a sharp, clean interface. A monochromatic foundation of stark blacks and whites is punctuated by a singular, vibrant blue, drawing focus to interactive elements. Typography is the primary conveyor of brand personality, with large, precisely tracked sans-serif headlines creating a modern, impactful presence while subtle shadows add depth to interactive elements without overwhelming the clean aesthetic.
+colors:
+  canvas-white: "#ffffff"
+  ink-black: "#080808"
+  slate-gray: "#5a5a5a"
+  whisper-gray: "#f0f0f0"
+  outline-gray: "#d8d8d8"
+  webflow-blue: "#146ef5"
+  sky-blue: "#6ca7ff"
+  emerald-green: "#60ed76"
+  amber-glow: "#ffa666"
+  deep-blue-gradient: "#146ef5"
+typography:
+  caption:
+    fontFamily: "system-ui"
+    fontSize: 10px
+    lineHeight: 1.5
+    letterSpacing: 0.1px
+  body:
+    fontFamily: "system-ui"
+    fontSize: 16px
+    lineHeight: 1.5
+  subheading:
+    fontFamily: "system-ui"
+    fontSize: 20px
+    lineHeight: 1.4
+  heading-sm:
+    fontFamily: "system-ui"
+    fontSize: 24px
+    lineHeight: 1.3
+  heading:
+    fontFamily: "system-ui"
+    fontSize: 40px
+    lineHeight: 1.2
+  heading-lg:
+    fontFamily: "system-ui"
+    fontSize: 56px
+    lineHeight: 1.04
+    letterSpacing: -0.01px
+  display:
+    fontFamily: "system-ui"
+    fontSize: 80px
+    lineHeight: 1
+    letterSpacing: -0.01px
+spacing:
+  cardRadius: 4px
+  buttonRadius: 4px
+  elementGap: 16px
+  sectionGap: 24px
+components:
+  build-mode-selector-cards:
+    role: 
+  feature-list-with-arrow-links:
+    role: 
+  cookie-consent-banner:
+    role: 
+  primary-cta-button:
+    role: Call to Action
+  secondary-ghost-button:
+    role: Secondary Action
+  navigation-link-button:
+    role: Navigation/Menu
+  compact-feature-card:
+    role: Informational Display
+  outline-tag-button:
+    role: Filter/Small Action
+  cookie-consent-banner:
+    role: Regulatory Notification
+---
 
-## 1. Visual Theme & Atmosphere
+## Overview
 
-Webflow's website is a visually rich, tool-forward platform that communicates "design without code" through clean white surfaces, the signature Webflow Blue (`#146ef5`), and a rich secondary color palette (purple, pink, green, orange, yellow, red). The custom WF Visual Sans Variable font creates a confident, precise typographic system with weight 600 for display and 500 for body.
+**North Star:** Precise Blueprint on Stark Canvas — where every element serves a clear function against a bright, expansive backdrop.
 
-**Key Characteristics:**
-- White canvas with near-black (`#080808`) text
-- Webflow Blue (`#146ef5`) as primary brand + interactive color
-- WF Visual Sans Variable — custom variable font with weight 500–600
-- Rich secondary palette: purple `#7a3dff`, pink `#ed52cb`, green `#00d722`, orange `#ff6b00`, yellow `#ffae13`, red `#ee1d36`
-- Conservative 4px–8px border-radius — sharp, not rounded
-- Multi-layer shadow stacks (5-layer cascading shadows)
-- Uppercase labels: 10px–15px, weight 500–600, wide letter-spacing (0.6px–1.5px)
-- translate(6px) hover animation on buttons
+Webflow's design system projects confident utility through a sharp, clean interface. A monochromatic foundation of stark blacks and whites is punctuated by a singular, vibrant blue, drawing focus to interactive elements. Typography is the primary conveyor of brand personality, with large, precisely tracked sans-serif headlines creating a modern, impactful presence while subtle shadows add depth to interactive elements without overwhelming the clean aesthetic.
 
-## 2. Color Palette & Roles
+### Do's
 
-### Primary
-- **Near Black** (`#080808`): Primary text
-- **Webflow Blue** (`#146ef5`): `--_color---primary--webflow-blue`, primary CTA and links
-- **Blue 400** (`#3b89ff`): `--_color---primary--blue-400`, lighter interactive blue
-- **Blue 300** (`#006acc`): `--_color---blue-300`, darker blue variant
-- **Button Hover Blue** (`#0055d4`): `--mkto-embed-color-button-hover`
+- Use WF Visual Sans Variable weight 600 for main headlines to convey importance with a modern, sharp tone.
+- Apply Webflow Blue (#146ef5) exclusively to primary calls to action and critical interactive elements.
+- Maintain a clear visual hierarchy by utilizing Ink Black (#080808) for primary text and Slate Gray (#5a5a5a) for secondary, descriptive content.
+- Employ a 4px border-radius for all interactive buttons and smaller UI elements to establish a consistent subtle softness.
+- Use the Ink Black to Canvas White (20:1) contrast for all essential text to ensure AAA legibility.
+- Apply subtle, multi-layered shadows (e.g., rgba(0,0,0,0.01) 0px 54px 22px 0px) to interactive or elevated elements for depth, avoiding heavy dropshadows.
 
-### Secondary Accents
-- **Purple** (`#7a3dff`): `--_color---secondary--purple`
-- **Pink** (`#ed52cb`): `--_color---secondary--pink`
-- **Green** (`#00d722`): `--_color---secondary--green`
-- **Orange** (`#ff6b00`): `--_color---secondary--orange`
-- **Yellow** (`#ffae13`): `--_color---secondary--yellow`
-- **Red** (`#ee1d36`): `--_color---secondary--red`
+### Don'ts
 
-### Neutral
-- **Gray 800** (`#222222`): Dark secondary text
-- **Gray 700** (`#363636`): Mid text
-- **Gray 300** (`#ababab`): Muted text, placeholder
-- **Mid Gray** (`#5a5a5a`): Link text
-- **Border Gray** (`#d8d8d8`): Borders, dividers
-- **Border Hover** (`#898989`): Hover border
+- Do not introduce additional vibrant colors beyond the established Webflow Blue, Emerald Green, and Amber Glow accents.
+- Avoid using flat black (#000000) for text; opt for Ink Black (#080808) for a softer, yet still direct, appearance.
+- Do not use overly large line heights for headlines; maintain a tight `1.0` to `1.2` ratio to keep headlines compact and powerful.
+- Refrain from varying letter-spacing on body text; apply only to large headlines with the specified negative tracking for impact.
+- Do not use sharp 0px corners in functional components, except for subtle decorative elements like specific input borders.
 
-### Shadows
-- **5-layer cascade**: `rgba(0,0,0,0) 0px 84px 24px, rgba(0,0,0,0.01) 0px 54px 22px, rgba(0,0,0,0.04) 0px 30px 18px, rgba(0,0,0,0.08) 0px 13px 13px, rgba(0,0,0,0.09) 0px 3px 7px`
+### Layout
 
-## 3. Typography Rules
+The site uses a max-width 1440px centered container for most content, creating a focused presentation. The hero section often features large, centered headlines followed by a subheading, establishing a bold and direct introduction. Content sections primarily use a clean, modular layout with both single-column stacks and multi-column grids (like 3-column cards). Vertical rhythm is maintained with consistent section gaps, creating breathing room between content blocks. The navigation is a sticky top bar with clear functional links and a Webflow Blue 'Start for free' CTA.
 
-### Font: `WF Visual Sans Variable`, fallback: `Arial`
+### Imagery
 
-| Role | Size | Weight | Line Height | Letter Spacing | Notes |
-|------|------|--------|-------------|----------------|-------|
-| Display Hero | 80px | 600 | 1.04 | -0.8px | |
-| Section Heading | 56px | 600 | 1.04 | normal | |
-| Sub-heading | 32px | 500 | 1.30 | normal | |
-| Feature Title | 24px | 500–600 | 1.30 | normal | |
-| Body | 20px | 400–500 | 1.40–1.50 | normal | |
-| Body Standard | 16px | 400–500 | 1.60 | -0.16px | |
-| Button | 16px | 500 | 1.60 | -0.16px | |
-| Uppercase Label | 15px | 500 | 1.30 | 1.5px | uppercase |
-| Caption | 14px | 400–500 | 1.40–1.60 | normal | |
-| Badge Uppercase | 12.8px | 550 | 1.20 | normal | uppercase |
-| Micro Uppercase | 10px | 500–600 | 1.30 | 1px | uppercase |
-| Code: Inconsolata (companion monospace font)
-
-## 4. Component Stylings
-
-### Buttons
-- Transparent: text `#080808`, translate(6px) on hover
-- White circle: 50% radius, white bg
-- Blue badge: `#146ef5` bg, 4px radius, weight 550
-
-### Cards: `1px solid #d8d8d8`, 4px–8px radius
-### Badges: Blue-tinted bg at 10% opacity, 4px radius
-
-## 5. Layout
-- Spacing: fractional scale (1px, 2.4px, 3.2px, 4px, 5.6px, 6px, 7.2px, 8px, 9.6px, 12px, 16px, 24px)
-- Radius: 2px, 4px, 8px, 50% — conservative, sharp
-- Breakpoints: 479px, 768px, 992px
-
-## 6. Depth: 5-layer cascading shadow system
-
-## 7. Do's and Don'ts
-- Do: Use WF Visual Sans Variable at 500–600. Blue (#146ef5) for CTAs. 4px radius. translate(6px) hover.
-- Don't: Round beyond 8px for functional elements. Use secondary colors on primary CTAs.
-
-## 8. Responsive: 479px, 768px, 992px
-
-## 9. Agent Prompt Guide
-- Text: Near Black (`#080808`)
-- CTA: Webflow Blue (`#146ef5`)
-- Background: White (`#ffffff`)
-- Border: `#d8d8d8`
-- Secondary: Purple `#7a3dff`, Pink `#ed52cb`, Green `#00d722`
-
-## Motion System
-
-- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
-- Animate only transform and opacity where possible; avoid layout-shifting animations.
-- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
-- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
-
-## Similar Brands
-
-- `airbnb` (Airbnb)
-- `airtable` (Airtable)
-- `apple` (Apple)
-
-## Quick Start
-
-1. Copy `skills/webflow/DESIGN.md` into your target project context.
-2. Ask the agent: "Build [screen type] in webflow style using the DESIGN tokens and component patterns."
-3. Implement colors/typography/spacing tokens first, then components, then visual polish.
-4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
-
-## Agent Prompt Guide
-
-- Start prompts with explicit scope: page type, target audience, and conversion goal.
-- Mention the style anchor directly: "Follow webflow DESIGN system exactly".
-- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
-- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).
+The visual language is UI-heavy, with product screenshots of the Webflow interface integrated to explain features rather than purely decorative photography. These product screenshots often feature subtle elevation via shadows. Minimal abstract or illustrative graphics are used sparingly with strong brand blue accents. Icons are monochromatic, contributing to the functional aesthetic. Imagery primarily serves an explanatory role, showcasing the product directly.

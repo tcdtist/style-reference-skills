@@ -1,531 +1,125 @@
 ---
 version: alpha
 name: ElevenLabs
-description: A voice-AI brand whose marketing surfaces read like a quietly editorial print magazine. The base canvas is off-white (`#f5f5f5`) holding warm near-black ink (`#292524`); the brand voltage is photographic, not chromatic — soft pastel atmospheric gradient orbs (mint → peach → lavender → sky) drift through the page as the only "color" moments. Display runs Waldenburg Light at weight 300 — the editorial signature. Inter carries body, navigation, captions. CTAs are subtle: a near-black ink pill is the primary, a transparent outline is the secondary. The brand trusts atmospheric photography and modest type weights to do all of the brand work; there is no neon accent, no saturated CTA color, no developer-tools dark canvas.
-
+description: ElevenLabs feels like a museum label next to a working instrument — type-first, almost severe, yet alive with subtle warmth in the off-white surfaces. The page background #fdfcfc (named 'Eggshell' in the CSS tokens) is barely-not-white, giving the layout a slight papery warmth that black text lands on with extraordinary weight. Headlines use Waldenburg at weight 300 with -0.02em tracking, a custom serif that whispers where competitors shout — the counter-intuitive choice of a light-weight, slightly classical typeface for an AI voice platform creates authority through restraint. The entire chromatic palette is suppressed to near-zero saturation: #e5e5e5 borders, #777169 secondary text (a warm stone gray), and #fdfcfc surfaces — the only true color breaks come from pill-shaped black CTA buttons and the small colored avatar dots on voice profiles. The product UI card floats on a hairline shadow (0px 0px 1px rgba(0,0,0,0.4)) rather than elevation depth, keeping everything in the same visual plane.
 colors:
-  primary: "#292524"
-  primary-active: "#0c0a09"
-  ink: "#0c0a09"
-  body: "#4e4e4e"
-  body-strong: "#292524"
-  muted: "#777169"
-  muted-soft: "#a8a29e"
-  hairline: "#e7e5e4"
-  hairline-soft: "#f0efed"
-  hairline-strong: "#d6d3d1"
-  canvas: "#f5f5f5"
-  canvas-soft: "#fafafa"
-  canvas-deep: "#0c0a09"
-  surface-card: "#ffffff"
-  surface-strong: "#f0efed"
-  surface-dark: "#0c0a09"
-  surface-dark-elevated: "#1c1917"
-  on-primary: "#ffffff"
-  on-dark: "#ffffff"
-  on-dark-soft: "#a8a29e"
-  gradient-mint: "#a7e5d3"
-  gradient-peach: "#f4c5a8"
-  gradient-lavender: "#c8b8e0"
-  gradient-sky: "#a8c8e8"
-  gradient-rose: "#e8b8c4"
-  semantic-error: "#dc2626"
-  semantic-success: "#16a34a"
-
+  eggshell: "#fdfcfc"
+  powder: "#f5f3f1"
+  chalk: "#e5e5e5"
+  fog: "#b1b0b0"
+  gravel: "#777169"
+  slate: "#a59f97"
+  cinder: "#57534"
+  obsidian: "#000000"
+  signal-blue: "#0447ff"
+  ember: "#ff4704"
+  voice-spectrum: "#3d75d8"
 typography:
-  display-mega:
-    fontFamily: "'Waldenburg', 'Times New Roman', serif"
-    fontSize: 64px
-    fontWeight: 300
-    lineHeight: 1.05
-    letterSpacing: -1.92px
-  display-xl:
-    fontFamily: "'Waldenburg', serif"
+  caption:
+    fontFamily: "system-ui"
+    fontSize: 10px
+    lineHeight: 1.2
+  body:
+    fontFamily: "system-ui"
+    fontSize: 14px
+    lineHeight: 1.43
+  body-lg:
+    fontFamily: "system-ui"
+    fontSize: 16px
+    lineHeight: 1.5
+  subheading:
+    fontFamily: "system-ui"
+    fontSize: 18px
+    lineHeight: 1.44
+  heading-sm:
+    fontFamily: "system-ui"
+    fontSize: 20px
+    lineHeight: 1.4
+  heading:
+    fontFamily: "system-ui"
+    fontSize: 32px
+    lineHeight: 1.17
+    letterSpacing: -0.64px
+  heading-lg:
+    fontFamily: "system-ui"
+    fontSize: 36px
+    lineHeight: 1.13
+    letterSpacing: -0.72px
+  display:
+    fontFamily: "system-ui"
     fontSize: 48px
-    fontWeight: 300
     lineHeight: 1.08
     letterSpacing: -0.96px
-  display-lg:
-    fontFamily: "'Waldenburg', serif"
-    fontSize: 36px
-    fontWeight: 300
-    lineHeight: 1.17
-    letterSpacing: -0.36px
-  display-md:
-    fontFamily: "'Waldenburg', serif"
-    fontSize: 32px
-    fontWeight: 300
-    lineHeight: 1.13
-    letterSpacing: -0.32px
-  display-sm:
-    fontFamily: "'Waldenburg', serif"
-    fontSize: 24px
-    fontWeight: 300
-    lineHeight: 1.2
-    letterSpacing: 0
-  title-md:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 20px
-    fontWeight: 500
-    lineHeight: 1.35
-    letterSpacing: 0
-  title-sm:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 18px
-    fontWeight: 500
-    lineHeight: 1.44
-    letterSpacing: 0.18px
-  body-md:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 16px
-    fontWeight: 400
-    lineHeight: 1.5
-    letterSpacing: 0.16px
-  body-strong:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 16px
-    fontWeight: 500
-    lineHeight: 1.5
-    letterSpacing: 0.16px
-  body-sm:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 15px
-    fontWeight: 400
-    lineHeight: 1.47
-    letterSpacing: 0.15px
-  caption:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 14px
-    fontWeight: 400
-    lineHeight: 1.5
-    letterSpacing: 0
-  caption-uppercase:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 12px
-    fontWeight: 600
-    lineHeight: 1.4
-    letterSpacing: 0.96px
-    textTransform: uppercase
-  button:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 15px
-    fontWeight: 500
-    lineHeight: 1.0
-    letterSpacing: 0
-  nav-link:
-    fontFamily: "'Inter', sans-serif"
-    fontSize: 15px
-    fontWeight: 500
-    lineHeight: 1.4
-    letterSpacing: 0
-
-rounded:
-  none: 0px
-  xs: 4px
-  sm: 6px
-  md: 8px
-  lg: 12px
-  xl: 16px
-  xxl: 24px
-  pill: 9999px
-  full: 9999px
-
 spacing:
-  xxs: 4px
-  xs: 8px
-  sm: 12px
-  base: 16px
-  md: 20px
-  lg: 24px
-  xl: 32px
-  xxl: 48px
-  section: 96px
-
+  cardRadius: 16px
+  buttonRadius: 9999px
+  elementGap: 8-12px
+  sectionGap: 80-120px
 components:
-  top-nav:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.nav-link}"
-    height: 64px
-  button-primary:
-    backgroundColor: "{colors.primary}"
-    textColor: "{colors.on-primary}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: 10px 20px
-    height: 40px
-  button-primary-active:
-    backgroundColor: "{colors.primary-active}"
-    textColor: "{colors.on-primary}"
-    rounded: "{rounded.pill}"
-  button-outline:
-    backgroundColor: transparent
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
-    rounded: "{rounded.pill}"
-    padding: 9px 19px
-    height: 40px
-  button-tertiary-text:
-    backgroundColor: transparent
-    textColor: "{colors.ink}"
-    typography: "{typography.button}"
-  hero-band:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.display-mega}"
-    padding: 96px
-  gradient-orb-card:
-    backgroundColor: "{colors.canvas-soft}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.xxl}"
-    padding: 32px
-  feature-card:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.ink}"
-    typography: "{typography.title-md}"
-    rounded: "{rounded.xl}"
-    padding: 24px
-  product-card-stack:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: 0
-  voice-row:
-    backgroundColor: transparent
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    padding: 12px 0
-  voice-icon-circular:
-    backgroundColor: "{colors.surface-strong}"
-    rounded: "{rounded.full}"
-    size: 32px
-  pricing-tier-card:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: 32px
-  pricing-tier-featured:
-    backgroundColor: "{colors.surface-dark}"
-    textColor: "{colors.on-dark}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: 32px
-  text-input:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.ink}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.md}"
-    padding: 12px 16px
-    height: 44px
-  badge-pill:
-    backgroundColor: "{colors.surface-strong}"
-    textColor: "{colors.ink}"
-    typography: "{typography.caption-uppercase}"
-    rounded: "{rounded.pill}"
-    padding: 4px 10px
-  cta-band:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.ink}"
-    typography: "{typography.display-lg}"
-    padding: 96px
-  testimonial-card:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.body}"
-    typography: "{typography.body-md}"
-    rounded: "{rounded.xl}"
-    padding: 32px
-  audio-waveform-card:
-    backgroundColor: "{colors.surface-card}"
-    textColor: "{colors.ink}"
-    rounded: "{rounded.xl}"
-    padding: 24px
-  footer:
-    backgroundColor: "{colors.canvas}"
-    textColor: "{colors.body}"
-    typography: "{typography.body-sm}"
-    padding: 64px 48px
-  footer-link:
-    backgroundColor: transparent
-    textColor: "{colors.body}"
-    typography: "{typography.body-sm}"
+  cta-button-group:
+    role: 
+  product-demo-card-voice-list:
+    role: 
+  social-proof-logo-grid:
+    role: 
+  primary-pill-button-filled:
+    role: Primary CTA — Sign up, Play, Submit
+  ghost-pill-button-outline:
+    role: Secondary actions — Contact sales, Log in, Read all stories
+  rounded-outline-button-tab-toggle:
+    role: Segmented control tabs — ElevenCreative, ElevenAgents, ElevenAPI selector
+  compact-action-button:
+    role: Inline UI actions — pagination arrows, expand/collapse controls
+  product-demo-card:
+    role: Interactive voice-player UI card embedded in hero section
+  voice-list-item:
+    role: Individual voice selection row inside demo card
+  navigation-bar:
+    role: Top global navigation
+  section-divider-label:
+    role: Eyebrow text above section headings
+  text-input-transparent:
+    role: Inline text editors and search fields
+  text-input-contained:
+    role: Form inputs with white background
+  feature-platform-card-ghost:
+    role: Two-column product description cards — ElevenCreative / ElevenAgents
 ---
 
 ## Overview
 
-ElevenLabs reads like a quietly editorial print magazine that happens to be a voice-AI product. The base canvas is off-white `{colors.canvas}` (#f5f5f5) holding warm near-black ink `{colors.ink}` (#0c0a09). The brand voltage is **photographic, not chromatic**: soft pastel atmospheric gradient orbs (mint, peach, lavender, sky, rose) drift through the page as the only "color" moments. There is no neon accent, no saturated CTA color, no dark-canvas dev-tools atmosphere.
+**North Star:** Architect's blueprint on warm vellum — Waldenburg weight-300 headlines at 48px with -0.02em tracking anchored against an eggshell ground, pure black pill buttons as the only punctuation.
 
-Type pairs **Waldenburg Light** (custom serif at weight 300) for display with **Inter** for body, navigation, captions. The display weight at 300 is the editorial signature — never bold, never heavy.
+ElevenLabs feels like a museum label next to a working instrument — type-first, almost severe, yet alive with subtle warmth in the off-white surfaces. The page background #fdfcfc (named 'Eggshell' in the CSS tokens) is barely-not-white, giving the layout a slight papery warmth that black text lands on with extraordinary weight. Headlines use Waldenburg at weight 300 with -0.02em tracking, a custom serif that whispers where competitors shout — the counter-intuitive choice of a light-weight, slightly classical typeface for an AI voice platform creates authority through restraint. The entire chromatic palette is suppressed to near-zero saturation: #e5e5e5 borders, #777169 secondary text (a warm stone gray), and #fdfcfc surfaces — the only true color breaks come from pill-shaped black CTA buttons and the small colored avatar dots on voice profiles. The product UI card floats on a hairline shadow (0px 0px 1px rgba(0,0,0,0.4)) rather than elevation depth, keeping everything in the same visual plane.
 
-CTAs are subtle: a near-black ink pill (`{component.button-primary}`) is the primary, a transparent outline (`{component.button-outline}`) is the secondary. The brand trusts atmospheric photography and modest type weights to carry brand work.
+### Do's
 
-**Key Characteristics:**
-- Off-white canvas, warm near-black ink. No saturated CTA color.
-- Single primary action: ink pill at `{rounded.pill}`. Atmospheric gradients carry visual brand voltage.
-- Display runs Waldenburg Light at weight 300 — editorial magazine voice.
-- Body runs Inter at 400 with subtle letter-spacing (+0.15-0.18px).
-- Pastel gradient orbs (5 tokens: mint, peach, lavender, sky, rose) used as atmospheric brand decoration only.
-- Soft pill geometry (`{rounded.pill}` for CTAs, `{rounded.xl}` for cards).
-- 96px section rhythm.
+- Use Waldenburg 300 with -0.02em letter-spacing for all headings at 32px and above — never substitute a heavier weight.
+- Apply 9999px border-radius to every button and pill tag; use 16-20px for cards and panels; use 0px for bare input fields.
+- Keep the entire color palette at near-zero saturation: #000000 text, #fdfcfc background, #e5e5e5 borders, #777169 secondary text. Reserve #ff4704 and #0447ff for product avatar dots only.
+- Use the inset shadow rgba(0,0,0,0.075) 0px 0px 0px 0.5px inset on white UI surfaces that sit on eggshell — it replaces border outlines on cards without adding visual weight.
+- Use Geist Mono 400 13px only for machine-generated or technical inline annotations (e.g. [whispers], [sarcastic]) and code snippets.
+- Render all third-party logos in the social proof grid at #b1b0b0 (Fog) with no hover color change — chromatic logos break the achromatic discipline.
+- Size section gaps at 80-120px vertical spacing between major content blocks; use 8-12px for element-level gaps within components.
 
-## Colors
+### Don'ts
 
-### Brand & Accent
-- **Ink Primary** (`{colors.primary}` — #292524): The primary action color — warm near-black pill. Used scarcely.
-- **Ink Primary Active** (`{colors.primary-active}` — #0c0a09): Press state.
+- Never use a weight above 300 for Waldenburg display headlines — weight 700 belongs only to WaldenburgFH product-label contexts at 14px.
+- Never introduce saturated color for text, background fills, or buttons — the Signal Blue #0447ff and Ember #ff4704 are reserved exclusively for 8-16px avatar/dot indicators.
+- Never apply box-shadow elevation larger than rgba(0,0,0,0.4) 0px 0px 1.143px — ElevenLabs cards float by 1px shadow, not by depth layering.
+- Never use a pure white #ffffff background for page surfaces — use #fdfcfc (Eggshell) for all base surfaces to preserve the warm papery ground.
+- Never place Inter body text below 13px in product UI contexts or below 14px in marketing prose — the 0.01em tracking needs minimum size to work.
+- Never use more than two button variants in the same visual cluster — one filled black pill (primary) + one white ghost pill (secondary) is the maximum combination.
+- Never apply border-radius to input fields — inputs use 0px radius, creating an editorial underline-or-box distinction from the rounded interactive elements.
 
-### Surface
-- **Canvas** (`{colors.canvas}` — #f5f5f5): Off-white page floor.
-- **Canvas Soft** (`{colors.canvas-soft}` — #fafafa): Lighter band for subtle alternating sections.
-- **Canvas Deep** (`{colors.canvas-deep}` — #0c0a09): Same as ink — used for the rare dark-mode hero (Agents page).
-- **Surface Card** (`{colors.surface-card}` — #ffffff): Pure white card.
-- **Surface Strong** (`{colors.surface-strong}` — #f0efed): Badges, voice-icon plates.
-- **Surface Dark** (`{colors.surface-dark}` — #0c0a09): Dark hero/CTA band canvas.
-- **Surface Dark Elevated** (`{colors.surface-dark-elevated}` — #1c1917): Cards on dark canvas.
+### Layout
 
-### Hairlines
-- **Hairline** (`{colors.hairline}` — #e7e5e4): Default 1px divider.
-- **Hairline Soft** (`{colors.hairline-soft}` — #f0efed): Lighter divider.
-- **Hairline Strong** (`{colors.hairline-strong}` — #d6d3d1): Stronger panel outline.
+Max-width ~1200px centered on eggshell ground. Hero is a two-column asymmetric split: large Waldenburg headline left (60% width) with body text right, followed by two pill buttons. Below the fold, a full-width white product card (border-radius 16px) acts as a live demo embed spanning the full content column. Logo grid is a 6-column × 3-row flat array on white, centered, with generous 24-32px row gaps. Feature descriptions use a 2-column text block layout (no images, purely typographic). Navigation is a slim 36px top bar, likely sticky on scroll, with logo left and auth CTAs right. Section rhythm is seamless — no alternating dark/light bands; the entire page is the same eggshell ground broken only by the white card surfaces and the #f5f3f1 subtle hover zones.
 
-### Text
-- **Ink** (`{colors.ink}` — #0c0a09): Display, primary text.
-- **Body** (`{colors.body}` — #4e4e4e): Default running-text.
-- **Body Strong** (`{colors.body-strong}` — #292524): Same as primary — emphasis.
-- **Muted** (`{colors.muted}` — #777169): Sub-titles.
-- **Muted Soft** (`{colors.muted-soft}` — #a8a29e): Disabled text.
-- **On Primary** (`{colors.on-primary}` — #ffffff): White text on ink pill.
-- **On Dark** (`{colors.on-dark}` — #ffffff): White text on dark hero.
-- **On Dark Soft** (`{colors.on-dark-soft}` — #a8a29e): Muted off-white on dark.
+### Imagery
 
-### Atmospheric Gradient Stops (signature)
-- **Gradient Mint** (`{colors.gradient-mint}` — #a7e5d3): Mint green orb.
-- **Gradient Peach** (`{colors.gradient-peach}` — #f4c5a8): Peach orb.
-- **Gradient Lavender** (`{colors.gradient-lavender}` — #c8b8e0): Lavender orb.
-- **Gradient Sky** (`{colors.gradient-sky}` — #a8c8e8): Sky-blue orb.
-- **Gradient Rose** (`{colors.gradient-rose}` — #e8b8c4): Rose orb.
+Product screenshots are the dominant visual — specifically, the interactive voice-player UI shown as a white card with structured list and text area. No lifestyle photography is present. Illustration is absent. The only 'graphic' element is the conic-gradient logomark, a spinning blue-to-cyan color wheel suggesting audio waveforms or voice spectra, contained within a ~24px icon footprint. Voice avatars use small 28-32px circular gradient fills (multicolor mini-spheres) as person-indicators — these are the only chromatic imagery in the UI. Social proof section uses SVG wordmark logos uniformly desaturated to #b1b0b0 Fog. The design is text-dominant: imagery occupies roughly 30% of visual space with the product card; 70% is typographic.
 
-These appear ONLY as soft radial-gradient atmospheric orbs inside `{component.gradient-orb-card}` and as background atmospheric blooms behind hero copy. Never as button fills, never as text colors.
+### Elevation
 
-### Semantic
-- **Success** (`{colors.semantic-success}` — #16a34a): Confirmation.
-- **Error** (`{colors.semantic-error}` — #dc2626): Validation errors.
-
-## Typography
-
-### Font Family
-**Waldenburg Light** is the licensed display serif at weight 300. **Inter** carries body, navigation, captions, and buttons. Fallback: `'Times New Roman', serif` for Waldenburg, `sans-serif` for Inter.
-
-### Hierarchy
-
-| Token | Size | Weight | Line Height | Letter Spacing | Use |
-|---|---|---|---|---|---|
-| `{typography.display-mega}` | 64px | 300 | 1.05 | -1.92px | Homepage hero h1 |
-| `{typography.display-xl}` | 48px | 300 | 1.08 | -0.96px | Subsidiary heroes |
-| `{typography.display-lg}` | 36px | 300 | 1.17 | -0.36px | Section heads |
-| `{typography.display-md}` | 32px | 300 | 1.13 | -0.32px | Sub-section heads |
-| `{typography.display-sm}` | 24px | 300 | 1.2 | 0 | Card group titles |
-| `{typography.title-md}` | 20px | 500 | 1.35 | 0 | Component titles — Inter |
-| `{typography.title-sm}` | 18px | 500 | 1.44 | 0.18px | List labels |
-| `{typography.body-md}` | 16px | 400 | 1.5 | 0.16px | Default body — Inter |
-| `{typography.body-strong}` | 16px | 500 | 1.5 | 0.16px | Emphasized body |
-| `{typography.body-sm}` | 15px | 400 | 1.47 | 0.15px | Footer body |
-| `{typography.caption}` | 14px | 400 | 1.5 | 0 | Photo captions |
-| `{typography.caption-uppercase}` | 12px | 600 | 1.4 | 0.96px | Section labels, badges |
-| `{typography.button}` | 15px | 500 | 1.0 | 0 | CTA pill |
-| `{typography.nav-link}` | 15px | 500 | 1.4 | 0 | Top-nav menu |
-
-### Principles
-- **Display weight stays at 300.** Waldenburg Light is the editorial signature. Never bold display copy.
-- **Subtle letter-spacing on body.** Inter at +0.15-0.18px tracking — slightly looser than default Inter for a more editorial feel.
-- **Negative letter-spacing on display.** Waldenburg pulls -0.32px to -1.92px tighter on display sizes.
-
-### Note on Font Substitutes
-Waldenburg is licensed. Open-source substitute: **EB Garamond** at weight 300 (slightly more humanist) or **GT Sectra** (closer to Waldenburg's modernity). Use Inter directly for body — it's the same family ElevenLabs uses.
-
-## Layout
-
-### Spacing System
-- **Base unit:** 4px.
-- **Tokens:** `{spacing.xxs}` 4px · `{spacing.xs}` 8px · `{spacing.sm}` 12px · `{spacing.base}` 16px · `{spacing.md}` 20px · `{spacing.lg}` 24px · `{spacing.xl}` 32px · `{spacing.xxl}` 48px · `{spacing.section}` 96px.
-- **Section padding:** 96px.
-
-### Grid & Container
-- Max content width: ~1200px.
-- Editorial body: 12-column grid.
-- Feature card grids: 2-up at desktop for hero splits, 3-up for benefit grids.
-- Footer: 5-column at desktop.
-
-### Whitespace Philosophy
-Generous editorial pacing — print-magazine feel. 96px between bands; cards inside bands sit close (16-24px gap). The atmospheric gradient orbs occupy generous breathing space without competing with copy.
-
-## Elevation & Depth
-
-The system uses **hairline + soft drop**. Cards float above the off-white canvas via 1px hairlines and a single subtle shadow tier. Atmospheric depth comes from gradient orbs.
-
-| Level | Treatment | Use |
-|---|---|---|
-| Flat (canvas) | `{colors.canvas}` (#f5f5f5) | Body bands, footer |
-| Card | `{colors.surface-card}` (#ffffff) | Content cards |
-| Hairline border | 1px `{colors.hairline}` | Card outlines |
-| Soft drop | `0 4px 16px rgba(0, 0, 0, 0.04)` | Hovered cards (single shadow tier) |
-| Gradient orb | Radial gradient with one of `{colors.gradient-*}` | Atmospheric depth — never a card surface |
-
-### Decorative Depth
-- **Pastel gradient orbs** are the brand's strongest atmospheric pattern. Soft radial blooms in mint, peach, lavender, sky, or rose drift through hero bands and feature sections without containing any content — they are pure atmosphere.
-
-## Shapes
-
-### Border Radius Scale
-
-| Token | Value | Use |
-|---|---|---|
-| `{rounded.none}` | 0px | Reserved |
-| `{rounded.xs}` | 4px | Inline tags |
-| `{rounded.sm}` | 6px | Compact rows |
-| `{rounded.md}` | 8px | Form inputs |
-| `{rounded.lg}` | 12px | Compact cards |
-| `{rounded.xl}` | 16px | Feature cards, pricing tiers |
-| `{rounded.xxl}` | 24px | Gradient orb cards (extra-soft) |
-| `{rounded.pill}` | 9999px | All CTA buttons, badges |
-| `{rounded.full}` | 9999px | Voice icon circles, avatars |
-
-## Components
-
-### Top Navigation
-
-**`top-nav`** — Background `{colors.canvas}`, text `{colors.ink}`, height 64px. Layout: ElevenLabs wordmark left, primary horizontal menu (Creative / Agents / Video / Pricing / Enterprise / Docs), Sign In + "Try free" primary CTA right.
-
-### Buttons
-
-**`button-primary`** — Near-black ink pill. Background `{colors.primary}`, text `{colors.on-primary}`, type `{typography.button}` (15px / 500), padding 10px × 20px, height 40px, rounded `{rounded.pill}`.
-
-**`button-primary-active`** — Press state. Background `{colors.primary-active}`.
-
-**`button-outline`** — Transparent pill with 1px ink border. Background transparent, text `{colors.ink}`, 1px `{colors.hairline-strong}` border.
-
-**`button-tertiary-text`** — Inline ink text link.
-
-### Hero & Atmospheric
-
-**`hero-band`** — Background `{colors.canvas}`, full-width display headline in `{typography.display-mega}` (64px / 300 / -1.92px), subhead in `{typography.body-md}`, two CTAs, and an atmospheric gradient orb behind the centered headline.
-
-**`gradient-orb-card`** — A large card with a soft radial-gradient orb behind centered display copy. Background `{colors.canvas-soft}`, rounded `{rounded.xxl}` (24px), padding 32px. Each variant uses one of the five gradient tokens (`gradient-mint`, `gradient-peach`, `gradient-lavender`, `gradient-sky`, `gradient-rose`).
-
-**`audio-waveform-card`** — A waveform visualization card. Background `{colors.surface-card}`, rounded `{rounded.xl}`, padding 24px. Holds a play button + waveform glyph + voice metadata.
-
-### Cards
-
-**`feature-card`** — 2-up or 3-up grids. Background `{colors.surface-card}`, text `{colors.ink}`, rounded `{rounded.xl}`, padding 24px, 1px hairline border.
-
-**`product-card-stack`** — Stacked product preview cards. Background `{colors.surface-card}`, rounded `{rounded.xl}`, no padding (children fill the card edge-to-edge).
-
-**`testimonial-card`** — Quote card. Background `{colors.surface-card}`, text `{colors.body}`, rounded `{rounded.xl}`, padding 32px.
-
-### Voice Library
-
-**`voice-row`** — Horizontal row in voice list. Background transparent, 1px hairline divider. Layout: 32px circular voice icon (`{component.voice-icon-circular}`) left, voice name + accent stack, optional preview button right.
-
-**`voice-icon-circular`** — Background `{colors.surface-strong}`, rounded `{rounded.full}`, 32px diameter. Holds initials or voice glyph.
-
-### Pricing
-
-**`pricing-tier-card`** — Background `{colors.surface-card}`, rounded `{rounded.xl}`, padding 32px, 1px hairline border.
-
-**`pricing-tier-featured`** — Featured tier inverts. Background `{colors.surface-dark}`, text `{colors.on-dark}`. Same shape, dark inversion.
-
-### Forms & Tags
-
-**`text-input`** — Background `{colors.surface-card}`, text `{colors.ink}`, rounded `{rounded.md}` (8px), padding 12px × 16px, height 44px, 1px `{colors.hairline-strong}` border. On focus, border thickens to 2px ink.
-
-**`badge-pill`** — Background `{colors.surface-strong}`, text `{colors.ink}`, type `{typography.caption-uppercase}`, rounded `{rounded.pill}`, padding 4px × 10px.
-
-### CTA / Footer
-
-**`cta-band`** — Pre-footer. Background `{colors.canvas}`, centered display headline in `{typography.display-lg}`, single ink pill CTA. 96px padding.
-
-**`footer`** — Closing footer. Background `{colors.canvas}`, text `{colors.body}`. 5-column link list. 64×48px padding.
-
-**`footer-link`** — Background transparent, text `{colors.body}`, type `{typography.body-sm}`.
-
-## Do's and Don'ts
-
-### Do
-- Reserve `{colors.primary}` (ink pill) for primary CTAs.
-- Use Waldenburg Light at weight 300 for every display headline. Never bold.
-- Use Inter at +0.15-0.18px tracking for body — the editorial dialect.
-- Use atmospheric gradient orbs (mint/peach/lavender/sky/rose) as decoration only.
-- Use the pill shape for every CTA and badge.
-
-### Don't
-- Don't introduce a saturated brand action color. Ink pill is the only CTA color.
-- Don't bold display copy. Display sits at weight 300 — bolding shifts the brand voice from editorial to consumer-marketing.
-- Don't use gradient orbs as button fills, text colors, or component backgrounds. They are pure atmosphere.
-- Don't use sharp `{rounded.none}` (0px) on CTAs. Pill geometry is the brand button.
-- Don't drop body Inter to weight 300 to match Waldenburg — body stays at 400/500 for legibility.
-- Don't extract a CTA color from a third-party widget (cookie consent, OneTrust). The brand's CTA color is what appears on actual product CTAs.
-
-## Responsive Behavior
-
-### Breakpoints
-
-| Name | Width | Key Changes |
-|---|---|---|
-| Mobile | < 640px | Hero h1 64→32px; feature cards 1-up; nav hamburger; gradient orbs shrink. |
-| Tablet | 640–1024px | Hero h1 48px; feature cards 2-up. |
-| Desktop | 1024–1280px | Full hero h1 64px; feature cards 3-up. |
-| Wide | > 1280px | Content caps at 1200px. |
-
-### Touch Targets
-- Primary pill at 40px height — at WCAG AA, padded for AAA.
-- Voice icon circles 32px — padded row creates effective 48px tap zone.
-
-### Collapsing Strategy
-- Top nav switches to hamburger below 768px.
-- Feature grid: 3-up → 2-up → 1-up.
-- Gradient orbs reduce diameter at every breakpoint but never disappear.
-
-## Iteration Guide
-
-1. Focus on a single component at a time.
-2. CTAs default to `{rounded.pill}`. Cards use `{rounded.xl}` (16px).
-3. Variants live as separate entries.
-4. Use `{token.refs}` everywhere — never inline hex.
-5. Hover state never documented.
-6. Waldenburg 300 for display, Inter 400/500 for body.
-7. Gradient orbs scoped to atmospheric decoration.
-
-## Known Gaps
-
-- Waldenburg is a licensed typeface; EB Garamond / GT Sectra are documented substitutes.
-- Animation timings (orb drift, waveform pulse, hero entrance) out of scope.
-- In-product surfaces (voice library editor, agent playground) only partially captured via marketing mockups.
-- Form validation states beyond focus not visible on captured surfaces.
-
-## Motion System
-
-- Keep motion subtle and fast: prefer `120ms-220ms` transitions for hover/focus and `240ms-320ms` for enter/exit.
-- Animate only transform and opacity where possible; avoid layout-shifting animations.
-- Use one easing family consistently across the page (`ease-out` for entrances, `ease-in-out` for toggles).
-- Respect reduced motion: disable non-essential animation when `prefers-reduced-motion` is enabled.
-
-## Similar Brands
-
-- `expo` (Expo)
-- `coinbase` (Coinbase)
-- `cursor` (Cursor)
-
-## Quick Start
-
-1. Copy `skills/elevenlabs/DESIGN.md` into your target project context.
-2. Ask the agent: "Build [screen type] in ElevenLabs style using the DESIGN tokens and component patterns."
-3. Implement colors/typography/spacing tokens first, then components, then visual polish.
-4. Validate final UI against this reference: typography hierarchy, CTA styling, card geometry, and section rhythm.
-
-## Agent Prompt Guide
-
-- Start prompts with explicit scope: page type, target audience, and conversion goal.
-- Mention the style anchor directly: "Follow ElevenLabs DESIGN system exactly".
-- Require token-level output (colors, typography, spacing, radius, shadows) before component generation.
-- Ask for responsive behavior and accessibility checks (focus state, contrast, reduced motion).
+ElevenLabs uses only hairline elevation: rgba(0,0,0,0.4) 0px 0px 1.143px with a secondary rgba(0,0,0,0.04) 0px 2px 4px. Cards barely detach from the eggshell surface — they hover rather than float. This flatness keeps all UI elements in the same perceptual plane, matching the editorial, text-first design intention. The inset shadow rgba(0,0,0,0.075) 0px 0px 0px 0.5px is used instead of border-color on white-on-eggshell surfaces.
