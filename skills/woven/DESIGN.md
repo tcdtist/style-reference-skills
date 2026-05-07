@@ -1,58 +1,156 @@
 ---
 version: alpha
-name: Woven
-description: Woven's design system evokes a refined, artisanal mood with a predominantly monochrome palette punctuated by subtle, natural off-whites. Typography is compact and precise, often uppercase with generous tracking, conveying a sense of heritage and meticulous craftsmanship. Components are lightweight and border-focused, with minimal use of shadows, emphasizing content over heavy UI chrome. The overall effect is understated luxury, where visual tension is created through careful spacing and material contrast rather than bold color or complex graphics.
-colors:
-  carbon: "#232323"
-  parchment: "#eeede5"
-  porcelain: "#ffffff"
-  slate: "#4a4a4a"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.63
-    letterSpacing: 0.063px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.63
-    letterSpacing: 0.094px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.23
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-spacing:
-  elementGap: 20px
-  sectionGap: 150px
-components:
-  ghost-button:
-    role: Interactive element (e.g. navigation, menu toggles)
-  primary-filled-button:
-    role: Call to action
-  product-card:
-    role: Displaying product listings
-  circular-card:
-    role: Decorative or iconic element container
-  underlined-input-field:
-    role: Text input areas
+name: "Woven"
+description: "Woven's design system evokes a refined, artisanal mood with a predominantly monochrome palette punctuated by subtle, natural off-whites. Typography is compact and precise, often uppercase with generous tracking, conveying a sense of heritage and meticulous craftsmanship. Components are lightweight and border-focused, with minimal use of shadows, emphasizing content over heavy UI chrome. The overall effect is understated luxury, where visual tension is created through careful spacing and material contrast rather than bold color or complex graphics."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://wovenwhisky.com"
+refero_style_id: "76483bd1-37d3-4fb9-889b-aecf27b08b83"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518914675-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518914675-thumb.jpg"
+extracted_at: "2026-04-30T03:15:35.560Z"
 ---
 
-## Overview
+# Woven — Style Reference
 
-**North Star:** Artisanal parchment and charcoal calligraphy
+> Artisanal parchment and charcoal calligraphy
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Woven's design system evokes a refined, artisanal mood with a predominantly monochrome palette punctuated by subtle, natural off-whites. Typography is compact and precise, often uppercase with generous tracking, conveying a sense of heritage and meticulous craftsmanship. Components are lightweight and border-focused, with minimal use of shadows, emphasizing content over heavy UI chrome. The overall effect is understated luxury, where visual tension is created through careful spacing and material contrast rather than bold color or complex graphics.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Carbon | #232323 | `--color-carbon` | Primary text, dark backgrounds for inverted sections, hairline borders, default button fills, and iconic elements. Its deep, near-black tone establishes gravitas |
+| Parchment | #eeede5 | `--color-parchment` | Dominant page background, providing a warm, tactile canvas that contributes to the artisanal feel |
+| Porcelain | #ffffff | `--color-porcelain` | Card backgrounds, clean product display areas, and occasional link backgrounds, offering visual lift against the Parchment background |
+| Slate | #4a4a4a | `--color-slate` | Secondary text, subtle borders, and placeholder text, offering a softer alternative to Carbon for less critical information |
+
+## Tokens — Typography
+
+### Spezia Semi-Mono
+
+- **Token:** `--font-spezia-semi-mono`
+- **Substitute:** IBM Plex Mono
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px, 15px, 16px, 18px, 20px
+- **Line heights:** 1.20, 1.50, 1.63, 1.71, 2.40
+- **Letter spacing:** -0.063em at 12px, 0.094em at 14px, 0.121em at 15px, 0.167em at 16px
+- **Role:** Primary UI text for links, navigation, body copy, and headings, often set in uppercase. Its semi-monospace nature and generous letter-spacing create a distinct, structured voice.
+
+### Spezia
+
+- **Token:** `--font-spezia`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 16px, 20px, 24px, 32px
+- **Line heights:** 1.00, 1.13, 1.20, 1.23, 1.50, 1.63, 1.71, 2.40
+- **Letter spacing:** normal
+- **Role:** Used for prominent display headings and key brand messaging. Its proportional spacing provides a more traditional, impactful presence compared to the semi-mono variant.
+
+### Figtree
+
+- **Token:** `--font-figtree`
+- **Substitute:** Figtree
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px
+- **Line heights:** 1.63, 1.71
+- **Letter spacing:** normal
+- **Role:** Secondary text for buttons, navigation, and detailed list items. Its readability at small sizes complements the broader typographic choices, providing supporting information.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.63 | 0.063px | `--text-caption` |
+| body-sm | 14px | 1.63 | 0.094px | `--text-body-sm` |
+| heading-sm | 20px | 1.2 | — | `--text-heading-sm` |
+| heading | 24px | 1.23 | — | `--text-heading` |
+| display | 32px | 1.2 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-110 | 110px | `--spacing-110` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-210 | 210px | `--spacing-210` |
+| spacing-230 | 230px | `--spacing-230` |
+| spacing-300 | 300px | `--spacing-300` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+| circle | 50% |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 150px |
+| cardPadding | 26px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Interactive element (e.g. navigation, menu toggles)
+
+Transparent background, Carbon text color. Used for subtle interactions like menu buttons and secondary actions. No padding beyond content.
+
+### Primary Filled Button
+
+**Role:** Call to action
+
+Carbon background, Porcelain text color. No border radius. Padding: 15px top, 40px right, 17px bottom, 40px left. Used for primary actions like 'Checkout'.
+
+### Product Card
+
+**Role:** Displaying product listings
+
+Porcelain background, 0px border-radius, no box-shadow. Padding 26px on all sides. Used for displaying items like whisky bottles.
+
+### Circular Card
+
+**Role:** Decorative or iconic element container
+
+Porcelain background, 50% border-radius (circle), no box-shadow. No padding. Used for purely aesthetic container needs.
+
+### Underlined Input Field
+
+**Role:** Text input areas
+
+Transparent background, Carbon text color, bottom border of Carbon. No border-radius. Padding: 10px top/bottom, 0px left/right. Serves as a direct input for forms.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Parchment (#eeede5) as the default background for most page sections.
 - Employ Carbon (#232323) for primary headings and body text, maintaining high contrast against light backgrounds.
@@ -62,7 +160,7 @@ Woven's design system evokes a refined, artisanal mood with a predominantly mono
 - Design interactive elements, especially navigation, as ghost buttons with transparent backgrounds and Carbon text, for an understated interface.
 - Use 'Spezia' with normal letter spacing for large, impactful headlines to create visual differentiation from the monospaced UI text.
 
-### Don'ts
+### Don't
 
 - Avoid strong, saturated colors; limit the palette to the established neutrals to preserve the brand's understated elegance.
 - Do not use box-shadows or heavy elevation for cards or main UI elements; surfaces should appear flat or with subtle border delineations.
@@ -71,10 +169,130 @@ Woven's design system evokes a refined, artisanal mood with a predominantly mono
 - Avoid dense, information-heavy blocks of text; break content into manageable sections with ample negative space.
 - Do not add unnecessary padding to ghost buttons; they should remain lightweight and borderless without internal spacing.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Parchment Canvas | #eeede5 | Dominant background for the entire page, providing a foundational warm neutral tone. |
+| 2 | Porcelain Card | #ffffff | Elevated background for content blocks, product cards, or modals, offering clean contrast. |
+
+## Imagery
+
+This design system uses product photography as its primary visual language. Imagery consists mainly of tightly cropped, minimalist product shots (whisky bottles) on pure white or light grey backgrounds. These are contained within defined boundaries without overlapping, often serving as the central focus of a section or within a grid. There are no lifestyle shots, abstract graphics, or 3D renders. Icons are minimal, outlined, and monochromatic (Carbon), serving purely functional roles like navigation or shopping cart indicators. Imagery dense, with products occupying significant visual space in relation to accompanying text, acting as explanatory content and product showcase.
+
+## Layout
 
 The page primarily uses a full-bleed layout for background elements, with content contained centrally within an implicit maximum width, visible particularly in the product grids. The hero section often features a centered headline over a background that shifts between the dominant neutrals. Section rhythm is created through alternating Parchment and Porcelain backgrounds, but also through consistent vertical spacing (150px section gap) rather than explicit dividers. Content is arranged in alternating two-column layouts (text left, image right) or centered stacks for headlines and subtext. Product listings appear in responsive card grids. Navigation is a minimalistic top bar with a hamburger menu icon, suggesting a focus on content exploration rather than complex hierarchical navigation.
 
-### Imagery
+## Similar Brands
 
-This design system uses product photography as its primary visual language. Imagery consists mainly of tightly cropped, minimalist product shots (whisky bottles) on pure white or light grey backgrounds. These are contained within defined boundaries without overlapping, often serving as the central focus of a section or within a grid. There are no lifestyle shots, abstract graphics, or 3D renders. Icons are minimal, outlined, and monochromatic (Carbon), serving purely functional roles like navigation or shopping cart indicators. Imagery dense, with products occupying significant visual space in relation to accompanying text, acting as explanatory content and product showcase.
+- **Aēsop** — Shares a monochromatic, minimalist aesthetic with an emphasis on typography and natural, muted tones.
+- **Allbirds** — Uses subtle earth tones, clean layouts, and functional, understated UI elements to convey quality and simplicity.
+- **Great Jones** — Employs classic typography, a restrained color palette, and elegant spacing to create a high-end feel for household goods.
+- **Everlane** — Features a strong focus on minimalist layouts, clear product photography, and a neutral color scheme for an ethical luxury feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-carbon: #232323;
+  --color-parchment: #eeede5;
+  --color-porcelain: #ffffff;
+  --color-slate: #4a4a4a;
+  --font-spezia-semi-mono: 'Spezia Semi-Mono', IBM Plex Mono;
+  --font-spezia: 'Spezia', Inter;
+  --font-figtree: 'Figtree', Figtree;
+  --text-caption: 12px;
+  --leading-caption: 1.63;
+  --tracking-caption: 0.063px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.63;
+  --tracking-body-sm: 0.094px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.23;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --spacing-110: 110px;
+  --spacing-120: 120px;
+  --spacing-150: 150px;
+  --spacing-210: 210px;
+  --spacing-230: 230px;
+  --spacing-300: 300px;
+  --radius-none: 0px;
+  --radius-circle: 50%;
+  --surface-parchment-canvas: #eeede5;
+  --surface-porcelain-card: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-carbon: #232323;
+  --color-parchment: #eeede5;
+  --color-porcelain: #ffffff;
+  --color-slate: #4a4a4a;
+  --font-spezia-semi-mono: 'Spezia Semi-Mono', IBM Plex Mono;
+  --font-spezia: 'Spezia', Inter;
+  --font-figtree: 'Figtree', Figtree;
+  --text-caption: 12px;
+  --leading-caption: 1.63;
+  --tracking-caption: 0.063px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.63;
+  --tracking-body-sm: 0.094px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.23;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --spacing-110: 110px;
+  --spacing-120: 120px;
+  --spacing-150: 150px;
+  --spacing-210: 210px;
+  --spacing-230: 230px;
+  --spacing-300: 300px;
+  --radius-none: 0px;
+  --radius-circle: 50%;
+  --surface-parchment-canvas: #eeede5;
+  --surface-porcelain-card: #ffffff;
+}
+```

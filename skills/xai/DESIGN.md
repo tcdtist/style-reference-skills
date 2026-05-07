@@ -1,76 +1,156 @@
 ---
 version: alpha
-name: xAI
-description: xAI employs a darkened cosmic canvas aesthetic: deep black backgrounds, muted grays for surfaces, and sharp white typography for contrast. A single, vivid blue accent is reserved for interactive input states, creating a focal point against the otherwise reserved palette. Components are lightweight with minimal borders and generous radius for buttons, aiming for a sense of contained energy rather than heavy presence.
-colors:
-  deep-midnight: "#0c0c0b"
-  faded-steel: "#1f2228"
-  frost-white: "#ffffff"
-  muted-ash: "#7d8187"
-  whisper-gray: "#474747"
-  electric-blue: "#2563eb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 2
-    letterSpacing: 0.1px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: 0.1px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.025px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-    letterSpacing: -0.025px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-    letterSpacing: -0.025px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.11
-    letterSpacing: -0.025px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1
-    letterSpacing: -0.025px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 12px
-  sectionGap: 48px
-components:
-  ghost-primary-button:
-    role: Primary action button with transparent background.
-  filled-secondary-button:
-    role: Secondary action button for explicit actions.
-  navigation-link:
-    role: Top navigation and footer navigation links.
-  interactive-text-input:
-    role: Text input field for user queries.
-  callout-card:
-    role: Section for product features or announcements.
-  badge-neutral:
-    role: Informational tags and date indicators.
+name: "xAI"
+description: "xAI employs a darkened cosmic canvas aesthetic: deep black backgrounds, muted grays for surfaces, and sharp white typography for contrast. A single, vivid blue accent is reserved for interactive input states, creating a focal point against the otherwise reserved palette. Components are lightweight with minimal borders and generous radius for buttons, aiming for a sense of contained energy rather than heavy presence."
+theme: "dark"
+industry: "ai"
+source_url: "https://x.ai"
+refero_style_id: "3b83dfe4-2f53-4a4d-819d-e6045ca5f7dc"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777502738951-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777502738951-thumb.jpg"
+extracted_at: "2026-04-29T22:46:03.469Z"
 ---
 
-## Overview
+# xAI — Style Reference
 
-**North Star:** Midnight Command Center: A dark, responsive interface with precise typographic hierarchy and subtle interactive cues.
+> Midnight Command Center: A dark, responsive interface with precise typographic hierarchy and subtle interactive cues.
+
+**Theme:** dark
+
+**Industry:** ai
 
 xAI employs a darkened cosmic canvas aesthetic: deep black backgrounds, muted grays for surfaces, and sharp white typography for contrast. A single, vivid blue accent is reserved for interactive input states, creating a focal point against the otherwise reserved palette. Components are lightweight with minimal borders and generous radius for buttons, aiming for a sense of contained energy rather than heavy presence.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Midnight | #0c0c0b | `--color-deep-midnight` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Faded Steel | #1f2228 | `--color-faded-steel` | Secondary background, subtle borders for ghost buttons and card outlines. Its slight tint keeps it from being pure black |
+| Frost White | #ffffff | `--color-frost-white` | Primary text, interactive element text, button backgrounds, and subtle highlight shadows. Provides high contrast on dark surfaces |
+| Muted Ash | #7d8187 | `--color-muted-ash` | Secondary text for badges, navigation, and body copy. Offers readability without high contrast; Decorative footer background effect, transitioning from dark with subtle color to full black |
+| Whisper Gray | #474747 | `--color-whisper-gray` | Subtle button and navigation borders, creating a very soft outline |
+| Electric Blue | #2563eb | `--color-electric-blue` | Violet state accent for badges, validation surfaces, and short status labels. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### universalSans
+
+- **Token:** `--font-universalsans`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 16px, 20px, 36px, 48px, 80px
+- **Line heights:** 1.00, 1.11, 1.20, 1.40, 1.50
+- **Letter spacing:** -0.0250em
+- **Role:** Primary text for headings, body, navigation, and interactive elements. Its specific negative letter spacing gives titles a distinct, compact feel.
+
+### GeistMono
+
+- **Token:** `--font-geistmono`
+- **Substitute:** Space Mono
+- **Weights:** 400
+- **Sizes:** 12px, 14px
+- **Line heights:** 1.33, 1.43, 2.00
+- **Letter spacing:** 0.1000em
+- **Role:** Monospaced font for badges and occasional navigation elements. The explicit positive letter spacing creates a technical, spaced-out effect, contrasting with Universal Sans.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 2 | 0.1px | `--text-caption` |
+| body-sm | 14px | 1.43 | 0.1px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.025px | `--text-body` |
+| subheading | 20px | 1.4 | -0.025px | `--text-subheading` |
+| heading | 36px | 1.2 | -0.025px | `--text-heading` |
+| heading-lg | 48px | 1.11 | -0.025px | `--text-heading-lg` |
+| display | 80px | 1 | -0.025px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-49 | 49px | `--spacing-49` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-73 | 73px | `--spacing-73` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| inputs | 24px |
+| buttons | 9999px |
+| calloutCards | 0px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(113, 113, 122) 0px 0px 0px 2px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 16px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Primary Button
+
+**Role:** Primary action button with transparent background.
+
+Background: rgba(0, 0, 0, 0), Text color: #ffffff, Border: 1px solid rgba(255, 255, 255, 0.25), Radius: 9999px, Padding: 8px vertical, 16px horizontal. Text uses universalSans-400.
+
+### Filled Secondary Button
+
+**Role:** Secondary action button for explicit actions.
+
+Background: #ffffff, Text color: #0a0a0a, Border: none, Radius: 9999px, Padding: 4px vertical, 12px horizontal. Text uses universalSans-400.
+
+### Navigation Link
+
+**Role:** Top navigation and footer navigation links.
+
+Background: rgba(0, 0, 0, 0), Text color: #ffffff, Border: none by default, Padding: 6px vertical. Text uses universalSans-400.
+
+### Interactive Text Input
+
+**Role:** Text input field for user queries.
+
+Background: #0c0c0b, Text color: #ffffff, Border: 1px solid #1f2228, Radius: 24px, Padding: 20px vertical, 16px left, 64px right. Focus ring: #2563eb 0px 0px 0px 2px.
+
+### Callout Card
+
+**Role:** Section for product features or announcements.
+
+Background: #0c0c0b, Border: 1px solid #1f2228, Radius: 0px, Padding: variable, often includes 16px internal padding. Text is #ffffff with smaller details in #7d8187.
+
+### Badge Neutral
+
+**Role:** Informational tags and date indicators.
+
+Background: rgba(0, 0, 0, 0), Text color: #7d8187, Radius: 0px, Padding: 0px. Text uses GeistMono-400.
+
+## Do's and Don'ts
+
+### Do
 
 - Retain the dominant dark theme using Deep Midnight (#0c0c0b) as the canvas and Faded Steel (#1f2228) for secondary surfaces.
 - Use Frost White (#ffffff) for all primary text, ensuring high contrast on dark backgrounds.
@@ -80,7 +160,7 @@ xAI employs a darkened cosmic canvas aesthetic: deep black backgrounds, muted gr
 - Set internal padding for feature cards at 16px to create consistent breathing room for content.
 - Utilize GeistMono with 0.1000em letter spacing for all badges and auxiliary labels to establish a technical, distinct text style.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional saturated colors; maintain the restricted palette with Electric Blue as the only vivid accent.
 - Do not use heavy box-shadows or significant elevation; prefer subtle borders and slight background shifts for surface differentiation.
@@ -90,10 +170,147 @@ xAI employs a darkened cosmic canvas aesthetic: deep black backgrounds, muted gr
 - Do not vary paragraph line heights or font weights frequently within body text; maintain the universalSans-400, 1.5 lineHeight standard.
 - Avoid dense, unbroken blocks of text; break content into manageable sections with clear headings and ample vertical spacing of at least 48px between major sections.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Deep Midnight Canvas | #0c0c0b | Primary page background, foundation of the dark theme. |
+| 1 | Faded Steel Surface | #1f2228 | Used for card backgrounds, input borders, and other mid-level UI elements to provide subtle separation from the canvas. |
+| 2 | Frost White Overlay | #ffffff | Rarely used as a background, primarily for filled buttons, indicating a high-contrast interactive element. |
+
+## Elevation
+
+- **Interactive Text Input Focus:** `rgb(113, 113, 122) 0px 0px 0px 2px`
+
+## Imagery
+
+This design system uses minimal, abstract, and technical-leaning graphics. Photography is absent. Illustrations are primarily line-based or monochromatic, often appearing as subtle background elements or within product cards (e.g., outline of a laptop). Icons are sparse, simple, and monochrome, usually Frost White (#ffffff) or Muted Ash (#7d8187), and function as functional cues rather than decorative elements. The overall density is text-dominant, with graphics serving a supporting, explanatory role, and sometimes featuring a diffuse, luminous glow effect in hero sections.
+
+## Layout
 
 The page uses a max-width contained layout for most content, although the hero section appears full-bleed or extends wider. The main hero pattern features a centered, oversized headline over a dark, subtly glowing background. Sections are typically stacked vertically with consistent 48px vertical spacing. Content is arranged in a text-dominant manner, often using two-column layouts for features or product descriptions, or 3-column grids for cards. The navigation is a sticky top bar with left-aligned branding and right-aligned actions, featuring ghost buttons. The density is comfortable, with ample whitespace and clear section breaks.
 
-### Imagery
+## Similar Brands
 
-This design system uses minimal, abstract, and technical-leaning graphics. Photography is absent. Illustrations are primarily line-based or monochromatic, often appearing as subtle background elements or within product cards (e.g., outline of a laptop). Icons are sparse, simple, and monochrome, usually Frost White (#ffffff) or Muted Ash (#7d8187), and function as functional cues rather than decorative elements. The overall density is text-dominant, with graphics serving a supporting, explanatory role, and sometimes featuring a diffuse, luminous glow effect in hero sections.
+- **OpenAI** — Similar dark, modern aesthetic with a focus on AI technology, precise typography, and a restrained color palette.
+- **Linear** — Employs a dark mode first approach with crisp typography, subtle elevation, and a functional yet minimal design language around productivity tools.
+- **Apple Developer Documentation** — Clean, highly functional dark interface with clear typographic hierarchy and minimal decorative elements, prioritizing content and usability.
+- **Vercel** — Known for a developer-focused, dark interface, utilizing strong typographic contrast and a sparse interaction model.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-midnight: #0c0c0b;
+  --color-faded-steel: #1f2228;
+  --color-frost-white: #ffffff;
+  --color-muted-ash: #7d8187;
+  --color-whisper-gray: #474747;
+  --color-electric-blue: #2563eb;
+  --font-universalsans: 'universalSans', Inter;
+  --font-geistmono: 'GeistMono', Space Mono;
+  --text-caption: 12px;
+  --leading-caption: 2;
+  --tracking-caption: 0.1px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: 0.1px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.025px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.025px;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -0.025px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-49: 49px;
+  --spacing-64: 64px;
+  --spacing-73: 73px;
+  --spacing-128: 128px;
+  --radius-inputs: 24px;
+  --radius-buttons: 9999px;
+  --radius-calloutcards: 0px;
+  --shadow-xl: rgb(113, 113, 122) 0px 0px 0px 2px;
+  --surface-deep-midnight-canvas: #0c0c0b;
+  --surface-faded-steel-surface: #1f2228;
+  --surface-frost-white-overlay: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-midnight: #0c0c0b;
+  --color-faded-steel: #1f2228;
+  --color-frost-white: #ffffff;
+  --color-muted-ash: #7d8187;
+  --color-whisper-gray: #474747;
+  --color-electric-blue: #2563eb;
+  --font-universalsans: 'universalSans', Inter;
+  --font-geistmono: 'GeistMono', Space Mono;
+  --text-caption: 12px;
+  --leading-caption: 2;
+  --tracking-caption: 0.1px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: 0.1px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.025px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.025px;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -0.025px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-49: 49px;
+  --spacing-64: 64px;
+  --spacing-73: 73px;
+  --spacing-128: 128px;
+  --radius-inputs: 24px;
+  --radius-buttons: 9999px;
+  --radius-calloutcards: 0px;
+  --shadow-xl: rgb(113, 113, 122) 0px 0px 0px 2px;
+  --surface-deep-midnight-canvas: #0c0c0b;
+  --surface-faded-steel-surface: #1f2228;
+  --surface-frost-white-overlay: #ffffff;
+}
+```
