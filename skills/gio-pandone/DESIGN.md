@@ -1,34 +1,108 @@
 ---
 version: alpha
-name: Gio Pandone
-description: Gio Pandone's visual system evokes the precision of an architectural blueprint: a monochrome canvas defined by stark black and white contrasts. Typography is restrained and functional, serving to organize content with clear hierarchy rather than decorative flourishes. The design relies on generous white space and a strict grid to convey order and professionalism, with color introduced sparingly for active states or specific brand elements rather than broad application. Components are minimal, focusing on content delivery without heavy ornamentation.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-  amber-red: "#ff4600"
-  muted-ash: "#4d4d4d"
-spacing:
-  elementGap: 16px
-components:
-  ghost-header-link:
-    role: Navigation links
-  horizontal-divider:
-    role: Visual separation
-  work-showcase-block:
-    role: Highlighting portfolio items
-  info-meta-text:
-    role: Descriptive and secondary information
-  copyright-footer-text:
-    role: Legal and copyright information
+name: "Gio Pandone"
+description: "Gio Pandone's visual system evokes the precision of an architectural blueprint: a monochrome canvas defined by stark black and white contrasts. Typography is restrained and functional, serving to organize content with clear hierarchy rather than decorative flourishes. The design relies on generous white space and a strict grid to convey order and professionalism, with color introduced sparingly for active states or specific brand elements rather than broad application. Components are minimal, focusing on content delivery without heavy ornamentation."
+theme: "light"
+industry: "design"
+source_url: "https://www.giopandone.com"
+refero_style_id: "eba58fb4-955d-40b7-ac11-76c74caf2a53"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518595095-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518595095-thumb.jpg"
+extracted_at: "2026-04-30T03:10:15.797Z"
 ---
 
-## Overview
+# Gio Pandone — Style Reference
 
-**North Star:** Architectural blueprint on white marble
+> Architectural blueprint on white marble
+
+**Theme:** light
+
+**Industry:** design
 
 Gio Pandone's visual system evokes the precision of an architectural blueprint: a monochrome canvas defined by stark black and white contrasts. Typography is restrained and functional, serving to organize content with clear hierarchy rather than decorative flourishes. The design relies on generous white space and a strict grid to convey order and professionalism, with color introduced sparingly for active states or specific brand elements rather than broad application. Components are minimal, focusing on content delivery without heavy ornamentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, and primary text for dark backgrounds |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary body text, headings, borders, and UI accents on a light background. Defines content and structure |
+| Amber Red | #ff4600 | `--color-amber-red` | Decorative highlights, background for distinct informational blocks or showcase elements |
+| Muted Ash | #4d4d4d | `--color-muted-ash` | Secondary text, subtle dividers, or background elements where a softer contrast than black is desired |
+
+## Tokens — Typography
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.63
+- **Role:** Primary font for all text elements. Its system-default nature reinforces a focus on clarity and content over stylistic typography. Used for headings, body text, and links.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-225 | 225px | `--spacing-225` |
+| spacing-287 | 287px | `--spacing-287` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Header Link
+
+**Role:** Navigation links
+
+Text rendered in Midnight Ink (#000000) on Canvas White (#ffffff) background, 12px Arial, weight 400. No borders or padding, relying on generous letter-spacing and surrounding whitespace for distinction.
+
+### Horizontal Divider
+
+**Role:** Visual separation
+
+A hairline border of Midnight Ink (#000000) used to segment content horizontally, breaking the layout into distinct functional areas. Height of 1px.
+
+### Work Showcase Block
+
+**Role:** Highlighting portfolio items
+
+A rectangular block with a solid Amber Red (#ff4600) background, containing a centered headline in Canvas White (#ffffff). Occupies significant horizontal space to draw attention. No border radius.
+
+### Info / Meta Text
+
+**Role:** Descriptive and secondary information
+
+Text uses Muted Ash (#4d4d4d) for a softer presence than primary text, typically at 12px Arial. Used for descriptions or contextual details, providing readability without competing with main content.
+
+### Copyright Footer Text
+
+**Role:** Legal and copyright information
+
+Small 12px Arial text in Midnight Ink (#000000) for copyright notices, positioned at the bottom of the page, acting as a subtle anchor for the page content.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#ffffff) as the default background for all page sections and content blocks.
 - Apply Midnight Ink (#000000) for all primary text, headings, and outlines of interactive elements.
@@ -38,7 +112,7 @@ Gio Pandone's visual system evokes the precision of an architectural blueprint: 
 - Use Amber Red (#ff4600) strictly for accent backgrounds or highlight blocks, never for text or borders.
 - Ensure generous padding around text and elements, using 16px as a base for internal component spacing.
 
-### Don'ts
+### Don't
 
 - Avoid using any border-radius; all corners should be sharp and angular, maintaining a strict, architectural aesthetic.
 - Do not introduce additional font families or weights beyond Arial 400; maintain typographic minimalism.
@@ -48,10 +122,59 @@ Gio Pandone's visual system evokes the precision of an architectural blueprint: 
 - Do not use gradients; all color applications should be solid and flat.
 - Avoid overlapping elements; maintain clear separation and distinct boundaries between all components.
 
-### Layout
+## Imagery
+
+The site's visual language is characterized by an absence of photography or complex illustrations. Instead, it relies on minimalist, geometric blocks of solid color (Amber Red) to highlight project examples. Iconography uses simple, single-stroke outlines if present. The focus is entirely on typography and structured layout, treating content presentation as a purely functional UI exercise rather than relying on rich visuals for atmosphere or explanation. Density is image-scant, heavily skewed towards text and negative space.
+
+## Layout
 
 The page maintains a full-bleed layout horizontally, but content is subtly contained within an implied maximum width. The hero section is sparse and text-dominant. The overall section rhythm is defined by a central horizontal dividend line and very large vertical section gaps (287px) between content blocks. Content is primarily arranged in large, isolated logical blocks, often with a clear left-aligned or centered stack, and occasionally a two-column structure (e.g., text beside a solid color block). There are no grid systems for features or cards, prioritizing individual content blocks. Navigation is a minimal, top-right header with text links. The dominant layout pattern is extreme white space and stark divisions.
 
-### Imagery
+## Similar Brands
 
-The site's visual language is characterized by an absence of photography or complex illustrations. Instead, it relies on minimalist, geometric blocks of solid color (Amber Red) to highlight project examples. Iconography uses simple, single-stroke outlines if present. The focus is entirely on typography and structured layout, treating content presentation as a purely functional UI exercise rather than relying on rich visuals for atmosphere or explanation. Density is image-scant, heavily skewed towards text and negative space.
+- **Contra** — Monochrome palette with stark black and white contrasts, strong grid usage, and minimalist typography.
+- **Read.cv** — Focus on content and typography with minimal decorative elements, high contrast, and subtle use of accent color for highlights.
+- **Basic Sans** — Strict typographic hierarchy, ample negative space, and a deliberate absence of imagery, with focus on type as primary visual element.
+- **Manual of Style** — Editorial, content-first layout, with clear divisions, high contrast typography, and an overall stripped-back aesthetic.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-amber-red: #ff4600;
+  --color-muted-ash: #4d4d4d;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-225: 225px;
+  --spacing-287: 287px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-amber-red: #ff4600;
+  --color-muted-ash: #4d4d4d;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-225: 225px;
+  --spacing-287: 287px;
+  --radius-none: 0px;
+}
+```

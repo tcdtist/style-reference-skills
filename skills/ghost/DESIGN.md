@@ -1,90 +1,201 @@
 ---
 version: alpha
-name: Ghost
-description: This design system grounds a clean, light interface with judicious dark elements, creating a sense of professional authority. A stark contrast between near-black text and a bright white background establishes immediate readability, while subtle, desaturated grays provide tiered information. The vivid lime green is reserved for primary calls to action, standing out against the neutral palette like a beacon. The interplay of sharp, functional typography with soft, rounded elements, especially in buttons, creates a balanced, approachable feel without sacrificing precision.
-colors:
-  white-canvas: "#ffffff"
-  midnight-ink: "#000000"
-  carbon-black: "#15171a"
-  slate-blue: "#94a3b8"
-  graphite: "#334155"
-  ash-gray: "#e5e7eb"
-  light-steel: "#cbd5e1"
-  dark-steel: "#112220"
-  ghost-gray: "#0f172a"
-  ghost-border: "#1f2937"
-  vivid-lime: "#d1ff19"
-  muted-lime: "#bef264"
-  forest-green: "#1a2e05"
-  sky-blue: "#1bb6eb"
-  neon-pink: "#f8b1e2"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -0.48px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 0.9
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 0.9
-spacing:
-  cardRadius: 8px
-  buttonRadius: 24px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  informational-badge-hero-cta:
-    role: 
-  dashboard-stat-block:
-    role: 
-  revenue-stat-banner:
-    role: 
-  primary-call-to-action-button:
-    role: Main interactive element
-  secondary-outline-button:
-    role: Subtle interactive element
-  solid-dark-button:
-    role: Tertiary action, often within dark contexts
-  sky-blue-pill-button:
-    role: Prominent secondary action for specific features
-  informational-badge:
-    role: Contextual labels or status indicators
-  feature-card:
-    role: Content container for features or services
-  navigation-link:
-    role: Primary site navigation
-  dashboard-ui-panel:
-    role: Embedded complex interface element
+name: "Ghost"
+description: "This design system grounds a clean, light interface with judicious dark elements, creating a sense of professional authority. A stark contrast between near-black text and a bright white background establishes immediate readability, while subtle, desaturated grays provide tiered information. The vivid lime green is reserved for primary calls to action, standing out against the neutral palette like a beacon. The interplay of sharp, functional typography with soft, rounded elements, especially in buttons, creates a balanced, approachable feel without sacrificing precision."
+theme: "light"
+industry: "saas"
+source_url: "https://ghost.org"
+refero_style_id: "532b3211-cca9-4207-a11c-812cfabc1a73"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924729065-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924729065-thumb.jpg"
+extracted_at: "2026-04-11T16:25:55.341Z"
 ---
 
-## Overview
+# Ghost — Style Reference
 
-**North Star:** Crisp Blueprint on White Canvas. Black text etched onto a pristine white background, punctuated by a vibrant lime green flourish.
+> Crisp Blueprint on White Canvas. Black text etched onto a pristine white background, punctuated by a vibrant lime green flourish.
+
+**Theme:** light
+
+**Industry:** saas
 
 This design system grounds a clean, light interface with judicious dark elements, creating a sense of professional authority. A stark contrast between near-black text and a bright white background establishes immediate readability, while subtle, desaturated grays provide tiered information. The vivid lime green is reserved for primary calls to action, standing out against the neutral palette like a beacon. The interplay of sharp, functional typography with soft, rounded elements, especially in buttons, creates a balanced, approachable feel without sacrificing precision.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| White Canvas | #ffffff | `--color-white-canvas` | Page backgrounds, card surfaces, pristine backdrops for content. |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text across light backgrounds, creating strong contrast for headlines and body content. |
+| Carbon Black | #15171a | `--color-carbon-black` | Background for deeply embedded components, like the main UI elements shown in the dashboard example, acting as a secondary, darker surface. |
+| Slate Blue | #94a3b8 | `--color-slate-blue` | Secondary text, link hovers, subtle borders, and placeholder text, providing visual hierarchy without harshness. |
+| Graphite | #334155 | `--color-graphite` | Tertiary text, less prominent UI elements, and occasional darker backgrounds for specific content blocks. |
+| Ash Gray | #e5e7eb | `--color-ash-gray` | Subtle borders, dividers, subtle button backgrounds, and UI element outlines, providing structure without distraction. |
+| Light Steel | #cbd5e1 | `--color-light-steel` | Iconography and less prominent textual elements, contributing to the system's light aesthetic. |
+| Dark Steel | #112220 | `--color-dark-steel` | Prominent headings and critical interface labels within darker sections, almost black but with a very subtle green undertone. |
+| Ghost Gray | #0f172a | `--color-ghost-gray` | Darker component backgrounds, especially in the featured UI example, providing depth to the otherwise light theme. |
+| Ghost Border | #1f2937 | `--color-ghost-border` | Darker borders and separators, primarily used within the embedded dark UI, providing definition to interactive elements. |
+| Vivid Lime | #d1ff19 | `--color-vivid-lime` | Primary call-to-action buttons and key interactive elements, drawing immediate attention with its high contrast. |
+| Muted Lime | #bef264 | `--color-muted-lime` | Subtle hover states or secondary interactive elements, a softer tone of the brand's primary accent. |
+| Forest Green | #1a2e05 | `--color-forest-green` | Background for secondary action buttons, providing a more subdued but still on-brand interactive element. |
+| Sky Blue | #1bb6eb | `--color-sky-blue` | Accent color for specific interactive components, like the 'Get Started — free' secondary button, offering a crisp alternative to lime. |
+| Neon Pink | #f8b1e2 | `--color-neon-pink` | Decorative elements or indicators within the embedded dark UI, providing a vibrant, almost electric pop against dark backgrounds. |
+
+## Tokens — Typography
+
+### InterVariable
+
+- **Token:** `--font-intervariable`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 12px, 14px, 15px
+- **Line heights:** 1.25, 1.50
+- **Letter spacing:** normal
+- **OpenType features:** "calt", "cv10", "cv11", "liga", "ss01", "ss03"
+- **Role:** Body copy, button labels, navigation links, and descriptive text. Its versatility ensures readability across various functional elements.
+
+### InterDisplay
+
+- **Token:** `--font-interdisplay`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 15px, 18px, 20px, 24px, 36px, 48px, 72px, 96px
+- **Line heights:** 0.90, 1.00, 1.15, 1.25, 1.35, 1.50
+- **Letter spacing:** -0.025em at 48px to 0.100em at 12px
+- **OpenType features:** "calt", "cv10", "cv11", "liga", "ss01", "ss03"
+- **Role:** Headlines, section titles, and prominent calls-to-action. The tighter line height and varied letter spacing create a precise, impactful display type. The range of weights allows for a nuanced hierarchy, from assertive headings to more understated but still prominent display text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 14px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.25 | — | `--text-subheading` |
+| heading | 24px | 1.25 | — | `--text-heading` |
+| heading-lg | 36px | 1.15 | — | `--text-heading-lg` |
+| display | 48px | 1 | -0.48px | `--text-display` |
+| display-lg | 72px | 0.9 | — | `--text-display-lg` |
+| display-xl | 96px | 0.9 | — | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-126 | 126px | `--spacing-126` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| cards | 8px |
+| input | 6px |
+| buttons | 24px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px | `--shadow-xl-3` |
+| xl-4 | rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px | `--shadow-xl-4` |
+| xl-5 | rgba(0, 0, 0, 0.25) 0px 25px 50px -12px | `--shadow-xl-5` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 64px |
+| cardPadding | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Informational Badge + Hero CTA
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Dashboard Stat Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Revenue Stat Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Call-to-action Button
+
+**Role:** Main interactive element
+
+Filled with Forest Green (#1a2e05), text in Muted Lime (#bef264), 8px border-radius, 8px vertical padding, 16px horizontal padding. Delivers a bold, on-brand interactive experience.
+
+### Secondary Outline Button
+
+**Role:** Subtle interactive element
+
+Transparent background, text in #4d4d4d, 6px border-radius, 0px vertical and horizontal padding. Used for less prominent calls to action or navigation. Subtle shadows indicate interactability.
+
+### Solid Dark Button
+
+**Role:** Tertiary action, often within dark contexts
+
+Filled with Carbon Black (#15171a), text in White Canvas (#ffffff), 6px border-radius, 8px vertical padding, 16px horizontal padding. Provides a clear action point on lighter backgrounds.
+
+### Sky Blue Pill Button
+
+**Role:** Prominent secondary action for specific features
+
+Filled with Sky Blue (#1bb6eb), text in Midnight Ink (#000000), 24px border-radius, 12px vertical and horizontal padding. Its distinct color and shape highlight special offers or actions.
+
+### Informational Badge
+
+**Role:** Contextual labels or status indicators
+
+Pill-shaped with a 9999px border-radius. Example: 'Just launched: Ghost 6.0 →' badge with Vivid Lime (#d1ff19) background and Midnight Ink (#000000) text, 8px padding.
+
+### Feature Card
+
+**Role:** Content container for features or services
+
+White Canvas (#ffffff) background, 8px border-radius, subtle shadow rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, 24px internal padding. Contains images, headlines, and body text.
+
+### Navigation Link
+
+**Role:** Primary site navigation
+
+Midnight Ink (#000000) text (InterVariable, weight 400, 15px), 0px padding, no background. Hover states are implied to change text color to Slate Blue (#94a3b8) or similar subtle shift.
+
+### Dashboard UI Panel
+
+**Role:** Embedded complex interface element
+
+Ghost Gray (#0f172a) background, with Ghost Border (#1f2937) for internal divisions. Text in Midnight Ink or appropriate neutrals. Features intricate data visualization and functional navigation within.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Ink (#000000) for all primary body and headline text on White Canvas (#ffffff) backgrounds to ensure maximum contrast (21.0:1 AAA).
 - Apply Vivid Lime (#d1ff19) exclusively for primary calls-to-action and key indicators, reserving its high visual impact.
@@ -93,7 +204,7 @@ This design system grounds a clean, light interface with judicious dark elements
 - Ensure a minimum vertical spacing of 24px between content blocks and 16px for element gaps to maintain a comfortable density.
 - Employ the rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px shadow for interactive cards and buttons to provide subtle depth.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated colors for large areas or non-interactive elements; colors beyond the defined brand/accent palette will appear off-brand.
 - Avoid deviating from the defined InterVariable and InterDisplay font families; no other fonts should be introduced.
@@ -102,10 +213,160 @@ This design system grounds a clean, light interface with judicious dark elements
 - Do not use generic gray values; always refer to the specific neutral palette (Slate Blue, Graphite, Ash Gray, Light Steel, Dark Steel, Ghost Gray) to maintain subtle chromatic tint and consistency.
 - Do not use a line height greater than 1.5 for any text block, as this design favors a compact, focused presentation.
 
-### Layout
+## Elevation
+
+- **Card/Button subtle shadow:** `rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px`
+- **Medium elevation (e.g., dropdowns, tooltips):** `rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px`
+- **Hover/Active element elevation:** `rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px`
+- **Modal/Prominent Overlay:** `rgba(0, 0, 0, 0.25) 0px 25px 50px -12px`
+
+## Imagery
+
+The visual language focuses on clear product demonstration, particularly through embedded UI screenshots. There are no lifestyle photos; instead, the site uses tight, contained screenshots of its own interface (like the dashboard) to directly showcase functionality. These are presented with sharp, unmasked edges. Additionally, there are branded icons from popular integrations, rendered as contained white squares with rounded corners, providing a sense of seamless connectivity. Imagery is functional and explanatory rather than decorative, occupying significant visual space to underscore product capability, but always within a structured layout.
+
+## Layout
 
 The site uses a max-width contained layout, typically centered around 1200px. The hero section is a full-width presentation with a prominent, large headline in Midnight Ink against a White Canvas background, flanked by a smaller, informational badge. Directly below the hero is a large, dark-themed screenshot of the product's dashboard UI, contrasting sharply with the light page background, effectively showcasing the product. Subsequent sections follow a clean, structured pattern, alternating between full-width content blocks and more contained sections, often using a single-column stack for text information, creating a clear and focused content flow. The navigation is a fixed top bar with simple text links and a distinct 'Get Started' button.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on clear product demonstration, particularly through embedded UI screenshots. There are no lifestyle photos; instead, the site uses tight, contained screenshots of its own interface (like the dashboard) to directly showcase functionality. These are presented with sharp, unmasked edges. Additionally, there are branded icons from popular integrations, rendered as contained white squares with rounded corners, providing a sense of seamless connectivity. Imagery is functional and explanatory rather than decorative, occupying significant visual space to underscore product capability, but always within a structured layout.
+- **Stripe** — Shares a clean, high-contrast light UI with a strong focus on typography and subtle use of brand colors for interactive elements.
+- **Linear** — Exhibits a similar approach to integrated dark UI elements (like a dashboard) within a predominantly light-themed page, maintaining clarity and function.
+- **Notion** — Employs an extensive system of neutrals for hierarchy and a very limited palette of accent colors for key actions, paired with sharp, functional typography.
+- **Vercel** — Features a light, spacious layout punctuated by dark UI components, particularly for code or application interfaces, emphasizing product capability over aesthetic flourish.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-white-canvas: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-carbon-black: #15171a;
+  --color-slate-blue: #94a3b8;
+  --color-graphite: #334155;
+  --color-ash-gray: #e5e7eb;
+  --color-light-steel: #cbd5e1;
+  --color-dark-steel: #112220;
+  --color-ghost-gray: #0f172a;
+  --color-ghost-border: #1f2937;
+  --color-vivid-lime: #d1ff19;
+  --color-muted-lime: #bef264;
+  --color-forest-green: #1a2e05;
+  --color-sky-blue: #1bb6eb;
+  --color-neon-pink: #f8b1e2;
+  --font-intervariable: 'InterVariable', Inter;
+  --font-interdisplay: 'InterDisplay', Inter;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -0.48px;
+  --text-display-lg: 72px;
+  --leading-display-lg: 0.9;
+  --text-display-xl: 96px;
+  --leading-display-xl: 0.9;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-126: 126px;
+  --radius-tags: 9999px;
+  --radius-cards: 8px;
+  --radius-input: 6px;
+  --radius-buttons: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-white-canvas: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-carbon-black: #15171a;
+  --color-slate-blue: #94a3b8;
+  --color-graphite: #334155;
+  --color-ash-gray: #e5e7eb;
+  --color-light-steel: #cbd5e1;
+  --color-dark-steel: #112220;
+  --color-ghost-gray: #0f172a;
+  --color-ghost-border: #1f2937;
+  --color-vivid-lime: #d1ff19;
+  --color-muted-lime: #bef264;
+  --color-forest-green: #1a2e05;
+  --color-sky-blue: #1bb6eb;
+  --color-neon-pink: #f8b1e2;
+  --font-intervariable: 'InterVariable', Inter;
+  --font-interdisplay: 'InterDisplay', Inter;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -0.48px;
+  --text-display-lg: 72px;
+  --leading-display-lg: 0.9;
+  --text-display-xl: 96px;
+  --leading-display-xl: 0.9;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-126: 126px;
+  --radius-tags: 9999px;
+  --radius-cards: 8px;
+  --radius-input: 6px;
+  --radius-buttons: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 1px 0px, rgba(0, 0, 0, 0.03) 0px 2px 6px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.1) 0px 2px 4px -2px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+```

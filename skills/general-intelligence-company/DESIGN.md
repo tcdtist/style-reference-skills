@@ -1,86 +1,193 @@
 ---
 version: alpha
-name: General Intelligence Company
-description: General Intelligence Company employs a sophisticated aesthetic, blending an evocative, illustrative dark hero with a predominantly minimalist, architectural light UI. Typography is restrained and elegant, utilizing a serif for headlines that conveys gravitas and a clean sans-serif for body text. Surfaces are layered with subtle translucency and soft, multi-layered shadows, creating depth without heaviness. The overall impression is one of calm authority and advanced technology, articulated through precise achromatic forms punctuated by a singular, cool blue accent for interactive elements.
-colors:
-  night-sky: "#1f1f29"
-  cofounder-blue: "#0081c0"
-  action-azure: "#41a1cf"
-  pitch-black: "#000000"
-  canvas-white: "#ffffff"
-  off-white: "#fefffc"
-  ash-gray: "#f9faf7"
-  cool-gray: "#eef1ed"
-  steel-gray: "#dee2de"
-  dark-charcoal: "#171717"
-  charcoal: "#2c2c2c"
-  rich-black: "#282834"
-  slate-gray: "#444141"
-  medium-gray: "#646464"
-  light-gray: "#b4b8b4"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.5
-    letterSpacing: -0.13px
-  button-label:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-    letterSpacing: -0.19px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: -0.18px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.8px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.1
-    letterSpacing: -0.96px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 54px
-    lineHeight: 1.1
-    letterSpacing: -1.08px
-spacing:
-  buttonRadius: 4px
-  elementGap: 8px
-  sectionGap: 32px
-components:
-  ghost-button:
-    role: Subtle interactive element
-  subtle-nav-button:
-    role: Navigation item or secondary ghost action
-  solid-dark-button:
-    role: Primary action within darker contexts
-  outlined-action-button:
-    role: Interactive button with a defined border
-  blurred-nav-item:
-    role: Navigation element with translucent background
-  elevated-content-card:
-    role: Content container with subtle elevation
-  hero-overlay-card:
-    role: Translucent content block over imagery
-  cofounder-featured-card:
-    role: Prominent, brand-colored feature display
-  ghost-input-field:
-    role: Standard user input field
+name: "General Intelligence Company"
+description: "General Intelligence Company employs a sophisticated aesthetic, blending an evocative, illustrative dark hero with a predominantly minimalist, architectural light UI. Typography is restrained and elegant, utilizing a serif for headlines that conveys gravitas and a clean sans-serif for body text. Surfaces are layered with subtle translucency and soft, multi-layered shadows, creating depth without heaviness. The overall impression is one of calm authority and advanced technology, articulated through precise achromatic forms punctuated by a singular, cool blue accent for interactive elements."
+theme: "light"
+industry: "ai"
+source_url: "https://www.generalintelligencecompany.com"
+refero_style_id: "34baa524-5d5b-4165-bbab-d01f05e6d6b9"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509060357-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509060357-thumb.jpg"
+extracted_at: "2026-04-30T00:31:29.746Z"
 ---
 
-## Overview
+# General Intelligence Company — Style Reference
 
-**North Star:** Architectural Night Sky
+> Architectural Night Sky
+
+**Theme:** light
+
+**Industry:** ai
 
 General Intelligence Company employs a sophisticated aesthetic, blending an evocative, illustrative dark hero with a predominantly minimalist, architectural light UI. Typography is restrained and elegant, utilizing a serif for headlines that conveys gravitas and a clean sans-serif for body text. Surfaces are layered with subtle translucency and soft, multi-layered shadows, creating depth without heaviness. The overall impression is one of calm authority and advanced technology, articulated through precise achromatic forms punctuated by a singular, cool blue accent for interactive elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Night Sky | #1f1f29 | `--color-night-sky` | Dark base for hero sections and occasional accent backgrounds; creates a deep, contemplative atmosphere |
+| Cofounder Blue | #0081c0 | `--color-cofounder-blue` | Highlight elements, card backgrounds for featured content, and active interface states. Its vivid hue draws attention while maintaining a high-tech feel |
+| Action Azure | #41a1cf | `--color-action-azure` | Border color for ghost buttons and interactive elements, providing a clear but understated active state |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text for headings and bold statements against light backgrounds, emphasizing core information |
+| Canvas White | #ffffff | `--color-canvas-white` | Main page background, component backgrounds, and primary text on dark elements, maintaining brightness and spaciousness |
+| Off White | #fefffc | `--color-off-white` | Subtle alternative background for secondary sections and cards, creating a slight visual separation from the main canvas |
+| Ash Gray | #f9faf7 | `--color-ash-gray` | Background for input fields and navigation elements, providing a soft contrast |
+| Cool Gray | #eef1ed | `--color-cool-gray` | Subtle border for UI elements and dividers, offering minimal distinction |
+| Steel Gray | #dee2de | `--color-steel-gray` | Hairline borders and soft shadows, contributing to a refined, nearly unnoticeable separation of elements |
+| Dark Charcoal | #171717 | `--color-dark-charcoal` | Primary body text and deep contrast accents. Used where legibility against light backgrounds is paramount |
+| Charcoal | #2c2c2c | `--color-charcoal` | Secondary text and less prominent headings, providing contrast below the primary text level |
+| Rich Black | #282834 | `--color-rich-black` | Darker accent for navigation hover states and subtly outlined actions, providing depth on dark surfaces |
+| Slate Gray | #444141 | `--color-slate-gray` | Placeholder text and subtle icon fills, indicating less active states or auxiliary information |
+| Medium Gray | #646464 | `--color-medium-gray` | Muted text for helper descriptions and secondary information, reducing visual noise |
+| Light Gray | #b4b8b4 | `--color-light-gray` | Lightest neutral used for subtle background variations or very soft dividers |
+
+## Tokens — Typography
+
+### PPMondwest
+
+- **Token:** `--font-ppmondwest`
+- **Weights:** 400, 500
+- **Sizes:** 40px, 48px, 54px
+- **Line heights:** 1.10
+- **Letter spacing:** -0.0200em
+- **OpenType features:** "liga" 0
+- **Role:** Headlines and prominent display text. Its distinct serif creates a sense of gravitas and intellectual authority, often appearing in sizes like 40px and 54px.
+
+### af
+
+- **Token:** `--font-af`
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 13px, 15px, 16px, 18px
+- **Line heights:** 1.00, 1.20, 1.30, 1.40, 1.50
+- **Letter spacing:** -0.0120em, -0.0100em
+- **Role:** Body text, navigation, buttons, and all functional UI labels. This sans-serif provides clarity and modernity, varying in weight from 400 for standard body copy to 700 for more prominent labels, with a subtle negative letter spacing for a compact feel across sizes 13px to 18px.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.5 | -0.13px | `--text-caption` |
+| button-label | 16px | 1 | -0.19px | `--text-button-label` |
+| subheading | 18px | 1.2 | -0.18px | `--text-subheading` |
+| heading | 40px | 1.1 | -0.8px | `--text-heading` |
+| heading-lg | 48px | 1.1 | -0.96px | `--text-heading-lg` |
+| display | 54px | 1.1 | -1.08px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-73 | 73px | `--spacing-73` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-125 | 125px | `--spacing-125` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-320 | 320px | `--spacing-320` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| nav | 50.496px |
+| none | 0px |
+| buttons | 4px |
+| cardsLarge | 24px |
+| cardsSmall | 12px |
+| cardsMedium | 16px |
+| navItemsSmall | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.15) 0px 2px 6px 0px | `--shadow-xl` |
+| xl-2 | rgb(222, 226, 222) 0px 0px 0px 1px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px | `--shadow-xl-3` |
+| xl-4 | rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 5px | `--shadow-xl-4` |
+| xl-5 | rgba(0, 0, 0, 0.05) 0px 1px 8px 0px | `--shadow-xl-5` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Subtle interactive element
+
+Transparent background, text color typically #444141 or #171717, no explicit border, 0px radius. Used for links within text or secondary actions.
+
+### Subtle Nav Button
+
+**Role:** Navigation item or secondary ghost action
+
+Background rgba(255, 255, 255, 0.06), text color #171717, 8px border radius, 5px vertical padding and 12px horizontal padding. Offers a soft, contained interaction.
+
+### Solid Dark Button
+
+**Role:** Primary action within darker contexts
+
+Background #1f1f29, text color #ffffff. Border #282834, 8px border radius, 7px top, 8px bottom, 16px left, 12px right padding. Used for high-emphasis CTAs.
+
+### Outlined Action Button
+
+**Role:** Interactive button with a defined border
+
+Ghost background, text color #444141 or #171717, border color #41a1cf or #282834, 4px border radius. Offers a clear but not overly prominent action.
+
+### Blurred Nav Item
+
+**Role:** Navigation element with translucent background
+
+Background #f9faf7 with blur effect, 50.496px border radius, #171717 text. Soft shadow rgba(0, 0, 0, 0.15) 0px 2px 6px 0px. Used in the header, suggesting elegance and lightness.
+
+### Elevated Content Card
+
+**Role:** Content container with subtle elevation
+
+Background #fefffc, 12px border radius. Soft shadow rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px. Used for featured information blocks.
+
+### Hero Overlay Card
+
+**Role:** Translucent content block over imagery
+
+Background rgba(222, 226, 222, 0.16), 24px border radius, no shadow. 16px padding. Used on the hero section for minimal visual intrusion and atmospheric depth.
+
+### Cofounder Featured Card
+
+**Role:** Prominent, brand-colored feature display
+
+Background #0081c0, 24px border radius. Complex shadow rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 5px. Generous padding 128px top, 80px right/bottom/left. Commands attention for key information.
+
+### Ghost Input Field
+
+**Role:** Standard user input field
+
+Background #f9faf7, text and border #444141, 0px border radius. Default padding for clarity.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize PPMondwest for all display and large headings (40px, 48px, 54px) using weight 400 or 500, with letter-spacing -0.0200em for a refined, compact look.
 - Use 'Night Sky' (#1f1f29) as a deep, rich background for hero sections or brand-defining modules, contrasting with light body text and elements.
@@ -90,7 +197,7 @@ General Intelligence Company employs a sophisticated aesthetic, blending an evoc
 - Maintain a comfortable density with an element gap of 8px and card padding of 16px, ensuring sufficient breathing room between UI elements.
 - Round corners with care: use 4px for small buttons, 8px for main interactive elements, 12px for cards, and 24px for larger, more prominent cards like the 'Hero Overlay Card', with 50.496px for highly rounded nav items.
 
-### Don'ts
+### Don't
 
 - Avoid excessive use of 'Cofounder Blue' (#0081c0) outside of clear accent roles; it should highlight, not dominate, the UI.
 - Do not introduce strong, bold colors or gradients other than the defined brand accents; the system relies on a sophisticated achromatic foundation.
@@ -100,10 +207,172 @@ General Intelligence Company employs a sophisticated aesthetic, blending an evoc
 - Do not deviate from the specified shadow values; the subtle, multi-layered shadows are key to the brand's sophisticated depth without visual clutter.
 - Avoid cluttering the layout; aim for comfortable spacing both vertically (32px section gap) and horizontally, letting content breathe rather than stacking elements too closely.
 
-### Layout
+## Elevation
+
+- **Nav Items:** `rgba(0, 0, 0, 0.15) 0px 2px 6px 0px`
+- **Card:** `rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px`
+- **Cofounder Featured Card:** `rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 5px`
+- **Input fields and subtle UI elements:** `rgba(0, 0, 0, 0.05) 0px 1px 8px 0px`
+
+## Imagery
+
+The visual language for imagery combines two distinct styles: a highly detailed, illustrative, dark-themed cityscape for the hero section, serving as an atmospheric backdrop, and minimalist, contained product screenshots or abstract graphics for content areas. Photography is absent. Illustrations are organic and atmospheric in the hero, while content area graphics are abstract and geometric, typically featuring outlined shapes and a subdued, near-achromatic palette. Icons are outlined, with a moderate stroke weight, and mostly monochromatic. Imagery acts as both decorative atmosphere in the hero to draw the user in and as explanatory content in product sections, with a balanced density on content-heavy pages.
+
+## Layout
 
 The page structure features an initial full-bleed hero section defined by a dark, illustrative cityscape background with a centered headline. Following this, the layout transitions to a contained, max-width (implied 1200px from content grouping) centered model for content sections. Sections alternate between 'Canvas White' and 'Off White' backgrounds, establishing a clear visual rhythm. Content is arranged predominantly in a two-column text-left/image-right pattern or centered text stacks for emphasis. Feature grids may appear in three-column structures. Navigation is a compact top bar, with sticky behavior, containing minimalist text links and a 'Get Cofounder' button.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery combines two distinct styles: a highly detailed, illustrative, dark-themed cityscape for the hero section, serving as an atmospheric backdrop, and minimalist, contained product screenshots or abstract graphics for content areas. Photography is absent. Illustrations are organic and atmospheric in the hero, while content area graphics are abstract and geometric, typically featuring outlined shapes and a subdued, near-achromatic palette. Icons are outlined, with a moderate stroke weight, and mostly monochromatic. Imagery acts as both decorative atmosphere in the hero to draw the user in and as explanatory content in product sections, with a balanced density on content-heavy pages.
+- **Linear** — Shares a sophisticated dark header/light body theme, minimalist aesthetic, and subtle elevation patterns.
+- **Anthropic (Cloude)** — Similar restrained aesthetic, heavy use of high-quality custom typography, and a bias towards clean, functional UI over decorative elements.
+- **Stripe** — Uses a similar approach to elegant typography, crisp surfaces, and a well-defined achromatic palette with controlled accent colors for interactive elements.
+- **Intercom** — Features a balanced use of white space, crisp typography, and strategic color accents to highlight key information or actions, against a generally light background.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-night-sky: #1f1f29;
+  --color-cofounder-blue: #0081c0;
+  --color-action-azure: #41a1cf;
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-off-white: #fefffc;
+  --color-ash-gray: #f9faf7;
+  --color-cool-gray: #eef1ed;
+  --color-steel-gray: #dee2de;
+  --color-dark-charcoal: #171717;
+  --color-charcoal: #2c2c2c;
+  --color-rich-black: #282834;
+  --color-slate-gray: #444141;
+  --color-medium-gray: #646464;
+  --color-light-gray: #b4b8b4;
+  --font-ppmondwest: 'PPMondwest', ui-sans-serif, system-ui, sans-serif;
+  --font-af: 'af', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.13px;
+  --text-button-label: 16px;
+  --leading-button-label: 1;
+  --tracking-button-label: -0.19px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.18px;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 54px;
+  --leading-display: 1.1;
+  --tracking-display: -1.08px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-125: 125px;
+  --spacing-128: 128px;
+  --spacing-320: 320px;
+  --radius-nav: 50.496px;
+  --radius-none: 0px;
+  --radius-buttons: 4px;
+  --radius-cardslarge: 24px;
+  --radius-cardssmall: 12px;
+  --radius-cardsmedium: 16px;
+  --radius-navitemssmall: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+  --shadow-xl-2: rgb(222, 226, 222) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 5px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 1px 8px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-night-sky: #1f1f29;
+  --color-cofounder-blue: #0081c0;
+  --color-action-azure: #41a1cf;
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-off-white: #fefffc;
+  --color-ash-gray: #f9faf7;
+  --color-cool-gray: #eef1ed;
+  --color-steel-gray: #dee2de;
+  --color-dark-charcoal: #171717;
+  --color-charcoal: #2c2c2c;
+  --color-rich-black: #282834;
+  --color-slate-gray: #444141;
+  --color-medium-gray: #646464;
+  --color-light-gray: #b4b8b4;
+  --font-ppmondwest: 'PPMondwest', ui-sans-serif, system-ui, sans-serif;
+  --font-af: 'af', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.13px;
+  --text-button-label: 16px;
+  --leading-button-label: 1;
+  --tracking-button-label: -0.19px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.18px;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 54px;
+  --leading-display: 1.1;
+  --tracking-display: -1.08px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-125: 125px;
+  --spacing-128: 128px;
+  --spacing-320: 320px;
+  --radius-nav: 50.496px;
+  --radius-none: 0px;
+  --radius-buttons: 4px;
+  --radius-cardslarge: 24px;
+  --radius-cardssmall: 12px;
+  --radius-cardsmedium: 16px;
+  --radius-navitemssmall: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.15) 0px 2px 6px 0px;
+  --shadow-xl-2: rgb(222, 226, 222) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.08) 0px 4px 5px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 5px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 1px 8px 0px;
+}
+```
