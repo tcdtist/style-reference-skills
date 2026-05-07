@@ -1,95 +1,217 @@
 ---
 version: alpha
-name: Pietrastudio
-description: Pietra exudes a dynamic, clean, digital canvas aesthetic. Its visual system is built on a crisp white backdrop, punctuated by a vibrant, warm orange action color and muted, pastel gradients that provide visual interest and a sense of depth without overwhelming the UI. Typography is compact and understated, allowing the strong contrasts of the brand orange and deep charcoal text to command attention. Components tend towards soft, rounded shapes and subtle shadow effects, creating a friendly yet capable interface.
-colors:
-  canvas-white: "#ffffff"
-  stone-grey: "#f8f6f2"
-  midnight-ink: "#1f2026"
-  ink-wash: "#141414"
-  slate-text: "#6b6b6b"
-  silver-link: "#c4c4c4"
-  input-border-gray: "#e8e8ea"
-  action-orange: "#ff5c3c"
-  slightly-yellowed: "#fffbe7"
-  amber-dot: "#f9e070"
-  forest-green: "#57ad6a"
-  lavender-sky-gradient: "#7d32f7"
-  sunset-blush-gradient: "#e9aa4b"
-  ocean-bloom-gradient: "#4865ff"
-  emerald-coast-gradient: "#32cb8b"
-  orchid-haze-gradient: "#f732ef"
-  paper-tint-gradient: "#fddfe3"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.57
-    letterSpacing: -0.12px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.57
-    letterSpacing: -0.14px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.57
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.2px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: -0.24px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-    letterSpacing: -0.64px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -0.96px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1.2
-    letterSpacing: -1px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 8px
-  elementGap: 8px
-  sectionGap: 120px
-components:
-  primary-filled-button:
-    role: The main call-to-action button, signaling key interactions.
-  secondary-filled-button-dark:
-    role: Alternative action button, often for less critical actions.
-  outline-ghost-button-light-text:
-    role: Subtle button for secondary actions or links where a filled button is too heavy.
-  outlined-ghost-button-yellow-accent:
-    role: Contextual action button with a hint of accent color.
-  default-card:
-    role: General content container for features, information blocks.
-  input-field:
-    role: Standard user input fields.
-  elevated-card-large-padding:
-    role: Prominent content card, often for hero content or key features.
+name: "Pietrastudio"
+description: "Pietra exudes a dynamic, clean, digital canvas aesthetic. Its visual system is built on a crisp white backdrop, punctuated by a vibrant, warm orange action color and muted, pastel gradients that provide visual interest and a sense of depth without overwhelming the UI. Typography is compact and understated, allowing the strong contrasts of the brand orange and deep charcoal text to command attention. Components tend towards soft, rounded shapes and subtle shadow effects, creating a friendly yet capable interface."
+theme: "light"
+industry: "saas"
+source_url: "https://www.pietrastudio.com"
+refero_style_id: "577eb7d8-3555-4378-83df-0cebebc4782f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520274959-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520274959-thumb.jpg"
+extracted_at: "2026-04-30T03:38:26.580Z"
 ---
 
-## Overview
+# Pietrastudio — Style Reference
 
-**North Star:** Warm digital canvas
+> Warm digital canvas
+
+**Theme:** light
+
+**Industry:** saas
 
 Pietra exudes a dynamic, clean, digital canvas aesthetic. Its visual system is built on a crisp white backdrop, punctuated by a vibrant, warm orange action color and muted, pastel gradients that provide visual interest and a sense of depth without overwhelming the UI. Typography is compact and understated, allowing the strong contrasts of the brand orange and deep charcoal text to command attention. Components tend towards soft, rounded shapes and subtle shadow effects, creating a friendly yet capable interface.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, primary text on dark backgrounds |
+| Stone Grey | #f8f6f2 | `--color-stone-grey` | Subtly elevated card surfaces, background for certain sections |
+| Midnight Ink | #1f2026 | `--color-midnight-ink` | Primary text, heading text |
+| Ink Wash | #141414 | `--color-ink-wash` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Slate Text | #6b6b6b | `--color-slate-text` | Muted body text, icon fills, helper text |
+| Silver Link | #c4c4c4 | `--color-silver-link` | Disabled text, decorative borders, inactive link text |
+| Input Border Gray | #e8e8ea | `--color-input-border-gray` | Subtle borders for input fields and dividers |
+| Action Orange | #ff5c3c | `--color-action-orange` | Primary call-to-action buttons, active states, brand highlights – a vivid, energetic accent |
+| Slightly Yellowed | #fffbe7 | `--color-slightly-yellowed` | Subtle background for specific card states or emphasis |
+| Amber Dot | #f9e070 | `--color-amber-dot` | Decorative dots, specific badge backgrounds, highlights for certain content categories |
+| Forest Green | #57ad6a | `--color-forest-green` | Green action color for filled buttons, selected navigation states, and focused conversion moments. Use as a supporting accent, not as a status color |
+| Lavender Sky Gradient | #7d32f7 | `--color-lavender-sky-gradient` | Atmospheric background for hero sections or prominent content blocks |
+| Sunset Blush Gradient | #e9aa4b | `--color-sunset-blush-gradient` | Warm, inviting background for decorative elements or contextual overlays. Primarily decorative |
+| Ocean Bloom Gradient | #4865ff | `--color-ocean-bloom-gradient` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+| Emerald Coast Gradient | #32cb8b | `--color-emerald-coast-gradient` | Fresh, natural background for positive feedback or growth-oriented content |
+| Orchid Haze Gradient | #f732ef | `--color-orchid-haze-gradient` | Playful, energetic background for dynamic content or showcases |
+| Paper Tint Gradient | #fddfe3 | `--color-paper-tint-gradient` | Very subtle background for blending different sections or soft containers |
+
+## Tokens — Typography
+
+### Labil Grotesk
+
+- **Token:** `--font-labil-grotesk`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700
+- **Sizes:** 12px, 14px, 15px, 16px, 20px, 24px
+- **Line heights:** 1.00, 1.20, 1.57
+- **Letter spacing:** -0.01em
+- **Role:** Primary UI font for body text, navigation items, buttons, and form labels. Its compact form and slight negative letter-spacing make it feel efficient and modern.
+
+### Labil-Regular
+
+- **Token:** `--font-labil-regular`
+- **Substitute:** Inter
+- **Weights:** 300, 400
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 24px
+- **Line heights:** 1.00, 1.13, 1.20, 1.50
+- **Letter spacing:** -0.01em, 0.143em
+- **Role:** Used for specific body text needs, links, and subtle details. The 300 weight allows for a lighter touch than the standard Labil Grotesk, which helps differentiate visual hierarchy.
+
+### Labil-Bold
+
+- **Token:** `--font-labil-bold`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 20px, 48px
+- **Line heights:** 1.00, 1.13, 1.20
+- **Letter spacing:** -0.02em, -0.01em
+- **Role:** Used for emphasis in body and button text, and for smaller feature headlines. The 48px size with a tighter letter spacing creates a strong, condensed impact for key statements.
+
+### Attila-Bold
+
+- **Token:** `--font-attila-bold`
+- **Substitute:** Archivo Black
+- **Weights:** 400
+- **Sizes:** 32px, 40px, 48px
+- **Line heights:** 1.00, 1.10, 1.20
+- **Letter spacing:** -0.02em, -0.013em
+- **Role:** Reserved for prominent headings and titles. Its distinct bold character ensures hierarchy and a strong brand voice.
+
+### Attila Sans Uniform
+
+- **Token:** `--font-attila-sans-uniform`
+- **Substitute:** Archivo Black
+- **Weights:** 700
+- **Sizes:** 48px, 50px
+- **Line heights:** 1.20
+- **Letter spacing:** -0.02em
+- **Role:** Used for the most impactful display headings. The heavy weight and very tight letter-spacing create a dominant visual statement.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.57 | -0.12px | `--text-caption` |
+| body-sm | 14px | 1.57 | -0.14px | `--text-body-sm` |
+| body | 16px | 1.57 | -0.16px | `--text-body` |
+| subheading | 20px | 1.2 | -0.2px | `--text-subheading` |
+| heading | 24px | 1.2 | -0.24px | `--text-heading` |
+| heading-lg | 32px | 1 | -0.64px | `--text-heading-lg` |
+| display | 48px | 1 | -0.96px | `--text-display` |
+| display-xl | 50px | 1.2 | -1px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-110 | 110px | `--spacing-110` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-124 | 124px | `--spacing-124` |
+| spacing-151 | 151px | `--spacing-151` |
+| spacing-252 | 252px | `--spacing-252` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| inputs | 8px |
+| buttons | 8px |
+| largeElements | 20px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px | `--shadow-xl` |
+| xl-2 | rgba(134, 137, 141, 0.2) 0px 0px 40px 0px | `--shadow-xl-2` |
+| xl-3 | rgba(239, 227, 225, 0.3) 5px 5px 24px 0px | `--shadow-xl-3` |
+| xl-4 | rgba(133, 136, 140, 0.2) 0px 0px 40px 0px | `--shadow-xl-4` |
+| xl-5 | rgba(0, 0, 0, 0.02) 0px 2px 0px 0px | `--shadow-xl-5` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 120px |
+| cardPadding | 12px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** The main call-to-action button, signaling key interactions.
+
+Background: #ff5c3c, Text: #ffffff, Border radius: 8px, Padding: 12px vertical, 20px horizontal. Emphasizes urgency and action.
+
+### Secondary Filled Button (Dark)
+
+**Role:** Alternative action button, often for less critical actions.
+
+Background: #141414, Text: #ffffff, Border radius: 8px, Padding: 12px vertical, 20px horizontal. Provides a strong, contrasting alternative.
+
+### Outline Ghost Button (Light Text)
+
+**Role:** Subtle button for secondary actions or links where a filled button is too heavy.
+
+Background: transparent, Text: #1f2026, Border radius: 8px, Padding: 12px vertical, 20px horizontal. Typically paired with a stronger CTA.
+
+### Outlined Ghost Button (Yellow Accent)
+
+**Role:** Contextual action button with a hint of accent color.
+
+Background: transparent, Text: #141414, Border radius: 8px, Padding: 12px vertical, 20px horizontal. Border: 1px #f9e070 solid. Used for actions related to 'learning more' or specific categories.
+
+### Default Card
+
+**Role:** General content container for features, information blocks.
+
+Background: rgba(255, 255, 255, 0.9), Border radius: 12px, Padding: 10px vertical, 12px horizontal. Shadow: rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px. Features a soft, inward/outward shadow for subtle depth.
+
+### Input Field
+
+**Role:** Standard user input fields.
+
+Background: transparent, Text: rgba(0, 0, 0, 0.88), Border radius: 6px, Border: 1px solid rgba(0, 0, 0, 0.88), Padding: 4px vertical, 11px horizontal. A dark, solid border gives clear definition.
+
+### Elevated Card (Large Padding)
+
+**Role:** Prominent content card, often for hero content or key features.
+
+Background: rgba(255, 255, 255, 0.9), Border radius: 20px, Padding: 16px. Shadow: rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px. Features more rounded corners and generous padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Labil Grotesk (or Inter) weight 400 at 16px with line height 1.57 and -0.01em letter spacing for all body copy to maintain legibility and a compact feel.
 - Apply Canvas White #ffffff as the default background for the main canvas and most card surfaces.
@@ -99,7 +221,7 @@ Pietra exudes a dynamic, clean, digital canvas aesthetic. Its visual system is b
 - Maintain a clear vertical rhythm using 24px spacing below secondary elements and 12px padding within cards.
 - Use Attila-Bold (or Archivo Black) for headlines, especially at 48px with -0.02em letter spacing, to create a strong, condensed visual impact.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors outside the defined brand and accent palette; maintain a largely achromatic UI.
 - Do not use sharp, square corners on interactive elements; all buttons, inputs, and cards should have a minimum of 8px border radius.
@@ -109,10 +231,208 @@ Pietra exudes a dynamic, clean, digital canvas aesthetic. Its visual system is b
 - Do not use generic system fonts for prominent text; stick to Labil Grotesk or its substitutes for brand consistency.
 - Do not add additional decorative borders or heavy outlines to elements; surfaces gain definition through subtle shadows and internal highlights.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Default page background. |
+| 1 | Default Card Surface | #ffffffe6 | Main content cards, slightly translucent. |
+| 2 | Subtle Elevated Surface | #f8f6f2 | Background for secondary sections or subtly elevated container groups. |
+
+## Elevation
+
+- **Card:** `rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px`
+- **Elevated Other:** `rgba(134, 137, 141, 0.2) 0px 0px 40px 0px`
+- **Card (Accent Shadow):** `rgba(239, 227, 225, 0.3) 5px 5px 24px 0px`
+- **Button:** `rgba(0, 0, 0, 0.02) 0px 2px 0px 0px`
+
+## Imagery
+
+The visual language for imagery is a mix of product illustrations and abstract, gradient-infused graphics. Illustrations are flat, often depicting stylized people interacting with UI elements, using a limited color palette that aligns with brand accents. Abstract graphics feature soft gradients (like Lavender Sky and Sunset Blush) that provide depth and a dreamy, digital feel without being overly complex. Icons are simple, outlined, often in black or a muted gray to maintain the clean UI. Imagery serves a decorative and explanatory role, providing context for the AI features and creating an inviting, modern atmosphere. Content is focused, with imagery often contained within cards or as background washes, rather than full-bleed photography. Density is balanced, with imagery breaking up text-heavy sections rather than dominating the page.
+
+## Layout
 
 The page primarily uses a max-width contained layout, likely around 1200px, centered on the screen. The hero section often features a large, centered headline paired with a call-to-action and either an abstract gradient background or a product illustration. Section rhythm is driven by consistent vertical spacing, with a calculated section gap around 120px. Content is often arranged in symmetrical stacks or 2-column layouts for text and visuals, and recurring 3-column card grids for features. Components within sections follow a comfortable density with 8px element gaps. The navigation is a typical top bar, fixed or sticky, with the brand logo, navigation links, and primary action buttons.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is a mix of product illustrations and abstract, gradient-infused graphics. Illustrations are flat, often depicting stylized people interacting with UI elements, using a limited color palette that aligns with brand accents. Abstract graphics feature soft gradients (like Lavender Sky and Sunset Blush) that provide depth and a dreamy, digital feel without being overly complex. Icons are simple, outlined, often in black or a muted gray to maintain the clean UI. Imagery serves a decorative and explanatory role, providing context for the AI features and creating an inviting, modern atmosphere. Content is focused, with imagery often contained within cards or as background washes, rather than full-bleed photography. Density is balanced, with imagery breaking up text-heavy sections rather than dominating the page.
+- **Stripe** — Clean white backgrounds with a single strong accent color (blue for Stripe, orange for Pietra) and subtle, rounded UI elements.
+- **Cal.com** — Soft, 'neuromorphic' shadows on cards and subtle background gradients, paired with modern sans-serif typography.
+- **Rive** — Focus on product illustrations embedded in UI, with a vibrant color palette used for specific functional accents against a predominantly light background.
+- **Supabase** — Minimalist layout, strong use of a single-color branding, and precise geometric typography for headings.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-stone-grey: #f8f6f2;
+  --color-midnight-ink: #1f2026;
+  --color-ink-wash: #141414;
+  --color-slate-text: #6b6b6b;
+  --color-silver-link: #c4c4c4;
+  --color-input-border-gray: #e8e8ea;
+  --color-action-orange: #ff5c3c;
+  --color-slightly-yellowed: #fffbe7;
+  --color-amber-dot: #f9e070;
+  --color-forest-green: #57ad6a;
+  --color-lavender-sky-gradient: #7d32f7;
+  --color-sunset-blush-gradient: #e9aa4b;
+  --color-ocean-bloom-gradient: #4865ff;
+  --color-emerald-coast-gradient: #32cb8b;
+  --color-orchid-haze-gradient: #f732ef;
+  --color-paper-tint-gradient: #fddfe3;
+  --font-labil-grotesk: 'Labil Grotesk', Inter;
+  --font-labil-regular: 'Labil-Regular', Inter;
+  --font-labil-bold: 'Labil-Bold', Inter;
+  --font-attila-bold: 'Attila-Bold', Archivo Black;
+  --font-attila-sans-uniform: 'Attila Sans Uniform', Archivo Black;
+  --text-caption: 12px;
+  --leading-caption: 1.57;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.57;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.57;
+  --tracking-body: -0.16px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.2px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.64px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -0.96px;
+  --text-display-xl: 50px;
+  --leading-display-xl: 1.2;
+  --tracking-display-xl: -1px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-110: 110px;
+  --spacing-120: 120px;
+  --spacing-124: 124px;
+  --spacing-151: 151px;
+  --spacing-252: 252px;
+  --radius-cards: 12px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --radius-largeelements: 20px;
+  --shadow-xl: rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px;
+  --shadow-xl-2: rgba(134, 137, 141, 0.2) 0px 0px 40px 0px;
+  --shadow-xl-3: rgba(239, 227, 225, 0.3) 5px 5px 24px 0px;
+  --shadow-xl-4: rgba(133, 136, 140, 0.2) 0px 0px 40px 0px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.02) 0px 2px 0px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-default-card-surface: #ffffffe6;
+  --surface-subtle-elevated-surface: #f8f6f2;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-stone-grey: #f8f6f2;
+  --color-midnight-ink: #1f2026;
+  --color-ink-wash: #141414;
+  --color-slate-text: #6b6b6b;
+  --color-silver-link: #c4c4c4;
+  --color-input-border-gray: #e8e8ea;
+  --color-action-orange: #ff5c3c;
+  --color-slightly-yellowed: #fffbe7;
+  --color-amber-dot: #f9e070;
+  --color-forest-green: #57ad6a;
+  --color-lavender-sky-gradient: #7d32f7;
+  --color-sunset-blush-gradient: #e9aa4b;
+  --color-ocean-bloom-gradient: #4865ff;
+  --color-emerald-coast-gradient: #32cb8b;
+  --color-orchid-haze-gradient: #f732ef;
+  --color-paper-tint-gradient: #fddfe3;
+  --font-labil-grotesk: 'Labil Grotesk', Inter;
+  --font-labil-regular: 'Labil-Regular', Inter;
+  --font-labil-bold: 'Labil-Bold', Inter;
+  --font-attila-bold: 'Attila-Bold', Archivo Black;
+  --font-attila-sans-uniform: 'Attila Sans Uniform', Archivo Black;
+  --text-caption: 12px;
+  --leading-caption: 1.57;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.57;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.57;
+  --tracking-body: -0.16px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.2px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.64px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -0.96px;
+  --text-display-xl: 50px;
+  --leading-display-xl: 1.2;
+  --tracking-display-xl: -1px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-110: 110px;
+  --spacing-120: 120px;
+  --spacing-124: 124px;
+  --spacing-151: 151px;
+  --spacing-252: 252px;
+  --radius-cards: 12px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --radius-largeelements: 20px;
+  --shadow-xl: rgba(193, 194, 222, 0.2) 1px 1px 1px 0px inset, rgba(255, 255, 255, 0.8) -1px -1px 1px 0px inset, rgb(255, 255, 255) 1px 1px 1px 0px inset, rgba(221, 223, 228, 0.5) 5px 5px 24px 0px;
+  --shadow-xl-2: rgba(134, 137, 141, 0.2) 0px 0px 40px 0px;
+  --shadow-xl-3: rgba(239, 227, 225, 0.3) 5px 5px 24px 0px;
+  --shadow-xl-4: rgba(133, 136, 140, 0.2) 0px 0px 40px 0px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.02) 0px 2px 0px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-default-card-surface: #ffffffe6;
+  --surface-subtle-elevated-surface: #f8f6f2;
+}
+```

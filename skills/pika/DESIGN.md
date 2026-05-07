@@ -1,61 +1,145 @@
 ---
 version: alpha
-name: Pika
-description: The site presents a striking split personality, juxtaposing a relaxed, warm-toned left panel with a deep, authoritative black right panel. This creates a functional and conceptual division, visually separating descriptive content from interactive login forms. Text on both sides prioritizes legibility with high contrast, while subtle border radii soften interactive elements without sacrificing a clean, modern edge. It feels like a laid-back, creative studio space meeting a behind-the-scenes control panel.
-colors:
-  buttermilk-base: "#ffedd2"
-  inkwell-deep: "#0d0d0d"
-  carbon-panel: "#1f1f1f"
-  paper-white: "#ffffff"
-  ash-gray: "#9e9e9"
-  chrome-edges: "#e5e7eb"
-  facebook-blue: "#4267b2"
-  discord-purple: "#5865f2"
-  google-yellow: "#ffc107"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.28px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0.16px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.13
-    letterSpacing: 0.32px
-spacing:
-  buttonRadius: 6px
-  elementGap: 8px
-  sectionGap: 56px
-components:
-  sign-in-panel:
-    role: 
-  feature-promo-card:
-    role: 
-  footer-links-bar:
-    role: 
-  primary-sign-in-button:
-    role: Main call to action for email sign-in.
-  social-sign-in-button:
-    role: Alternative sign-in options via social platforms.
-  social-sign-in-button-compact:
-    role: Social sign-in with reduced padding and dark background (not explicitly shown in screenshot but available in variants).
-  video-player-frame:
-    role: Container for embedded video content.
+name: "Pika"
+description: "The site presents a striking split personality, juxtaposing a relaxed, warm-toned left panel with a deep, authoritative black right panel. This creates a functional and conceptual division, visually separating descriptive content from interactive login forms. Text on both sides prioritizes legibility with high contrast, while subtle border radii soften interactive elements without sacrificing a clean, modern edge. It feels like a laid-back, creative studio space meeting a behind-the-scenes control panel."
+theme: "mixed"
+industry: "ai"
+source_url: "https://pika.art"
+refero_style_id: "9fe9f106-44d2-45fc-9873-10c6ddcfa59b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923672816-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923672816-thumb.jpg"
+extracted_at: "2026-04-11T16:08:12.140Z"
 ---
 
-## Overview
+# Pika — Style Reference
 
-**North Star:** Dual-pane studio and control room. One side warm, inviting; the other dark, efficient.
+> Dual-pane studio and control room. One side warm, inviting; the other dark, efficient.
+
+**Theme:** mixed
+
+**Industry:** ai
 
 The site presents a striking split personality, juxtaposing a relaxed, warm-toned left panel with a deep, authoritative black right panel. This creates a functional and conceptual division, visually separating descriptive content from interactive login forms. Text on both sides prioritizes legibility with high contrast, while subtle border radii soften interactive elements without sacrificing a clean, modern edge. It feels like a laid-back, creative studio space meeting a behind-the-scenes control panel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Buttermilk Base | #ffedd2 | `--color-buttermilk-base` | Background for descriptive content, brand accents, selected interactive states. |
+| Inkwell Deep | #0d0d0d | `--color-inkwell-deep` | Primary text across both light and dark backgrounds. This deep black provides substantial contrast for readability. |
+| Carbon Panel | #1f1f1f | `--color-carbon-panel` | Background for the interactive login panel, establishing a command-center aesthetic. |
+| Paper White | #ffffff | `--color-paper-white` | Background for standard buttons and as a primary text color on the dark panel. |
+| Ash Gray | #9e9e9 | `--color-ash-gray` | Secondary text and informational labels, providing a softer contrast than Inkwell Deep. |
+| Chrome Edges | #e5e7eb | `--color-chrome-edges` | Subtle borders and separators, ensuring elements are defined without harsh lines. |
+| Facebook Blue | #4267b2 | `--color-facebook-blue` | Iconography for Facebook sign-in. |
+| Discord Purple | #5865f2 | `--color-discord-purple` | Iconography for Discord sign-in. |
+| Google Yellow | #ffc107 | `--color-google-yellow` | Iconography for Google sign-in. |
+
+## Tokens — Typography
+
+### telka
+
+- **Token:** `--font-telka`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 450
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.33, 1.43, 1.50
+- **Letter spacing:** -0.28, 0.16
+- **Role:** Foundational typeface for body text, links, and buttons. Its range of weights from 300 to 450 supports a subtle hierarchy without resorting to bold, maintaining an understated confidence across informational and interactive elements. The slight negative letter-spacing at smaller sizes (–0.02em at 14px) brings a sense of precision.
+
+### telkaExtended
+
+- **Token:** `--font-telkaextended`
+- **Substitute:** Inter Black
+- **Weights:** 900
+- **Sizes:** 32px
+- **Line heights:** 1.13
+- **Letter spacing:** 0.32
+- **Role:** Reserved exclusively for prominent headings, its 900 weight and slightly positive letter-spacing (0.01em) make it declarative without being aggressive, asserting its presence through density rather than sheer size, crucial for the 'Reality is Optional' headline.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.43 | -0.28px | `--text-body-sm` |
+| body-lg | 16px | 1.5 | 0.16px | `--text-body-lg` |
+| display | 32px | 1.13 | 0.32px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-89 | 89px | `--spacing-89` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 6px |
+| videoPlayer | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 56px |
+| elementGap | 8px |
+
+## Components
+
+### Sign-in Panel
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Promo Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Footer Links Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Sign-in Button
+
+**Role:** Main call to action for email sign-in.
+
+Background: Buttermilk Base (#ffedd2), text: Inkwell Deep (#0d0d0d), border: Chrome Edges (#e5e7eb) 1px, border radius: 6px, padding: 10px 16px. Font: telka, 16px, weight 400.
+
+### Social Sign-in Button
+
+**Role:** Alternative sign-in options via social platforms.
+
+Background: Paper White (#ffffff), text: Inkwell Deep (#0d0d0d), border: Chrome Edges (#e5e7eb) 1px, border radius: 6px, padding: 10px 16px. Font: telka, 16px, weight 400. Includes an icon.
+
+### Social Sign-in Button (Compact)
+
+**Role:** Social sign-in with reduced padding and dark background (not explicitly shown in screenshot but available in variants).
+
+Background: Carbon Panel (#1f1f1f), text: Paper White (#ffffff), border: Chrome Edges (#e5e7eb) 1px, border radius: 6px, padding: 6px 6px. Font: telka, 16px, weight 400. Includes an icon.
+
+### Video Player Frame
+
+**Role:** Container for embedded video content.
+
+Border radius: 10px. Image treatment: contained, slightly rounded corners.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Buttermilk Base (#ffedd2) for the left content pane background and Carbon Panel (#1f1f1f) for the right interactive pane background to maintain the split layout identity.
 - Apply a 6px border radius to all interactive buttons and 10px to larger media containers like video players.
@@ -64,7 +148,7 @@ The site presents a striking split personality, juxtaposing a relaxed, warm-tone
 - Maintain 10px top/bottom padding and 16px left/right padding for standard-height buttons.
 - Use Chrome Edges (#e5e7eb) for subtle borders on buttons and input fields where a delineation is needed without high contrast.
 
-### Don'ts
+### Don't
 
 - Do not deviate from the two-tone split layout structure; avoid full-bleed backgrounds that span both content and interactive areas.
 - Do not introduce strong chromatic colors beyond the specific brand/social icons; the palette is intentionally restrained.
@@ -72,10 +156,102 @@ The site presents a striking split personality, juxtaposing a relaxed, warm-tone
 - Do not use box-shadows for elevation; the design relies on color contrast and subtle borders for depth.
 - Do not use font weights above 450 for body text or links; reserve 900 for headings only.
 
-### Layout
+## Imagery
+
+Imagery primarily consists of contained video content and social media icons. The video content (e.g., a dog in a recording studio) is presented with sharp, defined edges, enclosed within a frame with a 10px border radius. This suggests a focus on showcasing the output or process of the AI tool with direct, unstylized media. Icons are flat, filled, and leverage their brand's specific color, appearing within buttons. The overall style is functional rather than decorative, with imagery serving an explicit role in content or interaction.
+
+## Layout
 
 The page employs a strong two-column, split-screen layout where the left column (approx 67% width) is the content area with a Buttermilk Base background and the right column (approx 33% width) is a dark interactive login panel. The content area is left-aligned and centrally stacked, featuring a video player followed by descriptive text. The right panel is also centrally stacked with a prominent heading and a series of vertically stacked social and email login buttons. Horizontal padding (67px) on the content side maintains significant negative space. Sections are separated vertically by a consistent 56px gap for visual breathing room. Navigation is minimal, consisting of a simple footer with text links.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of contained video content and social media icons. The video content (e.g., a dog in a recording studio) is presented with sharp, defined edges, enclosed within a frame with a 10px border radius. This suggests a focus on showcasing the output or process of the AI tool with direct, unstylized media. Icons are flat, filled, and leverage their brand's specific color, appearing within buttons. The overall style is functional rather than decorative, with imagery serving an explicit role in content or interaction.
+- **Anthropic AI** — Similar two-column layout separating primary content from a call-to-action or product interaction, often with strong background color differentiation.
+- **Midjourney** — Shared aesthetic of presenting advanced AI capabilities in a clear, often split-screen, and functional UI without excessive embellishment.
+- **Linear** — Although typically mono-theme, Linear shares the commitment to a highly functional, high-contrast, text-dominant interface with minimal decorative elements, creating a sense of powerful utility.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-buttermilk-base: #ffedd2;
+  --color-inkwell-deep: #0d0d0d;
+  --color-carbon-panel: #1f1f1f;
+  --color-paper-white: #ffffff;
+  --color-ash-gray: #9e9e9;
+  --color-chrome-edges: #e5e7eb;
+  --color-facebook-blue: #4267b2;
+  --color-discord-purple: #5865f2;
+  --color-google-yellow: #ffc107;
+  --font-telka: 'telka', Inter;
+  --font-telkaextended: 'telkaExtended', Inter Black;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.28px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: 0.16px;
+  --text-display: 32px;
+  --leading-display: 1.13;
+  --tracking-display: 0.32px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-67: 67px;
+  --spacing-80: 80px;
+  --spacing-89: 89px;
+  --radius-buttons: 6px;
+  --radius-videoplayer: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-buttermilk-base: #ffedd2;
+  --color-inkwell-deep: #0d0d0d;
+  --color-carbon-panel: #1f1f1f;
+  --color-paper-white: #ffffff;
+  --color-ash-gray: #9e9e9;
+  --color-chrome-edges: #e5e7eb;
+  --color-facebook-blue: #4267b2;
+  --color-discord-purple: #5865f2;
+  --color-google-yellow: #ffc107;
+  --font-telka: 'telka', Inter;
+  --font-telkaextended: 'telkaExtended', Inter Black;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.28px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: 0.16px;
+  --text-display: 32px;
+  --leading-display: 1.13;
+  --tracking-display: 0.32px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-67: 67px;
+  --spacing-80: 80px;
+  --spacing-89: 89px;
+  --radius-buttons: 6px;
+  --radius-videoplayer: 10px;
+}
+```
