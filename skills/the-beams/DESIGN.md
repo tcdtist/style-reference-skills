@@ -1,58 +1,111 @@
 ---
 version: alpha
-name: The Beams
-description: The Beams presents a stark, high-contrast visual system, built upon a monochrome palette and large-scale typography. It leverages raw, industrial aesthetics by minimizing decorative elements, relying instead on bold, unadorned text on clean white surfaces. Interaction is signaled through subtle borders and text-only links, avoiding visually heavy components to maintain an austere, content-forward focus.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  terra-cotta: "#a05b38"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.95
-    letterSpacing: -0.57px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 29px
-    lineHeight: 1.95
-    letterSpacing: -0.87px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 38px
-    lineHeight: 1.1
-    letterSpacing: -1.14px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 95px
-    lineHeight: 0.9
-    letterSpacing: -2.85px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 160px
-    lineHeight: 0.9
-    letterSpacing: -4.8px
-spacing:
-  elementGap: 19px
-  sectionGap: 46px
-components:
-  text-outline-button-light:
-    role: Secondary action button or navigation element.
-  text-outline-button-dark:
-    role: Secondary action button or navigation element on dark backgrounds.
-  text-input:
-    role: Standard text input field for forms.
-  header-navigation-link:
-    role: Top-level navigation items.
+name: "The Beams"
+description: "The Beams presents a stark, high-contrast visual system, built upon a monochrome palette and large-scale typography. It leverages raw, industrial aesthetics by minimizing decorative elements, relying instead on bold, unadorned text on clean white surfaces. Interaction is signaled through subtle borders and text-only links, avoiding visually heavy components to maintain an austere, content-forward focus."
+theme: "light"
+industry: "other"
+source_url: "https://thebeamslondon.com"
+refero_style_id: "b321ca45-2971-4828-9165-82b77f676bfd"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512739333-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512739333-thumb.jpg"
+extracted_at: "2026-04-30T01:32:36.033Z"
 ---
 
-## Overview
+# The Beams — Style Reference
 
-**North Star:** Industrial monochrome canvas
+> Industrial monochrome canvas
+
+**Theme:** light
+
+**Industry:** other
 
 The Beams presents a stark, high-contrast visual system, built upon a monochrome palette and large-scale typography. It leverages raw, industrial aesthetics by minimizing decorative elements, relying instead on bold, unadorned text on clean white surfaces. Interaction is signaled through subtle borders and text-only links, avoiding visually heavy components to maintain an austere, content-forward focus.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Ink Black | #000000 | `--color-ink-black` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Terra Cotta | #a05b38 | `--color-terra-cotta` | Hero section background — deep, warm, and earthy, evoking an aged, material quality |
+
+## Tokens — Typography
+
+### NeueHaas-web
+
+- **Token:** `--font-neuehaas-web`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 19px, 29px, 38px, 95px, 160px
+- **Line heights:** 0.90, 1.00, 1.10, 1.95, 2.90
+- **Letter spacing:** -0.0300em
+- **Role:** All textual content — headlines, body, links, buttons, inputs. Its consistent use at various scales reinforces a unified, minimalist, and precise brand voice. The tight letter spacing ensures a compact, considered appearance.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 19px | 1.95 | -0.57px | `--text-body-sm` |
+| body | 29px | 1.95 | -0.87px | `--text-body` |
+| heading-sm | 38px | 1.1 | -1.14px | `--text-heading-sm` |
+| heading | 95px | 0.9 | -2.85px | `--text-heading` |
+| display | 160px | 0.9 | -4.8px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-257 | 257px | `--spacing-257` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 46px |
+| cardPadding | 19px |
+| elementGap | 19px |
+
+## Components
+
+### Text Outline Button (Light)
+
+**Role:** Secondary action button or navigation element.
+
+Minimal button with Ink Black text on a Canvas White background, featuring a 1px Ink Black bottom border. No border radius. Padding: 0px top/bottom, 0px left/right. Font: NeueHaas-web, weight 400.
+
+### Text Outline Button (Dark)
+
+**Role:** Secondary action button or navigation element on dark backgrounds.
+
+Minimal button with Canvas White text on a transparent background, featuring a 1px Canvas White bottom border. No border radius. Padding: 0px top/bottom, 40px left/right initially, shrinking to 15.2381px. Font: NeueHaas-web, weight 400.
+
+### Text Input
+
+**Role:** Standard text input field for forms.
+
+Ink Black text on a transparent background, with a 1px Ink Black bottom border. No border radius. Padding: 0px top/left/right, 5.71429px bottom. Font: NeueHaas-web, weight 400.
+
+### Header Navigation Link
+
+**Role:** Top-level navigation items.
+
+Ink Black text on transparent. No border. Font: NeueHaas-web, weight 400. Text is uppercase for top-level links like 'BEAMS' and 'Centre for Culture'.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Ink Black text (#000000) on Canvas White (#ffffff) backgrounds for all primary content, ensuring maximum legibility.
 - Use NeueHaas-web font family consistently across all text elements, leveraging its singular weight (400) and varying sizes for hierarchy.
@@ -61,7 +114,7 @@ The Beams presents a stark, high-contrast visual system, built upon a monochrome
 - Utilize Ink Black (#000000) bottom borders as the primary visual indicator for interactive elements like buttons and input fields.
 - Ensure generous vertical spacing with a base unit of 6px, creating a comfortable density where sections and elements breathe.
 
-### Don'ts
+### Don't
 
 - Avoid using any colors outside of the monochrome Ink Black and Canvas White, except for the Terra Cotta gradient for distinct hero or atmospheric sections.
 - Do not introduce shadows or any form of elevation (e.g., box-shadow) for interactive elements or containers.
@@ -70,10 +123,91 @@ The Beams presents a stark, high-contrast visual system, built upon a monochrome
 - Avoid mixed letter-spacing values across different text roles; `NeueHaas-web`'s inherent -0.0300em is a cornerstone.
 - Do not vary line-height aggressively at smaller text sizes; stick to the specified values which are often condensed for headlines.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Primary page background and default surface for all content. |
+
+## Imagery
+
+The site primarily uses photography, featuring wide-angle, low-key, industrial shots often with a warm, somewhat desaturated filter. Imagery acts as a decorative atmosphere rather than containing explicit content, often blurring into an abstract pattern, such as the Terra Cotta gradient with light streaks. It is typically full-bleed or large background elements, creating immersive sections. Icons appear minimal, outlined, and monochromatic, integrated subtly into the UI.
+
+## Layout
 
 The page maintains a maximum-width contained layout rather than being full-bleed. The hero section often features a full-viewport image or gradient with centered headline text. Section rhythm is often defined by large, distinct blocks, sometimes alternating between text-heavy and image-heavy, but always with consistent vertical spacing. Content arrangement leans towards centered stacks for headlines and body text, with occasional two-column layouts for descriptive paragraphs that alternate text and potentially inferred imagery from the layout. Navigation is a minimal top bar with left-aligned brand and centered primary links.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses photography, featuring wide-angle, low-key, industrial shots often with a warm, somewhat desaturated filter. Imagery acts as a decorative atmosphere rather than containing explicit content, often blurring into an abstract pattern, such as the Terra Cotta gradient with light streaks. It is typically full-bleed or large background elements, creating immersive sections. Icons appear minimal, outlined, and monochromatic, integrated subtly into the UI.
+- **AIGA** — Prominent use of typography as primary visual, high-contrast monochrome palette, minimal decoration, and stark, editorial layouts.
+- **The New York Times** — Emphasis on typographic hierarchy and a black-and-white grid structure for content delivery, with minimal use of color.
+- **Bauhaus Archive** — Stark, functional design, reliance on black and white, and geometric simplicity, utilizing typography as a key visual element.
+- **Artsy** — Clean, large-scale typography, high-contrast monochromatic design to highlight art, and a minimal, content-focused approach.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-terra-cotta: #a05b38;
+  --font-neuehaas-web: 'NeueHaas-web', Helvetica Neue;
+  --text-body-sm: 19px;
+  --leading-body-sm: 1.95;
+  --tracking-body-sm: -0.57px;
+  --text-body: 29px;
+  --leading-body: 1.95;
+  --tracking-body: -0.87px;
+  --text-heading-sm: 38px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -1.14px;
+  --text-heading: 95px;
+  --leading-heading: 0.9;
+  --tracking-heading: -2.85px;
+  --text-display: 160px;
+  --leading-display: 0.9;
+  --tracking-display: -4.8px;
+  --spacing-6: 6px;
+  --spacing-11: 11px;
+  --spacing-19: 19px;
+  --spacing-46: 46px;
+  --spacing-257: 257px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-terra-cotta: #a05b38;
+  --font-neuehaas-web: 'NeueHaas-web', Helvetica Neue;
+  --text-body-sm: 19px;
+  --leading-body-sm: 1.95;
+  --tracking-body-sm: -0.57px;
+  --text-body: 29px;
+  --leading-body: 1.95;
+  --tracking-body: -0.87px;
+  --text-heading-sm: 38px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -1.14px;
+  --text-heading: 95px;
+  --leading-heading: 0.9;
+  --tracking-heading: -2.85px;
+  --text-display: 160px;
+  --leading-display: 0.9;
+  --tracking-display: -4.8px;
+  --spacing-6: 6px;
+  --spacing-11: 11px;
+  --spacing-19: 19px;
+  --spacing-46: 46px;
+  --spacing-257: 257px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+}
+```

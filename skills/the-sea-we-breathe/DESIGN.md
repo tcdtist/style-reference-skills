@@ -1,39 +1,89 @@
 ---
 version: alpha
-name: The Sea We Breathe
-description: The Sea We Breathe uses a serene, atmospheric design language focused on the interplay of water and sky. The visual system is minimal, utilizing large-scale imagery and almost monochrome interface elements to evoke a sense of calm and vastness. Interaction elements are almost invisible, relying on subtle borders and text color changes rather than solid fills. The typography is light and spacious, complementing the open, uncluttered layout.
-colors:
-  sky-blue: "#94e6fb"
-  sea-foam: "#e5faff"
-  canvas-white: "#ffffff"
-  midnight-accent: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.5
-    letterSpacing: 1.672px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 2.128px
-spacing:
-  buttonRadius: 0px
-  elementGap: 0px
-  sectionGap: 44px
-components:
-  ghost-navigation-button:
-    role: Interactive element to switch language or navigate secondary options.
+name: "The Sea We Breathe"
+description: "The Sea We Breathe uses a serene, atmospheric design language focused on the interplay of water and sky. The visual system is minimal, utilizing large-scale imagery and almost monochrome interface elements to evoke a sense of calm and vastness. Interaction elements are almost invisible, relying on subtle borders and text color changes rather than solid fills. The typography is light and spacious, complementing the open, uncluttered layout."
+theme: "light"
+industry: "other"
+source_url: "https://theseawebreathe.com"
+refero_style_id: "f4cb3281-af85-4e7a-96df-404c8a4ebb4d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517042387-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517042387-thumb.jpg"
+extracted_at: "2026-04-30T02:44:15.224Z"
 ---
 
-## Overview
+# The Sea We Breathe — Style Reference
 
-**North Star:** Vast Blue Expanse
+> Vast Blue Expanse
+
+**Theme:** light
+
+**Industry:** other
 
 The Sea We Breathe uses a serene, atmospheric design language focused on the interplay of water and sky. The visual system is minimal, utilizing large-scale imagery and almost monochrome interface elements to evoke a sense of calm and vastness. Interaction elements are almost invisible, relying on subtle borders and text color changes rather than solid fills. The typography is light and spacious, complementing the open, uncluttered layout.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Sky Blue | #94e6fb | `--color-sky-blue` | Decorative accents, interactive element borders, default link and text color on light backgrounds. Implies fluidity without being overly saturated |
+| Sea Foam | #e5faff | `--color-sea-foam` | Subtle border for ghost buttons and navigation elements, active text color. Provides a lighter, almost translucent variation of the primary brand blue |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, fills for decorative SVG elements. Serves as the primary neutral surface |
+| Midnight Accent | #000000 | `--color-midnight-accent` | Icon fills and occasional interface elements, providing high contrast against light surfaces |
+
+## Tokens — Typography
+
+### TT Lakes
+
+- **Token:** `--font-tt-lakes`
+- **Substitute:** Open Sans, sans-serif
+- **Weights:** 400
+- **Sizes:** 11px, 14px
+- **Line heights:** 1.50
+- **Letter spacing:** 0.152em
+- **Role:** Primary typeface for all text content including body, links, buttons, and navigation. Its consistent single weight emphasizes clarity and restraint, matching the minimal UI approach.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.5 | 1.672px | `--text-caption` |
+| body | 14px | 1.5 | 2.128px | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-57 | 57px | `--spacing-57` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 44px |
+| cardPadding | 0px |
+| elementGap | 0px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Interactive element to switch language or navigate secondary options.
+
+Text color Sea Foam (#E5FAFF) with a 1px border in Sea Foam (#E5FAFF). Background is transparent. Padding is 0px in all directions. Uses TT Lakes, weight 400, typically 11px or 14px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize full-bleed, immersive imagery as background elements where appropriate.
 - Use Sky Blue (#94E6FB) and Sea Foam (#E5FAFF) sparingly for inactive states, borders, or subtle text accents.
@@ -42,7 +92,7 @@ The Sea We Breathe uses a serene, atmospheric design language focused on the int
 - Ensure all text, including interactive elements, uses TT Lakes at weight 400 for consistency.
 - Employ transparent backgrounds for most interactive components, relying on border-based visual cues.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated background colors or heavy shadows, as they create visual density inconsistent with the brand.
 - Do not use solid background fills for primary buttons; instead, opt for ghost or border-only styles.
@@ -51,10 +101,62 @@ The Sea We Breathe uses a serene, atmospheric design language focused on the int
 - Do not use varied border radii; maintain 0px radius for all corners.
 - Avoid dense information blocks; break content into manageable, well-spaced sections.
 
-### Layout
+## Imagery
+
+The site predominantly uses full-bleed, expansive photographic imagery of open ocean and sky, creating an immersive atmospheric backdrop. The treatment is naturalistic and high-key, with no obvious stylistic filters or heavy post-processing. The imagery serves a decorative, atmospheric role, setting the mood rather than conveying specific product information. Icons are minimal, likely monochrome (white or black), and contribute to the clean, uncluttered aesthetic.
+
+## Layout
 
 The page primarily employs a full-bleed layout, where the hero section extends to the viewport edges, featuring a prominent atmospheric image as its background. Content is placed minimally on top of this background. The overall structure appears to be max-width contained for textual content within sections, although the hero explicitly breaks this. Vertical rhythm is suggested by deliberate spacing between implied sections, though no distinct dividers are present. Navigation is minimal, consisting of a top bar with a logo and a language selector, likely sticky to maintain presence over the expansive imagery.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses full-bleed, expansive photographic imagery of open ocean and sky, creating an immersive atmospheric backdrop. The treatment is naturalistic and high-key, with no obvious stylistic filters or heavy post-processing. The imagery serves a decorative, atmospheric role, setting the mood rather than conveying specific product information. Icons are minimal, likely monochrome (white or black), and contribute to the clean, uncluttered aesthetic.
+- **The Ocean Cleanup** — Large-scale environmental imagery as hero backgrounds, minimal text overlay, and a focus on subtle UI elements.
+- **4ocean** — Visual emphasis on marine environments, clean design, and a light color palette for a nature-focused brand.
+- **Monterey Bay Aquarium** — Immersive aquatic photography, spacious layouts, and a quiet UI that lets the visual content speak.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-sky-blue: #94e6fb;
+  --color-sea-foam: #e5faff;
+  --color-canvas-white: #ffffff;
+  --color-midnight-accent: #000000;
+  --font-tt-lakes: 'TT Lakes', Open Sans, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --tracking-caption: 1.672px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 2.128px;
+  --spacing-0: 0px;
+  --spacing-44: 44px;
+  --spacing-57: 57px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-sky-blue: #94e6fb;
+  --color-sea-foam: #e5faff;
+  --color-canvas-white: #ffffff;
+  --color-midnight-accent: #000000;
+  --font-tt-lakes: 'TT Lakes', Open Sans, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --tracking-caption: 1.672px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 2.128px;
+  --spacing-0: 0px;
+  --spacing-44: 44px;
+  --spacing-57: 57px;
+  --radius-buttons: 0px;
+}
+```
