@@ -1,71 +1,167 @@
 ---
 version: alpha
-name: Claude Type
-description: Claude Type presents a stately, minimalist aesthetic focused on displaying luxury typefaces. Its visual language relies on expansive neutral backgrounds, sparse content arrangements, and high-contrast typography. Typography is the primary visual element, with generous use of letter-spacing and custom font features. Images serve as artistic showcases, contained within large, softly rounded or arched frames, giving a gallery-like feel to the content.
-colors:
-  canvas-white: "#fcfbf7"
-  paper-gray: "#e7e4e0"
-  midnight-ink: "#0d0d0f"
-  deep-charcoal: "#2b1b1b"
-  ghost-fill: "#100401"
-  pure-white: "#ffffff"
-  success-green: "#99ff66"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.6
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.6
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.6
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.6
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.6
-spacing:
-  cardRadius: 32px
-  buttonRadius: 100px
-  elementGap: 16px
-  sectionGap: 180px
-components:
-  navigation-link:
-    role: Top navigation items and footer links.
-  ghost-button-light-outline:
-    role: Secondary action buttons, typically against light backgrounds.
-  ghost-button-dark-outline-variant:
-    role: Secondary action buttons against dark backgrounds.
-  filled-button-dark-background:
-    role: Primary action button within dark sections or against images.
-  filled-button-light-background-variant:
-    role: Primary action button within light sections.
-  image-card-arched-top:
-    role: Display large, artistic images with a distinct visual shape.
-  image-card-arched-all-sides:
-    role: Primary decorative image container for hero sections or prominent displays.
-  information-card-rounded:
-    role: Structured content blocks, e.g., for showcasing typefaces with accompanying descriptive text.
-  status-chip:
-    role: Small informational tags, often for highlighting product counts or states.
-  input-field:
-    role: Text input areas.
+name: "Claude Type"
+description: "Claude Type presents a stately, minimalist aesthetic focused on displaying luxury typefaces. Its visual language relies on expansive neutral backgrounds, sparse content arrangements, and high-contrast typography. Typography is the primary visual element, with generous use of letter-spacing and custom font features. Images serve as artistic showcases, contained within large, softly rounded or arched frames, giving a gallery-like feel to the content."
+theme: "light"
+industry: "design"
+source_url: "https://claudetype.com"
+refero_style_id: "134cfb76-12e0-4e2e-9995-5a1617190c56"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507910268-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507910268-thumb.jpg"
+extracted_at: "2026-04-30T00:12:15.573Z"
 ---
 
-## Overview
+# Claude Type — Style Reference
 
-**North Star:** Gallery of Arched Voids
+> Gallery of Arched Voids
+
+**Theme:** light
+
+**Industry:** design
 
 Claude Type presents a stately, minimalist aesthetic focused on displaying luxury typefaces. Its visual language relies on expansive neutral backgrounds, sparse content arrangements, and high-contrast typography. Typography is the primary visual element, with generous use of letter-spacing and custom font features. Images serve as artistic showcases, contained within large, softly rounded or arched frames, giving a gallery-like feel to the content.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #fcfbf7 | `--color-canvas-white` | Page background, large card surfaces, hero backgrounds. Provides a soft, warm white base for content |
+| Paper Gray | #e7e4e0 | `--color-paper-gray` | Slightly desaturated background for select sections and containers, suggesting a subtle paper texture |
+| Midnight Ink | #0d0d0f | `--color-midnight-ink` | Primary text color for headlines and body. Its near-black depth offers strong contrast |
+| Deep Charcoal | #2b1b1b | `--color-deep-charcoal` | Secondary text, input text, and subtle borders. Provides a softer dark tone than Midnight Ink for less prominent elements |
+| Ghost Fill | #100401 | `--color-ghost-fill` | Very faint background tint for certain cards, providing a barely-there surface distinction |
+| Pure White | #ffffff | `--color-pure-white` | Inverse text color for dark backgrounds and subtle button borders |
+| Success Green | #99ff66 | `--color-success-green` | Green wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Use as a supporting accent, not as a status color |
+
+## Tokens — Typography
+
+### MagicUIPro
+
+- **Token:** `--font-magicuipro`
+- **Substitute:** serif font with good ligature support, such as Optima or ITC Garamond
+- **Weights:** 400
+- **Sizes:** 11px, 12px, 14px, 15px, 18px
+- **Line heights:** 1.00, 1.40, 1.60, 1.67, 2.00
+- **Letter spacing:** Ranges from -0.0230em (tight) to 0.0200em (expanded), providing fine control over typographic texture.
+- **OpenType features:** 'dlig'
+- **Role:** All text elements, including headings, body, navigation, and buttons. Its single weight and varied sizes emphasize the typographic craft and provide both delicate and impactful expressions through size and meticulous letter-spacing.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.6 | — | `--text-caption` |
+| body-sm | 12px | 1.6 | — | `--text-body-sm` |
+| body | 14px | 1.6 | — | `--text-body` |
+| body-lg | 15px | 1.6 | — | `--text-body-lg` |
+| heading-sm | 18px | 1.6 | — | `--text-heading-sm` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-146 | 146px | `--spacing-146` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-208 | 208px | `--spacing-208` |
+| spacing-300 | 300px | `--spacing-300` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 32px |
+| buttons | 100px |
+| imagery | 900px |
+| elements | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 180px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top navigation items and footer links.
+
+Text uses MagicUIPro, Midnight Ink, 15px size, 1.4 lineHeight, 0.001em letterSpacing. Underlined on hover. No padding or distinct background.
+
+### Ghost Button - Light Outline
+
+**Role:** Secondary action buttons, typically against light backgrounds.
+
+Transparent background, Deep Charcoal text. Border is 1px solid Deep Charcoal. 100px border-radius (pill-shaped). Padding 0px vertical, 16px horizontal. Font sizing is context-dependent, but often 15px with 0.001em letter-spacing.
+
+### Ghost Button - Dark Outline (variant)
+
+**Role:** Secondary action buttons against dark backgrounds.
+
+Transparent background, Pure White text. Border is 1px solid Pure White. 100px border-radius (pill-shaped). Padding 0px vertical, 14px horizontal.
+
+### Filled Button - Dark Background
+
+**Role:** Primary action button within dark sections or against images.
+
+Deep Charcoal background, Pure White text. 0px border-radius (square). Padding 0px vertical, 14px horizontal. Often appears in conjunction with image cards.
+
+### Filled Button - Light Background (variant)
+
+**Role:** Primary action button within light sections.
+
+Pure White background, Deep Charcoal text. 100px border-radius (pill-shaped). Padding 0px vertical, 14px horizontal.
+
+### Image Card - Arched Top
+
+**Role:** Display large, artistic images with a distinct visual shape.
+
+Radius of 900px 900px 0px 0px, creating an arched top. Background color of Ghost Fill. No padding, images are full-bleed within the card boundary. Often accompanied by text below the image.
+
+### Image Card - Arched All Sides
+
+**Role:** Primary decorative image container for hero sections or prominent displays.
+
+Radius of 900px on all corners, creating an overall arched or 'soft' rectangular shape. Background color of Ghost Fill initially. No padding.
+
+### Information Card - Rounded
+
+**Role:** Structured content blocks, e.g., for showcasing typefaces with accompanying descriptive text.
+
+Background of Canvas White, 32px border-radius. Padding 16px vertical, 0px horizontal. No shadow.
+
+### Status Chip
+
+**Role:** Small informational tags, often for highlighting product counts or states.
+
+Background color #99ff66. Text color Midnight Ink. Padding 0px vertical, 16px horizontal. 100px border-radius.
+
+### Input Field
+
+**Role:** Text input areas.
+
+Transparent background, border is 1px solid Deep Charcoal. No border-radius. Font style determined by parent context, typically MagicUIPro, 15px, Deep Charcoal.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize typography as the primary visual element, using MagicUIPro with careful attention to size and letter-spacing.
 - Use Canvas White (#fcfbf7) or Paper Gray (#e7e4e0) for all page and section backgrounds to maintain a clean, airy feel.
@@ -75,7 +171,7 @@ Claude Type presents a stately, minimalist aesthetic focused on displaying luxur
 - Use Midnight Ink (#0d0d0f) for all primary text and Deep Charcoal (#2b1b1b) for secondary text or subtle borders.
 - Employ the 'dlig' font feature for all MagicUIPro text to render discretionary ligatures, enhancing typographic elegance.
 
-### Don'ts
+### Don't
 
 - Avoid strong, vivid chromatic colors. Keep color palette subdued, relying on neutrals and a single subtle accent.
 - Do not use sharp 0px corners on any card or actionable UI element; 32px is the minimum for cards, 100px for buttons.
@@ -85,6 +181,117 @@ Claude Type presents a stately, minimalist aesthetic focused on displaying luxur
 - Minimize the use of multiple font weights; the system primarily uses a single weight with size and spacing for visual hierarchy.
 - Do not use decorative borders on elements other than subtle outlines for ghost buttons or inputs.
 
-### Elevation
+## Surfaces
 
-This design system intentionally avoids overt shadows. The distinction between surface levels is achieved through subtle background color changes (Canvas White, Paper Gray, Ghost Fill) and the strong visual weight of imagery contained within distinct shapes. There is no traditional 'elevation' through shadows, maintaining a flat, sophisticated aesthetic.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #fcfbf7 | Primary overall background for the majority of page content, providing a warm, clean base. |
+| 2 | Paper Gray | #e7e4e0 | Used for background of specific sections or subtle containers, offering a slight visual shift from the main canvas. |
+| 3 | Ghost Fill | #100401 | A very faint background tint on prominent image cards, providing a barely perceptible surface without strong visual weight. |
+
+## Similar Brands
+
+- **Kerning Cultures** — Shared focus on sophisticated typography, minimalist aesthetic, and rich content presentation with ample negative space.
+- **Future Fonts** — Type foundry showcasing new fonts with a clean, editorial layout and strong photographic elements.
+- **Hermès** — Luxury brand aesthetic characterized by understated elegance, large impactful imagery within clean layouts, and a very selective color palette.
+- **&Walsh agency** — Design agency website utilizing large, eye-catching imagery and bold, yet refined, typography against largely neutral backdrops.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #fcfbf7;
+  --color-paper-gray: #e7e4e0;
+  --color-midnight-ink: #0d0d0f;
+  --color-deep-charcoal: #2b1b1b;
+  --color-ghost-fill: #100401;
+  --color-pure-white: #ffffff;
+  --color-success-green: #99ff66;
+  --font-magicuipro: 'MagicUIPro', serif font with good ligature support, such as Optima or ITC Garamond;
+  --text-caption: 11px;
+  --leading-caption: 1.6;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.6;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.6;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.6;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-146: 146px;
+  --spacing-180: 180px;
+  --spacing-208: 208px;
+  --spacing-300: 300px;
+  --radius-cards: 32px;
+  --radius-buttons: 100px;
+  --radius-imagery: 900px;
+  --radius-elements: 10px;
+  --surface-canvas-white: #fcfbf7;
+  --surface-paper-gray: #e7e4e0;
+  --surface-ghost-fill: #100401;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #fcfbf7;
+  --color-paper-gray: #e7e4e0;
+  --color-midnight-ink: #0d0d0f;
+  --color-deep-charcoal: #2b1b1b;
+  --color-ghost-fill: #100401;
+  --color-pure-white: #ffffff;
+  --color-success-green: #99ff66;
+  --font-magicuipro: 'MagicUIPro', serif font with good ligature support, such as Optima or ITC Garamond;
+  --text-caption: 11px;
+  --leading-caption: 1.6;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.6;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.6;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.6;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-146: 146px;
+  --spacing-180: 180px;
+  --spacing-208: 208px;
+  --spacing-300: 300px;
+  --radius-cards: 32px;
+  --radius-buttons: 100px;
+  --radius-imagery: 900px;
+  --radius-elements: 10px;
+  --surface-canvas-white: #fcfbf7;
+  --surface-paper-gray: #e7e4e0;
+  --surface-ghost-fill: #100401;
+}
+```
