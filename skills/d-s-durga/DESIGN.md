@@ -1,71 +1,135 @@
 ---
 version: alpha
-name: D.S. & DURGA
-description: D.S. & DURGA presents a meticulously crafted aesthetic resembling a gallery display for luxury artisanal products. The design emphasizes stark contrasts with a largely achromatic palette, combining a warm off-white canvas with sharp black typography and deliberate image boundaries. Typography is bold and communicative, used as a primary design element for product showcasing and narrative. The overall impression is one of curated elegance and understated theatricality.
-colors:
-  canvas-parchment: "#f2e9de"
-  midnight-ink: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.43
-    letterSpacing: 0.6px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.27
-    letterSpacing: 0.7px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.25
-    letterSpacing: 0.8px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.22
-    letterSpacing: 0.9px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.17
-    letterSpacing: -1.5px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 0.92
-    letterSpacing: -3px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 120px
-    lineHeight: 0.83
-    letterSpacing: -6px
-spacing:
-  elementGap: 10px
-  sectionGap: 50px
-components:
-  text-button-canvas-background:
-    role: Standard button for actions and navigation, with a subtle background.
-  ghost-button-transparent:
-    role: Secondary action or link, blending into the background.
-  navigation-link:
-    role: Primary navigation items in the header and footer.
-  product-input-field:
-    role: Single-line text input for search or forms.
-  information-banner:
-    role: Promotional or notification banner, often for shipping or offers.
-  feature-card-implicitly-defined:
-    role: Used for displaying product categories or featured items.
+name: "D.S. & DURGA"
+description: "D.S. & DURGA presents a meticulously crafted aesthetic resembling a gallery display for luxury artisanal products. The design emphasizes stark contrasts with a largely achromatic palette, combining a warm off-white canvas with sharp black typography and deliberate image boundaries. Typography is bold and communicative, used as a primary design element for product showcasing and narrative. The overall impression is one of curated elegance and understated theatricality."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.dsanddurga.com"
+refero_style_id: "391bd401-06d7-4444-8243-8573e96eab24"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512821196-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512821196-thumb.jpg"
+extracted_at: "2026-04-30T01:34:18.069Z"
 ---
 
-## Overview
+# D.S. & DURGA — Style Reference
 
-**North Star:** curated gallery, artisanal display
+> curated gallery, artisanal display
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 D.S. & DURGA presents a meticulously crafted aesthetic resembling a gallery display for luxury artisanal products. The design emphasizes stark contrasts with a largely achromatic palette, combining a warm off-white canvas with sharp black typography and deliberate image boundaries. Typography is bold and communicative, used as a primary design element for product showcasing and narrative. The overall impression is one of curated elegance and understated theatricality.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Parchment | #f2e9de | `--color-canvas-parchment` | Page backgrounds, card surfaces, ghost button backgrounds — a warm, light neutral creating a natural paper-like base |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, strong borders, icons, interactive elements — providing high contrast and graphic boldness against light surfaces |
+
+## Tokens — Typography
+
+### Sofia Pro
+
+- **Token:** `--font-sofia-pro`
+- **Substitute:** Montserrat
+- **Weights:** 400, 600, 800
+- **Sizes:** 12px, 14px, 16px, 18px, 30px, 60px, 120px
+- **Line heights:** 0.83, 0.92, 1.17, 1.22, 1.25, 1.27, 1.43
+- **Letter spacing:** 0.6, 0.7, 0.8, 0.9, -1.5, -3, -6
+- **Role:** All textual content, from navigation to product titles. The varied weights and precise letter-spacing create distinct hierarchies and give a modern, authoritative tone. Tighter tracking for larger sizes enhances the impact of display text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.43 | 0.6px | `--text-caption` |
+| body-sm | 14px | 1.27 | 0.7px | `--text-body-sm` |
+| body | 16px | 1.25 | 0.8px | `--text-body` |
+| subheading | 18px | 1.22 | 0.9px | `--text-subheading` |
+| heading | 30px | 1.17 | -1.5px | `--text-heading` |
+| heading-lg | 60px | 0.92 | -3px | `--text-heading-lg` |
+| display | 120px | 0.83 | -6px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Text Button - Canvas Background
+
+**Role:** Standard button for actions and navigation, with a subtle background.
+
+Background #f2e9de, text #000000. Features sharp 0px border-radius, with padding applied for text legibility, typically 5px or 7px horizontal.
+
+### Ghost Button - Transparent
+
+**Role:** Secondary action or link, blending into the background.
+
+Transparent background, text #000000. Sharp 0px border-radius. Minimal padding, usually 5px or 7px horizontal.
+
+### Navigation Link
+
+**Role:** Primary navigation items in the header and footer.
+
+Text in #000000. Active states may involve bolding or underlining. Letter spacing is visually significant, particularly for main navigation elements at similar sizes.
+
+### Product Input Field
+
+**Role:** Single-line text input for search or forms.
+
+Transparent background with 0px border-radius. Text in #000000. Features significant horizontal padding (20px) but no explicit vertical padding from the raw data, implying tight vertical integration.
+
+### Information Banner
+
+**Role:** Promotional or notification banner, often for shipping or offers.
+
+Small text size (e.g., 12px Sofia Pro), #000000 text on a #f2e9de background. Tightly packed without additional padding to maximize screen real estate.
+
+### Feature Card (implicitly defined)
+
+**Role:** Used for displaying product categories or featured items.
+
+Implied by overall page structure—a clear rectangular area with #f2e9de background. Text is #000000. Uses a 0px border radius and often has strong top and bottom borders (1px #000000) for visual separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use #f2e9de as the dominant background color for all main sections and UI surfaces.
 - Apply #000000 for all primary text, headings, graphical elements, and interface borders to ensure crisp contrast.
@@ -75,7 +139,7 @@ D.S. & DURGA presents a meticulously crafted aesthetic resembling a gallery disp
 - Ensure letter-spacing is applied as specified for Sofia Pro to maintain its distinctive character, particularly tighter tracking for larger display text.
 - Use a minimum 10px element gap for close-related items and 50px for distinct section breaks, reflecting the compact density.
 
-### Don'ts
+### Don't
 
 - Do not introduce any additional background colors beyond #f2e9de for canvas/surface roles.
 - Avoid using any rounded corners or soft edges on any UI elements; enforce the 0px radius.
@@ -85,10 +149,115 @@ D.S. & DURGA presents a meticulously crafted aesthetic resembling a gallery disp
 - Do not deviate from the specified letter-spacing for Sofia Pro; imprecise tracking will alter the brand's typographic tone.
 - Do not introduce inconsistent padding values; adhere to the 5px, 7px, and 20px patterns derived for interactive elements.
 
-### Layout
+## Imagery
+
+This design system uses a combination of product photography and stylized, conceptual imagery. Photography features tight crops of products on clean, often dark, backgrounds, emphasizing texture and form. Lifestyle imagery uses high-contrast, often black-and-white or desaturated palettes, with unexpected, artistic compositions (e.g., scissors, water glass) that serve as decorative atmosphere rather than direct product showcasing. Imagery is often full-bleed or large blocks, integrated seamlessly into the grid, with sharp, unmasked edges. Icons are outlined, fine-stroke, and monochrome, reinforcing the graphic, minimalist aesthetic. The overall density of imagery is high, often used to create impactful visual sections.
+
+## Layout
 
 The page structure is full-bleed, with content expanding to the edges of the viewport horizontally but organized into distinct sections vertically. The hero section often features a dominant, atmospheric image or product shot with centered, large-format text. Content sections alternate between visually strong media blocks and typography-driven informational panels, frequently using 2-column layouts that can reverse. A strong vertical rhythm is established by consistently sized vertical dividers (1px solid #000000) or pronounced section breaks. Navigation features a sticky top bar with minimal links and iconic interactive elements. The layout feels dense but intentionally sparse around key product visuals.
 
-### Imagery
+## Similar Brands
 
-This design system uses a combination of product photography and stylized, conceptual imagery. Photography features tight crops of products on clean, often dark, backgrounds, emphasizing texture and form. Lifestyle imagery uses high-contrast, often black-and-white or desaturated palettes, with unexpected, artistic compositions (e.g., scissors, water glass) that serve as decorative atmosphere rather than direct product showcasing. Imagery is often full-bleed or large blocks, integrated seamlessly into the grid, with sharp, unmasked edges. Icons are outlined, fine-stroke, and monochrome, reinforcing the graphic, minimalist aesthetic. The overall density of imagery is high, often used to create impactful visual sections.
+- **Aesop** — Shares a sophisticated, minimal e-commerce aesthetic with an emphasis on high-quality product photography and a refined, classic-modern typeface.
+- **Byredo** — Features luxury product presentation with bold typography, stark black-and-white elements, and a focus on mood-setting imagery over verbose descriptions.
+- **Le Labo** — Utilizes a clean, often achromatic palette with strong grid-based layouts and fine typographic details for a high-end, ingredient-focused brand feel.
+- **Frama** — Known for its use of natural textures, strong contrast, and architectural minimalism across its e-commerce experience, similar to the gallery-like feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-parchment: #f2e9de;
+  --color-midnight-ink: #000000;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.6px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.27;
+  --tracking-body-sm: 0.7px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: 0.8px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.22;
+  --tracking-subheading: 0.9px;
+  --text-heading: 30px;
+  --leading-heading: 1.17;
+  --tracking-heading: -1.5px;
+  --text-heading-lg: 60px;
+  --leading-heading-lg: 0.92;
+  --tracking-heading-lg: -3px;
+  --text-display: 120px;
+  --leading-display: 0.83;
+  --tracking-display: -6px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-parchment: #f2e9de;
+  --color-midnight-ink: #000000;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.6px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.27;
+  --tracking-body-sm: 0.7px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: 0.8px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.22;
+  --tracking-subheading: 0.9px;
+  --text-heading: 30px;
+  --leading-heading: 1.17;
+  --tracking-heading: -1.5px;
+  --text-heading-lg: 60px;
+  --leading-heading-lg: 0.92;
+  --tracking-heading-lg: -3px;
+  --text-display: 120px;
+  --leading-display: 0.83;
+  --tracking-display: -6px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --radius-all: 0px;
+}
+```
