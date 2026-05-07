@@ -1,61 +1,173 @@
 ---
 version: alpha
-name: Oevra
-description: Oevra employs a muted, nature-inspired aesthetic, using a soft, desaturated green as its primary chromatic anchor against predominantly monochromatic backgrounds. The system is characterized by spacious layouts, delicate typography, and a subtle application of surface transparency and soft edge rounding, creating an ethereal yet grounded feel. Typefaces are intentionally varied, pairing a contemporary sans-serif for headings with a more classic system font for utilitarian elements, often with generous letter-spacing for visual airiness. Components are lightweight and favor borders or ghost styles over solid fills, contributing to the overall sense of understated presence.
-colors:
-  canvas-white: "#ffffff"
-  midnight-black: "#000000"
-  moss-green: "#778643"
-  charcoal-gray: "#4e4e4e"
-  whisper-gray: "#c8c8c8"
-  smoke-glass: "#ffffff1a"
-  pale-mist: "#efefef"
-typography:
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.2
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 90px
-    lineHeight: 1.1
-spacing:
-  cardRadius: 15px
-  buttonRadius: 22.5px
-  elementGap: 15px
-  sectionGap: 30px
-components:
-  ghost-button-white:
-    role: Header navigation links and secondary calls to action.
-  ghost-button-charcoal:
-    role: Muted actions or tertiary navigation.
-  primary-action-button:
-    role: Key interactions and calls to action.
-  transparent-card:
-    role: Layered content containers over background sections.
-  light-card:
-    role: Prominent content containers requiring more visual weight.
+name: "Oevra"
+description: "Oevra employs a muted, nature-inspired aesthetic, using a soft, desaturated green as its primary chromatic anchor against predominantly monochromatic backgrounds. The system is characterized by spacious layouts, delicate typography, and a subtle application of surface transparency and soft edge rounding, creating an ethereal yet grounded feel. Typefaces are intentionally varied, pairing a contemporary sans-serif for headings with a more classic system font for utilitarian elements, often with generous letter-spacing for visual airiness. Components are lightweight and favor borders or ghost styles over solid fills, contributing to the overall sense of understated presence."
+theme: "light"
+industry: "productivity"
+source_url: "https://oevra.com"
+refero_style_id: "01d6013d-a176-4a22-b7dd-fbd113592956"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507960269-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507960269-thumb.jpg"
+extracted_at: "2026-04-30T00:13:02.231Z"
 ---
 
-## Overview
+# Oevra — Style Reference
 
-**North Star:** Misty Forest Canvas — a serene, expansive background in soft green hues, grounding light, transparent elements.
+> Misty Forest Canvas — a serene, expansive background in soft green hues, grounding light, transparent elements.
+
+**Theme:** light
+
+**Industry:** productivity
 
 Oevra employs a muted, nature-inspired aesthetic, using a soft, desaturated green as its primary chromatic anchor against predominantly monochromatic backgrounds. The system is characterized by spacious layouts, delicate typography, and a subtle application of surface transparency and soft edge rounding, creating an ethereal yet grounded feel. Typefaces are intentionally varied, pairing a contemporary sans-serif for headings with a more classic system font for utilitarian elements, often with generous letter-spacing for visual airiness. Components are lightweight and favor borders or ghost styles over solid fills, contributing to the overall sense of understated presence.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, light card surfaces, default UI elements like text and borders |
+| Midnight Black | #000000 | `--color-midnight-black` | Primary text, headers, and strong outlines |
+| Moss Green | #778643 | `--color-moss-green` | Primary action backgrounds, accented text, and interactive elements. Its moderate saturation provides a subtle yet distinct brand presence |
+| Charcoal Gray | #4e4e4e | `--color-charcoal-gray` | Secondary text, muted links, and soft UI borders for hierarchical separation |
+| Whisper Gray | #c8c8c8 | `--color-whisper-gray` | Subtle background accents, dividers and other low-prominence UI elements |
+| Smoke Glass | #ffffff1a | `--color-smoke-glass` | Background for transparent cards, providing a frosted glass effect on top of the main canvas |
+| Pale Mist | #efefef | `--color-pale-mist` | Subtly darker backgrounds for layered surfaces or sections, indicated by `--color-lightGrey` token |
+
+## Tokens — Typography
+
+### space-regular
+
+- **Token:** `--font-space-regular`
+- **Weights:** 400
+- **Sizes:** 8px, 12px, 14px, 15px
+- **Line heights:** 1.2, 1.25, 1.3, 1.5
+- **Role:** space-regular — detected in extracted data but not described by AI
+
+### Suisse Light
+
+- **Token:** `--font-suisse-light`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 34px, 45px, 75px, 90px
+- **Line heights:** 1.00, 1.10
+- **Role:** Display and prominent headings. The light weight of the sans-serif font creates a sense of airy sophistication and prevents headlines from feeling overbearing.
+
+### Suisse Regular
+
+- **Token:** `--font-suisse-regular`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 15px
+- **Line heights:** 1.20, 1.25, 1.30
+- **Role:** Body text, footnotes, and supporting copy. It maintains clarity within dense blocks of information.
+
+### Space Mono
+
+- **Token:** `--font-space-mono`
+- **Substitute:** Space Mono
+- **Role:** Utility text, navigation labels, and small UI elements. The monospace nature adds a technical, precise undertone.
+
+### System Sans-serif
+
+- **Token:** `--font-system-sans-serif`
+- **Substitute:** system-ui
+- **Role:** Fallback and minimal UI labels, ensuring consistent display across platforms.
+
+### ui-sans-serif
+
+- **Token:** `--font-ui-sans-serif`
+- **Weights:** 400
+- **Sizes:** 8px
+- **Line heights:** 1.5
+- **Role:** ui-sans-serif — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-lg | 15px | 1.2 | — | `--text-body-lg` |
+| heading-sm | 34px | 1 | — | `--text-heading-sm` |
+| heading | 45px | 1.1 | — | `--text-heading` |
+| heading-lg | 75px | 1.1 | — | `--text-heading-lg` |
+| display | 90px | 1.1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-218 | 218px | `--spacing-218` |
+| spacing-225 | 225px | `--spacing-225` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 15px |
+| buttons | 22.5px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1425px |
+| sectionGap | 30px |
+| cardPadding | 30px |
+| elementGap | 15px |
+
+## Components
+
+### Ghost Button (White)
+
+**Role:** Header navigation links and secondary calls to action.
+
+Transparent background with White text and 1px White border. No padding specified, suggesting inherited or minimal layout-driven spacing. Features 0px border-radius for sharp edges, contrasting with rounded filled buttons.
+
+### Ghost Button (Charcoal)
+
+**Role:** Muted actions or tertiary navigation.
+
+Transparent background with Charcoal Gray text and 1px Charcoal Gray border. No padding, 0px border-radius, maintaining a sharp and minimal appearance.
+
+### Primary Action Button
+
+**Role:** Key interactions and calls to action.
+
+Solid Moss Green background with Canvas White text. Rounded corners at 22.5px, providing a softer, more inviting feel than ghost buttons. Padding is 11.25px vertical, 22.5px horizontal (11.25px 22.5px).
+
+### Transparent Card
+
+**Role:** Layered content containers over background sections.
+
+Background of rgba(255, 255, 255, 0.1) creates a subtle frosted effect. No shadow, 15px border-radius for gentle rounding. Internal padding of 30px on all sides.
+
+### Light Card
+
+**Role:** Prominent content containers requiring more visual weight.
+
+Nearly opaque background of rgba(255, 255, 255, 0.9). No shadow, 15px border-radius, matches curve of transparent cards. Internal padding of 30px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Suisse Light for all primary headings (h1-h3) at 400 weight, emphasizing airy elegance.
 - Apply a 15px border-radius to all cards and images for a consistent soft-edged aesthetic.
@@ -65,7 +177,7 @@ Oevra employs a muted, nature-inspired aesthetic, using a soft, desaturated gree
 - Ensure all body and supporting text uses Suisse Regular at 400 weight for readability and a consistent brand voice.
 - Employ Space Mono for all small, utilitarian text elements, labels, and iconography to add a precise, technical detail.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors; restrict accent colors strictly to Moss Green (#778643) for interactive elements.
 - Do not use harsh shadows or heavy borders; the design emphasizes lightness and subtle layering.
@@ -75,10 +187,138 @@ Oevra employs a muted, nature-inspired aesthetic, using a soft, desaturated gree
 - Do not introduce new border-radius values; adhere to 15px for containers and 22.5px for buttons.
 - Do not use solid-fill buttons for secondary or tertiary actions; use ghost buttons with appropriate border and text colors.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | The primary background for the page, providing a clean base that occasionally overlaps with the background gradient. |
+| 1 | Pale Mist | #efefef | Alternative background for sections requiring a subtle differentiation from the main canvas. |
+| 2 | Smoke Glass | #ffffff1a | Transparent card backgrounds, creating a layered, frosted glass effect. |
+| 3 | Light Card | #ffffffe6 | More opaque card backgrounds for content that needs to stand out more prominently. |
+
+## Imagery
+
+The visual language relies heavily on subtle background gradients that mimic organic, mist-laden environments, providing a soft, atmospheric backdrop. Product imagery, where present, consists of clean, isolated screenshots of app interfaces, often framed within a device. Icons are minimalist, utilizing thin strokes or simple fills, primarily in achromatic tones. Imagery serves as decorative atmosphere rather than direct content, reinforcing the ethereal and calm brand identity. The density is text-dominant, with a clear focus on typography, and imagery is used sparingly to enhance mood rather than explain features.
+
+## Layout
 
 The page maintains a centered, max-width layout of 1425px, creating structured content areas. The hero section is full-bleed, featuring a large, centered headline over a soft gradient background. Following sections typically alternate between a background gradient and a solid Canvas White, with consistent vertical spacing between major blocks. Content arrangement often employs large, visually distinct headings with smaller descriptive text below, or two-column layouts that balance textual information with implicit visual placeholders. Navigation is a minimal top bar with ghost links, becoming sticky on scroll. The overall density is spacious, with generous padding and margins defining elements.
 
-### Imagery
+## Similar Brands
 
-The visual language relies heavily on subtle background gradients that mimic organic, mist-laden environments, providing a soft, atmospheric backdrop. Product imagery, where present, consists of clean, isolated screenshots of app interfaces, often framed within a device. Icons are minimalist, utilizing thin strokes or simple fills, primarily in achromatic tones. Imagery serves as decorative atmosphere rather than direct content, reinforcing the ethereal and calm brand identity. The density is text-dominant, with a clear focus on typography, and imagery is used sparingly to enhance mood rather than explain features.
+- **Calm** — Employs an ethereal, nature-inspired gradient background and soft, un-intrusive typography to foster a sense of tranquility.
+- **Headspace** — Uses a limited, pastel-like color palette and a clean, spacious UI to create a calm and focused user experience.
+- **Woven** — Features a monochromatic UI with a single, muted accent color for interactive elements and a focus on clean, precise typography.
+- **Fathom Analytics** — Utilizes a minimalist design approach with ample whitespace, light typography, and subtle brand color accents for clarity.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-moss-green: #778643;
+  --color-charcoal-gray: #4e4e4e;
+  --color-whisper-gray: #c8c8c8;
+  --color-smoke-glass: #ffffff1a;
+  --color-pale-mist: #efefef;
+  --font-space-regular: 'space-regular', ui-sans-serif, system-ui, sans-serif;
+  --font-suisse-light: 'Suisse Light', Helvetica Neue;
+  --font-suisse-regular: 'Suisse Regular', Helvetica Neue;
+  --font-space-mono: 'Space Mono', Space Mono;
+  --font-system-sans-serif: 'System Sans-serif', system-ui;
+  --font-ui-sans-serif: 'ui-sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.2;
+  --text-heading-sm: 34px;
+  --leading-heading-sm: 1;
+  --text-heading: 45px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 75px;
+  --leading-heading-lg: 1.1;
+  --text-display: 90px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-23: 23px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-45: 45px;
+  --spacing-60: 60px;
+  --spacing-75: 75px;
+  --spacing-83: 83px;
+  --spacing-90: 90px;
+  --spacing-120: 120px;
+  --spacing-135: 135px;
+  --spacing-180: 180px;
+  --spacing-218: 218px;
+  --spacing-225: 225px;
+  --radius-cards: 15px;
+  --radius-buttons: 22.5px;
+  --surface-canvas-white: #ffffff;
+  --surface-pale-mist: #efefef;
+  --surface-smoke-glass: #ffffff1a;
+  --surface-light-card: #ffffffe6;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-moss-green: #778643;
+  --color-charcoal-gray: #4e4e4e;
+  --color-whisper-gray: #c8c8c8;
+  --color-smoke-glass: #ffffff1a;
+  --color-pale-mist: #efefef;
+  --font-space-regular: 'space-regular', ui-sans-serif, system-ui, sans-serif;
+  --font-suisse-light: 'Suisse Light', Helvetica Neue;
+  --font-suisse-regular: 'Suisse Regular', Helvetica Neue;
+  --font-space-mono: 'Space Mono', Space Mono;
+  --font-system-sans-serif: 'System Sans-serif', system-ui;
+  --font-ui-sans-serif: 'ui-sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.2;
+  --text-heading-sm: 34px;
+  --leading-heading-sm: 1;
+  --text-heading: 45px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 75px;
+  --leading-heading-lg: 1.1;
+  --text-display: 90px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-23: 23px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-45: 45px;
+  --spacing-60: 60px;
+  --spacing-75: 75px;
+  --spacing-83: 83px;
+  --spacing-90: 90px;
+  --spacing-120: 120px;
+  --spacing-135: 135px;
+  --spacing-180: 180px;
+  --spacing-218: 218px;
+  --spacing-225: 225px;
+  --radius-cards: 15px;
+  --radius-buttons: 22.5px;
+  --surface-canvas-white: #ffffff;
+  --surface-pale-mist: #efefef;
+  --surface-smoke-glass: #ffffff1a;
+  --surface-light-card: #ffffffe6;
+}
+```

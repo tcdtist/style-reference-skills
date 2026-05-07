@@ -1,64 +1,141 @@
 ---
 version: alpha
-name: O0
-description: O0 establishes a commanding, minimalist aesthetic through stark black and white contrasts and oversized, serif typography for headlines. The interaction is focused on content, with a high degree of content density. The system relies on precise typographic interplay and generous negative space to convey a sense of modern authority, using a light theme with occasional inverse dark sections for dramatic effect. Components are typically ghosted or outlined, allowing content to take center stage.
-colors:
-  midnight-black: "#000000"
-  canvas-white: "#ffffff"
-  cloud-mist: "#f2f2f2"
-  pale-ash: "#e8e9ea"
-  stone-gray: "#cecdcb"
-  yellow-accent: "#ffe500"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 54px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.9
-spacing:
-  elementGap: 10px
-  sectionGap: 60px
-components:
-  ghost-navigation-link:
-    role: Navigation item
-  ghost-button:
-    role: Call to action
-  client-logo-grid-item:
-    role: Static display
-  section-divider-subtle:
-    role: Visual separation
-  primary-heading-times:
-    role: Hero headline
-  body-text-arial:
-    role: Descriptive content
+name: "O0"
+description: "O0 establishes a commanding, minimalist aesthetic through stark black and white contrasts and oversized, serif typography for headlines. The interaction is focused on content, with a high degree of content density. The system relies on precise typographic interplay and generous negative space to convey a sense of modern authority, using a light theme with occasional inverse dark sections for dramatic effect. Components are typically ghosted or outlined, allowing content to take center stage."
+theme: "light"
+industry: "design"
+source_url: "https://www.ozero.design"
+refero_style_id: "36752f78-1c43-471b-b125-e82152ad23dd"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513154130-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513154130-thumb.jpg"
+extracted_at: "2026-04-30T01:39:34.897Z"
 ---
 
-## Overview
+# O0 — Style Reference
 
-**North Star:** gallery wall contrast
+> gallery wall contrast
+
+**Theme:** light
+
+**Industry:** design
 
 O0 establishes a commanding, minimalist aesthetic through stark black and white contrasts and oversized, serif typography for headlines. The interaction is focused on content, with a high degree of content density. The system relies on precise typographic interplay and generous negative space to convey a sense of modern authority, using a light theme with occasional inverse dark sections for dramatic effect. Components are typically ghosted or outlined, allowing content to take center stage.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Black | #000000 | `--color-midnight-black` | Primary text, headline text, content backgrounds in inverted sections, borders, icons. Creates a stark, authoritative contrast |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary page background, text on dark backgrounds, borders, icons. Provides a bright, expansive base for content |
+| Cloud Mist | #f2f2f2 | `--color-cloud-mist` | Subtle background for UI sections, offering a slight visual break from pure white. Used for alternating section backgrounds |
+| Pale Ash | #e8e9ea | `--color-pale-ash` | Secondary background for card surfaces or distinct content blocks, providing minimal differentiation |
+| Stone Gray | #cecdcb | `--color-stone-gray` | Background for minor interactive elements or subtle dividers. A slightly darker neutral for lower emphasis UI elements |
+| Yellow Accent | #ffe500 | `--color-yellow-accent` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 48px, 52px, 54px, 64px, 66px, 79px, 88px
+- **Line heights:** 0.90, 1.00
+- **Role:** Primary headlines and display text. The serif typeface at large sizes provides a classic, upscale feel, while the tight line height maximizes visual impact.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 400
+- **Sizes:** 16px, 20px
+- **Line heights:** 1.15, 1.20, 1.22, 1.25, 1.44, 1.50
+- **Role:** Navigation, body text, and descriptive labels. The sans-serif provides clear readability and a modern counterpoint to the serif headlines.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | — | `--text-body` |
+| body-lg | 20px | 1.25 | — | `--text-body-lg` |
+| heading-sm | 48px | 1 | — | `--text-heading-sm` |
+| heading | 52px | 1 | — | `--text-heading` |
+| heading-lg | 54px | 1 | — | `--text-heading-lg` |
+| display | 64px | 0.9 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-102 | 102px | `--spacing-102` |
+| spacing-113 | 113px | `--spacing-113` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60px |
+| cardPadding | 10px |
+| elementGap | 10px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Navigation item
+
+Text link with no background or padding, using Arial 400 at 16px, Midnight Black text color. Interacts purely through text.
+
+### Ghost Button
+
+**Role:** Call to action
+
+A button with no background, no padding, and a 0px border-radius, using #000000 text. Appears as a textual link but functions as an interactive button.
+
+### Client Logo Grid Item
+
+**Role:** Static display
+
+Grid item for client logos, visually contained mostly by implicit spacing, sometimes within a Cloud Mist background section.
+
+### Section Divider (Subtle)
+
+**Role:** Visual separation
+
+Implicit divider based on background color changes, such as between Canvas White and Cloud Mist sections, or a 2px solid border using a neutral color (not explicitly specified by usage but common practice for borders).
+
+### Primary Heading (Times)
+
+**Role:** Hero headline
+
+Large serif text using Times 400, ranging from 48px to 88px, with tight line heights (0.9 to 1.0) and Midnight Black color. Dominates the visual hierarchy.
+
+### Body Text (Arial)
+
+**Role:** Descriptive content
+
+Standard readable text using Arial 400 at 16px or 20px, typically in Midnight Black, with generous line heights for readability.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize stark black and white contrasts for all primary interactive and textual elements using #000000 and #ffffff.
 - Use Times 400 for all headlines and display text, selecting appropriate sizes from the established scale (48-88px) with tight line heights (0.9-1.0).
@@ -68,7 +145,7 @@ O0 establishes a commanding, minimalist aesthetic through stark black and white 
 - Utilize ghosted or text-only buttons and interactive elements, relying on color changes for hover states rather than filled backgrounds.
 - Keep all border-radii at 0px to uphold a sharp, angular aesthetic across UI elements.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated colors for backgrounds or primary interactive elements; color should be used sparingly for decorative accents only.
 - Do not introduce soft shadows or rounded corners, as the system relies on flat surfaces and sharp edges.
@@ -78,10 +155,97 @@ O0 establishes a commanding, minimalist aesthetic through stark black and white 
 - Avoid decorative gradients or complex visual textures; the system thrives on minimalism and solid color blocks.
 - Do not allow internal element padding to grow beyond 10px, as the system emphasizes content density.
 
-### Layout
+## Imagery
+
+The visual language focuses on high-quality product photography, often tightly cropped and presented on pure white or stark black backgrounds, sometimes full-bleed with minimal context beyond the product itself. Illustrations are likely minimalist, possibly geometric or outlined, used for abstract concepts rather than decorative flourishes. Iconography is clean and outlined, maintaining the system's overall stark and functional feel. Imagery serves primarily to showcase products and services directly, acting as explanatory content rather than atmospheric decoration. The density is image-heavy in portfolio sections, but balanced with significant negative space around key visual elements.
+
+## Layout
 
 The page primarily uses a full-bleed layout for hero sections and some content blocks, transitioning to a contained max-width structure implicitly defined by content alignment. The hero section often features a large, centered headline on a vast white canvas. Sections alternate between pure white, subtle Cloud Mist backgrounds, and dramatic full-bleed Midnight Black blocks. Content is arranged in prominent center-aligned stacks or two-column layouts, with text sometimes on one side and imagery or whitespace on the other. Navigation is a simple top-right floating text menu, maintaining a clean header. Grid usage is subtle, hinted at by client logos and portfolio showcases.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on high-quality product photography, often tightly cropped and presented on pure white or stark black backgrounds, sometimes full-bleed with minimal context beyond the product itself. Illustrations are likely minimalist, possibly geometric or outlined, used for abstract concepts rather than decorative flourishes. Iconography is clean and outlined, maintaining the system's overall stark and functional feel. Imagery serves primarily to showcase products and services directly, acting as explanatory content rather than atmospheric decoration. The density is image-heavy in portfolio sections, but balanced with significant negative space around key visual elements.
+- **Stripe** — Shares a reliance on clean typography, abundant whitespace, and a high-contrast black/white aesthetic for a serious, functional presentation.
+- **Linear** — Exhibits similar compact text-driven UI, strong minimal contrasts, and a focus on content hierarchy over decorative elements.
+- **Apple (services pages)** — Utilizes large, impactful typography, high-quality product imagery on minimal backgrounds, and a disciplined color palette centered on neutrals.
+- **Pitch** — Adopts a high-contrast, minimalist design with a strong typographic presence and a focus on clean content presentation over elaborate UI.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-cloud-mist: #f2f2f2;
+  --color-pale-ash: #e8e9ea;
+  --color-stone-gray: #cecdcb;
+  --color-yellow-accent: #ffe500;
+  --font-times: 'Times', Times New Roman;
+  --font-arial: 'Arial', Arial;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.25;
+  --text-heading-sm: 48px;
+  --leading-heading-sm: 1;
+  --text-heading: 52px;
+  --leading-heading: 1;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1;
+  --text-display: 64px;
+  --leading-display: 0.9;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-102: 102px;
+  --spacing-113: 113px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-cloud-mist: #f2f2f2;
+  --color-pale-ash: #e8e9ea;
+  --color-stone-gray: #cecdcb;
+  --color-yellow-accent: #ffe500;
+  --font-times: 'Times', Times New Roman;
+  --font-arial: 'Arial', Arial;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.25;
+  --text-heading-sm: 48px;
+  --leading-heading-sm: 1;
+  --text-heading: 52px;
+  --leading-heading: 1;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1;
+  --text-display: 64px;
+  --leading-display: 0.9;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-102: 102px;
+  --spacing-113: 113px;
+  --radius-none: 0px;
+}
+```

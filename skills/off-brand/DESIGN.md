@@ -1,78 +1,130 @@
 ---
 version: alpha
-name: OFF+BRAND.
-description: OFF+BRAND. embodies a refined, digital-first aesthetic with a limited monochromatic palette and expressive typography. The visual system features delicate dotted line work, liberal use of negative space, and large, dynamic headlines set against a near-white canvas. Color is introduced sparingly through vibrant gradients in hero elements and subtle brand accents, making these instances feel impactful. Components are generally lightweight, often transparent or outlined, to maintain an airy and unburdened feel.
-colors:
-  midnight-ink: "#1d1d1d"
-  canvas-white: "#e5e4e0"
-  pure-white: "#ffffff"
-  frost-gray: "#bfbebe"
-  gradient-aura: "#facb00"
-  brand-orange: "#ff642f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.4
-    letterSpacing: 0.078px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.4
-    letterSpacing: 0.078px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-    letterSpacing: 0.078px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1
-    letterSpacing: 0.078px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 46px
-    lineHeight: 0.8
-    letterSpacing: 0.69px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 70px
-    lineHeight: 0.8
-    letterSpacing: 0.88px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 76px
-    lineHeight: 0.8
-    letterSpacing: 0.99px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 103px
-    lineHeight: 0.8
-    letterSpacing: 1.2px
-spacing:
-  elementGap: 19px
-  sectionGap: 76px
-components:
-  hero-headline:
-    role: Dominant page titles and impactful statements.
-  ghost-action-link:
-    role: Secondary actions and navigations.
-  feature-card:
-    role: Displaying work examples or service offerings.
-  brand-logo-grid-item:
-    role: Displaying client logos or trusted partners.
-  muted-body-text:
-    role: Descriptive paragraphs and detailed information.
+name: "OFF+BRAND."
+description: "OFF+BRAND. embodies a refined, digital-first aesthetic with a limited monochromatic palette and expressive typography. The visual system features delicate dotted line work, liberal use of negative space, and large, dynamic headlines set against a near-white canvas. Color is introduced sparingly through vibrant gradients in hero elements and subtle brand accents, making these instances feel impactful. Components are generally lightweight, often transparent or outlined, to maintain an airy and unburdened feel."
+theme: "light"
+industry: "agency"
+source_url: "https://www.itsoffbrand.com"
+refero_style_id: "6b667ffc-5158-4000-9252-3a107d5161ee"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509507380-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509507380-thumb.jpg"
+extracted_at: "2026-04-30T00:38:53.282Z"
 ---
 
-## Overview
+# OFF+BRAND. — Style Reference
 
-**North Star:** Sculpted digital canvas.
+> Sculpted digital canvas.
+
+**Theme:** light
+
+**Industry:** agency
 
 OFF+BRAND. embodies a refined, digital-first aesthetic with a limited monochromatic palette and expressive typography. The visual system features delicate dotted line work, liberal use of negative space, and large, dynamic headlines set against a near-white canvas. Color is introduced sparingly through vibrant gradients in hero elements and subtle brand accents, making these instances feel impactful. Components are generally lightweight, often transparent or outlined, to maintain an airy and unburdened feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #1d1d1d | `--color-midnight-ink` | Primary text, darkest UI element borders, prominent headings |
+| Canvas White | #e5e4e0 | `--color-canvas-white` | Page background, main surface color, light UI element borders, muted text |
+| Pure White | #ffffff | `--color-pure-white` | Elevated surfaces, secondary backgrounds, icon fills |
+| Frost Gray | #bfbebe | `--color-frost-gray` | Subtle dividers, ghost button borders, decorative strokes |
+| Gradient Aura | #facb00 | `--color-gradient-aura` | Hero background element, large decorative shapes, occasional icon accent — a central visual motif that introduces dynamic color |
+| Brand Orange | #ff642f | `--color-brand-orange` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Ataero Retina OB Edition
+
+- **Token:** `--font-ataero-retina-ob-edition`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 11px, 15px, 18px, 34px, 46px, 70px, 76px, 103px
+- **Line heights:** 0.80, 1.00, 1.40
+- **Letter spacing:** 0.0060em, 0.0130em, 0.0170em, 0.0500em
+- **Role:** The primary typeface for all text. The custom nature and broad range of weights and sizes allow for both headline impact and readable body copy. The high letter-spacing on larger sizes creates an airy, uncrowded feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.4 | 0.078px | `--text-caption` |
+| body-sm | 15px | 1.4 | 0.078px | `--text-body-sm` |
+| body | 18px | 1.4 | 0.078px | `--text-body` |
+| subheading | 34px | 1 | 0.078px | `--text-subheading` |
+| heading-sm | 46px | 0.8 | 0.69px | `--text-heading-sm` |
+| heading | 70px | 0.8 | 0.88px | `--text-heading` |
+| heading-lg | 76px | 0.8 | 0.99px | `--text-heading-lg` |
+| display | 103px | 0.8 | 1.2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-76 | 76px | `--spacing-76` |
+| spacing-119 | 119px | `--spacing-119` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 9.52381px |
+| headings | 6.47619px |
+| largeElements | 30.4762px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 76px |
+| cardPadding | 19px |
+| elementGap | 19px |
+
+## Components
+
+### Hero Headline
+
+**Role:** Dominant page titles and impactful statements.
+
+Large text, often using the 103px or 76px size from Ataero Retina OB Edition, weight 400 or 700, with letter-spacing for impact (e.g., 0.0500em). Color: Midnight Ink (#1d1d1d).
+
+### Ghost Action Link
+
+**Role:** Secondary actions and navigations.
+
+Text link using Ataero Retina OB Edition, 15px or 18px, weight 400. Color: Midnight Ink (#1d1d1d). Features an animated underline or border-transition on hover. Border-color for surrounding elements: Frost Gray (#bfbebe).
+
+### Feature Card
+
+**Role:** Displaying work examples or service offerings.
+
+Card with Canvas White (#e5e4e0) or Pure White (#ffffff) background, rounded corners at 9.52381px. Internal padding of around 19px, with elements spaced by 8px or 15px. Features subtle 1px dashed borders in Frost Gray (#bfbebe) for a lightweight structure.
+
+### Brand Logo Grid Item
+
+**Role:** Displaying client logos or trusted partners.
+
+A container with a Pure White (#ffffff) background, roughly 9.52381px corner radius. Often bordered with a 1px dashed line (Frost Gray #bfbebe) and containing a desaturated/monochromatic brand logo. Padding around 19px.
+
+### Muted Body Text
+
+**Role:** Descriptive paragraphs and detailed information.
+
+Set in Ataero Retina OB Edition, 15px, weight 400. Color: Midnight Ink (#1d1d1d) or a slightly lighter shade if context for secondary information. Line-height 1.4.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#e5e4e0) as the primary page background.
 - Apply Midnight Ink (#1d1d1d) for all main text and prominent UI elements.
@@ -82,7 +134,7 @@ OFF+BRAND. embodies a refined, digital-first aesthetic with a limited monochroma
 - Incorporate the Gradient Aura (linear-gradient(255deg, #facb0, #f06ba8 30%, #78bae6 65%, #ffffff)) only for large, singular decorative elements, not for functional UI.
 - Use a default border radius of 9.52381px for interactive elements and containers like cards.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple typefaces; Ataero Retina OB Edition is the only sanctioned font.
 - Do not introduce new saturated primary colors; limit color accents to the Gradient Aura and Brand Orange (#ff642f) sparingly.
@@ -92,10 +144,121 @@ OFF+BRAND. embodies a refined, digital-first aesthetic with a limited monochroma
 - Do not use dark backgrounds for entire sections; maintain a light-themed interface with Canvas White (#e5e4e0) or Pure White (#ffffff) as dominant surfaces.
 - Do not use standard underline styles for links; implement custom hover states like border-transitions for ghost links.
 
-### Layout
+## Imagery
+
+This design system relies heavily on abstract graphics and subtle iconography. Main imagery features large, soft-focus gradients or ethereal, spherical abstract graphics that serve as atmospheric backdrops. Product and client visuals are presented as clean, often desaturated or monochromatic logos within structured grids, or as tight, focused wireframe product illustrations that highlight detail without overwhelming color. Icons are minimal, outlined, and monochromatic (Midnight Ink #1d1d1d on Canvas White #e5e4e0), using a fine stroke weight, and primarily serve as functional indicators or decorative elements in dotted lines.
+
+## Layout
 
 The page employs a full-bleed, max-width contained layout with centered content blocks that have generous horizontal margins, creating an expansive feel. The hero section is full-bleed, featuring a centered headline overlaid on a large, abstract gradient sphere. Sections maintain a consistent vertical rhythm with 76px spacing, creating distinct divisions without hard lines. Content is primarily arranged in centered stacks or two-column text-left/image-right configurations. Logo grids and feature blocks often appear in 3-column layouts. Navigation is represented by subtle text links, maintaining a minimal and uncluttered top bar appearance, with a scroll indicator for initial guidance.
 
-### Imagery
+## Similar Brands
 
-This design system relies heavily on abstract graphics and subtle iconography. Main imagery features large, soft-focus gradients or ethereal, spherical abstract graphics that serve as atmospheric backdrops. Product and client visuals are presented as clean, often desaturated or monochromatic logos within structured grids, or as tight, focused wireframe product illustrations that highlight detail without overwhelming color. Icons are minimal, outlined, and monochromatic (Midnight Ink #1d1d1d on Canvas White #e5e4e0), using a fine stroke weight, and primarily serve as functional indicators or decorative elements in dotted lines.
+- **Framer** — Similar use of expansive negative space, minimalist typography, and occasional vibrant, abstract gradients for impact.
+- **Active Theory** — Shares a focus on large-scale, dynamic abstract visuals and a sophisticated, contemporary web design aesthetic.
+- **Sagmeister & Walsh** — Has a bold, experimental approach to typography and a willingness to use a monochromatic base with unexpected color bursts.
+- **B&W** — Employs heavy use of large, impactful typography as visual elements and a limited color palette that makes design elements stand out.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #1d1d1d;
+  --color-canvas-white: #e5e4e0;
+  --color-pure-white: #ffffff;
+  --color-frost-gray: #bfbebe;
+  --color-gradient-aura: #facb00;
+  --color-brand-orange: #ff642f;
+  --font-ataero-retina-ob-edition: 'Ataero Retina OB Edition', Inter;
+  --text-caption: 11px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.078px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.078px;
+  --text-body: 18px;
+  --leading-body: 1.4;
+  --tracking-body: 0.078px;
+  --text-subheading: 34px;
+  --leading-subheading: 1;
+  --tracking-subheading: 0.078px;
+  --text-heading-sm: 46px;
+  --leading-heading-sm: 0.8;
+  --tracking-heading-sm: 0.69px;
+  --text-heading: 70px;
+  --leading-heading: 0.8;
+  --tracking-heading: 0.88px;
+  --text-heading-lg: 76px;
+  --leading-heading-lg: 0.8;
+  --tracking-heading-lg: 0.99px;
+  --text-display: 103px;
+  --leading-display: 0.8;
+  --tracking-display: 1.2px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-46: 46px;
+  --spacing-76: 76px;
+  --spacing-119: 119px;
+  --radius-default: 9.52381px;
+  --radius-headings: 6.47619px;
+  --radius-largeelements: 30.4762px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #1d1d1d;
+  --color-canvas-white: #e5e4e0;
+  --color-pure-white: #ffffff;
+  --color-frost-gray: #bfbebe;
+  --color-gradient-aura: #facb00;
+  --color-brand-orange: #ff642f;
+  --font-ataero-retina-ob-edition: 'Ataero Retina OB Edition', Inter;
+  --text-caption: 11px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.078px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.078px;
+  --text-body: 18px;
+  --leading-body: 1.4;
+  --tracking-body: 0.078px;
+  --text-subheading: 34px;
+  --leading-subheading: 1;
+  --tracking-subheading: 0.078px;
+  --text-heading-sm: 46px;
+  --leading-heading-sm: 0.8;
+  --tracking-heading-sm: 0.69px;
+  --text-heading: 70px;
+  --leading-heading: 0.8;
+  --tracking-heading: 0.88px;
+  --text-heading-lg: 76px;
+  --leading-heading-lg: 0.8;
+  --tracking-heading-lg: 0.99px;
+  --text-display: 103px;
+  --leading-display: 0.8;
+  --tracking-display: 1.2px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-46: 46px;
+  --spacing-76: 76px;
+  --spacing-119: 119px;
+  --radius-default: 9.52381px;
+  --radius-headings: 6.47619px;
+  --radius-largeelements: 30.4762px;
+}
+```
