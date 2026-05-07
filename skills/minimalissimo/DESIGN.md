@@ -1,57 +1,129 @@
 ---
 version: alpha
-name: Minimalissimo
-description: Minimalissimo embodies a restrained, almost stark aesthetic where content is paramount. It utilizes an achromatic palette with crisp contrasts, creating an open and airy feel. Typography is compact and precise, driving hierarchy and focus without visual flourish. Components maintain a ghost-like presence, subtly hinting at interaction rather than demanding attention, ensuring images and text are the primary visual experience.
-colors:
-  inkwell: "#000000"
-  canvas: "#f5f5f5"
-  sterling: "#999999"
-  porcelain: "#ffffff"
-  pale-ash: "#e0e0e0"
-  storm-gray: "#a1a1a1"
-  whisper-white: "#efefef"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 8px
-  buttonRadius: 4px
-  elementGap: 16px
-  sectionGap: 96px
-components:
-  ghost-button:
-    role: Minimalist interactive element
-  subtle-filled-button:
-    role: Call to action or form submission
-  text-link-item:
-    role: Navigation and content linking
-  minimal-input-field:
-    role: User input for forms
-  image-grid-card:
-    role: Displaying content previews in a grid
+name: "Minimalissimo"
+description: "Minimalissimo embodies a restrained, almost stark aesthetic where content is paramount. It utilizes an achromatic palette with crisp contrasts, creating an open and airy feel. Typography is compact and precise, driving hierarchy and focus without visual flourish. Components maintain a ghost-like presence, subtly hinting at interaction rather than demanding attention, ensuring images and text are the primary visual experience."
+theme: "light"
+industry: "design"
+source_url: "https://minimalissimo.com"
+refero_style_id: "35ff063b-1fcc-48a2-83b3-56da01e23880"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514056042-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514056042-thumb.jpg"
+extracted_at: "2026-04-30T01:54:34.931Z"
 ---
 
-## Overview
+# Minimalissimo — Style Reference
 
-**North Star:** White gallery canvas.
+> White gallery canvas.
+
+**Theme:** light
+
+**Industry:** design
 
 Minimalissimo embodies a restrained, almost stark aesthetic where content is paramount. It utilizes an achromatic palette with crisp contrasts, creating an open and airy feel. Typography is compact and precise, driving hierarchy and focus without visual flourish. Components maintain a ghost-like presence, subtly hinting at interaction rather than demanding attention, ensuring images and text are the primary visual experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Inkwell | #000000 | `--color-inkwell` | Primary text, core UI elements, strong borders, icon fills. Provides high contrast |
+| Canvas | #f5f5f5 | `--color-canvas` | Dominant page and section backgrounds, giving a clean, expansive base |
+| Sterling | #999999 | `--color-sterling` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Porcelain | #ffffff | `--color-porcelain` | Component backgrounds within sections, elevated surfaces. Provides internal contrast against Canvas |
+| Pale Ash | #e0e0e0 | `--color-pale-ash` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Storm Gray | #a1a1a1 | `--color-storm-gray` | Tertiary body text, informational text, less prominent details |
+| Whisper White | #efefef | `--color-whisper-white` | Background for subtle interactive elements like inputs and ghost buttons, providing a slight visual lift |
+
+## Tokens — Typography
+
+### GeistSans
+
+- **Token:** `--font-geistsans`
+- **Substitute:** Inter, Arial, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 24px
+- **Line heights:** 1.10, 1.30, 1.40, 1.43, 1.50
+- **Letter spacing:** normal
+- **Role:** The sole typeface for all text content, from body to headings. Its compact, neutral quality maintains the minimalist aesthetic. A single weight ensures consistency and relies on size for hierarchy.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | — | `--text-caption` |
+| body-sm | 14px | 1.43 | — | `--text-body-sm` |
+| body | 16px | 1.4 | — | `--text-body` |
+| heading | 24px | 1.3 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-96 | 96px | `--spacing-96` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 8px |
+| links | 4px |
+| inputs | 4px |
+| buttons | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 96px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Minimalist interactive element
+
+Text-only button for secondary actions or navigation, e.g. 'Subscribe' button in the footer. Uses Inkwell text (#000000) and has no background or border in its default state, appearing as plain text.
+
+### Subtle Filled Button
+
+**Role:** Call to action or form submission
+
+A low-contrast button with Whisper White background (#efefef), Inkwell text (#000000), Pale Ash border (#e0e0e0) and 4px border-radius. Primarily used for actions like 'Subscribe' or form controls.
+
+### Text Link Item
+
+**Role:** Navigation and content linking
+
+Text links in content sections, such as article titles or photo captions. Uses Inkwell text (#000000) and no underline by default. There are subtle variations with borders around the text, often in Sterling (#999999).
+
+### Minimal Input Field
+
+**Role:** User input for forms
+
+Input fields have a Whisper White background (#efefef) with a 4px border-radius and a subtle Pale Ash border (#e0e0e0) when active. Text uses Inkwell (#000000).
+
+### Image Grid Card
+
+**Role:** Displaying content previews in a grid
+
+Cards for displaying images and titles in a grid layout. They have no visible border or background, relying on the Canvas (#f5f5f5) page background for separation. Text is Inkwell (#000000).
+
+## Do's and Don'ts
+
+### Do
 
 - Use GeistSans 400 for all typographic elements, varying only size for hierarchy.
 - Maintain high contrast text with Inkwell (#000000) on Canvas (#f5f5f5) or Porcelain (#ffffff) backgrounds.
@@ -61,7 +133,7 @@ Minimalissimo embodies a restrained, almost stark aesthetic where content is par
 - Separate content sections with ample vertical spacing, defaulting to sectionGap (96px) where appropriate.
 - Prioritize photography and crisp typography as primary visual elements, minimizing decorative UI.
 
-### Don'ts
+### Don't
 
 - Avoid using any chromatic colors; maintain a purely achromatic palette.
 - Do not introduce heavy borders, drop shadows, or strong gradients that would detract from the content.
@@ -71,10 +143,109 @@ Minimalissimo embodies a restrained, almost stark aesthetic where content is par
 - Do not apply padding or visible backgrounds to image grid items; let them float on the Canvas background.
 - Do not use underlines for links unless absolutely necessary for clarity in dense text blocks.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #f5f5f5 | Broadest page backgrounds, creating a sense of openness and serving as a neutral backdrop for content. |
+| 1 | Porcelain | #ffffff | Elevated components or content blocks, providing a subtle differentiation from the Canvas. |
+| 2 | Whisper White | #efefef | Interactive element backgrounds like input fields and subtle buttons, offering a slight visual cue without strong contrast. |
+
+## Imagery
+
+The imagery leans heavily on high-quality product photography and architectural shots, often featuring single, isolated subjects against a clean, white, or light gray background. There's a strong emphasis on form, texture, and object design. Photography is typically high-key, well-lit, and product-focused, with minimal lifestyle context. Illustrations are non-existent. Iconography is minimalist, using simple outlines or solid fills in Inkwell to blend with the text, serving purely functional roles without decorative flair. Imagery is dense, often occupying large portions of the screen, acting as content rather than mere decoration.
+
+## Layout
 
 The site uses a full-bleed layout for its main content carousels and image galleries, allowing visuals to dominate the viewport. The page content itself is largely max-width constrained in some sections, with a centered composition for text blocks. The hero section often presents a large visual or a collection of content cards. Section rhythm is driven by substantial vertical gaps, creating clear visual breaks without explicit dividers. Content arrangement frequently uses large, impactful images or image grids where elements are often isolated. Navigation is minimal, likely restricted to a top bar menu.
 
-### Imagery
+## Similar Brands
 
-The imagery leans heavily on high-quality product photography and architectural shots, often featuring single, isolated subjects against a clean, white, or light gray background. There's a strong emphasis on form, texture, and object design. Photography is typically high-key, well-lit, and product-focused, with minimal lifestyle context. Illustrations are non-existent. Iconography is minimalist, using simple outlines or solid fills in Inkwell to blend with the text, serving purely functional roles without decorative flair. Imagery is dense, often occupying large portions of the screen, acting as content rather than mere decoration.
+- **AIGA Eye on Design** — Showcases design work with a clear, image-dominant layout and an accent on minimalist typography.
+- **The Brand Identity** — Features design portfolios and articles with a clean, grid-based layout and strong visual focus.
+- **Wallpaper*** — Emphasizes luxury design, architecture, and art with a clean, image-heavy presentation and concise text blocks.
+- **Dezeen** — Known for its minimalist design, clear typography, and focus on product and architectural imagery.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-inkwell: #000000;
+  --color-canvas: #f5f5f5;
+  --color-sterling: #999999;
+  --color-porcelain: #ffffff;
+  --color-pale-ash: #e0e0e0;
+  --color-storm-gray: #a1a1a1;
+  --color-whisper-white: #efefef;
+  --font-geistsans: 'GeistSans', Inter, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+  --radius-cards: 8px;
+  --radius-links: 4px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px;
+  --surface-canvas: #f5f5f5;
+  --surface-porcelain: #ffffff;
+  --surface-whisper-white: #efefef;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-inkwell: #000000;
+  --color-canvas: #f5f5f5;
+  --color-sterling: #999999;
+  --color-porcelain: #ffffff;
+  --color-pale-ash: #e0e0e0;
+  --color-storm-gray: #a1a1a1;
+  --color-whisper-white: #efefef;
+  --font-geistsans: 'GeistSans', Inter, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-96: 96px;
+  --radius-cards: 8px;
+  --radius-links: 4px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px;
+  --surface-canvas: #f5f5f5;
+  --surface-porcelain: #ffffff;
+  --surface-whisper-white: #efefef;
+}
+```
