@@ -1,41 +1,176 @@
 ---
 version: alpha
-name: Nev Flynn
-description: Nev Flynn's design aesthetic is that of a playful digital canvas, characterized by soft, rounded cards floating on a clean, near-white background. Typography is primarily functional and understated, reserving boldness for key headings. Color is introduced sparingly, often as subtle accent panels or within images, creating a gentle visual energy rather than overt branding. The overall impression is approachable and organized, like a well-structured personal portfolio.
-colors:
-  canvas-bloom: "#f7f2f2"
-  surface-white: "#ffffff"
-  ink-black: "#000000"
-  storm-gray: "#0d1117"
-  muted-sage: "#8a949e"
-  sky-card: "#98d0ff"
-spacing:
-  cardRadius: 32px
-  buttonRadius: 18px
-  elementGap: 4px
-  sectionGap: 40px
-components:
-  pill-navigation-item:
-    role: Navigation links (e.g., 'All', 'About')
-  outlined-switch-like-button:
-    role: Toggle buttons (e.g., 'Toggle Lockdown')
-  standard-content-card:
-    role: General information containers
-  accent-content-card-sky-card:
-    role: Visually distinct information containers
-  underlined-input-field:
-    role: Form inputs
-  nev-logo-mark:
-    role: Brand identifier with gradient
+name: "Nev Flynn"
+description: "Nev Flynn's design aesthetic is that of a playful digital canvas, characterized by soft, rounded cards floating on a clean, near-white background. Typography is primarily functional and understated, reserving boldness for key headings. Color is introduced sparingly, often as subtle accent panels or within images, creating a gentle visual energy rather than overt branding. The overall impression is approachable and organized, like a well-structured personal portfolio."
+theme: "light"
+industry: "design"
+source_url: "https://nevflynn.com"
+refero_style_id: "712d5132-5784-4e43-bb8c-941daa362641"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514811787-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514811787-thumb.jpg"
+extracted_at: "2026-04-30T02:07:12.060Z"
 ---
 
-## Overview
+# Nev Flynn — Style Reference
 
-**North Star:** Softly rounded digital canvas
+> Softly rounded digital canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Nev Flynn's design aesthetic is that of a playful digital canvas, characterized by soft, rounded cards floating on a clean, near-white background. Typography is primarily functional and understated, reserving boldness for key headings. Color is introduced sparingly, often as subtle accent panels or within images, creating a gentle visual energy rather than overt branding. The overall impression is approachable and organized, like a well-structured personal portfolio.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Bloom | #f7f2f2 | `--color-canvas-bloom` | Page backgrounds, subtle card shadows |
+| Surface White | #ffffff | `--color-surface-white` | Card backgrounds, general surface elements |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, strong borders, icons |
+| Storm Gray | #0d1117 | `--color-storm-gray` | Secondary text, input borders, nav links |
+| Muted Sage | #8a949e | `--color-muted-sage` | Muted helper text, tertiary body copy |
+| Sky Card | #98d0ff | `--color-sky-card` | Card background for visual distinction |
+
+## Tokens — Typography
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.2
+- **Role:** -apple-system — detected in extracted data but not described by AI
+
+### Moranga Bold
+
+- **Token:** `--font-moranga-bold`
+- **Substitute:** Georgia
+- **Weights:** 400
+- **Sizes:** 24px, 40px
+- **Line heights:** 1.00, 1.33
+- **Letter spacing:** -0.48px at 40px, -0.24px at 24px
+- **Role:** 'Moranga Bold' carries signature headings, using a medium weight to emphasize content rather than shout. The letter spacing tightens as font size increases, enhancing its presence without feeling bulky.
+
+### Silka Medium
+
+- **Token:** `--font-silka-medium`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.20, 1.71
+- **Letter spacing:** 0.25px
+- **Role:** Used for navigation and some body content, providing a clear, readable geometric sans-serif that balances modernism with legibility. Its normal weight feels light even for body copy.
+
+### Silka Regular
+
+- **Token:** `--font-silka-regular`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 15px, 16px
+- **Line heights:** 1.20, 1.47, 1.73
+- **Letter spacing:** 0.24px at 15px, 0.53px at 16px
+- **Role:** Predominant for body text and input fields, offering a highly readable, neutral baseline. The subtle letter spacing variation ensures optimal legibility across smaller text sizes.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.2
+- **Role:** Arial — detected in extracted data but not described by AI
+
+### Helvetica Neue
+
+- **Token:** `--font-helvetica-neue`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.67
+- **Role:** Helvetica Neue — detected in extracted data but not described by AI
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-50 | 50px | `--spacing-50` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 32px |
+| buttons | 18px |
+| navItems | 18px |
+| roundElements | 50px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(240, 242, 248) 0px 0px 0px 2px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 36-44px |
+| elementGap | 4px |
+
+## Components
+
+### Pill Navigation Item
+
+**Role:** Navigation links (e.g., 'All', 'About')
+
+Ghost button style with 18px radius, no background, and 0px vertical / 12px horizontal padding. Text color is Storm Gray (#0d1117) unless active, then text color is Ink Black (#000000).
+
+### Outlined Switch-like Button
+
+**Role:** Toggle buttons (e.g., 'Toggle Lockdown')
+
+Bordered button with 18px radius and a 2px Canvas Bloom (#f7f2f2) boxShadow inset, making it appear slightly recessed. Text is Ink Black (#000000) with Arial font. Padding is 0px vertical and 12px horizontal.
+
+### Standard Content Card
+
+**Role:** General information containers
+
+Surface White (#ffffff) background with 32px border radius. Features a 2px inset border that appears like a subtle shadow due to Canvas Bloom (#f7f2f2) box-shadow. Padding can vary from 36px/42px/44px.
+
+### Accent Content Card (Sky Card)
+
+**Role:** Visually distinct information containers
+
+Sky Card (#98d0ff) background with 32px border radius. Features a 2px inset border, no visible shadow. Has no internal padding, suggesting full-bleed content or image display.
+
+### Underlined Input Field
+
+**Role:** Form inputs
+
+Transparent background with a 1px Storm Gray (#0d1117) bottom border. No border radius. Text uses Silka Regular, with 12px vertical padding on both top and bottom.
+
+### Nev Logo Mark
+
+**Role:** Brand identifier with gradient
+
+Text 'nev' in Moranga Bold font, rendered with a horizontal gradient from #c679c4 to #ffb005.
+
+## Do's and Don'ts
+
+### Do
 
 - Apply 32px border-radius to all card-like containers, strictly adhering to the soft, rounded aesthetic.
 - Use Canvas Bloom (#f7f2f2) as the primary page background color to establish the system's light theme.
@@ -45,7 +180,7 @@ Nev Flynn's design aesthetic is that of a playful digital canvas, characterized 
 - Maintain a clear visual hierarchy by limiting saturated colors to accent cards or embedded imagery, keeping most UI achromatic.
 - Ensure headings use Moranga Bold weight 400 with tight letter-spacing to convey authority through restraint.
 
-### Don'ts
+### Don't
 
 - Do not introduce sharp corners or small radii; the system relies on generous rounding (18px, 32px, 50px).
 - Avoid using strong, saturated colors for primary UI elements like buttons or backgrounds, as they would clash with the understated palette.
@@ -55,6 +190,91 @@ Nev Flynn's design aesthetic is that of a playful digital canvas, characterized 
 - Avoid overly dense layouts or small element gaps, as the design prioritizes comfortable spacing and clear separation.
 - Do not use dark backgrounds for main content areas; the theme is predominantly light and airy.
 
-### Imagery
+## Elevation
+
+- **Shadow 1:** `rgb(240, 242, 248) 0px 0px 0px 2px`
+
+## Imagery
 
 Imagery primarily consists of contained, full-bleed product screenshots or abstract graphics within cards, often featuring pastel color palettes. Some hero images feature 3D-like emoji characters or flat illustrations. Photography is minimal, appearing within product context. Icons are typically filled and monochromatic (Ink Black or white), with a consistent stroke weight where outlined. The density is moderate, with images serving both decorative and explanatory roles within the card grid.
+
+## Similar Brands
+
+- **Figma** — Use of soft, rounded UI elements on a light background, emphasizing clean visual hierarchy.
+- **Linear** — Minimalist aesthetic focused on content within card-like structures and understated typography.
+- **Read.cv** — Personal portfolio site with a card-based layout and a focus on clean typography and spacious presentation.
+- **Notion** — White interface with soft borders and minimal chromatic accents, relying on clear surface separation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-bloom: #f7f2f2;
+  --color-surface-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-storm-gray: #0d1117;
+  --color-muted-sage: #8a949e;
+  --color-sky-card: #98d0ff;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --font-moranga-bold: 'Moranga Bold', Georgia;
+  --font-silka-medium: 'Silka Medium', Inter;
+  --font-silka-regular: 'Silka Regular', Inter;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-helvetica-neue: 'Helvetica Neue', ui-sans-serif, system-ui, sans-serif;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --radius-cards: 32px;
+  --radius-buttons: 18px;
+  --radius-navitems: 18px;
+  --radius-roundelements: 50px;
+  --shadow-xl: rgb(240, 242, 248) 0px 0px 0px 2px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-bloom: #f7f2f2;
+  --color-surface-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-storm-gray: #0d1117;
+  --color-muted-sage: #8a949e;
+  --color-sky-card: #98d0ff;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --font-moranga-bold: 'Moranga Bold', Georgia;
+  --font-silka-medium: 'Silka Medium', Inter;
+  --font-silka-regular: 'Silka Regular', Inter;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-helvetica-neue: 'Helvetica Neue', ui-sans-serif, system-ui, sans-serif;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --radius-cards: 32px;
+  --radius-buttons: 18px;
+  --radius-navitems: 18px;
+  --radius-roundelements: 50px;
+  --shadow-xl: rgb(240, 242, 248) 0px 0px 0px 2px;
+}
+```
