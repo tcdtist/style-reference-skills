@@ -1,91 +1,181 @@
 ---
 version: alpha
-name: Tapbots
-description: Ivory's design system evokes a cosmic, playful yet precise feel, like exploring a high-tech constellation. Deep space purples and blacks provide a dramatic stage for luminous accents of violet and glowing green, creating a narrative of discovery. Spherical and rounded forms, particularly the 40px radius on interactive elements, soften the tech aesthetic, making the advanced functionality feel approachable.
-colors:
-  midnight-void: "#05050b"
-  deep-shadow: "#1a1a1a"
-  carbon-gray: "#2c2c2c"
-  graphite: "#484848"
-  medium-gray: "#666666"
-  light-gray: "#999999"
-  stone-grey: "#a3a3a3"
-  silver-tone: "#b3b3b3"
-  pale-gray: "#c3c3c3"
-  bright-silver: "#cccccc"
-  ghost-white: "#ffffff"
-  cosmic-violet: "#7047ba"
-  royal-plum: "#4c278"
-  button-violet: "#301e4f"
-  luminous-violet: "#ba94ff"
-  highlight-violet: "#9466e7"
-  pale-violet: "#cdd4f8"
-  misty-violet: "#deccff"
-  crimson-beam: "#ff3543"
-  emerald-glow: "#74ec5a"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.2
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.1
-spacing:
-  buttonRadius: 40px
-  elementGap: 10px
-  sectionGap: 64px
-components:
-  primary-action-button-group:
-    role: 
-  feature-list-grid:
-    role: 
-  testimonial-card:
-    role: 
-  primary-action-button:
-    role: Primary Call to Action
-  feature-list-item:
-    role: Informational Display
-  headline-ivory:
-    role: Main Page Title
-  sub-headline-accent:
-    role: Section Introductions
-  body-text-standard:
-    role: General Content
-  prominent-link:
-    role: Interactive Navigation/Callout
-  testimonial-card:
-    role: Social Proof Display
+name: "Tapbots"
+description: "Ivory's design system evokes a cosmic, playful yet precise feel, like exploring a high-tech constellation. Deep space purples and blacks provide a dramatic stage for luminous accents of violet and glowing green, creating a narrative of discovery. Spherical and rounded forms, particularly the 40px radius on interactive elements, soften the tech aesthetic, making the advanced functionality feel approachable."
+theme: "dark"
+industry: "other"
+source_url: "https://tapbots.com/ivory"
+refero_style_id: "8ce08850-085e-4954-a2f0-16acfb8dce23"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926068028-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926068028-thumb.jpg"
+extracted_at: "2026-04-11T16:48:15.738Z"
 ---
 
-## Overview
+# Tapbots — Style Reference
 
-**North Star:** Cosmic playful precision. Imagine floating among luminous violet and emerald constellations within a dark, welcoming void.
+> Cosmic playful precision. Imagine floating among luminous violet and emerald constellations within a dark, welcoming void.
+
+**Theme:** dark
+
+**Industry:** other
 
 Ivory's design system evokes a cosmic, playful yet precise feel, like exploring a high-tech constellation. Deep space purples and blacks provide a dramatic stage for luminous accents of violet and glowing green, creating a narrative of discovery. Spherical and rounded forms, particularly the 40px radius on interactive elements, soften the tech aesthetic, making the advanced functionality feel approachable.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #05050b | `--color-midnight-void` | Primary page background, deepest darks for full-bleed sections. |
+| Deep Shadow | #1a1a1a | `--color-deep-shadow` | Secondary background, subtly lighter than Midnight Void, used for hero areas and section dividers. |
+| Carbon Gray | #2c2c2c | `--color-carbon-gray` | Darkest neutral for surface areas, like list backgrounds. |
+| Graphite | #484848 | `--color-graphite` | Dark gray text for less emphasis, used in secondary text blocks and labels. |
+| Medium Gray | #666666 | `--color-medium-gray` | Body text in less prominent sections, and subtle separators. |
+| Light Gray | #999999 | `--color-light-gray` | Placeholder text and disabled states, offers contrast without being stark white. |
+| Stone Grey | #a3a3a3 | `--color-stone-grey` | Subtle body text for informational segments. |
+| Silver Tone | #b3b3b3 | `--color-silver-tone` | Footnote text and secondary informational elements. |
+| Pale Gray | #c3c3c3 | `--color-pale-gray` | Light body text on dark backgrounds, used in feature lists. |
+| Bright Silver | #cccccc | `--color-bright-silver` | For highlighting headings or primary callouts against dark backgrounds. |
+| Ghost White | #ffffff | `--color-ghost-white` | Primary text color for maximum readability, particularly for headings and main body content against dark backgrounds. |
+| Cosmic Violet | #7047ba | `--color-cosmic-violet` | Hero background color, establishing the brand's core identity with a deep, vivid purple. |
+| Royal Plum | #4c278 | `--color-royal-plum` | Darker shade of brand violet, used for hovered link states or subtle interactive elements. |
+| Button Violet | #301e4f | `--color-button-violet` | Primary button background, providing a distinct interactive surface. |
+| Luminous Violet | #ba94ff | `--color-luminous-violet` | Primary interactive accent color for links, buttons, and icons, drawing attention against dark backgrounds. |
+| Highlight Violet | #9466e7 | `--color-highlight-violet` | Accent for headings, adding a vibrant touch to key textual elements. |
+| Pale Violet | #cdd4f8 | `--color-pale-violet` | Supportive text color for highlighting specific content within body paragraphs. |
+| Misty Violet | #deccff | `--color-misty-violet` | Softer accent text, providing a visual counterpoint to deeper tones. |
+| Crimson Beam | #ff3543 | `--color-crimson-beam` | Attention-grabbing accent for important links, icons, or to denote an alert state. |
+| Emerald Glow | #74ec5a | `--color-emerald-glow` | Vivid accent for feature highlights or positive indicators. |
+| Skyfire Gradient | #84cbe2 | `--color-skyfire-gradient` | Decorative gradient often used for celestial elements or abstract backgrounds. |
+| Lunar Gradient | #dfdceb | `--color-lunar-gradient` | Subtle background gradient for UI elements, hinting at depth. |
+| Milky Way Gradient | #e9d5ff | `--color-milky-way-gradient` | Light background gradient for an airy, shimmering effect. |
+
+## Tokens — Typography
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 300, 400, 500, 600
+- **Sizes:** 16px, 18px, 20px, 21px, 24px, 28px, 32px, 36px
+- **Line heights:** 0.84, 1.10, 1.20, 1.29, 1.40, 1.50, 1.70, 1.80
+- **Role:** The `-apple-system` font is the singular choice, used across all weights and sizes for every text element from body content to hero headlines. This deliberate choice creates a cohesive, platform-native feel that prioritizes clarity and system integration over custom branding through typography.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | — | `--text-body` |
+| body-lg | 18px | 1.4 | — | `--text-body-lg` |
+| subheading | 20px | 1.4 | — | `--text-subheading` |
+| heading | 24px | 1.2 | — | `--text-heading` |
+| heading-lg | 28px | 1.2 | — | `--text-heading-lg` |
+| display-sm | 32px | 1.1 | — | `--text-display-sm` |
+| display | 36px | 1.1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-173 | 173px | `--spacing-173` |
+| spacing-183 | 183px | `--spacing-183` |
+| spacing-216 | 216px | `--spacing-216` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| icons | 40px |
+| links | 40px |
+| lists | 18px |
+| buttons | 40px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Action Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature List Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Primary Call to Action
+
+Rounded button with a deep violet background (`#301e4f`), high-contrast luminous violet text (`#ba94ff`), and a full pill-shaped radius of 40px. Padding is `12px` vertical and `15-20px` horizontal, creating a substantial, inviting target.
+
+### Feature List Item
+
+**Role:** Informational Display
+
+Text content with a leading icon. Icons often feature `Crimson Beam` (#ff3543) or `Emerald Glow` (#74ec5a) accents. Text uses `Ghost White` (#ffffff) for primary lines and `Pale Gray` (#c3c3c3) for descriptive text, spaced with a typical `17px` bottom margin.
+
+### Headline Ivory
+
+**Role:** Main Page Title
+
+Large text using `-apple-system` font, typically `36px` or `32px` at `weight 500` or `600`, with `Ghost White` (#ffffff) color. Often followed by a subtitle `27px` below.
+
+### Sub-Headline Accent
+
+**Role:** Section Introductions
+
+Medium-sized headings, often `24px` or `28px` `weight 500`, set in `Highlight Violet` (#9466e7) or `Emerald Glow` (#74ec5a), to draw attention to topic changes.
+
+### Body Text Standard
+
+**Role:** General Content
+
+Regular text using `-apple-system` `16px` `weight 400` in `Ghost White` (#ffffff) or `Pale Gray` (#c3c3c3), with moderate line height around `1.5` for readability on dark backgrounds.
+
+### Prominent Link
+
+**Role:** Interactive Navigation/Callout
+
+Text link using `Luminous Violet` (#ba94ff) at `16px` `weight 400`, often appearing as a standalone phrase or within paragraphs, identifiable by its vivid color.
+
+### Testimonial Card
+
+**Role:** Social Proof Display
+
+Content block where testimonial text is `Ghost White` (#ffffff) `18px`, and author attribution is `Silver Tone` (#b3b3b3) or `Medium Gray` (#666666), with substantial vertical spacing (around `25px` or `29px` between items).
+
+## Do's and Don'ts
+
+### Do
 
 - Use `Midnight Void` (#05050b) as the default background color for full-bleed sections and `Deep Shadow` (#1a1a1a) for hero sections, creating a sense of depth and atmosphere.
 - Apply a `40px` `radius` to all interactive elements, like buttons and prominent links, for a consistent soft and approachable feel.
@@ -95,7 +185,7 @@ Ivory's design system evokes a cosmic, playful yet precise feel, like exploring 
 - Prioritize `-apple-system` font with `weight 400` or `500` and `Ghost White` (#ffffff) for all main body text to maximize readability on dark surfaces.
 - Incorporate `Skyfire Gradient` (linear-gradient(to right bottom, rgb(108, 176, 255), rgb(247, 71, 255))) for decorative backgrounds or visual accents to reinforce the cosmic metaphor.
 
-### Don'ts
+### Don't
 
 - Avoid using harsh, fully saturated primary colors for large text blocks; reserve vivid hues like `Luminous Violet` (#ba94ff) only for interactive elements or small accents.
 - Do not use sharp corners; the `40px` global `radius` for interactive elements and `18px` for lists is fundamental to the system's soft, playful character.
@@ -105,10 +195,160 @@ Ivory's design system evokes a cosmic, playful yet precise feel, like exploring 
 - Refrain from using strong shadows or complex elevation; the site foregrounds depth through color shifts rather than traditional shadow mechanics. Avoid `box-shadow` values.
 - Never use `background-color: #ffffff` on its own as a primary background; the design is dark-themed and relies on the progression of deep grays and purples.
 
-### Layout
+## Imagery
+
+The visual language is characterized by 3D rendered, friendly, and slightly whimsical illustrations. The hero section features stylized characters (rocket, elephant) against a dramatic space background, rendered with soft lighting and vibrant, glowing elements. Throughout the site, product screenshots are presented in device mockups (iPhone, iPad, Mac) that are often slightly angled and layered, demonstrating the application's interface. Icons are simple, filled, and often incorporate the accent colors like `Crimson Beam` or `Emerald Glow`, or `Luminous Violet`. The overall density is balanced, with imagery serving both a decorative and explanatory role for the app's features.
+
+## Layout
 
 Pages typically employ a full-bleed background, with content often centered within a conceptual `max-width`. The hero sections are dramatic and full-viewport, featuring large graphical elements centrally. Subsequent sections alternate between full-width content blocks and more structured layouts, including two-column text-and-image arrangements or multi-column feature lists. Vertical rhythm is established through consistent `sectionGap` of around `64px`, with spacious `elementGap` of `10px` internally. Card-like structures (e.g., testimonial blocks) appear with a distinct `18px` radius. The layout feels open and allows imagery significant breathing room.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by 3D rendered, friendly, and slightly whimsical illustrations. The hero section features stylized characters (rocket, elephant) against a dramatic space background, rendered with soft lighting and vibrant, glowing elements. Throughout the site, product screenshots are presented in device mockups (iPhone, iPad, Mac) that are often slightly angled and layered, demonstrating the application's interface. Icons are simple, filled, and often incorporate the accent colors like `Crimson Beam` or `Emerald Glow`, or `Luminous Violet`. The overall density is balanced, with imagery serving both a decorative and explanatory role for the app's features.
+- **Arc Browser** — Shares a similar dark-mode aesthetic with strong, contrasting accent colors and fluid, organic shapes in UI elements.
+- **Linear** — Employs a polished dark UI with focused, elegant typography and subtle interactive elements, leaning into system-level aesthetics.
+- **Superhuman** — Features a high-contrast dark theme with meticulous attention to detail in typography and icon design, aimed at developer tools.
+- **Height** — Uses dark backgrounds with bright, intentional splashes of color for interactive states and data visualization, like status indicators.
+- **Tweetbot** — As a companion app, it carries over the signature refined dark interface, clear hierarchy, and distinct interactive feedback.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #05050b;
+  --color-deep-shadow: #1a1a1a;
+  --color-carbon-gray: #2c2c2c;
+  --color-graphite: #484848;
+  --color-medium-gray: #666666;
+  --color-light-gray: #999999;
+  --color-stone-grey: #a3a3a3;
+  --color-silver-tone: #b3b3b3;
+  --color-pale-gray: #c3c3c3;
+  --color-bright-silver: #cccccc;
+  --color-ghost-white: #ffffff;
+  --color-cosmic-violet: #7047ba;
+  --color-royal-plum: #4c278;
+  --color-button-violet: #301e4f;
+  --color-luminous-violet: #ba94ff;
+  --color-highlight-violet: #9466e7;
+  --color-pale-violet: #cdd4f8;
+  --color-misty-violet: #deccff;
+  --color-crimson-beam: #ff3543;
+  --color-emerald-glow: #74ec5a;
+  --color-skyfire-gradient: #84cbe2;
+  --color-lunar-gradient: #dfdceb;
+  --color-milky-way-gradient: #e9d5ff;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 32px;
+  --leading-display-sm: 1.1;
+  --text-display: 36px;
+  --leading-display: 1.1;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-144: 144px;
+  --spacing-173: 173px;
+  --spacing-183: 183px;
+  --spacing-216: 216px;
+  --radius-icons: 40px;
+  --radius-links: 40px;
+  --radius-lists: 18px;
+  --radius-buttons: 40px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #05050b;
+  --color-deep-shadow: #1a1a1a;
+  --color-carbon-gray: #2c2c2c;
+  --color-graphite: #484848;
+  --color-medium-gray: #666666;
+  --color-light-gray: #999999;
+  --color-stone-grey: #a3a3a3;
+  --color-silver-tone: #b3b3b3;
+  --color-pale-gray: #c3c3c3;
+  --color-bright-silver: #cccccc;
+  --color-ghost-white: #ffffff;
+  --color-cosmic-violet: #7047ba;
+  --color-royal-plum: #4c278;
+  --color-button-violet: #301e4f;
+  --color-luminous-violet: #ba94ff;
+  --color-highlight-violet: #9466e7;
+  --color-pale-violet: #cdd4f8;
+  --color-misty-violet: #deccff;
+  --color-crimson-beam: #ff3543;
+  --color-emerald-glow: #74ec5a;
+  --color-skyfire-gradient: #84cbe2;
+  --color-lunar-gradient: #dfdceb;
+  --color-milky-way-gradient: #e9d5ff;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 32px;
+  --leading-display-sm: 1.1;
+  --text-display: 36px;
+  --leading-display: 1.1;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-144: 144px;
+  --spacing-173: 173px;
+  --spacing-183: 183px;
+  --spacing-216: 216px;
+  --radius-icons: 40px;
+  --radius-links: 40px;
+  --radius-lists: 18px;
+  --radius-buttons: 40px;
+}
+```

@@ -1,65 +1,141 @@
 ---
 version: alpha
-name: Tatem
-description: Tatem's design offers a sophisticated and focused dark-mode experience, reminiscent of a command line interface or focused developer tool. Its visual atmosphere is calm, quiet, and highly systematic. The primary visual impression is created by a clean, neutral dark background punctuated by purposeful text and subtle interactive elements. Very sparing use of color, primarily for status or accent in a muted blue, maintains serious functionality while avoiding distraction. The design prioritizes readability and information hierarchy through careful typographic sizing and achromatic value contrasts.
-colors:
-  twilight-ink: "#000000"
-  polar-white: "#ffffff"
-  pewter-mist: "#919191"
-  silver-tone: "#b5b5b5"
-  obsidian-grey: "#606060"
-  charcoal-black: "#3b3b3b"
-  mist-grey: "#c2c2c2"
-  cerulean-accent: "#007eed"
-  sky-gradient: "#5a7694"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.5
-    letterSpacing: -0.1px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.1px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.14px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-    letterSpacing: -0.28px
-spacing:
-  elementGap: 8px
-  sectionGap: 28px
-components:
-  cta-button-group:
-    role: 
-  feature-section-split-inbox:
-    role: 
-  keyboard-shortcuts-section:
-    role: 
-  primary-ghost-button:
-    role: Call to action, navigation items.
-  navigation-link-button:
-    role: Secondary actions, internal navigation.
-  accent-label:
-    role: Categorization, status indicators.
-  section-divider:
-    role: Visual separation between content blocks.
+name: "Tatem"
+description: "Tatem's design offers a sophisticated and focused dark-mode experience, reminiscent of a command line interface or focused developer tool. Its visual atmosphere is calm, quiet, and highly systematic. The primary visual impression is created by a clean, neutral dark background punctuated by purposeful text and subtle interactive elements. Very sparing use of color, primarily for status or accent in a muted blue, maintains serious functionality while avoiding distraction. The design prioritizes readability and information hierarchy through careful typographic sizing and achromatic value contrasts."
+theme: "dark"
+industry: "productivity"
+source_url: "https://tatem.com"
+refero_style_id: "cb6e4ab0-b8fe-45b0-bd22-6339b073e26d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775922891824-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775922891824-thumb.jpg"
+extracted_at: "2026-04-11T15:55:13.293Z"
 ---
 
-## Overview
+# Tatem — Style Reference
 
-**North Star:** Midnight Terminal, cool and precise. This visual evokes a dark, command-line interface with subtle interactive glows.
+> Midnight Terminal, cool and precise. This visual evokes a dark, command-line interface with subtle interactive glows.
+
+**Theme:** dark
+
+**Industry:** productivity
 
 Tatem's design offers a sophisticated and focused dark-mode experience, reminiscent of a command line interface or focused developer tool. Its visual atmosphere is calm, quiet, and highly systematic. The primary visual impression is created by a clean, neutral dark background punctuated by purposeful text and subtle interactive elements. Very sparing use of color, primarily for status or accent in a muted blue, maintains serious functionality while avoiding distraction. The design prioritizes readability and information hierarchy through careful typographic sizing and achromatic value contrasts.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Twilight Ink | #000000 | `--color-twilight-ink` | Page backgrounds, section backgrounds, primary dark neutral. |
+| Polar White | #ffffff | `--color-polar-white` | Primary text, interactive elements in light themes (though used sparingly here), header text in dark mode for high contrast. |
+| Pewter Mist | #919191 | `--color-pewter-mist` | Secondary text, subtle borders, inactive states, icon strokes. Creates visual hierarchy by reducing prominence. |
+| Silver Tone | #b5b5b5 | `--color-silver-tone` | Muted headings and body text, providing a slightly softer contrast against dark backgrounds than pure white. |
+| Obsidian Grey | #606060 | `--color-obsidian-grey` | Tertiary text, subtle backgrounds for elements needing slight separation, borders. |
+| Charcoal Black | #3b3b3b | `--color-charcoal-black` | Subtle card or element backgrounds, dividers, deeper shadows on light elements. |
+| Mist Grey | #c2c2c2 | `--color-mist-grey` | Hover states on neutral elements, subtle accent backgrounds. |
+| Cerulean Accent | #007eed | `--color-cerulean-accent` | Interactive elements, links, active states, indicators. This vivid blue is the primary functional highlight. |
+| Sky Gradient | #5a7694 | `--color-sky-gradient` | Hero section background, establishing a cool, expansive feel for the product. Its gentle progression from deeper blue-grey to lighter grey-blue contributes significantly to the site's calm atmosphere. |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 13px, 14px, 16px, 20px, 40px
+- **Line heights:** 1.20, 1.43, 1.50
+- **Letter spacing:** -0.007
+- **Role:** All textual content, embodying clarity and directness without visual distraction. The consistent medium weight across sizes supports a flat, functional aesthetic. Letter spacing is subtly tight for a compact feel while maintaining readability.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.5 | -0.1px | `--text-caption` |
+| body | 16px | 1.5 | -0.1px | `--text-body` |
+| subheading | 20px | 1.2 | -0.14px | `--text-subheading` |
+| display | 40px | 1.2 | -0.28px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-133 | 133px | `--spacing-133` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-232 | 232px | `--spacing-232` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| large | 10px |
+| default | 6px |
+| hero_element | 16px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 28px |
+| elementGap | 8px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Section — Split Inbox
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Keyboard Shortcuts Section
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Ghost Button
+
+**Role:** Call to action, navigation items.
+
+Background: rgba(252, 252, 252, 0.08), Text: rgba(255, 255, 255, 0.95), Border: rgba(255, 255, 255, 0.06). Radius: 8px. Padding: 10px 16px. This button style provides an ethereal, translucent feel that integrates well with the dark theme and gradient hero.
+
+### Navigation Link Button
+
+**Role:** Secondary actions, internal navigation.
+
+Background: rgba(0, 0, 0, 0) (transparent), Text: rgba(255, 255, 255, 0.55), Border: rgba(255, 255, 255, 0.06). Radius: 0px. Padding: 0px. Used for subtle, text-based interactions that do not require strong visual emphasis, blending seamlessly into the interface.
+
+### Accent Label
+
+**Role:** Categorization, status indicators.
+
+Text color: #007eed, Background: transparent. Font: Inter 13px weight 400. Letter spacing -0.1px. Used to highlight classifications with the Cerulean Accent color without adding background bulk.
+
+### Section Divider
+
+**Role:** Visual separation between content blocks.
+
+Height: 1px, Background: #3b3b3b. Provides subtle structural cues in a dark environment without harsh lines.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Inter weight 400 for all text to maintain visual consistency and clarity.
 - Apply Twilight Ink (#000000) for primary page backgrounds, anchoring the dark theme.
@@ -69,7 +145,7 @@ Tatem's design offers a sophisticated and focused dark-mode experience, reminisc
 - Employ a base spacing unit of 8px for element gaps and 28px for vertical section separation.
 - Integrate the Sky Gradient (linear-gradient(rgb(90, 118, 148), rgb(171, 183, 181))) for large, atmospheric hero backgrounds.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional saturated colors beyond the established Cerulean Accent and its subtle variations to maintain the focused atmosphere.
 - Do not use heavy shadows or artificial light sources; rely on value contrast and subtle borders for depth.
@@ -78,10 +154,118 @@ Tatem's design offers a sophisticated and focused dark-mode experience, reminisc
 - Do not use overly expressive or decorative typography; the system prioritizes functional readability.
 - Steer clear of radii smaller than 6px for interactive components, and avoid overly sharp, unrounded edges where a softer form is intended.
 
-### Layout
+## Imagery
+
+The site uses a mix of subtle product illustrations and abstract, atmospheric graphics. The hero section features a stylized, translucent rendering of an email interface, presented in an isometric, floating perspective within the Sky Gradient. Further down, product illustrations, such as the keyboard visual, are flat, monochromatic, and contained within subtly rounded dark shapes. These visuals are explanatory rather than decorative, showcasing product features with a clean, almost diagrammatic quality. Icons are minimal, outlined, and monochromatic, primarily using Pewter Mist (#919191), serving a functional role without visual excess. The overall density of imagery is low, with text remaining dominant.
+
+## Layout
 
 The page primarily uses a full-bleed layout for background elements, with content contained within implied horizontal margins, giving it an expansive feel. The hero section is full-bleed with the Sky Gradient background, featuring a centered headline and button group over the abstract product visual. Subsequent sections mostly alternate between full-width black backgrounds and contained content. Content arrangement is primarily stacked, with some sections using a text-left/visual-right pattern, maintaining relatively even vertical spacing. There are no obvious grid patterns beyond simple stacked blocks. The navigation is a sticky top bar, minimal and semi-transparent on the hero, becoming opaque black on scroll, emphasizing content over persistent chrome.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of subtle product illustrations and abstract, atmospheric graphics. The hero section features a stylized, translucent rendering of an email interface, presented in an isometric, floating perspective within the Sky Gradient. Further down, product illustrations, such as the keyboard visual, are flat, monochromatic, and contained within subtly rounded dark shapes. These visuals are explanatory rather than decorative, showcasing product features with a clean, almost diagrammatic quality. Icons are minimal, outlined, and monochromatic, primarily using Pewter Mist (#919191), serving a functional role without visual excess. The overall density of imagery is low, with text remaining dominant.
+- **Linear** — Shares a meticulous dark-mode UI with a preference for crisp whites, muted grays, and a singular, precise accent color for interactive elements.
+- **Raycast** — Features a command-line aesthetic with dark backgrounds, high-contrast text, and a focus on functional, minimalist components.
+- **Notion (dark mode)** — Employs a systematic dark interface with a strong emphasis on typography and structured content, using subtle background shifts for hierarchy.
+- **Supabase** — Uses dark themes with clear typographic hierarchies and a restrained use of vibrant accent colors for key interactive elements and branding.
+- **Vercel (dark mode)** — Applies sleek, dark backgrounds, sophisticated typography, and careful spacing to create a high-performance, developer-centric aesthetic.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-twilight-ink: #000000;
+  --color-polar-white: #ffffff;
+  --color-pewter-mist: #919191;
+  --color-silver-tone: #b5b5b5;
+  --color-obsidian-grey: #606060;
+  --color-charcoal-black: #3b3b3b;
+  --color-mist-grey: #c2c2c2;
+  --color-cerulean-accent: #007eed;
+  --color-sky-gradient: #5a7694;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.1px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.1px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.14px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: -0.28px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-133: 133px;
+  --spacing-140: 140px;
+  --spacing-200: 200px;
+  --spacing-232: 232px;
+  --radius-large: 10px;
+  --radius-default: 6px;
+  --radius-hero-element: 16px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-twilight-ink: #000000;
+  --color-polar-white: #ffffff;
+  --color-pewter-mist: #919191;
+  --color-silver-tone: #b5b5b5;
+  --color-obsidian-grey: #606060;
+  --color-charcoal-black: #3b3b3b;
+  --color-mist-grey: #c2c2c2;
+  --color-cerulean-accent: #007eed;
+  --color-sky-gradient: #5a7694;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.1px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.1px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.14px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: -0.28px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-133: 133px;
+  --spacing-140: 140px;
+  --spacing-200: 200px;
+  --spacing-232: 232px;
+  --radius-large: 10px;
+  --radius-default: 6px;
+  --radius-hero-element: 16px;
+}
+```

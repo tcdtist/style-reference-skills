@@ -1,79 +1,218 @@
 ---
 version: alpha
-name: TeePublic
-description: TeePublic utilizes a dynamic, high-contrast aesthetic with a playful edge. Dark primary text and bold accent colors define a vibrant mood, set against a predominantly white and subtle gray surface palette. Components feature soft, large radii and distinct shadow treatments, ensuring readability while maintaining a confident, attention-grabbing presence.
-colors:
-  midnight-ink: "#151523"
-  canvas-white: "#ffffff"
-  ghost-gray: "#e9e9ec"
-  border-silver: "#d7d7db"
-  cloud-whisper: "#f1f3fe"
-  royal-indigo: "#4e64df"
-  crimson-strike: "#ff0000"
-  lavender-mist: "#99a7f5"
-  electric-violet: "#6c7ee4"
-  faded-steel: "#49495a"
-  vivid-chroma-gradient: "#25d454"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.45
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.15
-spacing:
-  cardRadius: 12px
-  buttonRadius: 12px
-  elementGap: 8px
-  sectionGap: 24px
-components:
-  ghost-button:
-    role: Secondary actions or navigation links that need less emphasis. They appear as text with a transparent background.
-  neutral-outlined-button:
-    role: Tertiary actions or category filters, providing interaction without competing with primary calls to action.
-  primary-filled-button:
-    role: Main calls to action.
-  crimson-call-to-action-button:
-    role: High-urgency primary actions, distinct from the brand's standard primary color.
-  elevated-feature-card:
-    role: Highlighting key features or content, using elevation to draw attention.
-  grouped-content-card:
-    role: Organizing related content into visually distinct blocks on the page, with subtle elevation.
-  subtle-information-card:
-    role: Presenting supplementary information or less prominent content, without strong visual weighting.
-  search-input-field:
-    role: Primary user input for search functions.
-  outline-input-field:
-    role: General form inputs, blending subtly into the background.
-  standard-input-field:
-    role: Basic input fields across the application.
+name: "TeePublic"
+description: "TeePublic utilizes a dynamic, high-contrast aesthetic with a playful edge. Dark primary text and bold accent colors define a vibrant mood, set against a predominantly white and subtle gray surface palette. Components feature soft, large radii and distinct shadow treatments, ensuring readability while maintaining a confident, attention-grabbing presence."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://unfurproject.com"
+refero_style_id: "0231caf5-0347-4f2d-ba20-5bab8fcaf2ce"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512985212-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512985212-thumb.jpg"
+extracted_at: "2026-04-30T01:36:52.461Z"
 ---
 
-## Overview
+# TeePublic — Style Reference
 
-**North Star:** Vibrant Pop Canvas: Bold and graphic against bright white.
+> Vibrant Pop Canvas: Bold and graphic against bright white.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 TeePublic utilizes a dynamic, high-contrast aesthetic with a playful edge. Dark primary text and bold accent colors define a vibrant mood, set against a predominantly white and subtle gray surface palette. Components feature soft, large radii and distinct shadow treatments, ensuring readability while maintaining a confident, attention-grabbing presence.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #151523 | `--color-midnight-ink` | Primary text, borders, dark surface backgrounds for emphasis, prominent headings, and input text |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, primary card surfaces, active input fields, and all text on dark backgrounds |
+| Ghost Gray | #e9e9ec | `--color-ghost-gray` | Secondary card backgrounds, subtle dividers, and inactive element states |
+| Border Silver | #d7d7db | `--color-border-silver` | Hairline borders, muted input outlines, and subtle separators |
+| Cloud Whisper | #f1f3fe | `--color-cloud-whisper` | Subtle background wash for cards and featured sections, indicating a slight elevation or grouping without strong contrast |
+| Royal Indigo | #4e64df | `--color-royal-indigo` | Primary action buttons, prominent links, interactive borders, and key brand elements — provides a strong, positive interactive cue |
+| Crimson Strike | #ff0000 | `--color-crimson-strike` | Red action color for filled buttons, selected navigation states, and focused conversion moments. Use as a supporting accent, not as a status color |
+| Lavender Mist | #99a7f5 | `--color-lavender-mist` | Violet outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+| Electric Violet | #6c7ee4 | `--color-electric-violet` | Icon fills and decorative elements emphasizing brand recognition; a slightly brighter variant of the brand's core blue |
+| Faded Steel | #49495a | `--color-faded-steel` | Subtle text for secondary information and descriptive copy, providing less visual weight than primary text |
+| Vivid Chroma Gradient | #25d454 | `--color-vivid-chroma-gradient` | Decorative banner backgrounds, section highlights — used for brand communication and visual interest |
+
+## Tokens — Typography
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.2
+- **Role:** Arial — detected in extracted data but not described by AI
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 11px, 12px, 13px, 14px, 16px, 18px, 20px, 24px, 40px
+- **Line heights:** 1.00, 1.15, 1.17, 1.20, 1.25, 1.33, 1.43, 1.45, 1.50, 1.56, 1.67, 2.75
+- **Letter spacing:** normal
+- **Role:** Primary body text, labels, and general UI elements. Its slightly condensed and clean appearance supports compact layouts.
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** Inter
+- **Letter spacing:** normal
+- **Role:** Sub-headings, navigation links, and emphasized text within body copy. Its semi-bold presence ensures clear hierarchy.
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** Inter
+- **Letter spacing:** normal
+- **Role:** Medium to large headings, where a strong but not overpowering statement is needed. The robust weight provides importance without being overly aggressive.
+
+### Sharp Grotesk
+
+- **Token:** `--font-sharp-grotesk`
+- **Substitute:** Montserrat
+- **Weights:** 400, 600, 700
+- **Sizes:** 20px, 24px, 28px, 32px
+- **Line heights:** 1.00, 1.13, 1.14, 1.15, 1.20, 1.33
+- **Letter spacing:** normal
+- **Role:** Large display headings and prominent call-to-action text. Its distinctive, impactful character grabs attention, signaling key messages.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.45 | — | `--text-caption` |
+| body | 14px | 1.5 | — | `--text-body` |
+| heading-sm | 18px | 1.33 | — | `--text-heading-sm` |
+| heading | 20px | 1.25 | — | `--text-heading` |
+| heading-lg | 24px | 1.2 | — | `--text-heading-lg` |
+| display | 40px | 1.15 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-240 | 240px | `--spacing-240` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| pills | 100px |
+| inputs | 12px |
+| buttons | 12px |
+| largeCards | 20px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(21, 21, 35, 0.2) 0px 2px 4px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.5) 0px 0px 4px 0px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.2) 0px 2px 6px 0px | `--shadow-xl-3` |
+| xl-4 | rgba(21, 21, 35, 0.2) 0px 4px 8px 0px | `--shadow-xl-4` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 24px |
+| cardPadding | 12px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Secondary actions or navigation links that need less emphasis. They appear as text with a transparent background.
+
+Transparent background, white text (#ffffff), no border. Radius: 12px. Padding: 0px.
+
+### Neutral Outlined Button
+
+**Role:** Tertiary actions or category filters, providing interaction without competing with primary calls to action.
+
+Transparent background, #151523 text, #151523 1px border. Radius: 12px. Padding: 12px 16px.
+
+### Primary Filled Button
+
+**Role:** Main calls to action.
+
+Background: #4e64df. Text: #ffffff. No border. Radius: 12px. Padding: 8px 16px.
+
+### Crimson Call To Action Button
+
+**Role:** High-urgency primary actions, distinct from the brand's standard primary color.
+
+Background: #ff0000. Text: #ffffff. No border. Radius: 10px. Padding: 14px 28px.
+
+### Elevated Feature Card
+
+**Role:** Highlighting key features or content, using elevation to draw attention.
+
+Background: #e9e9ec. Radius: 20px. Shadow: rgba(21, 21, 35, 0.2) 0px 4px 8px 0px. No internal padding.
+
+### Grouped Content Card
+
+**Role:** Organizing related content into visually distinct blocks on the page, with subtle elevation.
+
+Background: #f1f3fe. Radius: 12px. Shadow: rgba(21, 21, 35, 0.2) 0px 2px 4px 0px. Padding: 24px.
+
+### Subtle Information Card
+
+**Role:** Presenting supplementary information or less prominent content, without strong visual weighting.
+
+Background: #f1f3fe. Radius: 12px. No shadow. Padding: 12px.
+
+### Search Input Field
+
+**Role:** Primary user input for search functions.
+
+Background: #ffffff. Text: #151523. Border: #151523. Radius: 12px 0px 0px 12px. Padding: 6px 15px.
+
+### Outline Input Field
+
+**Role:** General form inputs, blending subtly into the background.
+
+Transparent background. Text: #000000. Border: #000000. Radius: 0px. Padding: 1px 2px.
+
+### Standard Input Field
+
+**Role:** Basic input fields across the application.
+
+Background: #ffffff. Text: #151523. Border: #d7d7db. Radius: 12px. Padding: 12px 32px 12px 16px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Royal Indigo (#4e64df) for all primary interactive elements like buttons and prominent links.
 - Apply Canvas White (#ffffff) as the default background for content sections and primary cards.
@@ -83,7 +222,7 @@ TeePublic utilizes a dynamic, high-contrast aesthetic with a playful edge. Dark 
 - Use Sharp Grotesk for large headings (20px and above) to introduce distinct brand personality.
 - Apply subtle shadow rgba(21, 21, 35, 0.2) 0px 2px 4px 0px for elevated cards to create clear visual separation.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors for primary actions on a single screen; reserve Crimson Strike (#ff0000) for highest urgency only.
 - Do not use dark backgrounds for large content areas; the system relies on a light canvas for readability.
@@ -93,10 +232,170 @@ TeePublic utilizes a dynamic, high-contrast aesthetic with a playful edge. Dark 
 - Do not reduce border-radius below 12px for standard components; the rounded aesthetic is a core identifier.
 - Avoid making text too light against white backgrounds; ensure sufficient contrast with Midnight Ink (#151523) or Faded Steel (#49495a).
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Base page background |
+| 1 | Ghost Gray | #e9e9ec | Secondary card backgrounds, subtle dividers |
+| 2 | Cloud Whisper | #f1f3fe | Elevated card backgrounds, grouped content areas |
+
+## Elevation
+
+- **Elevated Feature Card:** `rgba(21, 21, 35, 0.2) 0px 4px 8px 0px`
+- **Grouped Content Card:** `rgba(21, 21, 35, 0.2) 0px 2px 4px 0px`
+- **Button/Link:** `rgba(21, 21, 35, 0.2) 0px 2px 4px 0px`
+- **Button:** `rgba(0, 0, 0, 0.2) 0px 2px 6px 0px`
+
+## Imagery
+
+The visual language predominantly features high-quality, product-focused photography and lifestyle imagery on white or subtly colored backgrounds. These are often contained within rounded card shapes or as full-bleed hero elements. Illustrations are flat, colorful, and organic, used for decorative atmosphere and branding, often featuring a vibrant gradient. Icons are primarily outlined or filled versions of Electric Violet (#6c7ee4), maintaining a crisp, light stroke. Imagery density is moderate, with images used to break up text and showcase products or features.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 1440px, with content centered. The hero section often features full-bleed imagery or gradient backgrounds with centered text overlays. Vertical rhythm is established through consistent section gaps and alternating content arrangements, including two-column text-left/image-right patterns and three-column card grids for features. Navigation is a sticky top bar with prominent brand links and actions.
 
-### Imagery
+## Similar Brands
 
-The visual language predominantly features high-quality, product-focused photography and lifestyle imagery on white or subtly colored backgrounds. These are often contained within rounded card shapes or as full-bleed hero elements. Illustrations are flat, colorful, and organic, used for decorative atmosphere and branding, often featuring a vibrant gradient. Icons are primarily outlined or filled versions of Electric Violet (#6c7ee4), maintaining a crisp, light stroke. Imagery density is moderate, with images used to break up text and showcase products or features.
+- **Redbubble** — User-generated content platforms with a focus on product display, often using a clean white aesthetic and vibrant accent colors.
+- **Etsy** — Marketplace UI with a focus on clear product presentation, consistent card layouts, and strong calls to action set against a light background.
+- **Threadless** — Community-driven apparel and design e-commerce featuring diverse imagery within a structured, often white-dominant layout with bold typography.
+- **Creative Market** — Digital asset marketplace with a clean UI, prominent product cards, and a mix of neutral and accent colors for hierarchy and interaction.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #151523;
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #e9e9ec;
+  --color-border-silver: #d7d7db;
+  --color-cloud-whisper: #f1f3fe;
+  --color-royal-indigo: #4e64df;
+  --color-crimson-strike: #ff0000;
+  --color-lavender-mist: #99a7f5;
+  --color-electric-violet: #6c7ee4;
+  --color-faded-steel: #49495a;
+  --color-vivid-chroma-gradient: #25d454;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-roobert: 'Roobert', Inter;
+  --font-roobert: 'Roobert', Inter;
+  --font-roobert: 'Roobert', Inter;
+  --font-sharp-grotesk: 'Sharp Grotesk', Montserrat;
+  --text-caption: 11px;
+  --leading-caption: 1.45;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.33;
+  --text-heading: 20px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.2;
+  --text-display: 40px;
+  --leading-display: 1.15;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-240: 240px;
+  --radius-cards: 12px;
+  --radius-pills: 100px;
+  --radius-inputs: 12px;
+  --radius-buttons: 12px;
+  --radius-largecards: 20px;
+  --shadow-xl: rgba(21, 21, 35, 0.2) 0px 2px 4px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+  --shadow-xl-4: rgba(21, 21, 35, 0.2) 0px 4px 8px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-ghost-gray: #e9e9ec;
+  --surface-cloud-whisper: #f1f3fe;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #151523;
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #e9e9ec;
+  --color-border-silver: #d7d7db;
+  --color-cloud-whisper: #f1f3fe;
+  --color-royal-indigo: #4e64df;
+  --color-crimson-strike: #ff0000;
+  --color-lavender-mist: #99a7f5;
+  --color-electric-violet: #6c7ee4;
+  --color-faded-steel: #49495a;
+  --color-vivid-chroma-gradient: #25d454;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-roobert: 'Roobert', Inter;
+  --font-roobert: 'Roobert', Inter;
+  --font-roobert: 'Roobert', Inter;
+  --font-sharp-grotesk: 'Sharp Grotesk', Montserrat;
+  --text-caption: 11px;
+  --leading-caption: 1.45;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.33;
+  --text-heading: 20px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.2;
+  --text-display: 40px;
+  --leading-display: 1.15;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-240: 240px;
+  --radius-cards: 12px;
+  --radius-pills: 100px;
+  --radius-inputs: 12px;
+  --radius-buttons: 12px;
+  --radius-largecards: 20px;
+  --shadow-xl: rgba(21, 21, 35, 0.2) 0px 2px 4px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.5) 0px 0px 4px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.2) 0px 2px 6px 0px;
+  --shadow-xl-4: rgba(21, 21, 35, 0.2) 0px 4px 8px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-ghost-gray: #e9e9ec;
+  --surface-cloud-whisper: #f1f3fe;
+}
+```
