@@ -1,48 +1,111 @@
 ---
 version: alpha
-name: Chris Biron
-description: Chris Biron presents a dark, minimalist aesthetic with a strong focus on high-contrast typography and subtle interactive elements. The design system emphasizes spacious layouts and a sense of calm, with large areas of negative space allowing content and imagery to breathe. Typography carries significant weight in conveying messages, often in all-caps, with a striking interplay between a classical serif and a modern sans-serif. Visual transitions are smooth and expressive, complementing the refined but raw interaction style.
-colors:
-  midnight-void: "#000000"
-  arctic-mist: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.1
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.1
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 43px
-    lineHeight: 1.1
-spacing:
-  elementGap: 5px
-  sectionGap: 50px
-components:
-  primary-navigation-link:
-    role: Top-level navigation items
-  body-text-block:
-    role: Main narrative content
-  section-heading:
-    role: Major content section titles
-  footer-description:
-    role: Site-wide descriptive text
+name: "Chris Biron"
+description: "Chris Biron presents a dark, minimalist aesthetic with a strong focus on high-contrast typography and subtle interactive elements. The design system emphasizes spacious layouts and a sense of calm, with large areas of negative space allowing content and imagery to breathe. Typography carries significant weight in conveying messages, often in all-caps, with a striking interplay between a classical serif and a modern sans-serif. Visual transitions are smooth and expressive, complementing the refined but raw interaction style."
+theme: "dark"
+industry: "design"
+source_url: "https://biron.io"
+refero_style_id: "68eeb68f-935b-4c14-9369-f3a5c23efedc"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516853092-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516853092-thumb.jpg"
+extracted_at: "2026-04-30T02:41:11.049Z"
 ---
 
-## Overview
+# Chris Biron — Style Reference
 
-**North Star:** High-contrast typographic canvas
+> High-contrast typographic canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Chris Biron presents a dark, minimalist aesthetic with a strong focus on high-contrast typography and subtle interactive elements. The design system emphasizes spacious layouts and a sense of calm, with large areas of negative space allowing content and imagery to breathe. Typography carries significant weight in conveying messages, often in all-caps, with a striking interplay between a classical serif and a modern sans-serif. Visual transitions are smooth and expressive, complementing the refined but raw interaction style.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Arctic Mist | #ffffff | `--color-arctic-mist` | Primary text on dark backgrounds, active navigation elements, decorative accents |
+
+## Tokens — Typography
+
+### editorial
+
+- **Token:** `--font-editorial`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 16px, 32px, 35px, 43px
+- **Line heights:** 1.00, 1.10, 1.15
+- **Role:** Headlines, expressive body text, and key content labels - its distinct serif character provides a classical, editorial feel, contrasting with the minimalist layout.
+
+### goodsans
+
+- **Token:** `--font-goodsans`
+- **Substitute:** Open Sans
+- **Weights:** 400
+- **Sizes:** 10px, 12px, 35px
+- **Line heights:** 1.00, 1.10
+- **Role:** Navigation, small labels, and accent text - its clean, geometric forms provide a modern, functional counterpoint to the more decorative serif.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1.1 | — | `--text-caption` |
+| body-sm | 32px | 1.1 | — | `--text-body-sm` |
+| body | 35px | 1.1 | — | `--text-body` |
+| body-lg | 43px | 1.1 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 22px |
+| elementGap | 5px |
+
+## Components
+
+### Primary Navigation Link
+
+**Role:** Top-level navigation items
+
+Text: Arctic Mist (#ffffff) using goodsans, 12px, weight 400. Hover state shows a subtle border or color change. Padded with 50px on right.
+
+### Body Text Block
+
+**Role:** Main narrative content
+
+Text: Arctic Mist (#ffffff) using editorial, 16px, weight 400. Contained within a spacious layout.
+
+### Section Heading
+
+**Role:** Major content section titles
+
+Text: Arctic Mist (#ffffff) using editorial, typically 35px or 43px, weight 400. All-caps for strong visual presence.
+
+### Footer Description
+
+**Role:** Site-wide descriptive text
+
+Text: Arctic Mist (#ffffff) using editorial, 16px, weight 400. Usually appears centered at the bottom of the page.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Void (#000000) for all main backgrounds to maintain the dark theme.
 - Use Arctic Mist (#ffffff) for all primary text and interactive elements on dark backgrounds.
@@ -52,7 +115,7 @@ Chris Biron presents a dark, minimalist aesthetic with a strong focus on high-co
 - Enforce all-caps for headlines using the `editorial` font to maximize impact.
 - Utilize border-only interactive states for buttons and links, using Midnight Void (#000000) for borders on light elements, and Arctic Mist (#ffffff) for borders on dark elements.
 
-### Don'ts
+### Don't
 
 - Avoid introducing any saturated colors; the palette is strictly achromatic.
 - Do not use small line heights for `goodsans` text; maintain ample leading for readability in compact areas.
@@ -62,10 +125,67 @@ Chris Biron presents a dark, minimalist aesthetic with a strong focus on high-co
 - Do not deviate from the established spacing values; consistency is key to the spacious feel.
 - Avoid generic icon libraries; icons should be minimalist and align with the sharp, clean aesthetic, likely using pure white strokes.
 
-### Layout
+## Imagery
+
+The visual language is characterized by bold, full-bleed product photography within simulated digital interfaces (like phone mockups) or artistic 3D renders of physical products. Imagery is typically self-contained, presented with raw edges and little to no masking. When photography is used, it often features tight crops and a sense of candid immediacy, with high contrast. The role of imagery is to showcase product design and provide contextual examples of the designer's work, rather than decorative atmosphere. The overall density is image-heavy in showcased project sections, balanced by text-dominant areas for descriptions.
+
+## Layout
 
 The page adheres to a full-bleed layout, maximizing the dark canvas, with content often centered vertically and horizontally within large sections. The hero section frequently features a full-viewport visual (image or render) with minimal, centered textual overlay. Section rhythm is marked by distinct, generously spaced content blocks rather than explicit visual dividers, featuring alternating arrangements of text and visuals. Content frequently stacks centrally or uses a 2-column layout for text and images or product mockups. The navigation is a minimalist top bar, likely sticky, with 'INDEX' and 'INFO' links positioned at the top left and right corners, serving as a subtle framing element.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by bold, full-bleed product photography within simulated digital interfaces (like phone mockups) or artistic 3D renders of physical products. Imagery is typically self-contained, presented with raw edges and little to no masking. When photography is used, it often features tight crops and a sense of candid immediacy, with high contrast. The role of imagery is to showcase product design and provide contextual examples of the designer's work, rather than decorative atmosphere. The overall density is image-heavy in showcased project sections, balanced by text-dominant areas for descriptions.
+- **Aytm.com** — Dark theme with strong contrast typography, minimalist navigation, and large sections dedicated to product showcases.
+- **Pichard.me** — Portfolio site with a dark, spacious aesthetic and a focus on large images and highly legible typography.
+- **Adrien Giraud** — Design portfolio with a dark, content-focused layout, high contrast between text and background, and strategic use of serif headlines.
+- **Basile David** — Another designer portfolio utilizing a high-contrast dark theme and minimal UI elements to emphasize project visuals.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-arctic-mist: #ffffff;
+  --font-editorial: 'editorial', Playfair Display;
+  --font-goodsans: 'goodsans', Open Sans;
+  --text-caption: 16px;
+  --leading-caption: 1.1;
+  --text-body-sm: 32px;
+  --leading-body-sm: 1.1;
+  --text-body: 35px;
+  --leading-body: 1.1;
+  --text-body-lg: 43px;
+  --leading-body-lg: 1.1;
+  --spacing-5: 5px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-arctic-mist: #ffffff;
+  --font-editorial: 'editorial', Playfair Display;
+  --font-goodsans: 'goodsans', Open Sans;
+  --text-caption: 16px;
+  --leading-caption: 1.1;
+  --text-body-sm: 32px;
+  --leading-body-sm: 1.1;
+  --text-body: 35px;
+  --leading-body: 1.1;
+  --text-body-lg: 43px;
+  --leading-body-lg: 1.1;
+  --spacing-5: 5px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+}
+```
