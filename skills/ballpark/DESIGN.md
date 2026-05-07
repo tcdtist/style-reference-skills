@@ -1,86 +1,223 @@
 ---
 version: alpha
-name: Ballpark
-description: Ballpark's design conveys a sense of confident authority through its stark visual contrasts and structured layout. The interplay of deep, near-black text and crisp white backgrounds, punctuated by a single vibrant "Rocket Red" accent, creates a focused, high-contrast experience, much like an advanced research instrument. The generous use of space, especially around core content and within card structures, emphasizes clarity and reduces cognitive load, allowing complex information to be easily digestible. Distinctive rounded forms—from the extra-large button radii to the subtle card curves—soften the otherwise sharp edges, balancing precision with approachability.
-colors:
-  pitch-black: "#000000"
-  ghost-white: "#ffffff"
-  ash-gray: "#f9fafb"
-  graphite: "#111827"
-  slate-blue: "#4b5563"
-  medium-gray: "#374151"
-  light-gray: "#6b7280"
-  border-gray: "#e5e7eb"
-  rocket-red: "#fc4a2b"
-  passion-red: "#e11d48"
-  sunset-orange: "#f97316"
-  coral-glow: "#ffac9"
-  pale-peach: "#ffe5e0"
-  success-green: "#15803d"
-  warning-yellow: "#f59e0b"
-  pill-button-gradient: "#f87171"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.4
-    letterSpacing: 0.5px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.6
-    letterSpacing: -0.14px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-    letterSpacing: -0.36px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-    letterSpacing: -0.48px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1
-    letterSpacing: -1.47px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 1
-    letterSpacing: -3.36px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 6px
-  elementGap: 8px
-  sectionGap: 64-96px
-components:
-  announcement-banner:
-    role: 
-  pill-selector-research-type-tabs:
-    role: 
-  testimonial-card:
-    role: 
-  navigation-link:
-    role: Primary navigation in header
-  secondary-ghost-button:
-    role: Tertiary actions, secondary calls to attention
-  feature-card:
-    role: Showcasing features or testimonials
-  header-brand-link:
-    role: Brand logo in header
-  tertiary-callout-button:
-    role: Informational or less prominent calls to action
+name: "Ballpark"
+description: "Ballpark's design conveys a sense of confident authority through its stark visual contrasts and structured layout. The interplay of deep, near-black text and crisp white backgrounds, punctuated by a single vibrant \"Rocket Red\" accent, creates a focused, high-contrast experience, much like an advanced research instrument. The generous use of space, especially around core content and within card structures, emphasizes clarity and reduces cognitive load, allowing complex information to be easily digestible. Distinctive rounded forms—from the extra-large button radii to the subtle card curves—soften the otherwise sharp edges, balancing precision with approachability."
+theme: "light"
+industry: "other"
+source_url: "https://ballparkhq.com"
+refero_style_id: "9342e89b-c2fe-4acf-9993-53b44e0c13b5"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933391174-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933391174-thumb.jpg"
+extracted_at: "2026-04-11T18:50:21.614Z"
 ---
 
-## Overview
+# Ballpark — Style Reference
 
-**North Star:** High-contrast research tool; like a scientific dashboard with a single, urgent indicator light.
+> High-contrast research tool; like a scientific dashboard with a single, urgent indicator light.
+
+**Theme:** light
+
+**Industry:** other
 
 Ballpark's design conveys a sense of confident authority through its stark visual contrasts and structured layout. The interplay of deep, near-black text and crisp white backgrounds, punctuated by a single vibrant "Rocket Red" accent, creates a focused, high-contrast experience, much like an advanced research instrument. The generous use of space, especially around core content and within card structures, emphasizes clarity and reduces cognitive load, allowing complex information to be easily digestible. Distinctive rounded forms—from the extra-large button radii to the subtle card curves—soften the otherwise sharp edges, balancing precision with approachability.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, critical headings, icons, borders on dark elements. Establishes a bold and clear informational hierarchy. |
+| Ghost White | #ffffff | `--color-ghost-white` | Page backgrounds, card surfaces, secondary button backgrounds. Provides clean canvas for content and negative space. |
+| Ash Gray | #f9fafb | `--color-ash-gray` | Subtle section backgrounds, light borders, subtle hover states. Offers a barely-there differentiation from Ghost White. |
+| Graphite | #111827 | `--color-graphite` | Heading text, primary UI element text where Pitch Black might be too intense. Provides significant contrast without being absolute black. |
+| Slate Blue | #4b5563 | `--color-slate-blue` | Body copy, secondary text, iconography. Softens text impact for longer reads while maintaining readability. |
+| Medium Gray | #374151 | `--color-medium-gray` | Slightly darker body copy and secondary text for deeper contrast on lighter backgrounds. |
+| Light Gray | #6b7280 | `--color-light-gray` | Tertiary text, subtle borders, inactive states. Used for less prominent information. |
+| Border Gray | #e5e7eb | `--color-border-gray` | Default boundary for containers and cards, hint for input fields, offering subtle structure without being visually heavy. |
+| Rocket Red | #fc4a2b | `--color-rocket-red` | Primary Call-to-Action buttons, active indicators, highlights. Its vivid saturation against the largely achromatic palette ensures immediate attention. |
+| Passion Red | #e11d48 | `--color-passion-red` | Secondary brand accent for more intense calls to action or error states, providing a deeper red alternative to Rocket Red. |
+| Sunset Orange | #f97316 | `--color-sunset-orange` | Subtle stroke accents and decorative elements. A warmer, slightly more muted accent. |
+| Coral Glow | #ffac9 | `--color-coral-glow` | Highlight backgrounds, soft decorative elements. A light and airy accent derived from the brand red, used for subtle visual uplift. |
+| Pale Peach | #ffe5e0 | `--color-pale-peach` | Very light accent background, almost neutral, for soft visual differentiation. |
+| Success Green | #15803d | `--color-success-green` | Subtle semantic indicator for success messages or positive states. |
+| Warning Yellow | #f59e0b | `--color-warning-yellow` | Subtle semantic indicator for warnings or informational alerts. |
+| Pill Button Gradient | #f87171 | `--color-pill-button-gradient` | Background for secondary action pills, offering a soft visual texture. |
+
+## Tokens — Typography
+
+### Inter Display
+
+- **Token:** `--font-inter-display`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 700, 800
+- **Sizes:** 42px, 60px, 96px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.035em, -0.030em
+- **OpenType features:** "cv06", "cv13", "zero", "cv06", "cv13"
+- **Role:** Display headlines and hero text. The tight line height and negative letter-spacing give it a commanding, engineered feel. The specific font features 'cv06', 'cv13', 'zero' are critical for its distinctive look.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 10px, 12px, 13px, 14px, 16px, 18px, 20px, 24px
+- **Line heights:** 1.20, 1.33, 1.38, 1.40, 1.43, 1.46, 1.50, 1.60, 1.65
+- **Letter spacing:** -0.03em, -0.02em, -0.014em, -0.01em, 0.05em
+- **OpenType features:** "cv01", "cv02", "cv04", "cv09", "cv01", "cv02", "cv03", "cv04", "cv09"
+- **Role:** All body copy, subheadings, navigation, and button text. Its versatility across weights and sizes, combined with careful letter-spacing adjustments, maintains readability and a precise tone. Features 'cv01', 'cv02', 'cv04', 'cv09' ensure consistent character design.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Role:** Fallback and utilitarian text where a system font provides sufficient clarity, often for labels or minor UI elements.
+
+### IBM Plex Mono
+
+- **Token:** `--font-ibm-plex-mono`
+- **Substitute:** monospace
+- **Weights:** 600
+- **Sizes:** 11px
+- **Line heights:** 1.50
+- **Letter spacing:** 0.15em
+- **Role:** Monospaced text for code snippets or specific data representations. The expanded letter spacing gives it a technical, distinct feel.
+
+### Source Serif 4
+
+- **Token:** `--font-source-serif-4`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 20px
+- **Line heights:** 1.60
+- **Letter spacing:** -0.02em
+- **Role:** Used for specific body text, possibly quotes or editorial content, offering a more traditional and softer reading experience with subtle tracking.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.4 | 0.5px | `--text-caption` |
+| body | 14px | 1.6 | -0.14px | `--text-body` |
+| subheading | 18px | 1.5 | -0.36px | `--text-subheading` |
+| heading | 24px | 1.4 | -0.48px | `--text-heading` |
+| heading-lg | 42px | 1 | -1.47px | `--text-heading-lg` |
+| display | 96px | 1 | -3.36px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 9999px |
+| cards | 10px |
+| images | 6px |
+| inputs | 6px |
+| buttons | 6px |
+| interactive | 100px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 6px 9px 0px | `--shadow-xl` |
+| xl-2 | rgba(75, 85, 99, 0.2) 0px 0px 0px 1px | `--shadow-xl-2` |
+| xl-3 | rgba(50, 50, 92, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.15) 0px 30px 60px -30px | `--shadow-xl-3` |
+| xl-4 | rgb(252, 74, 43) 0px 0px 0px 2px | `--shadow-xl-4` |
+| xl-5 | rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | `--shadow-xl-5` |
+| xl-6 | rgba(75, 85, 99, 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px | `--shadow-xl-6` |
+| xl-7 | rgb(17, 24, 39) 0px 0px 0px 1px | `--shadow-xl-7` |
+| xl-8 | rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px | `--shadow-xl-8` |
+| xl-9 | rgba(0, 0, 0, 0.1) 0px 1px 2px 0px inset, rgb(249, 250, 251) 0px 0px 0px 10px | `--shadow-xl-9` |
+| xl-10 | rgb(255, 255, 255) 0px 0px 0px 1px | `--shadow-xl-10` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64-96px |
+| cardPadding | 14-24px |
+| elementGap | 8px |
+
+## Components
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Pill Selector / Research Type Tabs
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Link
+
+**Role:** Primary navigation in header
+
+Text: Inter, 16px, weight 500, Graphite (#111827). Hover state: Pitch Black (#000000). Active state: underline 2px Rocket Red (#fc4a2b). Generous padding: 8px vertical, 8-16px horizontal to ensure distinct hit areas.
+
+### Secondary Ghost Button
+
+**Role:** Tertiary actions, secondary calls to attention
+
+Text: Pitch Black (#000000), 16px, weight 400. Background: transparent. Border: transparent. Active state: faint border or background color change. Used for subtle interactions like 'Sign In'.
+
+### Feature Card
+
+**Role:** Showcasing features or testimonials
+
+Background: Ghost White (#ffffff). Border radius: 10px. Box shadow: rgba(0, 0, 0, 0.1) 0px 6px 9px 0px, subtle inner shadow rgba(75, 85, 99, 0.2) 0px 0px 0px 1px. Contains content with 16px padding on all sides. The prominent shadow lifts the card significantly.
+
+### Header Brand Link
+
+**Role:** Brand logo in header
+
+Text: Pitch Black (#000000), 24px, Inter Display, weight 700. Features: 'cv06', 'cv13'. Minimal padding. Sets a bold brand identity at the top of every page.
+
+### Tertiary Callout Button
+
+**Role:** Informational or less prominent calls to action
+
+Text: Pitch Black (#000000), 16px, weight 400. Background: Light Gray (#e6e8eb). Radius: 6px. Padding: 8px vertical, 14px horizontal. Serves as a neutral, accessible button for less critical actions.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast between text and background using Pitch Black (#000000) or Graphite (#111827) on Ghost White (#ffffff) or Ash Gray (#f9fafb).
 - Use Rocket Red (#fc4a2b) exclusively for primary call-to-action buttons and essential active states to maintain its impact.
@@ -90,7 +227,7 @@ Ballpark's design conveys a sense of confident authority through its stark visua
 - Utilize the shadow `rgba(0, 0, 0, 0.1) 0px 6px 9px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px` for all elevated cards and containers to create a consistent lifted appearance.
 - Ensure letter-spacing is applied as specified in the typography for Inter and Inter Display, especially the negative values for larger headlines, to optimize visual density.
 
-### Don'ts
+### Don't
 
 - Do not introduce new primary accent colors; restrict vibrant accents to Rocket Red (#fc4a2b) and its derivatives.
 - Avoid using multiple shadows on a single element; stick to the defined shadow styles for cards to prevent visual clutter.
@@ -99,10 +236,198 @@ Ballpark's design conveys a sense of confident authority through its stark visua
 - Do not use generic system sans-serif for body or heading text; always use 'Inter' for its consistent, readable structure.
 - Avoid excessive use of bold text in body copy; reserve weights 600-700 for headings, subheadings, and key UI labels only.
 
-### Layout
+## Elevation
+
+- **Feature Card:** `rgba(0, 0, 0, 0.1) 0px 6px 9px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px`
+- **Hovered Button:** `rgba(0, 0, 0, 0.06) 0px 2px 2px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px`
+- **Callout / Modal:** `rgba(50, 50, 92, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.15) 0px 30px 60px -30px`
+- **Accent Ring:** `rgb(252, 74, 43) 0px 0px 0px 2px`
+
+## Imagery
+
+This design primarily uses product screenshots and abstract, organic vector graphics that appear to be illustrations. Photography, when present in testimonials, is framed within rounded containers (16px radius) and sometimes features a subtle, brand-colored overlay (like the red Vodafone graphic). Product screenshots are often contained within structured cards, emphasizing functionality over aesthetic appeal. Illustrations are generally flat, geometric, and either filled with muted, abstract colors or outlines in brand colors like Rocket Red. Iconography is primarily outline-based with a medium stroke weight. The overall role of imagery is explanatory and supportive rather than purely decorative, providing visual context to features and testimonials. Image density is moderate, balanced with significant textual content and whitespace.
+
+## Layout
 
 The page maintains a centered, max-width layout, effectively creating a content-focused experience within clear boundaries. The hero section is characterized by a centered, bold headline over a white background, occasionally featuring subtle background elements or abstract graphics. Sections generally alternate between centered text stacks and two-column layouts pairing text with images or product illustrations, creating a balanced rhythm. A prominent feature is the use of card grids (often 3-column) for displaying multiple features or testimonials, ensuring content is visually digestible. Navigation is a sticky top bar with a clear brand logo and primary actions. Generous vertical spacing between sections creates breathing room and allows each section to convey a distinct message without visual overlap.
 
-### Imagery
+## Similar Brands
 
-This design primarily uses product screenshots and abstract, organic vector graphics that appear to be illustrations. Photography, when present in testimonials, is framed within rounded containers (16px radius) and sometimes features a subtle, brand-colored overlay (like the red Vodafone graphic). Product screenshots are often contained within structured cards, emphasizing functionality over aesthetic appeal. Illustrations are generally flat, geometric, and either filled with muted, abstract colors or outlines in brand colors like Rocket Red. Iconography is primarily outline-based with a medium stroke weight. The overall role of imagery is explanatory and supportive rather than purely decorative, providing visual context to features and testimonials. Image density is moderate, balanced with significant textual content and whitespace.
+- **Figma** — Clean, high-contrast UI with a single vibrant accent color and strong typography, prioritizing clarity in a complex tool.
+- **Stripe** — Understated design with strategic use of negative space, crisp typography, and an emphasis on structure for technical products.
+- **Linear** — Focus on high-contrast text and interactive elements, minimalist aesthetic, and custom typography to maintain readability and precision.
+- **Notion** — Utilizes generous white space, a functional grey palette, and clear text hierarchy to present information dense content accessibly.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-ghost-white: #ffffff;
+  --color-ash-gray: #f9fafb;
+  --color-graphite: #111827;
+  --color-slate-blue: #4b5563;
+  --color-medium-gray: #374151;
+  --color-light-gray: #6b7280;
+  --color-border-gray: #e5e7eb;
+  --color-rocket-red: #fc4a2b;
+  --color-passion-red: #e11d48;
+  --color-sunset-orange: #f97316;
+  --color-coral-glow: #ffac9;
+  --color-pale-peach: #ffe5e0;
+  --color-success-green: #15803d;
+  --color-warning-yellow: #f59e0b;
+  --color-pill-button-gradient: #f87171;
+  --font-inter-display: 'Inter Display', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-sans-serif: 'sans-serif', system-ui, sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --font-source-serif-4: 'Source Serif 4', serif;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.5px;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --tracking-body: -0.14px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: -0.36px;
+  --text-heading: 24px;
+  --leading-heading: 1.4;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 42px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.47px;
+  --text-display: 96px;
+  --leading-display: 1;
+  --tracking-display: -3.36px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --spacing-120: 120px;
+  --radius-pill: 9999px;
+  --radius-cards: 10px;
+  --radius-images: 6px;
+  --radius-inputs: 6px;
+  --radius-buttons: 6px;
+  --radius-interactive: 100px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 6px 9px 0px;
+  --shadow-xl-2: rgba(75, 85, 99, 0.2) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(50, 50, 92, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.15) 0px 30px 60px -30px;
+  --shadow-xl-4: rgb(252, 74, 43) 0px 0px 0px 2px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-xl-6: rgba(75, 85, 99, 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+  --shadow-xl-7: rgb(17, 24, 39) 0px 0px 0px 1px;
+  --shadow-xl-8: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px;
+  --shadow-xl-9: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px inset, rgb(249, 250, 251) 0px 0px 0px 10px;
+  --shadow-xl-10: rgb(255, 255, 255) 0px 0px 0px 1px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-ghost-white: #ffffff;
+  --color-ash-gray: #f9fafb;
+  --color-graphite: #111827;
+  --color-slate-blue: #4b5563;
+  --color-medium-gray: #374151;
+  --color-light-gray: #6b7280;
+  --color-border-gray: #e5e7eb;
+  --color-rocket-red: #fc4a2b;
+  --color-passion-red: #e11d48;
+  --color-sunset-orange: #f97316;
+  --color-coral-glow: #ffac9;
+  --color-pale-peach: #ffe5e0;
+  --color-success-green: #15803d;
+  --color-warning-yellow: #f59e0b;
+  --color-pill-button-gradient: #f87171;
+  --font-inter-display: 'Inter Display', system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-sans-serif: 'sans-serif', system-ui, sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --font-source-serif-4: 'Source Serif 4', serif;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.5px;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --tracking-body: -0.14px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: -0.36px;
+  --text-heading: 24px;
+  --leading-heading: 1.4;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 42px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.47px;
+  --text-display: 96px;
+  --leading-display: 1;
+  --tracking-display: -3.36px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --spacing-120: 120px;
+  --radius-pill: 9999px;
+  --radius-cards: 10px;
+  --radius-images: 6px;
+  --radius-inputs: 6px;
+  --radius-buttons: 6px;
+  --radius-interactive: 100px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 6px 9px 0px;
+  --shadow-xl-2: rgba(75, 85, 99, 0.2) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(50, 50, 92, 0.05) 0px 50px 100px -20px, rgba(0, 0, 0, 0.15) 0px 30px 60px -30px;
+  --shadow-xl-4: rgb(252, 74, 43) 0px 0px 0px 2px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-xl-6: rgba(75, 85, 99, 0.2) 0px 0px 0px 1px, rgba(0, 0, 0, 0.06) 0px 2px 2px 0px;
+  --shadow-xl-7: rgb(17, 24, 39) 0px 0px 0px 1px;
+  --shadow-xl-8: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px, rgba(75, 85, 99, 0.2) 0px 0px 0px 1px;
+  --shadow-xl-9: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px inset, rgb(249, 250, 251) 0px 0px 0px 10px;
+  --shadow-xl-10: rgb(255, 255, 255) 0px 0px 0px 1px;
+}
+```

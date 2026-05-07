@@ -1,77 +1,167 @@
 ---
 version: alpha
-name: Basedash
-description: Basedash employs a 'dark studio canvas' aesthetic, designed to showcase product functionality with stark clarity against a deep, almost black background. White typography and a single vibrant purple accent provide functional highlights and interactive cues, giving the interface a precise, analytical feel. Components are minimalist, often defined by subtle borders or ghost styles, suggesting a lightweight and highly performant system. The overall impression is one of focused utility, where UI elements serve to illuminate data rather than compete with it.
-colors:
-  obsidian-canvas: "#000000"
-  eclipse-surface: "#050607"
-  ghost-white: "#ffffff"
-  ash-gray: "#b3b3b3"
-  steel-gray: "#808080"
-  carbon-detail: "#333333"
-  illumination-white: "#e8eaee"
-  vivid-violet: "#9984d8"
-  gradient-violet: "#6b5aa8"
-  alert-green: "#3fcb7f"
-  radial-violet-glow: "#a366ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.36px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-    letterSpacing: -0.54px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: -0.6px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.33
-    letterSpacing: -0.9px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1.2
-    letterSpacing: -1.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: 0px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 6px
-  elementGap: 12px
-  sectionGap: 24px
-components:
-  primary-filled-button:
-    role: Call to action button for starting free trials or sign-ups.
-  ghost-accent-button:
-    role: Secondary call to action button, or action that needs subtle visual emphasis.
-  navigation-link-button:
-    role: Links within the main navigation bar.
-  small-dark-button:
-    role: Compact utility buttons, often for logging in or secondary actions in header.
-  content-card:
-    role: Containers for content blocks like testimonials or feature descriptions.
-  live-status-badge:
-    role: Used to denote 'Live' status or positive indicators.
+name: "Basedash"
+description: "Basedash employs a 'dark studio canvas' aesthetic, designed to showcase product functionality with stark clarity against a deep, almost black background. White typography and a single vibrant purple accent provide functional highlights and interactive cues, giving the interface a precise, analytical feel. Components are minimalist, often defined by subtle borders or ghost styles, suggesting a lightweight and highly performant system. The overall impression is one of focused utility, where UI elements serve to illuminate data rather than compete with it."
+theme: "dark"
+industry: "ai"
+source_url: "https://www.basedash.com"
+refero_style_id: "77b723ca-9583-4349-9b5e-2ef8b4fde002"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509754674-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509754674-thumb.jpg"
+extracted_at: "2026-04-30T00:43:04.459Z"
 ---
 
-## Overview
+# Basedash — Style Reference
 
-**North Star:** Midnight data studio.
+> Midnight data studio.
+
+**Theme:** dark
+
+**Industry:** ai
 
 Basedash employs a 'dark studio canvas' aesthetic, designed to showcase product functionality with stark clarity against a deep, almost black background. White typography and a single vibrant purple accent provide functional highlights and interactive cues, giving the interface a precise, analytical feel. Components are minimalist, often defined by subtle borders or ghost styles, suggesting a lightweight and highly performant system. The overall impression is one of focused utility, where UI elements serve to illuminate data rather than compete with it.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Obsidian Canvas | #000000 | `--color-obsidian-canvas` | Primary page and hero backgrounds, deep surface base |
+| Eclipse Surface | #050607 | `--color-eclipse-surface` | Card backgrounds, secondary dark surfaces |
+| Ghost White | #ffffff | `--color-ghost-white` | Primary text, button backgrounds, active navigation elements |
+| Ash Gray | #b3b3b3 | `--color-ash-gray` | Muted text, hairline borders, secondary content |
+| Steel Gray | #808080 | `--color-steel-gray` | Tertiary text, inactive icons, subtle dividers |
+| Carbon Detail | #333333 | `--color-carbon-detail` | Fine borders, subtle text elements |
+| Illumination White | #e8eaee | `--color-illumination-white` | Subtle background for specific sections, sometimes for borders |
+| Vivid Violet | #9984d8 | `--color-vivid-violet` | Violet outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+| Gradient Violet | #6b5aa8 | `--color-gradient-violet` | Atmospheric background gradient for accent regions, hinting at depth and digital glow |
+| Alert Green | #3fcb7f | `--color-alert-green` | Success states, live indicators, or positive metrics within charts/badges |
+| Radial Violet Glow | #a366ff | `--color-radial-violet-glow` | Soft, expanding radial glow often used as subtle background illumination for product showcases |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 500, 600
+- **Sizes:** 12px, 13px, 14px, 15px, 16px, 18px, 30px, 34px, 48px
+- **Line heights:** 1.00, 1.20, 1.33, 1.38, 1.43, 1.50, 1.56
+- **Letter spacing:** -0.0300em
+- **Role:** Primary UI font for body text, navigation, buttons, and most informational elements. Its functional nature maintains clarity across various weights and sizes.
+
+### Alpha Lyrae
+
+- **Token:** `--font-alpha-lyrae`
+- **Weights:** 400
+- **Sizes:** 48px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **OpenType features:** "ss01" on, "ss02" on
+- **Role:** Display font for prominent headlines, used sparingly to create a distinctive, digital aesthetic. Specific stylistic sets ('ss01', 'ss02') contribute to its unique character.
+
+### Iowan Old Style
+
+- **Token:** `--font-iowan-old-style`
+- **Substitute:**  serif
+- **Weights:** 300
+- **Sizes:** 24px
+- **Line heights:** 1.25
+- **Letter spacing:** -0.0250em
+- **Role:** Serif font for specific body or quote elements at larger sizes, providing a refined textual counterpoint to the sans-serif display type. The light weight (300) combined with slight letter-spacing creates an airy, almost whispered presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.36px | `--text-caption` |
+| heading-sm | 18px | 1.5 | -0.54px | `--text-heading-sm` |
+| heading | 24px | 1.25 | -0.6px | `--text-heading` |
+| heading-lg | 30px | 1.33 | -0.9px | `--text-heading-lg` |
+| display-sm | 34px | 1.2 | -1.02px | `--text-display-sm` |
+| display | 48px | 1 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-201 | 201px | `--spacing-201` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 999px |
+| cards | 16px |
+| fields | 6px |
+| buttons | 6px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button for starting free trials or sign-ups.
+
+Solid Ghost White background (#ffffff), Obsidian Canvas text (#000000). Padding is 8px vertical, 20px horizontal. Border-radius of 12px.
+
+### Ghost Accent Button
+
+**Role:** Secondary call to action button, or action that needs subtle visual emphasis.
+
+Transparent background with 25% opacity (oklab(0 0 0 / 0.25)), Ghost White text (#ffffff). Outline border in 10% opacity white (rgba(255, 255, 255, 0.1)). Padding is 8px vertical, 20px horizontal. Border-radius of 12px.
+
+### Navigation Link Button
+
+**Role:** Links within the main navigation bar.
+
+Transparent background, muted Ghost White text (rgba(255, 255, 255, 0.5)). No padding or border-radius; meant to be part of inline navigation.
+
+### Small Dark Button
+
+**Role:** Compact utility buttons, often for logging in or secondary actions in header.
+
+Obsidian Canvas background (#000000), Ghost White text (#ffffff). Outline border in 10% opacity white (rgba(255, 255, 255, 0.1)). Padding 8px vertical, 12px horizontal. Border-radius of 6px.
+
+### Content Card
+
+**Role:** Containers for content blocks like testimonials or feature descriptions.
+
+Solid Eclipse Surface background (#050607), no box-shadow. Border-radius of 14px. Padding 14px vertical, 14px horizontal internally.
+
+### Live Status Badge
+
+**Role:** Used to denote 'Live' status or positive indicators.
+
+Solid Alert Green background (#3fcb7f), Ghost White text at 70% opacity (rgba(255, 255, 255, 0.7)). Very high border-radius (1.67772e+07px) creating a pill shape. No internal padding means text is flush with badge background.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Obsidian Canvas (#000000) as the dominant background color for seamless dark mode cohesion.
 - Apply Ghost White (#ffffff) for primary text and calls to action against dark backgrounds to ensure high contrast.
@@ -82,7 +172,7 @@ Basedash employs a 'dark studio canvas' aesthetic, designed to showcase product 
 - Apply 6px border-radius for buttons and input fields, and 16px for cards to maintain consistent shape language.
 - Use Alert Green (#3fcb7f) specifically for positive semantic indicators like 'Live' status or success messages.
 
-### Don'ts
+### Don't
 
 - Avoid using bright, saturated colors for large background areas; stick to the neutral palette for canvas and surfaces.
 - Do not introduce strong visual shadows on elements; elevation is primarily achieved through subtle background glows or no shadow at all.
@@ -92,10 +182,139 @@ Basedash employs a 'dark studio canvas' aesthetic, designed to showcase product 
 - Avoid adding new radii values; adhere to 6px, 14px/16px, and 999px for consistency across components.
 - Do not use Vivid Violet (#9984d8) as a background for primary calls to action, as it functions as an accent border or decorative element.
 
-### Layout
+## Imagery
+
+Imagery on Basedash is primarily functional product screenshots and data visualizations, presented directly with minimal framing. These are often enveloped by subtle atmospheric gradients or glows (like the Radial Violet Glow) that hint at functionality without being distracting. The icons are mostly monochromatic (white), with some being multi-colored, and serve to represent data sources or integrations in a compact, recognizable format. There’s a balance between text dominance and visual explanation, where images clarity illustrates product features.
+
+## Layout
 
 The page structure favors a full-bleed layout, particularly in the hero section, but maintains content within discernable, perhaps implied, max-width constraints in other areas. The hero features a centered headline over a dark, subtly animated product visual. Section rhythm is primarily consistent vertical spacing on a dark canvas, utilizing the Obsidian Canvas as a continuous background rather than alternating light/dark bands. Content is arranged in flexible patterns, including centered stacks for key messages and multi-column grids for integrations. Navigation is a sticky top bar, minimalist and unobtrusive.
 
-### Imagery
+## Similar Brands
 
-Imagery on Basedash is primarily functional product screenshots and data visualizations, presented directly with minimal framing. These are often enveloped by subtle atmospheric gradients or glows (like the Radial Violet Glow) that hint at functionality without being distracting. The icons are mostly monochromatic (white), with some being multi-colored, and serve to represent data sources or integrations in a compact, recognizable format. There’s a balance between text dominance and visual explanation, where images clarity illustrates product features.
+- **Linear** — Dark-themed UI, minimalist components, and a single accent color for interactive elements.
+- **Supabase** — Deep dark backgrounds, high-contrast white text, and product-focused imagery with subtle glowing effects.
+- **Vercel** — Clean, dark interface with ghost buttons, precise typography, and functional use of white space.
+- **Stripe** — Emphasis on clear, readable typography against simple backgrounds, and a focus on product visuals.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-obsidian-canvas: #000000;
+  --color-eclipse-surface: #050607;
+  --color-ghost-white: #ffffff;
+  --color-ash-gray: #b3b3b3;
+  --color-steel-gray: #808080;
+  --color-carbon-detail: #333333;
+  --color-illumination-white: #e8eaee;
+  --color-vivid-violet: #9984d8;
+  --color-gradient-violet: #6b5aa8;
+  --color-alert-green: #3fcb7f;
+  --color-radial-violet-glow: #a366ff;
+  --font-inter: 'Inter', system-ui;
+  --font-alpha-lyrae: 'Alpha Lyrae', ui-sans-serif, system-ui, sans-serif;
+  --font-iowan-old-style: 'Iowan Old Style',  serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.36px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.5;
+  --tracking-heading-sm: -0.54px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.33;
+  --tracking-heading-lg: -0.9px;
+  --text-display-sm: 34px;
+  --leading-display-sm: 1.2;
+  --tracking-display-sm: -1.02px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-tags: 999px;
+  --radius-cards: 16px;
+  --radius-fields: 6px;
+  --radius-buttons: 6px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-obsidian-canvas: #000000;
+  --color-eclipse-surface: #050607;
+  --color-ghost-white: #ffffff;
+  --color-ash-gray: #b3b3b3;
+  --color-steel-gray: #808080;
+  --color-carbon-detail: #333333;
+  --color-illumination-white: #e8eaee;
+  --color-vivid-violet: #9984d8;
+  --color-gradient-violet: #6b5aa8;
+  --color-alert-green: #3fcb7f;
+  --color-radial-violet-glow: #a366ff;
+  --font-inter: 'Inter', system-ui;
+  --font-alpha-lyrae: 'Alpha Lyrae', ui-sans-serif, system-ui, sans-serif;
+  --font-iowan-old-style: 'Iowan Old Style',  serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.36px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.5;
+  --tracking-heading-sm: -0.54px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.33;
+  --tracking-heading-lg: -0.9px;
+  --text-display-sm: 34px;
+  --leading-display-sm: 1.2;
+  --tracking-display-sm: -1.02px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-tags: 999px;
+  --radius-cards: 16px;
+  --radius-fields: 6px;
+  --radius-buttons: 6px;
+}
+```
