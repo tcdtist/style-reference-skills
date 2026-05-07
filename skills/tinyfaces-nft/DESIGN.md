@@ -1,68 +1,162 @@
 ---
 version: alpha
-name: TinyFaces NFT
-description: The TinyFaces NFT design system presents a playful, yet grounded aesthetic, blending softly muted pastels with strong, grounded typography. Its visual identity revolves around distinctive 3D character illustrations. The UI, while text-dominant, uses color sparingly for section distinction and branding, creating a sense of collectible rarity and nostalgic charm.
-colors:
-  midnight-ink: "#212529"
-  cloud-canvas: "#f4f4f2"
-  silver-mist: "#d4d5d4"
-  white-smoke: "#ffffff"
-  coral-charm: "#ed4a29"
-  deep-ocean: "#142855"
-  sage-whisper: "#8d9876"
-  sky-patch: "#a0b1cd"
-  rose-bloom: "#e5cce0"
-  sandstone-highlight: "#f4ddbe"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.2
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.5
-    letterSpacing: 0.079px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 187px
-    lineHeight: 1
-spacing:
-  buttonRadius: 23px
-  elementGap: 8px
-  sectionGap: 64px
-components:
-  navigation-link:
-    role: Header and footer links
-  filled-primary-button:
-    role: Main call-to-action
-  ghost-primary-button:
-    role: Secondary call-to-action
-  text-button:
-    role: Tertiary actions, links within sentences or phrases
-  muted-pastel-card-sky-patch:
-    role: Content container for features or thematic sections
-  muted-pastel-card-rose-bloom:
-    role: Content container for features or thematic sections
-  muted-pastel-card-sage-whisper:
-    role: Content container for features or thematic sections
+name: "TinyFaces NFT"
+description: "The TinyFaces NFT design system presents a playful, yet grounded aesthetic, blending softly muted pastels with strong, grounded typography. Its visual identity revolves around distinctive 3D character illustrations. The UI, while text-dominant, uses color sparingly for section distinction and branding, creating a sense of collectible rarity and nostalgic charm."
+theme: "light"
+industry: "crypto"
+source_url: "https://nft.tinyfac.es"
+refero_style_id: "2112d018-bf95-4a87-a1f3-6e948330b207"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514807061-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514807061-thumb.jpg"
+extracted_at: "2026-04-30T02:07:14.892Z"
 ---
 
-## Overview
+# TinyFaces NFT — Style Reference
 
-**North Star:** Whimsical collectibles on pastel canvas
+> Whimsical collectibles on pastel canvas
+
+**Theme:** light
+
+**Industry:** crypto
 
 The TinyFaces NFT design system presents a playful, yet grounded aesthetic, blending softly muted pastels with strong, grounded typography. Its visual identity revolves around distinctive 3D character illustrations. The UI, while text-dominant, uses color sparingly for section distinction and branding, creating a sense of collectible rarity and nostalgic charm.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #212529 | `--color-midnight-ink` | Primary text, button backgrounds, strong borders |
+| Cloud Canvas | #f4f4f2 | `--color-cloud-canvas` | General page background, light button text, subtle borders |
+| Silver Mist | #d4d5d4 | `--color-silver-mist` | Subtle section dividers, hairline borders |
+| White Smoke | #ffffff | `--color-white-smoke` | Inverted text, button text on dark backgrounds, icon fills |
+| Coral Charm | #ed4a29 | `--color-coral-charm` | Accent color for interactive elements, links, and decorative strokes – evokes warmth and playfulness |
+| Deep Ocean | #142855 | `--color-deep-ocean` | Dominant background for hero sections, conveying depth and seriousness to balance the whimsical characters |
+| Sage Whisper | #8d9876 | `--color-sage-whisper` | Card backgrounds for content grouping, lending an organic, muted tone |
+| Sky Patch | #a0b1cd | `--color-sky-patch` | Card backgrounds for content grouping, offering a cool, muted tone |
+| Rose Bloom | #e5cce0 | `--color-rose-bloom` | Card backgrounds for content grouping, providing a soft, warm tone contrasting with the minty greens |
+| Sandstone Highlight | #f4ddbe | `--color-sandstone-highlight` | Decorative highlights, especially for section titles and borders, adding a vintage feel |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 300, 400, 500
+- **Sizes:** 14px, 16px, 20px, 24px
+- **Line heights:** 1.50, 2.25, 2.88
+- **Letter spacing:** 0.0790em
+- **Role:** Body text, navigation links, button labels, and small informational text. The slightly wide letter-spacing gives it an open, approachable feel.
+
+### Migra
+
+- **Token:** `--font-migra`
+- **Substitute:** serif
+- **Weights:** 500
+- **Sizes:** 50px, 64px, 187px
+- **Line heights:** 1.00, 1.10, 1.30
+- **Letter spacing:** normal
+- **Role:** Headlines and prominent display text. The unique, almost stencil-like quality of this custom typeface is a core brand identifier, making headings visually distinctive and playful.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Small functional text, often within buttons or icons where space is at a premium and legibility at small sizes is critical.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.2 | — | `--text-caption` |
+| subheading | 20px | 1.5 | 0.079px | `--text-subheading` |
+| heading | 50px | 1.1 | — | `--text-heading` |
+| heading-lg | 64px | 1.1 | — | `--text-heading-lg` |
+| display | 187px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| small | 2px |
+| buttons | 23px |
+| default | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 20px |
+| elementGap | 8px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Header and footer links
+
+Text link using Inter, weight 400, color Midnight Ink (#212529). No distinct background or padding, emphasizing text hierarchy over contained elements.
+
+### Filled Primary Button
+
+**Role:** Main call-to-action
+
+Background: Midnight Ink (#212529), text: White Smoke (#ffffff). Rounded with a 23px border-radius, 20px horizontal padding. Uses Inter, weight 400.
+
+### Ghost Primary Button
+
+**Role:** Secondary call-to-action
+
+Transparent background, text: White Smoke (#ffffff), with a 22px border-radius. Uses Inter, weight 400. Primarily used against dark backgrounds like Deep Ocean.
+
+### Text Button
+
+**Role:** Tertiary actions, links within sentences or phrases
+
+Transparent background, text: Midnight Ink (#212529). No explicit border-radius or padding. Uses Inter, weight 400.
+
+### Muted Pastel Card (Sky Patch)
+
+**Role:** Content container for features or thematic sections
+
+Background: Sky Patch (#a0b1cd), with a 10px border-radius. No shadow. Content padding is determined by `cardPadding`.
+
+### Muted Pastel Card (Rose Bloom)
+
+**Role:** Content container for features or thematic sections
+
+Background: Rose Bloom (#e5cce0), with a 10px border-radius. No shadow. Content padding is determined by `cardPadding`.
+
+### Muted Pastel Card (Sage Whisper)
+
+**Role:** Content container for features or thematic sections
+
+Background: Sage Whisper (#8d9876), with a 10px border-radius. No shadow. Content padding is determined by `cardPadding`.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Migra (500) for all main headings to assert brand identity, prioritizing its unique character over conventional readability for large text.
 - Apply Deep Ocean (#142855) as a background for high-impact hero sections to ground the whimsical 3D art.
@@ -72,7 +166,7 @@ The TinyFaces NFT design system presents a playful, yet grounded aesthetic, blen
 - Implement the Inter font family with 0.0790em letter-spacing for all body and UI text, contributing to an open and spacious textual presentation.
 - Ensure buttons adhere to a 23px border-radius when filled and 22px when ghosted, creating a consistent pill-shaped aesthetic.
 
-### Don'ts
+### Don't
 
 - Do not use saturated colors for large background areas unless it is a specific accent card background from the defined pastel palette.
 - Avoid applying heavy shadows or complex gradients; the system relies on flat surfaces and minimal depth.
@@ -82,10 +176,119 @@ The TinyFaces NFT design system presents a playful, yet grounded aesthetic, blen
 - Do not clutter layouts; aim for a compact density with 8px element gaps and 64px section gaps, allowing content and characters to breathe.
 - Do not introduce strong, contrasting borders on elements unless it is specifically part of a defined component variant.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Cloud Canvas | #f4f4f2 | Base page background, light sections |
+| 2 | Muted Pastel Cards | #a0b1cd | Content containers (cards) that sit on the base background, providing visual grouping with soft, customizable hues. |
+| 3 | Deep Ocean | #142855 | Elevated background for prominent sections like the hero, creating depth and contrast. |
+
+## Imagery
+
+The site heavily features illustrative, generative 3D characters. These are treated with soft lighting and vintage color schemes, presented centrally within cards or as hero elements. Graphics are the primary content, often full-bleed within sections or displayed in a grid, with minimal masking or complex treatments. Icons are simple, monochromatic, and outlined, appearing in navigation and social links, keeping the focus on the product imagery. Image density is high, with characters occupying significant visual space.
+
+## Layout
 
 The page primarily uses a full-bleed layout for sections, with content often centered or arranged in multi-column grids. The hero section features a dense grid of 3D characters against a Deep Ocean (#142855) background, establishing a digital showroom feel. Subsequent sections alternate background colors, such as Cloud Canvas (#f4f4f2) or specific accent pastels (Sky Patch, Rose Bloom, Sage Whisper) for cards, creating a rhythmic visual flow. Content blocks often appear in a two-column text-left/image-right pattern or as centered stacks within these colored sections. Navigation is handled by a compact top bar that is sticky, featuring text links and distinct pill-shaped buttons.
 
-### Imagery
+## Similar Brands
 
-The site heavily features illustrative, generative 3D characters. These are treated with soft lighting and vintage color schemes, presented centrally within cards or as hero elements. Graphics are the primary content, often full-bleed within sections or displayed in a grid, with minimal masking or complex treatments. Icons are simple, monochromatic, and outlined, appearing in navigation and social links, keeping the focus on the product imagery. Image density is high, with characters occupying significant visual space.
+- **Cool Cats NFT** — Childlike illustrated characters, pastel color palettes, and focus on digital collectibles.
+- **Doodles NFT** — Playful, colorful character-based NFTs with a flat, illustrative style and focus on community appeal.
+- **The Sandbox Game** — Prominence of 3D, voxel-style character assets, and a vibrant, playful digital aesthetic in an NFT context.
+- **Loot NFT** — Minimalist UI presenting digital collectibles, often relying on subdued backgrounds to highlight featured items.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #212529;
+  --color-cloud-canvas: #f4f4f2;
+  --color-silver-mist: #d4d5d4;
+  --color-white-smoke: #ffffff;
+  --color-coral-charm: #ed4a29;
+  --color-deep-ocean: #142855;
+  --color-sage-whisper: #8d9876;
+  --color-sky-patch: #a0b1cd;
+  --color-rose-bloom: #e5cce0;
+  --color-sandstone-highlight: #f4ddbe;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-migra: 'Migra', serif;
+  --font-arial: 'Arial', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.2;
+  --text-subheading: 20px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0.079px;
+  --text-heading: 50px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.1;
+  --text-display: 187px;
+  --leading-display: 1;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-128: 128px;
+  --radius-small: 2px;
+  --radius-buttons: 23px;
+  --radius-default: 10px;
+  --surface-cloud-canvas: #f4f4f2;
+  --surface-muted-pastel-cards: #a0b1cd;
+  --surface-deep-ocean: #142855;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #212529;
+  --color-cloud-canvas: #f4f4f2;
+  --color-silver-mist: #d4d5d4;
+  --color-white-smoke: #ffffff;
+  --color-coral-charm: #ed4a29;
+  --color-deep-ocean: #142855;
+  --color-sage-whisper: #8d9876;
+  --color-sky-patch: #a0b1cd;
+  --color-rose-bloom: #e5cce0;
+  --color-sandstone-highlight: #f4ddbe;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-migra: 'Migra', serif;
+  --font-arial: 'Arial', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.2;
+  --text-subheading: 20px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0.079px;
+  --text-heading: 50px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.1;
+  --text-display: 187px;
+  --leading-display: 1;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-128: 128px;
+  --radius-small: 2px;
+  --radius-buttons: 23px;
+  --radius-default: 10px;
+  --surface-cloud-canvas: #f4f4f2;
+  --surface-muted-pastel-cards: #a0b1cd;
+  --surface-deep-ocean: #142855;
+}
+```

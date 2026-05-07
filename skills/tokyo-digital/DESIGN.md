@@ -1,49 +1,114 @@
 ---
 version: alpha
-name: Tokyo Digital
-description: Tokyo Digital evokes a 'midnight command center' aesthetic, designed around a stark black canvas and crisp white typography. The system emphasizes clear information delivery through strong typographic hierarchy and minimal UI embellishments. Interactive elements are subtly delineated by outlines or slight opacity shifts, maintaining a low-key, professional atmosphere. Visual interest is primarily driven by dynamic hero content and the interplay of negative space.
-colors:
-  absolute-zero: "#000000"
-  canvas-white: "#ffffff"
-  ghost-gray: "#808080"
-  muted-action: "#999999"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 63px
-    lineHeight: 1.1
-spacing:
-  buttonRadius: 8px
-  elementGap: 4px
-  sectionGap: 120px
-components:
-  primary-filled-button-circular:
-    role: Interactive element, often seen with zero padding for large click areas or icons.
-  text-input-field:
-    role: Standard form input for collecting user data.
-  client-logo-grid-item:
-    role: Displaying brand partners, often in a grid.
+name: "Tokyo Digital"
+description: "Tokyo Digital evokes a 'midnight command center' aesthetic, designed around a stark black canvas and crisp white typography. The system emphasizes clear information delivery through strong typographic hierarchy and minimal UI embellishments. Interactive elements are subtly delineated by outlines or slight opacity shifts, maintaining a low-key, professional atmosphere. Visual interest is primarily driven by dynamic hero content and the interplay of negative space."
+theme: "dark"
+industry: "agency"
+source_url: "https://tokyo.uk"
+refero_style_id: "9c918457-272b-4ab7-a5f1-f7446400cec3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518768715-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518768715-thumb.jpg"
+extracted_at: "2026-04-30T03:13:06.343Z"
 ---
 
-## Overview
+# Tokyo Digital — Style Reference
 
-**North Star:** midnight command center
+> midnight command center
+
+**Theme:** dark
+
+**Industry:** agency
 
 Tokyo Digital evokes a 'midnight command center' aesthetic, designed around a stark black canvas and crisp white typography. The system emphasizes clear information delivery through strong typographic hierarchy and minimal UI embellishments. Interactive elements are subtly delineated by outlines or slight opacity shifts, maintaining a low-key, professional atmosphere. Visual interest is primarily driven by dynamic hero content and the interplay of negative space.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Page backgrounds, card surfaces, primary text on light backgrounds, ghost button borders |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary text on dark backgrounds, interactive button fills, input backgrounds |
+| Ghost Gray | #808080 | `--color-ghost-gray` | Input border lines, secondary text |
+| Muted Action | #999999 | `--color-muted-action` | Subtle button backgrounds |
+
+## Tokens — Typography
+
+### Aeonik
+
+- **Token:** `--font-aeonik`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 300, 400
+- **Sizes:** 8px, 16px, 24px, 40px, 63px
+- **Line heights:** 1.00, 1.10, 1.30, 1.50
+- **Role:** Primary typeface for all text elements. The use of lighter weights for headings brings an understated, modern authority, contrasting with the graphic nature of the hero section. Normal letter spacing across the board maintains clarity.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 24px | 1.3 | — | `--text-subheading` |
+| heading | 40px | 1.1 | — | `--text-heading` |
+| display | 63px | 1.1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-179 | 179px | `--spacing-179` |
+| spacing-318 | 318px | `--spacing-318` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| images | 8px |
+| inputs | 8px |
+| buttons | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 120px |
+| cardPadding | 0px |
+| elementGap | 4px |
+
+## Components
+
+### Primary Filled Button (Circular)
+
+**Role:** Interactive element, often seen with zero padding for large click areas or icons.
+
+backgroundColor: rgba(255, 255, 255, 0.6) transitioning to rgba(255, 255, 255, 1) on hover/active. color: #000000. borderRadius: 100%. No padding specified, implies content dictates size.
+
+### Text Input Field
+
+**Role:** Standard form input for collecting user data.
+
+backgroundColor: rgba(0, 0, 0, 0) (transparent). color: #ffffff (text). borderTopColor: rgba(255, 255, 255, 0.5). borderRadius: 8px. padding: 32px top/bottom, 16px left/right. Placeholder text implicit in Ghost Gray.
+
+### Client Logo Grid Item
+
+**Role:** Displaying brand partners, often in a grid.
+
+backgroundColor: rgba(0, 0, 0, 0). borderRadius: 0px. boxShadow: none. padding: 0px. Presents logos without visual container, relying on layout for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a predominantly black background using #000000 for canvas and main surfaces.
 - Use #ffffff for primary text content against dark backgrounds to ensure high contrast.
@@ -52,7 +117,7 @@ Tokyo Digital evokes a 'midnight command center' aesthetic, designed around a st
 - Delimit input fields with a subtle rgba(255,255,255,0.5) border for a 'ghost' UI effect.
 - Employ sections with 120px vertical padding for clear content separation.
 
-### Don'ts
+### Don't
 
 - Avoid using strong, saturated colors for UI elements; stick to the achromatic palette with minimal accent.
 - Do not introduce heavy box shadows or elevation effects; the design relies on flatness and sharp contrast.
@@ -61,6 +126,87 @@ Tokyo Digital evokes a 'midnight command center' aesthetic, designed around a st
 - Do not vary line-height significantly from the defined font profiles, especially for headings, to preserve typographic rhythm.
 - Do not apply padding to cards or grid items unless specifically requested; design expects zero-padded elements by default.
 
-### Imagery
+## Imagery
 
 This system features a mix of dynamic, full-bleed 3D rendered scenes (like the initial car interior) and abstract, colorful visuals for the hero section, contrasted with clean, product-focused logos for client showcases. Imagery is primarily decorative and atmospheric, acting as a backdrop or visual metaphor. Icons, if present, are minimal and likely outlined. The density is high in hero sections, with imagery dominating, while content sections are text-dominant with client logos serving as visual points. Photography is largely absent; the emphasis is on digital-native graphical elements.
+
+## Similar Brands
+
+- **Huge Inc.** — Similar dark immersive hero sections with large typography and stark, modern aesthetic.
+- **Fantasy Interactive** — Emphasis on dramatic large-scale visuals and minimal UI on a dark canvas, with strong typographic hierarchy.
+- **AKQA** — Digital agency with a sophisticated, often dark-themed, and content-forward presentation style.
+- **Studiometa** — Modern dark UI, strong reliance on typography and negative space, with subtle interactive elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #808080;
+  --color-muted-action: #999999;
+  --font-aeonik: 'Aeonik', system-ui, sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --text-display: 63px;
+  --leading-display: 1.1;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-179: 179px;
+  --spacing-318: 318px;
+  --radius-images: 8px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #808080;
+  --color-muted-action: #999999;
+  --font-aeonik: 'Aeonik', system-ui, sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --text-display: 63px;
+  --leading-display: 1.1;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-179: 179px;
+  --spacing-318: 318px;
+  --radius-images: 8px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+}
+```
