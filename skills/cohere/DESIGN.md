@@ -1,98 +1,192 @@
 ---
 version: alpha
-name: Cohere
-description: Cohere's visual identity projects a sense of measured, capable AI. It balances the stark minimalism often associated with technology with subtle organic hints of color and rounded forms, suggesting a human-centered approach to complex systems. The predominant white and deep charcoal create a high-contrast, authoritative feel, softened by strategically placed gradients and rounded elements that prevent the design from feeling overly rigid. The absence of strong shadows emphasizes depth through color contrast rather than artificial light, contributing to a modern, almost ethereal aesthetic.
-colors:
-  absolute-zero: "#ffffff"
-  night-sky: "#17171c"
-  charcoal-slate: "#212121"
-  ash-mist: "#e5e7eb"
-  graphite: "#75758a"
-  deep-space: "#000000"
-  warm-violet-gradient: "#ff7759"
-  cosmic-violet: "#9b60aa"
-  soft-indigo-wash: "#f0dff3"
-  azure-glow: "#00a1df"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-    letterSpacing: -0.12px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: -0.14px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-    letterSpacing: -0.18px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-    letterSpacing: -0.24px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: -0.32px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.2
-    letterSpacing: -0.48px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1
-    letterSpacing: -1.2px
-  display-xxl:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-    letterSpacing: -1.44px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  cta-button-group:
-    role: 
-  trusted-by-logo-bar:
-    role: 
-  feature-pillars-security-deployment-customization:
-    role: 
-  primary-ghost-button:
-    role: Call to action, secondary actions.
-  primary-filled-button:
-    role: Main call to action.
-  tertiary-bordered-link:
-    role: Navigation, subtle calls to action.
-  navigation-link-with-underline:
-    role: Primary navigation items.
-  hero-headline:
-    role: Main page title.
-  product-feature-card:
-    role: Displaying product features or content sections.
-  footer-input-field:
-    role: Email subscription input.
+name: "Cohere"
+description: "Cohere's visual identity projects a sense of measured, capable AI. It balances the stark minimalism often associated with technology with subtle organic hints of color and rounded forms, suggesting a human-centered approach to complex systems. The predominant white and deep charcoal create a high-contrast, authoritative feel, softened by strategically placed gradients and rounded elements that prevent the design from feeling overly rigid. The absence of strong shadows emphasizes depth through color contrast rather than artificial light, contributing to a modern, almost ethereal aesthetic."
+theme: "light"
+industry: "ai"
+source_url: "https://cohere.com"
+refero_style_id: "f1bff240-fa05-41db-9ae1-b165ea6ea2cb"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923740564-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923740564-thumb.jpg"
+extracted_at: "2026-04-11T16:09:21.982Z"
 ---
 
-## Overview
+# Cohere — Style Reference
 
-**North Star:** Deep charcoal on white, with purple-violet washes. Like a digital slate occasionally illuminated by the aurora borealis.
+> Deep charcoal on white, with purple-violet washes. Like a digital slate occasionally illuminated by the aurora borealis.
+
+**Theme:** light
+
+**Industry:** ai
 
 Cohere's visual identity projects a sense of measured, capable AI. It balances the stark minimalism often associated with technology with subtle organic hints of color and rounded forms, suggesting a human-centered approach to complex systems. The predominant white and deep charcoal create a high-contrast, authoritative feel, softened by strategically placed gradients and rounded elements that prevent the design from feeling overly rigid. The absence of strong shadows emphasizes depth through color contrast rather than artificial light, contributing to a modern, almost ethereal aesthetic.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #ffffff | `--color-absolute-zero` | Page backgrounds, card surfaces, primary text on dark backgrounds. |
+| Night Sky | #17171c | `--color-night-sky` | Primary headings and body text on light backgrounds, dark button backgrounds. |
+| Charcoal Slate | #212121 | `--color-charcoal-slate` | Secondary text, hero section body copy, footer background text. |
+| Ash Mist | #e5e7eb | `--color-ash-mist` | Element borders, subtle dividers, inactive states. |
+| Graphite | #75758a | `--color-graphite` | Footer link text, inactive navigation items, secondary body text. |
+| Deep Space | #000000 | `--color-deep-space` | Icon fills, outlines, very rare body text for maximum contrast. |
+| Warm Violet Gradient | #ff7759 | `--color-warm-violet-gradient` | Accent backgrounds, brand highlights, decorative elements — creates a dynamic, evolving visual anchor. |
+| Cosmic Violet | #9b60aa | `--color-cosmic-violet` | Background for feature sections, large decorative elements. This unique purple hue distinguishes the brand's aesthetic from typical tech blues. |
+| Soft Indigo Wash | #f0dff3 | `--color-soft-indigo-wash` | Subtle background tints for navigation elements or micro-components, hinting at the brand's chromatic range. |
+| Azure Glow | #00a1df | `--color-azure-glow` | Highlighting interactive elements, rare icon fills. Used sparingly against the neutral palette to draw immediate attention. |
+
+## Tokens — Typography
+
+### Unica77 Cohere Web
+
+- **Token:** `--font-unica77-cohere-web`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 24px, 32px, 48px
+- **Line heights:** 1.20, 1.30, 1.40, 1.50
+- **Letter spacing:** -0.01
+- **Role:** Primary branding sans-serif. Used for body text, navigation, buttons, and most headings up to display size. Its subtle negative letter-spacing contributes to the precise, engineered feel.
+
+### CohereText
+
+- **Token:** `--font-coheretext`
+- **Substitute:** Outfit
+- **Weights:** 400
+- **Sizes:** 60px, 72px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.02
+- **Role:** Signature display font for large headlines. Its extremely tight letter-spacing and substantial size command attention without being visually disruptive, embodying the brand's confident but refined voice.
+
+### CohereMono
+
+- **Token:** `--font-coheremono`
+- **Substitute:** Space Mono
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.40
+- **Letter spacing:** 0.02
+- **Role:** Monospaced font for code snippets or specific technical labels in navigation. The slight positive letter-spacing ensures readability of technical terms, contrasting with the tighter Unica77.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | -0.12px | `--text-caption` |
+| body-sm | 14px | 1.4 | -0.14px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.16px | `--text-body` |
+| subheading | 18px | 1.4 | -0.18px | `--text-subheading` |
+| heading | 24px | 1.3 | -0.24px | `--text-heading` |
+| heading-lg | 32px | 1.2 | -0.32px | `--text-heading-lg` |
+| display | 48px | 1.2 | -0.48px | `--text-display` |
+| display-xl | 60px | 1 | -1.2px | `--text-display-xl` |
+| display-xxl | 72px | 1 | -1.44px | `--text-display-xxl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-109 | 109px | `--spacing-109` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-133 | 133px | `--spacing-133` |
+| spacing-143 | 143px | `--spacing-143` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-176 | 176px | `--spacing-176` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 9999px |
+| default | 22px |
+| navigation | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 32px |
+| elementGap | 16px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Trusted By Logo Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Pillars — Security, Deployment, Customization
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Ghost Button
+
+**Role:** Call to action, secondary actions.
+
+backgroundColor: rgba(0, 0, 0, 0), color: #212121, border: 1px solid #e5e7eb, borderRadius: 9999px, padding: 12px 24px.
+
+### Primary Filled Button
+
+**Role:** Main call to action.
+
+backgroundColor: #17171c, color: #ffffff, borderRadius: 9999px, padding: 12px 24px.
+
+### Tertiary Bordered Link
+
+**Role:** Navigation, subtle calls to action.
+
+backgroundColor: rgba(0, 0, 0, 0), color: #212121, border-bottom: 2px solid #e5e7eb, borderRadius: 4px, padding-bottom: 0px.
+
+### Navigation Link with Underline
+
+**Role:** Primary navigation items.
+
+backgroundColor: rgba(0, 0, 0, 0), color: #212121, border-bottom: 2px solid transparent (visual only for active state), borderRadius: 0px, padding-bottom: 36px.
+
+### Hero Headline
+
+**Role:** Main page title.
+
+font-family: CohereText, font-weight: 400, font-size: 72px, line-height: 1, letter-spacing: -1.44px, color: #212121.
+
+### Product Feature Card
+
+**Role:** Displaying product features or content sections.
+
+backgroundColor: transparent, borderRadius: 22px, box-shadow: none, minimal internal padding for images/content to bleed to edges.
+
+### Footer Input Field
+
+**Role:** Email subscription input.
+
+backgroundColor: transparent, color: #ffffff, border-bottom: 1px solid #ffffff, borderRadius: 0px, padding-bottom: 0px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Night Sky (#17171c) for primary headings and body text on light backgrounds to maintain high contrast.
 - Apply button border-radius of 9999px for all interactive buttons to establish a consistent soft, approachable shape.
@@ -101,7 +195,7 @@ Cohere's visual identity projects a sense of measured, capable AI. It balances t
 - Maintain a clear distinction between the tight letter-spacing of Unica77 Web (-0.01em) and the expanded CohereMono (0.02em).
 - Use Ash Mist (#e5e7eb) for all neutral borders and dividers to provide subtle structure.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional color hues beyond the defined brand and accent palette; maintain a controlled and focused color scheme.
 - Avoid generic drop shadows; rely on color contrast and the specified gradients for depth and separation.
@@ -110,10 +204,165 @@ Cohere's visual identity projects a sense of measured, capable AI. It balances t
 - Do not deviate from the defined letter-spacing values for each font family; they are critical to the typographic identity.
 - Avoid filling cards with solid background colors; maintain transparency where appropriate for a lightweight aesthetic, and use background gradients only when specified.
 
-### Layout
+## Imagery
+
+Imagery is characterized by a mix of abstract, almost iridescent 3D renders with prominent purple-violet tones, juxtaposed with realistic, muted photography of individuals interacting with technology. The abstract graphics are used as full-bleed backgrounds or contained within feature sections, adding a futuristic, sophisticated atmosphere. Photography often features close-up, focused shots with desaturated or slightly cool-toned filters, avoiding over-vibrancy. Product screenshots appear as insets within the abstract visuals, showcasing actual UI without overwhelming the page. Icons are monochrome, generally filled outlines or simple geometric forms, reinforcing the technical and precise aesthetic.
+
+## Layout
 
 The page primarily uses a max-width contained layout for content sections, set against a predominantly white full-bleed background. The hero section is centered with a large headline, subtext, and call-to-action buttons. Subsequent sections alternate between full-width abstract graphic backgrounds and contained content blocks. Content arrangement frequently features text-left/image-right or symmetrically stacked elements. Spacing between sections is generous, creating a spacious and legible page flow. The footer is a full-width dark section contrasting the light main page, organizing content into distinct columns. The navigation bar is sticky at the top, allowing for continuous access.
 
-### Imagery
+## Similar Brands
 
-Imagery is characterized by a mix of abstract, almost iridescent 3D renders with prominent purple-violet tones, juxtaposed with realistic, muted photography of individuals interacting with technology. The abstract graphics are used as full-bleed backgrounds or contained within feature sections, adding a futuristic, sophisticated atmosphere. Photography often features close-up, focused shots with desaturated or slightly cool-toned filters, avoiding over-vibrancy. Product screenshots appear as insets within the abstract visuals, showcasing actual UI without overwhelming the page. Icons are monochrome, generally filled outlines or simple geometric forms, reinforcing the technical and precise aesthetic.
+- **Anthropic** — Similar high-contrast dark text on light background, sophisticated minimal aesthetic, and subtle use of gradients/abstract visuals.
+- **OpenAI** — Shares the use of robust serif-like display typography for headlines combined with a clean sans-serif for body, evoking authority in AI space.
+- **Vercel** — Employs a precise, developer-tool aesthetic with strong typography, generous spacing, and controlled use of accent colors on a largely monochromatic canvas.
+- **Linear** — Features a strong emphasis on typography, high contrast, and the strategic deployment of accent colors to highlight interactive elements and convey cutting-edge technology.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #ffffff;
+  --color-night-sky: #17171c;
+  --color-charcoal-slate: #212121;
+  --color-ash-mist: #e5e7eb;
+  --color-graphite: #75758a;
+  --color-deep-space: #000000;
+  --color-warm-violet-gradient: #ff7759;
+  --color-cosmic-violet: #9b60aa;
+  --color-soft-indigo-wash: #f0dff3;
+  --color-azure-glow: #00a1df;
+  --font-unica77-cohere-web: 'Unica77 Cohere Web', Inter;
+  --font-coheretext: 'CohereText', Outfit;
+  --font-coheremono: 'CohereMono', Space Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.18px;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.32px;
+  --text-display: 48px;
+  --leading-display: 1.2;
+  --tracking-display: -0.48px;
+  --text-display-xl: 60px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -1.2px;
+  --text-display-xxl: 72px;
+  --leading-display-xxl: 1;
+  --tracking-display-xxl: -1.44px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-109: 109px;
+  --spacing-128: 128px;
+  --spacing-133: 133px;
+  --spacing-143: 143px;
+  --spacing-144: 144px;
+  --spacing-160: 160px;
+  --spacing-176: 176px;
+  --radius-buttons: 9999px;
+  --radius-default: 22px;
+  --radius-navigation: 4px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #ffffff;
+  --color-night-sky: #17171c;
+  --color-charcoal-slate: #212121;
+  --color-ash-mist: #e5e7eb;
+  --color-graphite: #75758a;
+  --color-deep-space: #000000;
+  --color-warm-violet-gradient: #ff7759;
+  --color-cosmic-violet: #9b60aa;
+  --color-soft-indigo-wash: #f0dff3;
+  --color-azure-glow: #00a1df;
+  --font-unica77-cohere-web: 'Unica77 Cohere Web', Inter;
+  --font-coheretext: 'CohereText', Outfit;
+  --font-coheremono: 'CohereMono', Space Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.18px;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.32px;
+  --text-display: 48px;
+  --leading-display: 1.2;
+  --tracking-display: -0.48px;
+  --text-display-xl: 60px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -1.2px;
+  --text-display-xxl: 72px;
+  --leading-display-xxl: 1;
+  --tracking-display-xxl: -1.44px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-109: 109px;
+  --spacing-128: 128px;
+  --spacing-133: 133px;
+  --spacing-143: 143px;
+  --spacing-144: 144px;
+  --spacing-160: 160px;
+  --spacing-176: 176px;
+  --radius-buttons: 9999px;
+  --radius-default: 22px;
+  --radius-navigation: 4px;
+}
+```

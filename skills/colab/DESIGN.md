@@ -1,51 +1,128 @@
 ---
 version: alpha
-name: Colab
-description: Colab establishes a stark, high-contrast visual system where deep black is the canvas for crisp white typography and a vibrant accent red, creating a bold and theatrical presentation. The design leverages strong spatial separation with ample padding and minimalist components, emphasizing content through scale and isolation rather than embellishment. Typography is distinct, guiding the eye with a custom sans-serif that retains a unique character within a largely monochromatic palette. Sharp edges and the absence of shadows contribute to an unadorned, direct aesthetic.
-colors:
-  midnight-canvas: "#000000"
-  paper-white: "#ffffff"
-  process-red: "#ee1c5b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.3
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 68px
-    lineHeight: 1.3
-spacing:
-  elementGap: 10px
-  sectionGap: 80px
-components:
-  primary-filled-button:
-    role: Call to action button for key interactions.
-  ghost-button:
-    role: Secondary action button or navigation element.
-  naked-card:
-    role: Content container for images or text blocks
-  site-navigation-link:
-    role: Top-level navigation items.
-  footer-navigation-link:
-    role: Secondary navigation in the footer.
+name: "Colab"
+description: "Colab establishes a stark, high-contrast visual system where deep black is the canvas for crisp white typography and a vibrant accent red, creating a bold and theatrical presentation. The design leverages strong spatial separation with ample padding and minimalist components, emphasizing content through scale and isolation rather than embellishment. Typography is distinct, guiding the eye with a custom sans-serif that retains a unique character within a largely monochromatic palette. Sharp edges and the absence of shadows contribute to an unadorned, direct aesthetic."
+theme: "dark"
+industry: "design"
+source_url: "https://colab.munken.com"
+refero_style_id: "b040360c-38de-4c5f-aada-bd3a67cbedc2"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515046295-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515046295-thumb.jpg"
+extracted_at: "2026-04-30T02:11:01.402Z"
 ---
 
-## Overview
+# Colab — Style Reference
 
-**North Star:** High-contrast theatrical canvas
+> High-contrast theatrical canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Colab establishes a stark, high-contrast visual system where deep black is the canvas for crisp white typography and a vibrant accent red, creating a bold and theatrical presentation. The design leverages strong spatial separation with ample padding and minimalist components, emphasizing content through scale and isolation rather than embellishment. Typography is distinct, guiding the eye with a custom sans-serif that retains a unique character within a largely monochromatic palette. Sharp edges and the absence of shadows contribute to an unadorned, direct aesthetic.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Canvas | #000000 | `--color-midnight-canvas` | Page backgrounds, heading text, button backgrounds, primary links |
+| Paper White | #ffffff | `--color-paper-white` | Body text, navigation text, button text, ghost button borders |
+| Process Red | #ee1c5b | `--color-process-red` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Munken Sans Web
+
+- **Token:** `--font-munken-sans-web`
+- **Substitute:** Inter
+- **Weights:** 400, 700, 900
+- **Sizes:** 16px, 20px, 40px, 68px
+- **Line heights:** 1.20, 1.50
+- **Letter spacing:** 0.0500em
+- **Role:** Primary typeface for all text elements, ranging from body to large headlines. Its distinct custom character supports the brand's unique identity, replacing standard sans-serifs for a memorable presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1.5 | — | `--text-caption` |
+| body-sm | 20px | 1.5 | — | `--text-body-sm` |
+| body | 40px | 1.3 | — | `--text-body` |
+| body-lg | 68px | 1.3 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-85 | 85px | `--spacing-85` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-225 | 225px | `--spacing-225` |
+| spacing-305 | 305px | `--spacing-305` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80px |
+| cardPadding | 14px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button for key interactions.
+
+Solid black background with white text, no border radius for a sharp, direct aesthetic. Uses 13.75px vertical and 37.5px horizontal padding. Text is Munken Sans Web, color Paper White.
+
+### Ghost Button
+
+**Role:** Secondary action button or navigation element.
+
+Transparent background with a white 1px border and white text, maintaining the high-contrast theme. No border radius. Uses 6px vertical and 6px horizontal padding. Text is Munken Sans Web, color Paper White.
+
+### Naked Card
+
+**Role:** Content container for images or text blocks
+
+Completely transparent background, no border, no shadow, and 0px border radius. This card functions as a content wrapper without adding any visual ornamentation, letting content define its own boundaries and flow seamlessly with the background.
+
+### Site Navigation Link
+
+**Role:** Top-level navigation items.
+
+Plain text in Paper White against the Midnight Canvas header, with default letter spacing and 10px top margin for spacing from header top. Interactive states are highly subtle or implied by context.
+
+### Footer Navigation Link
+
+**Role:** Secondary navigation in the footer.
+
+White text on the Midnight Canvas footer, visually consistent with main navigation but with distinct grouping provided by ul elements, 72px bottom padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Canvas (#000000) as the dominant background color for most sections to maintain the high-contrast aesthetic.
 - Apply Paper White (#ffffff) for all primary text elements, including headlines, body copy, and navigation to ensure stark readability.
@@ -55,7 +132,7 @@ Colab establishes a stark, high-contrast visual system where deep black is the c
 - Reserve Process Red (#ee1c5b) exclusively for brand accents, interactive highlights, or subtle graphic elements, using it sparingly to maximize its impact.
 - Ensure all interactive elements, like buttons and links, use either the Primary Filled Button or Ghost Button styles with their specified padding and no radius.
 
-### Don'ts
+### Don't
 
 - Do not introduce rounded corners or border-radius values greater than 0px on any components or elements.
 - Avoid using drop shadows or elevation effects; the design relies on flat surfaces and high contrast for visual hierarchy.
@@ -65,10 +142,93 @@ Colab establishes a stark, high-contrast visual system where deep black is the c
 - Avoid dense, information-heavy layouts; maintain generous padding and spacing between elements and sections.
 - Do not use generic system fonts; always utilize Munken Sans Web for all text to preserve brand identity.
 
-### Layout
+## Imagery
+
+This system primarily features photography with strong visual impact. Images are typically full-bleed or large blocks, often presenting product showcases or abstract compositions with specific color palettes, including notable use of the Process Red accent. There are no obvious illustrations or 3D renders. The iconography is minimal, indicated by simple white hamburger menus and social icons against dark backgrounds, suggesting an outlined or filled white style with a medium stroke weight. Imagery serves both decorative atmosphere and product showcase, with a moderate density, allowing text to also breathe.
+
+## Layout
 
 The page adheres to a full-bleed layout, where content stretches edge-to-edge, especially prominent in hero sections featuring large visuals. The overall page model is contained vertically by generous section gaps (80px). The hero section typically features a full-viewport dark background with a centered, high-contrast headline. Section rhythm is consistent, separated by substantial vertical spacing, often introducing large image sections followed by text blocks. Content arrangement frequently uses centered stacks of text, particularly for headings and body copy, promoting a direct and impactful presentation. There is no explicit grid usage beyond implied vertical alignment for text blocks. Navigation is a fixed top bar with a logo and hamburger menu, minimal and integrated into the dark canvas. The footer maintains this dark theme containing minimal links and a copyright notice, also using generous padding.
 
-### Imagery
+## Similar Brands
 
-This system primarily features photography with strong visual impact. Images are typically full-bleed or large blocks, often presenting product showcases or abstract compositions with specific color palettes, including notable use of the Process Red accent. There are no obvious illustrations or 3D renders. The iconography is minimal, indicated by simple white hamburger menus and social icons against dark backgrounds, suggesting an outlined or filled white style with a medium stroke weight. Imagery serves both decorative atmosphere and product showcase, with a moderate density, allowing text to also breathe.
+- **AIGA (American Institute of Graphic Arts)** — High-contrast, stark black and white aesthetic with a strong emphasis on typography and minimal ornamentation, often using a single bold accent color.
+- **ACNE Studios** — Utilizes a minimalist, high-fashion aesthetic with stark contrasts, a limited color palette of black, white, and a signature accent (like pink), and a focus on clean, sans-serif typography.
+- **The New York Times (digital)** — Heavy reliance on black text on white backgrounds or vice versa, with a clear, functional typographic hierarchy and minimal UI embellishments, using strong contrast for readability.
+- **Future Fonts** — Emphasis on experimental typography, often presented against stark, high-contrast backgrounds (black or white) with minimal UI to let the type shine. Absence of shadows and sharp edges are common themes.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-canvas: #000000;
+  --color-paper-white: #ffffff;
+  --color-process-red: #ee1c5b;
+  --font-munken-sans-web: 'Munken Sans Web', Inter;
+  --text-caption: 16px;
+  --leading-caption: 1.5;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.5;
+  --text-body: 40px;
+  --leading-body: 1.3;
+  --text-body-lg: 68px;
+  --leading-body-lg: 1.3;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-85: 85px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-225: 225px;
+  --spacing-305: 305px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-canvas: #000000;
+  --color-paper-white: #ffffff;
+  --color-process-red: #ee1c5b;
+  --font-munken-sans-web: 'Munken Sans Web', Inter;
+  --text-caption: 16px;
+  --leading-caption: 1.5;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.5;
+  --text-body: 40px;
+  --leading-body: 1.3;
+  --text-body-lg: 68px;
+  --leading-body-lg: 1.3;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-85: 85px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-225: 225px;
+  --spacing-305: 305px;
+  --radius-none: 0px;
+}
+```
