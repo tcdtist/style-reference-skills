@@ -1,40 +1,106 @@
 ---
 version: alpha
-name: Emma Backman
-description: Emma Backman's visual system evokes a raw, direct archival feel: a stark dark canvas with text as the primary visual element. The layout prioritizes clear, unembellished information display, relying on consistent dark backgrounds and subtle text-based interactions. Typography is the hero, serving as both content and navigation, with a singular, restrained text color for all elements.
-colors:
-  midnight-void: "#000000"
-  ghost-gray: "#666666"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.29
-spacing:
-  elementGap: 12px
-  sectionGap: 48px
-components:
-  main-navigation-link:
-    role: Interactive text link
-  content-list-item:
-    role: Informational list entry
-  year-filter-list:
-    role: Navigational/filtering list
-  footer-info-link:
-    role: Small informational link
+name: "Emma Backman"
+description: "Emma Backman's visual system evokes a raw, direct archival feel: a stark dark canvas with text as the primary visual element. The layout prioritizes clear, unembellished information display, relying on consistent dark backgrounds and subtle text-based interactions. Typography is the hero, serving as both content and navigation, with a singular, restrained text color for all elements."
+theme: "dark"
+industry: "media"
+source_url: "https://www.emmabackman.com"
+refero_style_id: "4b5db85a-5b11-431a-a45e-2a6282f291f3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513393609-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513393609-thumb.jpg"
+extracted_at: "2026-04-30T01:43:27.214Z"
 ---
 
-## Overview
+# Emma Backman — Style Reference
 
-**North Star:** Minimalist digital archive; stark canvas, monochrome text
+> Minimalist digital archive; stark canvas, monochrome text
+
+**Theme:** dark
+
+**Industry:** media
 
 Emma Backman's visual system evokes a raw, direct archival feel: a stark dark canvas with text as the primary visual element. The layout prioritizes clear, unembellished information display, relying on consistent dark backgrounds and subtle text-based interactions. Typography is the hero, serving as both content and navigation, with a singular, restrained text color for all elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page background, primary canvas |
+| Ghost Gray | #666666 | `--color-ghost-gray` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Soehne
+
+- **Token:** `--font-soehne`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.20, 1.29
+- **Letter spacing:** normal
+- **Role:** The sole typeface for all content, from headings and navigation links to body copy and lists. Its uniform weight contributes to the system's understated and consistent informational aesthetic, ensuring legibility without visual hierarchy through weight changes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.2 | — | `--text-caption` |
+| body | 16px | 1.29 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Main Navigation Link
+
+**Role:** Interactive text link
+
+Text in Ghost Gray (#666666) using Soehne 16px/1.29, weight 400. This is the primary interactive element on the page, with its active and hover states implied only through interaction, not distinct color changes.
+
+### Content List Item
+
+**Role:** Informational list entry
+
+Text in Ghost Gray (#666666) using Soehne 16px/1.29, weight 400, presented within lists. The spacing between list items is driven by the element gap of 12px.
+
+### Year Filter List
+
+**Role:** Navigational/filtering list
+
+Each year is a text item in Ghost Gray (#666666) using Soehne 14px/1.2, weight 400. Individual items are spaced 12px vertically (element gap).
+
+### Footer Info Link
+
+**Role:** Small informational link
+
+Small text link at the bottom of the page in Ghost Gray (#666666) using Soehne 14px/1.2, weight 400. It has 10px top and bottom padding within its container.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize text as the primary visual element; minimize decorative graphics or imagery.
 - Use Midnight Void (#000000) as the universal page background.
@@ -43,7 +109,7 @@ Emma Backman's visual system evokes a raw, direct archival feel: a stark dark ca
 - Utilize 12px as the standard horizontal padding for content sections and the vertical spacing between most elements.
 - Set the primary section gap to 48px for clear content separation.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong accent colors; rely solely on the monochrome palette.
 - Avoid using distinct background colors for cards or elevated surfaces; maintain a flat, unified background.
@@ -51,10 +117,56 @@ Emma Backman's visual system evokes a raw, direct archival feel: a stark dark ca
 - Do not apply `border-radius` to any elements; everything should have sharp, implied corners.
 - Do not use explicit buttons or strong visual calls to action; all interaction should be text-based with minimal visual cues.
 
-### Layout
+## Imagery
+
+No imagery or graphical elements are present. The visual language is entirely text-based, using typography as the sole means of communication and visual structure. Icons are absent.
+
+## Layout
 
 The page employs a full-bleed, max-width layout with content organized into distinct, left-aligned columns. The hero section is characterized by a prominent heading at the top-left, followed by stacked text-based navigation. Content is presented in multiple vertical columns of text lists. Sections are distinct through consistent vertical spacing (48px section gap). The rhythm is defined by a dense, vertically stacked textual information display, with a simple footer link at the very bottom. The page does not use a centered or alternating content arrangement.
 
-### Imagery
+## Similar Brands
 
-No imagery or graphical elements are present. The visual language is entirely text-based, using typography as the sole means of communication and visual structure. Icons are absent.
+- **Are.na** — Shares a heavy reliance on text as the primary interface element and a minimalist, content-focused approach with a dark theme.
+- **Read.cv** — Exhibits a text-heavy, monochrome portfolio style with a dark background and emphasis on straightforward content presentation.
+- **Index.co** — Features a similar directory-like content structure with stark typography on a dark background, prioritizing information density over visual flair.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-ghost-gray: #666666;
+  --font-soehne: 'Soehne', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.29;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-48: 48px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-ghost-gray: #666666;
+  --font-soehne: 'Soehne', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.29;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-48: 48px;
+  --radius-none: 0px;
+}
+```
