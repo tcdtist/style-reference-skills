@@ -1,87 +1,158 @@
 ---
 version: alpha
-name: Watch new Originals
-description: Disney+ maintains a 'midnight command center' aesthetic, designed for content consumption. It features a predominantly dark background with contrasting light typography to highlight content. Functional elements are often subtle until interaction, utilizing a vibrant blue for calls to action, drawing attention against the otherwise subdued palette. The visual system is defined by its strong reliance on dark surfaces, minimal borders, and a focus on content presentation.
-colors:
-  deep-midnight: "#040714"
-  cool-graphite: "#282a36"
-  sky-blue: "#33ddff"
-  electric-teal: "#02d6e8"
-  text-dark: "#02172a"
-  muted-silver: "#e5e7eb"
-  light-gray: "#c0c0c0"
-  off-white: "#fafafa"
-  deep-space: "#0e0b14"
-  ghost-gray: "#b7b8bd"
-  accent-gray: "#1e1f24"
-  button-dark-text: "#17171c"
-  faint-border: "#6f717b"
-  canvas-blue-black: "#010104"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.3px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: 0.35px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.38
-    letterSpacing: 0.4px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.38
-    letterSpacing: 0.45px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: 0.5px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.2
-    letterSpacing: 0.7px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-    letterSpacing: 1px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 8px
-  elementGap: 8px
-  sectionGap: 24px
-components:
-  ghost-button:
-    role: Navigation, secondary actions, in-content links
-  primary-action-button:
-    role: Main calls to action, form submissions
-  signup-cta-button:
-    role: Specific call to action, usually in hero or signup forms.
-  default-card:
-    role: Content presentation, media cards.
-  black-background-card:
-    role: Emphasized content cards, often for media previews.
-  email-input-field:
-    role: User input for email addresses.
-  ghost-badge:
-    role: Content metadata, labels
+name: "Watch new Originals"
+description: "Disney+ maintains a 'midnight command center' aesthetic, designed for content consumption. It features a predominantly dark background with contrasting light typography to highlight content. Functional elements are often subtle until interaction, utilizing a vibrant blue for calls to action, drawing attention against the otherwise subdued palette. The visual system is defined by its strong reliance on dark surfaces, minimal borders, and a focus on content presentation."
+theme: "dark"
+industry: "media"
+source_url: "https://www.disneyplus.com"
+refero_style_id: "e586b296-bfac-4e93-add2-daa384712b39"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511054614-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511054614-thumb.jpg"
+extracted_at: "2026-04-30T01:04:39.226Z"
 ---
 
-## Overview
+# Watch new Originals — Style Reference
 
-**North Star:** Midnight Command Center: Dark, immersive interfaces punctuated by vivid interactive highlights.
+> Midnight Command Center: Dark, immersive interfaces punctuated by vivid interactive highlights.
+
+**Theme:** dark
+
+**Industry:** media
 
 Disney+ maintains a 'midnight command center' aesthetic, designed for content consumption. It features a predominantly dark background with contrasting light typography to highlight content. Functional elements are often subtle until interaction, utilizing a vibrant blue for calls to action, drawing attention against the otherwise subdued palette. The visual system is defined by its strong reliance on dark surfaces, minimal borders, and a focus on content presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Midnight | #040714 | `--color-deep-midnight` | Primary page background, core content surface. Provides an immersive, dark canvas for media |
+| Cool Graphite | #282a36 | `--color-cool-graphite` | Input field backgrounds, subtle borders, secondary surface elements. A slightly lighter dark gray for contrast |
+| Sky Blue | #33ddff | `--color-sky-blue` | Primary call-to-action button backgrounds. A vibrant accent to guide user action |
+| Electric Teal | #02d6e8 | `--color-electric-teal` | Secondary call-to-action details, selected active states, descriptive text emphasizing value |
+| Text Dark | #02172a | `--color-text-dark` | Text on very light backgrounds (e.g. within active buttons) |
+| Muted Silver | #e5e7eb | `--color-muted-silver` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Light Gray | #c0c0c0 | `--color-light-gray` | Secondary text, unselected icons, helper text for content metadata |
+| Off-White | #fafafa | `--color-off-white` | Primary text, headlines, navigation labels. High-contrast text on dark backgrounds |
+| Deep Space | #0e0b14 | `--color-deep-space` | Footer background, elevated sections for visual separation |
+| Ghost Gray | #b7b8bd | `--color-ghost-gray` | Placeholder text in input fields, less prominent body copy |
+| Accent Gray | #1e1f24 | `--color-accent-gray` | Subtle background for UI elements that need mild distinction from Deep Midnight |
+| Button Dark Text | #17171c | `--color-button-dark-text` | Text color for primary buttons with vibrant backgrounds |
+| Faint Border | #6f717b | `--color-faint-border` | Decorative borders on certain navigation elements |
+| Canvas Blue Black | #010104 | `--color-canvas-blue-black` | Navigation bar background. Provides a distinct and consistent top-level UI element |
+
+## Tokens — Typography
+
+### Inspire
+
+- **Token:** `--font-inspire`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 28px, 40px
+- **Line heights:** 1.20, 1.38, 1.40, 1.50, 1.83
+- **Letter spacing:** 0.0250em
+- **Role:** Primary typeface for all text content, from body copy to headlines. Its consistent tracking provides a unified and readable experience across different scales. Weight 400 is used for general content, while 700 emphasizes critical information.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.3px | `--text-caption` |
+| body-sm | 14px | 1.4 | 0.35px | `--text-body-sm` |
+| body | 16px | 1.38 | 0.4px | `--text-body` |
+| subheading | 18px | 1.38 | 0.45px | `--text-subheading` |
+| heading | 20px | 1.2 | 0.5px | `--text-heading` |
+| heading-lg | 28px | 1.2 | 0.7px | `--text-heading-lg` |
+| display | 40px | 1.2 | 1px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-73 | 73px | `--spacing-73` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-201 | 201px | `--spacing-201` |
+| spacing-259 | 259px | `--spacing-259` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| inputs | 8px |
+| buttons | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Navigation, secondary actions, in-content links
+
+Transparent background, 'Off-White' text, 'Muted Silver' 1px border. No padding specified for common usage, implying content-based sizing.
+
+### Primary Action Button
+
+**Role:** Main calls to action, form submissions
+
+Background 'Sky Blue', text 'Button Dark Text', 8px border-radius, 8px vertical padding, 16px horizontal padding.
+
+### Signup CTA Button
+
+**Role:** Specific call to action, usually in hero or signup forms.
+
+Background 'Electric Teal', text 'Text Dark', 0px 8px 8px 0px border-radius (rounded right side), 8px vertical padding, 44px horizontal padding.
+
+### Default Card
+
+**Role:** Content presentation, media cards.
+
+Transparent background, 12px border-radius, no box-shadow, no padding implies content fills the card directly.
+
+### Black Background Card
+
+**Role:** Emphasized content cards, often for media previews.
+
+Background 'rgb(0, 0, 0)' (black), 12px border-radius, no box-shadow, no padding.
+
+### Email Input Field
+
+**Role:** User input for email addresses.
+
+Background 'Cool Graphite', placeholder text 'Ghost Gray', 8px 0px 0px 8px border-radius (rounded left side), 12px horizontal padding. No vertical padding explicitly defined, implying default browser or container sizing.
+
+### Ghost Badge
+
+**Role:** Content metadata, labels
+
+Transparent background, 'Off-White' text, 0px border-radius, no padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Deep Midnight' (#040714) as the base background for most full-bleed sections to maintain immersion.
 - Apply 'Sky Blue' (#33ddff) for primary interactive elements, ensuring high contrast against dark backgrounds.
@@ -91,7 +162,7 @@ Disney+ maintains a 'midnight command center' aesthetic, designed for content co
 - Prioritize high contrast for text: 'Off-White' (#fafafa) on 'Deep Midnight' (#040714) or 'Cool Graphite' (#282a36).
 - Use 'Muted Silver' (#e5e7eb) for subtle UI borders, outlines, and dividers to articulate structure without distraction.
 
-### Don'ts
+### Don't
 
 - Do not introduce light backgrounds for main content areas; maintain the dark theme for immersion.
 - Avoid using highly saturated colors for large areas or decorative elements; reserve vibrancy for functional accents.
@@ -101,10 +172,166 @@ Disney+ maintains a 'midnight command center' aesthetic, designed for content co
 - Do not use overly dense layouts; maintain a 'comfortable' spacing with '24px' section gaps.
 - Avoid decorative gradients; the system uses solid colors for background and accents.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Blue Black | #010104 | Base layer for global navigation. |
+| 1 | Deep Midnight | #040714 | Primary page background and main content container. |
+| 2 | Accent Gray | #1e1f24 | Slightly elevated background for some UI elements that need mild distinction. |
+| 3 | Cool Graphite | #282a36 | Backgrounds for interactive elements like input fields, providing slight elevation. |
+
+## Imagery
+
+This system primarily uses product-focused imagery, specifically movie posters and show thumbnails, which are presented as contained elements within a grid. These are generally full-color, cinematic stills or stylized artwork, with minimal alteration. The iconography is typically simple, often white or light gray outlines or fills, serving functional roles rather than decorative. Image density is high in content sections, where visuals are the primary draw, while informational sections remain text-dominant.
+
+## Layout
 
 The page primarily uses a max-width contained layout in its main content areas, set against a full-bleed dark background. The hero section often features content previews or a signup form centered over a blurred background of media. Section rhythm is driven by consistent vertical spacing of '24px' between content blocks. Content is arranged in flexible grids for media display and alternating text-left/visual-right patterns for feature descriptions. Navigation is a sticky top bar, minimally styled with 'Canvas Blue Black' background and 'Off-White' text.
 
-### Imagery
+## Similar Brands
 
-This system primarily uses product-focused imagery, specifically movie posters and show thumbnails, which are presented as contained elements within a grid. These are generally full-color, cinematic stills or stylized artwork, with minimal alteration. The iconography is typically simple, often white or light gray outlines or fills, serving functional roles rather than decorative. Image density is high in content sections, where visuals are the primary draw, while informational sections remain text-dominant.
+- **Netflix** — Dark-mode UI, emphasis on content thumbnails, and a primary accent color for CTAs.
+- **HBO Max** — Content-heavy, dark-themed UI with clear grid layouts for media consumption and similar typographic treatment.
+- **Apple TV+** — Uses dark backgrounds, stark white typography, and a clean presentation for visual content.
+- **Prime Video** — Focus on content discovery within a dark interface, utilizing carousels and grid views.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-midnight: #040714;
+  --color-cool-graphite: #282a36;
+  --color-sky-blue: #33ddff;
+  --color-electric-teal: #02d6e8;
+  --color-text-dark: #02172a;
+  --color-muted-silver: #e5e7eb;
+  --color-light-gray: #c0c0c0;
+  --color-off-white: #fafafa;
+  --color-deep-space: #0e0b14;
+  --color-ghost-gray: #b7b8bd;
+  --color-accent-gray: #1e1f24;
+  --color-button-dark-text: #17171c;
+  --color-faint-border: #6f717b;
+  --color-canvas-blue-black: #010104;
+  --font-inspire: 'Inspire', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.3px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.35px;
+  --text-body: 16px;
+  --leading-body: 1.38;
+  --tracking-body: 0.4px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.38;
+  --tracking-subheading: 0.45px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0.5px;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0.7px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: 1px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-73: 73px;
+  --spacing-74: 74px;
+  --spacing-81: 81px;
+  --spacing-201: 201px;
+  --spacing-259: 259px;
+  --radius-cards: 12px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --surface-canvas-blue-black: #010104;
+  --surface-deep-midnight: #040714;
+  --surface-accent-gray: #1e1f24;
+  --surface-cool-graphite: #282a36;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-midnight: #040714;
+  --color-cool-graphite: #282a36;
+  --color-sky-blue: #33ddff;
+  --color-electric-teal: #02d6e8;
+  --color-text-dark: #02172a;
+  --color-muted-silver: #e5e7eb;
+  --color-light-gray: #c0c0c0;
+  --color-off-white: #fafafa;
+  --color-deep-space: #0e0b14;
+  --color-ghost-gray: #b7b8bd;
+  --color-accent-gray: #1e1f24;
+  --color-button-dark-text: #17171c;
+  --color-faint-border: #6f717b;
+  --color-canvas-blue-black: #010104;
+  --font-inspire: 'Inspire', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.3px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.35px;
+  --text-body: 16px;
+  --leading-body: 1.38;
+  --tracking-body: 0.4px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.38;
+  --tracking-subheading: 0.45px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0.5px;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0.7px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: 1px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-73: 73px;
+  --spacing-74: 74px;
+  --spacing-81: 81px;
+  --spacing-201: 201px;
+  --spacing-259: 259px;
+  --radius-cards: 12px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --surface-canvas-blue-black: #010104;
+  --surface-deep-midnight: #040714;
+  --surface-accent-gray: #1e1f24;
+  --surface-cool-graphite: #282a36;
+}
+```

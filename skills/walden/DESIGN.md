@@ -1,56 +1,159 @@
 ---
 version: alpha
-name: Walden
-description: Walden cultivates a serene, contemplative aesthetic, grounding product presentation in an almost stark, naturalistic minimalism. The visual language centers on muted, earthy neutrals with high contrast for text, creating a sense of understated luxury. Typography is functional and refined, ensuring clarity while blending into the quiet composition. Components are lightweight and largely border-driven, minimizing visual noise to allow product imagery and natural backgrounds to dominate.
-colors:
-  forest-shadow: "#3f3f3f"
-  canvas-white: "#ffffff"
-  earth-stone: "#d3cec5"
-  true-black: "#030302"
-  muted-grey: "#686867"
-  light-stone: "#acacac"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.1
-spacing:
-  cardRadius: 16px
-  buttonRadius: 2px
-  elementGap: 12px
-  sectionGap: 64px
-components:
-  ghost-navigation-button-light:
-    role: Navigation links and secondary actions within light UI sections.
-  contained-footer-button:
-    role: Interactive elements within the footer or compact UI sections.
-  filled-primary-button:
-    role: Main calls to action requiring emphasis.
-  outlined-text-link:
-    role: Links and actions in text-heavy areas, often within product details.
-  search-input-field:
-    role: Text input areas for search or forms.
+name: "Walden"
+description: "Walden cultivates a serene, contemplative aesthetic, grounding product presentation in an almost stark, naturalistic minimalism. The visual language centers on muted, earthy neutrals with high contrast for text, creating a sense of understated luxury. Typography is functional and refined, ensuring clarity while blending into the quiet composition. Components are lightweight and largely border-driven, minimizing visual noise to allow product imagery and natural backgrounds to dominate."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://walden.us"
+refero_style_id: "31903c2b-99bf-4fa8-8c92-238858f3563c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519276822-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519276822-thumb.jpg"
+extracted_at: "2026-04-30T03:21:34.883Z"
 ---
 
-## Overview
+# Walden — Style Reference
 
-**North Star:** Forest floor stillness
+> Forest floor stillness
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Walden cultivates a serene, contemplative aesthetic, grounding product presentation in an almost stark, naturalistic minimalism. The visual language centers on muted, earthy neutrals with high contrast for text, creating a sense of understated luxury. Typography is functional and refined, ensuring clarity while blending into the quiet composition. Components are lightweight and largely border-driven, minimizing visual noise to allow product imagery and natural backgrounds to dominate.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Forest Shadow | #3f3f3f | `--color-forest-shadow` | Primary text, informational body copy, general UI elements, icon fill |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button text on dark backgrounds, primary navigation text |
+| Earth Stone | #d3cec5 | `--color-earth-stone` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| True Black | #030302 | `--color-true-black` | Action button backgrounds, strong borders for interactive elements, primary navigation text on light backgrounds |
+| Muted Grey | #686867 | `--color-muted-grey` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Light Stone | #acacac | `--color-light-stone` | Lightest border lines, dividers |
+
+## Tokens — Typography
+
+### Graphik
+
+- **Token:** `--font-graphik`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 600
+- **Sizes:** 10px, 12px, 14px, 16px, 18px, 20px
+- **Line heights:** 1.00, 1.10, 1.20, 1.30, 1.40, 1.67
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all text content: body, headings, navigation, and input fields. Its clean, geometric form maintains the minimal aesthetic.
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** monospace
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.00, 1.10, 1.20, 1.40
+- **Letter spacing:** normal
+- **Role:** Used for specific interactive elements and labels, providing a distinct, slightly more technical feel while maintaining legibility.
+
+### GTStandard-M
+
+- **Token:** `--font-gtstandard-m`
+- **Substitute:** monospace
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** A distinct serif-like typeface employed for specialized content or decorative text elements, enhancing perceived craftsmanship and quality.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| body | 14px | 1.2 | — | `--text-body` |
+| heading | 18px | 1.1 | — | `--text-heading` |
+| display | 20px | 1.1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| buttons | 2px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(211, 206, 197) 0px 0px 0px 1px inset | `--shadow-xl` |
+| xl-2 | rgb(3, 3, 2) 0px 0px 0px 1px inset | `--shadow-xl-2` |
+| xl-3 | rgb(211, 206, 197) 0px 1px 0px 0px | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Navigation Button (Light)
+
+**Role:** Navigation links and secondary actions within light UI sections.
+
+Transparent background with Canvas White text, no padding, and no border. Used for top navigation and subtle calls to action.
+
+### Contained Footer Button
+
+**Role:** Interactive elements within the footer or compact UI sections.
+
+Transparent background with Canvas White text, 2px border-radius, 16px vertical padding, 4px horizontal padding. Border appears in white on hover.
+
+### Filled Primary Button
+
+**Role:** Main calls to action requiring emphasis.
+
+True Black background with Canvas White text. Has a 2px border-radius, 16px vertical padding, and 24px horizontal padding. The border is explicitly white on render.
+
+### Outlined Text Link
+
+**Role:** Links and actions in text-heavy areas, often within product details.
+
+Transparent background with True Black text, 8px horizontal padding, no vertical padding. Has a 1px True Black border on the bottom. No explicit border-radius (0px).
+
+### Search/Input Field
+
+**Role:** Text input areas for search or forms.
+
+Transparent background with True Black text. Features 12px vertical padding. Bottom border is 1px thick in True Black. A 1px inset shadow in Earth Stone appears on focus.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize product imagery and natural backgrounds; frame them as the primary visual focus.
 - Use Forest Shadow (#3f3f3f) for primary text and Canvas White (#ffffff) for backgrounds to maintain a high contrast, minimal reading experience.
@@ -60,7 +163,7 @@ Walden cultivates a serene, contemplative aesthetic, grounding product presentat
 - Utilize 1px borders in Earth Stone (#d3cec5) or True Black (#030302) for UI separation rather than heavy shadows or fills.
 - Use Graphik (sans-serif) for all primary text content; reserve Geist and GTStandard-M for specific utility or decorative instances.
 
-### Don'ts
+### Don't
 
 - Avoid vivid or highly saturated colors for UI elements; color should be sparingly applied and mostly achromatic.
 - Do not use heavy drop shadows or complex gradients; rely on subtle inset shadows and single-color fills.
@@ -70,10 +173,122 @@ Walden cultivates a serene, contemplative aesthetic, grounding product presentat
 - Avoid radius values outside of 2px for buttons and 16px for larger cards.
 - Do not introduce gratuitous motion or animations; transitions should be subtle and functional.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Dominant page background, providing a clean, expansive foundation. |
+
+## Elevation
+
+- **Interactive Link Border:** `inset 0px 0px 0px 1px rgb(211, 206, 197)`
+- **Primary Button Border (Focus/Hover):** `inset 0px 0px 0px 1px rgb(3, 3, 2)`
+- **Input Field Inset Shadow:** `0px 1px 0px 0px rgb(211, 206, 197)`
+
+## Imagery
+
+The visual language for imagery is characterized by high-quality, deliberately composed product photography set within natural, minimalist environments (forests, mossy landscapes, raw wood). Photography often features products isolated or in serene contexts, emphasizing their form and materiality. Treatment is typically full-bleed or large-scale, dominating sections of the page. There are also stark product shots on clean, abstract backgrounds. Icons, when present, are simple, outlined, and monochromatic, used for functional navigation cues. The density is image-heavy, with large visuals serving as atmosphere and product showcase, allowing text to act as supporting detail.
+
+## Layout
 
 The page model is full-bleed, allowing large-scale imagery to extend to the viewport edges, creating an immersive experience. The hero sections feature large, atmospheric photography with centered text overlays for headings and calls to action. Section rhythm is predominantly defined by large photographic blocks alternating fluidly, connected by minimal UI. Content arrangement often juxtaposes large hero images with smaller, descriptive text blocks or product grids. Navigation is a persistent, minimal top bar with left-aligned brand and right-aligned utility links, maintaining overall content visibility.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is characterized by high-quality, deliberately composed product photography set within natural, minimalist environments (forests, mossy landscapes, raw wood). Photography often features products isolated or in serene contexts, emphasizing their form and materiality. Treatment is typically full-bleed or large-scale, dominating sections of the page. There are also stark product shots on clean, abstract backgrounds. Icons, when present, are simple, outlined, and monochromatic, used for functional navigation cues. The density is image-heavy, with large visuals serving as atmosphere and product showcase, allowing text to act as supporting detail.
+- **Aēsop** — Similar focus on minimalist product presentation within natural/architectural settings, restrained color palette, and premium typography.
+- **MUJI** — Emphasizes natural materials, functional design, and a muted, achromatic color scheme creating a sense of calm simplicity.
+- **The Future Kept** — Utilizes large-scale, atmospheric photography to showcase products, combined with a sparse, elegant UI and strong emphasis on natural textures.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-forest-shadow: #3f3f3f;
+  --color-canvas-white: #ffffff;
+  --color-earth-stone: #d3cec5;
+  --color-true-black: #030302;
+  --color-muted-grey: #686867;
+  --color-light-stone: #acacac;
+  --font-graphik: 'Graphik', system-ui, sans-serif;
+  --font-geist: 'Geist', monospace;
+  --font-gtstandard-m: 'GTStandard-M', monospace;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --text-heading: 18px;
+  --leading-heading: 1.1;
+  --text-display: 20px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --radius-cards: 16px;
+  --radius-buttons: 2px;
+  --shadow-xl: rgb(211, 206, 197) 0px 0px 0px 1px inset;
+  --shadow-xl-2: rgb(3, 3, 2) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgb(211, 206, 197) 0px 1px 0px 0px;
+  --surface-canvas-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-forest-shadow: #3f3f3f;
+  --color-canvas-white: #ffffff;
+  --color-earth-stone: #d3cec5;
+  --color-true-black: #030302;
+  --color-muted-grey: #686867;
+  --color-light-stone: #acacac;
+  --font-graphik: 'Graphik', system-ui, sans-serif;
+  --font-geist: 'Geist', monospace;
+  --font-gtstandard-m: 'GTStandard-M', monospace;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --text-heading: 18px;
+  --leading-heading: 1.1;
+  --text-display: 20px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --radius-cards: 16px;
+  --radius-buttons: 2px;
+  --shadow-xl: rgb(211, 206, 197) 0px 0px 0px 1px inset;
+  --shadow-xl-2: rgb(3, 3, 2) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgb(211, 206, 197) 0px 1px 0px 0px;
+  --surface-canvas-white: #ffffff;
+}
+```
