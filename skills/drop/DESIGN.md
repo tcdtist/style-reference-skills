@@ -1,81 +1,183 @@
 ---
 version: alpha
-name: Drop
-description: Drop's visual system evokes a stark, high-contrast, digital command center aesthetic. It pairs deep, almost black canvases with crisp white text and a limited palette of saturated, functional accents. Typography is a key differentiator, employing a wide range of sizes and extreme negative letter-spacing for headlines and display text, creating a visually dense but impactful presence. Components favor minimal backgrounds, outlined borders, and a signature hyper-rounded radius, suggesting a refined, modern utility.
-colors:
-  absolute-zero: "#101010"
-  cloud-canvas: "#ffffff"
-  nightfall: "#1a1a1a"
-  parchment: "#e5ede4"
-  whisper-gray: "#9b9b9b"
-  soft-lilac: "#b8afda"
-  mint-glaze: "#c7d8c5"
-  ignite-orange: "#eb652b"
-  electric-yellow: "#f6f361"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.35
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.35
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.3
-    letterSpacing: -0.19px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 29px
-    lineHeight: 1.2
-    letterSpacing: -0.44px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 43px
-    lineHeight: 1.15
-    letterSpacing: -0.6px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 66px
-    lineHeight: 0.95
-    letterSpacing: -1.98px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 177px
-    lineHeight: 0.78
-    letterSpacing: -7.26px
-spacing:
-  cardRadius: 24.48px
-  elementGap: 5px
-  sectionGap: 40px
-components:
-  ghost-button-dark:
-    role: Secondary action button for dark backgrounds.
-  ghost-button-light:
-    role: Secondary action button for light backgrounds.
-  filled-button:
-    role: Primary action button.
-  default-card:
-    role: Standard content container.
-  rounded-card:
-    role: Rounded content container.
-  dark-rounded-card:
-    role: Elevated and subtly distinct content container.
-  absolute-zero-panel:
-    role: Prominent surface for featured content, often displaying embedded UI.
-  soft-lilac-panel:
-    role: Prominent surface for featured content, often displaying embedded UI.
+name: "Drop"
+description: "Drop's visual system evokes a stark, high-contrast, digital command center aesthetic. It pairs deep, almost black canvases with crisp white text and a limited palette of saturated, functional accents. Typography is a key differentiator, employing a wide range of sizes and extreme negative letter-spacing for headlines and display text, creating a visually dense but impactful presence. Components favor minimal backgrounds, outlined borders, and a signature hyper-rounded radius, suggesting a refined, modern utility."
+theme: "light"
+industry: "saas"
+source_url: "https://www.usedrop.io"
+refero_style_id: "36d939b8-e3b5-45c7-8d81-f7c4d7c8fdaa"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519047775-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519047775-thumb.jpg"
+extracted_at: "2026-04-30T03:17:53.452Z"
 ---
 
-## Overview
+# Drop — Style Reference
 
-**North Star:** High-contrast digital command center.
+> High-contrast digital command center.
+
+**Theme:** light
+
+**Industry:** saas
 
 Drop's visual system evokes a stark, high-contrast, digital command center aesthetic. It pairs deep, almost black canvases with crisp white text and a limited palette of saturated, functional accents. Typography is a key differentiator, employing a wide range of sizes and extreme negative letter-spacing for headlines and display text, creating a visually dense but impactful presence. Components favor minimal backgrounds, outlined borders, and a signature hyper-rounded radius, suggesting a refined, modern utility.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #101010 | `--color-absolute-zero` | Primary text, deep surface backgrounds, dark mode canvas, input borders |
+| Cloud Canvas | #ffffff | `--color-cloud-canvas` | Page backgrounds, card surfaces, ghost button text and borders |
+| Nightfall | #1a1a1a | `--color-nightfall` | Elevated card backgrounds |
+| Parchment | #e5ede4 | `--color-parchment` | Subtle secondary background surface, often next to darker elements |
+| Whisper Gray | #9b9b9b | `--color-whisper-gray` | Muted body text, secondary borders |
+| Soft Lilac | #b8afda | `--color-soft-lilac` | Violet outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+| Mint Glaze | #c7d8c5 | `--color-mint-glaze` | Light background washes for card surfaces and subtle graphic accents |
+| Ignite Orange | #eb652b | `--color-ignite-orange` | Highlight text, decorative graphic elements |
+| Electric Yellow | #f6f361 | `--color-electric-yellow` | Yellow outline accent for tags, dividers, and focused UI edges |
+
+## Tokens — Typography
+
+### ABC Normal
+
+- **Token:** `--font-abc-normal`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500
+- **Sizes:** 11px, 12px, 14px, 15px, 16px, 18px, 21px, 22px, 29px, 30px, 43px, 48px, 66px, 75px, 95px, 160px, 177px
+- **Line heights:** 0.80, 0.86, 0.90, 0.95, 1.00, 1.10, 1.15, 1.20, 1.30, 1.33, 1.35
+- **Letter spacing:** -0.041em at 177px, -0.03em at 95px, -0.012em at 16px
+- **Role:** General UI text, body copy, navigation, and many smaller display elements. Its variable weights provide flexibility, but the overall tight tracking creates a compact, information-dense feel. Some large sizes use extremely tight tracking, which is unconventional but impactful for headlines.
+
+### Ivar Display
+
+- **Token:** `--font-ivar-display`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 60px, 72px, 93px, 156px, 169px
+- **Line heights:** 0.78, 0.90, 0.95, 1.00
+- **Letter spacing:** -0.043em at 169px, -0.031em at 72px
+- **Role:** Dominant display headlines and large decorative type. Its singular weight and extremely tight letter-spacing create a bold, almost stencil-like appearance, emphasizing visual impact over traditional legibility at very large sizes. Used to create a dramatic, almost editorial feel for key messages.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.35 | — | `--text-caption` |
+| body | 14px | 1.35 | — | `--text-body` |
+| subheading | 18px | 1.3 | -0.19px | `--text-subheading` |
+| heading-sm | 29px | 1.2 | -0.44px | `--text-heading-sm` |
+| heading | 43px | 1.15 | -0.6px | `--text-heading` |
+| heading-lg | 66px | 0.95 | -1.98px | `--text-heading-lg` |
+| display | 177px | 0.78 | -7.26px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-79 | 79px | `--spacing-79` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-101 | 101px | `--spacing-101` |
+| spacing-115 | 115px | `--spacing-115` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-173 | 173px | `--spacing-173` |
+| spacing-198 | 198px | `--spacing-198` |
+| spacing-252 | 252px | `--spacing-252` |
+| spacing-266 | 266px | `--spacing-266` |
+| spacing-288 | 288px | `--spacing-288` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 1440px |
+| cards | 24.48px |
+| input | 7.92px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 14px |
+| elementGap | 5px |
+
+## Components
+
+### Ghost Button (Dark)
+
+**Role:** Secondary action button for dark backgrounds.
+
+Text: Cloud Canvas (#ffffff), Border: 1px solid Cloud Canvas (#ffffff), Background: transparent, Padding: 13.5px vertical, 18.36px horizontal, Border-radius: 1440px.
+
+### Ghost Button (Light)
+
+**Role:** Secondary action button for light backgrounds.
+
+Text: Absolute Zero (#101010), Border: 1px solid Absolute Zero (#101010), Background: transparent, Padding: 14.4px vertical, 16.2px horizontal, Border-radius: 1440px.
+
+### Filled Button
+
+**Role:** Primary action button.
+
+Text: Absolute Zero (#101010), Background: Cloud Canvas (#ffffff), Padding: 13.5px vertical, 18.36px horizontal, Border-radius: 1440px. Implicit border matches background color.
+
+### Default Card
+
+**Role:** Standard content container.
+
+Background: transparent, Border-radius: 0px, no shadow or padding by default, allowing content to define its own space.
+
+### Rounded Card
+
+**Role:** Rounded content container.
+
+Background: transparent, Border-radius: 24.48px, no shadow or padding by default.
+
+### Dark Rounded Card
+
+**Role:** Elevated and subtly distinct content container.
+
+Background: Nightfall (#1a1a1a), Border-radius: 23.04px, no shadow or padding by default.
+
+### Absolute Zero Panel
+
+**Role:** Prominent surface for featured content, often displaying embedded UI.
+
+Background: Absolute Zero (#101010), Border-radius: 1440px (effectively a pill-shape for large elements), no shadow or padding.
+
+### Soft Lilac Panel
+
+**Role:** Prominent surface for featured content, often displaying embedded UI.
+
+Background: Soft Lilac (#b8afda), Border-radius: 1440px (effectively a pill-shape for large elements), no shadow or padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Absolute Zero (#101010) for primary text on Cloud Canvas (#ffffff) backgrounds, achieving AAA contrast.
 - Use a 1440px border-radius for all interactive elements and prominent containers, creating a distinct pill shape.
@@ -85,7 +187,7 @@ Drop's visual system evokes a stark, high-contrast, digital command center aesth
 - Integrate Soft Lilac (#b8afda) and Mint Glaze (#c7d8c5) as graphic fill accents on otherwise monochrome UI elements.
 - Maintain a compact spacing unit of `5px` for elements within components and `40px` for vertical section gaps to control content density.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple accent colors beyond Ignite Orange (#eb652b) and Electric Yellow (#f6f361) to maintain the limited, functional palette.
 - Do not use box-shadows for elevation; rely on background color changes or border definitions to create surface hierarchy.
@@ -95,10 +197,165 @@ Drop's visual system evokes a stark, high-contrast, digital command center aesth
 - Do not use generic gray for helper text; instead, use Whisper Gray (#9b9b9b) for a more integrated, branded feel.
 - Do not introduce gradients unless explicitly defined; the system relies on solid color blocks and sharp contrasts.
 
-### Layout
+## Imagery
+
+Imagery on Drop's site is sparse and highly conceptual, focusing on product UI simulations rather than photography or explicit illustrations. Product UI elements are presented within large, rounded, solid-colored panels (Absolute Zero or Soft Lilac), mimicking device screens. These embedded UIs are clean, showcasing typical social media interfaces. There are abstract, geometric shapes (circles) used to convey data or concepts, often with solid fills or outlined. The icons are mostly simple, filled black or white glyphs, maintaining the high-contrast aesthetic. Overall, imagery functions as explanatory content or product showcases, maintaining a text-dominant layout with visual accents.
+
+## Layout
 
 The page employs a full-bleed top section that transitions into a largely full-width layout with internal content often centered and implicitly constrained by padding rather than an explicit `pageMaxWidth`. The hero section features a centered, oversized headline, immediately followed by two large, distinct panels acting as embedded UI examples, showcasing the product in context. Sections typically switch between dark backgrounds (Absolute Zero, similar to a 'dark mode' block) and lighter, parchment-like backgrounds, creating an alternating rhythm. Content is generally arranged in contrasting blocks, often with a large visual element dominating one side against textual content, or centered stacks for key messaging. There's an absence of traditional grids explicitly stated, but content within these large blocks often aligns logically. The navigation is a subtle top bar, featuring right-aligned 'Login' and 'Request a Demo' buttons against a white background, contrasting with the dark hero section.
 
-### Imagery
+## Similar Brands
 
-Imagery on Drop's site is sparse and highly conceptual, focusing on product UI simulations rather than photography or explicit illustrations. Product UI elements are presented within large, rounded, solid-colored panels (Absolute Zero or Soft Lilac), mimicking device screens. These embedded UIs are clean, showcasing typical social media interfaces. There are abstract, geometric shapes (circles) used to convey data or concepts, often with solid fills or outlined. The icons are mostly simple, filled black or white glyphs, maintaining the high-contrast aesthetic. Overall, imagery functions as explanatory content or product showcases, maintaining a text-dominant layout with visual accents.
+- **Stripe** — High-contrast text on clean backgrounds, precise typography with subtle negative letter-spacing, and a focus on essential UI elements.
+- **Linear** — Dark-themed interfaces with crisp white text, minimal borders, and a focus on functional, productivity-oriented design.
+- **Figma** — Use of large, impactful display typography with tight tracking, and minimalist component styles.
+- **Vercel** — Emphasis on dark surfaces, command-line aesthetics, and clean, modern typography with a strong visual hierarchy.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #101010;
+  --color-cloud-canvas: #ffffff;
+  --color-nightfall: #1a1a1a;
+  --color-parchment: #e5ede4;
+  --color-whisper-gray: #9b9b9b;
+  --color-soft-lilac: #b8afda;
+  --color-mint-glaze: #c7d8c5;
+  --color-ignite-orange: #eb652b;
+  --color-electric-yellow: #f6f361;
+  --font-abc-normal: 'ABC Normal', Inter;
+  --font-ivar-display: 'Ivar Display', Playfair Display;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --text-body: 14px;
+  --leading-body: 1.35;
+  --text-subheading: 18px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.19px;
+  --text-heading-sm: 29px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.44px;
+  --text-heading: 43px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 66px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -1.98px;
+  --text-display: 177px;
+  --leading-display: 0.78;
+  --tracking-display: -7.26px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-65: 65px;
+  --spacing-72: 72px;
+  --spacing-79: 79px;
+  --spacing-86: 86px;
+  --spacing-101: 101px;
+  --spacing-115: 115px;
+  --spacing-120: 120px;
+  --spacing-130: 130px;
+  --spacing-144: 144px;
+  --spacing-173: 173px;
+  --spacing-198: 198px;
+  --spacing-252: 252px;
+  --spacing-266: 266px;
+  --spacing-288: 288px;
+  --radius-all: 1440px;
+  --radius-cards: 24.48px;
+  --radius-input: 7.92px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #101010;
+  --color-cloud-canvas: #ffffff;
+  --color-nightfall: #1a1a1a;
+  --color-parchment: #e5ede4;
+  --color-whisper-gray: #9b9b9b;
+  --color-soft-lilac: #b8afda;
+  --color-mint-glaze: #c7d8c5;
+  --color-ignite-orange: #eb652b;
+  --color-electric-yellow: #f6f361;
+  --font-abc-normal: 'ABC Normal', Inter;
+  --font-ivar-display: 'Ivar Display', Playfair Display;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --text-body: 14px;
+  --leading-body: 1.35;
+  --text-subheading: 18px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.19px;
+  --text-heading-sm: 29px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.44px;
+  --text-heading: 43px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 66px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -1.98px;
+  --text-display: 177px;
+  --leading-display: 0.78;
+  --tracking-display: -7.26px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-65: 65px;
+  --spacing-72: 72px;
+  --spacing-79: 79px;
+  --spacing-86: 86px;
+  --spacing-101: 101px;
+  --spacing-115: 115px;
+  --spacing-120: 120px;
+  --spacing-130: 130px;
+  --spacing-144: 144px;
+  --spacing-173: 173px;
+  --spacing-198: 198px;
+  --spacing-252: 252px;
+  --spacing-266: 266px;
+  --spacing-288: 288px;
+  --radius-all: 1440px;
+  --radius-cards: 24.48px;
+  --radius-input: 7.92px;
+}
+```

@@ -1,104 +1,238 @@
 ---
 version: alpha
-name: Duna
-description: Duna employs a quietly confident and sophisticated aesthetic, characterized by a near-monochromatic palette and subtle textural shifts. Typography is precise and highly tracked, creating a sense of understated authority. Surfaces are clean and layered, with minimal elevation, allowing content to take precedence. The overall impression is one of grounded reliability, eschewing overt flash for refined clarity.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  near-white: "#f7f7f5"
-  deep-charcoal: "#292421"
-  subtle-gray: "#898683"
-  card-wash: "#edece7"
-  quiet-black: "#1a1816"
-  medium-gray: "#444444"
-  onyx-button-background: "#160f0c"
-  light-steel: "#b2afae"
-  slate-text: "#0d0d0d"
-  input-fill: "#eeeeee"
-  accent-purple: "#1b0624"
-  muted-slate: "#766a7c"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.71
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.5
-    letterSpacing: -0.4px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-    letterSpacing: -0.72px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: -0.96px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -2px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1.1
-    letterSpacing: -2.2px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-    letterSpacing: -4.32px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 999px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Main call to action button.
-  ghost-button:
-    role: Secondary action or navigation outside of primary flows.
-  announcement-pill:
-    role: Small, informational component to highlight news or status.
-  simple-card:
-    role: Basic container for information, features a subtle background to distinguish from canvas.
-  elevated-card:
-    role: Interactive or featured card with a light shadow for depth.
-  text-input-active:
-    role: User input field.
-  navigation-link:
-    role: Top-level navigation items.
-  cookie-consent-banner:
-    role: Non-intrusive notification banner.
+name: "Duna"
+description: "Duna employs a quietly confident and sophisticated aesthetic, characterized by a near-monochromatic palette and subtle textural shifts. Typography is precise and highly tracked, creating a sense of understated authority. Surfaces are clean and layered, with minimal elevation, allowing content to take precedence. The overall impression is one of grounded reliability, eschewing overt flash for refined clarity."
+theme: "light"
+industry: "fintech"
+source_url: "https://duna.com"
+refero_style_id: "8cf4a580-bfb6-4090-a899-f734ffe62370"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508879333-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508879333-thumb.jpg"
+extracted_at: "2026-04-30T00:28:27.554Z"
 ---
 
-## Overview
+# Duna — Style Reference
 
-**North Star:** Understated Compliance Authority
+> Understated Compliance Authority
+
+**Theme:** light
+
+**Industry:** fintech
 
 Duna employs a quietly confident and sophisticated aesthetic, characterized by a near-monochromatic palette and subtle textural shifts. Typography is precise and highly tracked, creating a sense of understated authority. Surfaces are clean and layered, with minimal elevation, allowing content to take precedence. The overall impression is one of grounded reliability, eschewing overt flash for refined clarity.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, strong headings, critical icons, high-contrast borders |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, primary card surfaces, ghost button backgrounds, default borders |
+| Near White | #f7f7f5 | `--color-near-white` | Subtle section backgrounds, alternate surface treatment, cookie banner background |
+| Deep Charcoal | #292421 | `--color-deep-charcoal` | Secondary headings, prominent body text, darker icons and fills |
+| Subtle Gray | #898683 | `--color-subtle-gray` | Muted body text, helper text, subtle borders |
+| Card Wash | #edece7 | `--color-card-wash` | Distinct card background color, differentiating content blocks from the canvas |
+| Quiet Black | #1a1816 | `--color-quiet-black` | Tertiary text, icon fills, understated borders |
+| Medium Gray | #444444 | `--color-medium-gray` | Input placeholder text, cookie banner text |
+| Onyx Button Background | #160f0c | `--color-onyx-button-background` | Filled button backgrounds for primary calls to action |
+| Light Steel | #b2afae | `--color-light-steel` | Decorative icon fills, subtle illustrative elements |
+| Slate Text | #0d0d0d | `--color-slate-text` | Dark body text, dark icon strokes |
+| Input Fill | #eeeeee | `--color-input-fill` | Input field background color |
+| Accent Purple | #1b0624 | `--color-accent-purple` | Heading color, brand accents, selected decorative borders/strokes — a subtle, dark chromatic touch that feels like a shadow, not a highlight |
+| Muted Slate | #766a7c | `--color-muted-slate` | Small informational button backgrounds (e.g., news announcements) — a desaturated, almost neutral chromatic tint |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.2
+- **Role:** sans-serif — detected in extracted data but not described by AI
+
+### GT America
+
+- **Token:** `--font-gt-america`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 20px
+- **Line heights:** 1.50
+- **Letter spacing:** -0.0600em at 72px, -0.0500em at 44px, normal at 14px
+- **OpenType features:** "blwf" on, "cv03" on, "cv04" on, "cv09" on, "cv11" on
+- **Role:** Primary typeface for all headings, body text, and links. The varied tracking values create a sophisticated, tailored feel, with tighter spacing for larger display text and normal spacing for smaller body text.
+
+### GT America Trial Rg
+
+- **Token:** `--font-gt-america-trial-rg`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.50, 1.60, 1.71
+- **Letter spacing:** normal
+- **Role:** Specific body text usage, particularly for descriptive paragraphs where slightly looser tracking is preferred.
+
+### GT America Trial Md
+
+- **Token:** `--font-gt-america-trial-md`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 17px, 80px
+- **Line heights:** 1.00, 1.76
+- **Letter spacing:** -0.0120em
+- **OpenType features:** "tnum" on, "zero" on
+- **Role:** Used for specific large headings and numerical data, leveraging tabular figures for alignment and slightly tighter tracking for impact.
+
+### GT America Medium
+
+- **Token:** `--font-gt-america-medium`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 20px
+- **Line heights:** 1.50
+- **Letter spacing:** -0.0200em
+- **OpenType features:** "blwf" on, "cv03" on, "cv04" on, "cv09" on, "cv11" on
+- **Role:** Used for emphasized body text or subheadings, with a distinct negative letter-spacing for a condensed appearance.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px, 14px
+- **Line heights:** 1.20, 1.50
+- **Letter spacing:** normal
+- **Role:** Supplemental font for card details and some smaller body text, used in contexts requiring greater system font fallback stability.
+
+### GT America Regular
+
+- **Token:** `--font-gt-america-regular`
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 24px, 32px, 40px, 44px, 72px
+- **Line heights:** 1, 1.1, 1.2, 1.3, 1.4, 1.5
+- **Letter spacing:** -0.06, -0.05, -0.03, -0.02, -0.01, -0.006, 0.02
+- **OpenType features:** "blwf", "cv03", "cv04", "cv09", "cv11"
+- **Role:** GT America Regular — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | 0px | `--text-caption` |
+| body-sm | 14px | 1.5 | 0px | `--text-body-sm` |
+| body | 16px | 1.71 | 0px | `--text-body` |
+| subheading | 18px | 1.5 | 0px | `--text-subheading` |
+| heading-sm | 20px | 1.5 | -0.4px | `--text-heading-sm` |
+| heading | 24px | 1.3 | -0.72px | `--text-heading` |
+| heading-lg | 32px | 1.2 | -0.96px | `--text-heading-lg` |
+| display | 40px | 1.1 | -2px | `--text-display` |
+| display-lg | 44px | 1.1 | -2.2px | `--text-display-lg` |
+| display-xl | 72px | 1 | -4.32px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-240 | 240px | `--spacing-240` |
+| spacing-300 | 300px | `--spacing-300` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| images | 24px |
+| inputs | 8px |
+| buttons | 999px |
+| smallElements | 12px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call to action button.
+
+Background: Onyx Button Background (#160f0c), Text: Canvas White (#ffffff), Border Radius: 999px, Padding: 8px vertical, 14px horizontal.
+
+### Ghost Button
+
+**Role:** Secondary action or navigation outside of primary flows.
+
+Background: transparent (rgba(26, 23, 21, 0)), Text: Midnight Ink (#000000), Border: 1px Midnight Ink (#000000), Border Radius: 999px, Padding: 6px vertical, 20px horizontal.
+
+### Announcement Pill
+
+**Role:** Small, informational component to highlight news or status.
+
+Background: Muted Slate (#766a7c), Text: Canvas White (#ffffff) / Midnight Ink (#000000) (if dark background), Border Radius: 999px, Padding: 6px vertical, 20px horizontal.
+
+### Simple Card
+
+**Role:** Basic container for information, features a subtle background to distinguish from canvas.
+
+Background: Card Wash (#edece7), Border Radius: 16px, Box Shadow: none, Padding: 0px.
+
+### Elevated Card
+
+**Role:** Interactive or featured card with a light shadow for depth.
+
+Background: Canvas White (#ffffff), Border Radius: 14px, Box Shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset, Padding: 0px.
+
+### Text Input Active
+
+**Role:** User input field.
+
+Background: Input Fill (#eeeeee), Text: Medium Gray (#444444), Placeholder: Medium Gray (#444444), Border: 1px Medium Gray (#444444), Border Radius: 8px, Padding: 10px.
+
+### Navigation Link
+
+**Role:** Top-level navigation items.
+
+Text: Midnight Ink (#000000), Hover: Underlined with Midnight Ink (#000000) (not observed but inferred). No distinct background, padding for interactive area: 4px vertical, 6px horizontal.
+
+### Cookie Consent Banner
+
+**Role:** Non-intrusive notification banner.
+
+Background: Near White (#f7f7f5), Text: Medium Gray (#444444), Border Radius: Not specified, but implied from overall shape language.
+
+## Do's and Don'ts
+
+### Do
 
 - Use GT America with specific letter-spacing adjustments for all headings to maintain the refined and precise typographic hierarchy.
 - Utilize Canvas White (#ffffff) as the dominant page background, reserving Near White (#f7f7f5) for subtle section differentiation or specific component backgrounds.
@@ -108,7 +242,7 @@ Duna employs a quietly confident and sophisticated aesthetic, characterized by a
 - Employ Accent Purple (#1b0624) sparingly and strategically for impactful headings or brand-specific graphical elements, not as a general accent color.
 - Maintain comfortable element spacing using a base unit of 10px, with larger gaps for sections to ensure content breathing room.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for interface elements; the brand relies on a nearly monochromatic palette with restrained chromatic accents.
 - Do not use heavy drop shadows; elevation is primarily conveyed through subtle background shifts and a very soft inset shadow on specific cards.
@@ -118,10 +252,210 @@ Duna employs a quietly confident and sophisticated aesthetic, characterized by a
 - Do not implement complex gradients or bold background patterns; the system favors clean, flat surfaces.
 - Do not vary line-height aggressively across body text; stick to the established ratios to maintain consistent reading rhythm.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Primary page background, base for most content blocks. |
+| 2 | Near White | #f7f7f5 | Secondary section background, providing subtle differentiation without strong contrast. |
+| 3 | Input Fill | #eeeeee | Background for interactive input fields. |
+| 4 | Card Wash | #edece7 | Specific card background, providing a slightly darker, more opaque surface than the canvas. |
+
+## Elevation
+
+- **Elevated Card:** `rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset`
+
+## Imagery
+
+Imagery primarily consists of evocative, painted landscape illustrations acting as large background heroes, featuring muted sunrise/sunset tones with soft, organic forms. Product imagery uses tightly cropped, detailed product screenshots or abstract graphics to illustrate concepts, often isolated on clean white backgrounds. Icons are minimal, outlined, monochromatic, and used for functional clarity rather than excessive decoration. The overall density is text-dominant, with imagery serving as atmospheric backdrops or focused explanatory elements.
+
+## Layout
 
 The page primarily uses a max-width contained layout, likely around 1200px, horizontally centered. The hero section is full-bleed with a large illustrative background and centered headline, followed by a 'news pill' that breaks the full-width image. Subsequent sections feature a consistent vertical rhythm, often with a centered stack of content (headline, body, buttons) or multi-column grids for features and data. There's a subtle alternating section pattern, primarily between Canvas White (#ffffff) and Near White (#f7f7f5) backgrounds. Navigation is a sticky top bar with left-aligned branding and right-aligned buttons/links.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of evocative, painted landscape illustrations acting as large background heroes, featuring muted sunrise/sunset tones with soft, organic forms. Product imagery uses tightly cropped, detailed product screenshots or abstract graphics to illustrate concepts, often isolated on clean white backgrounds. Icons are minimal, outlined, monochromatic, and used for functional clarity rather than excessive decoration. The overall density is text-dominant, with imagery serving as atmospheric backdrops or focused explanatory elements.
+- **Linear** — Monochromatic interface with precise typography and subtle elevation, focused on content clarity.
+- **Stripe** — Clean, understated aesthetic with a disciplined use of typography and a minimalist color palette for UI elements.
+- **Amie** — Light canvas, highly compact typography, and a deliberate absence of strong chromatic accents in the main UI.
+- **Anthropic** — Heavy reliance on clean neutrals, sophisticated typography, and minimal use of color to convey authority and seriousness.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-near-white: #f7f7f5;
+  --color-deep-charcoal: #292421;
+  --color-subtle-gray: #898683;
+  --color-card-wash: #edece7;
+  --color-quiet-black: #1a1816;
+  --color-medium-gray: #444444;
+  --color-onyx-button-background: #160f0c;
+  --color-light-steel: #b2afae;
+  --color-slate-text: #0d0d0d;
+  --color-input-fill: #eeeeee;
+  --color-accent-purple: #1b0624;
+  --color-muted-slate: #766a7c;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-gt-america: 'GT America', Inter;
+  --font-gt-america-trial-rg: 'GT America Trial Rg', Inter;
+  --font-gt-america-trial-md: 'GT America Trial Md', Inter;
+  --font-gt-america-medium: 'GT America Medium', Inter;
+  --font-inter: 'Inter', system-ui;
+  --font-gt-america-regular: 'GT America Regular', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.71;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.5;
+  --tracking-heading-sm: -0.4px;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.72px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 40px;
+  --leading-display: 1.1;
+  --tracking-display: -2px;
+  --text-display-lg: 44px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -2.2px;
+  --text-display-xl: 72px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -4.32px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+  --spacing-240: 240px;
+  --spacing-300: 300px;
+  --radius-cards: 16px;
+  --radius-images: 24px;
+  --radius-inputs: 8px;
+  --radius-buttons: 999px;
+  --radius-smallelements: 12px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+  --surface-canvas-white: #ffffff;
+  --surface-near-white: #f7f7f5;
+  --surface-input-fill: #eeeeee;
+  --surface-card-wash: #edece7;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-near-white: #f7f7f5;
+  --color-deep-charcoal: #292421;
+  --color-subtle-gray: #898683;
+  --color-card-wash: #edece7;
+  --color-quiet-black: #1a1816;
+  --color-medium-gray: #444444;
+  --color-onyx-button-background: #160f0c;
+  --color-light-steel: #b2afae;
+  --color-slate-text: #0d0d0d;
+  --color-input-fill: #eeeeee;
+  --color-accent-purple: #1b0624;
+  --color-muted-slate: #766a7c;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-gt-america: 'GT America', Inter;
+  --font-gt-america-trial-rg: 'GT America Trial Rg', Inter;
+  --font-gt-america-trial-md: 'GT America Trial Md', Inter;
+  --font-gt-america-medium: 'GT America Medium', Inter;
+  --font-inter: 'Inter', system-ui;
+  --font-gt-america-regular: 'GT America Regular', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.71;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.5;
+  --tracking-heading-sm: -0.4px;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.72px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 40px;
+  --leading-display: 1.1;
+  --tracking-display: -2px;
+  --text-display-lg: 44px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -2.2px;
+  --text-display-xl: 72px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -4.32px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+  --spacing-240: 240px;
+  --spacing-300: 300px;
+  --radius-cards: 16px;
+  --radius-images: 24px;
+  --radius-inputs: 8px;
+  --radius-buttons: 999px;
+  --radius-smallelements: 12px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+  --surface-canvas-white: #ffffff;
+  --surface-near-white: #f7f7f5;
+  --surface-input-fill: #eeeeee;
+  --surface-card-wash: #edece7;
+}
+```
