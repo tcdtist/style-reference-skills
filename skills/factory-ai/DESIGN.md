@@ -1,88 +1,191 @@
 ---
 version: alpha
-name: Factory.ai
-description: Factory.ai embraces a 'technical brutalism meets digital precision' aesthetic, prioritizing informational clarity and directness. The near-monochromatic palette, dominated by light grays and deep charcoals, provides a stark, high-contrast backdrop for technical content. A single vivid orange accent color is deployed sparingly as a functional indicator, highlighting interactive elements and key information without visual noise. The strong typographic voice, characterized by precise letter-spacing and a monospace variant for code, reinforces the structured, engineering-focused identity.
-colors:
-  factory-black: "#020202"
-  factory-light-gray: "#eeeeee"
-  faded-silver: "#fafafa"
-  cool-gray: "#b8b3b0"
-  graphite: "#3d3a39"
-  ash-gray: "#a49d9a"
-  code-orange: "#ef6f2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.24px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.2
-    letterSpacing: -2.3px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1
-    letterSpacing: -2.88px
-spacing:
-  cardRadius: 6px
-  buttonRadius: 4px
-  elementGap: 4px
-  sectionGap: 72px
-components:
-  cli-install-block:
-    role: 
-  news-article-cards:
-    role: 
-  product-section-nav:
-    role: 
-  text-link:
-    role: Navigation, inline links, 'Learn More' buttons
-  navigation-link:
-    role: Top navigation menu items
-  ghost-button:
-    role: Secondary actions, grouped options (macOS / Linux)
-  outlined-button:
-    role: Download buttons, secondary calls to action
-  filled-button-light:
-    role: Download buttons, primary calls to action
-  filled-button-dark:
-    role: Download buttons, primary calls to action (alternative)
-  list-item-card:
-    role: Content blocks in feature sections
-  elevated-content-card:
-    role: Featured content blocks, forms, interactive elements
-  code-input-block:
-    role: CLI instruction display, interactive code examples
-  new-badge:
-    role: Highlights new features or content
+name: "Factory.ai"
+description: "Factory.ai embraces a 'technical brutalism meets digital precision' aesthetic, prioritizing informational clarity and directness. The near-monochromatic palette, dominated by light grays and deep charcoals, provides a stark, high-contrast backdrop for technical content. A single vivid orange accent color is deployed sparingly as a functional indicator, highlighting interactive elements and key information without visual noise. The strong typographic voice, characterized by precise letter-spacing and a monospace variant for code, reinforces the structured, engineering-focused identity."
+theme: "light"
+industry: "ai"
+source_url: "https://factory.ai"
+refero_style_id: "13d6fc89-eba2-4724-ac37-20f4f2e5efec"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775932553513-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775932553513-thumb.jpg"
+extracted_at: "2026-04-11T18:36:15.407Z"
 ---
 
-## Overview
+# Factory.ai — Style Reference
 
-**North Star:** Architectural blueprint on white marble. Lines are crisp, colors are limited, and every element serves a clear, functional purpose.
+> Architectural blueprint on white marble. Lines are crisp, colors are limited, and every element serves a clear, functional purpose.
+
+**Theme:** light
+
+**Industry:** ai
 
 Factory.ai embraces a 'technical brutalism meets digital precision' aesthetic, prioritizing informational clarity and directness. The near-monochromatic palette, dominated by light grays and deep charcoals, provides a stark, high-contrast backdrop for technical content. A single vivid orange accent color is deployed sparingly as a functional indicator, highlighting interactive elements and key information without visual noise. The strong typographic voice, characterized by precise letter-spacing and a monospace variant for code, reinforces the structured, engineering-focused identity.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Factory Black | #020202 | `--color-factory-black` | Primary text, darkest surface background (e.g., active navigation items), critical interactive elements. |
+| Factory Light Gray | #eeeeee | `--color-factory-light-gray` | Page background, light surface elements (card backgrounds), default button backgrounds. Provides a clean, spacious canvas. |
+| Faded Silver | #fafafa | `--color-faded-silver` | Slightly lighter alternative to Factory Light Gray, used for subtle differentiation of card backgrounds and elements. |
+| Cool Gray | #b8b3b0 | `--color-cool-gray` | Subtle borders, inactive button outlines, secondary text. Establishes divisions without harshness. |
+| Graphite | #3d3a39 | `--color-graphite` | Strong borders, dark icons, secondary text. A darker gray for depth and contrast. |
+| Ash Gray | #a49d9a | `--color-ash-gray` | Subtle interactive borders and backgrounds, similar to Cool Gray but with a touch more warmth. |
+| Code Orange | #ef6f2 | `--color-code-orange` | Accent color for 'NEW' badges, interactive indicators, and small, high-attention elements. Its vividness cuts through the neutral palette. |
+
+## Tokens — Typography
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 18px, 24px, 48px, 60px
+- **Line heights:** 1.00, 1.20, 1.50
+- **Letter spacing:** -0.0480em, -0.0300em
+- **Role:** Primary typeface for all headings, body text, navigation, and general UI. The carefully tuned negative letter-spacing, particularly at larger sizes, creates a composed, intentional feel, preventing headlines from feeling loose.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** JetBrains Mono
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 18px
+- **Line heights:** 1.00, 1.20, 1.38, 1.50
+- **Letter spacing:** -0.0200em
+- **Role:** Used for code snippets, CLI instructions, and any content requiring a fixed-width, precise presentation. Its subtle negative letter-spacing maintains a tight, readable block structure.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.24px | `--text-caption` |
+| body-sm | 14px | 1.5 | — | `--text-body-sm` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.2 | — | `--text-subheading` |
+| heading | 24px | 1.2 | — | `--text-heading` |
+| heading-lg | 48px | 1.2 | -2.3px | `--text-heading-lg` |
+| display | 60px | 1 | -2.88px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 6px |
+| header | 0px |
+| buttons | 4px |
+| default | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 72px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### CLI Install Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### News Article Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Product Section Nav
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Text Link
+
+**Role:** Navigation, inline links, 'Learn More' buttons
+
+Color Factory Black (#020202) for primary links, transitioning to Graphite (#3d3a39) for secondary. No explicit underline until hover, relying on contrast and context for discoverability. Uses Geist, 14-16px, weight 400.
+
+### Navigation Link
+
+**Role:** Top navigation menu items
+
+Color Factory Black (#020202) on Factory Light Gray (#eeeeee) background. No special styling, relying solely on typography (Geist, 14px, 400 weight) for visual presence. Active items use the same styling with a subtle visual cue or background change.
+
+### Ghost Button
+
+**Role:** Secondary actions, grouped options (macOS / Linux)
+
+Transparent background with text color Factory Black (#020202). Has a subtle Cool Gray (#b8b3b0) border. Padding 0 for inline context. Radius 0px.
+
+### Outlined Button
+
+**Role:** Download buttons, secondary calls to action
+
+Transparent background with Factory Black (#020202) text. Border color Cool Gray (#b8b3b0), 1px solid. Padding 0 vertically, 12px horizontally. Radius 4px. Font Geist, 16px, 400 weight.
+
+### Filled Button (Light)
+
+**Role:** Download buttons, primary calls to action
+
+Background Factory Light Gray (#eeeeee), text Factory Black (#020202). Border color Ash Gray (#a49d9a). Padding 0 vertically, 12px horizontally. Radius 4px. Font Geist, 16px, 400 weight.
+
+### Filled Button (Dark)
+
+**Role:** Download buttons, primary calls to action (alternative)
+
+Background Factory Black (#020202), text Factory Black (#020202). Border color Ash Gray (#a49d9a). Padding 6px vertically, 12px horizontally. Radius 8px. The dark background with dark text is counter-intuitive for contrast, suggesting a specific functional or state-based context.
+
+### List Item Card
+
+**Role:** Content blocks in feature sections
+
+Transparent background, no shadow, 0px border radius. Padding 0 vertically, 16px horizontally. Used as a container for grouped information. Text uses Factory Black (#020202).
+
+### Elevated Content Card
+
+**Role:** Featured content blocks, forms, interactive elements
+
+Background Faded Silver (#fafafa), no shadow, 6px border radius. Padding 16px vertically, 0 horizontally. Provides a slight visuallift from the main background.
+
+### Code Input Block
+
+**Role:** CLI instruction display, interactive code examples
+
+Background Factory Light Gray (#eeeeee), no shadow, 6px border radius. Padding 0. Contains monospaced text for commands. May feature interactive elements like a copy button.
+
+### 'NEW' Badge
+
+**Role:** Highlights new features or content
+
+Transparent background, text Code Orange (#ef6f2e). Radius 0px, padding 0. Appears as a small, vivid text label next to titles, using Geist Mono 12px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Factory Black (#020202) for primary text and Factory Light Gray (#eeeeee) for background, ensuring AAA contrast.
 - Apply Geist font consistently for all UI text, utilizing negative letter-spacing for large headlines (e.g., -0.0480em at 60px) to achieve a condensed, precise appearance.
@@ -92,7 +195,7 @@ Factory.ai embraces a 'technical brutalism meets digital precision' aesthetic, p
 - Maintain a default border radius of 4px for buttons and form elements, extending to 6px for elevated cards.
 - Ensure consistent vertical spacing of 24px and horizontal elements gaps of 12px or 8px using the base 4px unit.
 
-### Don'ts
+### Don't
 
 - Avoid using chromatic colors beyond Code Orange (#ef6f2e) to maintain the stark, technical aesthetic.
 - Do not introduce shadows or complex gradients; rely on color and typography for hierarchy and depth.
@@ -102,10 +205,129 @@ Factory.ai embraces a 'technical brutalism meets digital precision' aesthetic, p
 - Avoid arbitrary text styling (bolding, italics); rely on the established type scale (Geist, 400 weight) for hierarchy.
 - Do not deviate from the specified negative letter-spacing values, especially for headlines, as it is a core characteristic of the brand's typography.
 
-### Layout
+## Imagery
+
+The visual language for imagery is primarily functional and technical, leaning heavily on abstract conceptual graphics, UI screenshots, and code blocks. Product screenshots are contained within precise, slightly rounded frames, often featuring stylized UI elements rather than raw interfaces. Graphics are typically monochromatic or use a limited palette, often employing dotted patterns (like the 'grid' in the hero section) and stark lines. There's an absence of photography or human elements, focusing instead on the tools and concepts of software development. Imagery serves an explanatory role, illustrating functionality or abstracting complex ideas, with a high density relative to other pure UI sites.
+
+## Layout
 
 The page structure employs a full-width layout with a primary content area constrained by a clear maximum width, centered on the screen. The hero section is a split two-column design: text-dominant on the left with a headline and descriptive copy, and abstract/UI visuals on the right, punctuated by sparse dot patterns. Sections generally follow a consistent vertical rhythm, often alternating between text-heavy content and content paired with product screenshots or conceptual graphics, typically in a two-column arrangement (text left, image right, or vice versa). There are occasional three-column card grids for presenting features or articles. The navigation is a persistent top bar, clean and functional, with a clear separation of branding and menu items. The layout emphasizes clarity and content organization, feeling spacious yet structured.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is primarily functional and technical, leaning heavily on abstract conceptual graphics, UI screenshots, and code blocks. Product screenshots are contained within precise, slightly rounded frames, often featuring stylized UI elements rather than raw interfaces. Graphics are typically monochromatic or use a limited palette, often employing dotted patterns (like the 'grid' in the hero section) and stark lines. There's an absence of photography or human elements, focusing instead on the tools and concepts of software development. Imagery serves an explanatory role, illustrating functionality or abstracting complex ideas, with a high density relative to other pure UI sites.
+- **Vercel** — Monochromatic color palette with a single bright accent color and a focus on developer tools and precise typography.
+- **Linear** — Minimalist UI with high-contrast text on light backgrounds and a strong emphasis on functional, clear typography.
+- **Tailwind CSS** — Documentation-heavy site with a preference for stark neutrals, code blocks, and a straightforward, unadorned aesthetic.
+- **Supabase** — Developer-focused design with clear content separation, dark-on-light theme, and precise type choices for readability.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-factory-black: #020202;
+  --color-factory-light-gray: #eeeeee;
+  --color-faded-silver: #fafafa;
+  --color-cool-gray: #b8b3b0;
+  --color-graphite: #3d3a39;
+  --color-ash-gray: #a49d9a;
+  --color-code-orange: #ef6f2;
+  --font-geist: 'Geist', Inter;
+  --font-geist-mono: 'Geist Mono', JetBrains Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.24px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -2.3px;
+  --text-display: 60px;
+  --leading-display: 1;
+  --tracking-display: -2.88px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-cards: 6px;
+  --radius-header: 0px;
+  --radius-buttons: 4px;
+  --radius-default: 4px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-factory-black: #020202;
+  --color-factory-light-gray: #eeeeee;
+  --color-faded-silver: #fafafa;
+  --color-cool-gray: #b8b3b0;
+  --color-graphite: #3d3a39;
+  --color-ash-gray: #a49d9a;
+  --color-code-orange: #ef6f2;
+  --font-geist: 'Geist', Inter;
+  --font-geist-mono: 'Geist Mono', JetBrains Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.24px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -2.3px;
+  --text-display: 60px;
+  --leading-display: 1;
+  --tracking-display: -2.88px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-cards: 6px;
+  --radius-header: 0px;
+  --radius-buttons: 4px;
+  --radius-default: 4px;
+}
+```

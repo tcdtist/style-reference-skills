@@ -1,44 +1,136 @@
 ---
 version: alpha
-name: Faculty Department
-description: Faculty Department establishes a refined editorial aesthetic with a warm, desaturated canvas and minimalist, text-focused layouts. The design emphasizes clear information hierarchy through understated typography and subtle visual separation, using fine hairline borders rather than heavy containers or shadows. The overall impression is one of calm restraint, allowing content to take precedence, supported by a muted background palette and precise typographic detailing.
-colors:
-  parchment: "#f2efe3"
-  card-ivory: "#ffffff"
-  text-black: "#000000"
-  headline-ink: "#222222"
-  muted-ash: "#6a6a6a"
-  divider-clay: "#dad9cd"
-  accent-blue-gray: "#abb8c3"
-  header-linen: "#FCF9EE"
-typography:
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.31
-spacing:
-  elementGap: 16px
-  sectionGap: 48px
-components:
-  navigation-link:
-    role: Top navigation items and inline text links.
-  story-item-header:
-    role: Title for individual stories or entries.
-  story-item-description:
-    role: Descriptive text accompanying a story header.
-  view-more-link:
-    role: Call to action for expanding content.
-  grid-item-card:
-    role: Containers for image-less content previews in a grid layout.
+name: "Faculty Department"
+description: "Faculty Department establishes a refined editorial aesthetic with a warm, desaturated canvas and minimalist, text-focused layouts. The design emphasizes clear information hierarchy through understated typography and subtle visual separation, using fine hairline borders rather than heavy containers or shadows. The overall impression is one of calm restraint, allowing content to take precedence, supported by a muted background palette and precise typographic detailing."
+theme: "light"
+industry: "media"
+source_url: "https://facultydept.com"
+refero_style_id: "11764fe0-e246-4b17-b3fb-a5d567466355"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509558570-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509558570-thumb.jpg"
+extracted_at: "2026-04-30T00:39:53.794Z"
 ---
 
-## Overview
+# Faculty Department — Style Reference
 
-**North Star:** Warm parchment archive.
+> Warm parchment archive.
+
+**Theme:** light
+
+**Industry:** media
 
 Faculty Department establishes a refined editorial aesthetic with a warm, desaturated canvas and minimalist, text-focused layouts. The design emphasizes clear information hierarchy through understated typography and subtle visual separation, using fine hairline borders rather than heavy containers or shadows. The overall impression is one of calm restraint, allowing content to take precedence, supported by a muted background palette and precise typographic detailing.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment | #f2efe3 | `--color-parchment` | Primary page background, content blocks |
+| Card Ivory | #ffffff | `--color-card-ivory` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Text Black | #000000 | `--color-text-black` | Primary text, strong headings, active link text, and prominent borders |
+| Headline Ink | #222222 | `--color-headline-ink` | Secondary headings, emphasizing content without the starkness of pure black |
+| Muted Ash | #6a6a6a | `--color-muted-ash` | Body text for secondary information, muted links, and descriptive captions |
+| Divider Clay | #dad9cd | `--color-divider-clay` | Fine line dividers, subtle borders, and section backgrounds |
+| Accent Blue-Gray | #abb8c3 | `--color-accent-blue-gray` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+| Header Linen | #FCF9EE | `--color-header-linen` | Specific background for the top navigation header |
+
+## Tokens — Typography
+
+### Tiempos-Text
+
+- **Token:** `--font-tiempos-text`
+- **Substitute:** Source Serif 4
+- **Weights:** 400
+- **Sizes:** 9px, 11px, 16px
+- **Line heights:** 1.00, 1.15, 1.64, 1.67
+- **Role:** Body copy, navigation links, and descriptive text. Its moderate letter spacing and varied line heights support readability across small and medium text blocks. The 9px size is used for very fine print like dates, 11px for secondary body text, and 16px as the standard long-form body.
+
+### Tiempos-Headline
+
+- **Token:** `--font-tiempos-headline`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 13px, 17px, 19px
+- **Line heights:** 1.29, 1.30, 1.31, 1.32
+- **Role:** Headings and prominent titles. The consistent 400 weight across different sizes creates a soft, editorial feel, avoiding the harshness of bold headlines for a more reserved brand voice. The 13px size is used for subheadings, 17px for mid-level story titles, and 19px for primary section titles.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| heading | 19px | 1.31 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-62 | 62px | `--spacing-62` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top navigation items and inline text links.
+
+Uses Tiempos-Text, 16px, weight 400, color Text Black (#000000). Underlined on hover with a 1px solid Text Black border.
+
+### Story Item Header
+
+**Role:** Title for individual stories or entries.
+
+Tiempos-Headline, 19px, weight 400, color Text Black (#000000). Followed by a 1px solid Text Black (#000000) line divider, 16px vertical padding around the text, and additional 14px margin-top.
+
+### Story Item Description
+
+**Role:** Descriptive text accompanying a story header.
+
+Tiempos-Text, 11px, weight 400, color Muted Ash (#6a6a6a). Rendered below a thin divider, with 9px vertical padding.
+
+### View More Link
+
+**Role:** Call to action for expanding content.
+
+Tiempos-Text, 11px, weight 400, color Text Black (#000000). Underlined with a 1px solid Text Black (#000000) border, right-aligned to content.
+
+### Grid Item Card
+
+**Role:** Containers for image-less content previews in a grid layout.
+
+Background color Card Ivory (#ffffff) with 0px border-radius and no box-shadow. Content within has 16px padding on all sides. Item titles use Tiempos-Headline, 17px, weight 400, color Text Black (#000000).
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize the Parchment (#f2efe3) background as the primary canvas for most content sections.
 - Use Text Black (#000000) minimally for primary text and significant headings to maintain contrast on the warm background.
@@ -48,7 +140,7 @@ Faculty Department establishes a refined editorial aesthetic with a warm, desatu
 - Ensure all interactive text elements use Tiempos-Text, 16px, weight 400, color Text Black (#000000) and are underlined on hover to denote interactivity.
 - Prefer the 0px border-radius for all elements, maintaining a sharp, structured aesthetic.
 
-### Don'ts
+### Don't
 
 - Avoid using bold or heavy font weights for headlines; use Tiempos-Headline at weight 400 exclusively for titles.
 - Do not introduce strong accent colors; leverage the existing desaturated neutrals and subtle brand colors.
@@ -58,10 +150,103 @@ Faculty Department establishes a refined editorial aesthetic with a warm, desatu
 - Do not vary color for links unless it’s the default browser blue; all links should be Text Black (#000000) or Muted Ash (#6a6a6a).
 - Do not use rounded corners on any UI elements. The design consistently employs sharp, 0px radii.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Parchment Canvas | #f2efe3 | Primary page background, large content areas. |
+| 1 | Divider Clay | #dad9cd | Subtle background for footer and secondary blocks, providing slight depth. |
+| 2 | Card Ivory | #ffffff | Background for feature cards, standing out from the canvas. |
+
+## Imagery
+
+The site predominantly uses minimalistic imagery, focusing on photography of objects or abstract concepts when visuals are present. Product images are typically presented in a contained, isolated manner without complex backgrounds or lifestyle context. There are no heavy illustrations or 3D renders. Icons are absent from active UI, contributing to the text-dominant, editorial aesthetic. When imagery is implied in content areas (like the grid cards), it is subtle, suggesting a placeholder for future content rather than a defined asset type.
+
+## Layout
 
 The page adheres to a maximal-width fluid layout for its main content, with a centered implied column for text. The header is a sticky, full-width top bar. The hero section is characterized by a centered, multi-line headline and descriptive text, followed by an immediate transition into list-based content. Sections are clearly delineated by consistent vertical spacing (48px) and fine hairline borders for content grouping. The primary content presentation uses sequential, stacked information blocks, often with a prominent title, a number, and a descriptive subtitle. A three-column grid is used for 'Selected Stories' or similar feature listings, where each card acts as a contained content unit, prioritizing an image placeholder (though none are currently visible) and text.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses minimalistic imagery, focusing on photography of objects or abstract concepts when visuals are present. Product images are typically presented in a contained, isolated manner without complex backgrounds or lifestyle context. There are no heavy illustrations or 3D renders. Icons are absent from active UI, contributing to the text-dominant, editorial aesthetic. When imagery is implied in content areas (like the grid cards), it is subtle, suggesting a placeholder for future content rather than a defined asset type.
+- **A24's editorial journal** — Shares a similar text-dominant, high-contrast, yet muted editorial aesthetic with a focus on written content and subtle visual hierarchy.
+- **Kinfolk Magazine online** — Features a comparable appreciation for negative space, warm neutrals, and understated typography to convey a refined, lifestyle-oriented brand.
+- **Aesop (blog/editorial section)** — Mimics the elegant simplicity, minimal use of color, and emphasis on quality photography and precise typographic detail.
+- **The New York Times (magazine section)** — Employs an editorial grid, careful typographic pairings, and a focus on content without overly decorative UI elements. Contrast between headline weights and body text creates visual interest over bold colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment: #f2efe3;
+  --color-card-ivory: #ffffff;
+  --color-text-black: #000000;
+  --color-headline-ink: #222222;
+  --color-muted-ash: #6a6a6a;
+  --color-divider-clay: #dad9cd;
+  --color-accent-blue-gray: #abb8c3;
+  --color-header-linen: #FCF9EE;
+  --font-tiempos-text: 'Tiempos-Text', Source Serif 4;
+  --font-tiempos-headline: 'Tiempos-Headline', Playfair Display;
+  --text-heading: 19px;
+  --leading-heading: 1.31;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-62: 62px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --radius-default: 0px;
+  --surface-parchment-canvas: #f2efe3;
+  --surface-divider-clay: #dad9cd;
+  --surface-card-ivory: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment: #f2efe3;
+  --color-card-ivory: #ffffff;
+  --color-text-black: #000000;
+  --color-headline-ink: #222222;
+  --color-muted-ash: #6a6a6a;
+  --color-divider-clay: #dad9cd;
+  --color-accent-blue-gray: #abb8c3;
+  --color-header-linen: #FCF9EE;
+  --font-tiempos-text: 'Tiempos-Text', Source Serif 4;
+  --font-tiempos-headline: 'Tiempos-Headline', Playfair Display;
+  --text-heading: 19px;
+  --leading-heading: 1.31;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-62: 62px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --radius-default: 0px;
+  --surface-parchment-canvas: #f2efe3;
+  --surface-divider-clay: #dad9cd;
+  --surface-card-ivory: #ffffff;
+}
+```

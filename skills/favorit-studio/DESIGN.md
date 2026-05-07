@@ -1,65 +1,130 @@
 ---
 version: alpha
-name: Favorit Studio
-description: Favorit Studio employs a stark and confident editorial aesthetic, blending classic serif headlines with a modern sans-serif for body text and navigation. The design emphasizes high contrast monochrome surfaces with minimal visual embellishment, allowing crisp typography and bold photography to dominate. Interactive elements are subtle, relying on text and slight border changes rather than color fills, creating an atmosphere of understated luxury and directness.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-  swiper-accent: "#007aff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: -0.14px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.2
-    letterSpacing: -0.39px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1.2
-    letterSpacing: -1.1px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 55px
-    lineHeight: 1.2
-    letterSpacing: -1.375px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 135px
-    lineHeight: 1
-    letterSpacing: -3.375px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 179px
-    lineHeight: 1
-    letterSpacing: -4.475px
-spacing:
-  elementGap: 21px
-  sectionGap: 46px
-components:
-  ghost-button-light-bg:
-    role: Primary Call to Action, Navigation Item
-  ghost-button-dark-bg:
-    role: Primary Call to Action, Navigation Item
-  main-navigation-item:
-    role: Top-level navigation links
-  headline-display:
-    role: Hero Section Headlines, Major Section Titles
-  body-text-block:
-    role: Paragraphs, Detailed descriptions
+name: "Favorit Studio"
+description: "Favorit Studio employs a stark and confident editorial aesthetic, blending classic serif headlines with a modern sans-serif for body text and navigation. The design emphasizes high contrast monochrome surfaces with minimal visual embellishment, allowing crisp typography and bold photography to dominate. Interactive elements are subtle, relying on text and slight border changes rather than color fills, creating an atmosphere of understated luxury and directness."
+theme: "light"
+industry: "design"
+source_url: "https://favorit.studio"
+refero_style_id: "7e03ab3b-1344-43d7-a7c4-2f31395758ae"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515135707-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515135707-thumb.jpg"
+extracted_at: "2026-04-30T02:12:35.984Z"
 ---
 
-## Overview
+# Favorit Studio — Style Reference
 
-**North Star:** High-contrast editorial canvas – bold, no-nonsense.
+> High-contrast editorial canvas – bold, no-nonsense.
+
+**Theme:** light
+
+**Industry:** design
 
 Favorit Studio employs a stark and confident editorial aesthetic, blending classic serif headlines with a modern sans-serif for body text and navigation. The design emphasizes high contrast monochrome surfaces with minimal visual embellishment, allowing crisp typography and bold photography to dominate. Interactive elements are subtle, relying on text and slight border changes rather than color fills, creating an atmosphere of understated luxury and directness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Swiper Accent | #007aff | `--color-swiper-accent` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### TWKLausanne
+
+- **Token:** `--font-twklausanne`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 14px, 23px, 135px, 159px, 189px
+- **Line heights:** 1.00, 1.20
+- **Letter spacing:** -0.0250em, -0.0170em, -0.0100em
+- **Role:** The primary workhorse sans-serif for navigation, body text, and expressive large-scale headlines. Its consistent weight across varied sizes establishes a contemporary yet approachable tone.
+
+### Favorit Times
+
+- **Token:** `--font-favorit-times`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 44px, 55px, 179px
+- **Line heights:** 1.00, 1.20
+- **Letter spacing:** -0.0250em
+- **Role:** Used for distinctive, large-format headlines and brand elements, this serif font provides a classic, editorial counterpoint to the sans-serif, infusing gravitas and visual weight without adding additional colors or ornaments.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.2 | -0.14px | `--text-caption` |
+| body | 23px | 1.2 | -0.39px | `--text-body` |
+| heading-sm | 44px | 1.2 | -1.1px | `--text-heading-sm` |
+| heading | 55px | 1.2 | -1.375px | `--text-heading` |
+| heading-lg | 135px | 1 | -3.375px | `--text-heading-lg` |
+| display | 179px | 1 | -4.475px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-47 | 47px | `--spacing-47` |
+| spacing-54 | 54px | `--spacing-54` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 46px |
+| cardPadding | 16px |
+| elementGap | 21px |
+
+## Components
+
+### Ghost Button (Light BG)
+
+**Role:** Primary Call to Action, Navigation Item
+
+Text-only button with a transparent background, primary text color #000000, and no border radius. Used for interactive elements on light backgrounds, maintaining a minimal aesthetic. No padding specified by extracted data.
+
+### Ghost Button (Dark BG)
+
+**Role:** Primary Call to Action, Navigation Item
+
+Text-only button with a transparent background, primary text color #ffffff and no border radius. Used for interactive elements within dark sections, maintaining a minimal aesthetic. Padding of 16px on all sides.
+
+### Main Navigation Item
+
+**Role:** Top-level navigation links
+
+Typography set in TWKLausanne regular, often with implied padding around text. No explicit background or border, relying on stark contrast for definition. Appears with padding of 21px right/left and 47px top/bottom in some contexts.
+
+### Headline Display
+
+**Role:** Hero Section Headlines, Major Section Titles
+
+Employs Favorit Times, weight 400, at very large sizes (179px, 55px, 44px) with tight letter-spacing (-0.0250em) to create a bold, impactful statement. Typically rendered in Midnight Ink (#000000) on Canvas White (#ffffff).
+
+### Body Text Block
+
+**Role:** Paragraphs, Detailed descriptions
+
+Rendered in TWKLausanne, weight 400, in Midnight Ink (#000000) on a Canvas White (#ffffff) background. Offers high readability for substantial content, with comfortable line height and standard letter spacing.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast between text and background using only Midnight Ink (#000000) and Canvas White (#ffffff).
 - Use TWKLausanne for all body text, navigation elements, and secondary headlines at weight 400.
@@ -69,7 +134,7 @@ Favorit Studio employs a stark and confident editorial aesthetic, blending class
 - Maintain comfortable density for sections by using a section gap of 46px and element gaps of 21px.
 - Accentuate interactive elements and active states through border changes or the 'Swiper Accent' color (#007aff) within designated components.
 
-### Don'ts
+### Don't
 
 - Do not introduce soft shadows or complex elevation schemes; rely on hard visual breaks and direct contrast.
 - Avoid using multiple colors for text or backgrounds; the palette is strictly monochrome with a single accent.
@@ -78,10 +143,95 @@ Favorit Studio employs a stark and confident editorial aesthetic, blending class
 - Do not use gradients or complex background patterns; backgrounds should be flat Canvas White (#ffffff) or Midnight Ink (#000000).
 - Avoid decorative icons or illustrations that are not strictly black and white; visual content should align with the stark aesthetic.
 
-### Layout
+## Imagery
+
+Photography is central, featuring a stark, minimalist aesthetic. It typically focuses on a single subject, often a person, shot against a plain, light background with neutral or achromatic color palettes. The treatment is full-bleed or large contained blocks, with sharp edges and no overlap. Imagery serves purely decorative and atmospheric purposes, creating a mood rather than conveying specific information. There are no illustrations or complex graphical elements; the focus is on clean photography and typography.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though specific hero sections may appear full-bleed. The hero pattern features large, imposing typography (Favorit Times) often layered directly over or immediately adjacent to minimalist photography. Section rhythm is driven by strong vertical separation and high-contrast typography, creating distinct content blocks without explicit dividers. Content arrangement leans towards large, singular visual statements combined with textual hierarchy, using implicit grid structures for text blocks and navigation where elements are well-spaced and distinct. Navigation is minimal, typically a sticky header with a simple menu icon that expands to a full-screen overlay.
 
-### Imagery
+## Similar Brands
 
-Photography is central, featuring a stark, minimalist aesthetic. It typically focuses on a single subject, often a person, shot against a plain, light background with neutral or achromatic color palettes. The treatment is full-bleed or large contained blocks, with sharp edges and no overlap. Imagery serves purely decorative and atmospheric purposes, creating a mood rather than conveying specific information. There are no illustrations or complex graphical elements; the focus is on clean photography and typography.
+- **Agency TK** — Shares the stark, minimalist aesthetic with high-contrast typography and large, editorial-style imagery.
+- **Marius Roosendaal** — Similar use of black and white photography, prominent serif type for headlines, and minimal, ghost-like interactive elements.
+- **Basic Theory** — Employs an elevated, minimalist feel largely in black and white, relying on strong typography and understated UI.
+- **Studio VØ** — Features a strong emphasis on large, impactful imagery and black text on a white canvas, creating an artistic, editorial mood.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-swiper-accent: #007aff;
+  --font-twklausanne: 'TWKLausanne', system-ui, sans-serif;
+  --font-favorit-times: 'Favorit Times', serif;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.14px;
+  --text-body: 23px;
+  --leading-body: 1.2;
+  --tracking-body: -0.39px;
+  --text-heading-sm: 44px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -1.1px;
+  --text-heading: 55px;
+  --leading-heading: 1.2;
+  --tracking-heading: -1.375px;
+  --text-heading-lg: 135px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -3.375px;
+  --text-display: 179px;
+  --leading-display: 1;
+  --tracking-display: -4.475px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-21: 21px;
+  --spacing-46: 46px;
+  --spacing-47: 47px;
+  --spacing-54: 54px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-swiper-accent: #007aff;
+  --font-twklausanne: 'TWKLausanne', system-ui, sans-serif;
+  --font-favorit-times: 'Favorit Times', serif;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.14px;
+  --text-body: 23px;
+  --leading-body: 1.2;
+  --tracking-body: -0.39px;
+  --text-heading-sm: 44px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -1.1px;
+  --text-heading: 55px;
+  --leading-heading: 1.2;
+  --tracking-heading: -1.375px;
+  --text-heading-lg: 135px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -3.375px;
+  --text-display: 179px;
+  --leading-display: 1;
+  --tracking-display: -4.475px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-21: 21px;
+  --spacing-46: 46px;
+  --spacing-47: 47px;
+  --spacing-54: 54px;
+  --radius-all: 0px;
+}
+```
