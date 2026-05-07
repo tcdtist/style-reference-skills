@@ -1,62 +1,140 @@
 ---
 version: alpha
-name: Alt–Border
-description: Alt-Border embodies a minimalist art gallery aesthetic: stark white canvases juxtaposed with deep black text and hairline dividers. Layouts are tight and grid-based, preferring dense information presentation over expansive negative space. Typography is critical, using a precise, narrow sans-serif at varying weights for an intellectual and assertive tone. The visual system emphasizes content, with images acting as art pieces within structured frames, devoid of soft shadows or chromatic accents, relying on sharp contrast and precise alignment to communicate a high-end, curated feel.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  charcoal-grey: "#333333"
-  pale-stone: "#808080"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1
-    letterSpacing: -0.38px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1
-    letterSpacing: -0.57px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1
-    letterSpacing: -0.92px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 105px
-    lineHeight: 0.85
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 120px
-    lineHeight: 1
-    letterSpacing: -1.4px
-spacing:
-  cardRadius: 10px
-  elementGap: 9px
-  sectionGap: 48px
-components:
-  navigation-link:
-    role: Primary site navigation, secondary links like 'Read more'
-  ghost-button:
-    role: Actionable text that blends into surrounds but indicates interaction
-  image-grid-card:
-    role: Displaying project thumbnails and content previews in a masonry-style grid
-  content-section-headline:
-    role: Breaking up content sections with prominent descriptive text
-  dividing-line:
-    role: Subtle visual separation between content blocks or navigation items
+name: "Alt–Border"
+description: "Alt-Border embodies a minimalist art gallery aesthetic: stark white canvases juxtaposed with deep black text and hairline dividers. Layouts are tight and grid-based, preferring dense information presentation over expansive negative space. Typography is critical, using a precise, narrow sans-serif at varying weights for an intellectual and assertive tone. The visual system emphasizes content, with images acting as art pieces within structured frames, devoid of soft shadows or chromatic accents, relying on sharp contrast and precise alignment to communicate a high-end, curated feel."
+theme: "light"
+industry: "design"
+source_url: "https://www.alt-border.com"
+refero_style_id: "5fd2cdc0-05ac-4290-b67c-72e7525a532c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513840718-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513840718-thumb.jpg"
+extracted_at: "2026-04-30T01:51:17.768Z"
 ---
 
-## Overview
+# Alt–Border — Style Reference
 
-**North Star:** monochromatic minimalist gallery
+> monochromatic minimalist gallery
+
+**Theme:** light
+
+**Industry:** design
 
 Alt-Border embodies a minimalist art gallery aesthetic: stark white canvases juxtaposed with deep black text and hairline dividers. Layouts are tight and grid-based, preferring dense information presentation over expansive negative space. Typography is critical, using a precise, narrow sans-serif at varying weights for an intellectual and assertive tone. The visual system emphasizes content, with images acting as art pieces within structured frames, devoid of soft shadows or chromatic accents, relying on sharp contrast and precise alignment to communicate a high-end, curated feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, active text color for ghost buttons |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, headings, strong borders, ghost button borders |
+| Charcoal Grey | #333333 | `--color-charcoal-grey` | Secondary text, muted borders, subtle visual breaks in content |
+| Pale Stone | #808080 | `--color-pale-stone` | Decorative borders for content frames, subtle dividers |
+
+## Tokens — Typography
+
+### Inferi
+
+- **Token:** `--font-inferi`
+- **Substitute:** Georgia
+- **Weights:** 200, 300, 400
+- **Sizes:** 14px, 21px, 34px, 120px
+- **Line heights:** 1.00, 2.00
+- **Letter spacing:** -1.4
+- **Role:** Headlines, navigation links, and content area text — a precise, narrow serif that brings a high-fashion editorial feel through its controlled tracking and varied weights. Weight 200/300 for a whispered authority, 400 for structural content.
+
+### Neuehaasdisplay
+
+- **Token:** `--font-neuehaasdisplay`
+- **Substitute:** Helvetica Neue
+- **Weights:** 300
+- **Sizes:** 105px
+- **Line heights:** 0.85, 0.92
+- **Letter spacing:** 0
+- **Role:** Large display headings and hero statements — its extra-condensed, light weight provides architectural rigor and a striking impact at large sizes, drawing immediate attention.
+
+### Suisseintl
+
+- **Token:** `--font-suisseintl`
+- **Substitute:** Inter
+- **Weights:** 300
+- **Sizes:** 21px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.57
+- **Role:** Body text and descriptive content — a clean, legible sans-serif for reading, maintaining a modern and unobtrusive presence with its light weight.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1 | -0.38px | `--text-caption` |
+| body | 21px | 1 | -0.57px | `--text-body` |
+| subheading | 34px | 1 | -0.92px | `--text-subheading` |
+| heading | 105px | 0.85 | 0px | `--text-heading` |
+| display | 120px | 1 | -1.4px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| images | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 9px |
+| elementGap | 9px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary site navigation, secondary links like 'Read more'
+
+Text in Inferi weight 200-300, color Ink Black, with 5px padding-bottom that serves as a visual hit area. No background or distinct border, relying on spacing and context for discoverability.
+
+### Ghost Button
+
+**Role:** Actionable text that blends into surrounds but indicates interaction
+
+Transparent background with Ink Black text, 0px border-radius, no padding defined. Primarily used for navigational elements like '← Previous' and '→ Next' to maintain visual lightness.
+
+### Image Grid Card
+
+**Role:** Displaying project thumbnails and content previews in a masonry-style grid
+
+Each image within a 1px solid Pine Stone border, with 10px corner radius. Image titles below use Ink Black text at a small size (e.g., 14px Inferi weight 200). Content cards are themselves containers, often arranged in dense grids.
+
+### Content Section Headline
+
+**Role:** Breaking up content sections with prominent descriptive text
+
+Large text using Inferi weight 300, color Ink Black, typically around 34px, with a negative letter-spacing for a condensed look. Often paired with a subtle Charcoal Grey border-bottom as a visual separator.
+
+### Dividing Line
+
+**Role:** Subtle visual separation between content blocks or navigation items
+
+A 1px solid Charcoal Grey or Pine Stone line, typically full-width or extending to frame specific content, providing structure without heaviness.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Neuehaasdisplay 300 at extremely large sizes (e.g., 105px) for hero headlines to maximize immediate visual impact.
 - Use Inferi across all typographic elements that require controlled, refined elegance, adjusting weights (200-400) for hierarchy but maintaining its signature narrow tracking.
@@ -66,7 +144,7 @@ Alt-Border embodies a minimalist art gallery aesthetic: stark white canvases jux
 - Apply a 10px border-radius consistently to all image frames and contained card components to soften hard edges slightly.
 - Keep backgrounds minimal and pure, primarily using Canvas White (#ffffff) as the dominant surface for all content.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or elevation effects; elements should rely on borders and spatial separation for hierarchy.
 - Do not introduce chromatic colors for UI elements; the palette is strictly monochromatic with white, black, and grays.
@@ -75,10 +153,101 @@ Alt-Border embodies a minimalist art gallery aesthetic: stark white canvases jux
 - Avoid decorative gradients or background images that would disrupt the clean, high-contrast, text-forward aesthetic.
 - Do not use generic sans-serifs where a custom font is specified; the precise character of Inferi and Neuehaasdisplay is foundational to the brand.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Primary page background and default surface for all content blocks |
+
+## Imagery
+
+This design system heavily features high-end, editorial-style photography and CGI renders. Images are typically contained within a solid border (Ink Black or Pale Stone) and a 10px border-radius, presenting them like curated art pieces. They are product-focused or abstract, often featuring clean, stark backgrounds that complement the overall minimalism. There is a strong emphasis on visual storytelling through the images themselves, with minimal text overlay. Icons are absent from standard UI, with the focus solely on photographic and CGI content for visual flair. Image density is high, with large, prominent images dominating sections, but always within a structured layout.
+
+## Layout
 
 The site employs a primarily contained, max-width layout for its textual content, but images frequently break free to fill horizontal space, creating a dynamic visual flow. The hero section often features a large-scale headline (Neuehaasdisplay) over a white background with interspersed small, decorative thumbnails. Sections maintain a consistent vertical rhythm, separated by clean horizontal dividers (Charcoal Grey lines). Content is arranged in structured grids, such as 3-column image grids for projects, or 2-column layouts for text-and-image features. The layout feels dense and information-rich yet highly organized, maintaining a strict grid alignment. Navigation is a minimalist top bar with text links.
 
-### Imagery
+## Similar Brands
 
-This design system heavily features high-end, editorial-style photography and CGI renders. Images are typically contained within a solid border (Ink Black or Pale Stone) and a 10px border-radius, presenting them like curated art pieces. They are product-focused or abstract, often featuring clean, stark backgrounds that complement the overall minimalism. There is a strong emphasis on visual storytelling through the images themselves, with minimal text overlay. Icons are absent from standard UI, with the focus solely on photographic and CGI content for visual flair. Image density is high, with large, prominent images dominating sections, but always within a structured layout.
+- **AIGA (American Institute of Graphic Arts)** — Shared minimalist white-space aesthetic, strong typographic focus with large, condensed headlines, and grid-based content presentation.
+- **Kerning City** — Similar emphasis on editorial-style typography, particularly narrow sans-serifs, and a clean, high-contrast black-and-white color scheme.
+- **The Brand Identity** — Utilizes a comparable monochromatic palette with strong typographic hierarchy, clean layouts, and a focus on high-quality visual content presentation over complex UI elements.
+- **Actual Source** — Another studio that uses large, impactful typography, grid systems, and a strict, often black and white, visual language to showcase creative work.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-charcoal-grey: #333333;
+  --color-pale-stone: #808080;
+  --font-inferi: 'Inferi', Georgia;
+  --font-neuehaasdisplay: 'Neuehaasdisplay', Helvetica Neue;
+  --font-suisseintl: 'Suisseintl', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1;
+  --tracking-caption: -0.38px;
+  --text-body: 21px;
+  --leading-body: 1;
+  --tracking-body: -0.57px;
+  --text-subheading: 34px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.92px;
+  --text-heading: 105px;
+  --leading-heading: 0.85;
+  --tracking-heading: 0px;
+  --text-display: 120px;
+  --leading-display: 1;
+  --tracking-display: -1.4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-19: 19px;
+  --spacing-48: 48px;
+  --radius-cards: 10px;
+  --radius-images: 10px;
+  --surface-canvas-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-charcoal-grey: #333333;
+  --color-pale-stone: #808080;
+  --font-inferi: 'Inferi', Georgia;
+  --font-neuehaasdisplay: 'Neuehaasdisplay', Helvetica Neue;
+  --font-suisseintl: 'Suisseintl', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1;
+  --tracking-caption: -0.38px;
+  --text-body: 21px;
+  --leading-body: 1;
+  --tracking-body: -0.57px;
+  --text-subheading: 34px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.92px;
+  --text-heading: 105px;
+  --leading-heading: 0.85;
+  --tracking-heading: 0px;
+  --text-display: 120px;
+  --leading-display: 1;
+  --tracking-display: -1.4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-19: 19px;
+  --spacing-48: 48px;
+  --radius-cards: 10px;
+  --radius-images: 10px;
+  --surface-canvas-white: #ffffff;
+}
+```

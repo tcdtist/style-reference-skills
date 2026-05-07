@@ -1,48 +1,112 @@
 ---
 version: alpha
-name: Anacuna
-description: Anacuna embodies a striking 'digital Brutalism' aesthetic: stark contrast of black text on a generous white canvas, punctuated by ultra-minimalist interaction elements. Typography is primary, dominating the visual field with large, bold characters and precise tracking. Subtle borders and a single playful accent color soften the edges of this otherwise stark, information-dense interface, creating an experience that is both direct and distinctively artistic.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  flamingo-pink: "#ffc8c8"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.11
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 31px
-    lineHeight: 1.11
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 94px
-    lineHeight: 1
-    letterSpacing: 0px
-spacing:
-  buttonRadius: 27.4285px
-  elementGap: 7px
-components:
-  navigation-button:
-    role: Secondary navigation and utility buttons
-  brand-tag:
-    role: Primary brand identifier button in the header
-  section-separator:
-    role: Visual division between list items and main content sections
-  headline-link-with-tag:
-    role: Main content items combining a large headline with an associated descriptive tag
+name: "Anacuna"
+description: "Anacuna embodies a striking 'digital Brutalism' aesthetic: stark contrast of black text on a generous white canvas, punctuated by ultra-minimalist interaction elements. Typography is primary, dominating the visual field with large, bold characters and precise tracking. Subtle borders and a single playful accent color soften the edges of this otherwise stark, information-dense interface, creating an experience that is both direct and distinctively artistic."
+theme: "light"
+industry: "design"
+source_url: "https://anacuna.com"
+refero_style_id: "bb961b10-d437-4023-9201-a44349fe591f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513420388-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513420388-thumb.jpg"
+extracted_at: "2026-04-30T01:44:03.637Z"
 ---
 
-## Overview
+# Anacuna — Style Reference
 
-**North Star:** Type-first stark canvas
+> Type-first stark canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Anacuna embodies a striking 'digital Brutalism' aesthetic: stark contrast of black text on a generous white canvas, punctuated by ultra-minimalist interaction elements. Typography is primary, dominating the visual field with large, bold characters and precise tracking. Subtle borders and a single playful accent color soften the edges of this otherwise stark, information-dense interface, creating an experience that is both direct and distinctively artistic.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, default surface color, text backgrounds for contrast within lists |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, borders for all interactive and structural elements, decorative rules for content separation, icon outlines |
+| Flamingo Pink | #ffc8c8 | `--color-flamingo-pink` | Red action color for filled buttons, selected navigation states, and focused conversion moments. |
+
+## Tokens — Typography
+
+### ABCMonumentGrotesk-Regular
+
+- **Token:** `--font-abcmonumentgrotesk-regular`
+- **Substitute:** Space Grotesk, Montserrat, Inter
+- **Weights:** 400
+- **Sizes:** 15px, 31px, 94px
+- **Line heights:** 1.00, 1.11
+- **Letter spacing:** normal
+- **Role:** The sole typeface on the site. Its consistent weight and geometric structure convey directness. Used for all headings, body text, links, and buttons, maintaining a unified visual voice across all content levels. The varied sizes provide hierarchy without relying on weight changes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 15px | 1.11 | 0px | `--text-caption` |
+| body | 31px | 1.11 | 0px | `--text-body` |
+| display | 94px | 1 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-21 | 21px | `--spacing-21` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 27.4285px |
+| buttons | 27.4285px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 14px |
+| elementGap | 7px |
+
+## Components
+
+### Navigation Button
+
+**Role:** Secondary navigation and utility buttons
+
+Ghost button with an Ink Black stroke and default Canvas White background. 27.4285px border radius, 7.71px vertical padding, 13.71px horizontal padding.
+
+### Brand Tag
+
+**Role:** Primary brand identifier button in the header
+
+A filled button with a Flamingo Pink background, Ink Black text, and 27.4285px border radius. 7.71px vertical padding, 13.71px horizontal padding.
+
+### Section Separator
+
+**Role:** Visual division between list items and main content sections
+
+A 1px solid Ink Black border, providing horizontal separation between large text blocks or interactive list items.
+
+### Headline Link with Tag
+
+**Role:** Main content items combining a large headline with an associated descriptive tag
+
+A full-width Ink Black bottom border. The main text is 94px ABCMonumentGrotesk-Regular, followed by a smaller, ghost-style tag (15px ABCMonumentGrotesk-Regular, Ink Black text, Canvas White background, 27.4285px radius, with 7.71px vertical and 13.71px horizontal padding) offset to the right.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use ABCMonumentGrotesk-Regular for all text elements.
 - Apply Ink Black (#000000) for all text color and border strokes.
@@ -52,7 +116,7 @@ Anacuna embodies a striking 'digital Brutalism' aesthetic: stark contrast of bla
 - Maintain a minimum of 7px elementGap for horizontal spacing between inline elements.
 - Pad interactive tags and buttons with 7.71px vertical and 13.71px horizontal padding.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional color beyond Canvas White, Ink Black, and Flamingo Pink.
 - Avoid using drop shadows or complex elevation; maintain a flat, border-driven aesthetic.
@@ -62,10 +126,79 @@ Anacuna embodies a striking 'digital Brutalism' aesthetic: stark contrast of bla
 - Avoid introducing additional fonts or typographic styles; maintain the single, consistent typeface.
 - Do not deviate from the specified border radius; its unusual value is a core brand identifier.
 
-### Layout
+## Imagery
+
+The site uses no traditional imagery beyond text-based logos or tiny decorative icons within specific link contexts. Visuals are entirely driven by typography, layout, and the stark black-and-white contrast. When small graphics are present (e.g., brand logos within tags), they are monochrome and treated as inline text elements.
+
+## Layout
 
 The page uses a full-bleed layout without a max-width container, allowing the main content to span the entire viewport. The hero consists of simple header navigation with a brand tag. The primary content area features large, stacked headlines, each acting as a link, separated by thin horizontal Ink Black rules. Most content is left-aligned, creating a dynamic, newspaper-like column. Navigation is a minimal top-right bar with ghost buttons, consistent across sections.
 
-### Imagery
+## Similar Brands
 
-The site uses no traditional imagery beyond text-based logos or tiny decorative icons within specific link contexts. Visuals are entirely driven by typography, layout, and the stark black-and-white contrast. When small graphics are present (e.g., brand logos within tags), they are monochrome and treated as inline text elements.
+- **Brutalism.js** — Shares the stark black-on-white, raw typography, and minimal interaction design.
+- **Are.na** — Exhibits a similar focus on content containers, text as primary UI, and a near-monochromatic palette with minimal accents.
+- **Studio Dumbar** — Employs bold, editorial typography and high contrast for a strong brand statement, similar to the Anacuna approach.
+- **The Practical Brutalism (design trend)** — Follows the current trend of web brutalism with oversized typography, clear separation lines, and a deliberate lack of ornamentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-flamingo-pink: #ffc8c8;
+  --font-abcmonumentgrotesk-regular: 'ABCMonumentGrotesk-Regular', Space Grotesk, Montserrat, Inter;
+  --text-caption: 15px;
+  --leading-caption: 1.11;
+  --tracking-caption: 0px;
+  --text-body: 31px;
+  --leading-body: 1.11;
+  --tracking-body: 0px;
+  --text-display: 94px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-21: 21px;
+  --radius-tags: 27.4285px;
+  --radius-buttons: 27.4285px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-flamingo-pink: #ffc8c8;
+  --font-abcmonumentgrotesk-regular: 'ABCMonumentGrotesk-Regular', Space Grotesk, Montserrat, Inter;
+  --text-caption: 15px;
+  --leading-caption: 1.11;
+  --tracking-caption: 0px;
+  --text-body: 31px;
+  --leading-body: 1.11;
+  --tracking-body: 0px;
+  --text-display: 94px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-21: 21px;
+  --radius-tags: 27.4285px;
+  --radius-buttons: 27.4285px;
+}
+```
