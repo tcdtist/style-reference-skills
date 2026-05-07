@@ -1,43 +1,114 @@
 ---
 version: alpha
-name: Buzz Usborne
-description: Buzz Usborne's design system presents as a clean, spacious canvas with a playful, yet strong typographic voice. The visual identity relies on a dominant dark gray for text and primary interactive elements, accented by a single vivid violet for subtle button detailing, creating a sense of understated vibrancy. Component surfaces and backgrounds are kept pristine white, emphasizing content and a lightweight feel. Overall, the system projects an approachable, content-focused atmosphere, leaning on personality in typography rather than complex color schemes or heavy ornamentation.
-colors:
-  canvas-white: "#ffffff"
-  graphite-ink: "#2a394e"
-  muted-midnight: "#14243c"
-  vivid-violet: "#4700d8"
-typography:
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.87
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 1.15
-spacing:
-  buttonRadius: 30px
-  elementGap: 10px
-  sectionGap: 50px
-components:
-  primary-filled-button:
-    role: Call to action button
-  ghost-header-button:
-    role: Navigation menu button
+name: "Buzz Usborne"
+description: "Buzz Usborne's design system presents as a clean, spacious canvas with a playful, yet strong typographic voice. The visual identity relies on a dominant dark gray for text and primary interactive elements, accented by a single vivid violet for subtle button detailing, creating a sense of understated vibrancy. Component surfaces and backgrounds are kept pristine white, emphasizing content and a lightweight feel. Overall, the system projects an approachable, content-focused atmosphere, leaning on personality in typography rather than complex color schemes or heavy ornamentation."
+theme: "light"
+industry: "design"
+source_url: "https://buzzusborne.com"
+refero_style_id: "b4f05d63-a3b3-416e-b1ab-8152f1ee7632"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519880666-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519880666-thumb.jpg"
+extracted_at: "2026-04-30T03:31:33.733Z"
 ---
 
-## Overview
+# Buzz Usborne — Style Reference
 
-**North Star:** Clean slate, playful voice
+> Clean slate, playful voice
+
+**Theme:** light
+
+**Industry:** design
 
 Buzz Usborne's design system presents as a clean, spacious canvas with a playful, yet strong typographic voice. The visual identity relies on a dominant dark gray for text and primary interactive elements, accented by a single vivid violet for subtle button detailing, creating a sense of understated vibrancy. Component surfaces and backgrounds are kept pristine white, emphasizing content and a lightweight feel. Overall, the system projects an approachable, content-focused atmosphere, leaning on personality in typography rather than complex color schemes or heavy ornamentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button backgrounds |
+| Graphite Ink | #2a394e | `--color-graphite-ink` | Primary text across headings and body, accent for selected interactive elements, primary button fills |
+| Muted Midnight | #14243c | `--color-muted-midnight` | Secondary text for body content, text on filled primary buttons |
+| Vivid Violet | #4700d8 | `--color-vivid-violet` | Outlined button borders, subtle interactive accents |
+
+## Tokens — Typography
+
+### Poetsen One
+
+- **Token:** `--font-poetsen-one`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 52px
+- **Line heights:** 1.15
+- **Role:** Display headlines and primary section titles — gives a distinctive, friendly, and bold presence to key statements, ensuring immediate personality.
+
+### Roboto
+
+- **Token:** `--font-roboto`
+- **Substitute:** Open Sans
+- **Weights:** 400, 500
+- **Sizes:** 13px, 14px, 15px, 16px, 22px
+- **Line heights:** 1.00, 1.71, 1.87, 2.09
+- **Role:** Body copy, navigation, buttons, and supplemental text — a highly legible sans-serif for all functional and supportive text, providing a reliable baseline.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-lg | 16px | 1.87 | — | `--text-body-lg` |
+| subheading | 22px | 1 | — | `--text-subheading` |
+| display | 52px | 1.15 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-245 | 245px | `--spacing-245` |
+| spacing-288 | 288px | `--spacing-288` |
+| spacing-320 | 320px | `--spacing-320` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| other | 20px |
+| images | 20px |
+| buttons | 30px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 25px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button
+
+Filled with Graphite Ink background (#2a394e), Muted Midnight text (#14243c), and a generous 30px border radius. Padding of 15px vertical and 25px horizontal creates ample touch targets and a soft, approachable pill shape.
+
+### Ghost Header Button
+
+**Role:** Navigation menu button
+
+Appears as a simple 'Menu' icon with a transparent background, implicitly using Canvas White (#ffffff) as its background. No visible border, text color defaults to browser standard for links before hovering/interaction.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for all large background areas and card surfaces, creating a clean base.
 - Use Graphite Ink (#2a394e) for all primary headline and body text, establishing a strong, readable dark neutral.
@@ -46,7 +117,7 @@ Buzz Usborne's design system presents as a clean, spacious canvas with a playful
 - Maintain a spacious environment, utilizing 50px as the primary vertical separation between major sections.
 - For primary call-to-action buttons, use a Graphite Ink (#2a394e) fill with Muted Midnight (#14243c) text, with 15px vertical and 25px horizontal padding, and 30px radius.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple vibrant chromatic colors; restrict accent colors primarily to Vivid Violet (#4700d8) for subtle highlights.
 - Do not deviate from Roboto for body text and functional UI elements where immediate readability is key.
@@ -54,10 +125,85 @@ Buzz Usborne's design system presents as a clean, spacious canvas with a playful
 - Do not introduce complex shadows or excessive borders; surfaces should feel lightweight and minimally elevated.
 - Refrain from using strong background patterns or textures; surfaces are intended to be clean and understated.
 
-### Layout
+## Imagery
+
+This system primarily uses product screenshots and illustrative emojis rather than traditional photography. Product screenshots are contained within soft-rectangular cards with 20px radius. Emojis are used directly within heading text, adding a playful, approachable, and personalized tone to the communication. Icons are minimal, likely linear or mono-color, serving purely functional roles like the 'Menu' button.
+
+## Layout
 
 The page maintains a centered max-width layout, approximately 950-1000px wide, creating clear content boundaries on a Canvas White background. The hero section is a centered stack of a playful headline over a contained product image. Vertical rhythm is established through consistent 50px section gaps and ample side padding of 150px or more on text blocks. Content often appears in single-column stacks, emphasizing direct communication rather than complex multi-column grids or visual fragmentation. Navigation is minimal, consisting of a sticky top header with a brand logo and a simple 'Menu' button.
 
-### Imagery
+## Similar Brands
 
-This system primarily uses product screenshots and illustrative emojis rather than traditional photography. Product screenshots are contained within soft-rectangular cards with 20px radius. Emojis are used directly within heading text, adding a playful, approachable, and personalized tone to the communication. Icons are minimal, likely linear or mono-color, serving purely functional roles like the 'Menu' button.
+- **Figma** — Clean, predominantly white canvas with a focus on clear typography and functional, rather than decorative, color accents.
+- **Linear** — Emphasis on well-defined typography and generous white space to present complex information clearly, with minimal chromatic distraction.
+- **Miro** — Utilizes a crisp, light background and distinct typefaces to convey information, with a constrained color palette for interactivity.
+- **Notion** — Content-first approach, with typography and white space forming the primary visual hierarchy, supported by a minimal color palette.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-graphite-ink: #2a394e;
+  --color-muted-midnight: #14243c;
+  --color-vivid-violet: #4700d8;
+  --font-poetsen-one: 'Poetsen One', Bebas Neue;
+  --font-roboto: 'Roboto', Open Sans;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.87;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --text-display: 52px;
+  --leading-display: 1.15;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-150: 150px;
+  --spacing-245: 245px;
+  --spacing-288: 288px;
+  --spacing-320: 320px;
+  --radius-other: 20px;
+  --radius-images: 20px;
+  --radius-buttons: 30px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-graphite-ink: #2a394e;
+  --color-muted-midnight: #14243c;
+  --color-vivid-violet: #4700d8;
+  --font-poetsen-one: 'Poetsen One', Bebas Neue;
+  --font-roboto: 'Roboto', Open Sans;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.87;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --text-display: 52px;
+  --leading-display: 1.15;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-150: 150px;
+  --spacing-245: 245px;
+  --spacing-288: 288px;
+  --spacing-320: 320px;
+  --radius-other: 20px;
+  --radius-images: 20px;
+  --radius-buttons: 30px;
+}
+```

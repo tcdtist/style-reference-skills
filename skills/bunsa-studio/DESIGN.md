@@ -1,43 +1,108 @@
 ---
 version: alpha
-name: Bunsa Studio
-description: Bunsa Studio employs a 'sun-drenched architectural drafting' aesthetic, primarily using a stark achromatic palette of crisp white and deep black. A single, vibrant blue serves as the sole accent, appearing as sharp-edged navigation elements and subtle interactive cues. Typography is minimal and bold, favoring strong contrasts. The overall impression is one of confident restraint, with design elements serving a clear functional purpose rather than decorative flourish.
-colors:
-  canvas-white: "#fcfaf7"
-  midnight-black: "#000000"
-  electric-blue: "#0b0bca"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.3
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.1
-    letterSpacing: 0px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 4px
-  sectionGap: 160px
-components:
-  ghost-accent-button:
-    role: Primary interactive element for navigation and actions.
-  headline-section:
-    role: Project titles and major content headings.
-  text-link:
-    role: Navigation items and inline references.
+name: "Bunsa Studio"
+description: "Bunsa Studio employs a 'sun-drenched architectural drafting' aesthetic, primarily using a stark achromatic palette of crisp white and deep black. A single, vibrant blue serves as the sole accent, appearing as sharp-edged navigation elements and subtle interactive cues. Typography is minimal and bold, favoring strong contrasts. The overall impression is one of confident restraint, with design elements serving a clear functional purpose rather than decorative flourish."
+theme: "light"
+industry: "design"
+source_url: "https://bunsa.studio"
+refero_style_id: "16e75fc0-5939-40e7-a187-b2f3b70fdafe"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517942298-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517942298-thumb.jpg"
+extracted_at: "2026-04-30T02:59:19.042Z"
 ---
 
-## Overview
+# Bunsa Studio — Style Reference
 
-**North Star:** Sun-drenched architectural drafting
+> Sun-drenched architectural drafting
+
+**Theme:** light
+
+**Industry:** design
 
 Bunsa Studio employs a 'sun-drenched architectural drafting' aesthetic, primarily using a stark achromatic palette of crisp white and deep black. A single, vibrant blue serves as the sole accent, appearing as sharp-edged navigation elements and subtle interactive cues. Typography is minimal and bold, favoring strong contrasts. The overall impression is one of confident restraint, with design elements serving a clear functional purpose rather than decorative flourish.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #fcfaf7 | `--color-canvas-white` | Page backgrounds, large content blocks, primary surface |
+| Midnight Black | #000000 | `--color-midnight-black` | Primary text, borders, high-contrast UI elements |
+| Electric Blue | #0b0bca | `--color-electric-blue` | Violet accent for outlined action borders, linked labels, and lightweight interactive emphasis. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### HelveticaNowDisplay
+
+- **Token:** `--font-helveticanowdisplay`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400, 700
+- **Sizes:** 20px, 60px
+- **Line heights:** 1.10, 1.30
+- **Letter spacing:** normal
+- **OpenType features:** "kern"
+- **Role:** All textual content, from headings to body text and interactive elements. Its crisp lines and varying weights establish clear hierarchy on an otherwise spartan canvas.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 20px | 1.3 | 0px | `--text-body` |
+| display | 60px | 1.1 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| inputs | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 160px |
+| cardPadding | 40px |
+| elementGap | 4px |
+
+## Components
+
+### Ghost Accent Button
+
+**Role:** Primary interactive element for navigation and actions.
+
+Text in Electric Blue (#0b0bca) with a matching 1px border. No background fill. Zero border radius creates a sharp, angular appearance. Padding is minimal at 5px on all sides.
+
+### Headline Section
+
+**Role:** Project titles and major content headings.
+
+Leverages HelveticaNowDisplay at 60px size, Midnight Black (#000000) for high contrast against Canvas White (#fcfaf7) backgrounds. Set with a line-height of 1.1 to keep text compact.
+
+### Text Link
+
+**Role:** Navigation items and inline references.
+
+HelveticaNowDisplay, often 20px, Electric Blue (#0b0bca) text. Features a 1px bottom border in Electric Blue on hover/active states, not on initial display.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#fcfaf7) as the dominant background color for all page sections.
 - Use Midnight Black (#000000) for all primary text content to ensure maximum contrast.
@@ -47,7 +112,7 @@ Bunsa Studio employs a 'sun-drenched architectural drafting' aesthetic, primaril
 - Utilize HelveticaNowDisplay in varied weights (400, 700) and sizes (20px, 60px) for all text elements to establish hierarchy.
 - Implement generous vertical spacing between major sections, with a default section gap of 160px.
 
-### Don'ts
+### Don't
 
 - Avoid using any colors other than Canvas White, Midnight Black, and Electric Blue in the interface, except within imagery or content.
 - Do not use filled buttons as primary actions; always favor the outlined/ghost style with Electric Blue.
@@ -57,10 +122,74 @@ Bunsa Studio employs a 'sun-drenched architectural drafting' aesthetic, primaril
 - Avoid decorative gradients or background images in UI elements; maintain a clean, flat aesthetic.
 - Do not introduce extensive padding within UI elements; apply minimal padding to controls like 5px on buttons.
 
-### Layout
+## Imagery
+
+The site primarily uses high-quality, full-bleed photography of interior design projects. Imagery is presented without internal borders or rounded corners, often serving as a background for textual overlays. There are no illustrations or abstract graphics; the focus is entirely on showcasing finished spaces. Images are rich in color and detail, capturing natural light within designed environments, contrasting with the stark UI elements. Icons are minimal, likely monochromatic, and used functionally for navigation points.
+
+## Layout
 
 The page structure is dominated by full-bleed imagery that often extends across the viewport. Content appears to be centered within these large visual blocks, with text overlaid directly on images or occupying transparent regions. Navigation is a persistent header, featuring a distinct, small Electric Blue dot on the left and the studio name on the right, both fixed. Sections appear to transition seamlessly with large full-width image blocks introducing new project content, often with a large, centered headline directly on the image. Vertical spacing between content blocks and sections is very generous.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses high-quality, full-bleed photography of interior design projects. Imagery is presented without internal borders or rounded corners, often serving as a background for textual overlays. There are no illustrations or abstract graphics; the focus is entirely on showcasing finished spaces. Images are rich in color and detail, capturing natural light within designed environments, contrasting with the stark UI elements. Icons are minimal, likely monochromatic, and used functionally for navigation points.
+- **A-Frame Studio** — Shares a high-contrast, minimalist aesthetic with a dominant white background and crisp, sans-serif typography.
+- **Works with design** — Features large, full-bleed photography with overlaid text, a very clean navigation, and limited color palette.
+- **Figma** — Employs a stark white canvas paired with a single, vibrant accent color for interaction and brand identity, avoiding shadows.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #fcfaf7;
+  --color-midnight-black: #000000;
+  --color-electric-blue: #0b0bca;
+  --font-helveticanowdisplay: 'HelveticaNowDisplay', Helvetica Neue;
+  --text-body: 20px;
+  --leading-body: 1.3;
+  --tracking-body: 0px;
+  --text-display: 60px;
+  --leading-display: 1.1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-18: 18px;
+  --spacing-40: 40px;
+  --spacing-100: 100px;
+  --spacing-160: 160px;
+  --spacing-200: 200px;
+  --radius-cards: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #fcfaf7;
+  --color-midnight-black: #000000;
+  --color-electric-blue: #0b0bca;
+  --font-helveticanowdisplay: 'HelveticaNowDisplay', Helvetica Neue;
+  --text-body: 20px;
+  --leading-body: 1.3;
+  --tracking-body: 0px;
+  --text-display: 60px;
+  --leading-display: 1.1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-18: 18px;
+  --spacing-40: 40px;
+  --spacing-100: 100px;
+  --spacing-160: 160px;
+  --spacing-200: 200px;
+  --radius-cards: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+}
+```
