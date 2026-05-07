@@ -1,70 +1,145 @@
 ---
 version: alpha
-name: Zeus Jones
-description: Zeus Jones projects a refined, artistic sensibility with a foundational off-white canvas and a rich, muted chromatic dark gray that anchors all textual and interactive elements. The design is characterized by large, confident typography that mixes serifs and sans-serifs, creating a dynamic yet sophisticated feel. Playful, pill-shaped buttons with deep curves add a touch of approachability against substantial spacing and a generally sparse layout. The hero section often features dramatic, ethereal gradient backgrounds that contrast with the otherwise understated UI.
-colors:
-  canvas-parchment: "#fcfaf3"
-  greyscale-architect: "#1a1c2c"
-  card-dove: "#ebe9e4"
-  night-icon: "#000000"
-  hero-gradient: "#9c8ec4"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.6px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.2
-    letterSpacing: -0.96px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.07
-    letterSpacing: -1.2px
-spacing:
-  cardRadius: 20px
-  buttonRadius: 1584px
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  ghost-navigation-link:
-    role: Navigation item and basic textual link.
-  pill-button:
-    role: Primary call to action.
-  work-showcase-card:
-    role: Displaying work examples.
-  underlined-input-field:
-    role: Standard text input.
-  header-navigation:
-    role: Top-level site navigation.
+name: "Zeus Jones"
+description: "Zeus Jones projects a refined, artistic sensibility with a foundational off-white canvas and a rich, muted chromatic dark gray that anchors all textual and interactive elements. The design is characterized by large, confident typography that mixes serifs and sans-serifs, creating a dynamic yet sophisticated feel. Playful, pill-shaped buttons with deep curves add a touch of approachability against substantial spacing and a generally sparse layout. The hero section often features dramatic, ethereal gradient backgrounds that contrast with the otherwise understated UI."
+theme: "light"
+industry: "agency"
+source_url: "https://zeusjones.com"
+refero_style_id: "b619e1b9-86ee-4a10-b6e6-47b10927c3a2"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518647814-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518647814-thumb.jpg"
+extracted_at: "2026-04-30T03:11:09.471Z"
 ---
 
-## Overview
+# Zeus Jones — Style Reference
 
-**North Star:** Ethereal canvas with typographic gravitas. A sun-drenched, off-white digital gallery where bold typography and artful backgrounds coalesce.
+> Ethereal canvas with typographic gravitas. A sun-drenched, off-white digital gallery where bold typography and artful backgrounds coalesce.
+
+**Theme:** light
+
+**Industry:** agency
 
 Zeus Jones projects a refined, artistic sensibility with a foundational off-white canvas and a rich, muted chromatic dark gray that anchors all textual and interactive elements. The design is characterized by large, confident typography that mixes serifs and sans-serifs, creating a dynamic yet sophisticated feel. Playful, pill-shaped buttons with deep curves add a touch of approachability against substantial spacing and a generally sparse layout. The hero section often features dramatic, ethereal gradient backgrounds that contrast with the otherwise understated UI.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Parchment | #fcfaf3 | `--color-canvas-parchment` | Page backgrounds, navigation backgrounds, default text for dark surfaces — forms the primary backdrop of the site |
+| Greyscale Architect | #1a1c2c | `--color-greyscale-architect` | Primary text, informational elements, button backgrounds, borders, link text, card text. This deep, muted gray serves as the dominant structural color |
+| Card Dove | #ebe9e4 | `--color-card-dove` | Card backgrounds, secondary surface variations, providing a subtle visual separation from the main canvas |
+| Night Icon | #000000 | `--color-night-icon` | Decorative SVG icons, occasional text elements where maximum contrast is desired, creating a sharp graphic presence |
+| Hero Gradient | #9c8ec4 | `--color-hero-gradient` | Dominant hero section background, providing a distinct, vibrant, and atmospheric entrance to the site — contrasts with the otherwise neutral palette |
+
+## Tokens — Typography
+
+### ZJSansDisplay
+
+- **Token:** `--font-zjsansdisplay`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 16px, 18px, 24px, 40px, 48px, 60px, 90px
+- **Line heights:** 1.00, 1.07, 1.11, 1.20, 1.25, 1.30, 1.50, 1.60
+- **Letter spacing:** -0.0200em at large sizes, 0.0500em at smaller sizes
+- **Role:** Primary sans-serif for headings, body text, navigation items, and interactive elements. It provides a modern, confident tone.
+
+### FeatureDeckLight
+
+- **Token:** `--font-featuredecklight`
+- **Substitute:** Lora Light
+- **Weights:** 100
+- **Sizes:** 60px, 90px
+- **Line heights:** 1.07, 1.11
+- **Letter spacing:** -0.0200em
+- **Role:** Hero headlines and large display text, characterized by its extremely light weight. It creates a sense of gravitas and spaciousness, conveying authority through restraint.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.6px | `--text-caption` |
+| body-sm | 16px | 1.5 | — | `--text-body-sm` |
+| body | 18px | 1.5 | — | `--text-body` |
+| subheading | 24px | 1.3 | — | `--text-subheading` |
+| heading | 40px | 1.25 | — | `--text-heading` |
+| heading-lg | 48px | 1.2 | -0.96px | `--text-heading-lg` |
+| display | 60px | 1.07 | -1.2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-126 | 126px | `--spacing-126` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 20px |
+| cards | 20px |
+| buttons | 1584px |
+| headings | 1000px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 0px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Navigation item and basic textual link.
+
+Transparent background, 'Greyscale Architect' text (#1a1c2c), no border, no padding or radius. Used for minimalist navigation and inline links.
+
+### Pill Button
+
+**Role:** Primary call to action.
+
+Filled with 'Greyscale Architect' (#1a1c2c) and 'Canvas Parchment' (#fcfaf3) text. Features an extremely high border-radius (1782px or 1584px) to create a pill shape. Padding is generous at 16px vertical, 32px horizontal or 12px vertical, 20px horizontal.
+
+### Work Showcase Card
+
+**Role:** Displaying work examples.
+
+Background is 'Card Dove' (#ebe9e4) with a 20px border-radius and no box-shadow. Contains imagery and descriptive text.
+
+### Underlined Input Field
+
+**Role:** Standard text input.
+
+Transparent background, 'Greyscale Architect' (#1a1c2c) text. Features a bottom border of 'Greyscale Architect' and no border-radius. Padding is 0px horizontal, 8px bottom.
+
+### Header Navigation
+
+**Role:** Top-level site navigation.
+
+Inherits page background and features minimal ghost links and a menu icon. It's a full-width container that uses generous spacing and aligns elements to the edges.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Canvas Parchment' (#fcfaf3) as the default background for all page sections unless an accent background is specified.
 - Employ 'Greyscale Architect' (#1a1c2c) for all primary body text, headlines, and interactive elements to maintain visual consistency.
@@ -74,7 +149,7 @@ Zeus Jones projects a refined, artistic sensibility with a foundational off-whit
 - Maintain comfortable '20px' border-radius for cards, images, and other contained UI elements.
 - Incorporate a 40px section gap between major content blocks to ensure ample breathing room and a spacious layout.
 
-### Don'ts
+### Don't
 
 - Avoid using bright, saturated colors for primary UI elements; reserve high chroma for abstract backgrounds or illustrative accents.
 - Do not use box-shadows for elevation; rely on background color changes or subtle borders for surface distinction.
@@ -84,10 +159,135 @@ Zeus Jones projects a refined, artistic sensibility with a foundational off-whit
 - Do not introduce heavy borders or outlines; stick to ghost interactions or solid, rich dark gray fills for interactive elements.
 - Never center align large blocks of text; maintain a left-aligned, spacious text presentation.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Parchment | #fcfaf3 | Primary page background layer |
+| 1 | Card Dove | #ebe9e4 | Secondary background layer for cards and contained content |
+| 2 | Greyscale Architect | #1a1c2c | Deepest surface layer, used for interactive elements like filled buttons or navigation panels that appear on top of other surfaces |
+
+## Imagery
+
+The site uses a mix of bespoke, abstract gradient backgrounds (often full-bleed in hero sections) and carefully curated product/project showcase imagery. Photography and product shots are contained within cards with 20px rounded corners, often monochromatic or with a muted color palette to blend with the overall design. Icons are minimalist, typically black (#000000) or 'Greyscale Architect' (#1a1c2c) and filled, reflecting a clean, direct visual style. Imagery functions primarily to showcase work and set an atmosphere, not as merely decorative elements. Density is medium, with images serving as visual anchors within content blocks.
+
+## Layout
 
 The page primarily uses a full-bleed structure, particularly for impactful hero sections like the gradient background. Content within sections is often given ample horizontal padding, creating a comfortable breathing room. Sections maintain a consistent vertical rhythm with a 40px `sectionGap`. Layouts within sections frequently alternate between text-dominant blocks and engaging, multi-column card grids for showcasing work. The header is a sticky, full-width element, providing persistent navigation. The overall feel is spacious and uncrowded, allowing key typographic elements and imagery to stand out.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of bespoke, abstract gradient backgrounds (often full-bleed in hero sections) and carefully curated product/project showcase imagery. Photography and product shots are contained within cards with 20px rounded corners, often monochromatic or with a muted color palette to blend with the overall design. Icons are minimalist, typically black (#000000) or 'Greyscale Architect' (#1a1c2c) and filled, reflecting a clean, direct visual style. Imagery functions primarily to showcase work and set an atmosphere, not as merely decorative elements. Density is medium, with images serving as visual anchors within content blocks.
+- **Huge** — Known for large, confident typography on light backgrounds and a focus on digital experience design.
+- **Fantasy** — Features impactful visual heroes with dramatic backgrounds and clean, sans-serif typography as a core element.
+- **Work & Co** — Utilizes significant whitespace and a refined, minimal color palette to highlight content and typography, similar to the light canvas approach and deep-gray text.
+- **Locomotive** — Employs bold, elegant typography and distinctive custom typefaces, often against a neutral or atmospheric background, for a sophisticated brand presence.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-parchment: #fcfaf3;
+  --color-greyscale-architect: #1a1c2c;
+  --color-card-dove: #ebe9e4;
+  --color-night-icon: #000000;
+  --color-hero-gradient: #9c8ec4;
+  --font-zjsansdisplay: 'ZJSansDisplay', Inter;
+  --font-featuredecklight: 'FeatureDeckLight', Lora Light;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.6px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --text-body: 18px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --text-heading: 40px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --tracking-display: -1.2px;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-120: 120px;
+  --spacing-126: 126px;
+  --spacing-128: 128px;
+  --radius-all: 20px;
+  --radius-cards: 20px;
+  --radius-buttons: 1584px;
+  --radius-headings: 1000px;
+  --surface-canvas-parchment: #fcfaf3;
+  --surface-card-dove: #ebe9e4;
+  --surface-greyscale-architect: #1a1c2c;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-parchment: #fcfaf3;
+  --color-greyscale-architect: #1a1c2c;
+  --color-card-dove: #ebe9e4;
+  --color-night-icon: #000000;
+  --color-hero-gradient: #9c8ec4;
+  --font-zjsansdisplay: 'ZJSansDisplay', Inter;
+  --font-featuredecklight: 'FeatureDeckLight', Lora Light;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.6px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --text-body: 18px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --text-heading: 40px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --tracking-display: -1.2px;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-120: 120px;
+  --spacing-126: 126px;
+  --spacing-128: 128px;
+  --radius-all: 20px;
+  --radius-cards: 20px;
+  --radius-buttons: 1584px;
+  --radius-headings: 1000px;
+  --surface-canvas-parchment: #fcfaf3;
+  --surface-card-dove: #ebe9e4;
+  --surface-greyscale-architect: #1a1c2c;
+}
+```

@@ -1,59 +1,126 @@
 ---
 version: alpha
-name: Zara
-description: Zara's interface projects an unyielding, high-fashion minimalism through a stark monochrome palette and precise typography. The visual brand is built on a high-contrast black-on-white foundation, creating a sophisticated backdrop where product photography becomes the primary source of color and texture. An absence of soft edges or expressive spacing reinforces a refined, almost austere aesthetic.
-colors:
-  pitch-black: "#000000"
-  luminous-white: "#ffffff"
-  subtle-gray: "#757575"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.5
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-spacing:
-  elementGap: 16px
-  sectionGap: 48px
-components:
-  location-language-selector-form:
-    role: 
-  button-group-primary-ghost:
-    role: 
-  product-card:
-    role: 
-  ghost-link-button:
-    role: Secondary interactive elements within text (e.g., 'haz click aquí')
-  default-input-field:
-    role: User input for forms (e.g., 'LOCATION', 'LANGUAGE')
-  transparent-input-field:
-    role: Secondary input fields or those within larger interactive components
-  location-language-dropdown:
-    role: Selector for locale-specific options
+name: "Zara"
+description: "Zara's interface projects an unyielding, high-fashion minimalism through a stark monochrome palette and precise typography. The visual brand is built on a high-contrast black-on-white foundation, creating a sophisticated backdrop where product photography becomes the primary source of color and texture. An absence of soft edges or expressive spacing reinforces a refined, almost austere aesthetic."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://zara.com"
+refero_style_id: "97823ba1-ee1e-489d-aefd-8d72a578669a"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926257707-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926257707-thumb.jpg"
+extracted_at: "2026-04-11T16:51:15.568Z"
 ---
 
-## Overview
+# Zara — Style Reference
 
-**North Star:** High-fashion starkness on white marble. Unyielding contrast and precise lines on a luminous white canvas.
+> High-fashion starkness on white marble. Unyielding contrast and precise lines on a luminous white canvas.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Zara's interface projects an unyielding, high-fashion minimalism through a stark monochrome palette and precise typography. The visual brand is built on a high-contrast black-on-white foundation, creating a sophisticated backdrop where product photography becomes the primary source of color and texture. An absence of soft edges or expressive spacing reinforces a refined, almost austere aesthetic.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, borders, icons, form outlines. This is the dominant dark against the luminous white. |
+| Luminous White | #ffffff | `--color-luminous-white` | Page backgrounds, card surfaces, button fills – the expansive canvas for all content. |
+| Subtle Gray | #757575 | `--color-subtle-gray` | Secondary text, subtle borders, inactive states – provides a slight tonal variation without introducing color. |
+
+## Tokens — Typography
+
+### Helvetica Now Text
+
+- **Token:** `--font-helvetica-now-text`
+- **Substitute:** Helvetica Neue, Arial, sans-serif
+- **Weights:** 300, 400
+- **Sizes:** 11px, 12px, 13px, 15px, 16px
+- **Line heights:** 1.00, 1.23, 1.45, 1.50, 1.54, 1.60
+- **Letter spacing:** normal
+- **Role:** Universal sans-serif for all text, conveying a contemporary and no-nonsense tone. The consistent use of only two weights across all sizes reinforces the brand's directness.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.5 | — | `--text-caption` |
+| body-sm | 12px | 1.5 | — | `--text-body-sm` |
+| body | 13px | 1.5 | — | `--text-body` |
+| body-lg | 15px | 1.5 | — | `--text-body-lg` |
+| heading-sm | 16px | 1.5 | — | `--text-heading-sm` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-112 | 112px | `--spacing-112` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 20px |
+| elementGap | 16px |
+
+## Components
+
+### Location & Language Selector Form
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group — Primary & Ghost
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Product Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Ghost Link Button
+
+**Role:** Secondary interactive elements within text (e.g., 'haz click aquí')
+
+Black text (#000000), transparent background, no border, no padding. Visually indistinguishable from standard text until hovered, prioritizing content flow over overt interactivity.
+
+### Default Input Field
+
+**Role:** User input for forms (e.g., 'LOCATION', 'LANGUAGE')
+
+Black text (#000000), white background (#ffffff), with a 1px solid black border. No border-radius. Features 16px right padding and 0px top/bottom/left padding, indicating content alignment within the field.
+
+### Transparent Input Field
+
+**Role:** Secondary input fields or those within larger interactive components
+
+Black text (#000000), transparent background (rgba(0,0,0,0)), with a 1px solid black bottom border. No border-radius or padding, presenting as an underlined text input rather than a distinct box.
+
+### Location/Language Dropdown
+
+**Role:** Selector for locale-specific options
+
+Functions as a Default Input Field, suggesting a click opens a modal or dropdown. Utilizes black text (#000000), white background (#ffffff), 1px solid black border. Padding: 0px top/bottom/left, 16px right.
+
+## Do's and Don'ts
+
+### Do
 
 - Do use #000000 (Pitch Black) for all primary text and interactive element borders.
 - Do use #ffffff (Luminous White) for all page and primary component backgrounds.
@@ -62,7 +129,7 @@ Zara's interface projects an unyielding, high-fashion minimalism through a stark
 - Do use a consistent base spacing unit of 4px for fine-grained adjustments, and multiples for larger gaps (e.g., 12px, 16px, 20px, 32px, 48px).
 - Do limit text colors to Pitch Black (#000000) for primary content and Subtle Gray (#757575) for secondary details.
 
-### Don'ts
+### Don't
 
 - Don't introduce any color outside of the defined monochrome palette of Pitch Black, Luminous White, and Subtle Gray.
 - Don't use any rounded corners or soft edges on UI elements; maintain sharp, crisp rectangular forms.
@@ -71,10 +138,78 @@ Zara's interface projects an unyielding, high-fashion minimalism through a stark
 - Don't vary font weights significantly; adhere strictly to 300 and 400 for Helvetica Now Text.
 - Don't use decorative flourishes or non-essential graphical elements; the design emphasizes functional minimalism.
 
-### Layout
+## Imagery
+
+Photography is the primary visual element, featuring full-bleed, high-quality fashion model shots. The imagery is often centrally composed, highlighting the product and model with a soft-focus, desaturated background that provides context without distraction. There's no specific masking or corner treatment; images appear as raw, uncropped editorial photography. Illustrations and abstract graphics are absent, as the visual load is carried almost entirely by fashion photography, serving a purely product showcase and atmospheric role.
+
+## Layout
 
 The page uses a maximum-width contained layout, with content (like the form) aligned to the left against an expansive white background. The hero section employs a split-screen approach, with a functional form on the left and a large, full-bleed photograph on the right. There are no alternating background bands; the entire canvas is Luminous White. Content arrangement is primarily vertical stacking for forms, paired with dominant, large-format imagery, creating a sense of spaciousness and clear hierarchy. Navigation appears minimal, implied rather than explicitly detailed in the provided view, with a prominent brand logo at the top-left.
 
-### Imagery
+## Similar Brands
 
-Photography is the primary visual element, featuring full-bleed, high-quality fashion model shots. The imagery is often centrally composed, highlighting the product and model with a soft-focus, desaturated background that provides context without distraction. There's no specific masking or corner treatment; images appear as raw, uncropped editorial photography. Illustrations and abstract graphics are absent, as the visual load is carried almost entirely by fashion photography, serving a purely product showcase and atmospheric role.
+- **H&M** — Shares a stark, high-contrast monochrome aesthetic for its e-commerce interface, relying heavily on product photography for visual interest.
+- **UNIQLO** — Employs a clean, minimalist layout with abundant white space and a focus on essential product presentation over decorative elements.
+- **ASOS** — Utilizes a simple black and white palette to highlight fashion photography and simplify the user experience, emphasizing product browsing.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-luminous-white: #ffffff;
+  --color-subtle-gray: #757575;
+  --font-helvetica-now-text: 'Helvetica Now Text', Helvetica Neue, Arial, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.5;
+  --text-body: 13px;
+  --leading-body: 1.5;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.5;
+  --text-heading-sm: 16px;
+  --leading-heading-sm: 1.5;
+  --spacing-4: 4px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-112: 112px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-luminous-white: #ffffff;
+  --color-subtle-gray: #757575;
+  --font-helvetica-now-text: 'Helvetica Now Text', Helvetica Neue, Arial, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.5;
+  --text-body: 13px;
+  --leading-body: 1.5;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.5;
+  --text-heading-sm: 16px;
+  --leading-heading-sm: 1.5;
+  --spacing-4: 4px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-112: 112px;
+  --radius-all: 0px;
+}
+```

@@ -1,92 +1,203 @@
 ---
 version: alpha
-name: Zoox
-description: Zoox employs a sophisticated, muted aesthetic, blending an off-black and white core with subtle, cool-toned neutrals and a singular vibrant teal accent. Typography is dominant, commanding attention with generous sizing and precise control over letter-spacing. Surfaces vary between stark white, dark gray, and a soft, desaturated teal, creating distinct visual sections without harsh transitions. Components are often outlined or ghosted, relying on subtle borders and rounded corners, avoiding heavy fills or deep shadows to maintain a lightweight, intentional feel.
-colors:
-  midnight-ink: "#0d1212"
-  cloud-canvas: "#ffffff"
-  ash-gray: "#565959"
-  slate-green: "#34484a"
-  pale-mint: "#d3e4df"
-  fog: "#696969"
-  stone-gray: "#7b8889"
-  light-mist: "#9aa3a5"
-  pale-sage: "#edf4f2"
-  teal-accent: "#64d5b3"
-  muted-teal: "#5b8279"
-  conic-wave: "#34ffc5"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.28
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.28
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.28
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.28
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.28
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.28
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.28
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.28
-  display:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1.28
-spacing:
-  cardRadius: 36px
-  buttonRadius: 16px
-  elementGap: 5px
-  sectionGap: 40px
-components:
-  ghost-nav-button:
-    role: Navigation and secondary actions
-  primary-action-button:
-    role: Call to action
-  outline-ghost-button:
-    role: Subtle secondary actions or interactive elements.
-  neutral-card:
-    role: Content container
-  elevated-card-pale-mint:
-    role: Prominent content container
-  dark-card:
-    role: Thematic content container
-  header-card-slate-green:
-    role: Section header background
-  text-input:
-    role: User data entry
-  neutral-badge:
-    role: Informational labels
-  soft-badge:
-    role: Categorization and status indicators
+name: "Zoox"
+description: "Zoox employs a sophisticated, muted aesthetic, blending an off-black and white core with subtle, cool-toned neutrals and a singular vibrant teal accent. Typography is dominant, commanding attention with generous sizing and precise control over letter-spacing. Surfaces vary between stark white, dark gray, and a soft, desaturated teal, creating distinct visual sections without harsh transitions. Components are often outlined or ghosted, relying on subtle borders and rounded corners, avoiding heavy fills or deep shadows to maintain a lightweight, intentional feel."
+theme: "light"
+industry: "ai"
+source_url: "https://zoox.com"
+refero_style_id: "e85a82b1-c70e-42de-8c42-4bd95dd5e047"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509491848-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509491848-thumb.jpg"
+extracted_at: "2026-04-30T00:38:40.871Z"
 ---
 
-## Overview
+# Zoox — Style Reference
 
-**North Star:** Muted, precise mobility.
+> Muted, precise mobility.
+
+**Theme:** light
+
+**Industry:** ai
 
 Zoox employs a sophisticated, muted aesthetic, blending an off-black and white core with subtle, cool-toned neutrals and a singular vibrant teal accent. Typography is dominant, commanding attention with generous sizing and precise control over letter-spacing. Surfaces vary between stark white, dark gray, and a soft, desaturated teal, creating distinct visual sections without harsh transitions. Components are often outlined or ghosted, relying on subtle borders and rounded corners, avoiding heavy fills or deep shadows to maintain a lightweight, intentional feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #0d1212 | `--color-midnight-ink` | Primary text, deep section backgrounds, card backgrounds, dark input borders |
+| Cloud Canvas | #ffffff | `--color-cloud-canvas` | Page backgrounds, card surfaces, element fills, light iconography |
+| Ash Gray | #565959 | `--color-ash-gray` | Secondary text, footer text, placeholder text |
+| Slate Green | #34484a | `--color-slate-green` | Decorative borders, active navigation states, button outlines, subtle background tints. A distinctive near-gray that grounds the palette |
+| Pale Mint | #d3e4df | `--color-pale-mint` | Soft section backgrounds, light card surfaces, subtle dividers |
+| Fog | #696969 | `--color-fog` | Tertiary text, subtle borders |
+| Stone Gray | #7b8889 | `--color-stone-gray` | Heading subtext, less prominent body copy |
+| Light Mist | #9aa3a5 | `--color-light-mist` | Iconography, muted body text details |
+| Pale Sage | #edf4f2 | `--color-pale-sage` | Badge backgrounds, subtle surface variations |
+| Teal Accent | #64d5b3 | `--color-teal-accent` | Teal action color for filled buttons, selected navigation states, and focused conversion moments. |
+| Muted Teal | #5b8279 | `--color-muted-teal` | Subtle decorative elements, less prominent accent text |
+| Conic Wave | #34ffc5 | `--color-conic-wave` | Decorative background gradients, abstract visual elements, creating an ethereal halo effect |
+
+## Tokens — Typography
+
+### Gt Standard S
+
+- **Token:** `--font-gt-standard-s`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 13px, 14px, 15px, 16px, 20px, 23px, 30px, 40px, 50px
+- **Line heights:** 0.75, 1.00, 1.15, 1.20, 1.25, 1.28, 1.30, 1.40, 1.50, 1.88, 2.64
+- **Letter spacing:** variable, ranging from -0.0020em to 0.0500em
+- **OpenType features:** "kern" 0
+- **Role:** UI elements, body text, secondary headings, links, and buttons, providing consistent legibility and a compact, precise tone. Letter spacing is subtly tightened for all sizes to increase visual density.
+
+### Gt Standard L
+
+- **Token:** `--font-gt-standard-l`
+- **Substitute:** Outfit
+- **Weights:** 400
+- **Sizes:** 28px, 36px, 56px, 120px
+- **Line heights:** 1.10, 1.15, 1.20, 1.30
+- **Letter spacing:** normal
+- **OpenType features:** "kern" 0
+- **Role:** Primary headings and large display text, creating impactful visual statements with their substantial size. These large sizes use normal letter spacing to maintain clarity.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.28 | — | `--text-caption` |
+| body-sm | 13px | 1.28 | — | `--text-body-sm` |
+| body | 14px | 1.28 | — | `--text-body` |
+| body-lg | 15px | 1.28 | — | `--text-body-lg` |
+| heading-sm | 20px | 1.28 | — | `--text-heading-sm` |
+| heading | 23px | 1.28 | — | `--text-heading` |
+| heading-lg | 30px | 1.28 | — | `--text-heading-lg` |
+| display-sm | 40px | 1.28 | — | `--text-display-sm` |
+| display | 50px | 1.28 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-118 | 118px | `--spacing-118` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-269 | 269px | `--spacing-269` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 36px |
+| links | 12px |
+| badges | 20px |
+| inputs | 18px |
+| buttons | 16px |
+| navigation | 16px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.2) 0px 0px 4px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 5px |
+
+## Components
+
+### Ghost Nav Button
+
+**Role:** Navigation and secondary actions
+
+Text-only button with 'Slate Green' (#34484a) border and text color for outlined or active states. Features a small radius of 12px or 16px. Padding is minimal.
+
+### Primary Action Button
+
+**Role:** Call to action
+
+Filled button with 'Teal Accent' (#64d5b3) background and 'Midnight Ink' (#0d1212) text. Features a 16px border radius, with 15px padding on all sides. Used for primary user actions.
+
+### Outline Ghost Button
+
+**Role:** Subtle secondary actions or interactive elements.
+
+Transparent background with text in 'Ash Gray' (#565959) or 'Midnight Ink' (#0d1212). Borders are hairline or absent, with a very large border radius (33.33%).
+
+### Neutral Card
+
+**Role:** Content container
+
+Transparent background, no shadow, with 20px left/right padding. Used for modular content blocks.
+
+### Elevated Card (Pale Mint)
+
+**Role:** Prominent content container
+
+Background in 'Pale Mint' (#d3e4df), with a 36px border radius and no shadow. Provides 104px top padding and 40px bottom padding, creating a soft, elevated surface.
+
+### Dark Card
+
+**Role:** Thematic content container
+
+Background in 'Midnight Ink' (#0d1212) with a 36px border radius. No padding, used for full-bleed content within its boundaries.
+
+### Header Card (Slate Green)
+
+**Role:** Section header background
+
+Background in 'Slate Green' (#34484a) with no border radius. Provides 80px top and bottom padding.
+
+### Text Input
+
+**Role:** User data entry
+
+White background with 'Midnight Ink' (#0d1212) text. Border color is 'Slate Green' (#34484a) or 'Stone Gray' (#7b8889), with a subtle 1px border. Features an 18px border radius and 20px horizontal padding.
+
+### Neutral Badge
+
+**Role:** Informational labels
+
+Transparent background with 'Midnight Ink' (#0d1212) text. No border radius or padding, used inline for categorization.
+
+### Soft Badge
+
+**Role:** Categorization and status indicators
+
+Background in `Pale Sage` (#edf4f2) with a slight opacity (40%), and 'Midnight Ink' (#0d1212) text. Features a 20px border radius and 7px vertical, 12px horizontal padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Gt Standard L' weight 400 for all primary headings (28px to 120px) with normal letter spacing to maximize impact.
 - Apply 'Teal Accent' (#64d5b3) exclusively for primary action buttons or significant interactive highlights.
@@ -96,7 +207,7 @@ Zoox employs a sophisticated, muted aesthetic, blending an off-black and white c
 - Implement 'Slate Green' (#34484a) for subtle borders, ghost button outlines, and interactive navigation elements.
 - Ensure letter-spacing is consistently negative for 'Gt Standard S' typography in smaller sizes to maintain its compact appearance.
 
-### Don'ts
+### Don't
 
 - Do not introduce new vibrant colors outside of 'Teal Accent' (#64d5b3); maintain the muted and achromatic base palette.
 - Avoid heavy use of drop shadows; reserve the subtle rgba(0, 0, 0, 0.2) 0px 0px 4px 0px shadow for very specific, subtle elevation.
@@ -106,10 +217,185 @@ Zoox employs a sophisticated, muted aesthetic, blending an off-black and white c
 - Refrain from using varied letter spacing on large display type ('Gt Standard L'); keep it 'normal' for maximum clarity.
 - Do not create dense, busy layouts; prioritize comfortable spacing (40px section gap, 5px element gap) and ample whitespace.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Page Canvas | #d3e4df | Primary page background, creating a soft, light base. |
+| 1 | Base Card | #ffffff | Default card and input backgrounds, providing a clean, bright surface. |
+| 2 | Elevated Pale Card | #edf4f2 | Softly elevated card backgrounds, such as the banner for cookie policy, subtly distinct from the base canvas. |
+| 3 | Slate Green Section | #34484a | Darker, contrasting section backgrounds, providing a visual anchor. |
+| 4 | Midnight Ink Card | #0d1212 | Deepest surface level, used for dark, immersive card backgrounds. |
+
+## Elevation
+
+- **Cookie Policy Card:** `rgba(0, 0, 0, 0.2) 0px 0px 4px 0px`
+
+## Imagery
+
+The imagery features realistic photography of the Zoox robotaxi and interiors, or people interacting within the vehicle, shown in contained, often horizontally cropped or square formats. Treatment involves both full-bleed hero visuals and smaller, isolated images with substantial border-radii (16px to 36px) that soften their impact. Photography is clear, well-lit, and product-focused, showcasing the vehicle and user experience directly. Iconography is minimalist and monochrome, using black or dark gray outlines with a light stroke weight, serving primarily functional roles (e.g., play/pause button). Image density is balanced, used to break up text sections and illustrate features without overwhelming the page.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though specific sections like the hero or thematic backgrounds can be full-bleed. The hero often features a centered headline over a background image or a single color block (e.g., Pale Mint or Slate Green). Vertical rhythm is established through consistent section gaps, creating a comfortable density. Content is arranged using alternating text-left/image-right or image-left/text-right patterns, and in some areas, stacked centered elements. There are implicit grids for features, often two or three columns beneath larger headlines. Navigation is a persistent top bar with ghost buttons, converting to a hamburger menu on smaller viewports. Sticky headers are present, and the overall feel is spacious and organized.
 
-### Imagery
+## Similar Brands
 
-The imagery features realistic photography of the Zoox robotaxi and interiors, or people interacting within the vehicle, shown in contained, often horizontally cropped or square formats. Treatment involves both full-bleed hero visuals and smaller, isolated images with substantial border-radii (16px to 36px) that soften their impact. Photography is clear, well-lit, and product-focused, showcasing the vehicle and user experience directly. Iconography is minimalist and monochrome, using black or dark gray outlines with a light stroke weight, serving primarily functional roles (e.g., play/pause button). Image density is balanced, used to break up text sections and illustrate features without overwhelming the page.
+- **Waymo** — Shares a similar muted, professional aesthetic with an emphasis on product clarity and subtle brand accents.
+- **Cruise** — Employs a clean, spacious layout with a restrained color palette and focus on typography for information hierarchy.
+- **Volocopter** — Features a light, airy design with minimal color usage and photography-driven sections to showcase innovative transportations.
+- **Superhuman** — Exhibits precise typographic control, tight letter-spacing, and a limited, high-contrast color palette with a single accent color.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #0d1212;
+  --color-cloud-canvas: #ffffff;
+  --color-ash-gray: #565959;
+  --color-slate-green: #34484a;
+  --color-pale-mint: #d3e4df;
+  --color-fog: #696969;
+  --color-stone-gray: #7b8889;
+  --color-light-mist: #9aa3a5;
+  --color-pale-sage: #edf4f2;
+  --color-teal-accent: #64d5b3;
+  --color-muted-teal: #5b8279;
+  --color-conic-wave: #34ffc5;
+  --font-gt-standard-s: 'Gt Standard S', Inter;
+  --font-gt-standard-l: 'Gt Standard L', Outfit;
+  --text-caption: 12px;
+  --leading-caption: 1.28;
+  --text-body-sm: 13px;
+  --leading-body-sm: 1.28;
+  --text-body: 14px;
+  --leading-body: 1.28;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.28;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.28;
+  --text-heading: 23px;
+  --leading-heading: 1.28;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.28;
+  --text-display-sm: 40px;
+  --leading-display-sm: 1.28;
+  --text-display: 50px;
+  --leading-display: 1.28;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-104: 104px;
+  --spacing-118: 118px;
+  --spacing-160: 160px;
+  --spacing-269: 269px;
+  --radius-cards: 36px;
+  --radius-links: 12px;
+  --radius-badges: 20px;
+  --radius-inputs: 18px;
+  --radius-buttons: 16px;
+  --radius-navigation: 16px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+  --surface-page-canvas: #d3e4df;
+  --surface-base-card: #ffffff;
+  --surface-elevated-pale-card: #edf4f2;
+  --surface-slate-green-section: #34484a;
+  --surface-midnight-ink-card: #0d1212;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #0d1212;
+  --color-cloud-canvas: #ffffff;
+  --color-ash-gray: #565959;
+  --color-slate-green: #34484a;
+  --color-pale-mint: #d3e4df;
+  --color-fog: #696969;
+  --color-stone-gray: #7b8889;
+  --color-light-mist: #9aa3a5;
+  --color-pale-sage: #edf4f2;
+  --color-teal-accent: #64d5b3;
+  --color-muted-teal: #5b8279;
+  --color-conic-wave: #34ffc5;
+  --font-gt-standard-s: 'Gt Standard S', Inter;
+  --font-gt-standard-l: 'Gt Standard L', Outfit;
+  --text-caption: 12px;
+  --leading-caption: 1.28;
+  --text-body-sm: 13px;
+  --leading-body-sm: 1.28;
+  --text-body: 14px;
+  --leading-body: 1.28;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.28;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.28;
+  --text-heading: 23px;
+  --leading-heading: 1.28;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.28;
+  --text-display-sm: 40px;
+  --leading-display-sm: 1.28;
+  --text-display: 50px;
+  --leading-display: 1.28;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-104: 104px;
+  --spacing-118: 118px;
+  --spacing-160: 160px;
+  --spacing-269: 269px;
+  --radius-cards: 36px;
+  --radius-links: 12px;
+  --radius-badges: 20px;
+  --radius-inputs: 18px;
+  --radius-buttons: 16px;
+  --radius-navigation: 16px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 0px 0px 4px 0px;
+  --surface-page-canvas: #d3e4df;
+  --surface-base-card: #ffffff;
+  --surface-elevated-pale-card: #edf4f2;
+  --surface-slate-green-section: #34484a;
+  --surface-midnight-ink-card: #0d1212;
+}
+```

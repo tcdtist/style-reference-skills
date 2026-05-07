@@ -1,50 +1,126 @@
 ---
 version: alpha
-name: Zikd
-description: Zikd employs a high-contrast theme defined by its stark black and white palette, punctuated by a soft, muted blue for interactive elements. Typography is bold and direct, ensuring clarity against dark backgrounds. Component surfaces feature sharp corners, with softer rounding reserved for interactive elements, contributing to a sense of precision and responsiveness.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  deep-graphite: "#111111"
-  sky-dust: "#b8e4fc"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.85
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.85
-  body:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.85
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 14px
-  buttonRadius: 5px
-  elementGap: 16px
-  sectionGap: 54px
-components:
-  primary-action-button:
-    role: Filled button for main calls to action.
-  search-result-card:
-    role: Container for related search topics.
-  domain-lookup-card:
-    role: Container for the domain search input and action.
+name: "Zikd"
+description: "Zikd employs a high-contrast theme defined by its stark black and white palette, punctuated by a soft, muted blue for interactive elements. Typography is bold and direct, ensuring clarity against dark backgrounds. Component surfaces feature sharp corners, with softer rounding reserved for interactive elements, contributing to a sense of precision and responsiveness."
+theme: "dark"
+industry: "other"
+source_url: "https://www.zikd.space/en"
+refero_style_id: "5e047af6-228d-4de1-b008-6fe88c547a47"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513643277-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513643277-thumb.jpg"
+extracted_at: "2026-04-30T01:47:42.429Z"
 ---
 
-## Overview
+# Zikd — Style Reference
 
-**North Star:** High-contrast digital ledger.
+> High-contrast digital ledger.
+
+**Theme:** dark
+
+**Industry:** other
 
 Zikd employs a high-contrast theme defined by its stark black and white palette, punctuated by a soft, muted blue for interactive elements. Typography is bold and direct, ensuring clarity against dark backgrounds. Component surfaces feature sharp corners, with softer rounding reserved for interactive elements, contributing to a sense of precision and responsiveness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #ffffff | `--color-canvas-white` | Content backgrounds, button text, secondary borders |
+| Deep Graphite | #111111 | `--color-deep-graphite` | Component backgrounds, muted text, filled button backgrounds |
+| Sky Dust | #b8e4fc | `--color-sky-dust` | Blue wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### GD Sherpa
+
+- **Token:** `--font-gd-sherpa`
+- **Substitute:** Inter
+- **Weights:** 400, 600, 700
+- **Sizes:** 13px, 16px, 23px, 35px
+- **Line heights:** 1.20, 1.85
+- **Letter spacing:** normal
+- **Role:** Primary brand typeface for all content and UI elements; its varied weights establish clear hierarchy.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** sans-serif
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** System fallback font, used for auxiliary information.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.85 | — | `--text-caption` |
+| body-sm | 16px | 1.85 | — | `--text-body-sm` |
+| body | 23px | 1.85 | — | `--text-body` |
+| body-lg | 35px | 1.3 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-150 | 150px | `--spacing-150` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 14px |
+| lists | 5px |
+| buttons | 5px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 54px |
+| cardPadding | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Filled button for main calls to action.
+
+Background: Deep Graphite (#111111), Text: Canvas White (#ffffff), Border: Canvas White (#ffffff) 1px solid, Padding: 0px vertical, 24px horizontal, Radius: 6px.
+
+### Search Result Card
+
+**Role:** Container for related search topics.
+
+Background: Sky Dust (#b8e4fc), Border: Midnight Ink (#000000) 3px solid, Padding: 20px vertical, 20px horizontal (with 8px bottom margin), Radius: 5px.
+
+### Domain Lookup Card
+
+**Role:** Container for the domain search input and action.
+
+Background: rgba(0,0,0,0) (transparent), Border: Midnight Ink (#000000) 3px solid, Padding: 24px, Radius: 14px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Graphite (#111111) as baseline for component backgrounds and Midnight Ink (#000000) for primary text and significant borders.
 - Use Sky Dust (#b8e4fc) exclusively for interactive surface backgrounds like list items or search results, never for primary text or borders.
@@ -54,7 +130,7 @@ Zikd employs a high-contrast theme defined by its stark black and white palette,
 - Ensure all buttons have a 5px border-radius unless specified, and cards use 14px for a distinct visual separation.
 - Use 16px as the primary `elementGap` for horizontal and vertical spacing between related items.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional saturated colors; maintain the strictly neutral palette with Sky Dust as the sole accent.
 - Avoid using soft shadows or elevation effects; elements are defined by borders and background changes.
@@ -64,10 +140,102 @@ Zikd employs a high-contrast theme defined by its stark black and white palette,
 - Avoid decorative imagery or complex graphics; the interface should rely on strong typography and clear UI elements.
 - Do not use `elementGap` greater than 16px for elements within a component; reserve larger gaps for section separation.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Base Canvas | #ffffff | Primary page background, high-contrast areas. |
+| 1 | Component Background | #111111 | Default background for UI components, contrast against canvas. |
+| 2 | Interactive Highlight | #b8e4fc | Background for active or emphasized interactive elements like list items. |
+
+## Imagery
+
+This site features a minimalist approach to imagery, primarily relying on small, simple icons. The GoDaddy logo is the dominant visual graphic. Icons are presented in a monochrome, outlined style (Midnight Ink #000000) with a standard stroke weight, serving purely functional and decorative purposes without additional color or dimension. There are no photographs, complex illustrations, or 3D renders; the visual emphasis is entirely on UI elements and typography.
+
+## Layout
 
 The page uses a contained layout model, with content centered within a maximum width that dictates the flow. The hero section is characterized by a prominent input field with a clear call-to-action button, vertically stacked and centered. Subsequent sections, such as 'Related Search Topics', utilize multiple vertically stacked cards with consistent padding. Sections are primarily separated by consistent vertical spacing, and strong 3px borders provide clear visual boundaries around components. The page maintains a comfortable density with ample breathing room between elements, rather than dense information blocks. A minimal sticky header with the brand logo is present at the top.
 
-### Imagery
+## Quick Start
 
-This site features a minimalist approach to imagery, primarily relying on small, simple icons. The GoDaddy logo is the dominant visual graphic. Icons are presented in a monochrome, outlined style (Midnight Ink #000000) with a standard stroke weight, serving purely functional and decorative purposes without additional color or dimension. There are no photographs, complex illustrations, or 3D renders; the visual emphasis is entirely on UI elements and typography.
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-deep-graphite: #111111;
+  --color-sky-dust: #b8e4fc;
+  --font-gd-sherpa: 'GD Sherpa', Inter;
+  --font-arial: 'Arial', sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.85;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.85;
+  --text-body: 23px;
+  --leading-body: 1.85;
+  --text-body-lg: 35px;
+  --leading-body-lg: 1.3;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-35: 35px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-58: 58px;
+  --spacing-112: 112px;
+  --spacing-150: 150px;
+  --radius-cards: 14px;
+  --radius-lists: 5px;
+  --radius-buttons: 5px;
+  --surface-base-canvas: #ffffff;
+  --surface-component-background: #111111;
+  --surface-interactive-highlight: #b8e4fc;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-deep-graphite: #111111;
+  --color-sky-dust: #b8e4fc;
+  --font-gd-sherpa: 'GD Sherpa', Inter;
+  --font-arial: 'Arial', sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.85;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.85;
+  --text-body: 23px;
+  --leading-body: 1.85;
+  --text-body-lg: 35px;
+  --leading-body-lg: 1.3;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-35: 35px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-58: 58px;
+  --spacing-112: 112px;
+  --spacing-150: 150px;
+  --radius-cards: 14px;
+  --radius-lists: 5px;
+  --radius-buttons: 5px;
+  --surface-base-canvas: #ffffff;
+  --surface-component-background: #111111;
+  --surface-interactive-highlight: #b8e4fc;
+}
+```
