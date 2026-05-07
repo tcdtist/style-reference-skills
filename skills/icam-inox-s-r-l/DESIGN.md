@@ -1,72 +1,127 @@
 ---
 version: alpha
-name: Icam inox s.r.l.
-description: The Icam visual system is a study in stark monochrome contrast and material precision. It pairs crisp, confident typography with expansive white and deep black surfaces, creating a sense of technical authority. Subtle, large radius rounded corners soften rigid forms, while minimal borders and generous spacing maintain an airy, professional feel. The design emphasizes content through direct visual hierarchy rather than ornamental complexity.
-colors:
-  absolute-black: "#000000"
-  heavy-graphite: "#090909"
-  deep-shadow: "#0f0f0f"
-  charcoal-text: "#333333"
-  medium-gray: "#535353"
-  silver-link: "#aaaaaa"
-  near-white: "#f3f3f3"
-  pure-white: "#ffffff"
-  decorative-gray-blue: "#a0a9b9"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.17
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.17
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.17
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.17
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.17
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.17
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.17
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 259px
-    lineHeight: 1.17
-spacing:
-  cardRadius: 20px
-  buttonRadius: 20px
-  elementGap: 10px
-components:
-  primary-filled-button:
-    role: Call to action button for prominent actions.
-  outlined-ghost-button:
-    role: Secondary action button, typically for navigation or less critical actions.
-  feature-card:
-    role: Used for showcasing distinct features or categories.
-  text-link:
-    role: Navigational links and inline text links.
+name: "Icam inox s.r.l."
+description: "The Icam visual system is a study in stark monochrome contrast and material precision. It pairs crisp, confident typography with expansive white and deep black surfaces, creating a sense of technical authority. Subtle, large radius rounded corners soften rigid forms, while minimal borders and generous spacing maintain an airy, professional feel. The design emphasizes content through direct visual hierarchy rather than ornamental complexity."
+theme: "light"
+industry: "other"
+source_url: "https://www.icam-inox.com"
+refero_style_id: "e51d5c11-0190-40c8-9f73-92ba82488692"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512402692-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512402692-thumb.jpg"
+extracted_at: "2026-04-30T01:27:00.228Z"
 ---
 
-## Overview
+# Icam inox s.r.l. — Style Reference
 
-**North Star:** Monochrome industrial precision
+> Monochrome industrial precision
+
+**Theme:** light
+
+**Industry:** other
 
 The Icam visual system is a study in stark monochrome contrast and material precision. It pairs crisp, confident typography with expansive white and deep black surfaces, creating a sense of technical authority. Subtle, large radius rounded corners soften rigid forms, while minimal borders and generous spacing maintain an airy, professional feel. The design emphasizes content through direct visual hierarchy rather than ornamental complexity.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Black | #000000 | `--color-absolute-black` | Primary text, headers at smaller sizes, icons, structural borders, initial hero background filler |
+| Heavy Graphite | #090909 | `--color-heavy-graphite` | Footer background, secondary dark surface, used for large dark background areas |
+| Deep Shadow | #0f0f0f | `--color-deep-shadow` | Decorative borders for cards and images, hinting at depth without full elevation |
+| Charcoal Text | #333333 | `--color-charcoal-text` | Secondary text for paragraphs, links, and detailed information |
+| Medium Gray | #535353 | `--color-medium-gray` | Muted helper text, tertiary body copy, and subtle heading details |
+| Silver Link | #aaaaaa | `--color-silver-link` | Inactive link text, light decorative borders, and copyright information |
+| Near White | #f3f3f3 | `--color-near-white` | Primary page background, card surfaces, and subtle button borders |
+| Pure White | #ffffff | `--color-pure-white` | Container backgrounds, button fills, active text for dark backgrounds, and prominent borders |
+| Decorative Gray Blue | #a0a9b9 | `--color-decorative-gray-blue` | Muted icon strokes, separators, and secondary graphic details. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 14px, 16px, 18px, 19px, 24px, 26px, 32px, 259px
+- **Line heights:** 0.76, 0.80, 0.83, 1.00, 1.14, 1.17, 1.25, 1.39, 1.50, 2.00
+- **Letter spacing:** -0.0720em at 259px, -0.0450em at 32px, -0.0400em at 24px and 26px, normal at 14-19px
+- **Role:** The sole typeface, Inter, handles all text roles. Its variable weights are used to establish hierarchy against a monochrome backdrop, with very tight letter-spacing for display headings creating a compressed, impactful look. Regular spacing aids readability for body text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.17 | — | `--text-caption` |
+| body-sm | 16px | 1.17 | — | `--text-body-sm` |
+| body | 18px | 1.17 | — | `--text-body` |
+| body-lg | 19px | 1.17 | — | `--text-body-lg` |
+| heading-sm | 24px | 1.17 | — | `--text-heading-sm` |
+| heading | 26px | 1.17 | — | `--text-heading` |
+| heading-lg | 32px | 1.17 | — | `--text-heading-lg` |
+| display-sm | 259px | 1.17 | — | `--text-display-sm` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-71 | 71px | `--spacing-71` |
+| spacing-143 | 143px | `--spacing-143` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 20px |
+| buttons | 20px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button for prominent actions.
+
+Filled with Pure White (#ffffff), text in Absolute Black (#000000). Features generous padding of 25px on all sides and a 20px border-radius, giving it a soft, pill-like appearance.
+
+### Outlined Ghost Button
+
+**Role:** Secondary action button, typically for navigation or less critical actions.
+
+Transparent background, text in Pure White (#ffffff) and bordered with Pure White (#ffffff) for visibility against dark backgrounds. Padding is 18px on all sides, with no border-radius defined, maintaining sharp corners.
+
+### Feature Card
+
+**Role:** Used for showcasing distinct features or categories.
+
+Background in Near White (#f3f3f3) with a 20px border-radius and no box shadow, presenting a flat, clean surface. Content inside the card has no inherent padding, implying images or text extend to edges or are managed by internal content spacing.
+
+### Text Link
+
+**Role:** Navigational links and inline text links.
+
+Typically uses Charcoal Text (#333333) or Absolute Black (#000000), becoming Silver Link (#aaaaaa) when inactive or for minor metadata. Padding of 17px top/bottom and 5px left/right suggests clickable areas extending beyond text, often used in header/footer navigation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Inter for all typography, leveraging its multiple weights to define hierarchy from display to body text.
 - Apply Absolute Black (#000000) for primary headlines and Pure White (#ffffff) for light section backgrounds, establishing high contrast.
@@ -75,7 +130,7 @@ The Icam visual system is a study in stark monochrome contrast and material prec
 - Utilize Near White (#f3f3f3) for card backgrounds and secondary light surfaces to distinguish them from the main Pure White (#ffffff) canvas.
 - Employ tightly tracked letter-spacing for large display text, such as -0.0720em for 259px, to achieve a condensed, impactful visual.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional color beyond the established monochrome palette, including new accent or brand colors.
 - Avoid box shadows or gradients; rely on contrasting surfaces, typography, and borders for visual hierarchy.
@@ -84,10 +139,127 @@ The Icam visual system is a study in stark monochrome contrast and material prec
 - Do not add unnecessary decorative elements; the design emphasizes functional clarity through direct presentation.
 - Avoid dense information blocks; maintain generous spacing between elements and sections to preserve an airy, open feel.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Page Canvas | #ffffff | Dominant background for main content areas and interactive components like buttons. |
+| 2 | Card Surface | #f3f3f3 | Background for feature cards and secondary content blocks, providing a subtle elevation from the main canvas. |
+| 3 | Dark Section | #090909 | Background for footer and specific dark content sections, offering strong contrast to light content. |
+
+## Imagery
+
+The visual language predominantly features high-contrast, product-focused photography of stainless steel and industrial components. Images are typically tightly cropped, showcasing the material and form directly without extraneous context or lifestyle elements. They are contained within card-like structures or used as backgrounds. The sparse use of icons is limited to outlined, monochrome symbols, primarily for navigation or utility. The overall impression is one of material honesty and technical precision, using imagery to illustrate product rather than decorate.
+
+## Layout
 
 The page primarily uses a full-bleed layout, particularly for the hero section which can be a stark black canvas with prominent white typography. Content sections below often alternate between full-width black and white backgrounds, creating strong vertical rhythm. Within these sections, content appears to be structured in a max-width, center-aligned manner for readability over extensive line lengths, though a specific `pageMaxWidth` is not enforced globally. Feature sections utilize a grid of cards, likely 3-column. The navigation sits in a fixed header with minimal elements, usually a logo, language switcher, and a hamburger menu icon.
 
-### Imagery
+## Similar Brands
 
-The visual language predominantly features high-contrast, product-focused photography of stainless steel and industrial components. Images are typically tightly cropped, showcasing the material and form directly without extraneous context or lifestyle elements. They are contained within card-like structures or used as backgrounds. The sparse use of icons is limited to outlined, monochrome symbols, primarily for navigation or utility. The overall impression is one of material honesty and technical precision, using imagery to illustrate product rather than decorate.
+- **Stripe** — Similar use of expansive negative space, high-contrast monochrome UI, and strong typography for a professional, understated feel.
+- **Apple (product pages)** — Focus on showcasing product through clean, direct photography against stark, often white or black, backgrounds with minimal UI interference.
+- **Figma** — Employs an extensive neutral palette with functional use of stark black and white contrasts along with generous spacing to create a clean, organized interface.
+- **Linear** — Utilizes a highly structured, minimalist dark/light UI with consistent application of type scale and spacing to convey efficiency and precision.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-black: #000000;
+  --color-heavy-graphite: #090909;
+  --color-deep-shadow: #0f0f0f;
+  --color-charcoal-text: #333333;
+  --color-medium-gray: #535353;
+  --color-silver-link: #aaaaaa;
+  --color-near-white: #f3f3f3;
+  --color-pure-white: #ffffff;
+  --color-decorative-gray-blue: #a0a9b9;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.17;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.17;
+  --text-body: 18px;
+  --leading-body: 1.17;
+  --text-body-lg: 19px;
+  --leading-body-lg: 1.17;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.17;
+  --text-heading: 26px;
+  --leading-heading: 1.17;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.17;
+  --text-display-sm: 259px;
+  --leading-display-sm: 1.17;
+  --spacing-0: 0px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-71: 71px;
+  --spacing-143: 143px;
+  --radius-cards: 20px;
+  --radius-buttons: 20px;
+  --surface-page-canvas: #ffffff;
+  --surface-card-surface: #f3f3f3;
+  --surface-dark-section: #090909;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-black: #000000;
+  --color-heavy-graphite: #090909;
+  --color-deep-shadow: #0f0f0f;
+  --color-charcoal-text: #333333;
+  --color-medium-gray: #535353;
+  --color-silver-link: #aaaaaa;
+  --color-near-white: #f3f3f3;
+  --color-pure-white: #ffffff;
+  --color-decorative-gray-blue: #a0a9b9;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.17;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.17;
+  --text-body: 18px;
+  --leading-body: 1.17;
+  --text-body-lg: 19px;
+  --leading-body-lg: 1.17;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.17;
+  --text-heading: 26px;
+  --leading-heading: 1.17;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.17;
+  --text-display-sm: 259px;
+  --leading-display-sm: 1.17;
+  --spacing-0: 0px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-71: 71px;
+  --spacing-143: 143px;
+  --radius-cards: 20px;
+  --radius-buttons: 20px;
+  --surface-page-canvas: #ffffff;
+  --surface-card-surface: #f3f3f3;
+  --surface-dark-section: #090909;
+}
+```

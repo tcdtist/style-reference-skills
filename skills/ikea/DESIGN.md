@@ -1,65 +1,141 @@
 ---
 version: alpha
-name: IKEA
-description: IKEA's global digital presence is built on a foundation of optimistic simplicity. The interface features a clean, bright canvas, primarily using high-contrast typography and a distinct, energetic yellow as the primary brand accent. Component surfaces are generally flat and rounded, creating a friendly and approachable feel. This system prioritizes clear communication and intuitive interaction, using color sparingly for functional highlights, while maintaining a spacious, user-friendly layout.
-colors:
-  ikea-yellow: "#ffdb00"
-  core-black: "#111111"
-  canvas-white: "#ffffff"
-  deep-sea-blue: "#0159a3"
-  off-white: "#fffefb"
-  text-black: "#000000"
-  mid-grey: "#818181"
-  light-grey: "#dadada"
-  soft-peach: "#ffa6da"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.57
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.57
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-    letterSpacing: -0.97px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 51px
-    lineHeight: 1.08
-    letterSpacing: -1.48px
-spacing:
-  elementGap: 24px
-  sectionGap: 80px
-components:
-  primary-action-button:
-    role: Main call-to-action button, drawing immediate attention.
-  dark-icon-button:
-    role: Small, functional buttons for video controls or navigation, offering a clear visual cue.
-  light-icon-button:
-    role: Small, functional buttons for controls like video pause, against lighter backgrounds.
-  ghost-header-button:
-    role: Secondary call-to-action or functional button within headers, unobtrusive.
-  content-card-yellow:
-    role: Highlighting key information or promotional content.
-  text-input-field:
-    role: User input fields.
+name: "IKEA"
+description: "IKEA's global digital presence is built on a foundation of optimistic simplicity. The interface features a clean, bright canvas, primarily using high-contrast typography and a distinct, energetic yellow as the primary brand accent. Component surfaces are generally flat and rounded, creating a friendly and approachable feel. This system prioritizes clear communication and intuitive interaction, using color sparingly for functional highlights, while maintaining a spacious, user-friendly layout."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.ikea.com"
+refero_style_id: "e7b37c82-239c-48d5-b293-79a2bfa235cc"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511000454-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511000454-thumb.jpg"
+extracted_at: "2026-04-30T01:03:45.571Z"
 ---
 
-## Overview
+# IKEA — Style Reference
 
-**North Star:** Scandinavian sunshine on white birch
+> Scandinavian sunshine on white birch
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 IKEA's global digital presence is built on a foundation of optimistic simplicity. The interface features a clean, bright canvas, primarily using high-contrast typography and a distinct, energetic yellow as the primary brand accent. Component surfaces are generally flat and rounded, creating a friendly and approachable feel. This system prioritizes clear communication and intuitive interaction, using color sparingly for functional highlights, while maintaining a spacious, user-friendly layout.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ikea Yellow | #ffdb00 | `--color-ikea-yellow` | Primary brand accent, interactive elements like CTA buttons, hero backgrounds, and prominent informational cards — its vibrancy instantly draws the eye and signifies action or importance |
+| Core Black | #111111 | `--color-core-black` | Primary text, headline text, dark button backgrounds, and strong borders. Provides high contrast against light backgrounds |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button backgrounds, and text on dark button backgrounds |
+| Deep Sea Blue | #0159a3 | `--color-deep-sea-blue` | Decorative link backgrounds, indicating followable content or external navigation. This blue offers a slight variation from the yellow without competing |
+| Off-White | #fffefb | `--color-off-white` | Subtle background for UI elements, offering a soft alternative to pure white for visual layering or highlighting. Also used for some button backgrounds and borders |
+| Text Black | #000000 | `--color-text-black` | Secondary text, input text, and default icon fills. Used for general text where Core Black might be too intense |
+| Mid Grey | #818181 | `--color-mid-grey` | Muted text, less prominent icons, and secondary button borders. Provides secondary text hierarchy |
+| Light Grey | #dadada | `--color-light-grey` | Subtle button backgrounds, offering a very soft interaction state or a less emphasized button style |
+| Soft Peach | #ffa6da | `--color-soft-peach` | Highlight elements or decorative backgrounds for specific content blocks, providing a warm, playful accent |
+
+## Tokens — Typography
+
+### Noto IKEA
+
+- **Token:** `--font-noto-ikea`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 13px, 14px, 16px, 20px, 36px, 51px
+- **Line heights:** 1.00, 1.08, 1.20, 1.40, 1.57, 1.62
+- **Letter spacing:** -0.0290em at 51px, -0.0270em at 36px, normal for smaller sizes
+- **Role:** The primary typeface for all content, from navigation to body text and headlines. Its robust yet friendly character supports the brand's accessible image. The varied weights and sizes are used to establish clear hierarchy, particularly the subtle negative letter-spacing on larger sizes which gives titles a composed feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.57 | — | `--text-caption` |
+| body | 16px | 1.57 | — | `--text-body` |
+| subheading | 20px | 1.4 | — | `--text-subheading` |
+| heading | 36px | 1.2 | -0.97px | `--text-heading` |
+| display | 51px | 1.08 | -1.48px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-92 | 92px | `--spacing-92` |
+| spacing-108 | 108px | `--spacing-108` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-140 | 140px | `--spacing-140` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 80px |
+| cardPadding | 16px |
+| elementGap | 24px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call-to-action button, drawing immediate attention.
+
+Background: Ikea Yellow (#ffdb00). Text: Core Black (#111111). Border radius: 8px. Padding: 16px vertical, 50px horizontal. Typically found at the bottom of hero sections or prominent content blocks.
+
+### Dark Icon Button
+
+**Role:** Small, functional buttons for video controls or navigation, offering a clear visual cue.
+
+Background: Core Black (#111111). Text/Icon: Canvas White (#ffffff). Border radius: 50% (circular). No padding, designed for icon-only content.
+
+### Light Icon Button
+
+**Role:** Small, functional buttons for controls like video pause, against lighter backgrounds.
+
+Background: Canvas White (#ffffff). Text/Icon: Core Black (#111111). Border radius: 50% (circular). No padding, designed for icon-only content.
+
+### Ghost Header Button
+
+**Role:** Secondary call-to-action or functional button within headers, unobtrusive.
+
+Background: Off-White (#fffefb). Text: Text Black (#000000). Border: 1px solid Text Black (#000000). Padding: 20px vertical, 20px horizontal. No border radius (sharp rectangular form).
+
+### Content Card - Yellow
+
+**Role:** Highlighting key information or promotional content.
+
+Background: Ikea Yellow (#ffdb00). Border radius: 8px. No padding on the card itself, content handles its own spacing.
+
+### Text Input Field
+
+**Role:** User input fields.
+
+Background: Canvas White (#ffffff). Text: Text Black (#000000). Border: 1px solid Text Black (#000000). Border radius: 8px. Padding: 12px vertical, 42px left (for potential icon placement).
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Ikea Yellow (#ffdb00) for all primary call-to-actions, ensuring it's the most prominent interactive element.
 - Maintain a clear visual hierarchy using Core Black (#111111) for main headlines and Canvas White (#ffffff) for backgrounds.
@@ -69,7 +145,7 @@ IKEA's global digital presence is built on a foundation of optimistic simplicity
 - Reserve Deep Sea Blue (#0159a3) for decorative link backgrounds or highly specific interactive accents, not for primary actions.
 - Use Off-White (#fffefb) for subtle background variations, providing visual depth without harsh color changes.
 
-### Don'ts
+### Don't
 
 - Do not use Core Black (#111111) for general body text; reserve it for high-contrast headlines or specific dark UI elements.
 - Avoid arbitrary color choices outside of the defined palette; color should always serve a specific functional or brand-aligned purpose.
@@ -79,10 +155,104 @@ IKEA's global digital presence is built on a foundation of optimistic simplicity
 - Do not use generic system fonts; only use Noto IKEA (or Inter as a substitute) to maintain typographic brand identity.
 - Do not create an overly dense layout; ensure a maximum page width of 1440px with content centered, leaving ample breathing room.
 
-### Layout
+## Imagery
+
+Imagery primarily features product shots and lifestyle photography, often with a white or light-colored background that blends seamlessly with the UI. Product shots are typically centered and well-lit, functioning as content showcases. Illustrations, when present, are flat, organic, and often use brand colors or soft pastels for decorative or conceptual purposes. Icons are predominantly outline-style with a medium stroke weight, in monochrome (black) or occasionally brand colors, used functionally for navigation and interaction. Imagery plays a significant role in conveying product context and aspirational living, balancing text-dominant informational blocks with engaging visual content.
+
+## Layout
 
 The page adheres to a max-width 1440px centered container for most content. The hero section is often full-bleed with either a product video or a large visual split between content and a prominent Ikea Yellow CTA. Sections maintain a consistent vertical rhythm with 80px gaps. Content is arranged in flexible layouts, often with product cards or content blocks organized into grids. Visuals frequently feature text overlays at the bottom left. The navigation is a persistent top bar, minimalist and functional, with logo and primary links.
 
-### Imagery
+## Quick Start
 
-Imagery primarily features product shots and lifestyle photography, often with a white or light-colored background that blends seamlessly with the UI. Product shots are typically centered and well-lit, functioning as content showcases. Illustrations, when present, are flat, organic, and often use brand colors or soft pastels for decorative or conceptual purposes. Icons are predominantly outline-style with a medium stroke weight, in monochrome (black) or occasionally brand colors, used functionally for navigation and interaction. Imagery plays a significant role in conveying product context and aspirational living, balancing text-dominant informational blocks with engaging visual content.
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ikea-yellow: #ffdb00;
+  --color-core-black: #111111;
+  --color-canvas-white: #ffffff;
+  --color-deep-sea-blue: #0159a3;
+  --color-off-white: #fffefb;
+  --color-text-black: #000000;
+  --color-mid-grey: #818181;
+  --color-light-grey: #dadada;
+  --color-soft-peach: #ffa6da;
+  --font-noto-ikea: 'Noto IKEA', Inter;
+  --text-caption: 13px;
+  --leading-caption: 1.57;
+  --text-body: 16px;
+  --leading-body: 1.57;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.97px;
+  --text-display: 51px;
+  --leading-display: 1.08;
+  --tracking-display: -1.48px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-92: 92px;
+  --spacing-108: 108px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --radius-all: 8px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ikea-yellow: #ffdb00;
+  --color-core-black: #111111;
+  --color-canvas-white: #ffffff;
+  --color-deep-sea-blue: #0159a3;
+  --color-off-white: #fffefb;
+  --color-text-black: #000000;
+  --color-mid-grey: #818181;
+  --color-light-grey: #dadada;
+  --color-soft-peach: #ffa6da;
+  --font-noto-ikea: 'Noto IKEA', Inter;
+  --text-caption: 13px;
+  --leading-caption: 1.57;
+  --text-body: 16px;
+  --leading-body: 1.57;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.97px;
+  --text-display: 51px;
+  --leading-display: 1.08;
+  --tracking-display: -1.48px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-92: 92px;
+  --spacing-108: 108px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --radius-all: 8px;
+}
+```

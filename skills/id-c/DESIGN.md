@@ -1,61 +1,117 @@
 ---
 version: alpha
-name: ID—C
-description: ID-C employs an architectural blueprint aesthetic, utilizing a monochromatic palette defined by stark black and white with a spectrum of grays. Typography is precise and understated, favoring a custom sans-serif with subtle letter-spacing for headlines to convey authority through restraint. The layout emphasizes clean lines, ample negative space, and modular content blocks, creating a sense of order and sophisticated simplicity. Interaction is indicated through subtle border changes rather than bold color shifts.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  dividing-ash: "#ededed"
-  muted-stone: "#adadad"
-  caption-gray: "#767676"
-  red-dot-accent: "#ee3026"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.65
-    letterSpacing: -0.12px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.45
-    letterSpacing: -0.54px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.33
-    letterSpacing: -0.96px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1.17
-    letterSpacing: -2.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.07
-    letterSpacing: -3.3px
-spacing:
-  elementGap: 16px
-  sectionGap: 200px
-components:
-  navigation-link:
-    role: Primary navigation items.
-  work-entry-card:
-    role: Displays individual work portfolio pieces with associated metadata.
-  badge-information-tag:
-    role: Categorizes and describes work entries.
-  ghost-border-button:
-    role: Secondary action or 'View All' links.
+name: "ID—C"
+description: "ID-C employs an architectural blueprint aesthetic, utilizing a monochromatic palette defined by stark black and white with a spectrum of grays. Typography is precise and understated, favoring a custom sans-serif with subtle letter-spacing for headlines to convey authority through restraint. The layout emphasizes clean lines, ample negative space, and modular content blocks, creating a sense of order and sophisticated simplicity. Interaction is indicated through subtle border changes rather than bold color shifts."
+theme: "light"
+industry: "design"
+source_url: "https://id-c.se"
+refero_style_id: "03a78f26-ebd4-4d09-9012-7c69d327df9a"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513256814-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513256814-thumb.jpg"
+extracted_at: "2026-04-30T01:41:13.407Z"
 ---
 
-## Overview
+# ID—C — Style Reference
 
-**North Star:** Architectural Blueprint Precision
+> Architectural Blueprint Precision
+
+**Theme:** light
+
+**Industry:** design
 
 ID-C employs an architectural blueprint aesthetic, utilizing a monochromatic palette defined by stark black and white with a spectrum of grays. Typography is precise and understated, favoring a custom sans-serif with subtle letter-spacing for headlines to convey authority through restraint. The layout emphasizes clean lines, ample negative space, and modular content blocks, creating a sense of order and sophisticated simplicity. Interaction is indicated through subtle border changes rather than bold color shifts.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary background for all page content and navigation areas |
+| Ink Black | #000000 | `--color-ink-black` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Dividing Ash | #ededed | `--color-dividing-ash` | Subtle border colors, particularly for horizontal dividers and section separations |
+| Muted Stone | #adadad | `--color-muted-stone` | Secondary text, muted links, and less prominent borders. Provides visual relief from Ink Black |
+| Caption Gray | #767676 | `--color-caption-gray` | Descriptive body text, badge text, and hairline borders for less prominent components |
+| Red Dot Accent | #ee3026 | `--color-red-dot-accent` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### universnextpro
+
+- **Token:** `--font-universnextpro`
+- **Substitute:** Helvetica Neue, Arial
+- **Weights:** 200, 400
+- **Sizes:** 12px, 17px, 24px, 44px, 60px
+- **Line heights:** 1.00, 1.07, 1.17, 1.33, 1.45, 1.65
+- **Letter spacing:** -0.0550em at 60px, -0.0460em at 44px, -0.0400em at 24px, -0.0320em at 17px, -0.0100em at 12px
+- **OpenType features:** 'lnum', 'pnum', 'tnum'
+- **Role:** The primary typeface for all text. Its range of light weights and precise letter-spacing supports the minimalist and refined aesthetic. Weight 200 is used for large, impactful headlines, offering a sense of quiet authority, while weight 400 is ideal for body text and navigation, maintaining clarity without imposing visual weight.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.65 | -0.12px | `--text-caption` |
+| body-sm | 17px | 1.45 | -0.54px | `--text-body-sm` |
+| body | 24px | 1.33 | -0.96px | `--text-body` |
+| heading | 44px | 1.17 | -2.02px | `--text-heading` |
+| display | 60px | 1.07 | -3.3px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 200px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary navigation items.
+
+Text uses universnextpro weight 400, size 17px, Ink Black. Hover and active states are visually indicated by a hairline Ink Black border-bottom appearing below the text.
+
+### Work Entry Card
+
+**Role:** Displays individual work portfolio pieces with associated metadata.
+
+Invisible background (rgba(0, 0, 0, 0)), 8px border-radius applied to containing element. Image area has a 1px solid Ink Black border. Padding is implicitly handled by grid gaps. Text uses universnextpro with Caption Gray for descriptive text and Ink Black for titles.
+
+### Badge Information Tag
+
+**Role:** Categorizes and describes work entries.
+
+Invisible background (rgba(0, 0, 0, 0)), text color is Caption Gray (#767676) at 12px universnextpro. No explicit padding or border on the badge itself.
+
+### Ghost Border Button
+
+**Role:** Secondary action or 'View All' links.
+
+Text is Ink Black or Muted Stone, universnextpro. Interactive. The primary visual cue for interaction is a 1px Ink Black border appearing on hover or focus.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Ink Black (#000000) for all primary text, headings, and significant borders to maintain high contrast and visual weight.
 - Use Canvas White (#ffffff) as the overarching background for all primary surfaces to enforce a clean, spacious aesthetic.
@@ -65,7 +121,7 @@ ID-C employs an architectural blueprint aesthetic, utilizing a monochromatic pal
 - Utilize Dividing Ash (#ededed) for hairline borders that provide visual separation without adding significant weight.
 - Maintain a comfortable density with an element gap of 16px and allow for larger section gaps of 200px to emphasize spaciousness.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for functional UI elements; reserve high chroma for designated decorative accents like the Red Dot accent.
 - Do not introduce strong drop shadows or complex gradients; the system relies on flat surfaces and clean lines.
@@ -75,10 +131,93 @@ ID-C employs an architectural blueprint aesthetic, utilizing a monochromatic pal
 - Do not use different radius values for cards and buttons; ensure all rounded elements use 8px.
 - Do not use #0000ee (browser default link blue); all links should conform to Ink Black or Muted Stone.
 
-### Layout
+## Imagery
+
+The site uses a mix of tightly cropped product photography and illustrative product renders, usually against stark white or light gray backgrounds. Images are contained within rectangular frames, often with a 1px black border, and do not overlap. There's a notable absence of lifestyle photography or complex scenic visuals. Icons appear minimal, primarily outlined or filled in monochromatic tones matching the text, serving a functional rather than decorative role.
+
+## Layout
 
 The page maintains a centered, fluid-width model that appears to breath within implied vertical constraints, though no explicit max-width is globally enforced, content sections are contained. The hero section features a prominent, centered headline with supporting text positioned below. A consistent rhythm is established by alternating blocks of content, often with a large vertical gap (200px) acting as a strong section divider. Content is frequently arranged in a grid-like fashion, showcasing work in 3-column card layouts. Navigation is a simple, fixed top bar, often with subtle border changes on hover.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of tightly cropped product photography and illustrative product renders, usually against stark white or light gray backgrounds. Images are contained within rectangular frames, often with a 1px black border, and do not overlap. There's a notable absence of lifestyle photography or complex scenic visuals. Icons appear minimal, primarily outlined or filled in monochromatic tones matching the text, serving a functional rather than decorative role.
+- **AIGA** — Similar high-contrast monochrome aesthetic with precise typography and grid-based content layouts.
+- **Chermayeff & Geismar & Haviv** — Employs a stark, minimalist visual style with a strong emphasis on typographic hierarchy and clean lines in their case studies.
+- **Pentagram** — Showcases work through structured, often grid-based layouts and a focus on clean typography over heavy visual effects.
+- **Manual (design studio)** — Shares a preference for largely monochromatic palettes, ample negative space, and disciplined typography to highlight content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-dividing-ash: #ededed;
+  --color-muted-stone: #adadad;
+  --color-caption-gray: #767676;
+  --color-red-dot-accent: #ee3026;
+  --font-universnextpro: 'universnextpro', Helvetica Neue, Arial;
+  --text-caption: 12px;
+  --leading-caption: 1.65;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 17px;
+  --leading-body-sm: 1.45;
+  --tracking-body-sm: -0.54px;
+  --text-body: 24px;
+  --leading-body: 1.33;
+  --tracking-body: -0.96px;
+  --text-heading: 44px;
+  --leading-heading: 1.17;
+  --tracking-heading: -2.02px;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --tracking-display: -3.3px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-200: 200px;
+  --radius-default: 8px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-dividing-ash: #ededed;
+  --color-muted-stone: #adadad;
+  --color-caption-gray: #767676;
+  --color-red-dot-accent: #ee3026;
+  --font-universnextpro: 'universnextpro', Helvetica Neue, Arial;
+  --text-caption: 12px;
+  --leading-caption: 1.65;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 17px;
+  --leading-body-sm: 1.45;
+  --tracking-body-sm: -0.54px;
+  --text-body: 24px;
+  --leading-body: 1.33;
+  --tracking-body: -0.96px;
+  --text-heading: 44px;
+  --leading-heading: 1.17;
+  --tracking-heading: -2.02px;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --tracking-display: -3.3px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-200: 200px;
+  --radius-default: 8px;
+}
+```
