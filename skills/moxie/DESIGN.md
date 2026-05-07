@@ -1,67 +1,149 @@
 ---
 version: alpha
-name: Moxie
-description: Moxie embraces a dark, atmospheric interface where rich blacks and deep grays provide a dramatic backdrop for subtle typography and a singular, vivid blue accent. Content appears on soft, low-contrast surfaces, outlined by fine borders, creating a quiet depth rather than sharp separation. Typography is a deliberate interplay of classic serifs for impact and clean sans-serifs for detail, all rendered in a warm, near-white hue that feels inviting against the dark theme. The overall aesthetic is one of understated authority, with controlled bursts of color for key interactive elements.
-colors:
-  background-ink: "#000000"
-  parchment-white: "#f4efd4"
-  twilight-gray: "#626055"
-  deep-shadow: "#333333"
-  authority-blue: "#84acfb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.1
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 43px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 55px
-    lineHeight: 1.1
-spacing:
-  cardRadius: 13.8417px
-  buttonRadius: 1000px
-  elementGap: 21px
-  sectionGap: 107px
-components:
-  primary-action-button:
-    role: Interactive element
-  ghost-outline-button:
-    role: Interactive element
-  soft-border-card:
-    role: Content container
-  client-logo-card:
-    role: Display brand logos
-  quote-card:
-    role: Testimonial display
+name: "Moxie"
+description: "Moxie embraces a dark, atmospheric interface where rich blacks and deep grays provide a dramatic backdrop for subtle typography and a singular, vivid blue accent. Content appears on soft, low-contrast surfaces, outlined by fine borders, creating a quiet depth rather than sharp separation. Typography is a deliberate interplay of classic serifs for impact and clean sans-serifs for detail, all rendered in a warm, near-white hue that feels inviting against the dark theme. The overall aesthetic is one of understated authority, with controlled bursts of color for key interactive elements."
+theme: "dark"
+industry: "agency"
+source_url: "https://moxiegrouppr.com"
+refero_style_id: "7f70ee10-123b-43cc-bd04-498cfc5b5ac0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517526528-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517526528-thumb.jpg"
+extracted_at: "2026-04-30T02:52:24.370Z"
 ---
 
-## Overview
+# Moxie — Style Reference
 
-**North Star:** Midnight velvet, shimmering ink
+> Midnight velvet, shimmering ink
+
+**Theme:** dark
+
+**Industry:** agency
 
 Moxie embraces a dark, atmospheric interface where rich blacks and deep grays provide a dramatic backdrop for subtle typography and a singular, vivid blue accent. Content appears on soft, low-contrast surfaces, outlined by fine borders, creating a quiet depth rather than sharp separation. Typography is a deliberate interplay of classic serifs for impact and clean sans-serifs for detail, all rendered in a warm, near-white hue that feels inviting against the dark theme. The overall aesthetic is one of understated authority, with controlled bursts of color for key interactive elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Background Ink | #000000 | `--color-background-ink` | Page background, primary dark surface |
+| Parchment White | #f4efd4 | `--color-parchment-white` | Primary text, icon fill, ghost button text and borders, outline for cards |
+| Twilight Gray | #626055 | `--color-twilight-gray` | Muted text, secondary borders, subtle dividers |
+| Deep Shadow | #333333 | `--color-deep-shadow` | Decorative borders, detailed link colors |
+| Authority Blue | #84acfb | `--color-authority-blue` | Violet action color for filled buttons, selected navigation states, and focused conversion moments. |
+
+## Tokens — Typography
+
+### IBM Plex Serif
+
+- **Token:** `--font-ibm-plex-serif`
+- **Substitute:** Source Serif Pro
+- **Weights:** 300, 400, 500
+- **Sizes:** 17px, 22px, 26px, 28px, 43px, 55px
+- **Line heights:** 1.10, 1.20
+- **Role:** Headlines and prominent display text – the delicate weight of 300 for larger sizes lends an antique, authoritative whisper, eschewing typical bold declarations.
+
+### IBM Plex Sans
+
+- **Token:** `--font-ibm-plex-sans`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500
+- **Sizes:** 10px, 12px, 14px, 16px, 17px, 24px
+- **Line heights:** 1.00, 1.20, 1.50
+- **Role:** Body copy, navigation, buttons, and functional interface elements – provides clarity and legibility for detailed information against a dark background.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| body | 14px | 1 | — | `--text-body` |
+| heading-sm | 22px | 1.1 | — | `--text-heading-sm` |
+| heading | 26px | 1.1 | — | `--text-heading` |
+| heading-lg | 28px | 1.1 | — | `--text-heading-lg` |
+| display-sm | 43px | 1.1 | — | `--text-display-sm` |
+| display | 55px | 1.1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-76 | 76px | `--spacing-76` |
+| spacing-78 | 78px | `--spacing-78` |
+| spacing-87 | 87px | `--spacing-87` |
+| spacing-93 | 93px | `--spacing-93` |
+| spacing-107 | 107px | `--spacing-107` |
+| spacing-147 | 147px | `--spacing-147` |
+| spacing-190 | 190px | `--spacing-190` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 1000px |
+| cards | 13.8417px |
+| buttons | 1000px |
+| smallCards | 8.65108px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 107px |
+| cardPadding | 19px |
+| elementGap | 21px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Interactive element
+
+Filled button with 'Authority Blue' background, 'Parchment White' text, and full pill-shaped '1000px' radius. Padding is 6.92px vertical, 20.76px horizontal. Background color is #84acfb, text color is #f4efd4.
+
+### Ghost Outline Button
+
+**Role:** Interactive element
+
+Ghost button with a subtle 'Parchment White' border and text. The border is 1px, color #f4efd4, and radius is 1000px, creating a delicate pill shape. Text color is #f4efd4.
+
+### Soft Border Card
+
+**Role:** Content container
+
+Content card with no background fill, a rounded border radius of 13.84px, and an interior padding of 19.03px on all sides. Border color is #626055, creating a subtle division.
+
+### Client Logo Card
+
+**Role:** Display brand logos
+
+Transparent background cards for client logos, outlined with a 1px border in 'Parchment White' and a full pill-shaped radius of 1000px. Padding is minimal to contain the logo.
+
+### Quote Card
+
+**Role:** Testimonial display
+
+Card with nearly square corners (0px), transparent background, generous padding of 19.03px on all sides. The content within relies on text color to stand out against the background.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Background Ink' (#000000) for all page backgrounds to maintain the deep, dark aesthetic.
 - Use 'Parchment White' (#f4efd4) for primary text and icon elements across the interface.
@@ -71,7 +153,7 @@ Moxie embraces a dark, atmospheric interface where rich blacks and deep grays pr
 - Maintain comfortable density by using 19px for card padding and 21px for element gaps.
 - Outline content cards and sections with subtle borders in 'Twilight Gray' (#626055) or 'Parchment White' (#f4efd4) rather than using strong background fills.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or overly saturated colors beyond 'Authority Blue' to prevent distracting from the dark, sophisticated palette.
 - Do not use heavy box shadows; the system relies on subtle borders and transparent fills for depth.
@@ -81,10 +163,126 @@ Moxie embraces a dark, atmospheric interface where rich blacks and deep grays pr
 - Do not deviate from the defined border radii; maintain 1000px for buttons and tags, and 13.84px/8.65px for cards.
 - Do not use generic system greys; ensure all achromatic elements align with 'Parchment White','Twilight Gray', or 'Deep Shadow'.
 
-### Layout
+## Imagery
+
+The site uses minimal imagery, primarily relying on embedded videos or product shots within framed containers. When present, images are contained within cards, often with rounded corners or subtle borders, blending into the dark interface without harsh edges. There's an implied focus on product showcases or testimonials through video content, rather than decorative photography. Icons are outlined, typically monochrome using 'Parchment White', with thin stroke weights, providing functional clarity without visual clutter. The density is image-light, text-dominant, with visuals serving an explanatory or evidence-based role.
+
+## Layout
 
 The page primarily uses a full-bleed dark background and a centered content area with varying widths. The hero section features a large, centered headline (IBM Plex Serif) over an unadorned dark expanse, immediately establishing the brand's quiet authority. Subsequent sections alternate between full-width presentations (like client logos) and more structured content blocks, often laid out with alternating text-left/visual-right patterns. Testimonials are presented in a horizontal scroll arrangement of transparent cards with subtle borders. Vertical spacing between sections is generous, contributing to a spacious feel despite the content density. Navigation is a minimal top bar with a hamburger menu and a single 'Become a Client' button, reinforcing the uncluttered aesthetic.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, primarily relying on embedded videos or product shots within framed containers. When present, images are contained within cards, often with rounded corners or subtle borders, blending into the dark interface without harsh edges. There's an implied focus on product showcases or testimonials through video content, rather than decorative photography. Icons are outlined, typically monochrome using 'Parchment White', with thin stroke weights, providing functional clarity without visual clutter. The density is image-light, text-dominant, with visuals serving an explanatory or evidence-based role.
+- **Framer** — Dark UI with subtle accent colors and sophisticated typography, relying on transparency and fine borders for component structure.
+- **Linear** — Primarily dark theme, focus on clear information hierarchy with minimal chromatic accents, and understated text styles.
+- **Vercel** — Dark aesthetic with high contrast text, occasional use of vivid blues for interactive elements, and a clean interface devoid of heavy graphics.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-background-ink: #000000;
+  --color-parchment-white: #f4efd4;
+  --color-twilight-gray: #626055;
+  --color-deep-shadow: #333333;
+  --color-authority-blue: #84acfb;
+  --font-ibm-plex-serif: 'IBM Plex Serif', Source Serif Pro;
+  --font-ibm-plex-sans: 'IBM Plex Sans', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 14px;
+  --leading-body: 1;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 26px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 43px;
+  --leading-display-sm: 1.1;
+  --text-display: 55px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-21: 21px;
+  --spacing-28: 28px;
+  --spacing-31: 31px;
+  --spacing-35: 35px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-55: 55px;
+  --spacing-76: 76px;
+  --spacing-78: 78px;
+  --spacing-87: 87px;
+  --spacing-93: 93px;
+  --spacing-107: 107px;
+  --spacing-147: 147px;
+  --spacing-190: 190px;
+  --radius-tags: 1000px;
+  --radius-cards: 13.8417px;
+  --radius-buttons: 1000px;
+  --radius-smallcards: 8.65108px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-background-ink: #000000;
+  --color-parchment-white: #f4efd4;
+  --color-twilight-gray: #626055;
+  --color-deep-shadow: #333333;
+  --color-authority-blue: #84acfb;
+  --font-ibm-plex-serif: 'IBM Plex Serif', Source Serif Pro;
+  --font-ibm-plex-sans: 'IBM Plex Sans', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 14px;
+  --leading-body: 1;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 26px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 43px;
+  --leading-display-sm: 1.1;
+  --text-display: 55px;
+  --leading-display: 1.1;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-21: 21px;
+  --spacing-28: 28px;
+  --spacing-31: 31px;
+  --spacing-35: 35px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-55: 55px;
+  --spacing-76: 76px;
+  --spacing-78: 78px;
+  --spacing-87: 87px;
+  --spacing-93: 93px;
+  --spacing-107: 107px;
+  --spacing-147: 147px;
+  --spacing-190: 190px;
+  --radius-tags: 1000px;
+  --radius-cards: 13.8417px;
+  --radius-buttons: 1000px;
+  --radius-smallcards: 8.65108px;
+}
+```

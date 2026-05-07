@@ -1,73 +1,196 @@
 ---
 version: alpha
-name: Mr. Marcel School
-description: Mr. Marcel School employs a vibrant, educational workshop aesthetic, combining a primarily dark canvas with high-contrast, playful chromatic accents. The density is balanced, favoring clear separation between content blocks. Typography is confident yet friendly, set against dark surfaces with selective use of bright colors for emphasis. Components are sharp-edged, often outlined, and avoid heavy shadows, creating a lightweight, graphic feel.
-colors:
-  midnight-canvas: "#242424"
-  ivory-canvas: "#ffffff"
-  deep-black-text: "#020202"
-  soft-black-surface: "#191919"
-  muted-sage: "#dbf3d0"
-  pale-peach-accent: "#f8c6ab"
-  pale-lavender: "#abc1e8"
-  warm-beige: "#eee1d3"
-  vibrant-red: "#e24037"
-  mellow-yellow-background: "#ffe9ad"
-  subtle-cream-card: "#fddebe"
-  off-white-hero-base: "#fff6de"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-    letterSpacing: 0.007px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.35
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.35
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 74px
-    lineHeight: 1
-spacing:
-  cardRadius: 0px
-  buttonRadius: 50%
-  elementGap: 12px
-  sectionGap: 24px
-components:
-  ghost-circular-button:
-    role: Navigation and subtle actions
-  filled-square-accent-button:
-    role: Primary call to action in dark sections
-  circular-icon-button:
-    role: Small, functional icons or badges
-  transparent-content-card:
-    role: Grouping content without strong visual borders
-  dark-content-card:
-    role: Prominent content blocks on dark backgrounds
-  circular-card:
-    role: Highlighting specific items or profile pictures
-  hero-section-card:
-    role: Prominent content in light hero sections
-  ghost-badge:
-    role: Tags or categories with minimal visual weight
+name: "Mr. Marcel School"
+description: "Mr. Marcel School employs a vibrant, educational workshop aesthetic, combining a primarily dark canvas with high-contrast, playful chromatic accents. The density is balanced, favoring clear separation between content blocks. Typography is confident yet friendly, set against dark surfaces with selective use of bright colors for emphasis. Components are sharp-edged, often outlined, and avoid heavy shadows, creating a lightweight, graphic feel."
+theme: "dark"
+industry: "design"
+source_url: "https://mrmarcelschool.com"
+refero_style_id: "d91ae311-ba5c-461a-8895-eb0aed6585b4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521298955-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521298955-thumb.jpg"
+extracted_at: "2026-04-30T03:55:26.333Z"
 ---
 
-## Overview
+# Mr. Marcel School — Style Reference
 
-**North Star:** Playful dark workshop
+> Playful dark workshop
+
+**Theme:** dark
+
+**Industry:** design
 
 Mr. Marcel School employs a vibrant, educational workshop aesthetic, combining a primarily dark canvas with high-contrast, playful chromatic accents. The density is balanced, favoring clear separation between content blocks. Typography is confident yet friendly, set against dark surfaces with selective use of bright colors for emphasis. Components are sharp-edged, often outlined, and avoid heavy shadows, creating a lightweight, graphic feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Canvas | #242424 | `--color-midnight-canvas` | Primary background for pages and default dark surfaces, text on light surfaces |
+| Ivory Canvas | #ffffff | `--color-ivory-canvas` | Text on dark backgrounds, secondary backgrounds for subtle contrast sections |
+| Deep Black Text | #020202 | `--color-deep-black-text` | Dominant text color on light backgrounds, hairline borders |
+| Soft Black Surface | #191919 | `--color-soft-black-surface` | Slightly elevated card and container backgrounds on the Midnight Canvas |
+| Muted Sage | #dbf3d0 | `--color-muted-sage` | Primary action backgrounds, decorative accents, and border elements |
+| Pale Peach Accent | #f8c6ab | `--color-pale-peach-accent` | Decorative borders, secondary accents, and subtle graphic elements |
+| Pale Lavender | #abc1e8 | `--color-pale-lavender` | Informative elements, active navigation indicators, and decorative borders |
+| Warm Beige | #eee1d3 | `--color-warm-beige` | Neutral link defaults, subtle borders, and decorative outlines |
+| Vibrant Red | #e24037 | `--color-vibrant-red` | Navigation active states, attention-grabbing text highlights |
+| Mellow Yellow Background | #ffe9ad | `--color-mellow-yellow-background` | Background for specific content sections and highlighted text |
+| Subtle Cream Card | #fddebe | `--color-subtle-cream-card` | Background for specific card variants or highlighted content blocks |
+| Off-White Hero Base | #fff6de | `--color-off-white-hero-base` | Background for the hero section, offering a soft contrast |
+
+## Tokens — Typography
+
+### Sofia Pro
+
+- **Token:** `--font-sofia-pro`
+- **Substitute:** Montserrat
+- **Weights:** 100, 400, 500, 600, 700, 900
+- **Sizes:** 15px, 16px, 17px, 18px, 20px, 22px, 24px, 26px, 30px, 32px, 36px, 40px, 42px, 46px, 52px, 74px
+- **Line heights:** 1.00, 1.15, 1.20, 1.35, 1.40
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all headings, body text, and UI elements. Its clean, geometric form provides a modern yet approachable feel.
+
+### Font Awesome 6 Brands
+
+- **Token:** `--font-font-awesome-6-brands`
+- **Weights:** 400
+- **Sizes:** 24px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Iconography for brand and social elements across the interface.
+
+### fontello
+
+- **Token:** `--font-fontello`
+- **Weights:** 400
+- **Sizes:** 18px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Utility icon set for various UI functions.
+
+### Helvetica
+
+- **Token:** `--font-helvetica`
+- **Substitute:** Arial
+- **Weights:** 500
+- **Sizes:** 15px
+- **Line heights:** 1.50
+- **Letter spacing:** 0.0070em
+- **Role:** Used for specific auxiliary text and button labels, providing a compact, familiar feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 15px | 1.5 | 0.007px | `--text-caption` |
+| subheading | 22px | 1.35 | — | `--text-subheading` |
+| heading-sm | 30px | 1.35 | — | `--text-heading-sm` |
+| heading | 42px | 1.2 | — | `--text-heading` |
+| display | 74px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-39 | 39px | `--spacing-39` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-220 | 220px | `--spacing-220` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| other | 40px |
+| buttons | 50% |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1320px |
+| sectionGap | 24px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Circular Button
+
+**Role:** Navigation and subtle actions
+
+backgroundColor=rgba(0, 0, 0, 0), color=rgb(36, 36, 36) - or rgb(219, 243, 208) for inverse, borderTopColor=rgb(36, 36, 36) - or rgb(219, 243, 208) for inverse, borderRadius=50%, paddingTop=0px, paddingRight=0px, paddingBottom=0px, paddingLeft=0px. Used for subtle, circular interaction areas without a strong background focus.
+
+### Filled Square Accent Button
+
+**Role:** Primary call to action in dark sections
+
+backgroundColor=rgb(36, 36, 36), color=rgb(171, 193, 232), borderTopColor=rgb(171, 193, 232), borderRadius=0px, paddingTop=8px, paddingRight=16px, paddingBottom=6px, paddingLeft=16px. A square, filled button with Pale Lavender text and border, standing out against dark backgrounds.
+
+### Circular Icon Button
+
+**Role:** Small, functional icons or badges
+
+backgroundColor=rgb(36, 36, 36), color=rgb(36, 36, 36), borderTopColor=rgb(36, 36, 36), borderRadius=50%, paddingTop=0px, paddingRight=0px, paddingBottom=0px, paddingLeft=0px. Used for small, circular elements that are visually contained, often representing icons.
+
+### Transparent Content Card
+
+**Role:** Grouping content without strong visual borders
+
+backgroundColor=rgba(0, 0, 0, 0), borderRadius=0px, boxShadow=none, paddingTop=0px, paddingRight=12px, paddingBottom=0px, paddingLeft=12px. Utilized for flexible content grouping where the background of the parent section defines the visual context, with subtle internal padding.
+
+### Dark Content Card
+
+**Role:** Prominent content blocks on dark backgrounds
+
+backgroundColor=rgb(36, 36, 36), borderRadius=0px, boxShadow=none, paddingTop=30px, paddingRight=30px, paddingBottom=30px, paddingLeft=30px. These cards provide clear separation and elevation on the primary Midnight Canvas background.
+
+### Circular Card
+
+**Role:** Highlighting specific items or profile pictures
+
+backgroundColor=rgb(36, 36, 36), borderRadius=100%, boxShadow=none, paddingTop=30px, paddingRight=30px, paddingBottom=30px, paddingLeft=30px. A distinct, large circular card for visual emphasis on individual elements.
+
+### Hero Section Card
+
+**Role:** Prominent content in light hero sections
+
+backgroundColor=rgb(253, 222, 190), borderRadius=0px, boxShadow=none, paddingTop=0px, paddingRight=0px, paddingBottom=0px, paddingLeft=0px. A specific card variant with a Mellow Yellow background, used within hero areas for visual contrast.
+
+### Ghost Badge
+
+**Role:** Tags or categories with minimal visual weight
+
+backgroundColor=rgba(0, 0, 0, 0), color=rgb(36, 36, 36), borderRadius=0px, paddingTop=0px, paddingRight=0px, paddingBottom=0px, paddingLeft=0px. Used for labels and tags where the text itself carries the primary emphasis, without any background fill or border.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Canvas (#242424) for primary backgrounds and Soft Black Surface (#191919) for elevated elements, maintaining a dark theme.
 - Use Muted Sage (#dbf3d0) for primary interactive elements and key brand accents to create visual punctuation.
@@ -77,7 +200,7 @@ Mr. Marcel School employs a vibrant, educational workshop aesthetic, combining a
 - Employ Pale Lavender (#abc1e8) for informational accents and active navigational items to guide user attention.
 - Ensure generous padding of 30px within Dark Content Cards to provide ample breathing room around content.
 
-### Don'ts
+### Don't
 
 - Avoid applying heavy drop shadows; the system favors flat or outlined elements over dimensional ones.
 - Do not use generic blue for primary action or informational states; instead, leverage Muted Sage (#dbf3d0) and Pale Lavender (#abc1e8).
@@ -87,10 +210,159 @@ Mr. Marcel School employs a vibrant, educational workshop aesthetic, combining a
 - Do not use standard system fonts when Sofia Pro or Helvetica (where specified) are designated for content.
 - Do not override the distinct letter-spacing for Helvetica at 15px (0.0070em); this is a specific design choice.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Canvas | #242424 | Base page background and general dark UI areas. |
+| 1 | Soft Black Surface | #191919 | Elevated card backgrounds, distinct content blocks, offering a subtle visual lift. |
+| 2 | Subtle Cream Card | #fddebe | Specific card backgrounds for highlighted content within hero sections, providing strong contrast. |
+
+## Imagery
+
+The site uses a mix of playful, abstract illustrations and tightly cropped product/profile photography. Illustrations are flat, graphic, and use a limited color palette of brand colors (green, orange, blue, yellow, red on pink or off-white backgrounds). They are often geometric with clear outlines or filled shapes, adding a whimsical yet structured feel. Photography focuses on professional headshots or clean product examples, often within square or circular masked frames, lacking busy backgrounds. Icons are minimal, either outlined (Font Awesome 6 Brands, fontello) or simple filled shapes, maintaining a consistent stroke weight. Imagery primarily serves a decorative and atmospheric role in hero sections, then transitions to explanatory or social proof in content blocks, occupying significant visual space.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 1320px, with content centered. The hero section is often full-bleed with an off-white background and a split-screen arrangement of text Left and a large, abstract illustration Right. Section rhythm is created through alternating background colors, primarily Midnight Canvas (#242424) and Mellow Yellow Background (#ffe9ad), but without explicit dividers – sections flow seamlessly. Content arrangement frequently uses two-column layouts, often text-left/visual-right, or stacked centered blocks for features. Card grids (typically 4-column) are employed for displaying individuals or program types. Navigation is a persistent top bar, sticky on scroll, with clear brand colors for active states. The overall density is comfortable, with clear vertical spacing between content blocks.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of playful, abstract illustrations and tightly cropped product/profile photography. Illustrations are flat, graphic, and use a limited color palette of brand colors (green, orange, blue, yellow, red on pink or off-white backgrounds). They are often geometric with clear outlines or filled shapes, adding a whimsical yet structured feel. Photography focuses on professional headshots or clean product examples, often within square or circular masked frames, lacking busy backgrounds. Icons are minimal, either outlined (Font Awesome 6 Brands, fontello) or simple filled shapes, maintaining a consistent stroke weight. Imagery primarily serves a decorative and atmospheric role in hero sections, then transitions to explanatory or social proof in content blocks, occupying significant visual space.
+- **AIGA** — Shares a non-traditional, graphic-heavy approach to design education branding, with bold typography and abstract visual elements.
+- **Future London Academy** — Uses a dark background with vibrant, modern color accents and a focus on abstract, often geometric, illustrations for education.
+- **Supra Supply** — Exhibits a similar dark UI, strong typographic hierarchy, and a focus on sharp edges and high-contrast accent colors.
+- **Hyper Island** — Features a playful yet structured visual identity for creative education, incorporating various graphic elements on dark backdrops.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-canvas: #242424;
+  --color-ivory-canvas: #ffffff;
+  --color-deep-black-text: #020202;
+  --color-soft-black-surface: #191919;
+  --color-muted-sage: #dbf3d0;
+  --color-pale-peach-accent: #f8c6ab;
+  --color-pale-lavender: #abc1e8;
+  --color-warm-beige: #eee1d3;
+  --color-vibrant-red: #e24037;
+  --color-mellow-yellow-background: #ffe9ad;
+  --color-subtle-cream-card: #fddebe;
+  --color-off-white-hero-base: #fff6de;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --font-font-awesome-6-brands: 'Font Awesome 6 Brands', ui-sans-serif, system-ui, sans-serif;
+  --font-fontello: 'fontello', ui-sans-serif, system-ui, sans-serif;
+  --font-helvetica: 'Helvetica', Arial;
+  --text-caption: 15px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.007px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.35;
+  --text-heading: 42px;
+  --leading-heading: 1.2;
+  --text-display: 74px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-220: 220px;
+  --radius-cards: 0px;
+  --radius-other: 40px;
+  --radius-buttons: 50%;
+  --surface-midnight-canvas: #242424;
+  --surface-soft-black-surface: #191919;
+  --surface-subtle-cream-card: #fddebe;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-canvas: #242424;
+  --color-ivory-canvas: #ffffff;
+  --color-deep-black-text: #020202;
+  --color-soft-black-surface: #191919;
+  --color-muted-sage: #dbf3d0;
+  --color-pale-peach-accent: #f8c6ab;
+  --color-pale-lavender: #abc1e8;
+  --color-warm-beige: #eee1d3;
+  --color-vibrant-red: #e24037;
+  --color-mellow-yellow-background: #ffe9ad;
+  --color-subtle-cream-card: #fddebe;
+  --color-off-white-hero-base: #fff6de;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --font-font-awesome-6-brands: 'Font Awesome 6 Brands', ui-sans-serif, system-ui, sans-serif;
+  --font-fontello: 'fontello', ui-sans-serif, system-ui, sans-serif;
+  --font-helvetica: 'Helvetica', Arial;
+  --text-caption: 15px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.007px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.35;
+  --text-heading: 42px;
+  --leading-heading: 1.2;
+  --text-display: 74px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-220: 220px;
+  --radius-cards: 0px;
+  --radius-other: 40px;
+  --radius-buttons: 50%;
+  --surface-midnight-canvas: #242424;
+  --surface-soft-black-surface: #191919;
+  --surface-subtle-cream-card: #fddebe;
+}
+```

@@ -1,87 +1,174 @@
 ---
 version: alpha
-name: Motto®
-description: The Motto® design system evokes an atmosphere of rigorous clarity and understated authority. Its visual language relies on stark contrasts between crisp black text and an expansive canvas of near-white, creating a sophisticated and professional impression. The dominance of bold, custom san-serif typography, particularly the expansive display font, dictates the site's strong visual rhythm. A distinct lack of ornamentation, shadows, or vibrant color accents streamlines the user experience to focus purely on content and impactful messaging.
-colors:
-  pitch-black: "#000000"
-  canvas-white: "#ffffff"
-  charcoal-surface: "#1b1b1c"
-  cloud-gray: "#f2f2f2"
-  stone-accent: "#d8d8d8"
-  ash-text: "#4d5153"
-  silver-text: "#848484"
-  input-border: "#c8cacd"
-  faint-gray: "#717476"
-  vivid-purple: "#9c98ef"
-  electric-violet: "#6980ff"
-  grass-green: "#beee98"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-  body:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.38
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.14
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1.14
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.14
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 61px
-    lineHeight: 1.1
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 99px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 154px
-    lineHeight: 1
-spacing:
-  cardRadius: 0px
-  buttonRadius: 9999px
-  sectionGap: 48px
-components:
-  services-tag-strip:
-    role: 
-  testimonial-card:
-    role: 
-  section-header-with-cta:
-    role: 
-  navigation-link:
-    role: Standard interactive navigation item
-  ghost-button-text:
-    role: Secondary action or informational link styled as a button
-  ghost-button-white-text:
-    role: Secondary action on a dark background
-  filled-button-pill-medium:
-    role: Primary Call to Action
-  ghost-button-pill-icon-only:
-    role: Iconic secondary action
-  info-card-no-border-shadow:
-    role: Neutral content container
-  text-input-underlined:
-    role: User data entry field
+name: "Motto®"
+description: "The Motto® design system evokes an atmosphere of rigorous clarity and understated authority. Its visual language relies on stark contrasts between crisp black text and an expansive canvas of near-white, creating a sophisticated and professional impression. The dominance of bold, custom san-serif typography, particularly the expansive display font, dictates the site's strong visual rhythm. A distinct lack of ornamentation, shadows, or vibrant color accents streamlines the user experience to focus purely on content and impactful messaging."
+theme: "light"
+industry: "agency"
+source_url: "https://wearemotto.com"
+refero_style_id: "6eb5fc89-d0db-4293-8bff-13c5aa530a28"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925232923-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925232923-thumb.jpg"
+extracted_at: "2026-04-11T16:34:16.107Z"
 ---
 
-## Overview
+# Motto® — Style Reference
 
-**North Star:** Architectural Blueprint on White Canvas. Black lines and precise typography articulate structure and ideas against an expansive, bright background.
+> Architectural Blueprint on White Canvas. Black lines and precise typography articulate structure and ideas against an expansive, bright background.
+
+**Theme:** light
+
+**Industry:** agency
 
 The Motto® design system evokes an atmosphere of rigorous clarity and understated authority. Its visual language relies on stark contrasts between crisp black text and an expansive canvas of near-white, creating a sophisticated and professional impression. The dominance of bold, custom san-serif typography, particularly the expansive display font, dictates the site's strong visual rhythm. A distinct lack of ornamentation, shadows, or vibrant color accents streamlines the user experience to focus purely on content and impactful messaging.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, essential icons, borders, interactive states for text links, navigation items, and button outlines. It grounds the design in high contrast and definitive presence. |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button text, and filled button text for contrast. Defines the vast, airy negative space. |
+| Charcoal Surface | #1b1b1c | `--color-charcoal-surface` | Solid button fills for primary calls to action. Provides a rich, deep counterpoint to Canvas White without introducing color. |
+| Cloud Gray | #f2f2f2 | `--color-cloud-gray` | Subtle background for hero sections or alternating content blocks, offering a slight visual break from pure Canvas White without significant tonal shift. |
+| Stone Accent | #d8d8d8 | `--color-stone-accent` | Divider lines, subtle borders, and background accents, providing minimal separation. |
+| Ash Text | #4d5153 | `--color-ash-text` | Secondary body text and subtle link colors, used for less prominent information or tertiary content. |
+| Silver Text | #848484 | `--color-silver-text` | Lighter body text for lists or less emphasized links, contributing to the grayscale palette. |
+| Input Border | #c8cacd | `--color-input-border` | Border color for input fields, indicating interactive areas with a fine, light line. |
+| Faint Gray | #717476 | `--color-faint-gray` | Tertiary body text, used for footnotes or less critical content where readability is still important but emphasis is lower. |
+| Vivid Purple | #9c98ef | `--color-vivid-purple` | Rare, decorative background graphic elements; not part of the primary UI palette. |
+| Electric Violet | #6980ff | `--color-electric-violet` | Rare, decorative background graphic elements; not part of the primary UI palette. |
+| Grass Green | #beee98 | `--color-grass-green` | Rare, decorative background graphic elements; not part of the primary UI palette. |
+
+## Tokens — Typography
+
+### sans
+
+- **Token:** `--font-sans`
+- **Substitute:** Inter, Arial, Helvetica, sans-serif
+- **Weights:** 500
+- **Sizes:** 14px, 15px, 17px, 18px, 20px, 25px, 34px, 48px
+- **Line heights:** 1.14, 1.26, 1.30, 1.38, 1.40, 1.60
+- **Letter spacing:** normal
+- **Role:** UI elements, body text, subheadings, and captions. The consistent medium weight (500) across various sizes provides a clean, readable, and authoritative voice for all functional text.
+
+### disp
+
+- **Token:** `--font-disp`
+- **Substitute:** Oswald, Impact, sans-serif
+- **Weights:** 500
+- **Sizes:** 61px, 99px, 138px, 139px, 154px
+- **Line heights:** 1.00, 1.10
+- **Letter spacing:** normal
+- **Role:** Headlines and display text. Its large scale and medium weight dictate a commanding visual presence, allowing key messages to dominate without being overtly aggressive.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | — | `--text-caption` |
+| body | 17px | 1.38 | — | `--text-body` |
+| subheading | 25px | 1.14 | — | `--text-subheading` |
+| heading-sm | 34px | 1.14 | — | `--text-heading-sm` |
+| heading | 48px | 1.14 | — | `--text-heading` |
+| heading-lg | 61px | 1.1 | — | `--text-heading-lg` |
+| display-sm | 99px | 1 | — | `--text-display-sm` |
+| display | 154px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-77 | 77px | `--spacing-77` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-158 | 158px | `--spacing-158` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| buttons | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 0px |
+
+## Components
+
+### Services Tag Strip
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Section Header with CTA
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Link
+
+**Role:** Standard interactive navigation item
+
+Text link with default color Pitch Black (#000000), no background, no border, and 0px padding. Uses 'sans' font family at various sizes with weight 500. Active states are not explicitly styled but follow the black text over white canvas principle.
+
+### Ghost Button (Text)
+
+**Role:** Secondary action or informational link styled as a button
+
+Transparent background, Pitch Black (#000000) text and border. 0px padding, 0px border-radius. Uses 'sans' font family.
+
+### Ghost Button (White Text)
+
+**Role:** Secondary action on a dark background
+
+Transparent background, Canvas White (#ffffff) text and border. 0px padding, 0px border-radius. Uses 'sans' font family.
+
+### Filled Button (Pill, Medium)
+
+**Role:** Primary Call to Action
+
+Charcoal Surface (#1b1b1c) background, Canvas White (#ffffff) text. 9999px border-radius, 0px vertical padding, 28.8px horizontal padding. Uses 'sans' font family.
+
+### Ghost Button (Pill, Icon-only)
+
+**Role:** Iconic secondary action
+
+Transparent background, Canvas White (#ffffff) text/icon, Canvas White (#ffffff) border. 9999px border-radius, 15.36px padding on all sides. Uses 'sans' font family.
+
+### Info Card (No Border/Shadow)
+
+**Role:** Neutral content container
+
+Transparent background, 0px border-radius, no box shadow. No intrinsic padding, content padding applied internally. Used for testimonials or feature blocks.
+
+### Text Input (Underlined)
+
+**Role:** User data entry field
+
+Transparent background, Canvas White (#ffffff) text. Input Border (#c8cacd) bottom border. 0px border-radius, 24px top/bottom padding, 48px right padding. Uses 'sans' font family.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast between text (Pitch Black #000000) and background (Canvas White #ffffff or Cloud Gray #f2f2f2) for legibility.
 - Use 'disp' font (weight 500) exclusively for large, impactful headlines (61px to 154px) to establish a clear hierarchy and brand voice.
@@ -90,7 +177,7 @@ The Motto® design system evokes an atmosphere of rigorous clarity and understat
 - All non-interactive content containers (cards, content blocks) should have 0px border-radius, reinforcing a sharp, clean aesthetic.
 - Use Charcoal Surface (#1b1b1c) for primary button fills to provide a strong visual anchor without introducing chromatic color.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or heavy gradients; the elevation philosophy is based on content hierarchy and spatial separation, not artificial depth.
 - Do not introduce color to UI elements or text beyond the defined neutral palette for brand and accent; chromatic colors are strictly decorative.
@@ -99,10 +186,128 @@ The Motto® design system evokes an atmosphere of rigorous clarity and understat
 - Do not use subtle variations in gray tones for text that reduce contrast below AAA accessibility levels; stick to defined text colors like Pitch Black, Ash Text, or Silver Text.
 - Avoid decorative imagery that competes with the bold typography; stick to abstract, monochromatic, or product-focused visuals if present.
 
-### Layout
+## Imagery
+
+The visual language is characterized by an absence of traditional imagery in the main UI areas. Photography is not present. Instead, the focus is on a stark, text-dominant interface, occasionally featuring abstract graphic elements like the asterisk or arrow. When present, graphics are inline and monochromatic (Pitch Black on Canvas White), functional rather than decorative, serving to guide or symbolize concepts. The visual weight is carried almost entirely by typography.
+
+## Layout
 
 The site employs a max-width contained layout, centered on a Canvas White background, creating a stable and focused content area. The hero section is full-width with a dramatic, oversized headline ('disp' font) vertically centered, setting an immediate tone of prominence. Sections maintain consistent vertical spacing, often with a large sectionGap of 48px, leading to a spacious feel. Content is primarily arranged in single-column stacks or simple two-column layouts for text alongside conceptual elements. There is no grid visible for cards or features; content blocks are isolated entities, emphasizing individual messages. The navigation is a persistent top bar, sticky or otherwise always available, maintaining minimal branding and focusing on key links.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by an absence of traditional imagery in the main UI areas. Photography is not present. Instead, the focus is on a stark, text-dominant interface, occasionally featuring abstract graphic elements like the asterisk or arrow. When present, graphics are inline and monochromatic (Pitch Black on Canvas White), functional rather than decorative, serving to guide or symbolize concepts. The visual weight is carried almost entirely by typography.
+- **Linear** — Shares a high-contrast, text-heavy UI with minimal color and bold typographic presence, prioritizing clarity and function over visual embellishment.
+- **Stripe (early branding)** — Employs strong, clean typography as a primary design element, with a preference for monochrome palettes and ample whitespace to convey sophistication.
+- **Anthropic** — Features a stark, architectural aesthetic with a strong emphasis on large, commanding type and a near-absence of visual decoration, creating an impression of intellectual rigor.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-charcoal-surface: #1b1b1c;
+  --color-cloud-gray: #f2f2f2;
+  --color-stone-accent: #d8d8d8;
+  --color-ash-text: #4d5153;
+  --color-silver-text: #848484;
+  --color-input-border: #c8cacd;
+  --color-faint-gray: #717476;
+  --color-vivid-purple: #9c98ef;
+  --color-electric-violet: #6980ff;
+  --color-grass-green: #beee98;
+  --font-sans: 'sans', Inter, Arial, Helvetica, sans-serif;
+  --font-disp: 'disp', Oswald, Impact, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 17px;
+  --leading-body: 1.38;
+  --text-subheading: 25px;
+  --leading-subheading: 1.14;
+  --text-heading-sm: 34px;
+  --leading-heading-sm: 1.14;
+  --text-heading: 48px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 99px;
+  --leading-display-sm: 1;
+  --text-display: 154px;
+  --leading-display: 1;
+  --spacing-0: 0px;
+  --spacing-8: 8px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-21: 21px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-58: 58px;
+  --spacing-67: 67px;
+  --spacing-70: 70px;
+  --spacing-77: 77px;
+  --spacing-96: 96px;
+  --spacing-158: 158px;
+  --radius-cards: 0px;
+  --radius-buttons: 9999px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-charcoal-surface: #1b1b1c;
+  --color-cloud-gray: #f2f2f2;
+  --color-stone-accent: #d8d8d8;
+  --color-ash-text: #4d5153;
+  --color-silver-text: #848484;
+  --color-input-border: #c8cacd;
+  --color-faint-gray: #717476;
+  --color-vivid-purple: #9c98ef;
+  --color-electric-violet: #6980ff;
+  --color-grass-green: #beee98;
+  --font-sans: 'sans', Inter, Arial, Helvetica, sans-serif;
+  --font-disp: 'disp', Oswald, Impact, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 17px;
+  --leading-body: 1.38;
+  --text-subheading: 25px;
+  --leading-subheading: 1.14;
+  --text-heading-sm: 34px;
+  --leading-heading-sm: 1.14;
+  --text-heading: 48px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 99px;
+  --leading-display-sm: 1;
+  --text-display: 154px;
+  --leading-display: 1;
+  --spacing-0: 0px;
+  --spacing-8: 8px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-21: 21px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-58: 58px;
+  --spacing-67: 67px;
+  --spacing-70: 70px;
+  --spacing-77: 77px;
+  --spacing-96: 96px;
+  --spacing-158: 158px;
+  --radius-cards: 0px;
+  --radius-buttons: 9999px;
+}
+```
