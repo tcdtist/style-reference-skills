@@ -1,71 +1,142 @@
 ---
 version: alpha
-name: Filling Pieces
-description: Filling Pieces establishes a confident, minimalist e-commerce aesthetic with a strong emphasis on product presentation. The system uses a limited, high-contrast achromatic palette, allowing product imagery to carry the visual weight. Typography is compact and precise, maintaining overall lightness. Components are structured and refined, relying on subtle borders and uniform radii rather than heavy elevation, contributing to an uncluttered and direct user experience.
-colors:
-  canvas-ice: "#e5e7eb"
-  pure-white: "#ffffff"
-  ink-black: "#000000"
-  fog-gray: "#efefef"
-  steel-gray: "#6b7280"
-typography:
-  button-label:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.2
-    letterSpacing: -0.44px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: -0.56px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: -0.72px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1
-    letterSpacing: -1.4px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 0.9
-    letterSpacing: -2px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 100px
-    lineHeight: 0.9
-    letterSpacing: -4px
-spacing:
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Main call to action
-  ghost-button:
-    role: Secondary action or discrete navigation
-  surface-button:
-    role: Navigational elements or filters within a light context
-  text-input-default:
-    role: Standard form field for user input
-  text-input-light-background:
-    role: Standard form field for user input on white surfaces
-  card-modal-container:
-    role: Content grouping, dialogs, product listings
-  product-grid-item:
-    role: Displaying product images and details
+name: "Filling Pieces"
+description: "Filling Pieces establishes a confident, minimalist e-commerce aesthetic with a strong emphasis on product presentation. The system uses a limited, high-contrast achromatic palette, allowing product imagery to carry the visual weight. Typography is compact and precise, maintaining overall lightness. Components are structured and refined, relying on subtle borders and uniform radii rather than heavy elevation, contributing to an uncluttered and direct user experience."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.fillingpieces.com"
+refero_style_id: "f401f04f-c45b-4261-9441-f502c6569a29"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515348772-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515348772-thumb.jpg"
+extracted_at: "2026-04-30T02:16:32.730Z"
 ---
 
-## Overview
+# Filling Pieces — Style Reference
 
-**North Star:** monochromatic gallery, precise typography
+> monochromatic gallery, precise typography
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Filling Pieces establishes a confident, minimalist e-commerce aesthetic with a strong emphasis on product presentation. The system uses a limited, high-contrast achromatic palette, allowing product imagery to carry the visual weight. Typography is compact and precise, maintaining overall lightness. Components are structured and refined, relying on subtle borders and uniform radii rather than heavy elevation, contributing to an uncluttered and direct user experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Ice | #e5e7eb | `--color-canvas-ice` | Page backgrounds, subtle dividers, inactive states, large surface areas that provide visual breathing room |
+| Pure White | #ffffff | `--color-pure-white` | Dialog backgrounds, card surfaces, interactive elements like buttons and primary navigation backgrounds |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, headings, icons, strong borders, and filled button backgrounds for primary actions |
+| Fog Gray | #efefef | `--color-fog-gray` | Subtle background for secondary sections, giving a slight depth difference from primary surfaces without introducing color |
+| Steel Gray | #6b7280 | `--color-steel-gray` | Input borders, muted text, placeholder text for form fields — a darker gray for functional UI elements |
+
+## Tokens — Typography
+
+### Favorit
+
+- **Token:** `--font-favorit`
+- **Substitute:** system-ui
+- **Weights:** 400, 600
+- **Sizes:** 8px, 10px, 11px, 12px, 14px, 16px, 18px, 35px, 50px, 100px
+- **Line heights:** 0.90, 1.00, 1.20, 1.50, 1.78
+- **Letter spacing:** -0.04em
+- **OpenType features:** "ss04"
+- **Role:** Favort is the singular typeface, used across all text elements. Its geometric yet humanist style, combined with tight letter-spacing and a generous range of sizes, defines the brand's precise and modern voice. Weight 400 is for body text, labels, and descriptions, maintaining lightness, while weight 600 delivers emphasis for headlines and important calls to action.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| button-label | 11px | 1.2 | -0.44px | `--text-button-label` |
+| body | 14px | 1.2 | -0.56px | `--text-body` |
+| heading-sm | 18px | 1.2 | -0.72px | `--text-heading-sm` |
+| heading | 35px | 1 | -1.4px | `--text-heading` |
+| heading-lg | 50px | 0.9 | -2px | `--text-heading-lg` |
+| display | 100px | 0.9 | -4px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-315 | 315px | `--spacing-315` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call to action
+
+Solid Ink Black background with Pure White text, 8px border-radius, minimum 32px horizontal padding. Font is Favorit 600, 11px, with tight letter spacing.
+
+### Ghost Button
+
+**Role:** Secondary action or discrete navigation
+
+Transparent background with Ink Black text, a 1px Ink Black border, and 8px border-radius, 32px horizontal padding. Font is Favorit 400, 11px.
+
+### Surface Button
+
+**Role:** Navigational elements or filters within a light context
+
+Pure White background with Ink Black text, 1px Canvas Ice border, 8px border-radius, 32px horizontal padding. Font is Favorit 400, 11px.
+
+### Text Input (Default)
+
+**Role:** Standard form field for user input
+
+Transparent background, 1px Steel Gray bottom border, 8px border-radius. Text is Ink Black Favorit 400. Includes 12px vertical and 32px horizontal padding for content.
+
+### Text Input (Light Background)
+
+**Role:** Standard form field for user input on white surfaces
+
+Pure White background, 1px Ink Black border, 8px border-radius. Text is Ink Black Favorit 400. Includes 12px vertical and 32px horizontal padding for content.
+
+### Card/Modal Container
+
+**Role:** Content grouping, dialogs, product listings
+
+Pure White background, 8px border-radius. Uses 16px internal padding for content. Minimal to no visible border, relies on surrounding negative space.
+
+### Product Grid Item
+
+**Role:** Displaying product images and details
+
+Container with Canvas Ice background, 8px border-radius. Product image occupies primary space, with product name (Favorit 400, 14px, Ink Black) and price (Favorit 400, 14px, Ink Black) below, separated by 4px element gaps.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize product imagery: UI elements should be achromatic to allow product visuals to dominate the canvas.
 - Maintain high contrast: Use Ink Black (#000000) for all primary text and calls to action against Pure White (#ffffff) or Canvas Ice (#e5e7eb) backgrounds.
@@ -75,7 +146,7 @@ Filling Pieces establishes a confident, minimalist e-commerce aesthetic with a s
 - Use distinct surface levels: Differentiate main page content (Canvas Ice #e5e7eb) from component backgrounds (Pure White #ffffff) and secondary sections (Fog Gray #efefef) to create visual hierarchy.
 - Favor ghosting for secondary actions: Outline buttons with Ink Black when a less assertive action is required, reserving solid Ink Black fills for primary conversion points.
 
-### Don'ts
+### Don't
 
 - Avoid color in functional UI: Refrain from introducing vibrant or chromatic colors into standard interface elements like buttons, inputs, or navigation, save for specific branded accents if introduced.
 - Do not use generic typography: Stick to the Favorit typeface with its specified weights and letter-spacing for all text to preserve brand identity.
@@ -85,10 +156,125 @@ Filling Pieces establishes a confident, minimalist e-commerce aesthetic with a s
 - Do not use spacing values outside the 4px grid: Inconsistent spacing will create visual disorder and disrupt the clean layout.
 - Do not add decorative gradients to UI elements: The system emphasizes flat, high-contrast surfaces.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Ice | #e5e7eb | Dominant background for the overall page, providing a light, neutral base. |
+| 1 | Pure White | #ffffff | Primary surface for interactive components, cards, and modal dialogs, offering high contrast against text. |
+| 2 | Fog Gray | #efefef | Secondary background sections, creating a subtle contrast to the primary canvas for content grouping. |
+
+## Imagery
+
+Imagery is centered on high-quality editorial photography, often full-bleed or large format, showcasing products in aspirational and lifestyle contexts. When not lifestyle, individual products are presented cleanly on a light background. Illustrations are absent. Icons are typically solid Ink Black, minimal, and functional. Imagery is critical for conveying the brand's fashion-forward identity, dominating visual space while UI elements remain unobtrusive.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though the hero section often features full-bleed photography. The hero establishes an immersive visual, with large, centered headlines layered over background imagery, often accompanied by a prominent 'Discover Now' button. Section rhythm is predominantly defined by alternating distinct background colors (Canvas Ice, Fog Gray) or large photographic blocks. Content is arranged in flexible grids, including two-column layouts pairing text with visuals and multi-column product grids. Navigation is a consistent sticky top bar with minimal, text-based links and functional icons.
 
-### Imagery
+## Similar Brands
 
-Imagery is centered on high-quality editorial photography, often full-bleed or large format, showcasing products in aspirational and lifestyle contexts. When not lifestyle, individual products are presented cleanly on a light background. Illustrations are absent. Icons are typically solid Ink Black, minimal, and functional. Imagery is critical for conveying the brand's fashion-forward identity, dominating visual space while UI elements remain unobtrusive.
+- **Acne Studios** — Similar focus on minimalist e-commerce, high-contrast monochrome palette, and large-scale photography for product display.
+- **COS** — Emphasizes clean typography, a neutral color scheme for UI, and high-quality photography to convey a refined fashion aesthetic.
+- **AllSaints** — Shares a preference for a predominantly achromatic palette, with text and UI elements remaining subdued to highlight product imagery.
+- **Studio Nicholson** — Features a strong emphasis on precise typography, limited color use, and elegant, understated component design in an e-commerce context.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-ice: #e5e7eb;
+  --color-pure-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-fog-gray: #efefef;
+  --color-steel-gray: #6b7280;
+  --font-favorit: 'Favorit', system-ui;
+  --text-button-label: 11px;
+  --leading-button-label: 1.2;
+  --tracking-button-label: -0.44px;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: -0.56px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.72px;
+  --text-heading: 35px;
+  --leading-heading: 1;
+  --tracking-heading: -1.4px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -2px;
+  --text-display: 100px;
+  --leading-display: 0.9;
+  --tracking-display: -4px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-315: 315px;
+  --radius-all: 8px;
+  --surface-canvas-ice: #e5e7eb;
+  --surface-pure-white: #ffffff;
+  --surface-fog-gray: #efefef;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-ice: #e5e7eb;
+  --color-pure-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-fog-gray: #efefef;
+  --color-steel-gray: #6b7280;
+  --font-favorit: 'Favorit', system-ui;
+  --text-button-label: 11px;
+  --leading-button-label: 1.2;
+  --tracking-button-label: -0.44px;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: -0.56px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.72px;
+  --text-heading: 35px;
+  --leading-heading: 1;
+  --tracking-heading: -1.4px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -2px;
+  --text-display: 100px;
+  --leading-display: 0.9;
+  --tracking-display: -4px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-315: 315px;
+  --radius-all: 8px;
+  --surface-canvas-ice: #e5e7eb;
+  --surface-pure-white: #ffffff;
+  --surface-fog-gray: #efefef;
+}
+```
