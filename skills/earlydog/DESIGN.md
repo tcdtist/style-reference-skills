@@ -1,64 +1,133 @@
 ---
 version: alpha
-name: Earlydog
-description: EarlyDog uses a playful, academic-chic visual system, balancing structured, bold typography with abstract, geometric illustrations on a warm, off-white canvas. The design features a high-contrast mono palette centered around a deep charcoal and an electric blue, punctuated by a set of vibrant, almost primary, accent colors in its graphic elements. Components are lightweight and confident, favoring high-radius outlines over heavy fills, creating an open and agile feel.
-colors:
-  canvas-parchment: "#fff9f0"
-  midnight-ink: "#000609"
-  electric-blue: "#0a65db"
-  vivid-orange: "#ff6600"
-  sunshine-yellow: "#f5c500"
-  bubblegum-pink: "#f8b7d0"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.78
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.82
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1
-  headline-sm:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 1.1
-    letterSpacing: -0.009px
-  headline:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1.03
-    letterSpacing: -0.013px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 116px
-    lineHeight: 1.23
-    letterSpacing: -0.019px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 16px
-  sectionGap: 96px
-components:
-  ghost-button:
-    role: Secondary action or navigational control
-  filled-button:
-    role: Primary Call-to-action
-  section-card-ghost:
-    role: Structural container for main content sections
-  header-navigation-item:
-    role: Primary navigation links
+name: "Earlydog"
+description: "EarlyDog uses a playful, academic-chic visual system, balancing structured, bold typography with abstract, geometric illustrations on a warm, off-white canvas. The design features a high-contrast mono palette centered around a deep charcoal and an electric blue, punctuated by a set of vibrant, almost primary, accent colors in its graphic elements. Components are lightweight and confident, favoring high-radius outlines over heavy fills, creating an open and agile feel."
+theme: "light"
+industry: "saas"
+source_url: "https://www.earlydog.com"
+refero_style_id: "707a1648-eaef-4629-9c5a-b835cedde250"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517268642-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517268642-thumb.jpg"
+extracted_at: "2026-04-30T02:48:09.634Z"
 ---
 
-## Overview
+# Earlydog — Style Reference
 
-**North Star:** Academic-chic abstract playground
+> Academic-chic abstract playground
+
+**Theme:** light
+
+**Industry:** saas
 
 EarlyDog uses a playful, academic-chic visual system, balancing structured, bold typography with abstract, geometric illustrations on a warm, off-white canvas. The design features a high-contrast mono palette centered around a deep charcoal and an electric blue, punctuated by a set of vibrant, almost primary, accent colors in its graphic elements. Components are lightweight and confident, favoring high-radius outlines over heavy fills, creating an open and agile feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Parchment | #fff9f0 | `--color-canvas-parchment` | Page backgrounds, card surfaces, ghost button backgrounds, default text for dark surfaces |
+| Midnight Ink | #000609 | `--color-midnight-ink` | Primary text, headings, outlined button borders, filled button backgrounds, structural borders |
+| Electric Blue | #0a65db | `--color-electric-blue` | Accent for selected headings, navigation highlights, footer backgrounds, and code snippets — creates a focal point against neutrals |
+| Vivid Orange | #ff6600 | `--color-vivid-orange` | Illustrative accent color |
+| Sunshine Yellow | #f5c500 | `--color-sunshine-yellow` | Illustrative accent color |
+| Bubblegum Pink | #f8b7d0 | `--color-bubblegum-pink` | Illustrative accent color |
+
+## Tokens — Typography
+
+### usual
+
+- **Token:** `--font-usual`
+- **Substitute:** system-ui
+- **Weights:** 400, 700
+- **Sizes:** 16px, 18px, 22px
+- **Line heights:** 1.00, 1.78, 1.82
+- **Letter spacing:** normal
+- **Role:** Body copy, navigation links, secondary text, and button labels — a versatile workhorse font for clarity.
+
+### degular-display
+
+- **Token:** `--font-degular-display`
+- **Substitute:** Montserrat
+- **Weights:** 700
+- **Sizes:** 52px, 80px, 116px
+- **Line heights:** 1.03, 1.10, 1.23
+- **Letter spacing:** -0.019em at 116px, -0.013em at 80px, -0.009em at 52px
+- **Role:** Dominant headlines and large feature titles — the bold weight and tight tracking create a distinct, impactful statement.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.78 | — | `--text-body` |
+| body-lg | 18px | 1.82 | — | `--text-body-lg` |
+| subheading | 22px | 1 | — | `--text-subheading` |
+| headline-sm | 52px | 1.1 | -0.009px | `--text-headline-sm` |
+| headline | 80px | 1.03 | -0.013px | `--text-headline` |
+| display | 116px | 1.23 | -0.019px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 96px |
+| cardPadding | 30px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Secondary action or navigational control
+
+Background: Canvas Parchment (#fff9f0), Text: Midnight Ink (#000609), Border: 3px solid Midnight Ink (#000609), Radius: 9999px. Padding: 20px vertical, 29.6px horizontal. Font: usual 700.
+
+### Filled Button
+
+**Role:** Primary Call-to-action
+
+Background: Midnight Ink (#000609), Text: Canvas Parchment (#fff9f0), Border: 3px solid Midnight Ink (#000609), Radius: 9999px. Padding: 14.4px vertical, 29.6px horizontal. Font: usual 700.
+
+### Section Card (Ghost)
+
+**Role:** Structural container for main content sections
+
+Background: transparent (no fill). No border or shadow. Radius: 0px. Padding top/bottom: 120px.
+
+### Header Navigation Item
+
+**Role:** Primary navigation links
+
+Text: Midnight Ink (#000609). Hover/Active state for 'Talk to us' has Electric Blue (#0a65db) text with a subtle underline effect.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas Parchment (#fff9f0) as the primary background color for all main page content.
 - Apply Midnight Ink (#000609) for all primary text and main headings.
@@ -67,7 +136,7 @@ EarlyDog uses a playful, academic-chic visual system, balancing structured, bold
 - Maintain a spacious layout with 96px vertical section gaps and 16px horizontal element gaps between content blocks.
 - Incorporate Electric Blue (#0a65db) as a functional accent color for interactive elements and key brand highlights.
 
-### Don'ts
+### Don't
 
 - Do not use subtle drop shadows; visual elevation is primarily achieved through high-contrast borders or color blocks.
 - Avoid using multiple font families or weights beyond 'usual' 400/700 and 'degular-display' 700.
@@ -75,10 +144,118 @@ EarlyDog uses a playful, academic-chic visual system, balancing structured, bold
 - Do not use generic square or rounded-10px-radius buttons; all interactive buttons should be pill-shaped with 9999px radius.
 - Avoid dense or cramped content; prioritize generous spacing for an open and breathable feel.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas Parchment | #fff9f0 | Primary page background and default surface for most content. |
+| 2 | Electric Blue | #0a65db | Used as a background for specific footer sections, creating visual interest and brand emphasis. |
+
+## Imagery
+
+This design heavily features abstract, geometric illustrations. These are flat, vector-based, and composed of basic shapes (circles, squares, triangles, lines) in a vibrant, primary-like color palette (Vivid Orange, Sunshine Yellow, Bubblegum Pink, and Electric Blue, with some black lines). They serve a decorative and atmospheric role, adding a playful and dynamic energy to the page without being literal product showcases. Icons are minimal, outlined, and monochromatic (Midnight Ink). Imagery is contained within content blocks rather than full-bleed.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though specific section cards expand to fill the available width (but still contain content). The hero section features a large, centered headline on the left, balanced by a bold abstract illustration on the right. Subsequent sections follow a consistent rhythm of alternating text-left/visual-right patterns or centered content stacks. Vertical spacing between sections is generous at 96px, creating a clear visual hierarchy. Navigation is a minimalist top bar with a hamburger menu for mobile and a 'Talk to us' button.
 
-### Imagery
+## Similar Brands
 
-This design heavily features abstract, geometric illustrations. These are flat, vector-based, and composed of basic shapes (circles, squares, triangles, lines) in a vibrant, primary-like color palette (Vivid Orange, Sunshine Yellow, Bubblegum Pink, and Electric Blue, with some black lines). They serve a decorative and atmospheric role, adding a playful and dynamic energy to the page without being literal product showcases. Icons are minimal, outlined, and monochromatic (Midnight Ink). Imagery is contained within content blocks rather than full-bleed.
+- **Sanity.io** — Similar use of abstract geometric illustrations with bold, high-contrast typography and a playful overall aesthetic.
+- **Supabase** — Combines a dark foundational color with a single vibrant accent color in UI elements, alongside clear, modern typography.
+- **Vercel** — Leverages bold, impactful sans-serif headlines against a clean background, creating an authoritative but accessible feel.
+- **Linear** — Clean, highly functional UI with a focus on purposeful use of color for hierarchy and interaction, on a light canvas.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-parchment: #fff9f0;
+  --color-midnight-ink: #000609;
+  --color-electric-blue: #0a65db;
+  --color-vivid-orange: #ff6600;
+  --color-sunshine-yellow: #f5c500;
+  --color-bubblegum-pink: #f8b7d0;
+  --font-usual: 'usual', system-ui;
+  --font-degular-display: 'degular-display', Montserrat;
+  --text-body: 16px;
+  --leading-body: 1.78;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.82;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --text-headline-sm: 52px;
+  --leading-headline-sm: 1.1;
+  --tracking-headline-sm: -0.009px;
+  --text-headline: 80px;
+  --leading-headline: 1.03;
+  --tracking-headline: -0.013px;
+  --text-display: 116px;
+  --leading-display: 1.23;
+  --tracking-display: -0.019px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --spacing-104: 104px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --radius-buttons: 9999px;
+  --surface-canvas-parchment: #fff9f0;
+  --surface-electric-blue: #0a65db;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-parchment: #fff9f0;
+  --color-midnight-ink: #000609;
+  --color-electric-blue: #0a65db;
+  --color-vivid-orange: #ff6600;
+  --color-sunshine-yellow: #f5c500;
+  --color-bubblegum-pink: #f8b7d0;
+  --font-usual: 'usual', system-ui;
+  --font-degular-display: 'degular-display', Montserrat;
+  --text-body: 16px;
+  --leading-body: 1.78;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.82;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --text-headline-sm: 52px;
+  --leading-headline-sm: 1.1;
+  --tracking-headline-sm: -0.009px;
+  --text-headline: 80px;
+  --leading-headline: 1.03;
+  --tracking-headline: -0.013px;
+  --text-display: 116px;
+  --leading-display: 1.23;
+  --tracking-display: -0.019px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --spacing-104: 104px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --radius-buttons: 9999px;
+  --surface-canvas-parchment: #fff9f0;
+  --surface-electric-blue: #0a65db;
+}
+```

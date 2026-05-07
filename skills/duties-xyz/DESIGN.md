@@ -1,71 +1,185 @@
 ---
 version: alpha
-name: Duties.xyz
-description: This design feels like a stark, industrial space, where information is presented with an almost raw honesty. The heavy, irregular custom typefaces create a sense of directness, balanced by a clean paper-like background and compact, precise layouts. The visual language emphasizes functionality and impact over ornate aesthetics, making bold statements through strong typography and structured content.
-colors:
-  canvas: "#f1f0ee"
-  inkwell: "#252525"
-  pitch-black: "#000000"
-  stone-wall: "#dbdad9"
-  faded-mint: "#a7beb1"
-  accent-blue: "#0000ee"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 0.8
-    letterSpacing: -0.067px
-  display-md:
-    fontFamily: "system-ui"
-    fontSize: 128px
-    lineHeight: 0.8
-    letterSpacing: -0.067px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 180px
-    lineHeight: 0.8
-    letterSpacing: -0.06px
-spacing:
-  buttonRadius: 32px
-  sectionGap: 40-60px
-components:
-  status-bar-duties-info-strip:
-    role: 
-  about-section-body-cta-button:
-    role: 
-  project-card-portfolio-item:
-    role: 
-  primary-action-button:
-    role: Interactive element
-  navigation-link:
-    role: Navigation
-  menu-trigger:
-    role: Navigation
-  sub-menu-item:
-    role: Navigation
-  intro-heading:
-    role: Heading
-  about-section-body:
-    role: Body Text
-  project-card:
-    role: Content display
+name: "Duties.xyz"
+description: "This design feels like a stark, industrial space, where information is presented with an almost raw honesty. The heavy, irregular custom typefaces create a sense of directness, balanced by a clean paper-like background and compact, precise layouts. The visual language emphasizes functionality and impact over ornate aesthetics, making bold statements through strong typography and structured content."
+theme: "light"
+industry: "other"
+source_url: "https://duties.xyz"
+refero_style_id: "e75b3106-fc5b-4bb8-8d7d-a7ab224fd27d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926350078-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926350078-thumb.jpg"
+extracted_at: "2026-04-11T16:52:50.801Z"
 ---
 
-## Overview
+# Duties.xyz — Style Reference
 
-**North Star:** Raw concrete with meticulous stenciling.
+> Raw concrete with meticulous stenciling.
+
+**Theme:** light
+
+**Industry:** other
 
 This design feels like a stark, industrial space, where information is presented with an almost raw honesty. The heavy, irregular custom typefaces create a sense of directness, balanced by a clean paper-like background and compact, precise layouts. The visual language emphasizes functionality and impact over ornate aesthetics, making bold statements through strong typography and structured content.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #f1f0ee | `--color-canvas` | Page backgrounds, large content blocks, primary negative space. |
+| Inkwell | #252525 | `--color-inkwell` | Primary text, button backgrounds, strong borders — nearly black, but softer than true #000000, creating less harsh contrast. |
+| Pitch Black | #000000 | `--color-pitch-black` | Headlines, structural borders, icons — the most impactful visual element, reserved for core components. |
+| Stone Wall | #dbdad9 | `--color-stone-wall` | Subtle dividers, background for less prominent UI elements, provides a gentle visual break without strong contrast. |
+| Faded Mint | #a7beb1 | `--color-faded-mint` | Very subtle background hint in specific sections, almost a neutral, adds a hint of organic tone to an otherwise achromatic palette. |
+| Accent Blue | #0000ee | `--color-accent-blue` | Interactive elements, links, button text — a vibrant, almost browser-default blue, jarring in its purity against the monochrome scheme. |
+
+## Tokens — Typography
+
+### AS Therma Bold Condensed
+
+- **Token:** `--font-as-therma-bold-condensed`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 96px, 128px, 180px
+- **Line heights:** 0.80
+- **Letter spacing:** -0.067em at 96px and 128px, -0.06em at 180px
+- **Role:** Display headlines and primary section titles — this font's aggressive, condensed form and negative letter spacing define the brand's 'brave' and direct voice.
+
+### PP Neue Montreal Mono Medium
+
+- **Token:** `--font-pp-neue-montreal-mono-medium`
+- **Substitute:** Space Mono
+- **Weights:** 400, 500
+- **Sizes:** 14px
+- **Line heights:** 1.00, 1.15
+- **Letter spacing:** normal
+- **OpenType features:** 'case', 'dlig', 'ss04', 'ss07', 'ss08', 'zero'
+- **Role:** Subheadings, metadata, and structured text blocks. The monospaced nature introduces a technical, code-like aesthetic without being purely utilitarian.
+
+### PP Neue Montreal SemiBold
+
+- **Token:** `--font-pp-neue-montreal-semibold`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 18px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **OpenType features:** 'zero'
+- **Role:** Primary body text — provides excellent readability for longer content, a grounding contrast to the more decorative display fonts.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Utility text, captions, and navigation links — a lean system font choice for functional elements where clarity and neutrality are key.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | — | `--text-caption` |
+| body | 18px | 1.2 | — | `--text-body` |
+| display-sm | 96px | 0.8 | -0.067px | `--text-display-sm` |
+| display-md | 128px | 0.8 | -0.067px | `--text-display-md` |
+| display-lg | 180px | 0.8 | -0.06px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-240 | 240px | `--spacing-240` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| small | 4px |
+| buttons | 32px |
+| default | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40-60px |
+| cardPadding | 20px |
+
+## Components
+
+### Status Bar — Duties Info Strip
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### About Section — Body + CTA Button
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Project Card — Portfolio Item
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Interactive element
+
+Rounded pill shape with an Inkwell (#252525) background, Accent Blue (#0000ee) text, and a 32px border radius. Uses 16px horizontal padding and 0px vertical padding. Text uses `sans-serif` at 12px.
+
+### Navigation Link
+
+**Role:** Navigation
+
+Uses `sans-serif` at 12px with Inkwell (#252525) text on Canvas (#f1f0ee) background.
+
+### Menu Trigger
+
+**Role:** Navigation
+
+Small, rectangular button with 'Menu' text using `sans-serif` 12px, Inkwell (#252525) text on Canvas (#f1f0ee) background, framed by `dbdad9` borders. Has 32px border radius.
+
+### Sub-Menu Item
+
+**Role:** Navigation
+
+Text in Inkwell (#252525) using `PP Neue Montreal Mono Medium` at 14px, lineHeight 1.0. Appears on a Canvas (#f1f0ee) background.
+
+### Intro Heading
+
+**Role:** Heading
+
+Uses `AS Therma Bold Condensed` 180px, 400 weight, Inkwell (#000000) text with -0.06em letter spacing. Appears on Canvas (#f1f0ee) background.
+
+### About Section Body
+
+**Role:** Body Text
+
+Uses `PP Neue Montreal SemiBold` 18px, 400 weight with Inkwell (#252525) text, lineHeight 1.2. Appearing on Canvas (#f1f0ee) background. Includes the 'zero' font feature.
+
+### Project Card
+
+**Role:** Content display
+
+Image-based cards with 8px border radius, arranged in a horizontal scroll. Implied white background for content within the card, on a Canvas (#f1f0ee) page background.
+
+## Do's and Don'ts
+
+### Do
 
 - Use AS Therma Bold Condensed for all display-level headlines to enforce the 'brave' aesthetic, ensuring -0.06em letter spacing on larger sizes.
 - Maintain a clear hierarchy using Pitch Black (#000000) for primary headings and Inkwell (#252525) for body text and secondary elements.
@@ -74,7 +188,7 @@ This design feels like a stark, industrial space, where information is presented
 - Apply `PP Neue Montreal Mono Medium` with its specific font features ('case', 'dlig', 'ss04', 'ss07', 'ss08', 'zero') for structured text and metadata to introduce a technical, precise feel.
 - Use 10px or 20px horizontal padding consistently for element grouping and spacing within compact sections.
 
-### Don'ts
+### Don't
 
 - Avoid generic serif or highly decorative fonts that would dilute the brutalist-industrial feel of the display typography.
 - Do not introduce strong chromatic colors beyond the Accent Blue for interactive elements, as it would disrupt the monochrome foundation.
@@ -83,10 +197,112 @@ This design feels like a stark, industrial space, where information is presented
 - Do not break content out of the Canvas (#f1f0ee) or Stone Wall (#dbdad9) backgrounds with arbitrary colors.
 - Do not use letter spacing greater than 'normal' for body text; only the display fonts should have negative letter spacing for effect.
 
-### Layout
+## Imagery
+
+The site predominantly uses product photography of tech accessories (phone cases) with a stark, almost scientific treatment — objects are isolated on neutral or abstract backgrounds, often with rocks or lunar-like surfaces, emphasizing their robust or technical nature. Illustrations, when present (like the pizza slices), are flat, playful, and outlined, offering a humanizing contrast to the otherwise functional aesthetic. Images are usually contained within rectangular frames with 8px or 12px corner radii, occasionally appearing full-bleed or with parallax-like independent motion. There's a clear emphasis on showcasing work and products directly, with imagery serving an explanatory or portfolio function rather than purely decorative.
+
+## Layout
 
 The page primarily follows a max-width contained model, centered on the Canvas (#f1f0ee) background. The hero section features a large, visually dominant headline (`AS Therma Bold Condensed`) stacked centrally or slightly offset. Content sections are compact, using a dense 'elementGap' driven flow, often with horizontal scrolling sections for portfolio items. There's a consistent vertical rhythm, but sections are differentiated more by content type and typography than by alternating background colors. Navigation is minimal, often integrated into the footer or revealed by a small 'Menu' button. The layout feels less like a traditional grid and more like carefully arranged boxes of information, providing a sense of constraint and precision.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses product photography of tech accessories (phone cases) with a stark, almost scientific treatment — objects are isolated on neutral or abstract backgrounds, often with rocks or lunar-like surfaces, emphasizing their robust or technical nature. Illustrations, when present (like the pizza slices), are flat, playful, and outlined, offering a humanizing contrast to the otherwise functional aesthetic. Images are usually contained within rectangular frames with 8px or 12px corner radii, occasionally appearing full-bleed or with parallax-like independent motion. There's a clear emphasis on showcasing work and products directly, with imagery serving an explanatory or portfolio function rather than purely decorative.
+- **Brave New World Designs** — Shares a raw, typographic-heavy aesthetic with large, imposing headlines and a tightly controlled, almost monochromatic color palette.
+- **Certain Measures** — Similar use of monospaced fonts for metadata and a general sense of structured, compact information presentation, often in a muted color scheme.
+- **Sagmeister & Walsh** — Employs bold, unconventional typography and a strong, almost confrontational visual style, leaning into graphic impact over subtle design.
+- **Anton & Irene** — Utilizes highly customized, impactful typography and a clean, direct layout to convey a sense of modern, no-nonsense design thinking.
+- **Work & Co** — Demonstrates a similar commitment to precision and functionality, using strong typography and a clear, minimal visual hierarchy to focus on content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #f1f0ee;
+  --color-inkwell: #252525;
+  --color-pitch-black: #000000;
+  --color-stone-wall: #dbdad9;
+  --color-faded-mint: #a7beb1;
+  --color-accent-blue: #0000ee;
+  --font-as-therma-bold-condensed: 'AS Therma Bold Condensed', Bebas Neue;
+  --font-pp-neue-montreal-mono-medium: 'PP Neue Montreal Mono Medium', Space Mono;
+  --font-pp-neue-montreal-semibold: 'PP Neue Montreal SemiBold', Inter;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 18px;
+  --leading-body: 1.2;
+  --text-display-sm: 96px;
+  --leading-display-sm: 0.8;
+  --tracking-display-sm: -0.067px;
+  --text-display-md: 128px;
+  --leading-display-md: 0.8;
+  --tracking-display-md: -0.067px;
+  --text-display-lg: 180px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -0.06px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-160: 160px;
+  --spacing-240: 240px;
+  --radius-small: 4px;
+  --radius-buttons: 32px;
+  --radius-default: 8px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #f1f0ee;
+  --color-inkwell: #252525;
+  --color-pitch-black: #000000;
+  --color-stone-wall: #dbdad9;
+  --color-faded-mint: #a7beb1;
+  --color-accent-blue: #0000ee;
+  --font-as-therma-bold-condensed: 'AS Therma Bold Condensed', Bebas Neue;
+  --font-pp-neue-montreal-mono-medium: 'PP Neue Montreal Mono Medium', Space Mono;
+  --font-pp-neue-montreal-semibold: 'PP Neue Montreal SemiBold', Inter;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 18px;
+  --leading-body: 1.2;
+  --text-display-sm: 96px;
+  --leading-display-sm: 0.8;
+  --tracking-display-sm: -0.067px;
+  --text-display-md: 128px;
+  --leading-display-md: 0.8;
+  --tracking-display-md: -0.067px;
+  --text-display-lg: 180px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -0.06px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-160: 160px;
+  --spacing-240: 240px;
+  --radius-small: 4px;
+  --radius-buttons: 32px;
+  --radius-default: 8px;
+}
+```
