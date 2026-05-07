@@ -1,33 +1,109 @@
 ---
 version: alpha
-name: Catherine Peacock
-description: Catherine Peacock's visual system evokes a minimal gallery aesthetic, presenting content on an expansive, light canvas with strong typographic presence. The design relies on a restricted achromatic palette, where shades of gray define structure and depth. Typography is central, using generous letter-spacing for large text and precise spacing for smaller details, creating a sense of considered calm and focus.
-colors:
-  canvas-white: "#ffffff"
-  text-black: "#000000"
-  text-graphite: "#282828"
-  background-taupe: "#dcd7d0"
-  border-silver: "#bababa"
-spacing:
-  cardRadius: 0px
-components:
-  minimal-card:
-    role: Content container
-  navigation-link:
-    role: Interactive text
-  branded-heading:
-    role: Primary identifier
-  nav-button:
-    role: Call to action
+name: "Catherine Peacock"
+description: "Catherine Peacock's visual system evokes a minimal gallery aesthetic, presenting content on an expansive, light canvas with strong typographic presence. The design relies on a restricted achromatic palette, where shades of gray define structure and depth. Typography is central, using generous letter-spacing for large text and precise spacing for smaller details, creating a sense of considered calm and focus."
+theme: "light"
+industry: "design"
+source_url: "https://catherinepeacock.com"
+refero_style_id: "a9fd26a1-7741-49fd-aceb-ca734153b927"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519851015-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519851015-thumb.jpg"
+extracted_at: "2026-04-30T03:31:05.179Z"
 ---
 
-## Overview
+# Catherine Peacock — Style Reference
 
-**North Star:** Minimalist gallery canvas
+> Minimalist gallery canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Catherine Peacock's visual system evokes a minimal gallery aesthetic, presenting content on an expansive, light canvas with strong typographic presence. The design relies on a restricted achromatic palette, where shades of gray define structure and depth. Typography is central, using generous letter-spacing for large text and precise spacing for smaller details, creating a sense of considered calm and focus.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Text Black | #000000 | `--color-text-black` | Primary text, prominent headings, and functional icons — provides stark contrast against light backgrounds |
+| Text Graphite | #282828 | `--color-text-graphite` | Secondary text, subtle borders, and background elements that require less intensity than pure black |
+| Background Taupe | #dcd7d0 | `--color-background-taupe` | Subtle background panels or sections, creating a slight visual separation from the pure white canvas without high contrast |
+| Border Silver | #bababa | `--color-border-silver` | Decorative borders and dividers, providing minimal visual interruption |
+
+## Tokens — Typography
+
+### custom_35137
+
+- **Token:** `--font-custom-35137`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 28px, 50px
+- **Line heights:** 1.20, 1.25
+- **Letter spacing:** 0.0040em
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Display and prominent headings — its generous letter spacing and size command attention.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.00, 1.25
+- **Letter spacing:** -0.0020em
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Body text and navigation elements — tight letter spacing ensures compact readability for functional text.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+
+## Components
+
+### Minimal Card
+
+**Role:** Content container
+
+A frameless, borderless content area with 0px radius, using Canvas White (#ffffff) as its background. Provides a clean, flat surface that blends seamlessly with the page background.
+
+### Navigation Link
+
+**Role:** Interactive text
+
+Text link styled with Text Black (#000000) for high contrast against light backgrounds. Appears as a distinct interactive element without relying on visual chrome.
+
+### Branded Heading
+
+**Role:** Primary identifier
+
+Headline text, typically in 'custom_35137' font at 50px-1.25lh or 28px-1.2lh with 0.0040em letter-spacing, using Text Black (#000000). Commands immediate attention through size and stark contrast.
+
+### Nav Button
+
+**Role:** Call to action
+
+Interactive button presented as a simple '+' icon. This is achieved through an outline in Text Black (#000000) on a Canvas White (#ffffff) background, with text and icon color of Text Black. It foregrounds simplicity and functionality. All elements have a 0px radius.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for all main backgrounds to maintain a clean, expansive aesthetic.
 - Use Text Black (#000000) for all primary text elements to ensure high contrast and legibility.
@@ -37,7 +113,7 @@ Catherine Peacock's visual system evokes a minimal gallery aesthetic, presenting
 - Use Text Graphite (#282828) for secondary text or subtle UI details where a softer presence is desired compared to pure black.
 - Maintain the density at 'comfortable' for all major sections and element grouping.
 
-### Don'ts
+### Don't
 
 - Do not introduce highly saturated colors unless specifically for functional interaction states not present in the current system.
 - Avoid using any drop shadows or complex elevation schemes; the design relies on flat, layered surfaces.
@@ -46,10 +122,61 @@ Catherine Peacock's visual system evokes a minimal gallery aesthetic, presenting
 - Do not add decorative gradients or textures; maintain a flat, achromatic visual presentation.
 - Avoid tight element spacing for large type; always allow generous white space around display text.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Base page background and primary content areas |
+| 1 | Background Taupe | #dcd7d0 | Subtle background panels or section dividers |
+
+## Imagery
+
+This system primarily uses text as its visual focus, with no explicit imagery or illustrations present. The UI itself serves as the visual language, emphasizing typographic arrangements and stark contrast.
+
+## Layout
 
 The page adheres to a full-bleed model without a constrained max-width, allowing content to span the entire viewport. The hero section is characterized by a large, centered headline against a light background. Sectional rhythm is implicitly created through the generous white space around text blocks. Content appears to be presented in centered stacks or simple linear flows, prioritizing readability and directness. Navigation is minimal, limited to a simple top-right icon. The overall density is spacious, with considerable breathing room around elements.
 
-### Imagery
+## Similar Brands
 
-This system primarily uses text as its visual focus, with no explicit imagery or illustrations present. The UI itself serves as the visual language, emphasizing typographic arrangements and stark contrast.
+- **Framer** — Emphasizes large, clear typography on minimalist backgrounds with a focus on core content.
+- **Basic Agency** — Uses spacious layouts and stark achromatic palettes to highlight visual work and maintain understated elegance.
+- **Stripe** — Leverages system fonts and clean, unadorned UI elements with a strong focus on readability and directness.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-text-black: #000000;
+  --color-text-graphite: #282828;
+  --color-background-taupe: #dcd7d0;
+  --color-border-silver: #bababa;
+  --font-custom-35137: 'custom_35137', system-ui;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-0: 0px;
+  --radius-cards: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-background-taupe: #dcd7d0;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-text-black: #000000;
+  --color-text-graphite: #282828;
+  --color-background-taupe: #dcd7d0;
+  --color-border-silver: #bababa;
+  --font-custom-35137: 'custom_35137', system-ui;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-0: 0px;
+  --radius-cards: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-background-taupe: #dcd7d0;
+}
+```

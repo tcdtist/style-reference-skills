@@ -1,85 +1,188 @@
 ---
 version: alpha
-name: Chainzoku
-description: Chainzoku's visual system evokes a dark, gritty cyberpunk aesthetic set against an urban nightscape. It uses stark black and off-white as primary textual and surface colors, punched up by vivid, almost neon, greens and hot pinks for interactive elements and accents. Typography is oversized and angular, featuring a custom variable font with high contrast and tight-tracked display text, giving the brand a distinct, almost aggressive, voice. Surfaces are generally flat and unshadowed, opting for strong borders and high-contrast color shifts to delineate elements.
-colors:
-  midnight-ink: "#000000"
-  ghost-white: "#fffff7"
-  deep-shadow: "#1c1616"
-  faded-concrete: "#c4c1c6"
-  electric-lime: "#cdfb52"
-  sky-blue: "#5c97ce"
-  cyber-pink: "#f24ac7"
-  olive-drab: "#485229"
-  forest-fern: "#8c9b57"
-  crimson-glare: "#ab0000"
-  lavender-ash: "#deafd2"
-  vibrant-magenta: "#f756a3"
-  gradient-sky: "#a2b6cf"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.39
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.19
-    letterSpacing: -0.8px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 57px
-    lineHeight: 1
-    letterSpacing: -1.14px
-  display-md:
-    fontFamily: "system-ui"
-    fontSize: 100px
-    lineHeight: 0.8
-    letterSpacing: -2px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 177px
-    lineHeight: 0.8
-    letterSpacing: -3.54px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 301px
-    lineHeight: 0.8
-    letterSpacing: -6.02px
-spacing:
-  cardRadius: 10px
-  elementGap: 8px
-  sectionGap: 50px
-components:
-  ghost-navigation-link-dark:
-    role: Primary header navigation and sidebar links.
-  ghost-navigation-link-light:
-    role: Primary header navigation and sidebar links.
-  pill-accent-button:
-    role: Primary calls to action for key interactions.
-  outline-sidebar-button:
-    role: Interactive elements within the left sidebar navigation.
-  base-card:
-    role: Structural container for content sections.
-  content-card-narrow:
-    role: Containers for specific content blocks with subtle visual separation.
-  content-card-dark:
-    role: Containers for specific content blocks requiring a darker background.
-  padded-content-block:
-    role: Sections requiring significant internal padding for content.
+name: "Chainzoku"
+description: "Chainzoku's visual system evokes a dark, gritty cyberpunk aesthetic set against an urban nightscape. It uses stark black and off-white as primary textual and surface colors, punched up by vivid, almost neon, greens and hot pinks for interactive elements and accents. Typography is oversized and angular, featuring a custom variable font with high contrast and tight-tracked display text, giving the brand a distinct, almost aggressive, voice. Surfaces are generally flat and unshadowed, opting for strong borders and high-contrast color shifts to delineate elements."
+theme: "light"
+industry: "crypto"
+source_url: "https://chainzoku.io"
+refero_style_id: "44287b0a-8709-406d-8ba3-8765ecb19a1f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511987861-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511987861-thumb.jpg"
+extracted_at: "2026-04-30T01:20:12.394Z"
 ---
 
-## Overview
+# Chainzoku — Style Reference
 
-**North Star:** Neon Cyberpunk Nightscape – A high-contrast world of dark urban realism punctuated by electric neon accents.
+> Neon Cyberpunk Nightscape – A high-contrast world of dark urban realism punctuated by electric neon accents.
+
+**Theme:** light
+
+**Industry:** crypto
 
 Chainzoku's visual system evokes a dark, gritty cyberpunk aesthetic set against an urban nightscape. It uses stark black and off-white as primary textual and surface colors, punched up by vivid, almost neon, greens and hot pinks for interactive elements and accents. Typography is oversized and angular, featuring a custom variable font with high contrast and tight-tracked display text, giving the brand a distinct, almost aggressive, voice. Surfaces are generally flat and unshadowed, opting for strong borders and high-contrast color shifts to delineate elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, borders, dark backgrounds, decorative fills. Creates stark definition against lighter surfaces |
+| Ghost White | #fffff7 | `--color-ghost-white` | Primary background, inverse text, active states. Provides a bright, slightly warm canvas for content |
+| Deep Shadow | #1c1616 | `--color-deep-shadow` | Card backgrounds, secondary text on light surfaces. A nuanced dark gray providing subtle depth |
+| Faded Concrete | #c4c1c6 | `--color-faded-concrete` | Footer backgrounds, subtle contextual surfaces. A cool off-white for low-contrast backgrounds |
+| Electric Lime | #cdfb52 | `--color-electric-lime` | Primary interactive elements, navigation active states, accent borders, highlights. A vivid, almost radioactive green that signifies action and attention |
+| Sky Blue | #5c97ce | `--color-sky-blue` | Hero background accents, informational highlights. A moderately saturated blue used for atmospheric background elements |
+| Cyber Pink | #f24ac7 | `--color-cyber-pink` | Illustrative accents, decorative fills – creates a high-energy contrast with the primary green |
+| Olive Drab | #485229 | `--color-olive-drab` | Container backgrounds, contextual elements. A muted green providing a grounded, earthy counterpoint |
+| Forest Fern | #8c9b57 | `--color-forest-fern` | Illustrative accents. A moderate green providing visual richness in graphical elements |
+| Crimson Glare | #ab0000 | `--color-crimson-glare` | Container backgrounds, accent borders for high visual impact. A vivid red used sparingly for emphasis |
+| Lavender Ash | #deafd2 | `--color-lavender-ash` | Subtle container backgrounds, contextual elements. A muted pink providing a soft, atmospheric background |
+| Vibrant Magenta | #f756a3 | `--color-vibrant-magenta` | Illustrative accents. A vivid pink for graphical flair |
+| Gradient Sky | #a2b6cf | `--color-gradient-sky` | Background gradient for atmospheric depth |
+
+## Tokens — Typography
+
+### NeueHaasGrotDisp
+
+- **Token:** `--font-neuehaasgrotdisp`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400, 500, 900
+- **Sizes:** 16px, 18px, 23px, 26px, 40px, 57px, 90px, 100px
+- **Line heights:** 1.00, 1.19, 1.20, 1.39
+- **Letter spacing:** -0.0200em
+- **Role:** Versatile workhorse font for body text, navigation, and many headings. Its slightly condensed forms give a modern, efficient feel, even at lighter weights. The negative letter-spacing maintains a tight, compact readability.
+
+### Helvetica Neue
+
+- **Token:** `--font-helvetica-neue`
+- **Weights:** 400, 700
+- **Sizes:** 26px, 30px
+- **Line heights:** 0.78
+- **Letter spacing:** normal
+- **Role:** Used for specific callouts and contextual text where a classic, highly readable sans-serif is needed, often with extremely tight line heights for a stacked, graphic effect.
+
+### Druk Heavy
+
+- **Token:** `--font-druk-heavy`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 100px, 177px, 301px
+- **Line heights:** 0.80
+- **Letter spacing:** -0.0200em
+- **Role:** Signature display font for large, impactful headlines. Its heavy weight and expansive width, combined with tight letter spacing and line height, create a powerful, almost monumental presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.39 | — | `--text-body` |
+| subheading | 23px | 1.2 | — | `--text-subheading` |
+| heading | 40px | 1.19 | -0.8px | `--text-heading` |
+| heading-lg | 57px | 1 | -1.14px | `--text-heading-lg` |
+| display-md | 100px | 0.8 | -2px | `--text-display-md` |
+| display-lg | 177px | 0.8 | -3.54px | `--text-display-lg` |
+| display | 301px | 0.8 | -6.02px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-173 | 173px | `--spacing-173` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-215 | 215px | `--spacing-215` |
+| spacing-250 | 250px | `--spacing-250` |
+| spacing-315 | 315px | `--spacing-315` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| navigation | 15px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 40px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Navigation Link: Dark
+
+**Role:** Primary header navigation and sidebar links.
+
+Text in Ghost White (#fffff7) on a transparent background, no borders or padding; used for primary navigation and sidebar on dark backgrounds. Inherits parent typography.
+
+### Ghost Navigation Link: Light
+
+**Role:** Primary header navigation and sidebar links.
+
+Text in Midnight Ink (#000000) on a transparent background, no borders or padding; used for primary navigation and sidebar on light backgrounds. Inherits parent typography.
+
+### Pill Accent Button
+
+**Role:** Primary calls to action for key interactions.
+
+A circular button with Electric Lime (#cdfb52) background and Midnight Ink (#000000) text. Border radius 9999px. Minimal padding on text. Often used for 'Play' or 'Mint' actions.
+
+### Outline Sidebar Button
+
+**Role:** Interactive elements within the left sidebar navigation.
+
+Transparent background with Ghost White (#fffff7) text and a Ghost White (#fffff7) border. No border radius. Minimum content padding, but the visual separation is created by the border.
+
+### Base Card
+
+**Role:** Structural container for content sections.
+
+Transparent background, 0px border radius, no box shadow, 0px padding. Serves as a flexible, borderless content wrapper.
+
+### Content Card Narrow
+
+**Role:** Containers for specific content blocks with subtle visual separation.
+
+Transparent background, 10px border radius, no box shadow, 0px bottom padding, 0px left/right/top padding for tight content grouping.
+
+### Content Card Dark
+
+**Role:** Containers for specific content blocks requiring a darker background.
+
+Deep Shadow (#1c1616) background, 10px border radius, no box shadow, 0px padding. Used for visually distinct blocks on the page.
+
+### Padded Content Block
+
+**Role:** Sections requiring significant internal padding for content.
+
+Deep Shadow (#1c1616) background, 0px border radius, no box shadow, 50px top/bottom padding, 40px left/right padding. Used for clear content separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Ink (#000000) for all primary text on light backgrounds and Ghost White (#fffff7) for primary text on dark backgrounds to maintain high contrast.
 - Implement Electric Lime (#cdfb52) as the primary accent color for active states, small interactive elements, and key calls to action like the 'Play' button.
@@ -89,7 +192,7 @@ Chainzoku's visual system evokes a dark, gritty cyberpunk aesthetic set against 
 - Round corners of cards and interactive background elements with a 10px border radius, except for header navigation which uses 15px.
 - Use 1px borders of either Midnight Ink (#000000) or Ghost White (#fffff7) for subtle separation, particularly in list items or form elements, avoiding overt shadows where possible.
 
-### Don'ts
+### Don't
 
 - Avoid using soft shadows or complex elevation; the design relies on stark color contrast and clear borders for visual hierarchy.
 - Do not use generic system fonts for branding headlines; Druk Heavy is crucial for the strong brand voice.
@@ -98,10 +201,172 @@ Chainzoku's visual system evokes a dark, gritty cyberpunk aesthetic set against 
 - Do not apply large internal padding to navigation links or simple buttons; they should feel lightweight and text-focused.
 - Avoid arbitrary border radii; adhere strictly to 10px for cards and 15px for navigation to maintain visual consistency.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas Base | #fffff7 | Primary page background, light sections, often serves as the base for high-contrast text. |
+| 2 | Subtle Dark Card | #1c1616 | Background for self-contained content cards or distinct sections that require a darker context. |
+| 3 | Footer Canvas | #c4c1c6 | Background for the footer and other low-priority information areas, offering minimal contrast against the primary white. |
+
+## Imagery
+
+The site's imagery is characterized by highly stylized, detailed illustrations and concept art, often depicting characters and urban environments. These visuals are typically full-bleed or large contained elements, integrated into the page with masked or irregular edges. The art style is dimensional but not photorealistic, with a strong emphasis on vivid, almost neon, colors against a dark, nocturnal backdrop. Icons are primarily solid or filled, echoing the game-like aesthetic, and serve both decorative and explanatory roles. The imagery is central to content delivery, giving the site a visual-heavy, immersive feel.
+
+## Layout
 
 The page primarily uses a full-bleed layout, allowing atmospheric illustrations to extend to the viewport edges, especially in the hero and section backgrounds. Content sections below the hero often alternate with strong background visuals. The main branding (Chainzoku logo) and primary navigation are confined to a top bar, with an additional sticky left-hand sidebar for section navigation. Text is frequently presented as centered headlines or in distinct, visually separated blocks, often with a unique, cut-out container shape rather than a standard rectangular box, creating an angular, dynamic rhythm. The site features a mix of two-column layouts juxtaposed with large, immersive single-column visual elements. There's a comfortable density with ample breathing room, ensuring large visuals can dominate.
 
-### Imagery
+## Similar Brands
 
-The site's imagery is characterized by highly stylized, detailed illustrations and concept art, often depicting characters and urban environments. These visuals are typically full-bleed or large contained elements, integrated into the page with masked or irregular edges. The art style is dimensional but not photorealistic, with a strong emphasis on vivid, almost neon, colors against a dark, nocturnal backdrop. Icons are primarily solid or filled, echoing the game-like aesthetic, and serve both decorative and explanatory roles. The imagery is central to content delivery, giving the site a visual-heavy, immersive feel.
+- **Cyberpunk 2077 game franchise** — Shares a night theme with neon accents, oversized and condensed distressed typography, and an overall dark, gritty aesthetic.
+- **Akira (manga/film)** — Reflects the urban, stylized illustration, and high-contrast visuals of a dystopian future, with a focus on dramatic color pops.
+- **Arcane (Netflix series)** — Exhibits a similar artistic blend of 2D concept art with dimensional character designs, strong linear elements, and stylized urban environments.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-ghost-white: #fffff7;
+  --color-deep-shadow: #1c1616;
+  --color-faded-concrete: #c4c1c6;
+  --color-electric-lime: #cdfb52;
+  --color-sky-blue: #5c97ce;
+  --color-cyber-pink: #f24ac7;
+  --color-olive-drab: #485229;
+  --color-forest-fern: #8c9b57;
+  --color-crimson-glare: #ab0000;
+  --color-lavender-ash: #deafd2;
+  --color-vibrant-magenta: #f756a3;
+  --color-gradient-sky: #a2b6cf;
+  --font-neuehaasgrotdisp: 'NeueHaasGrotDisp', Helvetica Neue;
+  --font-helvetica-neue: 'Helvetica Neue', ui-sans-serif, system-ui, sans-serif;
+  --font-druk-heavy: 'Druk Heavy', Bebas Neue;
+  --text-body: 16px;
+  --leading-body: 1.39;
+  --text-subheading: 23px;
+  --leading-subheading: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 57px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.14px;
+  --text-display-md: 100px;
+  --leading-display-md: 0.8;
+  --tracking-display-md: -2px;
+  --text-display-lg: 177px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -3.54px;
+  --text-display: 301px;
+  --leading-display: 0.8;
+  --tracking-display: -6.02px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-75: 75px;
+  --spacing-86: 86px;
+  --spacing-100: 100px;
+  --spacing-112: 112px;
+  --spacing-135: 135px;
+  --spacing-173: 173px;
+  --spacing-180: 180px;
+  --spacing-200: 200px;
+  --spacing-215: 215px;
+  --spacing-250: 250px;
+  --spacing-315: 315px;
+  --radius-cards: 10px;
+  --radius-navigation: 15px;
+  --surface-canvas-base: #fffff7;
+  --surface-subtle-dark-card: #1c1616;
+  --surface-footer-canvas: #c4c1c6;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-ghost-white: #fffff7;
+  --color-deep-shadow: #1c1616;
+  --color-faded-concrete: #c4c1c6;
+  --color-electric-lime: #cdfb52;
+  --color-sky-blue: #5c97ce;
+  --color-cyber-pink: #f24ac7;
+  --color-olive-drab: #485229;
+  --color-forest-fern: #8c9b57;
+  --color-crimson-glare: #ab0000;
+  --color-lavender-ash: #deafd2;
+  --color-vibrant-magenta: #f756a3;
+  --color-gradient-sky: #a2b6cf;
+  --font-neuehaasgrotdisp: 'NeueHaasGrotDisp', Helvetica Neue;
+  --font-helvetica-neue: 'Helvetica Neue', ui-sans-serif, system-ui, sans-serif;
+  --font-druk-heavy: 'Druk Heavy', Bebas Neue;
+  --text-body: 16px;
+  --leading-body: 1.39;
+  --text-subheading: 23px;
+  --leading-subheading: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 57px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.14px;
+  --text-display-md: 100px;
+  --leading-display-md: 0.8;
+  --tracking-display-md: -2px;
+  --text-display-lg: 177px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -3.54px;
+  --text-display: 301px;
+  --leading-display: 0.8;
+  --tracking-display: -6.02px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-75: 75px;
+  --spacing-86: 86px;
+  --spacing-100: 100px;
+  --spacing-112: 112px;
+  --spacing-135: 135px;
+  --spacing-173: 173px;
+  --spacing-180: 180px;
+  --spacing-200: 200px;
+  --spacing-215: 215px;
+  --spacing-250: 250px;
+  --spacing-315: 315px;
+  --radius-cards: 10px;
+  --radius-navigation: 15px;
+  --surface-canvas-base: #fffff7;
+  --surface-subtle-dark-card: #1c1616;
+  --surface-footer-canvas: #c4c1c6;
+}
+```

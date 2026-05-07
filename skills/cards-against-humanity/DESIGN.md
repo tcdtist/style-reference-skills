@@ -1,62 +1,141 @@
 ---
 version: alpha
-name: Cards Against Humanity
-description: Cards Against Humanity Climate Catastrophe Pack projects an urgent, confrontational aesthetic: stark black and off-white surfaces, punctuated by a vibrant, almost aggressive red, and an eclectic, distressed display typography. The design leans into a deliberately unpolished, DIY feel, using basic geometric shapes, high-contrast text, and a loose rhythm of concentric circles and scattered warning icons. This visual system aims to grab attention and provoke, mirroring the brand's irreverent tone with bold, no-nonsense presentation.
-colors:
-  catastrophe-red: "#ff4034"
-  pitch-black: "#000000"
-  aged-paper: "#ebe4d8"
-  charcoal-haze: "#c3bdb3"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.29
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.27
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.5
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.29
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 202px
-    lineHeight: 0.82
-spacing:
-  cardRadius: 2520px
-  buttonRadius: 80px
-  elementGap: 20px
-  sectionGap: 30px
-components:
-  rounded-primary-button:
-    role: Call to action
-  elongated-primary-button:
-    role: Large call to action
-  pill-outline-button:
-    role: Subtle action
-  circular-card:
-    role: Decorative content container
-  input-field:
-    role: User entry field
+name: "Cards Against Humanity"
+description: "Cards Against Humanity Climate Catastrophe Pack projects an urgent, confrontational aesthetic: stark black and off-white surfaces, punctuated by a vibrant, almost aggressive red, and an eclectic, distressed display typography. The design leans into a deliberately unpolished, DIY feel, using basic geometric shapes, high-contrast text, and a loose rhythm of concentric circles and scattered warning icons. This visual system aims to grab attention and provoke, mirroring the brand's irreverent tone with bold, no-nonsense presentation."
+theme: "dark"
+industry: "other"
+source_url: "https://www.climatecatastrophepack.com"
+refero_style_id: "cef9a300-8513-46c2-9c2c-c0016e5a5d30"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515880315-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515880315-thumb.jpg"
+extracted_at: "2026-04-30T02:25:05.805Z"
 ---
 
-## Overview
+# Cards Against Humanity — Style Reference
 
-**North Star:** Irreverent, Urgent Distress: High-contrast black and off-white with a jarring red accent, like a bold, distressed propaganda poster.
+> Irreverent, Urgent Distress: High-contrast black and off-white with a jarring red accent, like a bold, distressed propaganda poster.
+
+**Theme:** dark
+
+**Industry:** other
 
 Cards Against Humanity Climate Catastrophe Pack projects an urgent, confrontational aesthetic: stark black and off-white surfaces, punctuated by a vibrant, almost aggressive red, and an eclectic, distressed display typography. The design leans into a deliberately unpolished, DIY feel, using basic geometric shapes, high-contrast text, and a loose rhythm of concentric circles and scattered warning icons. This visual system aims to grab attention and provoke, mirroring the brand's irreverent tone with bold, no-nonsense presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Catastrophe Red | #ff4034 | `--color-catastrophe-red` | Brand accent, highlighting urgent text, interactive borders, and key atmospheric elements like flames — a vivid, almost alarming splash of color |
+| Pitch Black | #000000 | `--color-pitch-black` | Dominant background, primary text color, button backgrounds, and strong borders — forms the high-contrast foundation of the design |
+| Aged Paper | #ebe4d8 | `--color-aged-paper` | Primary surface color for text blocks, card backgrounds, and button text when on dark backgrounds — a soft, slightly off-white that softens the stark black |
+| Charcoal Haze | #c3bdb3 | `--color-charcoal-haze` | Subtle button box shadow that provides minimal elevation without adding strong depth |
+
+## Tokens — Typography
+
+### Spektra
+
+- **Token:** `--font-spektra`
+- **Substitute:** Abril Fatface, or Public Sans Black
+- **Weights:** 400
+- **Sizes:** 32px, 40px, 100px, 202px
+- **Line heights:** 0.82, 0.88, 1.00, 2.00
+- **Letter spacing:** normal
+- **Role:** Display headlines and impactful calls to action — its distinctive, distressed character immediately communicates the brand's unique voice and satirical intent.
+
+### Helvetica Neue LT
+
+- **Token:** `--font-helvetica-neue-lt`
+- **Substitute:** Arial, or Inter
+- **Weights:** 400, 800
+- **Sizes:** 14px, 16px, 28px, 30px
+- **Line heights:** 1.27, 1.29, 1.50
+- **Letter spacing:** normal
+- **Role:** Body copy, links, and supporting text — provides a clear, utilitarian contrast to the expressive display font, ensuring readability for longer content blocks.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.29 | — | `--text-caption` |
+| body | 16px | 1.27 | — | `--text-body` |
+| subheading | 28px | 1.5 | — | `--text-subheading` |
+| heading | 30px | 1.29 | — | `--text-heading` |
+| heading-lg | 32px | 1 | — | `--text-heading-lg` |
+| display | 202px | 0.82 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-168 | 168px | `--spacing-168` |
+| spacing-272 | 272px | `--spacing-272` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 2520px |
+| inputs | 10px |
+| buttons | 80px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Rounded Primary Button
+
+**Role:** Call to action
+
+Filled Pitch Black background with Aged Paper text. Features extremely rounded corners at 120px for a soft, almost pill-like shape. Padding: 7px vertical, 7px horizontal.
+
+### Elongated Primary Button
+
+**Role:** Large call to action
+
+Filled Pitch Black background with Aged Paper text. Employs a 80px border-radius, creating an elongated oval. Padding: 0px vertical, 60px horizontal.
+
+### Pill Outline Button
+
+**Role:** Subtle action
+
+Ghost button with 48px border-radius, no background fill, and black text. Used for less prominent actions.
+
+### Circular Card
+
+**Role:** Decorative content container
+
+Pitch Black background with a 100% border-radius, creating a perfect circle. No padding or shadow, used for visual accents or small, contained content.
+
+### Input Field
+
+**Role:** User entry field
+
+Aged Paper background, Pitch Black text, and a 10px border-radius for rounded corners. Generous horizontal padding of 20px with 6px bottom padding, implying text entry.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Spektra for all headlines and impactful short text to leverage its unique character, prioritizing visual impact over conventional readability.
 - Maintain a stark contrast by pairing Pitch Black (#000000) for backgrounds and text with Aged Paper (#ebe4d8) for supporting surfaces and inverted text.
@@ -65,7 +144,7 @@ Cards Against Humanity Climate Catastrophe Pack projects an urgent, confrontatio
 - Utilize Helvetica Neue LT for all body copy and instructional text, ensuring clarity and contrast against the expressive display font.
 - Maintain a spacious rhythm between content blocks with a section gap of 30px to prevent visual clutter and allow design elements breathing room.
 
-### Don'ts
+### Don't
 
 - Avoid using gradients or subtle shadows, as the system relies on high contrast and flat surfaces, except for the subtle Charcoal Haze button shadow.
 - Do not introduce additional color hues; restrict the palette strictly to Pitch Black, Aged Paper, and Catastrophe Red to maintain visual integrity.
@@ -74,10 +153,104 @@ Cards Against Humanity Climate Catastrophe Pack projects an urgent, confrontatio
 - Avoid decorative imagery that dilutes the stark, graphic, and text-heavy nature of the design.
 - Do not use traditional, corporate typography or unrounded shapes, which would contradict the brand's irreverent and distressed visual language.
 
-### Layout
+## Imagery
+
+The site uses a mix of scattered, minimalistic, and somewhat distressed iconography/geometric shapes (concentric red circles, abstract warning symbols) for decorative atmosphere, rather than photography or complex illustrations. These are often outlined in Catastrophe Red. There's also striking, full-bleed imagery like the 'flames' graphic, which serves as a decorative, high-impact background element, purely for atmosphere. Imagery is dense in selective areas to create visual intensity, contrasting with text-dominant sections.
+
+## Layout
 
 The page primarily uses a full-bleed layout, particularly for hero and atmospheric sections, allowing large graphic elements to span the full viewport width. Content sections are centrally aligned, but with a flexible max-width, allowing for long-form text blocks on an Aged Paper background. The hero section prominently features a centered, oversized headline (Spektra font) over a dark, graphically rich background. Section rhythm is irregular, creating an almost chaotic, collage-like feel, underscored by a dense, circular graphic pattern rather than consistent spacing. Content stacks are generally simple, centered text blocks, occasionally broken by decorative elements.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of scattered, minimalistic, and somewhat distressed iconography/geometric shapes (concentric red circles, abstract warning symbols) for decorative atmosphere, rather than photography or complex illustrations. These are often outlined in Catastrophe Red. There's also striking, full-bleed imagery like the 'flames' graphic, which serves as a decorative, high-impact background element, purely for atmosphere. Imagery is dense in selective areas to create visual intensity, contrasting with text-dominant sections.
+- **Cards Against Humanity (main site)** — Shares the same irreverent, anti-design design philosophy with jarring typography and high-contrast color schemes.
+- **Oatly** — Uses a similar approach to bold, highly opinionated typography and a limited, punchy color palette to convey a strong brand voice.
+- **VICE Media** — Employs high-contrast, often black-and-white visuals with disruptive typography and occasional use of strong accent colors to communicate an edgy, confrontational tone.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-catastrophe-red: #ff4034;
+  --color-pitch-black: #000000;
+  --color-aged-paper: #ebe4d8;
+  --color-charcoal-haze: #c3bdb3;
+  --font-spektra: 'Spektra', Abril Fatface, or Public Sans Black;
+  --font-helvetica-neue-lt: 'Helvetica Neue LT', Arial, or Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.29;
+  --text-body: 16px;
+  --leading-body: 1.27;
+  --text-subheading: 28px;
+  --leading-subheading: 1.5;
+  --text-heading: 30px;
+  --leading-heading: 1.29;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --text-display: 202px;
+  --leading-display: 0.82;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-168: 168px;
+  --spacing-272: 272px;
+  --radius-cards: 2520px;
+  --radius-inputs: 10px;
+  --radius-buttons: 80px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-catastrophe-red: #ff4034;
+  --color-pitch-black: #000000;
+  --color-aged-paper: #ebe4d8;
+  --color-charcoal-haze: #c3bdb3;
+  --font-spektra: 'Spektra', Abril Fatface, or Public Sans Black;
+  --font-helvetica-neue-lt: 'Helvetica Neue LT', Arial, or Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.29;
+  --text-body: 16px;
+  --leading-body: 1.27;
+  --text-subheading: 28px;
+  --leading-subheading: 1.5;
+  --text-heading: 30px;
+  --leading-heading: 1.29;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --text-display: 202px;
+  --leading-display: 0.82;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-168: 168px;
+  --spacing-272: 272px;
+  --radius-cards: 2520px;
+  --radius-inputs: 10px;
+  --radius-buttons: 80px;
+}
+```
