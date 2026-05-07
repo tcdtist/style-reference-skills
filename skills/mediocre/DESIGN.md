@@ -1,23 +1,96 @@
 ---
 version: alpha
-name: MEDIOCRE
-description: MEDIOCRE embraces a gritty, high-contrast digital street art aesthetic, using a stark lime green canvas as a vibrant backdrop for red graffiti-style typography. The design is intentionally raw and visually assertive, reflecting a 'no-frills' counter-culture attitude. Text elements rely on bold, condensed gothic forms with distinctive character spacing, creating visual tension against the uniform background. The system is deliberately minimal in its componentry, focusing instead on impactful typography and color contrast.
-colors:
-  graffiti-red: "#c20000"
-  electric-green: "#26ff00"
-  faded-grid: "#d9d9d9"
-spacing:
-  elementGap: 8px
-  sectionGap: 150px
+name: "MEDIOCRE"
+description: "MEDIOCRE embraces a gritty, high-contrast digital street art aesthetic, using a stark lime green canvas as a vibrant backdrop for red graffiti-style typography. The design is intentionally raw and visually assertive, reflecting a 'no-frills' counter-culture attitude. Text elements rely on bold, condensed gothic forms with distinctive character spacing, creating visual tension against the uniform background. The system is deliberately minimal in its componentry, focusing instead on impactful typography and color contrast."
+theme: "light"
+industry: "design"
+source_url: "https://jacobleech.com"
+refero_style_id: "74db0cb1-87b9-4118-ac4e-dee1910f4cae"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520200417-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520200417-thumb.jpg"
+extracted_at: "2026-04-30T03:36:56.399Z"
 ---
 
-## Overview
+# MEDIOCRE — Style Reference
 
-**North Star:** digital street art
+> digital street art
+
+**Theme:** light
+
+**Industry:** design
 
 MEDIOCRE embraces a gritty, high-contrast digital street art aesthetic, using a stark lime green canvas as a vibrant backdrop for red graffiti-style typography. The design is intentionally raw and visually assertive, reflecting a 'no-frills' counter-culture attitude. Text elements rely on bold, condensed gothic forms with distinctive character spacing, creating visual tension against the uniform background. The system is deliberately minimal in its componentry, focusing instead on impactful typography and color contrast.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Graffiti Red | #c20000 | `--color-graffiti-red` | Primary typography, decorative accents, interactive element borders (e.g., ghost buttons/links). Its vivid red against electric green forms the core visual identity |
+| Electric Green | #26ff00 | `--color-electric-green` | Dominant background for the entire page canvas, providing a high-saturation, energetic base |
+| Faded Grid | #d9d9d9 | `--color-faded-grid` | Subtle background for UI elements if present, and very light, almost imperceptible grid lines or dividers, allowing the brand colors to dominate |
+
+## Tokens — Typography
+
+### MAELSTROM
+
+- **Token:** `--font-maelstrom`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 47px, 50px
+- **Line heights:** 1.25
+- **Letter spacing:** -0.0100em
+- **Role:** Headlines and primary branding text. The letter spacing of -0.0100em creates a tight, impactful presence, while the '1.2500em' spacing is a signature for special, highly expressive text segments.
+
+### Victor
+
+- **Token:** `--font-victor`
+- **Substitute:** IBM Plex Sans Condensed
+- **Weights:** 700
+- **Sizes:** 14px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0100em
+- **Role:** Small, bold utility text and links, used for navigation and metadata. The heavy weight and tight tracking ensure legibility despite its small size.
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.25
+- **Letter spacing:** normal
+- **Role:** Body text and supporting information. Its normal letter spacing provides a contrast to the more aggressively tracked display fonts, acting as a functional anchor.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-150 | 150px | `--spacing-150` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 150px |
+| cardPadding | 8px |
+| elementGap | 8px |
+
+## Components
+
+## Do's and Don'ts
+
+### Do
 
 - Use Electric Green (#26ff00) as the primary background for all major page sections and the canvas itself.
 - Apply Graffiti Red (#c20000) for all primary text elements, headlines, and interactive link/ghost button borders to maintain high contrast and visual energy.
@@ -27,7 +100,7 @@ MEDIOCRE embraces a gritty, high-contrast digital street art aesthetic, using a 
 - Ensure all interactive ghost buttons or links use a 1px Graffiti Red (#c20000) border, rather than a filled background.
 - Implement the 'hue-spin' named animation for decorative elements that require dynamic color shifts, lasting 120s with an 'ease' timing function.
 
-### Don'ts
+### Don't
 
 - Avoid softened corners; all UI elements should maintain sharp, 0px border radii.
 - Do not introduce additional colors beyond Graffiti Red, Electric Green, and Faded Grid without strong functional justification—the system thrives on its limited palette.
@@ -36,10 +109,55 @@ MEDIOCRE embraces a gritty, high-contrast digital street art aesthetic, using a 
 - Avoid using standard button fills; prefer ghost buttons with strong red borders for interactive elements.
 - Do not vary line heights excessively; adhere to 1.25 for body text and 1.00 for small utility text to maintain visual consistency.
 
-### Layout
+## Imagery
+
+The site's primary imagery is dense, tag-style graffiti text in Graffiti Red on an Electric Green background. Imagery serves as a central decorative and branding element, rather than illustrative or product-focused. The treatment is full-bleed, occupying significant visual space. The style is raw and aggressive, with abstract forms dominating. There are no outlined or filled icons, nor photography or 3D renders; the visual language is purely graphic and type-driven.
+
+## Layout
 
 The page exhibits a full-bleed layout, where the Electric Green canvas extends edge-to-edge. The hero section features large, centered graffiti typography, serving as the dominant visual element. Content is primarily arranged in centered stacks, with strong vertical rhythm established by the 150px section gaps. Subtle vertical Faded Grid lines appear as a background grid, occasionally interrupted by the central imagery. Navigation is minimal, limited to corner text links, with no sticky header or complex menus, reinforcing the stark, direct aesthetic.
 
-### Imagery
+## Similar Brands
 
-The site's primary imagery is dense, tag-style graffiti text in Graffiti Red on an Electric Green background. Imagery serves as a central decorative and branding element, rather than illustrative or product-focused. The treatment is full-bleed, occupying significant visual space. The style is raw and aggressive, with abstract forms dominating. There are no outlined or filled icons, nor photography or 3D renders; the visual language is purely graphic and type-driven.
+- **Thrasher Magazine** — Aggressive, high-contrast typography and a raw, counter-culture aesthetic with limited color palettes.
+- **Bratz.io** — Unconventional, high-saturation color usage, often with neon hues and a sense of digital rebellion.
+- **Obey Giant (Shepard Fairey)** — Stark, propaganda-influenced visual style with limited color palettes and bold graphic elements.
+- **MSCHF** — Disruptive, attention-grabbing design with unexpected color combinations and a sense of digital art installation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-graffiti-red: #c20000;
+  --color-electric-green: #26ff00;
+  --color-faded-grid: #d9d9d9;
+  --font-maelstrom: 'MAELSTROM', Bebas Neue;
+  --font-victor: 'Victor', IBM Plex Sans Condensed;
+  --font-geist: 'Geist', Inter;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-150: 150px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-graffiti-red: #c20000;
+  --color-electric-green: #26ff00;
+  --color-faded-grid: #d9d9d9;
+  --font-maelstrom: 'MAELSTROM', Bebas Neue;
+  --font-victor: 'Victor', IBM Plex Sans Condensed;
+  --font-geist: 'Geist', Inter;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-150: 150px;
+  --radius-default: 0px;
+}
+```

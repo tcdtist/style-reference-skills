@@ -1,47 +1,123 @@
 ---
 version: alpha
-name: Marx Design
-description: Marx Design uses a stark, high-contrast visual language with a focus on bold typography and achromatic tones. The design system emphasizes clarity and directness through prominent text elements on a predominantly black background. Visual interest is derived from strong typographic presence and the occasional use of black-and-white imagery, creating an atmosphere that is both authoritative and understated.
-colors:
-  obsidian-black: "#000000"
-  canvas-white: "#ffffff"
-  ash-gray: "#ece8e7"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.29
-    letterSpacing: 0px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.37
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 108px
-    lineHeight: 1
-    letterSpacing: -1.08px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px for ghost, 50% for filled
-  elementGap: 6px
-components:
-  ghost-navigation-button:
-    role: Primary navigation and menu items.
-  filled-circular-button:
-    role: Call to action or prominent interaction.
-  body-text-container:
-    role: Wrapping descriptive content and secondary information.
+name: "Marx Design"
+description: "Marx Design uses a stark, high-contrast visual language with a focus on bold typography and achromatic tones. The design system emphasizes clarity and directness through prominent text elements on a predominantly black background. Visual interest is derived from strong typographic presence and the occasional use of black-and-white imagery, creating an atmosphere that is both authoritative and understated."
+theme: "dark"
+industry: "design"
+source_url: "https://marxdesign.co.nz"
+refero_style_id: "00a2d2d6-3a91-48e5-9941-ece03ebe2b87"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516704448-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516704448-thumb.jpg"
+extracted_at: "2026-04-30T02:38:38.910Z"
 ---
 
-## Overview
+# Marx Design — Style Reference
 
-**North Star:** monochrome cinematic canvas
+> monochrome cinematic canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Marx Design uses a stark, high-contrast visual language with a focus on bold typography and achromatic tones. The design system emphasizes clarity and directness through prominent text elements on a predominantly black background. Visual interest is derived from strong typographic presence and the occasional use of black-and-white imagery, creating an atmosphere that is both authoritative and understated.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Obsidian Black | #000000 | `--color-obsidian-black` | Page backgrounds, prominent text, button borders |
+| Canvas White | #ffffff | `--color-canvas-white` | Major headings, interactive text (links, buttons), text on black backgrounds |
+| Ash Gray | #ece8e7 | `--color-ash-gray` | Subtle border elements, secondary text, muted links |
+
+## Tokens — Typography
+
+### untitled
+
+- **Token:** `--font-untitled`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 17px, 19px
+- **Line heights:** 1.29, 1.37
+- **Letter spacing:** normal
+- **OpenType features:** "kern"
+- **Role:** General body text, navigation items, secondary information. Its consistent weight contributes to the system's sense of calm authority.
+
+### black
+
+- **Token:** `--font-black`
+- **Substitute:** Anton
+- **Weights:** 400
+- **Sizes:** 108px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0250em
+- **OpenType features:** "kern"
+- **Role:** Primary headings and display text. Its large size and tight tracking make a strong, unmissable statement.
+
+### medium
+
+- **Token:** `--font-medium`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 19px
+- **Line heights:** 1.37
+- **Letter spacing:** -0.0350em
+- **OpenType features:** "kern"
+- **Role:** Specific button text, often for interactive elements requiring emphasis without increased weight.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 17px | 1.29 | 0px | `--text-body` |
+| body-lg | 19px | 1.37 | 0px | `--text-body-lg` |
+| display | 108px | 1 | -1.08px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-18 | 18px | `--spacing-18` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| buttons | 0px for ghost, 50% for filled |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 18px |
+| elementGap | 6px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Primary navigation and menu items.
+
+Text in Canvas White (#ffffff) on an Obsidian Black (#000000) background, with a 'border' that is essentially the text itself. No padding or border-radius, maintaining a direct, stark appearance. Inherits the base font style for navigation clarity.
+
+### Filled Circular Button
+
+**Role:** Call to action or prominent interaction.
+
+A contrasting button with an Obsidian Black (#000000) background and Canvas White (#ffffff) text, featuring a border-radius of 50% to create a distinct circular shape. No explicit padding is defined, relying on text size and shape for visual weight.
+
+### Body Text Container
+
+**Role:** Wrapping descriptive content and secondary information.
+
+Displays text in Ash Gray (#ece8e7) on an Obsidian Black (#000000) background. It uses a base font at sizes like 17px or 19px with default line spacing. This container ensures readability for longer passages while maintaining the monochrome theme.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Obsidian Black (#000000) for backgrounds and main body text to create a high-contrast foundation.
 - Use Canvas White (#ffffff) exclusively for primary headings and interactive text on dark backgrounds to ensure maximum prominence.
@@ -51,7 +127,7 @@ Marx Design uses a stark, high-contrast visual language with a focus on bold typ
 - Ensure all text (except headings) uses 'untitled' font with 'kern' feature settings for consistent body typography.
 - For primary navigation, use link-styled text in Canvas White (#ffffff) on Obsidian Black (#000000) without explicit padding or borders.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for functional UI elements; color is reserved for content or specific brand applications outside general UI.
 - Do not introduce gradients into core UI components; the system relies on flat colors and strong contrast.
@@ -61,10 +137,70 @@ Marx Design uses a stark, high-contrast visual language with a focus on bold typ
 - Avoid mixed alignment or playful spacing; maintain a sense of order and directness through consistent grid-like structures and centered content.
 - Do not use font weights other than 400; the system achieves distinctiveness through size and tracking rather than varied weight.
 
-### Layout
+## Imagery
+
+This design system primarily utilizes black-and-white photography, often historical or abstract, serving as a decorative and atmospheric element rather than explanatory content. Images are contained within the layout, not full-bleed, and generally appear without rounded corners, maintaining the sharp aesthetic. The imagery density is low, making text the dominant visual element on the page.
+
+## Layout
 
 The page structure is full-bleed, dominated by a stark Obsidian Black (#000000) background. Content, including the hero section, is centrally aligned. Headings utilize extremely large typography for immediate impact. The design avoids complex grids for content presentation, favoring stacked, centered elements with generous vertical spacing between sections. Navigation is minimal, presented as a 'Menu' link in the top right corner.
 
-### Imagery
+## Similar Brands
 
-This design system primarily utilizes black-and-white photography, often historical or abstract, serving as a decorative and atmospheric element rather than explanatory content. Images are contained within the layout, not full-bleed, and generally appear without rounded corners, maintaining the sharp aesthetic. The imagery density is low, making text the dominant visual element on the page.
+- **AIGA** — Similar high-contrast black-on-white/white-on-black aesthetic with bold, direct typography.
+- **Pentagram** — Employs a stark, minimal design with emphasis on strong photographic elements and crisp typography.
+- **Verlet** — Relies on a monochrome palette and confident, large-scale typography to establish a serious and design-focused presence.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-obsidian-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #ece8e7;
+  --font-untitled: 'untitled', Inter;
+  --font-black: 'black', Anton;
+  --font-medium: 'medium', Inter;
+  --text-body: 17px;
+  --leading-body: 1.29;
+  --tracking-body: 0px;
+  --text-body-lg: 19px;
+  --leading-body-lg: 1.37;
+  --tracking-body-lg: 0px;
+  --text-display: 108px;
+  --leading-display: 1;
+  --tracking-display: -1.08px;
+  --spacing-6: 6px;
+  --spacing-18: 18px;
+  --radius-cards: 0px;
+  --radius-buttons: 0px for ghost, 50% for filled;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-obsidian-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #ece8e7;
+  --font-untitled: 'untitled', Inter;
+  --font-black: 'black', Anton;
+  --font-medium: 'medium', Inter;
+  --text-body: 17px;
+  --leading-body: 1.29;
+  --tracking-body: 0px;
+  --text-body-lg: 19px;
+  --leading-body-lg: 1.37;
+  --tracking-body-lg: 0px;
+  --text-display: 108px;
+  --leading-display: 1;
+  --tracking-display: -1.08px;
+  --spacing-6: 6px;
+  --spacing-18: 18px;
+  --radius-cards: 0px;
+  --radius-buttons: 0px for ghost, 50% for filled;
+}
+```

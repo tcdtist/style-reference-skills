@@ -1,79 +1,140 @@
 ---
 version: alpha
-name: MediaOptions
-description: MediaOptions embraces a commanding, yet approachable digital presence. Deep blue-violet surfaces create a sophisticated backdrop, punctuated by a vibrant orange for call-to-actions and a sky blue for links, providing clear points of interaction. Typography is direct and legible, maintaining professionalism with a focused range of weights. Components feature generous rounded corners for a soft touch against the structured layout, creating a visual balance between authority and user-friendliness.
-colors:
-  midnight-indigo: "#160042"
-  sky-link: "#0073e5"
-  ocean-glimmer: "#008da8"
-  action-blue: "#2b6cb0"
-  accent-blue: "#0071bc"
-  polar-white: "#fbfcfe"
-  ghost-gray: "#eeeeee"
-  iron-gray: "#8e8f94"
-  shadow-tint: "#cccccc"
-  amber-cta: "#e86d1f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.75
-    letterSpacing: 0.054px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.78
-    letterSpacing: 0.029px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.56
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.28
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.15
-    letterSpacing: -0.03px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 68px
-    lineHeight: 1
-    letterSpacing: -0.03px
-spacing:
-  cardRadius: 50px
-  buttonRadius: 50px
-  elementGap: 15px
-  sectionGap: 30px
-components:
-  primary-filled-button:
-    role: Main call-to-action button
-  navigation-button:
-    role: Secondary action or ghost button in navigation
-  dark-filled-button:
-    role: Alternative filled button for specific dark contexts
-  primary-card:
-    role: Content container for main sections
-  text-input-dark-context:
-    role: Input field for forms within dark sections
+name: "MediaOptions"
+description: "MediaOptions embraces a commanding, yet approachable digital presence. Deep blue-violet surfaces create a sophisticated backdrop, punctuated by a vibrant orange for call-to-actions and a sky blue for links, providing clear points of interaction. Typography is direct and legible, maintaining professionalism with a focused range of weights. Components feature generous rounded corners for a soft touch against the structured layout, creating a visual balance between authority and user-friendliness."
+theme: "light"
+industry: "other"
+source_url: "https://simulate.com"
+refero_style_id: "95cccc8d-c35a-4da0-8563-5fd5f2c7d6eb"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520172794-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520172794-thumb.jpg"
+extracted_at: "2026-04-30T03:36:33.969Z"
 ---
 
-## Overview
+# MediaOptions — Style Reference
 
-**North Star:** Deep Violet Canvas
+> Deep Violet Canvas
+
+**Theme:** light
+
+**Industry:** other
 
 MediaOptions embraces a commanding, yet approachable digital presence. Deep blue-violet surfaces create a sophisticated backdrop, punctuated by a vibrant orange for call-to-actions and a sky blue for links, providing clear points of interaction. Typography is direct and legible, maintaining professionalism with a focused range of weights. Components feature generous rounded corners for a soft touch against the structured layout, creating a visual balance between authority and user-friendliness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Indigo | #160042 | `--color-midnight-indigo` | Primary surface background, card fills, primary button background, core text color — establishes a dark, rich foundation |
+| Sky Link | #0073e5 | `--color-sky-link` | Navigation links, interactive elements, highlights — provides a clear, vivid accent for clickable items |
+| Ocean Glimmer | #008da8 | `--color-ocean-glimmer` | Decorative accents for headlines and subtext, subtle borders — adds a secondary, muted blue tone |
+| Action Blue | #2b6cb0 | `--color-action-blue` | Call-to-action button background, secondary interactive states — a distinct blue for emphasized actions |
+| Accent Blue | #0071bc | `--color-accent-blue` | Alternative link and icon color — a slightly darker, more subdued blue often used for less prominent links |
+| Polar White | #fbfcfe | `--color-polar-white` | Page background, text color against dark surfaces, input fields, subtle borders — the primary contrasting neutral |
+| Ghost Gray | #eeeeee | `--color-ghost-gray` | Divider lines, subtle list borders — a very light, almost invisible gray for structure |
+| Iron Gray | #8e8f94 | `--color-iron-gray` | Muted text, secondary link text, less prominent borders — a mid-tone gray for informational text |
+| Shadow Tint | #cccccc | `--color-shadow-tint` | Supporting neutral for secondary UI, dividers, and muted labels. Do not promote it to the primary CTA color |
+| Amber CTA | #e86d1f | `--color-amber-cta` | Orange wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 600, 700
+- **Sizes:** 14px, 16px, 20px, 22px, 36px, 48px, 68px
+- **Line heights:** 1.00, 1.15, 1.20, 1.28, 1.56, 1.63, 1.75, 1.78, 2.19
+- **Letter spacing:** -0.0300em, 0.0290em, 0.0540em
+- **Role:** Primary typeface for all UI elements, headings, and body text. Its clear and modern aesthetic supports direct communication.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.75 | 0.054px | `--text-caption` |
+| body-sm | 16px | 1.78 | 0.029px | `--text-body-sm` |
+| body | 20px | 1.56 | 0px | `--text-body` |
+| subheading | 22px | 1.28 | 0px | `--text-subheading` |
+| heading | 36px | 1.2 | 0px | `--text-heading` |
+| heading-lg | 48px | 1.15 | -0.03px | `--text-heading-lg` |
+| display | 68px | 1 | -0.03px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-72 | 72px | `--spacing-72` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 50px |
+| inputs | 0px |
+| buttons | 50px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1320px |
+| sectionGap | 30px |
+| cardPadding | 60px |
+| elementGap | 15px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call-to-action button
+
+Background: #2b6cb0 (Action Blue), text: Polar White, border-radius: 50px, padding: 10px 72px.
+
+### Navigation Button
+
+**Role:** Secondary action or ghost button in navigation
+
+Background: transparent, text: Polar White, border-color: Polar White, border-radius: 5px, padding: 0px.
+
+### Dark Filled Button
+
+**Role:** Alternative filled button for specific dark contexts
+
+Background: #160042 (Midnight Indigo), text: Polar White, border-color: Polar White, border-radius: 50px, padding: 10px 40px.
+
+### Primary Card
+
+**Role:** Content container for main sections
+
+Background: #160042 (Midnight Indigo), border-radius: 50px, box-shadow: none, padding: 60px.
+
+### Text Input (Dark Context)
+
+**Role:** Input field for forms within dark sections
+
+Background: Polar White, text: Midnight Indigo, border-top-color: Midnight Indigo, border-radius: 0px, padding: 0px 15px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Indigo (#160042) for large background surfaces and card fills to establish the primary darkened canvas.
 - Apply 50px border-radius to all independent card and button components for a consistent soft, rounded aesthetic.
@@ -83,7 +144,7 @@ MediaOptions embraces a commanding, yet approachable digital presence. Deep blue
 - Employ the Amber CTA (#e86d1f) for the main call-to-action buttons to ensure maximum prominence and urgency.
 - Use Polar White (#fbfcfe) for text and secondary backgrounds within dark containers to provide strong contrast.
 
-### Don'ts
+### Don't
 
 - Avoid using flat, angular borders; instead, default to rounded corners or sharp edges on inputs where functional.
 - Do not introduce additional bold, saturated colors beyond the established blue, indigo, and orange palette.
@@ -93,10 +154,144 @@ MediaOptions embraces a commanding, yet approachable digital presence. Deep blue
 - Do not use transparent backgrounds for cards or primary buttons; content containers should always have a solid fill.
 - Escew complex drop shadows; use the subtle rgba(0, 0, 0, 0.2) 0px 3px 1px -2px shadow for minimal depth where needed.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Page Canvas | #fbfcfe | Dominant background for the overall page structure, providing a clean base. |
+| 1 | Content Card Surface | #eeeeee | Subtle background for segregated content blocks like lists, creating a soft separation. |
+| 2 | Accent Card Surface | #160042 | Prominent background for featured content sections and cards, creating depth and brand emphasis. |
+
+## Elevation
+
+- **Button:** `rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px`
+- **Link:** `rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px`
+
+## Imagery
+
+This site predominantly uses UI elements rather than illustrative or photographic imagery. Icons are minimal, either outline or solid, and monochromatic, taking on the surrounding text color or a distinct accent hue like Accent Blue. When present, product-type images are presented cleanly within the UI without elaborate masking or effects. The visual system is text-dominant, with imagery taking a supportive, functional role rather than a decorative one.
+
+## Layout
 
 The page maintains a contained layout with a maximum width of 1320px, usually centered. The hero section features a dominant centered headline over a dark, full-width background. Content sections beneath follow a structured rhythm, often alternating between a light page canvas and the dark Midnight Indigo card surfaces. Elements are frequently stacked vertically, with the potential for grid-based arrangements for features. Navigation is a persistent top bar, with elements neatly spaced.
 
-### Imagery
+## Similar Brands
 
-This site predominantly uses UI elements rather than illustrative or photographic imagery. Icons are minimal, either outline or solid, and monochromatic, taking on the surrounding text color or a distinct accent hue like Accent Blue. When present, product-type images are presented cleanly within the UI without elaborate masking or effects. The visual system is text-dominant, with imagery taking a supportive, functional role rather than a decorative one.
+- **Brandfetch** — Prominent use of dark card surfaces on a light background, with strong contrast and rounded components.
+- **Stripe** — Clean, spacious layout with a focus on clear typography and distinct accent colors for interactive elements.
+- **Framer** — Heavy reliance on strong, saturated brand colors for backgrounds and call-to-actions, paired with crisp white text.
+- **Linear** — Understated design with a primary dark interface, punctuated by a single vibrant accent color for interaction and highlighting.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-indigo: #160042;
+  --color-sky-link: #0073e5;
+  --color-ocean-glimmer: #008da8;
+  --color-action-blue: #2b6cb0;
+  --color-accent-blue: #0071bc;
+  --color-polar-white: #fbfcfe;
+  --color-ghost-gray: #eeeeee;
+  --color-iron-gray: #8e8f94;
+  --color-shadow-tint: #cccccc;
+  --color-amber-cta: #e86d1f;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.75;
+  --tracking-caption: 0.054px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.78;
+  --tracking-body-sm: 0.029px;
+  --text-body: 20px;
+  --leading-body: 1.56;
+  --tracking-body: 0px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.28;
+  --tracking-subheading: 0px;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.03px;
+  --text-display: 68px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-72: 72px;
+  --radius-cards: 50px;
+  --radius-inputs: 0px;
+  --radius-buttons: 50px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  --surface-page-canvas: #fbfcfe;
+  --surface-content-card-surface: #eeeeee;
+  --surface-accent-card-surface: #160042;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-indigo: #160042;
+  --color-sky-link: #0073e5;
+  --color-ocean-glimmer: #008da8;
+  --color-action-blue: #2b6cb0;
+  --color-accent-blue: #0071bc;
+  --color-polar-white: #fbfcfe;
+  --color-ghost-gray: #eeeeee;
+  --color-iron-gray: #8e8f94;
+  --color-shadow-tint: #cccccc;
+  --color-amber-cta: #e86d1f;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.75;
+  --tracking-caption: 0.054px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.78;
+  --tracking-body-sm: 0.029px;
+  --text-body: 20px;
+  --leading-body: 1.56;
+  --tracking-body: 0px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.28;
+  --tracking-subheading: 0px;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.03px;
+  --text-display: 68px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-72: 72px;
+  --radius-cards: 50px;
+  --radius-inputs: 0px;
+  --radius-buttons: 50px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 0px 3px 1px -2px, rgba(0, 0, 0, 0.14) 0px 2px 2px 0px, rgba(0, 0, 0, 0.12) 0px 1px 5px 0px;
+  --surface-page-canvas: #fbfcfe;
+  --surface-content-card-surface: #eeeeee;
+  --surface-accent-card-surface: #160042;
+}
+```

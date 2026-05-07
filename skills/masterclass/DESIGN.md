@@ -1,91 +1,206 @@
 ---
 version: alpha
-name: MasterClass
-description: MasterClass employs a dark, cinematic UI, reminiscent of a premium streaming platform. Dominant blacks and deep charcoals create a sophisticated environment, allowing vibrant accents to punctuate interactive elements and brand moments. Typography is bold and confident, commanding attention within the high-contrast setting. Component surfaces are subtle, often inset, maintaining a flat aesthetic that emphasizes content and celebrity figures over overt ornamentation.
-colors:
-  pitch-black: "#000000"
-  charcoal-canvas: "#222326"
-  graphite-base: "#0d0d0e"
-  deep-slate: "#272c33"
-  subtle-ash: "#191c21"
-  muted-stone: "#211d0d"
-  iron-gray: "#43454c"
-  silver-mist: "#9ea0a9"
-  light-steel: "#d4d5d9"
-  pure-white: "#ffffff"
-  ghostly-gray: "#f4f4f5"
-  action-raspberry: "#e32652"
-  interactive-lime: "#dcff00"
-  highlight-gold: "#eed37f"
-  subtle-cadet: "#596170"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.45
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.45
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.45
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.45
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.45
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.3
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 8px
-  buttonRadius: 8px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  ghost-navigation-button:
-    role: Navigation and secondary actions that need to remain subtle.
-  icon-button-filled:
-    role: Functional icons that require a background.
-  navigation-tab-button:
-    role: Top-level navigation items or filters.
-  flat-interactive-input:
-    role: Search bars and form fields.
-  hero-checkbox-radio-button:
-    role: Choices within hero sections.
-  primary-action-button:
-    role: High-priority calls to action.
-  secondary-action-button:
-    role: Prominent actions, but not primary conversion.
-  content-feature-card:
-    role: Containers for featured content with generous padding.
-  visual-content-card:
-    role: Cards for showcasing visual content (e.g., instructors, classes).
-  informational-badge:
-    role: Small, informative labels.
+name: "MasterClass"
+description: "MasterClass employs a dark, cinematic UI, reminiscent of a premium streaming platform. Dominant blacks and deep charcoals create a sophisticated environment, allowing vibrant accents to punctuate interactive elements and brand moments. Typography is bold and confident, commanding attention within the high-contrast setting. Component surfaces are subtle, often inset, maintaining a flat aesthetic that emphasizes content and celebrity figures over overt ornamentation."
+theme: "dark"
+industry: "media"
+source_url: "https://www.masterclass.com"
+refero_style_id: "4367b4cd-b002-4719-a418-cbce020f0d33"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509704264-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509704264-thumb.jpg"
+extracted_at: "2026-04-30T00:42:20.708Z"
 ---
 
-## Overview
+# MasterClass — Style Reference
 
-**North Star:** Midnight Stage Presence
+> Midnight Stage Presence
+
+**Theme:** dark
+
+**Industry:** media
 
 MasterClass employs a dark, cinematic UI, reminiscent of a premium streaming platform. Dominant blacks and deep charcoals create a sophisticated environment, allowing vibrant accents to punctuate interactive elements and brand moments. Typography is bold and confident, commanding attention within the high-contrast setting. Component surfaces are subtle, often inset, maintaining a flat aesthetic that emphasizes content and celebrity figures over overt ornamentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary background for footers and expansive content sections, subtle borders, text for badges |
+| Charcoal Canvas | #222326 | `--color-charcoal-canvas` | Default page background, card backgrounds |
+| Graphite Base | #0d0d0e | `--color-graphite-base` | Background for subtle surface differentiation, text buttons, and darker borders |
+| Deep Slate | #272c33 | `--color-deep-slate` | Card backgrounds, button backgrounds for secondary actions |
+| Subtle Ash | #191c21 | `--color-subtle-ash` | Secondary background color for body sections |
+| Muted Stone | #211d0d | `--color-muted-stone` | Text color for muted elements, borders on certain components |
+| Iron Gray | #43454c | `--color-iron-gray` | Button backgrounds, inset shadow on interactive elements |
+| Silver Mist | #9ea0a9 | `--color-silver-mist` | Text color for secondary information, muted icons, disabled states |
+| Light Steel | #d4d5d9 | `--color-light-steel` | Subtle body text color, borders |
+| Pure White | #ffffff | `--color-pure-white` | Primary text color, active states, badge backgrounds, clear button borders |
+| Ghostly Gray | #f4f4f5 | `--color-ghostly-gray` | Hover states for text and icons, borders for ghost buttons, light text |
+| Action Raspberry | #e32652 | `--color-action-raspberry` | Primary action buttons, prominent icons — a vibrant pop against dark backgrounds for conversion |
+| Interactive Lime | #dcff00 | `--color-interactive-lime` | Green action color for filled buttons, selected navigation states, and focused conversion moments. Use as a supporting accent, not as a status color |
+| Highlight Gold | #eed37f | `--color-highlight-gold` | Accent borders for interactive cards or highlighted content, decorative elements |
+| Subtle Cadet | #596170 | `--color-subtle-cadet` | Background for small, less prominent interactive elements |
+
+## Tokens — Typography
+
+### Sohne
+
+- **Token:** `--font-sohne`
+- **Substitute:** Inter
+- **Weights:** 400, 600
+- **Sizes:** 8px, 12px, 14px, 16px, 20px, 22px, 24px, 32px, 48px
+- **Line heights:** 1.00, 1.25, 1.33, 1.45, 1.50, 1.60, 2.50
+- **Letter spacing:** 0.0100em at 8px, 0.0120em at 12px, 0.0200em at 14px, 0.0230em at 16px, 0.0270em at 20px, 0.0300em at 22px, 0.0390em at 24px
+- **Role:** Primary typeface for all body text, links, buttons, and most headings up to 48px. Its slightly condensed yet approachable nature supports information density without feeling cramped.
+
+### Sohne Schmal
+
+- **Token:** `--font-sohne-schmal`
+- **Substitute:**  condensed sans-serif like Oswald or Anton
+- **Weights:** 500
+- **Sizes:** 64px, 80px
+- **Line heights:** 0.85, 0.90
+- **Letter spacing:** -0.0100em at 64px, 0.0100em at 80px
+- **Role:** Used for large, impactful display headlines, where its 'schmal' (narrow) characteristic allows for bold statements in restricted vertical space. The tight letter-spacing adds to its direct, attention-grabbing feel.
+
+### Ivar Display Condensed
+
+- **Token:** `--font-ivar-display-condensed`
+- **Substitute:** Condensed serif like Playfair Display SC or IBM Plex Serif
+- **Weights:** 400
+- **Sizes:** 64px
+- **Line heights:** 1.10
+- **Letter spacing:** 0.0050em
+- **Role:** An alternative serif for display headings, adding a touch of classic authority and gravitas to select feature titles. Its condensed form maintains visual economy typical of the system.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.45 | — | `--text-caption` |
+| body-sm | 14px | 1.45 | — | `--text-body-sm` |
+| body | 16px | 1.45 | — | `--text-body` |
+| body-lg | 20px | 1.45 | — | `--text-body-lg` |
+| heading-sm | 22px | 1.45 | — | `--text-heading-sm` |
+| heading | 24px | 1.3 | — | `--text-heading` |
+| heading-lg | 32px | 1.3 | — | `--text-heading-lg` |
+| display-sm | 48px | 1.3 | — | `--text-display-sm` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-101 | 101px | `--spacing-101` |
+| spacing-112 | 112px | `--spacing-112` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 8px |
+| links | 8px |
+| badges | 20px |
+| images | 4px |
+| inputs | 0px |
+| buttons | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(148, 154, 164) 0px 0px 0px 2px inset | `--shadow-xl` |
+| xl-2 | rgb(39, 44, 51) 0px 0px 0px 1px inset | `--shadow-xl-2` |
+| xl-3 | rgb(67, 69, 76) 0px 0px 0px 2px inset | `--shadow-xl-3` |
+| xl-4 | rgb(148, 154, 164) 0px 0px 0px 1px inset | `--shadow-xl-4` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 48px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Navigation and secondary actions that need to remain subtle.
+
+backgroundColor: rgba(0,0,0,0), color: #f4f4f5, border: #f4f4f5 1px solid, radius: 4px, padding: 16px.
+
+### Icon Button (filled)
+
+**Role:** Functional icons that require a background.
+
+backgroundColor: #596170, color: #ffffff, radius: 4px, padding: 0px.
+
+### Navigation Tab Button
+
+**Role:** Top-level navigation items or filters.
+
+backgroundColor: #0d0d0, color: #9ea0a9, radius: 8px, padding: 12px 16px.
+
+### Flat Interactive Input
+
+**Role:** Search bars and form fields.
+
+backgroundColor: rgba(0,0,0,0), color: #ffffff, border: #ffffff 1px solid, radius: 0px, padding: 0px.
+
+### Hero Checkbox/Radio Button
+
+**Role:** Choices within hero sections.
+
+backgroundColor: #272c33, color: #ffffff, border: #ffffff 1px solid, radius: 0px, padding: 12px 16px.
+
+### Primary Action Button
+
+**Role:** High-priority calls to action.
+
+backgroundColor: #e32652, color: #ffffff, radius: 8px, padding: 12px 16px.
+
+### Secondary Action Button
+
+**Role:** Prominent actions, but not primary conversion.
+
+backgroundColor: #222326, color: #ffffff, radius: 0px, padding: 12px 16px.
+
+### Content Feature Card
+
+**Role:** Containers for featured content with generous padding.
+
+backgroundColor: #272c33, radius: 8px, padding: 48px 96px.
+
+### Visual Content Card
+
+**Role:** Cards for showcasing visual content (e.g., instructors, classes).
+
+backgroundColor: #222326, radius: 12px, padding: 0px.
+
+### Informational Badge
+
+**Role:** Small, informative labels.
+
+backgroundColor: #ffffff, color: #000000, radius: 20px, padding: 4px 12px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Pitch Black (#000000) for large background areas and Charcoal Canvas (#222326) for primary surfaces to maintain the dark theme.
 - Use Action Raspberry (#e32652) exclusively for primary calls to action, maintaining its vivid impact.
@@ -95,7 +210,7 @@ MasterClass employs a dark, cinematic UI, reminiscent of a premium streaming pla
 - Ensure input fields have a 1px #ffffff border and a 0px radius for a stark, integrated look.
 - Use the inset box-shadow `rgb(148, 154, 164) 0px 0px 0px 2px inset` for selected or active body elements to indicate focus.
 
-### Don'ts
+### Don't
 
 - Do not introduce light backgrounds for core content sections; the system is strictly dark-mode dominant.
 - Avoid using multiple chromatic colors close together; allow Action Raspberry (#e32652) to stand out as the primary accent.
@@ -105,10 +220,173 @@ MasterClass employs a dark, cinematic UI, reminiscent of a premium streaming pla
 - Avoid large imagery with distracting backgrounds; prioritize portraits or product shots with minimal context.
 - Do not use highly rounded corners (e.g., >20px) on main cards or primary buttons, as this clashes with the structured feel.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Pitch Black Base | #000000 | Expansive background for footer and full-width sections. |
+| 1 | Charcoal Canvas | #222326 | Primary page background and default card background. |
+| 2 | Deep Slate Cards | #272c33 | Elevated card surfaces and specific input containers. |
+| 3 | Graphite Modules | #0d0d0 | Background for navigation tabs and interactive modules. |
+
+## Elevation
+
+- **Input focus:** `inset 0 0 0 2px #949aa4`
+- **Hovered button/link:** `inset 0 0 0 2px #43454c`
+
+## Imagery
+
+The visual language is dominated by high-quality, often dramatic portrait photography of celebrity instructors. Images are typically tightly cropped, focusing on the individual's face or upper body, and serve a functional purpose of personalizing content rather than purely decorative. Photography is often full-bleed within sections or contained within cards with large radii (8px or 12px), creating a gallery-like feel. Iconography is minimalist, either outlined or filled, primarily in Pure White or Silver Mist, with occasional pops of Interactive Lime or Action Raspberry for status or interaction. There is a strong emphasis on product showcase – the instructors and their content are the primary visual elements.
+
+## Layout
 
 The page primarily utilizes a max-width contained layout where content is centered, often with dynamic full-bleed hero sections. The hero frequently employs a dark background with a prominent, large headline and supporting text, flanked by high-impact instructor imagery. Sections alternate between full-width black backgrounds and slightly lighter charcoal surfaces, maintaining strong vertical rhythm with generous section gaps (64px). Content is arranged in alternating text-left/image-right patterns, centered stacks for feature declarations, and horizontal scrolling carousels or grids for content browsing. Navigation is a sticky top bar with a stark dark background, featuring minimalist text links and a prominent Action Raspberry call-to-action button.
 
-### Imagery
+## Similar Brands
 
-The visual language is dominated by high-quality, often dramatic portrait photography of celebrity instructors. Images are typically tightly cropped, focusing on the individual's face or upper body, and serve a functional purpose of personalizing content rather than purely decorative. Photography is often full-bleed within sections or contained within cards with large radii (8px or 12px), creating a gallery-like feel. Iconography is minimalist, either outlined or filled, primarily in Pure White or Silver Mist, with occasional pops of Interactive Lime or Action Raspberry for status or interaction. There is a strong emphasis on product showcase – the instructors and their content are the primary visual elements.
+- **Netflix** — Dark UI with cinematic visuals and a focus on content thumbnails/cards.
+- **Skillshare** — Online learning platform emphasizing expert instructors and clean content presentation.
+- **Apple TV+** — Premium dark interface, strong emphasis on visual content and high-quality photography.
+- **Spotify** — Dark-themed core UI with bright accent colors for interactive elements and brand recognition.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-charcoal-canvas: #222326;
+  --color-graphite-base: #0d0d0e;
+  --color-deep-slate: #272c33;
+  --color-subtle-ash: #191c21;
+  --color-muted-stone: #211d0d;
+  --color-iron-gray: #43454c;
+  --color-silver-mist: #9ea0a9;
+  --color-light-steel: #d4d5d9;
+  --color-pure-white: #ffffff;
+  --color-ghostly-gray: #f4f4f5;
+  --color-action-raspberry: #e32652;
+  --color-interactive-lime: #dcff00;
+  --color-highlight-gold: #eed37f;
+  --color-subtle-cadet: #596170;
+  --font-sohne: 'Sohne', Inter;
+  --font-sohne-schmal: 'Sohne Schmal',  condensed sans-serif like Oswald or Anton;
+  --font-ivar-display-condensed: 'Ivar Display Condensed', Condensed serif like Playfair Display SC or IBM Plex Serif;
+  --text-caption: 12px;
+  --leading-caption: 1.45;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.45;
+  --text-body: 16px;
+  --leading-body: 1.45;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.45;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.45;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.3;
+  --text-display-sm: 48px;
+  --leading-display-sm: 1.3;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-90: 90px;
+  --spacing-96: 96px;
+  --spacing-101: 101px;
+  --spacing-112: 112px;
+  --radius-cards: 8px;
+  --radius-links: 8px;
+  --radius-badges: 20px;
+  --radius-images: 4px;
+  --radius-inputs: 0px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgb(148, 154, 164) 0px 0px 0px 2px inset;
+  --shadow-xl-2: rgb(39, 44, 51) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgb(67, 69, 76) 0px 0px 0px 2px inset;
+  --shadow-xl-4: rgb(148, 154, 164) 0px 0px 0px 1px inset;
+  --surface-pitch-black-base: #000000;
+  --surface-charcoal-canvas: #222326;
+  --surface-deep-slate-cards: #272c33;
+  --surface-graphite-modules: #0d0d0;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-charcoal-canvas: #222326;
+  --color-graphite-base: #0d0d0e;
+  --color-deep-slate: #272c33;
+  --color-subtle-ash: #191c21;
+  --color-muted-stone: #211d0d;
+  --color-iron-gray: #43454c;
+  --color-silver-mist: #9ea0a9;
+  --color-light-steel: #d4d5d9;
+  --color-pure-white: #ffffff;
+  --color-ghostly-gray: #f4f4f5;
+  --color-action-raspberry: #e32652;
+  --color-interactive-lime: #dcff00;
+  --color-highlight-gold: #eed37f;
+  --color-subtle-cadet: #596170;
+  --font-sohne: 'Sohne', Inter;
+  --font-sohne-schmal: 'Sohne Schmal',  condensed sans-serif like Oswald or Anton;
+  --font-ivar-display-condensed: 'Ivar Display Condensed', Condensed serif like Playfair Display SC or IBM Plex Serif;
+  --text-caption: 12px;
+  --leading-caption: 1.45;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.45;
+  --text-body: 16px;
+  --leading-body: 1.45;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.45;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.45;
+  --text-heading: 24px;
+  --leading-heading: 1.3;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.3;
+  --text-display-sm: 48px;
+  --leading-display-sm: 1.3;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-90: 90px;
+  --spacing-96: 96px;
+  --spacing-101: 101px;
+  --spacing-112: 112px;
+  --radius-cards: 8px;
+  --radius-links: 8px;
+  --radius-badges: 20px;
+  --radius-images: 4px;
+  --radius-inputs: 0px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgb(148, 154, 164) 0px 0px 0px 2px inset;
+  --shadow-xl-2: rgb(39, 44, 51) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgb(67, 69, 76) 0px 0px 0px 2px inset;
+  --shadow-xl-4: rgb(148, 154, 164) 0px 0px 0px 1px inset;
+  --surface-pitch-black-base: #000000;
+  --surface-charcoal-canvas: #222326;
+  --surface-deep-slate-cards: #272c33;
+  --surface-graphite-modules: #0d0d0;
+}
+```
