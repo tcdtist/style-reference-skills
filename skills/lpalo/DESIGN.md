@@ -1,66 +1,149 @@
 ---
 version: alpha
-name: Lpalo
-description: Lpalo exudes a playful, yet bold aesthetic, centered around a light, blush pink canvas that evokes warmth and imagination. Prominent, heavy typography anchors content, while a cast of vibrant, sometimes unexpected, accent colors punctuates the interface without overwhelming. Elements are rounded and friendly, suggesting an approachable, creative space for children's content. The visual system balances strong typographic presence with whimsical, illustrative details.
-colors:
-  canvas-pink: "#f6e0db"
-  surface-white: "#ffffff"
-  charcoal-text: "#000000"
-  pumpkin-accent: "#ef724f"
-  lemon-highlight: "#e7db4c"
-  bubblegum-pink: "#981082"
-  spring-green: "#6ed311"
-  seafoam-accent: "#ace2df"
-  lavender-glow: "#e69dff"
-  sky-blue: "#84bfff"
-  deep-blue: "#5196ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.24
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1.16
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 46px
-    lineHeight: 1.09
-  display:
-    fontFamily: "system-ui"
-    fontSize: 120px
-    lineHeight: 1
-spacing:
-  cardRadius: 10px
-  elementGap: 10px
-  sectionGap: 46px
-components:
-  navigation-button:
-    role: Primary navigation links and interactive controls.
-  default-card:
-    role: Content containers for information display.
-  accent-card-rounded:
-    role: Highlighting specific content or categories with a playful aesthetic.
-  hero-headline:
-    role: Main page title or section headline.
+name: "Lpalo"
+description: "Lpalo exudes a playful, yet bold aesthetic, centered around a light, blush pink canvas that evokes warmth and imagination. Prominent, heavy typography anchors content, while a cast of vibrant, sometimes unexpected, accent colors punctuates the interface without overwhelming. Elements are rounded and friendly, suggesting an approachable, creative space for children's content. The visual system balances strong typographic presence with whimsical, illustrative details."
+theme: "light"
+industry: "media"
+source_url: "https://lpalo.com"
+refero_style_id: "79b4ebc4-30f6-45b6-b2d2-922e28e05ca9"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515578332-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515578332-thumb.jpg"
+extracted_at: "2026-04-30T02:20:04.221Z"
 ---
 
-## Overview
+# Lpalo — Style Reference
 
-**North Star:** Blush Playground: A soft, inviting canvas for bold, playful content.
+> Blush Playground: A soft, inviting canvas for bold, playful content.
+
+**Theme:** light
+
+**Industry:** media
 
 Lpalo exudes a playful, yet bold aesthetic, centered around a light, blush pink canvas that evokes warmth and imagination. Prominent, heavy typography anchors content, while a cast of vibrant, sometimes unexpected, accent colors punctuates the interface without overwhelming. Elements are rounded and friendly, suggesting an approachable, creative space for children's content. The visual system balances strong typographic presence with whimsical, illustrative details.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Pink | #f6e0db | `--color-canvas-pink` | Primary page background, light surface |
+| Surface White | #ffffff | `--color-surface-white` | Card backgrounds, secondary surface |
+| Charcoal Text | #000000 | `--color-charcoal-text` | Primary text, borders, active navigation outlines |
+| Pumpkin Accent | #ef724f | `--color-pumpkin-accent` | Orange wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+| Lemon Highlight | #e7db4c | `--color-lemon-highlight` | Decorative splashes, card accents, playful iconography |
+| Bubblegum Pink | #981082 | `--color-bubblegum-pink` | Card backgrounds, decorative accents, secondary navigation hover states |
+| Spring Green | #6ed311 | `--color-spring-green` | Decorative iconography, small accent fills |
+| Seafoam Accent | #ace2df | `--color-seafoam-accent` | Background for subtle accents and illustrations, card backgrounds |
+| Lavender Glow | #e69dff | `--color-lavender-glow` | Illustrative details, card backgrounds, soft visual punctuation |
+| Sky Blue | #84bfff | `--color-sky-blue` | Card backgrounds, illustrative elements, subtle background fills |
+| Deep Blue | #5196ff | `--color-deep-blue` | Used sparingly for precise illustrative accents |
+
+## Tokens — Typography
+
+### Alfa Slab One
+
+- **Token:** `--font-alfa-slab-one`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 16px, 35px, 46px
+- **Line heights:** 1.09, 1.20
+- **Letter spacing:** normal
+- **Role:** Display headlines and prominent text areas where a heavy, impactful presence is desired. Its singular weight ensures consistent visual density.
+
+### Manrope
+
+- **Token:** `--font-manrope`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700, 800
+- **Sizes:** 12px, 25px, 34px, 50px, 120px
+- **Line heights:** 1.00, 1.12, 1.16, 1.24, 1.50, 1.60
+- **Letter spacing:** normal
+- **Role:** Body text, navigation, and detailed information. The range of weights provides flexibility, with heavier weights used for subheadings and emphasis, complementing the display font's boldness.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | — | `--text-caption` |
+| body-sm | 16px | 1.2 | — | `--text-body-sm` |
+| body | 25px | 1.24 | — | `--text-body` |
+| subheading | 34px | 1.16 | — | `--text-subheading` |
+| heading-lg | 46px | 1.09 | — | `--text-heading-lg` |
+| display | 120px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-288 | 288px | `--spacing-288` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| default | 47px |
+| largeCards | 40px |
+| navigation | 47px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 46px |
+| cardPadding | 15px |
+| elementGap | 10px |
+
+## Components
+
+### Navigation Button
+
+**Role:** Primary navigation links and interactive controls.
+
+Buttons with a rounded-pill shape (47px radius), outlined with Charcoal Text (#000000, 2px stroke). Background is white (#ffffff) or Pumpkin Accent (#ef724f) when active, creating clear visual feedback. Text is Manrope, Charcoal Text (#000000), 20px, medium weight.
+
+### Default Card
+
+**Role:** Content containers for information display.
+
+White (#ffffff) background card with a subtle 10px border-radius, often appearing without a visible stroke. Padding varies, with common values of 16px bottom padding to create comfortable spacing for content.
+
+### Accent Card - Rounded
+
+**Role:** Highlighting specific content or categories with a playful aesthetic.
+
+Cards feature bold, moderate to vivid accent colors like Sky Blue (#84bfff) or Bubblegum Pink (#981082) with a distinctive 40px border-radius. Inner padding is generous at 15px top/bottom and 25px left/right, providing ample breathing room for contents like text.
+
+### Hero Headline
+
+**Role:** Main page title or section headline.
+
+Uses Alfa Slab One, 46-120px, weight 400, Charcoal Text (#000000), normal letter spacing. Delivered on the Canvas Pink (#f6e0db) background, it establishes a bold and direct tone.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas Pink (#f6e0db) as the default background for new pages to maintain brand warmth.
 - Use Alfa Slab One for all main headlines and prominent display text to leverage its bold, heavy character.
@@ -69,7 +152,7 @@ Lpalo exudes a playful, yet bold aesthetic, centered around a light, blush pink 
 - Ensure all primary text uses Charcoal Text (#000000) for high contrast and legibility against light backgrounds.
 - Maintain a comfortable density with element gaps of 10px between inline elements and 15px vertical padding within cards.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated accent colors for large text blocks; reserve them for backgrounds and smaller, functional elements.
 - Do not introduce sharp corners or small radii; the design language consistently applies generous rounding (10px, 40px, or 47px).
@@ -78,10 +161,143 @@ Lpalo exudes a playful, yet bold aesthetic, centered around a light, blush pink 
 - Avoid monochromatic designs; the system relies on a playful, varied accent palette to provide visual interest and categorize content.
 - Do not implement gradients; the styling relies on solid color blocks and outlines.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Pink | #f6e0db | Base page background. Provides a soft, inviting base color across the site. |
+| 1 | Surface White | #ffffff | Primary card and interactive element background. Sits directly on the Canvas Pink. |
+
+## Imagery
+
+The site favors outline illustrations with a soft, playful, and slightly quirky style. These illustrations often feature robots, headphones, and abstract objects rendered with thin black strokes and minimal, bright fills pulled from the accent color palette (Sky Blue, Pumpkin Accent, Spring Green). Imagery is integrated as decorative elements scattered across the canvas, avoiding full-bleed or contained hero imagery. There are no photographs or realistic product renders, maintaining a whimsical, illustrative identity.
+
+## Layout
 
 The page uses a full-bleed layout, filling the entire viewport with the Canvas Pink background. The hero section features a centered, oversized headline using Alfa Slab One, acting as a strong visual anchor. Content sections appear to follow a consistent vertical rhythm, though specific section gaps are moderate. Navigation is a horizontal bar at the top, employing the pill-shaped buttons. Content arrangement likely uses a combination of stacked elements and potential two or three-column card grids further down the page to showcase different podcast categories. Density is comfortable, with ample breathing room around elements.
 
-### Imagery
+## Similar Brands
 
-The site favors outline illustrations with a soft, playful, and slightly quirky style. These illustrations often feature robots, headphones, and abstract objects rendered with thin black strokes and minimal, bright fills pulled from the accent color palette (Sky Blue, Pumpkin Accent, Spring Green). Imagery is integrated as decorative elements scattered across the canvas, avoiding full-bleed or contained hero imagery. There are no photographs or realistic product renders, maintaining a whimsical, illustrative identity.
+- **Headspace** — Uses playful illustrations, soft color palettes, and approachable typography to create a friendly, engaging experience.
+- **Calm** — Employs serene background colors and rounded elements to convey a gentle, welcoming atmosphere.
+- **Duolingo** — Utilizes a bright, varied color palette, bold iconography, and distinct character illustrations for an educational and gamified feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-pink: #f6e0db;
+  --color-surface-white: #ffffff;
+  --color-charcoal-text: #000000;
+  --color-pumpkin-accent: #ef724f;
+  --color-lemon-highlight: #e7db4c;
+  --color-bubblegum-pink: #981082;
+  --color-spring-green: #6ed311;
+  --color-seafoam-accent: #ace2df;
+  --color-lavender-glow: #e69dff;
+  --color-sky-blue: #84bfff;
+  --color-deep-blue: #5196ff;
+  --font-alfa-slab-one: 'Alfa Slab One', Bebas Neue;
+  --font-manrope: 'Manrope', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.2;
+  --text-body: 25px;
+  --leading-body: 1.24;
+  --text-subheading: 34px;
+  --leading-subheading: 1.16;
+  --text-heading-lg: 46px;
+  --leading-heading-lg: 1.09;
+  --text-display: 120px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-46: 46px;
+  --spacing-65: 65px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --spacing-288: 288px;
+  --radius-cards: 10px;
+  --radius-default: 47px;
+  --radius-largecards: 40px;
+  --radius-navigation: 47px;
+  --surface-canvas-pink: #f6e0db;
+  --surface-surface-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-pink: #f6e0db;
+  --color-surface-white: #ffffff;
+  --color-charcoal-text: #000000;
+  --color-pumpkin-accent: #ef724f;
+  --color-lemon-highlight: #e7db4c;
+  --color-bubblegum-pink: #981082;
+  --color-spring-green: #6ed311;
+  --color-seafoam-accent: #ace2df;
+  --color-lavender-glow: #e69dff;
+  --color-sky-blue: #84bfff;
+  --color-deep-blue: #5196ff;
+  --font-alfa-slab-one: 'Alfa Slab One', Bebas Neue;
+  --font-manrope: 'Manrope', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.2;
+  --text-body: 25px;
+  --leading-body: 1.24;
+  --text-subheading: 34px;
+  --leading-subheading: 1.16;
+  --text-heading-lg: 46px;
+  --leading-heading-lg: 1.09;
+  --text-display: 120px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-46: 46px;
+  --spacing-65: 65px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --spacing-288: 288px;
+  --radius-cards: 10px;
+  --radius-default: 47px;
+  --radius-largecards: 40px;
+  --radius-navigation: 47px;
+  --surface-canvas-pink: #f6e0db;
+  --surface-surface-white: #ffffff;
+}
+```

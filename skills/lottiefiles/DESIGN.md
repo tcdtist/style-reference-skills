@@ -1,95 +1,190 @@
 ---
 version: alpha
-name: LottieFiles
-description: LottieFiles presents a playful yet precise aesthetic, balancing approachable organic illustrations with crisp, systematic UI elements. The design centers on a vibrant teal accent that energizes a largely achromatic palette, hinting at creativity and innovation without overwhelming. Rounded forms and generous spacing contribute to a friendly and user-centric experience, ensuring complex animation tools feel accessible to a broad audience. The strategic use of a robust sans-serif for headlines anchors the lighthearted visuals with a sense of reliable technology.
-colors:
-  cloud-white: "#ffffff"
-  ash-white: "#fafafa"
-  slate-gray: "#e4e4e7"
-  dark-graphite: "#f4f4f5"
-  carbon-black: "#09090b"
-  charcoal-black: "#18181b"
-  steel-gray: "#71717b"
-  cadet-gray: "#9f9fa9"
-  lottie-teal: "#019d91"
-  vivid-aqua: "#00ddb3"
-  sunshine-yellow: "#f0b100"
-  electric-blue: "#3a86ff"
-  jolly-green: "#94d19f"
-  coral-pink: "#ff8eed"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: -0.1px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.71
-    letterSpacing: 0.1px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-    letterSpacing: -0.1px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.56
-    letterSpacing: -0.3px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.25
-    letterSpacing: -0.5px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.2
-    letterSpacing: -1.44px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.15
-    letterSpacing: -1.92px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 12px
-  elementGap: 8-24px
-  sectionGap: 40-80px
-components:
-  feature-highlight-badges:
-    role: 
-  testimonial-card:
-    role: 
-  cta-button-group-with-search:
-    role: 
-  primary-lottie-teal-button:
-    role: Primary call to action
-  ghost-navigation-button-active:
-    role: Navigation links and secondary actions
-  ghost-navigation-button-inactive:
-    role: Inactive/secondary navigation links
-  outline-white-button:
-    role: Secondary actions requiring emphasis
-  feature-card:
-    role: Showcasing product features or benefits
-  customer-showcase-card:
-    role: Highlighting customer projects or testimonials
-  search-input-field:
-    role: Site-wide search functionality
-  testimonial-card:
-    role: Displaying customer feedback
+name: "LottieFiles"
+description: "LottieFiles presents a playful yet precise aesthetic, balancing approachable organic illustrations with crisp, systematic UI elements. The design centers on a vibrant teal accent that energizes a largely achromatic palette, hinting at creativity and innovation without overwhelming. Rounded forms and generous spacing contribute to a friendly and user-centric experience, ensuring complex animation tools feel accessible to a broad audience. The strategic use of a robust sans-serif for headlines anchors the lighthearted visuals with a sense of reliable technology."
+theme: "light"
+industry: "design"
+source_url: "https://lottiefiles.com"
+refero_style_id: "a80507cb-afda-46dd-a2b9-ba91f3a78e78"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923945653-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923945653-thumb.jpg"
+extracted_at: "2026-04-11T16:12:48.372Z"
 ---
 
-## Overview
+# LottieFiles — Style Reference
 
-**North Star:** Playful Precision amidst Animation; a digital canvas vibrant with motion, grounded by clear, spacious layouts.
+> Playful Precision amidst Animation; a digital canvas vibrant with motion, grounded by clear, spacious layouts.
+
+**Theme:** light
+
+**Industry:** design
 
 LottieFiles presents a playful yet precise aesthetic, balancing approachable organic illustrations with crisp, systematic UI elements. The design centers on a vibrant teal accent that energizes a largely achromatic palette, hinting at creativity and innovation without overwhelming. Rounded forms and generous spacing contribute to a friendly and user-centric experience, ensuring complex animation tools feel accessible to a broad audience. The strategic use of a robust sans-serif for headlines anchors the lighthearted visuals with a sense of reliable technology.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud White | #ffffff | `--color-cloud-white` | Page background, primary surface color for cards and interactive elements. |
+| Ash White | #fafafa | `--color-ash-white` | Slightly off-white background where subtle contrast is needed, input fields, subtle section dividers. |
+| Slate Gray | #e4e4e7 | `--color-slate-gray` | Subtle borders, dividers, outlines for card elements. |
+| Dark Graphite | #f4f4f5 | `--color-dark-graphite` | Secondary background for sections, muted buttons. |
+| Carbon Black | #09090b | `--color-carbon-black` | Primary text, prominent headings, strong contrast elements. |
+| Charcoal Black | #18181b | `--color-charcoal-black` | Hover states for dark text, occasionally as button background. |
+| Steel Gray | #71717b | `--color-steel-gray` | Secondary text, icons, muted brand elements. |
+| Cadet Gray | #9f9fa9 | `--color-cadet-gray` | Fainter text, placeholder text, disabled states. |
+| Lottie Teal | #019d91 | `--color-lottie-teal` | Primary call to action buttons, active navigation indicators, key brand accents. This moderate teal provides a fresh, energetic touch without being overly aggressive. |
+| Vivid Aqua | #00ddb3 | `--color-vivid-aqua` | Used within illustrations and occasionally for very bold accent elements, appearing brighter than Lottie Teal. |
+| Sunshine Yellow | #f0b100 | `--color-sunshine-yellow` | Highlighting specific elements in illustrations, secondary accent color for badges or notifications. |
+| Electric Blue | #3a86ff | `--color-electric-blue` | Used for specific interactive elements in illustrations, providing a bright, modern accent. |
+| Jolly Green | #94d19f | `--color-jolly-green` | A softer green, used primarily inside illustrations to add to the playful aesthetic. |
+| Coral Pink | #ff8eed | `--color-coral-pink` | A vibrant pink used in illustrations for character elements and other playful accents. |
+
+## Tokens — Typography
+
+### DM Sans
+
+- **Token:** `--font-dm-sans`
+- **Substitute:** DM Sans (Google Fonts)
+- **Weights:** 400, 500, 600
+- **Sizes:** 14px, 16px, 18px, 20px, 24px, 32px, 48px, 64px, 96px
+- **Line heights:** 1.04-1.56
+- **Letter spacing:** -0.05em at 96px, progressing to 0.01em at 14px
+- **Role:** Display headlines and prominent marketing text. The tight letter spacing on larger sizes creates a modern, impactful feel, while maintaining readability at smaller headline sizes.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter (Google Fonts)
+- **Weights:** 400, 500, 600
+- **Sizes:** 10px, 12px, 14px, 16px, 18px, 24px, 32px
+- **Line heights:** 1.10-1.71
+- **Letter spacing:** -0.01em
+- **Role:** Body text, navigation, buttons, and most UI elements. Its neutrality and legibility ensure a consistent and approachable voice across the interface, supporting the more expressive DM Sans.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | -0.1px | `--text-caption` |
+| body | 14px | 1.71 | 0.1px | `--text-body` |
+| subheading | 18px | 1.5 | -0.1px | `--text-subheading` |
+| heading-sm | 24px | 1.56 | -0.3px | `--text-heading-sm` |
+| heading | 32px | 1.25 | -0.5px | `--text-heading` |
+| heading-lg | 48px | 1.2 | -1.44px | `--text-heading-lg` |
+| display | 64px | 1.15 | -1.92px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| forms | 8px |
+| buttons | 12px |
+| thumbnails | 24px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 40-80px |
+| cardPadding | 24-32px |
+| elementGap | 8-24px |
+
+## Components
+
+### Feature Highlight Badges
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### CTA Button Group with Search
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Lottie Teal Button
+
+**Role:** Primary call to action
+
+backgroundColor: #019d91, color: #ffffff, borderRadius: 12px, paddingTop: 8px, paddingRight: 24px, paddingBottom: 8px, paddingLeft: 24px. Text uses Inter font family. Prominent, inviting interaction.
+
+### Ghost Navigation Button (Active)
+
+**Role:** Navigation links and secondary actions
+
+backgroundColor: oklch(1 0 0) (transparent), color: #09090b, borderRadius: 0px, paddingTop: 0px, paddingRight: 0px, paddingBottom: 0px, paddingLeft: 0px. Text uses Inter font family. Understated but clear for navigation.
+
+### Ghost Navigation Button (Inactive)
+
+**Role:** Inactive/secondary navigation links
+
+backgroundColor: rgba(0, 0, 0, 0) (transparent), color: #71717b, borderRadius: 6px, paddingTop: 4px, paddingRight: 24px, paddingBottom: 4px, paddingLeft: 24px. Text uses Inter font family. Muted to guide focus to active elements.
+
+### Outline White Button
+
+**Role:** Secondary actions requiring emphasis
+
+backgroundColor: oklch(1 0 0) (white), color: #09090b, borderRadius: 6px, paddingTop: 8px, paddingRight: 16px, paddingBottom: 8px, paddingLeft: 16px. Border is #e4e4e7. Text uses Inter font family. Offers a contrasting action without being as dominant as the primary button.
+
+### Feature Card
+
+**Role:** Showcasing product features or benefits
+
+backgroundColor: #ffffff, borderRadius: 16px, padding: 32px (inferred from common elementGap around text/icon blocks). Shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px. Contains a headline using DM Sans and body text using Inter, with a small icon.
+
+### Customer Showcase Card
+
+**Role:** Highlighting customer projects or testimonials
+
+backgroundColor: #ffffff, borderRadius: 16px, padding: 24px, or `auto` due to image crops. Shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px. Features imagery with rounded corners and accompanying text. The card often uses a specific background color from the site's palette for variety (e.g. #fff8e5, #94d19f).
+
+### Search Input Field
+
+**Role:** Site-wide search functionality
+
+backgroundColor: #fafafa, border: 1px solid #e4e4e7, borderRadius: 8px. Placeholder text uses Cadet Gray (#9f9fa9) and Inter font. Icons are Steel Gray (#71717b).
+
+### Testimonial Card
+
+**Role:** Displaying customer feedback
+
+backgroundColor: #ffffff, borderRadius: 16px, padding: 32px. Shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px. Features a bold quote in DM Sans, and author details in Inter.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize DM Sans for headlines (sizes > 24px) with specific letter-spacing as defined in typography, using Carbon Black (#09090b) for high impact.
 - Use Lottie Teal (#019d91) exclusively for primary calls to action, maintaining its distinctive brand presence.
@@ -99,7 +194,7 @@ LottieFiles presents a playful yet precise aesthetic, balancing approachable org
 - Utilize Inter font at 14px or 16px for all body text, links, and UI labels, ensuring high readability with a default letter-spacing of -0.01em.
 - Ensure adequate contrast: Carbon Black (#09090b) on Cloud White (#ffffff) or Ash White (#fafafa) for all primary text content.
 
-### Don'ts
+### Don't
 
 - Avoid applying excessive shadows; stick to the single, subtle shadow defined for elevation.
 - Do not introduce new chromatic colors outside of the defined brand and accent palette; maintain the vibrant teal focus with select pops of yellow/blue.
@@ -109,10 +204,152 @@ LottieFiles presents a playful yet precise aesthetic, balancing approachable org
 - Do not deviate from the specified dark neutral colors for primary text and headings; maintain high contrast and legibility.
 - Do not use Lottie Teal (#019d91) for body text or non-interactive elements; keep it reserved for key actions and brand accents.
 
-### Layout
+## Elevation
+
+- **Card, Button:** `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`
+
+## Imagery
+
+The site heavily relies on custom, vibrant, and character-driven illustrations featuring a mix of geometric and organic shapes with bold outlines and a wide palette of vivid colors like Sunshine Yellow, Electric Blue, and Coral Pink. These illustrations are primarily decorative but also explanatory, conveying functionality or emotional tone through anthropomorphic elements and playful scenarios. Photography is limited to product screenshots, often presented within mockups (e.g., phone screens) with softly rounded corners. Icons are typically solid, monocolor (Steel Gray or Lottie Teal), and have a uniform stroke weight (inferred from visual consistency), used for navigation and feature highlighting. Image density is moderate to high, often taking up significant visual space in primary sections to support the text and enhance visual appeal.
+
+## Layout
 
 The layout follows a centered, max-width contained model, with a pageMaxWidth of approximately 1200px providing ample breathing room. The hero section is a split design with a large, bold headline on the left and a prominent, playful illustration on the right, setting an inviting tone. Sections alternate between full-bleed background colors (e.g., white, light gray bands) and content blocks, creating a consistent visual rhythm. Content is frequently arranged in two-column layouts (text alongside imagery/cards) or multi-column grids (3-4 columns for feature cards or customer showcases), maintaining clear visual hierarchy. Vertical spacing between sections is generous (40-80px). The navigation is a sticky top bar, providing constant access without being obtrusive.
 
-### Imagery
+## Similar Brands
 
-The site heavily relies on custom, vibrant, and character-driven illustrations featuring a mix of geometric and organic shapes with bold outlines and a wide palette of vivid colors like Sunshine Yellow, Electric Blue, and Coral Pink. These illustrations are primarily decorative but also explanatory, conveying functionality or emotional tone through anthropomorphic elements and playful scenarios. Photography is limited to product screenshots, often presented within mockups (e.g., phone screens) with softly rounded corners. Icons are typically solid, monocolor (Steel Gray or Lottie Teal), and have a uniform stroke weight (inferred from visual consistency), used for navigation and feature highlighting. Image density is moderate to high, often taking up significant visual space in primary sections to support the text and enhance visual appeal.
+- **Figma** — Shares a brand identity that combines playful, colorful illustrations with a highly functional, clean UI and a clear sans-serif type system.
+- **Canva** — Exhibits a similar use of vibrant, accessible brand colors, cheerful illustrations for product explanation, and an emphasis on user-friendly design tools.
+- **Webflow** — Features strong, modern typography for headlines, a clean layout, and a focus on developer/designer tools, though with less emphasis on playful illustration.
+- **Miro** — Utilizes a friendly, clear, and spacious UI with simple forms and a core set of brand colors used strategically, alongside custom illustrative elements.
+- **Storybook** — Presents a clean, developer-centric interface with good use of whitespace and clear typography, incorporating playful illustrations or visual elements to lighten the technical feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-white: #ffffff;
+  --color-ash-white: #fafafa;
+  --color-slate-gray: #e4e4e7;
+  --color-dark-graphite: #f4f4f5;
+  --color-carbon-black: #09090b;
+  --color-charcoal-black: #18181b;
+  --color-steel-gray: #71717b;
+  --color-cadet-gray: #9f9fa9;
+  --color-lottie-teal: #019d91;
+  --color-vivid-aqua: #00ddb3;
+  --color-sunshine-yellow: #f0b100;
+  --color-electric-blue: #3a86ff;
+  --color-jolly-green: #94d19f;
+  --color-coral-pink: #ff8eed;
+  --font-dm-sans: 'DM Sans', DM Sans (Google Fonts);
+  --font-inter: 'Inter', Inter (Google Fonts);
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.1px;
+  --text-body: 14px;
+  --leading-body: 1.71;
+  --tracking-body: 0.1px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: -0.1px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.56;
+  --tracking-heading-sm: -0.3px;
+  --text-heading: 32px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.5px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -1.44px;
+  --text-display: 64px;
+  --leading-display: 1.15;
+  --tracking-display: -1.92px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --radius-cards: 16px;
+  --radius-forms: 8px;
+  --radius-buttons: 12px;
+  --radius-thumbnails: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-white: #ffffff;
+  --color-ash-white: #fafafa;
+  --color-slate-gray: #e4e4e7;
+  --color-dark-graphite: #f4f4f5;
+  --color-carbon-black: #09090b;
+  --color-charcoal-black: #18181b;
+  --color-steel-gray: #71717b;
+  --color-cadet-gray: #9f9fa9;
+  --color-lottie-teal: #019d91;
+  --color-vivid-aqua: #00ddb3;
+  --color-sunshine-yellow: #f0b100;
+  --color-electric-blue: #3a86ff;
+  --color-jolly-green: #94d19f;
+  --color-coral-pink: #ff8eed;
+  --font-dm-sans: 'DM Sans', DM Sans (Google Fonts);
+  --font-inter: 'Inter', Inter (Google Fonts);
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.1px;
+  --text-body: 14px;
+  --leading-body: 1.71;
+  --tracking-body: 0.1px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: -0.1px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.56;
+  --tracking-heading-sm: -0.3px;
+  --text-heading: 32px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.5px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: -1.44px;
+  --text-display: 64px;
+  --leading-display: 1.15;
+  --tracking-display: -1.92px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --radius-cards: 16px;
+  --radius-forms: 8px;
+  --radius-buttons: 12px;
+  --radius-thumbnails: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+```

@@ -1,61 +1,131 @@
 ---
 version: alpha
-name: LUNCH
-description: LUNCH cultivates an avant-garde boutique aesthetic, with a cool, muted palette anchored by deep black text and an unusual purple background. Typography is compact and precise, using a bespoke sans-serif for most content and a distinct display font for striking headings. The layout emphasizes strong visual content on neutral surfaces, with minimal UI elements that feel almost like sparse museum displays, allowing the product imagery to dominate.
-colors:
-  carbon-black: "#000000"
-  pale-parchment: "#FCFAF1"
-  digital-lavender: "#B8AAD0"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1
-    letterSpacing: -0.013px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-    letterSpacing: -0.01px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1
-    letterSpacing: -0.007px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-    letterSpacing: -0.005px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1.8
-    letterSpacing: 0.002px
-spacing:
-  cardRadius: 0px
-  elementGap: 20px
-  sectionGap: 60px
-components:
-  navigation-link:
-    role: Primary navigation items and in-content links
-  product-card:
-    role: Displaying product items in grids
-  footer-announcement-bar:
-    role: Global informational messages, typically at the top or bottom of the page.
-  cookie-consent-banner:
-    role: Legal compliance notice
-  ghost-button-link:
-    role: Secondary calls to action or informational links
+name: "LUNCH"
+description: "LUNCH cultivates an avant-garde boutique aesthetic, with a cool, muted palette anchored by deep black text and an unusual purple background. Typography is compact and precise, using a bespoke sans-serif for most content and a distinct display font for striking headings. The layout emphasizes strong visual content on neutral surfaces, with minimal UI elements that feel almost like sparse museum displays, allowing the product imagery to dominate."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://lunchconcept.com"
+refero_style_id: "cd3fbf9d-8d35-411b-9e69-89a03018b677"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518346550-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518346550-thumb.jpg"
+extracted_at: "2026-04-30T03:06:05.993Z"
 ---
 
-## Overview
+# LUNCH — Style Reference
 
-**North Star:** gallery meets fashion editorial
+> gallery meets fashion editorial
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 LUNCH cultivates an avant-garde boutique aesthetic, with a cool, muted palette anchored by deep black text and an unusual purple background. Typography is compact and precise, using a bespoke sans-serif for most content and a distinct display font for striking headings. The layout emphasizes strong visual content on neutral surfaces, with minimal UI elements that feel almost like sparse museum displays, allowing the product imagery to dominate.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Carbon Black | #000000 | `--color-carbon-black` | Primary text, borders, active states, outlines for ghost elements |
+| Pale Parchment | #FCFAF1 | `--color-pale-parchment` | Navigation text, secondary UI elements that need to be subtle against cooler backgrounds |
+| Digital Lavender | #B8AAD0 | `--color-digital-lavender` | Background for specific sections, footer background — a deliberate soft, muted main canvas color |
+
+## Tokens — Typography
+
+### Good Sans
+
+- **Token:** `--font-good-sans`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 12px, 16px, 24px, 32px
+- **Line heights:** 1.00, 1.80
+- **Letter spacing:** -0.005em at 32px, -0.007em at 24px, -0.01em at 16px, -0.013em at 12px
+- **Role:** All body text, navigation, links, and product details. Its compact nature reinforces the brand's contemporary edge.
+
+### Redaction
+
+- **Token:** `--font-redaction`
+- **Substitute:** OCR A Extended
+- **Weights:** 700
+- **Sizes:** 72px
+- **Line heights:** 1.80
+- **Letter spacing:** 0.002em
+- **Role:** Distinctive display headlines, likely for hero sections or key editorial content. Its monospace, almost industrial feel provides a sharp contrast to the product photography.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1 | -0.013px | `--text-caption` |
+| body | 16px | 1 | -0.01px | `--text-body` |
+| subheading | 24px | 1 | -0.007px | `--text-subheading` |
+| heading | 32px | 1 | -0.005px | `--text-heading` |
+| display | 72px | 1.8 | 0.002px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| badges | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60px |
+| cardPadding | 0px |
+| elementGap | 20px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary navigation items and in-content links
+
+Uses Good Sans, weight 400, 16px, Carbon Black text. Hover states are Carbon Black text with an underline, no background change. Primary navigation links are Pale Parchment on the muted section background.
+
+### Product Card
+
+**Role:** Displaying product items in grids
+
+Completely borderless and shadowless, with 0px radius. Product title and price in Carbon Black Good Sans. '(Sold Out)' text is in red, Good Sans, 12px. Background is transparent, relying on the page's main surface color. No explicit padding detected, images are full-bleed to the edges of the card.
+
+### Footer Announcement Bar
+
+**Role:** Global informational messages, typically at the top or bottom of the page.
+
+Background is Digital Lavender. Text is Good Sans, 16px, Carbon Black. Padding is 10px.
+
+### Cookie Consent Banner
+
+**Role:** Legal compliance notice
+
+Appears as an overlay, likely with a light background and Carbon Black text. Includes a close button. Text is Good Sans 12px.
+
+### Ghost Button/Link
+
+**Role:** Secondary calls to action or informational links
+
+Text is Good Sans, 16px, Carbon Black. No background fill, appears as a text link with a subtle bottom border or hover effect indicating interactivity. Often paired with 'FIND OUT MORE'.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Carbon Black (#000000) for all primary body text and most UI borders to maintain strong typographic contrast.
 - Apply Digital Lavender (#B8AAD0) as a background for any full-width informational banners or footers.
@@ -65,7 +135,7 @@ LUNCH cultivates an avant-garde boutique aesthetic, with a cool, muted palette a
 - Prioritize generous vertical spacing around content sections (60px) to allow visual elements to breathe.
 - Display 'Sold Out' text in a distinct red (#ff0000) for immediate visual feedback on product availability.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or complex gradients on UI elements; elevation is not communicated through shadow.
 - Do not introduce additional bright accent colors; the palette is intentionally restrained to prioritize product visuals.
@@ -75,10 +145,93 @@ LUNCH cultivates an avant-garde boutique aesthetic, with a cool, muted palette a
 - Do not use highly saturated colors for backgrounds; stick to the muted neutral palette.
 - Never use automatic browser link styling; explicitly set link colors and hover states to Carbon Black.
 
-### Layout
+## Imagery
+
+The site uses a mix of high-fashion editorial photography for hero sections and clean, studio-lit product photography against light, neutral backgrounds for product listings. Photography is often full-bleed or large-scale, with minimal UI elements overlapping. Editorial images often feature models in dynamic poses, emphasizing clothing movement and texture. Product images are typically tight crops, showcasing detail over context. Iconography is minimal, likely outlined and monochromatic.
+
+## Layout
 
 The page structure is full-bleed with an implicit, flexible max-width for textual content within sections, centered on the screen. The hero section is a full-width, full-height striking image often overlaid with large, stylized typography. Content sections alternate between visually dominant product grids and brief textual descriptions. Vertical rhythm is established through consistent 60px gaps between major sections. The main navigation is a minimal, centered horizontal bar at the top, which appears to become a sticky header on scroll. Product grids are typically 4-column, displaying products without explicit card boundaries, relying on image boundaries and minimal text for separation.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of high-fashion editorial photography for hero sections and clean, studio-lit product photography against light, neutral backgrounds for product listings. Photography is often full-bleed or large-scale, with minimal UI elements overlapping. Editorial images often feature models in dynamic poses, emphasizing clothing movement and texture. Product images are typically tight crops, showcasing detail over context. Iconography is minimal, likely outlined and monochromatic.
+- **SSENSE** — High-fashion minimalist aesthetic, strong grid-based product displays, and bold editorial photography.
+- **Farfetch** — Luxury retail, clean UI, focus on product imagery over heavy UI elements.
+- **Kith** — Fashion and streetwear, uses strong editorial content mixed with product focus, minimalist navigation.
+- **The Line** — Curated selection, editorial styling, and a clean, almost architectural presentation of products.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-carbon-black: #000000;
+  --color-pale-parchment: #FCFAF1;
+  --color-digital-lavender: #B8AAD0;
+  --font-good-sans: 'Good Sans', Inter;
+  --font-redaction: 'Redaction', OCR A Extended;
+  --text-caption: 12px;
+  --leading-caption: 1;
+  --tracking-caption: -0.013px;
+  --text-body: 16px;
+  --leading-body: 1;
+  --tracking-body: -0.01px;
+  --text-subheading: 24px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.007px;
+  --text-heading: 32px;
+  --leading-heading: 1;
+  --tracking-heading: -0.005px;
+  --text-display: 72px;
+  --leading-display: 1.8;
+  --tracking-display: 0.002px;
+  --spacing-0: 0px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --radius-cards: 0px;
+  --radius-badges: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-carbon-black: #000000;
+  --color-pale-parchment: #FCFAF1;
+  --color-digital-lavender: #B8AAD0;
+  --font-good-sans: 'Good Sans', Inter;
+  --font-redaction: 'Redaction', OCR A Extended;
+  --text-caption: 12px;
+  --leading-caption: 1;
+  --tracking-caption: -0.013px;
+  --text-body: 16px;
+  --leading-body: 1;
+  --tracking-body: -0.01px;
+  --text-subheading: 24px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.007px;
+  --text-heading: 32px;
+  --leading-heading: 1;
+  --tracking-heading: -0.005px;
+  --text-display: 72px;
+  --leading-display: 1.8;
+  --tracking-display: 0.002px;
+  --spacing-0: 0px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --radius-cards: 0px;
+  --radius-badges: 0px;
+}
+```
