@@ -1,40 +1,98 @@
 ---
 version: alpha
-name: Depanneur
-description: Depanneur's design system evokes a warm, no-nonsense retail experience with a focused use of red as a brand signature. The UI opts for a direct, high-contrast monochrome base with a single, clear brand accent. Typography is functional and understated, favoring ample spacing and clear boundaries rather than decorative elements or complex layouts. Surfaces are predominantly white, providing a bright, inviting backdrop for sparse content.
-colors:
-  absolute-zero: "#000000"
-  alabaster: "#ffffff"
-  dusty-gray: "#e5e5e5"
-  brand-ruby: "#c62127"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0px
-spacing:
-  elementGap: 20px
-  sectionGap: 66px
-components:
-  navigation-link:
-    role: Primary navigation, footer links, and B2B contact. Understated interactive elements.
-  divided-section:
-    role: Creates clear vertical separation between page sections.
+name: "Depanneur"
+description: "Depanneur's design system evokes a warm, no-nonsense retail experience with a focused use of red as a brand signature. The UI opts for a direct, high-contrast monochrome base with a single, clear brand accent. Typography is functional and understated, favoring ample spacing and clear boundaries rather than decorative elements or complex layouts. Surfaces are predominantly white, providing a bright, inviting backdrop for sparse content."
+theme: "light"
+industry: "other"
+source_url: "https://depanneur.dk"
+refero_style_id: "e31a4832-5039-48d5-9f7b-66645409e42f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521426626-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521426626-thumb.jpg"
+extracted_at: "2026-04-30T03:57:22.326Z"
 ---
 
-## Overview
+# Depanneur — Style Reference
 
-**North Star:** Warm neighborhood corner store
+> Warm neighborhood corner store
+
+**Theme:** light
+
+**Industry:** other
 
 Depanneur's design system evokes a warm, no-nonsense retail experience with a focused use of red as a brand signature. The UI opts for a direct, high-contrast monochrome base with a single, clear brand accent. Typography is functional and understated, favoring ample spacing and clear boundaries rather than decorative elements or complex layouts. Surfaces are predominantly white, providing a bright, inviting backdrop for sparse content.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Primary text, navigation links, outline borders, icon strokes — creates high contrast against light backgrounds |
+| Alabaster | #ffffff | `--color-alabaster` | Page backgrounds, prominent surface accents, secondary navigation text |
+| Dusty Gray | #e5e5e5 | `--color-dusty-gray` | Subtle section dividers, inactive element borders, muted backgrounds |
+| Brand Ruby | #c62127 | `--color-brand-ruby` | Brand accents, footer copyright text, decorative elements within content — a singular vibrant red that punctuates the otherwise neutral palette |
+
+## Tokens — Typography
+
+### Helvetica Neue LT W05 55 Roman
+
+- **Token:** `--font-helvetica-neue-lt-w05-55-roman`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** All text roles: navigation, body text, footer links. Its consistent weight and generous line-height ensure clarity across functional elements.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.5 | 0px | `--text-body-sm` |
+| body | 16px | 1.5 | 0px | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-66 | 66px | `--spacing-66` |
+| spacing-75 | 75px | `--spacing-75` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 66px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary navigation, footer links, and B2B contact. Understated interactive elements.
+
+Text in Absolute Zero (#000000) at 14px or 16px, weight 400. No discernible border or background, relying on color contrast for visibility. Hover state is implied to be a subtle color change (e.g., #e3e3dc based on --black-hover hint), while active/current states are not explicitly styled in a unique way from the data.
+
+### Divided Section
+
+**Role:** Creates clear vertical separation between page sections.
+
+A horizontal divider line in Dusty Gray (#e5e5e5) with a default thickness of 1px, providing subtle visual breaks across the neutral canvas.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Absolute Zero (#000000) for all primary text elements to maintain high contrast and readability.
 - Apply Alabaster (#ffffff) as the default background for all page content, upholding the bright brand theme.
@@ -44,7 +102,7 @@ Depanneur's design system evokes a warm, no-nonsense retail experience with a fo
 - Keep all interactive elements, like navigation links, text-based and styled with Absolute Zero (#000000) as their default state.
 - Utilize Helvetica Neue LT W05 55 Roman weight 400 for all typography, ensuring a consistent and clean textual presence.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors; limit brand expression strictly to Brand Ruby (#c62127).
 - Do not add shadows or complex gradients to UI elements; flatten surfaces to align with the direct aesthetic.
@@ -54,10 +112,80 @@ Depanneur's design system evokes a warm, no-nonsense retail experience with a fo
 - Do not use dark backgrounds for main content sections; the system is designed around a light theme.
 - Introduce additional border colors or varied line styles beyond Dusty Gray (#e5e5e5) for dividers or borders.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #ffffff | Primary page background. |
+| 1 | Subtle Muted | #e5e5e5 | Background for secondary content areas or subtle divisions, creating minimal visual separation. |
+
+## Imagery
+
+This site features product-focused photography and potentially video, demonstrated by the bottles and glasses. The imagery is realistic, well-lit, and appears product-centric with clear branding elements visible on the bottles. There are no apparent abstract graphics or complex illustrations. Iconography (e.g., in the header) is minimalist and monochromatic, likely outlined or filled in Absolute Zero (#000000) to blend with the text. Imagery serves to showcase products and is positioned decoratively within content areas.
+
+## Layout
 
 The layout appears to be full-bleed horizontally but with implicit content containment, suggesting a maximum width rather than stretching content edge-to-edge. The hero section uses full-bleed video or photography as a background with minimal UI elements overlaid. Sections are separated by consistent vertical spacing (66px), though explicit dividers are also used. Navigation is a minimalist top bar, with additional navigation links appearing in footer sections, characterized by stacked, left-aligned links, and minimal styling.
 
-### Imagery
+## Similar Brands
 
-This site features product-focused photography and potentially video, demonstrated by the bottles and glasses. The imagery is realistic, well-lit, and appears product-centric with clear branding elements visible on the bottles. There are no apparent abstract graphics or complex illustrations. Iconography (e.g., in the header) is minimalist and monochromatic, likely outlined or filled in Absolute Zero (#000000) to blend with the text. Imagery serves to showcase products and is positioned decoratively within content areas.
+- **Sweetgreen** — Similar use of a dominant white background with high-contrast black text and a single, vibrant accent color for branding.
+- **Everlane** — Emphasizes minimalist, utilitarian typography with a strong focus on content clarity over decorative UI elements.
+- **Patagonia (online store)** — Combines a clean, direct visual approach with functional navigation and a high-contrast legible type treatment.
+- **Trader Joe's (informal brand aesthetic)** — Conveys a 'neighborhood store' vibe through an understated digital aesthetic, relying on product imagery and straightforward UI.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-alabaster: #ffffff;
+  --color-dusty-gray: #e5e5e5;
+  --color-brand-ruby: #c62127;
+  --font-helvetica-neue-lt-w05-55-roman: 'Helvetica Neue LT W05 55 Roman', Helvetica Neue;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-66: 66px;
+  --spacing-75: 75px;
+  --radius-default: 0px;
+  --surface-canvas: #ffffff;
+  --surface-subtle-muted: #e5e5e5;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-alabaster: #ffffff;
+  --color-dusty-gray: #e5e5e5;
+  --color-brand-ruby: #c62127;
+  --font-helvetica-neue-lt-w05-55-roman: 'Helvetica Neue LT W05 55 Roman', Helvetica Neue;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-66: 66px;
+  --spacing-75: 75px;
+  --radius-default: 0px;
+  --surface-canvas: #ffffff;
+  --surface-subtle-muted: #e5e5e5;
+}
+```

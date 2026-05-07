@@ -1,32 +1,131 @@
 ---
 version: alpha
-name: David Reid
-description: David Reid's site presents a stark, minimalist portfolio style. A monochromatic palette with deep charcoal text on an off-white canvas foregrounds content, reflecting a deliberate restraint. Visual hierarchy is established through a spacious, comfortable layout and a subtle interplay of fine lines and a single distinct radius. The design avoids illustrative elements, focusing instead on stark typography and photographic compositions, creating an atmosphere of quiet authority and directness.
-colors:
-  canvas-white: "#ffffff"
-  lead-text: "#222222"
-  muted-ash: "#999999"
-spacing:
-  elementGap: 20px
-  sectionGap: 200px
-components:
-  image-card-with-caption:
-    role: Displays photographic work with associated descriptive text.
-  ghost-link-button:
-    role: Navigational elements and external links.
-  secondary-text-section:
-    role: Provides context and description for projects or personal information.
-  project-headline:
-    role: Section titles for different projects or categories.
+name: "David Reid"
+description: "David Reid's site presents a stark, minimalist portfolio style. A monochromatic palette with deep charcoal text on an off-white canvas foregrounds content, reflecting a deliberate restraint. Visual hierarchy is established through a spacious, comfortable layout and a subtle interplay of fine lines and a single distinct radius. The design avoids illustrative elements, focusing instead on stark typography and photographic compositions, creating an atmosphere of quiet authority and directness."
+theme: "light"
+industry: "design"
+source_url: "https://www.davejreid.com"
+refero_style_id: "267405a2-54c9-4f64-b350-9a2d469d1a71"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513949152-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513949152-thumb.jpg"
+extracted_at: "2026-04-30T01:52:43.416Z"
 ---
 
-## Overview
+# David Reid — Style Reference
 
-**North Star:** Photographic gallery on parchment
+> Photographic gallery on parchment
+
+**Theme:** light
+
+**Industry:** design
 
 David Reid's site presents a stark, minimalist portfolio style. A monochromatic palette with deep charcoal text on an off-white canvas foregrounds content, reflecting a deliberate restraint. Visual hierarchy is established through a spacious, comfortable layout and a subtle interplay of fine lines and a single distinct radius. The design avoids illustrative elements, focusing instead on stark typography and photographic compositions, creating an atmosphere of quiet authority and directness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, large content areas |
+| Lead Text | #222222 | `--color-lead-text` | Dark borders and separators for elevated surfaces and inverted UI |
+| Muted Ash | #999999 | `--color-muted-ash` | Secondary text, descriptive captions, and subtle separators or helper text where lower prominence is desired |
+
+## Tokens — Typography
+
+### Modern Era
+
+- **Token:** `--font-modern-era`
+- **Substitute:** Arial, sans-serif
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.43
+- **Letter spacing:** normal
+- **Role:** General interface text, links, and minor labels. Its neutrality underpins the site's understated aesthetic.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** system-ui
+- **Weights:** 100
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.38, 1.43
+- **Letter spacing:** normal
+- **Role:** Used for light, almost whispered text, particularly in descriptive blocks, creating a refined contrast to the default weight and emphasizing hierarchy without bolding.
+
+### Italian Garamond
+
+- **Token:** `--font-italian-garamond`
+- **Substitute:** Garamond, serif
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.25, 1.38
+- **Letter spacing:** normal
+- **Role:** Decorative usage for specific textual elements, adding a classic, editorial touch.
+
+### Noto Sans TC
+
+- **Token:** `--font-noto-sans-tc`
+- **Substitute:** Noto Sans, sans-serif
+- **Weights:** 100
+- **Sizes:** 16px
+- **Line heights:** 1.38
+- **Letter spacing:** normal
+- **Role:** Likely used for East Asian characters, maintaining visual consistency with the light weight of the system-ui font.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| images | 6px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 200px |
+| elementGap | 20px |
+
+## Components
+
+### Image Card with Caption
+
+**Role:** Displays photographic work with associated descriptive text.
+
+Images are contained within 6px rounded corners. Overlaid or adjacent descriptive text typically uses Muted Ash (#999999) on a Canvas White background. There's no explicit padding token for cards, implying a direct image-to-edge relationship within its container.
+
+### Ghost Link Button
+
+**Role:** Navigational elements and external links.
+
+These are primarily text-based links (#222222) with a detected border that appears to be dynamic, possibly indicating an active or hover state. The border is a fine line of Lead Text (#222222). There is no background fill, making them lightweight and unobtrusive.
+
+### Secondary Text Section
+
+**Role:** Provides context and description for projects or personal information.
+
+Uses Muted Ash (#999999) for body text, often with horizontal spacing of `20px` or `30px` for alignment. It maintains a comfortable line height, paired with `system-ui` weight 100 or `Modern Era` weight 400.
+
+### Project Headline
+
+**Role:** Section titles for different projects or categories.
+
+Appears in Lead Text (#222222), possibly in a larger size for `Modern Era` or `Italian Garamond` to create visual emphasis, typically followed by a `200px` vertical gap separating it from the content below.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize a monochromatic palette of Canvas White (#ffffff), Lead Text (#222222), and Muted Ash (#999999) to maintain a restrained aesthetic.
 - Use `Modern Era` weight 400 for primary text and links, and `system-ui` weight 100 or `Noto Sans TC` weight 100 for secondary, lighter text.
@@ -35,7 +134,7 @@ David Reid's site presents a stark, minimalist portfolio style. A monochromatic 
 - Design interactive elements as 'ghost' components, relying on Lead Text (#222222) for borders and text, rather than filled backgrounds.
 - Maintain a comfortable density with `10px` and `20px` margins for internal text blocks and `80px` for vertical content separation.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional chromatic colors beyond the established monochromatic scheme.
 - Do not use heavy shadows or gradients, as the design uses minimal elevation and a flat aesthetic.
@@ -44,10 +143,61 @@ David Reid's site presents a stark, minimalist portfolio style. A monochromatic 
 - Avoid dense, information-packed sections; ensure generous `elementGap` and `sectionGap` for comfortable reading.
 - Do not use conventional filled buttons; all calls to action should be ghost links with subtle borders or simple text.
 
-### Layout
+## Imagery
+
+The site primarily uses high-quality photography and product screenshots. Photography is typically full-bleed or large-format, often featuring single subjects in clear, well-lit environments. Product screenshots are typically clean, showcasing digital interfaces with a focus on functionality. Images consistently use a 6px border-radius for a subtle softening effect across all visual media. Imagery serves to showcase work and provide content rather than being purely decorative, with a high density relative to text in project sections.
+
+## Layout
 
 The page maintains a full-bleed layout for large visual sections, allowing photography to dominate the viewport, but content frequently snaps to a max-width within those sections. The hero consists of simple descriptive text followed by a large photographic grid. Content arrangement appears as two-column grids for project showcases, often alternating large imagery with explanatory text sections. Vertical rhythm is established by section gaps up to 200px, which creates significant breathing room between major content blocks. Navigation is minimal, limited to discreet text links in the header.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses high-quality photography and product screenshots. Photography is typically full-bleed or large-format, often featuring single subjects in clear, well-lit environments. Product screenshots are typically clean, showcasing digital interfaces with a focus on functionality. Images consistently use a 6px border-radius for a subtle softening effect across all visual media. Imagery serves to showcase work and provide content rather than being purely decorative, with a high density relative to text in project sections.
+- **Stripe** — Similar focus on clean, spacious layouts, strong typography hierarchy, and a restrained color palette that lets content stand out.
+- **Figma** — Uses a similar approach to typographic clarity, functional white space, and a minimal set of interaction colors with a preference for ghost buttons and subtle borders.
+- **Linear** — Shares a monochromatic aesthetic with precise line work, minimalist components, and a strong emphasis on content readability over decorative elements.
+- **Pitch** — Employs an extensive use of white space, crisp typography, and a strategic, minimal application of color for calls to action, maintaining a premium feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-lead-text: #222222;
+  --color-muted-ash: #999999;
+  --font-modern-era: 'Modern Era', Arial, sans-serif;
+  --font-system-ui: 'system-ui', system-ui;
+  --font-italian-garamond: 'Italian Garamond', Garamond, serif;
+  --font-noto-sans-tc: 'Noto Sans TC', Noto Sans, sans-serif;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-80: 80px;
+  --spacing-200: 200px;
+  --radius-images: 6px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-lead-text: #222222;
+  --color-muted-ash: #999999;
+  --font-modern-era: 'Modern Era', Arial, sans-serif;
+  --font-system-ui: 'system-ui', system-ui;
+  --font-italian-garamond: 'Italian Garamond', Garamond, serif;
+  --font-noto-sans-tc: 'Noto Sans TC', Noto Sans, sans-serif;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-80: 80px;
+  --spacing-200: 200px;
+  --radius-images: 6px;
+}
+```

@@ -1,49 +1,119 @@
 ---
 version: alpha
-name: ddna
-description: DDNA employs a serene, naturally-toned aesthetic, using a dominant warm beige canvas and muted grays for text and accents. The design focuses on elegant simplicity with minimal UI elements that recede into the background, bringing attention to product imagery. Typography is understated yet precise, with subtle letter-spacing for refined readability. Components are largely borderless and transparent, emphasizing content over chrome, with the brand's unique identity conveyed through subtle visual details.
-colors:
-  parchment: "#dacabf"
-  soft-stone: "#efe3dc"
-  deep-slate: "#444242"
-  muted-ash: "#595552"
-  faded-quarry: "#938a83"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.5
-spacing:
-  elementGap: 20px
-  sectionGap: 45px
-components:
-  ghost-button:
-    role: Primary action button for 'Explore Collections'.
-  navigation-link:
-    role: Top navigation and footer links.
-  transparent-card:
-    role: Content containers for product listings or features.
+name: "ddna"
+description: "DDNA employs a serene, naturally-toned aesthetic, using a dominant warm beige canvas and muted grays for text and accents. The design focuses on elegant simplicity with minimal UI elements that recede into the background, bringing attention to product imagery. Typography is understated yet precise, with subtle letter-spacing for refined readability. Components are largely borderless and transparent, emphasizing content over chrome, with the brand's unique identity conveyed through subtle visual details."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://d-d-n-a.com"
+refero_style_id: "0e8e546b-004c-46b6-a960-5dd88968ae07"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519568105-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519568105-thumb.jpg"
+extracted_at: "2026-04-30T03:26:23.732Z"
 ---
 
-## Overview
+# ddna — Style Reference
 
-**North Star:** Warm parchment whispers
+> Warm parchment whispers
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 DDNA employs a serene, naturally-toned aesthetic, using a dominant warm beige canvas and muted grays for text and accents. The design focuses on elegant simplicity with minimal UI elements that recede into the background, bringing attention to product imagery. Typography is understated yet precise, with subtle letter-spacing for refined readability. Components are largely borderless and transparent, emphasizing content over chrome, with the brand's unique identity conveyed through subtle visual details.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment | #dacabf | `--color-parchment` | Primary page background — a consistent warm, muted canvas that defines the brand's soft aesthetic |
+| Soft Stone | #efe3dc | `--color-soft-stone` | Secondary background surfaces, subtly lighter than the primary canvas, providing a delicate elevation for content blocks |
+| Deep Slate | #444242 | `--color-deep-slate` | Primary text color, link text, button borders for ghost buttons, and hairline dividers. Offers high contrast against light backgrounds while maintaining a subdued feel |
+| Muted Ash | #595552 | `--color-muted-ash` | Secondary text color for body copy and subtle borders, slightly softer than Deep Slate for less prominent information |
+| Faded Quarry | #938a83 | `--color-faded-quarry` | Subtle border color for very fine UI distinctions |
+
+## Tokens — Typography
+
+### Basis
+
+- **Token:** `--font-basis`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 10px, 14px, 15px, 17px
+- **Line heights:** 1.00, 1.50
+- **Letter spacing:** 0.0660em at 10px, 0.0990em at 17px
+- **Role:** Body copy, navigation links, footer text, and all small informational text. Its slightly wide tracking enhances an open, airy feel.
+
+### Favorit
+
+- **Token:** `--font-favorit`
+- **Substitute:** Space Mono
+- **Weights:** 400
+- **Sizes:** 30px
+- **Line heights:** 1.30, 2.00
+- **Letter spacing:** normal
+- **Role:** Headings, button text, and other prominent short text. Its singular use at 30px delivers clear messaging with ample room to breathe.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | — | `--text-caption` |
+| body-sm | 14px | 1.5 | — | `--text-body-sm` |
+| body | 15px | 1.5 | — | `--text-body` |
+| body-lg | 17px | 1.5 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-245 | 245px | `--spacing-245` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 45px |
+| cardPadding | 135px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Primary action button for 'Explore Collections'.
+
+Transparent background, Deep Slate (#444242) text. No padding, borders, or radius—it's a text link that acts as a button.
+
+### Navigation Link
+
+**Role:** Top navigation and footer links.
+
+Deep Slate (#444242) text, Basis font at various sizes (10, 14px), with a letter-spacing of 0.066em or 0.099em for distinctiveness. No background or borders, relying on text color for interaction.
+
+### Transparent Card
+
+**Role:** Content containers for product listings or features.
+
+No background color, borders, radius, or box-shadow. Relies entirely on layout and content for definition. Has a top padding of 135px.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Parchment (#dacabf) as the default page background, only using Soft Stone (#efe3dc) for subtle content block variations.
 - Apply Deep Slate (#444242) for all primary text and critical interactive elements to maintain high contrast with the canvas.
@@ -53,7 +123,7 @@ DDNA employs a serene, naturally-toned aesthetic, using a dominant warm beige ca
 - Employ a spacious layout, adhering to a 45px section gap and a 20px element gap for generous breathing room.
 - Treat all cards and content sections as transparent overlays, defined by their content and surrounding whitespace, rather than distinct visual containers.
 
-### Don'ts
+### Don't
 
 - Do not introduce rounded corners; curves are not present in the system.
 - Avoid using strong, saturated colors; the palette is exclusively muted and achromatic.
@@ -63,10 +133,81 @@ DDNA employs a serene, naturally-toned aesthetic, using a dominant warm beige ca
 - Never deviate from the specified letter-spacing for the Basis font; it's a signature typographic detail.
 - Do not use dark backgrounds for full sections; the theme is consistently light, with warm, pale neutrals.
 
-### Layout
+## Imagery
+
+The site uses photography of jewelry, presented as tight crops on pure white or muted backgrounds, focusing directly on the product's form and detail without lifestyle context. Abstract 3D rendered spheres with iridescence are used decoratively, providing visual interest and a sense of preciousness or material depth, often floating over the main canvas. Iconography is minimal, primarily text-based or simple arrows, maintaining a clean, content-forward visual approach. The density is moderate, with imagery serving as hero elements and product showcases, balanced by ample white space.
+
+## Layout
 
 The page maintains a full-bleed background of Parchment (#dacabf), with content typically centered within an implied maximum width. The hero section features a centered headline over the decorative 3D spheres. Sections are arranged with consistent vertical spacing (45px section gap), creating a seamless flow without distinct visual dividers. Content is often presented in a single, centered block, with text and 'ghost' links stacked. Navigation is a minimalist top bar with text links, receding into the background.
 
-### Imagery
+## Similar Brands
 
-The site uses photography of jewelry, presented as tight crops on pure white or muted backgrounds, focusing directly on the product's form and detail without lifestyle context. Abstract 3D rendered spheres with iridescence are used decoratively, providing visual interest and a sense of preciousness or material depth, often floating over the main canvas. Iconography is minimal, primarily text-based or simple arrows, maintaining a clean, content-forward visual approach. The density is moderate, with imagery serving as hero elements and product showcases, balanced by ample white space.
+- **A.P.C.** — Shares a minimal, almost invisible UI with a focus on product presentation over chrome elements, using a muted, natural color palette.
+- **Studio Nicholson** — Exhibits a similar design philosophy of understated elegance, monochrome palettes (often warm neutrals), and a clean, spacious typographic approach.
+- **COS** — Features a stripped-back interface, emphasis on high-quality product imagery, and a limited color scheme primarily consisting of whites, grays, and natural tones.
+- **The Row** — Utilizes a highly curated, almost stark visual presentation with a very subtle color palette and generous use of whitespace to create a sense of luxury and calm.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment: #dacabf;
+  --color-soft-stone: #efe3dc;
+  --color-deep-slate: #444242;
+  --color-muted-ash: #595552;
+  --color-faded-quarry: #938a83;
+  --font-basis: 'Basis', Inter;
+  --font-favorit: 'Favorit', Space Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.5;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-33: 33px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-135: 135px;
+  --spacing-245: 245px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment: #dacabf;
+  --color-soft-stone: #efe3dc;
+  --color-deep-slate: #444242;
+  --color-muted-ash: #595552;
+  --color-faded-quarry: #938a83;
+  --font-basis: 'Basis', Inter;
+  --font-favorit: 'Favorit', Space Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.5;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-33: 33px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-135: 135px;
+  --spacing-245: 245px;
+  --radius-all: 0px;
+}
+```

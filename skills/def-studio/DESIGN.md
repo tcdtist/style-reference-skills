@@ -1,47 +1,111 @@
 ---
 version: alpha
-name: def.studio
-description: def.studio employs a midnight canvas aesthetic, using deep, dark backgrounds with subtle shifts in luminosity to define planes. Typography is stark and prominent, relying on high contrast white for headings and links, with muted gray for supporting text. The absence of vibrant colors and reliance on crisp typography creates an atmosphere of focused, understated authority. Components blend seamlessly into the dark background, prioritizing content display over overt UI elements.
-colors:
-  deep-midnight: "#000000"
-  charcoal-canvas: "#1c1c1d"
-  frost-white: "#ffffff"
-  smoked-glass: "#efefef"
-  steel-gray: "#747474"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 1.2
-spacing:
-  elementGap: 8px
-  sectionGap: 30px
-components:
-  navigation-link:
-    role: Primary navigation item
-  body-text-block:
-    role: Standard paragraph text
-  hero-headline:
-    role: Main page title
-  ghost-border-link:
-    role: Subtle interactive border
+name: "def.studio"
+description: "def.studio employs a midnight canvas aesthetic, using deep, dark backgrounds with subtle shifts in luminosity to define planes. Typography is stark and prominent, relying on high contrast white for headings and links, with muted gray for supporting text. The absence of vibrant colors and reliance on crisp typography creates an atmosphere of focused, understated authority. Components blend seamlessly into the dark background, prioritizing content display over overt UI elements."
+theme: "dark"
+industry: "design"
+source_url: "https://def.studio"
+refero_style_id: "7871d841-6703-4193-8119-36bb12c73983"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519419301-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519419301-thumb.jpg"
+extracted_at: "2026-04-30T03:23:55.203Z"
 ---
 
-## Overview
+# def.studio — Style Reference
 
-**North Star:** Midnight Command Center
+> Midnight Command Center
+
+**Theme:** dark
+
+**Industry:** design
 
 def.studio employs a midnight canvas aesthetic, using deep, dark backgrounds with subtle shifts in luminosity to define planes. Typography is stark and prominent, relying on high contrast white for headings and links, with muted gray for supporting text. The absence of vibrant colors and reliance on crisp typography creates an atmosphere of focused, understated authority. Components blend seamlessly into the dark background, prioritizing content display over overt UI elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Midnight | #000000 | `--color-deep-midnight` | Primary page background, unifies the visual field |
+| Charcoal Canvas | #1c1c1d | `--color-charcoal-canvas` | Secondary background, subtly distinguishes content sections or cards from the main canvas |
+| Frost White | #ffffff | `--color-frost-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Smoked Glass | #efefef | `--color-smoked-glass` | Subtle borders, ghost button outlines, and supporting text that needs to recede slightly from primary text |
+| Steel Gray | #747474 | `--color-steel-gray` | Secondary text, metadata, and less prominent descriptive elements |
+
+## Tokens — Typography
+
+### Synthese
+
+- **Token:** `--font-synthese`
+- **Substitute:** Inter
+- **Weights:** 300, 400
+- **Sizes:** 16px, 19px, 96px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Custom font used for all text; its clean, modern lines and light weights contribute to the system's understated yet authoritative feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1.2 | — | `--text-caption` |
+| body-sm | 19px | 1.2 | — | `--text-body-sm` |
+| body | 96px | 1.2 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| cardPadding | 20px |
+| elementGap | 8px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary navigation item
+
+Text link using Frost White (#ffffff) for clarity against the dark background. No explicit background or border, relying on color for interaction indication.
+
+### Body Text Block
+
+**Role:** Standard paragraph text
+
+Text rendered in Steel Gray (#7477474) at 16px, weight 400. Used for descriptive content, subheadings, and general information.
+
+### Hero Headline
+
+**Role:** Main page title
+
+Large text at 96px, weight 300, in Frost White (#ffffff). The exceptionally light weight for a headline creates a sense of gravitas and restraint.
+
+### Ghost Border Link
+
+**Role:** Subtle interactive border
+
+A ghost link or element with a border in Smoked Glass (#efefef) and text in Frost White (#ffffff). Used when a subtle visual separation or interactive hint is needed without a fill.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Midnight (#000000) for primary canvas backgrounds, allowing content to emerge from a dark void.
 - Use Charcoal Canvas (#1c1c1d) for content blocks or secondary sections to provide subtle visual relief within the dark theme.
@@ -51,7 +115,7 @@ def.studio employs a midnight canvas aesthetic, using deep, dark backgrounds wit
 - Apply 8px as the default element gap for inline spacing, and 20px padding for content sections.
 - Utilize 30px for horizontal and vertical spacing for major content sections, creating generous breathing room.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated or vibrant colors unless specifically for illustrative or product-focused content outside of the UI.
 - Do not introduce overt shadows or heavy elevation; surfaces should appear flat or subtly layered within the dark environment.
@@ -61,10 +125,69 @@ def.studio employs a midnight canvas aesthetic, using deep, dark backgrounds wit
 - Do not introduce rounded corners; maintain sharp, crisp edges for all UI elements to align with the precise aesthetic.
 - Do not use generic system fonts; the custom 'Synthese' typeface is critical to the brand's identity.
 
-### Layout
+## Imagery
+
+The visual language predominantly features product screenshots and interface mockups, presented as embedded elements on the dark canvas. These are not full-bleed but contained, often shown as mobile screens arranged dynamically. There is no visible photography or abstract graphics in the UI shown. Icons appear to be filled or solid and monochromatic, blending into the dark interface. Imagery primarily serves to showcase product work rather than decorative atmosphere, emphasizing a content-heavy, portfolio-driven display.
+
+## Layout
 
 The page operates on a full-bleed dark background, with main content centered but allowing for dynamic, overlapping visual arrangement in the hero section. The hero prominently features large, high-contrast typography 'def.studio' etc., stacked vertically and aligned left. Below this, smaller body text defines the brand's services. The central area of the page displays an array of product screenshots, likely app interfaces, arranged in an overlapping, dynamic grid or cascade, suggesting movement and depth. The footer is minimal, horizontally aligned links on a single line. The overall rhythm suggests a spacious, yet content-rich layout without a rigid grid for the main visual display.
 
-### Imagery
+## Similar Brands
 
-The visual language predominantly features product screenshots and interface mockups, presented as embedded elements on the dark canvas. These are not full-bleed but contained, often shown as mobile screens arranged dynamically. There is no visible photography or abstract graphics in the UI shown. Icons appear to be filled or solid and monochromatic, blending into the dark interface. Imagery primarily serves to showcase product work rather than decorative atmosphere, emphasizing a content-heavy, portfolio-driven display.
+- **Stripe** — Monochromatic interface with high contrast text and restrained use of color, conveying professionalism and focus.
+- **Linear** — Dark mode interface with tight typography and emphasis on content over decorative UI elements.
+- **Figma (dark mode)** — Deep dark canvas with bright white text and subdued gray accents for UI elements, creating a focused work environment.
+- **Notion (dark mode)** — Minimalist dark theme with strong typographic hierarchy and subtle background variations to define content blocks.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-midnight: #000000;
+  --color-charcoal-canvas: #1c1c1d;
+  --color-frost-white: #ffffff;
+  --color-smoked-glass: #efefef;
+  --color-steel-gray: #747474;
+  --font-synthese: 'Synthese', Inter;
+  --text-caption: 16px;
+  --leading-caption: 1.2;
+  --text-body-sm: 19px;
+  --leading-body-sm: 1.2;
+  --text-body: 96px;
+  --leading-body: 1.2;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-midnight: #000000;
+  --color-charcoal-canvas: #1c1c1d;
+  --color-frost-white: #ffffff;
+  --color-smoked-glass: #efefef;
+  --color-steel-gray: #747474;
+  --font-synthese: 'Synthese', Inter;
+  --text-caption: 16px;
+  --leading-caption: 1.2;
+  --text-body-sm: 19px;
+  --leading-body-sm: 1.2;
+  --text-body: 96px;
+  --leading-body: 1.2;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-default: 0px;
+}
+```
