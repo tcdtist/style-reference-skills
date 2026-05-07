@@ -1,63 +1,126 @@
 ---
 version: alpha
-name: VDL
-description: The VDL design system evokes the precision of an architectural drawing: minimal and structural. Its visual identity builds on a stark contrast between a warm off-white canvas and deep, nearly black typography. Thin, deliberate lines define sections and interactive elements rather than heavy borders or fills. The typography, using a distinctive architectural sans-serif, carries the weight and character, operating with restrained letter-spacing. Interaction is subtle, relying on understated color shifts and background changes.
-colors:
-  parchment: "#f7f4ef"
-  ebony: "#120902"
-  deep-graphite: "#1e1e1e"
-  pitch-black: "#000000"
-  medium-gray: "#808080"
-  neutra-violet: "#6a5acd"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.02px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.25
-    letterSpacing: -0.02px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: -0.02px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.16
-    letterSpacing: -0.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 67px
-    lineHeight: 0.8
-    letterSpacing: -0.05px
-spacing:
-  elementGap: 20px
-  sectionGap: 26px
-components:
-  ghost-navigation-link:
-    role: Primary navigation item
-  headline-section-divider:
-    role: Visual separator for major content blocks
-  footer-link:
-    role: Secondary navigation and informational links
-  feature-list-item:
-    role: Descriptive list items within content sections
-  primary-heading:
-    role: Dominant titles for major sections
+name: "VDL"
+description: "The VDL design system evokes the precision of an architectural drawing: minimal and structural. Its visual identity builds on a stark contrast between a warm off-white canvas and deep, nearly black typography. Thin, deliberate lines define sections and interactive elements rather than heavy borders or fills. The typography, using a distinctive architectural sans-serif, carries the weight and character, operating with restrained letter-spacing. Interaction is subtle, relying on understated color shifts and background changes."
+theme: "light"
+industry: "design"
+source_url: "https://neutra-vdl.org"
+refero_style_id: "111711b0-6feb-4ec0-a8da-532889808d0e"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513387423-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513387423-thumb.jpg"
+extracted_at: "2026-04-30T01:43:28.671Z"
 ---
 
-## Overview
+# VDL — Style Reference
 
-**North Star:** Architectural Canvas, Black Ink
+> Architectural Canvas, Black Ink
+
+**Theme:** light
+
+**Industry:** design
 
 The VDL design system evokes the precision of an architectural drawing: minimal and structural. Its visual identity builds on a stark contrast between a warm off-white canvas and deep, nearly black typography. Thin, deliberate lines define sections and interactive elements rather than heavy borders or fills. The typography, using a distinctive architectural sans-serif, carries the weight and character, operating with restrained letter-spacing. Interaction is subtle, relying on understated color shifts and background changes.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment | #f7f4ef | `--color-parchment` | Page backgrounds, main canvas, soft surface elevation base |
+| Ebony | #120902 | `--color-ebony` | Primary text, headings, significant borders, default interactive text. Creates a strong, structural contrast against Parchment |
+| Deep Graphite | #1e1e1e | `--color-deep-graphite` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Pitch Black | #000000 | `--color-pitch-black` | Hover states for text, active navigation elements, highest contrast text |
+| Medium Gray | #808080 | `--color-medium-gray` | Subtle background accents, secondary surface treatments |
+| Neutra Violet | #6a5acd | `--color-neutra-violet` | Violet wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### AGP
+
+- **Token:** `--font-agp`
+- **Substitute:** Space Mono or IBM Plex Mono for a geometric sans-serif feel with similar character
+- **Weights:** 400, 500
+- **Sizes:** 12px, 13px, 16px, 18px, 24px, 67px
+- **Line heights:** 0.80, 1.10, 1.11, 1.16, 1.20, 1.25, 1.30, 1.50
+- **Letter spacing:** -0.0500em at large sizes, -0.0200em for body text
+- **Role:** The sole typeface, AGP, an architectural sans-serif, defines the brand's direct and structural voice. It carries significant visual weight even at lighter settings due to its characteristic letterforms and tight tracking. The varied line-heights and letter-spacing ensure crisp legibility and strong hierarchy when scaling from small labels to large headlines.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.02px | `--text-caption` |
+| body | 16px | 1.25 | -0.02px | `--text-body` |
+| subheading | 18px | 1.2 | -0.02px | `--text-subheading` |
+| heading-sm | 24px | 1.16 | -0.02px | `--text-heading-sm` |
+| display | 67px | 0.8 | -0.05px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-228 | 228px | `--spacing-228` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 26px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Primary navigation item
+
+Text link using Deep Graphite (#1e1e1e) at 13px, bold weight with a 'book tickets' line. On hover, text becomes Pitch Black (#000000). The line has an implicit top border of 1px in Deep Graphite (#1e1e1e) and a bottom padding of 7px. No border radius; sharp edges throughout.
+
+### Headline Section Divider
+
+**Role:** Visual separator for major content blocks
+
+A 1px thin line in Ebony (#120902) directly beneath major headlines, spanning the content width. This line is a core element in establishing structural hierarchy.
+
+### Footer Link
+
+**Role:** Secondary navigation and informational links
+
+Text link in Pitch Black (#000000) using 13px text, transitioning to Ebony (#120902) on hover. Underscored without explicit styling, relying on browser default. Typically grouped vertically.
+
+### Feature List Item
+
+**Role:** Descriptive list items within content sections
+
+Body text at 16px in Pitch Black (#000000) with generous line-height for readability. Often appears within a columnar layout, with minimal spacing between items.
+
+### Primary Heading
+
+**Role:** Dominant titles for major sections
+
+Large text using 67px AGP font, weight 500, in Ebony (#120902), with negative letter-spacing for a condensed, architectural feel. Accompanied by a 1px border line in Ebony (#120902).
+
+## Do's and Don'ts
+
+### Do
 
 - Use Parchment (#f7f4ef) as the dominant background color for all page sections.
 - Employ Ebony (#120902) for all primary body text, headlines, and significant UI element borders to maintain high contrast and structural integrity.
@@ -67,7 +130,7 @@ The VDL design system evokes the precision of an architectural drawing: minimal 
 - Utilize a consistent 20px for element gaps and content padding within cards or structured blocks, creating comfortable density without feeling sparse.
 - Introduce Neutra Violet (#6a5acd) sparingly, reserving it for subtle interactive accents or highly specific, small decorative UI elements, never as a primary button background.
 
-### Don'ts
+### Don't
 
 - Avoid using shadows or excessive elevation to differentiate UI elements; rely instead on borders and background color changes (Parchment, Medium Gray).
 - Do not introduce additional font families; restrict all typography to the AGP family at specified weights.
@@ -76,3 +139,94 @@ The VDL design system evokes the precision of an architectural drawing: minimal 
 - Avoid decorative imagery; focus on functional visuals like product shots or precise iconography that aligns with the architectural theme.
 - Do not use letter-spacing greater than 0; all text should be either normally spaced or have subtle negative tracking.
 - Do not use filled buttons for primary actions; prefer ghost buttons with text and thin borders.
+
+## Similar Brands
+
+- **AIGA Design Archives** — Monochromatic palette, emphasis on strong typography, and minimal interaction affordances with understated line work.
+- **The Frank Lloyd Wright Foundation** — Clean, architectural aesthetic, reliance on strong contrast between text and background, and a sense of ordered simplicity.
+- **Bauhaus Archive** — Strict grid systems, functional typography, and a deliberate absence of ornamental elements, using lines and planes as primary design tools.
+- **Massimo Vignelli's website** — Minimalist design, strong typographic hierarchy, and a focus on essential structural elements over decorative flair.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment: #f7f4ef;
+  --color-ebony: #120902;
+  --color-deep-graphite: #1e1e1e;
+  --color-pitch-black: #000000;
+  --color-medium-gray: #808080;
+  --color-neutra-violet: #6a5acd;
+  --font-agp: 'AGP', Space Mono or IBM Plex Mono for a geometric sans-serif feel with similar character;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.02px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: -0.02px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.16;
+  --tracking-heading-sm: -0.02px;
+  --text-display: 67px;
+  --leading-display: 0.8;
+  --tracking-display: -0.05px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-36: 36px;
+  --spacing-46: 46px;
+  --spacing-60: 60px;
+  --spacing-228: 228px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment: #f7f4ef;
+  --color-ebony: #120902;
+  --color-deep-graphite: #1e1e1e;
+  --color-pitch-black: #000000;
+  --color-medium-gray: #808080;
+  --color-neutra-violet: #6a5acd;
+  --font-agp: 'AGP', Space Mono or IBM Plex Mono for a geometric sans-serif feel with similar character;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.02px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: -0.02px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.16;
+  --tracking-heading-sm: -0.02px;
+  --text-display: 67px;
+  --leading-display: 0.8;
+  --tracking-display: -0.05px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-36: 36px;
+  --spacing-46: 46px;
+  --spacing-60: 60px;
+  --spacing-228: 228px;
+  --radius-default: 0px;
+}
+```
