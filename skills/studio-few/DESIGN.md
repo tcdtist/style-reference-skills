@@ -1,60 +1,222 @@
 ---
 version: alpha
-name: Studio Few
-description: Studio Few embodies a stark, monochromatic aesthetic focused on typography. Surfaces are minimalist, predominantly white, creating a gallery-like backdrop for type specimens. Interaction elements are sharp, high-contrast, and leverage black as a primary action color, emphasizing clarity and directness. The overall feel is one of precise, confident design, allowing the varied and often experimental typefaces to be the central visual event.
-colors:
-  canvas-white: "#ffffff"
-  midnight-black: "#000000"
-  subtle-gray: "#b7b7b7"
-  anchor-gray: "#333333"
-  faded-gray: "#858585"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.71
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0.17px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 115px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 158px
-    lineHeight: 1
-    letterSpacing: -2px
-spacing:
-  buttonRadius: 6px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  primary-filled-button:
-    role: Main call-to-action button, indicating primary actions.
-  navigation-link:
-    role: Header navigation items and inline links.
-  input-field:
-    role: Text input areas for filtering or data entry.
-  type-specimen-panel:
-    role: Container for individual typeface demonstrations.
-  ghost-button:
-    role: Secondary action or trial options.
+name: "Studio Few"
+description: "Studio Few embodies a stark, monochromatic aesthetic focused on typography. Surfaces are minimalist, predominantly white, creating a gallery-like backdrop for type specimens. Interaction elements are sharp, high-contrast, and leverage black as a primary action color, emphasizing clarity and directness. The overall feel is one of precise, confident design, allowing the varied and often experimental typefaces to be the central visual event."
+theme: "light"
+industry: "design"
+source_url: "https://studiofew.com"
+refero_style_id: "d5931dff-2ae3-44c7-b76f-9e5936f90611"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516984365-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516984365-thumb.jpg"
+extracted_at: "2026-04-30T02:43:26.229Z"
 ---
 
-## Overview
+# Studio Few — Style Reference
 
-**North Star:** Gallery of Type on White Canvas
+> Gallery of Type on White Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Studio Few embodies a stark, monochromatic aesthetic focused on typography. Surfaces are minimalist, predominantly white, creating a gallery-like backdrop for type specimens. Interaction elements are sharp, high-contrast, and leverage black as a primary action color, emphasizing clarity and directness. The overall feel is one of precise, confident design, allowing the varied and often experimental typefaces to be the central visual event.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, input surfaces, base for content presentation |
+| Midnight Black | #000000 | `--color-midnight-black` | Primary text, button backgrounds, interactive borders, structural outlines — establishes high-contrast dominance |
+| Subtle Gray | #b7b7b7 | `--color-subtle-gray` | Muted UI elements, secondary borders, inactive states, subtle dividers, informational text |
+| Anchor Gray | #333333 | `--color-anchor-gray` | Link text, subtle background textures, borders that recede slightly from primary black |
+| Faded Gray | #858585 | `--color-faded-gray` | Muted link text, less prominent border elements |
+
+## Tokens — Typography
+
+### SterlingVF
+
+- **Token:** `--font-sterlingvf`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500
+- **Sizes:** 12px, 14px, 158px
+- **Line heights:** 1.00, 1.20, 1.25, 1.33, 1.43, 1.50, 1.57, 1.60, 1.71, 1.75, 1.86, 2.00
+- **Letter spacing:** -0.0200em at large sizes, varying to 0.0170em at smaller sizes
+- **Role:** General UI text, flexible content, navigation, and detailed information. Its variable weight allows for subtle hierarchy and expressive versatility.
+
+### Formative
+
+- **Token:** `--font-formative`
+- **Substitute:** Bebas Neue
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0200em at 158px, -0.0100em at 14px
+- **Role:** Primary display font for type specimens and prominent headlines. Its bold, condensed nature and tight tracking create a distinct, impactful visual statement.
+
+### Voyager
+
+- **Token:** `--font-voyager`
+- **Substitute:** Space Mono
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 0.70, 1.00
+- **Letter spacing:** -0.1000em at 158px, -0.0200em at 14px
+- **Role:** Experimental display font for special specimens. Its unique, heavily tracked, and blocky character imparts a distinct, digital aesthetic.
+
+### AnthroVF
+
+- **Token:** `--font-anthrovf`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0200em at 158px, -0.0100em at 14px
+- **Role:** Display font for specific specimens, offering a refined, modern contrast to other display choices.
+
+### BlokVF
+
+- **Token:** `--font-blokvf`
+- **Substitute:** Squarefont
+- **Weights:** 400
+- **Sizes:** 14px, 115px
+- **Line heights:** 1.20, 1.71
+- **Letter spacing:** normal
+- **Role:** Specialized display font with a blocky, geometric style for unique specimen showcases.
+
+### ArbeitProContrastVF
+
+- **Token:** `--font-arbeitprocontrastvf`
+- **Substitute:** Archivo
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0200em at 158px, -0.0100em at 14px
+- **Role:** Display font used for showcasing type specimens, characterized by its clean, technical aesthetic.
+
+### Arbeittechnikvf
+
+- **Token:** `--font-arbeittechnikvf`
+- **Substitute:** IBM Plex Sans
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0200em
+- **Role:** Technical display font for specific specimens, presenting a structured and precise appearance.
+
+### ApexVF
+
+- **Token:** `--font-apexvf`
+- **Substitute:** Chivo
+- **Weights:** 400
+- **Sizes:** 14px, 158px
+- **Line heights:** 1.71
+- **Letter spacing:** normal
+- **Role:** Display font with a distinct, confident stance for type specimens.
+
+### Work Sans
+
+- **Token:** `--font-work-sans`
+- **Substitute:** Work Sans
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Fallback and general body text for broader readability and system integration.
+
+### Sterling
+
+- **Token:** `--font-sterling`
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.33, 1.43, 1.5, 1.67, 1.71, 2, 2.17
+- **Letter spacing:** 0.017
+- **Role:** Sterling — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.71 | — | `--text-caption` |
+| body | 14px | 1.5 | 0.17px | `--text-body` |
+| body-lg | 16px | 1.5 | — | `--text-body-lg` |
+| display-sm | 115px | 1.2 | — | `--text-display-sm` |
+| display | 158px | 1 | -2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-53 | 53px | `--spacing-53` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-131 | 131px | `--spacing-131` |
+| spacing-136 | 136px | `--spacing-136` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-175 | 175px | `--spacing-175` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| links | 6px |
+| buttons | 6px |
+| general | 2px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call-to-action button, indicating primary actions.
+
+Solid Midnight Black background (#000000) with Canvas White text (#ffffff). Rounded corners at 6px. Padding of 12px vertical, 24px horizontal. Uses SterlingVF font at 14px.
+
+### Navigation Link
+
+**Role:** Header navigation items and inline links.
+
+Canvas White text (#ffffff) on transparent background. No specific border radius. Uses SterlingVF font at varying sizes and weights for navigation. Horizontal padding of 12-24px.
+
+### Input Field
+
+**Role:** Text input areas for filtering or data entry.
+
+Canvas White background (#ffffff) with Midnight Black text (#000000) and Midnight Black borders. No specific border radius. Uses SterlingVF font at default sizes.
+
+### Type Specimen Panel
+
+**Role:** Container for individual typeface demonstrations.
+
+Each panel features a large typeface sample with controls for size and weight. Background is Canvas White (#ffffff). Text color varies between Midnight Black (#000000) and Subtle Gray (#b7b7b7) for controls. No explicit radius, appears square.
+
+### Ghost Button
+
+**Role:** Secondary action or trial options.
+
+Transparent background with a Midnight Black (#000000) border and text color. 6px border radius. Used for 'Trial' action, indicating a less prominent but still interactive element.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast using Midnight Black (#000000) and Canvas White (#ffffff) for all main content and interactive elements.
 - Use SterlingVF for general UI text, body content, and navigation, varying weights for hierarchy.
@@ -64,7 +226,7 @@ Studio Few embodies a stark, monochromatic aesthetic focused on typography. Surf
 - Employ Subtle Gray (#b7b7b7) for secondary information, muted controls, and dividers to introduce subtle visual breaks.
 - Ensure letter-spacing is precisely managed for display fonts, using values like -0.0200em at large sizes to maintain impact.
 
-### Don'ts
+### Don't
 
 - Avoid introducing chromatic colors; maintain a strictly monochromatic palette featuring only black, white, and various grays.
 - Do not use generic system fonts; always specify custom fonts for headlines and body text.
@@ -74,10 +236,134 @@ Studio Few embodies a stark, monochromatic aesthetic focused on typography. Surf
 - Do not use letter-spacing as a broad stylistic choice; apply it specifically to display typography for visual impact.
 - Do not use Canvas White (#ffffff) as the primary action background; Midnight Black (#000000) is reserved for this role.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Primary page background and default UI surface, providing a clean, expansive foundation. |
+
+## Imagery
+
+The visual language is characterized by minimalist, product-focused imagery. This primarily consists of abstract 3D renders or high-quality product mockups of screens showcasing typefaces. Imagery is typically monochrome or desaturated, often appearing on a stark white or light gray background, highlighting the typography itself as the primary visual. The treatment is full-bleed or contained in a way that emphasizes crisp edges and clean compositions. Icons are simple, outlined, and monochromatic, with a thin stroke weight, serving a functional rather than decorative role. Imagery acts as a sophisticated backdrop or direct showcase for the product (fonts), maintaining a strong sense of focus and eliminating distraction, making the site very text-dominant in its information display.
+
+## Layout
 
 The page primarily uses a full-bleed layout, particularly for hero sections and areas showcasing type specimens. Content is horizontally centered within a logical reading width when necessary, though explicit max-width is frequently overridden by full-width content blocks. The hero section features large, centered headlines paired with abstract graphic arrangements illustrating type. Sections often flow seamlessly into one another, with subtle visual breaks created by the shift in content or imagery alignment rather than strong dividers. Type specimen sections employ implicit grids for presenting individual fonts, using consistent vertical padding for rhythm. Navigation is a minimal top-bar, sticky header at the top right, providing unobtrusive access to key areas. The overall density is comfortable, allowing elements breathing room against the predominantly white canvas.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by minimalist, product-focused imagery. This primarily consists of abstract 3D renders or high-quality product mockups of screens showcasing typefaces. Imagery is typically monochrome or desaturated, often appearing on a stark white or light gray background, highlighting the typography itself as the primary visual. The treatment is full-bleed or contained in a way that emphasizes crisp edges and clean compositions. Icons are simple, outlined, and monochromatic, with a thin stroke weight, serving a functional rather than decorative role. Imagery acts as a sophisticated backdrop or direct showcase for the product (fonts), maintaining a strong sense of focus and eliminating distraction, making the site very text-dominant in its information display.
+- **Pangram Pangram Foundry** — Similar high-contrast, black and white aesthetic for showcasing high-quality typography with minimalist UI.
+- **Future Fonts** — Focus on type specimens with clean layouts and a strong emphasis on typography as the primary visual.
+- **Founders Grotesk (Colophon Foundry)** — Uses a similar austere, professional, and monochrome design language to highlight typefaces.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-subtle-gray: #b7b7b7;
+  --color-anchor-gray: #333333;
+  --color-faded-gray: #858585;
+  --font-sterlingvf: 'SterlingVF', Inter;
+  --font-formative: 'Formative', Bebas Neue;
+  --font-voyager: 'Voyager', Space Mono;
+  --font-anthrovf: 'AnthroVF', Montserrat;
+  --font-blokvf: 'BlokVF', Squarefont;
+  --font-arbeitprocontrastvf: 'ArbeitProContrastVF', Archivo;
+  --font-arbeittechnikvf: 'Arbeittechnikvf', IBM Plex Sans;
+  --font-apexvf: 'ApexVF', Chivo;
+  --font-work-sans: 'Work Sans', Work Sans;
+  --font-sterling: 'Sterling', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.71;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 0.17px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-display-sm: 115px;
+  --leading-display-sm: 1.2;
+  --text-display: 158px;
+  --leading-display: 1;
+  --tracking-display: -2px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-36: 36px;
+  --spacing-53: 53px;
+  --spacing-64: 64px;
+  --spacing-112: 112px;
+  --spacing-130: 130px;
+  --spacing-131: 131px;
+  --spacing-136: 136px;
+  --spacing-160: 160px;
+  --spacing-175: 175px;
+  --radius-links: 6px;
+  --radius-buttons: 6px;
+  --radius-general: 2px;
+  --surface-canvas-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-subtle-gray: #b7b7b7;
+  --color-anchor-gray: #333333;
+  --color-faded-gray: #858585;
+  --font-sterlingvf: 'SterlingVF', Inter;
+  --font-formative: 'Formative', Bebas Neue;
+  --font-voyager: 'Voyager', Space Mono;
+  --font-anthrovf: 'AnthroVF', Montserrat;
+  --font-blokvf: 'BlokVF', Squarefont;
+  --font-arbeitprocontrastvf: 'ArbeitProContrastVF', Archivo;
+  --font-arbeittechnikvf: 'Arbeittechnikvf', IBM Plex Sans;
+  --font-apexvf: 'ApexVF', Chivo;
+  --font-work-sans: 'Work Sans', Work Sans;
+  --font-sterling: 'Sterling', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.71;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 0.17px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-display-sm: 115px;
+  --leading-display-sm: 1.2;
+  --text-display: 158px;
+  --leading-display: 1;
+  --tracking-display: -2px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-36: 36px;
+  --spacing-53: 53px;
+  --spacing-64: 64px;
+  --spacing-112: 112px;
+  --spacing-130: 130px;
+  --spacing-131: 131px;
+  --spacing-136: 136px;
+  --spacing-160: 160px;
+  --spacing-175: 175px;
+  --radius-links: 6px;
+  --radius-buttons: 6px;
+  --radius-general: 2px;
+  --surface-canvas-white: #ffffff;
+}
+```

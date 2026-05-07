@@ -1,66 +1,131 @@
 ---
 version: alpha
-name: Stryds
-description: Stryds embodies a dark, vibrant gamified aesthetic. The interface uses deep, near-black backgrounds contrasting with neon gradients and vivid accent colors. Typography is bold and assertive, prioritizing impact over traditional readability, often using large scale and tight tracking. Components are rounded and soft, emphasizing a playful yet high-tech feel, with a strategic use of color to highlight active states and primary actions.
-colors:
-  deep-space: "#040126"
-  neon-green: "#a6ff00"
-  dark-matter: "#333333"
-  midnight-canvas: "#000000"
-  graphite-border: "#3d3d3d"
-  muted-ash: "#6f6f6f"
-  card-surface: "#171717"
-  bright-text: "#fdfdfd"
-  component-dark: "#101010"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.48px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1.2
-    letterSpacing: -0.57px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.1
-    letterSpacing: -0.83px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1
-    letterSpacing: -1.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 78px
-    lineHeight: 1
-    letterSpacing: -1.33px
-spacing:
-  cardRadius: 40px
-  buttonRadius: 100px
-  elementGap: 16px
-  sectionGap: 80px
-components:
-  primary-action-button:
-    role: Call to action button
-  ghost-icon-button:
-    role: Secondary action or branding button
-  elevated-card:
-    role: Content container for featured sections
-  transparent-content-card:
-    role: Subtle content grouping within larger sections
+name: "Stryds"
+description: "Stryds embodies a dark, vibrant gamified aesthetic. The interface uses deep, near-black backgrounds contrasting with neon gradients and vivid accent colors. Typography is bold and assertive, prioritizing impact over traditional readability, often using large scale and tight tracking. Components are rounded and soft, emphasizing a playful yet high-tech feel, with a strategic use of color to highlight active states and primary actions."
+theme: "dark"
+industry: "other"
+source_url: "https://stryds.com"
+refero_style_id: "6b4e6620-5c06-4dc1-931b-82265116f6f2"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512066693-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512066693-thumb.jpg"
+extracted_at: "2026-04-30T01:21:27.535Z"
 ---
 
-## Overview
+# Stryds — Style Reference
 
-**North Star:** Neon rings in midnight
+> Neon rings in midnight
+
+**Theme:** dark
+
+**Industry:** other
 
 Stryds embodies a dark, vibrant gamified aesthetic. The interface uses deep, near-black backgrounds contrasting with neon gradients and vivid accent colors. Typography is bold and assertive, prioritizing impact over traditional readability, often using large scale and tight tracking. Components are rounded and soft, emphasizing a playful yet high-tech feel, with a strategic use of color to highlight active states and primary actions.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Space | #040126 | `--color-deep-space` | Text on bright surfaces, button borders for outlined actions, icon colors. Its deep violet tint adds subtle complexity to what would otherwise be pure black |
+| Neon Green | #a6ff00 | `--color-neon-green` | Primary action buttons, active indicators, and prominent highlight accents. This vivid green provides a sharp, energetic contrast against the dark background |
+| Dark Matter | #333333 | `--color-dark-matter` | Divider lines, subtle borders, secondary text, and muted icon fills. A foundational dark gray for content separation and hierarchy |
+| Midnight Canvas | #000000 | `--color-midnight-canvas` | Dominant background for the overall page, creating a deep, immersive dark mode experience |
+| Graphite Border | #3d3d3d | `--color-graphite-border` | Card borders and subtle separating lines, slightly lighter than Dark Matter for softer definition |
+| Muted Ash | #6f6f6f | `--color-muted-ash` | Tertiary text, subheadings, and supporting content. Provides subdued contrast, allowing primary information to stand out |
+| Card Surface | #171717 | `--color-card-surface` | Default background for cards and containers, subtly elevated from the main canvas |
+| Bright Text | #fdfdfd | `--color-bright-text` | Primary text on dark backgrounds, ensuring high legibility for headings and key information |
+| Component Dark | #101010 | `--color-component-dark` | Background for certain buttons and interactive elements, providing a slightly lighter dark tone than the main canvas |
+
+## Tokens — Typography
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400, 500
+- **Sizes:** 14px
+- **Line heights:** 1.43
+- **Letter spacing:** -0.0340em
+- **Role:** Default text, links, and card descriptions. The system font choice implies directness and native integration.
+
+### Sf Pro Display
+
+- **Token:** `--font-sf-pro-display`
+- **Substitute:** Inter
+- **Weights:** 500, 600
+- **Sizes:** 16px, 21px, 36px, 44px, 78px, 109px, 148px, 184px
+- **Line heights:** 0.95, 1.00, 1.10, 1.20, 1.25
+- **Letter spacing:** -0.0340em, -0.0270em, -0.0260em, -0.0230em, -0.0120em, -0.0100em, -0.0070em, 0.0270em
+- **Role:** Headings and prominent display text. The wide range of sizes and tight letter spacing at larger scales creates a strong, impactful visual hierarchy, giving headlines a 'command center' feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 14px | 1.43 | -0.48px | `--text-body` |
+| heading-sm | 21px | 1.2 | -0.57px | `--text-heading-sm` |
+| heading | 36px | 1.1 | -0.83px | `--text-heading` |
+| heading-lg | 44px | 1 | -1.01px | `--text-heading-lg` |
+| display | 78px | 1 | -1.33px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-108 | 108px | `--spacing-108` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| misc | 100px |
+| cards | 40px |
+| buttons | 100px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80px |
+| cardPadding | 80px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call to action button
+
+Filled with Neon Green (#a6ff00) background, Deep Space (#040126) text. Features 100px border radius, 13px vertical padding, 20px horizontal padding, creating a distinct pill shape for immediate visibility.
+
+### Ghost Icon Button
+
+**Role:** Secondary action or branding button
+
+Component Dark (#101010) background, Deep Space (#040126) text and border. Features 100px border radius, 16px vertical padding, 56px left padding (implying icon alignment), and 20px right padding. Used for branding or less prominent interactive elements.
+
+### Elevated Card
+
+**Role:** Content container for featured sections
+
+Card Surface (#171717) background, 40px border radius. Uses 80px internal padding on all sides, providing generous breathing room for content. Bordered with Graphite Border (#3d3d3d).
+
+### Transparent Content Card
+
+**Role:** Subtle content grouping within larger sections
+
+Transparent background, 40px border radius. Used for visually light content grouping without adding additional surface depth. Contains 0px padding, relying on content's own spacing.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Deep Space (#040126) for neutral button outlines on dark backgrounds.
 - Prioritize Neon Green (#a6ff00) for all primary calls to action, ensuring button background fills and critical highlights stand out.
@@ -70,7 +135,7 @@ Stryds embodies a dark, vibrant gamified aesthetic. The interface uses deep, nea
 - Ensure headings use a tight line height, typically 0.95 to 1.25, with negative letter spacing for a compact, impactful look.
 - Backgrounds should predominantly use Midnight Canvas (#000000) or Card Surface (#171717) to maintain the dark theme.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated colors for large background areas; colors are reserved for accents and interactive elements.
 - Avoid sharp corners; all significant UI elements like cards and buttons should embrace the generous 40px or 100px border radii.
@@ -79,10 +144,105 @@ Stryds embodies a dark, vibrant gamified aesthetic. The interface uses deep, nea
 - Do not break the dark theme with light backgrounds for content sections; maintain consistency with the neutral dark palette.
 - Avoid standard letter spacing on headings; always apply the specified negative tracking for a unique type rhythm.
 
-### Layout
+## Imagery
+
+This site features abstract, energetic visuals dominated by vibrant, multi-colored rings that swirl and overlap. Imagery is primarily abstract and decorative, forming large background elements rather than product-specific showcases. The rings appear to be vector-based or graphically rendered, using a broad spectrum of vivid hues against deep dark backgrounds. There are some small profile picture-style circular image crops, suggesting social or user-generated content, but they are not the primary imagery focus. The visual language is image-heavy in decorative elements, but text-dominant for content presentation, relying on the background graphics for atmosphere while keeping the foreground UI clear.
+
+## Layout
 
 The page uses a full-bleed model, with content elements centered within a flexible width, rather than a strict `pageMaxWidth`. The hero section is full-bleed, featuring the brand name and tagline centered over the dynamic, colorful rings on a Midnight Canvas background. Sections appear to flow seamlessly, punctuated by the large background graphics, with a consistent vertical section gap of 80px. Content within sections tends to be centrally stacked or arranged in prominent, isolated blocks. Navigation is minimal, likely integrated into a subtle bottom bar as suggested by the ghost and primary action buttons at the base of the viewport.
 
-### Imagery
+## Similar Brands
 
-This site features abstract, energetic visuals dominated by vibrant, multi-colored rings that swirl and overlap. Imagery is primarily abstract and decorative, forming large background elements rather than product-specific showcases. The rings appear to be vector-based or graphically rendered, using a broad spectrum of vivid hues against deep dark backgrounds. There are some small profile picture-style circular image crops, suggesting social or user-generated content, but they are not the primary imagery focus. The visual language is image-heavy in decorative elements, but text-dominant for content presentation, relying on the background graphics for atmosphere while keeping the foreground UI clear.
+- **Spotify** — Dark UI with vivid accent colors and prominent, rounded interactive elements.
+- **Discord** — Deep dark aesthetic with playful, sometimes neon-like, color accents for active states and highlights.
+- **Apple Fitness+** — Uses a dark backdrop with vibrant, color-coded rings or graphic elements to convey activity and progress.
+- **Linear** — Focus on high information density within a dark theme, paired with strong, confident typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-space: #040126;
+  --color-neon-green: #a6ff00;
+  --color-dark-matter: #333333;
+  --color-midnight-canvas: #000000;
+  --color-graphite-border: #3d3d3d;
+  --color-muted-ash: #6f6f6f;
+  --color-card-surface: #171717;
+  --color-bright-text: #fdfdfd;
+  --color-component-dark: #101010;
+  --font-arial: 'Arial', Helvetica Neue;
+  --font-sf-pro-display: 'Sf Pro Display', Inter;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.48px;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.57px;
+  --text-heading: 36px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.83px;
+  --text-heading-lg: 44px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.01px;
+  --text-display: 78px;
+  --leading-display: 1;
+  --tracking-display: -1.33px;
+  --spacing-5: 5px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-80: 80px;
+  --spacing-108: 108px;
+  --radius-misc: 100px;
+  --radius-cards: 40px;
+  --radius-buttons: 100px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-space: #040126;
+  --color-neon-green: #a6ff00;
+  --color-dark-matter: #333333;
+  --color-midnight-canvas: #000000;
+  --color-graphite-border: #3d3d3d;
+  --color-muted-ash: #6f6f6f;
+  --color-card-surface: #171717;
+  --color-bright-text: #fdfdfd;
+  --color-component-dark: #101010;
+  --font-arial: 'Arial', Helvetica Neue;
+  --font-sf-pro-display: 'Sf Pro Display', Inter;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.48px;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.57px;
+  --text-heading: 36px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.83px;
+  --text-heading-lg: 44px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.01px;
+  --text-display: 78px;
+  --leading-display: 1;
+  --tracking-display: -1.33px;
+  --spacing-5: 5px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-80: 80px;
+  --spacing-108: 108px;
+  --radius-misc: 100px;
+  --radius-cards: 40px;
+  --radius-buttons: 100px;
+}
+```
