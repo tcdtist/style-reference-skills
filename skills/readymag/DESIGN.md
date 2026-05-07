@@ -1,94 +1,189 @@
 ---
 version: alpha
-name: Readymag
-description: This design system is a dynamic canvas, blending stark, high-contrast typography with an unpredictable, vibrant color palette. It feels like a digital art gallery, designed for maximal visual impact where each content block is an independent exhibit. The deliberate clash of intense, vivid colors with a predominantly achromatic base creates a playful yet assertive atmosphere, eschewing traditional corporate polish for expressive, almost rebellious, visual communication.
-colors:
-  canvas-white: "#ffffff"
-  type-black: "#000000"
-  charcoal-text: "#282828"
-  surface-gray: "#f4f4f4"
-  light-gray: "#e7e7e7"
-  ui-gray: "#808080"
-  accent-grape: "#8800ff"
-  electric-violet: "#2c0fb1"
-  sunset-orange: "#ec520b"
-  warning-orange: "#ff5000"
-  vivid-yellow: "#ffcc00"
-  forest-green: "#b2cc00"
-  deep-teal: "#00362b"
-  warning-red: "#ff0000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 2.7
-    letterSpacing: -0.25px
-  detail:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 2.67
-    letterSpacing: -0.378px
-  body-alt:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 2
-    letterSpacing: -0.048px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.83
-    letterSpacing: -0.252px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1
-    letterSpacing: -1.59px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.43
-    letterSpacing: -1.408px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-    letterSpacing: -2.68px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1
-    letterSpacing: -4px
-spacing:
-  buttonRadius: 200px
-  elementGap: 6px
-components:
-  call-to-action-hero-headline-block:
-    role: 
-  feature-cards-row-attract-streamline:
-    role: 
-  navigation-pill-bar:
-    role: 
-  primary-call-to-action-button:
-    role: Critical user actions to advance through the site.
-  pill-navigation-button:
-    role: Main navigation and secondary actions in headers.
-  ghost-navigation-link:
-    role: Minimalist interactive text links.
-  unstyled-card:
-    role: Content containers that rely on background color for differentiation.
-  hero-headline:
-    role: Prominent, attention-grabbing titles.
-  interactive-block-headline:
-    role: Headlines within interactive cards or sections.
+name: "Readymag"
+description: "This design system is a dynamic canvas, blending stark, high-contrast typography with an unpredictable, vibrant color palette. It feels like a digital art gallery, designed for maximal visual impact where each content block is an independent exhibit. The deliberate clash of intense, vivid colors with a predominantly achromatic base creates a playful yet assertive atmosphere, eschewing traditional corporate polish for expressive, almost rebellious, visual communication."
+theme: "light"
+industry: "design"
+source_url: "https://readymag.com"
+refero_style_id: "1287abc9-da90-410d-a997-96b8b11ad646"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923858789-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923858789-thumb.jpg"
+extracted_at: "2026-04-11T16:11:23.926Z"
 ---
 
-## Overview
+# Readymag — Style Reference
 
-**North Star:** Vibrant digital gallery. Each content block is a self-contained, high-contrast visual statement.
+> Vibrant digital gallery. Each content block is a self-contained, high-contrast visual statement.
+
+**Theme:** light
+
+**Industry:** design
 
 This design system is a dynamic canvas, blending stark, high-contrast typography with an unpredictable, vibrant color palette. It feels like a digital art gallery, designed for maximal visual impact where each content block is an independent exhibit. The deliberate clash of intense, vivid colors with a predominantly achromatic base creates a playful yet assertive atmosphere, eschewing traditional corporate polish for expressive, almost rebellious, visual communication.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary page and card backgrounds, primary body text background. |
+| Type Black | #000000 | `--color-type-black` | Primary text color for headings and body, icon fills. |
+| Charcoal Text | #282828 | `--color-charcoal-text` | Secondary text and body copy, subtle borders. |
+| Surface Gray | #f4f4f4 | `--color-surface-gray` | Button backgrounds, subtle background accents. |
+| Light Gray | #e7e7e7 | `--color-light-gray` | Section backgrounds, graphic elements. |
+| UI Gray | #808080 | `--color-ui-gray` | Subtle icons, supporting text. |
+| Accent Grape | #8800ff | `--color-accent-grape` | Prominent headings and graphic elements, indicating key brand messages with a bold stroke. |
+| Electric Violet | #2c0fb1 | `--color-electric-violet` | Borders and graphic accents, providing a deep, energetic contrast. |
+| Sunset Orange | #ec520b | `--color-sunset-orange` | Primary call-to-action buttons, drawing immediate attention. |
+| Warning Orange | #ff5000 | `--color-warning-orange` | Highlights within graphic elements, secondary buttons. |
+| Vivid Yellow | #ffcc00 | `--color-vivid-yellow` | Backgrounds for distinctive sections, graphic elements, imparting a cheerful, active feel. |
+| Forest Green | #b2cc00 | `--color-forest-green` | Decorative backgrounds, graphic elements, introducing organic vitality. |
+| Deep Teal | #00362b | `--color-deep-teal` | Section backgrounds, lending depth and sophistication to content areas. |
+| Warning Red | #ff0000 | `--color-warning-red` | Highlighting specific graphic elements, drawing emphatic attention. |
+
+## Tokens — Typography
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.00, 1.25
+- **Letter spacing:** -0.006em
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Default system font for body text, links, and various UI elements. Its neutrality allows the custom fonts to stand out. Default letter spacing is slightly tighter than normal for a concise appearance.
+
+### custom_37866
+
+- **Token:** `--font-custom-37866`
+- **Substitute:** Helvetica Neue, Arial
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px, 18px, 30px, 32px, 40px, 80px
+- **Line heights:** 1.00, 1.43, 1.83, 2.67, 2.70
+- **Letter spacing:** -0.025em, -0.027em, -0.014em, -0.053em, -0.044em, -0.067em, -0.050em
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Primary brand typeface for all headlines, subheadings, and emphasized text. Its unique character, especially with the aggressively tight letter spacing at larger sizes, creates a distinct, modern, and sometimes avant-garde feel. The varied letter spacing across sizes is a key aesthetic choice.
+
+### Graphik
+
+- **Token:** `--font-graphik`
+- **Substitute:** Graphik
+- **Weights:** 400
+- **Sizes:** 12px, 16px
+- **Line heights:** 1.50, 2.00
+- **Letter spacing:** -0.002em, -0.003em
+- **Role:** Used for specific body text and links, providing a clean, geometric sans-serif contrast to the more expressive primary custom font. Its generous line-heights make smaller text blocks readable.
+
+### xgnl
+
+- **Token:** `--font-xgnl`
+- **Substitute:** Impact, Anton
+- **Weights:** 700
+- **Sizes:** 16px
+- **Line heights:** 0.88
+- **Letter spacing:** -0.056em
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** A highly distinctive, bold, and condensed typeface used sparingly for impactful small text elements or experimental typographic treatments, creating moments of visual surprise due to its extremely tight letter spacing and low line height.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 2.7 | -0.25px | `--text-caption` |
+| detail | 14px | 2.67 | -0.378px | `--text-detail` |
+| body-alt | 16px | 2 | -0.048px | `--text-body-alt` |
+| subheading | 18px | 1.83 | -0.252px | `--text-subheading` |
+| heading-sm | 30px | 1 | -1.59px | `--text-heading-sm` |
+| heading | 32px | 1.43 | -1.408px | `--text-heading` |
+| heading-lg | 40px | 1 | -2.68px | `--text-heading-lg` |
+| display | 80px | 1 | -4px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-201 | 201px | `--spacing-201` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 10px |
+| buttons | 200px |
+| modules | 20px |
+| illustrations | 16px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 6px |
+
+## Components
+
+### Call-to-Action Hero Headline Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards Row — Attract & Streamline
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Pill Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Call to Action Button
+
+**Role:** Critical user actions to advance through the site.
+
+Rounded pill shape with `200px` border-radius. Background is `Sunset Orange (#ec520b)` with `Type Black (#000000)` text, shifting to `Canvas White (#ffffff)` on hover. Padding is `0px` top/bottom, `24px` left/right.
+
+### Pill Navigation Button
+
+**Role:** Main navigation and secondary actions in headers.
+
+Rounded pill shape with `200px` border-radius. Background is `Surface Gray (#f4f4f4)` with `Type Black (#000000)` text. Padding is `0px` top/bottom, `24px` left/right.
+
+### Ghost Navigation Link
+
+**Role:** Minimalist interactive text links.
+
+No background, `Charcoal Text (#282828)` text, no border. Padding is `0px` all around. Uses system font `-apple-system`.
+
+### Unstyled Card
+
+**Role:** Content containers that rely on background color for differentiation.
+
+Background `Canvas White (#ffffff)`, `0px` border-radius, no box-shadow. Padding is `0px` all around, content provides its own spacing.
+
+### Hero Headline
+
+**Role:** Prominent, attention-grabbing titles.
+
+Uses `custom_37866` font, `80px` size, `weight 400`, `line-height 1.00`, `letter-spacing -0.050em`. Color is `Type Black (#000000)`.
+
+### Interactive Block Headline
+
+**Role:** Headlines within interactive cards or sections.
+
+Uses `custom_37866` font, `40px` size, `weight 400`, `line-height 1.00`, `letter-spacing -0.067em`. Color is `Type Black (#000000)` or `Canvas White (#ffffff)` depending on background.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use `200px` border-radius for primary and secondary action buttons to maintain the pill shape.
 - Utilize `custom_37866` with its distinctive tight letter spacing (e.g., `-0.050em` at `80px`) for all major headlines to create an impactful typographic statement.
@@ -97,7 +192,7 @@ This design system is a dynamic canvas, blending stark, high-contrast typography
 - Maintain high contrast text on backgrounds: `Type Black (#000000)` on `Canvas White (#ffffff)` and `Canvas White (#ffffff)` on any vivid background color.
 - Use `0px` padding on card components, allowing internal content to define its own layout and spacing.
 
-### Don'ts
+### Don't
 
 - Never use soft, muted accent colors; the palette is defined by high-chroma, vivid hues.
 - Avoid generic box-shadows for elevation; rely on stark shifts in background color between sections for visual depth.
@@ -106,10 +201,146 @@ This design system is a dynamic canvas, blending stark, high-contrast typography
 - Avoid excessive use of `-apple-system` for headlines; reserve it for body text where neutrality is desired.
 - Do not use subtle border-radius values below `10px` for UI components; the system favors either sharp 0px corners or distinctly rounded forms like `10px`, `16px`, `20px` or `200px`.
 
-### Layout
+## Imagery
+
+Imagery is highly abstract and often serves as a backdrop or decorative element rather than a direct content focus. Product screenshots are minimal, focusing on UI elements in isolation. There is a strong emphasis on stark, geometric shapes and typographic art as visual content. Photography, when present, is often part of a collage or a design sample within the product showcase, not lifestyle imagery. Icons are minimal, mostly `Type Black (#000000)` filled, with a blocky, bold outline. The visual density of images varies, with some sections being very image-heavy and others completely text-dominant, creating a dynamic rhythm.
+
+## Layout
 
 The page exhibits a highly dynamic and sectioned layout, alternating between full-bleed background sections and content blocks with varying implicit maximum widths. The hero section often features a centered headline over a visually dense, collage-like background. Sections are delineated by dramatic shifts in background color, providing visual breaks rather than relying on consistent vertical spacing. Content arrangement frequently uses a mix of centered stacks, text blocks, and full-width banners. There is no rigid grid system explicitly visible, rather a fluid arrangement of diverse content types. Navigation is a sticky top bar, minimal for core actions. A floating '5' interactive element suggests strong spatial interaction.
 
-### Imagery
+## Similar Brands
 
-Imagery is highly abstract and often serves as a backdrop or decorative element rather than a direct content focus. Product screenshots are minimal, focusing on UI elements in isolation. There is a strong emphasis on stark, geometric shapes and typographic art as visual content. Photography, when present, is often part of a collage or a design sample within the product showcase, not lifestyle imagery. Icons are minimal, mostly `Type Black (#000000)` filled, with a blocky, bold outline. The visual density of images varies, with some sections being very image-heavy and others completely text-dominant, creating a dynamic rhythm.
+- **AIGA Design** — Exploits bold, often oversized typography and a willingness to use vibrant, unexpected color combinations for each content block.
+- **Figma** — Clear emphasis on design tool functionality with bold, high-contrast UI and a playful approach to color in illustrations and branding.
+- **CSS Design Awards** — Features a highly dynamic, experimental layout with varying section backgrounds and a focus on visual impact over strict grid adherence.
+- **Webflow** — Empowers design freedom with a focus on visual delivery, leading to diverse and sometimes unconventional page compositions.
+- **Supabase** — Uses strong, often dark, background elements with vibrant accent colors to create visual pop and clear calls to action, though Readymag's aesthetic is more chaotic.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-type-black: #000000;
+  --color-charcoal-text: #282828;
+  --color-surface-gray: #f4f4f4;
+  --color-light-gray: #e7e7e7;
+  --color-ui-gray: #808080;
+  --color-accent-grape: #8800ff;
+  --color-electric-violet: #2c0fb1;
+  --color-sunset-orange: #ec520b;
+  --color-warning-orange: #ff5000;
+  --color-vivid-yellow: #ffcc00;
+  --color-forest-green: #b2cc00;
+  --color-deep-teal: #00362b;
+  --color-warning-red: #ff0000;
+  --font-apple-system: '-apple-system', system-ui;
+  --font-custom-37866: 'custom_37866', Helvetica Neue, Arial;
+  --font-graphik: 'Graphik', Graphik;
+  --font-xgnl: 'xgnl', Impact, Anton;
+  --text-caption: 12px;
+  --leading-caption: 2.7;
+  --tracking-caption: -0.25px;
+  --text-detail: 14px;
+  --leading-detail: 2.67;
+  --tracking-detail: -0.378px;
+  --text-body-alt: 16px;
+  --leading-body-alt: 2;
+  --tracking-body-alt: -0.048px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.83;
+  --tracking-subheading: -0.252px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: -1.59px;
+  --text-heading: 32px;
+  --leading-heading: 1.43;
+  --tracking-heading: -1.408px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -2.68px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -4px;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-86: 86px;
+  --spacing-201: 201px;
+  --radius-tags: 10px;
+  --radius-buttons: 200px;
+  --radius-modules: 20px;
+  --radius-illustrations: 16px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-type-black: #000000;
+  --color-charcoal-text: #282828;
+  --color-surface-gray: #f4f4f4;
+  --color-light-gray: #e7e7e7;
+  --color-ui-gray: #808080;
+  --color-accent-grape: #8800ff;
+  --color-electric-violet: #2c0fb1;
+  --color-sunset-orange: #ec520b;
+  --color-warning-orange: #ff5000;
+  --color-vivid-yellow: #ffcc00;
+  --color-forest-green: #b2cc00;
+  --color-deep-teal: #00362b;
+  --color-warning-red: #ff0000;
+  --font-apple-system: '-apple-system', system-ui;
+  --font-custom-37866: 'custom_37866', Helvetica Neue, Arial;
+  --font-graphik: 'Graphik', Graphik;
+  --font-xgnl: 'xgnl', Impact, Anton;
+  --text-caption: 12px;
+  --leading-caption: 2.7;
+  --tracking-caption: -0.25px;
+  --text-detail: 14px;
+  --leading-detail: 2.67;
+  --tracking-detail: -0.378px;
+  --text-body-alt: 16px;
+  --leading-body-alt: 2;
+  --tracking-body-alt: -0.048px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.83;
+  --tracking-subheading: -0.252px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: -1.59px;
+  --text-heading: 32px;
+  --leading-heading: 1.43;
+  --tracking-heading: -1.408px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -2.68px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -4px;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-86: 86px;
+  --spacing-201: 201px;
+  --radius-tags: 10px;
+  --radius-buttons: 200px;
+  --radius-modules: 20px;
+  --radius-illustrations: 16px;
+}
+```

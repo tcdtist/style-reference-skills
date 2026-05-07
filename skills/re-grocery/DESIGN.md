@@ -1,79 +1,156 @@
 ---
 version: alpha
-name: re_ grocery
-description: re_ grocery uses a sun-baked tactile aesthetic, blending friendly serif typography with modern sans-serifs, all set against a warm, off-white canvas. A singular vibrant orange serves as the brand's energetic accent, appearing predominantly as an outline for interactive elements and as a solid background for key navigation or critical sections. The layout favors ample whitespace and clearly defined content blocks, emphasizing product-focused imagery and maintaining a focused yet approachable shopping experience.
-colors:
-  burnt-orange: "#f74c25"
-  cream-canvas: "#f7f6f2"
-  desert-sand: "#efede7"
-  rich-espresso: "#000000"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.33
-    letterSpacing: -0.19px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.4px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-    letterSpacing: -0.81px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.88px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 0.8
-    letterSpacing: -0.8px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 100px
-    lineHeight: 0.8
-    letterSpacing: -1px
-  display-hero:
-    fontFamily: "system-ui"
-    fontSize: 180px
-    lineHeight: 0.8
-    letterSpacing: -5.94px
-spacing:
-  cardRadius: 1440px
-  buttonRadius: 1440px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  outline-accent-button:
-    role: Primary call to action and navigation in the header.
-  ghost-nav-button:
-    role: Navigation links and filter tags.
-  cream-text-button:
-    role: Navigation links against dark backgrounds.
-  filled-cream-button:
-    role: Subtle interactive elements contrasting against a Burnt Orange background.
-  plain-product-card:
-    role: Display individual product items within grids.
-  callout-card:
-    role: Highlight specific product groups or information with a subtle background.
-  underlined-input:
-    role: Email newsletter sign-up fields.
-  outline-badge:
-    role: Product attribute tags.
+name: "re_ grocery"
+description: "re_ grocery uses a sun-baked tactile aesthetic, blending friendly serif typography with modern sans-serifs, all set against a warm, off-white canvas. A singular vibrant orange serves as the brand's energetic accent, appearing predominantly as an outline for interactive elements and as a solid background for key navigation or critical sections. The layout favors ample whitespace and clearly defined content blocks, emphasizing product-focused imagery and maintaining a focused yet approachable shopping experience."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://regrocery.co"
+refero_style_id: "2ef7c644-3454-45d1-bd2f-f8290119821d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509079764-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509079764-thumb.jpg"
+extracted_at: "2026-04-30T00:31:44.381Z"
 ---
 
-## Overview
+# re_ grocery — Style Reference
 
-**North Star:** Sun-baked Tactile Canvas
+> Sun-baked Tactile Canvas
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 re_ grocery uses a sun-baked tactile aesthetic, blending friendly serif typography with modern sans-serifs, all set against a warm, off-white canvas. A singular vibrant orange serves as the brand's energetic accent, appearing predominantly as an outline for interactive elements and as a solid background for key navigation or critical sections. The layout favors ample whitespace and clearly defined content blocks, emphasizing product-focused imagery and maintaining a focused yet approachable shopping experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Burnt Orange | #f74c25 | `--color-burnt-orange` | Primary brand accent, interactive element borders, text links, critical full-bleed sections, and footer background — adds energetic contrast to the soft neutrals |
+| Cream Canvas | #f7f6f2 | `--color-cream-canvas` | Page backgrounds, card surfaces, button backgrounds, and secondary text where contrast is needed against a darker background |
+| Desert Sand | #efede7 | `--color-desert-sand` | Subtle background for hero sections and light accent surfaces |
+| Rich Espresso | #000000 | `--color-rich-espresso` | Primary body text, headings, and iconography when high contrast is required |
+
+## Tokens — Typography
+
+### ITC Garamond W01 Book Narrow
+
+- **Token:** `--font-itc-garamond-w01-book-narrow`
+- **Substitute:**  serif
+- **Weights:** 400
+- **Sizes:** 40px, 80px, 100px
+- **Line heights:** 0.80, 1.10
+- **Letter spacing:** -0.022em at 40px, -0.010em at 80-100px
+- **Role:** Display headlines and sub-headings – its classic serif structure and wide letter-spacing create a sophisticated, spacious feel, counterbalancing the sans-serif for body copy.
+
+### Suisse Int'l
+
+- **Token:** `--font-suisse-int-l`
+- **Substitute:** sans-serif
+- **Weights:** 400
+- **Sizes:** 15px, 16px, 20px, 30px, 180px
+- **Line heights:** 0.80, 1.00, 1.20, 1.25, 1.33
+- **Letter spacing:** -0.033em at 180px, -0.027em at 30px, -0.020em at 20px, -0.013em at 15-16px
+- **Role:** Body copy, input text, buttons, navigation, and large decorative typography. Its consistent weight and varied letter-spacing allow it to adapt from functional text to impactful display elements.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 15px | 1.33 | -0.19px | `--text-body-sm` |
+| subheading | 20px | 1.25 | -0.4px | `--text-subheading` |
+| heading | 30px | 1.2 | -0.81px | `--text-heading` |
+| heading-lg | 40px | 1.1 | -0.88px | `--text-heading-lg` |
+| display | 80px | 0.8 | -0.8px | `--text-display` |
+| display-xl | 100px | 0.8 | -1px | `--text-display-xl` |
+| display-hero | 180px | 0.8 | -5.94px | `--text-display-hero` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-95 | 95px | `--spacing-95` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 1440px |
+| cards | 1440px |
+| inputs | 0px |
+| buttons | 1440px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Outline Accent Button
+
+**Role:** Primary call to action and navigation in the header.
+
+Ghost button with 1440px (pill-shaped) border-radius, 10px vertical and 30px horizontal padding. Border and text color are Burnt Orange (#f74c25). Background is transparent. Used for 'Order' button.
+
+### Ghost Nav Button
+
+**Role:** Navigation links and filter tags.
+
+Ghost button with 0px radius, transparent background, and Burnt Orange (#f74c25) text and bottom border. 0px padding overall, with 20px bottom padding where active.
+
+### Cream Text Button
+
+**Role:** Navigation links against dark backgrounds.
+
+Ghost button with 0px radius, transparent background, and Cream Canvas (#f7f6f2) text. Used for 'Menu' button.
+
+### Filled Cream Button
+
+**Role:** Subtle interactive elements contrasting against a Burnt Orange background.
+
+Solid button with 0px radius, Cream Canvas (#f7f6f2) background, and Burnt Orange (#f74c25) text. 0px padding. Seen on the footer.
+
+### Plain Product Card
+
+**Role:** Display individual product items within grids.
+
+Transparent background, 0px border-radius, no shadow, with 0px padding. Relies on layout for separation.
+
+### Callout Card
+
+**Role:** Highlight specific product groups or information with a subtle background.
+
+Cream Canvas (#f7f6f2) background, 1440px (pill-shaped) border-radius, no shadow, with 0px padding. Used for the product filter labels.
+
+### Underlined Input
+
+**Role:** Email newsletter sign-up fields.
+
+Transparent background with Burnt Orange (#f74c25) text. Has a Cream Canvas (#f7f6f2) bottom border, 0px border-radius. 10px vertical padding, 30px left padding.
+
+### Outline Badge
+
+**Role:** Product attribute tags.
+
+Transparent background, Burnt Orange (#f74c25) text color, 0px border-radius, 0px padding. Relies on inherent text shape and spacing for definition.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Burnt Orange (#f74c25) as a border or underline for interactive states and primary actions where a full-fill background would be too heavy.
 - Employ the ITC Garamond W01 Book Narrow font for all prominent headlines and section titles to convey a classic yet spacious feel, specifically at weights 400 and sizes 40px, 80px, or 100px.
@@ -83,7 +160,7 @@ re_ grocery uses a sun-baked tactile aesthetic, blending friendly serif typograp
 - Use tight negative letter-spacing for large display text (Suisse Int'l 180px: -0.033em, ITC Garamond 100px: -0.010em) to create impactful, visually dense typography.
 - Section containers should be implicitly separated by Cream Canvas (#f7f6f2) backgrounds and generous section gaps, maintaining an open and breathable layout.
 
-### Don'ts
+### Don't
 
 - Avoid using Cream Canvas (#f7f6f2) text on a Desert Sand (#efede7) background due to insufficient contrast (1.1:1 fail).
 - Do not use dark, heavy shadows; the system relies on flat surfaces and color contrast for visual separation.
@@ -93,10 +170,129 @@ re_ grocery uses a sun-baked tactile aesthetic, blending friendly serif typograp
 - Do not use highly saturated photography that competes with the brand's Burnt Orange; imagery should have a natural, often muted, or product-focused aesthetic.
 - Avoid using generic sans-serifs for headlines; stick to ITC Garamond W01 Book Narrow for distinct brand voice in display text.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Cream Canvas | #f7f6f2 | Base page background and default card surface. |
+| 1 | Desert Sand | #efede7 | Subtly elevated backgrounds for hero sections or featured content areas. |
+| 2 | Burnt Orange | #f74c25 | Full-bleed sections that require strong brand presence or call-to-action focus. |
+
+## Imagery
+
+The site predominantly uses product-focused photography and lifestyle imagery, typically framed in warm, natural lighting. Product shots are clean and often feature items isolated or arranged artfully with complementary props on light backgrounds or with soft focus. Lifestyle photography, when present, maintains a warm, earthy tone. Illustrations are not prominent, but iconography uses simple, filled forms in Rich Espresso or Burnt Orange. Imagery serves both decorative atmosphere and direct product showcasing, with a medium density, allowing ample space for text.
+
+## Layout
 
 The page employs a contained layout with a maximum width, centered on a Cream Canvas background after the initial full-bleed hero. The hero section features large, inviting serif typography centered over a warm product still-life. Content sections typically alternate between a full-width background (Burnt Orange for hero/footer-like blocks) and the Cream Canvas. Product listings use a consistent grid, often 4-column, with clean, borderless cards. Vertical rhythm is established through generous section and element gaps. Navigation is a sticky top bar with a 'Menu' and 'Order' button on either side, and a search icon.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses product-focused photography and lifestyle imagery, typically framed in warm, natural lighting. Product shots are clean and often feature items isolated or arranged artfully with complementary props on light backgrounds or with soft focus. Lifestyle photography, when present, maintains a warm, earthy tone. Illustrations are not prominent, but iconography uses simple, filled forms in Rich Espresso or Burnt Orange. Imagery serves both decorative atmosphere and direct product showcasing, with a medium density, allowing ample space for text.
+- **Burlap & Barrel** — Shares a warm, earthy aesthetic with product-focused photography and a premium, minimalist presentation.
+- **Oatly** — Utilizes a single brand accent color (blue for Oatly, orange for re_ grocery) against a neutral background for strong brand recognition and call-to-action.
+- **Grove Collaborative** — Employs an eco-conscious brand identity with a clean, approachable visual style and a strong focus on product presentation.
+- **Necessaire** — Similar use of classic serif typography for headlines combined with a clean sans-serif for body copy, creating a sophisticated and understated feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-burnt-orange: #f74c25;
+  --color-cream-canvas: #f7f6f2;
+  --color-desert-sand: #efede7;
+  --color-rich-espresso: #000000;
+  --font-itc-garamond-w01-book-narrow: 'ITC Garamond W01 Book Narrow',  serif;
+  --font-suisse-int-l: 'Suisse Int'l', sans-serif;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.33;
+  --tracking-body-sm: -0.19px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.4px;
+  --text-heading: 30px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.81px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.88px;
+  --text-display: 80px;
+  --leading-display: 0.8;
+  --tracking-display: -0.8px;
+  --text-display-xl: 100px;
+  --leading-display-xl: 0.8;
+  --tracking-display-xl: -1px;
+  --text-display-hero: 180px;
+  --leading-display-hero: 0.8;
+  --tracking-display-hero: -5.94px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-95: 95px;
+  --spacing-120: 120px;
+  --radius-tags: 1440px;
+  --radius-cards: 1440px;
+  --radius-inputs: 0px;
+  --radius-buttons: 1440px;
+  --surface-cream-canvas: #f7f6f2;
+  --surface-desert-sand: #efede7;
+  --surface-burnt-orange: #f74c25;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-burnt-orange: #f74c25;
+  --color-cream-canvas: #f7f6f2;
+  --color-desert-sand: #efede7;
+  --color-rich-espresso: #000000;
+  --font-itc-garamond-w01-book-narrow: 'ITC Garamond W01 Book Narrow',  serif;
+  --font-suisse-int-l: 'Suisse Int'l', sans-serif;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.33;
+  --tracking-body-sm: -0.19px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.4px;
+  --text-heading: 30px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.81px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.88px;
+  --text-display: 80px;
+  --leading-display: 0.8;
+  --tracking-display: -0.8px;
+  --text-display-xl: 100px;
+  --leading-display-xl: 0.8;
+  --tracking-display-xl: -1px;
+  --text-display-hero: 180px;
+  --leading-display-hero: 0.8;
+  --tracking-display-hero: -5.94px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-95: 95px;
+  --spacing-120: 120px;
+  --radius-tags: 1440px;
+  --radius-cards: 1440px;
+  --radius-inputs: 0px;
+  --radius-buttons: 1440px;
+  --surface-cream-canvas: #f7f6f2;
+  --surface-desert-sand: #efede7;
+  --surface-burnt-orange: #f74c25;
+}
+```

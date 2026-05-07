@@ -1,74 +1,167 @@
 ---
 version: alpha
-name: Rarible
-description: Rarible presents a command center aesthetic: a dark canvas with sharp geometric cards and a singular vivid green accent. Typography is compact and precise, using a monospace family for detail and a clean sans-serif for headlines. Bordered elements and subtle elevation provide structure without visual clutter, creating a focused environment for digital asset trading. The dominant visual language emphasizes technicality and functional clarity over rich ornamentation.
-colors:
-  rich-black: "#0a0a0a"
-  graphite: "#27272a"
-  ash-gray: "#3b3b3b"
-  silver-text: "#9d9d9d"
-  off-white: "#cecece"
-  white: "#ffffff"
-  true-black: "#000000"
-  dark-granite: "#18181b"
-  cadmium-green: "#faff00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.43
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.29
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.17
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.33
-    letterSpacing: 0px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 9999px
-  elementGap: 8px
-  sectionGap: 32px
-components:
-  pill-ghost-button:
-    role: Secondary action or filter button
-  outline-text-button:
-    role: Tertiary action or navigation link
-  outline-rectangular-button:
-    role: Filter or category selection
-  filled-filter-button:
-    role: Active filter or selection
-  primary-action-button:
-    role: Prominent action button (Login, Get $RARI)
-  nft-collection-card:
-    role: Display individual NFT collections or items
-  search-input:
-    role: Main search functionality
-  table-row:
-    role: Display data in tabular format
+name: "Rarible"
+description: "Rarible presents a command center aesthetic: a dark canvas with sharp geometric cards and a singular vivid green accent. Typography is compact and precise, using a monospace family for detail and a clean sans-serif for headlines. Bordered elements and subtle elevation provide structure without visual clutter, creating a focused environment for digital asset trading. The dominant visual language emphasizes technicality and functional clarity over rich ornamentation."
+theme: "dark"
+industry: "crypto"
+source_url: "https://rarible.com"
+refero_style_id: "44c69f5d-68bf-4507-8f00-e6aa1c96246b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510720435-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510720435-thumb.jpg"
+extracted_at: "2026-04-30T00:59:14.741Z"
 ---
 
-## Overview
+# Rarible — Style Reference
 
-**North Star:** Dark Terminal, Electric Green
+> Dark Terminal, Electric Green
+
+**Theme:** dark
+
+**Industry:** crypto
 
 Rarible presents a command center aesthetic: a dark canvas with sharp geometric cards and a singular vivid green accent. Typography is compact and precise, using a monospace family for detail and a clean sans-serif for headlines. Bordered elements and subtle elevation provide structure without visual clutter, creating a focused environment for digital asset trading. The dominant visual language emphasizes technicality and functional clarity over rich ornamentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Rich Black | #0a0a0a | `--color-rich-black` | Page backgrounds, card surfaces, table headers for a deep dark aesthetic |
+| Graphite | #27272a | `--color-graphite` | Hairline borders, subtle dividers, inactive input outlines — providing separation on dark surfaces |
+| Ash Gray | #3b3b3b | `--color-ash-gray` | Secondary borders for buttons and UI elements, slightly darker than Graphite |
+| Silver Text | #9d9d9d | `--color-silver-text` | Muted secondary text, placeholder text — receding into the dark background |
+| Off White | #cecece | `--color-off-white` | Subtle text variant, slightly softer than pure white for minor details |
+| White | #ffffff | `--color-white` | Primary text, critical UI elements, active states, and elements that need to pop against dark backgrounds |
+| True Black | #000000 | `--color-true-black` | Text for specific UI elements, icon fills — providing maximum contrast |
+| Dark Granite | #18181b | `--color-dark-granite` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Cadmium Green | #faff00 | `--color-cadmium-green` | Green action color for filled buttons, selected navigation states, and focused conversion moments |
+
+## Tokens — Typography
+
+### Tomorrow
+
+- **Token:** `--font-tomorrow`
+- **Substitute:** Outfit, Poppins
+- **Weights:** 400, 500
+- **Sizes:** 14px, 18px, 24px, 28px
+- **Line heights:** 1.17, 1.29, 1.33, 1.43
+- **Letter spacing:** normal
+- **Role:** Headings and primary text that needs to stand out. Its slightly geometric structure provides a modern, confident tone.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** IBM Plex Mono, Fira Code
+- **Weights:** 400, 500
+- **Sizes:** 10px, 12px, 14px, 18px, 24px
+- **Line heights:** 1.00, 1.17, 1.33, 1.40, 1.43
+- **Letter spacing:** normal
+- **Role:** Monospace for data display, code snippets, and structured information where precise alignment and a technical feel are desired.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.43 | 0px | `--text-caption` |
+| body | 14px | 1.43 | 0px | `--text-body` |
+| subheading | 18px | 1.29 | 0px | `--text-subheading` |
+| heading | 24px | 1.17 | 0px | `--text-heading` |
+| display | 28px | 1.33 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| buttons | 9999px |
+| default | 6px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Pill Ghost Button
+
+**Role:** Secondary action or filter button
+
+Transparent background, White text, Graphite border at 9999px radius (pill shape). Padding is minimal, e.g., 12px horizontal.
+
+### Outline Text Button
+
+**Role:** Tertiary action or navigation link
+
+Transparent background, White text, no border, 0px radius. Used for inline actions or navigation within sections. Padding 12px horizontal, 16px vertical.
+
+### Outline Rectangular Button
+
+**Role:** Filter or category selection
+
+Transparent background, White text, Graphite border at 4px radius, providing a slightly rounded rectangular shape. Minimal padding.
+
+### Filled Filter Button
+
+**Role:** Active filter or selection
+
+Slightly opaque background (rgba(255, 255, 255, 0.06)), White text, Graphite border at 9999px radius. Used to indicate active selection in filters.
+
+### Primary Action Button
+
+**Role:** Prominent action button (Login, Get $RARI)
+
+Cadmium Green background, Black text, 9999px radius. High contrast to immediately draw attention. Example padding 12px horizontal, 4px vertical (derived from 'Login' button).
+
+### NFT Collection Card
+
+**Role:** Display individual NFT collections or items
+
+Rich Black background, 12px border radius, no box-shadow. Contains images and text, with 0px padding as content often bleeds to edges.
+
+### Search Input
+
+**Role:** Main search functionality
+
+Transparent background, White text, Graphite border at 6px radius. Placeholder text in Silver Text. Padding 12px vertical.
+
+### Table Row
+
+**Role:** Display data in tabular format
+
+Rich Black background, no border radius. Alternating background slight variations (not explicitly detected but typical in tables) and Graphite dividers between rows. Font uses Geist Mono for data.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Rich Black (#0a0a0a) for all primary backgrounds and card surfaces to maintain the deep, dark aesthetic.
 - Use Cadmium Green (#faff00) exclusively for primary calls-to-action, active states, and critical indicators, making it pop against the dark UI.
@@ -78,7 +171,7 @@ Rarible presents a command center aesthetic: a dark canvas with sharp geometric 
 - Use 8px as the default element gap for consistent spacing between interactive components and text blocks.
 - Ensure headings always use the Tomorrow font family to provide visual distinction from technical data.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or overly saturated colors other than Cadmium Green (#faff00) to preserve the stark dark theme.
 - Do not introduce strong drop shadows; rely on subtle borders and slight background opacity changes for depth.
@@ -88,10 +181,135 @@ Rarible presents a command center aesthetic: a dark canvas with sharp geometric 
 - Avoid large, expansive padding within cards; content should feel relatively compact and framed by borders.
 - Do not use generic gray tones for borders where Graphite (#27272a) or Ash Gray (#3b3b3b) are specified.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Base Canvas | #0a0a0a | Primary page background and general UI container. |
+| 2 | Card Surface | #0a0a0a | Elevated surfaces for cards and content blocks, distinguished by a 12px border radius and often bordered by Graphite. |
+
+## Elevation
+
+- **Input:** `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`
+- **Button:** `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`
+
+## Imagery
+
+The site's imagery is primarily composed of diverse NFT art, often presented within structured cards. These visuals range from cartoonish characters to abstract designs, with no consistent color treatment or photographic style. They are always contained within boundaries, either sharp 6px rectangles or slightly rounded 12px cards, and serve as direct content rather than decorative atmosphere. Icons are filled, mono-color, and often use the Cadmium Green accent or White, maintaining a minimalist appearance. There's an absence of lifestyle photography or complex illustrations, emphasizing that the NFTs themselves are the primary visual content.
+
+## Layout
 
 The page uses a full-bleed structure for the main content area, with elements extending to the edges of the viewport horizontally. The hero section is dark and centered. Content is organized into distinct, vertically stacked sections, separated by consistent 32px section gaps. Within these sections, a columnar grid system is evident, particularly for feature cards, often 3-4 columns wide. Text and UI elements tend to be left-aligned or centered within their containers, avoiding complex asymmetric compositions. The layout prioritizes an information-dense, yet organized, presentation, complemented by a sticky top navigation bar and a persistent footer.
 
-### Imagery
+## Similar Brands
 
-The site's imagery is primarily composed of diverse NFT art, often presented within structured cards. These visuals range from cartoonish characters to abstract designs, with no consistent color treatment or photographic style. They are always contained within boundaries, either sharp 6px rectangles or slightly rounded 12px cards, and serve as direct content rather than decorative atmosphere. Icons are filled, mono-color, and often use the Cadmium Green accent or White, maintaining a minimalist appearance. There's an absence of lifestyle photography or complex illustrations, emphasizing that the NFTs themselves are the primary visual content.
+- **OpenSea** — Dark-themed NFT marketplace with strong focus on cards and data display, similar compact typography.
+- **Coinbase Wallet** — Utilizes a dark, technical UI with strong accent colors and precise, often monospace, typography for financial data.
+- **Etherscan** — Data-heavy interface with a dark mode, emphasizing clear data presentation and functional elements over visual flair.
+- **Uniswap** — DeFi platform with a dark theme, minimalist UI, and a single vibrant accent color to highlight key interactive elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-rich-black: #0a0a0a;
+  --color-graphite: #27272a;
+  --color-ash-gray: #3b3b3b;
+  --color-silver-text: #9d9d9d;
+  --color-off-white: #cecece;
+  --color-white: #ffffff;
+  --color-true-black: #000000;
+  --color-dark-granite: #18181b;
+  --color-cadmium-green: #faff00;
+  --font-tomorrow: 'Tomorrow', Outfit, Poppins;
+  --font-geist-mono: 'Geist Mono', IBM Plex Mono, Fira Code;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.29;
+  --tracking-subheading: 0px;
+  --text-heading: 24px;
+  --leading-heading: 1.17;
+  --tracking-heading: 0px;
+  --text-display: 28px;
+  --leading-display: 1.33;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-cards: 12px;
+  --radius-buttons: 9999px;
+  --radius-default: 6px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  --surface-base-canvas: #0a0a0a;
+  --surface-card-surface: #0a0a0a;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-rich-black: #0a0a0a;
+  --color-graphite: #27272a;
+  --color-ash-gray: #3b3b3b;
+  --color-silver-text: #9d9d9d;
+  --color-off-white: #cecece;
+  --color-white: #ffffff;
+  --color-true-black: #000000;
+  --color-dark-granite: #18181b;
+  --color-cadmium-green: #faff00;
+  --font-tomorrow: 'Tomorrow', Outfit, Poppins;
+  --font-geist-mono: 'Geist Mono', IBM Plex Mono, Fira Code;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.29;
+  --tracking-subheading: 0px;
+  --text-heading: 24px;
+  --leading-heading: 1.17;
+  --tracking-heading: 0px;
+  --text-display: 28px;
+  --leading-display: 1.33;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-cards: 12px;
+  --radius-buttons: 9999px;
+  --radius-default: 6px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.1) 0px 1px 2px -1px;
+  --surface-base-canvas: #0a0a0a;
+  --surface-card-surface: #0a0a0a;
+}
+```
