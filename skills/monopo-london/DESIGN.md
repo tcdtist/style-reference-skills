@@ -1,63 +1,122 @@
 ---
 version: alpha
-name: monopo london
-description: Monopo London employs a moody, high-contrast aesthetic, combining a deep black background with crisp white typography and subtle, shifting gradients that create an immersive, dynamic canvas. Typography is compact and confident, often appearing in all caps with generous letter-spacing, contributing to a premium, editorial feel that prioritizes visual impact over text density. Interactive elements are understated, often relying on hover states or minimal outlines against the dark canvas, maintaining a clean yet engaging user experience.
-colors:
-  midnight-canvas: "#000000"
-  ghost-white: "#ffffff"
-  subtle-gray: "#7f7f7f"
-  medium-gray: "#666970"
-  nebula-gradient: "#cd5a07"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.16
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.16
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.16
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.16
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.16
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 33px
-    lineHeight: 1.16
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.16
-spacing:
-  elementGap: 8px
-  sectionGap: 111px
-components:
-  ghost-navigation-link:
-    role: Primary navigation and footer links
-  outlined-call-to-action-button:
-    role: Secondary action button for discovering projects or general calls to action.
-  hero-headline:
-    role: Dominant text for hero sections.
-  sub-headline-section-title:
-    role: Titles for section content like 'RECENT WORK'.
+name: "monopo london"
+description: "Monopo London employs a moody, high-contrast aesthetic, combining a deep black background with crisp white typography and subtle, shifting gradients that create an immersive, dynamic canvas. Typography is compact and confident, often appearing in all caps with generous letter-spacing, contributing to a premium, editorial feel that prioritizes visual impact over text density. Interactive elements are understated, often relying on hover states or minimal outlines against the dark canvas, maintaining a clean yet engaging user experience."
+theme: "dark"
+industry: "design"
+source_url: "https://monopo.london"
+refero_style_id: "56025d9b-3793-4303-b437-440440045d4c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518359518-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518359518-thumb.jpg"
+extracted_at: "2026-04-30T03:06:23.012Z"
 ---
 
-## Overview
+# monopo london — Style Reference
 
-**North Star:** Midnight gradient canvas
+> Midnight gradient canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Monopo London employs a moody, high-contrast aesthetic, combining a deep black background with crisp white typography and subtle, shifting gradients that create an immersive, dynamic canvas. Typography is compact and confident, often appearing in all caps with generous letter-spacing, contributing to a premium, editorial feel that prioritizes visual impact over text density. Interactive elements are understated, often relying on hover states or minimal outlines against the dark canvas, maintaining a clean yet engaging user experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Canvas | #000000 | `--color-midnight-canvas` | Page backgrounds, card surfaces, dominant dark areas |
+| Ghost White | #ffffff | `--color-ghost-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Subtle Gray | #7f7f7f | `--color-subtle-gray` | Muted secondary text, inactive link borders, subtle decorative details |
+| Medium Gray | #666970 | `--color-medium-gray` | Dark borders and separators for elevated surfaces and inverted UI. |
+| Nebula Gradient | #cd5a07 | `--color-nebula-gradient` | Immersive full-bleed background for hero sections and abstract visual elements. This gradient sets the mood and provides visual interest for large areas |
+
+## Tokens — Typography
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** system-ui, sans-serif or Space Grotesk
+- **Weights:** 300, 400, 700, 800
+- **Sizes:** 12px, 14px, 16px, 17px, 22px, 33px, 45px
+- **Line heights:** 1.00, 1.09, 1.15, 1.16, 1.20, 1.23, 1.44
+- **Letter spacing:** 0.1500em
+- **OpenType features:** "kern", "liga"
+- **Role:** The primary typeface for all text. Its compact, almost monospaced feel with consistent letter-spacing across weights contributes to the editorial, high-tech brand identity. Light weights (300, 400) are used for body text and navigation, while heavier weights (700, 800) bring punch to headlines and callouts.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.16 | — | `--text-caption` |
+| body-sm | 14px | 1.16 | — | `--text-body-sm` |
+| body | 16px | 1.16 | — | `--text-body` |
+| body-lg | 17px | 1.16 | — | `--text-body-lg` |
+| heading-sm | 22px | 1.16 | — | `--text-heading-sm` |
+| heading | 33px | 1.16 | — | `--text-heading` |
+| heading-lg | 45px | 1.16 | — | `--text-heading-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-111 | 111px | `--spacing-111` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| links | 42px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 111px |
+| cardPadding | 15px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Primary navigation and footer links
+
+Text in Ghost White (#ffffff) with 0.15em letter-spacing. On hover, an underline or border appears. Minimal padding.
+
+### Outlined Call to Action Button
+
+**Role:** Secondary action button for discovering projects or general calls to action.
+
+Transparent background, Ghost White (#ffffff) text, and a thin Ghost White (#ffffff) border. The border is 1px solid. The border-radius is 42px.
+
+### Hero Headline
+
+**Role:** Dominant text for hero sections.
+
+Large text (e.g., 45px) using Roobert, typically weight 800, color Ghost White (#ffffff), with expanded letter-spacing (0.15em) and minimal line-height. Renders central to the gradient background.
+
+### Sub-headline / Section Title
+
+**Role:** Titles for section content like 'RECENT WORK'.
+
+Uppercase text (e.g., 22px) using Roobert weight 700, Ghost White (#ffffff) color, with significant letter-spacing (0.15em). Often paired with a subtle border in Medium Gray (#666970).
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Canvas (#000000) for all backgrounds to maintain the dark, atmospheric base.
 - Use Ghost White (#ffffff) for all primary text, headlines, and interactive element outlines to ensure high contrast and legibility.
@@ -67,7 +126,7 @@ Monopo London employs a moody, high-contrast aesthetic, combining a deep black b
 - Employ the Nebula Gradient for full-bleed hero sections to establish the site's dynamic and immersive visual identity.
 - Use 42px border-radius for all interactive pill-shaped elements like buttons and links to reinforce a consistent soft visual language.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional background colors outside of Midnight Canvas (#000000) for primary surfaces.
 - Avoid using light backgrounds for content sections; the system is designed around dark mode contrast.
@@ -77,6 +136,93 @@ Monopo London employs a moody, high-contrast aesthetic, combining a deep black b
 - Do not use highly saturated, flat colors for large areas; colors should be used for accents or in gradient forms.
 - Avoid dense paragraphs of body text; content should be broken into shorter, impactful statements.
 
-### Imagery
+## Imagery
 
 This design system uses a combination of abstract, subtly blurred gradients (often serving as full-bleed backgrounds) and focused product screenshots or project images. The gradients provide a moody, almost cosmic backdrop, while project images are typically contained, but can occasionally overlap with text. Photography, when present, is product-focused or showcases details relevant to the project, lacking overt lifestyle or human elements. Icons are minimalist, outlined, and monochromatic, taking on the Ghost White (#ffffff) color. The emphasis is on atmosphere and showcasing work crisply rather than illustrative decoration or dense visual content. Image density is moderate, allowing text to also hold significant visual space.
+
+## Similar Brands
+
+- **Basic/Dept®** — Both use a primary deep dark background, bold typography with customized letter-spacing, and a focus on high-impact visuals for agency work.
+- **Active Theory** — Shares a heavy emphasis on immersive, full-bleed backgrounds often with dynamic gradients or abstract visuals, paired with refined, high-contrast typography.
+- **Ueno** — Known for stark, high-contrast dark UIs with generous spacing, custom typography, and a premium, editorial feel in their digital agency portfolios.
+- **B-Reel** — Exhibits similar traits of a dark theme, strong typographic statements, and showcasing creative work with a focus on visual impact over verbose descriptions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-canvas: #000000;
+  --color-ghost-white: #ffffff;
+  --color-subtle-gray: #7f7f7f;
+  --color-medium-gray: #666970;
+  --color-nebula-gradient: #cd5a07;
+  --font-roobert: 'Roobert', system-ui, sans-serif or Space Grotesk;
+  --text-caption: 12px;
+  --leading-caption: 1.16;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.16;
+  --text-body: 16px;
+  --leading-body: 1.16;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.16;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.16;
+  --text-heading: 33px;
+  --leading-heading: 1.16;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.16;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-25: 25px;
+  --spacing-35: 35px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-111: 111px;
+  --radius-links: 42px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-canvas: #000000;
+  --color-ghost-white: #ffffff;
+  --color-subtle-gray: #7f7f7f;
+  --color-medium-gray: #666970;
+  --color-nebula-gradient: #cd5a07;
+  --font-roobert: 'Roobert', system-ui, sans-serif or Space Grotesk;
+  --text-caption: 12px;
+  --leading-caption: 1.16;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.16;
+  --text-body: 16px;
+  --leading-body: 1.16;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.16;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.16;
+  --text-heading: 33px;
+  --leading-heading: 1.16;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.16;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-25: 25px;
+  --spacing-35: 35px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-111: 111px;
+  --radius-links: 42px;
+}
+```

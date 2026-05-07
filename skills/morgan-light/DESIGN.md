@@ -1,32 +1,96 @@
 ---
 version: alpha
-name: Morgan Light
-description: Morgan Light presents a minimal, high-contrast digital portfolio. The system is built on a stark monochrome palette, emphasizing content through a dense grid of product imagery contained within fine, light gray borders. Typography is direct and compact, serving as clear information labels against the pristine white canvas. Components are lightweight, using subtle borders to define interactive areas, ensuring the vivid product visuals remain the focal point.
-colors:
-  canvas-white: "#e5e7eb"
-  ink-black: "#000000"
-  subtle-gray: "#b5b5b5"
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 4px
-  sectionGap: 24px
-components:
-  navigation-link:
-    role: Top-level navigation and filter links.
-  image-grid-item:
-    role: Container for portfolio imagery.
-  filter-tag:
-    role: Categorization tags for filtering portfolio items.
+name: "Morgan Light"
+description: "Morgan Light presents a minimal, high-contrast digital portfolio. The system is built on a stark monochrome palette, emphasizing content through a dense grid of product imagery contained within fine, light gray borders. Typography is direct and compact, serving as clear information labels against the pristine white canvas. Components are lightweight, using subtle borders to define interactive areas, ensuring the vivid product visuals remain the focal point."
+theme: "light"
+industry: "design"
+source_url: "https://morganlight.com"
+refero_style_id: "4b5bfae9-69ef-46ec-ad6d-ff9a8bfe3525"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519537661-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519537661-thumb.jpg"
+extracted_at: "2026-04-30T03:25:50.304Z"
 ---
 
-## Overview
+# Morgan Light — Style Reference
 
-**North Star:** Gallery on White Canvas
+> Gallery on White Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Morgan Light presents a minimal, high-contrast digital portfolio. The system is built on a stark monochrome palette, emphasizing content through a dense grid of product imagery contained within fine, light gray borders. Typography is direct and compact, serving as clear information labels against the pristine white canvas. Components are lightweight, using subtle borders to define interactive areas, ensuring the vivid product visuals remain the focal point.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #e5e7eb | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, headings, links, and bold accents for navigation items |
+| Subtle Gray | #b5b5b5 | `--color-subtle-gray` | Muted helper text, secondary information, and subtle category labels |
+
+## Tokens — Typography
+
+### Neue
+
+- **Token:** `--font-neue`
+- **Substitute:** Helvetica Neue, Arial
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.14, 1.50
+- **Role:** The primary typeface for all text content, from navigation to body text. Its singular, moderate weight contributes to the system's unassuming and direct presentation, acting as a label rather than a statement.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| images | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 0px |
+| elementGap | 4px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top-level navigation and filter links.
+
+Text is Ink Black (#000000), weight 400. Paddings are 10px top/right/left. Hover or active states define interactivity through text color changes or subtle underlines.
+
+### Image Grid Item
+
+**Role:** Container for portfolio imagery.
+
+Images are presented full size within a Canvas White (#e5e7eb) background. Each item features a hairline 1px border of Canvas White (#e5e7eb), acting as a subtle spacer. Image captions are Ink Black (#000000) text below the image.
+
+### Filter Tag
+
+**Role:** Categorization tags for filtering portfolio items.
+
+Text color is Ink Black (#000000), font Neue weight 400 at 14px. These tags have no visible background fill or border in their default state, relying on the minimal whitespace for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#e5e7eb) as the pervasive background color for all surfaces and backgrounds.
 - Employ Ink Black (#000000) exclusively for primary text, headlines, and interactive elements to maintain high contrast.
@@ -36,7 +100,7 @@ Morgan Light presents a minimal, high-contrast digital portfolio. The system is 
 - Place all images edge-to-edge within their grid containers, with no internal padding or radius.
 - Utilize Neue weight 400 for all text elements; avoid other weights unless explicitly defined.
 
-### Don'ts
+### Don't
 
 - Do not introduce saturated colors unless they are part of the image content itself.
 - Avoid applying any border-radius to elements; maintain sharp, crisp edges for all components.
@@ -46,10 +110,57 @@ Morgan Light presents a minimal, high-contrast digital portfolio. The system is 
 - Avoid applying background fills to interactive components like buttons or tags; keep them text-based with implied interaction zones.
 - Refrain from using horizontal dividers; rely on clear vertical spacing for content separation.
 
-### Layout
+## Imagery
+
+The site is image-heavy, primarily showcasing diverse product photography and custom branding illustrations. Images are presented as contained, full-bleed within their grid cells, featuring square or rectangular raw edges without masking or rounding. Photography styles vary greatly as they are client projects, but they are consistently high-quality, often with vibrant coloration or striking compositions. Illustrations tend to be brand-specific and diverse. Graphics serve as direct product showcases and visual evidence of design work, dominating the visual space relative to text, which is purely explanatory.
+
+## Layout
 
 The page uses a full-bleed, fluid layout with a dominant two-column grid for the portfolio items. There is no explicit maximum width, allowing content to stretch across the viewport. The hero consists of a simple centered text block over the page background. Section rhythm is driven by the consistent grid of images with minimal vertical spacing (24px row-gap, 24px column-gap), creating a dense, gallery-like feel. Navigation is a minimal, always-present top bar with compact text links. Content is arranged in an almost uniform grid, with slight variations in image size and aspect ratio.
 
-### Imagery
+## Similar Brands
 
-The site is image-heavy, primarily showcasing diverse product photography and custom branding illustrations. Images are presented as contained, full-bleed within their grid cells, featuring square or rectangular raw edges without masking or rounding. Photography styles vary greatly as they are client projects, but they are consistently high-quality, often with vibrant coloration or striking compositions. Illustrations tend to be brand-specific and diverse. Graphics serve as direct product showcases and visual evidence of design work, dominating the visual space relative to text, which is purely explanatory.
+- **AIGA (American Institute of Graphic Arts)** — High-contrast, text-minimal design portfolios with strong emphasis on visual work, often using a grayscale palette.
+- **Pentagram** — Portfolio sites that prioritize large-scale imagery and minimal text, using simple grid layouts and a monochrome base.
+- **Sagmeister & Walsh (archived)** — Design studio websites with a focus on showcasing client work through high-impact visuals and restrained UI elements.
+- **Certain graphic design portfolios on Behance/Dribbble** — Minimal UIs where the 'art' is the focus, often using a stark white background and black text to frame colorful project visuals.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #e5e7eb;
+  --color-ink-black: #000000;
+  --color-subtle-gray: #b5b5b5;
+  --font-neue: 'Neue', Helvetica Neue, Arial;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --radius-cards: 0px;
+  --radius-images: 0px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #e5e7eb;
+  --color-ink-black: #000000;
+  --color-subtle-gray: #b5b5b5;
+  --font-neue: 'Neue', Helvetica Neue, Arial;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --radius-cards: 0px;
+  --radius-images: 0px;
+  --radius-buttons: 0px;
+}
+```

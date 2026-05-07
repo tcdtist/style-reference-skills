@@ -1,64 +1,138 @@
 ---
 version: alpha
-name: MORE Studio
-description: MORE Studio employs a stark, editorial aesthetic centered on high-contrast monochrome. Broad expanses of white canvas frame bold, oversized typography and clean-cut content blocks. Functionally, the system uses hairline borders and subtle background tints to segment information without visual clutter, allowing large-scale project visuals to dominate. The overall impression is one of minimalist structure and confident scale, presenting content as curated exhibition pieces rather than typical website elements.
-colors:
-  ink: "#000000"
-  canvas: "#ffffff"
-  ghost: "#eeeeee"
-  parchment: "#d2d3d7"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.71
-    letterSpacing: 0.003px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.63
-    letterSpacing: 0.003px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.3
-    letterSpacing: 0.008px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.19
-    letterSpacing: -0.01px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.1
-    letterSpacing: -0.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 360px
-    lineHeight: 1.1
-    letterSpacing: 0px
-spacing:
-  cardRadius: 15px
-  buttonRadius: 4px
-  elementGap: 8px
-  sectionGap: 150px
-components:
-  standard-card:
-    role: Project showcase, content container
-  hairline-border-block:
-    role: Section dividers, content separators
-  navigation-link:
-    role: Primary navigation, inline links
+name: "MORE Studio"
+description: "MORE Studio employs a stark, editorial aesthetic centered on high-contrast monochrome. Broad expanses of white canvas frame bold, oversized typography and clean-cut content blocks. Functionally, the system uses hairline borders and subtle background tints to segment information without visual clutter, allowing large-scale project visuals to dominate. The overall impression is one of minimalist structure and confident scale, presenting content as curated exhibition pieces rather than typical website elements."
+theme: "light"
+industry: "design"
+source_url: "https://morebymore.com"
+refero_style_id: "f8872933-87af-4b9b-8a20-20694f0c45a3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515657828-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515657828-thumb.jpg"
+extracted_at: "2026-04-30T02:21:30.336Z"
 ---
 
-## Overview
+# MORE Studio — Style Reference
 
-**North Star:** Gallery Grid on White Canvas: Large-scale, high-contrast content modules organized on an expansive, unblemished white backdrop.
+> Gallery Grid on White Canvas: Large-scale, high-contrast content modules organized on an expansive, unblemished white backdrop.
+
+**Theme:** light
+
+**Industry:** design
 
 MORE Studio employs a stark, editorial aesthetic centered on high-contrast monochrome. Broad expanses of white canvas frame bold, oversized typography and clean-cut content blocks. Functionally, the system uses hairline borders and subtle background tints to segment information without visual clutter, allowing large-scale project visuals to dominate. The overall impression is one of minimalist structure and confident scale, presenting content as curated exhibition pieces rather than typical website elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ink | #000000 | `--color-ink` | Primary text, headings, outlines, decorative borders. Its ubiquity against white defines the high-contrast aesthetic |
+| Canvas | #ffffff | `--color-canvas` | Page backgrounds, primary surface areas. The dominant use of this color creates negative space and visual breathing room |
+| Ghost | #eeeeee | `--color-ghost` | Subtle background for content cards. Provides a soft lift from the main canvas without introducing chrominance |
+| Parchment | #d2d3d7 | `--color-parchment` | Faint background fills, potentially for interaction states or subtle section breaks. Acts as a whisper of tone within the monochrome |
+
+## Tokens — Typography
+
+### Univers
+
+- **Token:** `--font-univers`
+- **Substitute:** system-ui
+- **Weights:** 300, 400
+- **Sizes:** 14px, 16px, 20px, 48px, 64px
+- **Line heights:** 1.10, 1.19, 1.30, 1.63, 1.71, 1.86
+- **Letter spacing:** 0.003em, 0.003em, 0.008em, -0.010em, -0.010em
+- **Role:** Primary UI text for navigation, body copy, and subheadings. It provides a contemporary, structured voice across various scales.
+
+### American Typewriter
+
+- **Token:** `--font-american-typewriter`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 36px
+- **Line heights:** 1.10
+- **Letter spacing:** 0.004em
+- **Role:** Reserved for specific secondary headings or decorative elements where a slightly more classic, editorial feel is desired.
+
+### Neue Haas Grotesk
+
+- **Token:** `--font-neue-haas-grotesk`
+- **Substitute:** Arial
+- **Weights:** 300
+- **Sizes:** 360px
+- **Line heights:** 1.10
+- **Letter spacing:** normal
+- **Role:** Used for extremely large, graphic typographic statements, particularly the brand logo, emphasizing bold, sparse impact.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.71 | 0.003px | `--text-body-sm` |
+| body | 16px | 1.63 | 0.003px | `--text-body` |
+| subheading | 20px | 1.3 | 0.008px | `--text-subheading` |
+| heading | 48px | 1.19 | -0.01px | `--text-heading` |
+| heading-lg | 64px | 1.1 | -0.01px | `--text-heading-lg` |
+| display | 360px | 1.1 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-250 | 250px | `--spacing-250` |
+| spacing-293 | 293px | `--spacing-293` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 15px |
+| buttons | 4px |
+| default | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 150px |
+| cardPadding | 0px |
+| elementGap | 8px |
+
+## Components
+
+### Standard Card
+
+**Role:** Project showcase, content container
+
+A rectangular content block with a 'Ghost' (#eeeeee) background and a generous 15px border-radius. It has no internal padding, letting content span edge-to-edge for a full-bleed visual effect within the card itself. This creates visual separation without heavy shadows or borders.
+
+### Hairline Border Block
+
+**Role:** Section dividers, content separators
+
+A structural element using a 1px solid 'Ink' (#000000) border to delineate content areas. Often accompanied by white canvas background, creating a grid or framework for content.
+
+### Navigation Link
+
+**Role:** Primary navigation, inline links
+
+Text rendered in 'Ink' (#000000) using Univers font, typically at 16px weight 400. Hover states are implicit but generally involve a subtle underline or color change, not present in static data. No distinct background or border, relying on stark contrast for readability.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Ink' (#000000) as the primary text and heading color against 'Canvas' (#ffffff) for maximum contrast and legibility.
 - Use 'Canvas' (#ffffff) as the dominant background color for pages and sections, creating an expansive, gallery-like feel.
@@ -68,7 +142,7 @@ MORE Studio employs a stark, editorial aesthetic centered on high-contrast monoc
 - Incorporate the large-scale Neue Haas Grotesk at 360px for impactful, graphic brand statements, allowing it to act as a visual anchor.
 - Maintain a comfortable rhythm of 150px vertical spacing between major sections on the page.
 
-### Don'ts
+### Don't
 
 - Avoid the use of multiple chromatic colors; limit color to 'Ink' (#000000) and gray neutrals, with project imagery introducing color where necessary.
 - Do not use heavy shadows or gradients for elevation; rely on subtle background color shifts and hairline borders for depth.
@@ -77,10 +151,130 @@ MORE Studio employs a stark, editorial aesthetic centered on high-contrast monoc
 - Avoid custom, expressive typography for standard UI elements; stick to Univers for consistency and clarity.
 - Do not introduce strong accent colors for interactive elements; actions should be communicated through position and existing monochrome contrasts.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #ffffff | Primary page background, expansive negative space. |
+| 1 | Ghost | #eeeeee | Background for content cards and secondary sections, subtle lift from Canvas. |
+| 2 | Parchment | #d2d3d7 | Faint backgrounds, possibly for subtle interactive states or minor UI elements. |
+
+## Imagery
+
+This system features a mix of high-quality product photography, detailed UI mockups within devices, and graphic design project deliverables. Visuals are typically contained within tight, rectangular frames, often presented edge-to-edge within 'Ghost' (#eeeeee) cards with 15px rounded corners. Photography is typically high-key, clean, and product-focused, while UI mockups maintain a crisp, digital aesthetic. Illustrations, if present, are integrated as part of project showcases. The primary role of imagery is to showcase portfolio work as clean, isolated pieces, acting as the main content rather than decorative elements. The density is image-dominant, with large visual blocks taking precedence over extensive text.
+
+## Layout
 
 The page model is a contained, centered layout, but with full-bleed capabilities for the hero or specific large content blocks. The hero section often features oversized, bold typography ('MORE') as a graphic statement, implying a text-centric initial impact. Section rhythm is organized into a vertical procession of distinct content blocks, often separated by white space or hairline borders. Content arrangement frequently uses a grid-like structure, presenting project cards in a clean, masonry-like or multi-column layout. The overall density is spacious, emphasizing individual content pieces. Navigation is a minimal top bar, displaying key links without visual clutter, reinforcing the focus on content.
 
-### Imagery
+## Similar Brands
 
-This system features a mix of high-quality product photography, detailed UI mockups within devices, and graphic design project deliverables. Visuals are typically contained within tight, rectangular frames, often presented edge-to-edge within 'Ghost' (#eeeeee) cards with 15px rounded corners. Photography is typically high-key, clean, and product-focused, while UI mockups maintain a crisp, digital aesthetic. Illustrations, if present, are integrated as part of project showcases. The primary role of imagery is to showcase portfolio work as clean, isolated pieces, acting as the main content rather than decorative elements. The density is image-dominant, with large visual blocks taking precedence over extensive text.
+- **AIGA Journal** — High-contrast monochrome typography, heavy use of negative space, and a structured grid layout for content.
+- **BP&O (Brand New)** — Focus on large-scale brand identity showcases against a clean, minimal backdrop, with projects as the visual hero.
+- **Savvy Studio** — Editorial feel achieved through bold typography, stark color palettes, and curated visual content presentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ink: #000000;
+  --color-canvas: #ffffff;
+  --color-ghost: #eeeeee;
+  --color-parchment: #d2d3d7;
+  --font-univers: 'Univers', system-ui;
+  --font-american-typewriter: 'American Typewriter', serif;
+  --font-neue-haas-grotesk: 'Neue Haas Grotesk', Arial;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.71;
+  --tracking-body-sm: 0.003px;
+  --text-body: 16px;
+  --leading-body: 1.63;
+  --tracking-body: 0.003px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: 0.008px;
+  --text-heading: 48px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.01px;
+  --text-display: 360px;
+  --leading-display: 1.1;
+  --tracking-display: 0px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-150: 150px;
+  --spacing-250: 250px;
+  --spacing-293: 293px;
+  --radius-cards: 15px;
+  --radius-buttons: 4px;
+  --radius-default: 8px;
+  --surface-canvas: #ffffff;
+  --surface-ghost: #eeeeee;
+  --surface-parchment: #d2d3d7;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ink: #000000;
+  --color-canvas: #ffffff;
+  --color-ghost: #eeeeee;
+  --color-parchment: #d2d3d7;
+  --font-univers: 'Univers', system-ui;
+  --font-american-typewriter: 'American Typewriter', serif;
+  --font-neue-haas-grotesk: 'Neue Haas Grotesk', Arial;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.71;
+  --tracking-body-sm: 0.003px;
+  --text-body: 16px;
+  --leading-body: 1.63;
+  --tracking-body: 0.003px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: 0.008px;
+  --text-heading: 48px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.01px;
+  --text-display: 360px;
+  --leading-display: 1.1;
+  --tracking-display: 0px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-150: 150px;
+  --spacing-250: 250px;
+  --spacing-293: 293px;
+  --radius-cards: 15px;
+  --radius-buttons: 4px;
+  --radius-default: 8px;
+  --surface-canvas: #ffffff;
+  --surface-ghost: #eeeeee;
+  --surface-parchment: #d2d3d7;
+}
+```

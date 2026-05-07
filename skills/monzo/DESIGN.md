@@ -1,88 +1,174 @@
 ---
 version: alpha
-name: Monzo
-description: Monzo's visual style evokes 'Digital Craftsmanship,' where vibrant and professional is achieved through a carefully balanced suite of design choices. The core is a confident yet approachable dark charcoal text against a pristine paper-white background, creating high contrast. This is punctuated by a singular, vivid hot coral for primary calls-to-action and brand accents, preventing the design from feeling sterile. Signature choices like generously rounded 'pill' buttons and soft shadows on cards hint at a user-friendly, empathetic digital experience, while strict adherence to a clean, spacious layout grounds the design in reliability.
-colors:
-  midnight-charcoal: "#091723"
-  snow-white: "#ffffff"
-  mist-gray: "#f2f8f3"
-  slate-blue: "#112231"
-  silver-dust: "#e3ebe4"
-  steel-gray: "#6b747b"
-  ash-gray: "#b5b9bd"
-  hot-coral: "#ff4f40"
-  muted-olive: "#3b4c54"
-  graphite-stroke: "#75817"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.5
-    letterSpacing: -0.65px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.8px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.38
-    letterSpacing: -1px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-    letterSpacing: 0px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.15
-    letterSpacing: -1.6px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.15
-    letterSpacing: -1.8px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 49px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 61px
-    lineHeight: 1
-    letterSpacing: 0px
-spacing:
-  cardRadius: 32px
-  buttonRadius: 500px
-  elementGap: 24px
-  sectionGap: 64px
-components:
-  primary-filled-button:
-    role: Call to action
-  primary-outlined-button:
-    role: Secondary action or ghost button
-  ghost-button-with-icon:
-    role: Navigation or interactive element with subtle styling
-  light-mode-card:
-    role: Information container, features
-  dark-mode-card:
-    role: Information container, features
-  section-background-card:
-    role: Hero or large content block backgrounds
-  status-badge:
-    role: Informational tag
+name: "Monzo"
+description: "Monzo's visual style evokes 'Digital Craftsmanship,' where vibrant and professional is achieved through a carefully balanced suite of design choices. The core is a confident yet approachable dark charcoal text against a pristine paper-white background, creating high contrast. This is punctuated by a singular, vivid hot coral for primary calls-to-action and brand accents, preventing the design from feeling sterile. Signature choices like generously rounded 'pill' buttons and soft shadows on cards hint at a user-friendly, empathetic digital experience, while strict adherence to a clean, spacious layout grounds the design in reliability."
+theme: "light"
+industry: "fintech"
+source_url: "https://monzo.com"
+refero_style_id: "e8a1d114-6924-4f03-acd2-996dd30f15a6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776105425770-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776105425770-thumb.jpg"
+extracted_at: "2026-04-13T18:37:26.043Z"
 ---
 
-## Overview
+# Monzo — Style Reference
 
-**North Star:** Hot Coral Digital Craftsmanship — a meticulously crafted digital experience with vibrant accents.
+> Hot Coral Digital Craftsmanship — a meticulously crafted digital experience with vibrant accents.
+
+**Theme:** light
+
+**Industry:** fintech
 
 Monzo's visual style evokes 'Digital Craftsmanship,' where vibrant and professional is achieved through a carefully balanced suite of design choices. The core is a confident yet approachable dark charcoal text against a pristine paper-white background, creating high contrast. This is punctuated by a singular, vivid hot coral for primary calls-to-action and brand accents, preventing the design from feeling sterile. Signature choices like generously rounded 'pill' buttons and soft shadows on cards hint at a user-friendly, empathetic digital experience, while strict adherence to a clean, spacious layout grounds the design in reliability.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Charcoal | #091723 | `--color-midnight-charcoal` | Primary text, prominent UI elements, button backgrounds – establishes a deep, authoritative base against light surfaces. |
+| Snow White | #ffffff | `--color-snow-white` | Primary background for cards, buttons, and sections – provides a clean, expansive canvas for content. |
+| Mist Gray | #f2f8f3 | `--color-mist-gray` | Dominant page background, secondary card backgrounds – offers a subtle off-white that prevents harshness and provides relief from pure white. |
+| Slate Blue | #112231 | `--color-slate-blue` | Accent backgrounds and specific UI elements – a slightly cooler, darker neutral that adds depth. |
+| Silver Dust | #e3ebe4 | `--color-silver-dust` | Subtle UI backgrounds, dividers – a very light gray providing minimal contrast for separating elements. |
+| Steel Gray | #6b747b | `--color-steel-gray` | Secondary text, muted links, icons – provides readability for supporting information without competing with primary headings. |
+| Ash Gray | #b5b9bd | `--color-ash-gray` | Subtle button backgrounds, inactive states – a lighter neutral for less prominent interactive elements. |
+| Hot Coral | #ff4f40 | `--color-hot-coral` | Primary calls-to-action, brand accents, interactive elements – injects energy and guides user attention as a distinct brand identifier. |
+| Muted Olive | #3b4c54 | `--color-muted-olive` | Tertiary button backgrounds with low prominence – a desaturated, cool color for background functions. |
+| Graphite Stroke | #75817 | `--color-graphite-stroke` | Iconography and borders – provides definition to visual elements without being stark black. |
+
+## Tokens — Typography
+
+### MonzoSansText
+
+- **Token:** `--font-monzosanstext`
+- **Substitute:** Inter, Arial
+- **Weights:** 400, 600, 700
+- **Sizes:** 13px, 16px, 20px, 24px, 32px, 36px
+- **Line heights:** 0.81, 1.15, 1.38, 1.40, 1.50
+- **Letter spacing:** -0.0500em
+- **Role:** Body copy, links, navigation, buttons, and general UI text. The uniform letter spacing contributes to a consistent, crisp text block, even at smaller sizes.
+
+### MonzoSansDisplay
+
+- **Token:** `--font-monzosansdisplay`
+- **Substitute:** Inter, Arial
+- **Weights:** 600, 700, 800
+- **Sizes:** 16px, 20px, 25px, 31px, 39px, 44px, 49px, 61px
+- **Line heights:** 1.00, 1.20, 1.40
+- **Letter spacing:** normal
+- **Role:** Headlines and prominent display text. Its natural letter spacing ensures headings hold presence without feeling overly tight.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.5 | -0.65px | `--text-caption` |
+| body-sm | 16px | 1.4 | -0.8px | `--text-body-sm` |
+| body | 20px | 1.38 | -1px | `--text-body` |
+| subheading | 24px | 1.4 | 0px | `--text-subheading` |
+| heading-sm | 32px | 1.15 | -1.6px | `--text-heading-sm` |
+| heading | 36px | 1.15 | -1.8px | `--text-heading` |
+| heading-lg | 49px | 1.2 | 0px | `--text-heading-lg` |
+| display | 61px | 1 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-201 | 201px | `--spacing-201` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 32px |
+| badges | 4px |
+| buttons | 500px |
+| general | 64px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 0px 10px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 64px |
+| cardPadding | 30px |
+| elementGap | 24px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action
+
+Solid 'Midnight Charcoal' (#091723) background with 'Snow White' (#ffffff) text, using a 500px border-radius for a pill shape. Padding is 12px vertical, 24px horizontal. Text is MonzoSansText weight 400.
+
+### Primary Outlined Button
+
+**Role:** Secondary action or ghost button
+
+Transparent background with 'Midnight Charcoal' (#091723) text and border. No border-radius, resembling a link. No padding.
+
+### Ghost Button with Icon
+
+**Role:** Navigation or interactive element with subtle styling
+
+Transparent background with 'Steel Gray' (rgba(9, 23, 35, 0.6)) text and border. Uses a 24px border-radius, with 20px padding on all sides. Text is MonzoSansText weight 400.
+
+### Light Mode Card
+
+**Role:** Information container, features
+
+Background 'Snow White' (#ffffff), with a 32px border-radius and a subtle shadow (rgba(0, 0, 0, 0.1) 0px 0px 10px 0px). Inner padding is 30px.
+
+### Dark Mode Card
+
+**Role:** Information container, features
+
+Background 'Slate Blue' (#112231), with a 32px border-radius and a subtle shadow (rgba(0, 0, 0, 0.1) 0px 0px 10px 0px). Inner padding is 30px.
+
+### Section Background Card
+
+**Role:** Hero or large content block backgrounds
+
+Background 'Mist Gray' (#f2f8f3), with a large 64px border-radius and no shadow. Generous vertical padding of 128px.
+
+### Status Badge
+
+**Role:** Informational tag
+
+Background 'Mist Gray' (#f2f8f3) with 'Steel Gray' (rgba(9, 23, 35, 0.6)) text. Rounded 4px corners, 4px vertical, 12px horizontal padding. Text is MonzoSansText weight 400.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Midnight Charcoal' (#091723) for all primary text and calls-to-action against light backgrounds to ensure AAA contrast.
 - Utilize 'Hot Coral' (#ff4f40) exclusively for primary interactive states or brand-specific elements, reserving its impact.
@@ -92,7 +178,7 @@ Monzo's visual style evokes 'Digital Craftsmanship,' where vibrant and professio
 - Ensure all card elements use a 32px border-radius, accompanied by rgba(0, 0, 0, 0.1) 0px 0px 10px 0px shadow for subtle depth.
 - Use 24px for all standard element and grid gaps to maintain consistent breathing room between components.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors; 'Hot Coral' (#ff4f40) is the dominant accent hue.
 - Do not deviate from the specified typography sizes, line heights, or letter spacings to preserve brand readability and scale.
@@ -102,10 +188,173 @@ Monzo's visual style evokes 'Digital Craftsmanship,' where vibrant and professio
 - Do not use dark backgrounds without contrasting light text; maintain high readability scores for all content.
 - Resist using grayscale or desaturated versions of 'Hot Coral' for functional interactions; use it vividly or not at all.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Mist Gray | #f2f8f3 | Page background, foundational canvas |
+| 1 | Snow White | #ffffff | Primary content areas, default cards |
+| 2 | Slate Blue | #112231 | Elevated cards or specific dark sections |
+
+## Elevation
+
+- **Card:** `rgba(0, 0, 0, 0.1) 0px 0px 10px 0px`
+
+## Imagery
+
+The visual language combines expressive full-bleed photography with clean, contained product shots and illustrative elements. Photography features human elements but also focuses on the product (the card). Product imagery is tightly cropped, often showcasing the Hot Coral card against dark, slightly blurred backgrounds. Icons are monoline, 'Graphite Stroke' colored outlines with a moderate stroke weight, used for navigation and feature differentiation. The overall density leans towards balanced, using imagery to establish atmosphere and convey product function without overwhelming text content.
+
+## Layout
 
 The page primarily employs a max-width contained layout, centering content within a 'Mist Gray' (#f2f8f3) canvas, likely around 1200px. The hero section is full-bleed, featuring a dark atmospheric image with central overlay content. Sections maintain a consistent vertical rhythm, primarily defined by the 'sectionGap' of 64px. Content arrangement varies: some sections feature a centered stack, while others use a flexible two-column layout for text and image pairings. There is a clear use of card-based grids for features and information grouping, leveraging the 'Snow White' (#ffffff) and 'Slate Blue' (#112231) surfaces. The navigation is a sticky top bar with clearly segmented 'Personal' and 'Business' options.
 
-### Imagery
+## Similar Brands
 
-The visual language combines expressive full-bleed photography with clean, contained product shots and illustrative elements. Photography features human elements but also focuses on the product (the card). Product imagery is tightly cropped, often showcasing the Hot Coral card against dark, slightly blurred backgrounds. Icons are monoline, 'Graphite Stroke' colored outlines with a moderate stroke weight, used for navigation and feature differentiation. The overall density leans towards balanced, using imagery to establish atmosphere and convey product function without overwhelming text content.
+- **Revolut** — Shares a fintech aesthetic with strong accent colors against a clean, often light, UI and a clear type hierarchy.
+- **Starling Bank** — Similar approachable banking feel, using a defined brand color for CTAs and clear, functional design with generous spacing.
+- **N26** — Employs a precise, user-centric interface with simple forms, clear typography, and a prominent brand accent color for interactive elements.
+- **Wise (formerly TransferWise)** — Focuses on clarity and trust through a clean layout, strong text contrast, and the strategic use of a single accent color for calls to action.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-charcoal: #091723;
+  --color-snow-white: #ffffff;
+  --color-mist-gray: #f2f8f3;
+  --color-slate-blue: #112231;
+  --color-silver-dust: #e3ebe4;
+  --color-steel-gray: #6b747b;
+  --color-ash-gray: #b5b9bd;
+  --color-hot-coral: #ff4f40;
+  --color-muted-olive: #3b4c54;
+  --color-graphite-stroke: #75817;
+  --font-monzosanstext: 'MonzoSansText', Inter, Arial;
+  --font-monzosansdisplay: 'MonzoSansDisplay', Inter, Arial;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.65px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: -0.8px;
+  --text-body: 20px;
+  --leading-body: 1.38;
+  --tracking-body: -1px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 1.15;
+  --tracking-heading-sm: -1.6px;
+  --text-heading: 36px;
+  --leading-heading: 1.15;
+  --tracking-heading: -1.8px;
+  --text-heading-lg: 49px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0px;
+  --text-display: 61px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-cards: 32px;
+  --radius-badges: 4px;
+  --radius-buttons: 500px;
+  --radius-general: 64px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+  --surface-mist-gray: #f2f8f3;
+  --surface-snow-white: #ffffff;
+  --surface-slate-blue: #112231;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-charcoal: #091723;
+  --color-snow-white: #ffffff;
+  --color-mist-gray: #f2f8f3;
+  --color-slate-blue: #112231;
+  --color-silver-dust: #e3ebe4;
+  --color-steel-gray: #6b747b;
+  --color-ash-gray: #b5b9bd;
+  --color-hot-coral: #ff4f40;
+  --color-muted-olive: #3b4c54;
+  --color-graphite-stroke: #75817;
+  --font-monzosanstext: 'MonzoSansText', Inter, Arial;
+  --font-monzosansdisplay: 'MonzoSansDisplay', Inter, Arial;
+  --text-caption: 13px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.65px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: -0.8px;
+  --text-body: 20px;
+  --leading-body: 1.38;
+  --tracking-body: -1px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 1.15;
+  --tracking-heading-sm: -1.6px;
+  --text-heading: 36px;
+  --leading-heading: 1.15;
+  --tracking-heading: -1.8px;
+  --text-heading-lg: 49px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0px;
+  --text-display: 61px;
+  --leading-display: 1;
+  --tracking-display: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-cards: 32px;
+  --radius-badges: 4px;
+  --radius-buttons: 500px;
+  --radius-general: 64px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 10px 0px;
+  --surface-mist-gray: #f2f8f3;
+  --surface-snow-white: #ffffff;
+  --surface-slate-blue: #112231;
+}
+```

@@ -1,73 +1,214 @@
 ---
 version: alpha
-name: Monologue
-description: Monologue evokes a 'hacker garage at midnight' aesthetic, blending retro tech charm with modern dark mode sophistication. The design utilizes a deep, multi-layered neutral palette of dark grays and blacks as its canvas, punctuated by selective, vivid aqua accents. Typography combines a classic serif for imposing headlines with a monospaced font for functional elements, creating a distinctive contrast. Components are minimal, often transparent or outlined, and sparingly employ subtle inner shadows for depth rather than heavy elevation.
-colors:
-  absolute-zero: "#000000"
-  deep-graphite: "#010101"
-  carbon-black: "#191919"
-  dark-charcoal: "#282828"
-  slate-gray: "#3f3f3f"
-  ash-gray: "#7f7f7f"
-  near-white: "#ffffff"
-  sea-glass: "#062f34"
-  electric-aqua: "#19d0e8"
-  sky-burst: "#44ccff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.4
-    letterSpacing: 0.2px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.096px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.16px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.8px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 0.9
-    letterSpacing: -3.84px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 100000px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  filled-dark-button:
-    role: Primary action button
-  ghost-accent-button:
-    role: Secondary action or featured link
-  info-card:
-    role: Content container for features or testimonials
-  highlight-card-sea-glass:
-    role: Emphasized feature card
-  highlight-card-sky-burst:
-    role: Prominent feature card
-  media-player-card:
-    role: Distinctive object container, often for media
-  text-input-container:
-    role: Container for form inputs or code snippets
+name: "Monologue"
+description: "Monologue evokes a 'hacker garage at midnight' aesthetic, blending retro tech charm with modern dark mode sophistication. The design utilizes a deep, multi-layered neutral palette of dark grays and blacks as its canvas, punctuated by selective, vivid aqua accents. Typography combines a classic serif for imposing headlines with a monospaced font for functional elements, creating a distinctive contrast. Components are minimal, often transparent or outlined, and sparingly employ subtle inner shadows for depth rather than heavy elevation."
+theme: "dark"
+industry: "productivity"
+source_url: "https://www.monologue.to"
+refero_style_id: "8401cb26-91a3-4b46-941e-1c75790821eb"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508312122-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508312122-thumb.jpg"
+extracted_at: "2026-04-30T00:19:04.639Z"
 ---
 
-## Overview
+# Monologue — Style Reference
 
-**North Star:** Midnight Terminal with Aqua Glow. A luminous aqua cursor on a deep, textured black screen, where retro-futuristic forms hint at precision and understated power.
+> Midnight Terminal with Aqua Glow. A luminous aqua cursor on a deep, textured black screen, where retro-futuristic forms hint at precision and understated power.
+
+**Theme:** dark
+
+**Industry:** productivity
 
 Monologue evokes a 'hacker garage at midnight' aesthetic, blending retro tech charm with modern dark mode sophistication. The design utilizes a deep, multi-layered neutral palette of dark grays and blacks as its canvas, punctuated by selective, vivid aqua accents. Typography combines a classic serif for imposing headlines with a monospaced font for functional elements, creating a distinctive contrast. Components are minimal, often transparent or outlined, and sparingly employ subtle inner shadows for depth rather than heavy elevation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Deep Graphite | #010101 | `--color-deep-graphite` | Deep canvas for dark sections, primary dark surfaces, and high-contrast framing. Do not promote it to the primary CTA color; Background texture for visual depth, especially in header regions |
+| Carbon Black | #191919 | `--color-carbon-black` | Secondary surface background, subtle elevated elements |
+| Dark Charcoal | #282828 | `--color-dark-charcoal` | Filled button backgrounds, body text with low contrast, interactive element backgrounds |
+| Slate Gray | #3f3f3f | `--color-slate-gray` | Card backgrounds, subtle background textures |
+| Ash Gray | #7f7f7f | `--color-ash-gray` | Subtle shadow tints, secondary text elements |
+| Near White | #ffffff | `--color-near-white` | Primary headings and body text, accent borders, button text on dark backgrounds |
+| Sea Glass | #062f34 | `--color-sea-glass` | Card background for emphasized informational blocks |
+| Electric Aqua | #19d0e8 | `--color-electric-aqua` | Interactive link text, highlighted text, subtle decorative borders, functional icon accents |
+| Sky Burst | #44ccff | `--color-sky-burst` | Accented card backgrounds, decorative elements |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.2
+- **Role:** sans-serif — detected in extracted data but not described by AI
+
+### Instrument Serif
+
+- **Token:** `--font-instrument-serif`
+- **Weights:** 400
+- **Sizes:** 28px, 30px, 32px, 40px, 48px, 64px, 70px, 72px, 96px, 393px, 403px
+- **Line heights:** 0.90, 1.00, 1.10, 1.20, 1.30, 1.40
+- **Letter spacing:** -0.04em, -0.03em, -0.007em, -0.003em, -0.002em, 0.008em
+- **Role:** Display and primary headings – large, expressive serif that commands attention and establishes brand presence. Use with tight tracking for impact.
+
+### DM Mono
+
+- **Token:** `--font-dm-mono`
+- **Weights:** 400
+- **Sizes:** 10px, 12px, 14px, 15px, 16px, 18px, 20px, 32px
+- **Line heights:** 0.80, 1.00, 1.20, 1.40, 1.50
+- **Letter spacing:** -0.05em, -0.01em, -0.008em, -0.007em, -0.006em, 0.015em, 0.017em, 0.019em, 0.020em, 0.021em
+- **Role:** Monospaced text for code blocks, secondary headings, and functional UI elements – providing a retro-tech feel and clear information hierarchy.
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 17px
+- **Line heights:** 1.40
+- **Letter spacing:** normal
+- **Role:** Primary body text – a modern sans-serif for clear readability and informational content.
+
+### SF Pro Display Regular
+
+- **Token:** `--font-sf-pro-display-regular`
+- **Substitute:** SF Pro Text
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.40
+- **Letter spacing:** -0.006em
+- **Role:** Secondary body text and detailed descriptive elements – for compact and precise information presentation consistent with Apple's ecosystem.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.5
+- **Role:** system-ui — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.4 | 0.2px | `--text-caption` |
+| body | 16px | 1.5 | -0.096px | `--text-body` |
+| subheading | 20px | 1.2 | -0.16px | `--text-subheading` |
+| heading | 40px | 1.1 | -0.8px | `--text-heading` |
+| display | 96px | 0.9 | -3.84px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-39 | 39px | `--spacing-39` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-154 | 154px | `--spacing-154` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| avatars | 900px |
+| buttons | 100000px |
+| default | 8px |
+| largeCards | 40px |
+| smallElements | 4px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.7) 3px 3px 2px 0px inset, rgba(255, 255, 255, 0.25) 3px 2px 2px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px, rgba(0, 0, 0, 0.5) 1px 1px 1px 0px inset, rgba(0, 0, 0, 0.7) 2px 2px 12px 0px inset | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.63) 0px 0px 0px 1px | `--shadow-xl-3` |
+| xl-4 | rgb(14, 93, 102) 6px 6px 10px 0px inset, rgba(255, 255, 255, 0.2) 4px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px | `--shadow-xl-4` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 10px |
+
+## Components
+
+### Filled Dark Button
+
+**Role:** Primary action button
+
+Solid `Dark Charcoal` (#282828) background with `Near White` (#ffffff) text, using a generous `100000px` border-radius for a pill shape. Padding is `18px` horizontal and `20px` vertical.
+
+### Ghost Accent Button
+
+**Role:** Secondary action or featured link
+
+Transparent background with a `100000px` border-radius and a `Absolute Zero` (#000000) border of `6px` width. Text color uses the browser default link color, which is a rare artifact not part of the brand palette. **A brand-consistent approach would be to use Electric Aqua for text.**
+
+### Info Card
+
+**Role:** Content container for features or testimonials
+
+Uses `Carbon Black` (#191919) as background with `10px` border-radius and `16px` padding on all sides. No visible box shadow, achieving a flat, embedded aesthetic.
+
+### Highlight Card - Sea Glass
+
+**Role:** Emphasized feature card
+
+Features a `Sea Glass` (#062f34) background with `16px` padding and `10px` border-radius. Used for informational blocks that require a subtle, calm highlight.
+
+### Highlight Card - Sky Burst
+
+**Role:** Prominent feature card
+
+Utilizes a `Sky Burst` (#44ccff) background with `16px` padding and `10px` border-radius. Provides a more vivid, attention-grabbing background for key features.
+
+### Media Player Card
+
+**Role:** Distinctive object container, often for media
+
+Has a `Slate Gray` (#3f3f3f) background with prominent `52px` border-radius. Features a complex inset box shadow creating depth and a glossy effect. Padding is `12px` on all sides.
+
+### Text Input Container
+
+**Role:** Container for form inputs or code snippets
+
+Features a transparent background with `Near White` (#ffffff) borders and `10px` border-radius. Padding is `16px` on all sides. When in an active state, it's typically highlighted by the `Electric Aqua` accent.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize `Absolute Zero` (#000000) or `Deep Graphite` (#010101) as primary background colors for large sections.
 - Use `Instrument Serif` for all primary headlines, leveraging its unique character and impactful size variations.
@@ -77,7 +218,7 @@ Monologue evokes a 'hacker garage at midnight' aesthetic, blending retro tech ch
 - Employ the subtle inner shadow `rgba(0, 0, 0, 0.7) 3px 3px 2px 0px inset, rgba(255, 255, 255, 0.25) 3px 2px 2px 0px` on surfaces to add depth rather than heavy external shadows.
 - Maintain a conservative compact density, using `10px` as a default `elementGap` between UI elements and `16px` for `cardPadding`.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or overly saturated colors outside of the designated `Electric Aqua` and `Sky Burst` accents.
 - Do not introduce heavy drop shadows or strong external elevation as the design favors subtle inset shadows for depth.
@@ -87,10 +228,185 @@ Monologue evokes a 'hacker garage at midnight' aesthetic, blending retro tech ch
 - Avoid excessive use of gradients; if used, they should be subtle dark-to-dark transitions for background textures, not vivid multi-color displays.
 - Do not use sharp corners; the design consistently uses rounded corners, with `10px` or `8px` being common for main containers and `100000px` for interactive elements.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas | #000000 | Primary page background, deepest layer. |
+| 2 | Base Surface | #010101 | Dominant background for content sections and large panels. |
+| 3 | Card Surface | #191919 | Background for individual cards and feature blocks. |
+| 4 | Interactive Surface | #282828 | Background for filled buttons and active input fields. |
+
+## Elevation
+
+- **Media Player Card:** `rgba(0, 0, 0, 0.25) 0px 5.0405px 10.207px 0px, rgba(201, 201, 201, 0.15) 0px 21.9128px 7.30426px 0px inset, rgba(0, 0, 0, 0.15) 0px -24.3475px 6.33036px 0px inset`
+- **Subtle Inner Shadow:** `rgba(0, 0, 0, 0.7) 3px 3px 2px 0px inset, rgba(255, 255, 255, 0.25) 3px 2px 2px 0px`
+
+## Imagery
+
+The visual language focuses on stylized product representations and abstract tech-inspired graphics. Photography is minimal, if present, and would likely be high-contrast and monochrome. Illustrations are flat, geometric, and often incorporate the vivid `Electric Aqua` accent color, suggesting digital interfaces or data visualization. Icons are outlined, simple, and functional, maintaining a high stroke weight for clarity within the dark theme. Imagery serves both decorative atmosphere and explanatory content, often highlighting product features or conceptual processes. The density is medium, with visuals integrated into content blocks rather than full-bleed, ensuring the UI remains the primary focus.
+
+## Layout
 
 The page primarily uses a max-width contained layout, likely around `1200px`, centered on the screen. The hero section is full-bleed dark, featuring prominent `Instrument Serif` headlines and a central product graphic or media player, with call-to-action buttons below it. Content sections often follow an alternating pattern of text on one side and a product screenshot/illustration on the other. Feature lists and other information are arranged in vertically stacked blocks, sometimes within cards. The overall rhythm is consistent vertical spacing between sections. Navigation is a sticky top bar, likely minimal in appearance. The density is compact, prioritizing information without feeling cramped, with clear visual separation between content blocks.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on stylized product representations and abstract tech-inspired graphics. Photography is minimal, if present, and would likely be high-contrast and monochrome. Illustrations are flat, geometric, and often incorporate the vivid `Electric Aqua` accent color, suggesting digital interfaces or data visualization. Icons are outlined, simple, and functional, maintaining a high stroke weight for clarity within the dark theme. Imagery serves both decorative atmosphere and explanatory content, often highlighting product features or conceptual processes. The density is medium, with visuals integrated into content blocks rather than full-bleed, ensuring the UI remains the primary focus.
+- **Raycast** — Dark-mode UI with a focus on productivity, compact component design, and a strong emphasis on typography for visual hierarchy.
+- **Linear** — Minimalist dark theme, subtle use of primary accent color for interactive states, and emphasis on clear, functional typography.
+- **Notion (dark mode)** — Structured dark interface, use of varied text sizes for information density within a neutral palette, and subtle card-based layouts.
+- **Figma (dark mode)** — Dark interface for creative tools, relying on grayscale definition and minimal color accents for functionality, with a lean towards monospaced or functional fonts.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-deep-graphite: #010101;
+  --color-carbon-black: #191919;
+  --color-dark-charcoal: #282828;
+  --color-slate-gray: #3f3f3f;
+  --color-ash-gray: #7f7f7f;
+  --color-near-white: #ffffff;
+  --color-sea-glass: #062f34;
+  --color-electric-aqua: #19d0e8;
+  --color-sky-burst: #44ccff;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-instrument-serif: 'Instrument Serif', ui-sans-serif, system-ui, sans-serif;
+  --font-dm-mono: 'DM Mono', ui-sans-serif, system-ui, sans-serif;
+  --font-geist: 'Geist', Inter;
+  --font-sf-pro-display-regular: 'SF Pro Display Regular', SF Pro Text;
+  --font-system-ui: 'system-ui', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.2px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.096px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.16px;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.8px;
+  --text-display: 96px;
+  --leading-display: 0.9;
+  --tracking-display: -3.84px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-104: 104px;
+  --spacing-154: 154px;
+  --radius-cards: 10px;
+  --radius-avatars: 900px;
+  --radius-buttons: 100000px;
+  --radius-default: 8px;
+  --radius-largecards: 40px;
+  --radius-smallelements: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.7) 3px 3px 2px 0px inset, rgba(255, 255, 255, 0.25) 3px 2px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px, rgba(0, 0, 0, 0.5) 1px 1px 1px 0px inset, rgba(0, 0, 0, 0.7) 2px 2px 12px 0px inset;
+  --shadow-xl-3: rgba(0, 0, 0, 0.63) 0px 0px 0px 1px;
+  --shadow-xl-4: rgb(14, 93, 102) 6px 6px 10px 0px inset, rgba(255, 255, 255, 0.2) 4px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px;
+  --surface-canvas: #000000;
+  --surface-base-surface: #010101;
+  --surface-card-surface: #191919;
+  --surface-interactive-surface: #282828;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-deep-graphite: #010101;
+  --color-carbon-black: #191919;
+  --color-dark-charcoal: #282828;
+  --color-slate-gray: #3f3f3f;
+  --color-ash-gray: #7f7f7f;
+  --color-near-white: #ffffff;
+  --color-sea-glass: #062f34;
+  --color-electric-aqua: #19d0e8;
+  --color-sky-burst: #44ccff;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-instrument-serif: 'Instrument Serif', ui-sans-serif, system-ui, sans-serif;
+  --font-dm-mono: 'DM Mono', ui-sans-serif, system-ui, sans-serif;
+  --font-geist: 'Geist', Inter;
+  --font-sf-pro-display-regular: 'SF Pro Display Regular', SF Pro Text;
+  --font-system-ui: 'system-ui', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.2px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.096px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.16px;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.8px;
+  --text-display: 96px;
+  --leading-display: 0.9;
+  --tracking-display: -3.84px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-104: 104px;
+  --spacing-154: 154px;
+  --radius-cards: 10px;
+  --radius-avatars: 900px;
+  --radius-buttons: 100000px;
+  --radius-default: 8px;
+  --radius-largecards: 40px;
+  --radius-smallelements: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.7) 3px 3px 2px 0px inset, rgba(255, 255, 255, 0.25) 3px 2px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px, rgba(0, 0, 0, 0.5) 1px 1px 1px 0px inset, rgba(0, 0, 0, 0.7) 2px 2px 12px 0px inset;
+  --shadow-xl-3: rgba(0, 0, 0, 0.63) 0px 0px 0px 1px;
+  --shadow-xl-4: rgb(14, 93, 102) 6px 6px 10px 0px inset, rgba(255, 255, 255, 0.2) 4px 4px 4px 0px, rgba(255, 255, 255, 0.25) 1px 1px 2px 0px;
+  --surface-canvas: #000000;
+  --surface-base-surface: #010101;
+  --surface-card-surface: #191919;
+  --surface-interactive-surface: #282828;
+}
+```
