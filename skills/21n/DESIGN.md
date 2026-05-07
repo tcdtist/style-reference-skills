@@ -1,71 +1,141 @@
 ---
 version: alpha
-name: 21n
-description: This design system presents a welcoming yet authoritative digital experience, reminiscent of a well-organized personal library. Its light theme and ample white space provide a calm backdrop for the sharp, precise typography. The muted, near-achromatic palette, punctuated by specific brand-colored highlights, directs attention without visual clutter, creating an environment balancing technical clarity with approachable softness through its rounded buttons.
-colors:
-  cloud-white: "#ffffff"
-  faint-fog: "#f9f9fb"
-  polar-mist: "#eff0f6"
-  light-ash: "#e5e7eb"
-  graphite: "#545454"
-  deep-slate: "#333333"
-  accent-blue: "#2c70dd"
-  accent-green: "#24b26d"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.75
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.75
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.5
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.25
-  display:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1.07
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.07
-spacing:
-  buttonRadius: 12.53px
-  elementGap: 4px
-  sectionGap: 50px
-components:
-  download-cta-button-group:
-    role: 
-  pricing-card:
-    role: 
-  feature-badge-tag-collection:
-    role: 
-  default-button:
-    role: Call to action
-  card-action-button:
-    role: Call to action within a card or content block
-  pill-button:
-    role: Secondary call to action or tag
+name: "21n"
+description: "This design system presents a welcoming yet authoritative digital experience, reminiscent of a well-organized personal library. Its light theme and ample white space provide a calm backdrop for the sharp, precise typography. The muted, near-achromatic palette, punctuated by specific brand-colored highlights, directs attention without visual clutter, creating an environment balancing technical clarity with approachable softness through its rounded buttons."
+theme: "light"
+industry: "other"
+source_url: "https://memotron.app"
+refero_style_id: "68d18deb-bb09-4258-8024-001af9c844c0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933489320-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933489320-thumb.jpg"
+extracted_at: "2026-04-11T18:51:43.700Z"
 ---
 
-## Overview
+# 21n — Style Reference
 
-**North Star:** Architectural blueprint on white marble. Clean lines and precise text on a bright, expansive background, with subtle, rounded interactive elements.
+> Architectural blueprint on white marble. Clean lines and precise text on a bright, expansive background, with subtle, rounded interactive elements.
+
+**Theme:** light
+
+**Industry:** other
 
 This design system presents a welcoming yet authoritative digital experience, reminiscent of a well-organized personal library. Its light theme and ample white space provide a calm backdrop for the sharp, precise typography. The muted, near-achromatic palette, punctuated by specific brand-colored highlights, directs attention without visual clutter, creating an environment balancing technical clarity with approachable softness through its rounded buttons.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud White | #ffffff | `--color-cloud-white` | Page backgrounds, button text, icon fills. |
+| Faint Fog | #f9f9fb | `--color-faint-fog` | Subtle background for UI elements, slightly off-white. |
+| Polar Mist | #eff0f6 | `--color-polar-mist` | Subtle background for UI elements, slightly off-white. |
+| Light Ash | #e5e7eb | `--color-light-ash` | Borders, dividers, card edges, providing subtle visual separation. |
+| Graphite | #545454 | `--color-graphite` | Secondary text, subtle borders, establishing a softer contrast than pure black. |
+| Deep Slate | #333333 | `--color-deep-slate` | Primary text, headings, prominent icons, asserting clear hierarchy on light backgrounds. |
+| Accent Blue | #2c70dd | `--color-accent-blue` | Highlighting interactive elements, links, and key icons, signifying actionability. |
+| Accent Green | #24b26d | `--color-accent-green` | Secondary interactive elements and success indicators, providing an alternative accent. |
+
+## Tokens — Typography
+
+### Sen
+
+- **Token:** `--font-sen`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 13px, 15px, 16px, 17px, 19px, 22px, 36px, 44px, 56px
+- **Line heights:** 1.07, 1.25, 1.50, 1.75, 1.94, 2.21
+- **Role:** Primary typeface for all text content; its clean, geometric forms with slightly rounded terminals contribute to both modern clarity for headings and comfortable readability for body text. The range of weights provides flexibility for hierarchy without introducing a second font family.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.75 | — | `--text-caption` |
+| body-sm | 15px | 1.75 | — | `--text-body-sm` |
+| heading-sm | 19px | 1.5 | — | `--text-heading-sm` |
+| heading | 22px | 1.25 | — | `--text-heading` |
+| heading-lg | 36px | 1.25 | — | `--text-heading-lg` |
+| display | 44px | 1.07 | — | `--text-display` |
+| display-lg | 56px | 1.07 | — | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-84 | 84px | `--spacing-84` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-95 | 95px | `--spacing-95` |
+| spacing-104 | 104px | `--spacing-104` |
+| spacing-134 | 134px | `--spacing-134` |
+| spacing-155 | 155px | `--spacing-155` |
+| spacing-167 | 167px | `--spacing-167` |
+| spacing-203 | 203px | `--spacing-203` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pills | 9999px |
+| buttons | 12.53px |
+| default | 6.26px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1247px |
+| sectionGap | 50px |
+| cardPadding | 25px |
+| elementGap | 4px |
+
+## Components
+
+### Download CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Pricing Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Badge / Tag Collection
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Default Button
+
+**Role:** Call to action
+
+Background rgb(255, 255, 255), text rgb(51, 51, 51), border rgb(223, 226, 236), with 12.53px border radius and 25.05px padding on all sides. Used for standard actions.
+
+### Card Action Button
+
+**Role:** Call to action within a card or content block
+
+Similar to Default Button, but with 25.05px vertical padding and 0px horizontal padding, border rgb(229, 231, 235), and 12.53px border radius. This creates a visually distinct button often used in grouped content.
+
+### Pill Button
+
+**Role:** Secondary call to action or tag
+
+Transparent background, text rgb(51, 51, 51), and a 9999px border radius for a distinct pill shape. Used for less prominent actions or tags, with 12.53px horizontal padding and no vertical padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Sen font at weight 700 for all display headings exceeding 36px, rendered in Deep Slate (#333333).
 - Maintain a clear visual hierarchy using Deep Slate (#333333) for primary text and Graphite (#545454) for secondary text and details.
@@ -75,7 +145,7 @@ This design system presents a welcoming yet authoritative digital experience, re
 - Apply 25px horizontal padding and 17px vertical padding to content blocks for consistent 'comfortable' density.
 - Ensure section transitions primarily use 'Cloud White' (#ffffff) backgrounds, maintaining a clean, expansive aesthetic.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for backgrounds; maintain the near-achromatic palette for large surfaces.
 - Do not deviate from the Sen typeface; a single family ensures typographic consistency even with varied weights and sizes.
@@ -85,10 +155,124 @@ This design system presents a welcoming yet authoritative digital experience, re
 - Do not use dark backgrounds for main content areas; reserve them for specific, high-contrast CTA buttons if needed.
 - Do not introduce gradients; the design relies on solid colors for its clean, precise aesthetic.
 
-### Layout
+## Imagery
+
+The visual language is UI-dominant with selective, abstract background graphics. Product screenshots are central, depicting the application across multiple devices (desktop, tablet, mobile), presented with a slight perspective. These images are treated without borders and are accompanied by playful, abstract wave patterns and small, scattered red shapes in the background, which introduce a subtle softness and dynamism against the otherwise clean UI. Icons are simple, outlined, and monochromatic, aligning with the overall minimalist aesthetic.
+
+## Layout
 
 The page adheres to a max-width 1247px centered content model, with ample vertical whitespace between sections. The hero section features a prominent, centered headline and subtext, followed by centered call-to-action buttons. Below the hero, content often includes device mockups showcasing the product, suggesting a product-focused, visually driven approach. Navigation is a sticky top bar with text links and two distinct pill-shaped buttons. The overall rhythm is spacious and airy, guiding the eye through information without feeling cluttered, using a consistent vertical pacing of 50px between major sections.
 
-### Imagery
+## Similar Brands
 
-The visual language is UI-dominant with selective, abstract background graphics. Product screenshots are central, depicting the application across multiple devices (desktop, tablet, mobile), presented with a slight perspective. These images are treated without borders and are accompanied by playful, abstract wave patterns and small, scattered red shapes in the background, which introduce a subtle softness and dynamism against the otherwise clean UI. Icons are simple, outlined, and monochromatic, aligning with the overall minimalist aesthetic.
+- **Notion** — Employs a clean, minimalist aesthetic with ample whitespace and a focus on legible typography for knowledge management.
+- **Obsidian** — Prioritizes a clear, functional UI with a strong emphasis on content, minimal ornamentation, and a single, elegant typeface.
+- **Linear** — Utilizes a highly refined, almost monochrome design with precise typography and subtle interactive elements, favoring clarity over heavy branding.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-white: #ffffff;
+  --color-faint-fog: #f9f9fb;
+  --color-polar-mist: #eff0f6;
+  --color-light-ash: #e5e7eb;
+  --color-graphite: #545454;
+  --color-deep-slate: #333333;
+  --color-accent-blue: #2c70dd;
+  --color-accent-green: #24b26d;
+  --font-sen: 'Sen', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.75;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.75;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.5;
+  --text-heading: 22px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.25;
+  --text-display: 44px;
+  --leading-display: 1.07;
+  --text-display-lg: 56px;
+  --leading-display-lg: 1.07;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-13: 13px;
+  --spacing-17: 17px;
+  --spacing-21: 21px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-33: 33px;
+  --spacing-38: 38px;
+  --spacing-50: 50px;
+  --spacing-67: 67px;
+  --spacing-84: 84px;
+  --spacing-90: 90px;
+  --spacing-95: 95px;
+  --spacing-104: 104px;
+  --spacing-134: 134px;
+  --spacing-155: 155px;
+  --spacing-167: 167px;
+  --spacing-203: 203px;
+  --radius-pills: 9999px;
+  --radius-buttons: 12.53px;
+  --radius-default: 6.26px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-white: #ffffff;
+  --color-faint-fog: #f9f9fb;
+  --color-polar-mist: #eff0f6;
+  --color-light-ash: #e5e7eb;
+  --color-graphite: #545454;
+  --color-deep-slate: #333333;
+  --color-accent-blue: #2c70dd;
+  --color-accent-green: #24b26d;
+  --font-sen: 'Sen', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.75;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.75;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.5;
+  --text-heading: 22px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.25;
+  --text-display: 44px;
+  --leading-display: 1.07;
+  --text-display-lg: 56px;
+  --leading-display-lg: 1.07;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-13: 13px;
+  --spacing-17: 17px;
+  --spacing-21: 21px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-33: 33px;
+  --spacing-38: 38px;
+  --spacing-50: 50px;
+  --spacing-67: 67px;
+  --spacing-84: 84px;
+  --spacing-90: 90px;
+  --spacing-95: 95px;
+  --spacing-104: 104px;
+  --spacing-134: 134px;
+  --spacing-155: 155px;
+  --spacing-167: 167px;
+  --spacing-203: 203px;
+  --radius-pills: 9999px;
+  --radius-buttons: 12.53px;
+  --radius-default: 6.26px;
+}
+```

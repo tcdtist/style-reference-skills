@@ -1,61 +1,129 @@
 ---
 version: alpha
-name: 2020
-description: Album Colors functions as a dynamically colored digital poster, where the entire canvas shifts hue to celebrate album art. Its visual language relies on bold, all-caps typography set against a monochrome but interchangeable background. Interaction elements are ghosted, defined by stark borders rather than fills, reinforcing a sense of understated presence. The structure prioritizes a clear, grid-like presentation of content within a constantly re-colored frame.
-colors:
-  canvas: "#e4822e"
-  slate-text: "#4f503e"
-  white-contrast: "#ffffff"
-  black-accent: "#000000"
-  dark-overlay: "#081618"
-  deep-red: "#b13225"
-  deep-orange: "#c97f40"
-  pale-green: "#99aa91"
-  pale-pink: "#feccc0"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.6
-    letterSpacing: -0.8px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1.2
-    letterSpacing: -1.05px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 0.8
-    letterSpacing: -3.75px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 137px
-    lineHeight: 0.79
-    letterSpacing: -6.85px
-spacing:
-  elementGap: 20px
-  sectionGap: 40px
-components:
-  ghost-button:
-    role: Interactive element for navigation or actions
-  content-wrapper:
-    role: Container for album art and related text
-  main-heading:
-    role: Primary page title
-  subheading:
-    role: Secondary page title or description
-  body-text:
-    role: Descriptive text
+name: "2020"
+description: "Album Colors functions as a dynamically colored digital poster, where the entire canvas shifts hue to celebrate album art. Its visual language relies on bold, all-caps typography set against a monochrome but interchangeable background. Interaction elements are ghosted, defined by stark borders rather than fills, reinforcing a sense of understated presence. The structure prioritizes a clear, grid-like presentation of content within a constantly re-colored frame."
+theme: "light"
+industry: "media"
+source_url: "https://albumcolors.com"
+refero_style_id: "ac660bff-3b21-4753-a80f-3692da6e735e"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519269429-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519269429-thumb.jpg"
+extracted_at: "2026-04-30T03:21:28.956Z"
 ---
 
-## Overview
+# 2020 — Style Reference
 
-**North Star:** Shifting monochrome poster
+> Shifting monochrome poster
+
+**Theme:** light
+
+**Industry:** media
 
 Album Colors functions as a dynamically colored digital poster, where the entire canvas shifts hue to celebrate album art. Its visual language relies on bold, all-caps typography set against a monochrome but interchangeable background. Interaction elements are ghosted, defined by stark borders rather than fills, reinforcing a sense of understated presence. The structure prioritizes a clear, grid-like presentation of content within a constantly re-colored frame.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #e4822e | `--color-canvas` | Dominant background color that dynamically shifts, setting the overall mood of the page |
+| Slate Text | #4f503e | `--color-slate-text` | Primary text color for headings, body, and all interactive elements. Controls the visual weight against the dynamic canvas |
+| White Contrast | #ffffff | `--color-white-contrast` | Used for occasional backgrounds contrasting with the vibrant canvas |
+| Black Accent | #000000 | `--color-black-accent` | Used for subtle backgrounds and in contrast to white backgrounds |
+| Dark Overlay | #081618 | `--color-dark-overlay` | Used for occasional overlay backgrounds |
+| Deep Red | #b13225 | `--color-deep-red` | One of several dynamic occasional background colors for the canvas |
+| Deep Orange | #c97f40 | `--color-deep-orange` | One of several dynamic occasional background colors for the canvas |
+| Pale Green | #99aa91 | `--color-pale-green` | One of several dynamic occasional background colors for the canvas, and for occasional links |
+| Pale Pink | #feccc0 | `--color-pale-pink` | One of several dynamic occasional background colors for the canvas, and for occasional links |
+
+## Tokens — Typography
+
+### Helvetica LT Pro
+
+- **Token:** `--font-helvetica-lt-pro`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 16px, 21px, 75px, 137px
+- **Line heights:** 0.79, 0.80, 0.90, 1.00, 1.60
+- **Letter spacing:** -0.05em
+- **Role:** Primary typeface for all headings and body text, providing a geometric, condensed feel. The tight letter-spacing contributes to its poster-like appearance, especially at larger sizes.
+
+### Helvetica
+
+- **Token:** `--font-helvetica`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 21px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Used for ghost buttons, maintaining readability even without explicit letter-spacing.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.6 | -0.8px | `--text-body` |
+| subheading | 21px | 1.2 | -1.05px | `--text-subheading` |
+| heading | 75px | 0.8 | -3.75px | `--text-heading` |
+| display | 137px | 0.79 | -6.85px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Interactive element for navigation or actions
+
+Text is Slate Text (#4f503e), 21px Helvetica weight 400. Has a 0px border-radius, with 0px padding. Defined by a 1px solid Slate Text (#4f503e) border.
+
+### Content Wrapper
+
+**Role:** Container for album art and related text
+
+No specific background color; inherits the dynamic Canvas background. Contains varying individual album details.
+
+### Main Heading
+
+**Role:** Primary page title
+
+Slate Text (#4f503e), 137px Helvetica LT Pro weight 400, line-height 0.79, letter-spacing -0.05em.
+
+### Subheading
+
+**Role:** Secondary page title or description
+
+Slate Text (#4f503e), 75px Helvetica LT Pro weight 400, line-height 0.80, letter-spacing -0.05em.
+
+### Body Text
+
+**Role:** Descriptive text
+
+Slate Text (#4f503e), 16px Helvetica LT Pro weight 400, line-height 1.6, letter-spacing -0.05em.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Slate Text (#4f503e) for all text and ghost button borders against the dynamic canvas.
 - Apply 0px border-radius consistently for all interactive elements and containers.
@@ -65,7 +133,7 @@ Album Colors functions as a dynamically colored digital poster, where the entire
 - Employ the ghost button style (text color + border color, no fill) for all primary interactive elements.
 - Prioritize stark visual contrast between text and background, typically Slate Text (#4f503e) on a vivid brand color or White Contrast (#ffffff) on Dark Overlay (#081618).
 
-### Don'ts
+### Don't
 
 - Avoid using filled buttons; all actions should be ghosted with borders.
 - Do not introduce rounded corners; maintain sharp, rectilinear shapes for all elements.
@@ -75,10 +143,85 @@ Album Colors functions as a dynamically colored digital poster, where the entire
 - Avoid adding extraneous decorations or complex gradients on surfaces.
 - Do not use subtle variations of neutrals if a clear contrast is available; keep the palette stark.
 
-### Layout
+## Imagery
+
+The site's primary imagery consists of prominent album cover art, dynamically displayed within a clean editorial context. These are treated as contained, rectangular elements without rounded corners or complex masking. There are no lifestyle photos or abstract illustrations; the visual focus remains on the album art itself, presented directly to showcase its colors and design. Icons, if present, are minimal and functional, depicted with sharp, clean lines and inheriting the main text color. The density is image-heavy, with large album covers dominating sections, balanced by concise, impactful typography.
+
+## Layout
 
 The page primarily uses a full-bleed layout, where the dynamically colored Canvas extends edge-to-edge. Content appears to be centered within this broad frame. The hero section features a large, stacked headline and subheading against the colored background. Below this, album covers are presented in a grid-like fashion, often accompanied by artist and title in a secondary typeface. Vertical spacing between sections is consistent, employing a simple stacked arrangement. There is no visible complex grid, sidebars, or mega-menus; navigation is minimal, characterized by ghosted textual links.
 
-### Imagery
+## Similar Brands
 
-The site's primary imagery consists of prominent album cover art, dynamically displayed within a clean editorial context. These are treated as contained, rectangular elements without rounded corners or complex masking. There are no lifestyle photos or abstract illustrations; the visual focus remains on the album art itself, presented directly to showcase its colors and design. Icons, if present, are minimal and functional, depicted with sharp, clean lines and inheriting the main text color. The density is image-heavy, with large album covers dominating sections, balanced by concise, impactful typography.
+- **Spotify Wrapped** — Uses large, impactful typography against a dynamically colored, full-bleed background to present data in a personalized, poster-like format.
+- **Are.na** — Features a strong focus on content display within a minimalist UI, often employing ghosted interactive elements and a distinct typographic voice.
+- **AIGA Eye on Design** — Employs bold headlines, a constrained color palette, and a clear, editorial grid-based layout for visual content.
+- **Google Arts & Culture** — Presents large-scale visual content (artworks, photographs) in a clean, often full-bleed layout with minimal UI overlay and strong type.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #e4822e;
+  --color-slate-text: #4f503e;
+  --color-white-contrast: #ffffff;
+  --color-black-accent: #000000;
+  --color-dark-overlay: #081618;
+  --color-deep-red: #b13225;
+  --color-deep-orange: #c97f40;
+  --color-pale-green: #99aa91;
+  --color-pale-pink: #feccc0;
+  --font-helvetica-lt-pro: 'Helvetica LT Pro', Helvetica Neue;
+  --font-helvetica: 'Helvetica', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --tracking-body: -0.8px;
+  --text-subheading: 21px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -1.05px;
+  --text-heading: 75px;
+  --leading-heading: 0.8;
+  --tracking-heading: -3.75px;
+  --text-display: 137px;
+  --leading-display: 0.79;
+  --tracking-display: -6.85px;
+  --spacing-20: 20px;
+  --spacing-40: 40px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #e4822e;
+  --color-slate-text: #4f503e;
+  --color-white-contrast: #ffffff;
+  --color-black-accent: #000000;
+  --color-dark-overlay: #081618;
+  --color-deep-red: #b13225;
+  --color-deep-orange: #c97f40;
+  --color-pale-green: #99aa91;
+  --color-pale-pink: #feccc0;
+  --font-helvetica-lt-pro: 'Helvetica LT Pro', Helvetica Neue;
+  --font-helvetica: 'Helvetica', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --tracking-body: -0.8px;
+  --text-subheading: 21px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -1.05px;
+  --text-heading: 75px;
+  --leading-heading: 0.8;
+  --tracking-heading: -3.75px;
+  --text-display: 137px;
+  --leading-display: 0.79;
+  --tracking-display: -6.85px;
+  --spacing-20: 20px;
+  --spacing-40: 40px;
+  --radius-default: 0px;
+}
+```
