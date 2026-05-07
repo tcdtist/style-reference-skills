@@ -1,32 +1,106 @@
 ---
 version: alpha
-name: Bastien Allard
-description: Bastien Allard's design system creates a 'digital canvas' aesthetic: a stark white background accented by deep black typography and subtle greys, evoking the precision of architectural blueprints. The dominant characteristic is a compact, dense arrangement of content, with an emphasis on strong typographic forms. UI elements are rendered with fine borders rather than heavy fills, giving an airy yet structured feel. The visual language prioritizes information density and clarity through a high-contrast monochrome palette, with subtle hints of interaction through border changes, suggesting a lean, content-focused experience.
-colors:
-  canvas-white: "#ffffff"
-  midnight-graphite: "#000000"
-  storm-gray: "#333333"
-  silver-haze: "#e5e5e5"
-  ocean-blue: "#0064e1"
-spacing:
-  elementGap: 13px
-  sectionGap: 64px
-components:
-  text-link:
-    role: Interactive text link, border changes on hover/focus.
-  project-card-implicit:
-    role: Container for individual project previews.
-  header-navigation-item:
-    role: Top-level navigation link.
+name: "Bastien Allard"
+description: "Bastien Allard's design system creates a 'digital canvas' aesthetic: a stark white background accented by deep black typography and subtle greys, evoking the precision of architectural blueprints. The dominant characteristic is a compact, dense arrangement of content, with an emphasis on strong typographic forms. UI elements are rendered with fine borders rather than heavy fills, giving an airy yet structured feel. The visual language prioritizes information density and clarity through a high-contrast monochrome palette, with subtle hints of interaction through border changes, suggesting a lean, content-focused experience."
+theme: "light"
+industry: "design"
+source_url: "https://bastienallard.com"
+refero_style_id: "3d126fb1-a7f2-439d-be96-04e4bacee8b1"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519120467-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519120467-thumb.jpg"
+extracted_at: "2026-04-30T03:19:00.033Z"
 ---
 
-## Overview
+# Bastien Allard — Style Reference
 
-**North Star:** Architectural Blueprint Canvas
+> Architectural Blueprint Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Bastien Allard's design system creates a 'digital canvas' aesthetic: a stark white background accented by deep black typography and subtle greys, evoking the precision of architectural blueprints. The dominant characteristic is a compact, dense arrangement of content, with an emphasis on strong typographic forms. UI elements are rendered with fine borders rather than heavy fills, giving an airy yet structured feel. The visual language prioritizes information density and clarity through a high-contrast monochrome palette, with subtle hints of interaction through border changes, suggesting a lean, content-focused experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page background, primary surface for content blocks |
+| Midnight Graphite | #000000 | `--color-midnight-graphite` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Storm Gray | #333333 | `--color-storm-gray` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Silver Haze | #e5e5e5 | `--color-silver-haze` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Ocean Blue | #0064e1 | `--color-ocean-blue` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Diatype Variable
+
+- **Token:** `--font-diatype-variable`
+- **Substitute:** Inter
+- **Weights:** 540
+- **Sizes:** 16px
+- **Line heights:** 1.15
+- **Letter spacing:** -0.0020em at 16px
+- **Role:** Primary font for all display text and body copy. Its variable nature allows fine-tuning for visual balance.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 15px
+- **Line heights:** 1.65
+- **Letter spacing:** normal
+- **Role:** Fallback font for system text and secondary information, ensuring readability across platforms.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 24px |
+| elementGap | 13px |
+
+## Components
+
+### Text Link
+
+**Role:** Interactive text link, border changes on hover/focus.
+
+Text in Storm Gray (#333333), 16px Diatype Variable, weight 540. Underline on hover/focus is a 1px solid Silver Haze (#e5e5e5) border-bottom.
+
+### Project Card (Implicit)
+
+**Role:** Container for individual project previews.
+
+Implied card structure with a white background and sharp, 0px radius corners. A 1px solid border in Midnight Graphite (#000000) or Storm Gray (#333333) likely defines its edges.
+
+### Header Navigation Item
+
+**Role:** Top-level navigation link.
+
+Text in Midnight Graphite (#000000), 16px Diatype Variable, weight 540. No visual distinction beyond text color, implying minimalist navigation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast between text and background: use Midnight Graphite (#000000) or Storm Gray (#333333) on Canvas White (#ffffff).
 - Maintain a compact information density across layouts, minimizing excessive whitespace between content blocks.
@@ -36,7 +110,7 @@ Bastien Allard's design system creates a 'digital canvas' aesthetic: a stark whi
 - Use Midnight Graphite (#000000) for all prominent headings and labels to establish visual hierarchy.
 - Ensure all text links are styled with Strom Gray (#333333) and hint interaction through border-bottom changes, not color changes.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated colors for backgrounds or large areas; maintain an achromatic base palette.
 - Do not introduce soft shadows or excessive elevation – rely on borders and negative space for component separation.
@@ -46,10 +120,57 @@ Bastien Allard's design system creates a 'digital canvas' aesthetic: a stark whi
 - Do not introduce heavy gradient overlays or background images that detract from content clarity.
 - Avoid large-scale photography or illustrations that aren't tightly integrated into a structured grid or content block.
 
-### Layout
+## Imagery
+
+This site uses a combination of high-contrast, minimalist product/case study photography and dark, atmospheric abstract imagery. Photography is typically tightly cropped or contained within specific UI elements, often against dark backgrounds that contrast with the overall light theme. The abstract images, like the sunset scene, convey a mood without being overly literal, often serving as background elements. Icons are implicit, likely using minimal, outlined styles if present, maintaining the overall clean aesthetic. Imagery plays a supportive role, providing visual interest and context without dominating the page, enhancing the text-dominant interface.
+
+## Layout
 
 The page exhibits a clean, contained layout, centered on the screen with implied maximum width constraints. The hero section features a stark header with minimal information – name, title, and current time. Content below organizes into a grid-like structure for showcasing projects, often with distinct visual blocks for text alongside imagery. Sections appear to have consistent vertical spacing, creating an organized, deliberate rhythm. The overall arrangement feels symmetrical and balanced for readability, leaning towards a text-left/image-right or centered stack compositional approach for feature presentation. Navigation is limited to a minimal top header.
 
-### Imagery
+## Similar Brands
 
-This site uses a combination of high-contrast, minimalist product/case study photography and dark, atmospheric abstract imagery. Photography is typically tightly cropped or contained within specific UI elements, often against dark backgrounds that contrast with the overall light theme. The abstract images, like the sunset scene, convey a mood without being overly literal, often serving as background elements. Icons are implicit, likely using minimal, outlined styles if present, maintaining the overall clean aesthetic. Imagery plays a supportive role, providing visual interest and context without dominating the page, enhancing the text-dominant interface.
+- **Figma** — Minimalist, high-contrast UI with a focus on deep black text on white backgrounds and subtle borders for controls.
+- **Linear** — High information density, strong typographic hierarchy, and a lean, achromatic design with precise spacing and sharp corners.
+- **Read.cv** — Portfolio-centric site that prioritizes crisp typography, clean layouts, and a monochrome palette with distinct borders to delineate content.
+- **Stripe (documentation)** — Emphasizes clear content organization with a simple, high-contrast color scheme and precise textual hierarchy.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-graphite: #000000;
+  --color-storm-gray: #333333;
+  --color-silver-haze: #e5e5e5;
+  --color-ocean-blue: #0064e1;
+  --font-diatype-variable: 'Diatype Variable', Inter;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-24: 24px;
+  --spacing-64: 64px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-graphite: #000000;
+  --color-storm-gray: #333333;
+  --color-silver-haze: #e5e5e5;
+  --color-ocean-blue: #0064e1;
+  --font-diatype-variable: 'Diatype Variable', Inter;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-24: 24px;
+  --spacing-64: 64px;
+  --radius-default: 0px;
+}
+```
