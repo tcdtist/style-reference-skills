@@ -1,73 +1,139 @@
 ---
 version: alpha
-name: Stocketa
-description: Stocketa presents a focused financial interface with a light, almost ethereal feel. Its design language is dominated by soft, rounded forms and transparent components, creating a sense of lightness and openness. Color is used sparingly, primarily for functional accents and a subtle brand gradient, letting the content breathe. Typography is compact and precise, maintaining clarity within dense information displays, while nuanced shadows and inset effects give components a sophisticated, layered depth without heaviness.
-colors:
-  canvas: "#e0dde2"
-  ash: "#f0f0f0"
-  graphite: "#000000"
-  stone-gray: "#abbdcf"
-  slate: "#9aa1b2"
-  cloud-mist: "#a5afcb"
-  blue-violet: "#5b638c"
-  luminescent-violet: "#995bb9"
-  midnight-indigo-outline: "#3a4766"
-  highlight-gradient: "#60eb8c"
-  faint-blue-overlay: "#84a1d0"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: -0.21px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.26px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.25
-    letterSpacing: -0.32px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.2
-    letterSpacing: -0.44px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 53px
-    lineHeight: 1.15
-    letterSpacing: -0.85px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 98px
-    lineHeight: 1
-    letterSpacing: -1.57px
-spacing:
-  cardRadius: 18px
-  buttonRadius: 100px
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  ghost-action-button:
-    role: Secondary call to action or navigation link.
-  soft-card:
-    role: Container for content, elevated slightly from the background.
-  feature-list-item:
-    role: Padded container for individual features or information blocks.
-  content-card-no-shadow:
-    role: Simple, flat content area on the page background.
+name: "Stocketa"
+description: "Stocketa presents a focused financial interface with a light, almost ethereal feel. Its design language is dominated by soft, rounded forms and transparent components, creating a sense of lightness and openness. Color is used sparingly, primarily for functional accents and a subtle brand gradient, letting the content breathe. Typography is compact and precise, maintaining clarity within dense information displays, while nuanced shadows and inset effects give components a sophisticated, layered depth without heaviness."
+theme: "light"
+industry: "fintech"
+source_url: "https://stocketa.com"
+refero_style_id: "c1f7749f-319b-491b-8243-22050e85994f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512533840-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512533840-thumb.jpg"
+extracted_at: "2026-04-30T01:29:18.788Z"
 ---
 
-## Overview
+# Stocketa — Style Reference
 
-**North Star:** Soft-edged transparency on cloud-white
+> Soft-edged transparency on cloud-white
+
+**Theme:** light
+
+**Industry:** fintech
 
 Stocketa presents a focused financial interface with a light, almost ethereal feel. Its design language is dominated by soft, rounded forms and transparent components, creating a sense of lightness and openness. Color is used sparingly, primarily for functional accents and a subtle brand gradient, letting the content breathe. Typography is compact and precise, maintaining clarity within dense information displays, while nuanced shadows and inset effects give components a sophisticated, layered depth without heaviness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #e0dde2 | `--color-canvas` | Primary page background, provides a soft, warm-neutral base |
+| Ash | #f0f0f0 | `--color-ash` | Subtle background for UI elements, creates a slight separation from the canvas |
+| Graphite | #000000 | `--color-graphite` | Dominant text color for headings and body content, ensures high contrast on light backgrounds |
+| Stone Gray | #abbdcf | `--color-stone-gray` | Decorative fills primarily for subtle background graphics and UI elements, contributes to the light, desaturated aesthetic |
+| Slate | #9aa1b2 | `--color-slate` | Muted border color, helper text, and secondary link states, offering softer visual weight than Graphite |
+| Cloud Mist | #a5afcb | `--color-cloud-mist` | Light borders for subtle separation and decorative elements, harmonizes with the soft UI palette |
+| Blue Violet | #5b638c | `--color-blue-violet` | Accent stroke for graphics and illustrations, hints at technical sophistication |
+| Luminescent Violet | #995bb9 | `--color-luminescent-violet` | Accent color for important headings, icons, and decorative fills — a primary brand splash |
+| Midnight Indigo Outline | #3a4766 | `--color-midnight-indigo-outline` | Border and text for ghost buttons and interactive elements, a deep, muted action color |
+| Highlight Gradient | #60eb8c | `--color-highlight-gradient` | Vivid linear gradient used for dynamic background effects or highlighting specific content areas with vibrant color transitions |
+| Faint Blue Overlay | #84a1d0 | `--color-faint-blue-overlay` | Subtle linear gradient used for soft overlays or to add depth to background elements, enhancing the light and airy feel |
+
+## Tokens — Typography
+
+### averta standard
+
+- **Token:** `--font-averta-standard`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700, 800
+- **Sizes:** 14px, 15px, 16px, 17px, 19px, 27px, 28px, 50px, 53px, 62px, 98px
+- **Line heights:** 1.00, 1.10, 1.15, 1.20, 1.25, 1.35, 1.40
+- **Letter spacing:** -0.21, -0.23, -0.26, -0.28, -0.32, -0.44, -0.45, -0.8, -0.85, -1, -1.57
+- **Role:** Primary typeface for all elements, from headings to body text and buttons. It offers a compact, modern feel with precise letter-spacing, ensuring readability and a sleek aesthetic across all scales. The controlled letter-spacing on larger sizes gives headlines a confident, understated presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | -0.21px | `--text-caption` |
+| body | 16px | 1.4 | -0.26px | `--text-body` |
+| subheading | 19px | 1.25 | -0.32px | `--text-subheading` |
+| heading | 27px | 1.2 | -0.44px | `--text-heading` |
+| heading-lg | 53px | 1.15 | -0.85px | `--text-heading-lg` |
+| display | 98px | 1 | -1.57px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-96 | 96px | `--spacing-96` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 100px |
+| cards | 18px |
+| buttons | 100px |
+| default | 22px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(97, 110, 124, 0.114) 0px 4px 15px 0px, rgba(255, 255, 255, 0.39) 0px 1px 1px 0px inset, rgba(34, 50, 94, 0.08) 0px 1px 1px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 14px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Action Button
+
+**Role:** Secondary call to action or navigation link.
+
+Text: Midnight Indigo Outline (#3a4766) on a transparent background, bordered with Midnight Indigo Outline (#3a4766), very rounded corners (100px radius). Padding: 13px vertical, 30px horizontal. Font: averta standard, weight 400.
+
+### Soft Card
+
+**Role:** Container for content, elevated slightly from the background.
+
+Background: rgba(83, 116, 152, 0.07). Border Radius: 18px. Shadow: rgba(97, 110, 124, 0.114) 0px 4px 15px 0px, rgba(255, 255, 255, 0.39) 0px 1px 1px 0px inset, rgba(34, 50, 94, 0.08) 0px 1px 1px 0px. No internal padding.
+
+### Feature List Item
+
+**Role:** Padded container for individual features or information blocks.
+
+Padded with 16px vertically. Icon in Luminescent Violet (#995bb9). Text in Graphite (#000000) for main points, Slate (#9aa1b2) for descriptions. Uses averta standard font.
+
+### Content Card (No Shadow)
+
+**Role:** Simple, flat content area on the page background.
+
+Background: transparent. No border radius, no shadow. Padding varies by content, no intrinsic styling.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas (#e0dde2) for primary backgrounds to maintain the light and airy theme.
 - Apply a 100px border radius to all buttons and tags to create a consistent, soft, 'pill' shape.
@@ -76,7 +142,7 @@ Stocketa presents a focused financial interface with a light, almost ethereal fe
 - Ensure letter-spacing is applied precisely from the Typography tokens, especially for larger text, to maintain the sophisticated, compact feel (e.g., -1.57px at 98px).
 - Separate sections with a `sectionGap` of 40px to provide comfortable visual breaks.
 
-### Don'ts
+### Don't
 
 - Avoid heavy drop shadows or opaque backgrounds that would counteract the light and transparent aesthetic.
 - Do not use saturated colors for large UI areas; chromatic colors are reserved for accents and small functional elements.
@@ -85,10 +151,151 @@ Stocketa presents a focused financial interface with a light, almost ethereal fe
 - Do not introduce new border colors for interactive elements; use Midnight Indigo Outline (#3a4766) for ghost action borders.
 - Do not overuse bold weights; reserve averta standard 800 primarily for main headings.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas | #e0dde2 | Primary background for the entire application, serving as the base layer. |
+| 2 | Ash Surface | #f0f0f0 | A slightly elevated background color for larger UI elements or sections, providing subtle differentiation. |
+| 3 | Soft Card | #537498 | Interactive cards or information panels that float above the base, distinguished by a subtle shadow and rounded corners. |
+
+## Elevation
+
+- **Soft Card:** `rgba(97, 110, 124, 0.114) 0px 4px 15px 0px, rgba(255, 255, 255, 0.39) 0px 1px 1px 0px inset, rgba(34, 50, 94, 0.08) 0px 1px 1px 0px`
+
+## Imagery
+
+The site uses a blend of abstract 3D elements and realistic product screenshots. Product screenshots are cleanly displayed within device frames, demonstrating functionality in a direct, uncluttered manner. Abstract 3D elements, characterized by soft, rounded, light gray forms, mimic organic shapes like pebbles or softly worn artifacts. These are used decoratively in the background, interacting with subtle light and shadow to create a sense of depth and modernity. Icons are outlined, featuring smooth, continuous strokes and are typically monochromatic or highlighted with Luminescent Violet. Visuals play a subtle, atmospheric role rather than a dominant, content-heavy one.
+
+## Layout
 
 The page primarily uses a max-width contained layout, centered on a light canvas. The hero section features a prominent, large headline in the Brand Gradient area, positioned centrally on the left, juxtaposed with a product showcase on the right. Subsequent sections follow a consistent vertical rhythm with minimal content density, using comfortable spacing. Content is largely presented as centered stacks of text with occasional feature lists, each item often accompanied by an icon. There's a subtle grid implied by the arrangement of features, but without hard lines. Navigation appears to be a minimal top bar, suggesting an application-focused approach.
 
-### Imagery
+## Similar Brands
 
-The site uses a blend of abstract 3D elements and realistic product screenshots. Product screenshots are cleanly displayed within device frames, demonstrating functionality in a direct, uncluttered manner. Abstract 3D elements, characterized by soft, rounded, light gray forms, mimic organic shapes like pebbles or softly worn artifacts. These are used decoratively in the background, interacting with subtle light and shadow to create a sense of depth and modernity. Icons are outlined, featuring smooth, continuous strokes and are typically monochromatic or highlighted with Luminescent Violet. Visuals play a subtle, atmospheric role rather than a dominant, content-heavy one.
+- **Rize** — Shares a clean, light aesthetic with subtle shadows and rounded-corner cards, often using a single strong accent color.
+- **Copilot Money** — Features a similar combination of app-like UI, soft gradients, and a preference for light backgrounds with strong typography.
+- **Wealthfront** — Utilizes a balanced approach of strong, legible typography, soft UI elements, and a clean overall layout in a financial context.
+- **Amie** — Exhibits a sunlit, productivity-workspace language with white canvas, flat product surfaces, and compact, confident typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #e0dde2;
+  --color-ash: #f0f0f0;
+  --color-graphite: #000000;
+  --color-stone-gray: #abbdcf;
+  --color-slate: #9aa1b2;
+  --color-cloud-mist: #a5afcb;
+  --color-blue-violet: #5b638c;
+  --color-luminescent-violet: #995bb9;
+  --color-midnight-indigo-outline: #3a4766;
+  --color-highlight-gradient: #60eb8c;
+  --color-faint-blue-overlay: #84a1d0;
+  --font-averta-standard: 'averta standard', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.21px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.26px;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.32px;
+  --text-heading: 27px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.44px;
+  --text-heading-lg: 53px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.85px;
+  --text-display: 98px;
+  --leading-display: 1;
+  --tracking-display: -1.57px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-58: 58px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --radius-pill: 100px;
+  --radius-cards: 18px;
+  --radius-buttons: 100px;
+  --radius-default: 22px;
+  --shadow-xl: rgba(97, 110, 124, 0.114) 0px 4px 15px 0px, rgba(255, 255, 255, 0.39) 0px 1px 1px 0px inset, rgba(34, 50, 94, 0.08) 0px 1px 1px 0px;
+  --surface-canvas: #e0dde2;
+  --surface-ash-surface: #f0f0f0;
+  --surface-soft-card: #537498;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #e0dde2;
+  --color-ash: #f0f0f0;
+  --color-graphite: #000000;
+  --color-stone-gray: #abbdcf;
+  --color-slate: #9aa1b2;
+  --color-cloud-mist: #a5afcb;
+  --color-blue-violet: #5b638c;
+  --color-luminescent-violet: #995bb9;
+  --color-midnight-indigo-outline: #3a4766;
+  --color-highlight-gradient: #60eb8c;
+  --color-faint-blue-overlay: #84a1d0;
+  --font-averta-standard: 'averta standard', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.21px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.26px;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.32px;
+  --text-heading: 27px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.44px;
+  --text-heading-lg: 53px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.85px;
+  --text-display: 98px;
+  --leading-display: 1;
+  --tracking-display: -1.57px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-58: 58px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --radius-pill: 100px;
+  --radius-cards: 18px;
+  --radius-buttons: 100px;
+  --radius-default: 22px;
+  --shadow-xl: rgba(97, 110, 124, 0.114) 0px 4px 15px 0px, rgba(255, 255, 255, 0.39) 0px 1px 1px 0px inset, rgba(34, 50, 94, 0.08) 0px 1px 1px 0px;
+  --surface-canvas: #e0dde2;
+  --surface-ash-surface: #f0f0f0;
+  --surface-soft-card: #537498;
+}
+```

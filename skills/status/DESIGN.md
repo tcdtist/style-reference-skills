@@ -1,79 +1,176 @@
 ---
 version: alpha
-name: Status
-description: Status employs a dark, crypto-native aesthetic, evoking a secure, high-tech environment. The primary interface is a deep, near-black canvas, contrasted by crisp white typography for prominence and readability. UI elements often feature soft, subtle borders and a deliberate avoidance of strong shadows, lending a flat, yet layered, appearance. Vivid accent colors of purple and blue are reserved for interactive elements and brand highlights, creating clear focal points against the monochromatic base.
-colors:
-  deep-space: "#09101c"
-  ash: "#1b273d"
-  cloud-white: "#ffffff"
-  off-white: "#dce0e5"
-  light-mist: "#f0f2f5"
-  slate-fabric: "#3a4049"
-  quiet-fog: "#647084"
-  charcoal-black: "#000000"
-  obsidian-grey: "#131d2f"
-  steel-grey: "#a1abbd"
-  violet-plasma: "#7140fd"
-  lapis-glow: "#2a4af5"
-  ocean-tint: "#2a799b"
-  golden-rod: "#f6b03c"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.45
-    letterSpacing: -0.11px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.42
-    letterSpacing: -0.38px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.19
-    letterSpacing: -0.43px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.06
-    letterSpacing: -1.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 88px
-    lineHeight: 0.95
-    letterSpacing: -1.85px
-spacing:
-  cardRadius: 20px
-  buttonRadius: 12px
-  elementGap: 4px
-  sectionGap: 40px
-components:
-  navigation-link:
-    role: Primary navigation item in the header.
-  ghost-button:
-    role: Secondary action button, typically for 'Download' or 'Learn More' actions.
-  filled-action-button-light:
-    role: Primary calls to action on the dark hero, contrasting with the dark background.
-  branded-action-button:
-    role: Main call to action, utilizing the brand's vibrant blue.
-  product-feature-card:
-    role: Displays key product features or benefits in a visually distinct manner.
-  light-content-card:
-    role: General content container for information blocks within light sections.
-  hero-message-card:
-    role: Informational overlay or banner within the dark hero section.
-  footer-navigation-item:
-    role: Links within the footer for secondary navigation or legal information.
+name: "Status"
+description: "Status employs a dark, crypto-native aesthetic, evoking a secure, high-tech environment. The primary interface is a deep, near-black canvas, contrasted by crisp white typography for prominence and readability. UI elements often feature soft, subtle borders and a deliberate avoidance of strong shadows, lending a flat, yet layered, appearance. Vivid accent colors of purple and blue are reserved for interactive elements and brand highlights, creating clear focal points against the monochromatic base."
+theme: "dark"
+industry: "crypto"
+source_url: "https://status.app"
+refero_style_id: "4ce66adb-ed8b-4e71-8066-15d92c4d2be0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511978234-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511978234-thumb.jpg"
+extracted_at: "2026-04-30T01:20:06.078Z"
 ---
 
-## Overview
+# Status — Style Reference
 
-**North Star:** Midnight Command Center: a dark interface on deep canvas, with precise white type and select vibrant accents.
+> Midnight Command Center: a dark interface on deep canvas, with precise white type and select vibrant accents.
+
+**Theme:** dark
+
+**Industry:** crypto
 
 Status employs a dark, crypto-native aesthetic, evoking a secure, high-tech environment. The primary interface is a deep, near-black canvas, contrasted by crisp white typography for prominence and readability. UI elements often feature soft, subtle borders and a deliberate avoidance of strong shadows, lending a flat, yet layered, appearance. Vivid accent colors of purple and blue are reserved for interactive elements and brand highlights, creating clear focal points against the monochromatic base.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Space | #09101c | `--color-deep-space` | Primary background for pages and sections; sets the dark theme's foundation |
+| Ash | #1b273d | `--color-ash` | Subtle borders and separators, providing structure without harsh lines on dark surfaces |
+| Cloud White | #ffffff | `--color-cloud-white` | Dominant text color for primary headings and body copy against dark backgrounds; background for light cards |
+| Off White | #dce0e5 | `--color-off-white` | Light neutral borders for components on dark backgrounds, offering subtle contrast |
+| Light Mist | #f0f2f5 | `--color-light-mist` | Background for secondary section and content cards, providing a distinct light surface within the dark theme |
+| Slate Fabric | #3a4049 | `--color-slate-fabric` | Background for elevated cards and deeper content blocks, creating a sense of depth on dark canvas |
+| Quiet Fog | #647084 | `--color-quiet-fog` | Muted text for secondary information, helper text, and subtle icon details |
+| Charcoal Black | #000000 | `--color-charcoal-black` | Primary text color for light-themed sections and cards |
+| Obsidian Grey | #131d2f | `--color-obsidian-grey` | Background for specific interactive elements like ghost buttons on dark surfaces |
+| Steel Grey | #a1abbd | `--color-steel-grey` | Iconography and decorative elements, subtle text in navigation |
+| Violet Plasma | #7140fd | `--color-violet-plasma` | Violet text accent for links, tags, and emphasized short phrases. Do not promote it to the primary CTA color; Soft radial glow for atmospheric effects or subtle background highlights, tying into brand accent |
+| Lapis Glow | #2a4af5 | `--color-lapis-glow` | Primary action background, indicating interactive elements and brand emphasis; Soft radial glow for atmospheric effects or subtle background highlights |
+| Ocean Tint | #2a799b | `--color-ocean-tint` | Secondary accent for decorative icons or specific content highlights; Gradient for primary brand illustrations, combining blue, yellow, and magenta hues; Soft radial glow for atmospheric effects or subtle background highlights |
+| Golden Rod | #f6b03c | `--color-golden-rod` | Yellow text accent for links, tags, and emphasized short phrases; Soft radial glow for atmospheric effects or subtle background highlights |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 11px, 13px, 15px, 16px, 19px, 27px, 64px, 88px
+- **Line heights:** 0.95, 1.06, 1.19, 1.40, 1.42, 1.45, 1.47, 1.50
+- **Letter spacing:** -0.0210em, -0.0200em, -0.0160em, -0.0090em, -0.0050em, -0.0030em
+- **Role:** The primary typeface for all text elements. Its versatility across weights and sizes supports everything from subtle captions to impactful display headings, maintaining a unified modern aesthetic across the interface. Tightly tracked larger sizes convey precision and gravitas, easing out for legibility at body sizes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.45 | -0.11px | `--text-caption` |
+| heading-sm | 19px | 1.42 | -0.38px | `--text-heading-sm` |
+| heading | 27px | 1.19 | -0.43px | `--text-heading` |
+| heading-lg | 64px | 1.06 | -1.02px | `--text-heading-lg` |
+| display | 88px | 0.95 | -1.85px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-61 | 61px | `--spacing-61` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-68 | 68px | `--spacing-68` |
+| spacing-77 | 77px | `--spacing-77` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-97 | 97px | `--spacing-97` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| cards | 20px |
+| forms | 12px |
+| images | 24px |
+| buttons | 12px |
+| navigation | 4px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(9, 16, 28, 0.08) 0px 4px 20px 0px | `--shadow-xl` |
+| xl-2 | rgba(9, 16, 28, 0.04) 0px 2px 20px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1224px |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary navigation item in the header.
+
+Text label in Cloud White (#ffffff) using Inter weight 400 at 16px. Border radius of 0px, no background, padding of 0px.
+
+### Ghost Button
+
+**Role:** Secondary action button, typically for 'Download' or 'Learn More' actions.
+
+Text in Cloud White (#ffffff) with a 1px solid border in Ash (#1b273d) and 12px border radius. No fill background. Padding of 0px top/bottom and 16px left/right.
+
+### Filled Action Button Light
+
+**Role:** Primary calls to action on the dark hero, contrasting with the dark background.
+
+Text in Cloud White (#ffffff) on a filled background of Obsidian Grey (#131d2f). Border radius of 10px. Padding of 5px top/bottom and 8px left/right.
+
+### Branded Action Button
+
+**Role:** Main call to action, utilizing the brand's vibrant blue.
+
+Text color in Cloud White (#ffffff) on a solid background of Lapis Glow (#2a4af5). Used for crucial interactive elements. Padding of 5px top/bottom and 8px left/right, 10px border radius.
+
+### Product Feature Card
+
+**Role:** Displays key product features or benefits in a visually distinct manner.
+
+Background in Light Mist (#f0f2f5) with a 20px border radius. Features a subtle shadow: rgba(9, 16, 28, 0.08) 0px 4px 20px 0px. Internal padding is variable, generally using a 48px base element gap for content.
+
+### Light Content Card
+
+**Role:** General content container for information blocks within light sections.
+
+Background in Cloud White (#ffffff) with a 24px border radius. No explicit shadow. Content is typically structured with 48px padding around.
+
+### Hero Message Card
+
+**Role:** Informational overlay or banner within the dark hero section.
+
+Semi-transparent background in rgba(255, 255, 255, 0.2) with a 20px border radius. No shadow. Used for subtle announcements or contextual information.
+
+### Footer Navigation Item
+
+**Role:** Links within the footer for secondary navigation or legal information.
+
+Text color in Cloud White (#ffffff) using Inter weight 400 at 16px. No background or border, primarily text-based with 12px border radius on its container.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Space (#09101c) for page backgrounds and Cloud White (#ffffff) for primary text and light surface areas to maintain the high-contrast dark theme.
 - Apply Lapis Glow (#2a4af5) specifically for primary action buttons and highlight states to ensure immediate visual recognition of interactivity.
@@ -83,7 +180,7 @@ Status employs a dark, crypto-native aesthetic, evoking a secure, high-tech envi
 - Utilize the subtle shadow rgba(9, 16, 28, 0.08) 0px 4px 20px 0px exclusively for elevated Product Feature Cards to signal a distinct layer of content.
 - Ensure horizontal and vertical spacing between major sections adhere to 40px, while internal component spacing uses a smaller harmonious increment from the 4px base unit.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for large background areas or extensive text blocks; these are reserved for accents and interactive elements.
 - Do not introduce heavy, complex shadows or excessive gradients for general UI elements, as the design emphasizes a flat and clean aesthetic.
@@ -93,10 +190,158 @@ Status employs a dark, crypto-native aesthetic, evoking a secure, high-tech envi
 - Do not use dark text on dark backgrounds; ensure sufficient contrast by always pairing Cloud White (#ffffff) or similar light colors with Deep Space (#09101c) and other dark neutrals.
 - Do not apply the main card shadow to anything other than `Product Feature Card` and similar elevated content panels.
 
-### Layout
+## Elevation
+
+- **Product Feature Card:** `rgba(9, 16, 28, 0.08) 0px 4px 20px 0px`
+- **Link with subtle elevation:** `rgba(9, 16, 28, 0.04) 0px 2px 20px 0px`
+
+## Imagery
+
+The imagery strategy mixes product screenshots, abstract gradient forms, and stylized vector illustrations. Product screenshots are contained within device mockups (laptops, phones) and depicted with bright, high-key interfaces against the dark site background, directly showcasing functionality. Abstract gradient shapes serve as background elements or atmospheric flourishes, using the Spectrum Burst gradient for vibrant, dynamic effects. Icons are primarily outlined or subtly filled using brand and accent colors, appearing frequently in feature sections. The overall density of imagery is balanced, with large hero visuals giving way to more text-dominant sections punctuated by smaller illustrative icons and product views. Photography is absent.
+
+## Layout
 
 The page primarily uses a max-width contained model of 1224px, centered on the screen. The hero section is full-bleed and dark, featuring a large, centered headline and a split text-left/image-right arrangement for the primary call to action with device mockups. Subsequent sections alternate between the dark Deep Space canvas and lighter Light Mist or Cloud White backgrounds, creating a clear visual rhythm. Content is generally arranged in a two-column text-left/image-right or vertical stack pattern with generous vertical spacing (40px) between major content blocks. Feature sections often employ a 3-column card grid. The navigation is a sticky top bar, minimal and icon-driven, with text links only for primary routes.
 
-### Imagery
+## Similar Brands
 
-The imagery strategy mixes product screenshots, abstract gradient forms, and stylized vector illustrations. Product screenshots are contained within device mockups (laptops, phones) and depicted with bright, high-key interfaces against the dark site background, directly showcasing functionality. Abstract gradient shapes serve as background elements or atmospheric flourishes, using the Spectrum Burst gradient for vibrant, dynamic effects. Icons are primarily outlined or subtly filled using brand and accent colors, appearing frequently in feature sections. The overall density of imagery is balanced, with large hero visuals giving way to more text-dominant sections punctuated by smaller illustrative icons and product views. Photography is absent.
+- **Solana** — Shares a dark-themed UI with strong usage of white text, punctuated by vibrant accent colors for primary actions and brand emphasis.
+- **Ledger** — Utilizes a similar high-contrast dark mode with prominent typography and a focus on product visuals within device contexts.
+- **Uniswap** — Employs a dark, tech-forward aesthetic with bold headlines, crisp UI elements, and highly saturated accent colors for interactive elements.
+- **Phantom Wallet** — Features a dark native app-like interface with precise typography and subtle elevation, highlighting interactive elements with bright, singular accent hues.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-space: #09101c;
+  --color-ash: #1b273d;
+  --color-cloud-white: #ffffff;
+  --color-off-white: #dce0e5;
+  --color-light-mist: #f0f2f5;
+  --color-slate-fabric: #3a4049;
+  --color-quiet-fog: #647084;
+  --color-charcoal-black: #000000;
+  --color-obsidian-grey: #131d2f;
+  --color-steel-grey: #a1abbd;
+  --color-violet-plasma: #7140fd;
+  --color-lapis-glow: #2a4af5;
+  --color-ocean-tint: #2a799b;
+  --color-golden-rod: #f6b03c;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 11px;
+  --leading-caption: 1.45;
+  --tracking-caption: -0.11px;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.42;
+  --tracking-heading-sm: -0.38px;
+  --text-heading: 27px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.43px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.06;
+  --tracking-heading-lg: -1.02px;
+  --text-display: 88px;
+  --leading-display: 0.95;
+  --tracking-display: -1.85px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-61: 61px;
+  --spacing-64: 64px;
+  --spacing-68: 68px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-97: 97px;
+  --spacing-112: 112px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --radius-tags: 9999px;
+  --radius-cards: 20px;
+  --radius-forms: 12px;
+  --radius-images: 24px;
+  --radius-buttons: 12px;
+  --radius-navigation: 4px;
+  --shadow-xl: rgba(9, 16, 28, 0.08) 0px 4px 20px 0px;
+  --shadow-xl-2: rgba(9, 16, 28, 0.04) 0px 2px 20px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-space: #09101c;
+  --color-ash: #1b273d;
+  --color-cloud-white: #ffffff;
+  --color-off-white: #dce0e5;
+  --color-light-mist: #f0f2f5;
+  --color-slate-fabric: #3a4049;
+  --color-quiet-fog: #647084;
+  --color-charcoal-black: #000000;
+  --color-obsidian-grey: #131d2f;
+  --color-steel-grey: #a1abbd;
+  --color-violet-plasma: #7140fd;
+  --color-lapis-glow: #2a4af5;
+  --color-ocean-tint: #2a799b;
+  --color-golden-rod: #f6b03c;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 11px;
+  --leading-caption: 1.45;
+  --tracking-caption: -0.11px;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.42;
+  --tracking-heading-sm: -0.38px;
+  --text-heading: 27px;
+  --leading-heading: 1.19;
+  --tracking-heading: -0.43px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 1.06;
+  --tracking-heading-lg: -1.02px;
+  --text-display: 88px;
+  --leading-display: 0.95;
+  --tracking-display: -1.85px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-61: 61px;
+  --spacing-64: 64px;
+  --spacing-68: 68px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-97: 97px;
+  --spacing-112: 112px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --radius-tags: 9999px;
+  --radius-cards: 20px;
+  --radius-forms: 12px;
+  --radius-images: 24px;
+  --radius-buttons: 12px;
+  --radius-navigation: 4px;
+  --shadow-xl: rgba(9, 16, 28, 0.08) 0px 4px 20px 0px;
+  --shadow-xl-2: rgba(9, 16, 28, 0.04) 0px 2px 20px 0px;
+}
+```
