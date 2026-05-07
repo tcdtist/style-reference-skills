@@ -1,53 +1,140 @@
 ---
 version: alpha
-name: Andreas Antonsson
-description: This design system conjures the atmosphere of a clandestine gallery at twilight, where stark, graphic information exists within the dramatic interplay of light and shadow, and hero imagery is presented like precious art under a spotlight. Typography drives much of the visual drama: a bold, wide-set serif announces key content with a theatrical flourish, while precise, functional sans-serif provides navigational clarity and textual detail. The overall impression is one of curated intensity, favoring strong visual statements over intricate details or soft transitions.
-colors:
-  void-black: "#000000"
-  ghost-white: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.5
-spacing:
-  elementGap: 22px
-components:
-  project-card:
-    role: 
-  available-for-work-badge:
-    role: 
-  scroll-index-navigator:
-    role: 
-  navigation-link:
-    role: Primary navigation elements in the header and footer.
-  headline-project-title:
-    role: Prominent, artistic titles for each project section.
-  sub-heading-text:
-    role: Descriptive text below main headlines or secondary information.
-  body-text:
-    role: General informative text, contextual details.
-  invisible-link-button:
-    role: Interactive elements with no visible background or border.
-  circular-nav-button:
-    role: Implicit interactive element for navigation (e.g., scroll indicator).
+name: "Andreas Antonsson"
+description: "This design system conjures the atmosphere of a clandestine gallery at twilight, where stark, graphic information exists within the dramatic interplay of light and shadow, and hero imagery is presented like precious art under a spotlight. Typography drives much of the visual drama: a bold, wide-set serif announces key content with a theatrical flourish, while precise, functional sans-serif provides navigational clarity and textual detail. The overall impression is one of curated intensity, favoring strong visual statements over intricate details or soft transitions."
+theme: "dark"
+industry: "agency"
+source_url: "https://andreasantonsson.dev"
+refero_style_id: "d14acfe3-20ea-4c18-be22-aba396b4fa80"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925748873-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925748873-thumb.jpg"
+extracted_at: "2026-04-11T16:42:47.534Z"
 ---
 
-## Overview
+# Andreas Antonsson — Style Reference
 
-**North Star:** Shadow Gallery, Spotlit Art. The website feels like stepping into a dark art gallery with carefully curated, dramatically lit pieces.
+> Shadow Gallery, Spotlit Art. The website feels like stepping into a dark art gallery with carefully curated, dramatically lit pieces.
+
+**Theme:** dark
+
+**Industry:** agency
 
 This design system conjures the atmosphere of a clandestine gallery at twilight, where stark, graphic information exists within the dramatic interplay of light and shadow, and hero imagery is presented like precious art under a spotlight. Typography drives much of the visual drama: a bold, wide-set serif announces key content with a theatrical flourish, while precise, functional sans-serif provides navigational clarity and textual detail. The overall impression is one of curated intensity, favoring strong visual statements over intricate details or soft transitions.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Void Black | #000000 | `--color-void-black` | Primary background for the entire page, creating a deep, infinite canvas that makes featured content pop. |
+| Ghost White | #ffffff | `--color-ghost-white` | Primary text color for all content, navigation, and interactive elements; it provides stark contrast against the Void Black background. |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 700
+- **Sizes:** 11px, 13px, 22px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Functional text: Body copy, navigation labels, button text, and supporting information; its legibility anchors the UI amidst the more dramatic headline font.
+
+### Dahlia
+
+- **Token:** `--font-dahlia`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 144px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Display headlines: Used for prominent project titles; its exaggerated serifs and large size create a memorable, artistic impact, like a marque title for a cinematic experience.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.5 | — | `--text-caption` |
+| body-sm | 13px | 1.5 | — | `--text-body-sm` |
+| body | 22px | 1.5 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-22 | 22px | `--spacing-22` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| nav-items | 2px |
+| interactive-tags | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 22px |
+
+## Components
+
+### Project Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Available for Work Badge
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Scroll Index Navigator
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Link
+
+**Role:** Primary navigation elements in the header and footer.
+
+Ghost White text (#ffffff) on a Void Black (#000000) background, using Inter font at 13px weight 400. No explicit padding or border is defined beyond content spacing.
+
+### Headline Project Title
+
+**Role:** Prominent, artistic titles for each project section.
+
+Ghost White text (#ffffff), Dahlia font at 144px weight 400, on a Void Black (#000000) background. The wide letter-spacing is a key visual characteristic.
+
+### Sub-heading Text
+
+**Role:** Descriptive text below main headlines or secondary information.
+
+Ghost White text (#ffffff), Inter font at 22px weight 400. Letter spacing is normal. Used for 'Interaction Designer & Creative Developer'.
+
+### Body Text
+
+**Role:** General informative text, contextual details.
+
+Ghost White text (#ffffff), Inter font at 13px weight 400, with a line height of 1.5. Used for 'Available for work: Apr 2026' and similar compact information blocks.
+
+### Invisible Link Button
+
+**Role:** Interactive elements with no visible background or border.
+
+Ghost White text (#ffffff) on a transparent background, borderless, with 0px padding and 0px border radius. Uses Inter font, size and weight depend on context (e.g., 13px weight 400 for 'Available for work').
+
+### Circular Nav Button
+
+**Role:** Implicit interactive element for navigation (e.g., scroll indicator).
+
+Dot-based navigation, where the active state is implied by shape and color, likely a Ghost White (#ffffff) circle on the Void Black (#000000) background, with a radius of 9999px for a pill-like or circular appearance.
+
+## Do's and Don'ts
+
+### Do
 
 - Do use Void Black (#000000) as the primary page background to contrast dramatically with content.
 - Do use Ghost White (#ffffff) for all text and interactive elements to ensure high contrast and focal point.
@@ -56,7 +143,7 @@ This design system conjures the atmosphere of a clandestine gallery at twilight,
 - Do implement 9999px border-radius for any compact interactive tag that needs a pill-like shape.
 - Do use no explicit padding or border for default interactive components like navigation links, letting text content define their visual footprint.
 
-### Don'ts
+### Don't
 
 - Don't introduce any background colors other than Void Black (#000000) or Ghost White (#ffffff) to maintain visual starkness.
 - Don't use Inter for display headlines; reserve Dahlia for that specific, dramatic role.
@@ -64,10 +151,62 @@ This design system conjures the atmosphere of a clandestine gallery at twilight,
 - Don't use letter-spacing values other than normal for Inter font, maintaining its intended readability.
 - Don't add borders to primary interactive elements; their clickable state is indicated by color contrast and inherent link styling.
 
-### Layout
+## Imagery
+
+The site uses photography as its primary visual medium, showcasing project work as full-bleed, high-resolution hero images. The images are presented at a slight, dramatic tilt, sometimes with subtle light rays filtering through, lending a cinematic and curated feel. They are contained within a defined viewport, acting as individual 'pieces' on the black canvas. No explicit masking or rounded corners are applied to the images; they retain sharp edges, focusing the attention on the content itself. The role of these visuals is primarily expressive and demonstrative, presenting the designer's work as artistic highlights, often with a moody or atmospheric treatment.
+
+## Layout
 
 The page adopts a full-bleed, centered content model that maximizes visual impact. The overall layout is dark-themed, using a fixed Void Black background. The hero section for each project is a full-viewport image presented like a skewed artwork 'card' against this infinite black. Content sections, primarily for project titles and a sub-heading, are centrally stacked directly over these images. Navigation is a simple, high-contrast array of links (`Index`, `About`) in the top right. A minimal 'Available for work' area is anchored to the bottom left. The primary rhythm is a single-column, scrolling showcase of these dramatically presented projects, one after another, creating a sequential gallery experience.
 
-### Imagery
+## Similar Brands
 
-The site uses photography as its primary visual medium, showcasing project work as full-bleed, high-resolution hero images. The images are presented at a slight, dramatic tilt, sometimes with subtle light rays filtering through, lending a cinematic and curated feel. They are contained within a defined viewport, acting as individual 'pieces' on the black canvas. No explicit masking or rounded corners are applied to the images; they retain sharp edges, focusing the attention on the content itself. The role of these visuals is primarily expressive and demonstrative, presenting the designer's work as artistic highlights, often with a moody or atmospheric treatment.
+- **B&O (Bang & Olufsen)** — Shares a sophisticated, high-contrast dark theme with premium product presentation and minimalist typography.
+- **Awwwards Nominees (certain portfolios)** — Similar experimental, art-gallery-like presentation of work, heavy reliance on large display typography and striking imagery against dark backdrops.
+- **Apple (specific product pages)** — Uses a dark, infinite canvas with highly polished, almost architectural product shots and bold, elegant typography to convey prestige.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-void-black: #000000;
+  --color-ghost-white: #ffffff;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-dahlia: 'Dahlia', serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --text-body-sm: 13px;
+  --leading-body-sm: 1.5;
+  --text-body: 22px;
+  --leading-body: 1.5;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-22: 22px;
+  --radius-nav-items: 2px;
+  --radius-interactive-tags: 9999px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-void-black: #000000;
+  --color-ghost-white: #ffffff;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-dahlia: 'Dahlia', serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --text-body-sm: 13px;
+  --leading-body-sm: 1.5;
+  --text-body: 22px;
+  --leading-body: 1.5;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-22: 22px;
+  --radius-nav-items: 2px;
+  --radius-interactive-tags: 9999px;
+}
+```
