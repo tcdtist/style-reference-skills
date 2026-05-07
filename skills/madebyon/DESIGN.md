@@ -1,63 +1,157 @@
 ---
 version: alpha
-name: Madebyon
-description: Madebyon uses a high-contrast dark aesthetic where deep black surfaces meet vivid neon green accents. Typography is compact and precise, maintaining readability against dark backgrounds with a single sans-serif typeface that subtly shifts its tracking for emphasis. Components are defined by sharp corners and generous padding, creating a distinct, confident presence, with interactive elements highlighted by a 'switched-on' luminous green. The overall impression is one of modern, refined competence.
-colors:
-  midnight-ink: "#000000"
-  onyx-graphite: "#151515"
-  floral-veil: "#faf9f4"
-  soft-silver: "#bdbdbd"
-  warm-gray: "#666666"
-  switchblade-green: "#dcff4f"
-  emerald-spark: "#51d287"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.35
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.35
-  body:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.35
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.35
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 8px
-  buttonRadius: 50px
-  elementGap: 16px
-  sectionGap: 81px
-components:
-  primary-action-button:
-    role: Call-to-action button, signaling key interactive elements.
-  testimonial-card:
-    role: Container for client testimonials.
-  nested-card:
-    role: Secondary content container within primary black cards.
-  input-field:
-    role: Form input elements for user data entry.
-  ghost-navigation-link:
-    role: Main navigation links in the header.
-  text-link-muted:
-    role: Secondary or informational links, often found in footers.
+name: "Madebyon"
+description: "Madebyon uses a high-contrast dark aesthetic where deep black surfaces meet vivid neon green accents. Typography is compact and precise, maintaining readability against dark backgrounds with a single sans-serif typeface that subtly shifts its tracking for emphasis. Components are defined by sharp corners and generous padding, creating a distinct, confident presence, with interactive elements highlighted by a 'switched-on' luminous green. The overall impression is one of modern, refined competence."
+theme: "dark"
+industry: "agency"
+source_url: "https://www.madebyon.com"
+refero_style_id: "64ba8e77-d1be-48a2-a47d-bdd46e139b8f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516822936-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516822936-thumb.jpg"
+extracted_at: "2026-04-30T02:40:42.168Z"
 ---
 
-## Overview
+# Madebyon — Style Reference
 
-**North Star:** Neon on Obsidian: Precision text and vivid accents against a deep, dark canvas.
+> Neon on Obsidian: Precision text and vivid accents against a deep, dark canvas.
+
+**Theme:** dark
+
+**Industry:** agency
 
 Madebyon uses a high-contrast dark aesthetic where deep black surfaces meet vivid neon green accents. Typography is compact and precise, maintaining readability against dark backgrounds with a single sans-serif typeface that subtly shifts its tracking for emphasis. Components are defined by sharp corners and generous padding, creating a distinct, confident presence, with interactive elements highlighted by a 'switched-on' luminous green. The overall impression is one of modern, refined competence.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary background for pages and cards, maintaining a stark, high-contrast base |
+| Onyx Graphite | #151515 | `--color-onyx-graphite` | Secondary surface background for nested cards and input fields, adding a subtle layer distinction |
+| Floral Veil | #faf9f4 | `--color-floral-veil` | Primary text color and significant border elements, providing crisp readability against dark backgrounds |
+| Soft Silver | #bdbdbd | `--color-soft-silver` | Muted text for helper links and secondary information, offering a softer hierarchy |
+| Warm Gray | #666666 | `--color-warm-gray` | Dark borders and separators for elevated surfaces and inverted UI. |
+| Switchblade Green | #dcff4f | `--color-switchblade-green` | Primary brand accent and interactive element highlight – used for CTA backgrounds, active button text, and decorative borders. Its vividness creates immediate focal points |
+| Emerald Spark | #51d287 | `--color-emerald-spark` | A secondary accent used sparingly for decorative elements or specific visual cues, providing an alternative bright highlight |
+
+## Tokens — Typography
+
+### Favorit extended
+
+- **Token:** `--font-favorit-extended`
+- **Weights:** 400
+- **Sizes:** 40px, 56px
+- **Line heights:** 1.2
+- **Letter spacing:** -0.02
+- **Role:** Favorit extended — detected in extracted data but not described by AI
+
+### Favorit
+
+- **Token:** `--font-favorit`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 11px, 12px, 13px, 16px, 24px
+- **Line heights:** 1.00, 1.20, 1.30, 1.35, 1.40, 1.42, 1.50
+- **Letter spacing:** -0.0200em for display sizes (40px, 56px), normal for smaller text
+- **OpenType features:** "ss04"
+- **Role:** The sole typeface, 'Favorit', serves all textual content. Its consistent use in weight 400 across various sizes, combined with its distinct letter-spacing for headings (sizes 40px, 56px), establishes a cohesive yet dynamic typographic voice. The 'ss04' feature implies a specific stylistic set for unique character forms, contributing to its signature look.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.35 | — | `--text-caption` |
+| body-sm | 12px | 1.35 | — | `--text-body-sm` |
+| body | 13px | 1.35 | — | `--text-body` |
+| body-lg | 16px | 1.35 | — | `--text-body-lg` |
+| heading-sm | 24px | 1.3 | — | `--text-heading-sm` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-113 | 113px | `--spacing-113` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 999px |
+| cards | 8px |
+| inputs | 16px |
+| buttons | 50px |
+| navItems | 50px |
+| bodyElements | 24px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 81px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call-to-action button, signaling key interactive elements.
+
+Filled with Switchblade Green (#dcff4f), text in Onyx Graphite (#151515) at Favorit weight 400. Features a 50px border-radius, creating a distinct pill shape. Padding is 14px vertical, 32px horizontal.
+
+### Testimonial Card
+
+**Role:** Container for client testimonials.
+
+Background is Midnight Ink (#000000) with a subtle 8px border-radius. No explicit padding inside, content is implicitly spaced.
+
+### Nested Card
+
+**Role:** Secondary content container within primary black cards.
+
+Background in Onyx Graphite (#151515), with an 8px border-radius, maintaining strong contrast against the page background. No explicit padding.
+
+### Input Field
+
+**Role:** Form input elements for user data entry.
+
+Background Onyx Graphite (#151515), text Floral Veil (#faf9f4). Has a 2px Floral Veil (#faf9f4) border and a 16px border-radius. Padding of 26px vertical, 24px horizontal.
+
+### Ghost Navigation Link
+
+**Role:** Main navigation links in the header.
+
+Text in Floral Veil (#faf9f4) with no background or border, presenting minimal visual weight. Underline hover effect is often present but not captured in static state. Padding 11px vertical.
+
+### Text Link - Muted
+
+**Role:** Secondary or informational links, often found in footers.
+
+Text in Soft Silver (#bdbdbd) or Warm Gray (#666666), with no specific background or borders. Used for 'Read more' or policy links, often with an associated border in the same color.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Midnight Ink (#000000) as the base background for pages and main content blocks.
 - Highlight primary actions with Switchblade Green (#dcff4f) for backgrounds, ensuring text uses a dark neutral like Onyx Graphite (#151515) for contrast.
@@ -67,7 +161,7 @@ Madebyon uses a high-contrast dark aesthetic where deep black surfaces meet vivi
 - Separate major sections with a consistent `sectionGap` of 81px to create a spacious rhythm.
 - Use Onyx Graphite (#151515) for nested surfaces or input fields to provide subtle depth against the main Midnight Ink (#000000) background.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional chromatic colors beyond Switchblade Green (#dcff4f) and Emerald Spark (#51d287) to preserve the stark brand identity.
 - Do not vary font weights beyond 400 for Favorit; all typographic emphasis should be achieved through size and letter-spacing.
@@ -77,10 +171,123 @@ Madebyon uses a high-contrast dark aesthetic where deep black surfaces meet vivi
 - Do not use generic system fonts; always specify 'Favorit' or its defined substitute to maintain brand consistency.
 - Avoid centered text blocks for large amounts of body copy; prefer left-aligned text for readability in the dark theme.
 
-### Layout
+## Imagery
+
+The visual language relies heavily on clean product screenshots and abstract or conceptual graphics. Photography tends toward product-focused shots or highly stylized, sometimes desaturated, close-ups with tight crops to eliminate distracting backgrounds. Illustrations are minimal, often geometric or abstract, used primarily for decorative flair rather than information conveyance. Icons are outlined, simple, and monochromatic, aligning with the UI's clean aesthetic. Imagery is sparse, serving primarily to add decorative atmosphere or demonstrate product context, making the site feel text-dominant.
+
+## Layout
 
 The page model is primarily full-bleed with content contained within implied horizontal margins, giving a sense of expansive space. The hero section is full-bleed, dark, featuring a large, centered headline against the dark background. Section rhythm is consistent, separated by the significant `sectionGap` of 81px, with visual breaks often marked by full-width dark sections alternating with slightly deeper dark surfaces. Content often alternates between large centered text blocks and two-column layouts featuring text on one side and a product image or abstract visual on the other. A card grid is used for testimonials, presenting information in neat, uniform blocks. Navigation is a fixed top bar, minimal and unobtrusive, featuring ghost links and a single primary action button.
 
-### Imagery
+## Similar Brands
 
-The visual language relies heavily on clean product screenshots and abstract or conceptual graphics. Photography tends toward product-focused shots or highly stylized, sometimes desaturated, close-ups with tight crops to eliminate distracting backgrounds. Illustrations are minimal, often geometric or abstract, used primarily for decorative flair rather than information conveyance. Icons are outlined, simple, and monochromatic, aligning with the UI's clean aesthetic. Imagery is sparse, serving primarily to add decorative atmosphere or demonstrate product context, making the site feel text-dominant.
+- **Stripe** — Uses a dark, high-contrast UI with sparse use of a single vibrant accent color (blue for Stripe, green for Madebyon) to highlight interactive elements, alongside minimalist typography.
+- **Linear** — Employs a dark, monochrome interface with highly constrained color palettes, relying on precise typography and spacing to create a sense of efficiency and quiet authority.
+- **Figma** — Features a dark canvas with strong focus on functional, non-decorative UI elements, using subtle changes in surface color for hierarchy rather than heavy shadows or gradients.
+- **Vercel** — Known for its crisp, dark interfaces and a highly condensed, custom sans-serif typeface, featuring a distinct, almost glowing, single accent color.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-onyx-graphite: #151515;
+  --color-floral-veil: #faf9f4;
+  --color-soft-silver: #bdbdbd;
+  --color-warm-gray: #666666;
+  --color-switchblade-green: #dcff4f;
+  --color-emerald-spark: #51d287;
+  --font-favorit-extended: 'Favorit extended', ui-sans-serif, system-ui, sans-serif;
+  --font-favorit: 'Favorit', system-ui, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.35;
+  --text-body: 13px;
+  --leading-body: 1.35;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.35;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-113: 113px;
+  --radius-tags: 999px;
+  --radius-cards: 8px;
+  --radius-inputs: 16px;
+  --radius-buttons: 50px;
+  --radius-navitems: 50px;
+  --radius-bodyelements: 24px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-onyx-graphite: #151515;
+  --color-floral-veil: #faf9f4;
+  --color-soft-silver: #bdbdbd;
+  --color-warm-gray: #666666;
+  --color-switchblade-green: #dcff4f;
+  --color-emerald-spark: #51d287;
+  --font-favorit-extended: 'Favorit extended', ui-sans-serif, system-ui, sans-serif;
+  --font-favorit: 'Favorit', system-ui, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.35;
+  --text-body: 13px;
+  --leading-body: 1.35;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.35;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-113: 113px;
+  --radius-tags: 999px;
+  --radius-cards: 8px;
+  --radius-inputs: 16px;
+  --radius-buttons: 50px;
+  --radius-navitems: 50px;
+  --radius-bodyelements: 24px;
+}
+```

@@ -1,75 +1,185 @@
 ---
 version: alpha
-name: Mage
-description: Mage.ai presents a clear, functional interface resembling an architectural blueprint on a light canvas. The visual style prioritizes information and direct interaction through subtle surface variations and a single primary blue accent color. Typography is precise and organized, creating clear hierarchy without excessive embellishment. Components are lightweight with defined edges and moderate rounded corners, contributing to an overall structured and modern feel.
-colors:
-  canvas-white: "#ffffff"
-  greige-canvas: "#f7f7f1"
-  ink-black: "#000000"
-  storm-gray: "#2b2b2b"
-  silver-mist: "#b0b0b0"
-  ocean-blue: "#244cff"
-  sky-tint: "#e8f8ff"
-  pale-aqua: "#d6f2ff"
-  lavender-haze: "#c3aeff"
-  soft-yellow: "#ffffbd"
-  bright-cyan-gradient: "#e3e8ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.4
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 38px
-    lineHeight: 1.3
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 6px
-  buttonRadius: 17px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  primary-action-button:
-    role: Call-to-action button for initiating key user flows.
-  ghost-secondary-button:
-    role: Secondary action button, providing a less prominent option.
-  default-content-card:
-    role: General purpose card for grouping content and features.
-  compact-info-card:
-    role: Smaller card for lists or minor content blocks.
-  highlight-card:
-    role: Card with a subtle accent colored background.
-  feature-card-with-mixed-backgrounds:
-    role: Modular cards for distinctive feature presentation, using various accent colors.
+name: "Mage"
+description: "Mage.ai presents a clear, functional interface resembling an architectural blueprint on a light canvas. The visual style prioritizes information and direct interaction through subtle surface variations and a single primary blue accent color. Typography is precise and organized, creating clear hierarchy without excessive embellishment. Components are lightweight with defined edges and moderate rounded corners, contributing to an overall structured and modern feel."
+theme: "light"
+industry: "ai"
+source_url: "https://www.mage.ai"
+refero_style_id: "ba07accb-b2cc-4ad9-a25f-c50b0f90f34e"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516793192-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516793192-thumb.jpg"
+extracted_at: "2026-04-30T02:40:24.052Z"
 ---
 
-## Overview
+# Mage — Style Reference
 
-**North Star:** Architectural blueprint on white marble
+> Architectural blueprint on white marble
+
+**Theme:** light
+
+**Industry:** ai
 
 Mage.ai presents a clear, functional interface resembling an architectural blueprint on a light canvas. The visual style prioritizes information and direct interaction through subtle surface variations and a single primary blue accent color. Typography is precise and organized, creating clear hierarchy without excessive embellishment. Components are lightweight with defined edges and moderate rounded corners, contributing to an overall structured and modern feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button backgrounds, primary text on dark elements |
+| Greige Canvas | #f7f7f1 | `--color-greige-canvas` | Subtle background for alternating sections and secondary card surfaces, providing visual separation without strong contrast |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, headings, icons, and strong borders. Provides high contrast |
+| Storm Gray | #2b2b2b | `--color-storm-gray` | Secondary text, subheadings, and muted borders |
+| Silver Mist | #b0b0b0 | `--color-silver-mist` | Tertiary text, helper text, and inactive UI elements. Soft, low-contrast information |
+| Ocean Blue | #244cff | `--color-ocean-blue` | Primary action buttons, active links, and interactive elements – a clear signal for user engagement |
+| Sky Tint | #e8f8ff | `--color-sky-tint` | Light background for informational cards or highlighted sections, adding a subtle touch of color |
+| Pale Aqua | #d6f2ff | `--color-pale-aqua` | Background for specific card variants or content blocks |
+| Lavender Haze | #c3aeff | `--color-lavender-haze` | Decorative illustration accents, adding a soft, colorful touch to graphics |
+| Soft Yellow | #ffffbd | `--color-soft-yellow` | Background for specific card variants or content blocks |
+| Bright Cyan Gradient | #e3e8ff | `--color-bright-cyan-gradient` | Subtle background gradient for hero sections or prominent feature blocks, creating a soft, luminous feel |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.2
+- **Role:** sans-serif — detected in extracted data but not described by AI
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 13px, 15px, 16px, 17px, 18px, 21px, 22px, 24px
+- **Line heights:** 1.20, 1.30, 1.40, 1.50, 1.65
+- **Letter spacing:** normal
+- **OpenType features:** "blwf" on, "cv03" on, "cv04" on, "cv09" on, "cv11" on
+- **Role:** Primary typeface for all body text, links, and most headings. Its varied weights and legibility provide a robust foundation for content hierarchy.
+
+### Inter Variable
+
+- **Token:** `--font-inter-variable`
+- **Substitute:** Inter, system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 20px, 22px, 30px, 38px, 60px
+- **Line heights:** 1.30, 1.40
+- **Letter spacing:** normal
+- **Role:** Used for larger headings and display text, allowing for granular control over sizing and giving a modern, slightly expanded feel without being overly decorative.
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter, system-ui, sans-serif
+- **Weights:** 600
+- **Sizes:** 14px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** A distinct, heavier weight for specific callouts or labels, providing emphasis and a subtly different textual texture from the main Inter body.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | — | `--text-caption` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.5 | — | `--text-subheading` |
+| heading-sm | 22px | 1.4 | — | `--text-heading-sm` |
+| heading | 30px | 1.4 | — | `--text-heading` |
+| heading-lg | 38px | 1.3 | — | `--text-heading-lg` |
+| display | 60px | 1.3 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-90 | 90px | `--spacing-90` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 6px |
+| pills | 100px |
+| buttons | 17px |
+| default | 6px |
+| smallComponents | 16px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 40px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call-to-action button for initiating key user flows.
+
+Filled button with `Ocean Blue` background, `Canvas White` text. `Inter` font, bold (`600` weight), `16px` size. `17px` border radius creating a slightly rounded rectangular shape. `12px` vertical padding, `26px` horizontal padding.
+
+### Ghost Secondary Button
+
+**Role:** Secondary action button, providing a less prominent option.
+
+Ghost button with `Canvas White` background and `Ink Black` border and text. `Inter` font, bold (`600` weight), `16px` size. `17px` border radius. `12px` vertical padding, `26px` horizontal padding.
+
+### Default Content Card
+
+**Role:** General purpose card for grouping content and features.
+
+Card with `Greige Canvas` background, `6px` border radius, no shadow. `40px` padding on all sides. Content uses `Ink Black` for headings and `Storm Gray` for body text.
+
+### Compact Info Card
+
+**Role:** Smaller card for lists or minor content blocks.
+
+Card with `Greige Canvas` background. `8px` border radius, no shadow. `16px` padding on all sides.
+
+### Highlight Card
+
+**Role:** Card with a subtle accent colored background.
+
+Card with `Sky Tint` background, `6px` border radius, no shadow. `40px` padding on all sides. Primarily used for informational prompts or feature highlights.
+
+### Feature Card with Mixed Backgrounds
+
+**Role:** Modular cards for distinctive feature presentation, using various accent colors.
+
+Cards with `d6f2ff` (Pale Aqua), `ffffbd` (Soft Yellow), `294dba` (dark violet), `ba9ffc` (bright violet), `fcc2cd` (muted red), `fced9f` (moderate yellow), `3388ff` (blue) backgrounds. All use `6px` border radius and `40px` padding. This provides a diverse palette for feature differentiation.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use `Ink Black` (#000000) for primary headlines and body text to ensure maximum readability and brand consistency.
 - Utilize `Greige Canvas` (#f7f7f1) for alternating section backgrounds and `Canvas White` (#ffffff) for primary page backgrounds and cards to create clear visual separation.
@@ -79,7 +189,7 @@ Mage.ai presents a clear, functional interface resembling an architectural bluep
 - Maintain `40px` padding within cards and for major section gaps to give content adequate breathing room.
 - Use `Inter Variable` at larger sizes for headings to leverage its precise shaping and expressive range.
 
-### Don'ts
+### Don't
 
 - Do not use `Ocean Blue` (#244cff) for decorative elements or non-interactive text; its purpose is strictly functional for actions.
 - Avoid arbitrary color choices for backgrounds; stick to `Canvas White`, `Greige Canvas`, `Sky Tint`, or `Pale Aqua` for content surfaces.
@@ -89,10 +199,166 @@ Mage.ai presents a clear, functional interface resembling an architectural bluep
 - Do not use generic system fonts for critical UI elements if `Inter` or `Geist` are available, as they define the brand's typographic tone.
 - Do not deviate from the established type scale; respect predefined `size` and `lineHeight` for each text role to maintain hierarchy.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Primary page background and default card surface. |
+| 2 | Greige Canvas | #f7f7f1 | Secondary page and section backgrounds, subtly differentiating content blocks. |
+| 3 | Sky Tint | #e8f8ff | Highlight backgrounds for specific informational cards or feature areas. |
+| 4 | Accent Card Colors | #d6f2ff | Varied background for unique card variants or decorative elements within content. |
+
+## Imagery
+
+The site uses a mix of flat, slightly dimensional illustrations and high-fidelity product screenshots. Illustrations feature organic shapes, often depicting stylized characters working with abstract data elements, using bright, moderate accent colors like `Lavender Haze`. Product screenshots are dark-themed UI captures, placed within rounded-corner device mocks, acting as literal content anchors. Imagery is contained within cards or defined sections, never full-bleed, and serves both decorative and explanatory roles. Icons are predominantly filled and monochromatic, consistent with the `Ink Black` or `Silver Mist` palette, indicating a functional approach.
+
+## Layout
 
 The layout is primarily a contained, centered `max-width` structure with `Greige Canvas` (#f7f7f1) as the dominant background for body content, interspersed with `Canvas White` (#ffffff) sections. The hero features a split design: prominent centered headline and body text left, and a large, colorful, organic illustration on the right. Content sections generally alternate between `Canvas White` and `Greige Canvas` backgrounds, with consistent vertical `40px` section gaps. Text-heavy blocks often appear alongside product screenshots in a two-column `text-left/image-right` arrangement. Navigation is a sticky top bar with `Ink Black` text and a `Ghost Secondary Button` alongside a `Primary Action Button` for key actions. A grid of company logos is utilized for social proof, maintaining the centered content structure.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of flat, slightly dimensional illustrations and high-fidelity product screenshots. Illustrations feature organic shapes, often depicting stylized characters working with abstract data elements, using bright, moderate accent colors like `Lavender Haze`. Product screenshots are dark-themed UI captures, placed within rounded-corner device mocks, acting as literal content anchors. Imagery is contained within cards or defined sections, never full-bleed, and serves both decorative and explanatory roles. Icons are predominantly filled and monochromatic, consistent with the `Ink Black` or `Silver Mist` palette, indicating a functional approach.
+- **Vercel** — Monochromatic interface with a single vibrant accent color for primary actions and highlights.
+- **Segment** — Clear, structured content presentation with distinct, rounded cards and generous spacing.
+- **Figma** — Emphasis on functional, legible typography and a clean, light surface design.
+- **Linear** — Precise use of soft neutrals and a deliberate primary accent to guide user focus, with contained content blocks.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-greige-canvas: #f7f7f1;
+  --color-ink-black: #000000;
+  --color-storm-gray: #2b2b2b;
+  --color-silver-mist: #b0b0b0;
+  --color-ocean-blue: #244cff;
+  --color-sky-tint: #e8f8ff;
+  --color-pale-aqua: #d6f2ff;
+  --color-lavender-haze: #c3aeff;
+  --color-soft-yellow: #ffffbd;
+  --color-bright-cyan-gradient: #e3e8ff;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-inter-variable: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-geist: 'Geist', Inter, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.4;
+  --text-heading: 30px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 38px;
+  --leading-heading-lg: 1.3;
+  --text-display: 60px;
+  --leading-display: 1.3;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --radius-cards: 6px;
+  --radius-pills: 100px;
+  --radius-buttons: 17px;
+  --radius-default: 6px;
+  --radius-smallcomponents: 16px;
+  --surface-canvas-white: #ffffff;
+  --surface-greige-canvas: #f7f7f1;
+  --surface-sky-tint: #e8f8ff;
+  --surface-accent-card-colors: #d6f2ff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-greige-canvas: #f7f7f1;
+  --color-ink-black: #000000;
+  --color-storm-gray: #2b2b2b;
+  --color-silver-mist: #b0b0b0;
+  --color-ocean-blue: #244cff;
+  --color-sky-tint: #e8f8ff;
+  --color-pale-aqua: #d6f2ff;
+  --color-lavender-haze: #c3aeff;
+  --color-soft-yellow: #ffffbd;
+  --color-bright-cyan-gradient: #e3e8ff;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-inter-variable: 'Inter Variable', Inter, system-ui, sans-serif;
+  --font-geist: 'Geist', Inter, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.4;
+  --text-heading: 30px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 38px;
+  --leading-heading-lg: 1.3;
+  --text-display: 60px;
+  --leading-display: 1.3;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --radius-cards: 6px;
+  --radius-pills: 100px;
+  --radius-buttons: 17px;
+  --radius-default: 6px;
+  --radius-smallcomponents: 16px;
+  --surface-canvas-white: #ffffff;
+  --surface-greige-canvas: #f7f7f1;
+  --surface-sky-tint: #e8f8ff;
+  --surface-accent-card-colors: #d6f2ff;
+}
+```

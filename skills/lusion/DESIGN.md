@@ -1,82 +1,163 @@
 ---
 version: alpha
-name: Lusion
-description: This design system conjures a computational laboratory aesthetic, balancing stark functionality with precise, vivid accents. The dominant bright off-white surfaces provide a clean canvas for sharp black typography, creating a high-contrast, information-focused layout. Carefully placed vivid blue and lime green appear in interactive elements, like focused indicators or calls to action, injecting focused energy against the predominantly neutral backdrop. Subtle elevation and generous border radii on active components soften the underlying hard-edged forms, implying a blend of digital precision and user-friendly interaction.
-colors:
-  absolute-black: "#000000"
-  canvas-white: "#ffffff"
-  whisper-off-white: "#f0f1fa"
-  storm-gray: "#2b2e3a"
-  button-white: "#e4e6ef"
-  dark-surface: "#121416"
-  deep-space-blue: "#1a2ffb"
-  electric-lime: "#c1ff00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.48px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: -0.48px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.48px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.4
-    letterSpacing: -0.48px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1
-    letterSpacing: -0.48px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 108px
-    lineHeight: 0.9
-    letterSpacing: -0.48px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 144px
-    lineHeight: 0.9
-    letterSpacing: -0.48px
-spacing:
-  cardRadius: 15px
-  buttonRadius: 87.5px
-  elementGap: 13px
-components:
-  cta-button-group:
-    role: 
-  hero-tagline-with-scroll-bar:
-    role: 
-  contact-form-input-card:
-    role: 
-  primary-action-button:
-    role: Primary Call to Action
-  secondary-action-button:
-    role: Secondary Call to Action
-  tertiary-button:
-    role: Further Actions / Navigation
-  text-input-active:
-    role: User input fields
-  interactive-card-container:
-    role: Content grouping
+name: "Lusion"
+description: "This design system conjures a computational laboratory aesthetic, balancing stark functionality with precise, vivid accents. The dominant bright off-white surfaces provide a clean canvas for sharp black typography, creating a high-contrast, information-focused layout. Carefully placed vivid blue and lime green appear in interactive elements, like focused indicators or calls to action, injecting focused energy against the predominantly neutral backdrop. Subtle elevation and generous border radii on active components soften the underlying hard-edged forms, implying a blend of digital precision and user-friendly interaction."
+theme: "light"
+industry: "agency"
+source_url: "https://lusion.co"
+refero_style_id: "1b44386e-31a8-40b0-a577-27c088b51264"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925120639-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925120639-thumb.jpg"
+extracted_at: "2026-04-11T16:32:22.772Z"
 ---
 
-## Overview
+# Lusion — Style Reference
 
-**North Star:** Computational Laboratory Blueprint — high-contrast text on bright surfaces, accented by vivid blue and lime green.
+> Computational Laboratory Blueprint — high-contrast text on bright surfaces, accented by vivid blue and lime green.
+
+**Theme:** light
+
+**Industry:** agency
 
 This design system conjures a computational laboratory aesthetic, balancing stark functionality with precise, vivid accents. The dominant bright off-white surfaces provide a clean canvas for sharp black typography, creating a high-contrast, information-focused layout. Carefully placed vivid blue and lime green appear in interactive elements, like focused indicators or calls to action, injecting focused energy against the predominantly neutral backdrop. Subtle elevation and generous border radii on active components soften the underlying hard-edged forms, implying a blend of digital precision and user-friendly interaction.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Black | #000000 | `--color-absolute-black` | Primary text, critical UI elements, button text on light-colored buttons. |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, button text on dark buttons. |
+| Whisper Off-White | #f0f1fa | `--color-whisper-off-white` | Input fields, secondary backgrounds, subtle background differentiation. |
+| Storm Gray | #2b2e3a | `--color-storm-gray` | Background for primary interactive elements, like the 'Let's Talk' button. |
+| Button White | #e4e6ef | `--color-button-white` | Secondary button backgrounds, offering a slightly muted white option. |
+| Dark Surface | #121416 | `--color-dark-surface` | Base background for sections where a dark context is required, likely for visuals. |
+| Deep Space Blue | #1a2ffb | `--color-deep-space-blue` | Interactive elements, active states, borders around focused components. This vivid blue serves as the primary accent, signaling interaction. |
+| Electric Lime | #c1ff00 | `--color-electric-lime` | Highlights, specific attention-grabbing elements. Its lower prominence suggests a secondary accent, used sparingly. |
+
+## Tokens — Typography
+
+### Aeonik
+
+- **Token:** `--font-aeonik`
+- **Substitute:** system-ui (sans-serif)
+- **Weights:** 400, 500
+- **Sizes:** 12px, 13px, 14px, 16px, 18px, 20px, 22px, 26px, 36px, 38px, 43px, 49px, 50px, 108px, 115px, 144px
+- **Line heights:** 0.90, 1.00, 1.10, 1.15, 1.20, 1.40, 1.50
+- **Letter spacing:** -0.02
+- **Role:** All textual content: headings, body text, buttons, links, and inputs. The consistent application of Aeonik across all roles contributes to the system's coherent, slightly technical feel, with negative letter spacing adding to the precise aesthetic.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.48px | `--text-caption` |
+| body-sm | 14px | 1.5 | -0.48px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.48px | `--text-body` |
+| subheading | 22px | 1.4 | -0.48px | `--text-subheading` |
+| heading | 50px | 1 | -0.48px | `--text-heading` |
+| heading-lg | 108px | 0.9 | -0.48px | `--text-heading-lg` |
+| display | 144px | 0.9 | -0.48px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-168 | 168px | `--spacing-168` |
+| spacing-216 | 216px | `--spacing-216` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 15px |
+| inputs | 18px |
+| buttons | 87.5px |
+| pillForms | 100px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.04) 0px 6px 10px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 25px |
+| elementGap | 13px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Hero Tagline with Scroll Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Contact Form Input Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Primary Call to Action
+
+Rounded pill-shaped button with 'Storm Gray' background (#2b2e3a), 'Canvas White' text (#ffffff). Uses 87.5px border-radius, with 22.75px left padding and 15.75px right padding for specific visual balance, and no vertical padding.
+
+### Secondary Action Button
+
+**Role:** Secondary Call to Action
+
+Rounded pill-shaped button with 'Button White' background (#e4e6ef), 'Absolute Black' text (#000000). Uses 87.5px border-radius, with 22.75px left padding and 15.75px right padding for specific visual balance, and no vertical padding.
+
+### Tertiary Button
+
+**Role:** Further Actions / Navigation
+
+Rounded pill-shaped button with 'Canvas White' background (#ffffff), 'Absolute Black' text (#000000). Uses 76.5px border-radius, with 21.6px horizontal padding and 14.4px vertical padding.
+
+### Text Input Active
+
+**Role:** User input fields
+
+Input field with 'Whisper Off-White' background (#f0f1fa), 'Absolute Black' text (#000000). Features an 18px border-radius and 25px uniform padding. Border color is #000000 at 0px width.
+
+### Interactive Card Container
+
+**Role:** Content grouping
+
+Container with a 15px border-radius, likely on a 'Canvas White' background or 'Storm Gray'. Features a subtle shadow: rgba(0, 0, 0, 0.04) 0px 6px 10px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px, suggesting an interactive or elevated state.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Absolute Black' (#000000) for all primary body text, headings, and critical UI labels.
 - Use 'Canvas White' (#ffffff) as the default background for main content areas and cards, creating a bright, spacious canvas.
@@ -86,7 +167,7 @@ This design system conjures a computational laboratory aesthetic, balancing star
 - Enforce a base padding unit of 16px around interactive elements like buttons and 25px for inputs to ensure ample breathing room.
 - Introduce 'Whisper Off-White' (#f0f1fa) specifically for less prominent interactive elements or background differentiation in forms.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple accent colors in close proximity; 'Deep Space Blue' and 'Electric Lime' should be used sparingly and distinctly.
 - Do not deviate from the specified negative letter-spacing for Aeonik, as it is a core characteristic of the typographic identity.
@@ -95,10 +176,156 @@ This design system conjures a computational laboratory aesthetic, balancing star
 - Do not introduce highly saturated primary colors beyond 'Deep Space Blue' and 'Electric Lime' without specific justification.
 - Avoid dense information blocks; maintain generous inter-element and inter-section spacing, aligning with the spacious density.
 
-### Layout
+## Elevation
+
+- **Interactive Button/Card:** `rgba(0, 0, 0, 0.04) 0px 6px 10px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px`
+
+## Imagery
+
+The site uses hero section imagery dominated by 3D abstract renders: interlocking shapes in white, black, and 'Deep Space Blue' against a dark background. These are contained within a main content area, with rounded corners (15px radius) rather than full-bleed. The role of these visuals is primarily decorative atmosphere and brand showcase, indicating expertise in 3D and interactive storytelling, rather than explanatory content. Image density is high in the hero, but otherwise the site appears to be text-dominant.
+
+## Layout
 
 The site uses a max-width contained layout, not full-bleed, with ample horizontal padding visible through the main content area. The hero section features 3D abstract graphics centrally aligned, framed by a card-like container with rounded corners. The overall section rhythm appears to alternate between bright white backgrounds for textual content and darker backgrounds for visual elements. Content arrangement leans towards centered stacks for headlines and calls to action, with text and potentially visuals arranged in a balanced, open manner. Navigation is a top bar with clear 'LET'S TALK' and 'MENU' buttons, maintaining ample space.
 
-### Imagery
+## Similar Brands
 
-The site uses hero section imagery dominated by 3D abstract renders: interlocking shapes in white, black, and 'Deep Space Blue' against a dark background. These are contained within a main content area, with rounded corners (15px radius) rather than full-bleed. The role of these visuals is primarily decorative atmosphere and brand showcase, indicating expertise in 3D and interactive storytelling, rather than explanatory content. Image density is high in the hero, but otherwise the site appears to be text-dominant.
+- **Framer** — High-contrast text on bright, spacious layouts with a focus on modern, sans-serif typography and minimal but precise accent colors.
+- **Superlist** — Uses a similar approach to slightly rounded pill-shaped buttons and inputs against a mostly neutral background, with focused use of vivid accents.
+- **Linear** — Monochromatic approach with a strong typographic hierarchy, subtle elevation, and distinct color accents for interactive states.
+- **Vercel** — Clean, developer-tool aesthetic with high contrast, precise typography, and a deliberate, sparing use of accent colors.
+- **Stripe** — Understated visual design where clarity and functional typography combined with refined spacing create a sophisticated yet approachable interface.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-whisper-off-white: #f0f1fa;
+  --color-storm-gray: #2b2e3a;
+  --color-button-white: #e4e6ef;
+  --color-dark-surface: #121416;
+  --color-deep-space-blue: #1a2ffb;
+  --color-electric-lime: #c1ff00;
+  --font-aeonik: 'Aeonik', system-ui (sans-serif);
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.48px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: -0.48px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.48px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.48px;
+  --text-heading: 50px;
+  --leading-heading: 1;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 108px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.48px;
+  --text-display: 144px;
+  --leading-display: 0.9;
+  --tracking-display: -0.48px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-29: 29px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-168: 168px;
+  --spacing-216: 216px;
+  --radius-cards: 15px;
+  --radius-inputs: 18px;
+  --radius-buttons: 87.5px;
+  --radius-pillforms: 100px;
+  --shadow-xl: rgba(0, 0, 0, 0.04) 0px 6px 10px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-whisper-off-white: #f0f1fa;
+  --color-storm-gray: #2b2e3a;
+  --color-button-white: #e4e6ef;
+  --color-dark-surface: #121416;
+  --color-deep-space-blue: #1a2ffb;
+  --color-electric-lime: #c1ff00;
+  --font-aeonik: 'Aeonik', system-ui (sans-serif);
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.48px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: -0.48px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.48px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.48px;
+  --text-heading: 50px;
+  --leading-heading: 1;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 108px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.48px;
+  --text-display: 144px;
+  --leading-display: 0.9;
+  --tracking-display: -0.48px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-29: 29px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-168: 168px;
+  --spacing-216: 216px;
+  --radius-cards: 15px;
+  --radius-inputs: 18px;
+  --radius-buttons: 87.5px;
+  --radius-pillforms: 100px;
+  --shadow-xl: rgba(0, 0, 0, 0.04) 0px 6px 10px 0px, rgba(0, 0, 0, 0.04) 0px 2px 4px 0px;
+}
+```
