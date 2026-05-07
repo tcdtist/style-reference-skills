@@ -1,65 +1,195 @@
 ---
 version: alpha
-name: Wizz
-description: Wizz embraces a bold, high-contrast dark theme with a vibrant fuchsia accent color that creates a playful, energetic atmosphere. Typography is a central element, using distinct custom sans-serif typefaces for sharp, impactful headlines and clear body text. Surfaces are mostly dark and flat, relying on the single accent color for primary actions and highlights, with subtle elevation for key interactive elements.
-colors:
-  midnight-void: "#000000"
-  ghost-white: "#ffffff"
-  steel-gray: "#dadada"
-  ink-wash: "#444444"
-  charcoal: "#292929"
-  cloud-mist: "#eeeeee"
-  wizz-fuchsia: "#ff3d9e"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: 0.5px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 0.85
-    letterSpacing: -1px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 12px
-  elementGap: 10px
-  sectionGap: 80px
-components:
-  primary-action-button:
-    role: The main call to action button.
-  ghost-header-button:
-    role: Used for secondary actions in the header.
-  nav-link:
-    role: Standard navigation item with minimal styling.
-  cookie-consent-card:
-    role: Information panel for cookie settings.
-  text-input-dark:
-    role: Standard text input field in a dark context.
-  text-input-light:
-    role: Standard text input field in a light context.
+name: "Wizz"
+description: "Wizz embraces a bold, high-contrast dark theme with a vibrant fuchsia accent color that creates a playful, energetic atmosphere. Typography is a central element, using distinct custom sans-serif typefaces for sharp, impactful headlines and clear body text. Surfaces are mostly dark and flat, relying on the single accent color for primary actions and highlights, with subtle elevation for key interactive elements."
+theme: "dark"
+industry: "productivity"
+source_url: "https://wizzapp.com"
+refero_style_id: "408d0b89-be7d-4a09-bc29-8a8ce13d0a7b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509629576-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509629576-thumb.jpg"
+extracted_at: "2026-04-30T00:40:59.397Z"
 ---
 
-## Overview
+# Wizz — Style Reference
 
-**North Star:** Fuchsia-powered dark mode
+> Fuchsia-powered dark mode
+
+**Theme:** dark
+
+**Industry:** productivity
 
 Wizz embraces a bold, high-contrast dark theme with a vibrant fuchsia accent color that creates a playful, energetic atmosphere. Typography is a central element, using distinct custom sans-serif typefaces for sharp, impactful headlines and clear body text. Surfaces are mostly dark and flat, relying on the single accent color for primary actions and highlights, with subtle elevation for key interactive elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page backgrounds, card surfaces, primary text on light backgrounds |
+| Ghost White | #ffffff | `--color-ghost-white` | Prominent text on dark backgrounds, active states |
+| Steel Gray | #dadada | `--color-steel-gray` | Muted text, hairline borders, placeholder text |
+| Ink Wash | #444444 | `--color-ink-wash` | Subtle dark backgrounds, input text |
+| Charcoal | #292929 | `--color-charcoal` | Secondary surface backgrounds, ghost button fills |
+| Cloud Mist | #eeeeee | `--color-cloud-mist` | Input background fill on light surfaces |
+| Wizz Fuchsia | #ff3d9e | `--color-wizz-fuchsia` | Primary action buttons, links, accents on headings, input active states – creates immediate visual focus and brand recognition |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.2
+- **Role:** sans-serif — detected in extracted data but not described by AI
+
+### PolySans Median
+
+- **Token:** `--font-polysans-median`
+- **Substitute:** Inter
+- **Weights:** 400, 600, 700
+- **Sizes:** 10px, 13px, 14px, 16px, 18px, 86px
+- **Line heights:** 0.85, 1.00, 1.10, 1.20, 1.25, 1.44, 1.50, 2.00
+- **Letter spacing:** -0.0100em at 86px, 0.0500em at 10-18px
+- **Role:** Dominant display and headline font for punchy, modern statements, also used for some body text and navigation items.
+
+### PolySans Neutral
+
+- **Token:** `--font-polysans-neutral`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 18px
+- **Line heights:** 1.20, 1.30, 1.40, 1.50
+- **Role:** Supplemental body and link text, offering clean readability in smaller contexts.
+
+### PolySans Bulky
+
+- **Token:** `--font-polysans-bulky`
+- **Substitute:** Inter Bold
+- **Weights:** 700
+- **Sizes:** 72px
+- **Line heights:** 1.00
+- **Role:** Used for very large, impactful titles, commanding attention.
+
+### PolySans Slim
+
+- **Token:** `--font-polysans-slim`
+- **Substitute:** Inter Light
+- **Weights:** 300
+- **Sizes:** 14px
+- **Line heights:** 1.00, 1.10
+- **Role:** Delicate, light-weight text for subtle headings, links, and buttons, conveying a sophisticated restraint.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** System UI
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Role:** Default system font for utility text, labels, and card descriptions.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | 0.5px | `--text-caption` |
+| body | 14px | 1.5 | — | `--text-body` |
+| heading-sm | 18px | 1.25 | — | `--text-heading-sm` |
+| heading | 72px | 1 | — | `--text-heading` |
+| display | 86px | 0.85 | -1px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-90 | 90px | `--spacing-90` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| inputs | 12px |
+| avatars | 24px |
+| buttons | 12px |
+| navItems | 999px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.05) 0px 1px 10px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.3) 0px 1px 30px 0px | `--shadow-xl-2` |
+| xl-3 | rgb(218, 218, 218) 0px 0px 0px 1px inset | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80px |
+| cardPadding | 16px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** The main call to action button.
+
+Filled with Wizz Fuchsia (#ff3d9e), text in browser default blue (likely overridden to white in practice), 12px border radius, 10px vertical and 16px horizontal padding.
+
+### Ghost Header Button
+
+**Role:** Used for secondary actions in the header.
+
+Background Charcoal (#292929), text in browser default blue (likely white). Has a 999px border radius (pill shape) with 4px vertical and 10px horizontal padding.
+
+### Nav Link
+
+**Role:** Standard navigation item with minimal styling.
+
+Transparent background, Steel Gray (#dadada) text color, no border or radius, zero padding.
+
+### Cookie Consent Card
+
+**Role:** Information panel for cookie settings.
+
+Midnight Void (#000000) background, 14px border radius, inset border of 1px solid Steel Gray (#dadada).
+
+### Text Input (Dark)
+
+**Role:** Standard text input field in a dark context.
+
+Midnight Void (#000000) background, Ink Wash (#444444) text, Ink Wash (#444444) border, 10px border radius, 10px padding.
+
+### Text Input (Light)
+
+**Role:** Standard text input field in a light context.
+
+Cloud Mist (#eeeeee) background, Ink Wash (#444444) text, Ink Wash (#444444) border, 10px border radius, 10px padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Void (#000000) as the primary background for all major sections unless otherwise specified.
 - Apply Wizz Fuchsia (#ff3d9e) for all primary calls to action, ensuring text color contrasts sufficiently.
@@ -69,7 +199,7 @@ Wizz embraces a bold, high-contrast dark theme with a vibrant fuchsia accent col
 - Use a 999px border radius (pill shape) for all ghost buttons and small informational tags in the header.
 - Apply Steel Gray (#dadada) for subtle dividers, borders, and muted supporting text.
 
-### Don'ts
+### Don't
 
 - Avoid generic system default colors; exclusively use colors from the defined palette.
 - Do not use multiple accent colors; Wizz Fuchsia (#ff3d9e) is the sole vibrant accent for interactivity and brand highlighting.
@@ -79,10 +209,155 @@ Wizz embraces a bold, high-contrast dark theme with a vibrant fuchsia accent col
 - Do not use broad, full-width content sections; contain most content within a defined horizontal width for better readability and structure.
 - Avoid overly bright or light backgrounds for main content areas; maintain the dark-mode aesthetic predominantly.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Background | #000000 | Dominant background for the entire application and sections. |
+| 1 | Card Surface | #000000 | Background for cards and information panels, often with an inset border for definition. |
+| 2 | Subtle Surface | #292929 | Used for ghost buttons and secondary background elements, providing a slight elevation from the canvas without strong contrast. |
+| 3 | Input Background (Light) | #eeeeee | Background for input fields, typically on lighter content sections. |
+
+## Elevation
+
+- **Dropdown/Menu:** `rgba(0, 0, 0, 0.05) 0px 1px 10px 0px`
+- **Button (promoted):** `rgba(0, 0, 0, 0.3) 0px 1px 30px 0px`
+- **Card (inset border):** `rgb(218, 218, 218) 0px 0px 0px 1px inset`
+
+## Imagery
+
+The site uses a mix of dark, immersive gradients for hero sections and UI surfaces (blending purple, orange, pink), contrasted with clean, product-focused photography featuring phone screens and diverse user profile images. Graphics are minimal, relying on simple icons (likely outlined, matching the site's generally sparse visual style). Imagery is primarily decorative atmosphere for the hero and expressive content for user representation, maintaining a high-contrast aesthetic against dark backgrounds.
+
+## Layout
 
 The page primarily uses a full-bleed layout for background elements and a centered, contained content model for text and components, with an implicit max-width. The hero section often features a full-width gradient backdrop with a large, centered headline. Content sections alternate between visually distinct blocks, often presenting a two-column layout with text on one side and a visual (like a phone screenshot or user gallery) on the other. Vertical rhythm is established through consistent section gaps. Navigation is a sticky top bar with pill-shaped buttons and subtly styled links.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of dark, immersive gradients for hero sections and UI surfaces (blending purple, orange, pink), contrasted with clean, product-focused photography featuring phone screens and diverse user profile images. Graphics are minimal, relying on simple icons (likely outlined, matching the site's generally sparse visual style). Imagery is primarily decorative atmosphere for the hero and expressive content for user representation, maintaining a high-contrast aesthetic against dark backgrounds.
+- **Discord** — Dark UI with a single vibrant accent color for interaction and branding.
+- **Figma** — Sharp, modern typography and a focus on clean, functional dark surfaces with minimal decorative elements.
+- **Linear** — High-contrast dark theme, crisp typography, and subtle elevation for core UI components.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-steel-gray: #dadada;
+  --color-ink-wash: #444444;
+  --color-charcoal: #292929;
+  --color-cloud-mist: #eeeeee;
+  --color-wizz-fuchsia: #ff3d9e;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-polysans-median: 'PolySans Median', Inter;
+  --font-polysans-neutral: 'PolySans Neutral', Inter;
+  --font-polysans-bulky: 'PolySans Bulky', Inter Bold;
+  --font-polysans-slim: 'PolySans Slim', Inter Light;
+  --font-inter: 'Inter', System UI;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.5px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 72px;
+  --leading-heading: 1;
+  --text-display: 86px;
+  --leading-display: 0.85;
+  --tracking-display: -1px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-90: 90px;
+  --radius-cards: 12px;
+  --radius-inputs: 12px;
+  --radius-avatars: 24px;
+  --radius-buttons: 12px;
+  --radius-navitems: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.3) 0px 1px 30px 0px;
+  --shadow-xl-3: rgb(218, 218, 218) 0px 0px 0px 1px inset;
+  --surface-canvas-background: #000000;
+  --surface-card-surface: #000000;
+  --surface-subtle-surface: #292929;
+  --surface-input-background-light: #eeeeee;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-steel-gray: #dadada;
+  --color-ink-wash: #444444;
+  --color-charcoal: #292929;
+  --color-cloud-mist: #eeeeee;
+  --color-wizz-fuchsia: #ff3d9e;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-polysans-median: 'PolySans Median', Inter;
+  --font-polysans-neutral: 'PolySans Neutral', Inter;
+  --font-polysans-bulky: 'PolySans Bulky', Inter Bold;
+  --font-polysans-slim: 'PolySans Slim', Inter Light;
+  --font-inter: 'Inter', System UI;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.5px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 72px;
+  --leading-heading: 1;
+  --text-display: 86px;
+  --leading-display: 0.85;
+  --tracking-display: -1px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-90: 90px;
+  --radius-cards: 12px;
+  --radius-inputs: 12px;
+  --radius-avatars: 24px;
+  --radius-buttons: 12px;
+  --radius-navitems: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 1px 10px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.3) 0px 1px 30px 0px;
+  --shadow-xl-3: rgb(218, 218, 218) 0px 0px 0px 1px inset;
+  --surface-canvas-background: #000000;
+  --surface-card-surface: #000000;
+  --surface-subtle-surface: #292929;
+  --surface-input-background-light: #eeeeee;
+}
+```
