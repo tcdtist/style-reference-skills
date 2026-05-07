@@ -1,63 +1,145 @@
 ---
 version: alpha
-name: FRANKY'S
-description: Franky's employs an 8-bit arcade aesthetic, reminiscent of retro computing interfaces and early video games. The UI features a dominant dark mode with soft, paper-like neutral surfaces and vibrant, purposeful chromatic accents. A distinct pixelated font defines all typography, reinforcing a digital-native, nostalgic feel. Elements are framed with thin, sometimes dashed borders, and rounded corners provide a subtle organic counterpoint to the pixel grid.
-colors:
-  midnight-screen: "#000000"
-  paper-canvas: "#f3e5df"
-  off-white-border: "#e5e7eb"
-  subtle-charcoal: "#333333"
-  ghostly-gray: "#737373"
-  marigold-gold: "#faa21f"
-  action-green: "#128e44"
-  midnight-gradient-blue: "#2b4893"
-  sunset-gradient-orange: "#cf4308"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.56
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-spacing:
-  cardRadius: 12px
-  buttonRadius: 6px
-  elementGap: 4px
-  sectionGap: 44px
-components:
-  ghost-button-thin-border:
-    role: Secondary action control
-  ghost-button-subtle-border:
-    role: Tertiary action control
-  ghost-button-rounded-subtle-border:
-    role: Tertiary action control with soft corners
-  pill-button-left-rounded:
-    role: Segmented control left segment
-  primary-action-button:
-    role: Main call to action
-  product-card:
-    role: Display individual products and details
-  status-indicator-button:
-    role: Informative button, non-interactive (e.g. 'Out of Stock')
+name: "FRANKY'S"
+description: "Franky's employs an 8-bit arcade aesthetic, reminiscent of retro computing interfaces and early video games. The UI features a dominant dark mode with soft, paper-like neutral surfaces and vibrant, purposeful chromatic accents. A distinct pixelated font defines all typography, reinforcing a digital-native, nostalgic feel. Elements are framed with thin, sometimes dashed borders, and rounded corners provide a subtle organic counterpoint to the pixel grid."
+theme: "dark"
+industry: "ecommerce"
+source_url: "https://frankys-hats.com"
+refero_style_id: "7c84da5d-b7a0-436f-bfaa-68d0a14f8e86"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520365718-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520365718-thumb.jpg"
+extracted_at: "2026-04-30T03:39:47.425Z"
 ---
 
-## Overview
+# FRANKY'S — Style Reference
 
-**North Star:** Retro Pixelated Arcade
+> Retro Pixelated Arcade
+
+**Theme:** dark
+
+**Industry:** ecommerce
 
 Franky's employs an 8-bit arcade aesthetic, reminiscent of retro computing interfaces and early video games. The UI features a dominant dark mode with soft, paper-like neutral surfaces and vibrant, purposeful chromatic accents. A distinct pixelated font defines all typography, reinforcing a digital-native, nostalgic feel. Elements are framed with thin, sometimes dashed borders, and rounded corners provide a subtle organic counterpoint to the pixel grid.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Screen | #000000 | `--color-midnight-screen` | Primary screen background, dominant text color, strong borders — controls the overall dark theme contrast |
+| Paper Canvas | #f3e5df | `--color-paper-canvas` | Card backgrounds, secondary surface fills, inner button shadows — creates the aged paper-like texture against the dark background |
+| Off-White Border | #e5e7eb | `--color-off-white-border` | Primary UI borders, ghost button borders, dividers — a subtle, slightly cool neutral that defines component edges |
+| Subtle Charcoal | #333333 | `--color-subtle-charcoal` | Background for secondary panels or elements, subtle fills — provides layered depth within the dark mode |
+| Ghostly Gray | #737373 | `--color-ghostly-gray` | Muted text, disabled states, secondary button text — for lower hierarchy information |
+| Marigold Gold | #faa21f | `--color-marigold-gold` | Orange wash for highlight backgrounds, decorative bands, and soft emphasis behind content. |
+| Action Green | #128e44 | `--color-action-green` | Primary call-to-action buttons, active elements — a direct and clear indicator of interactable elements |
+| Midnight Gradient Blue | #2b4893 | `--color-midnight-gradient-blue` | Decorative gradient element — provides a deep, moody blue within a larger gradient |
+| Sunset Gradient Orange | #cf4308 | `--color-sunset-gradient-orange` | Decorative gradient element — a warm, vibrant orange complementing the deep blue in a gradient |
+
+## Tokens — Typography
+
+### Arcade
+
+- **Token:** `--font-arcade`
+- **Substitute:** Press Start 2P, IBM Plex Mono
+- **Weights:** 400, 700
+- **Sizes:** 10px, 14px, 16px, 18px
+- **Line heights:** 1.25, 1.43, 1.50, 1.56
+- **Letter spacing:** normal
+- **Role:** The sole typeface, 'Arcade', dictates the retro, pixelated aesthetic of the entire interface. Its limited weights and specific sizing evoke a classic video game display.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.56 | — | `--text-caption` |
+| body-sm | 14px | 1.43 | — | `--text-body-sm` |
+| body | 16px | 1.5 | — | `--text-body` |
+| heading | 18px | 1.25 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-61 | 61px | `--spacing-61` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 9999px |
+| cards | 12px |
+| buttons | 6px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(243, 229, 223) 0px 1px 0px 0px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 44px |
+| cardPadding | 12px |
+| elementGap | 4px |
+
+## Components
+
+### Ghost Button Thin Border
+
+**Role:** Secondary action control
+
+Transparent background, Midnight Screen text, 4px padding, 0px border-radius, with a 1px solid Midnight Screen border. Used for 'Win Store Coupons' and '3D/AR' toggles.
+
+### Ghost Button Subtle Border
+
+**Role:** Tertiary action control
+
+Transparent background, Midnight Screen text, 6px vertical padding, 4px horizontal padding, 0px border-radius, with a 1px solid Off-White Border. Used for actions like 'Try in AR'.
+
+### Ghost Button Rounded Subtle Border
+
+**Role:** Tertiary action control with soft corners
+
+Transparent background, Midnight Screen text, 8px padding, 6px border-radius, with a 1px solid Off-White Border. Used for smaller, less prominent actions.
+
+### Pill Button Left Rounded
+
+**Role:** Segmented control left segment
+
+Midnight Screen background with Paper Canvas text, 4px vertical padding and 8-12px horizontal padding. Features a 9999px border-radius on the left side, squared on the right, and an inset shadow of rgb(243, 229, 223) 0px 1px 0px 0px.
+
+### Primary Action Button
+
+**Role:** Main call to action
+
+Action Green background with Midnight Screen text, 4px horizontal padding and a small inner shadow of rgb(243, 229, 223) 0px 1px 0px 0px. Used for 'Add to Cart'.
+
+### Product Card
+
+**Role:** Display individual products and details
+
+Paper Canvas background, 12px padding, and 12px border-radius. Contains product image, name, price, and actions like 'Add to cart'.
+
+### Status Indicator Button
+
+**Role:** Informative button, non-interactive (e.g. 'Out of Stock')
+
+Transparent background, Ghostly Gray text, with a 1px solid Off-White Border. Used to indicate product availability.
+
+## Do's and Don'ts
+
+### Do
 
 - Retain the dominant dark theme foregrounded by Paper Canvas (#f3e5df) elements and Midnight Screen (#000000) text for content.
 - Utilize the Arcade font exclusively for all text elements to maintain the pixelated retro aesthetic.
@@ -67,7 +149,7 @@ Franky's employs an 8-bit arcade aesthetic, reminiscent of retro computing inter
 - Use Marigold Gold (#faa21f) as a vibrant, distinct accent for top-level promotions or specific highlight features.
 - Maintain a compact density for elements, primarily using 4px and 12px for padding and gaps, reserving larger values for section separation.
 
-### Don'ts
+### Don't
 
 - Avoid using bright white backgrounds; always use Paper Canvas (#f3e5df) for lighter surfaces to maintain the aged paper aesthetic.
 - Do not introduce any additional font families or weights beyond the defined Arcade font to preserve the distinctive typography.
@@ -77,10 +159,111 @@ Franky's employs an 8-bit arcade aesthetic, reminiscent of retro computing inter
 - Avoid introducing new primary accent colors; limit the palette to the defined Marigold Gold (#faa21f) and Action Green (#128e44).
 - Do not add gradients arbitrarily; use them sparingly and only with the defined color combinations and directions where appropriate for decorative elements.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Screen Background | #000000 | The primary background for the entire application, simulating a dark digital screen. |
+| 1 | Base Surface | #333333 | Used for slightly elevated panels or dividers, providing a subtle layer above the main background. |
+| 2 | Paper Canvas Card | #f3e5df | The main background for content cards and prominent UI elements, creating a visually distinct, aged-paper effect. |
+
+## Elevation
+
+- **Shadow 1:** `rgb(243, 229, 223) 0px 1px 0px 0px inset`
+
+## Imagery
+
+The site uses product photography paired with stylized graphics. Product images are flat, illustrative representations of hats. The main product display section features a large, dynamic 3D render of a hat against a checkerboard pattern. Icons are minimal, outlined, and monochromatic, matching the pixelated aesthetic. Imagery serves primarily as product showcase and decorative atmosphere, contributing to the retro digital theme.
+
+## Layout
 
 The page uses a contained, centered layout, appearing within a distinct browser-like frame. The hero section features a full-width interactive product view (3D/AR) alongside a dynamic checkerboard background. Below this, content is arranged in a fluid grid of product cards, breaking into a two-column layout on larger screens. Navigation is a minimalist top bar within the browser-like frame, with subtle text links for secondary actions. The layout maintains consistent vertical spacing between sections, creating a compact but clear presentation.
 
-### Imagery
+## Similar Brands
 
-The site uses product photography paired with stylized graphics. Product images are flat, illustrative representations of hats. The main product display section features a large, dynamic 3D render of a hat against a checkerboard pattern. Icons are minimal, outlined, and monochromatic, matching the pixelated aesthetic. Imagery serves primarily as product showcase and decorative atmosphere, contributing to the retro digital theme.
+- **Teenage Engineering** — Shares a raw, functional, and slightly retro UI aesthetic with prominent use of monospace fonts and defined component framing.
+- **Panic, Inc.** — Exhibits a playful, distinctive brand language through custom typography and a strong sense of personality in their digital interfaces.
+- **Playdate** — Features a monochromatic screen with pixelated graphics and a unique brand typeface, evoking a nostalgic, digital-first experience.
+- **AIGA Design Archives (older versions)** — Employs a bold, utilitarian typographic style with strong grid usage, creating a structured and almost 'programmatic' visual. 
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-screen: #000000;
+  --color-paper-canvas: #f3e5df;
+  --color-off-white-border: #e5e7eb;
+  --color-subtle-charcoal: #333333;
+  --color-ghostly-gray: #737373;
+  --color-marigold-gold: #faa21f;
+  --color-action-green: #128e44;
+  --color-midnight-gradient-blue: #2b4893;
+  --color-sunset-gradient-orange: #cf4308;
+  --font-arcade: 'Arcade', Press Start 2P, IBM Plex Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.56;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-heading: 18px;
+  --leading-heading: 1.25;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+  --spacing-43: 43px;
+  --spacing-44: 44px;
+  --spacing-61: 61px;
+  --radius-pill: 9999px;
+  --radius-cards: 12px;
+  --radius-buttons: 6px;
+  --shadow-xl: rgb(243, 229, 223) 0px 1px 0px 0px inset;
+  --surface-screen-background: #000000;
+  --surface-base-surface: #333333;
+  --surface-paper-canvas-card: #f3e5df;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-screen: #000000;
+  --color-paper-canvas: #f3e5df;
+  --color-off-white-border: #e5e7eb;
+  --color-subtle-charcoal: #333333;
+  --color-ghostly-gray: #737373;
+  --color-marigold-gold: #faa21f;
+  --color-action-green: #128e44;
+  --color-midnight-gradient-blue: #2b4893;
+  --color-sunset-gradient-orange: #cf4308;
+  --font-arcade: 'Arcade', Press Start 2P, IBM Plex Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.56;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-heading: 18px;
+  --leading-heading: 1.25;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+  --spacing-43: 43px;
+  --spacing-44: 44px;
+  --spacing-61: 61px;
+  --radius-pill: 9999px;
+  --radius-cards: 12px;
+  --radius-buttons: 6px;
+  --shadow-xl: rgb(243, 229, 223) 0px 1px 0px 0px inset;
+  --surface-screen-background: #000000;
+  --surface-base-surface: #333333;
+  --surface-paper-canvas-card: #f3e5df;
+}
+```

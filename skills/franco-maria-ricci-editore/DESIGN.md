@@ -1,59 +1,142 @@
 ---
 version: alpha
-name: Franco Maria Ricci Editore
-description: Franco Maria Ricci's design system evokes the gravitas of classic publishing with a pristine white canvas and sharp, high-contrast typography. Its visual identity relies on subtle use of a single, rich gold accent for highlighting and interactive states, creating an understated elegance. Components are minimal, often borderless and shadowless, allowing the content—primarily art books—to command attention. The overall impression is one of sparse luxury and meticulous curation, where visual space is as important as the elements it contains.
-colors:
-  canvas-white: "#ffffff"
-  warm-paper: "#f6f6f6"
-  faded-gray: "#b3b3b3"
-  midnight-ink: "#000000"
-  baroque-gold: "#bc9c5c"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.25
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.25
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.25
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 0.95
-spacing:
-  elementGap: 20px
-  sectionGap: 48px
-components:
-  ghost-button:
-    role: Interactive elements with minimal visual footprint, often acting as links or secondary actions. Their visual weight is conveyed through text and a subtle border or underline.
-  outlined-accent-button:
-    role: Primary Call-to-action or important interactive elements, distinguished by the Baroque Gold border.
-  product-display-card:
-    role: Used to showcase individual product items like books, emphasizing the product image itself.
-  text-input-underlined:
-    role: Standard input field for forms, with minimal styling.
+name: "Franco Maria Ricci Editore"
+description: "Franco Maria Ricci's design system evokes the gravitas of classic publishing with a pristine white canvas and sharp, high-contrast typography. Its visual identity relies on subtle use of a single, rich gold accent for highlighting and interactive states, creating an understated elegance. Components are minimal, often borderless and shadowless, allowing the content—primarily art books—to command attention. The overall impression is one of sparse luxury and meticulous curation, where visual space is as important as the elements it contains."
+theme: "light"
+industry: "media"
+source_url: "https://www.francomariaricci.com/en"
+refero_style_id: "6120469b-a1c8-46d3-b7fd-8aa6dc22c0d9"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517309309-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517309309-thumb.jpg"
+extracted_at: "2026-04-30T02:49:17.498Z"
 ---
 
-## Overview
+# Franco Maria Ricci Editore — Style Reference
 
-**North Star:** Ivory Page, Golden Inscription
+> Ivory Page, Golden Inscription
+
+**Theme:** light
+
+**Industry:** media
 
 Franco Maria Ricci's design system evokes the gravitas of classic publishing with a pristine white canvas and sharp, high-contrast typography. Its visual identity relies on subtle use of a single, rich gold accent for highlighting and interactive states, creating an understated elegance. Components are minimal, often borderless and shadowless, allowing the content—primarily art books—to command attention. The overall impression is one of sparse luxury and meticulous curation, where visual space is as important as the elements it contains.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, elevated surface backgrounds, neutral text |
+| Warm Paper | #f6f6f6 | `--color-warm-paper` | Subtle background for sections, creating a slight textural difference from the main canvas |
+| Faded Gray | #b3b3b3 | `--color-faded-gray` | Muted background elements, creating soft contrast in certain sections |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, borders, iconography — providing high contrast against light surfaces |
+| Baroque Gold | #bc9c5c | `--color-baroque-gold` | Accent for headings, interactive borders, links, and decorative elements — signifying importance and elegance |
+
+## Tokens — Typography
+
+### BodoniSvntytwoITCStd-Book
+
+- **Token:** `--font-bodonisvntytwoitcstd-book`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 18px, 22px, 42px
+- **Line heights:** 0.95, 1.25
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all core content, headings, and UI elements. Its classic serifs contribute to the brand's authoritative and artistic tone. The tightest line-heights are for display-level text, while smaller body text uses more generous spacing.
+
+### BodoniSvntytwoITCStd-BookIt
+
+- **Token:** `--font-bodonisvntytwoitcstd-bookit`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 16px, 22px, 42px
+- **Line heights:** 1.25
+- **Letter spacing:** normal
+- **Role:** Used for emphasizing select headings and body text, providing a calligraphic accent within the core Bodoni family.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** sans-serif
+- **Weights:** 400, 700
+- **Sizes:** 12px, 14px
+- **Line heights:** 1.25
+- **Letter spacing:** normal
+- **Role:** Secondary sans-serif for functional text, helper text, and some navigation elements, providing legibility at small sizes while maintaining a modern, understated presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.25 | — | `--text-caption` |
+| body-sm | 14px | 1.25 | — | `--text-body-sm` |
+| body | 16px | 1.25 | — | `--text-body` |
+| subheading | 18px | 1.25 | — | `--text-subheading` |
+| heading-sm | 22px | 1.25 | — | `--text-heading-sm` |
+| heading | 42px | 0.95 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-79 | 79px | `--spacing-79` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-119 | 119px | `--spacing-119` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 0px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Interactive elements with minimal visual footprint, often acting as links or secondary actions. Their visual weight is conveyed through text and a subtle border or underline.
+
+Background: transparent. Text color: Midnight Ink (#000000). Border: 1px solid Midnight Ink (#000000) only for some variants, others borderless. Radius: 0px. Padding: 0px.
+
+### Outlined Accent Button
+
+**Role:** Primary Call-to-action or important interactive elements, distinguished by the Baroque Gold border.
+
+Background: transparent (rgba(0,0,0,0)). Text color: Baroque Gold (#bc9c5c) or Midnight Ink (#000000). Border: 1px solid Baroque Gold (#bc9c5c). Radius: 0px. Padding: Often 0px, integrated into typography.
+
+### Product Display Card
+
+**Role:** Used to showcase individual product items like books, emphasizing the product image itself.
+
+Background: transparent (rgba(0,0,0,0)). Radius: 0px. Box shadow: none. Padding: 0px top/right/left, 474px bottom (for vertical spacing of content below).
+
+### Text Input (Underlined)
+
+**Role:** Standard input field for forms, with minimal styling.
+
+Background: transparent (rgba(0,0,0,0)). Text color: Midnight Ink (#000000). Border: 1px solid Midnight Ink (#000000) on bottom only. Radius: 0px. Padding: 8px vertical, 0px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize BodoniSvntytwoITCStd-Book (or a serif substitute) for all headings and body text, especially at larger sizes, to maintain a classic, editorial feel.
 - Use Midnight Ink (#000000) for all primary text and main UI borders to ensure high contrast and a strong visual presence.
@@ -63,7 +146,7 @@ Franco Maria Ricci's design system evokes the gravitas of classic publishing wit
 - Ensure interactive elements appear as ghost buttons or outlined elements, rather than solid fills, minimizing visual weight.
 - When displaying products or imagery, use transparent backgrounds and 0px padding/radius on cards to allow the content to breathe and maintain a gallery-like presentation.
 
-### Don'ts
+### Don't
 
 - Avoid solid background colors for buttons; they contradict the ghost/outlined aesthetic.
 - Do not use highly saturated colors outside the brand's Baroque Gold accent; maintain a largely achromatic palette.
@@ -73,10 +156,114 @@ Franco Maria Ricci's design system evokes the gravitas of classic publishing wit
 - Do not use font weights other than 400 for serif typefaces, or 400/700 for Arial, to preserve typographic precision.
 - Avoid large hero sections with busy imagery; focus on clean typographic statements and minimal visual content.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Dominant page background, providing a clean, expansive foundation. |
+| 1 | Warm Paper | #f6f6f6 | Secondary background for content sections, subtly breaking up the main canvas without strong contrast. |
+| 2 | Faded Gray | #b3b3b3 | Background for specific, muted hero or decorative sections, offering a gentle visual shift. |
+
+## Imagery
+
+The visual language focuses heavily on product shots of books, often isolated on neutral backgrounds, showcasing the cover art as the primary visual. When illustrations are present, particularly the Erte artwork, they are highly stylized with strong outlines and often featuring the Baroque Gold as a key color. Iconography tends to be minimalistic, outlined, and in Midnight Ink. Imagery's role is primarily decorative atmosphere and product showcase, with a bias towards text-dominant layouts punctuated by key visuals. The density is moderate, with images usually contained within well-defined, singular areas, not overlapping or full-bleed across sections.
+
+## Layout
 
 The page adheres to a max-width contained layout, though the exact max-width is not defined globally but suggested through consistent margins. The hero section often features a centered headline over a background graphic or illustration. Content flows in distinct sections, often with alternating background colors (Canvas White and Warm Paper) to delineate blocks. A common pattern is a grid-based display for product listings, using 3-column layouts for cards. Navigation is a subtle top bar with minimal elements, suggesting a focus on content browsing rather than complex interactions. The rhythm is spacious and measured, with significant vertical spacing between sections.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses heavily on product shots of books, often isolated on neutral backgrounds, showcasing the cover art as the primary visual. When illustrations are present, particularly the Erte artwork, they are highly stylized with strong outlines and often featuring the Baroque Gold as a key color. Iconography tends to be minimalistic, outlined, and in Midnight Ink. Imagery's role is primarily decorative atmosphere and product showcase, with a bias towards text-dominant layouts punctuated by key visuals. The density is moderate, with images usually contained within well-defined, singular areas, not overlapping or full-bleed across sections.
+- **Phaidon** — High-end art book publisher with a focus on editorial design, elegant typography, and product-focused imagery on clean backgrounds.
+- **Taschen** — Known for large-format art books, often characterized by classic serif typography, minimal UI, and a premium aesthetic.
+- **The New York Times** — Classic serif typography, high-contrast black and white palette with subtle accent colors, and a strong editorial feel for textual content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-warm-paper: #f6f6f6;
+  --color-faded-gray: #b3b3b3;
+  --color-midnight-ink: #000000;
+  --color-baroque-gold: #bc9c5c;
+  --font-bodonisvntytwoitcstd-book: 'BodoniSvntytwoITCStd-Book', serif;
+  --font-bodonisvntytwoitcstd-bookit: 'BodoniSvntytwoITCStd-BookIt', serif;
+  --font-arial: 'Arial', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.25;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.25;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 42px;
+  --leading-heading: 0.95;
+  --spacing-0: 0px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-79: 79px;
+  --spacing-80: 80px;
+  --spacing-119: 119px;
+  --spacing-128: 128px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-warm-paper: #f6f6f6;
+  --surface-faded-gray: #b3b3b3;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-warm-paper: #f6f6f6;
+  --color-faded-gray: #b3b3b3;
+  --color-midnight-ink: #000000;
+  --color-baroque-gold: #bc9c5c;
+  --font-bodonisvntytwoitcstd-book: 'BodoniSvntytwoITCStd-Book', serif;
+  --font-bodonisvntytwoitcstd-bookit: 'BodoniSvntytwoITCStd-BookIt', serif;
+  --font-arial: 'Arial', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.25;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.25;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 42px;
+  --leading-heading: 0.95;
+  --spacing-0: 0px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-79: 79px;
+  --spacing-80: 80px;
+  --spacing-119: 119px;
+  --spacing-128: 128px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-warm-paper: #f6f6f6;
+  --surface-faded-gray: #b3b3b3;
+}
+```
