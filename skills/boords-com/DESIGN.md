@@ -1,94 +1,202 @@
 ---
 version: alpha
-name: boords.com
-description: Boords presents a light and airy design that feels like an organized workshop, balancing clear information with subtle visual cues. The primary canvas of crisp Alabaster (#fafaf5) is contrasted by accents of playful Butterscotch (#e8aa42) and rich Charcoal (#121212) that anchor calls to action and create visual hierarchy. The consistent use of a custom "Matter" typeface provides a modern yet approachable voice, while distinct border radii like the 9999px pill shape for buttons introduce softness into an otherwise structured layout.
-colors:
-  carbon: "#000000"
-  charcoal: "#121212"
-  alabaster: "#fafaf5"
-  white: "#ffffff"
-  parchment: "#e9e9e7"
-  slate: "#4d4d4d"
-  ash: "#cecdca"
-  dusk-grey: "#7d7d7d"
-  faded-stone: "#898989"
-  peach: "#eb6c00"
-  butterscotch: "#e8aa42"
-  honey-bronze: "#b77a10"
-  sky-mist: "#daeef8"
-  deep-ocean: "#214c70"
-  burnished-bronze-gradient: "#453d37"
-  warm-umber-gradient: "#2d2824"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: 0.25px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.7
-    letterSpacing: 0.35px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.25
-    letterSpacing: 0.475px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: 0.6px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: 0.8px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.1
-    letterSpacing: 1.5px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 9999px
-  elementGap: 8px
-  sectionGap: 24px
-components:
-  cta-button-group:
-    role: 
-  testimonial-cards:
-    role: 
-  api-webhooks-dark-feature-cards:
-    role: 
-  primary-navigation-link:
-    role: Clickable text in the main navigation.
-  ghost-outline-button:
-    role: Secondary action button, often grouped with a primary button.
-  pill-outline-button-accent:
-    role: Primary call to action or crucial secondary action.
-  filled-button-charcoal:
-    role: Prominent, high-contrast action button for critical paths.
-  plain-text-button:
-    role: Minimal interactive element, typically used for 'Log in' or simple navigation.
-  feedback-card-white:
-    role: Container for user comments or interactive content within a larger context.
-  information-card-alabaster:
-    role: General content display for lists or categorised information.
-  transparent-card:
-    role: Visual grouping of elements without a distinct background, typically for lists or grids.
-  dark-themed-section-card-api-webhooks:
-    role: Container for content within dark, gradient-infused sections.
+name: "boords.com"
+description: "Boords presents a light and airy design that feels like an organized workshop, balancing clear information with subtle visual cues. The primary canvas of crisp Alabaster (#fafaf5) is contrasted by accents of playful Butterscotch (#e8aa42) and rich Charcoal (#121212) that anchor calls to action and create visual hierarchy. The consistent use of a custom \"Matter\" typeface provides a modern yet approachable voice, while distinct border radii like the 9999px pill shape for buttons introduce softness into an otherwise structured layout."
+theme: "light"
+industry: "saas"
+source_url: "https://boords.com"
+refero_style_id: "c955d25a-b32a-441d-9f07-a260d1df897b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777421171427-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777421171427-thumb.jpg"
+extracted_at: "2026-04-29T00:06:37.694Z"
 ---
 
-## Overview
+# boords.com — Style Reference
 
-**North Star:** organized workshop on creamy paper
+> organized workshop on creamy paper
+
+**Theme:** light
+
+**Industry:** saas
 
 Boords presents a light and airy design that feels like an organized workshop, balancing clear information with subtle visual cues. The primary canvas of crisp Alabaster (#fafaf5) is contrasted by accents of playful Butterscotch (#e8aa42) and rich Charcoal (#121212) that anchor calls to action and create visual hierarchy. The consistent use of a custom "Matter" typeface provides a modern yet approachable voice, while distinct border radii like the 9999px pill shape for buttons introduce softness into an otherwise structured layout.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Carbon | #000000 | `--color-carbon` | General text, deep accents, borders for structural elements. |
+| Charcoal | #121212 | `--color-charcoal` | Headlines, button backgrounds, darker text levels, and dividing lines for a strong presence. |
+| Alabaster | #fafaf5 | `--color-alabaster` | Page background, primary canvas, card base surfaces. |
+| White | #ffffff | `--color-white` | Observed in other borderColor, body borderColor, nav borderColor. Extracted usage does not support a distinct primary control color. |
+| Parchment | #e9e9e7 | `--color-parchment` | Subtle background for differentiated sections, gentle dividing lines. |
+| Slate | #4d4d4d | `--color-slate` | Muted body text, secondary icons, and less prominent borders. |
+| Ash | #cecdca | `--color-ash` | Subtle borders and dividers, background for tertiary elements. |
+| Dusk Grey | #7d7d7d | `--color-dusk-grey` | Icon strokes, default button borders, placeholder text, and supporting information. |
+| Faded Stone | #898989 | `--color-faded-stone` | Body text for less emphasized content, subtle decorative strokes. |
+| Peach | #eb6c00 | `--color-peach` | Informational labels, small badges, and specific icon accents. Used sparingly for minor highlights. |
+| Butterscotch | #e8aa42 | `--color-butterscotch` | Primary action button borders, interactive link highlights – a warm, inviting accent for calls to engagement. |
+| Honey Bronze | #b77a10 | `--color-honey-bronze` | Supporting palette color with insufficient usage evidence for a stronger role. Extracted usage does not support a distinct primary control color. |
+| Sky Mist | #daeef8 | `--color-sky-mist` | Light background for information cards, subtle highlights for text elements. |
+| Deep Ocean | #214c70 | `--color-deep-ocean` | Links, focused states, and subtle borders indicating interactivity. |
+| Burnished Bronze Gradient | #453d37 | `--color-burnished-bronze-gradient` | Decorative background for featured sections, conveying richness and depth. |
+| Warm Umber Gradient | #2d2824 | `--color-warm-umber-gradient` | Subtler variation of the Burnished Bronze gradient, for secondary dark areas. |
+
+## Tokens — Typography
+
+### Matter
+
+- **Token:** `--font-matter`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 10px, 11px, 12px, 14px, 16px, 17px, 19px, 20px, 24px, 32px, 40px, 60px
+- **Line heights:** 1.10, 1.15, 1.20, 1.25, 1.45, 1.50, 1.70
+- **Letter spacing:** 0.0250em, 0.0500em, 0.1000em
+- **Role:** Primary brand typeface for all headings, body text, and UI elements. Its custom nature provides a unique, professional yet approachable character that system fonts lack.
+
+### ui-monospace
+
+- **Token:** `--font-ui-monospace`
+- **Substitute:** SF Mono
+- **Weights:** 400, 500, 600
+- **Sizes:** 9px, 11px, 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Monospaced font for code snippets, API references, or data displays, ensuring alignment and distinctiveness from Matter.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | 0.25px | `--text-caption` |
+| body | 14px | 1.7 | 0.35px | `--text-body` |
+| heading-sm | 19px | 1.25 | 0.475px | `--text-heading-sm` |
+| heading | 24px | 1.25 | 0.6px | `--text-heading` |
+| heading-lg | 32px | 1.2 | 0.8px | `--text-heading-lg` |
+| display | 60px | 1.1 | 1.5px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-104 | 104px | `--spacing-104` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| cards | 12px |
+| input | 6px |
+| buttons | 9999px |
+| default | 6px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(255, 255, 255, 0.03) 0px 0px 24px 0px | `--shadow-xl` |
+| xl-2 | rgba(108, 188, 244, 0.5) 0px 0px 0px 1px | `--shadow-xl-2` |
+| xl-3 | rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset | `--shadow-xl-3` |
+| xl-4 | rgba(0, 0, 0, 0.1) 0px 2px 8px 0px | `--shadow-xl-4` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 8px |
+| elementGap | 8px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### API & Webhooks Dark Feature Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Navigation Link
+
+**Role:** Clickable text in the main navigation.
+
+Text uses Matter font, weight undisclosed (likely 400), color Dusk Grey (#7d7d7d). Default state has transparent background, 4px padding on all sides. When focused or hovered, it subtly changes color to Charcoal (#121212).
+
+### Ghost Outline Button
+
+**Role:** Secondary action button, often grouped with a primary button.
+
+Background transparent, text color Faded Stone (#898989), border Dusk Grey (#7d7d7d), 4px radius, 4px padding. Used for less emphasized actions.
+
+### Pill Outline Button (Accent)
+
+**Role:** Primary call to action or crucial secondary action.
+
+Background transparent, text Charcoal (#121212), border Butterscotch (#e8aa42), 9999px (pill-shaped) radius, 6px vertical and 12px horizontal padding. This is the main interactive element.
+
+### Filled Button (Charcoal)
+
+**Role:** Prominent, high-contrast action button for critical paths.
+
+Charcoal (#121212) background, White (#ffffff) text, 8px radius, 6px vertical and 20px horizontal padding. Reserved for key confirmations or submissions.
+
+### Plain Text Button
+
+**Role:** Minimal interactive element, typically used for 'Log in' or simple navigation.
+
+Transparent background, text color Faded Stone (#898989), 0px radius, 2px padding. Visually light to not distract from main content.
+
+### Feedback Card (White)
+
+**Role:** Container for user comments or interactive content within a larger context.
+
+White (#ffffff) background, 6px border radius, subtle blue-tinted shadow rgba(108, 188, 244, 0.5) 0px 0px 0px 1px. No internal padding specified, content manages its own spacing.
+
+### Information Card (Alabaster)
+
+**Role:** General content display for lists or categorised information.
+
+Alabaster (#fafaf5) background, 8px border radius, no shadow. Typically contains unpadded content for flexibility.
+
+### Transparent Card
+
+**Role:** Visual grouping of elements without a distinct background, typically for lists or grids.
+
+Transparent background, 0px border radius, no shadow. Content's background becomes the de-facto card background.
+
+### Dark Themed Section Card (API/Webhooks)
+
+**Role:** Container for content within dark, gradient-infused sections.
+
+Transparent background, 12px radius, no shadow. Adapts to the gradient background of the section, often holding White (#ffffff) text.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Alabaster (#fafaf5) for primary page backgrounds, creating a creamy white canvas.
 - Apply Charcoal (#121212) for all main headings and prominent text to establish clear hierarchy.
@@ -98,7 +206,7 @@ Boords presents a light and airy design that feels like an organized workshop, b
 - Maintain a compact element spacing of 8px (elementGap) for items within components, like icons and text.
 - Employ the Burnished Bronze Gradient for distinct dark sections to build contrast and visual interest.
 
-### Don'ts
+### Don't
 
 - Avoid using raw black (#000000) for general body text; reserve it for structural borders or very high contrast needs.
 - Do not introduce new primary action colors; Butterscotch (#e8aa42) outlines or Charcoal (#121212) fills are the established interactives.
@@ -108,10 +216,184 @@ Boords presents a light and airy design that feels like an organized workshop, b
 - Do not use gradients for backgrounds outside of the predefined Burnished Bronze and Warm Umber gradients.
 - Introduce new chromatic colors; stick to the current palette to avoid visual noise and ensure brand recognition.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Alabaster | #fafaf5 | Primary page canvas and base background for most content areas. |
+| 1 | White | #ffffff | Elevated cards, modals, and interactive components that require a brighter focus. |
+| 2 | Sky Mist | #daeef8 | Subtle background for specific informational blocks or sections needing visual separation without high contrast. |
+| 3 | Parchment | #e9e9e7 | Secondary background for footer or less prominent sections, acting as a gentle divider. |
+| 4 | Ash | #cecdca | Tertiary backgrounds or subtle borders within UI components, providing minimal depth. |
+
+## Elevation
+
+- **Feedback Card (White):** `rgba(108, 188, 244, 0.5) 0px 0px 0px 1px`
+- **Hover/Focus States:** `rgba(255, 255, 255, 0.03) 0px 0px 24px 0px`
+- **Subtle Elements:** `rgba(0, 0, 0, 0.1) 0px 2px 8px 0px`
+
+## Imagery
+
+The visual language relies heavily on clean product screenshots and finely-drawn, monochrome line illustrations with a hand-sketched feel. Product shots are typically contained within cards, showcasing the UI directly without heavy styling or context. Illustrations serve a decorative and explanatory role, often organic in their forms, contrasting with the structured UI. Icons are outlined, monochromatic, and appear with consistent stroke weights. Imagery is present but serves to support text content rather than dominate it, maintaining a text-dominant, information-rich layout.
+
+## Layout
 
 The page uses a maxWidth-contained layout for most content sections, centered on the screen. The hero section often breaks this, featuring a full-width background supporting a centered headline. Sections alternate between a creamy Alabaster (#fafaf5) background and darker gradient-filled bands, creating a rhythmic vertical flow. Content within sections is often arranged in symmetrical two or three-column grids for feature displays and text+image pairings, interspersed with full-width text blocks. The overall density is compact yet clear, with an 8px elementGap ensuring items are close but distinguishable. Navigation is a sticky top bar with branding, links, and primary actions.
 
-### Imagery
+## Similar Brands
 
-The visual language relies heavily on clean product screenshots and finely-drawn, monochrome line illustrations with a hand-sketched feel. Product shots are typically contained within cards, showcasing the UI directly without heavy styling or context. Illustrations serve a decorative and explanatory role, often organic in their forms, contrasting with the structured UI. Icons are outlined, monochromatic, and appear with consistent stroke weights. Imagery is present but serves to support text content rather than dominate it, maintaining a text-dominant, information-rich layout.
+- **Framer** — Clean, light UI with soft neutrals and a precise, modern typography style.
+- **Webflow** — Structured layouts, emphasis on clarity, and distinct call-to-action treatments on a light background.
+- **Linear** — Minimalist aesthetic with functional UI, subtle shadows for depth, and crisp typography.
+- **Tally** — Light theme, prominent use of a single accent color for interactive elements, and clear type hierarchy.
+- **Superhuman** — Very light design, emphasis on textual information over heavy graphics, and deliberate use of color for key actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-carbon: #000000;
+  --color-charcoal: #121212;
+  --color-alabaster: #fafaf5;
+  --color-white: #ffffff;
+  --color-parchment: #e9e9e7;
+  --color-slate: #4d4d4d;
+  --color-ash: #cecdca;
+  --color-dusk-grey: #7d7d7d;
+  --color-faded-stone: #898989;
+  --color-peach: #eb6c00;
+  --color-butterscotch: #e8aa42;
+  --color-honey-bronze: #b77a10;
+  --color-sky-mist: #daeef8;
+  --color-deep-ocean: #214c70;
+  --color-burnished-bronze-gradient: #453d37;
+  --color-warm-umber-gradient: #2d2824;
+  --font-matter: 'Matter', Inter;
+  --font-ui-monospace: 'ui-monospace', SF Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.25px;
+  --text-body: 14px;
+  --leading-body: 1.7;
+  --tracking-body: 0.35px;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: 0.475px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: 0.6px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0.8px;
+  --text-display: 60px;
+  --leading-display: 1.1;
+  --tracking-display: 1.5px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --radius-tags: 9999px;
+  --radius-cards: 12px;
+  --radius-input: 6px;
+  --radius-buttons: 9999px;
+  --radius-default: 6px;
+  --shadow-xl: rgba(255, 255, 255, 0.03) 0px 0px 24px 0px;
+  --shadow-xl-2: rgba(108, 188, 244, 0.5) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  --shadow-xl-4: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+  --surface-alabaster: #fafaf5;
+  --surface-white: #ffffff;
+  --surface-sky-mist: #daeef8;
+  --surface-parchment: #e9e9e7;
+  --surface-ash: #cecdca;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-carbon: #000000;
+  --color-charcoal: #121212;
+  --color-alabaster: #fafaf5;
+  --color-white: #ffffff;
+  --color-parchment: #e9e9e7;
+  --color-slate: #4d4d4d;
+  --color-ash: #cecdca;
+  --color-dusk-grey: #7d7d7d;
+  --color-faded-stone: #898989;
+  --color-peach: #eb6c00;
+  --color-butterscotch: #e8aa42;
+  --color-honey-bronze: #b77a10;
+  --color-sky-mist: #daeef8;
+  --color-deep-ocean: #214c70;
+  --color-burnished-bronze-gradient: #453d37;
+  --color-warm-umber-gradient: #2d2824;
+  --font-matter: 'Matter', Inter;
+  --font-ui-monospace: 'ui-monospace', SF Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.25px;
+  --text-body: 14px;
+  --leading-body: 1.7;
+  --tracking-body: 0.35px;
+  --text-heading-sm: 19px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: 0.475px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: 0.6px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.2;
+  --tracking-heading-lg: 0.8px;
+  --text-display: 60px;
+  --leading-display: 1.1;
+  --tracking-display: 1.5px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-104: 104px;
+  --radius-tags: 9999px;
+  --radius-cards: 12px;
+  --radius-input: 6px;
+  --radius-buttons: 9999px;
+  --radius-default: 6px;
+  --shadow-xl: rgba(255, 255, 255, 0.03) 0px 0px 24px 0px;
+  --shadow-xl-2: rgba(108, 188, 244, 0.5) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  --shadow-xl-4: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px;
+  --surface-alabaster: #fafaf5;
+  --surface-white: #ffffff;
+  --surface-sky-mist: #daeef8;
+  --surface-parchment: #e9e9e7;
+  --surface-ash: #cecdca;
+}
+```

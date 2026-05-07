@@ -1,42 +1,105 @@
 ---
 version: alpha
-name: Block
-description: Block's design system embodies unadorned clarity: a stark white canvas serves as the backdrop for precise, centered typography. The visual language centers on minimal distraction, prioritizing content with a clean, almost ascetic aesthetic. Interaction is subtle, with elements distinguished primarily through typography and placement rather than color or elaborate surfacing.
-colors:
-  canvas-white: "#ffffff"
-  absolute-black: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.26
-    letterSpacing: 0.996px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0.112px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.4
-    letterSpacing: 0px
-spacing:
-  elementGap: 30-35px
-components:
-  navigation-link:
-    role: Top and bottom navigation items.
-  centred-brand-headline:
-    role: Central page headline for brand messaging.
+name: "Block"
+description: "Block's design system embodies unadorned clarity: a stark white canvas serves as the backdrop for precise, centered typography. The visual language centers on minimal distraction, prioritizing content with a clean, almost ascetic aesthetic. Interaction is subtle, with elements distinguished primarily through typography and placement rather than color or elaborate surfacing."
+theme: "light"
+industry: "fintech"
+source_url: "https://block.xyz"
+refero_style_id: "c9ec904b-49c9-49f5-96e6-49bd818cd952"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515965493-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515965493-thumb.jpg"
+extracted_at: "2026-04-30T02:26:19.087Z"
 ---
 
-## Overview
+# Block — Style Reference
 
-**North Star:** monochromatic minimalist canvas
+> monochromatic minimalist canvas
+
+**Theme:** light
+
+**Industry:** fintech
 
 Block's design system embodies unadorned clarity: a stark white canvas serves as the backdrop for precise, centered typography. The visual language centers on minimal distraction, prioritizing content with a clean, almost ascetic aesthetic. Interaction is subtle, with elements distinguished primarily through typography and placement rather than color or elaborate surfacing.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, surface base layer |
+| Absolute Black | #000000 | `--color-absolute-black` | Primary text, navigation links, icons, borders, and decorative elements. This single dark hue defines all foreground content against the white canvas |
+
+## Tokens — Typography
+
+### Cash Sans
+
+- **Token:** `--font-cash-sans`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 12px, 16px, 30px
+- **Line heights:** 1.20, 1.26, 1.40
+- **Letter spacing:** 0.083em at 12px, 0.007em at 16px, normal at 30px
+- **Role:** Primary brand typeface for all headings and UI elements. Its unique geometry contributes to the brand's distinctive, slightly technical yet approachable feel. The restrained weight maintains the system's lightweight visual character.
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Role:** Limited use for body text, providing a classic counterpoint to the more contemporary Cash Sans. Its use appears highly curated.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.26 | 0.996px | `--text-caption` |
+| body | 16px | 1.2 | 0.112px | `--text-body` |
+| heading | 30px | 1.4 | 0px | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-100 | 100px | `--spacing-100` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 30-35px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top and bottom navigation items.
+
+Uses Cash Sans, size 12px for primary nav and 16px for footer sub-nav, weight 400, color Absolute Black (#000000). Padding is 17px horizontal for top nav items. No visible borders or backgrounds.
+
+### Centred Brand Headline
+
+**Role:** Central page headline for brand messaging.
+
+Centered text using Cash Sans, size 30px, weight 400, color Absolute Black (#000000), line-height 1.4. This is a prominent focal point for key messages.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#ffffff) for all primary backgrounds and surfaces.
 - Apply Absolute Black (#000000) for all text, icons, and borders.
@@ -46,7 +109,7 @@ Block's design system embodies unadorned clarity: a stark white canvas serves as
 - Ensure navigation links use 17px horizontal padding with no background or border.
 - Avoid any border-radius; elements should have sharp, rectangular edges.
 
-### Don'ts
+### Don't
 
 - Do not introduce any additional colors for UI elements; strictly adhere to the white and black palette.
 - Avoid decorative gradients or shadows; the design relies on flatness and strong contrast.
@@ -55,10 +118,73 @@ Block's design system embodies unadorned clarity: a stark white canvas serves as
 - Avoid dense, packed layouts; embrace generous negative space around elements.
 - Do not use border-radius for any component; all corners should be 0px.
 
-### Layout
+## Imagery
+
+This site uses no visible imagery on the main page. The visual system is purely typographic and layout-driven, relying on a content-first, minimalist approach that directs full attention to the text.
+
+## Layout
 
 The page maintains a full-bleed layout with a centered content approach rather than a fixed max-width container, especially for the main content areas. The hero features a large, centered headline accompanied by a simple icon, dominating the initial view. Sections are vertically distinct with significant spacing (215-675px), creating a calm rhythm. Content is primarily stacked and centered, with a clear hierarchy driven by font size and placement. Navigation is handled by a minimal top bar and a similar footer, both text-based and centered to the content axis.
 
-### Imagery
+## Similar Brands
 
-This site uses no visible imagery on the main page. The visual system is purely typographic and layout-driven, relying on a content-first, minimalist approach that directs full attention to the text.
+- **Apple** — Shares a monochromatic palette, extensive use of white space, and a focus on clean typography to convey premium simplicity.
+- **Stripe** — Employs a minimalist UI, strong typographic hierarchy, and a highly restrained color palette to emphasize clarity and content.
+- **Linear** — Known for its clean, efficient UI dominated by dark neutrals and sharp typography, similar to Block's precision-first approach.
+- **Substack** — Simple, text-focused design with stark black and white contrast and minimal UI chrome to prioritize content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-absolute-black: #000000;
+  --font-cash-sans: 'Cash Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 12px;
+  --leading-caption: 1.26;
+  --tracking-caption: 0.996px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0.112px;
+  --text-heading: 30px;
+  --leading-heading: 1.4;
+  --tracking-heading: 0px;
+  --spacing-0: 0px;
+  --spacing-10: 10px;
+  --spacing-17: 17px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-100: 100px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-absolute-black: #000000;
+  --font-cash-sans: 'Cash Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 12px;
+  --leading-caption: 1.26;
+  --tracking-caption: 0.996px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0.112px;
+  --text-heading: 30px;
+  --leading-heading: 1.4;
+  --tracking-heading: 0px;
+  --spacing-0: 0px;
+  --spacing-10: 10px;
+  --spacing-17: 17px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-100: 100px;
+  --radius-none: 0px;
+}
+```
