@@ -1,88 +1,157 @@
 ---
 version: alpha
-name: Gt-planar
-description: GT Planar channels 'cyberpunk utility': a deep dark canvas with vibrant, almost neon, monochromatic accents of electric violet and glowing green. Typography is hyper-controlled and precise, often uppercase, with distinct pixel-perfect white borders defining interactive elements. This creates a high-fidelity, command-line interface aesthetic where every visual element serves a clear, functional purpose in a deeply contrasted, high-tech environment.
-colors:
-  void-black: "#000000"
-  screen-white: "#ffffff"
-  input-dark: "#1a0014"
-  subtle-gray: "#949494"
-  border-gray: "#606060"
-  electric-violet: "#6100ff"
-  fluorescent-green: "#00ff85"
-  deep-space-violet: "#29006c"
-  safety-yellow: "#fcff76"
-  alert-red: "#ff003d"
-  indicator-orange: "#ff8a00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.43
-    letterSpacing: 0.05px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.17
-    letterSpacing: 0.015px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.15
-    letterSpacing: 0.011px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.1
-    letterSpacing: 0.008px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 58px
-    lineHeight: 0.95
-    letterSpacing: -0.005px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 0.9
-    letterSpacing: -0.01px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 146px
-    lineHeight: 0.8
-    letterSpacing: -0.05px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 274px
-    lineHeight: 0.8
-    letterSpacing: -0.2px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 5px
-  sectionGap: 25px
-components:
-  primary-action-button-violet-fill:
-    role: Main interactive element for actions.
-  outlined-button-violet-border:
-    role: Secondary action or ghost button.
-  dark-elevated-button-violet-border:
-    role: Tertiary action or grouped controls.
-  fluorescent-action-button:
-    role: Prominent, high-contrast call to action.
-  text-input:
-    role: Data entry fields.
-  navigation-link-outlined-red:
-    role: Accentuated navigation item for warnings/promotions.
-  navigation-link-outlined-yellow:
-    role: Accentuated navigation item for warnings/promotions.
+name: "Gt-planar"
+description: "GT Planar channels 'cyberpunk utility': a deep dark canvas with vibrant, almost neon, monochromatic accents of electric violet and glowing green. Typography is hyper-controlled and precise, often uppercase, with distinct pixel-perfect white borders defining interactive elements. This creates a high-fidelity, command-line interface aesthetic where every visual element serves a clear, functional purpose in a deeply contrasted, high-tech environment."
+theme: "dark"
+industry: "design"
+source_url: "https://gt-planar.com"
+refero_style_id: "3f22028a-05d4-4648-a6d1-591134af06a4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513839786-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513839786-thumb.jpg"
+extracted_at: "2026-04-30T01:51:12.045Z"
 ---
 
-## Overview
+# Gt-planar — Style Reference
 
-**North Star:** Midnight mainframe with glowing terminals.
+> Midnight mainframe with glowing terminals.
+
+**Theme:** dark
+
+**Industry:** design
 
 GT Planar channels 'cyberpunk utility': a deep dark canvas with vibrant, almost neon, monochromatic accents of electric violet and glowing green. Typography is hyper-controlled and precise, often uppercase, with distinct pixel-perfect white borders defining interactive elements. This creates a high-fidelity, command-line interface aesthetic where every visual element serves a clear, functional purpose in a deeply contrasted, high-tech environment.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Void Black | #000000 | `--color-void-black` | Page background, primary text on bright surfaces, button text on electric purple fills, hairline borders |
+| Screen White | #ffffff | `--color-screen-white` | Interface text, icon strokes, active state borders, text on dark surfaces, accent shadows |
+| Input Dark | #1a0014 | `--color-input-dark` | Input field backgrounds, subtle elevated surface |
+| Subtle Gray | #949494 | `--color-subtle-gray` | Muted text, inactive element borders, secondary information |
+| Border Gray | #606060 | `--color-border-gray` | Fine, utilitarian borders on neutral elements |
+| Electric Violet | #6100ff | `--color-electric-violet` | Primary action button backgrounds, interactive text, button borders, active accents |
+| Fluorescent Green | #00ff85 | `--color-fluorescent-green` | Primary Call to Action button background, active state borders, and high-emphasis information. This provides a stark contrast to the violet |
+| Deep Space Violet | #29006c | `--color-deep-space-violet` | Secondary action button backgrounds, elevated card surfaces with a subtle tint |
+| Safety Yellow | #fcff76 | `--color-safety-yellow` | Green outline accent for tags, dividers, and focused UI edges |
+| Alert Red | #ff003d | `--color-alert-red` | Red outline accent for tags, dividers, and focused UI edges. Use as a supporting accent, not as a status color |
+| Indicator Orange | #ff8a00 | `--color-indicator-orange` | Orange outline accent for tags, dividers, and focused UI edges. Use as a supporting accent, not as a status color |
+
+## Tokens — Typography
+
+### GT Planar
+
+- **Token:** `--font-gt-planar`
+- **Substitute:** Space Mono, IBM Plex Mono
+- **Weights:** 300, 400, 700
+- **Sizes:** 11px, 14px, 16px, 17px, 20px, 24px, 25px, 32px, 37px, 58px, 86px, 115px, 146px, 187px, 230px, 274px
+- **Line heights:** 0.80, 0.90, 0.95, 1.00, 1.09, 1.10, 1.14, 1.15, 1.17, 1.19, 1.20, 1.24, 1.43, 1.50, 1.63
+- **Letter spacing:** -0.2000em, -0.0500em, -0.0100em, -0.0050em, 0.0050em, 0.0080em, 0.0110em, 0.0150em, 0.0200em, 0.0250em, 0.0400em, 0.0460em, 0.0500em, 0.0700em, 0.7000em
+- **OpenType features:** "kern", "ss04"; "kern", "ss01", "ss02", "ss03"; "kern", "ss01", "ss02"; "kern", "ss03", "ss04" 0; "kern", "ss01"; "kern", "ss02"; "kern", "ss03"; "kern", "lnum", "tnum"
+- **Role:** The sole typeface, GT Planar, defines the entire text hierarchy from micro-interactions to monumental headlines. Its variable weights emphasize precision and stark contrast, making it crucial for the 'cyberpunk utility' aesthetic. The wide range of sizes and letter-spacing values allows for hyper-controlled text density.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.43 | 0.05px | `--text-caption` |
+| body-sm | 14px | 1.17 | 0.015px | `--text-body-sm` |
+| body | 16px | 1.15 | 0.011px | `--text-body` |
+| subheading | 24px | 1.1 | 0.008px | `--text-subheading` |
+| heading | 58px | 0.95 | -0.005px | `--text-heading` |
+| heading-lg | 86px | 0.9 | -0.01px | `--text-heading-lg` |
+| display-sm | 146px | 0.8 | -0.05px | `--text-display-sm` |
+| display | 274px | 0.8 | -0.2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-250 | 250px | `--spacing-250` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| buttons | 9999px |
+| default | 0px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(255, 255, 255) 1px 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px 0px, rgb(255, 255, 255) 1px 0px 0px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 25px |
+| cardPadding | 25px |
+| elementGap | 5px |
+
+## Components
+
+### Primary Action Button (Violet Fill)
+
+**Role:** Main interactive element for actions.
+
+Filled with Electric Violet (#6100ff), black text, no border radius, 0px padding. Focus on background color for interaction.
+
+### Outlined Button (Violet Border)
+
+**Role:** Secondary action or ghost button.
+
+Transparent background, Electric Violet (#6100ff) text, Electric Violet (#6100ff) 1px border. 5px padding, 0px border-radius.
+
+### Dark Elevated Button (Violet Border)
+
+**Role:** Tertiary action or grouped controls.
+
+Deep Space Violet (#29006c) background, Electric Violet (#6100ff) accent text, Electric Violet (#6100ff) 1px border. No border radius, 0px padding.
+
+### Fluorescent Action Button
+
+**Role:** Prominent, high-contrast call to action.
+
+Fluorescent Green (#00ff85) background, Void Black (#000000) text, Fluorescent Green (#00ff85) 1px border. 25px top/bottom padding, 50px left/right padding, 0px border-radius.
+
+### Text Input
+
+**Role:** Data entry fields.
+
+Input Dark (#1a0014) background, Screen White (#ffffff) text, Screen White (#ffffff) 1px border. No border radius, 0px padding.
+
+### Navigation Link Outlined (Red)
+
+**Role:** Accentuated navigation item for warnings/promotions.
+
+Transparent background, Alert Red (#ff003d) text. Defined by a 1px Alert Red (#ff003d) border instead of a fill, 10px padding, 0px border-radius.
+
+### Navigation Link Outlined (Yellow)
+
+**Role:** Accentuated navigation item for warnings/promotions.
+
+Transparent background, Safety Yellow (#fcff76) text. Defined by a 1px Safety Yellow (#fcff76) border instead of a fill, 10px padding, 0px border-radius.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Void Black (#000000) as the dominant background color for most sections to maintain a dark, immersive theme.
 - Use Electric Violet (#6100ff) only for primary interactive elements, active states, and critical information to maximize its impact.
@@ -92,7 +161,7 @@ GT Planar channels 'cyberpunk utility': a deep dark canvas with vibrant, almost 
 - Use 0px border-radius for most UI elements like buttons, inputs, and cards, reserving 9999px for small, tag-like elements.
 - Construct layouts with clear, often horizontal, divisions and compact spacing to pack information densely without feeling cluttered.
 
-### Don'ts
+### Don't
 
 - Avoid using soft shadows or gradients that suggest depth or realism, as the system relies on stark contrasts and flat surfaces.
 - Do not introduce additional font families; GT Planar is the sole typographic voice.
@@ -102,10 +171,157 @@ GT Planar channels 'cyberpunk utility': a deep dark canvas with vibrant, almost 
 - Avoid large, unbordered blocks of color unless they serve as a full-bleed hero, instead opting for precise borders around elements.
 - Do not use generic spacing values; adhere to the 4px base unit and derived tokens for compact, consistent rhythm.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #000000 | Primary page background, deep void for content. |
+| 1 | Input Surface | #1a0014 | Input fields and subtly recessed interactive areas. |
+| 2 | Elevated Violet Surface | #29006c | Background for secondary interactive elements or elevated content modules. |
+
+## Elevation
+
+- **Interactive Elements:** `rgb(255, 255, 255) 1px 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px 0px, rgb(255, 255, 255) 1px 0px 0px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px inset`
+
+## Imagery
+
+This design system uses no traditional imagery like photography or illustration. Instead, visual elements are generated dynamically, resembling wireframes or high-speed light trails, contributing to a sense of data visualization and kinetic energy. The focus is entirely on UI elements and stark typography. Icons, where present, are monochromatic outlines with sharp angles and thin strokes.
+
+## Layout
 
 The page model is full-bleed but features tightly controlled maximum width content areas. The hero section often utilizes a full-viewport, dynamically generated visual background with centered, stark headlines. Section rhythm is primarily seamless, with content blocks often flowing directly into one another or defined by subtle internal dividers rather than alternating background bands. Content arrangement varies from centered stacks of text to more complex, grid-based interactive elements where text and functional UI are integrated directly into the visual experience. The overall density is compact, even within the full-bleed canvas, ensuring information is readily accessible. Navigation is handled via a fixed top bar with minimal, bordered text links.
 
-### Imagery
+## Similar Brands
 
-This design system uses no traditional imagery like photography or illustration. Instead, visual elements are generated dynamically, resembling wireframes or high-speed light trails, contributing to a sense of data visualization and kinetic energy. The focus is entirely on UI elements and stark typography. Icons, where present, are monochromatic outlines with sharp angles and thin strokes.
+- **The Future is Type** — Shares a strong emphasis on a single, technically precise monospace/geometric typeface, using it to build an entire visual identity.
+- **Hyper Island** — Employs high-contrast dark themes with vivid, sometimes neon, single-color accents for interactivity and focus.
+- **Certain graphic design portfolios** — Focuses heavily on typographic experimentation and visual starkness, treating text as the primary graphic element.
+- **Gandi.net** — Features a dark UI with bright, saturated key action colors and minimalist, functional design.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-void-black: #000000;
+  --color-screen-white: #ffffff;
+  --color-input-dark: #1a0014;
+  --color-subtle-gray: #949494;
+  --color-border-gray: #606060;
+  --color-electric-violet: #6100ff;
+  --color-fluorescent-green: #00ff85;
+  --color-deep-space-violet: #29006c;
+  --color-safety-yellow: #fcff76;
+  --color-alert-red: #ff003d;
+  --color-indicator-orange: #ff8a00;
+  --font-gt-planar: 'GT Planar', Space Mono, IBM Plex Mono;
+  --text-caption: 11px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.05px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.17;
+  --tracking-body-sm: 0.015px;
+  --text-body: 16px;
+  --leading-body: 1.15;
+  --tracking-body: 0.011px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.1;
+  --tracking-subheading: 0.008px;
+  --text-heading: 58px;
+  --leading-heading: 0.95;
+  --tracking-heading: -0.005px;
+  --text-heading-lg: 86px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.01px;
+  --text-display-sm: 146px;
+  --leading-display-sm: 0.8;
+  --tracking-display-sm: -0.05px;
+  --text-display: 274px;
+  --leading-display: 0.8;
+  --tracking-display: -0.2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-100: 100px;
+  --spacing-150: 150px;
+  --spacing-250: 250px;
+  --radius-tags: 9999px;
+  --radius-buttons: 9999px;
+  --radius-default: 0px;
+  --shadow-xl: rgb(255, 255, 255) 1px 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px 0px, rgb(255, 255, 255) 1px 0px 0px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px inset;
+  --surface-canvas: #000000;
+  --surface-input-surface: #1a0014;
+  --surface-elevated-violet-surface: #29006c;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-void-black: #000000;
+  --color-screen-white: #ffffff;
+  --color-input-dark: #1a0014;
+  --color-subtle-gray: #949494;
+  --color-border-gray: #606060;
+  --color-electric-violet: #6100ff;
+  --color-fluorescent-green: #00ff85;
+  --color-deep-space-violet: #29006c;
+  --color-safety-yellow: #fcff76;
+  --color-alert-red: #ff003d;
+  --color-indicator-orange: #ff8a00;
+  --font-gt-planar: 'GT Planar', Space Mono, IBM Plex Mono;
+  --text-caption: 11px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.05px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.17;
+  --tracking-body-sm: 0.015px;
+  --text-body: 16px;
+  --leading-body: 1.15;
+  --tracking-body: 0.011px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.1;
+  --tracking-subheading: 0.008px;
+  --text-heading: 58px;
+  --leading-heading: 0.95;
+  --tracking-heading: -0.005px;
+  --text-heading-lg: 86px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.01px;
+  --text-display-sm: 146px;
+  --leading-display-sm: 0.8;
+  --tracking-display-sm: -0.05px;
+  --text-display: 274px;
+  --leading-display: 0.8;
+  --tracking-display: -0.2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-100: 100px;
+  --spacing-150: 150px;
+  --spacing-250: 250px;
+  --radius-tags: 9999px;
+  --radius-buttons: 9999px;
+  --radius-default: 0px;
+  --shadow-xl: rgb(255, 255, 255) 1px 0px 0px 0px, rgb(255, 255, 255) 0px 1px 0px 0px, rgb(255, 255, 255) 1px 1px 0px 0px, rgb(255, 255, 255) 1px 0px 0px 0px inset, rgb(255, 255, 255) 0px 1px 0px 0px inset;
+  --surface-canvas: #000000;
+  --surface-input-surface: #1a0014;
+  --surface-elevated-violet-surface: #29006c;
+}
+```

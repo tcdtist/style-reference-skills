@@ -1,84 +1,177 @@
 ---
 version: alpha
-name: Groq
-description: Groq's aesthetic marries industrial-minimalism with high-energy accents. A muted, near-achromatic palette of warm grays and off-whites provides a calm, technical canvas. The single, vivid orange (#F43E01) provides an immediate, focused punch of energy and urgency, appearing exclusively on key interactive elements. Space Grotesk, with its wide letter-spacing only at smaller sizes, creates a modern, spacious feel even at high information density, while IBM Plex Mono anchors technical detail with its fixed-width precision.
-colors:
-  obsidian-slate: "#2d2f33"
-  canvas-white: "#ffffff"
-  warm-mist: "#f3f3ee"
-  ash-concrete: "#e8e8de"
-  deep-pewter: "#2a2a25"
-  steel-gray: "#c2c2be"
-  soft-stone: "#69695d"
-  faded-quartz: "#9c9c90"
-  neon-zest: "#f43e01"
-  deep-ember: "#c23101"
-  lavender-haze: "#e09afe"
-  violet-tint: "#d377fd"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.57
-    letterSpacing: 0.1px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.57
-    letterSpacing: -0.3px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-    letterSpacing: -0.48px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.3
-    letterSpacing: -0.64px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1
-    letterSpacing: -0.72px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 46px
-    lineHeight: 0.9
-    letterSpacing: -0.92px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 1000px
-  elementGap: 4-16px
-  sectionGap: 48-80px
-components:
-  primary-cta-button-group:
-    role: 
-  testimonial-card:
-    role: 
-  dark-feature-section-block:
-    role: 
-  primary-action-button:
-    role: Call to action
-  ghost-button:
-    role: Secondary action
-  utility-button:
-    role: Tertiary action
-  navigation-link:
-    role: Header navigation
-  hero-card:
-    role: Informational block
-  testimonial-card:
-    role: Social proof
+name: "Groq"
+description: "Groq's aesthetic marries industrial-minimalism with high-energy accents. A muted, near-achromatic palette of warm grays and off-whites provides a calm, technical canvas. The single, vivid orange (#F43E01) provides an immediate, focused punch of energy and urgency, appearing exclusively on key interactive elements. Space Grotesk, with its wide letter-spacing only at smaller sizes, creates a modern, spacious feel even at high information density, while IBM Plex Mono anchors technical detail with its fixed-width precision."
+theme: "light"
+industry: "ai"
+source_url: "https://groq.com"
+refero_style_id: "8efa9029-b39c-48db-a8ec-c97c645a7a58"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923702978-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923702978-thumb.jpg"
+extracted_at: "2026-04-11T16:08:42.800Z"
 ---
 
-## Overview
+# Groq — Style Reference
 
-**North Star:** Precision orange glow on matte gray. Like a control panel's critical warning light in a sophisticated machine.
+> Precision orange glow on matte gray. Like a control panel's critical warning light in a sophisticated machine.
+
+**Theme:** light
+
+**Industry:** ai
 
 Groq's aesthetic marries industrial-minimalism with high-energy accents. A muted, near-achromatic palette of warm grays and off-whites provides a calm, technical canvas. The single, vivid orange (#F43E01) provides an immediate, focused punch of energy and urgency, appearing exclusively on key interactive elements. Space Grotesk, with its wide letter-spacing only at smaller sizes, creates a modern, spacious feel even at high information density, while IBM Plex Mono anchors technical detail with its fixed-width precision.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Obsidian Slate | #2d2f33 | `--color-obsidian-slate` | Primary text, headline color, dark surface backgrounds. |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, button text, elevated card surfaces. |
+| Warm Mist | #f3f3ee | `--color-warm-mist` | Light background for sections and UI elements, subtle contrast against Canvas White. |
+| Ash Concrete | #e8e8de | `--color-ash-concrete` | Card backgrounds, slightly darker variant of Warm Mist for deeper partitioning. |
+| Deep Pewter | #2a2a25 | `--color-deep-pewter` | Button backgrounds, dark elements, providing strong contrast. |
+| Steel Gray | #c2c2be | `--color-steel-gray` | Border colors, subtle dividers. |
+| Soft Stone | #69695d | `--color-soft-stone` | Secondary text, descriptive elements, lighter contrast against dark backgrounds. |
+| Faded Quartz | #9c9c90 | `--color-faded-quartz` | Tertiary text, subtle UI elements, disabled states. |
+| Neon Zest | #f43e01 | `--color-neon-zest` | Primary call-to-action buttons, active states, key interactive indicators — this vivid orange is the sole brand accent, demanding attention. |
+| Deep Ember | #c23101 | `--color-deep-ember` | Darker shade of Neon Zest, used for hover states or subtle brand accents in darker contexts. |
+| Lavender Haze | #e09afe | `--color-lavender-haze` | Decorative color for specific content sections, not interactive. |
+| Violet Tint | #d377fd | `--color-violet-tint` | Minor decorative accent, borderline invisible in usage. |
+
+## Tokens — Typography
+
+### Space Grotesk
+
+- **Token:** `--font-space-grotesk`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 300, 400
+- **Sizes:** 13px, 14px, 15px, 17px, 19px, 21px, 24px, 28px, 32px, 36px, 46px
+- **Line heights:** 0.90, 1.00, 1.30, 1.40, 1.57
+- **Letter spacing:** -0.0200em
+- **Role:** Primary typeface for all headings, body text, and UI elements. Its slightly condensed forms and negative letter-spacing for larger sizes contribute to a sleek, modern, yet readable presentation.
+
+### IBM Plex Mono
+
+- **Token:** `--font-ibm-plex-mono`
+- **Substitute:** monospace
+- **Weights:** 400, 500
+- **Sizes:** 10px, 12px, 14px
+- **Line heights:** 1.17, 1.20, 1.30, 1.40, 1.57
+- **Letter spacing:** 0.1000em
+- **Role:** Used for code snippets, technical figures, and any content requiring monospace precision. Its elevated letter-spacing emphasizes its distinct, technical role.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.57 | 0.1px | `--text-caption` |
+| body-lg | 15px | 1.57 | -0.3px | `--text-body-lg` |
+| heading-sm | 24px | 1.4 | -0.48px | `--text-heading-sm` |
+| heading | 32px | 1.3 | -0.64px | `--text-heading` |
+| heading-lg | 36px | 1 | -0.72px | `--text-heading-lg` |
+| display | 46px | 0.9 | -0.92px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| misc | 5px |
+| cards | 0px |
+| forms | 10px |
+| buttons | 1000px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 48-80px |
+| cardPadding | 0px |
+| elementGap | 4-16px |
+
+## Components
+
+### Primary CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Dark Feature Section Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Call to action
+
+Background: Neon Zest (#f43e01), Text: Canvas White (#ffffff), Border: Canvas White (#ffffff). Radius: 1000px (full pill). Padding: 10px vertical, 16px horizontal. This is the prominent interactive element. Text uses Space Grotesk.
+
+### Ghost Button
+
+**Role:** Secondary action
+
+Background: transparent (rgba(0,0,0,0)), Text: Obsidian Slate (#2d2f33), Border: Obsidian Slate (#2d2f33). Radius: 1000px. Padding: 0px. Used for subtle navigation or less critical actions. Text uses Space Grotesk.
+
+### Utility Button
+
+**Role:** Tertiary action
+
+Background: Deep Pewter (#2a2a25), Text: Warm Mist (#f3f3ee), No border. Radius: 5px. Padding: 12px. Used for footer or less prominent interaction. Text uses Space Grotesk.
+
+### Navigation Link
+
+**Role:** Header navigation
+
+Background: transparent (rgba(0,0,0,0)), Text: Obsidian Slate (#2d2f33), No border. Radius: 1000px. Padding: 10px vertical, 16px horizontal, or 0px. Used for top navigation items. Text uses Space Grotesk.
+
+### Hero Card
+
+**Role:** Informational block
+
+Background: transparent (rgba(0,0,0,0)), No border, No shadow. Radius: 0px. Padding: 0px. Used in the main content area for visual emphasis. Text uses Space Grotesk.
+
+### Testimonial Card
+
+**Role:** Social proof
+
+Background: Ash Concrete (#e8e8de), No border, No shadow. Radius: 0px. Padding: 0px. Used for customer quotes. Text uses Space Grotesk.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Neon Zest (#f43e01) exclusively for primary calls to action or critical indicators to preserve its impact.
 - Maintain a clear visual hierarchy by limiting headline weights to Space Grotesk 300 or 400, rather than bolder weights, to align with the understated authority.
@@ -87,7 +180,7 @@ Groq's aesthetic marries industrial-minimalism with high-energy accents. A muted
 - Use Space Grotesk with -0.0200em letter spacing for headlines to give them an expansive, deliberate feel.
 - Employ IBM Plex Mono only for technical content, ensuring its 0.1000em letter spacing clearly distinguishes it from untracked text.
 
-### Don'ts
+### Don't
 
 - Never introduce additional vivid color accents; Neon Zest (#f43e01) is the sole saturated brand color.
 - Avoid using drop shadows for elevation; rely on background color changes (e.g., Canvas White, Warm Mist, Ash Concrete) for depth.
@@ -95,10 +188,151 @@ Groq's aesthetic marries industrial-minimalism with high-energy accents. A muted
 - Do not use generic system fonts; always specify Space Grotesk or IBM Plex Mono for brand consistency.
 - Avoid arbitrary uses of uppercase; only apply to specific, clearly defined labels or components following established patterns.
 
-### Layout
+## Imagery
+
+This site prominently features a mixed visual language. Product screenshots are contained and serve an explanatory role. These are often tightly cropped, emphasizing the hardware or specific UI. The brand uses abstract, clean graphics to illustrate concepts, which are geometric and often monochromatic or leverage the subtle neutral palette. There's also some usage of partner logos in a grayscale, badge-like style for social proof. The overall density is balanced, with imagery serving both decorative atmosphere and explanatory content roles, often nestled within text blocks or acting as visual anchors in sections. When present, icons are filled and subtle, blending into the UI rather than standing out.
+
+## Layout
 
 The page adheres to a max-width contained model (1440px), where content is centered within a clear canvas. The hero section often adopts a split-layout pattern, with a prominent headline and call-to-action on one side and a product visual or abstract graphic on the other. Section rhythm alternates between light (Canvas White, Warm Mist) and darker (Black, Deep Pewter) backgrounds, creating clear visual breaks and an implicit flow down the page. Content arrangement frequently uses a text-left/image-right alternating pattern. There's also a grid for customer testimonials, appearing in a three-column layout. The overall density is comfortable, with generous section gaps. A sticky header with top-level navigation ensures constant access to key links and a 'Start Building' CTA.
 
-### Imagery
+## Similar Brands
 
-This site prominently features a mixed visual language. Product screenshots are contained and serve an explanatory role. These are often tightly cropped, emphasizing the hardware or specific UI. The brand uses abstract, clean graphics to illustrate concepts, which are geometric and often monochromatic or leverage the subtle neutral palette. There's also some usage of partner logos in a grayscale, badge-like style for social proof. The overall density is balanced, with imagery serving both decorative atmosphere and explanatory content roles, often nestled within text blocks or acting as visual anchors in sections. When present, icons are filled and subtle, blending into the UI rather than standing out.
+- **Vercel** — Similar approach to using a refined neutral palette with a single, highly saturated accent color for primary actions, and a preference for modern sans-serif typography.
+- **Netlify** — Shares a technical, developer-centric aesthetic with clear, functional layouts and a balance of informational graphics and concise text, avoiding decorative flourishes.
+- **Stripe** — Employs a clean, spacious layout, strong typography with subtle letter-spacing adjustments, and selective use of brand colors to highlight key information in an understated, authoritative manner.
+- **Linear** — Features a highly optimized, minimalist UI with a near-achromatic base, strong typography for hierarchy, and pops of color for interaction, reflecting a focus on efficiency and precision.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-obsidian-slate: #2d2f33;
+  --color-canvas-white: #ffffff;
+  --color-warm-mist: #f3f3ee;
+  --color-ash-concrete: #e8e8de;
+  --color-deep-pewter: #2a2a25;
+  --color-steel-gray: #c2c2be;
+  --color-soft-stone: #69695d;
+  --color-faded-quartz: #9c9c90;
+  --color-neon-zest: #f43e01;
+  --color-deep-ember: #c23101;
+  --color-lavender-haze: #e09afe;
+  --color-violet-tint: #d377fd;
+  --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --text-caption: 10px;
+  --leading-caption: 1.57;
+  --tracking-caption: 0.1px;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.57;
+  --tracking-body-lg: -0.3px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.4;
+  --tracking-heading-sm: -0.48px;
+  --text-heading: 32px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.64px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 46px;
+  --leading-display: 0.9;
+  --tracking-display: -0.92px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --radius-misc: 5px;
+  --radius-cards: 0px;
+  --radius-forms: 10px;
+  --radius-buttons: 1000px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-obsidian-slate: #2d2f33;
+  --color-canvas-white: #ffffff;
+  --color-warm-mist: #f3f3ee;
+  --color-ash-concrete: #e8e8de;
+  --color-deep-pewter: #2a2a25;
+  --color-steel-gray: #c2c2be;
+  --color-soft-stone: #69695d;
+  --color-faded-quartz: #9c9c90;
+  --color-neon-zest: #f43e01;
+  --color-deep-ember: #c23101;
+  --color-lavender-haze: #e09afe;
+  --color-violet-tint: #d377fd;
+  --font-space-grotesk: 'Space Grotesk', system-ui, sans-serif;
+  --font-ibm-plex-mono: 'IBM Plex Mono', monospace;
+  --text-caption: 10px;
+  --leading-caption: 1.57;
+  --tracking-caption: 0.1px;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.57;
+  --tracking-body-lg: -0.3px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.4;
+  --tracking-heading-sm: -0.48px;
+  --text-heading: 32px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.64px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 46px;
+  --leading-display: 0.9;
+  --tracking-display: -0.92px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-128: 128px;
+  --radius-misc: 5px;
+  --radius-cards: 0px;
+  --radius-forms: 10px;
+  --radius-buttons: 1000px;
+}
+```
