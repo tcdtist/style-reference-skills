@@ -1,32 +1,98 @@
 ---
 version: alpha
-name: Greenspace
-description: Greenspace embodies a brutalist-inspired minimalism, featuring stark monochrome surfaces and expansive negative space. The visual system operates on a high-contrast binary of black and white, punctuated by muted gray typography that hints at legacy and heritage. Typography is bold and architectural, often serving as a primary visual element, while a generous use of spacing emphasizes clarity and the monumental scale of projects.
-colors:
-  greenspace-carbon: "#000000"
-  subtle-ash: "#bebebe"
-  canvas-white: "#ffffff"
-spacing:
-  elementGap: 37px
-  sectionGap: 200px
-components:
-  navigation-link-active:
-    role: Main navigation and hero links when active or hovered.
-  navigation-link-inactive:
-    role: Main navigation and hero links when inactive.
-  project-list-item:
-    role: Listings for selected projects.
-  section-separator:
-    role: Visual divider for content sections.
+name: "Greenspace"
+description: "Greenspace embodies a brutalist-inspired minimalism, featuring stark monochrome surfaces and expansive negative space. The visual system operates on a high-contrast binary of black and white, punctuated by muted gray typography that hints at legacy and heritage. Typography is bold and architectural, often serving as a primary visual element, while a generous use of spacing emphasizes clarity and the monumental scale of projects."
+theme: "dark"
+industry: "design"
+source_url: "https://thegreenspace.com"
+refero_style_id: "d961e174-875b-46ef-ad27-fe7f8e3bcd8c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516319650-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516319650-thumb.jpg"
+extracted_at: "2026-04-30T02:32:18.457Z"
 ---
 
-## Overview
+# Greenspace — Style Reference
 
-**North Star:** Monumental monochrome canvas
+> Monumental monochrome canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Greenspace embodies a brutalist-inspired minimalism, featuring stark monochrome surfaces and expansive negative space. The visual system operates on a high-contrast binary of black and white, punctuated by muted gray typography that hints at legacy and heritage. Typography is bold and architectural, often serving as a primary visual element, while a generous use of spacing emphasizes clarity and the monumental scale of projects.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Greenspace Carbon | #000000 | `--color-greenspace-carbon` | Page backgrounds, significant surface areas, default text |
+| Subtle Ash | #bebebe | `--color-subtle-ash` | Muted text, inactive links, secondary navigation elements – creates a whispered presence against primary backgrounds |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### haas_grotesk
+
+- **Token:** `--font-haas-grotesk`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 24px, 72px
+- **Line heights:** 1.03, 1.15, 1.17
+- **Role:** Primary display and content typography. Its direct and unadorned presence underpins the brand's architectural aesthetic.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-37 | 37px | `--spacing-37` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 200px |
+| cardPadding | 37px |
+| elementGap | 37px |
+
+## Components
+
+### Navigation Link (Active)
+
+**Role:** Main navigation and hero links when active or hovered.
+
+Text in Canvas White (#ffffff) on Greenspace Carbon (#000000) background. Font is haas_grotesk, 72px, weight 400, line height 1.03.
+
+### Navigation Link (Inactive)
+
+**Role:** Main navigation and hero links when inactive.
+
+Text in Subtle Ash (#bebebe) on Greenspace Carbon (#000000) background. Font is haas_grotesk, 72px, weight 400, line height 1.03.
+
+### Project List Item
+
+**Role:** Listings for selected projects.
+
+Text in Subtle Ash (#bebebe) on a white background. Font is haas_grotesk, 24px, weight 400, line height 1.15. No explicit padding or border.
+
+### Section Separator
+
+**Role:** Visual divider for content sections.
+
+Implied by 200px vertical spacing, with a strict binary shift between carbon and white background compositions. No explicit line or element.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Greenspace Carbon (#000000) as the dominant background color for most page areas and major content blocks.
 - Use Canvas White (#ffffff) sparingly for text on dark backgrounds and for high-contrast link states.
@@ -36,7 +102,7 @@ Greenspace embodies a brutalist-inspired minimalism, featuring stark monochrome 
 - Leverage haas_grotesk (or substitute Inter) at 24px with a line height of 1.15 for all body text, project lists, and secondary content blocks.
 - Adhere to a strict 0px border-radius system across all components and elements for a brutalist, architectural feel.
 
-### Don'ts
+### Don't
 
 - Avoid introducing any additional chromatic colors; maintain a strictly achromatic palette.
 - Do not use subtle gradients or soft shadows; elevation is achieved through color contrast and spatial separation.
@@ -46,10 +112,49 @@ Greenspace embodies a brutalist-inspired minimalism, featuring stark monochrome 
 - Do not layer elements or use overlays unless functionally critical; prioritize flat, distinct content blocks.
 - Do not vary line heights or letter spacing from the tokenized values; consistency is key to the system's precision.
 
-### Layout
+## Imagery
+
+This system primarily uses stark, high-contrast product photography with deep blacks and bright highlights. Imagery is usually full-bleed or cropped tightly, creating immersive backgrounds or focused product showcases. There are no illustrations or complex graphical elements; the focus is on the object or scene itself, often with a moody, almost cinematic treatment. Icons are minimal, likely monochromatic, and serve purely functional roles. The density is image-heavy in hero sections, with images serving as dominant visual anchors rather than decorative accents.
+
+## Layout
 
 The page primarily utilizes a full-bleed layout, where content sections often extend across the entire viewport width. The hero section features a prominent visual with large, centered navigation elements. Content is typically arranged in distinct, vertically stacked blocks that leverage large section gaps (200px) to create a spacious rhythm. There's a strong emphasis on full-width content blocks and large-scale typography, suggesting a contained but expansive page model. Navigation is likely a sticky top bar or off-canvas element from the 'GS' emblem, given the minimal on-page navigation elements.
 
-### Imagery
+## Similar Brands
 
-This system primarily uses stark, high-contrast product photography with deep blacks and bright highlights. Imagery is usually full-bleed or cropped tightly, creating immersive backgrounds or focused product showcases. There are no illustrations or complex graphical elements; the focus is on the object or scene itself, often with a moody, almost cinematic treatment. Icons are minimal, likely monochromatic, and serve purely functional roles. The density is image-heavy in hero sections, with images serving as dominant visual anchors rather than decorative accents.
+- **A24** — Similar use of high-contrast black/white, minimal UI, and large, impactful typography for brand presence.
+- **Brutalism.com** — Embraces strict monochromatic palettes, generous spacing, and unadorned typography as primary design elements.
+- **Studio Dumbar** — Clean, highly structured layouts with a focus on typography and strong color contrast to create a memorable brand identity.
+- **B&W Tek** — Often uses strong black and white photography with minimal text overlay, conveying sophistication through severity.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-greenspace-carbon: #000000;
+  --color-subtle-ash: #bebebe;
+  --color-canvas-white: #ffffff;
+  --font-haas-grotesk: 'haas_grotesk', Inter;
+  --spacing-37: 37px;
+  --spacing-50: 50px;
+  --spacing-200: 200px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-greenspace-carbon: #000000;
+  --color-subtle-ash: #bebebe;
+  --color-canvas-white: #ffffff;
+  --font-haas-grotesk: 'haas_grotesk', Inter;
+  --spacing-37: 37px;
+  --spacing-50: 50px;
+  --spacing-200: 200px;
+  --radius-none: 0px;
+}
+```
