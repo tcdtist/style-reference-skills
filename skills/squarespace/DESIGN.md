@@ -1,75 +1,168 @@
 ---
 version: alpha
-name: Squarespace
-description: Squarespace embodies a refined, editorial aesthetic with a stark contrast between a dominant dark mode hero and a light canvas for content. Typography relies on a precise, custom sans-serif with subtle letter-spacing variations to convey authority. Components are understated, often ghost-like or subtly outlined, emphasizing content over heavy ornamentation. The system prioritizes functional clarity and a premium, minimalist feel.
-colors:
-  absolute-zero: "#000000"
-  canvas-white: "#ffffff"
-  graphite: "#2f2f2f"
-  silver-mist: "#898989"
-  light-gray: "#dddddd"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.4
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1
-    letterSpacing: -0.52px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-    letterSpacing: -0.4px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.93
-    letterSpacing: -0.64px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 0.93
-    letterSpacing: -0.72px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 8px
-  elementGap: 12px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Main call-to-action button for initiating key user flows.
-  ghost-button:
-    role: Subtle, secondary action button, often used in navigation or alongside a primary button.
-  pill-button:
-    role: Decorative or categorized action, such as tags or filter buttons.
-  dark-card:
-    role: Content container for featured sections against a light background.
-  default-card:
-    role: Standard content container, visually distinct through a soft radius.
-  outline-large-button:
-    role: Alternative call-to-action with a larger, more pronounced border.
-  white-text-input:
-    role: Input fields used primarily on dark backgrounds.
+name: "Squarespace"
+description: "Squarespace embodies a refined, editorial aesthetic with a stark contrast between a dominant dark mode hero and a light canvas for content. Typography relies on a precise, custom sans-serif with subtle letter-spacing variations to convey authority. Components are understated, often ghost-like or subtly outlined, emphasizing content over heavy ornamentation. The system prioritizes functional clarity and a premium, minimalist feel."
+theme: "light"
+industry: "design"
+source_url: "https://www.squarespace.com"
+refero_style_id: "8618f649-6d1c-45ca-aff8-e7f04928d8dd"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508092046-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508092046-thumb.jpg"
+extracted_at: "2026-04-30T00:15:18.124Z"
 ---
 
-## Overview
+# Squarespace — Style Reference
 
-**North Star:** Editorial White-glove Service
+> Editorial White-glove Service
+
+**Theme:** light
+
+**Industry:** design
 
 Squarespace embodies a refined, editorial aesthetic with a stark contrast between a dominant dark mode hero and a light canvas for content. Typography relies on a precise, custom sans-serif with subtle letter-spacing variations to convey authority. Components are understated, often ghost-like or subtly outlined, emphasizing content over heavy ornamentation. The system prioritizes functional clarity and a premium, minimalist feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Page backgrounds, primary text, icon fills, card borders, dark overlay areas — used as the foundational dark neutral |
+| Canvas White | #ffffff | `--color-canvas-white` | Content surfaces, button text on dark backgrounds, secondary backgrounds, separator lines; Decorative background gradient used for abstract elements or soft transitions |
+| Graphite | #2f2f2f | `--color-graphite` | Primary action button background — a soft dark gray for filled buttons |
+| Silver Mist | #898989 | `--color-silver-mist` | Muted text, secondary body copy, subtle borders |
+| Light Gray | #dddddd | `--color-light-gray` | Hairline borders, subtle background tints, deactivated text |
+
+## Tokens — Typography
+
+### Clarkson
+
+- **Token:** `--font-clarkson`
+- **Substitute:** Open Sans
+- **Weights:** 300, 400, 500
+- **Sizes:** 12px, 13px, 14px, 15px, 20px, 26px, 40px, 64px, 72px
+- **Line heights:** 0.93, 1.00, 1.20, 1.40
+- **Letter spacing:** -0.06em, -0.05em, -0.04em, -0.02em, -0.01em, -0.001em
+- **Role:** Primary typeface for all headings, body text, and interactive elements. Its variable weights and precise letter-spacing create a sophisticated, modern feel, prioritizing clarity and presence.
+
+### Clarkson Serif
+
+- **Token:** `--font-clarkson-serif`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 26px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.02em
+- **Role:** Used for specific stylized headings, providing a classic, elegant contrast to the primary sans-serif. Distinctive for its unique letter-spacing at its size.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Role:** Fallback for system text, used rarely, primarily for accessibility or default browser styles where custom fonts may fail to load.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | — | `--text-caption` |
+| body-lg | 15px | 1.4 | — | `--text-body-lg` |
+| subheading | 20px | 1.2 | — | `--text-subheading` |
+| heading-sm | 26px | 1 | -0.52px | `--text-heading-sm` |
+| heading | 40px | 1 | -0.4px | `--text-heading` |
+| heading-lg | 64px | 0.93 | -0.64px | `--text-heading-lg` |
+| display | 72px | 0.93 | -0.72px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-77 | 77px | `--spacing-77` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-240 | 240px | `--spacing-240` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 8px |
+| input | 8px |
+| pills | 100px |
+| buttons | 8px |
+| default | 3px |
+| largeButtons | 30px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 32px |
+| elementGap | 12px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call-to-action button for initiating key user flows.
+
+Background: Graphite (#2f2f2f), Text: Canvas White (#ffffff), Border Radius: 8px, Padding: 24px horizontal, 24px vertical.
+
+### Ghost Button
+
+**Role:** Subtle, secondary action button, often used in navigation or alongside a primary button.
+
+Background: transparent, Text: Absolute Zero (#000000), Border: 0px, Padding: 0px.
+
+### Pill Button
+
+**Role:** Decorative or categorized action, such as tags or filter buttons.
+
+Background: transparent, Text: Absolute Zero (#000000), Border: 0px, Border Radius: 100px, Padding: 12px vertical, 16px horizontal.
+
+### Dark Card
+
+**Role:** Content container for featured sections against a light background.
+
+Background: Absolute Zero (#000000), Border Radius: 0px, No shadow. Padding: 16px top, 48px horizontal, 40px bottom.
+
+### Default Card
+
+**Role:** Standard content container, visually distinct through a soft radius.
+
+Background: transparent, Border Radius: 8px, No shadow, Padding: 0px.
+
+### Outline Large Button
+
+**Role:** Alternative call-to-action with a larger, more pronounced border.
+
+Background: Canvas White (#ffffff), Text: Absolute Zero (#000000), Border: 0px, Border Radius: 0px, Padding: 24px horizontal, 24px vertical.
+
+### White Text Input
+
+**Role:** Input fields used primarily on dark backgrounds.
+
+Background: rgba(255, 255, 255, 0.2), Text: Canvas White (#ffffff), Border: transparent, Border Radius: 8px, Padding: 0px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Absolute Zero (#000000) as the default background for hero sections and footer areas to establish a premium, high-contrast feel.
 - Apply Clarkson font consistently for all text, varying weights (300, 400, 500) and sizes according to the type scale to maintain stylistic unity.
@@ -79,7 +172,7 @@ Squarespace embodies a refined, editorial aesthetic with a stark contrast betwee
 - Reserve Graphite (#2f2f2f) for primary actions, ensuring its distinction against the black and white palette.
 - Ensure headings use negative letter-spacing from Clarkson font (-0.06em to -0.001em depending on size) to create a tight, editorial look.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or overly saturated colors, as the palette is largely monochromatic with controlled accents.
 - Do not use heavy shadows or deep elevation for components; surfaces should remain flat or subtly defined with borders.
@@ -89,10 +182,143 @@ Squarespace embodies a refined, editorial aesthetic with a stark contrast betwee
 - Refrain from using color to indicate states (success/error) unless explicitly defined; rely on text and icons for such feedback.
 - Do not break the light content / dark hero pattern; this contrast is central to the visual identity.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Absolute Zero | #000000 | Primary background for hero sections and full-width dark blocks, providing a dramatic, elegant canvas. |
+| 1 | Canvas White | #ffffff | Dominant background for main content areas, providing a clean, bright stage for information. |
+| 2 | Light Gray | #dddddd | Subtle background for alternating sections or very faint dividers, offering a slight visual break. |
+
+## Imagery
+
+The site uses a mix of high-quality photography and stylized product illustrations. Photography is generally moody and rich, often appearing as full-bleed background imagery with a dark overlay, framing content. Product illustrations are minimal, often 3D renders or abstract shapes, rendered in a subdued, almost monochromatic palette, designed to integrate seamlessly with the UI rather than stand out. Icons are simple, monochrome outlines, used functionally for navigation and features, maintaining a lightweight feel. Imagery serves to establish atmosphere and showcase elegant product usage, rather than being purely decorative.
+
+## Layout
 
 The page structure heavily employs a full-bleed layout for hero sections, transitioning to a maximum-width contained layout (approximately 1200px) for most content sections. The hero typically features a dramatic background image with centered, large typography. Section rhythm alternates between full-bleed dark blocks and contained white sections, creating distinct visual breaks. Content is predominantly arranged in centered stacks or two-column layouts where text and visuals alternate. Feature sections often use a grid of cards, maintaining an overall spacious yet dense presentation. The navigation is a fixed top bar on dark backgrounds, becoming a fixed, visually neutral bar on light sections.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of high-quality photography and stylized product illustrations. Photography is generally moody and rich, often appearing as full-bleed background imagery with a dark overlay, framing content. Product illustrations are minimal, often 3D renders or abstract shapes, rendered in a subdued, almost monochromatic palette, designed to integrate seamlessly with the UI rather than stand out. Icons are simple, monochrome outlines, used functionally for navigation and features, maintaining a lightweight feel. Imagery serves to establish atmosphere and showcase elegant product usage, rather than being purely decorative.
+- **Apple** — Shares a similar focus on high-quality product photography, minimalist UI, and editorial graphic design with strong typography.
+- **Stripe** — Exhibits a clean, functional aesthetic with restrained use of color, strong sans-serif typography, and clear information hierarchy.
+- **Linear** — Employs a sophisticated dark mode with subtle visual cues, highly legible typography, and an emphasis on functional elegance.
+- **Framer** — Uses a similar blend of dark and light sections, premium feel through typography and minimal component design, often featuring abstract graphics.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-canvas-white: #ffffff;
+  --color-graphite: #2f2f2f;
+  --color-silver-mist: #898989;
+  --color-light-gray: #dddddd;
+  --font-clarkson: 'Clarkson', Open Sans;
+  --font-clarkson-serif: 'Clarkson Serif', Playfair Display;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: -0.52px;
+  --text-heading: 40px;
+  --leading-heading: 1;
+  --tracking-heading: -0.4px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 0.93;
+  --tracking-heading-lg: -0.64px;
+  --text-display: 72px;
+  --leading-display: 0.93;
+  --tracking-display: -0.72px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-240: 240px;
+  --radius-cards: 8px;
+  --radius-input: 8px;
+  --radius-pills: 100px;
+  --radius-buttons: 8px;
+  --radius-default: 3px;
+  --radius-largebuttons: 30px;
+  --surface-absolute-zero: #000000;
+  --surface-canvas-white: #ffffff;
+  --surface-light-gray: #dddddd;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-canvas-white: #ffffff;
+  --color-graphite: #2f2f2f;
+  --color-silver-mist: #898989;
+  --color-light-gray: #dddddd;
+  --font-clarkson: 'Clarkson', Open Sans;
+  --font-clarkson-serif: 'Clarkson Serif', Playfair Display;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: -0.52px;
+  --text-heading: 40px;
+  --leading-heading: 1;
+  --tracking-heading: -0.4px;
+  --text-heading-lg: 64px;
+  --leading-heading-lg: 0.93;
+  --tracking-heading-lg: -0.64px;
+  --text-display: 72px;
+  --leading-display: 0.93;
+  --tracking-display: -0.72px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-240: 240px;
+  --radius-cards: 8px;
+  --radius-input: 8px;
+  --radius-pills: 100px;
+  --radius-buttons: 8px;
+  --radius-default: 3px;
+  --radius-largebuttons: 30px;
+  --surface-absolute-zero: #000000;
+  --surface-canvas-white: #ffffff;
+  --surface-light-gray: #dddddd;
+}
+```

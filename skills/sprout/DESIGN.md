@@ -1,66 +1,157 @@
 ---
 version: alpha
-name: Sprout
-description: Sprout embraces a playful, textured aesthetic with a warm, desaturated color palette that shifts between earthy tones, creating distinct spatial zones. Bold, almost cartoonish typography pairs with a more functional, condensed sans-serif, giving the brand a friendly yet authoritative voice. Components feature soft, rounded edges and light borders, suggesting a tactile, approachable interface. The design feels grounded and unconventional, prioritizing character over stark minimalism.
-colors:
-  earth-berry: "#3e0808"
-  sunbeam-yellow: "#f3d468"
-  terracotta: "#f39369"
-  midnight-core: "#000000"
-  canvas-white: "#ffffff"
-  paper-cream: "#fcf6f1"
-  stone-gray: "#909090"
-  ink-wash: "#111111"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.16px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.58
-    letterSpacing: -0.18px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.33
-    letterSpacing: -0.48px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 51px
-    lineHeight: 1.14
-    letterSpacing: -1.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 104px
-    lineHeight: 0.9
-    letterSpacing: -3.64px
-spacing:
-  buttonRadius: 20px
-  elementGap: 10-24px
-  sectionGap: 40px
-components:
-  ghost-link-button:
-    role: Text-based actions and navigation links.
-  earth-berry-primary-button:
-    role: Main call-to-action.
-  outline-ghost-button:
-    role: Secondary call-to-action or subtle interactive elements.
-  hero-section-card:
-    role: Visual containers within the hero section.
-  basic-card:
-    role: Standard content containers.
+name: "Sprout"
+description: "Sprout embraces a playful, textured aesthetic with a warm, desaturated color palette that shifts between earthy tones, creating distinct spatial zones. Bold, almost cartoonish typography pairs with a more functional, condensed sans-serif, giving the brand a friendly yet authoritative voice. Components feature soft, rounded edges and light borders, suggesting a tactile, approachable interface. The design feels grounded and unconventional, prioritizing character over stark minimalism."
+theme: "mixed"
+industry: "other"
+source_url: "https://sprout.place"
+refero_style_id: "09b7f406-c7e3-4e36-b443-bf24fcfe630f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515893720-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515893720-thumb.jpg"
+extracted_at: "2026-04-30T02:25:12.495Z"
 ---
 
-## Overview
+# Sprout — Style Reference
 
-**North Star:** Earthy, shifting canvases
+> Earthy, shifting canvases
+
+**Theme:** mixed
+
+**Industry:** other
 
 Sprout embraces a playful, textured aesthetic with a warm, desaturated color palette that shifts between earthy tones, creating distinct spatial zones. Bold, almost cartoonish typography pairs with a more functional, condensed sans-serif, giving the brand a friendly yet authoritative voice. Components feature soft, rounded edges and light borders, suggesting a tactile, approachable interface. The design feels grounded and unconventional, prioritizing character over stark minimalism.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Earth Berry | #3e0808 | `--color-earth-berry` | Red action color for filled buttons, selected navigation states, and focused conversion moments |
+| Sunbeam Yellow | #f3d468 | `--color-sunbeam-yellow` | Hero background, decorative accents, highlighted UI elements |
+| Terracotta | #f39369 | `--color-terracotta` | Section backgrounds, secondary surface areas, decorative elements |
+| Midnight Core | #000000 | `--color-midnight-core` | Primary text on light backgrounds, strong accents, icon fills |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Paper Cream | #fcf6f1 | `--color-paper-cream` | Subtle surface backgrounds, elevated card backgrounds |
+| Stone Gray | #909090 | `--color-stone-gray` | Muted text, secondary borders, disabled states |
+| Ink Wash | #111111 | `--color-ink-wash` | Alternative dark text, button borders and text on light backgrounds |
+
+## Tokens — Typography
+
+### BrickDisplayPro
+
+- **Token:** `--font-brickdisplaypro`
+- **Substitute:** Abril Fatface / Playfair Display
+- **Weights:** 400, 600
+- **Sizes:** 16px, 51px, 104px
+- **Line heights:** 0.90, 1.00, 1.14, 1.33
+- **Letter spacing:** -0.0350em at 104px, -0.0200em at 51px, -0.0200em at 16px
+- **Role:** Display headlines and prominent feature titles. Its bold, almost irregular character gives the brand a distinctive, playful voice, emphasizing personality over traditional legibility at larger sizes.
+
+### SuisseIntl
+
+- **Token:** `--font-suisseintl`
+- **Substitute:** Inter / Public Sans
+- **Weights:** 400, 600, 900
+- **Sizes:** 16px, 18px, 19px, 24px
+- **Line heights:** 1.19, 1.30, 1.33, 1.50, 1.58
+- **Letter spacing:** -0.0200em at 24px, -0.0180em at 19px, -0.0100em at 18px
+- **OpenType features:** 'tnum'
+- **Role:** Body copy, navigation, buttons, and functional text. Its condensed nature and varied weights provide a structured, readable counterpoint to the display font, maintaining clarity across interface elements.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica / system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** System fallback for general interface text where custom fonts may not be available or for specific button labels.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | -0.16px | `--text-body` |
+| body-lg | 18px | 1.58 | -0.18px | `--text-body-lg` |
+| subheading | 24px | 1.33 | -0.48px | `--text-subheading` |
+| heading | 51px | 1.14 | -1.02px | `--text-heading` |
+| display | 104px | 0.9 | -3.64px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-201 | 201px | `--spacing-201` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| images | 30px |
+| buttons | 20px |
+| default | 15px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 24px |
+| elementGap | 10-24px |
+
+## Components
+
+### Ghost Link Button
+
+**Role:** Text-based actions and navigation links.
+
+Transparent background, text in #000000 or #ffffff depending on context, no visible border, 0px border-radius, 0px padding. Uses SuisseIntl at 16px.
+
+### Earth Berry Primary Button
+
+**Role:** Main call-to-action.
+
+Filled with Earth Berry (#3e0808), text in Canvas White (#ffffff), 20px border-radius, 11px vertical padding, 24px horizontal padding. Uses SuisseIntl at 16px.
+
+### Outline Ghost Button
+
+**Role:** Secondary call-to-action or subtle interactive elements.
+
+Transparent background, text color in Earth Berry (#3e0808), 1px solid Earth Berry border, 20px border-radius, 11px vertical padding, 24px horizontal padding. Uses SuisseIntl at 16px.
+
+### Hero Section Card
+
+**Role:** Visual containers within the hero section.
+
+Background in Paper Cream (#fcf6f1), 15px border-radius. Padding of 24px.
+
+### Basic Card
+
+**Role:** Standard content containers.
+
+Background in Canvas White (#ffffff), 15px border-radius, no visible border or shadow. Padding of 24px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Earth Berry (#3e0808) as the dominant background for body sections and primary calls to action.
 - Employ BrickDisplayPro for all primary headings and display text, leveraging its distinct character at sizes 51px and 104px.
@@ -69,7 +160,7 @@ Sprout embraces a playful, textured aesthetic with a warm, desaturated color pal
 - Utilize SuisseIntl for all body text, navigation items, and button labels, maintaining a compact and clear typographic hierarchy.
 - Implement distinct background changes between sections, alternating between Earth Berry (#3e0808), Sunbeam Yellow (#f3d468), Terracotta (#f39369), and Canvas White (#ffffff).
 
-### Don'ts
+### Don't
 
 - Avoid using generic system fonts for headlines; BrickDisplayPro is key to brand identity.
 - Do not deviate from the specified border-radii of 15px (default) and 20px (buttons) to preserve the brand's soft aesthetic.
@@ -78,10 +169,145 @@ Sprout embraces a playful, textured aesthetic with a warm, desaturated color pal
 - Avoid excessive letter-spacing on body text; SuisseIntl is designed for slightly tighter tracking (e.g., -0.0100em at 18px).
 - Do not use dark text colors on Earth Berry (#3e0808) backgrounds; always use Canvas White (#ffffff) for readability.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Earth Berry Canvas | #3e0808 | Base page background for dark-themed sections. |
+| 1 | Terracotta Section | #f39369 | Secondary section background, providing a warm contrast. |
+| 2 | Sunbeam Yellow Hero | #f3d468 | Prominent hero background, drawing immediate attention. |
+| 3 | Paper Cream Card | #fcf6f1 | Elevated card and container backgrounds on colored sections. |
+| 4 | Canvas White Content | #ffffff | Primary content background for light-themed blocks and text-heavy areas. |
+
+## Imagery
+
+The site uses a mix of candid product screenshots featuring diverse users and abstract graphic elements. Product screenshots are contained within soft, rounded frames (15-30px radius) and often show video calls or interfaces with minimal contextual background, focusing on the human element. Icons are minimal, outlined, and monochromatic, primarily in Midnight Core (#000000) or Canvas White (#ffffff), serving functional purposes without drawing excessive attention. Imagery is used to explain features and showcase the product's social aspect, often taking up significant visual space.
+
+## Layout
 
 The page primarily uses a full-bleed layout, where hero sections and color bands stretch across the entire viewport width. Content within these sections often centers or uses alternating text-left/image-right compositions. Vertical spacing is generous, with 'sectionGap: 40px' creating clear visual breaks between different content blocks. The hero section is full-bleed, often containing centered text or a split visual, setting a distinct tone with changing background colors. Navigation is a sticky top bar with a clear call-to-action button, ensuring consistent access.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of candid product screenshots featuring diverse users and abstract graphic elements. Product screenshots are contained within soft, rounded frames (15-30px radius) and often show video calls or interfaces with minimal contextual background, focusing on the human element. Icons are minimal, outlined, and monochromatic, primarily in Midnight Core (#000000) or Canvas White (#ffffff), serving functional purposes without drawing excessive attention. Imagery is used to explain features and showcase the product's social aspect, often taking up significant visual space.
+- **Framer** — Bold, expressive display typography coupled with a more functional sans-serif for UI elements.
+- **Supabase** — Shifting background colors between sections to demarcate content blocks, using distinct earthy tones.
+- **Linear** — Subtle border-radii on interactive elements and containers, creating a soft but not overly rounded aesthetic.
+- **Read.cv** — Playful, almost quirky font choices for headlines that feel custom and convey personality.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-earth-berry: #3e0808;
+  --color-sunbeam-yellow: #f3d468;
+  --color-terracotta: #f39369;
+  --color-midnight-core: #000000;
+  --color-canvas-white: #ffffff;
+  --color-paper-cream: #fcf6f1;
+  --color-stone-gray: #909090;
+  --color-ink-wash: #111111;
+  --font-brickdisplaypro: 'BrickDisplayPro', Abril Fatface / Playfair Display;
+  --font-suisseintl: 'SuisseIntl', Inter / Public Sans;
+  --font-arial: 'Arial', Helvetica / system-ui;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.58;
+  --tracking-body-lg: -0.18px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.33;
+  --tracking-subheading: -0.48px;
+  --text-heading: 51px;
+  --leading-heading: 1.14;
+  --tracking-heading: -1.02px;
+  --text-display: 104px;
+  --leading-display: 0.9;
+  --tracking-display: -3.64px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-images: 30px;
+  --radius-buttons: 20px;
+  --radius-default: 15px;
+  --surface-earth-berry-canvas: #3e0808;
+  --surface-terracotta-section: #f39369;
+  --surface-sunbeam-yellow-hero: #f3d468;
+  --surface-paper-cream-card: #fcf6f1;
+  --surface-canvas-white-content: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-earth-berry: #3e0808;
+  --color-sunbeam-yellow: #f3d468;
+  --color-terracotta: #f39369;
+  --color-midnight-core: #000000;
+  --color-canvas-white: #ffffff;
+  --color-paper-cream: #fcf6f1;
+  --color-stone-gray: #909090;
+  --color-ink-wash: #111111;
+  --font-brickdisplaypro: 'BrickDisplayPro', Abril Fatface / Playfair Display;
+  --font-suisseintl: 'SuisseIntl', Inter / Public Sans;
+  --font-arial: 'Arial', Helvetica / system-ui;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.58;
+  --tracking-body-lg: -0.18px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.33;
+  --tracking-subheading: -0.48px;
+  --text-heading: 51px;
+  --leading-heading: 1.14;
+  --tracking-heading: -1.02px;
+  --text-display: 104px;
+  --leading-display: 0.9;
+  --tracking-display: -3.64px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-201: 201px;
+  --radius-images: 30px;
+  --radius-buttons: 20px;
+  --radius-default: 15px;
+  --surface-earth-berry-canvas: #3e0808;
+  --surface-terracotta-section: #f39369;
+  --surface-sunbeam-yellow-hero: #f3d468;
+  --surface-paper-cream-card: #fcf6f1;
+  --surface-canvas-white-content: #ffffff;
+}
+```
