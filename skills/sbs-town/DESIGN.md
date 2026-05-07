@@ -1,34 +1,99 @@
 ---
 version: alpha
-name: SBS Town
-description: SBS Town immerses users in a dark, neon-lit digital cityscape. The visual style is characterized by a luminous, futuristic aesthetic where dark surfaces are punctuated by vibrant, glowing accents. Typography is compact and precise, appearing as labels or annotations within the immersive 3D environment. The interface itself is minimal, primarily leveraging the interactive 3D scene, with UI elements serving as functional overlays rather than dominant structural components.
-colors:
-  midnight-void: "#111111"
-  ghost-marble: "#ffffff"
-  cyber-glow-pink: "#ff00d9"
-  aqua-beam: "#00f0ff"
-  voltage-yellow: "#fafa00"
-  infrared-red: "#f0445d"
-spacing:
-  buttonRadius: 100px
-  elementGap: 5px
-  sectionGap: 43px
-components:
-  kickoff-tag-button:
-    role: Primary interactive element within the 3D map
-  label-tag:
-    role: Informational labels within the 3D map
-  map-overlay-icon:
-    role: Actionable icons for navigation and information
+name: "SBS Town"
+description: "SBS Town immerses users in a dark, neon-lit digital cityscape. The visual style is characterized by a luminous, futuristic aesthetic where dark surfaces are punctuated by vibrant, glowing accents. Typography is compact and precise, appearing as labels or annotations within the immersive 3D environment. The interface itself is minimal, primarily leveraging the interactive 3D scene, with UI elements serving as functional overlays rather than dominant structural components."
+theme: "dark"
+industry: "other"
+source_url: "https://open-sbs.brig.ht/city"
+refero_style_id: "d670d78f-4542-4a66-b886-fc32361b8562"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515119267-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515119267-thumb.jpg"
+extracted_at: "2026-04-30T02:12:17.329Z"
 ---
 
-## Overview
+# SBS Town — Style Reference
 
-**North Star:** Neon Cyberpunk Metropolis
+> Neon Cyberpunk Metropolis
+
+**Theme:** dark
+
+**Industry:** other
 
 SBS Town immerses users in a dark, neon-lit digital cityscape. The visual style is characterized by a luminous, futuristic aesthetic where dark surfaces are punctuated by vibrant, glowing accents. Typography is compact and precise, appearing as labels or annotations within the immersive 3D environment. The interface itself is minimal, primarily leveraging the interactive 3D scene, with UI elements serving as functional overlays rather than dominant structural components.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #111111 | `--color-midnight-void` | Deep background for immersive scenes, subtle borders, and secondary text elements |
+| Ghost Marble | #ffffff | `--color-ghost-marble` | Prominent text, icon fills, and accent borders that stand out against dark environments |
+| Cyber Glow Pink | #ff00d9 | `--color-cyber-glow-pink` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+| Aqua Beam | #00f0ff | `--color-aqua-beam` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+| Voltage Yellow | #fafa00 | `--color-voltage-yellow` | Bright secondary accent, drawing attention to specific points of interest or data within the futuristic map |
+| Infrared Red | #f0445d | `--color-infrared-red` | Complementary accent color, used for tags that need to create a sense of urgency or distinct classification |
+
+## Tokens — Typography
+
+### Circular
+
+- **Token:** `--font-circular`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.15
+- **Role:** Primary UI text for labels, annotations, and interactive elements. Its consistent weight maintains a clear, unobtrusive presence within the visual-heavy interface.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-43 | 43px | `--spacing-43` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 100px |
+| buttons | 100px |
+| overlays | 100px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 43px |
+| cardPadding | 20px |
+| elementGap | 5px |
+
+## Components
+
+### Kickoff Tag Button
+
+**Role:** Primary interactive element within the 3D map
+
+A pill-shaped button with a 'Warning Amber' background (#ff7c24), white text (#ffffff) set in Circular 400 at 16px, and a 100px border-radius, providing a soft, accessible touch target. Features 5px vertical and 20px horizontal padding.
+
+### Label Tag
+
+**Role:** Informational labels within the 3D map
+
+Pill-shaped label, like 'Revolutionary' or 'Financing', with an 'Infrared Red' (#f0445d) or 'Warning Amber' (#ff7c24) background, white text (#ffffff) set in Circular 400 at 16px, and a 100px border-radius. Padding is 5px vertical and 20px horizontal.
+
+### Map Overlay Icon
+
+**Role:** Actionable icons for navigation and information
+
+Small, outlined icons with 'Ghost Marble' (#ffffff) color against the dark immersive background. Accompanied by 16px Circular 400 'Ghost Marble' text, positioned minimally.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Midnight Void' (#111111) for all core background and surface elements to establish the dark theme.
 - Use 'Ghost Marble' (#ffffff) for primary text and iconic elements to ensure legibility against dark backgrounds.
@@ -38,7 +103,7 @@ SBS Town immerses users in a dark, neon-lit digital cityscape. The visual style 
 - Leverage the 'Warning Amber' (#ff7c24) and 'Infrared Red' (#f0445d) for semantic tags and call-outs within the immersive city map.
 - Employ 5px/20px padding (vertical/horizontal) for all small interactive elements like tags and buttons.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated background colors; all large surface areas should remain deep, dark neutrals to preserve the immersive cyberpunk aesthetic.
 - Do not introduce heavy shadows or strong elevation effects, as the visual style relies on glowing accents rather than traditional depth.
@@ -48,10 +113,63 @@ SBS Town immerses users in a dark, neon-lit digital cityscape. The visual style 
 - Do not use large, blocky UI components; maintain a lightweight, ethereal presence for interface elements.
 - Avoid dense text blocks; all text should be concise, functional, and integrated as labels or annotations.
 
-### Layout
+## Imagery
+
+The site primarily uses 3D renders of a futuristic cityscape, imbued with a distinct cyberpunk aesthetic. The imagery is highly dimensional, depicting detailed buildings, glowing pathways, and abstract geometric icons (like the 'SBS' logo and colored cubes) that serve as key points of interest. Lighting is dark and moody, with prominent neon accents in 'Aqua Beam', 'Cyber Glow Pink', and 'Voltage Yellow' that define outlines and interactive elements. Imagery is central to the experience; the UI overlays are minimal, acting as functional annotations within the full-bleed, immersive 3D scene. Icons are simple, filled shapes that maintain the glow-in-the-dark visual language.
+
+## Layout
 
 The page employs a full-bleed layout, where the primary visual is a dynamic 3D rendered cityscape that fills the entire viewport. There is no traditional page width constraint. The hero pattern is the immersive 3D scene itself. Content is arranged as minimal, floating UI overlays and tags (like 'Kickoff' or 'Revolutionary') directly integrated into the 3D environment, strategically placed to highlight points of interest. Navigation elements, such as the 'Map' icon or 'Show me around' button, are subtly positioned in the corners, maintaining a high level of visual breathing room for the central 3D experience. There are no clear sections or grids in a traditional sense, rather an interactive map with annotated features.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses 3D renders of a futuristic cityscape, imbued with a distinct cyberpunk aesthetic. The imagery is highly dimensional, depicting detailed buildings, glowing pathways, and abstract geometric icons (like the 'SBS' logo and colored cubes) that serve as key points of interest. Lighting is dark and moody, with prominent neon accents in 'Aqua Beam', 'Cyber Glow Pink', and 'Voltage Yellow' that define outlines and interactive elements. Imagery is central to the experience; the UI overlays are minimal, acting as functional annotations within the full-bleed, immersive 3D scene. Icons are simple, filled shapes that maintain the glow-in-the-dark visual language.
+- **Cyberpunk 2077 (game UI)** — Dominant dark theme, neon accents, futuristic 3D cityscapes, and minimal overlay UI.
+- **TRON: Legacy (visuals)** — High contrast between dark environments and glowing, often blue and pink, linear elements and outlines.
+- **Brave Browser** — Uses a dark, technical aesthetic with bright, distinct accent colors for key actions and branding.
+- **Linear** — Employs a precise, compact typography style and favors dark backgrounds with focused pops of color for interaction.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #111111;
+  --color-ghost-marble: #ffffff;
+  --color-cyber-glow-pink: #ff00d9;
+  --color-aqua-beam: #00f0ff;
+  --color-voltage-yellow: #fafa00;
+  --color-infrared-red: #f0445d;
+  --font-circular: 'Circular', system-ui;
+  --spacing-5: 5px;
+  --spacing-20: 20px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-43: 43px;
+  --radius-tags: 100px;
+  --radius-buttons: 100px;
+  --radius-overlays: 100px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #111111;
+  --color-ghost-marble: #ffffff;
+  --color-cyber-glow-pink: #ff00d9;
+  --color-aqua-beam: #00f0ff;
+  --color-voltage-yellow: #fafa00;
+  --color-infrared-red: #f0445d;
+  --font-circular: 'Circular', system-ui;
+  --spacing-5: 5px;
+  --spacing-20: 20px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-43: 43px;
+  --radius-tags: 100px;
+  --radius-buttons: 100px;
+  --radius-overlays: 100px;
+}
+```

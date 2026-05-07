@@ -1,63 +1,170 @@
 ---
 version: alpha
-name: Schema
-description: Schema by Figma employs a bold, graphic language, reminiscent of abstract art on an interactive canvas. Its foundation is a stark black and white palette, punctuated by large, flat blocks of vivid and muted chromatic colors that act as dividers and background accents. Typography is primarily functional, featuring custom sans-serifs that maintain clarity even at large display sizes, often against contrasting backgrounds. The layout is structured yet playfully asymmetric, utilizing full-width sections that transition between solid colors and complex, overlapping geometric patterns, often making strong use of negative space.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  pale-mist: "#e2e2e2"
-  charcoal-text: "#0f0f0f"
-  jade-accent: "#24cb71"
-  aqua-wash: "#c7f8fb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.22
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-    letterSpacing: -1.12px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-    letterSpacing: -1.44px
-spacing:
-  buttonRadius: 20px
-  elementGap: 24px
-  sectionGap: 60px
-components:
-  ghost-button:
-    role: Primary interactive element for event registration or key actions.
-  navigation-link:
-    role: Top-level navigation items.
-  section-divider-accent:
-    role: Visual separator for content blocks, creating graphic interest.
-  speaker-card:
-    role: Display individual speaker profiles.
+name: "Schema"
+description: "Schema by Figma employs a bold, graphic language, reminiscent of abstract art on an interactive canvas. Its foundation is a stark black and white palette, punctuated by large, flat blocks of vivid and muted chromatic colors that act as dividers and background accents. Typography is primarily functional, featuring custom sans-serifs that maintain clarity even at large display sizes, often against contrasting backgrounds. The layout is structured yet playfully asymmetric, utilizing full-width sections that transition between solid colors and complex, overlapping geometric patterns, often making strong use of negative space."
+theme: "light"
+industry: "design"
+source_url: "https://schema.figma.com"
+refero_style_id: "2b07d62c-d706-4c9d-a3fb-9c163da09f03"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518739551-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518739551-thumb.jpg"
+extracted_at: "2026-04-30T03:12:34.774Z"
 ---
 
-## Overview
+# Schema — Style Reference
 
-**North Star:** Abstract art playground
+> Abstract art playground
+
+**Theme:** light
+
+**Industry:** design
 
 Schema by Figma employs a bold, graphic language, reminiscent of abstract art on an interactive canvas. Its foundation is a stark black and white palette, punctuated by large, flat blocks of vivid and muted chromatic colors that act as dividers and background accents. Typography is primarily functional, featuring custom sans-serifs that maintain clarity even at large display sizes, often against contrasting backgrounds. The layout is structured yet playfully asymmetric, utilizing full-width sections that transition between solid colors and complex, overlapping geometric patterns, often making strong use of negative space.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #ffffff | `--color-canvas-white` | Page background, light canvas sections, text on dark backgrounds |
+| Pale Mist | #e2e2e2 | `--color-pale-mist` | Subtle borders, secondary icons, light background elements |
+| Charcoal Text | #0f0f0f | `--color-charcoal-text` | Headings, body text where slightly softer than pure black |
+| Jade Accent | #24cb71 | `--color-jade-accent` | Section backgrounds, decorative accents, illustration elements |
+| Aqua Wash | #c7f8fb | `--color-aqua-wash` | Section backgrounds, subtle calls to attention, illustration elements |
+
+## Tokens — Typography
+
+### Figma VF-normal-700-75
+
+- **Token:** `--font-figma-vf-normal-700-75`
+- **Weights:** 400
+- **Sizes:** 24px
+- **Line heights:** 1.2
+- **Role:** Figma VF-normal-700-75 — detected in extracted data but not described by AI
+
+### Figma Sans Text
+
+- **Token:** `--font-figma-sans-text`
+- **Substitute:** Inter
+- **Weights:** 400, 600
+- **Sizes:** 13px, 16px, 18px, 24px, 72px
+- **Line heights:** 1.00, 1.20, 1.22, 1.40
+- **Letter spacing:** -0.02em at 72px, 0.03em at 13px
+- **Role:** Primary UI text for buttons, navigation, body copy, and some headings. Its varied weights support clear hierarchy without sacrificing readability.
+
+### Figma Sans Display
+
+- **Token:** `--font-figma-sans-display`
+- **Substitute:** Inter Display
+- **Weights:** 400, 700
+- **Sizes:** 16px, 24px, 32px, 56px, 72px, 86px
+- **Line heights:** 0.90, 1.00, 1.10, 1.20, 1.30, 1.40
+- **Letter spacing:** -0.02em at larger sizes (e.g., 86px), reverting to 0.03em at smaller.
+- **Role:** Used for prominent headlines and display text, its compressed line heights enhance visual impact and create a tight, modern aesthetic.
+
+### Source Sans Pro
+
+- **Token:** `--font-source-sans-pro`
+- **Substitute:** Roboto
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Role:** Auxiliary body text, likely for longer content blocks or specific informational areas, offering high legibility.
+
+### Figma Mono
+
+- **Token:** `--font-figma-mono`
+- **Substitute:** Space Mono
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.30, 1.40
+- **Letter spacing:** 0.03em
+- **Role:** Monospaced text for technical details, code snippets, or specific labels where character alignment is key.
+
+### Figma VF-normal-400-100
+
+- **Token:** `--font-figma-vf-normal-400-100`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.2
+- **Letter spacing:** 0.03
+- **Role:** Figma VF-normal-400-100 — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.22 | — | `--text-caption` |
+| body | 16px | 1.2 | — | `--text-body` |
+| subheading | 24px | 1.2 | — | `--text-subheading` |
+| heading | 32px | 1.1 | — | `--text-heading` |
+| heading-lg | 56px | 1 | -1.12px | `--text-heading-lg` |
+| display | 72px | 1 | -1.44px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| links | 20px |
+| buttons | 20px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60px |
+| cardPadding | 16px |
+| elementGap | 24px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Primary interactive element for event registration or key actions.
+
+Text-based, with an implied boundary. No explicit background or border, but appears within a container with a 1px solid #000000 line as a separator.
+
+### Navigation Link
+
+**Role:** Top-level navigation items.
+
+Uses Figma Sans Text, weight 400, at 16px, color #000000. Underlined on hover or active states. Padding of 8px vertically and 16px horizontally.
+
+### Section Divider Accent
+
+**Role:** Visual separator for content blocks, creating graphic interest.
+
+Large blocks of solid color, like #24cb71 or #c7f8fb, used as full-width backgrounds for sections, providing visual rhythm.
+
+### Speaker Card
+
+**Role:** Display individual speaker profiles.
+
+Features a circular monochrome portrait against a solid, vibrant background color (e.g., #24cb71, #c7f8fb), with speaker name in Figma Sans Text 600 and title in Figma Sans Text 400, both #000000.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize #000000 and #ffffff as primary text and background colors respectively, establishing a high-contrast foundation.
 - Use Figma Sans Display for all major headings and prominent text elements, leveraging its varied sizes and tight line heights for impact.
@@ -66,7 +173,7 @@ Schema by Figma employs a bold, graphic language, reminiscent of abstract art on
 - Maintain a clear element gap of 24px between distinct interface elements for spaciousness.
 - Incorporate 1px solid #000000 borders for subtle delineation of interactive states or containers where a delicate definition is needed.
 
-### Don'ts
+### Don't
 
 - Avoid using soft shadows or gradients for elevation; surfaces should primarily be flat and distinct through color blocks or sharp outlines.
 - Do not introduce additional sans-serif fonts; restrict typography to the specified Figma Sans Text, Figma Sans Display, and Source Sans Pro for consistency.
@@ -75,10 +182,108 @@ Schema by Figma employs a bold, graphic language, reminiscent of abstract art on
 - Avoid standard button styles with fills and explicit borders for primary actions; use ghost button treatments or text links within defined areas.
 - Do not use smaller spacing units (e.g., 4px, 8px) for large section separation; reserve 60px for section gaps and 24px for component-level spacing.
 
-### Layout
+## Imagery
+
+The imagery is a blend of abstract geometric compositions and tightly cropped, high-contrast monochrome photography. Abstract graphics feature overlapping circles, squares, and polygonal shapes in a vibrant, unpredictable palette, often used as full-bleed backgrounds or section dividers. Photography consists of black and white headshots with high contrast, often set against a single, bold background color (like Jade Accent or Aqua Wash), giving a graphic, almost poster-like quality. Icons are minimal, outlined, and monochromatic, with a fine stroke weight, serving primarily as functional UI elements rather than elaborate decoration. The approach is graphic-heavy, with imagery functioning decoratively and to provide strong visual anchors.
+
+## Layout
 
 The page primarily uses a full-bleed layout, where sections extend across the full width of the viewport, with content often centered or left-aligned within. The hero section features a stark black background with a large, centered headline. Subsequent sections alternate between solid color backgrounds and more complex, abstract graphic patterns. Content often uses a centered stacking approach or a 2-column layout (text left, image right) within these full-width bands. A 4-column grid is evident for speaker profiles. Vertical spacing is consistent between sections, often using the 60px section gap. Navigation is a minimal top bar, fixed to the top, with simple text links.
 
-### Imagery
+## Quick Start
 
-The imagery is a blend of abstract geometric compositions and tightly cropped, high-contrast monochrome photography. Abstract graphics feature overlapping circles, squares, and polygonal shapes in a vibrant, unpredictable palette, often used as full-bleed backgrounds or section dividers. Photography consists of black and white headshots with high contrast, often set against a single, bold background color (like Jade Accent or Aqua Wash), giving a graphic, almost poster-like quality. Icons are minimal, outlined, and monochromatic, with a fine stroke weight, serving primarily as functional UI elements rather than elaborate decoration. The approach is graphic-heavy, with imagery functioning decoratively and to provide strong visual anchors.
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pale-mist: #e2e2e2;
+  --color-charcoal-text: #0f0f0f;
+  --color-jade-accent: #24cb71;
+  --color-aqua-wash: #c7f8fb;
+  --font-figma-vf-normal-700-75: 'Figma VF-normal-700-75', ui-sans-serif, system-ui, sans-serif;
+  --font-figma-sans-text: 'Figma Sans Text', Inter;
+  --font-figma-sans-display: 'Figma Sans Display', Inter Display;
+  --font-source-sans-pro: 'Source Sans Pro', Roboto;
+  --font-figma-mono: 'Figma Mono', Space Mono;
+  --font-figma-vf-normal-400-100: 'Figma VF-normal-400-100', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.22;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.12px;
+  --text-display: 72px;
+  --leading-display: 1;
+  --tracking-display: -1.44px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-links: 20px;
+  --radius-buttons: 20px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pale-mist: #e2e2e2;
+  --color-charcoal-text: #0f0f0f;
+  --color-jade-accent: #24cb71;
+  --color-aqua-wash: #c7f8fb;
+  --font-figma-vf-normal-700-75: 'Figma VF-normal-700-75', ui-sans-serif, system-ui, sans-serif;
+  --font-figma-sans-text: 'Figma Sans Text', Inter;
+  --font-figma-sans-display: 'Figma Sans Display', Inter Display;
+  --font-source-sans-pro: 'Source Sans Pro', Roboto;
+  --font-figma-mono: 'Figma Mono', Space Mono;
+  --font-figma-vf-normal-400-100: 'Figma VF-normal-400-100', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.22;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.12px;
+  --text-display: 72px;
+  --leading-display: 1;
+  --tracking-display: -1.44px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-links: 20px;
+  --radius-buttons: 20px;
+}
+```

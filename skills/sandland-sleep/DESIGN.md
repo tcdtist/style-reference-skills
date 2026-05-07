@@ -1,84 +1,198 @@
 ---
 version: alpha
-name: Sandland Sleep
-description: Sandland Sleep uses a calm, naturalistic visual language designed to evoke tranquility and trust, combining soft, muted backgrounds with clear, legible typography. A dominant dark navy provides a sense of depth and authority, contrasted by a sunny yellow for key calls to action, creating gentle visual punctuation. Surfaces are largely soft-edged cards with subtle elevation, promoting a friendly and approachable feel while maintaining a clean, digital aesthetic. The overall theme is understated and clean, minimizing distractions to focus on clarity and product presentation.
-colors:
-  midnight-ink: "#1a365d"
-  amber-glow: "#fae467"
-  scarlet-flash: "#a42325"
-  deepest-night: "#000000"
-  canvas-white: "#ffffff"
-  ghost-fog: "#f2ede8"
-  subtle-ash: "#e6e6e6"
-  stone-gray: "#666666"
-  pale-pebble: "#faf8f6"
-  slate-border: "#726f6d"
-  dark-umbra: "#3d3d3d"
-  light-concrete: "#cbd5e0"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.4
-    letterSpacing: 0.45px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.6
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.3px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.1
-    letterSpacing: -0.3px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-    letterSpacing: -0.3px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 20px
-  elementGap: 8px
-  sectionGap: 44px
-components:
-  primary-action-button:
-    role: Call to action
-  ghost-outline-button:
-    role: Secondary action
-  neutral-button:
-    role: Tertiary action
-  default-card:
-    role: Content container
-  elevated-content-card:
-    role: Prominent content display
-  dark-product-card:
-    role: Product information display
-  input-field:
-    role: User input
-  bestseller-badge:
-    role: Highlight label
+name: "Sandland Sleep"
+description: "Sandland Sleep uses a calm, naturalistic visual language designed to evoke tranquility and trust, combining soft, muted backgrounds with clear, legible typography. A dominant dark navy provides a sense of depth and authority, contrasted by a sunny yellow for key calls to action, creating gentle visual punctuation. Surfaces are largely soft-edged cards with subtle elevation, promoting a friendly and approachable feel while maintaining a clean, digital aesthetic. The overall theme is understated and clean, minimizing distractions to focus on clarity and product presentation."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://sandlandsleep.com"
+refero_style_id: "be17feca-c2bd-4e17-b4d2-ed3ae019a84c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520999113-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520999113-thumb.jpg"
+extracted_at: "2026-04-30T03:50:25.275Z"
 ---
 
-## Overview
+# Sandland Sleep — Style Reference
 
-**North Star:** Calm twilight, soft edges
+> Calm twilight, soft edges
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Sandland Sleep uses a calm, naturalistic visual language designed to evoke tranquility and trust, combining soft, muted backgrounds with clear, legible typography. A dominant dark navy provides a sense of depth and authority, contrasted by a sunny yellow for key calls to action, creating gentle visual punctuation. Surfaces are largely soft-edged cards with subtle elevation, promoting a friendly and approachable feel while maintaining a clean, digital aesthetic. The overall theme is understated and clean, minimizing distractions to focus on clarity and product presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #1a365d | `--color-midnight-ink` | Primary brand color for hero backgrounds, card surfaces, and key icons—establishes a sense of calm and depth |
+| Amber Glow | #fae467 | `--color-amber-glow` | Accent for primary call-to-action buttons, badges, and highlights—injects warmth and guides user attention |
+| Scarlet Flash | #a42325 | `--color-scarlet-flash` | Decorative accent primarily seen in subtle box-shadows, providing a hint of energy |
+| Deepest Night | #000000 | `--color-deepest-night` | Primary text color and significant UI elements like backgrounds and borders for high contrast |
+| Canvas White | #ffffff | `--color-canvas-white` | Main background for cards, text, and interactive elements, providing a clean, bright foundation |
+| Ghost Fog | #f2ede8 | `--color-ghost-fog` | Background for outer page sections, providing a soft, almost imperceptible warmth to the canvas |
+| Subtle Ash | #e6e6e6 | `--color-subtle-ash` | Subtle borders and dividers, indicating structure without strong visual interruption |
+| Stone Gray | #666666 | `--color-stone-gray` | Muted text for secondary information, helper text, and subtle icon details |
+| Pale Pebble | #faf8f6 | `--color-pale-pebble` | Secondary card background, slightly off-white to create subtle layering |
+| Slate Border | #726f6d | `--color-slate-border` | Standard input borders and placeholder text color |
+| Dark Umbra | #3d3d3d | `--color-dark-umbra` | Text color for price points and other specific content areas, a softer alternative to pure black |
+| Light Concrete | #cbd5e0 | `--color-light-concrete` | Background for neutral, ghost buttons, providing a subtle interactive cue |
+
+## Tokens — Typography
+
+### Sandland-550
+
+- **Token:** `--font-sandland-550`
+- **Substitute:** Open Sans
+- **Weights:** 400, 500, 600
+- **Sizes:** 10px, 11px, 12px, 13px, 14px, 15px, 16px, 18px, 19px, 20px, 24px, 28px, 40px, 48px, 72px
+- **Line heights:** 1.00, 1.10, 1.20, 1.30, 1.40, 1.60, 1.67
+- **Letter spacing:** -0.0300em at display sizes, 0.0450em for small text, neutral otherwise
+- **Role:** Primary typeface for all headings and body text. Its subtle variations in letter spacing across sizes lend a bespoke feel, enhancing readability without drawing attention to the font itself. The regular weight (400) provides a clear, natural voice.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 24px
+- **Line heights:** 1.10, 1.40
+- **Letter spacing:** normal
+- **Role:** Secondary typeface, used sparingly for specific icons or technical annotations, providing a clean, accessible counterpoint.
+
+### GTStandard-M
+
+- **Token:** `--font-gtstandard-m`
+- **Substitute:** Roboto
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Used for specific auxiliary informational text, adding a subtle touch of distinctiveness.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.4 | 0.45px | `--text-caption` |
+| body | 15px | 1.6 | — | `--text-body` |
+| subheading | 18px | 1.4 | — | `--text-subheading` |
+| heading-sm | 24px | 1.2 | — | `--text-heading-sm` |
+| heading | 40px | 1.1 | -0.3px | `--text-heading` |
+| heading-lg | 48px | 1.1 | -0.3px | `--text-heading-lg` |
+| display | 72px | 1 | -0.3px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-173 | 173px | `--spacing-173` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| input | 0px |
+| badges | 10px |
+| buttons | 20px |
+| circular-elements | 999px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 4px 12px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.1) 0px 4px 20px 0px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.13) 0px 1px 0px 0px | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 44px |
+| cardPadding | 30px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call to action
+
+Filled button with Amber Glow (#fae467) background, Deepest Night (#000000) text, 20px border radius, and generous 16px 24px padding.
+
+### Ghost Outline Button
+
+**Role:** Secondary action
+
+Ghost button with Canvas White (#ffffff) background (90% opacity), Deepest Night (#000000) text, 999px border radius for pill shape, and 1px 6px padding. Used for minimal interactive elements like arrows or small controls.
+
+### Neutral Button
+
+**Role:** Tertiary action
+
+Button with Light Concrete (#cbd5e0) background, Deepest Night (#000000) text, 999px border radius, and 1px 6px padding. Used for subdued interactive elements.
+
+### Default Card
+
+**Role:** Content container
+
+Container with Canvas White (#ffffff) background (60% opacity), 10px border radius, and a subtle shadow rgba(0, 0, 0, 0.1) 0px 4px 12px 0px. Padding is 30px on all sides.
+
+### Elevated Content Card
+
+**Role:** Prominent content display
+
+Container with pure Canvas White (#ffffff) background, 10px border radius, and a more pronounced shadow rgba(0, 0, 0, 0.1) 0px 4px 20px 0px. Padding is 40px on all sides.
+
+### Dark Product Card
+
+**Role:** Product information display
+
+Card with Midnight Ink (#1a365d) background, 10px border radius, no shadow. Used for showcasing products with a distinct visual identity.
+
+### Input Field
+
+**Role:** User input
+
+Transparent background, Slate Border (#726f6d) text and border bottom. Padding is 12px vertical, 0px horizontal. No border radius, relying on the underlying page structure.
+
+### Bestseller Badge
+
+**Role:** Highlight label
+
+Amber Glow (#fae467) background, Deepest Night (#000000) text, 10px border radius, and 5px padding. Used for small, distinctive labels.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Ghost Fog (#f2ede8) as the canvas background for most page sections, occasionally using dark backgrounds like Midnight Ink (#1a365d) for hero or feature areas.
 - Apply Deepest Night (#000000) for all primary text elements, ensuring high contrast and legibility.
@@ -88,7 +202,7 @@ Sandland Sleep uses a calm, naturalistic visual language designed to evoke tranq
 - Maintain a comfortable density with an element gap of 8px and card padding of 30px, ensuring visual breathing room. Section gaps should be 44px.
 - Use Subtle Ash (#e6e6e6) for hairline borders and separators to define content zones lightly.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors outside of the Amber Glow (#fae467) accent for primary actions; keep the rest of the palette muted or neutral.
 - Do not introduce additional font families beyond Sandland-550, Inter, and GTStandard-M; maintain typographic consistency.
@@ -97,10 +211,183 @@ Sandland Sleep uses a calm, naturalistic visual language designed to evoke tranq
 - Avoid arbitrary color variations for text or background elements; each color should serve a distinct semantic purpose.
 - Do not create layouts that extend beyond the 1200px page max width, ensuring a contained and balanced presentation.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Page Canvas | #f2ede8 | Dominant background for the overall page structure. |
+| 2 | Default Card Surface | #ffffff | Background for most content cards, providing a soft, slightly elevated context. |
+| 3 | Elevated Card Surface | #faf8f6 | Used for specific cards that require a subtle distinction from the default card, offering faint visual layering. |
+
+## Elevation
+
+- **Default Card:** `rgba(0, 0, 0, 0.1) 0px 4px 12px 0px`
+- **Elevated Content Card:** `rgba(0, 0, 0, 0.1) 0px 4px 20px 0px`
+- **Input Field Focus:** `rgba(0, 0, 0, 0.13) 0px 1px 0px 0px`
+
+## Imagery
+
+Imagery largely consists of tight product photography featuring sleep aid boxes, typically isolated on clean backgrounds or presented diagonally for a dynamic feel. Some illustrations are present, characterized by organic, flat shapes and brand-colored accents (like the blue sheep). Icons are generally outlined or filled with a moderate stroke weight, appearing as line art or simple glyphs, used functionally. The overall density of imagery is balanced, serving both decorative-atmospheric roles (hero section) and explanatory purposes (product display).
+
+## Layout
 
 The page maintains a max-width of 1200px, centered for readability and focus. The hero section features a full-width background with a centered, prominent headline and a Call-to-Action button over softly rendered product imagery. Content sections typically follow a consistent vertical rhythm with alternating background colors (Ghost Fog #f2ede8 and Canvas White #ffffff where cards overlay) and are separated by a section gap of 44px. Information is frequently arranged in a grid of 3-column cards, presenting products or features. Section headers are often centered and descriptive. Navigation is a sticky top bar with a left-aligned brand logo and right-aligned actions and links.
 
-### Imagery
+## Similar Brands
 
-Imagery largely consists of tight product photography featuring sleep aid boxes, typically isolated on clean backgrounds or presented diagonally for a dynamic feel. Some illustrations are present, characterized by organic, flat shapes and brand-colored accents (like the blue sheep). Icons are generally outlined or filled with a moderate stroke weight, appearing as line art or simple glyphs, used functionally. The overall density of imagery is balanced, serving both decorative-atmospheric roles (hero section) and explanatory purposes (product display).
+- **Oura Ring** — Similar focus on sleep and wellness, with a clean UI, subtle dark backgrounds for key sections, and understated typography.
+- **Calm (app)** — Emphasizes a tranquil mood through soft color palettes and clear, uncluttered layouts for a soothing user experience.
+- **Hims & Hers** — Direct-to-consumer health brand aesthetic with a combination of clean product shots and a focused, approachable UI.
+- **Seed Health** — Modern health and wellness brand with a clean, scientific aesthetic, minimalist cards, and controlled use of accent colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #1a365d;
+  --color-amber-glow: #fae467;
+  --color-scarlet-flash: #a42325;
+  --color-deepest-night: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ghost-fog: #f2ede8;
+  --color-subtle-ash: #e6e6e6;
+  --color-stone-gray: #666666;
+  --color-pale-pebble: #faf8f6;
+  --color-slate-border: #726f6d;
+  --color-dark-umbra: #3d3d3d;
+  --color-light-concrete: #cbd5e0;
+  --font-sandland-550: 'Sandland-550', Open Sans;
+  --font-inter: 'Inter', Inter;
+  --font-gtstandard-m: 'GTStandard-M', Roboto;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.45px;
+  --text-body: 15px;
+  --leading-body: 1.6;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.3px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.3px;
+  --text-display: 72px;
+  --leading-display: 1;
+  --tracking-display: -0.3px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-173: 173px;
+  --radius-cards: 10px;
+  --radius-input: 0px;
+  --radius-badges: 10px;
+  --radius-buttons: 20px;
+  --radius-circular-elements: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.13) 0px 1px 0px 0px;
+  --surface-page-canvas: #f2ede8;
+  --surface-default-card-surface: #ffffff;
+  --surface-elevated-card-surface: #faf8f6;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #1a365d;
+  --color-amber-glow: #fae467;
+  --color-scarlet-flash: #a42325;
+  --color-deepest-night: #000000;
+  --color-canvas-white: #ffffff;
+  --color-ghost-fog: #f2ede8;
+  --color-subtle-ash: #e6e6e6;
+  --color-stone-gray: #666666;
+  --color-pale-pebble: #faf8f6;
+  --color-slate-border: #726f6d;
+  --color-dark-umbra: #3d3d3d;
+  --color-light-concrete: #cbd5e0;
+  --font-sandland-550: 'Sandland-550', Open Sans;
+  --font-inter: 'Inter', Inter;
+  --font-gtstandard-m: 'GTStandard-M', Roboto;
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.45px;
+  --text-body: 15px;
+  --leading-body: 1.6;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.3px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.3px;
+  --text-display: 72px;
+  --leading-display: 1;
+  --tracking-display: -0.3px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-173: 173px;
+  --radius-cards: 10px;
+  --radius-input: 0px;
+  --radius-badges: 10px;
+  --radius-buttons: 20px;
+  --radius-circular-elements: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 4px 12px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.1) 0px 4px 20px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.13) 0px 1px 0px 0px;
+  --surface-page-canvas: #f2ede8;
+  --surface-default-card-surface: #ffffff;
+  --surface-elevated-card-surface: #faf8f6;
+}
+```
