@@ -1,98 +1,183 @@
 ---
 version: alpha
-name: Frontier AI LLMs
-description: Mistral AI presents as a digital desert landscape at dawn. The warm, earthy gradient backgrounds evoke vast, untamed frontiers, grounding the advanced AI concepts in natural, expansive imagery. Heavy, dark typography on these warm backdrops creates stark contrast, emphasizing seriousness and weight. An almost absent border radius (0px) reinforces a pragmatic, unyielding aesthetic, while the single vivid orange accent color highlights interaction points, mimicking a critical glow against the muted tones.
-colors:
-  desert-canvas: "#fffaeb"
-  midnight-ink: "#1f1f1f"
-  snowdrift: "#ffffff"
-  void-deep: "#000000"
-  graphite: "#3c3c3c"
-  sandstone-slab: "#fff0c2"
-  pale-ochre: "#ecdaa2"
-  horizon-gradient: "#b35d20"
-  frontier-accent: "#fa520f"
-  golden-streak: "#ffd900"
-  sunbeam: "#ffae00"
-  faded-red: "#e00400"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.42px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.48px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.33
-    letterSpacing: -0.72px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.15
-    letterSpacing: -0.96px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 38px
-    lineHeight: 1.15
-    letterSpacing: -1.14px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -1.44px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 0.95
-    letterSpacing: -1.68px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 82px
-    lineHeight: 0.95
-    letterSpacing: -2.46px
-spacing:
-  elementGap: 12px
-  sectionGap: 89px
-components:
-  cta-button-group:
-    role: 
-  feature-list-cards:
-    role: 
-  autonomous-work-feature-selector:
-    role: 
-  primary-dark-button:
-    role: Call-to-action button for critical user journeys.
-  ghost-accent-link-button:
-    role: Secondary action or navigation highlight, often appearing in hero or footer zones.
-  ghost-dark-link-button:
-    role: Secondary action or navigation, typically within light sections.
-  callout-tag-button:
-    role: Informational tags or minor calls to action.
-  navigation-link:
-    role: Primary navigation links in the header.
-  hero-headline:
-    role: Dominant textual element on the primary landing page.
-  body-paragraph:
-    role: Standard informative text block.
-  feature-card-light:
-    role: Used for informational content blocks in light sections.
-  footer-link:
-    role: Navigation and informational links in the footer.
+name: "Frontier AI LLMs"
+description: "Mistral AI presents as a digital desert landscape at dawn. The warm, earthy gradient backgrounds evoke vast, untamed frontiers, grounding the advanced AI concepts in natural, expansive imagery. Heavy, dark typography on these warm backdrops creates stark contrast, emphasizing seriousness and weight. An almost absent border radius (0px) reinforces a pragmatic, unyielding aesthetic, while the single vivid orange accent color highlights interaction points, mimicking a critical glow against the muted tones."
+theme: "light"
+industry: "ai"
+source_url: "https://mistral.ai"
+refero_style_id: "d3caa7bf-2e2e-489a-845d-5cab274e7a92"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776125037404-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776125037404-thumb.jpg"
+extracted_at: "2026-04-14T00:04:23.316Z"
 ---
 
-## Overview
+# Frontier AI LLMs — Style Reference
 
-**North Star:** Digital Desert Dawn — a stark, warm landscape where technology meets the wild.
+> Digital Desert Dawn — a stark, warm landscape where technology meets the wild.
+
+**Theme:** light
+
+**Industry:** ai
 
 Mistral AI presents as a digital desert landscape at dawn. The warm, earthy gradient backgrounds evoke vast, untamed frontiers, grounding the advanced AI concepts in natural, expansive imagery. Heavy, dark typography on these warm backdrops creates stark contrast, emphasizing seriousness and weight. An almost absent border radius (0px) reinforces a pragmatic, unyielding aesthetic, while the single vivid orange accent color highlights interaction points, mimicking a critical glow against the muted tones.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Desert Canvas | #fffaeb | `--color-desert-canvas` | Primary page background, text container background — provides a warm, sandy base. |
+| Midnight Ink | #1f1f1f | `--color-midnight-ink` | Primary text color for headings and body content, navigation elements, high-contrast buttons — a deep, rich black. |
+| Snowdrift | #ffffff | `--color-snowdrift` | Button text on dark backgrounds, selected navigation states, specific content blocks. |
+| Void Deep | #000000 | `--color-void-deep` | Hover background for buttons, borders for high-contrast elements. |
+| Graphite | #3c3c3c | `--color-graphite` | Secondary text, muted links, subtle button borders. |
+| Sandstone Slab | #fff0c2 | `--color-sandstone-slab` | Secondary background color for UI elements, subtle dividers, accent areas. |
+| Pale Ochre | #ecdaa2 | `--color-pale-ochre` | Border color for subtle containers or interactive elements. |
+| Horizon Gradient | #b35d20 | `--color-horizon-gradient` | Hero background, creating an atmospheric, expansive focal point. |
+| Frontier Accent | #fa520f | `--color-frontier-accent` | Accent color for icons, interactive indicators, subtle highlights, and brand presence — a vivid, almost neon orange. |
+| Golden Streak | #ffd900 | `--color-golden-streak` | Decorative background color, likely for abstract graphics or very subtle brand elements. |
+| Sunbeam | #ffae00 | `--color-sunbeam` | Decorative background color, likely for abstract graphics or very subtle brand elements. |
+| Faded Red | #e00400 | `--color-faded-red` | Decorative background color, likely for abstract graphics or very subtle brand elements. |
+
+## Tokens — Typography
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue, sans-serif
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 24px, 32px, 38px, 48px, 56px, 82px
+- **Line heights:** 0.95, 1.00, 1.15, 1.33, 1.43, 1.50
+- **Letter spacing:** -0.0250em
+- **Role:** Primary typeface for all textual content. Its neutral, sans-serif character supports the technical focus while the slightly negative letter spacing for larger sizes creates a refined, impactful presence despite the classic font choice. Used for headlines, body text, buttons, and navigation.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.43 | -0.42px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.48px | `--text-body` |
+| subheading | 24px | 1.33 | -0.72px | `--text-subheading` |
+| heading | 32px | 1.15 | -0.96px | `--text-heading` |
+| heading-lg | 38px | 1.15 | -1.14px | `--text-heading-lg` |
+| display | 48px | 1 | -1.44px | `--text-display` |
+| display-lg | 56px | 0.95 | -1.68px | `--text-display-lg` |
+| display-xl | 82px | 0.95 | -2.46px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-89 | 89px | `--spacing-89` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-173 | 173px | `--spacing-173` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(127, 99, 21, 0.12) -8px 16px 39px 0px, rgba(127, 99, 21, 0.1) -33px 64px 72px 0px, rgba(127, 99, 21, 0.06) -73px 144px 97px 0px, rgba(127, 99, 21, 0.02) -130px 256px 115px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 89px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature List Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Autonomous Work Feature Selector
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Dark Button
+
+**Role:** Call-to-action button for critical user journeys.
+
+Solid 'Midnight Ink' background (#1f1f1f) with 'Snowdrift' (#ffffff) text. No border radius (0px) creates a sharp, direct interaction. Padding is 12px on all sides. Text is Arial 14px, weight 400, with -0.0250em letter spacing.
+
+### Ghost Accent Link Button
+
+**Role:** Secondary action or navigation highlight, often appearing in hero or footer zones.
+
+Transparent background with 'Snowdrift' (#ffffff) text. Features a 1px bottom border in 'Desert Canvas' (#fffaeb). No border radius (0px). Padding is 16px vertical, 0px horizontal. Text is Arial 14px, weight 400, with -0.0250em letter spacing.
+
+### Ghost Dark Link Button
+
+**Role:** Secondary action or navigation, typically within light sections.
+
+Transparent background with 'Midnight Ink' (#1f1f1f) text. Features a 1px bottom border in 'Midnight Ink' (#1f1f1f). No border radius (0px). Padding is 12px vertical, 0px horizontal. Text is Arial 14px, weight 400, with -0.0250em letter spacing.
+
+### Callout Tag Button
+
+**Role:** Informational tags or minor calls to action.
+
+Translucent 'Desert Canvas' background (rgba(255, 250, 235, 0.1)) with 'Snowdrift' (#ffffff) text. No border radius (0px). Padding is 8px vertical, 16px horizontal. Text is Arial 14px, weight 400, with -0.0250em letter spacing.
+
+### Navigation Link
+
+**Role:** Primary navigation links in the header.
+
+Uses 'Midnight Ink' (#1f1f1f) for text, 'Desert Canvas' (#fffaeb) as background. Font is Arial 16px, weight 400. No explicit padding or border is defined beyond inherited link styles, implying simple text links.
+
+### Hero Headline
+
+**Role:** Dominant textual element on the primary landing page.
+
+Text color 'Snowdrift' (#ffffff), Arial 82px, weight 400, line height 0.95, letter spacing -0.0250em. Set against the 'Horizon Gradient' background, it commands attention.
+
+### Body Paragraph
+
+**Role:** Standard informative text block.
+
+Text color 'Midnight Ink' (#1f1f1f), Arial 16px, weight 400, line height 1.50, letter spacing -0.0250em. Renders clearly on the 'Desert Canvas' background.
+
+### Feature Card (light)
+
+**Role:** Used for informational content blocks in light sections.
+
+Background 'Desert Canvas' (#fffaeb) with text in 'Midnight Ink' (#1f1f1f). No apparent border or border-radius, relying on whitespace for definition. Inner text elements use 'Frontier Accent' (#fa520f) for small icons or leading indicators.
+
+### Footer Link
+
+**Role:** Navigation and informational links in the footer.
+
+Uses 'Midnight Ink' (#1f1f1f) or 'Graphite' (#3c3c3c) for text on a 'Desert Canvas' (#fffaeb) background. Font is Arial 14px, weight 400. Subtle, without explicit padding, relying on semantic HTML and surrounding whitespace.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Horizon Gradient' for hero sections or significant atmospheric backgrounds.
 - Maintain 0px border radius across all buttons and interactive elements for a sharp aesthetic.
@@ -102,7 +187,7 @@ Mistral AI presents as a digital desert landscape at dawn. The warm, earthy grad
 - Use 'Desert Canvas' (#fffaeb) as the primary page background.
 - Structure content with ample 12px 'elementGap' between adjacent components like text and buttons.
 
-### Don'ts
+### Don't
 
 - Avoid applying any border radius to UI elements; stick to 0px.
 - Do not introduce new color gradients; adhere to 'Horizon Gradient' for atmospheric elements and a flat canvas for UI.
@@ -112,10 +197,166 @@ Mistral AI presents as a digital desert landscape at dawn. The warm, earthy grad
 - Do not vary line height from the specified values per type size to avoid disrupting vertical rhythm.
 - Introduce white space around elements using the defined spacing tokens (e.g., 12px for elementGap) rather than relying on margin-auto or arbitrary values.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Desert Canvas | #fffaeb | Base page background, light sections, content containers. |
+| 1 | Sandstone Slab | #fff0c2 | Secondary background for UI elements, alternating section backgrounds, subtle dividers. |
+| 2 | Void Deep | #000000 | Elevated buttons, dark foreground elements against lighter backgrounds. |
+| 3 | Horizon Gradient | #b35d20 | Hero sections and highly prominent background treatments. |
+
+## Elevation
+
+- **Card/Container:** `box-shadow: rgba(127, 99, 21, 0.12) -8px 16px 39px 0px, rgba(127, 99, 21, 0.1) -33px 64px 72px 0px, rgba(127, 99, 21, 0.06) -73px 144px 97px 0px, rgba(127, 99, 21, 0.02) -130px 256px 115px 0px;`
+
+## Imagery
+
+The site heavily uses atmospheric, wide-landscape photography with an earthy, orange-yellow gradient overlay, reminiscent of desert mountains at dawn. These are full-bleed in hero sections, creating a sense of vastness and uncultivated potential. Elsewhere, the imagery is minimal, primarily focusing on abstract, pixelated block compositions in muted yellow tones (#fff0c2, #fffaeb) which serve as decorative, branded background patterns. Icons are monochrome, 'Frontier Accent' colored, outlined or filled, with a consistent stroke weight to match the sharp aesthetic. Imagery primarily serves to establish mood and brand identity, with an abstract rather than literal representation of AI.
+
+## Layout
 
 The page follows a classic max-width centered layout, though the hero section spans full-bleed to establish an expansive atmosphere. The hero features a large, centered headline over the 'Horizon Gradient' background. Subsequent sections alternate between a primary 'Desert Canvas' background and a 'Sandstone Slab' for visual pacing. Content is arranged in alternating two-column layouts (text left, image/graphic right) and centered stacks. Feature sections often use simple bulleted lists or sequential blocks of text with small 'Frontier Accent' icons. Information density is moderate, with generous vertical spacing (sectionGap 89px) providing breathing room between content blocks. The header is a sticky top bar containing navigation and call-to-action buttons, while the footer is a multi-column layout.
 
-### Imagery
+## Similar Brands
 
-The site heavily uses atmospheric, wide-landscape photography with an earthy, orange-yellow gradient overlay, reminiscent of desert mountains at dawn. These are full-bleed in hero sections, creating a sense of vastness and uncultivated potential. Elsewhere, the imagery is minimal, primarily focusing on abstract, pixelated block compositions in muted yellow tones (#fff0c2, #fffaeb) which serve as decorative, branded background patterns. Icons are monochrome, 'Frontier Accent' colored, outlined or filled, with a consistent stroke weight to match the sharp aesthetic. Imagery primarily serves to establish mood and brand identity, with an abstract rather than literal representation of AI.
+- **Anthropic** — Similar focus on advanced AI, often uses clean, minimalistic layouts with strong typography and a limited, purposeful color palette.
+- **Databricks** — Technical B2B SaaS with a strong emphasis on data and AI, similar in presentation combining professional layouts with subtle brand accents.
+- **Palantir** — Enterprise data/AI, with a visual style that balances sophistication with a raw, powerful feel, often using a limited color scheme and strong imagery.
+- **OpenAI** — Direct competitor in AI space, often uses clean, modern design with a focused color palette and strong, impactful headlines.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-desert-canvas: #fffaeb;
+  --color-midnight-ink: #1f1f1f;
+  --color-snowdrift: #ffffff;
+  --color-void-deep: #000000;
+  --color-graphite: #3c3c3c;
+  --color-sandstone-slab: #fff0c2;
+  --color-pale-ochre: #ecdaa2;
+  --color-horizon-gradient: #b35d20;
+  --color-frontier-accent: #fa520f;
+  --color-golden-streak: #ffd900;
+  --color-sunbeam: #ffae00;
+  --color-faded-red: #e00400;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.42px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.48px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.33;
+  --tracking-subheading: -0.72px;
+  --text-heading: 32px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.96px;
+  --text-heading-lg: 38px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -1.14px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -1.44px;
+  --text-display-lg: 56px;
+  --leading-display-lg: 0.95;
+  --tracking-display-lg: -1.68px;
+  --text-display-xl: 82px;
+  --leading-display-xl: 0.95;
+  --tracking-display-xl: -2.46px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-89: 89px;
+  --spacing-100: 100px;
+  --spacing-173: 173px;
+  --radius-all: 0px;
+  --shadow-xl: rgba(127, 99, 21, 0.12) -8px 16px 39px 0px, rgba(127, 99, 21, 0.1) -33px 64px 72px 0px, rgba(127, 99, 21, 0.06) -73px 144px 97px 0px, rgba(127, 99, 21, 0.02) -130px 256px 115px 0px;
+  --surface-desert-canvas: #fffaeb;
+  --surface-sandstone-slab: #fff0c2;
+  --surface-void-deep: #000000;
+  --surface-horizon-gradient: #b35d20;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-desert-canvas: #fffaeb;
+  --color-midnight-ink: #1f1f1f;
+  --color-snowdrift: #ffffff;
+  --color-void-deep: #000000;
+  --color-graphite: #3c3c3c;
+  --color-sandstone-slab: #fff0c2;
+  --color-pale-ochre: #ecdaa2;
+  --color-horizon-gradient: #b35d20;
+  --color-frontier-accent: #fa520f;
+  --color-golden-streak: #ffd900;
+  --color-sunbeam: #ffae00;
+  --color-faded-red: #e00400;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.42px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.48px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.33;
+  --tracking-subheading: -0.72px;
+  --text-heading: 32px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.96px;
+  --text-heading-lg: 38px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -1.14px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -1.44px;
+  --text-display-lg: 56px;
+  --leading-display-lg: 0.95;
+  --tracking-display-lg: -1.68px;
+  --text-display-xl: 82px;
+  --leading-display-xl: 0.95;
+  --tracking-display-xl: -2.46px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-89: 89px;
+  --spacing-100: 100px;
+  --spacing-173: 173px;
+  --radius-all: 0px;
+  --shadow-xl: rgba(127, 99, 21, 0.12) -8px 16px 39px 0px, rgba(127, 99, 21, 0.1) -33px 64px 72px 0px, rgba(127, 99, 21, 0.06) -73px 144px 97px 0px, rgba(127, 99, 21, 0.02) -130px 256px 115px 0px;
+  --surface-desert-canvas: #fffaeb;
+  --surface-sandstone-slab: #fff0c2;
+  --surface-void-deep: #000000;
+  --surface-horizon-gradient: #b35d20;
+}
+```
