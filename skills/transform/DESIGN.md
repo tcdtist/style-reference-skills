@@ -1,72 +1,136 @@
 ---
 version: alpha
-name: Transform
-description: Transform's visual system evokes a dark, pulsating theater space with bursts of electrifying color. Deep, immersive purples and magenta accents cut through stark black and white typography, creating a high-contrast experience that feels both bold and immediate. Typefaces are impactful and condensed, anchoring the dynamic palette and drawing attention to key announcements, while ample negative space ensures clarity amidst the visual energy.
-colors:
-  midnight-plum: "#340068"
-  neon-magenta: "#fb00c2"
-  live-event-red: "#ff1e00"
-  coal-black: "#000000"
-  paper-beige: "#f4ede9"
-  canvas-white: "#ffffff"
-  concrete-gray: "#d9d9d9"
-  input-border-gray: "#767676"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.45
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.45
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.38
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.38
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.1
-    letterSpacing: -1.12px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1
-    letterSpacing: -1.6px
-spacing:
-  elementGap: 8-16px
-  sectionGap: 48-56px
-components:
-  primary-action-button:
-    role: Fills and calls to action prominently
-  subtle-circular-button:
-    role: Decorative page navigation, subtle actions
-  footer-action-button:
-    role: Call to action within dark footer sections
-  monochromatic-feature-card:
-    role: Displays related content, news, or blog posts
-  subtle-feature-card:
-    role: Displays related content using a lighter background
-  standard-input-field:
-    role: Text input forms
+name: "Transform"
+description: "Transform's visual system evokes a dark, pulsating theater space with bursts of electrifying color. Deep, immersive purples and magenta accents cut through stark black and white typography, creating a high-contrast experience that feels both bold and immediate. Typefaces are impactful and condensed, anchoring the dynamic palette and drawing attention to key announcements, while ample negative space ensures clarity amidst the visual energy."
+theme: "light"
+industry: "media"
+source_url: "https://transformfestival.org"
+refero_style_id: "91939ad3-9e22-4256-a396-a1716a064ac4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516879277-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516879277-thumb.jpg"
+extracted_at: "2026-04-30T02:41:43.657Z"
 ---
 
-## Overview
+# Transform — Style Reference
 
-**North Star:** Electric theater spotlight
+> Electric theater spotlight
+
+**Theme:** light
+
+**Industry:** media
 
 Transform's visual system evokes a dark, pulsating theater space with bursts of electrifying color. Deep, immersive purples and magenta accents cut through stark black and white typography, creating a high-contrast experience that feels both bold and immediate. Typefaces are impactful and condensed, anchoring the dynamic palette and drawing attention to key announcements, while ample negative space ensures clarity amidst the visual energy.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Plum | #340068 | `--color-midnight-plum` | Backgrounds for key sections and immersive content blocks, footer background — provides a deep, dramatic stage for content |
+| Neon Magenta | #fb00c2 | `--color-neon-magenta` | Primary action backgrounds, interactive elements, highlights, and decorative borders — a high-energy accent that demands attention |
+| Live Event Red | #ff1e00 | `--color-live-event-red` | Decorative text accents and borders, especially for quotes and urgent information — an even more vivid highlight than magenta |
+| Coal Black | #000000 | `--color-coal-black` | Primary text, borders, and image backgrounds — provides stark contrast to lighter elements and acts as a foundation |
+| Paper Beige | #f4ede9 | `--color-paper-beige` | Page background, input fields, and subtle UI surfaces — a warm, off-white base that softens the high contrast |
+| Canvas White | #ffffff | `--color-canvas-white` | Secondary text, button text, and card backgrounds — used sparingly for contrast against darker backgrounds or as a clean surface |
+| Concrete Gray | #d9d9d9 | `--color-concrete-gray` | Subtle card backgrounds – provides minor visual distinction from the page background without heavy contrast |
+| Input Border Gray | #767676 | `--color-input-border-gray` | Default input border color — a utilitarian neutral for form elements |
+
+## Tokens — Typography
+
+### Walsheim
+
+- **Token:** `--font-walsheim`
+- **Substitute:** Montserrat
+- **Weights:** 400, 700, 800, 900
+- **Sizes:** 16px, 18px, 22px, 24px, 40px, 56px, 80px
+- **Line heights:** 1.00, 1.10, 1.20, 1.38, 1.45
+- **Letter spacing:** -0.0200em
+- **Role:** All textual content, from navigation to headings, body text, and button labels. Its bold, condensed nature contributes to the site's distinct, impactful voice.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 16px | 1.45 | — | `--text-body-sm` |
+| body | 18px | 1.45 | — | `--text-body` |
+| subheading | 22px | 1.38 | — | `--text-subheading` |
+| heading-sm | 24px | 1.38 | — | `--text-heading-sm` |
+| heading | 40px | 1.2 | — | `--text-heading` |
+| heading-lg | 56px | 1.1 | -1.12px | `--text-heading-lg` |
+| display | 80px | 1 | -1.6px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| circular | 50px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48-56px |
+| cardPadding | 16px |
+| elementGap | 8-16px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Fills and calls to action prominently
+
+Filled button with Neon Magenta (#fb00c2) background, Canvas White (#ffffff) text, and square corners (0px radius). Padding of 8px all around. Used for primary calls to action.
+
+### Subtle Circular Button
+
+**Role:** Decorative page navigation, subtle actions
+
+Circular button with Paper Beige (#f4ede9) background, Neon Magenta (#fb00c2) text, and a circular radius (50% or 50px). No explicit padding, hinting at icon-only functionality. Used for slide navigation dots.
+
+### Footer Action Button
+
+**Role:** Call to action within dark footer sections
+
+Filled button with Midnight Plum (#340068) background, Canvas White (#ffffff) text, and square corners (0px radius). Padding of 16px all around. Used for calls to action within dark backgrounds.
+
+### Monochromatic Feature Card
+
+**Role:** Displays related content, news, or blog posts
+
+Clean card with Canvas White (#ffffff) background, 0px border radius, and 16px padding inside. No box shadow, relying on spacing for separation. Contains text and often an image.
+
+### Subtle Feature Card
+
+**Role:** Displays related content using a lighter background
+
+Card with Concrete Gray (#d9d9d9) background, 0px border radius, and no explicit padding, implying content dictates spacing. No box shadow, used for subtle grouping.
+
+### Standard Input Field
+
+**Role:** Text input forms
+
+Input field with Paper Beige (#f4ede9) background, Coal Black (#000000) text, and Square corners (0px radius). Padding of 16px all around. Border is implied or appears on focus.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Plum (#340068) for all large background sections that require a dramatic, immersive feel.
 - Apply Neon Magenta (#fb00c2) as the primary accent color for all calls to action, interactive states, and important graphical elements.
@@ -75,7 +139,7 @@ Transform's visual system evokes a dark, pulsating theater space with bursts of 
 - Utilize 0px border radius for most UI elements like cards and buttons, favoring sharp, defined edges.
 - Employ a base spacing unit of 8px, building up to 16px for element gaps and 48-56px for section separation.
 
-### Don'ts
+### Don't
 
 - Avoid using gradients; the design relies on stark, solid color blocks.
 - Do not introduce soft shadows or elevated effects; surfaces are flat and defined by color and boundaries.
@@ -84,10 +148,106 @@ Transform's visual system evokes a dark, pulsating theater space with bursts of 
 - Do not use subtle gray for primary action backgrounds; reserve Neon Magenta (#fb00c2) for clear interactive elements.
 - Refrain from using lightweight fonts or open letter-spacing for headlines; Walsheim's condensed, bold nature is critical to the brand.
 
-### Layout
+## Imagery
+
+This design system uses a mix of candid, dark-lit photography capturing live performance environments and abstract patterns. Photography is often full-bleed or presented as background elements, creating an immersive, atmospheric context for text. Product-style visuals are not present. Icons are simple, outlined, and monochromatic, primarily serving a functional role in navigation or social links. Imagery typically serves a decorative and atmospheric role, rather than strictly explanatory, allowing the bold typography to convey key messages. The density of imagery can be high in hero sections, giving way to more text-dominant layouts in content sections.
+
+## Layout
 
 The site uses a max-width contained layout generally, but a full-bleed hero section is often employed, characterized by a dark background with a large, centered, high-contrast headline. Section rhythm varies but includes distinct alternating bands of color (e.g., dark with light text, then light with dark text). Content is often arranged in prominent centered stacks for headlines and quotes, with occasional two-column layouts for information blocks. There is a prominent sticky top navigation bar. The overall density is comfortable, with generous vertical spacing between major sections, letting dramatic headlines breathe.
 
-### Imagery
+## Similar Brands
 
-This design system uses a mix of candid, dark-lit photography capturing live performance environments and abstract patterns. Photography is often full-bleed or presented as background elements, creating an immersive, atmospheric context for text. Product-style visuals are not present. Icons are simple, outlined, and monochromatic, primarily serving a functional role in navigation or social links. Imagery typically serves a decorative and atmospheric role, rather than strictly explanatory, allowing the bold typography to convey key messages. The density of imagery can be high in hero sections, giving way to more text-dominant layouts in content sections.
+- **AIGA** — High-contrast typography, bold color accents on dark backgrounds, and a focus on event promotion.
+- **The Shed** — Dramatic use of deep background colors and striking typographic treatments for cultural events.
+- **Design Museum** — Heavy, impactful typography paired with a clean event-focused layout and minimal adornment.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-plum: #340068;
+  --color-neon-magenta: #fb00c2;
+  --color-live-event-red: #ff1e00;
+  --color-coal-black: #000000;
+  --color-paper-beige: #f4ede9;
+  --color-canvas-white: #ffffff;
+  --color-concrete-gray: #d9d9d9;
+  --color-input-border-gray: #767676;
+  --font-walsheim: 'Walsheim', Montserrat;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.45;
+  --text-body: 18px;
+  --leading-body: 1.45;
+  --text-subheading: 22px;
+  --leading-subheading: 1.38;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.38;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.12px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -1.6px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-circular: 50px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-plum: #340068;
+  --color-neon-magenta: #fb00c2;
+  --color-live-event-red: #ff1e00;
+  --color-coal-black: #000000;
+  --color-paper-beige: #f4ede9;
+  --color-canvas-white: #ffffff;
+  --color-concrete-gray: #d9d9d9;
+  --color-input-border-gray: #767676;
+  --font-walsheim: 'Walsheim', Montserrat;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.45;
+  --text-body: 18px;
+  --leading-body: 1.45;
+  --text-subheading: 22px;
+  --leading-subheading: 1.38;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.38;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.12px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -1.6px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-circular: 50px;
+}
+```

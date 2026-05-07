@@ -1,71 +1,140 @@
 ---
 version: alpha
-name: Tparkes
-description: Tparkes employs a stark, high-contrast digital canvas aesthetic. Typography, driven by a custom sans-serif, plays a central role, using a deliberate interplay of heavy weights and large sizes for impact, balanced by subdued text colors. Surfaces remain monochromatic, relying on deep gray and pure white for definition. The overall impression is one of directness and clarity, with UI details kept minimal to let content speak.
-colors:
-  canvas-white: "#ffffff"
-  carbon-text: "#333333"
-  smoke-gray: "#b3b3b3"
-  midnight-black: "#000000"
-  mist-border: "#d6d6d6"
-  silver-link: "#808080"
-  accent-yellow: "#f5ffbe"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 12
-    letterSpacing: -0.35px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 20
-    letterSpacing: -2.996px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 20
-    letterSpacing: -0.595px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 26
-    letterSpacing: -0.77px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 28
-    letterSpacing: -0.84px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 103
-    letterSpacing: -3.01px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 8px
-  elementGap: 20px
-  sectionGap: 120px
-components:
-  text-accent-card:
-    role: Highlights specific content blocks or portfolio entries.
-  header-navigation-link:
-    role: Primary navigation elements in the page header.
-  ghost-action-link:
-    role: Interactive elements, typically for navigation or calls to explore.
-  profile-avatar:
-    role: User or brand identifier.
-  project-preview-image:
-    role: Visual representation of projects or work.
+name: "Tparkes"
+description: "Tparkes employs a stark, high-contrast digital canvas aesthetic. Typography, driven by a custom sans-serif, plays a central role, using a deliberate interplay of heavy weights and large sizes for impact, balanced by subdued text colors. Surfaces remain monochromatic, relying on deep gray and pure white for definition. The overall impression is one of directness and clarity, with UI details kept minimal to let content speak."
+theme: "light"
+industry: "design"
+source_url: "https://www.tparkes.com"
+refero_style_id: "a21cf7a4-80e0-4f4a-9297-823a5180c2d3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519745456-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519745456-thumb.jpg"
+extracted_at: "2026-04-30T03:29:22.154Z"
 ---
 
-## Overview
+# Tparkes — Style Reference
 
-**North Star:** High-contrast digital canvas.
+> High-contrast digital canvas.
+
+**Theme:** light
+
+**Industry:** design
 
 Tparkes employs a stark, high-contrast digital canvas aesthetic. Typography, driven by a custom sans-serif, plays a central role, using a deliberate interplay of heavy weights and large sizes for impact, balanced by subdued text colors. Surfaces remain monochromatic, relying on deep gray and pure white for definition. The overall impression is one of directness and clarity, with UI details kept minimal to let content speak.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces |
+| Carbon Text | #333333 | `--color-carbon-text` | Primary text across all surfaces |
+| Smoke Gray | #b3b3b3 | `--color-smoke-gray` | Muted text, subheadings, and secondary information |
+| Midnight Black | #000000 | `--color-midnight-black` | Prominent text, navigation links, and strong borders |
+| Mist Border | #d6d6d6 | `--color-mist-border` | Subtle hairline borders and dividers |
+| Silver Link | #808080 | `--color-silver-link` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Accent Yellow | #f5ffbe | `--color-accent-yellow` | Highlighting card backgrounds — a soft, almost pastel tint providing a subtle content break |
+
+## Tokens — Typography
+
+### Instrumentsans
+
+- **Token:** `--font-instrumentsans`
+- **Substitute:** Montserrat, Inter
+- **Weights:** 600, 700
+- **Sizes:** 10px, 17px, 22px, 24px, 86px
+- **Line heights:** 0.83, 0.95, 1.09, 1.18, 1.20, 1.80
+- **Letter spacing:** -0.0350em
+- **Role:** Primary display font for headings, navigation, and prominent text. Its bold weights at large sizes grab attention without being overly decorative, maintaining a strong, direct presence.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue, sans-serif
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.43
+- **Letter spacing:** -0.2140em
+- **Role:** Body text and supporting information. It provides a highly readable and neutral counterpoint to the primary display font, ensuring legibility for longer content blocks.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 12 | -0.35px | `--text-caption` |
+| body-sm | 14px | 20 | -2.996px | `--text-body-sm` |
+| body | 17px | 20 | -0.595px | `--text-body` |
+| subheading | 22px | 26 | -0.77px | `--text-subheading` |
+| heading | 24px | 28 | -0.84px | `--text-heading` |
+| display | 86px | 103 | -3.01px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-39 | 39px | `--spacing-39` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-280 | 280px | `--spacing-280` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| icons | 8px |
+| images | 16px |
+| buttons | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 120px |
+| cardPadding | 10px |
+| elementGap | 20px |
+
+## Components
+
+### Text Accent Card
+
+**Role:** Highlights specific content blocks or portfolio entries.
+
+Background is Accent Yellow (#f5ffbe), border-radius 12px. Padding 10px on all sides. Content inside uses primary text colors.
+
+### Header Navigation Link
+
+**Role:** Primary navigation elements in the page header.
+
+Text uses Midnight Black (#000000) with Instrumentsans font, size 17px, weight 600, letter-spacing -0.0350em. No explicit background or border, appears as plain text link.
+
+### Ghost Action Link
+
+**Role:** Interactive elements, typically for navigation or calls to explore.
+
+Text is Silver Link (#808080) with Arial font, size 14px, weight 400. Has an implicit 1px silver border on interaction or focus, but appears as text-only by default.
+
+### Profile Avatar
+
+**Role:** User or brand identifier.
+
+Circular image with a 16px border-radius, contained within an 8px radius container. May have a subtle 1px solid Mist Border (#d6d6d6).
+
+### Project Preview Image
+
+**Role:** Visual representation of projects or work.
+
+Images primarily with 16px border-radius, occasionally 8px. Often presented without explicit borders to form a clean, contained block.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Instrumentsans ExtraBold (weight 700) for all main headings and prominent texts to convey directness.
 - Maintain a clear distinction between Carbon Text (#333333) for primary content and Smoke Gray (#b3b3b3) for secondary or muted descriptions.
@@ -75,7 +144,7 @@ Tparkes employs a stark, high-contrast digital canvas aesthetic. Typography, dri
 - Implement Accent Yellow (#f5ffbe) sparingly and only for card backgrounds where a distinct, soft highlight is needed.
 - Use 1px solid Mist Border (#d6d6d6) for subtle dividers or outlines, avoiding heavy strokes.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional background colors; maintain the primary Canvas White and occasional Accent Yellow for cards.
 - Avoid using multiple font sizes for body text; stick to the defined Arial 14px for consistency.
@@ -85,10 +154,125 @@ Tparkes employs a stark, high-contrast digital canvas aesthetic. Typography, dri
 - Avoid decorative gradients; surfaces should be solid colors.
 - Do not deviate from the established radius values: 12px for cards, 16px for images, 8px for smaller interactive elements.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Primary page background. |
+| 2 | Accent Yellow | #f5ffbe | Subtle background for highlighted content cards. |
+
+## Imagery
+
+This system features a mix of high-fidelity product screenshots, abstract geometric illustrations, and occasional outlined icons. Product screenshots are typically dark-themed, providing a stark contrast against the light UI, often full-width or large blocks, and are precisely cropped with rounded 16px corners to eliminate any extraneous context. Illustrations are flat, geometric, and monochrome, often using a distinct single brand color or dark gray on a white background, serving as decorative accents or visual metaphors. Icons are outlined, with a moderate stroke weight, and monochromatic – predominantly black or gray. Imagery serves both as decorative atmosphere and direct product showcases, maintaining a balance between aesthetic appeal and informational density.
+
+## Layout
 
 The page primarily uses a full-bleed layout, where content sections often span the full width of the viewport. The hero section features a large, centered text block. Subsequent sections typically alternate between full-width visuals (like product screenshots) and text-dominant areas. Content within these full-width sections is not strictly constrained by a max-width, maintaining a spacious, open feel. Vertical rhythm is governed by a consistent 120px section gap, creating strong visual separation. Navigation is a simple top-right bar with minimal text links. A multi-column grid is used for displaying case studies or visual feeds, suggesting modular content blocks. The overall density is comfortable, with generous white space around elements.
 
-### Imagery
+## Similar Brands
 
-This system features a mix of high-fidelity product screenshots, abstract geometric illustrations, and occasional outlined icons. Product screenshots are typically dark-themed, providing a stark contrast against the light UI, often full-width or large blocks, and are precisely cropped with rounded 16px corners to eliminate any extraneous context. Illustrations are flat, geometric, and monochrome, often using a distinct single brand color or dark gray on a white background, serving as decorative accents or visual metaphors. Icons are outlined, with a moderate stroke weight, and monochromatic – predominantly black or gray. Imagery serves both as decorative atmosphere and direct product showcases, maintaining a balance between aesthetic appeal and informational density.
+- **Figma** — Clean, predominantly light UI with strong typography as a core visual element, and minimal, functional use of color.
+- **Read.cv** — Emphasis on typographic hierarchy and a limited, high-contrast color palette for personal portfolio presentation.
+- **Linear** — Sharp, clean aesthetic with a focus on dark mode product screenshots contrasted against a lighter overall UI, and efficient use of space.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-carbon-text: #333333;
+  --color-smoke-gray: #b3b3b3;
+  --color-midnight-black: #000000;
+  --color-mist-border: #d6d6d6;
+  --color-silver-link: #808080;
+  --color-accent-yellow: #f5ffbe;
+  --font-instrumentsans: 'Instrumentsans', Montserrat, Inter;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 12;
+  --tracking-caption: -0.35px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 20;
+  --tracking-body-sm: -2.996px;
+  --text-body: 17px;
+  --leading-body: 20;
+  --tracking-body: -0.595px;
+  --text-subheading: 22px;
+  --leading-subheading: 26;
+  --tracking-subheading: -0.77px;
+  --text-heading: 24px;
+  --leading-heading: 28;
+  --tracking-heading: -0.84px;
+  --text-display: 86px;
+  --leading-display: 103;
+  --tracking-display: -3.01px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-39: 39px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-280: 280px;
+  --radius-cards: 12px;
+  --radius-icons: 8px;
+  --radius-images: 16px;
+  --radius-buttons: 8px;
+  --surface-canvas-white: #ffffff;
+  --surface-accent-yellow: #f5ffbe;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-carbon-text: #333333;
+  --color-smoke-gray: #b3b3b3;
+  --color-midnight-black: #000000;
+  --color-mist-border: #d6d6d6;
+  --color-silver-link: #808080;
+  --color-accent-yellow: #f5ffbe;
+  --font-instrumentsans: 'Instrumentsans', Montserrat, Inter;
+  --font-arial: 'Arial', Helvetica Neue, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 12;
+  --tracking-caption: -0.35px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 20;
+  --tracking-body-sm: -2.996px;
+  --text-body: 17px;
+  --leading-body: 20;
+  --tracking-body: -0.595px;
+  --text-subheading: 22px;
+  --leading-subheading: 26;
+  --tracking-subheading: -0.77px;
+  --text-heading: 24px;
+  --leading-heading: 28;
+  --tracking-heading: -0.84px;
+  --text-display: 86px;
+  --leading-display: 103;
+  --tracking-display: -3.01px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-39: 39px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-280: 280px;
+  --radius-cards: 12px;
+  --radius-icons: 8px;
+  --radius-images: 16px;
+  --radius-buttons: 8px;
+  --surface-canvas-white: #ffffff;
+  --surface-accent-yellow: #f5ffbe;
+}
+```
