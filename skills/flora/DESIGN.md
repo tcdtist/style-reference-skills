@@ -1,80 +1,213 @@
 ---
 version: alpha
-name: FLORA
-description: FLORA evokes a midnight command center atmosphere, blending stark functionality with subtle creative flair. It uses a predominantly dark theme with surfaces ranging from pure black to dark charcoal, accented by bright white text and subtle gray borders. Typography plays a central role, leveraging custom fonts with precise letter-spacing to create a crisp, almost whispered authority. Interactive elements are sparse, using ghost button styles and a singular vivid green accent for 'New' tags and hints of activation, maintaining a focus on content over heavy UI.
-colors:
-  absolute-zero: "#000000"
-  deep-charcoal: "#191919"
-  off-white: "#eeeeee"
-  medium-gray: "#606060"
-  light-gray: "#b4b4b4"
-  ash-gray: "#7b7b7b"
-  dark-charcoal-outline: "#303030"
-  soft-gray: "#bfbfbf"
-  onyx-faint: "#050505"
-  vivid-green: "#71d083"
-typography:
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.025px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.15
-    letterSpacing: -0.03px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-    letterSpacing: -0.03px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1.1
-    letterSpacing: -0.036px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.1
-    letterSpacing: -0.03px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1.1
-    letterSpacing: -0.03px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 9999px
-  elementGap: 4px
-  sectionGap: 48px
-components:
-  ghost-navigation-button:
-    role: Navigational elements in the header and sub-menus.
-  outlined-pill-button-dense:
-    role: Compact secondary actions and filters.
-  outlined-rounded-button-compact:
-    role: Informational or tertiary actions.
-  primary-cta-button:
-    role: Main call to action, stand-alone buttons for key interactions.
-  default-card:
-    role: Content containers for features, showcases, or related information.
-  elevated-card:
-    role: Specialized cards requiring slightly more visual emphasis, like primary showcase items.
-  text-input-underlined:
-    role: User input fields that blend into the dark canvas.
-  new-tag:
-    role: Highlights new features or content.
+name: "FLORA"
+description: "FLORA evokes a midnight command center atmosphere, blending stark functionality with subtle creative flair. It uses a predominantly dark theme with surfaces ranging from pure black to dark charcoal, accented by bright white text and subtle gray borders. Typography plays a central role, leveraging custom fonts with precise letter-spacing to create a crisp, almost whispered authority. Interactive elements are sparse, using ghost button styles and a singular vivid green accent for 'New' tags and hints of activation, maintaining a focus on content over heavy UI."
+theme: "dark"
+industry: "ai"
+source_url: "https://www.florafauna.ai"
+refero_style_id: "cf8cd07d-bff0-41dc-ab70-fa85750f6168"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508979883-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508979883-thumb.jpg"
+extracted_at: "2026-04-30T00:30:12.284Z"
 ---
 
-## Overview
+# FLORA — Style Reference
 
-**North Star:** Midnight command center
+> Midnight command center
+
+**Theme:** dark
+
+**Industry:** ai
 
 FLORA evokes a midnight command center atmosphere, blending stark functionality with subtle creative flair. It uses a predominantly dark theme with surfaces ranging from pure black to dark charcoal, accented by bright white text and subtle gray borders. Typography plays a central role, leveraging custom fonts with precise letter-spacing to create a crisp, almost whispered authority. Interactive elements are sparse, using ghost button styles and a singular vivid green accent for 'New' tags and hints of activation, maintaining a focus on content over heavy UI.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Page backgrounds, primary text for inverted states, primary borders, image borders — defines the core dark canvas |
+| Deep Charcoal | #191919 | `--color-deep-charcoal` | Card surfaces, elevated backgrounds, and subtly darker button backgrounds — creates surface hierarchy on the dark canvas |
+| Off White | #eeeeee | `--color-off-white` | Primary text, headings, input text, ghost button borders, and iconography — high contrast against dark backgrounds |
+| Medium Gray | #606060 | `--color-medium-gray` | Muted headings, secondary text, and fill for less prominent icons — provides a lower contrast textual element |
+| Light Gray | #b4b4b4 | `--color-light-gray` | Muted helper text, secondary borders, and subtle background elements — for granular text and subtle visual separation |
+| Ash Gray | #7b7b7b | `--color-ash-gray` | Tertiary text, link text, ghost button borders, and decorative elements — lower prominence text and structural lines |
+| Dark Charcoal Outline | #303030 | `--color-dark-charcoal-outline` | Subtle card backgrounds and decorative strokes — adds a slight depth without strong contrast |
+| Soft Gray | #bfbfbf | `--color-soft-gray` | Helper text and decorative borders — for very light cues against dark backgrounds |
+| Onyx Faint | #050505 | `--color-onyx-faint` | Subtle button borders and icon outlines — for minimal distinction on dark surfaces |
+| Vivid Green | #71d083 | `--color-vivid-green` | Green outline accent for tags, dividers, and focused UI edges. |
+
+## Tokens — Typography
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 8px, 11px, 12px, 14px, 15px, 16px, 20px, 22px, 30px, 60px, 80px
+- **Line heights:** 1.00, 1.10, 1.20, 1.37, 1.40, 1.50
+- **Letter spacing:** -0.0300em
+- **OpenType features:** "blwf", "cv03", "cv04", "cv09", "cv11"
+- **Role:** Primary workhorse font for body text, interactive elements, and navigation. Its precise tracking and custom features give a modern, technical precision, feeling both sharp and readable.
+
+### Geist Variable
+
+- **Token:** `--font-geist-variable`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 14px
+- **Line heights:** 1.00
+- **Letter spacing:** 0.0290em
+- **Role:** Used for specific body text elements requiring either lighter or bolder emphasis. Its variable nature allows for nuanced brand expression where needed.
+
+### Satoshi
+
+- **Token:** `--font-satoshi`
+- **Substitute:** Montserrat
+- **Weights:** 700
+- **Sizes:** 22px
+- **Line heights:** 1.15
+- **Letter spacing:** -0.0300em
+- **Role:** Used for prominent section headings. Its robust weight and tight tracking command attention without being overly loud, providing a confident, clear statement in a dark UI.
+
+### Redaction 50 Italic
+
+- **Token:** `--font-redaction-50-italic`
+- **Substitute:** PT Serif Italic
+- **Weights:** 400
+- **Sizes:** 42px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0240em
+- **Role:** Distinctive display font for hero sections and key marketing headlines. The italic style and unique name suggest a bespoke, artistic touch that counters the functional aesthetic of Geist, conveying creativity.
+
+### Redaction 10 Regular
+
+- **Token:** `--font-redaction-10-regular`
+- **Substitute:** PT Serif
+- **Weights:** 400
+- **Sizes:** 42px
+- **Line heights:** 1.10
+- **Letter spacing:** -0.0360em
+- **Role:** Companion display font for major headlines, offering a more stable counterpart to the italic version. The extremely tight letter-spacing gives a compressed, impactful feel.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Fallback and utilitarian text for lists and general UI elements. Ensures basic readability where custom fonts are not critical.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| heading | 20px | 1.2 | -0.025px | `--text-heading` |
+| heading-lg | 22px | 1.15 | -0.03px | `--text-heading-lg` |
+| display-sm | 30px | 1.2 | -0.03px | `--text-display-sm` |
+| display | 42px | 1.1 | -0.036px | `--text-display` |
+| display-lg | 60px | 1.1 | -0.03px | `--text-display-lg` |
+| display-xl | 80px | 1.1 | -0.03px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 999px |
+| cards | 10px |
+| input | 12px |
+| buttons | 9999px |
+| default | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 48px |
+| cardPadding | 24px |
+| elementGap | 4px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Navigational elements in the header and sub-menus.
+
+backgroundColor: rgba(0, 0, 0, 0), color: Off White (#eeeeee), borderTopColor: Absolute Zero (#000000), borderRadius: 0px, padding: 0px.
+
+### Outlined Pill Button (Dense)
+
+**Role:** Compact secondary actions and filters.
+
+backgroundColor: rgba(25, 25, 25, 0.9), color: Off White (#eeeeee), borderTopColor: rgba(255, 255, 255, 0.11), borderRadius: 9999px, padding: 1px 16px 1px 14px.
+
+### Outlined Rounded Button (Compact)
+
+**Role:** Informational or tertiary actions.
+
+backgroundColor: rgba(255, 255, 255, 0.1), color: Off White (#eeeeee), borderTopColor: rgba(255, 255, 255, 0.11), borderRadius: 12px, padding: 9px 11px 9px 11px.
+
+### Primary CTA Button
+
+**Role:** Main call to action, stand-alone buttons for key interactions.
+
+backgroundColor: rgba(255, 255, 255, 0.1), color: system default link blue, borderTopColor: system default link blue, borderRadius: 12px, padding: 10px 12px.
+
+### Default Card
+
+**Role:** Content containers for features, showcases, or related information.
+
+backgroundColor: rgba(25, 25, 25, 0.9), borderRadius: 10px, boxShadow: none, padding: 0px.
+
+### Elevated Card
+
+**Role:** Specialized cards requiring slightly more visual emphasis, like primary showcase items.
+
+backgroundColor: rgba(48, 48, 48, 0.9), borderRadius: 24px, boxShadow: none, padding: 0px.
+
+### Text Input (Underlined)
+
+**Role:** User input fields that blend into the dark canvas.
+
+backgroundColor: rgba(0, 0, 0, 0), color: Off White (#eeeeee), borderTopColor: Off White (#eeeeee), borderRadius: 0px, padding: 0px.
+
+### New Tag
+
+**Role:** Highlights new features or content.
+
+backgroundColor: Vivid Green (#71d083), color: Off White (#eeeeee), borderRadius: 9999px, padding: 2px 6px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Absolute Zero (#000000) for page backgrounds and Deep Charcoal (#191919) for card surfaces to maintain the dominant dark theme.
 - Use Off White (#eeeeee) for all primary text, headings, and essential UI elements for readability and high contrast.
@@ -84,7 +217,7 @@ FLORA evokes a midnight command center atmosphere, blending stark functionality 
 - Reserve Vivid Green (#71d083) exclusively for 'New' tags and subtle, functional accents, avoiding overuse to preserve its impact.
 - Employ a base unit of 4px for all spacing decisions, creating a compact and consistent element distribution.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or overly saturated colors for large surface areas; color should primarily serve as functional highlight or subtle accent.
 - Do not introduce heavy box shadows or strong elevation effects; maintain the predominantly flat, dark aesthetic.
@@ -94,10 +227,163 @@ FLORA evokes a midnight command center atmosphere, blending stark functionality 
 - Do not use dark text colors on mid-tone gray backgrounds, as contrast will be insufficient for this dark theme.
 - Do not use bold weights indiscriminately; the system mostly relies on lighter or regular weights, with specific heavier weights for structured data or distinct headings.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #000000 | The foundational background for the entire page, providing a deep, immersive dark theme. |
+| 1 | Base Card | #191919 | Used for standard cards and major content blocks, offering a slightly lighter dark surface for visual hierarchy. |
+| 2 | Elevated Card | #303030 | For cards requiring more distinction or visual lift, creating a subtle third dimension without shadows. |
+
+## Imagery
+
+The visual language is split between abstract generative graphics and tightly composed, often high-contrast product screenshots within dark UI frames. Photography, where present, is primarily product-focused or showcases creative outputs, often framed by the dark UI. Illustrations are minimal, leaning towards highly structured, geometric, or abstract forms that complement the AI theme. Icons are outlined, simple, and monochrome (Off White #eeeeee), emphasizing function over decoration. Images are typically contained within cards with rounded corners or integrated into the dark background, maintaining a high density of visual information.
+
+## Layout
 
 The page primarily uses a max-width contained layout, likely around 1200px, but features full-bleed dark sections to establish depth. The hero section is a full-width dark canvas with a centered, large headline and prompt input, setting a focused, interactive tone. Section rhythm alternates between full-bleed dark zones and content sections that feature two or three-column card grids. Content is arranged in alternating text-left/visual-right patterns or as tightly packed card grids for features. Vertical spacing between sections is consistent but not overly generous, maintaining density. Navigation consists of a sticky top bar with ghost links, a primary CTA button, and a secondary outlined CTA, all compact.
 
-### Imagery
+## Similar Brands
 
-The visual language is split between abstract generative graphics and tightly composed, often high-contrast product screenshots within dark UI frames. Photography, where present, is primarily product-focused or showcases creative outputs, often framed by the dark UI. Illustrations are minimal, leaning towards highly structured, geometric, or abstract forms that complement the AI theme. Icons are outlined, simple, and monochrome (Off White #eeeeee), emphasizing function over decoration. Images are typically contained within cards with rounded corners or integrated into the dark background, maintaining a high density of visual information.
+- **Anthropic** — Similar dark, minimalist interface focusing on text input and content generation, using subtle grays and high-contrast text.
+- **RunwayML** — Shares a sophisticated, AI-driven creative টুল aesthetic with a dark theme and precise typography, emphasizing functionality and innovation.
+- **Linear** — Employs a highly functional, compact dark mode UI with crisp typography, minimal elevation, and a strong focus on information density.
+- **Midjourney** — Emphasizes generative AI outputs within a dark-themed visual environment, using text prompts to drive visual creation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-deep-charcoal: #191919;
+  --color-off-white: #eeeeee;
+  --color-medium-gray: #606060;
+  --color-light-gray: #b4b4b4;
+  --color-ash-gray: #7b7b7b;
+  --color-dark-charcoal-outline: #303030;
+  --color-soft-gray: #bfbfbf;
+  --color-onyx-faint: #050505;
+  --color-vivid-green: #71d083;
+  --font-geist: 'Geist', Inter;
+  --font-geist-variable: 'Geist Variable', Inter;
+  --font-satoshi: 'Satoshi', Montserrat;
+  --font-redaction-50-italic: 'Redaction 50 Italic', PT Serif Italic;
+  --font-redaction-10-regular: 'Redaction 10 Regular', PT Serif;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 22px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.03px;
+  --text-display-sm: 30px;
+  --leading-display-sm: 1.2;
+  --tracking-display-sm: -0.03px;
+  --text-display: 42px;
+  --leading-display: 1.1;
+  --tracking-display: -0.036px;
+  --text-display-lg: 60px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -0.03px;
+  --text-display-xl: 80px;
+  --leading-display-xl: 1.1;
+  --tracking-display-xl: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --radius-pill: 999px;
+  --radius-cards: 10px;
+  --radius-input: 12px;
+  --radius-buttons: 9999px;
+  --radius-default: 10px;
+  --surface-canvas: #000000;
+  --surface-base-card: #191919;
+  --surface-elevated-card: #303030;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-deep-charcoal: #191919;
+  --color-off-white: #eeeeee;
+  --color-medium-gray: #606060;
+  --color-light-gray: #b4b4b4;
+  --color-ash-gray: #7b7b7b;
+  --color-dark-charcoal-outline: #303030;
+  --color-soft-gray: #bfbfbf;
+  --color-onyx-faint: #050505;
+  --color-vivid-green: #71d083;
+  --font-geist: 'Geist', Inter;
+  --font-geist-variable: 'Geist Variable', Inter;
+  --font-satoshi: 'Satoshi', Montserrat;
+  --font-redaction-50-italic: 'Redaction 50 Italic', PT Serif Italic;
+  --font-redaction-10-regular: 'Redaction 10 Regular', PT Serif;
+  --font-sans-serif: 'sans-serif', system-ui;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 22px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.03px;
+  --text-display-sm: 30px;
+  --leading-display-sm: 1.2;
+  --tracking-display-sm: -0.03px;
+  --text-display: 42px;
+  --leading-display: 1.1;
+  --tracking-display: -0.036px;
+  --text-display-lg: 60px;
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -0.03px;
+  --text-display-xl: 80px;
+  --leading-display-xl: 1.1;
+  --tracking-display-xl: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --radius-pill: 999px;
+  --radius-cards: 10px;
+  --radius-input: 12px;
+  --radius-buttons: 9999px;
+  --radius-default: 10px;
+  --surface-canvas: #000000;
+  --surface-base-card: #191919;
+  --surface-elevated-card: #303030;
+}
+```
