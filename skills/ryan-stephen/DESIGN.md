@@ -1,40 +1,112 @@
 ---
 version: alpha
-name: Ryan Stephen
-description: Ryan Stephen's design system evokes a clean, gallery-like presentation with a strong emphasis on content and minimal UI distraction. It utilizes a spacious, high-contrast monochrome palette to make imagery pop, ensuring the focus remains on the product designs showcased. Typography is understated and functional, blending into the background to support the visual work. Components are highly softened with generous corner radii, creating a friendly, approachable feel for an otherwise stark layout.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  graphite-text: "#404040"
-  ash-gray: "#8b8b94"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-spacing:
-  elementGap: 20px
-  sectionGap: 100px
-components:
-  profile-description-block:
-    role: Informational text block
-  image-gallery-grid-item:
-    role: Displaying visual work
-  interactive-link:
-    role: Navigational or actionable text
+name: "Ryan Stephen"
+description: "Ryan Stephen's design system evokes a clean, gallery-like presentation with a strong emphasis on content and minimal UI distraction. It utilizes a spacious, high-contrast monochrome palette to make imagery pop, ensuring the focus remains on the product designs showcased. Typography is understated and functional, blending into the background to support the visual work. Components are highly softened with generous corner radii, creating a friendly, approachable feel for an otherwise stark layout."
+theme: "light"
+industry: "design"
+source_url: "https://www.ryanstephen.co"
+refero_style_id: "4080f6e4-e61c-4d3c-ab93-de74a1b5dfc2"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517799609-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517799609-thumb.jpg"
+extracted_at: "2026-04-30T02:57:02.239Z"
 ---
 
-## Overview
+# Ryan Stephen — Style Reference
 
-**North Star:** Gallery Grid on White Canvas
+> Gallery Grid on White Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Ryan Stephen's design system evokes a clean, gallery-like presentation with a strong emphasis on content and minimal UI distraction. It utilizes a spacious, high-contrast monochrome palette to make imagery pop, ensuring the focus remains on the product designs showcased. Typography is understated and functional, blending into the background to support the visual work. Components are highly softened with generous corner radii, creating a friendly, approachable feel for an otherwise stark layout.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, primary content areas |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, strong borders, foundational UI elements that demand high contrast |
+| Graphite Text | #404040 | `--color-graphite-text` | Body text, secondary headings, providing a softer alternative to Ink Black without sacrificing readability |
+| Ash Gray | #8b8b94 | `--color-ash-gray` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** Arial, Helvetica, 'sans-serif'
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Role:** Descriptive labels, image captions, and detailed footer text, serving as the small-print element of the system.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif
+- **Weights:** 500
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Role:** Primary body text, link text, and short descriptions, offering clarity and a slightly robust presence in the UI.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | — | `--text-caption` |
+| body | 16px | 1.2 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-100 | 100px | `--spacing-100` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| images | 10px |
+| components | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 100px |
+| cardPadding | 40px |
+| elementGap | 20px |
+
+## Components
+
+### Profile Description Block
+
+**Role:** Informational text block
+
+A focused text block for personal or project descriptions. Text uses Graphite Text (#404040) at 16px/500 weight, with links using Ash Gray (#8b8b94) at the same size and weight. Contains no explicit padding but is isolated by surrounding spaces.
+
+### Image Gallery Grid Item
+
+**Role:** Displaying visual work
+
+Individual square image containers within a grid layout. Each image has a 10px border-radius, giving it a soft, rounded appearance. Content within the grid item is an image, bordered implicitly by the grid spacing using a 15px gap (row and column).
+
+### Interactive Link
+
+**Role:** Navigational or actionable text
+
+Text links rendered in Ash Gray (#8b8b94) at 16px/500 weight, primarily for secondary actions or related content. There is no explicit hover or active state specified in the data, implying a subtle interaction or reliance on browser defaults.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for all large background areas to maintain a spacious, gallery-like feel.
 - Use Ink Black (#000000) strictly for primary headings and critical UI elements where maximum contrast is essential, like primary text.
@@ -44,7 +116,7 @@ Ryan Stephen's design system evokes a clean, gallery-like presentation with a st
 - Employ a base element gap of 20px for consistent spacing between distinct UI components.
 - Utilize 15px spacing for items within image grids or compact lists to keep related content visually grouped but distinct.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong, saturated colors unless they are part of the image content itself; the UI must remain monochrome.
 - Avoid sharp corners or square edges on any interactive or content card-like element; always adhere to the 10px radius.
@@ -54,6 +126,63 @@ Ryan Stephen's design system evokes a clean, gallery-like presentation with a st
 - Do not use generic system font weights other than 400 or 500; the UI's subtle nature depends on these choices.
 - Do not use bright or animated hover states for links; interactions should be understated or rely on browser defaults.
 
-### Imagery
+## Imagery
 
 The site's imagery consists solely of product screenshots, often depicting hands interacting with phone-based interfaces. The treatment is primarily isolated shots, with little environmental context, putting the product UI itself at the forefront. There's an absence of photography or graphic illustrations, emphasizing actual design output. The role of imagery is demonstrative and portfolio-oriented, serving as the core content rather than decorative elements. The density is image-heavy, forming a dense, uniform grid that dominates the page.
+
+## Similar Brands
+
+- **Are.na** — Grid-based presentation of visual content, emphasizing individual work pieces in a clean, minimalist layout with high contrast text.
+- **Read.cv** — Focus on personal portfolios with high-contrast text and a clean, spacious canvas for work examples, often image-heavy.
+- **Bēhance** — Portfolio site with a strong emphasis on image grids for showcasing design projects, minimal UI to let the work speak.
+- **Figma's community pages** — Often uses light backgrounds and structured grids to present files or community content, with a similar understated typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-graphite-text: #404040;
+  --color-ash-gray: #8b8b94;
+  --font-sans-serif: 'sans-serif', Arial, Helvetica, 'sans-serif';
+  --font-system-ui: 'system-ui', Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-100: 100px;
+  --radius-images: 10px;
+  --radius-components: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-graphite-text: #404040;
+  --color-ash-gray: #8b8b94;
+  --font-sans-serif: 'sans-serif', Arial, Helvetica, 'sans-serif';
+  --font-system-ui: 'system-ui', Segoe UI, Roboto, Ubuntu, Cantarell, 'Noto Sans', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-100: 100px;
+  --radius-images: 10px;
+  --radius-components: 10px;
+}
+```

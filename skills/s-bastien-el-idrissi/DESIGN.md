@@ -1,34 +1,118 @@
 ---
 version: alpha
-name: Sébastien El Idrissi
-description: This design system presents content with deliberate minimalism, using strong achromatic contrast and ample negative space to spotlight product visuals. Typography anchors the identity with a single serif font used across all content, creating a consistent, editorial feel. The dark, spacious layout emphasizes raw object forms, while a subtle border style offers a tactile texture to interactive elements.
-colors:
-  midnight-matte: "#000000"
-  canvas-white: "#ffffff"
-  charcoal-surface: "#1c1c1c"
-  fine-stone: "#808080"
-  pebble-gray: "#cccccc"
-spacing:
-  elementGap: 12px
-  sectionGap: 72px
-components:
-  ghost-button:
-    role: Action button with minimal visual footprint.
-  minimal-input-field:
-    role: Form input field.
-  product-thumbnail:
-    role: Display individual product or work items visually.
-  page-header:
-    role: Brand identity and navigation.
+name: "Sébastien El Idrissi"
+description: "This design system presents content with deliberate minimalism, using strong achromatic contrast and ample negative space to spotlight product visuals. Typography anchors the identity with a single serif font used across all content, creating a consistent, editorial feel. The dark, spacious layout emphasizes raw object forms, while a subtle border style offers a tactile texture to interactive elements."
+theme: "dark"
+industry: "design"
+source_url: "https://seis.studio"
+refero_style_id: "e249ea21-fafd-481f-a5b5-33932b6d8f71"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518280392-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518280392-thumb.jpg"
+extracted_at: "2026-04-30T03:04:56.453Z"
 ---
 
-## Overview
+# Sébastien El Idrissi — Style Reference
 
-**North Star:** Gallery of Quiet Objects
+> Gallery of Quiet Objects
+
+**Theme:** dark
+
+**Industry:** design
 
 This design system presents content with deliberate minimalism, using strong achromatic contrast and ample negative space to spotlight product visuals. Typography anchors the identity with a single serif font used across all content, creating a consistent, editorial feel. The dark, spacious layout emphasizes raw object forms, while a subtle border style offers a tactile texture to interactive elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Matte | #000000 | `--color-midnight-matte` | Primary text, critical interface elements, borders for ghost buttons, page backgrounds for dark sections. Its absolute blackness provides stark contrast |
+| Canvas White | #ffffff | `--color-canvas-white` | Text on dark backgrounds, secondary backgrounds in light-themed sections, and subtle borders |
+| Charcoal Surface | #1c1c1c | `--color-charcoal-surface` | Dominant background for main content areas, creating a stark, object-focused display environment |
+| Fine Stone | #808080 | `--color-fine-stone` | Subtle shadow tint for elevated components, suggesting depth in a dark context |
+| Pebble Gray | #cccccc | `--color-pebble-gray` | Very faint shadow tint, used minimally for a touch of light contrast in darker areas |
+
+## Tokens — Typography
+
+### Toto
+
+- **Token:** `--font-toto`
+- **Substitute:** Playfair Display, Lora
+- **Weights:** 400
+- **Sizes:** 24px
+- **Line heights:** 1.20, 1.33
+- **Letter spacing:** normal
+- **OpenType features:** "tnum"
+- **Role:** The sole typeface, 'Toto', is a refined serif, used consistently across all headings, body text, navigation, and interactive elements. Its consistent weight 400 and tabular figures ('tnum') contribute to a strong, understated, and precise editorial voice.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-157 | 157px | `--spacing-157` |
+| spacing-237 | 237px | `--spacing-237` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.5) 0px -3px 6px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.2) 0px -50px 50px 0px, rgba(0, 0, 0, 0.5) 0px -4px 8px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 72px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Action button with minimal visual footprint.
+
+Transparent background, 'Midnight Matte' text, 'Midnight Matte' 0px border (acting as an underline on hover/focus), 12px vertical padding, 42px horizontal padding. No border-radius, maintaining sharp edges.
+
+### Minimal Input Field
+
+**Role:** Form input field.
+
+Transparent background, 'Midnight Matte' text. No border-radius. 12px vertical padding, 18px horizontal padding. Focus state indicated purely by text color and cursor.
+
+### Product Thumbnail
+
+**Role:** Display individual product or work items visually.
+
+Each thumbnail is housed within a responsive container. Text ('Midnight Matte') is centered below, with generous vertical spacing (24px below image) and a 40px column gap between items, promoting individual focus.
+
+### Page Header
+
+**Role:** Brand identity and navigation.
+
+Fixed header. 'Sébastien El Idrissi' in 'Canvas White' text, with a top padding of 36px. Its height is minimal, leaving the content itself as the dominant visual.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Midnight Matte' (#000000) for all primary text and important borders to maintain high contrast.
 - Apply 'Toto' font (or 'Playfair Display' as substitute) consistently for all text elements, maintaining weight 400 and tabular figures.
@@ -38,7 +122,7 @@ This design system presents content with deliberate minimalism, using strong ach
 - Maintain a spacious density with a base unit of 6px for all spacing decisions.
 - Use 'Charcoal Surface' (#1c1c1c) as the primary background for content presentation.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated, chromatic colors; the palette is strictly achromatic to maintain focus on content.
 - Do not introduce additional font families or weights beyond Toto 400.
@@ -48,10 +132,80 @@ This design system presents content with deliberate minimalism, using strong ach
 - Do not introduce complex shadow styles; keep shadows minimal and subtle to suggest depth without visual clutter.
 - Refrain from using small, tight line heights; maintain generous line spacing for legibility, especially for body text (1.33).
 
-### Layout
+## Elevation
+
+- **Surface interactions:** `rgba(0, 0, 0, 0.5) 0px -3px 6px 0px`
+- **Hero section depth:** `rgba(0, 0, 0, 0.2) 0px -50px 50px 0px, rgba(0, 0, 0, 0.5) 0px -4px 8px 0px`
+
+## Imagery
+
+The site primarily uses product photography, often showcasing single objects or small arrangements against a stark, desaturated background or a textured concrete wall, highlighting material and form. These are contained within their own blocks or function as full-bleed hero banners, without overlapping. The treatment is focused, with tight crops and minimal contextual information, making the object the central focus. Illustrations or complex graphic elements are absent; the visual language relies purely on clean product representation and achromatic UI.
+
+## Layout
 
 The page primarily uses a full-bleed layout, particularly for hero sections, which feature large product images or statements with centered text. Content sections typically utilize a contained grid for product listings, often a 3-column arrangement, within the dominant 'Charcoal Surface' background. The section rhythm is consistent with vertical separation provided by `72px` `sectionGap`. Layouts are often single-column or symmetrical multi-column stacks, emphasizing individual items rather than complex arrangements. Navigation is minimal, consisting of a sticky top header with the brand name.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses product photography, often showcasing single objects or small arrangements against a stark, desaturated background or a textured concrete wall, highlighting material and form. These are contained within their own blocks or function as full-bleed hero banners, without overlapping. The treatment is focused, with tight crops and minimal contextual information, making the object the central focus. Illustrations or complex graphic elements are absent; the visual language relies purely on clean product representation and achromatic UI.
+- **Opendesigns** — Shares a similar focus on product presentation with an achromatic color palette and minimal UI.
+- **Figma** — Exhibits a clean, functional UI with strong use of neutrals and clear typography for hierarchical content.
+- **AIGA** — Uses a serif typeface for its primary content and navigation, creating a strong editorial feel combined with modern layouts.
+- **Aer** — Features high-contrast product photography against dark or neutral backgrounds, minimal text, and a strong emphasis on product details.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-matte: #000000;
+  --color-canvas-white: #ffffff;
+  --color-charcoal-surface: #1c1c1c;
+  --color-fine-stone: #808080;
+  --color-pebble-gray: #cccccc;
+  --font-toto: 'Toto', Playfair Display, Lora;
+  --spacing-12: 12px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-72: 72px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-157: 157px;
+  --spacing-237: 237px;
+  --radius-none: 0px;
+  --shadow-xl: rgba(0, 0, 0, 0.5) 0px -3px 6px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.2) 0px -50px 50px 0px, rgba(0, 0, 0, 0.5) 0px -4px 8px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-matte: #000000;
+  --color-canvas-white: #ffffff;
+  --color-charcoal-surface: #1c1c1c;
+  --color-fine-stone: #808080;
+  --color-pebble-gray: #cccccc;
+  --font-toto: 'Toto', Playfair Display, Lora;
+  --spacing-12: 12px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-48: 48px;
+  --spacing-72: 72px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-157: 157px;
+  --spacing-237: 237px;
+  --radius-none: 0px;
+  --shadow-xl: rgba(0, 0, 0, 0.5) 0px -3px 6px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.2) 0px -50px 50px 0px, rgba(0, 0, 0, 0.5) 0px -4px 8px 0px;
+}
+```

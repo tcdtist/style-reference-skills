@@ -1,73 +1,175 @@
 ---
 version: alpha
-name: Sackville & Co.
-description: Sackville & Co. employs a vibrant, expressive visual language centered on high contrast and dynamic shapes. The design features a light, almost off-white canvas punctuated by a bold, energetic blue. Typography is confident and slightly quirky, mixing a strong sans-serif with a more artistic serif for impactful headlines. Components often prioritize outlined styles with organic, asymmetric radii, making elements feel handcrafted yet sophisticated.
-colors:
-  canvas-creme: "#f3f4ee"
-  midnight-ash: "#231f20"
-  deep-space-blue: "#245dc5"
-  sunset-orange: "#ffc6a6"
-  crimson-ember: "#f04736"
-  jet: "#000000"
-  charcoal-whisper: "#383435"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.15
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.15
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 29px
-    lineHeight: 0.8
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 0.85
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 47px
-    lineHeight: 0.9
-  display:
-    fontFamily: "system-ui"
-    fontSize: 130px
-    lineHeight: 0.8
-spacing:
-  cardRadius: 10px 10px 0px 0px
-  buttonRadius: 50px
-  elementGap: 10px
-  sectionGap: 43px
-components:
-  ghost-button:
-    role: Minimal interactive elements
-  text-link-button:
-    role: Inline text actions
-  oval-outline-button-deep-space:
-    role: Primary interaction button
-  oval-outline-button-crimson:
-    role: Secondary interaction button, often for 'Underage' states
-  rounded-product-card:
-    role: Product display card
-  circular-outline-icon-button:
-    role: Iconic button for navigation or filtering
-  accent-input-field:
-    role: Data entry fields
+name: "Sackville & Co."
+description: "Sackville & Co. employs a vibrant, expressive visual language centered on high contrast and dynamic shapes. The design features a light, almost off-white canvas punctuated by a bold, energetic blue. Typography is confident and slightly quirky, mixing a strong sans-serif with a more artistic serif for impactful headlines. Components often prioritize outlined styles with organic, asymmetric radii, making elements feel handcrafted yet sophisticated."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://sackville.co"
+refero_style_id: "8a3d3f72-9ef0-466d-adde-77189ddff797"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515644619-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515644619-thumb.jpg"
+extracted_at: "2026-04-30T02:21:06.471Z"
 ---
 
-## Overview
+# Sackville & Co. — Style Reference
 
-**North Star:** Electric Blue Studio
+> Electric Blue Studio
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Sackville & Co. employs a vibrant, expressive visual language centered on high contrast and dynamic shapes. The design features a light, almost off-white canvas punctuated by a bold, energetic blue. Typography is confident and slightly quirky, mixing a strong sans-serif with a more artistic serif for impactful headlines. Components often prioritize outlined styles with organic, asymmetric radii, making elements feel handcrafted yet sophisticated.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Creme | #f3f4ee | `--color-canvas-creme` | Page backgrounds, card surfaces, ghost button backgrounds – provides a soft, warm base that lifts the saturated brand colors |
+| Midnight Ash | #231f20 | `--color-midnight-ash` | Primary text, strong headings, prominent borders, and active navigation items – anchors the design with deep, near-black contrast |
+| Deep Space Blue | #245dc5 | `--color-deep-space-blue` | Violet accent for outlined action borders, linked labels, and lightweight interactive emphasis. Do not promote it to the primary CTA color |
+| Sunset Orange | #ffc6a6 | `--color-sunset-orange` | Secondary brand accent, highlight backgrounds, occasional text, and decorative borders – introduces warmth and a playful contrast |
+| Crimson Ember | #f04736 | `--color-crimson-ember` | Error states, call-to-action borders, and selective decorative elements – commands attention with its vivid red hue |
+| Jet | #000000 | `--color-jet` | High-contrast text, borders, and icon fills – used sparingly for maximum impact |
+| Charcoal Whisper | #383435 | `--color-charcoal-whisper` | Secondary text and subtle borders – a softer alternative to Midnight Ash |
+
+## Tokens — Typography
+
+### FoundersGrotesk
+
+- **Token:** `--font-foundersgrotesk`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 16px, 22px, 23px, 25px, 26px, 29px, 32px, 34px, 38px, 47px, 50px, 60px, 72px, 85px, 99px, 122px, 130px
+- **Line heights:** 0.80, 0.85, 0.90, 0.94, 1.00, 1.15, 1.30, 1.50, 2.19
+- **Letter spacing:** normal
+- **OpenType features:** "liga"
+- **Role:** Primary user interface text, body copy, and most headings – consistent weight but highly variable sizes contribute to a dynamic typographic rhythm.
+
+### TimesNow SemiLight
+
+- **Token:** `--font-timesnow-semilight`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 29px, 34px, 60px, 122px, 130px
+- **Line heights:** 0.80, 0.85, 1.00, 1.10, 1.15
+- **Letter spacing:** normal
+- **OpenType features:** "liga"
+- **Role:** Distinctive display headlines and select navigation elements – its semi-light weight contrasts with its large size for an artistic, elegant statement.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 16px | 1 | — | `--text-body-sm` |
+| body | 22px | 1.15 | — | `--text-body` |
+| subheading | 25px | 1.15 | — | `--text-subheading` |
+| heading-sm | 29px | 0.8 | — | `--text-heading-sm` |
+| heading | 34px | 0.85 | — | `--text-heading` |
+| heading-lg | 47px | 0.9 | — | `--text-heading-lg` |
+| display | 130px | 0.8 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-66 | 66px | `--spacing-66` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-87 | 87px | `--spacing-87` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-133 | 133px | `--spacing-133` |
+| spacing-144 | 144px | `--spacing-144` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px 10px 0px 0px |
+| buttons | 50px |
+| ovalButtons | 81px / 39px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 43px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Minimal interactive elements
+
+Background: rgba(0, 0, 0, 0), Text Color: rgba(0, 0, 0, 0), Borders are transparent, internal padding is 5px on all sides. Used for subtle interactions like search or navigation numbers.
+
+### Text Link Button
+
+**Role:** Inline text actions
+
+Background: rgba(0, 0, 0, 0), Text Color: Midnight Ash (#231f20), with a transparent border. Its primary function is to act as a clickable text link within content.
+
+### Oval Outline Button - Deep Space
+
+**Role:** Primary interaction button
+
+Background: rgba(0,0,0,0), Text Color: Deep Space Blue (#245dc5), with a Deep Space Blue border. Border radius is an exaggerated oval (81px / 39px) for a distinctive, organic shape. Padding: 8.56px top, 12.84px bottom, 0px left/right.
+
+### Oval Outline Button - Crimson
+
+**Role:** Secondary interaction button, often for 'Underage' states
+
+Background: rgba(0,0,0,0), Text Color: Crimson Ember (#f04736), with a Crimson Ember border. Border radius is an exaggerated oval (81px / 39px) for a distinctive, organic shape. Padding: 8.56px top, 12.84px bottom, 0px left/right.
+
+### Rounded Product Card
+
+**Role:** Product display card
+
+Background: Deep Space Blue (#245dc5), with a top-only border radius of 10px. Padding is 20px on all sides, no shadow, creating a flat, immersive surface for content.
+
+### Circular Outline Icon Button
+
+**Role:** Iconic button for navigation or filtering
+
+Background: rgba(0,0,0,0), Text Color: Deep Space Blue (#245dc5), with a Deep Space Blue border. Border radius is 50% for a perfect circle. Minimal padding.
+
+### Accent Input Field
+
+**Role:** Data entry fields
+
+Background: Sunset Orange (#ffc6a6), Text Color: Jet (#000000), with a Jet border. Border radius is 0px for sharp edges. Padding: 1px top/bottom, 2px left/right.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Space Blue (#245dc5) and Crimson Ember (#f04736) for interactive element borders rather than filled backgrounds.
 - Use Canvas Creme (#f3f4ee) as the dominant background surface for all page sections to maintain a bright, airy feel.
@@ -76,7 +178,7 @@ Sackville & Co. employs a vibrant, expressive visual language centered on high c
 - Ensure large headlines leverage the contrast between TimesNow SemiLight (400) and FoundersGrotesk (400) for typographic hierarchy.
 - Maintain comfortable spacing with an element gap of 10px and card padding of 20px to prevent visual crowding.
 
-### Don'ts
+### Don't
 
 - Do not use solid background fills for primary action buttons; utilize outlined styles with brand colors.
 - Avoid using multiple font weights within a single text block; stick to weight 400 for both primary typefaces.
@@ -84,10 +186,146 @@ Sackville & Co. employs a vibrant, expressive visual language centered on high c
 - Do not use dark backgrounds for entire page sections; reserve Deep Space Blue (#245dc5) for specific component surfaces or brand accents.
 - Do not overuse highly saturated colors; focus on Deep Space Blue and Crimson Ember for functional highlights, allowing Canvas Creme to dominate.
 
-### Layout
+## Imagery
+
+The site uses a mix of evocative photography and minimalist line art. Photography leans towards moody or branded lifestyle shots, often with a blue tint or duotone effect, sometimes featuring product crops against the Canvas Creme background. Illustrations and icons are typically minimal line drawings, often in Deep Space Blue, contributing to a modern, artistic, and slightly mysterious atmosphere. Imagery serves both decorative atmosphere and product showcase, with a moderate density.
+
+## Layout
 
 The page maintains a full-width linear scroll, but content is often contained within a perceived maximum width. The hero section frequently features a full-bleed visual element with overlaid text or an age-gate. Section rhythm is primarily consistent vertical spacing with occasional alternating visual treatments or distinct card-based layouts for product showcases. Content arrangement is flexible, featuring centered stacks for calls to action, text-left/image-right compositions for features, and multi-column card grids for product listings. Navigation is a persistent top bar, often minimal, with supplementary navigation in the footer.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of evocative photography and minimalist line art. Photography leans towards moody or branded lifestyle shots, often with a blue tint or duotone effect, sometimes featuring product crops against the Canvas Creme background. Illustrations and icons are typically minimal line drawings, often in Deep Space Blue, contributing to a modern, artistic, and slightly mysterious atmosphere. Imagery serves both decorative atmosphere and product showcase, with a moderate density.
+- **Glossier** — Aesthetic, lifestyle brand with a distinct product focus, using high-contrast typography and a clear brand color.
+- **Parade** — Youthful, expressive brand using unique shapes, bold colors, and a strong editorial feel in its layout.
+- **Magic Spoon** — Playful brand that uses vibrant colors, custom typography, and a modern, bold design approach for product packaging and digital presence.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-creme: #f3f4ee;
+  --color-midnight-ash: #231f20;
+  --color-deep-space-blue: #245dc5;
+  --color-sunset-orange: #ffc6a6;
+  --color-crimson-ember: #f04736;
+  --color-jet: #000000;
+  --color-charcoal-whisper: #383435;
+  --font-foundersgrotesk: 'FoundersGrotesk', Inter;
+  --font-timesnow-semilight: 'TimesNow SemiLight', Times New Roman;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1;
+  --text-body: 22px;
+  --leading-body: 1.15;
+  --text-subheading: 25px;
+  --leading-subheading: 1.15;
+  --text-heading-sm: 29px;
+  --leading-heading-sm: 0.8;
+  --text-heading: 34px;
+  --leading-heading: 0.85;
+  --text-heading-lg: 47px;
+  --leading-heading-lg: 0.9;
+  --text-display: 130px;
+  --leading-display: 0.8;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-45: 45px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-72: 72px;
+  --spacing-87: 87px;
+  --spacing-90: 90px;
+  --spacing-130: 130px;
+  --spacing-133: 133px;
+  --spacing-144: 144px;
+  --radius-cards: 10px 10px 0px 0px;
+  --radius-buttons: 50px;
+  --radius-ovalbuttons: 81px / 39px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-creme: #f3f4ee;
+  --color-midnight-ash: #231f20;
+  --color-deep-space-blue: #245dc5;
+  --color-sunset-orange: #ffc6a6;
+  --color-crimson-ember: #f04736;
+  --color-jet: #000000;
+  --color-charcoal-whisper: #383435;
+  --font-foundersgrotesk: 'FoundersGrotesk', Inter;
+  --font-timesnow-semilight: 'TimesNow SemiLight', Times New Roman;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1;
+  --text-body: 22px;
+  --leading-body: 1.15;
+  --text-subheading: 25px;
+  --leading-subheading: 1.15;
+  --text-heading-sm: 29px;
+  --leading-heading-sm: 0.8;
+  --text-heading: 34px;
+  --leading-heading: 0.85;
+  --text-heading-lg: 47px;
+  --leading-heading-lg: 0.9;
+  --text-display: 130px;
+  --leading-display: 0.8;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-45: 45px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-72: 72px;
+  --spacing-87: 87px;
+  --spacing-90: 90px;
+  --spacing-130: 130px;
+  --spacing-133: 133px;
+  --spacing-144: 144px;
+  --radius-cards: 10px 10px 0px 0px;
+  --radius-buttons: 50px;
+  --radius-ovalbuttons: 81px / 39px;
+}
+```
