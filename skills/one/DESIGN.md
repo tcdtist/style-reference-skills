@@ -1,46 +1,105 @@
 ---
 version: alpha
-name: ONE
-description: ONE embraces a stark, high-contrast aesthetic where rich black surfaces meet crisp monochrome typography. The visual experience is anchored by dynamic large-format video content, framed within softly rounded containers. Interaction elements are minimalist, appearing as ghost buttons with fine outlines in a near-white hue, creating a sense of understated command. The overall impression is one of sophisticated, content-driven minimalism.
-colors:
-  midnight-void: "#000000"
-  ghost-outline: "#fbfbfa"
-  muted-ash: "#bec0c5"
-  skybound-blue: "#0075ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-spacing:
-  cardRadius: 12px
-  buttonRadius: 999px
-  elementGap: 16px
-  sectionGap: 96px
-components:
-  ghost-contact-button-light:
-    role: Interactive element (primary)
-  ghost-contact-button-dark:
-    role: Interactive element (secondary)
-  video-player-card:
-    role: Content display
+name: "ONE"
+description: "ONE embraces a stark, high-contrast aesthetic where rich black surfaces meet crisp monochrome typography. The visual experience is anchored by dynamic large-format video content, framed within softly rounded containers. Interaction elements are minimalist, appearing as ghost buttons with fine outlines in a near-white hue, creating a sense of understated command. The overall impression is one of sophisticated, content-driven minimalism."
+theme: "dark"
+industry: "media"
+source_url: "https://one-is.com"
+refero_style_id: "71745af1-2e53-4925-992e-82773e55ccd6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516330818-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516330818-thumb.jpg"
+extracted_at: "2026-04-30T02:32:27.905Z"
 ---
 
-## Overview
+# ONE — Style Reference
 
-**North Star:** Shadowbox cinematic frames
+> Shadowbox cinematic frames
+
+**Theme:** dark
+
+**Industry:** media
 
 ONE embraces a stark, high-contrast aesthetic where rich black surfaces meet crisp monochrome typography. The visual experience is anchored by dynamic large-format video content, framed within softly rounded containers. Interaction elements are minimalist, appearing as ghost buttons with fine outlines in a near-white hue, creating a sense of understated command. The overall impression is one of sophisticated, content-driven minimalism.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page background, primary text, card background, outlined button border. Acts as the dominant canvas for all content |
+| Ghost Outline | #fbfbfa | `--color-ghost-outline` | Soft icon strokes, subtle dividers, and low-emphasis decorative details. Do not promote it to the primary CTA color |
+| Muted Ash | #bec0c5 | `--color-muted-ash` | Secondary text for subtle hierarchy and decorative borders |
+| Skybound Blue | #0075ff | `--color-skybound-blue` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### MagicUiPro
+
+- **Token:** `--font-magicuipro`
+- **Substitute:** system-ui
+- **Weights:** 500, 600
+- **Sizes:** 18px, 20px, 24px
+- **Line heights:** 1.00, 1.20, 1.40
+- **Letter spacing:** -0.0100em
+- **Role:** All textual content, including headings, body text, and interactive elements. Its consistent tracking across sizes contributes to a unified, precise typographic voice.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 18px | 1.2 | — | `--text-caption` |
+| body-sm | 20px | 1.2 | — | `--text-body-sm` |
+| body | 24px | 1.2 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-96 | 96px | `--spacing-96` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| buttons | 999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 96px |
+| cardPadding | 19px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Contact Button (Light)
+
+**Role:** Interactive element (primary)
+
+A ghost button for primary actions on light backgrounds. Features rounded corners at 999px, a border of 1px solid Midnight Void (#000000), and Ghost Outline (#fbfbfa) text. Padding is 0px top/bottom, 19.2px left/right.
+
+### Ghost Contact Button (Dark)
+
+**Role:** Interactive element (secondary)
+
+A ghost button for secondary actions or contact calls to action on dark backgrounds. Features rounded corners at 999px, a border of 1px solid Ghost Outline (#fbfbfa), and Ghost Outline (#fbfbfa) text. Padding is 0px top/bottom, 28px left/right.
+
+### Video Player Card
+
+**Role:** Content display
+
+A card component designed to frame video or image content. Has a Midnight Void (#000000) background, a border-radius of 12px, and no visible box shadow. Padding is 0px on all sides, allowing content to stretch to the edges.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Midnight Void (#000000) as the dominant background color to maintain the dark, immersive feel.
 - Frame primary visual content with a 12px border-radius, as seen in the Video Player Card component, for a consistent soft-edged presentation.
@@ -50,7 +109,7 @@ ONE embraces a stark, high-contrast aesthetic where rich black surfaces meet cri
 - Employ the 999px border-radius for all interactive buttons and tags to ensure a consistent pill-shaped form.
 - Use Muted Ash (#bec0c5) for secondary text or subtle decorative lines to provide visual hierarchy without strong contrast.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong accent colors in large blocks; color should act as functional punctuation, not primary decoration.
 - Avoid heavy drop shadows or complex elevation; the design relies on flat surfaces and minimal depth.
@@ -60,10 +119,76 @@ ONE embraces a stark, high-contrast aesthetic where rich black surfaces meet cri
 - Avoid sharp, un-rounded corners on significant content blocks like cards or media containers.
 - Do not mix text colors for primary content; stick to Midnight Void (#000000) on light elements or Ghost Outline (#fbfbfa) on dark elements for readability.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Canvas | #000000 | The primary background for the entire application, creating an immersive, dark environment. |
+
+## Imagery
+
+This design system heavily features large-format video content or striking photography, typically presented in full-width or near full-width frames. Visuals are contained within soft 12px rounded rectangles, giving them a cinematic yet approachable feel. The focus is on the visual itself, often abstract or concept-driven, serving as atmospheric backdrops or direct content. Icons are minimal, outlined, and monochromatic, integrated seamlessly into the UI.
+
+## Layout
 
 The page structure is full-bleed, with video content often spanning the entire viewport width, giving a sense of immersion. There is a strong emphasis on vertical stacking of content with generous section gaps of 96px, creating a spacious and unhurried rhythm. The header is minimal, featuring only a logo and a ghost contact button. Content is primarily centered or presented in balanced, often video-dominant, blocks. The text 'ONE is...' section showcases a distinct, multi-column grid for textual content, but maintains a wide, quiet layout.
 
-### Imagery
+## Similar Brands
 
-This design system heavily features large-format video content or striking photography, typically presented in full-width or near full-width frames. Visuals are contained within soft 12px rounded rectangles, giving them a cinematic yet approachable feel. The focus is on the visual itself, often abstract or concept-driven, serving as atmospheric backdrops or direct content. Icons are minimal, outlined, and monochromatic, integrated seamlessly into the UI.
+- **A24 (Studio Site)** — Exploits a minimalist, dark background with bold typography and prominent video content to create a strong, artistic brand presence.
+- **Acme (Experimental Studio)** — Uses full-bleed video backgrounds and subtle ghost buttons to create an immersive and sophisticated digital experience.
+- **Momoco (Animation Studio)** — Leverages dark UI, large media blocks, and simple, high-contrast text for a cinematic portfolio display.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-ghost-outline: #fbfbfa;
+  --color-muted-ash: #bec0c5;
+  --color-skybound-blue: #0075ff;
+  --font-magicuipro: 'MagicUiPro', system-ui;
+  --text-caption: 18px;
+  --leading-caption: 1.2;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.2;
+  --text-body: 24px;
+  --leading-body: 1.2;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-96: 96px;
+  --radius-cards: 12px;
+  --radius-buttons: 999px;
+  --surface-midnight-canvas: #000000;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-ghost-outline: #fbfbfa;
+  --color-muted-ash: #bec0c5;
+  --color-skybound-blue: #0075ff;
+  --font-magicuipro: 'MagicUiPro', system-ui;
+  --text-caption: 18px;
+  --leading-caption: 1.2;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.2;
+  --text-body: 24px;
+  --leading-body: 1.2;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-96: 96px;
+  --radius-cards: 12px;
+  --radius-buttons: 999px;
+  --surface-midnight-canvas: #000000;
+}
+```

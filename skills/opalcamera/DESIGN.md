@@ -1,71 +1,144 @@
 ---
 version: alpha
-name: Opalcamera
-description: This design system evokes the precision of high-end camera optics fused with an understated premium aesthetic. It leverages crisp black-on-white typography and subtle gray variations to establish a clean, product-focused stage. A single, vibrant yellow accent color acts as a deliberate spotlight, drawing immediate attention to key interactive elements and product pricing, reinforcing a sense of focused value.
-colors:
-  absolute-zero: "#000000"
-  polar-white: "#ffffff"
-  cloud-silver: "#e5e7eb"
-  ash-gray: "#959595"
-  slate-dust: "#767676"
-  amber-spotlight: "#ffdb01"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.56
-    letterSpacing: -0.01px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.01px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.01px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: -0.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-    letterSpacing: -0.01px
-spacing:
-  cardRadius: 4px
-  buttonRadius: 9999px
-  elementGap: 9-16px
-  sectionGap: 46-56px
-components:
-  product-cards-grid:
-    role: 
-  button-group:
-    role: 
-  pricing-feature-highlight-card:
-    role: 
-  primary-action-button:
-    role: Call-to-action
-  accent-outlined-button:
-    role: Secondary action / Product pricing display
-  product-card:
-    role: Display individual products or features
-  product-navigation-link:
-    role: Internal navigation to product details
-  header-navigation-item:
-    role: Main site navigation
+name: "Opalcamera"
+description: "This design system evokes the precision of high-end camera optics fused with an understated premium aesthetic. It leverages crisp black-on-white typography and subtle gray variations to establish a clean, product-focused stage. A single, vibrant yellow accent color acts as a deliberate spotlight, drawing immediate attention to key interactive elements and product pricing, reinforcing a sense of focused value."
+theme: "light"
+industry: "other"
+source_url: "https://opalcamera.com"
+refero_style_id: "46f01790-e488-4aba-9236-02466b0fb3cd"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924927957-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924927957-thumb.jpg"
+extracted_at: "2026-04-11T16:29:06.534Z"
 ---
 
-## Overview
+# Opalcamera — Style Reference
 
-**North Star:** Precision minimal optics. White space frames stark product focus, highlighted by a sharp yellow beam.
+> Precision minimal optics. White space frames stark product focus, highlighted by a sharp yellow beam.
+
+**Theme:** light
+
+**Industry:** other
 
 This design system evokes the precision of high-end camera optics fused with an understated premium aesthetic. It leverages crisp black-on-white typography and subtle gray variations to establish a clean, product-focused stage. A single, vibrant yellow accent color acts as a deliberate spotlight, drawing immediate attention to key interactive elements and product pricing, reinforcing a sense of focused value.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Primary text, critical icons, button backgrounds, primary navigation text. |
+| Polar White | #ffffff | `--color-polar-white` | Page backgrounds, card backgrounds, inverted text on dark elements. |
+| Cloud Silver | #e5e7eb | `--color-cloud-silver` | Subtle borders, dividers, subtle button backgrounds, separation lines. |
+| Ash Gray | #959595 | `--color-ash-gray` | Secondary body text, supporting information, subtle details. |
+| Slate Dust | #767676 | `--color-slate-dust` | Tertiary text, less prominent descriptive text. |
+| Amber Spotlight | #ffdb01 | `--color-amber-spotlight` | Call-to-action buttons, pricing displays, key highlights – used sparingly to create high visual impact. |
+
+## Tokens — Typography
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500, 600
+- **Sizes:** 13px, 14px, 16px, 20px, 32px, 40px
+- **Line heights:** 1.00, 1.20, 1.25, 1.40, 1.43, 1.50, 1.56, 1.85
+- **Letter spacing:** -0.01em
+- **Role:** Primary typeface for all textual content, including headings, body, navigation, and links. Its consistent application across all weights and sizes creates a singular, cohesive voice that feels technical yet refined, especially with slight negative letter spacing on larger sizes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.56 | -0.01px | `--text-caption` |
+| body | 16px | 1.5 | -0.01px | `--text-body` |
+| subheading | 20px | 1.25 | -0.01px | `--text-subheading` |
+| heading | 32px | 1.2 | -0.01px | `--text-heading` |
+| display | 40px | 1 | -0.01px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-143 | 143px | `--spacing-143` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 4px |
+| buttons | 9999px |
+| navItems | 8px |
+| pillForms | 9999px |
+| productLinks | 20px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 46-56px |
+| cardPadding | 20px |
+| elementGap | 9-16px |
+
+## Components
+
+### Product Cards Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Pricing / Feature Highlight Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Call-to-action
+
+Pill-shaped button with 'Amber Spotlight' background (#ffdb01) and 'Absolute Zero' text (#000000) for high visibility. Features 9999px border-radius. Text uses Roobert, 14px size, 400 weight.
+
+### Accent Outlined Button
+
+**Role:** Secondary action / Product pricing display
+
+Subtle outlined pill button with 'Cloud Silver' border (#e5e7eb) and 'Absolute Zero' text (#000000). Background is rgba(0, 0, 0, 0.1). Used for displaying price in product cards. Features 9999px border-radius. Text uses Roobert, typically 14px size, 400 weight.
+
+### Product Card
+
+**Role:** Display individual products or features
+
+White background ('Polar White' #ffffff) with 'Absolute Zero' (#000000) text for titles and description. Features a 4px border-radius. Contains a prominent title (e.g., Roobert 20px, 500 weight), a descriptive subtitle ('Ash Gray' #959595), and often an 'Accent Outlined Button' for pricing/CTAs. Padding around content is 20px.
+
+### Product Navigation Link
+
+**Role:** Internal navigation to product details
+
+Text link with a 20px border-radius, typically appearing as part of a product card. Uses 'Absolute Zero' (#000000) text, Roobert font. No background color, blending into the card surface.
+
+### Header Navigation Item
+
+**Role:** Main site navigation
+
+Text links in the header, using Roobert font, typically 14px, 400 weight, 'Absolute Zero' (#000000) color. Has an 8px border-radius, though not always visually expressed as a filled item. Minimal default padding implies hover states might feature a subtle background change.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Amber Spotlight' (#ffdb01) exclusively for primary CTAs and critical pricing information to maximize impact.
 - Maintain a clear hierarchy using 'Absolute Zero' (#000000) for headings and vital text, and 'Ash Gray' (#959595) or 'Slate Dust' (#767676) for secondary details.
@@ -73,7 +146,7 @@ This design system evokes the precision of high-end camera optics fused with an 
 - Employ 'Cloud Silver' (#e5e7eb) as a subtle visual separator rather than strong shadows for content divisions.
 - Ensure all text uses the Roobert typeface, varying only in weight and size as per the defined type scale to maintain a consistent brand voice.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple accent colors; 'Amber Spotlight' (#ffdb01) is the sole vibrant highlight.
 - Do not introduce strong drop shadows; the aesthetic relies on flat surfaces and subtle borders for depth.
@@ -81,10 +154,112 @@ This design system evokes the precision of high-end camera optics fused with an 
 - Avoid decorative imagery that competes with product visuals; maintain a functional, product-focused visual language.
 - Do not use overly complex layouts; prefer clean, structured arrangements with ample whitespace.
 
-### Layout
+## Imagery
+
+The visual language focuses on high-key product photography and contextual lifestyle shots where the product is clearly visible. Photography features tight crops of products on clean, often white or lightly textured backgrounds, emphasizing detail and form. Lifestyle photography places products in use, but remains subdued, avoiding vibrant distractions to keep focus on the device. Imagery is mostly contained within defined sections, not full-bleed, and utilizes angular alignment (not overlapping). Icons are minimal, filled, and achromatic ('Absolute Zero' #000000 or 'Polar White' #ffffff) serving an explanatory, rather than decorative, role. The density is image-heavy in product display sections, using visuals to convey information efficiently.
+
+## Layout
 
 The site uses a max-width centered layout for most content sections, with some hero elements extending full-bleed, particularly the dark-themed initial hero. The page model is primarily white-backgrounded content blocks with clear vertical separation. The hero section often features a dark background with centered text over an atmospheric semi-darkened image background, setting a serious, professional tone. Section rhythm uses consistent vertical spacing (approx. 46-56px). Content arrangement frequently employs a 3-column card grid for product features, showcasing each product in an isolated, clear block. Interior content within cards features stacked text and buttons. Navigation is a sticky top bar with minimal links.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on high-key product photography and contextual lifestyle shots where the product is clearly visible. Photography features tight crops of products on clean, often white or lightly textured backgrounds, emphasizing detail and form. Lifestyle photography places products in use, but remains subdued, avoiding vibrant distractions to keep focus on the device. Imagery is mostly contained within defined sections, not full-bleed, and utilizes angular alignment (not overlapping). Icons are minimal, filled, and achromatic ('Absolute Zero' #000000 or 'Polar White' #ffffff) serving an explanatory, rather than decorative, role. The density is image-heavy in product display sections, using visuals to convey information efficiently.
+- **Apple** — Shares a focus on minimal design, product-centric imagery, and a limited color palette that elevates the product rather than distracting from it.
+- **Nothing Tech** — Exhibits similar use of high-contrast black and white, subtle gray gradients, and a single accent color for interactive elements, creating a stark, technical aesthetic.
+- **Braun (design language)** — Reflects a commitment to 'less, but better' with functional clean lines, clear hierarchy, and an emphasis on the intrinsic quality of industrial design.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-polar-white: #ffffff;
+  --color-cloud-silver: #e5e7eb;
+  --color-ash-gray: #959595;
+  --color-slate-dust: #767676;
+  --color-amber-spotlight: #ffdb01;
+  --font-roobert: 'Roobert', Inter;
+  --text-caption: 13px;
+  --leading-caption: 1.56;
+  --tracking-caption: -0.01px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.01px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.01px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.01px;
+  --text-display: 40px;
+  --leading-display: 1;
+  --tracking-display: -0.01px;
+  --spacing-4: 4px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-41: 41px;
+  --spacing-46: 46px;
+  --spacing-56: 56px;
+  --spacing-100: 100px;
+  --spacing-135: 135px;
+  --spacing-143: 143px;
+  --radius-cards: 4px;
+  --radius-buttons: 9999px;
+  --radius-navitems: 8px;
+  --radius-pillforms: 9999px;
+  --radius-productlinks: 20px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-polar-white: #ffffff;
+  --color-cloud-silver: #e5e7eb;
+  --color-ash-gray: #959595;
+  --color-slate-dust: #767676;
+  --color-amber-spotlight: #ffdb01;
+  --font-roobert: 'Roobert', Inter;
+  --text-caption: 13px;
+  --leading-caption: 1.56;
+  --tracking-caption: -0.01px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.01px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.01px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.01px;
+  --text-display: 40px;
+  --leading-display: 1;
+  --tracking-display: -0.01px;
+  --spacing-4: 4px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-41: 41px;
+  --spacing-46: 46px;
+  --spacing-56: 56px;
+  --spacing-100: 100px;
+  --spacing-135: 135px;
+  --spacing-143: 143px;
+  --radius-cards: 4px;
+  --radius-buttons: 9999px;
+  --radius-navitems: 8px;
+  --radius-pillforms: 9999px;
+  --radius-productlinks: 20px;
+}
+```

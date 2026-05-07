@@ -1,68 +1,157 @@
 ---
 version: alpha
-name: ON.energy
-description: This system evokes a technical, industrial luxury with its stark achromatic palette punctuated by a single vibrant yellow. The dark background (#202020 or #000000) serves as a canvas for precise typography, predominantly the custom Univers Next Pro, often rendered in negative letter-spacing for a sophisticated, whispered delivery. Rounded corners are selectively applied, with the default being 6px, but larger curves for specific button styles introduce a subtle tension, softening otherwise rigid industrial forms.
-colors:
-  midnight-steel: "#000000"
-  data-center-graphite: "#202020"
-  industrial-silver: "#afafaf"
-  screen-white: "#eeeeee"
-  electric-yellow: "#fff313"
-  asphalt-gray: "#4b4b4b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.38
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.13
-    letterSpacing: -0.48px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1
-    letterSpacing: -2.56px
-spacing:
-  cardRadius: 9px
-  buttonRadius: 6px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  electric-cta-button-group:
-    role: 
-  discover-ai-ups-overlay-card:
-    role: 
-  latest-news-cards:
-    role: 
-  dark-ghost-button:
-    role: Secondary interactive elements within dark sections.
-  electric-cta-button:
-    role: Primary calls to action.
-  accent-pill-button:
-    role: Subtle interactive elements, often within hero or image overlays.
-  outline-accent-button:
-    role: Navigation or tertiary actions, particularly on lighter backgrounds.
-  news-list-item:
-    role: Informational cards within news feeds.
-  image-card:
-    role: Content presentation with imagery.
-  header-navigation-item:
-    role: Top-level site navigation links.
+name: "ON.energy"
+description: "This system evokes a technical, industrial luxury with its stark achromatic palette punctuated by a single vibrant yellow. The dark background (#202020 or #000000) serves as a canvas for precise typography, predominantly the custom Univers Next Pro, often rendered in negative letter-spacing for a sophisticated, whispered delivery. Rounded corners are selectively applied, with the default being 6px, but larger curves for specific button styles introduce a subtle tension, softening otherwise rigid industrial forms."
+theme: "dark"
+industry: "ai"
+source_url: "https://www.on.energy"
+refero_style_id: "31e00a99-6946-4f07-829a-b0904a39a20d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776008647523-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776008647523-thumb.jpg"
+extracted_at: "2026-04-12T15:44:23.194Z"
 ---
 
-## Overview
+# ON.energy — Style Reference
 
-**North Star:** Industrial Luxe on a Dark Stage. The UI feels like a high-tech data center interior, where essential information is presented with precision and a focused burst of energy.
+> Industrial Luxe on a Dark Stage. The UI feels like a high-tech data center interior, where essential information is presented with precision and a focused burst of energy.
+
+**Theme:** dark
+
+**Industry:** ai
 
 This system evokes a technical, industrial luxury with its stark achromatic palette punctuated by a single vibrant yellow. The dark background (#202020 or #000000) serves as a canvas for precise typography, predominantly the custom Univers Next Pro, often rendered in negative letter-spacing for a sophisticated, whispered delivery. Rounded corners are selectively applied, with the default being 6px, but larger curves for specific button styles introduce a subtle tension, softening otherwise rigid industrial forms.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Steel | #000000 | `--color-midnight-steel` | Primary background, text on yellow accents, outlines for key elements. |
+| Data Center Graphite | #202020 | `--color-data-center-graphite` | Secondary background surfaces, creating subtle depth against Midnight Steel. |
+| Industrial Silver | #afafaf | `--color-industrial-silver` | Subtle text, inactive states, borders on dark backgrounds. Gives a mechanical sheen. |
+| Screen White | #eeeeee | `--color-screen-white` | Prominent text on dark backgrounds, active states, outlines. Provides high contrast for readability. |
+| Electric Yellow | #fff313 | `--color-electric-yellow` | Primary accent, CTA buttons, active navigation indicators, key highlights. Commands attention with high saturation. |
+| Asphalt Gray | #4b4b4b | `--color-asphalt-gray` | Link colors, subtle separators, less prominent text on hero sections. |
+
+## Tokens — Typography
+
+### Univers Next Pro
+
+- **Token:** `--font-univers-next-pro`
+- **Substitute:** Inter
+- **Weights:** 300, 400
+- **Sizes:** 10px, 12px, 14px, 16px, 24px, 36px, 64px
+- **Line heights:** 1.00, 1.13, 1.17, 1.20, 1.38
+- **Letter spacing:** -0.0400em at 64px, -0.0200em at 36px and 24px, 0em at 16px and below
+- **Role:** All textual content: headlines, body text, navigation, buttons. The custom font contributes significantly to the industrial, precise aesthetic, especially with its specific letter spacing at larger sizes. Weight 300 is often reserved for impactful headlines, signaling authority through lightness rather than heavy bolding.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.38 | — | `--text-caption` |
+| body | 14px | 1.2 | — | `--text-body` |
+| heading | 24px | 1.13 | -0.48px | `--text-heading` |
+| display | 64px | 1 | -2.56px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 9px |
+| buttons | 6px |
+| default | 6px |
+| specialButton | 16px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1350px |
+| sectionGap | 64px |
+| elementGap | 16px |
+
+## Components
+
+### Electric CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Discover AI UPS — Overlay Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Latest News Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Dark Ghost Button
+
+**Role:** Secondary interactive elements within dark sections.
+
+Background: rgba(237, 237, 237, 0.2), Text: #eeeeee, Border: #eeeeee. Radius: 6px. Padding: 0px 14px.
+
+### Electric CTA Button
+
+**Role:** Primary calls to action.
+
+Background: #fff313, Text: #000000, Border: #000000. Radius: 6px. Padding: 0px 17px.
+
+### Accent Pill Button
+
+**Role:** Subtle interactive elements, often within hero or image overlays.
+
+Background: rgba(255, 255, 255, 0.2), Text: #eeeeee, Border: #eeeeee. Radius: 16px. Padding: 6px 16px.
+
+### Outline Accent Button
+
+**Role:** Navigation or tertiary actions, particularly on lighter backgrounds.
+
+Background: rgba(0, 0, 0, 0), Text: #fff313, Border: #fff313. Radius: 0px. Padding: 0px 24px.
+
+### News List Item
+
+**Role:** Informational cards within news feeds.
+
+Background: rgba(0, 0, 0, 0), No border or shadow. Radius: 0px. Padding: 6.5px 0px.
+
+### Image Card
+
+**Role:** Content presentation with imagery.
+
+Background: rgba(0, 0, 0, 0), No border or shadow. Radius: 9px. Padding: 0px.
+
+### Header Navigation Item
+
+**Role:** Top-level site navigation links.
+
+Text: #eeeeee (default), #fff313 (active). Background: rgba(0, 0, 0, 0) (default), #333333 (hover/active pseudo-background). Font: Univers Next Pro, weight 400, size 16px. Padding: 0px 16px (approx).
+
+## Do's and Don'ts
+
+### Do
 
 - Use Electric Yellow (#fff313) exclusively for primary CTAs and active states.
 - Apply Univers Next Pro weight 300 with negative letter-spacing for all significant headlines to achieve a whispered authority.
@@ -71,7 +160,7 @@ This system evokes a technical, industrial luxury with its stark achromatic pale
 - Ensure high contrast text (#eeeeee or #000000) against background colors, adhering to AAA accessibility standards.
 - Use System 4px as the base unit for all dimensional measurements, ensuring consistent spacing multiples.
 
-### Don'ts
+### Don't
 
 - Do not introduce new vibrant colors outside of the defined Electric Yellow; maintain the stark achromatic palette.
 - Avoid using drop shadows for elevation; rely on background layering and subtle borders for perceived depth.
@@ -80,10 +169,106 @@ This system evokes a technical, industrial luxury with its stark achromatic pale
 - Do not apply large, soft gradients; the system prefers solid, well-defined color blocks and sharp lines.
 - Avoid generic stock photography; imagery should be technical, product-focused, or abstract, aligning with the industrial feel.
 
-### Layout
+## Imagery
+
+Imagery primarily consists of tight product photography presented with industrial precision, showcasing high-tech hardware or abstract representations of energy flow. There is a strong emphasis on product shots of machinery. Photography is often presented in a muted, desaturated palette or integrated almost as textures within the dark UI. Corner radii on image cards are subtle (9px). Icons are minimalist and outlined, supporting the technical atmosphere without adding visual clutter. The overall density of imagery is balanced with text, serving to explain or showcase rather than purely decorate.
+
+## Layout
 
 The page uses a mixed layout approach, beginning with a full-bleed dark hero section featuring a centered headline over a large product image. Subsequent sections alternate between full-width dark backgrounds and lighter #eeeeee sections. Content is primarily centered within a 1350px max-width container, often featuring side-by-side text and visuals (text-left/image-right alternating). Vertical spacing between sections is generous (64px). Navigation is a fixed top bar on a dark background, featuring subtle interactive states. The rhythm is highly structured, almost architectural, creating a sense of order and high performance.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of tight product photography presented with industrial precision, showcasing high-tech hardware or abstract representations of energy flow. There is a strong emphasis on product shots of machinery. Photography is often presented in a muted, desaturated palette or integrated almost as textures within the dark UI. Corner radii on image cards are subtle (9px). Icons are minimalist and outlined, supporting the technical atmosphere without adding visual clutter. The overall density of imagery is balanced with text, serving to explain or showcase rather than purely decorate.
+- **OpenAI** — Shared use of a dark, high-contrast UI with a single vibrant accent color for interaction and highlighting.
+- **Palantir** — Serious, data-driven aesthetic leveraging dark themes and precise, often condensed typography for readability of complex information.
+- **Supabase** — Developer-focused infrastructure feel with a minimalist dark mode and strategic use of a distinct accent color for interactive elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-steel: #000000;
+  --color-data-center-graphite: #202020;
+  --color-industrial-silver: #afafaf;
+  --color-screen-white: #eeeeee;
+  --color-electric-yellow: #fff313;
+  --color-asphalt-gray: #4b4b4b;
+  --font-univers-next-pro: 'Univers Next Pro', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.38;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --tracking-heading: -0.48px;
+  --text-display: 64px;
+  --leading-display: 1;
+  --tracking-display: -2.56px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-120: 120px;
+  --spacing-200: 200px;
+  --radius-cards: 9px;
+  --radius-buttons: 6px;
+  --radius-default: 6px;
+  --radius-specialbutton: 16px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-steel: #000000;
+  --color-data-center-graphite: #202020;
+  --color-industrial-silver: #afafaf;
+  --color-screen-white: #eeeeee;
+  --color-electric-yellow: #fff313;
+  --color-asphalt-gray: #4b4b4b;
+  --font-univers-next-pro: 'Univers Next Pro', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.38;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --tracking-heading: -0.48px;
+  --text-display: 64px;
+  --leading-display: 1;
+  --tracking-display: -2.56px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-120: 120px;
+  --spacing-200: 200px;
+  --radius-cards: 9px;
+  --radius-buttons: 6px;
+  --radius-default: 6px;
+  --radius-specialbutton: 16px;
+}
+```
