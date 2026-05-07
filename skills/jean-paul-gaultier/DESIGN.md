@@ -1,60 +1,154 @@
 ---
 version: alpha
-name: Jean Paul Gaultier
-description: Jean Paul Gaultier's digital presence embodies a stark, high-contrast aesthetic that is both minimalist and confident. The visual system is built on a foundation of pure black and white, accented sparingly with a bold, vivid blue for select graphic elements. Typography is the primary decorative element, leveraging varied weights and tight tracking for a powerful, almost architectural text-driven experience. Layouts are spacious yet direct, prioritizing clear delineation of content over complex visual metaphors, creating a gallery-like presentation for products.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  whisper-gray: "#e0e0e0"
-  steel-gray: "#828282"
-  deep-dove-gray: "#161616"
-  charcoal-gray: "#222222"
-  ash-gray: "#bdbdbd"
-  scarlet-alert: "#921d1d"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1
-    letterSpacing: 0.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 250px
-    lineHeight: 1
-    letterSpacing: 0.02px
-spacing:
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Primary action, call-to-action.
-  ghost-button:
-    role: Secondary actions, navigation links within content.
-  disabled-ghost-button:
-    role: Unavailable or inactive secondary actions.
-  product-card:
-    role: Displaying product listings.
-  text-input-default:
-    role: User text entry fields.
-  text-input-error:
-    role: Text input with validation error.
-  copyright-footer:
-    role: Persistent site information, legal links.
-  consent-overlay-button:
-    role: Confirmation on cookie consent.
+name: "Jean Paul Gaultier"
+description: "Jean Paul Gaultier's digital presence embodies a stark, high-contrast aesthetic that is both minimalist and confident. The visual system is built on a foundation of pure black and white, accented sparingly with a bold, vivid blue for select graphic elements. Typography is the primary decorative element, leveraging varied weights and tight tracking for a powerful, almost architectural text-driven experience. Layouts are spacious yet direct, prioritizing clear delineation of content over complex visual metaphors, creating a gallery-like presentation for products."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://lilnasx.jeanpaulgaultier.com/en"
+refero_style_id: "0c35beb7-96fe-4394-b3ae-877629412f34"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518316583-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518316583-thumb.jpg"
+extracted_at: "2026-04-30T03:05:40.570Z"
 ---
 
-## Overview
+# Jean Paul Gaultier — Style Reference
 
-**North Star:** Gallery Canvas on Black Velvet
+> Gallery Canvas on Black Velvet
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Jean Paul Gaultier's digital presence embodies a stark, high-contrast aesthetic that is both minimalist and confident. The visual system is built on a foundation of pure black and white, accented sparingly with a bold, vivid blue for select graphic elements. Typography is the primary decorative element, leveraging varied weights and tight tracking for a powerful, almost architectural text-driven experience. Layouts are spacious yet direct, prioritizing clear delineation of content over complex visual metaphors, creating a gallery-like presentation for products.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, background for high-contrast elements, default borders. Provides a dramatic, deep canvas for content |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, elevated surface backgrounds, primary button text. Creates crisp contrast against Midnight Ink |
+| Whisper Gray | #e0e0e0 | `--color-whisper-gray` | Subtle card borders, divider lines. Offers a soft visual separation without overpowering the high contrast |
+| Steel Gray | #828282 | `--color-steel-gray` | Muted text, secondary button text, inactive link states. Provides a softer visual weight for less prominent information |
+| Deep Dove Gray | #161616 | `--color-deep-dove-gray` | Secondary text, footer links. A darker neutral for slightly de-emphasized text |
+| Charcoal Gray | #222222 | `--color-charcoal-gray` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Ash Gray | #bdbdbd | `--color-ash-gray` | Placeholder text, very subtle borders. Provides a hint of visual structure without drawing attention |
+| Scarlet Alert | #921d1d | `--color-scarlet-alert` | Error messages, field validation text, notification states. A strong, immediate indicator for critical information |
+
+## Tokens — Typography
+
+### Gaultier Text
+
+- **Token:** `--font-gaultier-text`
+- **Substitute:** Arial
+- **Weights:** 400, 500
+- **Sizes:** 11px, 13px, 16px
+- **Line heights:** 1.00, 1.10, 1.30, 1.31, 1.50
+- **Letter spacing:** normal
+- **Role:** Body copy, navigation links, button text, form inputs, general UI text. This font serves as the workhorse, appearing in multiple weights and sizes to establish informational hierarchy.
+
+### Gaultier Display
+
+- **Token:** `--font-gaultier-display`
+- **Substitute:** Playfair Display
+- **Weights:** 400, 500, 800
+- **Sizes:** 15px, 16px, 30px, 250px
+- **Line heights:** 1.00
+- **Letter spacing:** 0.02em at 30px, 0.05em at 15px
+- **Role:** Headlines, featured content titles, striking promotional text. Its varied weights and dramatic letter-spacing define the brand's bold and fashion-forward voice, especially at large display sizes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1 | — | `--text-caption` |
+| heading-sm | 30px | 1 | 0.02px | `--text-heading-sm` |
+| display | 250px | 1 | 0.02px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Primary action, call-to-action.
+
+Solid Midnight Ink background with Canvas White text, no border radius for a sharp, uncompromising look. Padding of 20px vertical and 30px horizontal. Uses Gaultier Text weight 400.
+
+### Ghost Button
+
+**Role:** Secondary actions, navigation links within content.
+
+Transparent background with Midnight Ink text and a 1px Midnight Ink border. No border radius, minimal padding (0px). Text uses Gaultier Text weight 400.
+
+### Disabled Ghost Button
+
+**Role:** Unavailable or inactive secondary actions.
+
+Transparent background with Steel Gray text and a 1px Steel Gray border. No border radius, minimal padding (0px). Text uses Gaultier Text weight 400. Inactive but still present for visual consistency.
+
+### Product Card
+
+**Role:** Displaying product listings.
+
+Transparent background with no box shadow or border radius. Products are visually framed by the layout, not the card itself. Minimal padding of 0px encapsulates the product image and details.
+
+### Text Input (Default)
+
+**Role:** User text entry fields.
+
+Canvas White background with Charcoal Gray text and a 1px Midnight Ink border. No border radius. Generous 20px padding on all sides. Uses Gaultier Text weight 400 for input.
+
+### Text Input (Error)
+
+**Role:** Text input with validation error.
+
+Transparent background with Scarlet Alert text and a 1px Scarlet Alert border. No border radius, minimal padding. Uses Gaultier Text weight 400, signaling invalid input.
+
+### Copyright Footer
+
+**Role:** Persistent site information, legal links.
+
+Midnight Ink background with Canvas White text (Gaultier Text weight 400). Features a subtle top border in Whisper Gray. Ample vertical padding with 40px left padding.
+
+### Consent Overlay Button
+
+**Role:** Confirmation on cookie consent.
+
+Specific to cookie consent dialogues, this button has a transparent background, Charcoal Gray text, and a 1px Charcoal Gray border. No radius, minimal padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Design with a dominant high-contrast palette, primarily using Midnight Ink (#000000) and Canvas White (#ffffff).
 - Utilize Gaultier Display for all headlines and featured text to establish a strong, fashion-forward brand voice, especially at larger sizes with tight letter-spacing.
@@ -64,7 +158,7 @@ Jean Paul Gaultier's digital presence embodies a stark, high-contrast aesthetic 
 - Ensure generous vertical spacing between sections (40px) to give content breathing room, typical of a gallery-like presentation.
 - Frame product imagery through clean layouts and implied borders rather than distinct card UI, using 0px padding and no visible box shadows on product cards.
 
-### Don'ts
+### Don't
 
 - Do not introduce soft shadows or excessive border-radii; the system relies on sharp edges and stark contrasts.
 - Avoid using saturated colors for anything other than explicit semantic states like errors; aesthetic color should be reserved for brand imagery.
@@ -74,10 +168,105 @@ Jean Paul Gaultier's digital presence embodies a stark, high-contrast aesthetic 
 - Avoid dense or cluttered layouts; maintain a spacious and airy feel, even in information-rich sections.
 - Do not use subtle gray text (#bdbdbd) for primary body content; reserve it for placeholders or very minor annotations.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Dominant page background for clear content display. |
+| 2 | Midnight Ink Overlay | #000000 | Background for certain interactive elements like footer or cookie consent, creating deep contrast. |
+| 3 | Whisper Gray Border | #e0e0e0 | Used as a subtle visual separator rather than a surface, indicating boundaries within the predominantly minimal UI. |
+
+## Imagery
+
+This site features high-fashion photography and tight product crops against pure white or black backgrounds. Photography is full-bleed or contained within clean rectangular frames. There is no lifestyle context; the product and model are the central focus, presented with a stark, art-gallery feel. Iconography is minimal: outlined, monochrome, and used functionally for navigation or actions like 'search' and 'cart'. The visual language heavily prioritizes product showcase and dramatic, fashion-editorial compositions over explanatory graphics or abstract illustrations, lending an image-heavy, text-dominant density to sections containing text.
+
+## Layout
 
 The page model is contained within an implied max-width of approximately 1440px, centered horizontally. The hero section often features a striking full-bleed image with text overlaid or alongside. Section rhythm uses consistent vertical spacing of 40px, creating clean separation without explicit visual dividers. Content is arranged in alternating text-left/image-right patterns or as centered stacks for promotional blocks. Product listings utilize a multi-column grid, showcasing items in a direct, unadorned manner. Navigation consists of a persistent top bar with minimal links.
 
-### Imagery
+## Similar Brands
 
-This site features high-fashion photography and tight product crops against pure white or black backgrounds. Photography is full-bleed or contained within clean rectangular frames. There is no lifestyle context; the product and model are the central focus, presented with a stark, art-gallery feel. Iconography is minimal: outlined, monochrome, and used functionally for navigation or actions like 'search' and 'cart'. The visual language heavily prioritizes product showcase and dramatic, fashion-editorial compositions over explanatory graphics or abstract illustrations, lending an image-heavy, text-dominant density to sections containing text.
+- **Yves Saint Laurent** — Shares a stark black-and-white, high-fashion aesthetic with minimal use of accent colors and bold typography.
+- **Balenciaga** — Exhibits a similar brutalist, high-contrast visual system with strong typographic elements and a lack of soft design features.
+- **Comme des Garçons (Dover Street Market)** — Utilizes a gallery-like presentation for products, often with black text on white backgrounds and a focus on product imagery over busy UI elements.
+- **Rick Owens** — Employs an austere, monochrome design with raw edges (0px radius) and a focus on material texture over decorative flourishes.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-whisper-gray: #e0e0e0;
+  --color-steel-gray: #828282;
+  --color-deep-dove-gray: #161616;
+  --color-charcoal-gray: #222222;
+  --color-ash-gray: #bdbdbd;
+  --color-scarlet-alert: #921d1d;
+  --font-gaultier-text: 'Gaultier Text', Arial;
+  --font-gaultier-display: 'Gaultier Display', Playfair Display;
+  --text-caption: 11px;
+  --leading-caption: 1;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: 0.02px;
+  --text-display: 250px;
+  --leading-display: 1;
+  --tracking-display: 0.02px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-midnight-ink-overlay: #000000;
+  --surface-whisper-gray-border: #e0e0e0;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-whisper-gray: #e0e0e0;
+  --color-steel-gray: #828282;
+  --color-deep-dove-gray: #161616;
+  --color-charcoal-gray: #222222;
+  --color-ash-gray: #bdbdbd;
+  --color-scarlet-alert: #921d1d;
+  --font-gaultier-text: 'Gaultier Text', Arial;
+  --font-gaultier-display: 'Gaultier Display', Playfair Display;
+  --text-caption: 11px;
+  --leading-caption: 1;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: 0.02px;
+  --text-display: 250px;
+  --leading-display: 1;
+  --tracking-display: 0.02px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-30: 30px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --radius-none: 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-midnight-ink-overlay: #000000;
+  --surface-whisper-gray-border: #e0e0e0;
+}
+```

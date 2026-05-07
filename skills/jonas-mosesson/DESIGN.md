@@ -1,56 +1,127 @@
 ---
 version: alpha
-name: Jonas Mosesson
-description: Jonas Mosesson’s online presence expresses a playful yet understated artistic sensibility. It leverages a soft monochrome canvas highlighted by a single vibrant blue, creating a clear visual focal point. Typography is compact and confident, primarily utilizing thin weights to convey a light and approachable tone. The overall design feels open and clean, with ample white space and minimal decorative elements, allowing the artwork and key information to stand out clearly.
-colors:
-  powder-peach: "#ffd7ce"
-  electric-blue: "#0057ff"
-  graphite: "#666666"
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  pearl-gray: "#edede2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.3
-  body:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.3
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.3
-spacing:
-  elementGap: 10px
-  sectionGap: 30px
-components:
-  navigation-link:
-    role: Top navigation and inline content links
-  brand-logo-text:
-    role: Primary site identifier
-  body-text-block:
-    role: Main informational paragraphs
-  headline-text:
-    role: Major section titles and introductory statements
-  scroll-indicator:
-    role: Visual cue for more content
-  social-media-icon-outlined:
-    role: Links to external social platforms
+name: "Jonas Mosesson"
+description: "Jonas Mosesson’s online presence expresses a playful yet understated artistic sensibility. It leverages a soft monochrome canvas highlighted by a single vibrant blue, creating a clear visual focal point. Typography is compact and confident, primarily utilizing thin weights to convey a light and approachable tone. The overall design feels open and clean, with ample white space and minimal decorative elements, allowing the artwork and key information to stand out clearly."
+theme: "light"
+industry: "design"
+source_url: "https://jonasmosesson.se"
+refero_style_id: "f70e6b90-323d-4aa7-9c04-b333140960d7"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520653276-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520653276-thumb.jpg"
+extracted_at: "2026-04-30T03:44:31.544Z"
 ---
 
-## Overview
+# Jonas Mosesson — Style Reference
 
-**North Star:** Playful Blueprint on Blush
+> Playful Blueprint on Blush
+
+**Theme:** light
+
+**Industry:** design
 
 Jonas Mosesson’s online presence expresses a playful yet understated artistic sensibility. It leverages a soft monochrome canvas highlighted by a single vibrant blue, creating a clear visual focal point. Typography is compact and confident, primarily utilizing thin weights to convey a light and approachable tone. The overall design feels open and clean, with ample white space and minimal decorative elements, allowing the artwork and key information to stand out clearly.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Powder Peach | #ffd7ce | `--color-powder-peach` | Page backgrounds, surface accents, subtle borders |
+| Electric Blue | #0057ff | `--color-electric-blue` | Primary brand accent — used for links, interactive elements, graphic outlines, and the brand's signature identity marks. Provides vibrant contrast against the soft peach background |
+| Graphite | #666666 | `--color-graphite` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Overlays, decorative fills for graphic elements |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Pearl Gray | #edede2 | `--color-pearl-gray` | Subtle background variation |
+
+## Tokens — Typography
+
+### proxima-nova
+
+- **Token:** `--font-proxima-nova`
+- **Substitute:** Montserrat
+- **Weights:** 300, 600
+- **Sizes:** 16px, 27px, 35px, 48px
+- **Line heights:** 1.25, 1.50
+- **Letter spacing:** 0.2500em
+- **Role:** Primary typeface for all content, navigation, and headings. Its light 300 weight across larger sizes creates an airy feel, while the 600 weight provides necessary emphasis without heaviness. Consistent, slightly open letter-spacing contributes to an approachable, legible brand voice.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1.5 | — | `--text-caption` |
+| body-sm | 27px | 1.3 | — | `--text-body-sm` |
+| body | 35px | 1.3 | — | `--text-body` |
+| body-lg | 48px | 1.3 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-240 | 240px | `--spacing-240` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| elementGap | 10px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top navigation and inline content links
+
+Uses 'proxima-nova' weight 300, 16px, 0.25em letter-spacing, and Electric Blue (#0057ff) for text. Hover state subtly changes color or adds an underline using the same Electric Blue.
+
+### Brand Logo (Text)
+
+**Role:** Primary site identifier
+
+Custom hand-drawn logotype. Visually represented by Electric Blue (#0057ff) against the Powder Peach background. Typography in the logotype itself is custom but adheres to the Electric Blue accent color.
+
+### Body Text Block
+
+**Role:** Main informational paragraphs
+
+Set in 'proxima-nova' weight 300, 16px, and Graphite (#666666) text color against a Powder Peach (#ffd7ce) background. Section text typically uses a 30px top margin.
+
+### Headline Text
+
+**Role:** Major section titles and introductory statements
+
+Uses 'proxima-nova' at different sizes (27px, 35px, 48px) with a light weight (300) and Electric Blue (#0057ff) or Graphite (#666666) color. Letter-spacing is 0.25em. Headlines have a 10px bottom margin.
+
+### Scroll Indicator
+
+**Role:** Visual cue for more content
+
+Text 'PLZ SCROLL DOWN' in Graphite (#666666), 'proxima-nova' weight 300, 16px. Positioned centrally at the bottom of the hero section.
+
+### Social Media Icon (Outlined)
+
+**Role:** Links to external social platforms
+
+Outline in Electric Blue (#0057ff) with a transparent fill. These appear in the header and footer.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Powder Peach (#ffd7ce) as the primary background color for page sections.
 - Utilize Electric Blue (#0057ff) exclusively for interactive elements like links and buttons, and for key brand graphics or outlines.
@@ -60,7 +131,7 @@ Jonas Mosesson’s online presence expresses a playful yet understated artistic 
 - Use Graphite (#666666) for secondary text and subtle UI borders to ensure legibility against light backgrounds.
 - Employ Midnight Ink (#000000) sparingly, primarily for decorative SVG fills where high contrast is desired.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional saturated colors unless they are part of specific content imagery – maintain a strict two-color primary palette (Peach and Blue).
 - Do not use heavy font weights (e.g., 700 or 800) for headlines or body text; the heaviest allowed is 600 for emphasis.
@@ -68,3 +139,73 @@ Jonas Mosesson’s online presence expresses a playful yet understated artistic 
 - Do not deviate from the established 0.25em letter-spacing for 'proxima-nova' as it's a key identifier of the typographic style.
 - Avoid tight element spacing; leverage ample white space and the defined 10px element gap and 30px section gap for content separation.
 - Do not use rounded corners unless explicitly part of a specific illustrative element; UI elements should generally have sharp edges.
+
+## Similar Brands
+
+- **Frank Chimero** — Similar playful illustrations with minimalist layouts and a distinctive color palette.
+- **Tobias Hall** — Personal portfolio site with a strong artistic identity, clean typography, and a limited, expressive color scheme.
+- **Jessica Hische** — Designer/illustrator portfolio featuring bespoke logotypes, strong typographic choices, and an inviting, approachable visual style.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-powder-peach: #ffd7ce;
+  --color-electric-blue: #0057ff;
+  --color-graphite: #666666;
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pearl-gray: #edede2;
+  --font-proxima-nova: 'proxima-nova', Montserrat;
+  --text-caption: 16px;
+  --leading-caption: 1.5;
+  --text-body-sm: 27px;
+  --leading-body-sm: 1.3;
+  --text-body: 35px;
+  --leading-body: 1.3;
+  --text-body-lg: 48px;
+  --leading-body-lg: 1.3;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-144: 144px;
+  --spacing-240: 240px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-powder-peach: #ffd7ce;
+  --color-electric-blue: #0057ff;
+  --color-graphite: #666666;
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pearl-gray: #edede2;
+  --font-proxima-nova: 'proxima-nova', Montserrat;
+  --text-caption: 16px;
+  --leading-caption: 1.5;
+  --text-body-sm: 27px;
+  --leading-body-sm: 1.3;
+  --text-body: 35px;
+  --leading-body: 1.3;
+  --text-body-lg: 48px;
+  --leading-body-lg: 1.3;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-144: 144px;
+  --spacing-240: 240px;
+  --radius-default: 0px;
+}
+```

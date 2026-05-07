@@ -1,55 +1,138 @@
 ---
 version: alpha
-name: Jant
-description: Jant employs a dark, highly contrasted visual system reminiscent of a digital console. Deep, saturated violets form the primary backgrounds, creating an immersive, almost holographic feel. Type is direct and functional, predominantly white or light gray against the dark canvas, with vivid blue used carefully for interactive elements. Components are lightweight and largely borderless, emphasizing content over Chrome, contributing to a dense, information-rich display.
-colors:
-  midnight-violet: "#01074b"
-  twilight-indigo: "#010535"
-  action-blue: "#1967d2"
-  aqua-glow: "#00a0bd"
-  paper-white: "#ffffff"
-  dark-ink: "#202124"
-  medium-gray: "#808080"
-  soft-black: "#000322"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1
-spacing:
-  buttonRadius: 8px
-  elementGap: 15px
-  sectionGap: 70px
-components:
-  primary-action-button:
-    role: Filled button indicating the primary action.
-  ghost-action-button:
-    role: Outlined button for secondary actions, provides visual hierarchy.
-  information-card-transparent:
-    role: A decorative, invisible card for content grouping.
-  cookie-consent-modal:
-    role: Modal for cookie consent, often at page load.
+name: "Jant"
+description: "Jant employs a dark, highly contrasted visual system reminiscent of a digital console. Deep, saturated violets form the primary backgrounds, creating an immersive, almost holographic feel. Type is direct and functional, predominantly white or light gray against the dark canvas, with vivid blue used carefully for interactive elements. Components are lightweight and largely borderless, emphasizing content over Chrome, contributing to a dense, information-rich display."
+theme: "dark"
+industry: "other"
+source_url: "https://jant.fr"
+refero_style_id: "4182357d-b0e6-46b2-a462-3e630e831085"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514580412-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514580412-thumb.jpg"
+extracted_at: "2026-04-30T02:03:19.678Z"
 ---
 
-## Overview
+# Jant — Style Reference
 
-**North Star:** Midnight console, vivid blue accents.
+> Midnight console, vivid blue accents.
+
+**Theme:** dark
+
+**Industry:** other
 
 Jant employs a dark, highly contrasted visual system reminiscent of a digital console. Deep, saturated violets form the primary backgrounds, creating an immersive, almost holographic feel. Type is direct and functional, predominantly white or light gray against the dark canvas, with vivid blue used carefully for interactive elements. Components are lightweight and largely borderless, emphasizing content over Chrome, contributing to a dense, information-rich display.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Violet | #01074b | `--color-midnight-violet` | Page background, primary surface color for tables and footers. Its deep, vivid character sets the somber, digital tone |
+| Twilight Indigo | #010535 | `--color-twilight-indigo` | Background for elevated elements like modals and overlays, and some subtle box shadows. Slightly less saturated than Midnight Violet |
+| Action Blue | #1967d2 | `--color-action-blue` | Primary action background for buttons and active states, highlight color for links. Its vivid saturation provides a clear focal point against the dark neutrals |
+| Aqua Glow | #00a0bd | `--color-aqua-glow` | Decorative border for footer, providing a subtle cool accent |
+| Paper White | #ffffff | `--color-paper-white` | Primary text color for headlines and body copy, button text, and some borders. Offers stark contrast against dark backgrounds |
+| Dark Ink | #202124 | `--color-dark-ink` | Secondary text color, muted borders. Used for informational text on lighter surfaces, and borders in more complex structures |
+| Medium Gray | #808080 | `--color-medium-gray` | Tertiary text or icon color, table borders. Provides less emphasis than Paper White or Dark Ink |
+| Soft Black | #000322 | `--color-soft-black` | Muted text color, subtle link borders. Creates a soft contrast on white backgrounds, or a subtle element on dark surfaces |
+
+## Tokens — Typography
+
+### arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 300, 400, 700
+- **Sizes:** 15px, 16px, 18px, 20px
+- **Line heights:** 0.83, 0.94, 1.00, 1.33, 1.50
+- **Letter spacing:** normal
+- **Role:** Primary font for headlines, table content, and general body text. Its broad weight range supports clear hierarchy without needing multiple typefaces.
+
+### Source Sans Pro
+
+- **Token:** `--font-source-sans-pro`
+- **Substitute:** sans-serif
+- **Weights:** 300, 400, 700
+- **Sizes:** 10px, 13px, 15px
+- **Line heights:** 1.00, 1.15, 1.40, 1.60, 1.85, 2.40
+- **Letter spacing:** normal
+- **Role:** Used for smaller text, such as list items, icon labels, footer text, and auxiliary body text. Supports dense information presentation at smaller sizes.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** sans-serif
+- **Weights:** 300, 400
+- **Sizes:** 9px, 15px
+- **Line heights:** 1.00, 1.40, 1.86
+- **Letter spacing:** normal
+- **Role:** Functional text for links and buttons, often at smaller sizes. The system default provides quick rendering for interactive elements.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 15px | 1 | — | `--text-caption` |
+| body-sm | 16px | 1 | — | `--text-body-sm` |
+| body | 18px | 1 | — | `--text-body` |
+| body-lg | 20px | 1 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-70 | 70px | `--spacing-70` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 8px |
+| elements | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 660px |
+| sectionGap | 70px |
+| cardPadding | 20px |
+| elementGap | 15px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Filled button indicating the primary action.
+
+Background: Action Blue (#1967d2), Text: Paper White (#ffffff). Radius: 8px. Padding: 0px vertical, 20px horizontal. Uses 'system-ui' font.
+
+### Ghost Action Button
+
+**Role:** Outlined button for secondary actions, provides visual hierarchy.
+
+Background: Paper White (#ffffff), Text: Action Blue (#1967d2). Border: 1px solid Action Blue (#1967d2). Radius: 8px. Padding: 0px vertical, 20px horizontal. Uses 'system-ui' font.
+
+### Information Card (Transparent)
+
+**Role:** A decorative, invisible card for content grouping.
+
+Background: rgba(0, 0, 0, 0) (transparent). No border, no shadow. Radius: 0px. Padding: 0px.
+
+### Cookie Consent Modal
+
+**Role:** Modal for cookie consent, often at page load.
+
+Background: Paper White (#ffffff), Box shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px. Radius: 8px. Contains a title (`arial` 20px bold), body text (`arial` 16px normal), and two action buttons (Primary Action, Ghost Action).
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Violet (#01074b) and Twilight Indigo (#010535) as background and primary surface colors, establishing the dark theme.
 - Use Paper White (#ffffff) for all primary text against dark backgrounds to ensure maximum contrast and readability.
@@ -59,7 +142,7 @@ Jant employs a dark, highly contrasted visual system reminiscent of a digital co
 - Utilize 'arial' for headlines and main content, and 'Source Sans Pro' or 'system-ui' for smaller, functional text.
 - Emphasize content over component chrome where possible, using minimal borders and transparent backgrounds for cards.
 
-### Don'ts
+### Don't
 
 - Avoid using light backgrounds for entire pages; the system is designed around a dominant dark mode.
 - Do not introduce new vibrant colors outside of the defined accent palette; rely on Action Blue for highlights.
@@ -68,10 +151,101 @@ Jant employs a dark, highly contrasted visual system reminiscent of a digital co
 - Avoid large empty spaces; leverage the compact density by carefully placing content and maintaining appropriate element gaps.
 - Do not use generic system link styles (like #0000ee); apply Soft Black (#000322) or Action Blue (#1967d2) as defined.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Midnight Background | #01074b | Dominant background for the entire page, setting the dark theme. |
+| 2 | Twilight Overlay | #010535 | Background for modals, pop-ups, or slightly elevated content areas, subtly distinct from the main page background. |
+| 3 | Paper Canvas | #ffffff | Background for interactive components like the cookie consent modal, providing a stark, high-contrast surface for user interaction. |
+
+## Imagery
+
+The site uses minimal imagery, primarily focusing on text and UI elements. When present, images are tightly integrated into the content, rather than serving as large decorative backdrops. Visuals are functional rather than atmospheric. Icons would likely be solid or filled, appearing crisp against the dark backgrounds, potentially in Paper White or Action Blue to align with the high-contrast UI.
+
+## Layout
 
 The page maintains a maximum width of 660px, creating a focused, single-column content flow, centered on the dark background. The hero section is characterized by a prominent headline and body text, with a 70px section gap before the next content block. Content is presented in vertical stacks, with elements like tables and lists filling the constrained width. Navigation appears minimal, likely a discreet sticky header or footer, reflecting the content-first approach.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, primarily focusing on text and UI elements. When present, images are tightly integrated into the content, rather than serving as large decorative backdrops. Visuals are functional rather than atmospheric. Icons would likely be solid or filled, appearing crisp against the dark backgrounds, potentially in Paper White or Action Blue to align with the high-contrast UI.
+- **Replit** — Similar dark-mode UI with a focus on code-like typography and functional, compact information density.
+- **Vercel** — Employs a stark dark theme with subtle violet and blue accents, prioritizing clear, concise text display over heavy graphical elements.
+- **Linear** — Relies on deep, dark backgrounds and sharp white text with carefully introduced accent colors for interactive elements, maintaining a functional, high-contrast aesthetic.
+- **Plural** — Shares a preference for dark, rich backgrounds and a minimalist approach to components, emphasizing content clarity.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-violet: #01074b;
+  --color-twilight-indigo: #010535;
+  --color-action-blue: #1967d2;
+  --color-aqua-glow: #00a0bd;
+  --color-paper-white: #ffffff;
+  --color-dark-ink: #202124;
+  --color-medium-gray: #808080;
+  --color-soft-black: #000322;
+  --font-arial: 'arial', Arial;
+  --font-source-sans-pro: 'Source Sans Pro', sans-serif;
+  --font-system-ui: 'system-ui', sans-serif;
+  --text-caption: 15px;
+  --leading-caption: 1;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1;
+  --text-body: 18px;
+  --leading-body: 1;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-70: 70px;
+  --radius-buttons: 8px;
+  --radius-elements: 4px;
+  --surface-midnight-background: #01074b;
+  --surface-twilight-overlay: #010535;
+  --surface-paper-canvas: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-violet: #01074b;
+  --color-twilight-indigo: #010535;
+  --color-action-blue: #1967d2;
+  --color-aqua-glow: #00a0bd;
+  --color-paper-white: #ffffff;
+  --color-dark-ink: #202124;
+  --color-medium-gray: #808080;
+  --color-soft-black: #000322;
+  --font-arial: 'arial', Arial;
+  --font-source-sans-pro: 'Source Sans Pro', sans-serif;
+  --font-system-ui: 'system-ui', sans-serif;
+  --text-caption: 15px;
+  --leading-caption: 1;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1;
+  --text-body: 18px;
+  --leading-body: 1;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-70: 70px;
+  --radius-buttons: 8px;
+  --radius-elements: 4px;
+  --surface-midnight-background: #01074b;
+  --surface-twilight-overlay: #010535;
+  --surface-paper-canvas: #ffffff;
+}
+```
