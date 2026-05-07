@@ -1,80 +1,189 @@
 ---
 version: alpha
-name: Sequel
-description: This design system evokes a sense of understated luxury and serious intent, reflecting a 'dark mode meets gallery space' aesthetic. A dramatic pure black background (#000000) provides a stark canvas for crisp white typography (#ffffff) and subtle, almost invisible components. The system primarily relies on meticulous typography with a custom serif for headlines and a custom sans-serif for body text, creating a strong sense of intellectual weight without visual overwhelm. Rounded lozenges (9999px radius) offer the only soft edges, contrasting sharply with the otherwise linear, rigid structure, suggesting pockets of approachable interaction within a rigorous framework.
-colors:
-  midnight-void: "#000000"
-  cloud-whisper: "#ffffff"
-  slate-dust: "#f5f5f0"
-  steel-gray: "#202020"
-  mist-gray: "#c0c0c0"
-  charcoal-tone: "#333333"
-  ash-accent: "#999999"
-  light-ash: "#cccccc"
-  cadet-gray: "#b3b3b3"
-  badge-overlay: "#333333"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: 0.3px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-    letterSpacing: -0.8px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 9999px
-  elementGap: 3-28px
-  sectionGap: 47-76px
-components:
-  cta-button-group:
-    role: 
-  lozenge-badge-collection:
-    role: 
-  featured-category-cards:
-    role: 
-  primary-lozenge-button:
-    role: Call to Action
-  ghost-lozenge-button:
-    role: Secondary Action
-  circular-play-button:
-    role: Media Playback
-  standard-card:
-    role: Content container
-  featured-card:
-    role: Prominent content container
-  lozenge-badge:
-    role: Category/Tag
-  subtle-pill-badge:
-    role: Secondary Category/Tag
+name: "Sequel"
+description: "This design system evokes a sense of understated luxury and serious intent, reflecting a 'dark mode meets gallery space' aesthetic. A dramatic pure black background (#000000) provides a stark canvas for crisp white typography (#ffffff) and subtle, almost invisible components. The system primarily relies on meticulous typography with a custom serif for headlines and a custom sans-serif for body text, creating a strong sense of intellectual weight without visual overwhelm. Rounded lozenges (9999px radius) offer the only soft edges, contrasting sharply with the otherwise linear, rigid structure, suggesting pockets of approachable interaction within a rigorous framework."
+theme: "dark"
+industry: "fintech"
+source_url: "https://sequel.co"
+refero_style_id: "1bd3b2ba-9ad9-44ed-9130-03f9d94de821"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776010481020-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776010481020-thumb.jpg"
+extracted_at: "2026-04-12T16:15:08.564Z"
 ---
 
-## Overview
+# Sequel — Style Reference
 
-**North Star:** Black canvas, sharp typography
+> Black canvas, sharp typography
+
+**Theme:** dark
+
+**Industry:** fintech
 
 This design system evokes a sense of understated luxury and serious intent, reflecting a 'dark mode meets gallery space' aesthetic. A dramatic pure black background (#000000) provides a stark canvas for crisp white typography (#ffffff) and subtle, almost invisible components. The system primarily relies on meticulous typography with a custom serif for headlines and a custom sans-serif for body text, creating a strong sense of intellectual weight without visual overwhelm. Rounded lozenges (9999px radius) offer the only soft edges, contrasting sharply with the otherwise linear, rigid structure, suggesting pockets of approachable interaction within a rigorous framework.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page backgrounds, primary dark surfaces, text on light elements. |
+| Cloud Whisper | #ffffff | `--color-cloud-whisper` | Primary text, critical UI elements, borders for ghost buttons — creating stark contrast against dark backgrounds. |
+| Slate Dust | #f5f5f0 | `--color-slate-dust` | Primary background for solid buttons, providing a subtle off-white alternative to pure white for interactive elements. |
+| Steel Gray | #202020 | `--color-steel-gray` | Secondary background for containers, slightly differentiated from the deepest black. |
+| Mist Gray | #c0c0c0 | `--color-mist-gray` | Subtle text, less prominent borders, and icons. |
+| Charcoal Tone | #333333 | `--color-charcoal-tone` | Badge backgrounds when slightly darker contrast is needed, secondary borders. |
+| Ash Accent | #999999 | `--color-ash-accent` | Tertiary text, descriptive labels, less emphasized information. |
+| Light Ash | #cccccc | `--color-light-ash` | Fine print, less important body copy. Similar to Ash Accent but slightly lighter. |
+| Cadet Gray | #b3b3b3 | `--color-cadet-gray` | Placeholder text or disabled states, providing a further step down in visual hierarchy. |
+| Badge Overlay | #333333 | `--color-badge-overlay` | Background for transparent badges, providing a muted dark tint. |
+
+## Tokens — Typography
+
+### VisueltPro
+
+- **Token:** `--font-visueltpro`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 300, 400, 500
+- **Sizes:** 10px, 11px, 12px, 13px, 14px, 15px, 16px, 18px, 20px, 22px, 30px, 32px, 54px, 58px, 115px, 128px
+- **Line heights:** 1.00, 1.20, 1.40, 1.50
+- **Letter spacing:** -0.0500em, -0.0300em, -0.0250em, -0.0200em, 0.0300em, 0.0500em, 0.0700em, 0.0800em
+- **Role:** Primary sans-serif for body text, navigation, and most UI elements. Its precise tracking and varied weights at numerous sizes provide significant typographic flexibility, maintaining clarity even at small scales.
+
+### Bradford
+
+- **Token:** `--font-bradford`
+- **Substitute:** serif
+- **Weights:** 500
+- **Sizes:** 32px, 58px, 128px
+- **Line heights:** 1.00, 1.20
+- **Letter spacing:** -0.0500em, -0.0250em
+- **Role:** Exclusive for large headlines, this custom serif font and its distinct light weight (500) sets a tone of intellectual authority. The negative letter-spacing at display sizes creates a commanding, tightly-knit appearance, making headlines feel sculpted.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | 0.3px | `--text-caption` |
+| heading | 18px | 1.2 | — | `--text-heading` |
+| heading-lg | 20px | 1.2 | — | `--text-heading-lg` |
+| display-sm | 22px | 1.2 | — | `--text-display-sm` |
+| display | 30px | 1 | — | `--text-display` |
+| display-lg | 32px | 1 | -0.8px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-3 | 3px | `--spacing-3` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-47 | 47px | `--spacing-47` |
+| spacing-49 | 49px | `--spacing-49` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-165 | 165px | `--spacing-165` |
+| spacing-174 | 174px | `--spacing-174` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| badges | 9999px |
+| buttons | 9999px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.35) 0px 10px 30px 0px, rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.15) 0px 4px 20px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 47-76px |
+| cardPadding | 0px |
+| elementGap | 3-28px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Lozenge Badge Collection
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Featured Category Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Lozenge Button
+
+**Role:** Call to Action
+
+Rounded pill shape, #f5f5f0 background with #000000 text. Uses 9999px border-radius, 24px horizontal padding. Typography: VisueltPro, typically weight 400 for clarity.
+
+### Ghost Lozenge Button
+
+**Role:** Secondary Action
+
+Rounded pill shape. Transparent background, #ffffff text with a #ffffff border. Uses 9999px border-radius, 20px horizontal padding. Typography: VisueltPro, typically weight 400.
+
+### Circular Play Button
+
+**Role:** Media Playback
+
+Perfectly circular with transparent background, #ffffff text/icon, and #ffffff border. Used for video controls. Radius implied by 0px padding and circular shape.
+
+### Standard Card
+
+**Role:** Content container
+
+Transparent background, 0px border radius, no box shadow. Content relies on visual hierarchy rather than distinct container styling.
+
+### Featured Card
+
+**Role:** Prominent content container
+
+Transparent background, 10px border radius, no box shadow. Used for visually separating key content blocks, subtle rounded corners add distinction.
+
+### Lozenge Badge
+
+**Role:** Category/Tag
+
+Rounded pill shape, rgba(200, 200, 200, 0.1) background with #ffffff text. Uses 9999px border-radius, 16px horizontal and 8px vertical padding. Typography: VisueltPro, weight 400, for clear labeling.
+
+### Subtle Pill Badge
+
+**Role:** Secondary Category/Tag
+
+Rounded pill shape, transparent background with #ffffff text. Uses 9999px border-radius. Primarily used for inline or minimalist tagging, relying on text color for emphasis.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize #000000 for backgrounds and #ffffff for primary text to maintain high contrast and dramatic impact.
 - Use Bradford font exclusively for large headings (32px and above) with its distinct weight 500 and negative letter spacing (-0.0500em or -0.0250em).
@@ -84,7 +193,7 @@ This design system evokes a sense of understated luxury and serious intent, refl
 - Employ the negative letter-spacing values from the typography specification for precise text rendering at various sizes.
 - Use 10px border-radius only for specific featured cards to provide a subtle visual differentiator against the predominant 0px radius.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated or chromatic colors; stick to the achromatic palette with #ffffff, #000000, and the various grays.
 - Do not introduce sharp corners on buttons or badges; the 9999px radius is a signature visual element.
@@ -94,10 +203,152 @@ This design system evokes a sense of understated luxury and serious intent, refl
 - Do not use generic system fonts in place of VisueltPro or Bradford; their unique characteristics are integral to the brand.
 - Avoid excessive spacing that diminishes the dense, deliberate feel; element gaps should adhere to the provided '3-28px' range.
 
-### Layout
+## Elevation
+
+- **Interactive Button:** `rgba(0, 0, 0, 0.15) 0px 4px 20px 0px`
+- **Elevated Badge/Element:** `rgba(0, 0, 0, 0.35) 0px 10px 30px 0px, rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset`
+
+## Imagery
+
+The visual language is characterized by sophisticated, high-key photography of individuals, often seen in reflective or contemplative states, suggesting success and thought leadership. Images are full-bleed within the card containers, cropped dynamically, and occasionally feature subtle brand badges overlayed at specific corners. There is an absence of product screenshots or abstract graphics, focusing entirely on human subjects as the core visual narrative. The overall impression is one of aspirational portraiture combined with subtle documentary style, reinforcing a focus on people.
+
+## Layout
 
 The page primarily uses a full-bleed layout, where content sections stretch across the entire viewport width, particularly for hero areas. Inner content is often held within a maximum width but the containers do not explicitly define a pageMaxWidth. The hero section features centered, large typography against a dark background. Content sections follow a vertical rhythm, alternating between prominent headlines and multi-column layouts, often with text on one side and a large image card on the other. Navigation is a minimalist top bar with a primary action button, fading into the dark background. The layout feels spacious yet structured, emphasizing key statements and imagery.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by sophisticated, high-key photography of individuals, often seen in reflective or contemplative states, suggesting success and thought leadership. Images are full-bleed within the card containers, cropped dynamically, and occasionally feature subtle brand badges overlayed at specific corners. There is an absence of product screenshots or abstract graphics, focusing entirely on human subjects as the core visual narrative. The overall impression is one of aspirational portraiture combined with subtle documentary style, reinforcing a focus on people.
+- **Alinea** — Shares a dark, minimalist aesthetic with clean typography and a focus on financial services.
+- **Relume Library** — Uses subtle grays and whites on a dark canvas, with emphasis on distinctive typography and structured layouts.
+- **Linear** — Employs a precise, dark-mode UI with sharp typography and a restrained use of design elements for functional elegance.
+- **Stripe** — Known for clean, often dark interface designs, subtle interactive elements, and sophisticated typography choices.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-cloud-whisper: #ffffff;
+  --color-slate-dust: #f5f5f0;
+  --color-steel-gray: #202020;
+  --color-mist-gray: #c0c0c0;
+  --color-charcoal-tone: #333333;
+  --color-ash-accent: #999999;
+  --color-light-ash: #cccccc;
+  --color-cadet-gray: #b3b3b3;
+  --color-badge-overlay: #333333;
+  --font-visueltpro: 'VisueltPro', system-ui, sans-serif;
+  --font-bradford: 'Bradford', serif;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.3px;
+  --text-heading: 18px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 20px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 22px;
+  --leading-display-sm: 1.2;
+  --text-display: 30px;
+  --leading-display: 1;
+  --text-display-lg: 32px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.8px;
+  --spacing-0: 0px;
+  --spacing-3: 3px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-47: 47px;
+  --spacing-49: 49px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-135: 135px;
+  --spacing-165: 165px;
+  --spacing-174: 174px;
+  --radius-cards: 10px;
+  --radius-badges: 9999px;
+  --radius-buttons: 9999px;
+  --shadow-xl: rgba(0, 0, 0, 0.35) 0px 10px 30px 0px, rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset;
+  --shadow-xl-2: rgba(0, 0, 0, 0.15) 0px 4px 20px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-cloud-whisper: #ffffff;
+  --color-slate-dust: #f5f5f0;
+  --color-steel-gray: #202020;
+  --color-mist-gray: #c0c0c0;
+  --color-charcoal-tone: #333333;
+  --color-ash-accent: #999999;
+  --color-light-ash: #cccccc;
+  --color-cadet-gray: #b3b3b3;
+  --color-badge-overlay: #333333;
+  --font-visueltpro: 'VisueltPro', system-ui, sans-serif;
+  --font-bradford: 'Bradford', serif;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.3px;
+  --text-heading: 18px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 20px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 22px;
+  --leading-display-sm: 1.2;
+  --text-display: 30px;
+  --leading-display: 1;
+  --text-display-lg: 32px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.8px;
+  --spacing-0: 0px;
+  --spacing-3: 3px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-47: 47px;
+  --spacing-49: 49px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-135: 135px;
+  --spacing-165: 165px;
+  --spacing-174: 174px;
+  --radius-cards: 10px;
+  --radius-badges: 9999px;
+  --radius-buttons: 9999px;
+  --shadow-xl: rgba(0, 0, 0, 0.35) 0px 10px 30px 0px, rgba(255, 255, 255, 0.08) 0px 1px 0px 0px inset;
+  --shadow-xl-2: rgba(0, 0, 0, 0.15) 0px 4px 20px 0px;
+}
+```

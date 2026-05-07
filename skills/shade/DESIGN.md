@@ -1,82 +1,205 @@
 ---
 version: alpha
-name: Shade
-description: Shade employs a stark, high-contrast visual language with a focus on functional typography and precise spacing. The design uses a dominant neutral palette relieved by a single vibrant violet accent. Components feature sharp edges or large, bold radii, often with strong box shadows for emphasis, conveying a sense of directness and polished utility. Surfaces are generally flat, with subtle elevation coming from shadows rather than color shifts.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-  coal-black: "#131315"
-  light-fog: "#f1f1f1"
-  steel-gray: "#717173"
-  stone-gray: "#a0a0a0"
-  warm-gray: "#d0d0d0"
-  deep-gray: "#444444"
-  dark-gray: "#333333"
-  digital-violet-light: "#dacefd"
-  digital-violet-bold: "#6941c6"
-  digital-violet-vivid: "#855cf8"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.43
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.29
-    letterSpacing: -0.48px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.22
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.4
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.1
-    letterSpacing: -1.68px
-spacing:
-  cardRadius: 14px
-  buttonRadius: 20px
-  elementGap: 10px
-  sectionGap: 100px
-components:
-  primary-filled-button:
-    role: Main call-to-action button for initiating key flows.
-  secondary-outlined-button:
-    role: Secondary call-to-action, less prominent than the filled primary.
-  ghost-accent-button:
-    role: Minimal impact button, often for navigation or secondary actions, using brand accent.
-  ghost-neutral-button:
-    role: Minimal impact button, for subtle interactive elements or navigation.
-  search-navigation-tab:
-    role: Interactive tabs for filtering or navigating content sections.
-  product-feature-card:
-    role: Displaying product features or content blocks.
-  default-input-field:
-    role: Standard text input element.
-  small-pill-button:
-    role: Compact interactive element or tag, typically for meta-information or minor actions.
+name: "Shade"
+description: "Shade employs a stark, high-contrast visual language with a focus on functional typography and precise spacing. The design uses a dominant neutral palette relieved by a single vibrant violet accent. Components feature sharp edges or large, bold radii, often with strong box shadows for emphasis, conveying a sense of directness and polished utility. Surfaces are generally flat, with subtle elevation coming from shadows rather than color shifts."
+theme: "light"
+industry: "media"
+source_url: "https://shade.inc"
+refero_style_id: "e549766e-b8b1-48a2-bd72-8cc04e9e4e9d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508281494-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508281494-thumb.jpg"
+extracted_at: "2026-04-30T00:18:31.402Z"
 ---
 
-## Overview
+# Shade — Style Reference
 
-**North Star:** High-contrast utility with violet accent. A clean white canvas underpins sharp black text and functional components, highlighted by a single, vivid violet.
+> High-contrast utility with violet accent. A clean white canvas underpins sharp black text and functional components, highlighted by a single, vivid violet.
+
+**Theme:** light
+
+**Industry:** media
 
 Shade employs a stark, high-contrast visual language with a focus on functional typography and precise spacing. The design uses a dominant neutral palette relieved by a single vibrant violet accent. Components feature sharp edges or large, bold radii, often with strong box shadows for emphasis, conveying a sense of directness and polished utility. Surfaces are generally flat, with subtle elevation coming from shadows rather than color shifts.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, UI elements requiring high contrast with text |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, borders, high-contrast outlines, icons |
+| Coal Black | #131315 | `--color-coal-black` | Strong headings, button backgrounds, elevated surface backgrounds where text needs high contrast |
+| Light Fog | #f1f1f1 | `--color-light-fog` | Subtle background for UI elements, button box shadows, soft divider lines |
+| Steel Gray | #717173 | `--color-steel-gray` | Muted body text, secondary information, inactive states, subtle element backgrounds |
+| Stone Gray | #a0a0a0 | `--color-stone-gray` | Placeholder text, subtle box shadows, light borders |
+| Warm Gray | #d0d0d0 | `--color-warm-gray` | Hairline separators, very light element backgrounds, subtle shadow tints |
+| Deep Gray | #444444 | `--color-deep-gray` | Input text, input borders, less prominent body text |
+| Dark Gray | #333333 | `--color-dark-gray` | Cookie banner text, secondary button borders, button text |
+| Digital Violet Light | #dacefd | `--color-digital-violet-light` | Subtle border accent for UI elements, supporting visual cues |
+| Digital Violet Bold | #6941c6 | `--color-digital-violet-bold` | Violet outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+| Digital Violet Vivid | #855cf8 | `--color-digital-violet-vivid` | Decorative background fills, active states, conical gradients for specific elements |
+
+## Tokens — Typography
+
+### Inter Display
+
+- **Token:** `--font-inter-display`
+- **Weights:** 400
+- **Sizes:** 10px, 14px, 16px, 18px, 20px, 21px, 24px, 28px, 32px, 36px, 40px, 48px, 56px, 72px
+- **Line heights:** 1.00, 1.10, 1.15, 1.20, 1.22, 1.25, 1.30, 1.40, 1.43, 1.57
+- **Letter spacing:** -0.0300em at large sizes, -0.0100em at smaller sizes
+- **OpenType features:** "blwf", "cv03", "cv04", "cv09", "cv11"; "ss01", "ss07", "ss08"
+- **Role:** Primary headings and body text, providing a distinctive, tightly spaced feel for key content. The custom features tune its appearance for legibility and aesthetic.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Fallback for general UI text, links, and buttons, ensuring basic content readability without demanding specific font support. Used where Inter Display is not explicitly applied.
+
+### Aux Mono Regular
+
+- **Token:** `--font-aux-mono-regular`
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.00, 1.29
+- **Letter spacing:** -0.0400em at 14px, -0.0100em
+- **Role:** Monospaced text for specific data points or code examples, offering a technical and precise feel. The tight letter-spacing emphasizes its distinct character.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.00, 1.20, 1.50
+- **Letter spacing:** normal
+- **Role:** General body text, card content, and secondary button labels, providing a highly legible and versatile textual layer. This standard variant of Inter balances readability with the custom Inter Display.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.43 | — | `--text-caption` |
+| body | 14px | 1.29 | -0.48px | `--text-body` |
+| subheading | 18px | 1.22 | — | `--text-subheading` |
+| heading-sm | 24px | 1.25 | — | `--text-heading-sm` |
+| heading | 32px | 1.4 | — | `--text-heading` |
+| heading-lg | 40px | 1.15 | — | `--text-heading-lg` |
+| display | 56px | 1.1 | -1.68px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 14px |
+| input | 9px |
+| buttons | 20px |
+| default | 9px |
+| largeButtons | 35px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(241, 241, 241) 8px 8px 0px 0px | `--shadow-xl` |
+| xl-2 | rgba(226, 226, 227, 0.5) 10px 10px 0px -2px | `--shadow-xl-2` |
+| xl-3 | rgba(19, 19, 21, 0.12) 0px 1px 4px 0px | `--shadow-xl-3` |
+| xl-4 | rgba(0, 0, 0, 0.2) 0px 3px 4px 0px | `--shadow-xl-4` |
+| xl-5 | rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset | `--shadow-xl-5` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 100px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call-to-action button for initiating key flows.
+
+Background: Coal Black (#131315), Text: Canvas White (#ffffff). Padding: 20px all sides. Border Radius: 20px. Uses a sharp, pronounced box-shadow below.
+
+### Secondary Outlined Button
+
+**Role:** Secondary call-to-action, less prominent than the filled primary.
+
+Background: Canvas White (#ffffff), Text: Midnight Ink (#000000). Border: 1px solid Midnight Ink (#000000). Padding: 20px all sides. Border Radius: 0px. A square, minimalist aesthetic.
+
+### Ghost Accent Button
+
+**Role:** Minimal impact button, often for navigation or secondary actions, using brand accent.
+
+Background: transparent, Text: Digital Violet Bold (#6941c6). Border: 1px solid Digital Violet Bold (#6941c6). Padding: 10px top/bottom, 15px left/right. Border Radius: 0px. Used for 'Shade Raises $14M in New Funding' banner.
+
+### Ghost Neutral Button
+
+**Role:** Minimal impact button, for subtle interactive elements or navigation.
+
+Background: transparent, Text: Midnight Ink (#000000). Border: 1px solid Midnight Ink (#000000). Padding: 10px top/bottom, 20px/10px left/right. Border Radius: 0px.
+
+### Search/Navigation Tab
+
+**Role:** Interactive tabs for filtering or navigating content sections.
+
+Background: Canvas White (#ffffff), Text: Midnight Ink (#000000) for active, Steel Gray (#717173) for inactive. Border: 1px inset rgba(0,0,0,0.05). Underlines with a solid bar color.
+
+### Product Feature Card
+
+**Role:** Displaying product features or content blocks.
+
+Background: Canvas White (#ffffff). Border Radius: 14px. Box Shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.05). No padding defined, content is expected to dictate internal spacing.
+
+### Default Input Field
+
+**Role:** Standard text input element.
+
+Background: rgb(238, 238, 238), Text: Deep Gray (#444444), Border: 1px solid Deep Gray (#444444). Padding: 10px all sides. Border Radius: 8px.
+
+### Small Pill Button
+
+**Role:** Compact interactive element or tag, typically for meta-information or minor actions.
+
+Background: Coal Black (#131315). Text: rgb(0,0,238) (browser default link blue, not a brand choice). Radius: 20px. Padding: 10px top/bottom, 20px left/right.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for primary backgrounds and Coal Black (#131315) or Midnight Ink (#000000) for primary text to maintain high contrast.
 - Use Inter Display for all headings, leveraging its full range of sizes and letter-spacing for visual impact and hierarchy.
@@ -86,7 +209,7 @@ Shade employs a stark, high-contrast visual language with a focus on functional 
 - Employ the hard 8px 8px 0px 0px F1F1F1 shadow for buttons to give them a distinct, almost debossed appearance.
 - Use Ghost Neutral buttons (transparent background, Midnight Ink border and text) for less prominent actions, reserving filled or accented buttons for key interactions.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors; restrict accents primarily to the Digital Violet palette.
 - Do not introduce soft or subtle shadows where a hard, offset shadow is expected; adhere to the distinct shadow style on buttons.
@@ -96,10 +219,185 @@ Shade employs a stark, high-contrast visual language with a focus on functional 
 - Do not use generic gray scales for text when Steel Gray (#717173), Deep Gray (#444444), or Dark Gray (#333333) are available for semantic text roles.
 - Do not use transparent or blurry backgrounds when solid color surfaces are the default. Sharp contrasts are key.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Base page background and high-contrast surfaces. |
+| 1 | Light Fog | #f1f1f1 | Subtle background for grouped UI elements or light separators. |
+| 2 | Default Card | #ffffff | Default card background, distinguished by its subtle inset border shadow. |
+| 3 | Coal Black Elevated | #131315 | Darker background for primary filled buttons and specific elevated UI sections. |
+
+## Elevation
+
+- **Primary Filled Button:** `rgb(241, 241, 241) 8px 8px 0px 0px`
+- **Link/Other with Shadow:** `rgba(226, 226, 227, 0.5) 10px 10px 0px -2px`
+- **Button Soft Shadow:** `rgba(19, 19, 21, 0.12) 0px 1px 4px 0px`
+- **Card Inset Border:** `rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset`
+
+## Imagery
+
+This design system uses a blend of tightly cropped product screenshots and high-quality photography, often with a subtle film grain or warm color grade, alongside a highly functional icon set. Lifestyle photography is present but primarily contained, never full-bleed, depicting people using technology or interacting in studio environments. Illustrations are minimal to none. Icons are typically outlined or filled, mostly monochrome (Midnight Ink or Canvas White), with a consistent stroke weight. Imagery serves mostly an explanatory or product showcase role, occasionally decorative for atmosphere, but never heavily stylized or abstract. The density is balanced, with imagery breaking up text-dominant sections, but not overwhelming the page.
+
+## Layout
 
 The page primarily uses a max-width contained model, with a consistent vertical rhythm. The hero section often features a centered headline over a white background with a secondary subheading and two action buttons (one filled, one outlined). Sections alternate between simple centered stacks of text, and two-column layouts featuring text on one side and a visual element (like a product screenshot or video frame) on the other. A notable element is a horizontal tab navigation using ghost buttons. Feature grids, if present, are likely simple 3-column structures. Ample white space creates a comfortable, airy density between content blocks. Navigation is a sticky top bar with a left-aligned logo and right-aligned links and buttons.
 
-### Imagery
+## Similar Brands
 
-This design system uses a blend of tightly cropped product screenshots and high-quality photography, often with a subtle film grain or warm color grade, alongside a highly functional icon set. Lifestyle photography is present but primarily contained, never full-bleed, depicting people using technology or interacting in studio environments. Illustrations are minimal to none. Icons are typically outlined or filled, mostly monochrome (Midnight Ink or Canvas White), with a consistent stroke weight. Imagery serves mostly an explanatory or product showcase role, occasionally decorative for atmosphere, but never heavily stylized or abstract. The density is balanced, with imagery breaking up text-dominant sections, but not overwhelming the page.
+- **Figma** — High-contrast text on white surfaces, functional typography, and judicious use of a single vibrant accent color for interaction and brand points.
+- **Linear** — Clean, almost sparse UI with strong typographic hierarchy, preference for greyscales and a specific, restrained accent color, and precise geometric shapes.
+- **Webflow** — Emphasis on crisp, high-contrast UI elements, strong use of box-shadows for component elevation and depth, and a focused color palette.
+- **Vercel** — Minimalist aesthetic with sharp edges or distinct large radii, powerful headings, and a focus on content over heavy visual decoration, using a limited color palette.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-coal-black: #131315;
+  --color-light-fog: #f1f1f1;
+  --color-steel-gray: #717173;
+  --color-stone-gray: #a0a0a0;
+  --color-warm-gray: #d0d0d0;
+  --color-deep-gray: #444444;
+  --color-dark-gray: #333333;
+  --color-digital-violet-light: #dacefd;
+  --color-digital-violet-bold: #6941c6;
+  --color-digital-violet-vivid: #855cf8;
+  --font-inter-display: 'Inter Display', ui-sans-serif, system-ui, sans-serif;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-aux-mono-regular: 'Aux Mono Regular', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'Inter', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --text-body: 14px;
+  --leading-body: 1.29;
+  --tracking-body: -0.48px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.22;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.15;
+  --text-display: 56px;
+  --leading-display: 1.1;
+  --tracking-display: -1.68px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --radius-cards: 14px;
+  --radius-input: 9px;
+  --radius-buttons: 20px;
+  --radius-default: 9px;
+  --radius-largebuttons: 35px;
+  --shadow-xl: rgb(241, 241, 241) 8px 8px 0px 0px;
+  --shadow-xl-2: rgba(226, 226, 227, 0.5) 10px 10px 0px -2px;
+  --shadow-xl-3: rgba(19, 19, 21, 0.12) 0px 1px 4px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.2) 0px 3px 4px 0px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+  --surface-canvas-white: #ffffff;
+  --surface-light-fog: #f1f1f1;
+  --surface-default-card: #ffffff;
+  --surface-coal-black-elevated: #131315;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-coal-black: #131315;
+  --color-light-fog: #f1f1f1;
+  --color-steel-gray: #717173;
+  --color-stone-gray: #a0a0a0;
+  --color-warm-gray: #d0d0d0;
+  --color-deep-gray: #444444;
+  --color-dark-gray: #333333;
+  --color-digital-violet-light: #dacefd;
+  --color-digital-violet-bold: #6941c6;
+  --color-digital-violet-vivid: #855cf8;
+  --font-inter-display: 'Inter Display', ui-sans-serif, system-ui, sans-serif;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-aux-mono-regular: 'Aux Mono Regular', ui-sans-serif, system-ui, sans-serif;
+  --font-inter: 'Inter', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --text-body: 14px;
+  --leading-body: 1.29;
+  --tracking-body: -0.48px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.22;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.15;
+  --text-display: 56px;
+  --leading-display: 1.1;
+  --tracking-display: -1.68px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --radius-cards: 14px;
+  --radius-input: 9px;
+  --radius-buttons: 20px;
+  --radius-default: 9px;
+  --radius-largebuttons: 35px;
+  --shadow-xl: rgb(241, 241, 241) 8px 8px 0px 0px;
+  --shadow-xl-2: rgba(226, 226, 227, 0.5) 10px 10px 0px -2px;
+  --shadow-xl-3: rgba(19, 19, 21, 0.12) 0px 1px 4px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.2) 0px 3px 4px 0px;
+  --shadow-xl-5: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px inset;
+  --surface-canvas-white: #ffffff;
+  --surface-light-fog: #f1f1f1;
+  --surface-default-card: #ffffff;
+  --surface-coal-black-elevated: #131315;
+}
+```
