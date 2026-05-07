@@ -1,27 +1,81 @@
 ---
 version: alpha
-name: Megan Perkins
-description: Megan Perkins presents a dark, high-contrast, and text-dominant aesthetic. The design relies on a minimal palette of near-black for backgrounds, a single dark gray for most text and borders, and a large, high-impact gradient hero. Typography is compact and precise, maintaining a serious, editorial tone. Components are stripped back, often border-only or ghost elements, with color reserved for the background gradient and the occasional subtle interaction cue.
-colors:
-  canvas-dark: "#000000"
-  text-muted: "#959591"
-  heading-accent: "#ffffff"
-  hero-gradient: "#9a00ff"
-spacing:
-  elementGap: 5px
-  sectionGap: 22px
-components:
-  ghost-arrow-button:
-    role: Navigation button for scrolling content.
+name: "Megan Perkins"
+description: "Megan Perkins presents a dark, high-contrast, and text-dominant aesthetic. The design relies on a minimal palette of near-black for backgrounds, a single dark gray for most text and borders, and a large, high-impact gradient hero. Typography is compact and precise, maintaining a serious, editorial tone. Components are stripped back, often border-only or ghost elements, with color reserved for the background gradient and the occasional subtle interaction cue."
+theme: "dark"
+industry: "design"
+source_url: "https://meganperkins.com"
+refero_style_id: "aa3fecc4-3017-4b7a-8969-c36ba4dcd91d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516835807-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516835807-thumb.jpg"
+extracted_at: "2026-04-30T02:40:49.013Z"
 ---
 
-## Overview
+# Megan Perkins — Style Reference
 
-**North Star:** Midnight gradient canvas
+> Midnight gradient canvas
+
+**Theme:** dark
+
+**Industry:** design
 
 Megan Perkins presents a dark, high-contrast, and text-dominant aesthetic. The design relies on a minimal palette of near-black for backgrounds, a single dark gray for most text and borders, and a large, high-impact gradient hero. Typography is compact and precise, maintaining a serious, editorial tone. Components are stripped back, often border-only or ghost elements, with color reserved for the background gradient and the occasional subtle interaction cue.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Dark | #000000 | `--color-canvas-dark` | Page backgrounds, button text for ghost buttons, implicit ghost button borders |
+| Text Muted | #959591 | `--color-text-muted` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Heading Accent | #ffffff | `--color-heading-accent` | Dominant headlines, indicating high importance against dark backgrounds |
+| Hero Gradient | #9a00ff | `--color-hero-gradient` | The primary visual identifier, used for the full-bleed hero section background. It transitions from a deep purple to a vibrant magenta, then to a rich green, creating a dynamic atmospheric backdrop |
+
+## Tokens — Typography
+
+### aktiv-grotesk
+
+- **Token:** `--font-aktiv-grotesk`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 22px
+- **Line heights:** 1.27
+- **Role:** All textual content across the site, including body, headings, navigation, and links. Its clean, sans-serif nature supports the site's serious and direct communication style.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-32 | 32px | `--spacing-32` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 22px |
+| cardPadding | 22px |
+| elementGap | 5px |
+
+## Components
+
+### Ghost Arrow Button
+
+**Role:** Navigation button for scrolling content.
+
+A ghost button with #000000 text and an implicit #959591 border that appears on interaction. No background fill, 0px border-radius, 0px padding. Uses the 'aktiv-grotesk' font at 22px, weight 400.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use 'Canvas Dark' (#000000) for primary page backgrounds to maintain the deep, dark aesthetic.
 - Apply 'Text Muted' (#959591) for all body text and navigation elements to ensure soft contrast.
@@ -31,7 +85,7 @@ Megan Perkins presents a dark, high-contrast, and text-dominant aesthetic. The d
 - Prioritize minimal or ghost component styles; avoid filled buttons or heavy borders.
 - Maintain a compact spacing rhythm, with 'elementGap' at 5px for close internal element relationships and 'sectionGap' at 22px for clear content block separation.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional saturated colors beyond the defined brand gradient; color should be used sparingly.
 - Avoid applying heavy drop shadows or elevation, as the design system explicitly uses flat surfaces and minimal depth.
@@ -41,10 +95,50 @@ Megan Perkins presents a dark, high-contrast, and text-dominant aesthetic. The d
 - Do not deviate from the defined compact spacing values; resist adding more padding or margin unless absolutely necessary for readability.
 - Do not use system default link colors; ensure all links use 'Text Muted' (#959591).
 
-### Layout
+## Imagery
+
+The site primarily features a vivid, atmospheric gradient as its main visual element, serving a decorative and branding role. There are no photographs, illustrations, product screenshots, or 3D renders. Icons are minimal, consisting only of simple, outlined arrow shapes to guide navigation. The visual density is very low, emphasizing text against the gradient, where imagery's role is purely abstract atmosphere.
+
+## Layout
 
 The page operates on a full-bleed model, with the hero section filling the entire viewport with a dynamic gradient. Content is generally left-aligned within a contained area when text is primary, contrasting with the full-bleed hero. Section rhythm is marked by distinct background changes from the gradient to a solid deep black. Subsequent content appears to be stacked vertically, with consistent vertical spacing between text blocks. Navigation elements are minimal and positioned to the bottom and top left, with subtle interactive ghost components. The layout is text-dominant, with ample breathing room around content blocks despite a compact element spacing.
 
-### Imagery
+## Similar Brands
 
-The site primarily features a vivid, atmospheric gradient as its main visual element, serving a decorative and branding role. There are no photographs, illustrations, product screenshots, or 3D renders. Icons are minimal, consisting only of simple, outlined arrow shapes to guide navigation. The visual density is very low, emphasizing text against the gradient, where imagery's role is purely abstract atmosphere.
+- **AIGA** — High-contrast text-heavy design approach with a focus on editorial content and strong typographic hierarchy.
+- **Huge Inc.** — Minimalist websites that use strong, abstract background visuals (gradients, patterns) to create brand identity without relying on heavy photography.
+- **Personal portfolio sites** — Often use striking, unique custom hero sections (like gradients or experimental typography) to immediately convey artistic or design capability.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-dark: #000000;
+  --color-text-muted: #959591;
+  --color-heading-accent: #ffffff;
+  --color-hero-gradient: #9a00ff;
+  --font-aktiv-grotesk: 'aktiv-grotesk', Inter;
+  --spacing-5: 5px;
+  --spacing-22: 22px;
+  --spacing-32: 32px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-dark: #000000;
+  --color-text-muted: #959591;
+  --color-heading-accent: #ffffff;
+  --color-hero-gradient: #9a00ff;
+  --font-aktiv-grotesk: 'aktiv-grotesk', Inter;
+  --spacing-5: 5px;
+  --spacing-22: 22px;
+  --spacing-32: 32px;
+  --radius-none: 0px;
+}
+```

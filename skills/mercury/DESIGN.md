@@ -1,87 +1,168 @@
 ---
 version: alpha
-name: Mercury
-description: The design feels like a command center at twilight, expansive and focused. A deep, near-black neutral palette (#1e1e2a, #171721) creates an immersive, cinematic canvas where glowing off-white text (#ededf3) provides crisp clarity. All energy is channeled into a single, vibrant violet-blue accent (#5266eb) reserved strictly for primary calls-to-action, like indicator lights on a high-tech console. The typography is a defining feature, with custom fonts used at light weights for headlines, creating an authoritative yet approachable voice. The contrast between spacious, atmospheric hero imagery and the stark, text-driven UI below creates a journey from aspiration to action.
-colors:
-  mercury-blue: "#5266eb"
-  ghost-blue: "#cdddff"
-  deep-space: "#171721"
-  midnight-slate: "#1e1e2a"
-  graphite: "#272735"
-  lead: "#70707d"
-  starlight: "#ededf3"
-  silver: "#c3c3cc"
-  pure-white: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.24px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0.28px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1.35
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 49px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 65px
-    lineHeight: 1.1
-    letterSpacing: 0.65px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 32px, 40px
-  elementGap: 12-32px
-  sectionGap: 80-120px
-components:
-  hero-email-cta:
-    role: 
-  feature-list-everything-in-one-place:
-    role: 
-  button-group-primary-secondary-ghost:
-    role: 
-  primary-pill-button:
-    role: The main call-to-action on the page.
-  header-pill-button:
-    role: The secondary call-to-action in the navigation bar.
-  ghost-nav-link:
-    role: Navigation items and non-primary links in the header.
-  hero-email-input:
-    role: The email capture field in the hero section.
-  interactive-feature-link:
-    role: Selectable items in a feature list.
-  footer-link:
-    role: Tertiary links in the page footer.
+name: "Mercury"
+description: "The design feels like a command center at twilight, expansive and focused. A deep, near-black neutral palette (#1e1e2a, #171721) creates an immersive, cinematic canvas where glowing off-white text (#ededf3) provides crisp clarity. All energy is channeled into a single, vibrant violet-blue accent (#5266eb) reserved strictly for primary calls-to-action, like indicator lights on a high-tech console. The typography is a defining feature, with custom fonts used at light weights for headlines, creating an authoritative yet approachable voice. The contrast between spacious, atmospheric hero imagery and the stark, text-driven UI below creates a journey from aspiration to action."
+theme: "dark"
+industry: "fintech"
+source_url: "https://mercury.com"
+refero_style_id: "3172cd4d-118a-4a16-a259-6b634d32322e"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929449693-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929449693-thumb.jpg"
+extracted_at: "2026-04-11T17:45:14.206Z"
 ---
 
-## Overview
+# Mercury — Style Reference
 
-**North Star:** Mountain Top Command Center
+> Mountain Top Command Center
+
+**Theme:** dark
+
+**Industry:** fintech
 
 The design feels like a command center at twilight, expansive and focused. A deep, near-black neutral palette (#1e1e2a, #171721) creates an immersive, cinematic canvas where glowing off-white text (#ededf3) provides crisp clarity. All energy is channeled into a single, vibrant violet-blue accent (#5266eb) reserved strictly for primary calls-to-action, like indicator lights on a high-tech console. The typography is a defining feature, with custom fonts used at light weights for headlines, creating an authoritative yet approachable voice. The contrast between spacious, atmospheric hero imagery and the stark, text-driven UI below creates a journey from aspiration to action.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Mercury Blue | #5266eb | `--color-mercury-blue` | Primary CTA buttons — the single, vivid accent in a muted palette, focusing user action. |
+| Ghost Blue | #cdddff | `--color-ghost-blue` | Secondary button backgrounds, hover states — a desaturated, ethereal blue suggesting interaction. |
+| Deep Space | #171721 | `--color-deep-space` | Outermost page background layer, providing depth. |
+| Midnight Slate | #1e1e2a | `--color-midnight-slate` | Primary page and section backgrounds. |
+| Graphite | #272735 | `--color-graphite` | Subtle button backgrounds and interactive surfaces. |
+| Lead | #70707d | `--color-lead` | Borders, dividers, subtle UI accents. |
+| Starlight | #ededf3 | `--color-starlight` | Primary text color for headlines, body, and navigation. |
+| Silver | #c3c3cc | `--color-silver` | Secondary text, footer copy, disabled states. |
+| Pure White | #ffffff | `--color-pure-white` | Text on primary CTA buttons (#5266eb). |
+
+## Tokens — Typography
+
+### arcadiaDisplay
+
+- **Token:** `--font-arcadiadisplay`
+- **Substitute:** Inter, Manrope
+- **Weights:** 360, 480, 530
+- **Sizes:** 21px, 24px, 28px, 32px, 42px, 49px, 65px
+- **Line heights:** 1.10-1.20
+- **Letter spacing:** Subtle positive tracking (0.01-0.02em) for an open feel.
+- **OpenType features:** "ss01" on
+- **Role:** All major headlines. Use of the light 360 weight at large sizes is a signature choice creating authority through restraint, not volume.
+
+### arcadia
+
+- **Token:** `--font-arcadia`
+- **Substitute:** Inter, Manrope
+- **Weights:** 360, 400, 420, 480
+- **Sizes:** 12px, 14px, 16px, 18px, 21px
+- **Line heights:** 1.20-1.50
+- **Letter spacing:** Subtle positive tracking (0.005-0.02em) for readability.
+- **OpenType features:** "ss01" on
+- **Role:** Body copy, UI labels, navigation, legal text, and smaller headings. The workhorse font for all content and interface text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.24px | `--text-caption` |
+| body-sm | 14px | 1.5 | 0.28px | `--text-body-sm` |
+| body | 16px | 1.5 | 0.16px | `--text-body` |
+| subheading | 18px | 1.4 | — | `--text-subheading` |
+| heading-sm | 21px | 1.35 | — | `--text-heading-sm` |
+| heading | 32px | 1.2 | — | `--text-heading` |
+| heading-lg | 49px | 1.15 | — | `--text-heading-lg` |
+| display | 65px | 1.1 | 0.65px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-206 | 206px | `--spacing-206` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| inputs | 32px |
+| buttons | 32px, 40px |
+| containers | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 80-120px |
+| elementGap | 12-32px |
+
+## Components
+
+### Hero Email CTA
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature List — Everything in one place
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group — Primary + Secondary + Ghost
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Pill Button
+
+**Role:** The main call-to-action on the page.
+
+Solid 'Mercury Blue' (#5266eb) background with 'Pure White' (#ffffff) text. Fully rounded with a 32px radius. Padding is around 16px vertically and 24px horizontally. Uses 'arcadia' font.
+
+### Header Pill Button
+
+**Role:** The secondary call-to-action in the navigation bar.
+
+Translucent 'Ghost Blue' (#cdddff at ~20%) background with 'Starlight' (#ededf3) text. Fully rounded with a 40px radius. Padding is 8px 20px. Uses 'arcadia' font.
+
+### Ghost Nav Link
+
+**Role:** Navigation items and non-primary links in the header.
+
+Transparent background with 'Starlight' (#ededf3) text. No visible border. Generous hit area implied by padding, visually appears as text-only. Uses 'arcadia' font.
+
+### Hero Email Input
+
+**Role:** The email capture field in the hero section.
+
+Transparent background with 'Starlight' (#ededf3) text and placeholder. Left side is fully rounded (32px radius), right side is sharp (0px radius) to join with the button. A thin 'Lead' (#70707d) border is implied for definition.
+
+### Interactive Feature Link
+
+**Role:** Selectable items in a feature list.
+
+Transparent background with 'Starlight' (#ededf3) text. A 1px 'Lead' (#70707d) border on the bottom separates items. No radius. Uses 'arcadiaDisplay' for the title text.
+
+### Footer Link
+
+**Role:** Tertiary links in the page footer.
+
+Transparent background with 'Silver' (#c3c3cc) text. Lighter text color indicates lower priority. Uses 'arcadia' font.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'arcadiaDisplay' at a light weight (360) for all major headlines to maintain an airy, sophisticated tone.
 - Reserve the 'Mercury Blue' (#5266eb) accent exclusively for primary, action-oriented CTAs.
@@ -91,7 +172,7 @@ The design feels like a command center at twilight, expansive and focused. A dee
 - Use generous vertical spacing (80px+) between content sections.
 - Differentiate interactive list items with a simple 1px bottom border in 'Lead' (#70707d).
 
-### Don'ts
+### Don't
 
 - Don't use 'Mercury Blue' (#5266eb) for text, backgrounds, or decorative elements.
 - Don't use heavy font weights (>530) for any typography.
@@ -101,14 +182,145 @@ The design feels like a command center at twilight, expansive and focused. A dee
 - Don't use 'Pure White' (#ffffff) for body text; reserve it for text on the primary blue CTA.
 - Don't create dense, cluttered layouts. Prioritize breathing room.
 
-### Layout
+## Surfaces
 
-The layout uses a full-bleed hero that occupies the entire viewport, featuring a centered headline and CTA over a background image. Below the hero, the page transitions to a max-width (approx. 1200px) centered layout on a dark background. Content is organized in simple, single-column stacks with generous vertical spacing, creating a calm, linear reading flow. Navigation is a minimal, semi-transparent top bar that likely becomes sticky. The overall structure is spacious and uncluttered.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Abyss | #171721 | Outermost page background layer. |
+| 1 | Surface | #1e1e2a | Main content section background. |
+| 2 | Interactive | #272735 | Hover states or contained interactive elements. |
 
-### Imagery
+## Imagery
 
 The visual language is bifurcated. It opens with a full-bleed, atmospheric photograph of a solitary desk in a vast natural landscape, establishing a mood of boundless ambition and serene focus. This imagery is purely atmospheric, not product-focused. Beyond the hero, the site is starkly text-dominant, with no additional photography or illustration. This contrast positions the brand's 'vibe' first, then transitions to a purely functional, information-driven experience.
 
-### Elevation
+## Layout
 
-Elevation is achieved through light and color, not shadow. Interactive elements brighten or adopt the brand accent color on hover or focus, appearing to 'light up' from within the dark interface. Layered surfaces are differentiated by subtle shifts in the neutral gray palette (e.g., Midnight Slate #1e1e2a on Deep Space #171721).
+The layout uses a full-bleed hero that occupies the entire viewport, featuring a centered headline and CTA over a background image. Below the hero, the page transitions to a max-width (approx. 1200px) centered layout on a dark background. Content is organized in simple, single-column stacks with generous vertical spacing, creating a calm, linear reading flow. Navigation is a minimal, semi-transparent top bar that likely becomes sticky. The overall structure is spacious and uncluttered.
+
+## Similar Brands
+
+- **Linear** — Shares the deep dark-mode aesthetic, precision typography, and use of a single strong accent color for CTAs.
+- **Stripe** — Similar professional, tech-focused dark UI with a distinct accent color and high-quality custom typography.
+- **Ramp** — Another fintech brand with a sophisticated dark theme, clean typography, and a single accent color strategy.
+- **Vercel** — Also uses a deep black background with crisp, light text and a focus on geometric precision in its UI.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-mercury-blue: #5266eb;
+  --color-ghost-blue: #cdddff;
+  --color-deep-space: #171721;
+  --color-midnight-slate: #1e1e2a;
+  --color-graphite: #272735;
+  --color-lead: #70707d;
+  --color-starlight: #ededf3;
+  --color-silver: #c3c3cc;
+  --color-pure-white: #ffffff;
+  --font-arcadiadisplay: 'arcadiaDisplay', Inter, Manrope;
+  --font-arcadia: 'arcadia', Inter, Manrope;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.24px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0.28px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.35;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 49px;
+  --leading-heading-lg: 1.15;
+  --text-display: 65px;
+  --leading-display: 1.1;
+  --tracking-display: 0.65px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-206: 206px;
+  --radius-cards: 0px;
+  --radius-inputs: 32px;
+  --radius-buttons: 32px, 40px;
+  --radius-containers: 4px;
+  --surface-abyss: #171721;
+  --surface-surface: #1e1e2a;
+  --surface-interactive: #272735;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-mercury-blue: #5266eb;
+  --color-ghost-blue: #cdddff;
+  --color-deep-space: #171721;
+  --color-midnight-slate: #1e1e2a;
+  --color-graphite: #272735;
+  --color-lead: #70707d;
+  --color-starlight: #ededf3;
+  --color-silver: #c3c3cc;
+  --color-pure-white: #ffffff;
+  --font-arcadiadisplay: 'arcadiaDisplay', Inter, Manrope;
+  --font-arcadia: 'arcadia', Inter, Manrope;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.24px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0.28px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.35;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 49px;
+  --leading-heading-lg: 1.15;
+  --text-display: 65px;
+  --leading-display: 1.1;
+  --tracking-display: 0.65px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-112: 112px;
+  --spacing-128: 128px;
+  --spacing-206: 206px;
+  --radius-cards: 0px;
+  --radius-inputs: 32px;
+  --radius-buttons: 32px, 40px;
+  --radius-containers: 4px;
+  --surface-abyss: #171721;
+  --surface-surface: #1e1e2a;
+  --surface-interactive: #272735;
+}
+```
