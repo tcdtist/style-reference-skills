@@ -1,62 +1,144 @@
 ---
 version: alpha
-name: ATMOS
-description: Atmos presents a serene, immersive experience with a light theme dominated by a vibrant blue sky gradient. Typography leans into a classic, elegant serif for branding contrasted with a clean sans-serif for content, creating a subtle tension between whimsy and readability. Large, expressive headlines set against spacious layouts evoke an ethereal, dreamlike atmosphere. The visual system minimizes UI elements, focusing instead on broad washes of color and text-centric communication.
-colors:
-  sky-gradient: "#0825c6"
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.15
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.15
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.15
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1.15
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 200px
-    lineHeight: 1.15
-spacing:
-  buttonRadius: 9999px
-  elementGap: 20px
-  sectionGap: 100px
-components:
-  hero-title:
-    role: Dominant text element on the landing page.
-  circular-subtitle:
-    role: Accompanying descriptive text in the hero section.
-  outlined-explore-button:
-    role: Primary call to action with a ghost-like appearance.
-  introductory-heading:
-    role: Section titles after the hero.
-  body-text:
-    role: Standard paragraph text.
-  resource-link:
-    role: Hyperlinks to external content.
+name: "ATMOS"
+description: "Atmos presents a serene, immersive experience with a light theme dominated by a vibrant blue sky gradient. Typography leans into a classic, elegant serif for branding contrasted with a clean sans-serif for content, creating a subtle tension between whimsy and readability. Large, expressive headlines set against spacious layouts evoke an ethereal, dreamlike atmosphere. The visual system minimizes UI elements, focusing instead on broad washes of color and text-centric communication."
+theme: "light"
+industry: "other"
+source_url: "https://atmos.leeroy.ca"
+refero_style_id: "36cba9c4-9852-4f59-a52d-17be741f6ed8"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513065114-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513065114-thumb.jpg"
+extracted_at: "2026-04-30T01:38:04.018Z"
 ---
 
-## Overview
+# ATMOS — Style Reference
 
-**North Star:** Ethereal Sky Gradient
+> Ethereal Sky Gradient
+
+**Theme:** light
+
+**Industry:** other
 
 Atmos presents a serene, immersive experience with a light theme dominated by a vibrant blue sky gradient. Typography leans into a classic, elegant serif for branding contrasted with a clean sans-serif for content, creating a subtle tension between whimsy and readability. Large, expressive headlines set against spacious layouts evoke an ethereal, dreamlike atmosphere. The visual system minimizes UI elements, focusing instead on broad washes of color and text-centric communication.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Sky Gradient | #0825c6 | `--color-sky-gradient` | Background gradient for hero sections and immersive experiences, transitioning from deep indigo to bright sky blue |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary background for all content sections, cards, and most text. Also used for outlined button borders |
+| Ink Black | #000000 | `--color-ink-black` | Primary text color for headlines and body copy, providing high contrast against white backgrounds. Used for some decorative fills |
+
+## Tokens — Typography
+
+### NewYork
+
+- **Token:** `--font-newyork`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 50px, 200px
+- **Line heights:** 1.15
+- **Role:** Decorative display font for branding and large section headlines. Its elegant serif forms create a strong, artistic statement.
+
+### DM Sans
+
+- **Token:** `--font-dm-sans`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 20px, 25px, 30px
+- **Line heights:** 1.15, 1.50
+- **Role:** Primary sans-serif for body text, links, and complementary information. Its clean geometry ensures readability in various contexts.
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 10px
+- **Line heights:** 1.15
+- **Role:** Small, functional text for auxiliary elements and fine print. Used at a very small size for subtle details.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.15 | — | `--text-caption` |
+| body | 20px | 1.15 | — | `--text-body` |
+| subheading | 25px | 1.15 | — | `--text-subheading` |
+| heading | 30px | 1.15 | — | `--text-heading` |
+| display | 50px | 1.15 | — | `--text-display` |
+| display-lg | 200px | 1.15 | — | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-134 | 134px | `--spacing-134` |
+| spacing-250 | 250px | `--spacing-250` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 100px |
+| cardPadding | 30px |
+| elementGap | 20px |
+
+## Components
+
+### Hero Title
+
+**Role:** Dominant text element on the landing page.
+
+Uses 'NewYork' font at 200px (weight 400) in Ink Black, centered on the Sky Gradient background.
+
+### Circular Subtitle
+
+**Role:** Accompanying descriptive text in the hero section.
+
+Curved text, DM Sans, 10px, Ink Black, describing the experience, often appearing within a boundary element.
+
+### Outlined Explore Button
+
+**Role:** Primary call to action with a ghost-like appearance.
+
+DM Sans, 20px, Canvas White text on a transparent background, with a 1px Canvas White border and 9999px border-radius. Padding around 30px vertical and horizontal.
+
+### Introductory Heading
+
+**Role:** Section titles after the hero.
+
+DM Sans, 30px (weight 700), Ink Black, typically followed by a 42px margin-bottom.
+
+### Body Text
+
+**Role:** Standard paragraph text.
+
+DM Sans, 20px (weight 400), Ink Black, typically followed by a 20px margin-bottom for paragraph spacing.
+
+### Resource Link
+
+**Role:** Hyperlinks to external content.
+
+DM Sans, 25px (weight 400), Ink Black, with a 10px top margin when appearing in lists.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize generous vertical spacing, using 100px for section gaps and 20px for element gaps to maintain a spacious feel.
 - Use 'NewYork' font exclusively for large, declarative headlines and branding elements, leveraging its unique serif character.
@@ -66,7 +148,7 @@ Atmos presents a serene, immersive experience with a light theme dominated by a 
 - Ensure interactive elements like buttons use Canvas White for their borders and text when on gradient or dark backgrounds.
 - Maintain a minimal approach to UI elements; focus on typography and spaciousness over complex component structures.
 
-### Don'ts
+### Don't
 
 - Do not introduce heavy shadows or complex elevation; the design emphasizes a flat aesthetic.
 - Avoid using saturated colors other than the brand's blues for any UI elements; restrict color to backgrounds and branding.
@@ -75,3 +157,80 @@ Atmos presents a serene, immersive experience with a light theme dominated by a 
 - Avoid tight spacing; maintain the spacious and airy feel across all content arrangements.
 - Do not use 'Times' for anything other than very small, auxiliary text; 'DM Sans' and 'NewYork' cover primary typography needs.
 - Do not apply excessive borders or backgrounds to interactive elements; maintain a ghost or outlined style where possible.
+
+## Similar Brands
+
+- **Awwwards-winning portfolio sites** — Focus on large, artistic typography, immersive full-screen visuals, and sparse UI elements.
+- **Luxury brand landing pages** — Emphasis on high-quality visuals, minimal text, and a sophisticated, almost solemn, typographic presence.
+- **Experiential microsites** — Uses color gradients for atmosphere rather than functional UI, combined with animation for a dreamlike feel.
+- **Abstract art showcases** — The aesthetic prioritizes visual impact and mood over detailed information density, using large type as a design element.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-sky-gradient: #0825c6;
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --font-newyork: 'NewYork', Playfair Display;
+  --font-dm-sans: 'DM Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 10px;
+  --leading-caption: 1.15;
+  --text-body: 20px;
+  --leading-body: 1.15;
+  --text-subheading: 25px;
+  --leading-subheading: 1.15;
+  --text-heading: 30px;
+  --leading-heading: 1.15;
+  --text-display: 50px;
+  --leading-display: 1.15;
+  --text-display-lg: 200px;
+  --leading-display-lg: 1.15;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-42: 42px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-134: 134px;
+  --spacing-250: 250px;
+  --radius-buttons: 9999px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-sky-gradient: #0825c6;
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --font-newyork: 'NewYork', Playfair Display;
+  --font-dm-sans: 'DM Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 10px;
+  --leading-caption: 1.15;
+  --text-body: 20px;
+  --leading-body: 1.15;
+  --text-subheading: 25px;
+  --leading-subheading: 1.15;
+  --text-heading: 30px;
+  --leading-heading: 1.15;
+  --text-display: 50px;
+  --leading-display: 1.15;
+  --text-display-lg: 200px;
+  --leading-display-lg: 1.15;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-42: 42px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-134: 134px;
+  --spacing-250: 250px;
+  --radius-buttons: 9999px;
+}
+```
