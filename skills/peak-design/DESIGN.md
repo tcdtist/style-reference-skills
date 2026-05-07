@@ -1,86 +1,193 @@
 ---
 version: alpha
-name: Peak Design
-description: This system embodies a utilitarian elegance, pairing stark black and white sections with subdued neutrals to frame product photography. Typography is the primary expressive element, with a high-contrast serif font for arresting headlines that feel established yet contemporary. Subtle button treatments and precise spacing prioritize content clarity and direct interaction, creating a refined, almost stoic, e-commerce experience.
-colors:
-  absolute-zero: "#000000"
-  cloud-white: "#ffffff"
-  forest-black: "#1a211"
-  ash-gray: "#eef1f0"
-  charcoal-black: "#0c0c0c"
-  graphite: "#606562"
-  slate-border: "#cccfcd"
-  badge-gray: "#4e4e4"
-  alert-red: "#cc2e39"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 21
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 24
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 26.4
-    letterSpacing: 0.91px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 35.2
-    letterSpacing: 1.22px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 44
-    letterSpacing: -0.8px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 52.8
-    letterSpacing: -1px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 88
-    letterSpacing: -2px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 4px, 32px
-  elementGap: 4px
-  sectionGap: 72px
-components:
-  category-tab-bar-with-product-cards:
-    role: 
-  announcement-banner-button-group:
-    role: 
-  search-input-new-arrivals-promo-card:
-    role: 
-  primary-ghost-button:
-    role: Primary action button on dark backgrounds
-  solid-standard-button:
-    role: Standard action button on light backgrounds
-  pill-accent-button:
-    role: Special accent or navigation button
-  neutral-filled-button:
-    role: Secondary action button for subtle interactions
-  search-input-header:
-    role: Top navigation search bar
-  search-input-block:
-    role: Larger search input field
-  new-badge:
-    role: Highlighting new arrivals
+name: "Peak Design"
+description: "This system embodies a utilitarian elegance, pairing stark black and white sections with subdued neutrals to frame product photography. Typography is the primary expressive element, with a high-contrast serif font for arresting headlines that feel established yet contemporary. Subtle button treatments and precise spacing prioritize content clarity and direct interaction, creating a refined, almost stoic, e-commerce experience."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://peakdesign.com"
+refero_style_id: "6f3fb64d-d4c9-4ec1-86a1-7983e5180985"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924992046-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924992046-thumb.jpg"
+extracted_at: "2026-04-11T16:30:17.268Z"
 ---
 
-## Overview
+# Peak Design — Style Reference
 
-**North Star:** Photographic gallery on architectural black and white. Product precision through high-contrast typography.
+> Photographic gallery on architectural black and white. Product precision through high-contrast typography.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 This system embodies a utilitarian elegance, pairing stark black and white sections with subdued neutrals to frame product photography. Typography is the primary expressive element, with a high-contrast serif font for arresting headlines that feel established yet contemporary. Subtle button treatments and precise spacing prioritize content clarity and direct interaction, creating a refined, almost stoic, e-commerce experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Hero backgrounds, card backgrounds, primary text on light backgrounds, strong navigational elements; provides maximum contrast and product focus. |
+| Cloud White | #ffffff | `--color-cloud-white` | Page backgrounds, button backgrounds, text on dark backgrounds; establishes a clean, open canvas. |
+| Forest Black | #1a211 | `--color-forest-black` | Primary body text, link text, borders, input text; a very dark, slightly desaturated black that offers strong readability without harshness. |
+| Ash Gray | #eef1f0 | `--color-ash-gray` | Section separators, subtle button backgrounds, input backgrounds; provides soft visual breaks. |
+| Charcoal Black | #0c0c0c | `--color-charcoal-black` | Input text, secondary text on light backgrounds. |
+| Graphite | #606562 | `--color-graphite` | Secondary text, subtle icon fills, supporting UI elements. |
+| Slate Border | #cccfcd | `--color-slate-border` | Input borders, subtle dividers; defines boundaries without visual weight. |
+| Badge Gray | #4e4e4 | `--color-badge-gray` | Content badge backgrounds; sets them apart without being an overt accent. |
+| Alert Red | #cc2e39 | `--color-alert-red` | Informational badges, perhaps used sparingly for error states or urgent CTAs, offering a sharp contrast to the neutral palette. |
+
+## Tokens — Typography
+
+### Exposure-10
+
+- **Token:** `--font-exposure-10`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 40px, 48px, 80px
+- **Line heights:** 1.10
+- **Letter spacing:** -0.8, -1, -2
+- **Role:** Display headlines and main hero statements; its high-contrast serif form provides an immediate sense of gravitas and craftsmanship.
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400, 600, 700
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.0, 1.2, 1.4, 1.5
+- **Letter spacing:** 0
+- **Role:** Primary body text, navigation labels, and UI elements; its clean, sans-serif structure ensures maximum legibility across all informational content.
+
+### bryant
+
+- **Token:** `--font-bryant`
+- **Substitute:** Montserrat
+- **Weights:** 700
+- **Sizes:** 14px, 16px, 24px, 32px
+- **Line heights:** 1.0, 1.1, 1.2, 1.4
+- **Letter spacing:** 0.53, 0.61, 0.91, 1.22
+- **Role:** Uppercase CTAs, navigation links, and badges; its bold, slightly condensed form with generous letter spacing provides a strong, action-oriented voice.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** Roboto Mono
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.00
+- **Letter spacing:** 0
+- **Role:** Used sparingly for specific product codes or technical details, providing a distinct, precise feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 14px | 21 | — | `--text-body` |
+| body-lg | 16px | 24 | — | `--text-body-lg` |
+| subheading | 24px | 26.4 | 0.91px | `--text-subheading` |
+| heading | 32px | 35.2 | 1.22px | `--text-heading` |
+| heading-lg | 40px | 44 | -0.8px | `--text-heading-lg` |
+| display | 48px | 52.8 | -1px | `--text-display` |
+| display-lg | 80px | 88 | -2px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 8px |
+| badges | 9999px |
+| inputs | 4px |
+| buttons | 4px, 32px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 72px |
+| cardPadding | 0px |
+| elementGap | 4px |
+
+## Components
+
+### Category Tab Bar with Product Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Announcement Banner + Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Search Input + New Arrivals Promo Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Ghost Button
+
+**Role:** Primary action button on dark backgrounds
+
+Background transparent, text Forest Black (#1a211e), border Forest Black (#1a211e) 1px, 0px border-radius, 0px vertical padding, 16px horizontal padding. Uses bryant 700, 16px, line-height 1.2.
+
+### Solid Standard Button
+
+**Role:** Standard action button on light backgrounds
+
+Background Cloud White (#ffffff), text Forest Black (#1a211e), 4px border-radius, 12px vertical padding, 24px horizontal padding. Uses Geist 400, 16px, line-height 1.5.
+
+### Pill Accent Button
+
+**Role:** Special accent or navigation button
+
+Background Cloud White (#ffffff), text Forest Black (#1a211e), 32px border-radius, no padding defined from button component itself but contexturally implies 0px-0px. Uses Geist 400, 16px, line-height 1.5.
+
+### Neutral Filled Button
+
+**Role:** Secondary action button for subtle interactions
+
+Background Ash Gray (#eef1f0), text Forest Black (#1a211e), 4px border-radius, 8px vertical padding, 16px horizontal padding. Uses Geist 400, 16px, line-height 1.5.
+
+### Search Input (Header)
+
+**Role:** Top navigation search bar
+
+Background Cloud White (#ffffff), text Forest Black (#1a211e), Slate Border (#cccfcd) 1px border, 4px border-radius, 2px vertical padding, 12px horizontal padding. Placeholder text is implied 'Search for packing cubes'.
+
+### Search Input (Block)
+
+**Role:** Larger search input field
+
+Background Ash Gray (#eef1f0), text Charcoal Black (#0c0c0c), Slate Border (#cccfcd) 1px border, 4px border-radius, 16px vertical padding, 12px horizontal padding. Placeholder text is implied to be Graphite (#606562).
+
+### New Badge
+
+**Role:** Highlighting new arrivals
+
+Background Badge Gray (#4e4e4e), text Cloud White (#ffffff), 9999px border-radius (pill shape), 8px vertical padding, 16px horizontal padding. Uses bryant 700, 14px, line-height 1.0.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Absolute Zero (#000000) or Cloud White (#ffffff) for hero section backgrounds to create high-contrast statements.
 - Use Exposure-10 (substitute Playfair Display) for all display and large heading text to convey craftsmanship and gravitas.
@@ -90,7 +197,7 @@ This system embodies a utilitarian elegance, pairing stark black and white secti
 - Utilize Ash Gray (#eef1f0) as a divider or background for secondary UI elements to differentiate without interrupting the high-contrast main scheme.
 - Ensure all body and informational text uses Geist (substitute Inter) at 14px or 16px for optimal legibility.
 
-### Don'ts
+### Don't
 
 - Do not use saturated colors for large background areas; maintain the primary black, white, and neutral palette.
 - Avoid generic button styling; ensure clear differentiation between ghost, solid, and accent button variants.
@@ -100,10 +207,137 @@ This system embodies a utilitarian elegance, pairing stark black and white secti
 - Do not use decorative elements that distract from the product imagery or strong typography.
 - Do not use bold weights of Geist for normal paragraph text; reserve it for specific UI elements or semantic emphasis.
 
-### Layout
+## Imagery
+
+The visual language is characterized by high-quality product photography, often isolated on neutral backgrounds (white or light gray) for clarity, sometimes set against a stark black backdrop in hero sections. Treatment is crisp, unmasked, and contained within a structured grid. There are lifestyle photography elements, showing products in use, but these are secondary to the primary product-focused shots which emphasize the item itself rather than a narrative. Icons are typically outlined and monochromatic, blending seamlessly with the minimalist aesthetic. Imagery's role is primarily to showcase product details and functionality, acting as explanatory content rather than purely decorative.
+
+## Layout
 
 The page uses a maximum-width contained layout, though specific hero sections extend full-bleed. The hero pattern frequently employs a split-screen approach with a stark black background on one side (containing large, high-contrast serif headlines) and either white space or aspirational lifestyle photography on the other. Sections follow a consistent vertical spacing, often alternating between dark content blocks and light product grids. Content arrangement leans towards clear, centered headline stacks or alternating text-left/image-right compositions. Product display utilizes responsive card grids (e.g., 4-column) with ample padding between items. Navigation is a persistent top bar featuring a minimal logo, functional links, and a search input.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by high-quality product photography, often isolated on neutral backgrounds (white or light gray) for clarity, sometimes set against a stark black backdrop in hero sections. Treatment is crisp, unmasked, and contained within a structured grid. There are lifestyle photography elements, showing products in use, but these are secondary to the primary product-focused shots which emphasize the item itself rather than a narrative. Icons are typically outlined and monochromatic, blending seamlessly with the minimalist aesthetic. Imagery's role is primarily to showcase product details and functionality, acting as explanatory content rather than purely decorative.
+- **Bellroy** — Shares a similar focus on high-quality product photography set against clean, minimalist layouts and a neutral color palette.
+- **Fjallraven** — Employs robust, product-centric imagery and a functional, uncluttered interface to showcase durable goods, often with dark/light section contrasts.
+- **Osprey Packs** — Uses a similar approach to presenting outdoor gear with large, impactful product shots framed by minimalist UI and strong typography for headlines.
+- **Away (luggage)** — Features a direct, photography-driven e-commerce experience with a clean design, strong typography, and a limited, thoughtful color palette.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-cloud-white: #ffffff;
+  --color-forest-black: #1a211;
+  --color-ash-gray: #eef1f0;
+  --color-charcoal-black: #0c0c0c;
+  --color-graphite: #606562;
+  --color-slate-border: #cccfcd;
+  --color-badge-gray: #4e4e4;
+  --color-alert-red: #cc2e39;
+  --font-exposure-10: 'Exposure-10', Playfair Display;
+  --font-geist: 'Geist', Inter;
+  --font-bryant: 'bryant', Montserrat;
+  --font-geist-mono: 'Geist Mono', Roboto Mono;
+  --text-body: 14px;
+  --leading-body: 21;
+  --text-body-lg: 16px;
+  --leading-body-lg: 24;
+  --text-subheading: 24px;
+  --leading-subheading: 26.4;
+  --tracking-subheading: 0.91px;
+  --text-heading: 32px;
+  --leading-heading: 35.2;
+  --tracking-heading: 1.22px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 44;
+  --tracking-heading-lg: -0.8px;
+  --text-display: 48px;
+  --leading-display: 52.8;
+  --tracking-display: -1px;
+  --text-display-lg: 80px;
+  --leading-display-lg: 88;
+  --tracking-display-lg: -2px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --radius-cards: 8px;
+  --radius-badges: 9999px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px, 32px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-cloud-white: #ffffff;
+  --color-forest-black: #1a211;
+  --color-ash-gray: #eef1f0;
+  --color-charcoal-black: #0c0c0c;
+  --color-graphite: #606562;
+  --color-slate-border: #cccfcd;
+  --color-badge-gray: #4e4e4;
+  --color-alert-red: #cc2e39;
+  --font-exposure-10: 'Exposure-10', Playfair Display;
+  --font-geist: 'Geist', Inter;
+  --font-bryant: 'bryant', Montserrat;
+  --font-geist-mono: 'Geist Mono', Roboto Mono;
+  --text-body: 14px;
+  --leading-body: 21;
+  --text-body-lg: 16px;
+  --leading-body-lg: 24;
+  --text-subheading: 24px;
+  --leading-subheading: 26.4;
+  --tracking-subheading: 0.91px;
+  --text-heading: 32px;
+  --leading-heading: 35.2;
+  --tracking-heading: 1.22px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 44;
+  --tracking-heading-lg: -0.8px;
+  --text-display: 48px;
+  --leading-display: 52.8;
+  --tracking-display: -1px;
+  --text-display-lg: 80px;
+  --leading-display-lg: 88;
+  --tracking-display-lg: -2px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --radius-cards: 8px;
+  --radius-badges: 9999px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px, 32px;
+}
+```
