@@ -1,77 +1,158 @@
 ---
 version: alpha
-name: HBO Max
-description: HBO Max presents a cinematic dark mode experience. A deep black canvas provides a dramatic backdrop for content, punctuated by crisp white typography and a vibrant, authoritative blue that guides user actions. Components are minimal, focusing on content with subtle outlines and soft radii. The overall impression is one of sophistication and clarity, optimized for content absorption in a low-light setting.
-colors:
-  midnight-abyss: "#000000"
-  silver-moonlight: "#ffffff"
-  ghostly-gray: "#b8b6bb"
-  deep-shadow: "#050409"
-  steel-accent: "#89868e"
-  muted-ash: "#999999"
-  action-blue: "#3d6a99"
-  link-sky: "#71b8f2"
-  dark-overlay: "#0e0a17"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.6
-    letterSpacing: 0.83px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.6
-    letterSpacing: 0.83px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.35
-    letterSpacing: 0.1px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: 0.1px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.11
-    letterSpacing: 0.1px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 0.8
-    letterSpacing: 0.1px
-spacing:
-  cardRadius: 4.5px
-  buttonRadius: 8px
-  elementGap: 16px
-  sectionGap: 24px
-components:
-  primary-action-button:
-    role: Filled button for primary calls to action.
-  ghost-action-button:
-    role: Outline button for secondary or tertiary actions, often in areas with dark backgrounds.
-  text-link-button:
-    role: Minimal interactive element, typically used for navigation or in-line actions within text.
-  white-surface-card:
-    role: Used for content blocks requiring a lighter surface for contrast, such as pricing plans.
-  dark-content-card:
-    role: Default card for content presentation, blending into the dark background.
-  sign-up-button-header:
-    role: Prominent sign-up call to action in the header.
-  plan-toggle-button:
-    role: Segmented control for switching between monthly/yearly plans.
+name: "HBO Max"
+description: "HBO Max presents a cinematic dark mode experience. A deep black canvas provides a dramatic backdrop for content, punctuated by crisp white typography and a vibrant, authoritative blue that guides user actions. Components are minimal, focusing on content with subtle outlines and soft radii. The overall impression is one of sophistication and clarity, optimized for content absorption in a low-light setting."
+theme: "dark"
+industry: "media"
+source_url: "https://www.hbomax.com"
+refero_style_id: "898f0127-d235-4832-bf33-ab21104f0529"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511008371-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777511008371-thumb.jpg"
+extracted_at: "2026-04-30T01:03:56.236Z"
 ---
 
-## Overview
+# HBO Max — Style Reference
 
-**North Star:** Midnight movie theater
+> Midnight movie theater
+
+**Theme:** dark
+
+**Industry:** media
 
 HBO Max presents a cinematic dark mode experience. A deep black canvas provides a dramatic backdrop for content, punctuated by crisp white typography and a vibrant, authoritative blue that guides user actions. Components are minimal, focusing on content with subtle outlines and soft radii. The overall impression is one of sophistication and clarity, optimized for content absorption in a low-light setting.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Abyss | #000000 | `--color-midnight-abyss` | Primary page background, text color for light surfaces, card backgrounds for content display |
+| Silver Moonlight | #ffffff | `--color-silver-moonlight` | Primary text color, background for select interactive elements like buttons and cards, essential UI borders |
+| Ghostly Gray | #b8b6bb | `--color-ghostly-gray` | Secondary text, muted helper text, inactive icon elements, subtle borders |
+| Deep Shadow | #050409 | `--color-deep-shadow` | Subtle elevated surface backgrounds within the dark theme, such as pricing plan cards |
+| Steel Accent | #89868e | `--color-steel-accent` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Muted Ash | #999999 | `--color-muted-ash` | Tertiary text for footnotes and legal disclaimers, subtle borders |
+| Action Blue | #3d6a99 | `--color-action-blue` | Primary action button backgrounds, interactive elements, significant borders — signals interactivity and confirmation |
+| Link Sky | #71b8f2 | `--color-link-sky` | Blue text accent for links, tags, and emphasized short phrases. Do not promote it to the primary CTA color |
+| Dark Overlay | #0e0a17 | `--color-dark-overlay` | Subtle border for headings and section dividers, almost indistinguishable from the background but provides structure |
+
+## Tokens — Typography
+
+### Max Sans
+
+- **Token:** `--font-max-sans`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 100, 300, 400, 600, 700
+- **Sizes:** 10px, 12px, 13px, 14px, 16px, 18px, 19px, 20px, 24px, 26px, 28px, 35px, 37px, 44px, 56px
+- **Line heights:** 0.80, 1.00, 1.10, 1.11, 1.20, 1.23, 1.25, 1.35, 1.60, 1.96
+- **Letter spacing:** 0.083em for small text (10px, 12px), 0.100em for larger headings and buttons.
+- **OpenType features:** "locl" 0
+- **Role:** The primary typeface for all text content. Its clean, modern character, especially at lighter weights like 300, contributes to a legible yet sophisticated aesthetic in a dark environment. The generous letter-spacing at smaller sizes ensures readability, while the tighter spacing at larger sizes maintains a polished feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.6 | 0.83px | `--text-caption` |
+| body | 14px | 1.6 | 0.83px | `--text-body` |
+| subheading | 18px | 1.35 | 0.1px | `--text-subheading` |
+| heading | 24px | 1.25 | 0.1px | `--text-heading` |
+| heading-lg | 35px | 1.11 | 0.1px | `--text-heading-lg` |
+| display | 56px | 0.8 | 0.1px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-95 | 95px | `--spacing-95` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-143 | 143px | `--spacing-143` |
+| spacing-255 | 255px | `--spacing-255` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 4.5px |
+| pills | 100px |
+| images | 8px |
+| buttons | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1140px |
+| sectionGap | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Filled button for primary calls to action.
+
+Background: Action Blue (#3d6a99). Text: Silver Moonlight (#FFFFFF). Border radius: 8px. Padding: 13px vertical, 24px horizontal. Uses Max Sans 600 at 16px.
+
+### Ghost Action Button
+
+**Role:** Outline button for secondary or tertiary actions, often in areas with dark backgrounds.
+
+Background: transparent. Text: Silver Moonlight (#FFFFFF). Border: 1px solid Silver Moonlight (#FFFFFF). Border radius: 8px. Padding: 10px vertical, 24px horizontal. Uses Max Sans 600 at 16px.
+
+### Text Link Button
+
+**Role:** Minimal interactive element, typically used for navigation or in-line actions within text.
+
+Background: transparent. Text: Silver Moonlight (#FFFFFF). No border or padding beyond text content. Uses Max Sans 600 at 16px.
+
+### White Surface Card
+
+**Role:** Used for content blocks requiring a lighter surface for contrast, such as pricing plans.
+
+Background: Silver Moonlight (#FFFFFF). Border radius: 4.5px. Box shadow: none. Padding: 22.5px vertical, 27px horizontal. Displays dark text.
+
+### Dark Content Card
+
+**Role:** Default card for content presentation, blending into the dark background.
+
+Background: Midnight Abyss (#000000). Border radius: 0px. Box shadow: none. Minimal padding. Displays light text.
+
+### Sign-Up Button (Header)
+
+**Role:** Prominent sign-up call to action in the header.
+
+Background: Silver Moonlight (#FFFFFF). Text: Midnight Abyss (#000000). Border radius: 8px. Padding: 10px vertical, 24px horizontal. Uses Max Sans 600 at 16px.
+
+### Plan Toggle Button
+
+**Role:** Segmented control for switching between monthly/yearly plans.
+
+Background: Midnight Abyss (#000000). Active segment background: Silver Moonlight (#FFFFFF), with Midnight Abyss (#000000) text. Inactive segment text: Ghostly Gray (#b8b6bb). Border radius: 100px. Padding (segments): 10px vertical, 24px horizontal. Uses Max Sans 600 at 16px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Abyss (#000000) for all main page backgrounds, establishing a deep dark theme.
 - Use Silver Moonlight (#FFFFFF) as the primary text color on dark backgrounds for optimal contrast and readability.
@@ -81,7 +162,7 @@ HBO Max presents a cinematic dark mode experience. A deep black canvas provides 
 - Use Max Sans with 0.083em letter-spacing for body text (10px, 12px) to enhance legibility on dark backgrounds.
 - Structure pricing plan cards with a Silver Moonlight (#FFFFFF) background to visually separate them from the dark surroundings, using 4.5px border radius.
 
-### Don'ts
+### Don't
 
 - Avoid using bright, high-saturation colors for large background areas; limit chromatic colors to accents and interactive elements.
 - Do not use generic system fonts; always specify Max Sans with its custom weights and letter-spacing for brand consistency.
@@ -91,10 +172,157 @@ HBO Max presents a cinematic dark mode experience. A deep black canvas provides 
 - Resist adding strong box shadows; the design relies on flat surfaces and minimal elevation for depth.
 - Do not vary border radii arbitrarily; adhere strictly to 8px for buttons/images and 4.5px for cards.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Abyss | #000000 | Base page canvas, content card background. |
+| 1 | Deep Shadow | #050409 | Slightly elevated surface, for contextual grouping like pricing plan containers or secondary content blocks. |
+| 2 | Silver Moonlight | #ffffff | Prominent background for specific UI elements that require high contrast, such as pricing plan cards or primary sign-up buttons. |
+
+## Imagery
+
+The site heavily relies on product imagery in the form of movie and TV show posters. These are treated as full-bleed, almost wallpaper-like backgrounds in the hero section, creating an immersive, cinematic atmosphere. Elsewhere, they appear as contained, slightly rounded (8px radius) thumbnails within dark content cards. The visual style of these images is diverse, reflecting the content, but they are consistently presented against a dark backdrop to keep the UI from competing. Icons are minimal, monochromatic (usually white or light gray) and primarily functional, with an occasional accent blue.
+
+## Layout
 
 The page primarily uses a max-width 1140px centered layout for most content sections, ensuring readability and focus. The hero section is full-bleed, showcasing large-scale content posters as an immersive background for an impactful first impression. Sections often have a consistent vertical rhythm due to a 24px section gap. Content arrangement frequently features centered stacked blocks for headlines and calls to action, particularly in introductory or promotional areas. Pricing plans are presented in a 3-column card grid, which adapts to a single column on smaller viewports. Navigation is a sticky top bar with minimal links and prominent sign-in/sign-up buttons.
 
-### Imagery
+## Similar Brands
 
-The site heavily relies on product imagery in the form of movie and TV show posters. These are treated as full-bleed, almost wallpaper-like backgrounds in the hero section, creating an immersive, cinematic atmosphere. Elsewhere, they appear as contained, slightly rounded (8px radius) thumbnails within dark content cards. The visual style of these images is diverse, reflecting the content, but they are consistently presented against a dark backdrop to keep the UI from competing. Icons are minimal, monochromatic (usually white or light gray) and primarily functional, with an occasional accent blue.
+- **Netflix** — Dark-mode UI with a focus on large content imagery, minimal text, and high-contrast calls to action.
+- **Disney+** — Content-driven dark theme, emphasizing poster artwork as visual elements within a structured grid layout.
+- **Apple TV+** — Uses a dark background to highlight visual content, with crisp white typography and subtle interactive elements.
+- **Peacock** — Media streaming service with a dark interface, legible white text, and a distinct primary accent color for actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-abyss: #000000;
+  --color-silver-moonlight: #ffffff;
+  --color-ghostly-gray: #b8b6bb;
+  --color-deep-shadow: #050409;
+  --color-steel-accent: #89868e;
+  --color-muted-ash: #999999;
+  --color-action-blue: #3d6a99;
+  --color-link-sky: #71b8f2;
+  --color-dark-overlay: #0e0a17;
+  --font-max-sans: 'Max Sans', system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.6;
+  --tracking-caption: 0.83px;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --tracking-body: 0.83px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.35;
+  --tracking-subheading: 0.1px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: 0.1px;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: 0.1px;
+  --text-display: 56px;
+  --leading-display: 0.8;
+  --tracking-display: 0.1px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-95: 95px;
+  --spacing-96: 96px;
+  --spacing-143: 143px;
+  --spacing-255: 255px;
+  --radius-cards: 4.5px;
+  --radius-pills: 100px;
+  --radius-images: 8px;
+  --radius-buttons: 8px;
+  --surface-midnight-abyss: #000000;
+  --surface-deep-shadow: #050409;
+  --surface-silver-moonlight: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-abyss: #000000;
+  --color-silver-moonlight: #ffffff;
+  --color-ghostly-gray: #b8b6bb;
+  --color-deep-shadow: #050409;
+  --color-steel-accent: #89868e;
+  --color-muted-ash: #999999;
+  --color-action-blue: #3d6a99;
+  --color-link-sky: #71b8f2;
+  --color-dark-overlay: #0e0a17;
+  --font-max-sans: 'Max Sans', system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.6;
+  --tracking-caption: 0.83px;
+  --text-body: 14px;
+  --leading-body: 1.6;
+  --tracking-body: 0.83px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.35;
+  --tracking-subheading: 0.1px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: 0.1px;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: 0.1px;
+  --text-display: 56px;
+  --leading-display: 0.8;
+  --tracking-display: 0.1px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-95: 95px;
+  --spacing-96: 96px;
+  --spacing-143: 143px;
+  --spacing-255: 255px;
+  --radius-cards: 4.5px;
+  --radius-pills: 100px;
+  --radius-images: 8px;
+  --radius-buttons: 8px;
+  --surface-midnight-abyss: #000000;
+  --surface-deep-shadow: #050409;
+  --surface-silver-moonlight: #ffffff;
+}
+```
