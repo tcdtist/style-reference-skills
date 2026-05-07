@@ -1,83 +1,170 @@
 ---
 version: alpha
-name: Shopify Supply
-description: Shopify Supply is a digital storefront with a distinct glitch-art, anti-establishment attitude. It combines bold, highly-tracked typography and a dark, almost gritty background with unexpected neon green and yellow accents. The visual system prioritizes sharp contrasts and unconventional styling, using minimal rounded corners and pervasive grid-like textures to evoke a raw, early-internet aesthetic meeting modern streetwear design. Components are largely borderless or subtly outlined, creating a sense of weightlessness on a dense dark canvas.
-colors:
-  canvas-black: "#000000"
-  ghostly-gray: "#e5e7eb"
-  text-gray: "#ababab"
-  input-gray: "#999999"
-  accent-green: "#6fc992"
-  vivid-green: "#d0f224"
-  surface-dark-gray: "#1e2939"
-  header-divider: "#3d3f40"
-  background-grid-light-green: "#a4d06b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.12px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.14px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.16px
-  subheading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-    letterSpacing: -0.18px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.2px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.18
-    letterSpacing: -0.22px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.17
-    letterSpacing: -0.36px
-spacing:
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  ghost-navigation-link:
-    role: Primary navigation and subtle interactive elements.
-  pill-ghost-button:
-    role: Secondary action button for interactive elements.
-  pill-faded-button:
-    role: Tertiary action with reduced visual emphasis.
-  shop-now-button:
-    role: Prominent call-to-action button within hero sections or product displays.
-  product-card:
-    role: Container for showcasing products, designed to be visually clean.
-  text-input-dark:
-    role: User input fields on dark backgrounds.
+name: "Shopify Supply"
+description: "Shopify Supply is a digital storefront with a distinct glitch-art, anti-establishment attitude. It combines bold, highly-tracked typography and a dark, almost gritty background with unexpected neon green and yellow accents. The visual system prioritizes sharp contrasts and unconventional styling, using minimal rounded corners and pervasive grid-like textures to evoke a raw, early-internet aesthetic meeting modern streetwear design. Components are largely borderless or subtly outlined, creating a sense of weightlessness on a dense dark canvas."
+theme: "dark"
+industry: "ecommerce"
+source_url: "https://shopify.supply"
+refero_style_id: "05023ef1-b0e6-4e84-8987-edd5dc11a848"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508913267-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508913267-thumb.jpg"
+extracted_at: "2026-04-30T00:29:03.764Z"
 ---
 
-## Overview
+# Shopify Supply — Style Reference
 
-**North Star:** Pixelated streetwear on raw concrete
+> Pixelated streetwear on raw concrete
+
+**Theme:** dark
+
+**Industry:** ecommerce
 
 Shopify Supply is a digital storefront with a distinct glitch-art, anti-establishment attitude. It combines bold, highly-tracked typography and a dark, almost gritty background with unexpected neon green and yellow accents. The visual system prioritizes sharp contrasts and unconventional styling, using minimal rounded corners and pervasive grid-like textures to evoke a raw, early-internet aesthetic meeting modern streetwear design. Components are largely borderless or subtly outlined, creating a sense of weightlessness on a dense dark canvas.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Black | #000000 | `--color-canvas-black` | Page backgrounds, heading text, primary text on light surfaces |
+| Ghostly Gray | #e5e7eb | `--color-ghostly-gray` | Decorative borders, inactive elements, subtle text on dark backgrounds |
+| Text Gray | #ababab | `--color-text-gray` | Muted body text, placeholder text |
+| Input Gray | #999999 | `--color-input-gray` | Input borders and placeholder text |
+| Accent Green | #6fc992 | `--color-accent-green` | Hyperlink text, small product detail accents, decorative icon fills |
+| Vivid Green | #d0f224 | `--color-vivid-green` | Green text accent for links, tags, and emphasized short phrases. Do not promote it to the primary CTA color |
+| Surface Dark Gray | #1e2939 | `--color-surface-dark-gray` | Secondary background surfaces and borders on dark themes |
+| Header Divider | #3d3f40 | `--color-header-divider` | Header and footer dividers, subtle visual separation |
+| Background Grid Light Green | #a4d06b | `--color-background-grid-light-green` | Dominant color of the gradient used for hero backgrounds and full-bleed sections |
+
+## Tokens — Typography
+
+### Inter-Variable
+
+- **Token:** `--font-inter-variable`
+- **Substitute:** Inter
+- **Weights:** 400, 450, 500, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 22px, 36px
+- **Line heights:** 1.17, 1.18, 1.25, 1.33, 1.40, 1.43, 1.50, 1.56
+- **Letter spacing:** -0.12, -0.14, -0.16, -0.18, -0.2, -0.22, -0.36
+- **Role:** The primary font for all content, from body text to most headings. Its variable nature handles diverse typographic needs with a subtle, modern feel. Letter spacing is subtly tight for most uses, with a slight negative tracking for larger sizes.
+
+### Grtsk-Bold-Tera
+
+- **Token:** `--font-grtsk-bold-tera`
+- **Substitute:** Open Sans
+- **Weights:** 800
+- **Sizes:** 32px
+- **Line heights:** 1.00
+- **Letter spacing:** 0
+- **Role:** Used for bold, impactful display text, particularly in headers and key brand statements. Its extreme weight and tight line height create a striking, almost condensed presence.
+
+### Fraktion
+
+- **Token:** `--font-fraktion`
+- **Substitute:** Roboto Mono
+- **Weights:** 450
+- **Sizes:** 22px
+- **Line heights:** 1.18
+- **Letter spacing:** 0
+- **Role:** A monospace-like font for specific textual elements, adding a technical or code-like aesthetic. Its 22px size with 1.18 line height provides clear readability for short phrases.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.12px | `--text-caption` |
+| body-sm | 14px | 1.43 | -0.14px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.16px | `--text-body` |
+| subheading-sm | 18px | 1.33 | -0.18px | `--text-subheading-sm` |
+| subheading | 20px | 1.25 | -0.2px | `--text-subheading` |
+| heading-sm | 22px | 1.18 | -0.22px | `--text-heading-sm` |
+| display-sm | 32px | 1 | 0px | `--text-display-sm` |
+| heading | 36px | 1.17 | -0.36px | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-231 | 231px | `--spacing-231` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+| buttonSmall | 1.67772e+07px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 0px 8px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1245px |
+| sectionGap | 64px |
+| cardPadding | 0px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Primary navigation and subtle interactive elements.
+
+Text in Canvas Black (#000000) or Ghostly Gray (#e5e7eb) with no background or padding. Border is 1px solid Ghostly Gray to delineate an active state or subtle interaction.
+
+### Pill Ghost Button
+
+**Role:** Secondary action button for interactive elements.
+
+Rounded shape with transparent background and white text. Text is #FFFFFF and padding is 16px around all sides.
+
+### Pill Faded Button
+
+**Role:** Tertiary action with reduced visual emphasis.
+
+A very subtle, almost transparent pill-shaped button with gray text and a matching gray border. Colors are #ababab for text and border, with a near-transparent background.
+
+### Shop Now Button
+
+**Role:** Prominent call-to-action button within hero sections or product displays.
+
+A stark, unrounded button with black text on a white background. It has generous horizontal padding and no border radius. Background is #FFFFFF, text #000000, with 16px vertical and 48px horizontal padding.
+
+### Product Card
+
+**Role:** Container for showcasing products, designed to be visually clean.
+
+A frameless, shadowless card with a transparent background. Padding is intentionally zero, allowing content to dictate spacing. Text may inherit surrounding context colors.
+
+### Text Input Dark
+
+**Role:** User input fields on dark backgrounds.
+
+A text input with a black background, white text for input, and a subtle gray border (#999999). Vertical padding is 20px, left padding 24px, and there's no border radius.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas Black (#000000) for all main page and section backgrounds.
 - Use Accent Green (#6fc992) for interactive links and subtle product description accents.
@@ -87,7 +174,7 @@ Shopify Supply is a digital storefront with a distinct glitch-art, anti-establis
 - Maintain a grid-like visual texture with thin #e5e7eb or #3d3f40 dividers for content separation, especially on dark surfaces.
 - Utilize 0px border-radius across most components for a sharp, angular aesthetic.
 
-### Don'ts
+### Don't
 
 - Avoid generic drop shadows; use them only as explicitly specified for interactive elements like the button shadow `rgba(0, 0, 0, 0.1) 0px 0px 8px 0px`.
 - Do not introduce soft bezier curves or organic shapes; maintain a geometric and angular sensibility.
@@ -97,10 +184,156 @@ Shopify Supply is a digital storefront with a distinct glitch-art, anti-establis
 - Do not deviate from the specified Inter-Variable letter-spacing values, particularly the negative tracking at larger sizes.
 - Do not use generic system fonts; always map to one of the specified brand typefaces (Inter-Variable, Grtsk-Bold-Tera, Fraktion).
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas Black | #000000 | Dominant background for the entire site, providing a deep, immersive base. |
+| 2 | Surface Dark Gray | #1e2939 | Secondary background layer for distinct sections or contained content blocks, slightly lifting from the main canvas. |
+
+## Elevation
+
+- **Pill Ghost Button:** `rgba(0, 0, 0, 0.1) 0px 0px 8px 0px`
+
+## Imagery
+
+The visual language is a blend of product photography and pixel art. Photography features tightly cropped product shots often against white or neutral backgrounds, focusing on the item itself rather than lifestyle context. Some images incorporate a raw, almost deconstructed feel. Illustrations are exclusively pixel art, often brand characters or small decorative elements, lending a retro, glitch-art aesthetic. Icons are simple, outlined, and monochromatic, matching the overall starkness. Imagery serves both decorative atmosphere (pixel art) and direct product showcasing (photography), existing in a relatively text-dominant layout but with key hero sections featuring large-scale graphics or gradient backgrounds.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 1245px, centered on a Canvas Black background. The hero section is often a full-bleed gradient with a large centered headline and prominent call-to-action. Content sections typically alternate between a continuous dark background and sections that use the Surface Dark Gray with light text. There's a strong emphasis on grid-like compositions, with product cards arranged in multiple columns. Vertical spacing is consistent with the `sectionGap` (64px) providing clear breaks. Navigation is a sticky top bar with minimal links and iconic search/account/cart actions.
 
-### Imagery
+## Similar Brands
 
-The visual language is a blend of product photography and pixel art. Photography features tightly cropped product shots often against white or neutral backgrounds, focusing on the item itself rather than lifestyle context. Some images incorporate a raw, almost deconstructed feel. Illustrations are exclusively pixel art, often brand characters or small decorative elements, lending a retro, glitch-art aesthetic. Icons are simple, outlined, and monochromatic, matching the overall starkness. Imagery serves both decorative atmosphere (pixel art) and direct product showcasing (photography), existing in a relatively text-dominant layout but with key hero sections featuring large-scale graphics or gradient backgrounds.
+- **Stripe** — Monochromatic interface with a single vibrant accent color used for interaction and branding.
+- **Are.na** — Emphasis on stark, borderless cards and a grid-based, minimalist layout on a dark background.
+- **Framer** — Modern design aesthetic with strong typography, tight negative letter-spacing, and a dark theme.
+- **Glossier** — Product-focused photography with a clean, unornamented presentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-black: #000000;
+  --color-ghostly-gray: #e5e7eb;
+  --color-text-gray: #ababab;
+  --color-input-gray: #999999;
+  --color-accent-green: #6fc992;
+  --color-vivid-green: #d0f224;
+  --color-surface-dark-gray: #1e2939;
+  --color-header-divider: #3d3f40;
+  --color-background-grid-light-green: #a4d06b;
+  --font-inter-variable: 'Inter-Variable', Inter;
+  --font-grtsk-bold-tera: 'Grtsk-Bold-Tera', Open Sans;
+  --font-fraktion: 'Fraktion', Roboto Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading-sm: 18px;
+  --leading-subheading-sm: 1.33;
+  --tracking-subheading-sm: -0.18px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.2px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.18;
+  --tracking-heading-sm: -0.22px;
+  --text-display-sm: 32px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: 0px;
+  --text-heading: 36px;
+  --leading-heading: 1.17;
+  --tracking-heading: -0.36px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-90: 90px;
+  --spacing-231: 231px;
+  --radius-none: 0px;
+  --radius-buttonsmall: 1.67772e+07px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
+  --surface-canvas-black: #000000;
+  --surface-surface-dark-gray: #1e2939;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-black: #000000;
+  --color-ghostly-gray: #e5e7eb;
+  --color-text-gray: #ababab;
+  --color-input-gray: #999999;
+  --color-accent-green: #6fc992;
+  --color-vivid-green: #d0f224;
+  --color-surface-dark-gray: #1e2939;
+  --color-header-divider: #3d3f40;
+  --color-background-grid-light-green: #a4d06b;
+  --font-inter-variable: 'Inter-Variable', Inter;
+  --font-grtsk-bold-tera: 'Grtsk-Bold-Tera', Open Sans;
+  --font-fraktion: 'Fraktion', Roboto Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading-sm: 18px;
+  --leading-subheading-sm: 1.33;
+  --tracking-subheading-sm: -0.18px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.2px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.18;
+  --tracking-heading-sm: -0.22px;
+  --text-display-sm: 32px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: 0px;
+  --text-heading: 36px;
+  --leading-heading: 1.17;
+  --tracking-heading: -0.36px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-90: 90px;
+  --spacing-231: 231px;
+  --radius-none: 0px;
+  --radius-buttonsmall: 1.67772e+07px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 0px 8px 0px;
+  --surface-canvas-black: #000000;
+  --surface-surface-dark-gray: #1e2939;
+}
+```

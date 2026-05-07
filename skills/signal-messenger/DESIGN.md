@@ -1,68 +1,149 @@
 ---
 version: alpha
-name: Signal Messenger
-description: This design system projects an image of digital security and approachability, achieved through a bright, spacious layout with rounded elements. The intentional use of soft blue and white as primary background colors creates an open, trustworthy atmosphere, while dark typography ensures readability. The system strikes a balance between solid, clear interactive elements and subtle background variation, making complex privacy concepts feel accessible.
-colors:
-  cloud-cover: "#ffffff"
-  sky-dust: "#f6f6f6"
-  stone-whisper: "#e9e9e9"
-  signal-blue: "#9dbbf8"
-  ocean-deep: "#2c6bed"
-  night-sky: "#1b1b1b"
-  deep-space: "#404654"
-  slate-shadow: "#3c3744"
-  link-blue: "#2942ff"
-  subtle-mist: "#a5cad5"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.14
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.07
-spacing:
-  cardRadius: 16px
-  buttonRadius: 8px
-  elementGap: 12px
-  sectionGap: 64px
-components:
-  get-signal-cta-button-group:
-    role: 
-  share-without-insecurity-feature-block:
-    role: 
-  donate-to-signal-card:
-    role: 
-  primary-call-to-action-button:
-    role: Primary interactive element for key actions
-  navigation-link-button:
-    role: Secondary action in header navigation
-  navigation-item-link:
-    role: Standard navigation link
-  product-screenshot-wrapper:
-    role: Encapsulates product visuals
+name: "Signal Messenger"
+description: "This design system projects an image of digital security and approachability, achieved through a bright, spacious layout with rounded elements. The intentional use of soft blue and white as primary background colors creates an open, trustworthy atmosphere, while dark typography ensures readability. The system strikes a balance between solid, clear interactive elements and subtle background variation, making complex privacy concepts feel accessible."
+theme: "light"
+industry: "other"
+source_url: "https://signal.org"
+refero_style_id: "41c479a9-7b41-445b-9ea7-c7a6331828f0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926035480-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926035480-thumb.jpg"
+extracted_at: "2026-04-11T16:47:35.368Z"
 ---
 
-## Overview
+# Signal Messenger — Style Reference
 
-**North Star:** open sky, clear communication
+> open sky, clear communication
+
+**Theme:** light
+
+**Industry:** other
 
 This design system projects an image of digital security and approachability, achieved through a bright, spacious layout with rounded elements. The intentional use of soft blue and white as primary background colors creates an open, trustworthy atmosphere, while dark typography ensures readability. The system strikes a balance between solid, clear interactive elements and subtle background variation, making complex privacy concepts feel accessible.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud Cover | #ffffff | `--color-cloud-cover` | Page backgrounds, card surfaces, primary button backgrounds — provides a crisp, bright canvas. |
+| Sky Dust | #f6f6f6 | `--color-sky-dust` | Subtle section dividers, slight background variation to break visual monotony. |
+| Stone Whisper | #e9e9e9 | `--color-stone-whisper` | Subtle borders and dividers, providing separation without harsh lines. |
+| Signal Blue | #9dbbf8 | `--color-signal-blue` | Hero section background, conveying a sense of calm and clarity. |
+| Ocean Deep | #2c6bed | `--color-ocean-deep` | Primary Call-to-Action button text and borders, links — a vibrant, trustworthy blue indicating action. |
+| Night Sky | #1b1b1b | `--color-night-sky` | Primary text, headings, and key UI elements ensuring high contrast and legibility. |
+| Deep Space | #404654 | `--color-deep-space` | Secondary text, subtle accents, creating depth in informational sections. |
+| Slate Shadow | #3c3744 | `--color-slate-shadow` | Footer background, providing a grounding anchor to the page. |
+| Link Blue | #2942ff | `--color-link-blue` | Navigation links and secondary interactive elements, differentiating them from primary CTAs. |
+| Subtle Mist | #a5cad5 | `--color-subtle-mist` | Decorative background fills on feature blocks, maintaining a light, airy feel. |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 600, 800
+- **Sizes:** 16px, 20px, 28px, 40px, 60px
+- **Line heights:** 1.07, 1.10, 1.14, 1.38, 1.40, 1.50
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all textual content, from navigation to display headings. Inter's clean, humanist grotesque design supports clarity and readability across various sizes, reinforcing the message of clear communication.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 20px | 1.4 | — | `--text-subheading` |
+| heading | 28px | 1.14 | — | `--text-heading` |
+| heading-lg | 40px | 1.1 | — | `--text-heading-lg` |
+| display | 60px | 1.07 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| images | 16px |
+| buttons | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1344px |
+| sectionGap | 64px |
+| cardPadding | 30px |
+| elementGap | 12px |
+
+## Components
+
+### Get Signal CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Share Without Insecurity Feature Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Donate to Signal Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Call-to-Action Button
+
+**Role:** Primary interactive element for key actions
+
+White background, Ocean Deep (#2c6bed) text and 1px border. Height is text-based with 0px vertical padding, 20px horizontal padding. Border radius 8px. Text is Inter 400 at 16px, line-height 1.50.
+
+### Navigation Link Button
+
+**Role:** Secondary action in header navigation
+
+Transparent background, Night Sky (#1b1b1b) text. 1px Night Sky (#1b1b1b) border. Height is text-based with 8px vertical padding, 12px horizontal padding. No border radius. Text is Inter 400 at 16px, line-height 1.50.
+
+### Navigation Item Link
+
+**Role:** Standard navigation link
+
+Night Sky (#1b1b1b) text (Inter 400, 16px). Uses a secondary accent color, Link Blue (#2942ff), on hover and active states.
+
+### Product Screenshot Wrapper
+
+**Role:** Encapsulates product visuals
+
+Wraps product screenshots with a 16px border radius. Shadows applied: rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px to provide subtle elevation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Night Sky (#1b1b1b) for all primary headings and body text to ensure maximum readability against light backgrounds.
 - Apply Signal Blue (#9dbbf8) as a primary background accent for hero sections to immediately establish brand identity.
@@ -71,7 +152,7 @@ This design system projects an image of digital security and approachability, ac
 - Ensure all interactive elements, such as buttons and links, use Ocean Deep (#2c6bed) or Link Blue (#2942ff) to signify action and interaction clearly.
 - Use Inter font family exclusively for all text elements, leveraging weights 400 for body, 600 for subheadings, and 800 for major headings and display titles.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated, non-brand colors; stick to the established palette of blues, grays, and whites.
 - Do not deviate from the 8px and 16px border radii; squared or overly complex rounded shapes are not part of this system.
@@ -79,10 +160,117 @@ This design system projects an image of digital security and approachability, ac
 - Do not introduce complex gradients or texture overlays on backgrounds; maintain a flat, clean aesthetic.
 - Avoid excessive use of shadows; reserve the specific shadow token rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px only for elevated elements like product mocks.
 
-### Layout
+## Elevation
+
+- **Product Screenshot Wrapper:** `rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px`
+
+## Imagery
+
+Imagery primarily consists of product screenshots of the Signal app on mobile devices, treated with subtle shadows indicating elevation. These are typically contained within the main layout. Illustrations are abstract and geometric, using brand colors and outlines to convey concepts like global communication and security without being overly literal. Icons are outlined, simple, and monochrome, complementing the clean UI. The visual emphasis is on functionality and clarity, using images to explain product features rather than for decorative atmosphere.
+
+## Layout
 
 The site uses a max-width 1344px centered container for most content, with a full-bleed hero section employing Signal Blue (#9dbbf8) background. Sections generally alternate between clean white backgrounds (Cloud Cover #ffffff) and very subtle gray backgrounds (Sky Dust #f6f6f6) or brand-colored fills (Signal Blue #9dbbf8, Subtle Mist #a5cad5), creating a gentle visual rhythm. Content is often arranged in a split layout, with text on one side and a visual (product screenshot or illustration) on the other. Navigation is a sticky top bar with clearly delineated links and buttons. Vertical spacing between main sections is generous, around 64px, contributing to a spacious feel.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of product screenshots of the Signal app on mobile devices, treated with subtle shadows indicating elevation. These are typically contained within the main layout. Illustrations are abstract and geometric, using brand colors and outlines to convey concepts like global communication and security without being overly literal. Icons are outlined, simple, and monochrome, complementing the clean UI. The visual emphasis is on functionality and clarity, using images to explain product features rather than for decorative atmosphere.
+- **ProtonMail** — Both prioritize privacy and convey trust through clean, clear light-themed interfaces with blue accents and direct typography.
+- **DuckDuckGo** — Similar focus on user privacy and a commitment to a light, uncluttered UI with a distinct blue brand color for interaction.
+- **Telegram** — Messaging app promoting security, using a light theme with prominent blue interactions and clean, legible typography.
+- **Wire** — Another secure messaging platform, employs a crisp, functional design with emphasis on interaction clarity and a subdued color palette.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-cover: #ffffff;
+  --color-sky-dust: #f6f6f6;
+  --color-stone-whisper: #e9e9e9;
+  --color-signal-blue: #9dbbf8;
+  --color-ocean-deep: #2c6bed;
+  --color-night-sky: #1b1b1b;
+  --color-deep-space: #404654;
+  --color-slate-shadow: #3c3744;
+  --color-link-blue: #2942ff;
+  --color-subtle-mist: #a5cad5;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 28px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-41: 41px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --radius-cards: 16px;
+  --radius-images: 16px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-cover: #ffffff;
+  --color-sky-dust: #f6f6f6;
+  --color-stone-whisper: #e9e9e9;
+  --color-signal-blue: #9dbbf8;
+  --color-ocean-deep: #2c6bed;
+  --color-night-sky: #1b1b1b;
+  --color-deep-space: #404654;
+  --color-slate-shadow: #3c3744;
+  --color-link-blue: #2942ff;
+  --color-subtle-mist: #a5cad5;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 28px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --text-display: 60px;
+  --leading-display: 1.07;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-41: 41px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --radius-cards: 16px;
+  --radius-images: 16px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 4px 12px 0px, rgba(0, 0, 0, 0.08) 0px 0px 2px 0px;
+}
+```
