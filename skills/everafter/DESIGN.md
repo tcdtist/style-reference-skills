@@ -1,86 +1,194 @@
 ---
 version: alpha
-name: Everafter
-description: EverAfter projects a refined, intelligent digital environment using a deep violet primary color accented by vibrant, almost neon, hues. Typography is a confident mix of a distinctive serif for headings and a clean sans-serif for body text, establishing an authoritative yet approachable tone. Surfaces are predominantly light and spacious, juxtaposed with the dramatic dark hero sections, creating clear visual hierarchy and drawing attention to key AI product features. Interaction elements are clearly defined with ample padding and generously rounded corners, suggesting a user-friendly, modern experience.
-colors:
-  midnight-orchid: "#221437"
-  astral-purple: "#2a1244"
-  electric-violet: "#793cfb"
-  rose-bloom: "#ff7aba"
-  sunshine-yellow: "#ffd633"
-  deep-teal: "#205779"
-  canvas-white: "#ffffff"
-  ghost-marble: "#f8f5ff"
-  ash-outline: "#e2e2e2"
-  smoke-gray: "#333333"
-  graphite: "#000000"
-  soft-shadow-blue: "#daebf58c"
-  hero-gradient: "#e7cae4"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.6
-    letterSpacing: 0px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-    letterSpacing: -0.68px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1.2
-    letterSpacing: -0.8px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1.15
-    letterSpacing: -0.95px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.15
-    letterSpacing: -1.06px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 999px
-  elementGap: 8px
-  sectionGap: 186px
-components:
-  primary-action-button:
-    role: Main call to action, highlighted with the brand's Electric Violet.
-  ghost-button-brand-focus:
-    role: Secondary action button, uses brand text/border against transparent background for less emphasis.
-  ghost-button-neutral-text:
-    role: Least emphasized action, often for navigation or tertiary actions.
-  default-card:
-    role: Standard content containers for features, testimonials, or data displays.
-  product-interface-input:
-    role: User input fields within forms or interface controls.
-  accent-tag-rose-bloom:
-    role: Small, decorative tags or status indicators.
-  accent-tag-sunshine-yellow:
-    role: Small, decorative tags or status indicators.
+name: "Everafter"
+description: "EverAfter projects a refined, intelligent digital environment using a deep violet primary color accented by vibrant, almost neon, hues. Typography is a confident mix of a distinctive serif for headings and a clean sans-serif for body text, establishing an authoritative yet approachable tone. Surfaces are predominantly light and spacious, juxtaposed with the dramatic dark hero sections, creating clear visual hierarchy and drawing attention to key AI product features. Interaction elements are clearly defined with ample padding and generously rounded corners, suggesting a user-friendly, modern experience."
+theme: "mixed"
+industry: "saas"
+source_url: "https://www.everafter.ai"
+refero_style_id: "3b3aa977-c2d3-45a4-b440-0068f53237c6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519440017-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519440017-thumb.jpg"
+extracted_at: "2026-04-30T03:24:21.055Z"
 ---
 
-## Overview
+# Everafter — Style Reference
 
-**North Star:** Violet Gradient Command Center – a luminous digital workspace with shimmering accents.
+> Violet Gradient Command Center – a luminous digital workspace with shimmering accents.
+
+**Theme:** mixed
+
+**Industry:** saas
 
 EverAfter projects a refined, intelligent digital environment using a deep violet primary color accented by vibrant, almost neon, hues. Typography is a confident mix of a distinctive serif for headings and a clean sans-serif for body text, establishing an authoritative yet approachable tone. Surfaces are predominantly light and spacious, juxtaposed with the dramatic dark hero sections, creating clear visual hierarchy and drawing attention to key AI product features. Interaction elements are clearly defined with ample padding and generously rounded corners, suggesting a user-friendly, modern experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Orchid | #221437 | `--color-midnight-orchid` | Primary text, deep backgrounds for hero sections and footers, UI borders and structural elements. The foundational color setting a dramatic, digital atmosphere |
+| Astral Purple | #2a1244 | `--color-astral-purple` | Gradient primary color, subtle background accents in dark sections |
+| Electric Violet | #793cfb | `--color-electric-violet` | Primary action buttons, active states, key highlights for cards and interactive elements. Its vibrancy cuts through the deep violet base |
+| Rose Bloom | #ff7aba | `--color-rose-bloom` | Decorative card highlights, accent elements within UI for visual interest |
+| Sunshine Yellow | #ffd633 | `--color-sunshine-yellow` | Decorative card highlights, accent elements, UI iconography |
+| Deep Teal | #205779 | `--color-deep-teal` | Decorative elements, iconography, and subtle graphic strokes within UI illustrations |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, input fields, and all text on dark backgrounds. Provides necessary contrast and airiness for content |
+| Ghost Marble | #f8f5ff | `--color-ghost-marble` | Secondary page backgrounds, subtle surface elevation for cards and sections. A very subtle off-white that prevents starkness |
+| Ash Outline | #e2e2e2 | `--color-ash-outline` | Subtle borders for content sections, hairline dividers between elements, input field borders |
+| Smoke Gray | #333333 | `--color-smoke-gray` | Secondary text, muted link text |
+| Graphite | #000000 | `--color-graphite` | Iconography, strong graphic elements, occasionally for very dark text that needs maximum contrast |
+| Soft Shadow Blue | #daebf58c | `--color-soft-shadow-blue` | Subtle shadow tint for UI elements, suggesting depth without heavy opacity |
+| Hero Gradient | #e7cae4 | `--color-hero-gradient` | Background gradient for hero sections and large visual modules, creating a dynamic backdrop |
+
+## Tokens — Typography
+
+### Moret
+
+- **Token:** `--font-moret`
+- **Substitute:** Georgia, serif
+- **Weights:** 400, 600, 700
+- **Sizes:** 36px, 40px, 42px, 50px, 56px
+- **Line heights:** 1.15, 1.20
+- **Letter spacing:** -0.0190em
+- **Role:** Distinctive serif typeface used for all main headings (h1-h3) across most sizes, conveying a sense of established authority and unique brand identity. The consistent letter-spacing across sizes enhances its presence.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Helvetica Neue, Arial, sans-serif
+- **Role:** Clean and legible sans-serif for body text, navigation items, buttons, and subheadings. Ensures readability and maintains a modern, functional aesthetic against the more expressive Moret headlines.
+
+### Moret 400
+
+- **Token:** `--font-moret-400`
+- **Weights:** 400
+- **Sizes:** 36px
+- **Line heights:** 1.2
+- **Role:** Moret 400 — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.5 | 0px | `--text-caption` |
+| body-sm | 16px | 1.5 | 0px | `--text-body-sm` |
+| body | 18px | 1.6 | 0px | `--text-body` |
+| heading-sm | 36px | 1.2 | -0.68px | `--text-heading-sm` |
+| heading | 42px | 1.2 | -0.8px | `--text-heading` |
+| heading-lg | 50px | 1.15 | -0.95px | `--text-heading-lg` |
+| display | 56px | 1.15 | -1.06px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-61 | 61px | `--spacing-61` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-173 | 173px | `--spacing-173` |
+| spacing-186 | 186px | `--spacing-186` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 999px |
+| cards | 24px |
+| inputs | 999px |
+| buttons | 999px |
+| small_elements | 11px |
+| decorative_elements | 28px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(255, 255, 255, 0.2) 0px 1px 1px 0px, rgba(255, 255, 255, 0.12) 0px 6px 12px 0px, rgba(8, 8, 8, 0.2) 0px 1px 2px 0px, rgba(8, 8, 8, 0.08) 0px 4px 4px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 186px |
+| cardPadding | 42px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call to action, highlighted with the brand's Electric Violet.
+
+Filled button with background #793cfb, text #fefefe (Canvas White). Padding 5px vertical, 36px horizontal. Radius 999px.
+
+### Ghost Button (Brand Focus)
+
+**Role:** Secondary action button, uses brand text/border against transparent background for less emphasis.
+
+Transparent background, text #221437 (Midnight Orchid), border color #221437. Radius 999px. Padding 0px. Text is a smaller font size than primary actions.
+
+### Ghost Button (Neutral Text)
+
+**Role:** Least emphasized action, often for navigation or tertiary actions.
+
+Transparent background, text #221437 (Midnight Orchid), default border color is absent. Radius 0px. Padding 0px.
+
+### Default Card
+
+**Role:** Standard content containers for features, testimonials, or data displays.
+
+Background #fcfcff (Canvas White), border radius 24px, no shadow, padding 42px on all sides.
+
+### Product Interface Input
+
+**Role:** User input fields within forms or interface controls.
+
+Background #ffffff (Canvas White), text #221437 (Midnight Orchid), border #221437 (Midnight Orchid) at 8% opacity. Radius 999px. Padding 8px vertical, 12px horizontal, with possible 29.6px left padding for icon.
+
+### Accent Tag - Rose Bloom
+
+**Role:** Small, decorative tags or status indicators.
+
+Background #ff7aba (Rose Bloom), border radius 999px, no shadow, 0px padding. Used for small, illustrative elements.
+
+### Accent Tag - Sunshine Yellow
+
+**Role:** Small, decorative tags or status indicators.
+
+Background #ffd633 (Sunshine Yellow), border radius 999px, no shadow, 0px padding. Used for small, illustrative elements.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Moret font for all headlines, applying `letterSpacing: -0.0190em` consistently for high impact.
 - Apply Electric Violet (#793cfb) only for primary interactive elements, reserving its vividness for key actions.
@@ -90,7 +198,7 @@ EverAfter projects a refined, intelligent digital environment using a deep viole
 - Utilize Ghost Marble (#f8f5ff) as a subtle background for secondary content sections or slightly elevated interface elements to add depth without heaviness.
 - Apply the Hero Gradient (linear gradient from #e7cae4 to #f8f5ff) specifically for prominent banner areas and large hero sections to build visual drama.
 
-### Don'ts
+### Don't
 
 - Do not use saturated colors on anything other than accent tags or primary calls to action; maintain a mostly neutral palette for content.
 - Avoid applying heavy drop shadows; the system favors subtle elevation cues like background color changes or faint shadow tints.
@@ -100,10 +208,203 @@ EverAfter projects a refined, intelligent digital environment using a deep viole
 - Avoid using any black (#000000) for body text; it's reserved for specific graphic elements or very large, impactful text against light backgrounds.
 - Do not introduce new border styles; the design primarily uses subtle 1px solid borders or relies on background contrast for separation.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Dark Canvas | #221437 | Primary background for hero sections, footers, and prominent brand areas, providing a deep, immersive context. |
+| 2 | Page Background | #f8f5ff | Main background for most content sections, offering a soft, airy foundation for readability. |
+| 3 | Card Surface | #ffffff | Background for all cards, components, and input fields, providing a clean, accessible surface for interactive elements. |
+
+## Elevation
+
+- **Button Shadow:** `rgba(255, 255, 255, 0.2) 0px 1px 1px 0px, rgba(255, 255, 255, 0.12) 0px 6px 12px 0px, rgba(8, 8, 8, 0.2) 0px 1px 2px 0px, rgba(8, 8, 8, 0.08) 0px 4px 4px 0px`
+
+## Imagery
+
+Imagery primarily consists of product screenshots featuring clean, modern UI designs, often placed within a device mockup on a plain or subtly gradient background. These are explanatory and product-focused, showcasing the software's functionality rather than lifestyle. Abstract, geometric illustrations with a distinct visual style (e.g., mazes, data visualizations) are used decoratively to explain complex concepts. Icons are generally filled and monochromatic, supporting quick visual cues. Imagery plays a significant role in conveying information and product value, occupying substantial visual space, especially in the hero and feature sections, but always with a contained, structured presentation rather than full-bleed.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 1440px, with content centered. The hero section often features a full-bleed dark background with a dramatic gradient, hosting a large, centered headline and calls to action. Subsequent sections alternate between light (#f8f5ff) and dark (#221437) backgrounds, creating a clear visual rhythm. Content is arranged in a fluid text-left/visual-right pattern, or centered stacks. Card grids are used for features and testimonials, typically in a 3-column layout. The overall density is spacious, with significant vertical padding between sections (186px) to give elements room to breathe. Navigation is a consistent top bar that remains visible, featuring clear product categories and prominent 'Log In' and 'Get a demo' actions.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of product screenshots featuring clean, modern UI designs, often placed within a device mockup on a plain or subtly gradient background. These are explanatory and product-focused, showcasing the software's functionality rather than lifestyle. Abstract, geometric illustrations with a distinct visual style (e.g., mazes, data visualizations) are used decoratively to explain complex concepts. Icons are generally filled and monochromatic, supporting quick visual cues. Imagery plays a significant role in conveying information and product value, occupying substantial visual space, especially in the hero and feature sections, but always with a contained, structured presentation rather than full-bleed.
+- **Rippling** — Uses a dark hero section with vibrant accent colors against mostly white content areas, similar font choices for headings and body, and a clean, spacious layout.
+- **Webflow** — Features a distinct branding typeface for headlines combined with a sans-serif for body text, generous white space, and clear, functional UI components with a modern aesthetic.
+- **Intercom** — Employs deep, moody brand colors in hero sections, balanced with expansive light surfaces, and a strong emphasis on clear product screenshots and minimal UI design.
+- **Monday.com** — Uses a vibrant, diverse accent palette against a largely neutral background, with generously rounded elements and an emphasis on visual clarity and approachable design.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-orchid: #221437;
+  --color-astral-purple: #2a1244;
+  --color-electric-violet: #793cfb;
+  --color-rose-bloom: #ff7aba;
+  --color-sunshine-yellow: #ffd633;
+  --color-deep-teal: #205779;
+  --color-canvas-white: #ffffff;
+  --color-ghost-marble: #f8f5ff;
+  --color-ash-outline: #e2e2e2;
+  --color-smoke-gray: #333333;
+  --color-graphite: #000000;
+  --color-soft-shadow-blue: #daebf58c;
+  --color-hero-gradient: #e7cae4;
+  --font-moret: 'Moret', Georgia, serif;
+  --font-inter: 'Inter', Helvetica Neue, Arial, sans-serif;
+  --font-moret-400: 'Moret 400', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 18px;
+  --leading-body: 1.6;
+  --tracking-body: 0px;
+  --text-heading-sm: 36px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.68px;
+  --text-heading: 42px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.95px;
+  --text-display: 56px;
+  --leading-display: 1.15;
+  --tracking-display: -1.06px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-58: 58px;
+  --spacing-61: 61px;
+  --spacing-64: 64px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-88: 88px;
+  --spacing-90: 90px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-112: 112px;
+  --spacing-173: 173px;
+  --spacing-186: 186px;
+  --radius-tags: 999px;
+  --radius-cards: 24px;
+  --radius-inputs: 999px;
+  --radius-buttons: 999px;
+  --radius-small-elements: 11px;
+  --radius-decorative-elements: 28px;
+  --shadow-xl: rgba(255, 255, 255, 0.2) 0px 1px 1px 0px, rgba(255, 255, 255, 0.12) 0px 6px 12px 0px, rgba(8, 8, 8, 0.2) 0px 1px 2px 0px, rgba(8, 8, 8, 0.08) 0px 4px 4px 0px;
+  --surface-dark-canvas: #221437;
+  --surface-page-background: #f8f5ff;
+  --surface-card-surface: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-orchid: #221437;
+  --color-astral-purple: #2a1244;
+  --color-electric-violet: #793cfb;
+  --color-rose-bloom: #ff7aba;
+  --color-sunshine-yellow: #ffd633;
+  --color-deep-teal: #205779;
+  --color-canvas-white: #ffffff;
+  --color-ghost-marble: #f8f5ff;
+  --color-ash-outline: #e2e2e2;
+  --color-smoke-gray: #333333;
+  --color-graphite: #000000;
+  --color-soft-shadow-blue: #daebf58c;
+  --color-hero-gradient: #e7cae4;
+  --font-moret: 'Moret', Georgia, serif;
+  --font-inter: 'Inter', Helvetica Neue, Arial, sans-serif;
+  --font-moret-400: 'Moret 400', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 18px;
+  --leading-body: 1.6;
+  --tracking-body: 0px;
+  --text-heading-sm: 36px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: -0.68px;
+  --text-heading: 42px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.95px;
+  --text-display: 56px;
+  --leading-display: 1.15;
+  --tracking-display: -1.06px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-58: 58px;
+  --spacing-61: 61px;
+  --spacing-64: 64px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-88: 88px;
+  --spacing-90: 90px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-112: 112px;
+  --spacing-173: 173px;
+  --spacing-186: 186px;
+  --radius-tags: 999px;
+  --radius-cards: 24px;
+  --radius-inputs: 999px;
+  --radius-buttons: 999px;
+  --radius-small-elements: 11px;
+  --radius-decorative-elements: 28px;
+  --shadow-xl: rgba(255, 255, 255, 0.2) 0px 1px 1px 0px, rgba(255, 255, 255, 0.12) 0px 6px 12px 0px, rgba(8, 8, 8, 0.2) 0px 1px 2px 0px, rgba(8, 8, 8, 0.08) 0px 4px 4px 0px;
+  --surface-dark-canvas: #221437;
+  --surface-page-background: #f8f5ff;
+  --surface-card-surface: #ffffff;
+}
+```

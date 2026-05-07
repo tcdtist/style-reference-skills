@@ -1,81 +1,207 @@
 ---
 version: alpha
-name: Escape Coffee Company
-description: Escape Coffee Company presents a rugged, textural commerce experience. High-contrast typography emphasizes bold statements, while a carefully curated achromatic palette allows rich product photography and content backgrounds to dominate. Interaction elements are minimal and integrated, often appearing as subtle outlines or text against dark neutral backgrounds, preserving a raw, authentic feel.
-colors:
-  canvas-white: "#f5f4f2"
-  graphite-ink: "#151515"
-  asphalt-black: "#000000"
-  pale-stone: "#ebe9e6"
-  fog-gray: "#929292"
-  pure-white: "#ffffff"
-  outline-gray: "#8a8a8a"
-  subtle-border: "#e3e3e3"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.35
-    letterSpacing: 0.43px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: 0.44px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1
-    letterSpacing: 0.53px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.06
-    letterSpacing: 0.51px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1
-    letterSpacing: -0.5px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 0.85
-    letterSpacing: -1.5px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 250px
-    lineHeight: 0.85
-    letterSpacing: -2px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 7px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  filled-primary-button:
-    role: Interactive element
-  ghost-button:
-    role: Interactive element
-  text-link-button:
-    role: Interactive element
-  circular-ghost-icon-button:
-    role: Interactive element
-  product-card:
-    role: Display content
-  standard-input-field:
-    role: User input
-  full-width-input-field:
-    role: User input
+name: "Escape Coffee Company"
+description: "Escape Coffee Company presents a rugged, textural commerce experience. High-contrast typography emphasizes bold statements, while a carefully curated achromatic palette allows rich product photography and content backgrounds to dominate. Interaction elements are minimal and integrated, often appearing as subtle outlines or text against dark neutral backgrounds, preserving a raw, authentic feel."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://escape.cafe"
+refero_style_id: "b5532c58-620a-4d69-8861-35b2b6443956"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508533541-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508533541-thumb.jpg"
+extracted_at: "2026-04-30T00:22:38.258Z"
 ---
 
-## Overview
+# Escape Coffee Company — Style Reference
 
-**North Star:** Raw Concrete Canvas — Bold typography and rich textures anchor a tactile, achromatic experience.
+> Raw Concrete Canvas — Bold typography and rich textures anchor a tactile, achromatic experience.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Escape Coffee Company presents a rugged, textural commerce experience. High-contrast typography emphasizes bold statements, while a carefully curated achromatic palette allows rich product photography and content backgrounds to dominate. Interaction elements are minimal and integrated, often appearing as subtle outlines or text against dark neutral backgrounds, preserving a raw, authentic feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #f5f4f2 | `--color-canvas-white` | Primary page background, UI surfaces, muted borders. This near-white ensures content stands out while providing a soft, natural base |
+| Graphite Ink | #151515 | `--color-graphite-ink` | Primary text, strong accents, filled button backgrounds. Its deep, near-black tone provides strong contrast for legibility and command |
+| Asphalt Black | #000000 | `--color-asphalt-black` | Primary text for specific links, deep shadows, and borders in high-contrast contexts |
+| Pale Stone | #ebe9e6 | `--color-pale-stone` | Subtle background shifts, lighter borders, and ghost button outlines, providing slight visual separation without strong contrast |
+| Fog Gray | #929292 | `--color-fog-gray` | Muted text, secondary information, and subtle background elements for visual depth |
+| Pure White | #ffffff | `--color-pure-white` | Card backgrounds, modal surfaces, and text on dark backgrounds for maximum contrast |
+| Outline Gray | #8a8a8a | `--color-outline-gray` | Input borders and subtle UI strokes |
+| Subtle Border | #e3e3e3 | `--color-subtle-border` | Hairline borders and dividers, providing organization without heavy visual weight |
+
+## Tokens — Typography
+
+### TWK Lausanne
+
+- **Token:** `--font-twk-lausanne`
+- **Substitute:** Inter
+- **Weights:** 200, 300, 400, 600, 700
+- **Sizes:** 11px, 13px, 14px, 16px, 18px, 19px, 22px, 24px, 28px, 50px
+- **Line heights:** 1.00, 1.05, 1.06, 1.20, 1.35, 1.81
+- **Letter spacing:** -0.0100em, 0.0340em, 0.0430em, 0.0510em, 0.0530em, 0.0600em, 0.0670em, 0.0730em, 0.0750em
+- **Role:** Primary typeface for body text, general UI, and many headings. Its wide range of weights and careful letter spacing allows for both compact information and expressive statements.
+
+### Molitor
+
+- **Token:** `--font-molitor`
+- **Substitute:** Oswald
+- **Weights:** 300, 700
+- **Sizes:** 26px, 45px, 75px, 250px
+- **Line heights:** 0.85, 1.00
+- **Letter spacing:** -0.0200em, 0.0130em, 0.0210em, 0.0370em
+- **Role:** Impactful display typeface used for hero headlines and large promotional text. Its condensed, strong forms capture attention.
+
+### Garaje
+
+- **Token:** `--font-garaje`
+- **Substitute:** Bebas Neue
+- **Weights:** 300, 600, 700
+- **Sizes:** 18px, 22px
+- **Line heights:** 1.00, 1.20
+- **Letter spacing:** 0.0440em, 0.0530em
+- **Role:** Distinctive secondary display typeface for specific titles, badges, and emphasizes text blocks. Its robust, slab-serif like character provides a grounded, artisanal touch.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** System fallback for specific button labels and icons, ensuring broad compatibility.
+
+### GTStandard-M
+
+- **Token:** `--font-gtstandard-m`
+- **Substitute:** Space Mono
+- **Weights:** 300
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** 0.0600em
+- **Role:** Unique mono-spaced font for code snippets or technical product details, creating a distinct content block.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.35 | 0.43px | `--text-caption` |
+| subheading | 18px | 1.2 | 0.44px | `--text-subheading` |
+| heading-sm | 22px | 1 | 0.53px | `--text-heading-sm` |
+| heading | 28px | 1.06 | 0.51px | `--text-heading` |
+| heading-lg | 50px | 1 | -0.5px | `--text-heading-lg` |
+| display-sm | 75px | 0.85 | -1.5px | `--text-display-sm` |
+| display | 250px | 0.85 | -2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-155 | 155px | `--spacing-155` |
+| spacing-180 | 180px | `--spacing-180` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| badges | 10px |
+| inputs | 7px |
+| buttons | 7px |
+| default | 3px |
+| circular | 50% |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(245, 244, 242) 0px 0px 0px 1.5px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 10px |
+
+## Components
+
+### Filled Primary Button
+
+**Role:** Interactive element
+
+Solid Graphite Ink background (#151515) with Pure White text (#f5f4f2). Has a 8px border-radius and 18px vertical, 20px horizontal padding. Identifies key calls to action.
+
+### Ghost Button
+
+**Role:** Interactive element
+
+Transparent background with Graphite Ink text (#151515) and a 1px Graphite Ink border. No border-radius. Padding is 13.5px vertical, 0px horizontal. Used for secondary actions that require less visual weight.
+
+### Text Link Button
+
+**Role:** Interactive element
+
+Transparent background with Pure White text (#f5f4f2) and a 1px Pure White border, 0px radius, 0px vertical padding, 48px horizontal. Used for promotional actions at large scale.
+
+### Circular Ghost Icon Button
+
+**Role:** Interactive element
+
+Transparent background, Pure White text (#f5f4f2), Pure White border with 50% border-radius to create a full circle. Used for navigation icons or small, less prominent actions.
+
+### Product Card
+
+**Role:** Display content
+
+Pure White background (#ffffff) with an asymmetric 16px 16px 0px 0px border-radius. Has 16px padding on top, right, and left, and 54px on bottom. Houses product imagery and details.
+
+### Standard Input Field
+
+**Role:** User input
+
+Pure White background (#ffffff) with a 1px Outline Gray border (#8a8a8a) and 4px border-radius. Padding is 6px vertical, 10px right, 16px left. For general form inputs.
+
+### Full-width Input Field
+
+**Role:** User input
+
+Transparent background with a 1px Canvas White border (#f5f4f2) and 0px border-radius. Has 12px vertical padding. Used for prominent input fields like search or newsletter sign-ups.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Graphite Ink (#151515) for all primary text content to maintain strong contrast against lighter backgrounds.
 - Apply Canvas White (#f5f4f2) as the default page background and for subtle UI element borders.
@@ -85,7 +211,7 @@ Escape Coffee Company presents a rugged, textural commerce experience. High-cont
 - Utilize 10px as the standard element gap for arranging items within cards or small groupings.
 - Employ the Ghost Button variant (transparent background, Graphite Ink border, no radius) for secondary actions or navigation links to maintain a light UI footprint.
 
-### Don'ts
+### Don't
 
 - Do not introduce new saturated colors; the palette is strictly achromatic with minimal, functional color accents for specific text states.
 - Avoid applying heavy drop shadows; elevation is primarily achieved through background color shifts and subtle borders.
@@ -94,10 +220,187 @@ Escape Coffee Company presents a rugged, textural commerce experience. High-cont
 - Do not use generic padding values; adhere to the 16px card padding and 10px element gap for consistent content density.
 - Avoid dense, information-heavy sections; ensure comfortable spacing and visual breaks between content blocks.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #f5f4f2 | Base page background, light UI containers, and subtle organizational bands. |
+| 1 | Card Surface | #ffffff | Elevated content blocks like product cards or form containers, providing a clean boundary. |
+| 2 | Panel | #ebe9e6 | Slightly darker background for specific sections or elements that need subtle differentiation from the main canvas. |
+| 3 | Accent Surface | #151515 | Dark backgrounds for high-contrast sections, primary buttons, or immersive content blocks where lighter text is needed. |
+
+## Elevation
+
+- **Shadow 1:** `rgb(245, 244, 242) 0px 0px 0px 1.5px`
+
+## Imagery
+
+Imagery on Escape Coffee Company is characterized by raw, sometimes grunge-like, high-quality photography interwoven with product shots. The treatment is often full-bleed for hero sections, showing realistic textures like snow, grain, or misty landscapes, creating a mood. Product photography features tight crops of coffee bags or cups, often on contrasting surfaces. There are also detailed, almost blueprint-like illustrations on product packaging, which are abstract and functional. Icons are minimalist, outlined, and monochromatic, typically in Graphite Ink (#151515) or Pure White (#ffffff). Imagery plays a dual role: setting an atmospheric mood and clearly showcasing product details, dominating visual space in hero and collection sections.
+
+## Layout
 
 The site employs a primarily contained layout, utilizing a max-width for content sections, while the hero section breaks this with a full-bleed background image. The hero features a massive, split-word headline ('Go Against The Grain') overlaid directly onto the background, creating immediate impact. Sections generally flow with consistent vertical spacing, often alternating between visual styles (e.g., full-bleed image to white contained section). Content arrangement frequently uses left-aligned text with visual elements on the right, or centered stacks for product listings. There's an underlying grid for product display, likely 3-column, allowing for clear presentation of items. Density varies from image-heavy, spacious heroes to more compact product detail areas. Navigation consists of a sticky top bar and a thin, vertical sidebar on the right for utility links and a hamburger menu.
 
-### Imagery
+## Similar Brands
 
-Imagery on Escape Coffee Company is characterized by raw, sometimes grunge-like, high-quality photography interwoven with product shots. The treatment is often full-bleed for hero sections, showing realistic textures like snow, grain, or misty landscapes, creating a mood. Product photography features tight crops of coffee bags or cups, often on contrasting surfaces. There are also detailed, almost blueprint-like illustrations on product packaging, which are abstract and functional. Icons are minimalist, outlined, and monochromatic, typically in Graphite Ink (#151515) or Pure White (#ffffff). Imagery plays a dual role: setting an atmospheric mood and clearly showcasing product details, dominating visual space in hero and collection sections.
+- **A-COLD-WALL*** — Aggressive, impactful typography and an intentionally raw, often industrial aesthetic with minimal color.
+- **Allbirds** — Focus on natural textures and materials, an earthy, muted palette, and clean product presentation.
+- **Patagonia** — Rugged, outdoorsy aesthetic; strong photography; and an emphasis on authentic, sometimes natural-grain backdrops.
+- **Acne Studios** — Minimalist layout with a strong emphasis on photography and distinct, often bold, type choices.
+- **Aesop** — Understated elegance, focus on product and typography, with sophisticated but muted color applications.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #f5f4f2;
+  --color-graphite-ink: #151515;
+  --color-asphalt-black: #000000;
+  --color-pale-stone: #ebe9e6;
+  --color-fog-gray: #929292;
+  --color-pure-white: #ffffff;
+  --color-outline-gray: #8a8a8a;
+  --color-subtle-border: #e3e3e3;
+  --font-twk-lausanne: 'TWK Lausanne', Inter;
+  --font-molitor: 'Molitor', Oswald;
+  --font-garaje: 'Garaje', Bebas Neue;
+  --font-arial: 'Arial', Arial;
+  --font-gtstandard-m: 'GTStandard-M', Space Mono;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --tracking-caption: 0.43px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 0.44px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: 0.53px;
+  --text-heading: 28px;
+  --leading-heading: 1.06;
+  --tracking-heading: 0.51px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.5px;
+  --text-display-sm: 75px;
+  --leading-display-sm: 0.85;
+  --tracking-display-sm: -1.5px;
+  --text-display: 250px;
+  --leading-display: 0.85;
+  --tracking-display: -2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-52: 52px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-100: 100px;
+  --spacing-130: 130px;
+  --spacing-155: 155px;
+  --spacing-180: 180px;
+  --radius-cards: 16px;
+  --radius-badges: 10px;
+  --radius-inputs: 7px;
+  --radius-buttons: 7px;
+  --radius-default: 3px;
+  --radius-circular: 50%;
+  --shadow-xl: rgb(245, 244, 242) 0px 0px 0px 1.5px;
+  --surface-canvas: #f5f4f2;
+  --surface-card-surface: #ffffff;
+  --surface-panel: #ebe9e6;
+  --surface-accent-surface: #151515;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #f5f4f2;
+  --color-graphite-ink: #151515;
+  --color-asphalt-black: #000000;
+  --color-pale-stone: #ebe9e6;
+  --color-fog-gray: #929292;
+  --color-pure-white: #ffffff;
+  --color-outline-gray: #8a8a8a;
+  --color-subtle-border: #e3e3e3;
+  --font-twk-lausanne: 'TWK Lausanne', Inter;
+  --font-molitor: 'Molitor', Oswald;
+  --font-garaje: 'Garaje', Bebas Neue;
+  --font-arial: 'Arial', Arial;
+  --font-gtstandard-m: 'GTStandard-M', Space Mono;
+  --text-caption: 11px;
+  --leading-caption: 1.35;
+  --tracking-caption: 0.43px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 0.44px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1;
+  --tracking-heading-sm: 0.53px;
+  --text-heading: 28px;
+  --leading-heading: 1.06;
+  --tracking-heading: 0.51px;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.5px;
+  --text-display-sm: 75px;
+  --leading-display-sm: 0.85;
+  --tracking-display-sm: -1.5px;
+  --text-display: 250px;
+  --leading-display: 0.85;
+  --tracking-display: -2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-52: 52px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-100: 100px;
+  --spacing-130: 130px;
+  --spacing-155: 155px;
+  --spacing-180: 180px;
+  --radius-cards: 16px;
+  --radius-badges: 10px;
+  --radius-inputs: 7px;
+  --radius-buttons: 7px;
+  --radius-default: 3px;
+  --radius-circular: 50%;
+  --shadow-xl: rgb(245, 244, 242) 0px 0px 0px 1.5px;
+  --surface-canvas: #f5f4f2;
+  --surface-card-surface: #ffffff;
+  --surface-panel: #ebe9e6;
+  --surface-accent-surface: #151515;
+}
+```

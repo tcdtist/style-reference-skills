@@ -1,74 +1,167 @@
 ---
 version: alpha
-name: Eventbrite
-description: Eventbrite employs a lively discovery-platform aesthetic, featuring a bright, almost white canvas punctuated by a single vivid blue for interaction and branding. Typography is direct and legible, supporting a clear hierarchy without being overt. Components are lightweight with subtle borders and generous rounded corners, emphasizing content flow and event visibility over heavy chrome.
-colors:
-  canvas-white: "#ffffff"
-  porcelain-mist: "#f8f7fa"
-  lavender-ash: "#dbdae3"
-  ghost-gray: "#eeedf2"
-  inkwell-purple: "#39364f"
-  shadow-graphite: "#585163"
-  slate-steel: "#6f7287"
-  oceanic-blue: "#3659e3"
-  deep-plum: "#1e0a3c"
-  terra-cotta: "#f05537"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.43
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.43
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.43
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.3
-spacing:
-  cardRadius: 16px
-  buttonRadius: 360px
-  elementGap: 12px
-  sectionGap: 77px
-components:
-  ghost-button:
-    role: Outline style button for secondary actions or navigation.
-  pill-button:
-    role: Small, contained button for filters or tags.
-  category-navigation-link:
-    role: Navigational link within category menus, often below a main image.
-  standard-card:
-    role: Container for event listings and general content blocks.
-  hero-card:
-    role: Prominent card used in hero sections, often with an integrated image.
-  compact-card:
-    role: Smaller cards for dense content layouts or galleries.
-  filter-badge:
-    role: Small, rounded labels for filtering or categorization.
-  navigation-search-input:
-    role: Input field for global search functionality in the header.
+name: "Eventbrite"
+description: "Eventbrite employs a lively discovery-platform aesthetic, featuring a bright, almost white canvas punctuated by a single vivid blue for interaction and branding. Typography is direct and legible, supporting a clear hierarchy without being overt. Components are lightweight with subtle borders and generous rounded corners, emphasizing content flow and event visibility over heavy chrome."
+theme: "light"
+industry: "media"
+source_url: "https://www.eventbrite.com"
+refero_style_id: "1fa0d9da-966f-4d43-9775-e156bec3a3b3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509859308-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509859308-thumb.jpg"
+extracted_at: "2026-04-30T00:44:41.663Z"
 ---
 
-## Overview
+# Eventbrite — Style Reference
 
-**North Star:** Event listing, vibrant and clear
+> Event listing, vibrant and clear
+
+**Theme:** light
+
+**Industry:** media
 
 Eventbrite employs a lively discovery-platform aesthetic, featuring a bright, almost white canvas punctuated by a single vivid blue for interaction and branding. Typography is direct and legible, supporting a clear hierarchy without being overt. Components are lightweight with subtle borders and generous rounded corners, emphasizing content flow and event visibility over heavy chrome.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button backgrounds, default badge background |
+| Porcelain Mist | #f8f7fa | `--color-porcelain-mist` | Subtle background for UI elements, hover states for neutral buttons and badges |
+| Lavender Ash | #dbdae3 | `--color-lavender-ash` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Ghost Gray | #eeedf2 | `--color-ghost-gray` | Active state backgrounds and borders for neutral ghost buttons |
+| Inkwell Purple | #39364f | `--color-inkwell-purple` | Primary text, prominent headings, default icon color |
+| Shadow Graphite | #585163 | `--color-shadow-graphite` | Secondary text, muted navigation elements, low-emphasis button text, focus outlines |
+| Slate Steel | #6f7287 | `--color-slate-steel` | Tertiary text, subtle button borders on hover/active, decorative icon fills |
+| Oceanic Blue | #3659e3 | `--color-oceanic-blue` | Primary accent for links, interactive elements, outlined buttons, information states |
+| Deep Plum | #1e0a3c | `--color-deep-plum` | High-contrast headings, text on darker backgrounds, primary button text for outlined/ghost buttons |
+| Terra Cotta | #f05537 | `--color-terra-cotta` | Illustrative accents and occasional card backgrounds — used sparingly for brand emphasis |
+
+## Tokens — Typography
+
+### Neue Plak
+
+- **Token:** `--font-neue-plak`
+- **Weights:** 400, 600, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 24px, 32px
+- **Line heights:** 0.75, 1.00, 1.20, 1.25, 1.33, 1.43, 1.57, 1.71, 1.83, 2.00
+- **Letter spacing:** -0.01em at 32px, -0.009em at 24px, 0.01em at 12px
+- **Role:** Headings, body text, and general interface text – provides a bold, condensed feel for titles, balancing with a clear, readable body.
+
+### Neue Plak Text
+
+- **Token:** `--font-neue-plak-text`
+- **Weights:** 600
+- **Sizes:** 14px
+- **Line heights:** 1.20, 1.43
+- **Letter spacing:** normal
+- **Role:** Specific navigation and metadata elements – ensuring clear, compact labeling within tighter UI spaces.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.43 | — | `--text-caption` |
+| body-sm | 14px | 1.43 | — | `--text-body-sm` |
+| body | 16px | 1.43 | — | `--text-body` |
+| body-lg | 18px | 1.43 | — | `--text-body-lg` |
+| heading-sm | 24px | 1.3 | — | `--text-heading-sm` |
+| heading | 32px | 1.3 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-57 | 57px | `--spacing-57` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-77 | 77px | `--spacing-77` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| badges | 20px |
+| inputs | 4px |
+| buttons | 360px |
+| heroCard | 40px 40px 0px 0px |
+| navCategory | 100px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 77px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Outline style button for secondary actions or navigation.
+
+Background: transparent (rgba(0,0,0,0)). Text: Inkwell Purple (#39364f) or Oceanic Blue (#3659e3). Padding: 0px. Border: 0px. Radius: 0px.
+
+### Pill Button
+
+**Role:** Small, contained button for filters or tags.
+
+Background: Canvas White (#ffffff). Text: Inkwell Purple (#39364f). Border: Lavender Ash (#dbdae3) 1px solid. Border Radius: 360px. Padding: 1px 6px.
+
+### Category Navigation Link
+
+**Role:** Navigational link within category menus, often below a main image.
+
+Background: transparent (rgba(0,0,0,0)). Text: Shadow Graphite (#585163). Border: 0px. Radius: 0px. Padding: 0px.
+
+### Standard Card
+
+**Role:** Container for event listings and general content blocks.
+
+Background: Canvas White (#ffffff). Border: none. Shadow: none. Radius: 16px. Padding: 0px.
+
+### Hero Card
+
+**Role:** Prominent card used in hero sections, often with an integrated image.
+
+Background: transparent (rgba(0,0,0,0)). Border: none. Shadow: none. Radius: 40px 40px 0px 0px. Padding: 0px.
+
+### Compact Card
+
+**Role:** Smaller cards for dense content layouts or galleries.
+
+Background: Canvas White (#ffffff). Border: none. Shadow: none. Radius: 4px. Padding: 0px.
+
+### Filter Badge
+
+**Role:** Small, rounded labels for filtering or categorization.
+
+Background: Canvas White (#ffffff). Text: Inkwell Purple (#39364f). Radius: 20px. Padding: 0px.
+
+### Navigation Search Input
+
+**Role:** Input field for global search functionality in the header.
+
+Background: transparent (rgba(0,0,0,0)). Text: Oceanic Blue (#3659e3). Border: Oceanic Blue (#3659e3) 1px solid at the bottom. Radius: 0px. Padding: 12px 0px 6px 0px.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#ffffff) as the primary page background to create an expansive, light environment.
 - Apply Oceanic Blue (#3659e3) exclusively for interactive elements like links, outlined buttons, and input borders to signal functionality.
@@ -78,7 +171,7 @@ Eventbrite employs a lively discovery-platform aesthetic, featuring a bright, al
 - Implement Pill Buttons with a 360px radius for a fully rounded, distinct interactive shape.
 - Use Lavender Ash (#dbdae3) for hairline borders on lists and cards to keep surfaces clean yet structured.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for large background areas, keeping the interface neutral and accent-driven.
 - Do not introduce strong box-shadows on cards or containers; flatness is preferred to maintain a lightweight feel.
@@ -88,10 +181,124 @@ Eventbrite employs a lively discovery-platform aesthetic, featuring a bright, al
 - Do not vary from the established spacing units; maintain the 4px base for consistent rhythm and hierarchy.
 - Do not clutter card content with excessive internal padding; content should define the card's boundaries, not excessive internal whitespace.
 
-### Layout
+## Imagery
+
+The visual language for imagery is diverse, incorporating photography and custom illustrations. Photography is typically lifestyle or event-focused, sometimes with a slight creative crop but generally left unmasked. Product screenshots appear less frequently. Illustrations are organic, often flat but with some subtle dimension, featuring a muted color palette that occasionally includes branded accents like Terra Cotta. Icons are outlined, conveying functionality without heavy visual weight. Imagery serves both decorative atmosphere in hero sections and explanatory content in event listings, often appearing as contained image blocks within cards, dominating visual space in grid layouts.
+
+## Layout
 
 The site uses a full-bleed page model for its primary background, but content within sections is typically contained and centered within a comfortable max-width. The hero section often features a full-width background image with centered, condensed headline text. Sections follow a consistent vertical rhythm, primarily flowing seamlessly with minimal visual dividers. Content is arranged in flexible grid layouts, with multi-column event cards featuring images prominently. A dominant pattern is a 4-column card grid for event listings. The navigation is a sticky top bar, providing persistent access to search and key actions while scrolling.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is diverse, incorporating photography and custom illustrations. Photography is typically lifestyle or event-focused, sometimes with a slight creative crop but generally left unmasked. Product screenshots appear less frequently. Illustrations are organic, often flat but with some subtle dimension, featuring a muted color palette that occasionally includes branded accents like Terra Cotta. Icons are outlined, conveying functionality without heavy visual weight. Imagery serves both decorative atmosphere in hero sections and explanatory content in event listings, often appearing as contained image blocks within cards, dominating visual space in grid layouts.
+- **Dice.fm** — Similar focus on event discovery with a clean, light interface and prominent use of imagery within cards.
+- **Bandsintown** — Emphasizes clear event listings and artist promotion against a light background.
+- **Resident Advisor** — Event-focused platform with a dense but structured card-based layout and a strong visual identity through photography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-porcelain-mist: #f8f7fa;
+  --color-lavender-ash: #dbdae3;
+  --color-ghost-gray: #eeedf2;
+  --color-inkwell-purple: #39364f;
+  --color-shadow-graphite: #585163;
+  --color-slate-steel: #6f7287;
+  --color-oceanic-blue: #3659e3;
+  --color-deep-plum: #1e0a3c;
+  --color-terra-cotta: #f05537;
+  --font-neue-plak: 'Neue Plak', ui-sans-serif, system-ui, sans-serif;
+  --font-neue-plak-text: 'Neue Plak Text', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.43;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.43;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 32px;
+  --leading-heading: 1.3;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-57: 57px;
+  --spacing-74: 74px;
+  --spacing-77: 77px;
+  --radius-cards: 16px;
+  --radius-badges: 20px;
+  --radius-inputs: 4px;
+  --radius-buttons: 360px;
+  --radius-herocard: 40px 40px 0px 0px;
+  --radius-navcategory: 100px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-porcelain-mist: #f8f7fa;
+  --color-lavender-ash: #dbdae3;
+  --color-ghost-gray: #eeedf2;
+  --color-inkwell-purple: #39364f;
+  --color-shadow-graphite: #585163;
+  --color-slate-steel: #6f7287;
+  --color-oceanic-blue: #3659e3;
+  --color-deep-plum: #1e0a3c;
+  --color-terra-cotta: #f05537;
+  --font-neue-plak: 'Neue Plak', ui-sans-serif, system-ui, sans-serif;
+  --font-neue-plak-text: 'Neue Plak Text', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --text-body: 16px;
+  --leading-body: 1.43;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.43;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 32px;
+  --leading-heading: 1.3;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-57: 57px;
+  --spacing-74: 74px;
+  --spacing-77: 77px;
+  --radius-cards: 16px;
+  --radius-badges: 20px;
+  --radius-inputs: 4px;
+  --radius-buttons: 360px;
+  --radius-herocard: 40px 40px 0px 0px;
+  --radius-navcategory: 100px;
+}
+```
