@@ -1,72 +1,189 @@
 ---
 version: alpha
-name: Limón
-description: Limón projects a warm, vibrant aesthetic through contrasting earthy dark neutrals with a singular, vivid yellow accent. Typography, primarily a custom sans-serif, maintains a clean and approachable feel, while the use of subtle borders and minimal shadows keeps components lightweight. The design balances rich photographic visuals with ample whitespace, creating an inviting yet structured experience.
-colors:
-  deep-forest: "#1d0b0d"
-  fresh-lime: "#103b15"
-  marigold-zest: "#f7ea48"
-  vanilla-cream: "#fcf9f0"
-  soft-mist: "#dbe2dc"
-  pure-white: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.45
-    letterSpacing: 0.02px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: 0.03px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.35
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.3
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 1
-    letterSpacing: 0.04px
-spacing:
-  buttonRadius: 1px
-  elementGap: 15px
-  sectionGap: 30px
-components:
-  primary-action-button:
-    role: Call to action
-  ghost-action-button-dark:
-    role: Secondary action on dark backgrounds
-  ghost-action-button-light:
-    role: Secondary action on light backgrounds
-  icon-button:
-    role: Standalone decorative or functional icon
-  product-description-card:
-    role: Displaying individual product details
-  navigation-link:
-    role: Primary navigation elements
+name: "Limón"
+description: "Limón projects a warm, vibrant aesthetic through contrasting earthy dark neutrals with a singular, vivid yellow accent. Typography, primarily a custom sans-serif, maintains a clean and approachable feel, while the use of subtle borders and minimal shadows keeps components lightweight. The design balances rich photographic visuals with ample whitespace, creating an inviting yet structured experience."
+theme: "dark"
+industry: "ecommerce"
+source_url: "https://limonoslo.no"
+refero_style_id: "f1b6a7d6-1ecb-4f1c-95b0-e03323363999"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517198486-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517198486-thumb.jpg"
+extracted_at: "2026-04-30T02:47:02.615Z"
 ---
 
-## Overview
+# Limón — Style Reference
 
-**North Star:** Earthy vibrancy
+> Earthy vibrancy
+
+**Theme:** dark
+
+**Industry:** ecommerce
 
 Limón projects a warm, vibrant aesthetic through contrasting earthy dark neutrals with a singular, vivid yellow accent. Typography, primarily a custom sans-serif, maintains a clean and approachable feel, while the use of subtle borders and minimal shadows keeps components lightweight. The design balances rich photographic visuals with ample whitespace, creating an inviting yet structured experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Forest | #1d0b0d | `--color-deep-forest` | Primary text, navigation links, overlay backgrounds — grounds the palette with a rich, almost black earth tone |
+| Fresh Lime | #103b15 | `--color-fresh-lime` | Secondary text, accent borders, decorative elements — provides a subtle, natural green contrast to the deep neutrals |
+| Marigold Zest | #f7ea48 | `--color-marigold-zest` | Primary action buttons, prominent headings, key highlights — a vivid, high-saturation yellow that commands attention and signifies interaction |
+| Vanilla Cream | #fcf9f0 | `--color-vanilla-cream` | Card backgrounds, section backgrounds, light text (on dark) — a warm off-white that acts as a canvas for most content |
+| Soft Mist | #dbe2dc | `--color-soft-mist` | Subtle borders, list item separators — a very light, cool gray that defines boundaries without visual weight |
+| Pure White | #ffffff | `--color-pure-white` | Soft icon strokes, subtle dividers, and low-emphasis decorative details. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### VenusCom
+
+- **Token:** `--font-venuscom`
+- **Substitute:** Montserrat, Open Sans
+- **Weights:** 300, 400, 500, 600, 700
+- **Sizes:** 14px, 16px, 19px, 20px, 26px, 30px, 36px, 46px, 54px, 68px, 75px
+- **Line heights:** 1.00, 1.01, 1.15, 1.20, 1.25, 1.30, 1.35, 1.37, 1.40, 1.45, 1.60
+- **Letter spacing:** 0.02em, 0.03em, 0.04em, 0.06em
+- **Role:** Primary brand typeface for all text content; its range of weights supports both bold headings and readable body copy, providing consistency across the interface.
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 19px
+- **Line heights:** 1.01
+- **Letter spacing:** normal
+- **Role:** Decorative lists or specific content blocks where a classic, distinct serif feel is desired to break visual monotony.
+
+### Font Awesome 6 Brands
+
+- **Token:** `--font-font-awesome-6-brands`
+- **Substitute:** Font Awesome 6 Brands
+- **Weights:** 400
+- **Sizes:** 36px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Social media icons and brand-specific iconography, maintaining a consistent vector-based icon style.
+
+### Font Awesome 6 Free
+
+- **Token:** `--font-font-awesome-6-free`
+- **Substitute:** Font Awesome 6 Free
+- **Weights:** 900
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.00
+- **Letter spacing:** 0.04em, 0.06em
+- **Role:** General utility and interface icons, differentiated by a bolder weight and slightly increased letter-spacing for visual punch.
+
+### Helvetica
+
+- **Token:** `--font-helvetica`
+- **Substitute:** Arial, Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 15px
+- **Line heights:** 1.50
+- **Letter spacing:** 0.007em
+- **Role:** Small functional text, legal disclaimers, or metadata where a highly legible, standard sans-serif is appropriate.
+
+### FreeSans
+
+- **Token:** `--font-freesans`
+- **Substitute:** Arial, Sans-serif
+- **Weights:** 400
+- **Sizes:** 19px
+- **Line heights:** 1.01
+- **Letter spacing:** -0.312em
+- **Role:** Specific list items or decorative text requiring tighter tracking for a distinct visual effect, possibly for artistic or brand display needs.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.45 | 0.02px | `--text-caption` |
+| body-sm | 16px | 1.4 | 0.03px | `--text-body-sm` |
+| subheading | 20px | 1.35 | — | `--text-subheading` |
+| heading-sm | 26px | 1.3 | — | `--text-heading-sm` |
+| heading | 30px | 1.25 | — | `--text-heading` |
+| heading-lg | 36px | 1.2 | — | `--text-heading-lg` |
+| display | 75px | 1 | 0.04px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-98 | 98px | `--spacing-98` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| body | 1px |
+| other | 40px |
+| buttons | 1px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| cardPadding | 15px |
+| elementGap | 15px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call to action
+
+Filled button with 'Marigold Zest' (#f7ea48) background, 'Fresh Lime' (#103b15) text, 1px border-radius, and 12px vertical / 34px horizontal padding.
+
+### Ghost Action Button (Dark)
+
+**Role:** Secondary action on dark backgrounds
+
+Transparent background, 'Pure White' (#ffffff) text and a 1px solid 'Pure White' (#ffffff) border, 0px border-radius, 12px vertical / 34px horizontal padding (effective padding values after extraction are 0px, so this is likely a text-only button with hover states).
+
+### Ghost Action Button (Light)
+
+**Role:** Secondary action on light backgrounds
+
+Transparent background, 'Deep Forest' (#1d0b0d) text, 0px border-radius, 12px vertical / 34px horizontal padding (effective padding values after extraction are 0px, so this is likely a text-only button with hover states).
+
+### Icon Button
+
+**Role:** Standalone decorative or functional icon
+
+Transparent background, 'Fresh Lime' (#103b15) color, 0px border-radius, 0px padding. Uses Font Awesome 6 Free for icon content.
+
+### Product Description Card
+
+**Role:** Displaying individual product details
+
+Background 'Vanilla Cream' (#fcf9f0), primary text 'Deep Forest' (#1d0b0d), secondary text 'Fresh Lime' (#103b15). Features 19px VenusCom for description text and a 1px border-radius. Images within these have a 40px radius.
+
+### Navigation Link
+
+**Role:** Primary navigation elements
+
+Transparent background, 'Deep Forest' (#1d0b0d) text at 16px VenusCom weight 400. Horizontal padding 8px left/right, and a 6px margin-left for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Marigold Zest' (#f7ea48) for all primary calls to action, ensuring it is the sole vivid accent on pages predominantly using neutral tones.
 - Use 'Deep Forest' (#1d0b0d) as the default background for immersive sections and main text color on light backgrounds like 'Vanilla Cream' (#fcf9f0).
@@ -76,7 +193,7 @@ Limón projects a warm, vibrant aesthetic through contrasting earthy dark neutra
 - Use VenusCom with varying weights for all headings and body text; reserve 'Times' and 'FreeSans' for specific decorative list elements if needed.
 - Ensure textual elements adhere to the established line heights, particularly longer body text at 1.37 to 1.40 for readability.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional saturated colors beyond 'Marigold Zest' (#f7ea48) for interactive elements.
 - Do not use dark text colors on 'Deep Forest' (#1d0b0d) backgrounds; default to 'Pure White' (#ffffff) or 'Vanilla Cream' (#fcf9f0) for contrast.
@@ -86,10 +203,139 @@ Limón projects a warm, vibrant aesthetic through contrasting earthy dark neutra
 - Do not place 'Marigold Zest' (#f7ea48) text against a 'Vanilla Cream' (#fcf9f0) background; the low contrast will hinder legibility.
 - Refrain from using 'Soft Mist' (#dbe2dc) as a background color for large sections; its primary role is for subtle dividers and borders.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Page Canvas | #1d0b0d | Primary background for the hero section and full-bleed content, providing a deep, grounding tone. |
+| 1 | Content Canvas | #fcf9f0 | Main background for content sections, cards, and textual information, offering a warm, light surface. |
+| 2 | Interactive Accent | #f7ea48 | Reserved for primary calls to action and prominent headings, designed to stand out against any background. |
+
+## Imagery
+
+The visual language predominantly features high-quality product photography: food items (bowls, wraps) are tightly cropped and displayed in a flat lay, top-down perspective on solid, muted backgrounds (often matching 'Deep Forest' or other earthy tones). Images are typically contained within a rectangular frame but some have a distinct 40px border-radius, giving them a softer edge. Photography serves both decorative and explanatory roles, showcasing the vibrancy of the food. Icons are minimal, using outlined or solid Font Awesome styles primarily for navigation and social links, maintaining a clean distinction from the rich food photography.
+
+## Layout
 
 The layout follows a max-width contained page model for most content, with a centered alignment. The hero section is full-bleed, using a 'Deep Forest' (#1d0b0d) background with food photography and centered text (`Limón`, `See our menu`) often in 'Marigold Zest' (#f7ea48) or 'Pure White' (#ffffff). Section rhythm alternates between full-bleed imagery and content blocks with 'Vanilla Cream' (#fcf9f0) backgrounds. Content is organized into a flexible grid pattern, often featuring 3-column product cards with images above descriptive text and 'Order Now' ghost buttons. Vertical spacing is comfortable, with a '30px' section gap observed. The navigation is a fixed top bar with minimalist links.
 
-### Imagery
+## Similar Brands
 
-The visual language predominantly features high-quality product photography: food items (bowls, wraps) are tightly cropped and displayed in a flat lay, top-down perspective on solid, muted backgrounds (often matching 'Deep Forest' or other earthy tones). Images are typically contained within a rectangular frame but some have a distinct 40px border-radius, giving them a softer edge. Photography serves both decorative and explanatory roles, showcasing the vibrancy of the food. Icons are minimal, using outlined or solid Font Awesome styles primarily for navigation and social links, maintaining a clean distinction from the rich food photography.
+- **Sweetgreen** — Emphasizes fresh, vibrant food photography against simple backgrounds and uses a clean, modern sans-serif typography.
+- **Chipotle** — Focuses on high-quality food visuals, simple branding, and clear calls to action, without overly complex UI.
+- **Pokeworks** — Connects vibrant, healthy food imagery with a modern, fresh aesthetic and straightforward menu presentation.
+- **Cava** — Utilizes warm, earthy tones alongside a bright accent color for calls to action, emphasizing natural ingredients and a clean feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-forest: #1d0b0d;
+  --color-fresh-lime: #103b15;
+  --color-marigold-zest: #f7ea48;
+  --color-vanilla-cream: #fcf9f0;
+  --color-soft-mist: #dbe2dc;
+  --color-pure-white: #ffffff;
+  --font-venuscom: 'VenusCom', Montserrat, Open Sans;
+  --font-times: 'Times', serif;
+  --font-font-awesome-6-brands: 'Font Awesome 6 Brands', Font Awesome 6 Brands;
+  --font-font-awesome-6-free: 'Font Awesome 6 Free', Font Awesome 6 Free;
+  --font-helvetica: 'Helvetica', Arial, Helvetica Neue;
+  --font-freesans: 'FreeSans', Arial, Sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.45;
+  --tracking-caption: 0.02px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.03px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 30px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.2;
+  --text-display: 75px;
+  --leading-display: 1;
+  --tracking-display: 0.04px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-34: 34px;
+  --spacing-98: 98px;
+  --spacing-120: 120px;
+  --radius-body: 1px;
+  --radius-other: 40px;
+  --radius-buttons: 1px;
+  --surface-page-canvas: #1d0b0d;
+  --surface-content-canvas: #fcf9f0;
+  --surface-interactive-accent: #f7ea48;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-forest: #1d0b0d;
+  --color-fresh-lime: #103b15;
+  --color-marigold-zest: #f7ea48;
+  --color-vanilla-cream: #fcf9f0;
+  --color-soft-mist: #dbe2dc;
+  --color-pure-white: #ffffff;
+  --font-venuscom: 'VenusCom', Montserrat, Open Sans;
+  --font-times: 'Times', serif;
+  --font-font-awesome-6-brands: 'Font Awesome 6 Brands', Font Awesome 6 Brands;
+  --font-font-awesome-6-free: 'Font Awesome 6 Free', Font Awesome 6 Free;
+  --font-helvetica: 'Helvetica', Arial, Helvetica Neue;
+  --font-freesans: 'FreeSans', Arial, Sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.45;
+  --tracking-caption: 0.02px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.03px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 30px;
+  --leading-heading: 1.25;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.2;
+  --text-display: 75px;
+  --leading-display: 1;
+  --tracking-display: 0.04px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-34: 34px;
+  --spacing-98: 98px;
+  --spacing-120: 120px;
+  --radius-body: 1px;
+  --radius-other: 40px;
+  --radius-buttons: 1px;
+  --surface-page-canvas: #1d0b0d;
+  --surface-content-canvas: #fcf9f0;
+  --surface-interactive-accent: #f7ea48;
+}
+```
