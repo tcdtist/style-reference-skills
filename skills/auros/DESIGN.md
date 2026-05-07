@@ -1,92 +1,168 @@
 ---
 version: alpha
-name: Auros
-description: Auros employs a deep-sea command center aesthetic: dark, absorbing tones of teal and blue-black serve as the canvas, punctuated by a radiant, almost neon gradient of pink, purple, and green. Typography is modern and precise, with a strong emphasis on spaciousness and clarity against the dark backdrop. Components are generally dark, with subtle variations in background teal for surface hierarchy, and liberal use of large radius values for a soft-edged feel. Accents are reserved for interactive elements and highlights, creating a focused, high-tech impression.
-colors:
-  midnight-teal: "#012624"
-  deep-ocean: "#011d1c"
-  accent-teal: "#003734"
-  soft-silver: "#bbc7c6"
-  frost-white: "#F2F2F2"
-  near-white: "#EDFFFE"
-  slate-gray: "#333333"
-  off-black: "#222222"
-  pale-pink-glow: "#FDE9FF"
-  soft-gray: "#707777"
-  vivid-aqua-to-gold-gradient: "#00827c"
-  ethereal-spectrum: "#cbfffc"
-  dynamic-flow-gradient: "#fadde6"
-  tech-surge-gradient: "#CBE0F9"
-  soft-transition-gradient: "#edfefe"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: 0.12px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: 0.055px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.5
-    letterSpacing: 0.15px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.3
-    letterSpacing: -0.012px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 61px
-    lineHeight: 1.3
-    letterSpacing: -0.013px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 1
-    letterSpacing: -0.02px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 1
-    letterSpacing: -0.04px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 6px
-  elementGap: 20px
-  sectionGap: 68px
-components:
-  ghost-button-light-text:
-    role: Secondary action button for low-priority interactions or link-like behavior.
-  primary-action-button-gradient-fill:
-    role: Prominent calls to action, drawing attention with its distinctive gradient.
-  action-card-accent-teal-background:
-    role: Interactive cards highlighting specific services or key information.
-  ghost-card-minimal:
-    role: Informational cards that blend with the background, using internal content for visual hierarchy.
-  navigation-link:
-    role: Interactive navigation items in the header or footer.
+name: "Auros"
+description: "Auros employs a deep-sea command center aesthetic: dark, absorbing tones of teal and blue-black serve as the canvas, punctuated by a radiant, almost neon gradient of pink, purple, and green. Typography is modern and precise, with a strong emphasis on spaciousness and clarity against the dark backdrop. Components are generally dark, with subtle variations in background teal for surface hierarchy, and liberal use of large radius values for a soft-edged feel. Accents are reserved for interactive elements and highlights, creating a focused, high-tech impression."
+theme: "dark"
+industry: "fintech"
+source_url: "https://auros.global"
+refero_style_id: "21cfe0c1-778d-4613-9f47-a5718eb929b3"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519663568-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519663568-thumb.jpg"
+extracted_at: "2026-04-30T03:28:12.849Z"
 ---
 
-## Overview
+# Auros — Style Reference
 
-**North Star:** Deep-sea radiant data
+> Deep-sea radiant data
+
+**Theme:** dark
+
+**Industry:** fintech
 
 Auros employs a deep-sea command center aesthetic: dark, absorbing tones of teal and blue-black serve as the canvas, punctuated by a radiant, almost neon gradient of pink, purple, and green. Typography is modern and precise, with a strong emphasis on spaciousness and clarity against the dark backdrop. Components are generally dark, with subtle variations in background teal for surface hierarchy, and liberal use of large radius values for a soft-edged feel. Accents are reserved for interactive elements and highlights, creating a focused, high-tech impression.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Teal | #012624 | `--color-midnight-teal` | Primary page background, text on light contrasting elements, subtle borders for ghost buttons and links. It creates a deep, immersive environment |
+| Deep Ocean | #011d1c | `--color-deep-ocean` | Elevated card backgrounds, providing a slightly darker surface than the main background without significant contrast |
+| Accent Teal | #003734 | `--color-accent-teal` | Background for secondary interactive elements and prominent cards, adding a subtle touch of color depth within the dark theme |
+| Soft Silver | #bbc7c6 | `--color-soft-silver` | Muted body text, helper text, and inactive icon strokes, providing secondary information without competing with headings |
+| Frost White | #F2F2F2 | `--color-frost-white` | Subtle text for quotes or less emphasized content, almost white but slightly dulled for dark contrast. Also serves as secondary border color for certain elements |
+| Near White | #EDFFFE | `--color-near-white` | Highly contrasting text and icon elements on dark backgrounds, offering maximum readability for main content |
+| Slate Gray | #333333 | `--color-slate-gray` | Decorative borders for ghost buttons and dividers where a darker accent is preferred, and occasionally for text on very light elements |
+| Off Black | #222222 | `--color-off-black` | Border color for ghost buttons, providing a subtle outline against the dark background |
+| Pale Pink Glow | #FDE9FF | `--color-pale-pink-glow` | Text for emphasized statistics or small, highlighted numerical data, providing a soft, almost ethereal accent |
+| Soft Gray | #707777 | `--color-soft-gray` | Background for very subtle, less prominent UI elements, providing minimal visual weight. Used for small background areas |
+| Vivid Aqua to Gold Gradient | #00827c | `--color-vivid-aqua-to-gold-gradient` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+| Ethereal Spectrum | #cbfffc | `--color-ethereal-spectrum` | Decorative background gradient creating a soft, shifting light effect, signifying dynamic motion or technological flow |
+| Dynamic Flow Gradient | #fadde6 | `--color-dynamic-flow-gradient` | Complex background element, giving a sense of depth and energetic movement through color transitions; Used for large, captivating hero backgrounds, emitting a soft, centered glow |
+| Tech Surge Gradient | #CBE0F9 | `--color-tech-surge-gradient` | Highlight elements, often hinting at digital infrastructure or data streams |
+| Soft Transition Gradient | #edfefe | `--color-soft-transition-gradient` | Subtle background variations or overlays, providing a gentle break from solid dark tones |
+
+## Tokens — Typography
+
+### Matter
+
+- **Token:** `--font-matter`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 10px, 12px, 13px, 14px, 16px, 20px, 24px, 36px, 61px, 86px, 96px, 295px
+- **Line heights:** 1.00, 1.30, 1.40, 1.50
+- **Letter spacing:** -0.046em at 295px, -0.040em at 96px, -0.020em at 86px, -0.013em at 61px, -0.012em at 36px, normal at 24px, 0.055em at 14px, 0.080em at 12px, 0.120em at 10px, 0.150em at 20px, 0.240em at 13px
+- **Role:** Primary brand typeface. Its modern, sans-serif clarity provides a technological, forward-thinking feel. Used for all headings, body text, and UI elements. The extremely tight letter spacing at large sizes creates a sense of precise, deliberate communication, while wider spacing for smaller text ensures readability. Varied line heights and weights allow for detailed hierarchy.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.43
+- **Role:** Fallback font for general interface elements, ensuring broad compatibility while maintaining readability across various operating systems when the Matter font is unavailable. Primarily seen in navigation and small UI text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | 0.12px | `--text-caption` |
+| body | 14px | 1.4 | 0.055px | `--text-body` |
+| body-lg | 16px | 1.5 | — | `--text-body-lg` |
+| subheading | 20px | 1.5 | 0.15px | `--text-subheading` |
+| heading-sm | 24px | 1.3 | — | `--text-heading-sm` |
+| heading | 36px | 1.3 | -0.012px | `--text-heading` |
+| heading-lg | 61px | 1.3 | -0.013px | `--text-heading-lg` |
+| display | 86px | 1 | -0.02px | `--text-display` |
+| display-lg | 96px | 1 | -0.04px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-68 | 68px | `--spacing-68` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-97 | 97px | `--spacing-97` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-156 | 156px | `--spacing-156` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-172 | 172px | `--spacing-172` |
+| spacing-232 | 232px | `--spacing-232` |
+| spacing-251 | 251px | `--spacing-251` |
+| spacing-290 | 290px | `--spacing-290` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| forms | 6px |
+| links | 6px |
+| badges | 6px |
+| images | 6px |
+| buttons | 6px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1440px |
+| sectionGap | 68px |
+| cardPadding | 40px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button - Light Text
+
+**Role:** Secondary action button for low-priority interactions or link-like behavior.
+
+Transparent background, 'Matter' font at 14px Weight 400, #222222 text color (for very light backgrounds, for dark backgrounds it would be a light color), 6px border radius, 0px padding. Border style would be 1px solid #222222 if on a light background, or #EDFFFE on a dark background.
+
+### Primary Action Button - Gradient Fill
+
+**Role:** Prominent calls to action, drawing attention with its distinctive gradient.
+
+Background uses 'Vivid Aqua to Gold Gradient' (linear-gradient(90deg, rgb(0, 130, 124) 0%, rgb(203, 255, 252) 100%)), text is usually a dark neutral (e.g., #222222 as seen in the prompt), 'Matter' font, 6px border radius, with generous padding (32px vertical, 22px horizontal).
+
+### Action Card - Accent Teal Background
+
+**Role:** Interactive cards highlighting specific services or key information.
+
+Background of 'Accent Teal' (#003734), with generous padding (36px all sides) and a 16px border radius. This card uses a slightly elevated background color to differentiate from the base canvas.
+
+### Ghost Card - Minimal
+
+**Role:** Informational cards that blend with the background, using internal content for visual hierarchy.
+
+Transparent background, 16px border radius, and generous padding (48px vertical, 36px horizontal).
+
+### Navigation Link
+
+**Role:** Interactive navigation items in the header or footer.
+
+Text in 'Arial' 14px, Weight 400, on a transparent background, typically white text on dark backgrounds. 6px border radius on hover/active states, with 0px padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Midnight Teal' (#012624) as the default background for all main page content areas to maintain the consistent dark theme.
 - Apply 'Matter' font family for all text elements, prioritizing appropriate weight and letter spacing for readability at specific sizes.
@@ -96,7 +172,7 @@ Auros employs a deep-sea command center aesthetic: dark, absorbing tones of teal
 - Maintain a clear visual hierarchy by differentiating interactive cards with 'Accent Teal' (#003734) backgrounds from more subtle, transparent cards.
 - Implement a generous vertical spacing of 68px between main sections to provide visual breathing room and clarity.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated or light colors for large background areas; maintain the integrity of the dark theme.
 - Avoid using low contrast text on dark backgrounds; ensure main text uses 'Near White' (#EDFFFE) or 'Soft Silver' (#bbc7c6) as appropriate.
@@ -105,14 +181,196 @@ Auros employs a deep-sea command center aesthetic: dark, absorbing tones of teal
 - Avoid excessive use of strong shadows; the design relies on color and background variations for surface differentiation rather than elevation effects.
 - Do not break the established spacing rhythm; consistently apply 68px for section gaps and 20px for element gaps.
 
-### Layout
+## Surfaces
 
-The page employs a max-width 1440px centered layout for most content, maintaining readability and structure. The hero section, however, is full-bleed, featuring a dark background with a pronounced celestial radial gradient and large, centered typography. The section rhythm is consistent, separated by substantial vertical spacing of 68px between blocks. Content is arranged in alternating patterns, often featuring text on the left and abstract visuals or cards on the right, or vertically stacked centered content for key messages. There's a subtle 3-column card grid for features. The overall density is spacious, emphasizing individual content blocks. Navigation is a sticky top bar with clearly defined links and a prominent gradient-filled 'Partner With Us' button.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Teal Surface | #012624 | Base page background and foundational canvas. |
+| 1 | Deep Ocean Surface | #011d1c | Slightly elevated cards, providing minimal textural difference from the base. |
+| 2 | Accent Teal Surface | #003734 | Prominent interactive cards and background for certain components, adding a subtle touch of color and depth. |
+| 3 | Soft Gray Surface | #707777 | Very subtle background for small, less emphasized UI elements or dividers. |
 
-### Imagery
+## Imagery
 
 This design system uses a minimal approach to imagery, focusing primarily on abstract digital graphics and subtle animations for atmosphere rather than specific photography or product illustrations. Where present, it features scattered particle effects and molecular-like structures (e.g., the large sphere of dots and the connected 'blob' shapes), rendered in colors that subtly shift between shades of the brand's teal and soft pink. These are primarily decorative, contributing to the high-tech, liquid data feel. Icons are typically outlined and monochromatic, matching the overall sleek and understated UI. The density of imagery is low, allowing typography and spacious layouts to dominate.
 
-### Elevation
+## Layout
 
-The design system explicitly avoids traditional shadow-based elevation. Instead, visual hierarchy and depth are created through variations in background color (using 'Midnight Teal', 'Deep Ocean', and 'Accent Teal' for successive surface levels) and soft background gradients. Components acquire visual weight or distinction through these subtle color shifts and generous padding, rather than cast shadows, contributing to a modern, almost flat aesthetic with rich background textures.
+The page employs a max-width 1440px centered layout for most content, maintaining readability and structure. The hero section, however, is full-bleed, featuring a dark background with a pronounced celestial radial gradient and large, centered typography. The section rhythm is consistent, separated by substantial vertical spacing of 68px between blocks. Content is arranged in alternating patterns, often featuring text on the left and abstract visuals or cards on the right, or vertically stacked centered content for key messages. There's a subtle 3-column card grid for features. The overall density is spacious, emphasizing individual content blocks. Navigation is a sticky top bar with clearly defined links and a prominent gradient-filled 'Partner With Us' button.
+
+## Similar Brands
+
+- **Stripe** — Uses a dark, often gradient-infused background with concise, modern typography and a focus on clean UI elements for tech-forward appeal.
+- **Linear** — Employs a dark, high-contrast UI with precise typography, subtle surface differentiation, and targeted accent colors to create a 'command center' feel.
+- **Alchemy** — Features a dark theme with strong gradients and luminous elements, reflecting a tech/crypto branding with a focus on cutting-edge visuals.
+- **Coinbase (Dark Mode)** — Utilizes a dark background with focused typography, subtle variations in dark surfaces, and a limited palette of brand accents for actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-teal: #012624;
+  --color-deep-ocean: #011d1c;
+  --color-accent-teal: #003734;
+  --color-soft-silver: #bbc7c6;
+  --color-frost-white: #F2F2F2;
+  --color-near-white: #EDFFFE;
+  --color-slate-gray: #333333;
+  --color-off-black: #222222;
+  --color-pale-pink-glow: #FDE9FF;
+  --color-soft-gray: #707777;
+  --color-vivid-aqua-to-gold-gradient: #00827c;
+  --color-ethereal-spectrum: #cbfffc;
+  --color-dynamic-flow-gradient: #fadde6;
+  --color-tech-surge-gradient: #CBE0F9;
+  --color-soft-transition-gradient: #edfefe;
+  --font-matter: 'Matter', Inter;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.12px;
+  --text-body: 14px;
+  --leading-body: 1.4;
+  --tracking-body: 0.055px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0.15px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 36px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.012px;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 1.3;
+  --tracking-heading-lg: -0.013px;
+  --text-display: 86px;
+  --leading-display: 1;
+  --tracking-display: -0.02px;
+  --text-display-lg: 96px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.04px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-68: 68px;
+  --spacing-80: 80px;
+  --spacing-97: 97px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --spacing-156: 156px;
+  --spacing-160: 160px;
+  --spacing-172: 172px;
+  --spacing-232: 232px;
+  --spacing-251: 251px;
+  --spacing-290: 290px;
+  --radius-cards: 16px;
+  --radius-forms: 6px;
+  --radius-links: 6px;
+  --radius-badges: 6px;
+  --radius-images: 6px;
+  --radius-buttons: 6px;
+  --surface-midnight-teal-surface: #012624;
+  --surface-deep-ocean-surface: #011d1c;
+  --surface-accent-teal-surface: #003734;
+  --surface-soft-gray-surface: #707777;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-teal: #012624;
+  --color-deep-ocean: #011d1c;
+  --color-accent-teal: #003734;
+  --color-soft-silver: #bbc7c6;
+  --color-frost-white: #F2F2F2;
+  --color-near-white: #EDFFFE;
+  --color-slate-gray: #333333;
+  --color-off-black: #222222;
+  --color-pale-pink-glow: #FDE9FF;
+  --color-soft-gray: #707777;
+  --color-vivid-aqua-to-gold-gradient: #00827c;
+  --color-ethereal-spectrum: #cbfffc;
+  --color-dynamic-flow-gradient: #fadde6;
+  --color-tech-surge-gradient: #CBE0F9;
+  --color-soft-transition-gradient: #edfefe;
+  --font-matter: 'Matter', Inter;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.12px;
+  --text-body: 14px;
+  --leading-body: 1.4;
+  --tracking-body: 0.055px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.5;
+  --tracking-subheading: 0.15px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.3;
+  --text-heading: 36px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.012px;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 1.3;
+  --tracking-heading-lg: -0.013px;
+  --text-display: 86px;
+  --leading-display: 1;
+  --tracking-display: -0.02px;
+  --text-display-lg: 96px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.04px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-68: 68px;
+  --spacing-80: 80px;
+  --spacing-97: 97px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --spacing-156: 156px;
+  --spacing-160: 160px;
+  --spacing-172: 172px;
+  --spacing-232: 232px;
+  --spacing-251: 251px;
+  --spacing-290: 290px;
+  --radius-cards: 16px;
+  --radius-forms: 6px;
+  --radius-links: 6px;
+  --radius-badges: 6px;
+  --radius-images: 6px;
+  --radius-buttons: 6px;
+  --surface-midnight-teal-surface: #012624;
+  --surface-deep-ocean-surface: #011d1c;
+  --surface-accent-teal-surface: #003734;
+  --surface-soft-gray-surface: #707777;
+}
+```
