@@ -1,67 +1,207 @@
 ---
 version: alpha
-name: Slingshot
-description: Slingshot employs a practical and approachable interface, using a bright white canvas offset by soft, almost achromatic background shades. A single vibrant blue acts as the primary accent, drawing attention to calls to action and interactive elements. Typography is bold and direct for headings, while body text remains clear and functional. Components favor rounded corners and minimal elevation, presenting information without visual clutter.
-colors:
-  midnight-ink: "#241f37"
-  canvas-white: "#ffffff"
-  sky-blue: "#ecf2ff"
-  pale-peach: "#fff4ec"
-  mint-glaze: "#edf9f5"
-  action-blue: "#1a5fff"
-  accent-orange: "#ff7a1a"
-  accent-green: "#359774"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.14
-    letterSpacing: 0.083px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.33
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-spacing:
-  cardRadius: 24px
-  buttonRadius: 6px
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  secondary-ghost-button:
-    role: Navigational or secondary actions where visual prominence is low.
-  outline-action-button-nav:
-    role: Navigation or login actions, indicating an interactive element without being primary.
-  ghost-accent-button:
-    role: Lightweight, secondary actions or internal links within content.
-  primary-filled-button:
-    role: Main calls to action on the page, highly visible and interactive.
-  testimonial-card:
-    role: Showcasing client feedback, a floating element with subtle visual depth.
-  feature-card:
-    role: Highlighting product features or key information blocks.
-  content-block-card:
-    role: Encapsulating longer form textual content or aggregated information.
+name: "Slingshot"
+description: "Slingshot employs a practical and approachable interface, using a bright white canvas offset by soft, almost achromatic background shades. A single vibrant blue acts as the primary accent, drawing attention to calls to action and interactive elements. Typography is bold and direct for headings, while body text remains clear and functional. Components favor rounded corners and minimal elevation, presenting information without visual clutter."
+theme: "light"
+industry: "saas"
+source_url: "https://www.useslingshot.com"
+refero_style_id: "e683efcd-b005-4a35-a5ea-d25bcf3de5c0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520603007-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520603007-thumb.jpg"
+extracted_at: "2026-04-30T03:44:03.609Z"
 ---
 
-## Overview
+# Slingshot — Style Reference
 
-**North Star:** Crisp canvas, vivid action.
+> Crisp canvas, vivid action.
+
+**Theme:** light
+
+**Industry:** saas
 
 Slingshot employs a practical and approachable interface, using a bright white canvas offset by soft, almost achromatic background shades. A single vibrant blue acts as the primary accent, drawing attention to calls to action and interactive elements. Typography is bold and direct for headings, while body text remains clear and functional. Components favor rounded corners and minimal elevation, presenting information without visual clutter.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #241f37 | `--color-midnight-ink` | Primary text, prominent headings — provides strong contrast against light backgrounds |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, default UI elements. The base layer for all content |
+| Sky Blue | #ecf2ff | `--color-sky-blue` | Subtle secondary background surface, often for cards or sections, providing a soft visual break from Canvas White |
+| Pale Peach | #fff4ec | `--color-pale-peach` | Minor accent background, possibly for callouts or contextual sections |
+| Mint Glaze | #edf9f5 | `--color-mint-glaze` | Subtle contextual background, used sparingly |
+| Action Blue | #1a5fff | `--color-action-blue` | Primary action buttons, active interactive elements, and decorative accents — signifies interactivity and brand presence |
+| Accent Orange | #ff7a1a | `--color-accent-orange` | Decorative highlights, strokes, and small accent elements, providing secondary visual interest |
+| Accent Green | #359774 | `--color-accent-green` | Green wash for highlight backgrounds, decorative bands, and soft emphasis behind content |
+
+## Tokens — Typography
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.2
+- **Role:** sans-serif — detected in extracted data but not described by AI
+
+### Gopher
+
+- **Token:** `--font-gopher`
+- **Substitute:** Open Sans
+- **Weights:** 400, 500
+- **Sizes:** 24px, 32px, 56px
+- **Line heights:** 1.00
+- **Role:** Prominent headings and titles. The ultra-tight line height (1.0) and lack of letter spacing create a dense, impactful statement, giving it a confident and contemporary feel.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.14, 1.20, 1.33
+- **Role:** Body text and functional interface elements, ensuring readability across various content densities and providing a modern, clear voice.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.14, 1.20, 1.33
+- **Letter spacing:** 0.083em
+- **Role:** Small, emphasized text such as tags or labels. The generous letter spacing and line height set it apart, making short phrases highly visible.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.14, 1.20, 1.33
+- **Role:** Strong emphasis within body text and some button labels. Provides clear hierarchy for important information without resorting to larger sizes.
+
+### Inter-Bold
+
+- **Token:** `--font-inter-bold`
+- **Weights:** 700
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.14, 1.6
+- **Role:** Inter-Bold — detected in extracted data but not described by AI
+
+### Inter-SemiBold
+
+- **Token:** `--font-inter-semibold`
+- **Weights:** 600
+- **Sizes:** 12px
+- **Line heights:** 2
+- **Letter spacing:** 0.083
+- **Role:** Inter-SemiBold — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.14 | 0.083px | `--text-caption` |
+| body | 14px | 1.33 | — | `--text-body` |
+| heading | 24px | 1 | — | `--text-heading` |
+| heading-lg | 32px | 1 | — | `--text-heading-lg` |
+| display | 56px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-168 | 168px | `--spacing-168` |
+| spacing-184 | 184px | `--spacing-184` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 43px |
+| cards | 24px |
+| buttons | 6px |
+| default | 12px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Secondary Ghost Button
+
+**Role:** Navigational or secondary actions where visual prominence is low.
+
+Text only, `sans-serif` at 12px, default browser blue text color (#0000ee - this is a system color, not branded). No discernible background or border in its ghost state.
+
+### Outline Action Button (Nav)
+
+**Role:** Navigation or login actions, indicating an interactive element without being primary.
+
+Background: `Canvas White` (#ffffff), Text: default browser blue (#0000ee), Border: default browser blue (#0000ee), Radius: 43px, Padding: 8px vertical, 16px horizontal. Font: `sans-serif`.
+
+### Ghost Accent Button
+
+**Role:** Lightweight, secondary actions or internal links within content.
+
+Background: `Sky Blue` (#ecf2ff), Text: black (#000000), Border: black (#000000), Radius: 6px, Padding: 4px vertical, 10px horizontal. Font: `sans-serif`.
+
+### Primary Filled Button
+
+**Role:** Main calls to action on the page, highly visible and interactive.
+
+Background: `Action Blue` (#1a5fff), Text: default browser blue (#0000ee) (this is an unusual choice, effectively making the text visible by being the *same* as the active button 'color' for the browser default), Border: default browser blue (#0000ee) (again, usually a system default that would be overridden), Radius: 0px. Padding: 0px vertical, 60px horizontal. Font `sans-serif`.
+
+### Testimonial Card
+
+**Role:** Showcasing client feedback, a floating element with subtle visual depth.
+
+Background: `Canvas White` (#ffffff), No border, No shadow, Radius: 24px, Padding: 0px.
+
+### Feature Card
+
+**Role:** Highlighting product features or key information blocks.
+
+Background: `Sky Blue` (#ecf2ff), No border, No shadow, Radius: 24px, Padding: 24px.
+
+### Content Block Card
+
+**Role:** Encapsulating longer form textual content or aggregated information.
+
+Background: `Canvas White` (#ffffff), No border, No shadow, Radius: 12px, Padding: 32px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize `Action Blue` (#1a5fff) for primary calls to action, active states, and critical interactive elements.
 - Use `Gopher` with a line height of 1.0 for all primary headings to maintain a dense, impactful visual.
@@ -71,7 +211,7 @@ Slingshot employs a practical and approachable interface, using a bright white c
 - Maintain a default `16px` element gap for vertical spacing between most content elements.
 - Use `Midnight Ink` (#241f37) for all body copy and most important text elements.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple vivid colors; reserve saturation primarily for `Action Blue` (#1a5fff) and sparingly for `Accent Orange` (#ff7a1a).
 - Do not introduce sharp corners; consistently apply radii of at least `6px` on interactive elements and `12px` on cards.
@@ -81,10 +221,139 @@ Slingshot employs a practical and approachable interface, using a bright white c
 - Do not use generic gray tones for text that are not `Midnight Ink` (#241f37) or black (#000000), as `Midnight Ink` is the established primary dark text color.
 - Do not use highly textured backgrounds; stick to solid color fills, predominantly light neutrals.
 
-### Layout
+## Imagery
+
+The site uses a combination of product photography and abstract, colorful illustrations. Product photos feature tight crops of swag items (hats, stickers, shirts) arranged in grid-like patterns, often on a pure white or light gray background, highlighting the items themselves without lifestyle context. Illustrations are abstract and colorful, often rounded or organic in shape, serving as decorative accents or visual metaphors without strong outlines. Icons, when present, are simple and outlined with a medium stroke weight. Imagery primarily serves to showcase products and add decorative atmosphere without dominating the layout.
+
+## Layout
 
 The page primarily uses a max-width contained layout, with content sitting within a central column. The hero section features a prominent, left-aligned headline and text block, paired with a grid of product images on the right. Subsequent sections often employ an alternating text-left/visual-right pattern. Vertical spacing between sections is generous and consistent. Some sections use `Sky Blue` (#ecf2ff) or `Pale Peach` (#fff4ec) backgrounds to create visual breaks. Navigation is a sticky top bar with brand logo left and text links and an outlined button on the right.
 
-### Imagery
+## Similar Brands
 
-The site uses a combination of product photography and abstract, colorful illustrations. Product photos feature tight crops of swag items (hats, stickers, shirts) arranged in grid-like patterns, often on a pure white or light gray background, highlighting the items themselves without lifestyle context. Illustrations are abstract and colorful, often rounded or organic in shape, serving as decorative accents or visual metaphors without strong outlines. Icons, when present, are simple and outlined with a medium stroke weight. Imagery primarily serves to showcase products and add decorative atmosphere without dominating the layout.
+- **Stripe** — Shares a clean white background, functional typography, and a single vibrant brand color for accents and CTAs.
+- **Framer** — Similar use of generous spacing, soft rounded corners, and clear information hierarchy through typography on a light canvas.
+- **Linear** — Employs an emphasis on crisp surfaces, restrained use of color, and high legibility with direct, sans-serif typography.
+- **Webflow** — Features a light, spacious layout with a focus on product visuals and distinct, but not overwhelming, accent colors for interactivity.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #241f37;
+  --color-canvas-white: #ffffff;
+  --color-sky-blue: #ecf2ff;
+  --color-pale-peach: #fff4ec;
+  --color-mint-glaze: #edf9f5;
+  --color-action-blue: #1a5fff;
+  --color-accent-orange: #ff7a1a;
+  --color-accent-green: #359774;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-gopher: 'Gopher', Open Sans;
+  --font-inter: 'Inter', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --font-inter-bold: 'Inter-Bold', ui-sans-serif, system-ui, sans-serif;
+  --font-inter-semibold: 'Inter-SemiBold', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.14;
+  --tracking-caption: 0.083px;
+  --text-body: 14px;
+  --leading-body: 1.33;
+  --text-heading: 24px;
+  --leading-heading: 1;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --text-display: 56px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-130: 130px;
+  --spacing-168: 168px;
+  --spacing-184: 184px;
+  --radius-pill: 43px;
+  --radius-cards: 24px;
+  --radius-buttons: 6px;
+  --radius-default: 12px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #241f37;
+  --color-canvas-white: #ffffff;
+  --color-sky-blue: #ecf2ff;
+  --color-pale-peach: #fff4ec;
+  --color-mint-glaze: #edf9f5;
+  --color-action-blue: #1a5fff;
+  --color-accent-orange: #ff7a1a;
+  --color-accent-green: #359774;
+  --font-sans-serif: 'sans-serif', ui-sans-serif, system-ui, sans-serif;
+  --font-gopher: 'Gopher', Open Sans;
+  --font-inter: 'Inter', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --font-inter-bold: 'Inter-Bold', ui-sans-serif, system-ui, sans-serif;
+  --font-inter-semibold: 'Inter-SemiBold', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.14;
+  --tracking-caption: 0.083px;
+  --text-body: 14px;
+  --leading-body: 1.33;
+  --text-heading: 24px;
+  --leading-heading: 1;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1;
+  --text-display: 56px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-130: 130px;
+  --spacing-168: 168px;
+  --spacing-184: 184px;
+  --radius-pill: 43px;
+  --radius-cards: 24px;
+  --radius-buttons: 6px;
+  --radius-default: 12px;
+}
+```
