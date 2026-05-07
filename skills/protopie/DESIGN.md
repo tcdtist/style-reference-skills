@@ -1,86 +1,200 @@
 ---
 version: alpha
-name: ProtoPie
-description: ProtoPie's design system creates a feeling of approachable high-tech proficiency. Its light theme and ample whitespace are punctuated by vibrant violet accents that guide interaction without overwhelming, like glowing controls on a clean white console. The judicious use of rounded corners—from subtle 4px button radii to emphatic 9999px pills—softens the technical edge, making complex prototyping feel open and inviting. Custom display fonts contribute to a distinctive, playful yet authoritative brand voice.
-colors:
-  midnight-ink: "#181818"
-  stone-gray: "#555555"
-  pale-gray: "#999999"
-  ghost-white: "#ffffff"
-  crystal-frost: "#e9e9e9"
-  iris-bloom: "#8169ff"
-  violet-signal: "#6d4ff0"
-  lavender-haze: "#c9bfff"
-  aqua-tint: "#3eb2b2"
-  violet-fade: "#ab9eff"
-  aqua-gradient: "#81dbdb"
-  lavender-swirl: "#e3deff"
-  violet-mist: "#c9bfff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.56
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.45
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.43
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 0.8
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.33
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 62px
-    lineHeight: 1.29
-spacing:
-  cardRadius: 16px
-  buttonRadius: 4px
-  elementGap: 8px
-components:
-  primary-filled-button:
-    role: Main call-to-action.
-  secondary-soft-button:
-    role: Alternative call-to-action or secondary action.
-  ghost-text-button:
-    role: Navigation or less prominent actions.
-  pill-button:
-    role: Tags, categories, or filtering elements.
-  header-navigation-link:
-    role: Main navigation items.
-  input-field:
-    role: User data entry.
-  elevated-card:
-    role: Content container with visual separation.
+name: "ProtoPie"
+description: "ProtoPie's design system creates a feeling of approachable high-tech proficiency. Its light theme and ample whitespace are punctuated by vibrant violet accents that guide interaction without overwhelming, like glowing controls on a clean white console. The judicious use of rounded corners—from subtle 4px button radii to emphatic 9999px pills—softens the technical edge, making complex prototyping feel open and inviting. Custom display fonts contribute to a distinctive, playful yet authoritative brand voice."
+theme: "light"
+industry: "design"
+source_url: "https://protopie.io"
+refero_style_id: "031302e5-3269-4735-ab56-d4c7d02edc01"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923888067-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923888067-thumb.jpg"
+extracted_at: "2026-04-11T16:11:50.226Z"
 ---
 
-## Overview
+# ProtoPie — Style Reference
 
-**North Star:** Tech console, soft glow.
+> Tech console, soft glow.
+
+**Theme:** light
+
+**Industry:** design
 
 ProtoPie's design system creates a feeling of approachable high-tech proficiency. Its light theme and ample whitespace are punctuated by vibrant violet accents that guide interaction without overwhelming, like glowing controls on a clean white console. The judicious use of rounded corners—from subtle 4px button radii to emphatic 9999px pills—softens the technical edge, making complex prototyping feel open and inviting. Custom display fonts contribute to a distinctive, playful yet authoritative brand voice.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #181818 | `--color-midnight-ink` | Primary text for headings and body, providing high contrast on light backgrounds. |
+| Stone Gray | #555555 | `--color-stone-gray` | Secondary text and subtle details, creating a softer visual hierarchy. |
+| Pale Gray | #999999 | `--color-pale-gray` | Tertiary text, descriptive labels, and subtle UI elements. |
+| Ghost White | #ffffff | `--color-ghost-white` | Page backgrounds, card surfaces, and primary button text. |
+| Crystal Frost | #e9e9e9 | `--color-crystal-frost` | Subtle background for UI elements, separating sections without sharp contrast. |
+| Iris Bloom | #8169ff | `--color-iris-bloom` | Primary interactive elements like buttons and links, defining key actions and brand presence. |
+| Violet Signal | #6d4ff0 | `--color-violet-signal` | Alternative interactive elements, hover states, and brand highlights. |
+| Lavender Haze | #c9bfff | `--color-lavender-haze` | Soft button backgrounds and subtle decorative elements, hinting at interaction. |
+| Aqua Tint | #3eb2b2 | `--color-aqua-tint` | Decorative elements and occasional iconography. |
+| Violet Fade | #ab9eff | `--color-violet-fade` | Background gradients and soft visual accents. |
+| Aqua Gradient | #81dbdb | `--color-aqua-gradient` | Subtle background effect creating depth and a modern feel. |
+| Lavender Swirl | #e3deff | `--color-lavender-swirl` | Decorative background gradient, adding a soft, ethereal quality to sections. |
+| Violet Mist | #c9bfff | `--color-violet-mist` | Background gradient for sections, providing a gentle color transition. |
+
+## Tokens — Typography
+
+### Gilroy
+
+- **Token:** `--font-gilroy`
+- **Substitute:** Montserrat
+- **Weights:** 400, 700
+- **Sizes:** 16px, 18px, 20px, 22px, 28px, 48px, 62px
+- **Line heights:** 1.29, 1.30, 1.33, 1.43, 1.45, 1.50, 1.56, 1.60
+- **Letter spacing:** normal
+- **Role:** Dominant brand typeface used across headings, navigation, and key brand messages. The varying weights and generous line heights contribute to a modern, airy feel, while the bold weights at display sizes carry authority.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 24px
+- **Line heights:** 1.30, 1.40, 1.43, 1.50, 1.56, 1.67
+- **Letter spacing:** normal
+- **Role:** Used for body text, links, and detailed UI elements, ensuring legibility and content-heavy sections. Its clean, functional design supports the technical nature of the product.
+
+### Palmer Lake Print
+
+- **Token:** `--font-palmer-lake-print`
+- **Substitute:** Rubik
+- **Weights:** 400
+- **Sizes:** 32px
+- **Line heights:** 0.80
+- **Letter spacing:** normal
+- **Role:** A distinctive, decorative display font used sparingly for unique headings or stylistic elements. Its very tight line height and decorative nature add a unique flair, distinguishing specific brand messaging.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | — | `--text-caption` |
+| body-sm | 14px | 1.5 | — | `--text-body-sm` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.56 | — | `--text-subheading` |
+| heading | 22px | 1.45 | — | `--text-heading` |
+| heading-lg | 28px | 1.43 | — | `--text-heading-lg` |
+| display-sm | 32px | 0.8 | — | `--text-display-sm` |
+| display | 48px | 1.33 | — | `--text-display` |
+| display-lg | 62px | 1.29 | — | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-62 | 62px | `--spacing-62` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-89 | 89px | `--spacing-89` |
+| spacing-93 | 93px | `--spacing-93` |
+| spacing-102 | 102px | `--spacing-102` |
+| spacing-109 | 109px | `--spacing-109` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-215 | 215px | `--spacing-215` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| links | 12px |
+| other | 8px |
+| pills | 9999px |
+| buttons | 4px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call-to-action.
+
+Background: Iris Bloom (#8169ff), Text: Ghost White (#ffffff), Border: Ghost White (#ffffff), Radius: 4px, Padding: 11px vertical, 16px horizontal. Uses Gilroy 700.
+
+### Secondary Soft Button
+
+**Role:** Alternative call-to-action or secondary action.
+
+Background: Lavender Haze (#c9bfff), Text: Midnight Ink (#000000), Border: none, Radius: 8px, Padding: 0px. Uses Gilroy 400.
+
+### Ghost Text Button
+
+**Role:** Navigation or less prominent actions.
+
+Background: transparent, Text: Midnight Ink (#000000), Border: none, Radius: 0px, Padding: 0px. Uses Gilroy 400.
+
+### Pill Button
+
+**Role:** Tags, categories, or filtering elements.
+
+Background: Ghost White (#ffffff), Text: Midnight Ink (#000000), Border: none, Radius: 9999px, Padding: 0px (likely content-driven). Uses Gilroy 400.
+
+### Header Navigation Link
+
+**Role:** Main navigation items.
+
+Text: Midnight Ink (#181818), no background, no border. Uses Gilroy 400 at 16px.
+
+### Input Field
+
+**Role:** User data entry.
+
+Background: transparent, Text: Midnight Ink (#181818), Border: Midnight Ink (#181818), Radius: 0px, Padding: 16px vertical, 8px horizontal. Uses Inter 400.
+
+### Elevated Card
+
+**Role:** Content container with visual separation.
+
+Background: Ghost White (#ffffff), Border Radius: 16px. Shadow: `rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px`.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Iris Bloom (#8169ff) for primary interactive buttons and links to consistently highlight calls to action.
 - Apply Gilroy 700 for all headings to maintain brand's bold and clear voice, particularly at display sizes up to 62px.
@@ -90,7 +204,7 @@ ProtoPie's design system creates a feeling of approachable high-tech proficiency
 - Use 9999px radius for all pill-shaped elements to differentiate them clearly as tags or small categorizations.
 - Employ the `rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px` shadow for cards or elevated content to give subtle lift.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors outside of the brand's defined violet and aqua accents to maintain a clean, light aesthetic.
 - Do not introduce sharp corners on card-like elements; maintain a minimum of 8px radius to keep the system's approachable feel.
@@ -100,10 +214,183 @@ ProtoPie's design system creates a feeling of approachable high-tech proficiency
 - Do not clutter layouts; leverage the comfortable density and significant whitespace to emphasize key content and interactions.
 - Do not deviate from the established padding and spacing units; consistent use of 8px, 12px, 16px is crucial for a cohesive system.
 
-### Layout
+## Elevation
+
+- **Elevated Card:** `rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px`
+
+## Imagery
+
+The site uses a mix of tightly cropped product screenshots and playful, sometimes abstract, illustrations. Product shots are typically clean, isolated, and demonstrate UI interactions. Illustrations are dimensional and often incorporate brand colors (violet/aqua) or soft gradients, lending a friendly but sophisticated feel. Icons are primarily outlined or filled monochrome, reflecting the precision of a design tool. The visual density is balanced; images are present but not overwhelming, serving to explain and showcase the product's capabilities rather than just decorate.
+
+## Layout
 
 The page maintains a centered, max-width content area (around 1200px inferred) within a full-bleed background. The hero section often features a centered headline over a subtle gradient background, setting an open tone. Section rhythm relies on generous vertical spacing and occasional background color shifts, primarily using soft white and light gradient bands to delineate content blocks. Content arrangement frequently uses two-column layouts, often text on one side and product visuals or user testimonials on the other. Card grids organize features or customer logos in a 3-column structure. Navigation is a persistent top bar, sticky on scroll, with a clear 'Get Started' CTA.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of tightly cropped product screenshots and playful, sometimes abstract, illustrations. Product shots are typically clean, isolated, and demonstrate UI interactions. Illustrations are dimensional and often incorporate brand colors (violet/aqua) or soft gradients, lending a friendly but sophisticated feel. Icons are primarily outlined or filled monochrome, reflecting the precision of a design tool. The visual density is balanced; images are present but not overwhelming, serving to explain and showcase the product's capabilities rather than just decorate.
+- **Figma** — Shares a clean, light-themed UI with strong color accents that highlight interactive elements and a focus on product visuals.
+- **Sketch** — Utilizes a balanced approach of whitespace and clear typography for a professional, tool-oriented aesthetic while maintaining approachability.
+- **Webflow** — Exhibits a similar use of vibrant accent colors against a predominantly light background to guide users through complex functionality and emphasize calls to action.
+- **Linear** — Adopts fine-grained control over typography and spacing, paired with a focus on functional, modern design, although Linear is darker-themed.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #181818;
+  --color-stone-gray: #555555;
+  --color-pale-gray: #999999;
+  --color-ghost-white: #ffffff;
+  --color-crystal-frost: #e9e9e9;
+  --color-iris-bloom: #8169ff;
+  --color-violet-signal: #6d4ff0;
+  --color-lavender-haze: #c9bfff;
+  --color-aqua-tint: #3eb2b2;
+  --color-violet-fade: #ab9eff;
+  --color-aqua-gradient: #81dbdb;
+  --color-lavender-swirl: #e3deff;
+  --color-violet-mist: #c9bfff;
+  --font-gilroy: 'Gilroy', Montserrat;
+  --font-inter: 'Inter', Inter;
+  --font-palmer-lake-print: 'Palmer Lake Print', Rubik;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.56;
+  --text-heading: 22px;
+  --leading-heading: 1.45;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.43;
+  --text-display-sm: 32px;
+  --leading-display-sm: 0.8;
+  --text-display: 48px;
+  --leading-display: 1.33;
+  --text-display-lg: 62px;
+  --leading-display-lg: 1.29;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-62: 62px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-75: 75px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-89: 89px;
+  --spacing-93: 93px;
+  --spacing-102: 102px;
+  --spacing-109: 109px;
+  --spacing-113: 113px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --spacing-215: 215px;
+  --radius-cards: 16px;
+  --radius-links: 12px;
+  --radius-other: 8px;
+  --radius-pills: 9999px;
+  --radius-buttons: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #181818;
+  --color-stone-gray: #555555;
+  --color-pale-gray: #999999;
+  --color-ghost-white: #ffffff;
+  --color-crystal-frost: #e9e9e9;
+  --color-iris-bloom: #8169ff;
+  --color-violet-signal: #6d4ff0;
+  --color-lavender-haze: #c9bfff;
+  --color-aqua-tint: #3eb2b2;
+  --color-violet-fade: #ab9eff;
+  --color-aqua-gradient: #81dbdb;
+  --color-lavender-swirl: #e3deff;
+  --color-violet-mist: #c9bfff;
+  --font-gilroy: 'Gilroy', Montserrat;
+  --font-inter: 'Inter', Inter;
+  --font-palmer-lake-print: 'Palmer Lake Print', Rubik;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.56;
+  --text-heading: 22px;
+  --leading-heading: 1.45;
+  --text-heading-lg: 28px;
+  --leading-heading-lg: 1.43;
+  --text-display-sm: 32px;
+  --leading-display-sm: 0.8;
+  --text-display: 48px;
+  --leading-display: 1.33;
+  --text-display-lg: 62px;
+  --leading-display-lg: 1.29;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-62: 62px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-75: 75px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-89: 89px;
+  --spacing-93: 93px;
+  --spacing-102: 102px;
+  --spacing-109: 109px;
+  --spacing-113: 113px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --spacing-215: 215px;
+  --radius-cards: 16px;
+  --radius-links: 12px;
+  --radius-other: 8px;
+  --radius-pills: 9999px;
+  --radius-buttons: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 3px 12px 0px, rgba(0, 0, 0, 0.3) 0px 0px 2px 0px;
+}
+```

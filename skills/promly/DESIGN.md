@@ -1,87 +1,175 @@
 ---
 version: alpha
-name: Promly
-description: Promly uses a dark, immersive canvas with vibrant violet and blue accents that cut through the deep background like neon. Typography is direct and purposeful, maintaining legibility against the dark, gradient-infused surfaces. Components feature soft, rounded corners and subtle elevation, contributing to an approachable yet impactful aesthetic driven by energetic gradients and photography.
-colors:
-  canvas-deep: "#000000"
-  midnight-indigo: "#040723"
-  ghost-shadow-indigo: "#140f33"
-  primary-blue-neon: "#3898ec"
-  accent-violet-neon: "#755eff"
-  highlight-violet: "#aa57ff"
-  content-white: "#ffffff"
-  muted-gray: "#808080"
-  secondary-text-gray: "#999999"
-  input-text-dark: "#333333"
-  input-border-gray: "#cccccc"
-  outlined-button-dark: "#222222"
-  gradient-hero-violet-to-black: "#a755fb"
-  gradient-card-violet-to-white: "#9e58fe"
-  success-green: "#0be014"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: 0.252px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.39
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-    letterSpacing: 0.28px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.17
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.11
-    letterSpacing: -1.085px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.07
-    letterSpacing: -2.115px
-spacing:
-  cardRadius: 25px
-  buttonRadius: 12px
-  elementGap: 20px
-  sectionGap: 88px
-components:
-  primary-filled-button:
-    role: Main call to action.
-  ghost-navigation-button:
-    role: Navigation links or secondary actions that sit directly on the dark canvas.
-  violet-outline-button:
-    role: Accentuating secondary actions on dark backgrounds.
-  highlight-outline-button:
-    role: Tertiary interactive elements, often within cards.
-  floating-card:
-    role: Container for content sections, featuring subtle elevation.
-  standard-input-field:
-    role: User input for form elements.
+name: "Promly"
+description: "Promly uses a dark, immersive canvas with vibrant violet and blue accents that cut through the deep background like neon. Typography is direct and purposeful, maintaining legibility against the dark, gradient-infused surfaces. Components feature soft, rounded corners and subtle elevation, contributing to an approachable yet impactful aesthetic driven by energetic gradients and photography."
+theme: "dark"
+industry: "other"
+source_url: "https://promlyapp.com"
+refero_style_id: "9117a4f5-6171-44ad-aa85-a387a5d80620"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519002768-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519002768-thumb.jpg"
+extracted_at: "2026-04-30T03:17:07.840Z"
 ---
 
-## Overview
+# Promly — Style Reference
 
-**North Star:** Midnight gradient with neon accents.
+> Midnight gradient with neon accents.
+
+**Theme:** dark
+
+**Industry:** other
 
 Promly uses a dark, immersive canvas with vibrant violet and blue accents that cut through the deep background like neon. Typography is direct and purposeful, maintaining legibility against the dark, gradient-infused surfaces. Components feature soft, rounded corners and subtle elevation, contributing to an approachable yet impactful aesthetic driven by energetic gradients and photography.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Deep | #000000 | `--color-canvas-deep` | Page background, primary surface for text and core content |
+| Midnight Indigo | #040723 | `--color-midnight-indigo` | Elevated card surfaces, provides depth against Canvas Deep |
+| Ghost Shadow Indigo | #140f33 | `--color-ghost-shadow-indigo` | Shadow tint for elevated cards, adding a subtle indigo glow |
+| Primary Blue Neon | #3898ec | `--color-primary-blue-neon` | Primary action buttons, active navigation items — a vivid, electric blue |
+| Accent Violet Neon | #755eff | `--color-accent-violet-neon` | Outlined button borders, text for secondary actions and highlights — vibrant violet |
+| Highlight Violet | #aa57ff | `--color-highlight-violet` | Outlined button borders, text for tertiary actions — a lighter, softer violet |
+| Content White | #ffffff | `--color-content-white` | Primary text, button text on colored backgrounds, navigation links |
+| Muted Gray | #808080 | `--color-muted-gray` | Secondary body text, helper text, subtle outlines |
+| Secondary Text Gray | #999999 | `--color-secondary-text-gray` | Tertiary body text, supporting information |
+| Input Text Dark | #333333 | `--color-input-text-dark` | Input field placeholder text, some link text |
+| Input Border Gray | #cccccc | `--color-input-border-gray` | Input field borders |
+| Outlined Button Dark | #222222 | `--color-outlined-button-dark` | Outlined button borders and text on light backgrounds |
+| Gradient Hero Violet to Black | #a755fb | `--color-gradient-hero-violet-to-black` | Background for hero sections, creating a dynamic, immersive entry point |
+| Gradient Card Violet to White | #9e58fe | `--color-gradient-card-violet-to-white` | Background for feature cards, adding a vibrant and modern touch |
+| Success Green | #0be014 | `--color-success-green` | Green accent for outlined action borders, linked labels, and lightweight interactive emphasis. Use as a supporting accent, not as a status color |
+
+## Tokens — Typography
+
+### Avenir
+
+- **Token:** `--font-avenir`
+- **Substitute:** Avenir Next, Lato
+- **Weights:** 300, 400, 700
+- **Sizes:** 14px, 16px, 18px, 20px, 25px, 28px, 35px, 45px, 59px, 60px, 64px
+- **Line heights:** 1.07, 1.11, 1.17, 1.25, 1.36, 1.39, 1.40, 1.43, 1.50, 1.57, 1.69
+- **Letter spacing:** -0.067em at 64px, -0.051em at 60px, -0.050em at 59px, -0.047em at 45px, -0.031em at 35px, 0.014em at 20px, 0.018em at 14px
+- **Role:** Primary typeface for all headings, body text, and UI elements. Its clean sans-serif nature provides clarity against dark backgrounds, with a range of weights supporting hierarchy. Tighter tracking on larger headings enhances their presence without overwhelming.
+
+### Poppins
+
+- **Token:** `--font-poppins`
+- **Substitute:** Montserrat, Open Sans
+- **Weights:** 700
+- **Sizes:** 18px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Used for specific button labels, adding a slightly more assertive, block-like feel to calls to action.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.43 | 0.252px | `--text-caption` |
+| body-sm | 16px | 1.39 | — | `--text-body-sm` |
+| body | 18px | 1.5 | — | `--text-body` |
+| subheading | 20px | 1.4 | 0.28px | `--text-subheading` |
+| heading-sm | 25px | 1.25 | — | `--text-heading-sm` |
+| heading | 28px | 1.17 | — | `--text-heading` |
+| heading-lg | 35px | 1.11 | -1.085px | `--text-heading-lg` |
+| display | 45px | 1.07 | -2.115px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-242 | 242px | `--spacing-242` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 25px |
+| images | 20px |
+| inputs | 12px |
+| buttons | 12px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(102, 77, 255, 0.2) 0px 4px 100px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1196px |
+| sectionGap | 88px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call to action.
+
+Filled with Primary Blue Neon (#3898ec), text in Content White (#ffffff), rounded corners at 12px. Padding is 12px vertical, 24px horizontal. Uses Poppins Bold for text.
+
+### Ghost Navigation Button
+
+**Role:** Navigation links or secondary actions that sit directly on the dark canvas.
+
+Transparent background, text in Outlined Button Dark (#222222), no border, 0px radius. Minimal padding of 5px vertical, 10px-30px horizontal, adapting to content. Uses Avenir.
+
+### Violet Outline Button
+
+**Role:** Accentuating secondary actions on dark backgrounds.
+
+Transparent background, border in Accent Violet Neon (#755eff), text in Accent Violet Neon. 12px rounded corners, 12px vertical and 24px horizontal padding. Uses Avenir.
+
+### Highlight Outline Button
+
+**Role:** Tertiary interactive elements, often within cards.
+
+Transparent background, border in Highlight Violet (#aa57ff), text in Highlight Violet. 12px rounded corners, 12px vertical and 24px horizontal padding. Uses Avenir.
+
+### Floating Card
+
+**Role:** Container for content sections, featuring subtle elevation.
+
+Background is Midnight Indigo (#040723), with a 25px border-radius. Features a glow shadow: rgba(102, 77, 255, 0.2) 0px 4px 100px 0px.
+
+### Standard Input Field
+
+**Role:** User input for form elements.
+
+Background is Canvas Deep (#000000), text in Input Text Dark (#333333). Border is 1px solid Input Border Gray (#cccccc), with 12px rounded corners. Padding is 8px vertical, 12px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Canvas Deep (#000000) as the primary page background.
 - Apply 25px border-radius to card elements and 12px to buttons and inputs.
@@ -91,7 +179,7 @@ Promly uses a dark, immersive canvas with vibrant violet and blue accents that c
 - Maintain a clear visual hierarchy by using Content White (#ffffff) for primary text and Muted Gray (#808080) for secondary details.
 - Ensure consistent Comfortable density spacing, with 20px as a common element gap and a section gap of 88px.
 
-### Don'ts
+### Don't
 
 - Avoid using bright, un-branded colors for large background areas; maintain the dark theme.
 - Do not use generic square corners for cards or buttons; adhere to the specified radii of 25px and 12px.
@@ -101,10 +189,176 @@ Promly uses a dark, immersive canvas with vibrant violet and blue accents that c
 - Do not use a solid background color for hero sections; leverage the Gradient Hero Violet to Black.
 - Do not use more than one distinct color for button fills; confine fills to Primary Blue Neon unless for semantic states.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Deep | #000000 | Base page background |
+| 1 | Midnight Indigo | #040723 | Elevated card and section backgrounds |
+
+## Elevation
+
+- **Floating Card:** `rgba(102, 77, 255, 0.2) 0px 4px 100px 0px`
+
+## Imagery
+
+This site predominantly features photography and product screenshots. Photography is diverse, showing young people in various settings, often with a casual, authentic feel. Images for cards frequently feature rounded corners (20px or 30px) and appear as a grid or scattered collage within hero sections. Product screenshots are typically high-fidelity and contained within UI elements, showcasing app interfaces directly. Icons are used sparingly and seem to be simple, outlined, and monochromatic, with occasional green accents for success-oriented elements. The imagery serves to both establish atmosphere and provide visual evidence of community and product functionality, without being overly decorative or heavy.
+
+## Layout
 
 The page uses a maximum content width of 1196px, centered on the screen, creating a structured and comfortable reading experience. The hero section is full-bleed, blending a linear gradient from violet to black with a large, inviting headline and a collage of rounded-corner participant photos that visually 'pop' off the dark background. Subsequent sections alternate between full-width blocks and contained content. Text+image sections frequently use a side-by-side layout. Vertical spacing between sections is relatively generous, with an 88px section gap contributing to a comfortable density. Navigation is a sticky top bar, accommodating essential links and a 'Donate' button, ensuring actions are always accessible.
 
-### Imagery
+## Similar Brands
 
-This site predominantly features photography and product screenshots. Photography is diverse, showing young people in various settings, often with a casual, authentic feel. Images for cards frequently feature rounded corners (20px or 30px) and appear as a grid or scattered collage within hero sections. Product screenshots are typically high-fidelity and contained within UI elements, showcasing app interfaces directly. Icons are used sparingly and seem to be simple, outlined, and monochromatic, with occasional green accents for success-oriented elements. The imagery serves to both establish atmosphere and provide visual evidence of community and product functionality, without being overly decorative or heavy.
+- **Discord** — Dark UI with vibrant, saturated accent colors for interactive elements and brand recognition.
+- **Figma** — Clean, purposeful typography, a primary dark canvas, and a strong emphasis on interactive elements through color.
+- **Notion (dark mode)** — Structured content on a dark background, with clear information hierarchy maintained by careful typography and subtle elevation.
+- **Spotify** — Dominant dark theme with colorful gradients and highlights to signify branding and interactivity, often with rounded corners.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-deep: #000000;
+  --color-midnight-indigo: #040723;
+  --color-ghost-shadow-indigo: #140f33;
+  --color-primary-blue-neon: #3898ec;
+  --color-accent-violet-neon: #755eff;
+  --color-highlight-violet: #aa57ff;
+  --color-content-white: #ffffff;
+  --color-muted-gray: #808080;
+  --color-secondary-text-gray: #999999;
+  --color-input-text-dark: #333333;
+  --color-input-border-gray: #cccccc;
+  --color-outlined-button-dark: #222222;
+  --color-gradient-hero-violet-to-black: #a755fb;
+  --color-gradient-card-violet-to-white: #9e58fe;
+  --color-success-green: #0be014;
+  --font-avenir: 'Avenir', Avenir Next, Lato;
+  --font-poppins: 'Poppins', Montserrat, Open Sans;
+  --text-caption: 14px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.252px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.39;
+  --text-body: 18px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.28px;
+  --text-heading-sm: 25px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 28px;
+  --leading-heading: 1.17;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: -1.085px;
+  --text-display: 45px;
+  --leading-display: 1.07;
+  --tracking-display: -2.115px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-36: 36px;
+  --spacing-55: 55px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-100: 100px;
+  --spacing-160: 160px;
+  --spacing-242: 242px;
+  --radius-cards: 25px;
+  --radius-images: 20px;
+  --radius-inputs: 12px;
+  --radius-buttons: 12px;
+  --shadow-xl: rgba(102, 77, 255, 0.2) 0px 4px 100px 0px;
+  --surface-canvas-deep: #000000;
+  --surface-midnight-indigo: #040723;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-deep: #000000;
+  --color-midnight-indigo: #040723;
+  --color-ghost-shadow-indigo: #140f33;
+  --color-primary-blue-neon: #3898ec;
+  --color-accent-violet-neon: #755eff;
+  --color-highlight-violet: #aa57ff;
+  --color-content-white: #ffffff;
+  --color-muted-gray: #808080;
+  --color-secondary-text-gray: #999999;
+  --color-input-text-dark: #333333;
+  --color-input-border-gray: #cccccc;
+  --color-outlined-button-dark: #222222;
+  --color-gradient-hero-violet-to-black: #a755fb;
+  --color-gradient-card-violet-to-white: #9e58fe;
+  --color-success-green: #0be014;
+  --font-avenir: 'Avenir', Avenir Next, Lato;
+  --font-poppins: 'Poppins', Montserrat, Open Sans;
+  --text-caption: 14px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.252px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.39;
+  --text-body: 18px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.28px;
+  --text-heading-sm: 25px;
+  --leading-heading-sm: 1.25;
+  --text-heading: 28px;
+  --leading-heading: 1.17;
+  --text-heading-lg: 35px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: -1.085px;
+  --text-display: 45px;
+  --leading-display: 1.07;
+  --tracking-display: -2.115px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-36: 36px;
+  --spacing-55: 55px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-100: 100px;
+  --spacing-160: 160px;
+  --spacing-242: 242px;
+  --radius-cards: 25px;
+  --radius-images: 20px;
+  --radius-inputs: 12px;
+  --radius-buttons: 12px;
+  --shadow-xl: rgba(102, 77, 255, 0.2) 0px 4px 100px 0px;
+  --surface-canvas-deep: #000000;
+  --surface-midnight-indigo: #040723;
+}
+```

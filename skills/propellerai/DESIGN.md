@@ -1,48 +1,114 @@
 ---
 version: alpha
-name: PropellerAi
-description: PropellerAi's design system is a study in minimalist clarity, featuring expansive white space and carefully considered neutral tones. The aesthetic is light, airy, and functional, with subtle shadows and rounded corners providing a sense of approachability without sacrificing professionalism. Typography is highly readable, serving to organize content with measured precision. The system emphasizes clear hierarchies through achromatic contrast and soft visual layering.
-colors:
-  canvas: "#ffffff"
-  deep-graphite: "#111827"
-  dark-slate: "#1f2937"
-  light-fog: "#e5e7eb"
-  near-white: "#eff1f3"
-  silver-pine: "#d1d5db"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.43
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.63
-spacing:
-  cardRadius: 16px
-  buttonRadius: 12px
-  elementGap: 12px
-  sectionGap: 48px
-components:
-  microsoft-sign-in-button:
-    role: Primary authentication action.
-  login-input-card:
-    role: Container for forms and interactive elements, typically centered on the page.
-  text-input-placeholder:
-    role: Standard input field for user entry.
+name: "PropellerAi"
+description: "PropellerAi's design system is a study in minimalist clarity, featuring expansive white space and carefully considered neutral tones. The aesthetic is light, airy, and functional, with subtle shadows and rounded corners providing a sense of approachability without sacrificing professionalism. Typography is highly readable, serving to organize content with measured precision. The system emphasizes clear hierarchies through achromatic contrast and soft visual layering."
+theme: "light"
+industry: "ai"
+source_url: "https://propel.me"
+refero_style_id: "a2e08637-bd7e-4302-ab44-52a5eaa37917"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512684647-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512684647-thumb.jpg"
+extracted_at: "2026-04-30T01:31:40.983Z"
 ---
 
-## Overview
+# PropellerAi — Style Reference
 
-**North Star:** White canvas, floating cards
+> White canvas, floating cards
+
+**Theme:** light
+
+**Industry:** ai
 
 PropellerAi's design system is a study in minimalist clarity, featuring expansive white space and carefully considered neutral tones. The aesthetic is light, airy, and functional, with subtle shadows and rounded corners providing a sense of approachability without sacrificing professionalism. Typography is highly readable, serving to organize content with measured precision. The system emphasizes clear hierarchies through achromatic contrast and soft visual layering.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #ffffff | `--color-canvas` | Page and component backgrounds, main interactive elements |
+| Deep Graphite | #111827 | `--color-deep-graphite` | Primary text, prominent headings |
+| Dark Slate | #1f2937 | `--color-dark-slate` | Secondary text, button labels, icons |
+| Light Fog | #e5e7eb | `--color-light-fog` | Subtle borders, dividers, ghost element outlines |
+| Near White | #eff1f3 | `--color-near-white` | Card borders, subtle background distinctions |
+| Silver Pine | #d1d5db | `--color-silver-pine` | Button borders, input borders on light backgrounds |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 16px
+- **Line heights:** 1.43, 1.50, 1.63
+- **Letter spacing:** normal
+- **Role:** The primary typeface for all text content, from body to buttons. Its clear, modern sans-serif form supports readability and a crisp digital presentation.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.43 | — | `--text-caption` |
+| body | 14px | 1.5 | — | `--text-body` |
+| body-lg | 16px | 1.63 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| buttons | 12px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.05) 0px 1px 2px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 32px |
+| elementGap | 12px |
+
+## Components
+
+### Microsoft Sign-in Button
+
+**Role:** Primary authentication action.
+
+A white button with 'Dark Slate' text and a 'Silver Pine' 1px border. It features 12px horizontal padding, 14px vertical padding, and a 12px border-radius, with a soft shadow at rgba(0, 0, 0, 0.05) 0px 1px 2px 0px.
+
+### Login/Input Card
+
+**Role:** Container for forms and interactive elements, typically centered on the page.
+
+A 'Canvas' background card with a subtle 'Near White' 1px border and a pronounced shadow at rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px. Features a 16px border-radius and 32px padding on all sides.
+
+### Text Input (Placeholder)
+
+**Role:** Standard input field for user entry.
+
+Uses 'Light Fog' for its 1px border, suggesting a minimal visual footprint until focused. Text within likely defaults to a muted neutral.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Canvas' (#ffffff) for all main backgrounds and surfaces to maintain a clean, expansive feel.
 - Use 'Deep Graphite' (#111827) for primary heading and body text, ensuring high contrast and immediate readability.
@@ -52,7 +118,7 @@ PropellerAi's design system is a study in minimalist clarity, featuring expansiv
 - Employ the card shadow (rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px) to subtly elevate containers.
 - Adhere to a 32px padding for cards and 12px base spacing between elements for a spacious layout.
 
-### Don'ts
+### Don't
 
 - Avoid vivid or highly saturated colors for functional UI elements; color should be reserved for brand accents only when explicitly defined.
 - Do not introduce strong, dark backgrounds; the system relies on a light theme for its core identity.
@@ -62,10 +128,82 @@ PropellerAi's design system is a study in minimalist clarity, featuring expansiv
 - Do not use decorative gradients; the system prioritizes flat colors and subtle shadows for depth.
 - Do not use custom fonts outside of Inter; font consistency is key to the system's clean aesthetic.
 
-### Layout
+## Elevation
+
+- **Login/Input Card:** `rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px`
+- **Microsoft Sign-in Button:** `rgba(0, 0, 0, 0.05) 0px 1px 2px 0px`
+
+## Imagery
+
+No complex imagery was detected; the system relies heavily on pure UI elements. The logo itself uses crisp, monochromatic icons. If icons are introduced, they should be similarly clean, outlined, or subtly filled, with a light default stroke weight.
+
+## Layout
 
 The page model is a full-bleed light surface, with content centered. The hero area (as seen in the login screen) places the primary content card centrally, emphasizing minimal distraction. Section rhythm is dictated by clear vertical spacing, with a base 'sectionGap' of 48px, creating a spacious feel. Content arrangement defaults to centered stacks, using cards as primary content containers. No complex grid usage or multi-column layouts were observed, reinforcing a focused, single-purpose interaction.
 
-### Imagery
+## Similar Brands
 
-No complex imagery was detected; the system relies heavily on pure UI elements. The logo itself uses crisp, monochromatic icons. If icons are introduced, they should be similarly clean, outlined, or subtly filled, with a light default stroke weight.
+- **Framer** — Clean, light UI with soft shadows and rounded elements, focusing on content and interaction.
+- **Superhuman** — Minimalist aesthetic with a strong emphasis on white space and functional, unobtrusive design.
+- **Linear** — Subtle elevation, precise typography, and a predominantly achromatic palette with thoughtful element placement.
+- **Notion** — Content-focused, spacious layouts with minimal decorative elements and clear hierarchy through subtle styling.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #ffffff;
+  --color-deep-graphite: #111827;
+  --color-dark-slate: #1f2937;
+  --color-light-fog: #e5e7eb;
+  --color-near-white: #eff1f3;
+  --color-silver-pine: #d1d5db;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.63;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --radius-cards: 16px;
+  --radius-buttons: 12px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #ffffff;
+  --color-deep-graphite: #111827;
+  --color-dark-slate: #1f2937;
+  --color-light-fog: #e5e7eb;
+  --color-near-white: #eff1f3;
+  --color-silver-pine: #d1d5db;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.43;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.63;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --radius-cards: 16px;
+  --radius-buttons: 12px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+}
+```

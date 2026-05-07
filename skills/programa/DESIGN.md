@@ -1,63 +1,135 @@
 ---
 version: alpha
-name: Programa
-description: Programa employs a refined white-canvas aesthetic with crisp, confident typography as its primary visual communicator. A single vibrant yellow accent color is reserved exclusively for key calls to action, creating high contrast and immediate focus against the otherwise monochrome interface. Components are lightweight and unobtrusive, featuring thin borders and soft rounded corners, allowing content and functionality to take precedence without visual noise.
-colors:
-  storm-graphite: "#1a1a1a"
-  canvas-white: "#ffffff"
-  ash-gray: "#a3a3a3"
-  midas-yellow: "#fbff2b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: -0.42px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.48px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-    letterSpacing: -0.6px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: -0.72px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1.1
-    letterSpacing: -1.26px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 10px
-  elementGap: 12px
-  sectionGap: 96px
-components:
-  neutral-ghost-button:
-    role: Secondary action or navigation item
-  primary-action-button:
-    role: Main call to action
-  dark-filled-button:
-    role: Alternative primary action or prominent secondary action on light backgrounds
-  light-input-field:
-    role: Standard input field on dark backgrounds
-  dark-input-field:
-    role: Standard input field on light backgrounds
+name: "Programa"
+description: "Programa employs a refined white-canvas aesthetic with crisp, confident typography as its primary visual communicator. A single vibrant yellow accent color is reserved exclusively for key calls to action, creating high contrast and immediate focus against the otherwise monochrome interface. Components are lightweight and unobtrusive, featuring thin borders and soft rounded corners, allowing content and functionality to take precedence without visual noise."
+theme: "light"
+industry: "design"
+source_url: "https://programa.design"
+refero_style_id: "41af8353-6a8f-416d-947b-57932f591497"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509776756-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509776756-thumb.jpg"
+extracted_at: "2026-04-30T00:43:24.479Z"
 ---
 
-## Overview
+# Programa — Style Reference
 
-**North Star:** Architectural blueprint on white marble
+> Architectural blueprint on white marble
+
+**Theme:** light
+
+**Industry:** design
 
 Programa employs a refined white-canvas aesthetic with crisp, confident typography as its primary visual communicator. A single vibrant yellow accent color is reserved exclusively for key calls to action, creating high contrast and immediate focus against the otherwise monochrome interface. Components are lightweight and unobtrusive, featuring thin borders and soft rounded corners, allowing content and functionality to take precedence without visual noise.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Storm Graphite | #1a1a1a | `--color-storm-graphite` | Primary text, heading text, neutral button backgrounds, active states, dark borders |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card backgrounds, inverse text for dark elements, light borders |
+| Ash Gray | #a3a3a3 | `--color-ash-gray` | Muted secondary text, helper text, inactive link text, subtle borders |
+| Midas Yellow | #fbff2b | `--color-midas-yellow` | Primary call-to-action buttons, interactive highlights, brand accent — signals key actions and captures attention against neutrals |
+
+## Tokens — Typography
+
+### neueHaasGroteskText
+
+- **Token:** `--font-neuehaasgrotesktext`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400, 500
+- **Sizes:** 14px, 16px, 17px, 20px, 24px, 42px
+- **Line heights:** 1.10, 1.20, 1.40
+- **Letter spacing:** -0.03
+- **Role:** Primary typeface for all UI elements, headings, body text, and interactive components. Its precision and varied weights establish a clear informational hierarchy.
+
+### neue-haas-grotesk-text
+
+- **Token:** `--font-neue-haas-grotesk-text`
+- **Weights:** 400
+- **Sizes:** 20px
+- **Line heights:** 1.4
+- **Role:** neue-haas-grotesk-text — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | -0.42px | `--text-caption` |
+| body | 16px | 1.4 | -0.48px | `--text-body` |
+| subheading | 20px | 1.4 | -0.6px | `--text-subheading` |
+| heading | 24px | 1.2 | -0.72px | `--text-heading` |
+| display | 42px | 1.1 | -1.26px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-111 | 111px | `--spacing-111` |
+| spacing-236 | 236px | `--spacing-236` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| inputs | 10px |
+| buttons | 10px |
+| navigation | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 96px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Neutral Ghost Button
+
+**Role:** Secondary action or navigation item
+
+Transparent background, Storm Graphite text (#1a1a1a), 10px border radius, 8px vertical and 12px horizontal padding. Borders are implied by context, not explicitly rendered for a 'ghost' effect.
+
+### Primary Action Button
+
+**Role:** Main call to action
+
+Midas Yellow background (#fbff2b), Storm Graphite text (#1a1a1a), 12px border radius, 0px vertical and 16px horizontal padding. Highly visible and contrasts sharply with neutral backgrounds.
+
+### Dark Filled Button
+
+**Role:** Alternative primary action or prominent secondary action on light backgrounds
+
+Storm Graphite background (#1a1a1a), Canvas White text (#ffffff), 12px border radius, 0px vertical and 16px horizontal padding. Provides a strong alternative to the Midas Yellow.
+
+### Light Input Field
+
+**Role:** Standard input field on dark backgrounds
+
+Background rgba(255, 255, 255, 0.2), Canvas White text (#ffffff), 12px border radius, 6px vertical and 12px horizontal padding. Has a subtle transparent fill and light border.
+
+### Dark Input Field
+
+**Role:** Standard input field on light backgrounds
+
+Background rgba(26, 26, 26, 0.05), Storm Graphite text (#1a1a1a), 12px border radius, 6px vertical and 12px horizontal padding. Features a very subtle dark transparent fill.
+
+## Do's and Don'ts
+
+### Do
 
 - Use neueHaasGroteskText-500 for all headings to maintain concise visual impact.
 - Apply Midas Yellow (#fbff2b) strictly for primary call-to-action buttons or critical interactive highlights.
@@ -67,7 +139,7 @@ Programa employs a refined white-canvas aesthetic with crisp, confident typograp
 - Reserve Storm Graphite (#1a1a1a) for primary text, ensuring strong contrast against light backgrounds.
 - Implement 10px radius for all buttons and interactive navigation elements for a consistent soft-rounded touch.
 
-### Don'ts
+### Don't
 
 - Do not introduce new saturated colors; adhere to the Midas Yellow for accents and brand identity.
 - Avoid heavy shadows or gradients; rely on minimal borders and background color changes for surface differentiation.
@@ -77,10 +149,105 @@ Programa employs a refined white-canvas aesthetic with crisp, confident typograp
 - Avoid arbitrary padding or margin values; stick to multiples of the 6px base unit or specified element/section gaps.
 - Do not use large, decorative imagery; visual content should be contained and functional to support the UI-first approach.
 
-### Layout
+## Imagery
+
+This site predominantly uses UI-focused content rather than decorative imagery. Where visible (e.g., product screenshots), these are typically clean, direct captures of the software interface, presented without heavy styling or complex compositions. Icons, if present, tend to be minimal outline styles, supporting functionality rather than aesthetic flourish. The visual density is text-dominant, allowing the typography and clean layout to convey information directly.
+
+## Layout
 
 The page maintains a centered, contained layout for its main content, framed by responsive margins. The header is a sticky top bar with minimal navigation. Sections flow vertically with a consistent rhythm of 'comfortable' spacing and some sections having a larger 96px bottom padding. Content is primarily text-based, often presented in clear, readable stacks, with interactive elements like buttons and input fields seamlessly integrated rather than heavily framed. A primary content column often has left and right margins of 111px, or 236px for narrower sections, creating a focused reading area. There are no clear alternating color bands or complex grid structures beyond simple content blocks.
 
-### Imagery
+## Similar Brands
 
-This site predominantly uses UI-focused content rather than decorative imagery. Where visible (e.g., product screenshots), these are typically clean, direct captures of the software interface, presented without heavy styling or complex compositions. Icons, if present, tend to be minimal outline styles, supporting functionality rather than aesthetic flourish. The visual density is text-dominant, allowing the typography and clean layout to convey information directly.
+- **Linear** — Shares a focus on highly functional, minimalist UI with strong typography and minimal decorative elements, using color sparingly for accents and interactive states.
+- **Framer** — Exhibits a clean white canvas approach, precise typography, and a strategic use of a single vibrant accent color to highlight interactions and brand identity.
+- **Superhuman** — Similar in its emphasis on speed and clarity through a high-contrast, text-forward interface, where every visual element serves a direct functional purpose.
+- **Height** — Adopts a very clean, productivity-focused aesthetic with strong typographic hierarchy, thoughtful spacing, and a limited, functional color palette.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-storm-graphite: #1a1a1a;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #a3a3a3;
+  --color-midas-yellow: #fbff2b;
+  --font-neuehaasgrotesktext: 'neueHaasGroteskText', Helvetica Neue;
+  --font-neue-haas-grotesk-text: 'neue-haas-grotesk-text', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.42px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.48px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.6px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.72px;
+  --text-display: 42px;
+  --leading-display: 1.1;
+  --tracking-display: -1.26px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --spacing-111: 111px;
+  --spacing-236: 236px;
+  --radius-cards: 16px;
+  --radius-inputs: 10px;
+  --radius-buttons: 10px;
+  --radius-navigation: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-storm-graphite: #1a1a1a;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #a3a3a3;
+  --color-midas-yellow: #fbff2b;
+  --font-neuehaasgrotesktext: 'neueHaasGroteskText', Helvetica Neue;
+  --font-neue-haas-grotesk-text: 'neue-haas-grotesk-text', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: -0.42px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.48px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.6px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.72px;
+  --text-display: 42px;
+  --leading-display: 1.1;
+  --tracking-display: -1.26px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-36: 36px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --spacing-111: 111px;
+  --spacing-236: 236px;
+  --radius-cards: 16px;
+  --radius-inputs: 10px;
+  --radius-buttons: 10px;
+  --radius-navigation: 10px;
+}
+```

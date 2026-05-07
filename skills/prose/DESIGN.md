@@ -1,81 +1,166 @@
 ---
 version: alpha
-name: Prose
-description: This design system evokes a sense of refined, organic luxury through its earthy color palette and bespoke typography. Soft, desaturated greens and beiges (#4d523c, #f1ece0) cradle content, while custom fonts, particularly the whisper-weight display typeface Saol, convey a premium, artisanal feel. Button-level details like the generous 60px radius create a distinctive, approachable tactility against an otherwise structured layout, grounding the brand in natural ease.
-colors:
-  pine-needle: "#4d523c"
-  powder-sand: "#f1ece0"
-  lunar-dust: "#f9f7f2"
-  white-linen: "#ffffff"
-  charcoal-bark: "#323429"
-  deep-moss: "#161716"
-  ash-grey: "#6c6c6c"
-  pale-mauve: "#ead7f3"
-  sunken-orange: "#f69371"
-  stone-grey: "#a6a6a6"
-  shadow-tint: "#e2d9c2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: 0.31px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0.49px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0.24px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.3
-    letterSpacing: -0.42px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.3
-    letterSpacing: -0.62px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.3
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.86
-    letterSpacing: -0.96px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 60px
-components:
-  email-offer-modal:
-    role: 
-  announcement-banner-cta-buttons:
-    role: 
-  how-it-works-step-cards:
-    role: 
-  text-link-button:
-    role: Navigation, secondary actions
-  input-field:
-    role: User input
-  offer-badge:
-    role: Promotional highlights
-  navigation-link:
-    role: Primary site navigation
+name: "Prose"
+description: "This design system evokes a sense of refined, organic luxury through its earthy color palette and bespoke typography. Soft, desaturated greens and beiges (#4d523c, #f1ece0) cradle content, while custom fonts, particularly the whisper-weight display typeface Saol, convey a premium, artisanal feel. Button-level details like the generous 60px radius create a distinctive, approachable tactility against an otherwise structured layout, grounding the brand in natural ease."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://prose.com"
+refero_style_id: "39f06f54-eb62-4cd5-bbf6-0f1927016ca4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933056670-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933056670-thumb.jpg"
+extracted_at: "2026-04-11T18:44:38.042Z"
 ---
 
-## Overview
+# Prose — Style Reference
 
-**North Star:** Organic luxury, soft earth tones. Imagine sunlight filtering through linen onto a stoneware table.
+> Organic luxury, soft earth tones. Imagine sunlight filtering through linen onto a stoneware table.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 This design system evokes a sense of refined, organic luxury through its earthy color palette and bespoke typography. Soft, desaturated greens and beiges (#4d523c, #f1ece0) cradle content, while custom fonts, particularly the whisper-weight display typeface Saol, convey a premium, artisanal feel. Button-level details like the generous 60px radius create a distinctive, approachable tactility against an otherwise structured layout, grounding the brand in natural ease.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pine Needle | #4d523c | `--color-pine-needle` | Major text and brand accents; a muted, verdant green providing organic warmth to headings and links. |
+| Powder Sand | #f1ece0 | `--color-powder-sand` | Subtle surface backgrounds and highlights, giving a soft, natural base for UI elements. |
+| Lunar Dust | #f9f7f2 | `--color-lunar-dust` | Clean primary background, a slightly off-white that adds warmth without starkness. |
+| White Linen | #ffffff | `--color-white-linen` | Secondary surface background, contrasts gently with Lunar Dust, also used for button text. |
+| Charcoal Bark | #323429 | `--color-charcoal-bark` | Primary text on light backgrounds and button fills; a very dark, desaturated gray that is softer than pure black. |
+| Deep Moss | #161716 | `--color-deep-moss` | Darkest text and background for high-contrast elements, subtly colored rather than truly black. |
+| Ash Grey | #6c6c6c | `--color-ash-grey` | Subtle text and input colors for secondary information, providing clear readability without dominance. |
+| Pale Mauve | #ead7f3 | `--color-pale-mauve` | Internal UI background for distinct sections, adding a touch of muted color. |
+| Sunken Orange | #f69371 | `--color-sunken-orange` | Highlight accent color for specific textual elements, a warm pop of muted orange. |
+| Stone Grey | #a6a6a6 | `--color-stone-grey` | Disabled states for buttons and subtle border details. |
+| Shadow Tint | #e2d9c2 | `--color-shadow-tint` | Subtle, diffused shadows, almost a light beige, contributing to the soft, natural aesthetic. |
+
+## Tokens — Typography
+
+### Simplon Norm
+
+- **Token:** `--font-simplon-norm`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500
+- **Sizes:** 10px, 12px, 14px, 16px, 24px, 28px, 40px, 48px
+- **Line heights:** 0.86, 1.15, 1.30, 1.50, 2.00
+- **Letter spacing:** -0.48px at 48px, -0.4px at 40px, -0.32px at 28px, -0.24px at 24px, 0.24px at 16px, 0.49px at 14px, 0.38px at 12px, 0.31px at 10px
+- **Role:** Primary sans-serif for body text, navigation, and functional elements. Its range of weights and precise letter spacing ensures versatility from small captions to impactful headings.
+
+### Saol
+
+- **Token:** `--font-saol`
+- **Substitute:** Playfair Display
+- **Weights:** 300
+- **Sizes:** 24px, 28px, 32px, 36px
+- **Line heights:** 1.10, 1.30
+- **Letter spacing:** -0.96px at 36px, -0.62px at 28px, -0.42px at 24px
+- **Role:** Signature serif for headings, where its light 300 weight against typical heading sizes creates a sophisticated, understated elegance. The generous negative letter spacing further enhances its delicate appearance. This is a deliberate choice for authority through restraint.
+
+### Simplon Mono
+
+- **Token:** `--font-simplon-mono`
+- **Substitute:** Space Mono
+- **Weights:** 400, 500
+- **Sizes:** 10px, 12px, 14px, 16px
+- **Line heights:** 1.20, 1.50, 2.00
+- **Letter spacing:** 0.83px at 16px, 0.83px at 14px, 0.71px at 12px, 0.63px at 10px
+- **Role:** Monospaced font for technical details or subtle accents, adding a touch of precision and contrast to the primary typefaces without being overly dominant. Its use is minimal.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | 0.31px | `--text-caption` |
+| body | 14px | 1.5 | 0.49px | `--text-body` |
+| body-lg | 16px | 1.5 | 0.24px | `--text-body-lg` |
+| subheading | 24px | 1.3 | -0.42px | `--text-subheading` |
+| heading | 28px | 1.3 | -0.62px | `--text-heading` |
+| heading-lg | 32px | 1.3 | — | `--text-heading-lg` |
+| display | 48px | 0.86 | -0.96px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-72 | 72px | `--spacing-72` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| buttons | 60px |
+| dialogs | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 16px |
+
+## Components
+
+### Email Offer Modal
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Announcement Banner + CTA Buttons
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### How It Works — Step Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Text Link Button
+
+**Role:** Navigation, secondary actions
+
+backgroundColor: rgba(0, 0, 0, 0) (transparent), color: #000000 (Black), border: none, padding: 0. Used for minimal, understated interactive elements that blend into textual content.
+
+### Input Field
+
+**Role:** User input
+
+backgroundColor: rgba(0, 0, 0, 0) (transparent), color: #6c6c6c (Ash Grey), borderBottomColor: #6c6c6c (Ash Grey), borderRadius: 0px, paddingTop: 4px, paddingRight: 16px, paddingBottom: 4px, paddingLeft: 16px. Underlined input fields maintain a minimalist aesthetic.
+
+### Offer Badge
+
+**Role:** Promotional highlights
+
+Circular badge with a pale yellowish-green background and bold text indicating discounts, often '60% OFF' and '+ FREE GIFT'.
+
+### Navigation Link
+
+**Role:** Primary site navigation
+
+color: #000000 (Black), font family: Simplon Norm. Subtle, clear text links with an emphasis on content over decorative styling. Uses Simplon Norm at various weights and sizes depending on context.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Saol weight 300 with negative letter-spacing (-0.42 to -0.96px) for all primary headings (h1, h2) to establish a distinct, whisper-weight authority.
 - Prioritize Charcoal Bark (#323429) for primary body text and Pine Needle (#4d523c) for emphasized text and links, to maintain the organic, refined palette.
@@ -85,7 +170,7 @@ This design system evokes a sense of refined, organic luxury through its earthy 
 - Ensure input fields are transparent with a #6c6c6c (Ash Grey) bottom border for a minimalist, integrated look.
 - Incorporate the muted Sunken Orange (#f69371) sparingly for high-visibility accents, such as small promotional text or warnings, to provide gentle emphasis.
 
-### Don'ts
+### Don't
 
 - Do not use sharp, angular buttons; all interactive elements that are not pure text links should adopt the characteristic 60px or 50% border radius.
 - Avoid stark white (#FFFFFF) for large background areas; instead, use the slightly warmer Lunar Dust (#f9f7f2) or Powder Sand (#f1ece0).
@@ -95,10 +180,143 @@ This design system evokes a sense of refined, organic luxury through its earthy 
 - Do not introduce new typefaces; the current selection (Simplon Norm, Saol, Simplon Mono) is specific and central to the brand identity.
 - Do not overuse Simplon Mono; it is for specific, technical-looking details and should not compete with body or headline text.
 
-### Layout
+## Imagery
+
+The site predominantly uses product photography, often featuring custom-designed bottles and packaging in warm, natural light. Products are typically presented as contained compositions, either tightly cropped on a clean background or arranged aesthetically with other natural elements (like the comb and soap bar in the modal). Some imagery uses abstract gradients as backgrounds, suggesting a fluid, natural feel. Icons are minimal, subtle, and outline-based, blending into the refined aesthetic; they are not heavily featured. The overall role of imagery is to showcase the product's premium nature and bespoke appeal, less about lifestyle and more about the object itself.
+
+## Layout
 
 The page primarily uses a max-width contained layout, with content centered. The hero section often features a split layout with text on one side and a product visual on the other, or a centered headline over a background image. Sections alternate between light backgrounds and slightly darker, more muted tones, creating a gentle visual rhythm without harsh dividers. Content is often arranged in a classic text-left/image-right or vice-versa pattern, promoting easy readability. Navigation is a simple top bar, with elements subtly integrated rather than boldly highlighted. The overall density is comfortable, with generous breathing room around content blocks.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses product photography, often featuring custom-designed bottles and packaging in warm, natural light. Products are typically presented as contained compositions, either tightly cropped on a clean background or arranged aesthetically with other natural elements (like the comb and soap bar in the modal). Some imagery uses abstract gradients as backgrounds, suggesting a fluid, natural feel. Icons are minimal, subtle, and outline-based, blending into the refined aesthetic; they are not heavily featured. The overall role of imagery is to showcase the product's premium nature and bespoke appeal, less about lifestyle and more about the object itself.
+- **Aesop** — Shares a focus on luxury, organic feel, and a muted, earthy color palette with a strong brand specific typeface.
+- **Byredo** — Similar high-end aesthetic with an emphasis on bespoke products, refined typography, and subtle, natural tones.
+- **Glossier (early branding)** — Employs custom typography and a soft, approachable, yet premium visual style with a limited, specific color palette.
+- **Farmacy Beauty** — Uses natural ingredient emphasis, clean packaging, and a similar blend of greens and neutrals for an organic, trusted feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pine-needle: #4d523c;
+  --color-powder-sand: #f1ece0;
+  --color-lunar-dust: #f9f7f2;
+  --color-white-linen: #ffffff;
+  --color-charcoal-bark: #323429;
+  --color-deep-moss: #161716;
+  --color-ash-grey: #6c6c6c;
+  --color-pale-mauve: #ead7f3;
+  --color-sunken-orange: #f69371;
+  --color-stone-grey: #a6a6a6;
+  --color-shadow-tint: #e2d9c2;
+  --font-simplon-norm: 'Simplon Norm', Inter;
+  --font-saol: 'Saol', Playfair Display;
+  --font-simplon-mono: 'Simplon Mono', Space Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.31px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 0.49px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: 0.24px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.42px;
+  --text-heading: 28px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.62px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.3;
+  --text-display: 48px;
+  --leading-display: 0.86;
+  --tracking-display: -0.96px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-72: 72px;
+  --radius-cards: 10px;
+  --radius-buttons: 60px;
+  --radius-dialogs: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pine-needle: #4d523c;
+  --color-powder-sand: #f1ece0;
+  --color-lunar-dust: #f9f7f2;
+  --color-white-linen: #ffffff;
+  --color-charcoal-bark: #323429;
+  --color-deep-moss: #161716;
+  --color-ash-grey: #6c6c6c;
+  --color-pale-mauve: #ead7f3;
+  --color-sunken-orange: #f69371;
+  --color-stone-grey: #a6a6a6;
+  --color-shadow-tint: #e2d9c2;
+  --font-simplon-norm: 'Simplon Norm', Inter;
+  --font-saol: 'Saol', Playfair Display;
+  --font-simplon-mono: 'Simplon Mono', Space Mono;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.31px;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --tracking-body: 0.49px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: 0.24px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.42px;
+  --text-heading: 28px;
+  --leading-heading: 1.3;
+  --tracking-heading: -0.62px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.3;
+  --text-display: 48px;
+  --leading-display: 0.86;
+  --tracking-display: -0.96px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-72: 72px;
+  --radius-cards: 10px;
+  --radius-buttons: 60px;
+  --radius-dialogs: 10px;
+}
+```
