@@ -1,82 +1,185 @@
 ---
 version: alpha
-name: Reclaim
-description: This design orchestrates a friendly yet authoritative presentation through vibrant accents against a clean, spacious white backdrop. Key information is spotlighted with bold headings and a signature electric violet, while supporting details use muted tones. The frequent use of rounded corners, especially 100px pill shapes, softens the otherwise structured content, creating an approachable and modern feel for an AI-driven tool.
-colors:
-  white: "#ffffff"
-  charcoal: "#2b2b2b"
-  graphite: "#474747"
-  light-steel: "#c2c4d0"
-  electric-violet: "#5562eb"
-  ai-green: "#7ac17b"
-  zenith-gradient: "#5562eb"
-  growth-gradient: "#7ac17b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: -0.24px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.18
-    letterSpacing: -0.4px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 70px
-    lineHeight: 1.05
-    letterSpacing: -0.7px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 100px
-  elementGap: 5-15px
-  sectionGap: 40-70px
-components:
-  cta-button-group:
-    role: 
-  impact-statistics-block:
-    role: 
-  announcement-banner:
-    role: 
-  primary-pill-button:
-    role: Primary call to action.
-  secondary-outline-button:
-    role: Secondary call to action.
-  ghost-header-button:
-    role: Navigation or tertiary actions in headers.
-  dark-square-button:
-    role: Secondary navigation or actions, offering higher contrast.
-  feature-card:
-    role: Highlighting product features or benefits.
-  product-insight-card:
-    role: Displaying key statistics or quotes.
-  accent-tag:
-    role: Categorization or small interactive labels.
-  impact-statistic:
-    role: Presenting key performance indicators with visual hierarchy.
+name: "Reclaim"
+description: "This design orchestrates a friendly yet authoritative presentation through vibrant accents against a clean, spacious white backdrop. Key information is spotlighted with bold headings and a signature electric violet, while supporting details use muted tones. The frequent use of rounded corners, especially 100px pill shapes, softens the otherwise structured content, creating an approachable and modern feel for an AI-driven tool."
+theme: "light"
+industry: "ai"
+source_url: "https://reclaim.ai"
+refero_style_id: "71c7b9ad-44cc-483f-9c53-3cf73e0522a4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775922951235-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775922951235-thumb.jpg"
+extracted_at: "2026-04-11T15:56:09.970Z"
 ---
 
-## Overview
+# Reclaim — Style Reference
 
-**North Star:** Vibrant AI workspace
+> Vibrant AI workspace
+
+**Theme:** light
+
+**Industry:** ai
 
 This design orchestrates a friendly yet authoritative presentation through vibrant accents against a clean, spacious white backdrop. Key information is spotlighted with bold headings and a signature electric violet, while supporting details use muted tones. The frequent use of rounded corners, especially 100px pill shapes, softens the otherwise structured content, creating an approachable and modern feel for an AI-driven tool.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| White | #ffffff | `--color-white` | Page backgrounds, card surfaces, primary text on dark accents. |
+| Charcoal | #2b2b2b | `--color-charcoal` | Primary body text, standard headings. |
+| Graphite | #474747 | `--color-graphite` | Secondary text, descriptive elements. |
+| Light Steel | #c2c4d0 | `--color-light-steel` | Subtle borders, dividers, ghost button outlines. |
+| Electric Violet | #5562eb | `--color-electric-violet` | Primary interactive elements like CTA buttons, links, and key highlights — creating an energetic focal point. |
+| AI Green | #7ac17b | `--color-ai-green` | Used for success states, value propositions, and numerical highlights, signifying positive outcomes. |
+| Zenith Gradient | #5562eb | `--color-zenith-gradient` | Accents for section backgrounds or graphical elements, symbolizing a blend of progress and clarity. |
+| Growth Gradient | #7ac17b | `--color-growth-gradient` | Visual emphasis on statistics and features, conveying forward motion. |
+
+## Tokens — Typography
+
+### Poppins
+
+- **Token:** `--font-poppins`
+- **Substitute:** system-ui
+- **Weights:** 300, 400, 500, 600, 700
+- **Sizes:** all
+- **Line heights:** all
+- **Letter spacing:** -0.01em
+- **Role:** Headings, primary body text, buttons, and most UI elements. Its consistent, slightly condensed form with light letter spacing provides a modern, clean textual presence.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 500
+- **Sizes:** 12px, 13px, 18px
+- **Line heights:** all
+- **Letter spacing:** normal
+- **Role:** Used sparingly for secondary information and card details, offering a slightly more utilitarian contrast to the prominent Poppins.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | — | `--text-caption` |
+| body | 16px | 1.5 | -0.16px | `--text-body` |
+| subheading | 18px | 1.33 | — | `--text-subheading` |
+| heading | 24px | 1.25 | -0.24px | `--text-heading` |
+| heading-lg | 40px | 1.18 | -0.4px | `--text-heading-lg` |
+| display | 70px | 1.05 | -0.7px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| buttons | 100px |
+| default | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40-70px |
+| cardPadding | 20-30px |
+| elementGap | 5-15px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Impact Statistics Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Pill Button
+
+**Role:** Primary call to action.
+
+backgroundColor: #5562eb, color: #ffffff, borderRadius: 100px, paddingTop/Bottom: 15px, paddingLeft/Right: 30px, font: Poppins weight 500 equivalent to 16px.
+
+### Secondary Outline Button
+
+**Role:** Secondary call to action.
+
+backgroundColor: #ffffff, color: #000000, border: 1px solid #c2caf9, borderRadius: 0px, paddingTop/Bottom: 0px, paddingLeft/Right: 30px, font: Poppins weight 500 equivalent to 16px. Height defined by 0px padding is a specific implementation detail.
+
+### Ghost Header Button
+
+**Role:** Navigation or tertiary actions in headers.
+
+backgroundColor: transparent, color: #2b2b2b, no border, borderRadius: 0px, paddingTop/Bottom: 26px, paddingLeft/Right: 0px, font: Poppins weight 500 equivalent to 16px.
+
+### Dark Square Button
+
+**Role:** Secondary navigation or actions, offering higher contrast.
+
+backgroundColor: #000000, color: #ffffff, borderRadius: 3px, paddingTop/Bottom: 15px, paddingLeft/Right: 30px, font: Poppins weight 500 equivalent to 16px.
+
+### Feature Card
+
+**Role:** Highlighting product features or benefits.
+
+backgroundColor: transparent, borderRadius: 0px, boxShadow: none, paddingTop/Bottom: 0px, paddingLeft/Right: 20px. Content is meant to drive impact without visual framing.
+
+### Product Insight Card
+
+**Role:** Displaying key statistics or quotes.
+
+backgroundColor: #ffffff, borderRadius: 0px, boxShadow: none, paddingTop/Bottom/Left/Right: 30px. Used for content blocks that need a clean white background.
+
+### Accent Tag
+
+**Role:** Categorization or small interactive labels.
+
+backgroundColor: transparent, color: #181d25, borderRadius: 0px, padding: 0px. Text-only tag for unobtrusive labeling.
+
+### Impact Statistic
+
+**Role:** Presenting key performance indicators with visual hierarchy.
+
+Large numerical value (e.g., '4.8h') in AI Green #7ac17b, Poppins Bold. Followed by descriptive text in Charcoal #2b2b2b, smaller Poppins regular. Overall composition for high readability and immediate impact.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Poppins for display headings and primary text, leveraging its -0.01em letterSpacing for a sophisticated feel.
 - Apply Electric Violet (#5562eb) exclusively for primary interactive elements, such as main CTA buttons and navigation links.
@@ -85,7 +188,7 @@ This design orchestrates a friendly yet authoritative presentation through vibra
 - Maintain generous vertical spacing between sections to ensure content breathe and visual comfort.
 - Use Charcoal (#2b2b2b) for general paragraph text and secondary headings for clear readability against a white background.
 
-### Don'ts
+### Don't
 
 - Do not use box shadows for content cards; rely on background color changes for hierarchy when needed.
 - Avoid using multiple chromatic colors for primary calls to action; reserve Electric Violet (#5562eb) for this role.
@@ -94,10 +197,142 @@ This design orchestrates a friendly yet authoritative presentation through vibra
 - Do not use dark backgrounds for sections unless explicitly defined with gradient fills or for specific hero moments.
 - Avoid arbitrary border-radii; stick to 0px, 10px, or 100px for consistency.
 
-### Layout
+## Imagery
+
+The site uses a combination of abstract graphics and product screenshots. Product imagery features tight crops of the Reclaim UI, often presented on a clean white background with a subtle, friendly purple-tinted shadow like #ebefff. These screenshots are typically contained rather than full-bleed, showcasing the application's functionality. Icons are primarily outlined or subtle filled, using either dark neutrals or brand colors like AI Green, maintaining a clean, technical aesthetic. There are no lifestyle photos.
+
+## Layout
 
 The layout is predominantly max-width contained, centered on the page, with a pageMaxWidth implicitly around 1200px based on visual density. The hero section features a left-aligned, prominent headline over a white background, balanced by a large product screenshot on the right. Subsequent sections alternate between centered content stacks for testimonials or statistics and two-column layouts featuring text on the left and a product graphic or illustration on the right. There's a consistent vertical rhythm from varied margin-bottoms, leading to a comfortable density. The navigation is a sticky top bar with a logo, text links, and prominent pill-shaped buttons for CTAs.
 
-### Imagery
+## Similar Brands
 
-The site uses a combination of abstract graphics and product screenshots. Product imagery features tight crops of the Reclaim UI, often presented on a clean white background with a subtle, friendly purple-tinted shadow like #ebefff. These screenshots are typically contained rather than full-bleed, showcasing the application's functionality. Icons are primarily outlined or subtle filled, using either dark neutrals or brand colors like AI Green, maintaining a clean, technical aesthetic. There are no lifestyle photos.
+- **Calendly** — Dominant white background with product screenshots and bright accent colors for CTAs.
+- **Asana** — Clean, spacious UI with strong typography and a clear distinction between neutral content and brand-colored interactive elements.
+- **Notion** — Minimalist aesthetic, focus on content clarity, and use of subtle neutral elements with occasional brand color pops.
+- **Linear** — Modern and functional feel with strong emphasis on type hierarchy and a limited, purposeful color palette for UI elements.
+- **ClickUp** — Bright, friendly colors used as accents and for primary calls-to-action against a primarily white, spacious background.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-white: #ffffff;
+  --color-charcoal: #2b2b2b;
+  --color-graphite: #474747;
+  --color-light-steel: #c2c4d0;
+  --color-electric-violet: #5562eb;
+  --color-ai-green: #7ac17b;
+  --color-zenith-gradient: #5562eb;
+  --color-growth-gradient: #7ac17b;
+  --font-poppins: 'Poppins', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.33;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.18;
+  --tracking-heading-lg: -0.4px;
+  --text-display: 70px;
+  --leading-display: 1.05;
+  --tracking-display: -0.7px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --radius-cards: 0px;
+  --radius-buttons: 100px;
+  --radius-default: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-white: #ffffff;
+  --color-charcoal: #2b2b2b;
+  --color-graphite: #474747;
+  --color-light-steel: #c2c4d0;
+  --color-electric-violet: #5562eb;
+  --color-ai-green: #7ac17b;
+  --color-zenith-gradient: #5562eb;
+  --color-growth-gradient: #7ac17b;
+  --font-poppins: 'Poppins', system-ui;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.33;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.24px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.18;
+  --tracking-heading-lg: -0.4px;
+  --text-display: 70px;
+  --leading-display: 1.05;
+  --tracking-display: -0.7px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --radius-cards: 0px;
+  --radius-buttons: 100px;
+  --radius-default: 10px;
+}
+```
