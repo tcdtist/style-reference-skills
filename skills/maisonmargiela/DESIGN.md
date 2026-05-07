@@ -1,67 +1,163 @@
 ---
 version: alpha
-name: Maisonmargiela
-description: This design system evokes understated luxury and conceptual fashion, reminiscent of a high-end atelier's minimalist presentation. The dominant use of near-achromatic grays from `#121212` to `#f7f7f2` creates a sophisticated, muted backdrop. Typefaces are the primary vehicle for brand expression: the bespoke Margiela Sans with its numerous weights defines interactive elements and body text, while the subtly elegant Margiela Serif provides an exclusive touch to display large text. A complete absence of sharp accents or strong colors maintains a refined visual restraint, allowing product imagery to capture full attention.
-colors:
-  greige-canvas: "#f7f7f2"
-  coal-text: "#121212"
-  white-linen: "#ffffff"
-  ash-detail: "#898989"
-  ghost-gray: "#eaeae6"
-  deep-graphite: "#000000"
-  subtle-accent: "#d6d6d1"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-  label:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.4
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.3
-    letterSpacing: -0.07px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.3
-    letterSpacing: -0.08px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 4px
-  sectionGap: 64px
-components:
-  announcement-banner:
-    role: 
-  product-card-tabi-claw:
-    role: 
-  campaign-cta-block-primavera-verano:
-    role: 
-  text-only-button:
-    role: Primary interactive element for navigation and inline actions.
-  text-underline-button:
-    role: Secondary call-to-action or link within content.
-  muted-text-underline-button:
-    role: Tertiary action or less emphasized links.
-  search-field:
-    role: Global search input.
-  standard-input-field:
-    role: Form inputs for data entry.
-  product-thumbnail:
-    role: Displays product images in grids or listings.
+name: "Maisonmargiela"
+description: "This design system evokes understated luxury and conceptual fashion, reminiscent of a high-end atelier's minimalist presentation. The dominant use of near-achromatic grays from `#121212` to `#f7f7f2` creates a sophisticated, muted backdrop. Typefaces are the primary vehicle for brand expression: the bespoke Margiela Sans with its numerous weights defines interactive elements and body text, while the subtly elegant Margiela Serif provides an exclusive touch to display large text. A complete absence of sharp accents or strong colors maintains a refined visual restraint, allowing product imagery to capture full attention."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://maisonmargiela.com"
+refero_style_id: "44a6d2a5-16ef-42cd-a69c-33a7af16638d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926104443-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926104443-thumb.jpg"
+extracted_at: "2026-04-11T16:48:48.044Z"
 ---
 
-## Overview
+# Maisonmargiela — Style Reference
 
-**North Star:** muted runway elegance
+> muted runway elegance
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 This design system evokes understated luxury and conceptual fashion, reminiscent of a high-end atelier's minimalist presentation. The dominant use of near-achromatic grays from `#121212` to `#f7f7f2` creates a sophisticated, muted backdrop. Typefaces are the primary vehicle for brand expression: the bespoke Margiela Sans with its numerous weights defines interactive elements and body text, while the subtly elegant Margiela Serif provides an exclusive touch to display large text. A complete absence of sharp accents or strong colors maintains a refined visual restraint, allowing product imagery to capture full attention.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Greige Canvas | #f7f7f2 | `--color-greige-canvas` | Primary page and content backgrounds, creating a soft, almost antique paper feel. |
+| Coal Text | #121212 | `--color-coal-text` | Dominant text color for headings, body, and navigation, providing high contrast against light backgrounds for legibility without harshness. |
+| White Linen | #ffffff | `--color-white-linen` | Alternative background for certain elements or subtle accents, used sparingly to introduce slight variation. |
+| Ash Detail | #898989 | `--color-ash-detail` | Secondary text for less prominent information, and subtle borders or outlines. |
+| Ghost Gray | #eaeae6 | `--color-ghost-gray` | Background for subtle transitions or dividers, akin to a faint wash of color. |
+| Deep Graphite | #000000 | `--color-deep-graphite` | High-contrast text for specific headings or key information, often used interchangeably with Coal Text for maximum impact. |
+| Subtle Accent | #d6d6d1 | `--color-subtle-accent` | Underlines, subtle borders, and background hints, providing barely-there visual separation. |
+
+## Tokens — Typography
+
+### Margiela Sans
+
+- **Token:** `--font-margiela-sans`
+- **Substitute:** Inter
+- **Weights:** 375, 400, 475, 500, 600, 700
+- **Sizes:** 10px, 11px, 12px, 13px, 14px, 15px, 16px
+- **Line heights:** 1.00, 1.20, 1.40, 1.50, 1.60
+- **Letter spacing:** 0.007em, 0.010em, 0.067em, 0.077em, 0.091em, 0.125em
+- **Role:** Primary typeface for all body text, navigation, buttons, and most interactive elements. Its extensive weight range allows for fine-grained hierarchy and emphasis within a consistent modern voice.
+
+### Margiela Serif
+
+- **Token:** `--font-margiela-serif`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 14px, 18px, 20px
+- **Line heights:** 1.30, 1.40
+- **Letter spacing:** -0.004em, -0.002em
+- **Role:** Used for distinctive, editorial elements, providing a classic, refined contrast to the modern sans-serif. Its minimal negative letter-spacing contributes to an elegant, tightly composed appearance at larger sizes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | — | `--text-caption` |
+| label | 15px | 1.4 | — | `--text-label` |
+| display-sm | 18px | 1.3 | -0.07px | `--text-display-sm` |
+| display | 20px | 1.3 | -0.08px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-98 | 98px | `--spacing-98` |
+| spacing-156 | 156px | `--spacing-156` |
+| spacing-178 | 178px | `--spacing-178` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| inputs | 9999px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Product Card — Tabi Claw
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Campaign CTA Block — Primavera-Verano
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Text Only Button
+
+**Role:** Primary interactive element for navigation and inline actions.
+
+Background: transparent (rgba(0, 0, 0, 0)), Text: Coal Text (#121212), Border-top: transparent, Radius: 0px, Padding: 0px. This button style is visually light, relying on text color and hover states for interaction cues. Used for main navigation items like 'Mujer', 'Hombre'.
+
+### Text Underline Button
+
+**Role:** Secondary call-to-action or link within content.
+
+Background: transparent (rgba(0, 0, 0, 0)), Text: Coal Text (#121212), Border-top: Coal Text (#121212), Radius: 0px, Padding: 0px. Features a subtle underline on the text, indicating a clickable action. Used for 'Descubra más' links.
+
+### Muted Text Underline Button
+
+**Role:** Tertiary action or less emphasized links.
+
+Background: transparent (rgba(0, 0, 0, 0)), Text: rgba(26, 26, 26, 0.55), Border-top: rgba(26, 26, 26, 0.55), Radius: 0px, Padding: 0px. A desaturated version of the Text Underline Button for less prominent interactions.
+
+### Search Field
+
+**Role:** Global search input.
+
+Background: transparent (rgba(0, 0, 0, 0)), Text: Deep Graphite (#000000), Border-top: rgba(18, 18, 18, 0.06), Radius: 9999px, Padding: 0px. Placeholder text is implied to be similar muted gray. The rounded border is a distinct design choice for inputs.
+
+### Standard Input Field
+
+**Role:** Form inputs for data entry.
+
+Background: White Linen (#ffffff), Text: Coal Text (#121212), Border-top: rgba(26, 26, 26, 0.3), Radius: 0px, Padding: 0px vertical, 16px horizontal. Features a subtle, desaturated border and standard padding for form elements.
+
+### Product Thumbnail
+
+**Role:** Displays product images in grids or listings.
+
+Typically full-bleed image within its container, no explicit borders or shadows. Relies on the surrounding whitespace for definition. Typography for product names or prices uses Margiela Sans at various weights over the image or below.
+
+## Do's and Don'ts
+
+### Do
 
 - Do prioritize near-achromatic colors from the Greige Canvas (#f7f7f2) to Coal Text (#121212) scale for all primary UI elements and text.
 - Do use Margiela Sans at various weights (375-700) for all functional text, headings, and interactive labels.
@@ -71,7 +167,7 @@ This design system evokes understated luxury and conceptual fashion, reminiscent
 - Do use Margiela Serif for editorial content or distinctive display text to introduce an elevated, classic contrast.
 - Do ensure interactive elements utilize the full color of Coal Text (#121212) or Deep Graphite (#000000) for clarity against lighter backgrounds.
 
-### Don'ts
+### Don't
 
 - Don't introduce vivid or saturated colors outside of product imagery; the palette is strictly muted.
 - Don't use drop shadows; the design relies on subtle background color shifts for depth.
@@ -80,10 +176,113 @@ This design system evokes understated luxury and conceptual fashion, reminiscent
 - Don't use heavy borders or outlines on elements; rely on text color and subtle background changes for visual separation.
 - Don't break the tight letter-spacing for Margiela Serif at display sizes; its elegance depends on precise typography.
 
-### Layout
+## Imagery
+
+The visual language is product-centric and highly art-directed. Photography features tight crops of products (shoes, garments) on muted, often textured studio backgrounds, emphasizing the product's form and material. There is an editorial, almost sculptural quality to the composition, focusing on the object itself rather than lifestyle context. The human models are often positioned to highlight the clothing's silhouette, captured with a slightly desaturated, cool-toned filter, enhancing the high-fashion aesthetic. Images are typically full-bleed within their sections, leveraging the entire viewport for visual impact without explicit masks or ornate treatments. Icons, like the search or cart icons, are minimalist, outlined, and monochromatic, blending seamlessly with the overall design.
+
+## Layout
 
 The site employs a full-bleed layout for hero sections, filling the entire viewport with large, impactful imagery and centered, minimalist text overlays. Content sections beneath the hero typically maintain a comfortable horizontal max-width but with variably loose vertical spacing. The navigation is a minimalist, fixed top bar using text-only links. Content blocks frequently consist of large, single images or stacked text and imagery, creating a spacious and gallery-like flow. There's a subtle grid structure for product listings, but the overall presentation prioritizes large-scale visuals over dense information, creating a luxurious, unhurried browsing experience.
 
-### Imagery
+## Similar Brands
 
-The visual language is product-centric and highly art-directed. Photography features tight crops of products (shoes, garments) on muted, often textured studio backgrounds, emphasizing the product's form and material. There is an editorial, almost sculptural quality to the composition, focusing on the object itself rather than lifestyle context. The human models are often positioned to highlight the clothing's silhouette, captured with a slightly desaturated, cool-toned filter, enhancing the high-fashion aesthetic. Images are typically full-bleed within their sections, leveraging the entire viewport for visual impact without explicit masks or ornate treatments. Icons, like the search or cart icons, are minimalist, outlined, and monochromatic, blending seamlessly with the overall design.
+- **Acne Studios** — Shares a minimalist aesthetic driven by high-quality photography, muted palettes, and distinct typography.
+- **The Row** — Similar emphasis on understated luxury, clean layouts, and product photography as the primary visual focus.
+- **COS** — Features a near-monochromatic color scheme, strong reliance on typography for branding, and spacious product displays.
+- **Vestiaire Collective (high-end sections)** — Employs a sophisticated, editorial approach with a focus on product presentation against neutral backgrounds, similar to a fashion magazine.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-greige-canvas: #f7f7f2;
+  --color-coal-text: #121212;
+  --color-white-linen: #ffffff;
+  --color-ash-detail: #898989;
+  --color-ghost-gray: #eaeae6;
+  --color-deep-graphite: #000000;
+  --color-subtle-accent: #d6d6d1;
+  --font-margiela-sans: 'Margiela Sans', Inter;
+  --font-margiela-serif: 'Margiela Serif', Playfair Display;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-label: 15px;
+  --leading-label: 1.4;
+  --text-display-sm: 18px;
+  --leading-display-sm: 1.3;
+  --tracking-display-sm: -0.07px;
+  --text-display: 20px;
+  --leading-display: 1.3;
+  --tracking-display: -0.08px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-98: 98px;
+  --spacing-156: 156px;
+  --spacing-178: 178px;
+  --radius-cards: 0px;
+  --radius-inputs: 9999px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-greige-canvas: #f7f7f2;
+  --color-coal-text: #121212;
+  --color-white-linen: #ffffff;
+  --color-ash-detail: #898989;
+  --color-ghost-gray: #eaeae6;
+  --color-deep-graphite: #000000;
+  --color-subtle-accent: #d6d6d1;
+  --font-margiela-sans: 'Margiela Sans', Inter;
+  --font-margiela-serif: 'Margiela Serif', Playfair Display;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-label: 15px;
+  --leading-label: 1.4;
+  --text-display-sm: 18px;
+  --leading-display-sm: 1.3;
+  --tracking-display-sm: -0.07px;
+  --text-display: 20px;
+  --leading-display: 1.3;
+  --tracking-display: -0.08px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-98: 98px;
+  --spacing-156: 156px;
+  --spacing-178: 178px;
+  --radius-cards: 0px;
+  --radius-inputs: 9999px;
+  --radius-buttons: 0px;
+}
+```

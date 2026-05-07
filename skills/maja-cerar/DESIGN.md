@@ -1,45 +1,114 @@
 ---
 version: alpha
-name: Maja Cerar
-description: Maja Cerar's online portfolio conveys a meticulous, understated elegance through a spacious achromatic canvas, where project visuals are presented as large, clean blocks. Typography is the primary conveyor of information and hierarchy, using a single signature typeface with subtle negative letter-spacing for a refined, almost whispered presence. The design is highly content-centric, relying on generous whitespace and a minimalist approach to define structure and visual flow without relying on heavy borders, shadows, or vivid accent colors.
-colors:
-  canvas-white: "#ffffff"
-  project-card: "#ebeeff"
-  ink-black: "#111111"
-  subtle-gray-border: "#bbbbbb"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.3
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-spacing:
-  cardRadius: 64px
-  elementGap: 24px
-  sectionGap: 128px
-components:
-  project-card:
-    role: Container for individual project previews.
-  navigation-link:
-    role: Top-level navigation items and contact links.
-  descriptive-text-block:
-    role: Text blocks accompanying project entries.
+name: "Maja Cerar"
+description: "Maja Cerar's online portfolio conveys a meticulous, understated elegance through a spacious achromatic canvas, where project visuals are presented as large, clean blocks. Typography is the primary conveyor of information and hierarchy, using a single signature typeface with subtle negative letter-spacing for a refined, almost whispered presence. The design is highly content-centric, relying on generous whitespace and a minimalist approach to define structure and visual flow without relying on heavy borders, shadows, or vivid accent colors."
+theme: "light"
+industry: "design"
+source_url: "https://www.majacerar.design"
+refero_style_id: "40ebe3dc-c1dc-4fc1-aa85-552f0bcf7edb"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514774395-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514774395-thumb.jpg"
+extracted_at: "2026-04-30T02:06:26.442Z"
 ---
 
-## Overview
+# Maja Cerar — Style Reference
 
-**North Star:** Typographic Precision on an Open Canvas
+> Typographic Precision on an Open Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Maja Cerar's online portfolio conveys a meticulous, understated elegance through a spacious achromatic canvas, where project visuals are presented as large, clean blocks. Typography is the primary conveyor of information and hierarchy, using a single signature typeface with subtle negative letter-spacing for a refined, almost whispered presence. The design is highly content-centric, relying on generous whitespace and a minimalist approach to define structure and visual flow without relying on heavy borders, shadows, or vivid accent colors.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary background for the entire site, providing an expansive, airy feel |
+| Project Card | #ebeeff | `--color-project-card` | Background for project preview cards, lending a subtle, muted backdrop that hints at content within without distraction |
+| Ink Black | #111111 | `--color-ink-black` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Subtle Gray Border | #bbbbbb | `--color-subtle-gray-border` | Delicate borders or dividers, used sparsely to delineate sections or elements without imposing heavy visual weight |
+
+## Tokens — Typography
+
+### GTF
+
+- **Token:** `--font-gtf`
+- **Weights:** 400
+- **Sizes:** 16px, 19px, 32px
+- **Line heights:** 1.2, 1.3
+- **Letter spacing:** -0.031
+- **Role:** GTF — detected in extracted data but not described by AI
+
+### GT America Extended
+
+- **Token:** `--font-gt-america-extended`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Letter spacing:** -0.031em
+- **Role:** The singular typeface for all textual content, from headings to body text and links. Its slightly condensed and precisely tracked appearance defines the site's restrained and sophisticated voice. The consistent use of a single weight across sizes emphasizes content over typographic theatrics.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.3 | — | `--text-body` |
+| subheading | 19px | 1.25 | — | `--text-subheading` |
+| heading | 32px | 1.2 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 64px |
+| images | 64px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 128px |
+| cardPadding | 40px |
+| elementGap | 24px |
+
+## Components
+
+### Project Card
+
+**Role:** Container for individual project previews.
+
+Large project card with a background of Project Card (#ebeeff) and a very large border-radius of 64px. The project title uses Ink Black (#111111) at 32px, GTF weight 400 with -0.031em letter spacing. Padding around content is implied by 'cardPadding' (40px).
+
+### Navigation Link
+
+**Role:** Top-level navigation items and contact links.
+
+Text link using Ink Black (#111111), GTF weight 400, 16px size, with -0.031em letter spacing. Features a hairline border in Ink Black (#111111) on hover/active states, and a left margin of 32px (except the first).
+
+### Descriptive Text Block
+
+**Role:** Text blocks accompanying project entries.
+
+Long-form or secondary text using Ink Black (#111111), GTF weight 400, 16px size, -0.031em letter spacing, often paired with project title via a 24px element gap.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize GT America Extended (or Inter) at weight 400 for all textual content.
 - Apply -0.031em letter-spacing to all text to maintain the clean, precise feel.
@@ -49,7 +118,7 @@ Maja Cerar's online portfolio conveys a meticulous, understated elegance through
 - Maintain generous section gaps of 128px between major content blocks.
 - Use Project Card (#ebeeff) as a subtle background for content areas within the main canvas.
 
-### Don'ts
+### Don't
 
 - Avoid using bold or heavy weights; the entire system relies on weight 400 for its understated character.
 - Do not introduce new typefaces; the single typeface defines the brand's typographic identity.
@@ -58,10 +127,85 @@ Maja Cerar's online portfolio conveys a meticulous, understated elegance through
 - Do not use small, tight spacing. Embrace spacious layouts and generous whitespace.
 - Refrain from complex component styling; components should be lightweight, with minimal borders and no superfluous decoration.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Base page background |
+| 1 | Project Card | #ebeeff | Background for self-contained content blocks and project previews |
+
+## Imagery
+
+This design system primarily uses actual product screenshots and UI renders to showcase work. Imagery is consistently presented within large, softly rounded (64px radius) containers, often acting as the main visual element of a project card. There's an absence of lifestyle photography or complex illustrations; instead, the focus is on direct, unadorned visual evidence of product design. Icons, when present, are minimal and likely outlined, aligning with the overall lightweight aesthetic. Imagery serves to explain and demonstrate, taking a significant visual space relative to text.
+
+## Layout
 
 The page employs a full-bleed layout for its overall structure, but content within project sections is often visually contained. The hero section features the designer's name and bio, framed by generous whitespace. Project sections follow a consistent vertical rhythm, with each project presented as a large block comprising a year, project title, descriptive text, and a large visual preview. These sections are separated by very large vertical gaps (128px), creating distinct visual pauses. Content within sections tends to align left, with ample horizontal spacing. The navigation is a minimalist top bar with text links, maintaining a light footprint. There's no complex grid system, but rather a sequential stacking of distinct content blocks.
 
-### Imagery
+## Similar Brands
 
-This design system primarily uses actual product screenshots and UI renders to showcase work. Imagery is consistently presented within large, softly rounded (64px radius) containers, often acting as the main visual element of a project card. There's an absence of lifestyle photography or complex illustrations; instead, the focus is on direct, unadorned visual evidence of product design. Icons, when present, are minimal and likely outlined, aligning with the overall lightweight aesthetic. Imagery serves to explain and demonstrate, taking a significant visual space relative to text.
+- **Simon V. Design** — Monochromatic palette with a single sans-serif typeface, focusing on spacious layouts and large project previews.
+- **Piotr Chudzinski Portfolio** — Minimalist, text-heavy design with a focus on generous whitespace and a clean typographic hierarchy for a portfolio site.
+- **Kacper Chyliński Portfolio** — Subtle background color variations, large image areas for project showcases, and minimal use of bold colors; very clean and text-focused.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-project-card: #ebeeff;
+  --color-ink-black: #111111;
+  --color-subtle-gray-border: #bbbbbb;
+  --font-gtf: 'GTF', ui-sans-serif, system-ui, sans-serif;
+  --font-gt-america-extended: 'GT America Extended', Inter;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-128: 128px;
+  --radius-cards: 64px;
+  --radius-images: 64px;
+  --surface-canvas-white: #ffffff;
+  --surface-project-card: #ebeeff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-project-card: #ebeeff;
+  --color-ink-black: #111111;
+  --color-subtle-gray-border: #bbbbbb;
+  --font-gtf: 'GTF', ui-sans-serif, system-ui, sans-serif;
+  --font-gt-america-extended: 'GT America Extended', Inter;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-128: 128px;
+  --radius-cards: 64px;
+  --radius-images: 64px;
+  --surface-canvas-white: #ffffff;
+  --surface-project-card: #ebeeff;
+}
+```
