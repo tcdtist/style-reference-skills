@@ -1,91 +1,188 @@
 ---
 version: alpha
-name: WHOOP
-description: WHOOP's design evokes a sense of precise, data-driven health monitoring. The dominant use of stark black and crisp white, punctuated by a deep indigo (#4a53ff), creates a high-contrast environment, mirroring the clarity of performance data. Softly rounded cards and buttons suggest an approachable interface for complex health metrics, while sharp, geometric typography reinforces the technical precision.
-colors:
-  midnight-base: "#000000"
-  daylight-canvas: "#ffffff"
-  ghost-gray: "#e5e7eb"
-  arctic-mist: "#f3f5f9"
-  stone-accent: "#808080"
-  gravel-scale: "#999999"
-  deep-indigo: "#4a53ff"
-  warning-red: "#d03433"
-  glow-yellow: "#fbca46"
-  ruby-streak: "#a41517"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.49
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.29
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.13
-    letterSpacing: -0.48px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-    letterSpacing: -1.2px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.09
-    letterSpacing: -1.3px
-  display-md:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1
-    letterSpacing: -1.5px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 120px
-    lineHeight: 0.8
-    letterSpacing: -4.8px
-spacing:
-  elementGap: 8-25px
-  sectionGap: 48-80px
-components:
-  announcement-banner:
-    role: 
-  free-trial-card:
-    role: 
-  feature-cards-grid:
-    role: 
-  standard-button-bold:
-    role: Primary Call to Action
-  rounded-button-compact:
-    role: Secondary Call to Action, Internal Navigation
-  floating-pill-button:
-    role: Contextual Call to Action
-  ghost-button-inverse:
-    role: Tertiary Action, Navigation Link
-  card-default:
-    role: Informational Content Block
-  card-elevated:
-    role: Engaging Content Block, Feature Showcase
-  card-elevated-shadowed:
-    role: Interactive or Prominent Card
-  input-dark:
-    role: Text Input Fields in Dark Sections
+name: "WHOOP"
+description: "WHOOP's design evokes a sense of precise, data-driven health monitoring. The dominant use of stark black and crisp white, punctuated by a deep indigo (#4a53ff), creates a high-contrast environment, mirroring the clarity of performance data. Softly rounded cards and buttons suggest an approachable interface for complex health metrics, while sharp, geometric typography reinforces the technical precision."
+theme: "mixed"
+industry: "other"
+source_url: "https://whoop.com"
+refero_style_id: "05053a60-1964-4154-9d58-ebdf6352ed3a"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925000052-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925000052-thumb.jpg"
+extracted_at: "2026-04-11T16:30:19.276Z"
 ---
 
-## Overview
+# WHOOP — Style Reference
 
-**North Star:** High-contrast digital readout. Like numbers on a precision laboratory instrument, the design is clear, direct, and offers no visual ambiguity.
+> High-contrast digital readout. Like numbers on a precision laboratory instrument, the design is clear, direct, and offers no visual ambiguity.
+
+**Theme:** mixed
+
+**Industry:** other
 
 WHOOP's design evokes a sense of precise, data-driven health monitoring. The dominant use of stark black and crisp white, punctuated by a deep indigo (#4a53ff), creates a high-contrast environment, mirroring the clarity of performance data. Softly rounded cards and buttons suggest an approachable interface for complex health metrics, while sharp, geometric typography reinforces the technical precision.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Base | #000000 | `--color-midnight-base` | Page backgrounds, section backgrounds, primary text for light sections, input background in dark sections. |
+| Daylight Canvas | #ffffff | `--color-daylight-canvas` | Page backgrounds for light sections, card surfaces, primary text for dark sections. |
+| Ghost Gray | #e5e7eb | `--color-ghost-gray` | Subtle borders, container edges, background for very light elements. Creates separation without harshness. |
+| Arctic Mist | #f3f5f9 | `--color-arctic-mist` | Elevated card backgrounds, secondary page sections. Provides a slightly warmer white than Daylight Canvas. |
+| Stone Accent | #808080 | `--color-stone-accent` | Secondary text, subtle details, icons. Offers a softer contrast than Midnight Base. |
+| Gravel Scale | #999999 | `--color-gravel-scale` | Tertiary text, disabled button text, subtle icons. A lighter neutral for less prominent information. |
+| Deep Indigo | #4a53ff | `--color-deep-indigo` | Focus indicators, subtle interactive elements, and key brand accents. Its vivid blue stands out sparingly against the dominant black and white. |
+| Warning Red | #d03433 | `--color-warning-red` | Internal illustration detail. Not used for UI elements. |
+| Glow Yellow | #fbca46 | `--color-glow-yellow` | Internal illustration detail. Not used for UI elements. |
+| Ruby Streak | #a41517 | `--color-ruby-streak` | Internal illustration detail. Not used for UI elements. |
+
+## Tokens — Typography
+
+### proxima-nova
+
+- **Token:** `--font-proxima-nova`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 14px, 15px, 16px, 19px, 20px, 24px, 32px, 35px, 50px, 120px
+- **Line heights:** 0.80, 1.00, 1.09, 1.10, 1.13, 1.29, 1.30, 1.33, 1.49, 1.50, 1.59
+- **Letter spacing:** -0.0400em, -0.0370em, -0.0300em, 0.1000em
+- **Role:** Primary typeface for all text content, from display headlines to body text and navigation. Its geometric clarity reinforces the data-driven brand. Letter spacing is subtly tightened on larger text to maintain visual density.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.49 | — | `--text-caption` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 19px | 1.29 | — | `--text-subheading` |
+| heading | 24px | 1.13 | -0.48px | `--text-heading` |
+| heading-lg | 32px | 1.1 | -1.2px | `--text-heading-lg` |
+| display-sm | 35px | 1.09 | -1.3px | `--text-display-sm` |
+| display-md | 50px | 1 | -1.5px | `--text-display-md` |
+| display | 120px | 0.8 | -4.8px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-62 | 62px | `--spacing-62` |
+| spacing-92 | 92px | `--spacing-92` |
+| spacing-100 | 100px | `--spacing-100` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 300px |
+| media | 24px |
+| button | 60px |
+| default | 24px |
+| smallCard | 8px |
+| actionable | 16px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(199, 199, 199, 0.25) 0px 4px 15px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48-80px |
+| cardPadding | 20-50px |
+| elementGap | 8-25px |
+
+## Components
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Free Trial Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Standard Button Bold
+
+**Role:** Primary Call to Action
+
+White background, #000000 text, 60px border radius, 15px vertical and 25px horizontal padding. Font: proxima-nova, weight 400.
+
+### Rounded Button Compact
+
+**Role:** Secondary Call to Action, Internal Navigation
+
+White background, #000000 text, 20px border radius, 10px padding all sides. Font: proxima-nova, weight 400.
+
+### Floating Pill Button
+
+**Role:** Contextual Call to Action
+
+White background, #000000 text, 50% border radius (effectively a pill), no explicit padding value, suggests automatic browser spacing. Used for 'Join Now'.
+
+### Ghost Button Inverse
+
+**Role:** Tertiary Action, Navigation Link
+
+Transparent background, #ffffff text, #ffffff border, 0px border radius. Font: proxima-nova, weight 400. Used in dark hero sections.
+
+### Card Default
+
+**Role:** Informational Content Block
+
+Transparent background, 0px border radius, 43px top, 50px right, 30px bottom, 50px left padding. No shadow by default.
+
+### Card Elevated
+
+**Role:** Engaging Content Block, Feature Showcase
+
+#ffffff background, 24px border radius, 40px top padding. No shadow by default.
+
+### Card Elevated Shadowed
+
+**Role:** Interactive or Prominent Card
+
+#f3f5f9 background, 24px border radius. Uses a subtle shadow: rgba(199, 199, 199, 0.25) 0px 4px 15px 0px.
+
+### Input Dark
+
+**Role:** Text Input Fields in Dark Sections
+
+#000000 background, #ffffff text, #ffffff border, 0px border radius. No explicit padding provided.
+
+## Do's and Don'ts
+
+### Do
 
 - Use proxima-nova for all typography, adjusting weights (400, 500, 600, 700) and sizes according to the type scale.
 - Maintain a high-contrast ratio for text: #000000 on light backgrounds (#ffffff, #f3f5f9, #e5e7eb) and #ffffff on dark backgrounds (#000000, #191919).
@@ -95,7 +192,7 @@ WHOOP's design evokes a sense of precise, data-driven health monitoring. The dom
 - Use 'Ghost Gray' (#e5e7eb) for subtle borders and dividers to softly define sections without strong lines.
 - Apply negative letter spacing to display text (e.g., -4.8px at 120px) to enhance visual impact and tighten headlines.
 
-### Don'ts
+### Don't
 
 - Do not introduce new color tones; stick to the established achromatic palette with 'Deep Indigo' (#4a53ff) as the sole brand accent.
 - Avoid using drop shadows on cards unless it's for 'Card Elevated Shadowed' to maintain a flat, modern aesthetic.
@@ -104,10 +201,164 @@ WHOOP's design evokes a sense of precise, data-driven health monitoring. The dom
 - Do not use highly saturated colorful backgrounds for UI elements; maintain the neutral background schema.
 - Avoid excessive use of the vivid semantic colors (#d03433, #fbca46, #a41517) as they are reserved for internal illustration detail.
 
-### Layout
+## Elevation
+
+- **Card Elevated Shadowed:** `box-shadow: rgba(199, 199, 199, 0.25) 0px 4px 15px 0px`
+
+## Imagery
+
+This site uses product photography and lifestyle imagery, often tightly cropped to focus on the WHOOP device in action. Photography features individuals engaging in athletic or everyday activities, conveying health and wellness. The images are typically vibrant, with natural lighting. Illustrations appear in some contexts, using a flat, vector-based style with muted but defined color palettes, serving a decorative role to break up text-heavy sections or highlight concepts. Images are generally contained within rounded cards (24px radius) rather than full-bleed, preventing them from dominating the page and maintaining focus on the surrounding UI. Icons are simple, monochrome, and filled.
+
+## Layout
 
 The page alternates between full-bleed dark sections and max-width contained light sections. The hero is full-bleed black with a centered, oversized white headline and subtext, creating a strong initial impact. Sections generally flow with consistent vertical spacing, often showcasing content in two-column arrangements (text alongside image/card) or three-column card grids. There's a clear visual rhythm established by the alternating background colors. The layout is centered within its contained sections, maintaining balance. Navigation is a sticky top bar with prominent 'JOIN NOW' button.
 
-### Imagery
+## Similar Brands
 
-This site uses product photography and lifestyle imagery, often tightly cropped to focus on the WHOOP device in action. Photography features individuals engaging in athletic or everyday activities, conveying health and wellness. The images are typically vibrant, with natural lighting. Illustrations appear in some contexts, using a flat, vector-based style with muted but defined color palettes, serving a decorative role to break up text-heavy sections or highlight concepts. Images are generally contained within rounded cards (24px radius) rather than full-bleed, preventing them from dominating the page and maintaining focus on the surrounding UI. Icons are simple, monochrome, and filled.
+- **Nike Training Club** — Shares a similar high-contrast, performance-oriented aesthetic with stark backgrounds and clear typography.
+- **Peloton** — Employs an emphasis on fitness and progress through a clean, modern interface and impactful imagery.
+- **Oura Ring** — Features a tech-forward health focus with a preference for clean whites, subtle neutrals, and precise text layouts.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-base: #000000;
+  --color-daylight-canvas: #ffffff;
+  --color-ghost-gray: #e5e7eb;
+  --color-arctic-mist: #f3f5f9;
+  --color-stone-accent: #808080;
+  --color-gravel-scale: #999999;
+  --color-deep-indigo: #4a53ff;
+  --color-warning-red: #d03433;
+  --color-glow-yellow: #fbca46;
+  --color-ruby-streak: #a41517;
+  --font-proxima-nova: 'proxima-nova', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.49;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 19px;
+  --leading-subheading: 1.29;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.2px;
+  --text-display-sm: 35px;
+  --leading-display-sm: 1.09;
+  --tracking-display-sm: -1.3px;
+  --text-display-md: 50px;
+  --leading-display-md: 1;
+  --tracking-display-md: -1.5px;
+  --text-display: 120px;
+  --leading-display: 0.8;
+  --tracking-display: -4.8px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-54: 54px;
+  --spacing-62: 62px;
+  --spacing-92: 92px;
+  --spacing-100: 100px;
+  --radius-pill: 300px;
+  --radius-media: 24px;
+  --radius-button: 60px;
+  --radius-default: 24px;
+  --radius-smallcard: 8px;
+  --radius-actionable: 16px;
+  --shadow-xl: rgba(199, 199, 199, 0.25) 0px 4px 15px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-base: #000000;
+  --color-daylight-canvas: #ffffff;
+  --color-ghost-gray: #e5e7eb;
+  --color-arctic-mist: #f3f5f9;
+  --color-stone-accent: #808080;
+  --color-gravel-scale: #999999;
+  --color-deep-indigo: #4a53ff;
+  --color-warning-red: #d03433;
+  --color-glow-yellow: #fbca46;
+  --color-ruby-streak: #a41517;
+  --font-proxima-nova: 'proxima-nova', system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.49;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 19px;
+  --leading-subheading: 1.29;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 32px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.2px;
+  --text-display-sm: 35px;
+  --leading-display-sm: 1.09;
+  --tracking-display-sm: -1.3px;
+  --text-display-md: 50px;
+  --leading-display-md: 1;
+  --tracking-display-md: -1.5px;
+  --text-display: 120px;
+  --leading-display: 0.8;
+  --tracking-display: -4.8px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-54: 54px;
+  --spacing-62: 62px;
+  --spacing-92: 92px;
+  --spacing-100: 100px;
+  --radius-pill: 300px;
+  --radius-media: 24px;
+  --radius-button: 60px;
+  --radius-default: 24px;
+  --radius-smallcard: 8px;
+  --radius-actionable: 16px;
+  --shadow-xl: rgba(199, 199, 199, 0.25) 0px 4px 15px 0px;
+}
+```

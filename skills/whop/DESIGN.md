@@ -1,63 +1,163 @@
 ---
 version: alpha
-name: Whop
-description: Whop presents a confident, high-contrast digital canvas with a striking orange accent. Typography is central, using large, tightly tracked sans-serif headlines for impactful statements and a comfortable mono-spaced font for technical details. Surfaces are predominantly white, creating a crisp backdrop for the energetic primary orange, grounded by a subtle shadow effect that adds minimal depth. Interactivity is clearly defined through the bold orange for primary actions and soft, rounded ghost buttons for secondary choices, balancing directness with approachability.
-colors:
-  canvas-white: "#ffffff"
-  dark-graphite: "#202020"
-  medium-gray: "#646464"
-  light-gray: "#838383"
-  border-silver: "#bbbbbb"
-  very-light-gray: "#e1e4e8"
-  dark-surface: "#0a0a0a"
-  whop-orange: "#fa4616"
-  orange-shadow: "#b62600"
-typography:
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.013px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-    letterSpacing: -0.011px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-    letterSpacing: -0.03px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 128px
-    lineHeight: 1
-    letterSpacing: -0.03px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 8px
-  elementGap: 24px
-  sectionGap: 64px
-components:
-  primary-action-button:
-    role: Main call-to-action
-  ghost-secondary-button:
-    role: Alternative action, navigation
-  tab-button:
-    role: Category filtering, sub-navigation
-  feature-card:
-    role: Information display, product showcases
-  subtle-background-card:
-    role: Grouped content section
+name: "Whop"
+description: "Whop presents a confident, high-contrast digital canvas with a striking orange accent. Typography is central, using large, tightly tracked sans-serif headlines for impactful statements and a comfortable mono-spaced font for technical details. Surfaces are predominantly white, creating a crisp backdrop for the energetic primary orange, grounded by a subtle shadow effect that adds minimal depth. Interactivity is clearly defined through the bold orange for primary actions and soft, rounded ghost buttons for secondary choices, balancing directness with approachability."
+theme: "light"
+industry: "productivity"
+source_url: "https://whop.com"
+refero_style_id: "9eeab5f0-eece-4898-a1d2-2db48ac2bc7d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510309020-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510309020-thumb.jpg"
+extracted_at: "2026-04-30T00:52:11.613Z"
 ---
 
-## Overview
+# Whop — Style Reference
 
-**North Star:** Clean, bold, and energetic.
+> Clean, bold, and energetic.
+
+**Theme:** light
+
+**Industry:** productivity
 
 Whop presents a confident, high-contrast digital canvas with a striking orange accent. Typography is central, using large, tightly tracked sans-serif headlines for impactful statements and a comfortable mono-spaced font for technical details. Surfaces are predominantly white, creating a crisp backdrop for the energetic primary orange, grounded by a subtle shadow effect that adds minimal depth. Interactivity is clearly defined through the bold orange for primary actions and soft, rounded ghost buttons for secondary choices, balancing directness with approachability.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, elevated card surfaces, main content areas |
+| Dark Graphite | #202020 | `--color-dark-graphite` | Primary text, prominent headings, borders on dark elements |
+| Medium Gray | #646464 | `--color-medium-gray` | Secondary text, muted links, subtle icon fills |
+| Light Gray | #838383 | `--color-light-gray` | Disabled states, helper text, less prominent button text |
+| Border Silver | #bbbbbb | `--color-border-silver` | Hairline borders, subtle dividers, ghost button outlines |
+| Very Light Gray | #e1e4e8 | `--color-very-light-gray` | Subtle decorative borders, minor shadow outlines |
+| Dark Surface | #0a0a0a | `--color-dark-surface` | Dark mode card backgrounds, specific elevated elements |
+| Whop Orange | #fa4616 | `--color-whop-orange` | Orange wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+| Orange Shadow | #b62600 | `--color-orange-shadow` | Orange outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### acidGroteskFont
+
+- **Token:** `--font-acidgroteskfont`
+- **Substitute:** Arial Black, sans-serif
+- **Weights:** 700
+- **Sizes:** 56px, 128px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0300em
+- **Role:** Hero headlines, impactful display text — high-impact, tight tracking at large sizes provides a bold, modern voice.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 13px, 14px, 16px, 20px
+- **Line heights:** 1.40, 1.43, 1.50
+- **Letter spacing:** -0.0160em, -0.0140em, -0.0130em, -0.0110em, -0.0090em, -0.0060em
+- **Role:** Body copy, navigation links, button text, secondary headings — provides a readable, versatile sans-serif base with varied tracking for specific type sizes.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** SF Mono, Menlo, monospace
+- **Weights:** 500, 600
+- **Sizes:** 12px, 13px, 14px, 16px
+- **Line heights:** 1.50, 1.70
+- **Letter spacing:** normal
+- **Role:** Code snippets, technical details, specific button labels — imparts a precise, technical feel where clarity of characters is paramount.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-lg | 16px | 1.5 | -0.013px | `--text-body-lg` |
+| subheading | 20px | 1.4 | -0.011px | `--text-subheading` |
+| heading | 56px | 1 | -0.03px | `--text-heading` |
+| display | 128px | 1 | -0.03px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-91 | 91px | `--spacing-91` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-256 | 256px | `--spacing-256` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| misc | 16px |
+| tags | 8px |
+| cards | 24px |
+| forms | 8px |
+| buttons | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(182, 38, 0) 0px 3px 0px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 24px |
+| elementGap | 24px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call-to-action
+
+Filled with Whop Orange (#fa4616), white text (#ffffff) set in Inter weight 600, with 8px border radius and a distinct Orange Shadow (#b62600) for a confident, tangible feel.
+
+### Ghost Secondary Button
+
+**Role:** Alternative action, navigation
+
+Transparent background, Dark Graphite (#202020) text in Inter weight 500, with 8px border radius and a 1px Border Silver (#bbbbbb) outline. Used for less prominent actions.
+
+### Tab Button
+
+**Role:** Category filtering, sub-navigation
+
+Subtle button with transparent background, Light Gray (#838383) text in Inter weight 500 typically at 14px, with 8px border-radius and horizontal padding like 12px.
+
+### Feature Card
+
+**Role:** Information display, product showcases
+
+Cards with Canvas White (#ffffff) background, 24px border radius. Used for containing content and typically has 24px internal padding. Some variants might have a Dark Surface (#0a0a0a) background with 12px radius.
+
+### Subtle Background Card
+
+**Role:** Grouped content section
+
+A variant card with rgba(0, 0, 0, 0.06) background (effectively a very light gray), 24px border radius. Often used for subtle visual separation of content blocks.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize acidGroteskFont for any headline larger than 48px, always with letter-spacing -0.0300em and `Dark Graphite` text.
 - Use `Whop Orange` (#fa4616) exclusively for primary interactive elements, brand iconography, and meaningful accents, never for decorative backgrounds.
@@ -67,7 +167,7 @@ Whop presents a confident, high-contrast digital canvas with a striking orange a
 - Ensure `Canvas White` (#ffffff) is the dominant page background, reserving `Dark Surface` (#0a0a0a) for specific, clearly delineated card or container elements.
 - Utilize 24px as a standard vertical and horizontal gap between major content sections and card grids.
 
-### Don'ts
+### Don't
 
 - Do not deviate from the specified type scale and letter spacing values for headlines; the tight tracking is a signature element.
 - Avoid using multiple chromatic colors; `Whop Orange` is the sole brand accent and color should primarily be achromatic.
@@ -77,10 +177,129 @@ Whop presents a confident, high-contrast digital canvas with a striking orange a
 - Avoid background patterns or gradients unless they are an integral part of explicit primary calls-to-action and aligned with `Whop Orange`.
 - Do not use `Whop Orange` text on `Canvas White` for body copy, as it is reserved for higher-impact accents.
 
-### Layout
+## Elevation
+
+- **Primary Action Button:** `rgb(182, 38, 0) 0px 3px 0px 0px`
+
+## Imagery
+
+The site uses product screenshots of mobile apps, meticulously framed within device mockups, sometimes on slightly varied gray backgrounds. These are mainly explanatory, showcasing the core product functionality with a direct, focused approach. Iconography is minimal, primarily leveraging outlined or filled monochrome icons (`Dark Graphite` or `Medium Gray`). The design avoids lifestyle photography or abstract illustrations, opting for a functional, product-centric visual language.
+
+## Layout
 
 The page maintains a centered, max-width layout, approximately 1200px wide, framed by a full-bleed `Canvas White` background, creating a spacious feel. The hero section features a prominent, centered headline with a primary call-to-action. Content sections typically alternate between full-width centered text blocks and multi-column grids, notably a 5-column layout for showcasing product categories with individual mobile app previews. Vertical rhythm is established with generous `64px` section gaps, ensuring clear separation and comfortable reading. A sticky top navigation bar provides consistent access to key links.
 
-### Imagery
+## Similar Brands
 
-The site uses product screenshots of mobile apps, meticulously framed within device mockups, sometimes on slightly varied gray backgrounds. These are mainly explanatory, showcasing the core product functionality with a direct, focused approach. Iconography is minimal, primarily leveraging outlined or filled monochrome icons (`Dark Graphite` or `Medium Gray`). The design avoids lifestyle photography or abstract illustrations, opting for a functional, product-centric visual language.
+- **Stripe** — Both use a white canvas, high-contrast typography, and a single vibrant accent color to highlight actions and brand elements.
+- **Vercel** — Similar focus on code-friendly typography (mono fonts for technical content) and clean, product-showcasing UI with minimal decor.
+- **Linear** — Shares a white, spacious interface, emphasis on clear, functional typography, and reserved use of color for key interactive states.
+- **Notion** — Employs a clean, high-contrast, document-like aesthetic with a focus on powerful typography and ample white space.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-dark-graphite: #202020;
+  --color-medium-gray: #646464;
+  --color-light-gray: #838383;
+  --color-border-silver: #bbbbbb;
+  --color-very-light-gray: #e1e4e8;
+  --color-dark-surface: #0a0a0a;
+  --color-whop-orange: #fa4616;
+  --color-orange-shadow: #b62600;
+  --font-acidgroteskfont: 'acidGroteskFont', Arial Black, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-geist-mono: 'Geist Mono', SF Mono, Menlo, monospace;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: -0.013px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.011px;
+  --text-heading: 56px;
+  --leading-heading: 1;
+  --tracking-heading: -0.03px;
+  --text-display: 128px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-91: 91px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --spacing-256: 256px;
+  --radius-misc: 16px;
+  --radius-tags: 8px;
+  --radius-cards: 24px;
+  --radius-forms: 8px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgb(182, 38, 0) 0px 3px 0px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-dark-graphite: #202020;
+  --color-medium-gray: #646464;
+  --color-light-gray: #838383;
+  --color-border-silver: #bbbbbb;
+  --color-very-light-gray: #e1e4e8;
+  --color-dark-surface: #0a0a0a;
+  --color-whop-orange: #fa4616;
+  --color-orange-shadow: #b62600;
+  --font-acidgroteskfont: 'acidGroteskFont', Arial Black, sans-serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-geist-mono: 'Geist Mono', SF Mono, Menlo, monospace;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.5;
+  --tracking-body-lg: -0.013px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: -0.011px;
+  --text-heading: 56px;
+  --leading-heading: 1;
+  --tracking-heading: -0.03px;
+  --text-display: 128px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-91: 91px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --spacing-256: 256px;
+  --radius-misc: 16px;
+  --radius-tags: 8px;
+  --radius-cards: 24px;
+  --radius-forms: 8px;
+  --radius-buttons: 8px;
+  --shadow-xl: rgb(182, 38, 0) 0px 3px 0px 0px;
+}
+```

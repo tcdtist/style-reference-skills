@@ -1,84 +1,183 @@
 ---
 version: alpha
-name: Wealthsimple
-description: Wealthsimple projects an image of approachable financial sophistication, blending a muted, almost vintage-feeling color palette with modern typography. The design feels grounded and trustworthy, achieved through a dominant presence of off-white and dark gray surfaces that create a soft contrast. Touches of natural, desaturated color appear subtly, preventing the aesthetic from feeling stark while maintaining a sense of serious purpose. Custom fonts — one with a humanist, inviting feel, the other a crisp sans-serif — underpin content hierarchy without resorting to harsh visual cues.
-colors:
-  greyscale-black: "#32302f"
-  linen-white: "#fcfcfc"
-  slate-border: "#e4e2e1"
-  text-muted: "#686664"
-  ash-canvas: "#f1f0f0"
-  input-gray: "#eeece7"
-  ocean-tint: "#d3e5f3"
-  success-green: "#486635"
-  error-red: "#a43d12"
-  focus-outline: "#afaaa7"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: 0.005px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: 0.005px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-    letterSpacing: 0.005px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.08
-    letterSpacing: -0.01px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.16
-    letterSpacing: -0.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1.08
-    letterSpacing: -0.01px
-spacing:
-  cardRadius: 100px
-  buttonRadius: 1600px
-  elementGap: 8px
-  sectionGap: 40-48px
-components:
-  button-group:
-    role: 
-  feature-cards-row:
-    role: 
-  product-feature-section:
-    role: 
-  secondary-outlined-button:
-    role: Secondary action, navigation
-  small-utility-button:
-    role: Icon-only actions, small interactive elements
-  invisible-button:
-    role: Text links appearing as buttons
-  default-card:
-    role: Content grouping (no specific styling)
-  tinted-pill-card-linen:
-    role: Subtle badging, small contextual labels
-  tinted-pill-card-dark-slate:
-    role: Dark-mode badging, small contextual labels
-  text-input-field:
-    role: Form input
+name: "Wealthsimple"
+description: "Wealthsimple projects an image of approachable financial sophistication, blending a muted, almost vintage-feeling color palette with modern typography. The design feels grounded and trustworthy, achieved through a dominant presence of off-white and dark gray surfaces that create a soft contrast. Touches of natural, desaturated color appear subtly, preventing the aesthetic from feeling stark while maintaining a sense of serious purpose. Custom fonts — one with a humanist, inviting feel, the other a crisp sans-serif — underpin content hierarchy without resorting to harsh visual cues."
+theme: "light"
+industry: "fintech"
+source_url: "https://wealthsimple.com"
+refero_style_id: "043341c3-cf82-4be1-9142-fa5e6a370ca9"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943768579-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943768579-thumb.jpg"
+extracted_at: "2026-04-11T21:43:12.642Z"
 ---
 
-## Overview
+# Wealthsimple — Style Reference
 
-**North Star:** Warm Minimalism on Linen. Imagine precise, intentional content laid out on a finely textured, off-white linen, framed by subtle, earthy tones.
+> Warm Minimalism on Linen. Imagine precise, intentional content laid out on a finely textured, off-white linen, framed by subtle, earthy tones.
+
+**Theme:** light
+
+**Industry:** fintech
 
 Wealthsimple projects an image of approachable financial sophistication, blending a muted, almost vintage-feeling color palette with modern typography. The design feels grounded and trustworthy, achieved through a dominant presence of off-white and dark gray surfaces that create a soft contrast. Touches of natural, desaturated color appear subtly, preventing the aesthetic from feeling stark while maintaining a sense of serious purpose. Custom fonts — one with a humanist, inviting feel, the other a crisp sans-serif — underpin content hierarchy without resorting to harsh visual cues.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Greyscale Black | #32302f | `--color-greyscale-black` | Primary text, button backgrounds, interactive elements, heavy borders — establishes a deep, soft visual anchor instead of pure black. |
+| Linen White | #fcfcfc | `--color-linen-white` | Page backgrounds, card surfaces, secondary button backgrounds, input fields — creates a clean, slightly warm canvas that isn't clinical. |
+| Slate Border | #e4e2e1 | `--color-slate-border` | Subtle UI borders, separators, secondary button outlines — provides gentle division without harsh lines, maintaining the overall soft contrast. |
+| Text Muted | #686664 | `--color-text-muted` | Secondary text, descriptive elements, placeholders — a darker gray for hierarchy that still feels integrated with the palette. |
+| Ash Canvas | #f1f0f0 | `--color-ash-canvas` | Minor background accents, subtle stripes, hover states — a slightly darker off-white for nuanced layering. |
+| Input Gray | #eeece7 | `--color-input-gray` | Input background, subtle card surface distinction. |
+| Ocean Tint | #d3e5f3 | `--color-ocean-tint` | Minor decorative elements, subtle background fill in certain contexts— a desaturated, cool chromatic accent that occasionally appears, offering a hint of calm. |
+| Success Green | #486635 | `--color-success-green` | Semantic success indicators — a deep, muted green that integrates without being overly vibrant. |
+| Error Red | #a43d12 | `--color-error-red` | Semantic error indicators — a rich, earthy red that provides clear alerts without being alarming. |
+| Focus Outline | #afaaa7 | `--color-focus-outline` | Interactive focus states, scrollbar thumbs — a soft, warm gray that indicates interaction without drawing excessive attention. |
+
+## Tokens — Typography
+
+### the-future
+
+- **Token:** `--font-the-future`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500
+- **Sizes:** 14px, 16px, 18px, 20px, 56px, 58px
+- **Line heights:** 1.00, 1.16, 1.40
+- **Letter spacing:** 0.0050em
+- **Role:** Primary body text, navigation items, descriptive text, button labels. Its subtle letter-spacing provides a distinct, modern feel to standard text.
+
+### wealthsimple-sans
+
+- **Token:** `--font-wealthsimple-sans`
+- **Substitute:** Inter, system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** 0.0250em
+- **Role:** Used sparingly for specific body elements or small text where a more open, airy feel is desired, especially on buttons.
+
+### tiempos
+
+- **Token:** `--font-tiempos`
+- **Substitute:** serif
+- **Weights:** 400, 500
+- **Sizes:** 14px, 16px, 18px, 36px, 56px, 64px, 72px, 84px
+- **Line heights:** 1.08, 1.16, 1.24
+- **Letter spacing:** -0.0100em
+- **Role:** Headlines and prominent text, offering a classic yet contemporary serif feel. The judicious negative letter-spacing for display sizes tightens headlines, giving them a considered, editorial presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | 0.005px | `--text-caption` |
+| body | 16px | 1.4 | 0.005px | `--text-body` |
+| subheading | 18px | 1.4 | 0.005px | `--text-subheading` |
+| heading | 36px | 1.08 | -0.01px | `--text-heading` |
+| heading-lg | 56px | 1.16 | -0.01px | `--text-heading-lg` |
+| display | 72px | 1.08 | -0.01px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-69 | 69px | `--spacing-69` |
+| spacing-73 | 73px | `--spacing-73` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 100px |
+| minor | 2px |
+| inputs | 100px |
+| buttons | 1600px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40-48px |
+| elementGap | 8px |
+
+## Components
+
+### Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards Row
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Product Feature Section
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Secondary Outlined Button
+
+**Role:** Secondary action, navigation
+
+Background: Linen White (#fcfcfc), Text: Greyscale Black (#32302f), Border: Greyscale Black (#32302f) thick 1px, Radius: 1600px, Padding: 12px 24px. Offers a softer call to action that integrates with light backgrounds.
+
+### Small Utility Button
+
+**Role:** Icon-only actions, small interactive elements
+
+Background: Linen White (#fcfcfc), Text: Greyscale Black (#32302f), Border: Slate Border (#e4e2e1) thick 1px, Radius: 50% (circular), Padding: 0px. Used for compact, visually subtle interactions like a scroll-to-top button.
+
+### Invisible Button
+
+**Role:** Text links appearing as buttons
+
+Background: transparent, Text: Greyscale Black (#32302f), Border: Greyscale Black (#000000) thin 1px, Radius: 0px, Padding: 0px. Used for subtle, text-based interactive elements where the button styling is minimal.
+
+### Default Card
+
+**Role:** Content grouping (no specific styling)
+
+Background: transparent, border-radius: 0px, no shadow, no padding. Serves as a logical grouping tool without visual adornment.
+
+### Tinted Pill Card (Linen)
+
+**Role:** Subtle badging, small contextual labels
+
+Background: Input Gray (#eeece7), border-radius: 100px, Padding: 8px 12px. Provides a softly rounded, contained background for short pieces of information.
+
+### Tinted Pill Card (Dark Slate)
+
+**Role:** Dark-mode badging, small contextual labels
+
+Background: rgba(42, 44, 50, 1), border-radius: 100px, Padding: 8px 12px. A dark variant of the pill card for specific contexts.
+
+### Text Input Field
+
+**Role:** Form input
+
+Background: Linen White (#fcfcfc), Text: Greyscale Black (#32302f), Border: Slate Border (#e4e2e1) thick 1px, Radius: 100px, Padding: 20px 52px 1px 24px. Features a wide, pill-shaped design, prioritizing visual clarity and distinctness in forms.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Linen White (#fcfcfc) as the primary page background to establish warmth.
 - Apply Greyscale Black (#32302f) for all primary body text and headlines to ensure high contrast and readability.
@@ -88,7 +187,7 @@ Wealthsimple projects an image of approachable financial sophistication, blendin
 - Employ Slate Border (#e4e2e1) for all non-critical borders, such as input fields and secondary button outlines, for a soft, integrated look.
 - Use 20px 32px padding for primary buttons and 12px 24px for secondary buttons to maintain a consistent interactive element scale.
 
-### Don'ts
+### Don't
 
 - Avoid harsh, high-saturation colors; all chromatic elements should be desaturated or muted.
 - Do not use pure black (#000000) for text or primary backgrounds; always opt for Greyscale Black (#32302f) for a softer appearance.
@@ -98,10 +197,137 @@ Wealthsimple projects an image of approachable financial sophistication, blendin
 - Do not vary line heights from the specified typography profiles; precise line heights establish a clean vertical rhythm.
 - Do not use letter spacing other than the specified values for the-future (0.0050em) and tiempos (-0.0100em) to preserve typographic identity.
 
-### Layout
+## Imagery
+
+Imagery is conceptual and abstract, focusing on product illustrations and staged still-life photography of objects that evoke finance (papers, coins, devices). Treatments are primarily contained within rounded frames or as background elements that blend into the color palette. There's an absence of lifestyle photography, keeping the focus on the product and conceptual integrity. Illustrations are dimensional and often use soft, brand-adjacent colors, avoiding harsh outlines or overly cartoonish styles. Icons are simple, monochrome, and line-based, maintaining the overall clean aesthetic. Visual space is balanced, allowing for prominent heroes but also significant text areas.
+
+## Layout
 
 The site employs a max-width contained layout, typically centered, but features occasional full-bleed hero sections. Hero patterns are often split-layout (text on left, visual on right) or centered text over an abstract background image. Section rhythm is varied but generally uses consistent vertical spacing of 40-48px. Content is often arranged in 2-column layouts with alternating text-left/image-right or stacked blocks. The primary content delivery is text-dominant, with imagery serving as an accent rather than a primary information vehicle. A sticky top navigation bar provides consistent access to key sections.
 
-### Imagery
+## Similar Brands
 
-Imagery is conceptual and abstract, focusing on product illustrations and staged still-life photography of objects that evoke finance (papers, coins, devices). Treatments are primarily contained within rounded frames or as background elements that blend into the color palette. There's an absence of lifestyle photography, keeping the focus on the product and conceptual integrity. Illustrations are dimensional and often use soft, brand-adjacent colors, avoiding harsh outlines or overly cartoonish styles. Icons are simple, monochrome, and line-based, maintaining the overall clean aesthetic. Visual space is balanced, allowing for prominent heroes but also significant text areas.
+- **Linear** — Shares the use of custom, distinctive typography with careful letter-spacing, and a preference for muted, sophisticated color palettes over vibrant accents.
+- **Stripe** — Employs a clean, spacious layout with a dominant light background, and uses subtle color accents alongside strong, readable typography to convey professionalism.
+- **Figma** — Features a similar approach to slightly rounded UI elements and a balanced use of white space to create a user-friendly and aesthetically pleasing interface, although with a more vibrant accent palette.
+- **Notion** — Utilizes a minimalist design with a focus on typography and subtle element separation, often relying on shades of gray and off-white to create visual hierarchy rather than strong colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-greyscale-black: #32302f;
+  --color-linen-white: #fcfcfc;
+  --color-slate-border: #e4e2e1;
+  --color-text-muted: #686664;
+  --color-ash-canvas: #f1f0f0;
+  --color-input-gray: #eeece7;
+  --color-ocean-tint: #d3e5f3;
+  --color-success-green: #486635;
+  --color-error-red: #a43d12;
+  --color-focus-outline: #afaaa7;
+  --font-the-future: 'the-future', system-ui, sans-serif;
+  --font-wealthsimple-sans: 'wealthsimple-sans', Inter, system-ui, sans-serif;
+  --font-tiempos: 'tiempos', serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.005px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.005px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.005px;
+  --text-heading: 36px;
+  --leading-heading: 1.08;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.16;
+  --tracking-heading-lg: -0.01px;
+  --text-display: 72px;
+  --leading-display: 1.08;
+  --tracking-display: -0.01px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-69: 69px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-160: 160px;
+  --radius-cards: 100px;
+  --radius-minor: 2px;
+  --radius-inputs: 100px;
+  --radius-buttons: 1600px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-greyscale-black: #32302f;
+  --color-linen-white: #fcfcfc;
+  --color-slate-border: #e4e2e1;
+  --color-text-muted: #686664;
+  --color-ash-canvas: #f1f0f0;
+  --color-input-gray: #eeece7;
+  --color-ocean-tint: #d3e5f3;
+  --color-success-green: #486635;
+  --color-error-red: #a43d12;
+  --color-focus-outline: #afaaa7;
+  --font-the-future: 'the-future', system-ui, sans-serif;
+  --font-wealthsimple-sans: 'wealthsimple-sans', Inter, system-ui, sans-serif;
+  --font-tiempos: 'tiempos', serif;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.005px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.005px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.005px;
+  --text-heading: 36px;
+  --leading-heading: 1.08;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.16;
+  --tracking-heading-lg: -0.01px;
+  --text-display: 72px;
+  --leading-display: 1.08;
+  --tracking-display: -0.01px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-69: 69px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-128: 128px;
+  --spacing-160: 160px;
+  --radius-cards: 100px;
+  --radius-minor: 2px;
+  --radius-inputs: 100px;
+  --radius-buttons: 1600px;
+}
+```
