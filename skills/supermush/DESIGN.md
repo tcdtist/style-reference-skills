@@ -1,74 +1,185 @@
 ---
 version: alpha
-name: SuperMush
-description: SuperMush employs a vibrant, energetic visual system akin to a modern wellness brand. It layers a crisp white canvas with a bright, electric blue for primary actions and a playful, warm orange for highlighting key information. Typography is direct and confident, favoring sans-serifs with ample letter spacing and line height for readability. Components are lightweight with subtly rounded corners, emphasizing content and a clean user experience.
-colors:
-  canvas-white: "#ffffff"
-  off-white-clay: "#f5f4f1"
-  midnight-ink: "#000000"
-  graphite: "#707170"
-  steel-gray: "#eeeeee"
-  accent-blue: "#2f59f8"
-  highlight-orange: "#ff632a"
-  active-yellow: "#eaff00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.6
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.25
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.21
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.4
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-spacing:
-  cardRadius: 16px
-  buttonRadius: 50px
-  elementGap: 8px
-  sectionGap: 24px
-components:
-  primary-filled-button:
-    role: Calls to action, form submissions.
-  ghost-button-header-nav:
-    role: Secondary navigation in header.
-  pill-accent-button:
-    role: Information tags, small labels, sale indicators.
-  neutral-rounded-button:
-    role: Quantity selectors, small interactive elements.
-  product-card:
-    role: Displaying product items in grids.
-  subtle-elevated-card:
-    role: For reviews or distinct content blocks.
-  pill-input-field:
-    role: Text input forms.
+name: "SuperMush"
+description: "SuperMush employs a vibrant, energetic visual system akin to a modern wellness brand. It layers a crisp white canvas with a bright, electric blue for primary actions and a playful, warm orange for highlighting key information. Typography is direct and confident, favoring sans-serifs with ample letter spacing and line height for readability. Components are lightweight with subtly rounded corners, emphasizing content and a clean user experience."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://supermush.com"
+refero_style_id: "71a9583d-1710-4696-9269-50ca8c9a2cfa"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514706845-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514706845-thumb.jpg"
+extracted_at: "2026-04-30T02:05:27.843Z"
 ---
 
-## Overview
+# SuperMush — Style Reference
 
-**North Star:** Juicy electric canvas
+> Juicy electric canvas
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 SuperMush employs a vibrant, energetic visual system akin to a modern wellness brand. It layers a crisp white canvas with a bright, electric blue for primary actions and a playful, warm orange for highlighting key information. Typography is direct and confident, favoring sans-serifs with ample letter spacing and line height for readability. Components are lightweight with subtly rounded corners, emphasizing content and a clean user experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, input fields, navigation elements |
+| Off White Clay | #f5f4f1 | `--color-off-white-clay` | Secondary surface background, subtle section dividers |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, core iconography, strong borders, footer background |
+| Graphite | #707170 | `--color-graphite` | Muted text, placeholder text in input fields, supporting detail |
+| Steel Gray | #eeeeee | `--color-steel-gray` | Subtle borders, light dividers, background for disabled states |
+| Accent Blue | #2f59f8 | `--color-accent-blue` | Primary action buttons, interactive elements, significant iconography – brings energy and focus |
+| Highlight Orange | #ff632a | `--color-highlight-orange` | Promotional banners, decorative elements, accents for key information, secondary content borders |
+| Active Yellow | #eaff00 | `--color-active-yellow` | Green wash for highlight backgrounds, decorative bands, and soft emphasis behind content |
+
+## Tokens — Typography
+
+### Founders Grotesk
+
+- **Token:** `--font-founders-grotesk`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700
+- **Sizes:** 12px, 14px, 16px, 17px, 18px, 20px, 32px, 34px, 36px, 40px, 43px, 48px
+- **Line heights:** 1.00, 1.04, 1.15, 1.17, 1.21, 1.25, 1.40, 1.50, 1.60, 1.67
+- **Letter spacing:** normal
+- **Role:** Primary headings, body text, navigation elements, input labels – delivers a clean, confident, and highly readable voice across the interface.
+
+### GT Planar
+
+- **Token:** `--font-gt-planar`
+- **Substitute:** Montserrat
+- **Weights:** 400, 500, 700
+- **Sizes:** 10px, 11px, 13px, 14px, 16px, 18px, 20px
+- **Line heights:** 1.00, 1.15, 1.25, 1.29, 1.60
+- **Letter spacing:** normal
+- **Role:** Secondary text, descriptive elements, button text, and certain navigation links – offers a complementary, slightly more technical feel.
+
+### Font Awesome 5 Pro
+
+- **Token:** `--font-font-awesome-5-pro`
+- **Weights:** 300
+- **Sizes:** 18px
+- **Line heights:** 1
+- **Role:** Font Awesome 5 Pro — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.6 | — | `--text-caption` |
+| body | 14px | 1.25 | — | `--text-body` |
+| body-lg | 17px | 1.5 | — | `--text-body-lg` |
+| subheading | 20px | 1.21 | — | `--text-subheading` |
+| heading | 32px | 1.4 | — | `--text-heading` |
+| heading-lg | 36px | 1.15 | — | `--text-heading-lg` |
+| display | 48px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-62 | 62px | `--spacing-62` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-105 | 105px | `--spacing-105` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-231 | 231px | `--spacing-231` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| inputs | 1.67772e+07px |
+| buttons | 50px |
+| general | 4px |
+| imagery | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Calls to action, form submissions.
+
+Background: Accent Blue (#2f59f8). Text: Canvas White (#ffffff). Fully rounded corners (50px radius). Padding: 10px vertical, 20px horizontal. Font: GT Planar, weight 500.
+
+### Ghost Button (Header Nav)
+
+**Role:** Secondary navigation in header.
+
+Background: transparent. Text: Midnight Ink (#000000). No explicit border radius. Padding: 0px. Font: Founders Grotesk.
+
+### Pill Accent Button
+
+**Role:** Information tags, small labels, sale indicators.
+
+Background: Active Yellow (#eaff00) or Highlight Orange (#ff632a). Text: Midnight Ink (#000000). Fully rounded (50px radius). Padding: 4px vertical, 8px horizontal (inferred small item padding). Font: GT Planar.
+
+### Neutral Rounded Button
+
+**Role:** Quantity selectors, small interactive elements.
+
+Background: #d9d9d9. Text: Midnight Ink (#000000). Fully rounded (50% radius). No explicit padding observed.
+
+### Product Card
+
+**Role:** Displaying product items in grids.
+
+Background: transparent. Border: none. Border-radius: 0px. Internal padding: 0. Some cards may have a subtle transparent background rgba(0, 0, 0, 0.1) and 16px border-radius, with 48px vertical and 16px horizontal internal padding.
+
+### Subtle Elevated Card
+
+**Role:** For reviews or distinct content blocks.
+
+Background: Canvas White (#ffffff). Border-radius: 16px. Padding: 48px vertical, 16px horizontal. No box shadow.
+
+### Pill Input Field
+
+**Role:** Text input forms.
+
+Background: Canvas White (#ffffff). Text color: Graphite (#707170). Border: 1px solid Steel Gray (#eeeeee). Fully rounded corners (1.67772e+07px radius). Padding: 12px vertical, 16px left, 32px right.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Accent Blue (#2f59f8) for all primary calls to action, ensuring a fully rounded 'pill' shape with 50px border-radius and Canvas White (#ffffff) text.
 - Apply Highlight Orange (#ff632a) sparingly for promotional banners, secondary content borders, and decorative accents to draw attention.
@@ -78,7 +189,7 @@ SuperMush employs a vibrant, energetic visual system akin to a modern wellness b
 - Maintain comfortable spacing with a base unit of 4px. Use 8px as the default element gap and 16px for card padding.
 - Highlight sale or special offers with a distinctly bright Active Yellow (#eaff00) background, paired with Midnight Ink (#000000) text and a pill shape.
 
-### Don'ts
+### Don't
 
 - Do not use dark backgrounds for general page sections; the theme is predominantly light and airy.
 - Avoid arbitrary uses of color; Limit saturated colors (Highlight Orange, Accent Blue, Active Yellow) to functional or branding purposes.
@@ -88,10 +199,168 @@ SuperMush employs a vibrant, energetic visual system akin to a modern wellness b
 - Do not decrease letter-spacing below 'normal'; the brand maintains an open and readable typographic feel.
 - Avoid padding less than 10px on interactive elements to ensure adequate tap/click targets.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Canvas White | #ffffff | Base page background, primary content sections, elevated cards. |
+| 2 | Off White Clay | #f5f4f1 | Secondary background for sections, subtle distinction between content blocks. |
+
+## Imagery
+
+Photography is dominant, featuring lifestyle shots of people using products in active, natural settings (beaches, outdoors) alongside clean, focused product photography. Treatments are largely unedited and natural-looking, showing vibrant colors and real-world contexts. Product shots are typically contained within cards with 8px radius. Icons are monochrome, often using a thin stroke, mainly for utility and navigation, appearing as simple outlines or filled shapes depending on context. Imagery serves both decorative atmosphere and product showcase, usually occupying significant visual space.
+
+## Layout
 
 The page adheres to a max-width contained layout generally centered, though specific section widths can vary to accommodate full-bleed image backgrounds. The hero section often features a full-bleed vibrant image with centered, overlaid text and calls to action. Sections maintain a consistent vertical rhythm, with content arranged in alternating text-left/image-right or centered stacks. Card grids are used for product displays with typically 4 columns. Navigation is a sticky top bar with a distinct brand logo and minimal links, complemented by the prominent Accent Blue 'Shop All' button.
 
-### Imagery
+## Similar Brands
 
-Photography is dominant, featuring lifestyle shots of people using products in active, natural settings (beaches, outdoors) alongside clean, focused product photography. Treatments are largely unedited and natural-looking, showing vibrant colors and real-world contexts. Product shots are typically contained within cards with 8px radius. Icons are monochrome, often using a thin stroke, mainly for utility and navigation, appearing as simple outlines or filled shapes depending on context. Imagery serves both decorative atmosphere and product showcase, usually occupying significant visual space.
+- **Oura Ring** — Uses a similar natural photography style with an emphasis on health and wellness, and a clean, spacious UI.
+- **Athletic Greens (AG1)** — Features a light, clean interface with product-focused imagery and subtle use of accent colors to highlight benefits.
+- **Huel** — Combines lifestyle photography with a clear, direct typographic approach and functional color accents on product pages.
+- **Ritual** — Utilizes a clean white background, vibrant product imagery, and a restrained color palette for calls to action.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-off-white-clay: #f5f4f1;
+  --color-midnight-ink: #000000;
+  --color-graphite: #707170;
+  --color-steel-gray: #eeeeee;
+  --color-accent-blue: #2f59f8;
+  --color-highlight-orange: #ff632a;
+  --color-active-yellow: #eaff00;
+  --font-founders-grotesk: 'Founders Grotesk', Inter;
+  --font-gt-planar: 'GT Planar', Montserrat;
+  --font-font-awesome-5-pro: 'Font Awesome 5 Pro', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.6;
+  --text-body: 14px;
+  --leading-body: 1.25;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.21;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-41: 41px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-62: 62px;
+  --spacing-64: 64px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-90: 90px;
+  --spacing-105: 105px;
+  --spacing-113: 113px;
+  --spacing-120: 120px;
+  --spacing-231: 231px;
+  --radius-cards: 16px;
+  --radius-inputs: 1.67772e+07px;
+  --radius-buttons: 50px;
+  --radius-general: 4px;
+  --radius-imagery: 8px;
+  --surface-canvas-white: #ffffff;
+  --surface-off-white-clay: #f5f4f1;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-off-white-clay: #f5f4f1;
+  --color-midnight-ink: #000000;
+  --color-graphite: #707170;
+  --color-steel-gray: #eeeeee;
+  --color-accent-blue: #2f59f8;
+  --color-highlight-orange: #ff632a;
+  --color-active-yellow: #eaff00;
+  --font-founders-grotesk: 'Founders Grotesk', Inter;
+  --font-gt-planar: 'GT Planar', Montserrat;
+  --font-font-awesome-5-pro: 'Font Awesome 5 Pro', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.6;
+  --text-body: 14px;
+  --leading-body: 1.25;
+  --text-body-lg: 17px;
+  --leading-body-lg: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.21;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-41: 41px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-62: 62px;
+  --spacing-64: 64px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-81: 81px;
+  --spacing-90: 90px;
+  --spacing-105: 105px;
+  --spacing-113: 113px;
+  --spacing-120: 120px;
+  --spacing-231: 231px;
+  --radius-cards: 16px;
+  --radius-inputs: 1.67772e+07px;
+  --radius-buttons: 50px;
+  --radius-general: 4px;
+  --radius-imagery: 8px;
+  --surface-canvas-white: #ffffff;
+  --surface-off-white-clay: #f5f4f1;
+}
+```

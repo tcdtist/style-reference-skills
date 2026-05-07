@@ -1,50 +1,111 @@
 ---
 version: alpha
-name: Surface
-description: Arctic Volume presents a bold, editorial aesthetic. It emphasizes high contrast typography on vast, unobtrusive white space. Visuals are treated as distinct collage elements, drawing attention without being enclosed. The overall impression is one of stark graphic clarity, where content is king and design serves to amplify rather than decorate.
-colors:
-  arctic-snow: "#f7f7f7"
-  midnight-ink: "#000000"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.35
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 230px
-    lineHeight: 1
-spacing:
-  elementGap: 10px
-  sectionGap: 48px
-components:
-  ghost-button:
-    role: Secondary actions and navigation links
-  filled-primary-button:
-    role: Primary calls to action
-  content-card-image-text:
-    role: Displaying images and associated text in a grid or collage layout
+name: "Surface"
+description: "Arctic Volume presents a bold, editorial aesthetic. It emphasizes high contrast typography on vast, unobtrusive white space. Visuals are treated as distinct collage elements, drawing attention without being enclosed. The overall impression is one of stark graphic clarity, where content is king and design serves to amplify rather than decorate."
+theme: "light"
+industry: "media"
+source_url: "https://surface.arcticvolume.com"
+refero_style_id: "e6c20874-c6f9-4c31-b6b2-2cb27cbf15f2"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515073667-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515073667-thumb.jpg"
+extracted_at: "2026-04-30T02:11:28.036Z"
 ---
 
-## Overview
+# Surface — Style Reference
 
-**North Star:** Minimalist gallery canvas
+> Minimalist gallery canvas
+
+**Theme:** light
+
+**Industry:** media
 
 Arctic Volume presents a bold, editorial aesthetic. It emphasizes high contrast typography on vast, unobtrusive white space. Visuals are treated as distinct collage elements, drawing attention without being enclosed. The overall impression is one of stark graphic clarity, where content is king and design serves to amplify rather than decorate.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Arctic Snow | #f7f7f7 | `--color-arctic-snow` | Primary page canvas and white card surfaces. Do not promote it to the primary CTA color |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, outlines for buttons, active navigation items, filled button backgrounds, decorative borders |
+
+## Tokens — Typography
+
+### Munken Sans Web
+
+- **Token:** `--font-munken-sans-web`
+- **Substitute:** Inter
+- **Weights:** 400, 700, 900
+- **Sizes:** 16px, 20px, 30px, 40px, 230px
+- **Line heights:** 1.00, 1.20, 1.35, 1.50
+- **Role:** All text elements, from body copy and links to navigation and massive display headings. Its clean, sans-serif geometry with distinct proportions establishes the site's editorial and art-forward feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 20px | 1.35 | — | `--text-subheading` |
+| heading-sm | 30px | 1.2 | — | `--text-heading-sm` |
+| heading | 40px | 1.2 | — | `--text-heading` |
+| display | 230px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-225 | 225px | `--spacing-225` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 0px |
+| elementGap | 10px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Secondary actions and navigation links
+
+Text in Midnight Ink (#000000) on an Arctic Snow (#f7f7f7) background, with a 1px Midnight Ink (#000000) border. Padding is 6px around the text. Radius is 0px.
+
+### Filled Primary Button
+
+**Role:** Primary calls to action
+
+Text in Arctic Snow (#f7f7f7) on a Midnight Ink (#000000) background, with a 1px Midnight Ink (#000000) border. Padding is 14px vertically and 38px horizontally. Radius is 0px.
+
+### Content Card (Image/Text)
+
+**Role:** Displaying images and associated text in a grid or collage layout
+
+No background color, no borders, no box shadow, and no padding. Content is presented directly. Radius is 0px. Text inside cards uses Midnight Ink (#000000).
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Munken Sans Web for all text elements.
 - Implement Midnight Ink (#000000) for all primary text and active states.
@@ -54,7 +115,7 @@ Arctic Volume presents a bold, editorial aesthetic. It emphasizes high contrast 
 - Employ consistent 48px vertical spacing between major page sections and headings.
 - Design with a spacious layout, allowing ample white space around elements.
 
-### Don'ts
+### Don't
 
 - Avoid rounded corners; all interface elements should have a 0px radius.
 - Do not introduce additional saturated colors; the palette is strictly achromatic for UI elements.
@@ -63,10 +124,87 @@ Arctic Volume presents a bold, editorial aesthetic. It emphasizes high contrast 
 - Avoid decorative gradients or background images for UI components; stick to solid colors.
 - Do not use letter-spacing other than normal, except where explicitly specified by type scale.
 
-### Layout
+## Imagery
+
+This site features a heavy reliance on photography and occasional abstract graphics, treated with a collage-like sensibility. Images are typically contained within their own bounding boxes, but arranged in dynamic, overlapping, and seemingly unconstrained layouts, creating a 'mood board' effect. Photography styles vary, from product-focused to artistic lifestyle shots. The imagery serves primarily as decorative atmosphere and content showcase, often appearing in high density relative to text, contributing to the visual-first editorial feel.
+
+## Layout
 
 The page uses a full-bleed layout without a fixed max-width, allowing content to span the browser's width, though elements frequently align to loose vertical columns or grids. The hero section features unusually large, overlapping text with an irregular arrangement of small image cards, setting a dynamic, non-uniform tone. Section rhythm is primarily driven by generous vertical spacing between content blocks. Content arrangement is fluid; sometimes text-left/image-right, but more often a collage of visual elements surrounding central textual content. The navigation is minimal, a simple top-bar with a hamburger menu.
 
-### Imagery
+## Similar Brands
 
-This site features a heavy reliance on photography and occasional abstract graphics, treated with a collage-like sensibility. Images are typically contained within their own bounding boxes, but arranged in dynamic, overlapping, and seemingly unconstrained layouts, creating a 'mood board' effect. Photography styles vary, from product-focused to artistic lifestyle shots. The imagery serves primarily as decorative atmosphere and content showcase, often appearing in high density relative to text, contributing to the visual-first editorial feel.
+- **AIGA Journal** — Editorial layout with strong typography and minimal UI, high contrast, and focus on image presentation.
+- **The New York Times (digital)** — Focus on high-contrast text, spacious layouts, and a clean, journalistic aesthetic with controlled use of imagery.
+- **Esquire Magazine (digital)** — Bold type with clear structure on a light background, emphasizing readability and imagery in a clean, uncluttered way.
+- **Are.na** — Content-focused with a white canvas, minimal borders, and a focus on visual hierarchy through typography and spacing.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-arctic-snow: #f7f7f7;
+  --color-midnight-ink: #000000;
+  --font-munken-sans-web: 'Munken Sans Web', Inter;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --text-display: 230px;
+  --leading-display: 1;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-225: 225px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-arctic-snow: #f7f7f7;
+  --color-midnight-ink: #000000;
+  --font-munken-sans-web: 'Munken Sans Web', Inter;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 20px;
+  --leading-subheading: 1.35;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --text-display: 230px;
+  --leading-display: 1;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-32: 32px;
+  --spacing-38: 38px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-225: 225px;
+  --radius-none: 0px;
+}
+```

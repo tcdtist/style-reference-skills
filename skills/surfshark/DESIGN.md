@@ -1,83 +1,159 @@
 ---
 version: alpha
-name: Surfshark
-description: Surfshark's design system projects a dynamic, secure, and user-friendly online presence. It balances informative content with clear calls to action, leveraging high-contrast typography against clean achromatic surfaces. A vibrant red accent color signifies primary interactions, while a teal tone highlights key data points. Asymmetric large radii on cards and a distinct, rounded button style add a modern, approachable edge to the otherwise structured layout, creating an engaging yet trustworthy feel.
-colors:
-  midnight-ink: "#16191c"
-  stormy-night: "#1e2327"
-  deep-graphite: "#393e41"
-  charcoal-grey: "#5b6065"
-  light-grey: "#bfbfc0"
-  silver-mist: "#dadadd"
-  cloud-white: "#f9f9f9"
-  pure-white: "#ffffff"
-  primary-black: "#000000"
-  shark-red: "#fa3556"
-  ocean-teal: "#1ebfbf"
-  harvest-gold: "#ffc200"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.71
-    letterSpacing: 0.204px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.71
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.67
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.33
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.21
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.14
-spacing:
-  cardRadius: 48px
-  buttonRadius: 12px
-  elementGap: 4px
-  sectionGap: 32px
-components:
-  primary-action-button:
-    role: Critical call to action.
-  accent-promotion-button:
-    role: Highlighting special offers or deals.
-  ghost-navigation-button:
-    role: Secondary navigation or interactive elements.
-  text-link-button:
-    role: Minimal interactive elements without strong visual emphasis.
-  dark-hero-card:
-    role: Prominent information blocks on dark backgrounds.
-  light-feature-card:
-    role: Content presentation on light backgrounds.
-  form-input-field:
-    role: User input fields.
+name: "Surfshark"
+description: "Surfshark's design system projects a dynamic, secure, and user-friendly online presence. It balances informative content with clear calls to action, leveraging high-contrast typography against clean achromatic surfaces. A vibrant red accent color signifies primary interactions, while a teal tone highlights key data points. Asymmetric large radii on cards and a distinct, rounded button style add a modern, approachable edge to the otherwise structured layout, creating an engaging yet trustworthy feel."
+theme: "mixed"
+industry: "other"
+source_url: "https://surfshark.com"
+refero_style_id: "4fc7a535-3c99-4ffe-8365-7d025d33274e"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510037700-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510037700-thumb.jpg"
+extracted_at: "2026-04-30T00:47:46.827Z"
 ---
 
-## Overview
+# Surfshark — Style Reference
 
-**North Star:** Animated aquatic security
+> Animated aquatic security
+
+**Theme:** mixed
+
+**Industry:** other
 
 Surfshark's design system projects a dynamic, secure, and user-friendly online presence. It balances informative content with clear calls to action, leveraging high-contrast typography against clean achromatic surfaces. A vibrant red accent color signifies primary interactions, while a teal tone highlights key data points. Asymmetric large radii on cards and a distinct, rounded button style add a modern, approachable edge to the otherwise structured layout, creating an engaging yet trustworthy feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #16191c | `--color-midnight-ink` | Page backgrounds for dark sections, card surfaces, important text |
+| Stormy Night | #1e2327 | `--color-stormy-night` | Slightly darker secondary background for subtle depth in dark sections |
+| Deep Graphite | #393e41 | `--color-deep-graphite` | Subtle border colors, secondary text in dark contexts, icon fills |
+| Charcoal Grey | #5b6065 | `--color-charcoal-grey` | Muted body text, placeholder text in inputs, decorative elements |
+| Light Grey | #bfbfc0 | `--color-light-grey` | Hairline borders, disabled text, subtle divider lines |
+| Silver Mist | #dadadd | `--color-silver-mist` | Input borders, light dividers, background of neutral badges |
+| Cloud White | #f9f9f9 | `--color-cloud-white` | Default page background, light card surfaces |
+| Pure White | #ffffff | `--color-pure-white` | Elevated surfaces, component backgrounds, primary text in dark contexts |
+| Primary Black | #000000 | `--color-primary-black` | Primary text on light backgrounds, strong borders |
+| Shark Red | #fa3556 | `--color-shark-red` | Red action color for filled buttons, selected navigation states, and focused conversion moments |
+| Ocean Teal | #1ebfbf | `--color-ocean-teal` | Teal outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+| Harvest Gold | #ffc200 | `--color-harvest-gold` | Promotional banners, special offers, secondary call to action backgrounds — adds warmth and celebratory feel |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 600, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 24px, 32px, 40px, 48px, 60px
+- **Line heights:** 1.00, 1.07, 1.14, 1.15, 1.21, 1.30, 1.33, 1.50, 1.67, 1.71, 1.75
+- **Letter spacing:** -0.0250em (at 60px), 0.0170em (at 12px), normal otherwise
+- **Role:** The primary font for all textual elements. Its strong, sans-serif character supports both impactful headlines and legible body text across various sizes and weights.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.71 | 0.204px | `--text-caption` |
+| body-sm | 14px | 1.71 | — | `--text-body-sm` |
+| body | 16px | 1.67 | — | `--text-body` |
+| subheading | 18px | 1.5 | — | `--text-subheading` |
+| heading-sm | 24px | 1.33 | — | `--text-heading-sm` |
+| heading | 32px | 1.21 | — | `--text-heading` |
+| heading-lg | 40px | 1.15 | — | `--text-heading-lg` |
+| display | 48px | 1.14 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-97 | 97px | `--spacing-97` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| hero | 64px |
+| cards | 48px |
+| links | 8px |
+| buttons | 12px |
+| default | 32px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Critical call to action.
+
+Filled button with Shark Red (#fa3556) background, Pure White (#ffffff) text, and a 12px border-radius. Padding of 12px vertical, 16px horizontal.
+
+### Accent Promotion Button
+
+**Role:** Highlighting special offers or deals.
+
+Filled button with Harvest Gold (#ffc200) background, Primary Black (#000000) text, and a 8px border-radius. Padding of 12px vertical, 32px horizontal.
+
+### Ghost Navigation Button
+
+**Role:** Secondary navigation or interactive elements.
+
+Transparent background, Charcoal Grey (#5b6065) text and a 0px border-radius. Padding of 12px vertical, 32px horizontal.
+
+### Text Link Button
+
+**Role:** Minimal interactive elements without strong visual emphasis.
+
+Transparent background, Primary Black (#000000) text, no border or radius. Padding of 0px.
+
+### Dark Hero Card
+
+**Role:** Prominent information blocks on dark backgrounds.
+
+Card with Midnight Ink (#16191c) background and an asymmetric 48px 0px 0px border-radius. No padding applied by default, intended for content to define internal spacing.
+
+### Light Feature Card
+
+**Role:** Content presentation on light backgrounds.
+
+Card with Cloud White (#f9f9f9) background and a 48px border-radius. No padding applied by default, intended for content to define internal spacing.
+
+### Form Input Field
+
+**Role:** User input fields.
+
+Transparent background, Silver Mist (#dadadd) border, 0px border-radius. Pale text color. Padding 4px vertical, 8px left, 28px right.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Shark Red (#fa3556) exclusively for primary calls to action to ensure visual hierarchy and prompt decisive interaction.
 - Apply Inter font family with weights 400, 600, or 700. Do not use other weights.
@@ -87,7 +163,7 @@ Surfshark's design system projects a dynamic, secure, and user-friendly online p
 - Employ the 48px asymmetric radius (48px 0px 0px) for cards on the left edge of the screen, mirroring the brand's design language.
 - Use Ocean Teal (#1ebfbf) specifically for highlighting key figures like prices or data points, not for interactive elements.
 
-### Don'ts
+### Don't
 
 - Do not use Harvest Gold (#ffc200) for primary action buttons; reserve it for distinct promotional banners or secondary accents.
 - Avoid arbitrary border-radius values; always refer to the defined spacing.radius tokens (e.g., 48px for cards, 12px for buttons).
@@ -97,10 +173,158 @@ Surfshark's design system projects a dynamic, secure, and user-friendly online p
 - Do not stretch or distort imagery; maintain original aspect ratios and ensure crisp presentation.
 - Avoid using a pageMaxWidth; the page content stretches fluidly, but sections may be contained internally.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Cloud White Canvas | #f9f9f9 | Default page background for light sections. |
+| 1 | Pure White Elevated | #ffffff | Background for elevated components such as navigation menus or modal overlays. |
+| 2 | Midnight Ink Canvas | #16191c | Primary background for dark sections, providing strong contrast. |
+| 3 | Stormy Night Card | #1e2327 | Surfaces for cards or content blocks within dark sections, creating subtle depth. |
+
+## Imagery
+
+The visual language for imagery is a mix of high-quality product renders, dark-mode focused lifestyle photography, and clean, geometric line icons. Photography tends to be dark and moody with a warm glow, often showing individuals using devices in comfortable, ambient settings, emphasizing privacy and security. Product visuals are crisp and isolated, often placed within abstract or stylized contexts (like the jelly cake). Icons are outlined, conveying functionality without visual clutter, with occasional fills for emphasis. Imagery serves both decorative atmosphere within dark sections and explanatory content within light sections.
+
+## Layout
 
 The page structure is full-bleed, adapting to the viewport width, with some sections containing content within a conceptual maximum width via internal left/right padding. The hero sections often feature large, impactful visuals on a dark background with centered, bold headlines. Subsequent sections alternate between light and dark themes, creating visual rhythm. Content is typically arranged in clear, stacked blocks or alternating text-left/image-right (or vice-versa) two-column layouts. Navigation is a persistent top bar featuring the brand logo, primary navigation links, and a prominent call-to-action button, ensuring constant access to key areas. Sections are generously spaced vertically, contributing to a comfortable density.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is a mix of high-quality product renders, dark-mode focused lifestyle photography, and clean, geometric line icons. Photography tends to be dark and moody with a warm glow, often showing individuals using devices in comfortable, ambient settings, emphasizing privacy and security. Product visuals are crisp and isolated, often placed within abstract or stylized contexts (like the jelly cake). Icons are outlined, conveying functionality without visual clutter, with occasional fills for emphasis. Imagery serves both decorative atmosphere within dark sections and explanatory content within light sections.
+- **NordVPN** — Focus on cybersecurity, dark main product UIs with occasional vibrant accents, and prominent call-to-action buttons.
+- **ExpressVPN** — Similar emphasis on a secure, clean aesthetic, strong branding through color, and straightforward, action-oriented layouts.
+- **ProtonVPN** — Combination of dark and light sections, geometric card shapes, and a professional, trustworthy visual tone for security products.
+- **Tailscale** — Fluid layouts, a mix of text and visual content to explain complex tech, and a clean, modern aesthetic with defined accent colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #16191c;
+  --color-stormy-night: #1e2327;
+  --color-deep-graphite: #393e41;
+  --color-charcoal-grey: #5b6065;
+  --color-light-grey: #bfbfc0;
+  --color-silver-mist: #dadadd;
+  --color-cloud-white: #f9f9f9;
+  --color-pure-white: #ffffff;
+  --color-primary-black: #000000;
+  --color-shark-red: #fa3556;
+  --color-ocean-teal: #1ebfbf;
+  --color-harvest-gold: #ffc200;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.71;
+  --tracking-caption: 0.204px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.71;
+  --text-body: 16px;
+  --leading-body: 1.67;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.33;
+  --text-heading: 32px;
+  --leading-heading: 1.21;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1.14;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-32: 32px;
+  --spacing-41: 41px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-81: 81px;
+  --spacing-83: 83px;
+  --spacing-96: 96px;
+  --spacing-97: 97px;
+  --spacing-113: 113px;
+  --spacing-200: 200px;
+  --radius-hero: 64px;
+  --radius-cards: 48px;
+  --radius-links: 8px;
+  --radius-buttons: 12px;
+  --radius-default: 32px;
+  --surface-cloud-white-canvas: #f9f9f9;
+  --surface-pure-white-elevated: #ffffff;
+  --surface-midnight-ink-canvas: #16191c;
+  --surface-stormy-night-card: #1e2327;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #16191c;
+  --color-stormy-night: #1e2327;
+  --color-deep-graphite: #393e41;
+  --color-charcoal-grey: #5b6065;
+  --color-light-grey: #bfbfc0;
+  --color-silver-mist: #dadadd;
+  --color-cloud-white: #f9f9f9;
+  --color-pure-white: #ffffff;
+  --color-primary-black: #000000;
+  --color-shark-red: #fa3556;
+  --color-ocean-teal: #1ebfbf;
+  --color-harvest-gold: #ffc200;
+  --font-inter: 'Inter', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.71;
+  --tracking-caption: 0.204px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.71;
+  --text-body: 16px;
+  --leading-body: 1.67;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.33;
+  --text-heading: 32px;
+  --leading-heading: 1.21;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.15;
+  --text-display: 48px;
+  --leading-display: 1.14;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-29: 29px;
+  --spacing-32: 32px;
+  --spacing-41: 41px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-81: 81px;
+  --spacing-83: 83px;
+  --spacing-96: 96px;
+  --spacing-97: 97px;
+  --spacing-113: 113px;
+  --spacing-200: 200px;
+  --radius-hero: 64px;
+  --radius-cards: 48px;
+  --radius-links: 8px;
+  --radius-buttons: 12px;
+  --radius-default: 32px;
+  --surface-cloud-white-canvas: #f9f9f9;
+  --surface-pure-white-elevated: #ffffff;
+  --surface-midnight-ink-canvas: #16191c;
+  --surface-stormy-night-card: #1e2327;
+}
+```
