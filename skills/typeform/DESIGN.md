@@ -1,91 +1,206 @@
 ---
 version: alpha
-name: Typeform
-description: Typeform operates in a register of editorial authority — a publishing house that also ships software. The hero section is a deep aubergine-black (#2a222b) that transitions to an almost-white cream (#faf9fb), creating a palette that feels like parchment under lamplight rather than a typical SaaS light-on-dark flip. The defining signature is the Tobias serif at display sizes: a classical editorial typeface with tight negative tracking (-0.031em at 64px) sitting alongside the geometric sans-serif TWK Lausanne, creating a deliberate tension between print heritage and digital utility. Buttons are low-key 12px radius rectangles in near-black — not pill-shaped, not sharp — quiet enough to let the typography lead. Purple (#9454ab) appears sparingly as a section label color for category eyebrows, never as a primary CTA, acting more like an editorial accent ink than a conversion color.
-colors:
-  aubergine-ink: "#2a222b"
-  deep-plum: "#3e3040"
-  violet-mist: "#9454ab"
-  lavender-whisper: "#ddb7f0"
-  cream-canvas: "#faf9fb"
-  pure-white: "#ffffff"
-  charcoal: "#222222"
-  slate-mid: "#564b58"
-  ash: "#655d67"
-  fog: "#837a85"
-  mist: "#d4d1d5"
-  parchment: "#f5f3f6"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.49
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.1
-    letterSpacing: -1.98px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1.1
-    letterSpacing: -1.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1
-    letterSpacing: -0.96px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 12px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  announcement-banner:
-    role: 
-  feature-content-block:
-    role: 
-  integrations-section:
-    role: 
-  primary-cta-button:
-    role: Main call to action throughout the page
-  ghost-navigation-button:
-    role: Secondary actions, nav-level text links with chevrons
-  section-eyebrow-label:
-    role: Category identifier above section headings
-  integration-logo-pill:
-    role: Partner/integration logos in the integrations section
-  dark-hero-section:
-    role: Full-width page hero with dark background
-  light-content-section:
-    role: Alternating content blocks in cream/white backgrounds
-  product-preview-card:
-    role: Embedded UI/screenshot previews in content sections
-  primary-navigation-bar:
-    role: Top navigation with logo, links, and auth CTAs
-  trust-stat-block:
-    role: Social proof number display
+name: "Typeform"
+description: "Typeform operates in a register of editorial authority — a publishing house that also ships software. The hero section is a deep aubergine-black (#2a222b) that transitions to an almost-white cream (#faf9fb), creating a palette that feels like parchment under lamplight rather than a typical SaaS light-on-dark flip. The defining signature is the Tobias serif at display sizes: a classical editorial typeface with tight negative tracking (-0.031em at 64px) sitting alongside the geometric sans-serif TWK Lausanne, creating a deliberate tension between print heritage and digital utility. Buttons are low-key 12px radius rectangles in near-black — not pill-shaped, not sharp — quiet enough to let the typography lead. Purple (#9454ab) appears sparingly as a section label color for category eyebrows, never as a primary CTA, acting more like an editorial accent ink than a conversion color."
+theme: "mixed"
+industry: "saas"
+source_url: "https://typeform.com"
+refero_style_id: "a0d54731-58dc-448b-a6b0-ed543f397ab1"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775934370786-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775934370786-thumb.jpg"
+extracted_at: "2026-04-11T19:07:51.673Z"
 ---
 
-## Overview
+# Typeform — Style Reference
 
-**North Star:** Publishing house meets product dashboard — serif headlines borrowed from a literary journal, UI chrome stripped to bare minimum so the type can own every screen.
+> Publishing house meets product dashboard — serif headlines borrowed from a literary journal, UI chrome stripped to bare minimum so the type can own every screen.
+
+**Theme:** mixed
+
+**Industry:** saas
 
 Typeform operates in a register of editorial authority — a publishing house that also ships software. The hero section is a deep aubergine-black (#2a222b) that transitions to an almost-white cream (#faf9fb), creating a palette that feels like parchment under lamplight rather than a typical SaaS light-on-dark flip. The defining signature is the Tobias serif at display sizes: a classical editorial typeface with tight negative tracking (-0.031em at 64px) sitting alongside the geometric sans-serif TWK Lausanne, creating a deliberate tension between print heritage and digital utility. Buttons are low-key 12px radius rectangles in near-black — not pill-shaped, not sharp — quiet enough to let the typography lead. Purple (#9454ab) appears sparingly as a section label color for category eyebrows, never as a primary CTA, acting more like an editorial accent ink than a conversion color.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Aubergine Ink | #2a222b | `--color-aubergine-ink` | Primary text, hero background, CTA button fill — the near-black with a warm violet undertone prevents the harshness of pure black while maintaining AAA contrast on cream |
+| Deep Plum | #3e3040 | `--color-deep-plum` | Hero section background variant, elevated surface in dark contexts |
+| Violet Mist | #9454ab | `--color-violet-mist` | Section eyebrow labels ('AI ENGAGEMENT PLATFORM', 'DATA COLLECTION', 'INTEGRATIONS') — saturated purple used exclusively for categorical labeling, never on interactive elements |
+| Lavender Whisper | #ddb7f0 | `--color-lavender-whisper` | Subtle purple tints in light contexts, decorative highlights |
+| Cream Canvas | #faf9fb | `--color-cream-canvas` | Page background, light section backgrounds, reversed text on dark surfaces |
+| Pure White | #ffffff | `--color-pure-white` | Card surfaces, integration logo pills, elevated elements in light sections |
+| Charcoal | #222222 | `--color-charcoal` | Secondary text, ghost button borders and labels |
+| Slate Mid | #564b58 | `--color-slate-mid` | Dividers, subtle borders in dark contexts |
+| Ash | #655d67 | `--color-ash` | Secondary body text, footnotes |
+| Fog | #837a85 | `--color-fog` | Placeholder text, disabled states |
+| Mist | #d4d1d5 | `--color-mist` | Light borders, dividers in cream backgrounds |
+| Parchment | #f5f3f6 | `--color-parchment` | Alternating section backgrounds, subtle surface differentiation from cream canvas |
+
+## Tokens — Typography
+
+### Tobias
+
+- **Token:** `--font-tobias`
+- **Substitute:** Playfair Display, Freight Display Pro
+- **Weights:** 400
+- **Sizes:** 64px, 72px, 80px
+- **Line heights:** 1.00–1.10
+- **Letter spacing:** -1.98px at 64px, -1.01px at 72px, -0.96px at 80px
+- **OpenType features:** "clig", "liga", "ss01", "ss11"
+- **Role:** Display and hero headlines exclusively. A classical editorial serif at weight 400 — most SaaS sites use a geometric sans at 700+ for headlines; Tobias at regular weight makes Typeform's headings feel authored, not announced. The tight negative tracking (-1.98px at 64px, -2.24px at 72px, -2.48px at 80px) is essential — without it, the serif reads loose and archaic.
+
+### TWK Lausanne
+
+- **Token:** `--font-twk-lausanne`
+- **Substitute:** Inter var at weight 350, Neue Haas Grotesk
+- **Weights:** 350
+- **Sizes:** 14px, 16px, 20px
+- **Line heights:** 1.10
+- **OpenType features:** "clig", "liga", "ss01", "ss11"
+- **Role:** Large section headings where serif would be too literary — weight 350 is lighter than any standard system font weight, creating headers that are large but not heavy, letting white space carry visual weight instead of stroke width.
+
+### TWK Lausanne
+
+- **Token:** `--font-twk-lausanne`
+- **Substitute:** Inter, Aktiv Grotesk
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.00–1.49
+- **OpenType features:** "clig", "liga", "ss01", "ss11"
+- **Role:** Body copy, navigation, buttons, labels, captions. The workhorse sans-serif. ss01 and ss11 OpenType features active — these are likely alternate glyph sets that distinguish it from a plain geometric sans. At 14px for eyebrow labels (uppercase-tracked), at 16px for body, at 20px for subheadings.
+
+### TWK Lausanne
+
+- **Token:** `--font-twk-lausanne`
+- **Substitute:** Inter 700
+- **Weights:** 700
+- **Sizes:** 14px
+- **Line heights:** 1.20–1.30
+- **Role:** Bold emphasis in body contexts, strong labels.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.2 | — | `--text-caption` |
+| body | 16px | 1.49 | — | `--text-body` |
+| body-lg | 20px | 1.4 | — | `--text-body-lg` |
+| heading-sm | 48px | 1.1 | — | `--text-heading-sm` |
+| heading | 64px | 1.1 | -1.98px | `--text-heading` |
+| heading-lg | 72px | 1.1 | -1.01px | `--text-heading-lg` |
+| display | 80px | 1 | -0.96px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-137 | 137px | `--spacing-137` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 24px |
+| pills | 80px |
+| images | 8px |
+| buttons | 12px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1536px |
+| sectionGap | 64px |
+| elementGap | 16px |
+
+## Components
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Content Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Integrations Section
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary CTA Button
+
+**Role:** Main call to action throughout the page
+
+Background #2a222b, text #faf9fb, border-radius 12px, padding 8px 24px. TWK Lausanne 400 at 16px. The near-black fill with cream text is restrained — no color accent on CTAs, letting the form contrast with surrounding light sections do the work.
+
+### Ghost Navigation Button
+
+**Role:** Secondary actions, nav-level text links with chevrons
+
+Transparent background, text #222222, no border-radius (0px), minimal padding 0px 8px. Used for Platform/Solutions/Resources dropdown triggers. Invisible until needed — the nav reads as pure text.
+
+### Section Eyebrow Label
+
+**Role:** Category identifier above section headings
+
+TWK Lausanne 400 at 14px, uppercase, letter-spacing wide, color #9454ab (Violet Mist). No background, no pill, no border — pure typographic color accent. This is the only place saturated purple appears in content.
+
+### Integration Logo Pill
+
+**Role:** Partner/integration logos in the integrations section
+
+White (#ffffff) background, border #d4d1d5, border-radius 24px, padding 12px 24px. Logos rendered at grayscale/monochrome. The rounded-rectangle container unifies disparate brand marks into a cohesive grid.
+
+### Dark Hero Section
+
+**Role:** Full-width page hero with dark background
+
+Background #2a222b, full viewport width, centered content. Heading in Tobias 400 at 64-80px, color #faf9fb with negative tracking. Subheading in TWK Lausanne 400 at 20px, color #faf9fb. CTA button inherits primary button style but the border becomes #faf9fb on the dark surface.
+
+### Light Content Section
+
+**Role:** Alternating content blocks in cream/white backgrounds
+
+Background #faf9fb or #f5f3f6, padding 64px vertical. Headings in Tobias 400 at 64px, #2a222b. Two-column layout: text left, product visual right. Contains section eyebrow, heading, body copy at 16px, and CTA button.
+
+### Product Preview Card
+
+**Role:** Embedded UI/screenshot previews in content sections
+
+Border-radius 24px, background #f5f3f6 or light lavender tint (#f9f2fd from CSS tokens), no hard border visible. Acts as a contained viewport for product UI. Padding internal 24px. Shadow minimal or absent.
+
+### Primary Navigation Bar
+
+**Role:** Top navigation with logo, links, and auth CTAs
+
+Background #faf9fb, height ~72px. Logo left. Center nav links in TWK Lausanne 400 16px #2a222b. Right side: 'Log in' ghost text, 'Sign up' filled button (#2a222b, #faf9fb text, 12px radius, 8px 24px padding). Sticky on scroll.
+
+### Trust Stat Block
+
+**Role:** Social proof number display
+
+Background cream or white, centered. Stat value in Tobias 400 at 64px #2a222b with -1.98px tracking. Supporting text in TWK Lausanne 400 16px #655d67 (Ash). No card container — floats on section background.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Tobias 400 with negative letter-spacing (-1.98px at 64px minimum) for all display headlines — do not substitute a heavier weight sans-serif
 - Reserve #9454ab exclusively for section eyebrow labels in uppercase TWK Lausanne 14px — never use it on buttons, links, or backgrounds
@@ -95,7 +210,7 @@ Typeform operates in a register of editorial authority — a publishing house th
 - Use #2a222b (not pure #000000) for all primary text and dark backgrounds — the warm violet undertone is the brand's chromatic signature
 - Keep CTAs in near-black fill regardless of section — on dark backgrounds use #faf9fb text with #faf9fb border; on light backgrounds same fill, no change
 
-### Don'ts
+### Don't
 
 - Do not use saturated purple (#9454ab, #b66dd5) on buttons, hover states, or backgrounds — it exists only as typographic ink for category labels
 - Do not use Tobias for body copy, captions, or UI labels — it is display-only; all functional text uses TWK Lausanne
@@ -105,14 +220,155 @@ Typeform operates in a register of editorial authority — a publishing house th
 - Do not place colored backgrounds (purple, green, yellow) behind large content sections — only #2a222b, #faf9fb, #f5f3f6, and #ffffff are valid section backgrounds
 - Do not set display headlines without negative letter-spacing — Tobias at -0em tracking reads archaic; the tightened tracking is what makes it feel contemporary
 
-### Layout
+## Surfaces
 
-Max-width 1536px, centered with horizontal padding of 48px. Hero is full-bleed #2a222b with centered text stack — eyebrow label, display headline, body copy, CTA, all center-aligned. Below hero: alternating cream (#faf9fb) and slightly tinted (#f5f3f6) bands with 64px vertical padding each. Content sections use a two-column split: text left (heading + body + CTA), product visual right. The integrations section breaks into a multi-row logo grid (6-7 columns) with a centered heading above. Navigation is a fixed-height (~72px) sticky top bar with logo left, centered links, auth buttons right. Section rhythm is consistent: eyebrow → large heading → body → CTA, with 16px gaps between stacked text elements and 48px gap before the CTA.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Dark Canvas | #2a222b | Hero section, announcement banner, CTA buttons — the dominant dark surface |
+| 2 | Dark Elevated | #3e3040 | Slightly lighter dark surface within hero context |
+| 3 | Cream Canvas | #faf9fb | Primary light page background, nav bar |
+| 4 | Parchment | #f5f3f6 | Alternate light sections, subtle differentiation from cream canvas |
+| 5 | Pure White | #ffffff | Card surfaces, integration pills, elevated components on light backgrounds |
 
-### Imagery
+## Imagery
 
 Product UI screenshots are the primary visual content — shown inside 24px-radius containers with lavender-tinted (#f9f2fd) backgrounds, not floating freely. No lifestyle photography on the main marketing page. Integration logos are displayed as monochrome marks inside white rounded-rectangle pills, neutralizing their varied brand colors into a cohesive grid. Icons use a thin outlined style consistent with TWK Lausanne's light stroke character. Imagery is purely explanatory — every visual element depicts the product interface, not aspirational context. Image density is low: each section has at most one product preview, occupying roughly half the column width in a two-column layout, with generous whitespace dominating.
 
-### Elevation
+## Layout
 
-Typeform avoids box-shadows entirely. Elevation and depth are conveyed through background color progression: #2a222b → #3e3040 for dark layers, #faf9fb → #f5f3f6 → #ffffff for light layers. The dark-to-light section alternation IS the elevation system — a card on a cream background uses white to lift off the surface, not a shadow.
+Max-width 1536px, centered with horizontal padding of 48px. Hero is full-bleed #2a222b with centered text stack — eyebrow label, display headline, body copy, CTA, all center-aligned. Below hero: alternating cream (#faf9fb) and slightly tinted (#f5f3f6) bands with 64px vertical padding each. Content sections use a two-column split: text left (heading + body + CTA), product visual right. The integrations section breaks into a multi-row logo grid (6-7 columns) with a centered heading above. Navigation is a fixed-height (~72px) sticky top bar with logo left, centered links, auth buttons right. Section rhythm is consistent: eyebrow → large heading → body → CTA, with 16px gaps between stacked text elements and 48px gap before the CTA.
+
+## Similar Brands
+
+- **Notion** — Same editorial serif-meets-sans pairing for display text, near-black dominant brand color, cream/off-white page backgrounds — both reject SaaS-blue in favor of ink-like neutrals
+- **Linear** — Shared philosophy of letting typography lead with minimal color accent, dark hero transitioning to light content sections, no shadow elevation system
+- **Framer** — Dark aubergine/near-black hero with reversed cream text, restrained accent color usage, product screenshots as primary visuals
+- **Webflow** — Editorial-weight serif headlines mixed with geometric sans UI text, dark-to-light section alternation, integration partner logo grids
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-aubergine-ink: #2a222b;
+  --color-deep-plum: #3e3040;
+  --color-violet-mist: #9454ab;
+  --color-lavender-whisper: #ddb7f0;
+  --color-cream-canvas: #faf9fb;
+  --color-pure-white: #ffffff;
+  --color-charcoal: #222222;
+  --color-slate-mid: #564b58;
+  --color-ash: #655d67;
+  --color-fog: #837a85;
+  --color-mist: #d4d1d5;
+  --color-parchment: #f5f3f6;
+  --font-tobias: 'Tobias', Playfair Display, Freight Display Pro;
+  --font-twk-lausanne: 'TWK Lausanne', Inter var at weight 350, Neue Haas Grotesk;
+  --font-twk-lausanne: 'TWK Lausanne', Inter, Aktiv Grotesk;
+  --font-twk-lausanne: 'TWK Lausanne', Inter 700;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.49;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.4;
+  --text-heading-sm: 48px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 64px;
+  --leading-heading: 1.1;
+  --tracking-heading: -1.98px;
+  --text-heading-lg: 72px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.01px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -0.96px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-137: 137px;
+  --radius-cards: 24px;
+  --radius-pills: 80px;
+  --radius-images: 8px;
+  --radius-buttons: 12px;
+  --surface-dark-canvas: #2a222b;
+  --surface-dark-elevated: #3e3040;
+  --surface-cream-canvas: #faf9fb;
+  --surface-parchment: #f5f3f6;
+  --surface-pure-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-aubergine-ink: #2a222b;
+  --color-deep-plum: #3e3040;
+  --color-violet-mist: #9454ab;
+  --color-lavender-whisper: #ddb7f0;
+  --color-cream-canvas: #faf9fb;
+  --color-pure-white: #ffffff;
+  --color-charcoal: #222222;
+  --color-slate-mid: #564b58;
+  --color-ash: #655d67;
+  --color-fog: #837a85;
+  --color-mist: #d4d1d5;
+  --color-parchment: #f5f3f6;
+  --font-tobias: 'Tobias', Playfair Display, Freight Display Pro;
+  --font-twk-lausanne: 'TWK Lausanne', Inter var at weight 350, Neue Haas Grotesk;
+  --font-twk-lausanne: 'TWK Lausanne', Inter, Aktiv Grotesk;
+  --font-twk-lausanne: 'TWK Lausanne', Inter 700;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.49;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.4;
+  --text-heading-sm: 48px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 64px;
+  --leading-heading: 1.1;
+  --tracking-heading: -1.98px;
+  --text-heading-lg: 72px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -1.01px;
+  --text-display: 80px;
+  --leading-display: 1;
+  --tracking-display: -0.96px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-137: 137px;
+  --radius-cards: 24px;
+  --radius-pills: 80px;
+  --radius-images: 8px;
+  --radius-buttons: 12px;
+  --surface-dark-canvas: #2a222b;
+  --surface-dark-elevated: #3e3040;
+  --surface-cream-canvas: #faf9fb;
+  --surface-parchment: #f5f3f6;
+  --surface-pure-white: #ffffff;
+}
+```

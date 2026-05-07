@@ -1,60 +1,161 @@
 ---
 version: alpha
-name: Tripolis-Park™
-description: Tripolis-Park embodies a confident-minimalist design language, characterized by a predominantly achromatic palette with only subtle background shifts. Typography is the primary conveyor of hierarchy and brand attitude, employing a mix of strong, impactful display fonts and versatile body text. Components are lightweight, often ghosted or outlined, emphasizing content and space rather than heavy ornamentation. The visual system prioritizes clarity and directness, letting information and subtle background textures speak for themselves.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#ffffff"
-  medium-gray: "#808080"
-  light-stroke: "#e2e2e2"
-  subtle-stroke: "#cccccc"
-  desert-white: "#f0edea"
-  tripolis-violet: "#ab8ff2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 47px
-    lineHeight: 1.08
-    letterSpacing: -0.48px
-spacing:
-  elementGap: 5px
-  sectionGap: 64px
-components:
-  ghost-button-light:
-    role: Navigation and secondary actions on dark backgrounds.
-  ghost-button-dark:
-    role: Navigation and secondary actions on light backgrounds.
-  circular-play-button:
-    role: Primary action button, typically for media playback.
-  section-heading-ivarheadline:
-    role: Main content section titles.
-  body-text-matter-regular:
-    role: General paragraph text and descriptive content.
-  navigation-link:
-    role: Primary navigation items.
-  interactive-link-arrow:
-    role: Contextual links with directional arrows for actions like 'Learn more'.
+name: "Tripolis-Park™"
+description: "Tripolis-Park embodies a confident-minimalist design language, characterized by a predominantly achromatic palette with only subtle background shifts. Typography is the primary conveyor of hierarchy and brand attitude, employing a mix of strong, impactful display fonts and versatile body text. Components are lightweight, often ghosted or outlined, emphasizing content and space rather than heavy ornamentation. The visual system prioritizes clarity and directness, letting information and subtle background textures speak for themselves."
+theme: "light"
+industry: "other"
+source_url: "https://www.tripolis-park.com"
+refero_style_id: "bce52fd3-ac16-4e67-a45f-78bfc2350aad"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517141580-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517141580-thumb.jpg"
+extracted_at: "2026-04-30T02:46:01.616Z"
 ---
 
-## Overview
+# Tripolis-Park™ — Style Reference
 
-**North Star:** Architectural grid on frosted glass
+> Architectural grid on frosted glass
+
+**Theme:** light
+
+**Industry:** other
 
 Tripolis-Park embodies a confident-minimalist design language, characterized by a predominantly achromatic palette with only subtle background shifts. Typography is the primary conveyor of hierarchy and brand attitude, employing a mix of strong, impactful display fonts and versatile body text. Components are lightweight, often ghosted or outlined, emphasizing content and space rather than heavy ornamentation. The visual system prioritizes clarity and directness, letting information and subtle background textures speak for themselves.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, strong borders, icon fills. Establishes a bold, high-contrast look |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button text/borders. Creates an airy, expansive feel |
+| Medium Gray | #808080 | `--color-medium-gray` | Subtle background surfaces, dividers. Adds a secondary layer of visual depth without strong chromatic impact |
+| Light Stroke | #e2e2e2 | `--color-light-stroke` | Fine graphic strokes, decorative elements where a very light touch is needed |
+| Subtle Stroke | #cccccc | `--color-subtle-stroke` | Decorative graphic strokes and subtle dividers, creating visual separation without harshness |
+| Desert White | #f0edea | `--color-desert-white` | Alternative canvas background for certain sections, providing a slight warmth off-white |
+| Tripolis Violet | #ab8ff2 | `--color-tripolis-violet` | Dominant background gradient for the hero section |
+
+## Tokens — Typography
+
+### Matter
+
+- **Token:** `--font-matter`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 18px, 27px, 47px
+- **Line heights:** 1.08, 1.12, 1.20, 1.25
+- **Letter spacing:** -0.0250em, -0.0240em, -0.0150em, -0.0100em
+- **OpenType features:** 'tnum'
+- **Role:** Versatile body and utility text for navigation, buttons, and detailed content. Its consistent weight across sizes maintains a clean, functional feel. The variable tracking adds precision.
+
+### IvarHeadline
+
+- **Token:** `--font-ivarheadline`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 47px
+- **Line heights:** 1.08, 1.12
+- **Letter spacing:** -0.0150em, -0.0100em
+- **Role:** Distinctive display font for main headings. Its medium weight and subtle tracking create a sophisticated presence without being overpowering, suggesting gravitas.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.2 | — | `--text-caption` |
+| body | 18px | 1.25 | — | `--text-body` |
+| subheading | 27px | 1.25 | — | `--text-subheading` |
+| heading | 47px | 1.08 | -0.48px | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-66 | 66px | `--spacing-66` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-108 | 108px | `--spacing-108` |
+| spacing-110 | 110px | `--spacing-110` |
+| spacing-133 | 133px | `--spacing-133` |
+| spacing-207 | 207px | `--spacing-207` |
+| spacing-270 | 270px | `--spacing-270` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+| circular | 50% |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 900px |
+| sectionGap | 64px |
+| cardPadding | 23px |
+| elementGap | 5px |
+
+## Components
+
+### Ghost Button (Light)
+
+**Role:** Navigation and secondary actions on dark backgrounds.
+
+Transparent background, Canvas White text and border. Radius 0px. Text color: #ffffff, Border color: #ffffff, Background color: transparent. Padding values are handled inline by text container layout, but generally minimal, around 5px.
+
+### Ghost Button (Dark)
+
+**Role:** Navigation and secondary actions on light backgrounds.
+
+Transparent background, Midnight Ink text and border. Radius 0px. Text color: #000000, Border color: #000000, Background color: transparent. Padding values are handled inline by text container layout, but generally minimal, around 5px.
+
+### Circular Play Button
+
+**Role:** Primary action button, typically for media playback.
+
+Solid Canvas White background with Midnight Ink text, or Midnight Ink text with a white circular border. Radius 50% for a perfect circle. Text color: #000000, Background color: #ffffff, Border: 1px solid #ffffff. No explicit padding mentioned in token but visual implies text is contained simply by circular shape.
+
+### Section Heading (IvarHeadline)
+
+**Role:** Main content section titles.
+
+IvarHeadline-Medium, 47px, lineHeight 1.08-1.12, letter-spacing -0.0150em or -0.0100em, Midnight Ink (#000000). Followed by 11px or 12px margin-bottom.
+
+### Body Text (Matter-Regular)
+
+**Role:** General paragraph text and descriptive content.
+
+Matter-Regular, 14px or 18px, lineHeight 1.20-1.25, Midnight Ink (#000000). Standard padding-bottom is 23px.
+
+### Navigation Link
+
+**Role:** Primary navigation items.
+
+Matter-Regular, 18px, Midnight Ink (#000000) or Canvas White (#ffffff) depending on background. Inherits the thin border style of Ghost Buttons.
+
+### Interactive Link (Arrow)
+
+**Role:** Contextual links with directional arrows for actions like 'Learn more'.
+
+Matter-Regular, 14px, Midnight Ink (#000000) or Canvas White (#ffffff). Features a prominent arrow icon as part of the text, often with horizontal spacing of 10px-18px from the text.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Ink (#000000) for all primary text, headings, and distinct borders.
 - Maintain Canvas White (#ffffff) as the dominant background color for most page sections, and for ghost button text/borders on dark backgrounds.
@@ -64,7 +165,7 @@ Tripolis-Park embodies a confident-minimalist design language, characterized by 
 - Separate content blocks and sections with a consistent 64px vertical gap where content transitions are visually distinct.
 - Ensure all interactive text and ghost buttons have transparent backgrounds, with their color and border adapting to the underlying section's lightness.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong chromatic colors for backgrounds or primary UI elements outside of the hero gradient.
 - Avoid using heavy shadows or distinct elevation styles; prefer subtle background color shifts or thin borders for visual separation.
@@ -74,10 +175,115 @@ Tripolis-Park embodies a confident-minimalist design language, characterized by 
 - Avoid inconsistent horizontal spacing; adhere to the established element gaps like 5px, 10px, 18px where present.
 - Do not use letter-spacing on Matter-Regular body text; it should generally use 'normal'.
 
-### Layout
+## Imagery
+
+This site features abstract graphics and gradients as primary visual elements, particularly in hero sections. When photography or detailed imagery is used, it appears to be tightly cropped or isolated, without busy backgrounds or lifestyle context, focusing on the essence of the subject matter. Iconography, when present, is minimalist, likely outlined or filled in achromatic tones, serving functional rather than decorative roles. The overall density of imagery is low, with visuals serving to enhance specific content sections rather than dominating the layout, creating a text-dominant feel.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 900px, centered on the screen, creating a focused content experience. The hero section, however, is full-bleed, using a dynamic violet gradient background with centered text, setting an immersive tone. Subsequent sections maintain a consistent vertical rhythm with a 64px section gap, creating a structured flow. Content often appears in stacked blocks or simple two-column arrangements, with strong headings and accompanying body text. Navigation is a sticky top bar, minimal and functional, adapting its color to the background.
 
-### Imagery
+## Similar Brands
 
-This site features abstract graphics and gradients as primary visual elements, particularly in hero sections. When photography or detailed imagery is used, it appears to be tightly cropped or isolated, without busy backgrounds or lifestyle context, focusing on the essence of the subject matter. Iconography, when present, is minimalist, likely outlined or filled in achromatic tones, serving functional rather than decorative roles. The overall density of imagery is low, with visuals serving to enhance specific content sections rather than dominating the layout, creating a text-dominant feel.
+- **Framer** — High-contrast minimalist aesthetic, strong typographic focus, and restrained use of color on predominantly white backgrounds.
+- **Linear** — Clean, structured layouts, emphasis on text hierarchy, and subtle interaction states without heavy ornamentation.
+- **Pitch** — Modern, sophisticated typography in combination with ghost buttons and a focus on content over decorative elements.
+- **Superhuman** — A preference for monochromatic UIs, with subtle shifts in neutral backgrounds and thin borders for component definition.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-medium-gray: #808080;
+  --color-light-stroke: #e2e2e2;
+  --color-subtle-stroke: #cccccc;
+  --color-desert-white: #f0edea;
+  --color-tripolis-violet: #ab8ff2;
+  --font-matter: 'Matter', Inter;
+  --font-ivarheadline: 'IvarHeadline', Playfair Display;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --text-subheading: 27px;
+  --leading-subheading: 1.25;
+  --text-heading: 47px;
+  --leading-heading: 1.08;
+  --tracking-heading: -0.48px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-23: 23px;
+  --spacing-36: 36px;
+  --spacing-44: 44px;
+  --spacing-45: 45px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-86: 86px;
+  --spacing-90: 90px;
+  --spacing-108: 108px;
+  --spacing-110: 110px;
+  --spacing-133: 133px;
+  --spacing-207: 207px;
+  --spacing-270: 270px;
+  --radius-default: 0px;
+  --radius-circular: 50%;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #ffffff;
+  --color-medium-gray: #808080;
+  --color-light-stroke: #e2e2e2;
+  --color-subtle-stroke: #cccccc;
+  --color-desert-white: #f0edea;
+  --color-tripolis-violet: #ab8ff2;
+  --font-matter: 'Matter', Inter;
+  --font-ivarheadline: 'IvarHeadline', Playfair Display;
+  --text-caption: 14px;
+  --leading-caption: 1.2;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --text-subheading: 27px;
+  --leading-subheading: 1.25;
+  --text-heading: 47px;
+  --leading-heading: 1.08;
+  --tracking-heading: -0.48px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-23: 23px;
+  --spacing-36: 36px;
+  --spacing-44: 44px;
+  --spacing-45: 45px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-86: 86px;
+  --spacing-90: 90px;
+  --spacing-108: 108px;
+  --spacing-110: 110px;
+  --spacing-133: 133px;
+  --spacing-207: 207px;
+  --spacing-270: 270px;
+  --radius-default: 0px;
+  --radius-circular: 50%;
+}
+```

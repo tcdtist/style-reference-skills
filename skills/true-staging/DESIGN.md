@@ -1,51 +1,132 @@
 ---
 version: alpha
-name: True Staging
-description: True Staging establishes a serious yet refined industrial aesthetic, using a deep gray canvas punctuated by an antiqued peachy-orange accent. Typography pairs a classic serif for large expressive headlines with a clean sans-serif for functional text, setting up a contrast between permanence and precision. Components emphasize subtle outlining and generous border radii, lending a soft, approachable feel despite the muted palette. The overall impression is one of understated luxury and meticulous craftsmanship.
-colors:
-  blueprint-canvas: "#111111"
-  parchment-white: "#f5efeb"
-  amber-peach: "#f1b497"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: 0.02px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.3
-    letterSpacing: -0.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 158px
-    lineHeight: 1
-    letterSpacing: -0.02px
-spacing:
-  buttonRadius: 80px
-  elementGap: 8px
-  sectionGap: 53px
-components:
-  hero-headline:
-    role: Primary page title
-  ghost-navigation-item:
-    role: Secondary navigation and non-primary actions
-  primary-action-button:
-    role: Call to action button for 'Our Work'
-  body-text:
-    role: Standard informative text
-  footer-detail-text:
-    role: Copyright and minor informational text
+name: "True Staging"
+description: "True Staging establishes a serious yet refined industrial aesthetic, using a deep gray canvas punctuated by an antiqued peachy-orange accent. Typography pairs a classic serif for large expressive headlines with a clean sans-serif for functional text, setting up a contrast between permanence and precision. Components emphasize subtle outlining and generous border radii, lending a soft, approachable feel despite the muted palette. The overall impression is one of understated luxury and meticulous craftsmanship."
+theme: "dark"
+industry: "other"
+source_url: "https://www.truestaging.co.uk"
+refero_style_id: "c26c462d-f219-4814-96da-c05e86f759b7"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514205757-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514205757-thumb.jpg"
+extracted_at: "2026-04-30T01:57:05.127Z"
 ---
 
-## Overview
+# True Staging — Style Reference
 
-**North Star:** Architectural blueprint on aged parchment
+> Architectural blueprint on aged parchment
+
+**Theme:** dark
+
+**Industry:** other
 
 True Staging establishes a serious yet refined industrial aesthetic, using a deep gray canvas punctuated by an antiqued peachy-orange accent. Typography pairs a classic serif for large expressive headlines with a clean sans-serif for functional text, setting up a contrast between permanence and precision. Components emphasize subtle outlining and generous border radii, lending a soft, approachable feel despite the muted palette. The overall impression is one of understated luxury and meticulous craftsmanship.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Blueprint Canvas | #111111 | `--color-blueprint-canvas` | Page background, primary dark text, subtle borders — grounds the design in a deep, almost charcoal base |
+| Parchment White | #f5efeb | `--color-parchment-white` | Primary light text, ghost button borders, accents within a darker canvas — suggests a tactile, natural paper texture |
+| Amber Peach | #f1b497 | `--color-amber-peach` | Orange outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Roslindale
+
+- **Token:** `--font-roslindale`
+- **Substitute:** Playfair Display
+- **Weights:** 300
+- **Sizes:** 158px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0200em
+- **Role:** Expressive display headings — its delicate weight and generous size at 158px create an authoritative, almost monumental statement of luxury.
+
+### Alliance
+
+- **Token:** `--font-alliance`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 9px, 12px, 14px, 28px
+- **Line heights:** 1.00, 1.15, 1.20, 1.30, 1.50, 1.71
+- **Letter spacing:** -0.0200em, 0.0200em, 0.0230em, 0.0600em, 0.1000em
+- **Role:** Functional text including body, navigation, and button labels — its versatility across weights and compact letter spacing ensures clear information delivery.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 14px | 1.2 | 0.02px | `--text-body` |
+| subheading | 28px | 1.3 | -0.02px | `--text-subheading` |
+| display | 158px | 1 | -0.02px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-53 | 53px | `--spacing-53` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 80px |
+| otherElements | 80px |
+| navigationItems | 80px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 53px |
+| cardPadding | 21px |
+| elementGap | 8px |
+
+## Components
+
+### Hero Headline
+
+**Role:** Primary page title
+
+Uses Roslindale at 158px, weight 300, with a letter-spacing of -0.0200em, in Parchment White (#f5efeb). Placed centrally, defining the page's grand statement.
+
+### Ghost Navigation Item
+
+**Role:** Secondary navigation and non-primary actions
+
+Text in Alliance, Parchment White (#f5efeb), 9px, weight 400. Has a 1px border in Parchment White (#f5efeb) with an 80px border-radius, creating a pill shape. Padding is 7.7px vertical and 21px horizontal. Transparent background.
+
+### Primary Action Button
+
+**Role:** Call to action button for 'Our Work'
+
+Filled with Amber Peach (#f1b497) background. Text is Alliance, Parchment White (#f5efeb), 9px, weight 400. Features an 80px border-radius. Padding is 7.7px vertical and 21px horizontal. Appears as a pill-shaped element.
+
+### Body Text
+
+**Role:** Standard informative text
+
+Uses Alliance, Blueprint Canvas (#111111) or Parchment White (#f5efeb) depending on section background, at 14px, weight 400. Tight letter spacing for efficient reading.
+
+### Footer Detail Text
+
+**Role:** Copyright and minor informational text
+
+Alliance, 9px, weight 400, in Parchment White (#f5efeb).
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Blueprint Canvas (#111111) for page backgrounds and primary dark text.
 - Apply Parchment White (#f5efeb) for primary light text on dark backgrounds and for ghost button borders.
@@ -55,7 +136,7 @@ True Staging establishes a serious yet refined industrial aesthetic, using a dee
 - Implement an 80px border-radius for all interactive elements like buttons and navigation items to maintain a consistent soft, pill-like shape.
 - Maintain a compact spacing density, with an element gap of 8px and section vertical spacing of 53px.
 
-### Don'ts
+### Don't
 
 - Do not introduce bright, vibrant colors; maintain the muted, earthy palette of Blueprint Canvas, Parchment White, and Amber Peach.
 - Avoid sharp, angular corners; consistently apply the 80px border-radius for all applicable UI elements.
@@ -65,10 +146,87 @@ True Staging establishes a serious yet refined industrial aesthetic, using a dee
 - Do not use Parchment White (#f5efeb) on amber backgrounds due to insufficient contrast (1.6:1 ratio).
 - Avoid making any element overtly 'loud'; the design emphasizes understated luxury through subtle contrasts and refined details.
 
-### Layout
+## Imagery
+
+The site uses subtle, abstract blueprint-style graphics overlaid on a textured dark background for atmospheric effect. These graphics are largely monochromatic, serving as an underlying visual motif rather than direct content. All imagery is decorative, establishing a mood of construction and precision, without featuring photography or product showcases. The density is image-light, with UI and typography dominating the visual space.
+
+## Layout
 
 The page employs a full-bleed layout, particularly for the hero section, which features a large, centered headline over an architectural graphic background. Content is centrally aligned within this wide canvas, using large, negative space. The header features right-aligned navigation items, subtly outlined. Subsequent content sections appear to follow a consistent vertical rhythm, though specific sectioning is less explicit than a banded approach; instead, it relies on visual weight and typography.
 
-### Imagery
+## Similar Brands
 
-The site uses subtle, abstract blueprint-style graphics overlaid on a textured dark background for atmospheric effect. These graphics are largely monochromatic, serving as an underlying visual motif rather than direct content. All imagery is decorative, establishing a mood of construction and precision, without featuring photography or product showcases. The density is image-light, with UI and typography dominating the visual space.
+- **Fendi** — Monochromatic palette, large serif typography, and a focus on subtle textures create a similar luxury brand experience with understated elegance.
+- **Bottega Veneta** — Understated branding, high-contrast typography, and a tactile, natural color palette evoke a comparable sense of refined craftsmanship.
+- **Linear** — Uses a dark, technical background with strong geometric elements and precise, functional typography, albeit in a more modern context. The focus on precision and subtle interactions is similar.
+- **Acme Co.** — Another fictional example that might use a single, muted accent color against a largely grayscale UI, employing elegant serif fonts for impact.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-blueprint-canvas: #111111;
+  --color-parchment-white: #f5efeb;
+  --color-amber-peach: #f1b497;
+  --font-roslindale: 'Roslindale', Playfair Display;
+  --font-alliance: 'Alliance', Inter;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: 0.02px;
+  --text-subheading: 28px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.02px;
+  --text-display: 158px;
+  --leading-display: 1;
+  --tracking-display: -0.02px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-25: 25px;
+  --spacing-28: 28px;
+  --spacing-35: 35px;
+  --spacing-42: 42px;
+  --spacing-53: 53px;
+  --radius-buttons: 80px;
+  --radius-otherelements: 80px;
+  --radius-navigationitems: 80px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-blueprint-canvas: #111111;
+  --color-parchment-white: #f5efeb;
+  --color-amber-peach: #f1b497;
+  --font-roslindale: 'Roslindale', Playfair Display;
+  --font-alliance: 'Alliance', Inter;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: 0.02px;
+  --text-subheading: 28px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.02px;
+  --text-display: 158px;
+  --leading-display: 1;
+  --tracking-display: -0.02px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-25: 25px;
+  --spacing-28: 28px;
+  --spacing-35: 35px;
+  --spacing-42: 42px;
+  --spacing-53: 53px;
+  --radius-buttons: 80px;
+  --radius-otherelements: 80px;
+  --radius-navigationitems: 80px;
+}
+```

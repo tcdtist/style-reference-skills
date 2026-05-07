@@ -1,87 +1,223 @@
 ---
 version: alpha
-name: Twingate
-description: This system projects an image of controlled innovation, like a high-tech console in a dimly lit server room. Dark, near-black surfaces create a sophisticated backdrop for critical information, highlighted by precise, vibrant accents. The interplay between the whispering 'TT Hoves Light' headlines and the sharp, functional 'TT Hoves Medium' body copy establishes a tone of serious capability. Strategic splashes of saturated violet and vivid green draw attention to key interactive elements and provide a subtle, energetic flicker against the subdued palette.
-colors:
-  carbon: "#0e0f11"
-  basalt: "#141617"
-  obsidian: "#1d2023"
-  platinum: "#ffffff"
-  graphite: "#a1a1aa"
-  ash: "#cfcfd3"
-  spectral-violet: "#b6abff"
-  electric-lime: "#eef35f"
-  system-teal: "#00cbaa"
-  deep-violet: "#6350dd"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.14
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.7
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.3
-    letterSpacing: -0.154px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.27
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.2
-    letterSpacing: -0.432px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 54px
-    lineHeight: 1.1
-    letterSpacing: -0.54px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 68px
-    lineHeight: 1.1
-    letterSpacing: -1.224px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 50px
-  elementGap: 4px
-  sectionGap: 80px
-components:
-  hero-cta-button-group:
-    role: 
-  feature-cards-security-performance-simplicity:
-    role: 
-  testimonial-card-with-g2-rating:
-    role: 
-  primary-cta-button:
-    role: Key interaction for conversions
-  secondary-cta-button-outlined:
-    role: Alternative call to action, less prominent than primary
-  tertiary-cta-button-ghost:
-    role: Further action, or navigation, minimal visual weight
-  feature-tag-button:
-    role: Small, informative labels or interactive filters
-  hero-headline:
-    role: Primary page title
-  body-text:
-    role: Standard paragraph text
-  navigation-link:
-    role: Primary site navigation items
+name: "Twingate"
+description: "This system projects an image of controlled innovation, like a high-tech console in a dimly lit server room. Dark, near-black surfaces create a sophisticated backdrop for critical information, highlighted by precise, vibrant accents. The interplay between the whispering 'TT Hoves Light' headlines and the sharp, functional 'TT Hoves Medium' body copy establishes a tone of serious capability. Strategic splashes of saturated violet and vivid green draw attention to key interactive elements and provide a subtle, energetic flicker against the subdued palette."
+theme: "dark"
+industry: "saas"
+source_url: "https://twingate.com"
+refero_style_id: "0acef011-07da-4416-b874-ccdd675140f6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925893964-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925893964-thumb.jpg"
+extracted_at: "2026-04-11T16:45:21.409Z"
 ---
 
-## Overview
+# Twingate — Style Reference
 
-**North Star:** Midnight Terminal, Pulsing Neon. A dark, digital interface illuminated by precise, electric glows.
+> Midnight Terminal, Pulsing Neon. A dark, digital interface illuminated by precise, electric glows.
+
+**Theme:** dark
+
+**Industry:** saas
 
 This system projects an image of controlled innovation, like a high-tech console in a dimly lit server room. Dark, near-black surfaces create a sophisticated backdrop for critical information, highlighted by precise, vibrant accents. The interplay between the whispering 'TT Hoves Light' headlines and the sharp, functional 'TT Hoves Medium' body copy establishes a tone of serious capability. Strategic splashes of saturated violet and vivid green draw attention to key interactive elements and provide a subtle, energetic flicker against the subdued palette.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Carbon | #0e0f11 | `--color-carbon` | Primary background for pages and main content areas, providing a deep, consistent canvas for the UI. |
+| Basalt | #141617 | `--color-basalt` | Background for certain elevated components and sections, creating subtle depth against the Carbon base. |
+| Obsidian | #1d2023 | `--color-obsidian` | Background for secondary elements and interactive components, offering a slightly lighter dark tone. |
+| Platinum | #ffffff | `--color-platinum` | Primary text color for headings and key information against dark backgrounds, ensuring high contrast and immediate legibility. |
+| Graphite | #a1a1aa | `--color-graphite` | Secondary text color, subtle links, and supporting descriptive text, providing contrast without visual dominance. |
+| Ash | #cfcfd3 | `--color-ash` | Tertiary text and subtle distinctions, used for less prominent information or disabled states. |
+| Spectral Violet | #b6abff | `--color-spectral-violet` | Primary interactive accent color for CTA buttons, active states, and highlighted elements — adding an authoritative yet inviting feel. |
+| Electric Lime | #eef35f | `--color-electric-lime` | Secondary accent color for spotlighting headlines, badges, or specific product features, signaling innovation and freshness. |
+| System Teal | #00cbaa | `--color-system-teal` | Used for specific body text elements and borders, offering a cool, technical highlight. |
+| Deep Violet | #6350dd | `--color-deep-violet` | Background for certain decorative elements or internal blocks. |
+
+## Tokens — Typography
+
+### TT Hoves Light
+
+- **Token:** `--font-tt-hoves-light`
+- **Substitute:** Open Sans Light
+- **Weights:** 300, 400
+- **Sizes:** 22px, 24px, 48px, 54px, 55px, 62px, 68px
+- **Line heights:** 1.10, 1.20, 1.30, 1.50
+- **Letter spacing:** -0.018em at 68px, -0.016em at 62px, -0.010em at 54px/55px, -0.009em at 48px, -0.007em at 22px/24px
+- **Role:** Headlines and display text. The distinctive light weights at large sizes create an impression of quiet authority and modern elegance, contrasting with the often bolder choices of competitors. This 'whisper, don't shout' approach is a core brand identifier.
+
+### TT Hoves Medium
+
+- **Token:** `--font-tt-hoves-medium`
+- **Substitute:** Open Sans Medium
+- **Weights:** 400, 500
+- **Sizes:** 11px, 12px, 13px, 14px, 15px, 16px, 17px, 20px, 32px
+- **Line heights:** 1.04, 1.12, 1.13, 1.14, 1.20, 1.27, 1.29, 1.50
+- **Letter spacing:** -0.020em at 12px, -0.010em at 14px, 0.012em at 11, 0.023em at 13px
+- **Role:** Sub-headings, prominent body text, and key UI labels. Provides legibility and clear hierarchy due to its moderate weight, supporting the whisper-weight headlines without competing with them.
+
+### TT Hoves Regular
+
+- **Token:** `--font-tt-hoves-regular`
+- **Substitute:** Open Sans Regular
+- **Weights:** 400
+- **Sizes:** 11px, 12px, 14px, 15px, 16px, 17px
+- **Line heights:** 1.14, 1.20, 1.31, 1.50, 1.70
+- **Letter spacing:** -0.010em at 16px, 0.014em at 12px
+- **Role:** Standard body text, descriptive copy, and general UI elements. Its neutrality ensures readability for extended passages.
+
+### Basis Grotesque Mono Pro Medium
+
+- **Token:** `--font-basis-grotesque-mono-pro-medium`
+- **Substitute:** IBM Plex Mono Medium
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.50
+- **Role:** Used for code snippets, technical details, or unique data representations, leveraging a mono typeface for clarity and distinction.
+
+### Basis Grotesque Mono Pro Regular
+
+- **Token:** `--font-basis-grotesque-mono-pro-regular`
+- **Substitute:** IBM Plex Mono Regular
+- **Weights:** 400
+- **Sizes:** 13px, 21px
+- **Line heights:** 1.20, 1.60
+- **Role:** Complementary to the Medium weight mono font, used for inline code or smaller technical annotations.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.14 | — | `--text-caption` |
+| body | 16px | 1.7 | -0.16px | `--text-body` |
+| subheading | 22px | 1.3 | -0.154px | `--text-subheading` |
+| heading-sm | 32px | 1.27 | — | `--text-heading-sm` |
+| heading | 48px | 1.2 | -0.432px | `--text-heading` |
+| heading-lg | 54px | 1.1 | -0.54px | `--text-heading-lg` |
+| display | 68px | 1.1 | -1.224px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 20px |
+| cards | 12px |
+| buttons | 50px |
+| default | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset | `--shadow-xl` |
+| xl-2 | rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px inset | `--shadow-xl-2` |
+| xl-3 | rgb(58, 61, 64) 0px 0px 0px 0.5px | `--shadow-xl-3` |
+| xl-4 | rgb(48, 52, 56) 0px 0px 0px 0.5px | `--shadow-xl-4` |
+| xl-5 | rgba(255, 255, 255, 0.15) 0px 2.5px 0px -2px inset, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset | `--shadow-xl-5` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### Hero CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards — Security, Performance, Simplicity
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Testimonial Card with G2 Rating
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary CTA Button
+
+**Role:** Key interaction for conversions
+
+Background: Spectral Violet (#b6abff), Text: Platinum (#ffffff), Padding: 0px vertical, 14px horizontal. Border Radius: 50px. Subtle inset shadow rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px.
+
+### Secondary CTA Button (Outlined)
+
+**Role:** Alternative call to action, less prominent than primary
+
+Background: Carbon Light (rgba(245, 245, 255, 0.1)), Text: Platinum (#ffffff), Border color: Spectral Violet (#b6abff), Border Radius: 50px, Padding: 0px vertical, 14px horizontal.
+
+### Tertiary CTA Button (Ghost)
+
+**Role:** Further action, or navigation, minimal visual weight
+
+Background: Transparent, Text: Platinum (#ffffff), Border color: Transparent, Border Radius: 50px, Padding: 0px vertical, 14px horizontal. Text has an underline effect that appears on hover/active state (implied by `color=rgb(0,0,238)` in data).
+
+### Feature Tag Button
+
+**Role:** Small, informative labels or interactive filters
+
+Background: Obsidian (#1d2023), Text: Platinum (#ffffff). Border Radius: 20px, Padding: 4px vertical, 14px horizontal.
+
+### Hero Headline
+
+**Role:** Primary page title
+
+Font: TT Hoves Light, Weight: 300, Size: 68px, Line-height: 1.1, Letter-spacing: -0.018em. Color: Electric Lime (#eef35f) or Platinum (#ffffff) for emphasis.
+
+### Body Text
+
+**Role:** Standard paragraph text
+
+Font: TT Hoves Regular, Weight: 400, Size: 16px, Line-height: 1.7. Color: Graphite (#a1a1aa).
+
+### Navigation Link
+
+**Role:** Primary site navigation items
+
+Font: TT Hoves Regular, Weight: 400, Size: 14px, Line-height: 1.5. Color: Platinum (#ffffff). Hover/active state involves a subtle text color change or underline.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize the TT Hoves Light font (weights 300, 400) for all major headlines (48px and above) to maintain the signature 'whisper-weight' aesthetic.
 - Use a color palette anchored in Carbon (#0e0f11) for backgrounds and Platinum (#ffffff) for primary text to ensure consistent dark-mode visuals.
@@ -91,7 +227,7 @@ This system projects an image of controlled innovation, like a high-tech console
 - Utilize a baseline of 4px for all spacing units, scaling up in multiples to ensure a comfortable but structured density.
 - Implement the subtle inset shadow rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px for buttons to provide depth without heavy drop shadows.
 
-### Don'ts
+### Don't
 
 - Avoid using heavy font weights (e.g., 600+) for headlines; the system's identity relies on the lightness of TT Hoves Light.
 - Do not introduce new primary accent colors outside of Spectral Violet (#b6abff) and Electric Lime (#eef35f) to prevent diluting brand recognition.
@@ -101,10 +237,178 @@ This system projects an image of controlled innovation, like a high-tech console
 - Do not use box-shadows that create strong, external elevation; prefer subtle inset shadows or shifts in background color for layering.
 - Do not mix 'sans-serif' fonts with 'TT Hoves' for primary content; stick to the specified font system to maintain visual coherence.
 
-### Layout
+## Elevation
+
+- **Card/Container Border:** `rgb(58, 61, 64) 0px 0px 0px 0.5px`
+- **Button Inset Shadow:** `rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px inset`
+
+## Imagery
+
+The visual language focuses on abstract, geometric diagrams and stylized product screenshots, rather than photography. These graphics often feature a monochrome (Carbon/Platinum) base with glowing highlights in System Teal (#00cbaa) or Spectral Violet (#b6abff), emphasizing connectivity, security, and data flow. Icons are outlined, with a moderate stroke weight, and monochromatic or tinted to match the accent colors. Full-bleed backgrounds carry abstract patterns subtly. Imagery functions primarily to explain complex concepts and to visually reinforce the brand's technical and secure identity, rather than decorative purposes. There's a minimal use of real-world imagery, prioritizing UI and conceptual diagrams.
+
+## Layout
 
 The layout is primarily centered and contained, with a clear max-width for content blocks, creating a structured and information-focused presentation. The hero section is full-bleed, featuring a dark background with a prominent, left-aligned headline and a stylized product graphic on the right. Content sections generally alternate between text-heavy and visual-heavy arrangements, often with two-column split layouts (text left, image right, or vice-versa). Vertical spacing between sections is generous and consistent, creating clear breaks. A sticky top navigation bar provides constant access to primary links and CTAs. Feature sections often employ multi-column grids (e.g., 3-column cards for benefits or testimonials) within the contained width.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on abstract, geometric diagrams and stylized product screenshots, rather than photography. These graphics often feature a monochrome (Carbon/Platinum) base with glowing highlights in System Teal (#00cbaa) or Spectral Violet (#b6abff), emphasizing connectivity, security, and data flow. Icons are outlined, with a moderate stroke weight, and monochromatic or tinted to match the accent colors. Full-bleed backgrounds carry abstract patterns subtly. Imagery functions primarily to explain complex concepts and to visually reinforce the brand's technical and secure identity, rather than decorative purposes. There's a minimal use of real-world imagery, prioritizing UI and conceptual diagrams.
+- **Linear** — Uses dark surfaces with vibrant single-color accents for interactivity and status, coupled with light, airy typography for headlines.
+- **Vercel** — Employs a sophisticated dark theme with subtle elevation via background shifts, geometric graphics, and a functional, modern sans-serif font system.
+- **Netlify** — Features a dark UI with clear information hierarchy, high-contrast text, and strategic use of bright accent colors to guide users.
+- **Auth0** — Combines a dark background, sparse layout, and a focus on clean typography with technical diagrams to convey complex security concepts.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-carbon: #0e0f11;
+  --color-basalt: #141617;
+  --color-obsidian: #1d2023;
+  --color-platinum: #ffffff;
+  --color-graphite: #a1a1aa;
+  --color-ash: #cfcfd3;
+  --color-spectral-violet: #b6abff;
+  --color-electric-lime: #eef35f;
+  --color-system-teal: #00cbaa;
+  --color-deep-violet: #6350dd;
+  --font-tt-hoves-light: 'TT Hoves Light', Open Sans Light;
+  --font-tt-hoves-medium: 'TT Hoves Medium', Open Sans Medium;
+  --font-tt-hoves-regular: 'TT Hoves Regular', Open Sans Regular;
+  --font-basis-grotesque-mono-pro-medium: 'Basis Grotesque Mono Pro Medium', IBM Plex Mono Medium;
+  --font-basis-grotesque-mono-pro-regular: 'Basis Grotesque Mono Pro Regular', IBM Plex Mono Regular;
+  --text-caption: 11px;
+  --leading-caption: 1.14;
+  --text-body: 16px;
+  --leading-body: 1.7;
+  --tracking-body: -0.16px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.154px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 1.27;
+  --text-heading: 48px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.432px;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.54px;
+  --text-display: 68px;
+  --leading-display: 1.1;
+  --tracking-display: -1.224px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --spacing-180: 180px;
+  --spacing-200: 200px;
+  --radius-tags: 20px;
+  --radius-cards: 12px;
+  --radius-buttons: 50px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset;
+  --shadow-xl-2: rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px inset;
+  --shadow-xl-3: rgb(58, 61, 64) 0px 0px 0px 0.5px;
+  --shadow-xl-4: rgb(48, 52, 56) 0px 0px 0px 0.5px;
+  --shadow-xl-5: rgba(255, 255, 255, 0.15) 0px 2.5px 0px -2px inset, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-carbon: #0e0f11;
+  --color-basalt: #141617;
+  --color-obsidian: #1d2023;
+  --color-platinum: #ffffff;
+  --color-graphite: #a1a1aa;
+  --color-ash: #cfcfd3;
+  --color-spectral-violet: #b6abff;
+  --color-electric-lime: #eef35f;
+  --color-system-teal: #00cbaa;
+  --color-deep-violet: #6350dd;
+  --font-tt-hoves-light: 'TT Hoves Light', Open Sans Light;
+  --font-tt-hoves-medium: 'TT Hoves Medium', Open Sans Medium;
+  --font-tt-hoves-regular: 'TT Hoves Regular', Open Sans Regular;
+  --font-basis-grotesque-mono-pro-medium: 'Basis Grotesque Mono Pro Medium', IBM Plex Mono Medium;
+  --font-basis-grotesque-mono-pro-regular: 'Basis Grotesque Mono Pro Regular', IBM Plex Mono Regular;
+  --text-caption: 11px;
+  --leading-caption: 1.14;
+  --text-body: 16px;
+  --leading-body: 1.7;
+  --tracking-body: -0.16px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.154px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 1.27;
+  --text-heading: 48px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.432px;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.54px;
+  --text-display: 68px;
+  --leading-display: 1.1;
+  --tracking-display: -1.224px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-120: 120px;
+  --spacing-160: 160px;
+  --spacing-180: 180px;
+  --spacing-200: 200px;
+  --radius-tags: 20px;
+  --radius-cards: 12px;
+  --radius-buttons: 50px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(255, 255, 255, 0.1) 0px 0px 0px 0.5px inset;
+  --shadow-xl-2: rgba(255, 255, 255, 0.1) 0px 2.5px 0px -2px inset;
+  --shadow-xl-3: rgb(58, 61, 64) 0px 0px 0px 0.5px;
+  --shadow-xl-4: rgb(48, 52, 56) 0px 0px 0px 0.5px;
+  --shadow-xl-5: rgba(255, 255, 255, 0.15) 0px 2.5px 0px -2px inset, rgba(255, 255, 255, 0.15) 0px 0px 0px 0.5px inset;
+}
+```
