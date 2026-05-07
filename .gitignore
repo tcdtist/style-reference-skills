@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-/mcp-server
 /.pnp
 .pnp.*
 .yarn/*

@@ -9,6 +9,20 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Track API calls with Vercel Analytics (only in production)
+app.use(async (req, res, next) => {
+  if (process.env.VERCEL_ENV === "production") {
+    try {
+      const { track } = await import("@vercel/analytics/server");
+      await track("pageview", { url: req.url });
+    } catch (err) {
+      // Silently fail to avoid breaking API
+      console.error("Analytics tracking failed:", err);
+    }
+  }
+  next();
+});
+
 function resolveExistingPath(candidates: string[]): string {
   for (const candidate of candidates) {
     if (fs.existsSync(candidate)) {
