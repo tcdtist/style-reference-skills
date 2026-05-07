@@ -1,77 +1,166 @@
 ---
 version: alpha
-name: Udemy
-description: Udemy's design system portrays a confident, organized learning platform. It uses a predominantly light theme with stark, dark gray typography for high contrast, ensuring readability for educational content. The visual signature comes from the judicious use of a vibrant violet accent for interaction and brand elements, creating moments of activation against the otherwise neutral canvas. Components are structured and purposeful, featuring soft-cornered cards, pill-shaped buttons, and a clear visual hierarchy that guides the user through course content.
-colors:
-  canvas-background: "#e9eaf2"
-  surface-white: "#ffffff"
-  deep-graphite: "#2a2b3f"
-  dark-overlay: "#202230"
-  dusty-blue: "#b7b9cd"
-  medium-gray: "#9194ac"
-  muted-indigo: "#3d4055"
-  steel-gray: "#595c73"
-  subtle-dark-background: "#33364a"
-  regal-violet: "#6d28d2"
-  success-orange: "#c4710d"
-  subtle-violet-link: "#c0c4fc"
-  skeleton-shine: "#d1d2e0"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.6
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.6
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-spacing:
-  cardRadius: 8px
-  buttonRadius: 1000px
-  elementGap: 16px
-  sectionGap: 24px
-components:
-  solid-button:
-    role: Primary action button, often for categories or filters.
-  pill-button:
-    role: Filter or tag button, indicating selectable options without high emphasis.
-  ghost-button-text-primary:
-    role: Secondary action or link-style button, often within cards or content areas.
-  ghost-button-text-accent:
-    role: Subtle interactive element, typically used for navigation or in-context links.
-  quote-card:
-    role: Testimonial or review card.
-  topic-card-neutral-background:
-    role: Category or topic display card in a light section.
-  topic-card-dark-background:
-    role: Category or topic display card in a dark section.
-  search-input:
-    role: Primary search field.
+name: "Udemy"
+description: "Udemy's design system portrays a confident, organized learning platform. It uses a predominantly light theme with stark, dark gray typography for high contrast, ensuring readability for educational content. The visual signature comes from the judicious use of a vibrant violet accent for interaction and brand elements, creating moments of activation against the otherwise neutral canvas. Components are structured and purposeful, featuring soft-cornered cards, pill-shaped buttons, and a clear visual hierarchy that guides the user through course content."
+theme: "light"
+industry: "other"
+source_url: "https://www.udemy.com"
+refero_style_id: "c03afcbd-96ed-4b7f-8d0a-277fc0042ba7"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510765286-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777510765286-thumb.jpg"
+extracted_at: "2026-04-30T00:59:56.332Z"
 ---
 
-## Overview
+# Udemy — Style Reference
 
-**North Star:** Ordered campus noticeboard.
+> Ordered campus noticeboard.
+
+**Theme:** light
+
+**Industry:** other
 
 Udemy's design system portrays a confident, organized learning platform. It uses a predominantly light theme with stark, dark gray typography for high contrast, ensuring readability for educational content. The visual signature comes from the judicious use of a vibrant violet accent for interaction and brand elements, creating moments of activation against the otherwise neutral canvas. Components are structured and purposeful, featuring soft-cornered cards, pill-shaped buttons, and a clear visual hierarchy that guides the user through course content.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Background | #e9eaf2 | `--color-canvas-background` | Page backgrounds and secondary surface fills, providing a subtle off-white base |
+| Surface White | #ffffff | `--color-surface-white` | Primary card backgrounds, prominent content blocks, and interactive element fills |
+| Deep Graphite | #2a2b3f | `--color-deep-graphite` | Primary text, headings, icons, and strong borders – the core dark color for content |
+| Dark Overlay | #202230 | `--color-dark-overlay` | Background for elevated content sections, often paired with light text for contrast |
+| Dusty Blue | #b7b9cd | `--color-dusty-blue` | Muted text, subheadings, and secondary icons, providing a softer alternative to Deep Graphite |
+| Medium Gray | #9194ac | `--color-medium-gray` | Hairline borders, dividers, and ghost element outlines |
+| Muted Indigo | #3d4055 | `--color-muted-indigo` | Background for subtle elevated cards or content groupings |
+| Steel Gray | #595c73 | `--color-steel-gray` | Descriptive text and card body text |
+| Subtle Dark Background | #33364a | `--color-subtle-dark-background` | Background for large content sections, creating visual segmentation |
+| Regal Violet | #6d28d2 | `--color-regal-violet` | Interactive elements, primary links, active states, and decorative brand accents. Creates a sense of focus and action |
+| Success Orange | #c4710d | `--color-success-orange` | Orange accent for outlined action borders, linked labels, and lightweight interactive emphasis. Use as a supporting accent, not as a status color |
+| Subtle Violet Link | #c0c4fc | `--color-subtle-violet-link` | Light mode links or secondary interactive text, providing a less assertive interactive cue |
+| Skeleton Shine | #d1d2e0 | `--color-skeleton-shine` | Border color for placeholder loading states |
+
+## Tokens — Typography
+
+### Udemy Sans
+
+- **Token:** `--font-udemy-sans`
+- **Substitute:** system-ui
+- **Weights:** 300, 400, 500, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 24px, 32px
+- **Line heights:** 1.10, 1.20, 1.40, 1.50, 1.60
+- **Role:** The primary typeface for all text content, from headings to body text. Its subtle variations in weight and size provide clear hierarchy while maintaining a consistent brand voice. Weights 300 (light) and 400 (regular) are commonly used for body copy and UI elements, while 500 (medium) and 700 (bold) are reserved for headings and emphasized text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.6 | — | `--text-caption` |
+| body-sm | 14px | 1.6 | — | `--text-body-sm` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.5 | — | `--text-subheading` |
+| heading | 24px | 1.4 | — | `--text-heading` |
+| display | 32px | 1.2 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-169 | 169px | `--spacing-169` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 16px |
+| cards | 8px |
+| inputs | 4px |
+| buttons | 1000px |
+| general | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | oklch(0.6295 0.0204 306.5 / 0.08) 0px 2px 8px 0px, oklch(0.6295 0.0204 306.5 / 0.12) 0px 4px 16px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Solid Button
+
+**Role:** Primary action button, often for categories or filters.
+
+Background: Canvas Background (#e9eaf2), Text/Border: Regal Violet (#6d28d2). Rounded corners at 16px. Padding 16px all sides. Emphasizes active selection or categorisation.
+
+### Pill Button
+
+**Role:** Filter or tag button, indicating selectable options without high emphasis.
+
+Background: Surface White (#ffffff), Text/Border: Deep Graphite (#2a2b3f). Fully rounded corners at 1000px radius. Minimal vertical padding and 10px horizontal padding. Promotes a compact, selectable field.
+
+### Ghost Button (Text Primary)
+
+**Role:** Secondary action or link-style button, often within cards or content areas.
+
+Background: transparent, Text/Border: Success Orange (#c4710d). Rounded corners at 8px. Minimal padding at 12px horizontal. Used for less prominent actions, drawing attention via color accent.
+
+### Ghost Button (Text Accent)
+
+**Role:** Subtle interactive element, typically used for navigation or in-context links.
+
+Background: transparent, Text/Border: Regal Violet (#6d28d2). Rounded corners at 8px. Minimal padding at 10px horizontal. Visually lightweight, emphasizing navigation through text color.
+
+### Quote Card
+
+**Role:** Testimonial or review card.
+
+Background: Surface White (#ffffff). Rounded corners at 8px. Shadow: none. Padding: 16px all sides. Creates a clean, contained space for text-heavy content.
+
+### Topic Card (Neutral Background)
+
+**Role:** Category or topic display card in a light section.
+
+Background: Canvas Background (#e9eaf2). Rounded corners at 8px. Shadow: none. No padding by default. Provides a subtle visual grouping without strong borders.
+
+### Topic Card (Dark Background)
+
+**Role:** Category or topic display card in a dark section.
+
+Background: Muted Indigo (#3d4055). Rounded corners at 16px. Shadow: none. No padding by default. Used for contrast within darker sections, creating distinct content blocks.
+
+### Search Input
+
+**Role:** Primary search field.
+
+Background: transparent, Text/Border: Deep Graphite (#2a2b3f). Rounded corners at 4px. Placeholder text in Deep Graphite. Padding 4px left. Designed for clear, functional input.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Deep Graphite (#2a2b3f) for primary text and main headings to ensure high contrast and readability on light backgrounds.
 - Apply Regal Violet (#6d28d2) for all interactive link text and primary UI element accents, always maintaining a consistent visual cue for action.
@@ -81,7 +170,7 @@ Udemy's design system portrays a confident, organized learning platform. It uses
 - Utilize a 16px element gap for consistent vertical rhythm between distinct UI components such as cards and text blocks.
 - Apply elevation shadows of oklch(0.6295 0.0204 306.5 / 0.08) 0px 2px 8px 0px, oklch(0.6295 0.0204 306.5 / 0.12) 0px 4px 16px 0px only for truly elevated or interactive elements, like focused buttons.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for large background areas; maintain the integrity of the neutral canvas.
 - Do not deviate from the established typography hierarchy; avoid using 'Udemy Sans' at unapproved sizes or weights for headings or body copy.
@@ -91,10 +180,150 @@ Udemy's design system portrays a confident, organized learning platform. It uses
 - Do not create new interaction colors; Regal Violet is the primary interactive accent, and Success Orange is reserved for semantic feedback.
 - Avoid decorative imagery that competes with the UI; visuals should support the content without overwhelming it.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Background | #e9eaf2 | Base page background |
+| 1 | Surface White | #ffffff | Primary content areas, cards |
+| 2 | Muted Indigo | #3d4055 | Elevated cards or distinct content groupings within dark sections |
+| 3 | Dark Overlay | #202230 | Sections with strong visual separation, often with reversed text color |
+
+## Elevation
+
+- **Button Focus/Hover:** `oklch(0.6295 0.0204 306.5 / 0.08) 0px 2px 8px 0px, oklch(0.6295 0.0204 306.5 / 0.12) 0px 4px 16px 0px`
+
+## Imagery
+
+The visual language on Udemy combines realistic 3D rendered illustrations with clean product-focused imagery. Illustrations are geometric and dimensional, often depicting abstract concepts related to learning and technology in energetic compositions with brand colors. Product imagery consists of tight crops of objects or devices, presented without lifestyle context and sometimes featuring duotone effects. Icons are simple, outlined, and monochromatic, primarily in Deep Graphite, serving as functional UI elements rather than decoration. The overall density is balanced, with imagery often confined to hero sections or distinct content blocks, supporting the text-heavy educational nature of the site.
+
+## Layout
 
 The page layout is primarily section-based, featuring a max-width contained grid for most content, though the exact max-width is not strictly fixed but generally spacious. The hero section is often a full-bleed dark block with a prominent, centered headline and descriptive text. Subsequent sections alternate between Canvas Background (#e9eaf2) and Surface White (#ffffff) or occasionally Dark Overlay (#202230). Content is typically arranged in 2 or 3-column card grids, or alternating text-left / image-right patterns. Vertical spacing between sections is generous, around 24px, creating a comfortable rhythm. Navigation is handled by a sticky top bar with a search input.
 
-### Imagery
+## Similar Brands
 
-The visual language on Udemy combines realistic 3D rendered illustrations with clean product-focused imagery. Illustrations are geometric and dimensional, often depicting abstract concepts related to learning and technology in energetic compositions with brand colors. Product imagery consists of tight crops of objects or devices, presented without lifestyle context and sometimes featuring duotone effects. Icons are simple, outlined, and monochromatic, primarily in Deep Graphite, serving as functional UI elements rather than decoration. The overall density is balanced, with imagery often confined to hero sections or distinct content blocks, supporting the text-heavy educational nature of the site.
+- **Coursera** — Prominent use of a lighter, clean UI with clear content hierarchy and distinct calls to action for learning platforms.
+- **Skillshare** — Structured content layout with rounded cards and a balanced use of white space to present educational content.
+- **MasterClass** — Emphasis on strong typography with dark text on light backgrounds for textual learning, combined with curated imagery for course representation.
+- **Pluralsight** — Clear separation of content blocks with varying background shades and a focus on straightforward navigation for technical training.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-background: #e9eaf2;
+  --color-surface-white: #ffffff;
+  --color-deep-graphite: #2a2b3f;
+  --color-dark-overlay: #202230;
+  --color-dusty-blue: #b7b9cd;
+  --color-medium-gray: #9194ac;
+  --color-muted-indigo: #3d4055;
+  --color-steel-gray: #595c73;
+  --color-subtle-dark-background: #33364a;
+  --color-regal-violet: #6d28d2;
+  --color-success-orange: #c4710d;
+  --color-subtle-violet-link: #c0c4fc;
+  --color-skeleton-shine: #d1d2e0;
+  --font-udemy-sans: 'Udemy Sans', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.6;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.6;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading: 24px;
+  --leading-heading: 1.4;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-64: 64px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-169: 169px;
+  --radius-tags: 16px;
+  --radius-cards: 8px;
+  --radius-inputs: 4px;
+  --radius-buttons: 1000px;
+  --radius-general: 8px;
+  --shadow-xl: oklch(0.6295 0.0204 306.5 / 0.08) 0px 2px 8px 0px, oklch(0.6295 0.0204 306.5 / 0.12) 0px 4px 16px 0px;
+  --surface-canvas-background: #e9eaf2;
+  --surface-surface-white: #ffffff;
+  --surface-muted-indigo: #3d4055;
+  --surface-dark-overlay: #202230;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-background: #e9eaf2;
+  --color-surface-white: #ffffff;
+  --color-deep-graphite: #2a2b3f;
+  --color-dark-overlay: #202230;
+  --color-dusty-blue: #b7b9cd;
+  --color-medium-gray: #9194ac;
+  --color-muted-indigo: #3d4055;
+  --color-steel-gray: #595c73;
+  --color-subtle-dark-background: #33364a;
+  --color-regal-violet: #6d28d2;
+  --color-success-orange: #c4710d;
+  --color-subtle-violet-link: #c0c4fc;
+  --color-skeleton-shine: #d1d2e0;
+  --font-udemy-sans: 'Udemy Sans', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.6;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.6;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --text-heading: 24px;
+  --leading-heading: 1.4;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-64: 64px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-169: 169px;
+  --radius-tags: 16px;
+  --radius-cards: 8px;
+  --radius-inputs: 4px;
+  --radius-buttons: 1000px;
+  --radius-general: 8px;
+  --shadow-xl: oklch(0.6295 0.0204 306.5 / 0.08) 0px 2px 8px 0px, oklch(0.6295 0.0204 306.5 / 0.12) 0px 4px 16px 0px;
+  --surface-canvas-background: #e9eaf2;
+  --surface-surface-white: #ffffff;
+  --surface-muted-indigo: #3d4055;
+  --surface-dark-overlay: #202230;
+}
+```

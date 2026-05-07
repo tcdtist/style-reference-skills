@@ -1,81 +1,166 @@
 ---
 version: alpha
-name: until
-description: Until presents a calm, sophisticated aesthetic, combining a nearly monochromatic UI with thoughtful typographic play and tactile surface treatments. The primary canvas is a warm, off-white, contrasted with deep charcoal text and accents. Subtle shadows and rounded corner cards provide gentle dimensionality, making the interface feel grounded and inviting. A single olive green brand accent adds a touch of organic warmth, used sparingly to highlight key information and interactive elements.
-colors:
-  parchment: "#f7f3ec"
-  charcoal: "#121212"
-  midnight-ink: "#000000"
-  snow: "#ffffff"
-  soft-stone: "#bebebe"
-  olive-grove: "#6c853b"
-  sunset-fade: "#c6350f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.05px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.009px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0.01px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1
-    letterSpacing: -0.02px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 0.95
-    letterSpacing: -0.021px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 39px
-    lineHeight: 0.95
-    letterSpacing: -0.024px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 0.9
-    letterSpacing: -0.025px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 69px
-    lineHeight: 0.9
-    letterSpacing: -0.037px
-spacing:
-  cardRadius: 32px
-  buttonRadius: 64px
-  elementGap: 8px
-  sectionGap: 96px
-components:
-  ghost-header-button:
-    role: Navigation button in the header, visually transparent until hover.
-  primary-filled-button:
-    role: Key action buttons, such as 'Join Us' or 'Join the team'.
-  secondary-filled-button:
-    role: Less prominent actions, often alongside a primary button.
-  information-card:
-    role: Content containers for text and images, often used in grids.
-  header-navigation:
-    role: Top-level navigation element for page sections.
+name: "until"
+description: "Until presents a calm, sophisticated aesthetic, combining a nearly monochromatic UI with thoughtful typographic play and tactile surface treatments. The primary canvas is a warm, off-white, contrasted with deep charcoal text and accents. Subtle shadows and rounded corner cards provide gentle dimensionality, making the interface feel grounded and inviting. A single olive green brand accent adds a touch of organic warmth, used sparingly to highlight key information and interactive elements."
+theme: "light"
+industry: "other"
+source_url: "https://www.untillabs.com"
+refero_style_id: "ded6d7c4-2801-45f4-8b8a-089f1b37842d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508759898-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508759898-thumb.jpg"
+extracted_at: "2026-04-30T00:26:24.084Z"
 ---
 
-## Overview
+# until — Style Reference
 
-**North Star:** Warm parchment, dark charcoal type
+> Warm parchment, dark charcoal type
+
+**Theme:** light
+
+**Industry:** other
 
 Until presents a calm, sophisticated aesthetic, combining a nearly monochromatic UI with thoughtful typographic play and tactile surface treatments. The primary canvas is a warm, off-white, contrasted with deep charcoal text and accents. Subtle shadows and rounded corner cards provide gentle dimensionality, making the interface feel grounded and inviting. A single olive green brand accent adds a touch of organic warmth, used sparingly to highlight key information and interactive elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment | #f7f3ec | `--color-parchment` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Charcoal | #121212 | `--color-charcoal` | Primary text, borders, dark card backgrounds |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Footer text, strong accents for outlines, primary text on white |
+| Snow | #ffffff | `--color-snow` | Button backgrounds, elevated surfaces |
+| Soft Stone | #bebebe | `--color-soft-stone` | Muted helper text, delicate dividers, inactive states |
+| Olive Grove | #6c853b | `--color-olive-grove` | Brand accent, highlighted text, subtle background fills for emphasis |
+| Sunset Fade | #c6350f | `--color-sunset-fade` | Decorative hero background gradient |
+
+## Tokens — Typography
+
+### neueHaasText
+
+- **Token:** `--font-neuehaastext`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.00, 1.43, 1.50
+- **Letter spacing:** -0.009, 0.01
+- **Role:** Body text, navigation, buttons, captions. Behaves as a highly legible Swiss grotesque, grounding the system with clarity.
+
+### neueHaasDisplay
+
+- **Token:** `--font-neuehaasdisplay`
+- **Substitute:** Graphik
+- **Weights:** 400, 500
+- **Sizes:** 16px, 24px, 32px, 39px, 56px, 69px
+- **Line heights:** 0.90, 0.95, 1.00, 1.10, 1.50
+- **Letter spacing:** -0.01, -0.02, -0.021, -0.024, -0.025, -0.037
+- **Role:** Headlines and prominent text. Noticeably tight letter-spacing at larger sizes (-0.037em at 69px) creates a sophisticated, almost artistic visual density, preventing sprawl.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** JetBrains Mono
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px
+- **Line heights:** 1.00, 1.40, 1.50
+- **Letter spacing:** -0.0250em, 0.0500em
+- **Role:** Small functional text, code snippets, metadata. Its monospaced nature offers a technical counterpoint to the sans-serifs, particularly with its slightly positive letter-spacing (`0.05em` at 12px) to enhance legibility at small sizes.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.05px | `--text-caption` |
+| body-sm | 14px | 1.43 | -0.009px | `--text-body-sm` |
+| body | 16px | 1.5 | 0.01px | `--text-body` |
+| subheading | 24px | 1 | -0.02px | `--text-subheading` |
+| heading-sm | 32px | 0.95 | -0.021px | `--text-heading-sm` |
+| heading | 39px | 0.95 | -0.024px | `--text-heading` |
+| heading-lg | 56px | 0.9 | -0.025px | `--text-heading-lg` |
+| display | 69px | 0.9 | -0.037px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-71 | 71px | `--spacing-71` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-138 | 138px | `--spacing-138` |
+| spacing-257 | 257px | `--spacing-257` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 50px |
+| cards | 32px |
+| input | 6px |
+| images | 24px |
+| buttons | 64px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.043) 0px 7.5px 30px 0px, rgba(255, 255, 255, 0.3) 0px 1px 1px 0px inset | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1283px |
+| sectionGap | 96px |
+| cardPadding | 32px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Header Button
+
+**Role:** Navigation button in the header, visually transparent until hover.
+
+Background: rgba(0, 0, 0, 0) (transparent), text color: #f7f3ec (Parchment), border: none. On hover, a subtle interaction would likely appear, though not explicitly defined here.
+
+### Primary Filled Button
+
+**Role:** Key action buttons, such as 'Join Us' or 'Join the team'.
+
+Background: #121212 (Charcoal), text color: #ffffff (Snow), border-radius: 64px. Padding is implied by content, but the radius suggests a pill-like structure for all buttons.
+
+### Secondary Filled Button
+
+**Role:** Less prominent actions, often alongside a primary button.
+
+Background: #ffffff (Snow), text color: #121212 (Charcoal), border-radius: 64px.
+
+### Information Card
+
+**Role:** Content containers for text and images, often used in grids.
+
+Background: #f7f3ec (Parchment), border-radius: 32px. Features a subtle, sophisticated inner and outer shadow: `rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px`.
+
+### Header Navigation
+
+**Role:** Top-level navigation element for page sections.
+
+Ghostly, semi-transparent navigation bar with `backdrop-filter: blur(25.5px) brightness(1.04) contrast(1.075)`. Text is #f7f3ec (Parchment) against the hero image, switching to #121212 (Charcoal) or #f7f3ec depending on section background.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Neue Haas Display for all headings and large text, ensuring letter-spacing is applied for aesthetic cohesion.
 - Use Parchment (#f7f3ec) as the default background color for main content sections and Snow (#ffffff) for card backgrounds to establish clear visual hierarchy.
@@ -85,7 +170,7 @@ Until presents a calm, sophisticated aesthetic, combining a nearly monochromatic
 - Apply `border-radius: 32px` with the subtle shadow `rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px` for all cards to provide gentle depth.
 - Maintain a base unit of 8px for spacing, with a consistent `96px` section gap to create clear vertical rhythm.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated or vivid colors that are not Olive Grove (#6c853b), as the system relies on a near-monochromatic palette.
 - Avoid sharp corners; all functional UI elements should have a defined border-radius, typically 24px, 32px, or 64px.
@@ -94,10 +179,161 @@ Until presents a calm, sophisticated aesthetic, combining a nearly monochromatic
 - Avoid breaking component padding suggestions; maintain a `32px` padding around card content.
 - Do not use large blocks of bright, solid color for backgrounds; favor the neutral Parchment or Snow, or image backgrounds with subtle filtering.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Parchment | #f7f3ec | Base page background, light sections |
+| 2 | Snow | #ffffff | Elevated card backgrounds, interactive elements |
+
+## Elevation
+
+- **Information Card:** `rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px`
+- **Image with elevation:** `rgba(0, 0, 0, 0.043) 0px 7.5px 30px 0px, rgba(255, 255, 255, 0.3) 0px 1px 1px 0px inset`
+
+## Imagery
+
+The site uses high-quality, realistic photography as its primary imagery. These images are often full-bleed or large backgrounds, at times processed with a subtle painterly or grainy filter, suggesting a blend of scientific precision and artistic interpretation. Product photography, when present, focuses on lab environments and people interacting with technology. Iconography is minimal and functional, typically filled and monochromatic charcoal, integrated seamlessly into the text flow. Imagery primarily serves to set an atmosphere and provide context, rather than being purely decorative.
+
+## Layout
 
 The page primarily uses a max-width contained layout of 1283px, centered within the viewport. The hero section is full-bleed, featuring a large background image with centered, large-scale text and a semi-transparent, blur-effect sticky header. Content sections follow a consistent vertical rhythm with 96px section gaps, often employing a dual-column layout alternating text and visuals, or a grid of cards (likely 4-columns based on screenshots). The density is balanced, with ample whitespace providing breathing room around content blocks.
 
-### Imagery
+## Similar Brands
 
-The site uses high-quality, realistic photography as its primary imagery. These images are often full-bleed or large backgrounds, at times processed with a subtle painterly or grainy filter, suggesting a blend of scientific precision and artistic interpretation. Product photography, when present, focuses on lab environments and people interacting with technology. Iconography is minimal and functional, typically filled and monochromatic charcoal, integrated seamlessly into the text flow. Imagery primarily serves to set an atmosphere and provide context, rather than being purely decorative.
+- **Axiom Space** — Scientific theme, clean sans-serif typography, and a subdued color palette with minimal accentuation.
+- **Neuralink** — High-tech/scientific product focus, emphasis on refined typography, and a calm, deliberate visual presence.
+- **Eight Sleep** — Focus on cutting-edge technology, sophisticated and balanced layouts, and a neutral color scheme with a subtle accent color.
+- **Perception Kayaks** — Emphasis on natural elements (green accent, image treatment), modern aesthetic, and uncluttered presentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment: #f7f3ec;
+  --color-charcoal: #121212;
+  --color-midnight-ink: #000000;
+  --color-snow: #ffffff;
+  --color-soft-stone: #bebebe;
+  --color-olive-grove: #6c853b;
+  --color-sunset-fade: #c6350f;
+  --font-neuehaastext: 'neueHaasText', Inter;
+  --font-neuehaasdisplay: 'neueHaasDisplay', Graphik;
+  --font-geist-mono: 'Geist Mono', JetBrains Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.05px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.009px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0.01px;
+  --text-subheading: 24px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 0.95;
+  --tracking-heading-sm: -0.021px;
+  --text-heading: 39px;
+  --leading-heading: 0.95;
+  --tracking-heading: -0.024px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 69px;
+  --leading-display: 0.9;
+  --tracking-display: -0.037px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-71: 71px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-138: 138px;
+  --spacing-257: 257px;
+  --radius-pill: 50px;
+  --radius-cards: 32px;
+  --radius-input: 6px;
+  --radius-images: 24px;
+  --radius-buttons: 64px;
+  --shadow-xl: rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.043) 0px 7.5px 30px 0px, rgba(255, 255, 255, 0.3) 0px 1px 1px 0px inset;
+  --surface-parchment: #f7f3ec;
+  --surface-snow: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment: #f7f3ec;
+  --color-charcoal: #121212;
+  --color-midnight-ink: #000000;
+  --color-snow: #ffffff;
+  --color-soft-stone: #bebebe;
+  --color-olive-grove: #6c853b;
+  --color-sunset-fade: #c6350f;
+  --font-neuehaastext: 'neueHaasText', Inter;
+  --font-neuehaasdisplay: 'neueHaasDisplay', Graphik;
+  --font-geist-mono: 'Geist Mono', JetBrains Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.05px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.009px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0.01px;
+  --text-subheading: 24px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 32px;
+  --leading-heading-sm: 0.95;
+  --tracking-heading-sm: -0.021px;
+  --text-heading: 39px;
+  --leading-heading: 0.95;
+  --tracking-heading: -0.024px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 69px;
+  --leading-display: 0.9;
+  --tracking-display: -0.037px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-71: 71px;
+  --spacing-96: 96px;
+  --spacing-128: 128px;
+  --spacing-138: 138px;
+  --spacing-257: 257px;
+  --radius-pill: 50px;
+  --radius-cards: 32px;
+  --radius-input: 6px;
+  --radius-images: 24px;
+  --radius-buttons: 64px;
+  --shadow-xl: rgba(255, 255, 255, 0.1) 0px -1px 2px 0px inset, rgba(255, 255, 255, 0.1) 0px 1px 2px 0px inset, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(0, 0, 0, 0.05) 0px 3px 17px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.043) 0px 7.5px 30px 0px, rgba(255, 255, 255, 0.3) 0px 1px 1px 0px inset;
+  --surface-parchment: #f7f3ec;
+  --surface-snow: #ffffff;
+}
+```

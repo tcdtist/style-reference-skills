@@ -1,40 +1,113 @@
 ---
 version: alpha
-name: UNVEIL®
-description: This design system evokes a sense of highly precise, almost clinical, digital presentation. The stark achromatic palette and geometric typography create a serious, focused atmosphere. The lack of color accents and subtle interactive states prioritize content and function, presenting information with direct clarity. The overlapping image layers give an illusion of depth and interaction.
-colors:
-  pitch-black: "#000000"
-  canvas-white: "#FFFFFF"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.05
-    letterSpacing: 0.304px
-spacing:
-  elementGap: 2-14px
-components:
-  navigation-bar:
-    role: 
-  view-toggle-button-group:
-    role: 
-  project-card-stack:
-    role: 
-  navigation-link:
-    role: Primary Navigation
-  button-default:
-    role: Interactive Element
-  footer-link:
-    role: Sub-navigation/Utility
+name: "UNVEIL®"
+description: "This design system evokes a sense of highly precise, almost clinical, digital presentation. The stark achromatic palette and geometric typography create a serious, focused atmosphere. The lack of color accents and subtle interactive states prioritize content and function, presenting information with direct clarity. The overlapping image layers give an illusion of depth and interaction."
+theme: "light"
+industry: "agency"
+source_url: "https://unveil.fr"
+refero_style_id: "48f3fc9d-f423-4774-aea5-9a3d68e39b54"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925395467-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925395467-thumb.jpg"
+extracted_at: "2026-04-11T16:36:50.489Z"
 ---
 
-## Overview
+# UNVEIL® — Style Reference
 
-**North Star:** Architectural blueprint on white marble. Information is presented with surgical precision on a crisp, unblemished background.
+> Architectural blueprint on white marble. Information is presented with surgical precision on a crisp, unblemished background.
+
+**Theme:** light
+
+**Industry:** agency
 
 This design system evokes a sense of highly precise, almost clinical, digital presentation. The stark achromatic palette and geometric typography create a serious, focused atmosphere. The lack of color accents and subtle interactive states prioritize content and function, presenting information with direct clarity. The overlapping image layers give an illusion of depth and interaction.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, button borders, navigation items — establishes a high-contrast foundation for all content. |
+| Canvas White | #FFFFFF | `--color-canvas-white` | Page backgrounds, interactive element fills — provides a pristine, expansive surface. |
+
+## Tokens — Typography
+
+### nb_international_proregular
+
+- **Token:** `--font-nb-international-proregular`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 11px, 16px
+- **Line heights:** 1.05, 1.24, 1.50
+- **Letter spacing:** 0.165, 0.304
+- **Role:** All text elements: navigation links, button labels, main body text. Its subtle spacing and consistent weight are critical to the system's understated, technical feel. Letter spacing increases with font size, maintaining legibility and presence for smaller elements.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.05 | 0.304px | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-2 | 2px | `--spacing-2` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 6px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 10-16px |
+| elementGap | 2-14px |
+
+## Components
+
+### Navigation Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### View Toggle Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Project Card Stack
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Link
+
+**Role:** Primary Navigation
+
+Black text (#000000) at 16px, weight 400. Letter spacing is 0.304px. Default line height is 1.05. No background, transparent. Active state unknown.
+
+### Button Default
+
+**Role:** Interactive Element
+
+Transparent background, 1px black border (#000000), 6px border-radius. Padding: 40px top, 10px right, 7px bottom, 10px left. Text is black (#000000), 16px, weight 400, letter spacing 0.304px.
+
+### Footer Link
+
+**Role:** Sub-navigation/Utility
+
+Black text (#000000) at 11px, weight 400. Letter spacing is 0.165px. No background. Default line height 1.05.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a monochromatic palette with #FFFFFF backgrounds and #000000 text and borders, avoiding any chromatic colors.
 - Apply a consistent 6px border-radius to all interactive containers, including buttons and navigation items.
@@ -43,7 +116,7 @@ This design system evokes a sense of highly precise, almost clinical, digital pr
 - Utilize transparent backgrounds and 1px #000000 borders for default button states, defining borders as the primary visual differentiator.
 - Prioritize compact spacing, with internal padding values of 2px, 4px, 7px, 10px, 14px, 16px, and 40px.
 
-### Don'ts
+### Don't
 
 - Do not introduce any chromatic colors; the system relies on a strictly achromatic palette.
 - Avoid any drop shadows or complex elevation schemes; depth is suggested through content layering.
@@ -52,10 +125,60 @@ This design system evokes a sense of highly precise, almost clinical, digital pr
 - Do not add decorative gradients or textures; surfaces should remain flat and unadorned.
 - Do not introduce large content gaps or widely spaced elements; the design emphasizes density and precision.
 
-### Layout
+## Imagery
+
+The visual language is characterized by an absence of typical UI imagery. Instead, it utilizes layered, slightly transparent photo-realistic images, often with muted or desaturated tones, that overlap and recede into the background. These images are treated as contextual elements rather than primary content, featuring abstract forms, x-rays, or natural phenomena, suggesting a blend of art and science. They are contained within sharp, unrounded rectangles, contributing to the overall precise and technical aesthetic. Image density is high in the main content area, forming the primary visual interest.
+
+## Layout
 
 The page primarily uses a full-bleed layout for its main content area, with a distinctive diagonal arrangement of overlapping image panels creating a sense of dynamic depth. The navigation is fixed-width at the top-left, centered within its container. There is no explicit page max-width, allowing content to scale to the viewport. Sections appear to flow continuously without strong visual dividers or alternating backgrounds, maintaining a consistent, clean canvas. The information architecture is linear and direct, with navigation elements positioned clearly without visual distraction.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by an absence of typical UI imagery. Instead, it utilizes layered, slightly transparent photo-realistic images, often with muted or desaturated tones, that overlap and recede into the background. These images are treated as contextual elements rather than primary content, featuring abstract forms, x-rays, or natural phenomena, suggesting a blend of art and science. They are contained within sharp, unrounded rectangles, contributing to the overall precise and technical aesthetic. Image density is high in the main content area, forming the primary visual interest.
+- **Büro Uebele** — Shares a precise, architectural feel with minimal, high-contrast typography and a lack of overt color.
+- **Certain Measures** — Exhibits a similar focus on stark, systematic presentation and thoughtful spatial arrangements of visual assets.
+- **FutureDeluxe** — Employs a focused color palette and geometric forms to convey a technical yet artistic identity.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-canvas-white: #FFFFFF;
+  --font-nb-international-proregular: 'nb_international_proregular', Inter;
+  --text-body: 16px;
+  --leading-body: 1.05;
+  --tracking-body: 0.304px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-40: 40px;
+  --radius-all: 6px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-canvas-white: #FFFFFF;
+  --font-nb-international-proregular: 'nb_international_proregular', Inter;
+  --text-body: 16px;
+  --leading-body: 1.05;
+  --tracking-body: 0.304px;
+  --spacing-2: 2px;
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-40: 40px;
+  --radius-all: 6px;
+}
+```

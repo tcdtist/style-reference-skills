@@ -1,72 +1,181 @@
 ---
 version: alpha
-name: Ui
-description: This design system feels like a finely tuned machine, presenting a clean and precise interface with a stark black-and-white aesthetic. The visual mood is serious and functional, achieved through a dominant achromatic palette and very subtle elevation. Geometric balance is created by mixing hard 10-14px radii for cards and inputs with highly rounded (near-pill) buttons and badges, suggesting both structure and approachability. The use of a custom sans-serif font across all elements with meticulous letter-spacing creates a unified, crisp typographic voice.
-colors:
-  canvas-white: "#ffffff"
-  ghost-gray: "#f2f2f2"
-  subtle-ash: "#e5e5e5"
-  midtone-gray: "#737373"
-  rich-black: "#0a0a0a"
-  deep-black: "#000000"
-  callout-red: "#c22b10"
-  success-green: "#10c22b"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-    letterSpacing: -0.45px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -2.4px
-spacing:
-  cardRadius: 14px
-  buttonRadius: 10px
-  elementGap: 8px
-  sectionGap: 83px
-components:
-  primary-action-button:
-    role: Call to action.
-  ghost-button:
-    role: Secondary or tertiary actions, often within groups.
-  split-button-left:
-    role: Left segment of a grouped button control.
-  split-button-right:
-    role: Right segment of a grouped button control.
-  elevated-card:
-    role: Containers for distinct content blocks, forms, or data.
-  plain-input-field:
-    role: Standard text input.
-  segmented-input-left:
-    role: Left segment of a grouped input control.
-  inverse-tag-badge:
-    role: Highlighting status or category, with high contrast.
-  neutral-tag-badge:
-    role: Subtle categorization or status.
-  outline-tag-badge:
-    role: Very subtle categorization or option.
+name: "Ui"
+description: "This design system feels like a finely tuned machine, presenting a clean and precise interface with a stark black-and-white aesthetic. The visual mood is serious and functional, achieved through a dominant achromatic palette and very subtle elevation. Geometric balance is created by mixing hard 10-14px radii for cards and inputs with highly rounded (near-pill) buttons and badges, suggesting both structure and approachability. The use of a custom sans-serif font across all elements with meticulous letter-spacing creates a unified, crisp typographic voice."
+theme: "light"
+industry: "ai"
+source_url: "https://ui.shadcn.com"
+refero_style_id: "0fd67ec5-7e9c-4ca9-b368-5d9c7388477a"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776366980055-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1776366980055-thumb.jpg"
+extracted_at: "2026-04-16T19:16:42.279Z"
 ---
 
-## Overview
+# Ui — Style Reference
 
-**North Star:** Monochromatic architectural blueprint – precise, functional forms on a stark, bright canvas.
+> Monochromatic architectural blueprint – precise, functional forms on a stark, bright canvas.
+
+**Theme:** light
+
+**Industry:** ai
 
 This design system feels like a finely tuned machine, presenting a clean and precise interface with a stark black-and-white aesthetic. The visual mood is serious and functional, achieved through a dominant achromatic palette and very subtle elevation. Geometric balance is created by mixing hard 10-14px radii for cards and inputs with highly rounded (near-pill) buttons and badges, suggesting both structure and approachability. The use of a custom sans-serif font across all elements with meticulous letter-spacing creates a unified, crisp typographic voice.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page background, primary card surfaces, popovers. The foundational bright base. |
+| Ghost Gray | #f2f2f2 | `--color-ghost-gray` | Secondary background for segmented sections or subtle card differentiation. Lighter than default background. |
+| Subtle Ash | #e5e5e5 | `--color-subtle-ash` | Border colors for inputs, cards, and dividers. Provides definition without harshness. |
+| Midtone Gray | #737373 | `--color-midtone-gray` | Muted text, placeholder text in inputs, secondary icons. Recedes into the background. |
+| Rich Black | #0a0a0a | `--color-rich-black` | Primary text color for body copy, standard icons, badges with white text. High contrast for readability. |
+| Deep Black | #000000 | `--color-deep-black` | Headings, active state button backgrounds, highlighted text. The darkest tone for strong emphasis. |
+| Callout Red | #c22b10 | `--color-callout-red` | Destructive actions, error states. A muted, serious red. |
+| Success Green | #10c22b | `--color-success-green` | Success states, positive confirmations. A muted, serious green. |
+
+## Tokens — Typography
+
+### Geist
+
+- **Token:** `--font-geist`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 12px, 13px, 14px, 16px, 18px, 48px
+- **Line heights:** 1.00, 1.10, 1.20, 1.33, 1.38, 1.43, 1.50, 1.56, 1.63, 2.00
+- **Letter spacing:** -0.0500em at 48px, -0.0250em at 18px
+- **Role:** Primary brand font for all UI text, headings, and body. Its varied weights and precise tracking create a modern, technical feel.
+
+### Geist Mono
+
+- **Token:** `--font-geist-mono`
+- **Substitute:** IBM Plex Mono
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.43
+- **Letter spacing:** normal
+- **Role:** Used for code snippets or specific input fields requiring monospaced characters. Reinforces a technical aesthetic.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0px | `--text-caption` |
+| body | 14px | 1.43 | 0px | `--text-body` |
+| heading | 18px | 1.33 | -0.45px | `--text-heading` |
+| display | 48px | 1 | -2.4px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-83 | 83px | `--spacing-83` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 9999px |
+| badge | 26px |
+| cards | 14px |
+| input | 10px |
+| buttons | 10px |
+| default | 10px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | lab(100 0 0) 0px 0px 0px 2px | `--shadow-xl` |
+| xl-2 | oklab(0.145 -0.00000143796 0.00000340492 / 0.1) 0px 0px 0px 1px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 83px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call to action.
+
+Solid Deep Black (#000000) background with Canvas White (#ffffff) text. Features a 10px border-radius, 8px vertical padding, and 48px horizontal padding, making it a prominent rectangular element.
+
+### Ghost Button
+
+**Role:** Secondary or tertiary actions, often within groups.
+
+Transparent background with Rich Black (#0a0a0a) text. Uses a 9999px border-radius for a pill shape, with no explicit padding defined by variants, implying content-based sizing.
+
+### Split Button Left
+
+**Role:** Left segment of a grouped button control.
+
+Canvas White (#ffffff) background with Deep Black (#000000) text. Features a 10px border-radius on the left, 0px on the right, and 10px horizontal padding. Borders in Subtle Ash (#e5e5e5).
+
+### Split Button Right
+
+**Role:** Right segment of a grouped button control.
+
+Canvas White (#ffffff) background with Deep Black (#000000) text. Features a 10px border-radius on the right, 0px on the left. Borders in Subtle Ash (#e5e5e5).
+
+### Elevated Card
+
+**Role:** Containers for distinct content blocks, forms, or data.
+
+Canvas White (#ffffff) background with a 14px border-radius. Features a subtle shadow: oklab(0.145 -0.00000143796 0.00000340492 / 0.1) 0px 0px 0px 1px, providing minimal elevation. Inner content padding is 16px.
+
+### Plain Input Field
+
+**Role:** Standard text input.
+
+Transparent background with Rich Black (#0a0a0a) text. Defined by a 1px Subtle Ash (#e5e5e5) border and a 10px border-radius. Inner padding is 4px vertical, 10px horizontal.
+
+### Segmented Input Left
+
+**Role:** Left segment of a grouped input control.
+
+Transparent background with Rich Black (#0a0a0a) text. Features a 10px border-radius on the left and 0px on the right. Defined by a 1px Subtle Ash (#e5e5e5) border. Inner padding is 4px vertical, 10px horizontal.
+
+### Inverse Tag Badge
+
+**Role:** Highlighting status or category, with high contrast.
+
+Deep Black (#171717) background with Canvas White (#ffffff) text. Features a 26px border-radius, creating a pill shape. Padding is 2px vertical, 8px horizontal.
+
+### Neutral Tag Badge
+
+**Role:** Subtle categorization or status.
+
+Ghost Gray (#f2f2f2) background with Rich Black (#0a0a0a) text. Features a 26px border-radius, creating a pill shape. Padding is 2px vertical, 8px horizontal.
+
+### Outline Tag Badge
+
+**Role:** Very subtle categorization or option.
+
+Transparent background with Rich Black (#0a0a0a) text. Features a 26px border-radius and a Light Ash (#a1a1a1) border. Padding is 2px vertical, 8px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Deep Black (#000000) for primary headings and active states to command attention.
 - Apply Subtle Ash (#e5e5e5) for all primary borders and dividers to maintain a subtle visual separation.
@@ -75,7 +184,7 @@ This design system feels like a finely tuned machine, presenting a clean and pre
 - Maintain a default element gap of 8px, but use 16px for card inner padding to create adequate breathing room for content.
 - Utilize 9999px or 26px border-radius for all interactive buttons and badges to create a soft, approachable pill shape.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors; stick to the achromatic scale and the two semantic reds and greens.
 - Do not introduce additional font families; the current choices are sufficient for all typographic needs.
@@ -84,10 +193,144 @@ This design system feels like a finely tuned machine, presenting a clean and pre
 - Don't add excessive padding or margin; the design favors a compact density with specific, calculated spacing.
 - Avoid decorative gradients; the brand's aesthetic is built on flat colors and subtle depth.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Primary page background and base surface for most content. |
+| 1 | Elevated Card | #ffffff | Content cards and distinct sections that require a subtle lift, defined by borders or minimal shadow. |
+| 2 | Search/Input Field | #ffffff | Interactive elements like search bars and inputs, often bordered. |
+| 3 | Popovers/Overlays | #ffffff | Transient UI elements that appear above other content. |
+| 4 | Ghost Gray Background | #f2f2f2 | Used as a background color for secondary buttons or badges, indicating a slightly lower hierarchy. |
+
+## Elevation
+
+- **Elevated Card:** `oklab(0.145 -0.00000143796 0.00000340492 / 0.1) 0px 0px 0px 1px`
+- **Focus Ring:** `lab(100 0 0) 0px 0px 0px 2px`
+
+## Imagery
+
+The visual language is purely utilitarian and functional. No photography or complex illustrations are present. Icons are monochromatic, typically black stroke or fill on white backgrounds, aligning with the stark aesthetic. Product components are presented directly, with an emphasis on UI elements rather than lifestyle or marketing visuals. Imagery's role is explanatory (via icons) or for showcasing UI components, maintaining a text-dominant layout. There are no decorative visuals.
+
+## Layout
 
 The page maintains a centered, contained layout with a maximum visible width, creating a focused content area. The hero section features a prominent, centered headline and subtext over the Canvas White background, followed by centrally aligned CTA buttons. Sections below are arranged in a multi-column grid, showcasing various UI components (forms, cards, controls). The rhythm is consistent vertical spacing, creating an organized, information-dense display. Navigation is a sticky top-bar with compact links and utility actions.
 
-### Imagery
+## Similar Brands
 
-The visual language is purely utilitarian and functional. No photography or complex illustrations are present. Icons are monochromatic, typically black stroke or fill on white backgrounds, aligning with the stark aesthetic. Product components are presented directly, with an emphasis on UI elements rather than lifestyle or marketing visuals. Imagery's role is explanatory (via icons) or for showcasing UI components, maintaining a text-dominant layout. There are no decorative visuals.
+- **Vercel** — Dominant use of a stark black-and-white achromatic palette, clean typography, and focus on developer tools and component showcasing.
+- **Linear** — Systematic grid-based UI, minimal use of color, and high-fidelity, component-driven interaction patterns.
+- **Figma** — Functional, dark-mode leaning interfaces with strong typography and precise spacing, emphasizing tool-like utility.
+- **Revolut (early UI)** — Modern, crisp UI with strong geometric shapes, restrained use of color for status, and emphasis on clear data presentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #f2f2f2;
+  --color-subtle-ash: #e5e5e5;
+  --color-midtone-gray: #737373;
+  --color-rich-black: #0a0a0a;
+  --color-deep-black: #000000;
+  --color-callout-red: #c22b10;
+  --color-success-green: #10c22b;
+  --font-geist: 'Geist', Inter;
+  --font-geist-mono: 'Geist Mono', IBM Plex Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0px;
+  --text-heading: 18px;
+  --leading-heading: 1.33;
+  --tracking-heading: -0.45px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -2.4px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --radius-pill: 9999px;
+  --radius-badge: 26px;
+  --radius-cards: 14px;
+  --radius-input: 10px;
+  --radius-buttons: 10px;
+  --radius-default: 10px;
+  --shadow-xl: lab(100 0 0) 0px 0px 0px 2px;
+  --shadow-xl-2: oklab(0.145 -0.00000143796 0.00000340492 / 0.1) 0px 0px 0px 1px;
+  --surface-canvas-white: #ffffff;
+  --surface-elevated-card: #ffffff;
+  --surface-search-input-field: #ffffff;
+  --surface-popovers-overlays: #ffffff;
+  --surface-ghost-gray-background: #f2f2f2;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ghost-gray: #f2f2f2;
+  --color-subtle-ash: #e5e5e5;
+  --color-midtone-gray: #737373;
+  --color-rich-black: #0a0a0a;
+  --color-deep-black: #000000;
+  --color-callout-red: #c22b10;
+  --color-success-green: #10c22b;
+  --font-geist: 'Geist', Inter;
+  --font-geist-mono: 'Geist Mono', IBM Plex Mono;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0px;
+  --text-heading: 18px;
+  --leading-heading: 1.33;
+  --tracking-heading: -0.45px;
+  --text-display: 48px;
+  --leading-display: 1;
+  --tracking-display: -2.4px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --radius-pill: 9999px;
+  --radius-badge: 26px;
+  --radius-cards: 14px;
+  --radius-input: 10px;
+  --radius-buttons: 10px;
+  --radius-default: 10px;
+  --shadow-xl: lab(100 0 0) 0px 0px 0px 2px;
+  --shadow-xl-2: oklab(0.145 -0.00000143796 0.00000340492 / 0.1) 0px 0px 0px 1px;
+  --surface-canvas-white: #ffffff;
+  --surface-elevated-card: #ffffff;
+  --surface-search-input-field: #ffffff;
+  --surface-popovers-overlays: #ffffff;
+  --surface-ghost-gray-background: #f2f2f2;
+}
+```

@@ -1,93 +1,173 @@
 ---
 version: alpha
-name: Uniswap
-description: Uniswap's design system feels like a playful, high-energy data interface, grounded by stark neutrals and then splashed with a vibrant, almost neon palette. The soft, blurry background elements provide a sense of atmospheric depth without heavy shadows or complex textures, creating a digital ether. Type is uniformly monochrome, allowing bold, vivid accents to pop purely through color on interactive elements and data visualizations, drawing the eye instantly to critical information and actions. The overall impression is approachable yet cutting-edge, like a friendly gateway to complex financial technology.
-colors:
-  cloud-white: "#ffffff"
-  ink-black: "#131313"
-  dim-gray: "#222222"
-  ash-gray: "#6a6a6a"
-  silver-tone: "#acacac"
-  off-white: "#f2f2f2"
-  techno-pink: "#ff37c7"
-  amethyst-glow: "#8251fb"
-  ember-spark: "#ff4d00"
-  hot-magenta: "#f50db4"
-  sky-surge: "#2abdff"
-  jade-mist: "#00c3a0"
-  alert-red: "#e01a2b"
-  success-green: "#0c8911"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.49
-    letterSpacing: -0.24px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.49
-    letterSpacing: -0.28px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.3
-    letterSpacing: -0.36px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: -0.48px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.15
-    letterSpacing: -0.72px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 1.11
-    letterSpacing: -1.04px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.96
-    letterSpacing: -1.28px
-spacing:
-  cardRadius: 20px
-  buttonRadius: 999999px
-  elementGap: 8px
-  sectionGap: 32px
-components:
-  swap-interface-card:
-    role: 
-  protocol-stats-card:
-    role: 
-  button-group-showcase:
-    role: 
-  primary-action-button:
-    role: Filled button
-  secondary-ghost-button:
-    role: Outlined/Ghost button
-  subtle-pill-button:
-    role: Pill-shaped background button
-  navigation-link-button:
-    role: Text-only navigation link
-  swap-input-field:
-    role: Financial input
-  simple-card:
-    role: Content container
-  icon-button:
-    role: Interactive icon
+name: "Uniswap"
+description: "Uniswap's design system feels like a playful, high-energy data interface, grounded by stark neutrals and then splashed with a vibrant, almost neon palette. The soft, blurry background elements provide a sense of atmospheric depth without heavy shadows or complex textures, creating a digital ether. Type is uniformly monochrome, allowing bold, vivid accents to pop purely through color on interactive elements and data visualizations, drawing the eye instantly to critical information and actions. The overall impression is approachable yet cutting-edge, like a friendly gateway to complex financial technology."
+theme: "light"
+industry: "crypto"
+source_url: "https://uniswap.org"
+refero_style_id: "e5b95270-9148-417a-89c6-32138d83a251"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924257510-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924257510-thumb.jpg"
+extracted_at: "2026-04-11T16:17:59.864Z"
 ---
 
-## Overview
+# Uniswap — Style Reference
 
-**North Star:** Fuzzy Neon Playground. Crisp white UI elements float above a swirling background of blurred, vibrant color. 
+> Fuzzy Neon Playground. Crisp white UI elements float above a swirling background of blurred, vibrant color. 
+
+**Theme:** light
+
+**Industry:** crypto
 
 Uniswap's design system feels like a playful, high-energy data interface, grounded by stark neutrals and then splashed with a vibrant, almost neon palette. The soft, blurry background elements provide a sense of atmospheric depth without heavy shadows or complex textures, creating a digital ether. Type is uniformly monochrome, allowing bold, vivid accents to pop purely through color on interactive elements and data visualizations, drawing the eye instantly to critical information and actions. The overall impression is approachable yet cutting-edge, like a friendly gateway to complex financial technology.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud White | #ffffff | `--color-cloud-white` | Page backgrounds, card surfaces, primary text on dark accents, iconography. |
+| Ink Black | #131313 | `--color-ink-black` | Primary text, prominent headings, default iconography outlines. Provides high contrast against white backgrounds. |
+| Dim Gray | #222222 | `--color-dim-gray` | Secondary text, subtle borders, inactive states, navigation elements. A softer contrast than Ink Black. |
+| Ash Gray | #6a6a6a | `--color-ash-gray` | Muted text, tertiary information, less important icons. Deliberately lower contrast for supporting details. |
+| Silver Tone | #acacac | `--color-silver-tone` | Subtle placeholder text, light borders, subtle separators. |
+| Off White | #f2f2f2 | `--color-off-white` | Button backgrounds in hover states, very light card backgrounds, component separators. |
+| Techno Pink | #ff37c7 | `--color-techno-pink` | Primary call-to-action buttons, active navigation indicators, key interactive elements. Dominant brand accent. |
+| Amethyst Glow | #8251fb | `--color-amethyst-glow` | Highlighting specific data points, secondary interactive elements, subtle accent for illustrations. |
+| Ember Spark | #ff4d00 | `--color-ember-spark` | Complementary accent for icons, attention-grabbing data visualizations, and occasional highlight text. |
+| Hot Magenta | #f50db4 | `--color-hot-magenta` | Alternative vibrant accent, often paired with Techno Pink or used for distinct elements. |
+| Sky Surge | #2abdff | `--color-sky-surge` | Illustrative elements, indicators of positive progress or available actions, providing a cool counterpoint. |
+| Jade Mist | #00c3a0 | `--color-jade-mist` | Illustrative accents, often used for data visualization or symbolic 'growth' elements. |
+| Alert Red | #e01a2b | `--color-alert-red` | Error states, warnings, crucial alerts that require immediate attention. |
+| Success Green | #0c8911 | `--color-success-green` | Positive feedback, success indicators, successful transaction representations. |
+
+## Tokens — Typography
+
+### Basel
+
+- **Token:** `--font-basel`
+- **Substitute:** Inter
+- **Weights:** 400, 485, 500, 535
+- **Sizes:** 12px, 13px, 14px, 16px, 18px, 24px, 36px, 52px, 64px
+- **Line heights:** 0.96, 1.00, 1.11, 1.15, 1.19, 1.20, 1.25, 1.30, 1.33, 1.49
+- **Letter spacing:** -0.02em
+- **Role:** The primary typeface for all text content. Its clean, geometric yet slightly humanist forms provide both readability for body copy and a modern, technical feel for headlines, reinforced by precise letter-spacing.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.49 | -0.24px | `--text-caption` |
+| body | 14px | 1.49 | -0.28px | `--text-body` |
+| heading-sm | 18px | 1.3 | -0.36px | `--text-heading-sm` |
+| heading | 24px | 1.25 | -0.48px | `--text-heading` |
+| heading-lg | 36px | 1.15 | -0.72px | `--text-heading-lg` |
+| display | 52px | 1.11 | -1.04px | `--text-display` |
+| display-lg | 64px | 0.96 | -1.28px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 20px |
+| input | 0px |
+| buttons | 999999px |
+| default | 12px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | color(srgb 0.0745098 0.0745098 0.0745098 / 0.00313726) 0px 0px 10px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Swap Interface Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Protocol Stats Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group Showcase
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Filled button
+
+backgroundColor: #ff37c7, color: #ffffff, borderRadius: 999999px, paddingTop: 8px, paddingRight: 16px, paddingBottom: 8px, paddingLeft: 16px. Typography: Basel, weight 500, size 16px. Used for main calls to action like 'Connect' and 'Select token'.
+
+### Secondary Ghost Button
+
+**Role:** Outlined/Ghost button
+
+backgroundColor: rgba(0,0,0,0), color: #131313, border: 1px solid #131313, borderRadius: 12px, padding: 0px. Used for secondary navigation items or less emphasized actions. Text color changes to #222222 when interactive.
+
+### Subtle Pill Button
+
+**Role:** Pill-shaped background button
+
+backgroundColor: rgba(19, 19, 19, 0.08), color: #222222, borderRadius: 999999px, padding: 4px. Used for filters, tags, or subtly highlighted short actions.
+
+### Navigation Link Button
+
+**Role:** Text-only navigation link
+
+backgroundColor: rgba(0,0,0,0), color: #131313 or #222222, borderRadius: 12px, padding: 0px. Used for primary navigation items. Emphasis is achieved via color change or active state indicator.
+
+### Swap Input Field
+
+**Role:** Financial input
+
+backgroundColor: #ffffff, color: #131313, border: 1px solid #f2f2f2 (or rgba(0,0,0,0) as default), borderRadius: 20px, padding: 16px. Placeholder text is Ash Gray (#6a6a6a). Contains sub-elements for currency selection.
+
+### Simple Card
+
+**Role:** Content container
+
+backgroundColor: #ffffff, borderRadius: 20px, padding: typically 16px. Used for containing swap interface or other key information blocks. Often has a subtle box-shadow.
+
+### Icon Button
+
+**Role:** Interactive icon
+
+backgroundColor: rgba(0,0,0,0), color: #131313 (default icon color), padding: typically 8px. Used for search, app links, or settings menus. Border radius is often 12px or 16px to match general softness.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Cloud White (#ffffff) for all main page and card backgrounds to ensure a clean, high-contrast canvas.
 - Use Techno Pink (#ff37c7) exclusively for primary calls-to-action and active states to maintain visual hierarchy and brand recognition.
@@ -97,7 +177,7 @@ Uniswap's design system feels like a playful, high-energy data interface, ground
 - Maintain 8px as the primary `elementGap` for horizontal and vertical spacing between related UI elements.
 - Use a default border-radius of 12px for interactive icons and other contained elements, contrasting with the soft card radius.
 
-### Don'ts
+### Don't
 
 - Do not introduce new color hues; leverage the existing vibrant accent palette and neutral scale for new features.
 - Avoid using hard-edged rectangles for interactive elements; all buttons and most content containers should have a significant border radius (12px, 20px, or 999999px).
@@ -107,10 +187,149 @@ Uniswap's design system feels like a playful, high-energy data interface, ground
 - Do not use inconsistent padding for components; adhere to the established spacing scale (e.g., 4px, 8px, 12px, 16px) for interior padding.
 - Never use the browser default link color (#0000ee); all links should be Ink Black (#131313) or a semantic color like Success Green (#0c8911) as context dictates.
 
-### Layout
+## Elevation
+
+- **Shadow 1:** `color(srgb 0.0745098 0.0745098 0.0745098 / 0.00313726) 0px 0px 10px 0px`
+
+## Imagery
+
+The visual language focuses on abstract, blurred, and brightly colored 'blob' shapes that appear to float behind the crisp UI, contributing a sense of ethereal movement and playful energy. These shapes are multi-colored and semi-transparent, creating a soft, luminous background effect that makes the UI elements stand out. Specific icons or illustrations, when present, are often abstract representations of cryptocurrencies or blockchain concepts, using the vibrant color palette. Photography is absent; the emphasis is purely on UI and abstract digital visuals. The treatment is full-bleed for the background effects, while UI components are contained and use soft radii.
+
+## Layout
 
 The page primarily uses a centered, max-width contained layout for content, but features a full-bleed vibrant blurred background that extends edge-to-edge. The hero section presents a prominent headline over this atmospheric background, followed by a central card-like swap interface. Section rhythm is generally consistent with vertical spacing, often separating content blocks with padding rather than visual dividers. Content elements, such as text and feature callouts, are stacked centrally or arranged in simple, clean two-column layouts. Navigation is a sticky top bar with clearly defined interactive elements, incorporating search and primary actions. The density is comfortable, providing breathing room around key components while still presenting a good amount of information.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on abstract, blurred, and brightly colored 'blob' shapes that appear to float behind the crisp UI, contributing a sense of ethereal movement and playful energy. These shapes are multi-colored and semi-transparent, creating a soft, luminous background effect that makes the UI elements stand out. Specific icons or illustrations, when present, are often abstract representations of cryptocurrencies or blockchain concepts, using the vibrant color palette. Photography is absent; the emphasis is purely on UI and abstract digital visuals. The treatment is full-bleed for the background effects, while UI components are contained and use soft radii.
+- **Coinbase** — Clean, light UI with clear separation of elements and a focus on financial data presentation.
+- **Figma** — White interface with a distinct accent color for interactive elements and a functional, component-driven aesthetic.
+- **Vercel** — Modern, developer-focused UI with precise typography, strong use of neutrals, and judicious application of accent colors.
+- **OpenSea** — Utilizes a clean, white background for crypto-related content with prominent visual elements and distinct interactive actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-white: #ffffff;
+  --color-ink-black: #131313;
+  --color-dim-gray: #222222;
+  --color-ash-gray: #6a6a6a;
+  --color-silver-tone: #acacac;
+  --color-off-white: #f2f2f2;
+  --color-techno-pink: #ff37c7;
+  --color-amethyst-glow: #8251fb;
+  --color-ember-spark: #ff4d00;
+  --color-hot-magenta: #f50db4;
+  --color-sky-surge: #2abdff;
+  --color-jade-mist: #00c3a0;
+  --color-alert-red: #e01a2b;
+  --color-success-green: #0c8911;
+  --font-basel: 'Basel', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.49;
+  --tracking-caption: -0.24px;
+  --text-body: 14px;
+  --leading-body: 1.49;
+  --tracking-body: -0.28px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.3;
+  --tracking-heading-sm: -0.36px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 52px;
+  --leading-display: 1.11;
+  --tracking-display: -1.04px;
+  --text-display-lg: 64px;
+  --leading-display-lg: 0.96;
+  --tracking-display-lg: -1.28px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-120: 120px;
+  --radius-cards: 20px;
+  --radius-input: 0px;
+  --radius-buttons: 999999px;
+  --radius-default: 12px;
+  --shadow-xl: color(srgb 0.0745098 0.0745098 0.0745098 / 0.00313726) 0px 0px 10px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-white: #ffffff;
+  --color-ink-black: #131313;
+  --color-dim-gray: #222222;
+  --color-ash-gray: #6a6a6a;
+  --color-silver-tone: #acacac;
+  --color-off-white: #f2f2f2;
+  --color-techno-pink: #ff37c7;
+  --color-amethyst-glow: #8251fb;
+  --color-ember-spark: #ff4d00;
+  --color-hot-magenta: #f50db4;
+  --color-sky-surge: #2abdff;
+  --color-jade-mist: #00c3a0;
+  --color-alert-red: #e01a2b;
+  --color-success-green: #0c8911;
+  --font-basel: 'Basel', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.49;
+  --tracking-caption: -0.24px;
+  --text-body: 14px;
+  --leading-body: 1.49;
+  --tracking-body: -0.28px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.3;
+  --tracking-heading-sm: -0.36px;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.48px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 1.15;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 52px;
+  --leading-display: 1.11;
+  --tracking-display: -1.04px;
+  --text-display-lg: 64px;
+  --leading-display-lg: 0.96;
+  --tracking-display-lg: -1.28px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-120: 120px;
+  --radius-cards: 20px;
+  --radius-input: 0px;
+  --radius-buttons: 999999px;
+  --radius-default: 12px;
+  --shadow-xl: color(srgb 0.0745098 0.0745098 0.0745098 / 0.00313726) 0px 0px 10px 0px;
+}
+```

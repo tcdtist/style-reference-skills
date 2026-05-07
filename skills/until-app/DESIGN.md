@@ -1,74 +1,170 @@
 ---
 version: alpha
-name: Until App
-description: Until App employs a clean, iOS-native aesthetic characterized by high contrast typography over predominantly neutral backgrounds. Gradients are utilized as expressive surface fills within contained widgets, rather than affecting the overall canvas. Elements have generous border radii, signaling a soft, user-friendly interface. Interactions are marked by a singular vivid blue, providing clear functional highlights.
-colors:
-  midnight-graphite: "#000000"
-  storm-gray: "#595959"
-  pewter-mist: "#808080"
-  platinum-white: "#ffffff"
-  silver-cloud: "#999999"
-  action-blue: "#0078ff"
-  rainbow-horizon: "#ffb005"
-  sunset-gradient: "#fa3d1d"
-  violet-skies: "#c679c4"
-  deep-space-purple: "#b41380"
-  electric-violet: "#5507ff"
-  skybound-blue: "#11a8ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-spacing:
-  cardRadius: 32px
-  buttonRadius: 16px
-  elementGap: 8px
-  sectionGap: 153px
-components:
-  primary-action-button:
-    role: Main call-to-action.
-  compact-card-default:
-    role: Standard information container.
-  raised-card-subtle:
-    role: Elevated card for content emphasis.
-  hero-section-card:
-    role: Container at top of page, full-width.
-  muted-text-badge:
-    role: Small, descriptive labels.
-  app-store-download-button:
-    role: External download link button.
-  widget-card-gradient:
-    role: Decorative card with a vibrant gradient background.
+name: "Until App"
+description: "Until App employs a clean, iOS-native aesthetic characterized by high contrast typography over predominantly neutral backgrounds. Gradients are utilized as expressive surface fills within contained widgets, rather than affecting the overall canvas. Elements have generous border radii, signaling a soft, user-friendly interface. Interactions are marked by a singular vivid blue, providing clear functional highlights."
+theme: "light"
+industry: "productivity"
+source_url: "https://getuntil.app"
+refero_style_id: "9a453290-9b32-46f3-b9c2-768c85da3aef"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512979298-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512979298-thumb.jpg"
+extracted_at: "2026-04-30T01:36:45.298Z"
 ---
 
-## Overview
+# Until App — Style Reference
 
-**North Star:** iOS widget minimalism with expressive gradients
+> iOS widget minimalism with expressive gradients
+
+**Theme:** light
+
+**Industry:** productivity
 
 Until App employs a clean, iOS-native aesthetic characterized by high contrast typography over predominantly neutral backgrounds. Gradients are utilized as expressive surface fills within contained widgets, rather than affecting the overall canvas. Elements have generous border radii, signaling a soft, user-friendly interface. Interactions are marked by a singular vivid blue, providing clear functional highlights.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Graphite | #000000 | `--color-midnight-graphite` | Primary text, core UI elements, high-emphasis icons; Lightly tinted card backgrounds against the white canvas, adding subtle visual separation without strong contrast |
+| Storm Gray | #595959 | `--color-storm-gray` | Body text, secondary links, and descriptive labels |
+| Pewter Mist | #808080 | `--color-pewter-mist` | Muted text for badges and subtle helper text |
+| Platinum White | #ffffff | `--color-platinum-white` | Page backgrounds, card backgrounds, and button text |
+| Silver Cloud | #999999 | `--color-silver-cloud` | Subdued text for copyright notices and less prominent links |
+| Action Blue | #0078ff | `--color-action-blue` | Primary Call-to-Action buttons and interactive elements, providing a clear focal point |
+| Rainbow Horizon | #ffb005 | `--color-rainbow-horizon` | Background for widgets, indicating an aesthetic choice rather than a functional color for UI states |
+| Sunset Gradient | #fa3d1d | `--color-sunset-gradient` | Background for widgets, providing a vibrant, warm visual |
+| Violet Skies | #c679c4 | `--color-violet-skies` | Background for widgets, adding a cool, contemplative hue |
+| Deep Space Purple | #b41380 | `--color-deep-space-purple` | Accent hue within gradient backgrounds for specific widget elements |
+| Electric Violet | #5507ff | `--color-electric-violet` | Accent hue within gradient backgrounds, contributing to energetic widget aesthetics |
+| Skybound Blue | #11a8ff | `--color-skybound-blue` | Accent hue within gradient backgrounds, adding a bright, refreshing touch |
+
+## Tokens — Typography
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 19px, 30px, 40px
+- **Line heights:** 1.40
+- **Role:** Primary content, body text, link labels, and input fields. Relies on system-native rendering for clarity and legibility.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 14px, 16px, 19px, 30px, 40px
+- **Line heights:** 1.20
+- **Role:** Medium emphasis headings and prominent labels, offering a subtle lift from regular body text without being overtly bold.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** Inter
+- **Weights:** 700
+- **Sizes:** 14px, 16px, 19px, 30px, 40px
+- **Line heights:** 1.00
+- **Role:** High-impact headlines and main titles, commanding attention while integrating with the system-font aesthetic.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 26px
+- **Line heights:** 1.20
+- **Role:** Specifically for card titles, providing a distinct intermediate heading style that leverages system defaults.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | — | `--text-caption` |
+| body | 16px | 1.4 | — | `--text-body` |
+| subheading | 19px | 1.2 | — | `--text-subheading` |
+| heading | 26px | 1.2 | — | `--text-heading` |
+| heading-lg | 30px | 1.2 | — | `--text-heading-lg` |
+| display | 40px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-153 | 153px | `--spacing-153` |
+| spacing-179 | 179px | `--spacing-179` |
+| spacing-196 | 196px | `--spacing-196` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 32px |
+| buttons | 16px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 153px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call-to-action.
+
+Filled with Action Blue (#0078ff), Platinum White (#ffffff) text, and a 16px border-radius. Padding is 16px on all sides.
+
+### Compact Card (Default)
+
+**Role:** Standard information container.
+
+Transparent background with a 32px border-radius. Content padding: 0px. No visible box shadow.
+
+### Raised Card (Subtle)
+
+**Role:** Elevated card for content emphasis.
+
+Background rgba(0,0,0,0.05) with 32px border-radius. No padding. Relies on subtle background tint for separation.
+
+### Hero Section Card
+
+**Role:** Container at top of page, full-width.
+
+Transparent background, 0px border-radius, 64px top padding, 32px horizontal padding. No box shadow.
+
+### Muted Text Badge
+
+**Role:** Small, descriptive labels.
+
+Transparent background, Pewter Mist (#808080) text, 0px border-radius, no padding. Used for secondary textual information.
+
+### App Store Download Button
+
+**Role:** External download link button.
+
+Uses Midnight Graphite (#000000) for text and icon. Acts as a ghost button, relying on text and icon for visibility. Similar to a link but visually distinct due to icon.
+
+### Widget Card (Gradient)
+
+**Role:** Decorative card with a vibrant gradient background.
+
+Features gradients like Rainbow Horizon, Deep Space Purple, or Emerald Growth for background fills. Has a 32px border-radius and Platinum White text. Content and internal visual layout are varied.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize system fonts (-apple-system, system-ui) for all text to maintain a native, lightweight feel.
 - Use Platinum White (#ffffff) for all main page and card backgrounds to ensure a clean, high-contrast canvas.
@@ -78,7 +174,7 @@ Until App employs a clean, iOS-native aesthetic characterized by high contrast t
 - Maintain an 8px base unit for all spacing, particularly an 8px elementGap for tight UI components and 16px for comfortable card padding.
 - Incorporate vibrant gradient fills for 'widget' elements, creating points of visual interest and brand expression, distinct from the neutral UI.
 
-### Don'ts
+### Don't
 
 - Avoid strong, heavy shadows for cards or any container element; opt for subtle background tints or filter-based treatments for elevation.
 - Do not introduce new typefaces, as the system relies exclusively on -apple-system and system-ui for a clean, consistent experience.
@@ -88,10 +184,121 @@ Until App employs a clean, iOS-native aesthetic characterized by high contrast t
 - Do not use dark backgrounds for general page sections; the theme is predominantly light, with gradients reserved for specific, contained graphical elements.
 - Do not clutter layouts with excessive elements or tight spacing; maintain a comfortable density with ample negative space around components, aligning with the 8px base unit system.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Platinum White Canvas | #ffffff | Dominant background for the entire application, serving as a crisp, expansive base. |
+| 2 | Raised Card Tint | #000000 | A subtle, nearly transparent black tint (rgba(0,0,0,0.05)) used for elevated cards to provide minimal visual separation from the main canvas. |
+
+## Imagery
+
+The visual language revolves around product screenshots and abstract gradients. The product screenshots showcase the app's UI within an iPhone frame, positioned organically and dynamically within the layout, sometimes overlapping. The treatment of these shots is clean and focused on showing functionality. Gradients are used as illustrative backdrops and as fills for app widgets, serving decorative and atmospheric roles rather than explanatory content. Icons and UI elements within the app are typically filled and simple, adhering to an iOS-native style. The overall density is balanced, allowing UI visuals to breathe within the page.
+
+## Layout
 
 The page exhibits a full-bleed layout, where background elements and imagery extend to the viewport edges. The primary content appears loosely contained within a central column, though no explicit pageMaxWidth is enforced. The hero section prominently features a product screenshot (an iPhone mockup) against a vibrant gradient background. Vertical rhythm is established by section gaps around 153px, providing significant breathing room between content blocks. Content arrangement often juxtaposes product imagery and UI components against abstract, expressive gradients. There is a frequent use of card-like elements with generous radii, scattered dynamically across the layout, suggesting a less rigid grid and more artistic composition.
 
-### Imagery
+## Similar Brands
 
-The visual language revolves around product screenshots and abstract gradients. The product screenshots showcase the app's UI within an iPhone frame, positioned organically and dynamically within the layout, sometimes overlapping. The treatment of these shots is clean and focused on showing functionality. Gradients are used as illustrative backdrops and as fills for app widgets, serving decorative and atmospheric roles rather than explanatory content. Icons and UI elements within the app are typically filled and simple, adhering to an iOS-native style. The overall density is balanced, allowing UI visuals to breathe within the page.
+- **Apple (Apps / iOS UI)** — Strong adherence to iOS system fonts, clean aesthetic, and emphasis on subtle surface changes for depth rather than heavy shadows.
+- **Linear** — Minimalist interface, high-contrast neutral typography, reliance on a single primary accent color for interaction, and clean card-based layouts.
+- **Superhuman** — Focus on speed and clarity through a streamlined UI, high legibility of system fonts, and a predominantly light theme with functional color accents.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-graphite: #000000;
+  --color-storm-gray: #595959;
+  --color-pewter-mist: #808080;
+  --color-platinum-white: #ffffff;
+  --color-silver-cloud: #999999;
+  --color-action-blue: #0078ff;
+  --color-rainbow-horizon: #ffb005;
+  --color-sunset-gradient: #fa3d1d;
+  --color-violet-skies: #c679c4;
+  --color-deep-space-purple: #b41380;
+  --color-electric-violet: #5507ff;
+  --color-skybound-blue: #11a8ff;
+  --font-apple-system: '-apple-system', Inter;
+  --font-apple-system: '-apple-system', Inter;
+  --font-apple-system: '-apple-system', Inter;
+  --font-system-ui: 'system-ui', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-subheading: 19px;
+  --leading-subheading: 1.2;
+  --text-heading: 26px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.2;
+  --text-display: 40px;
+  --leading-display: 1;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-64: 64px;
+  --spacing-153: 153px;
+  --spacing-179: 179px;
+  --spacing-196: 196px;
+  --radius-cards: 32px;
+  --radius-buttons: 16px;
+  --surface-platinum-white-canvas: #ffffff;
+  --surface-raised-card-tint: #000000;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-graphite: #000000;
+  --color-storm-gray: #595959;
+  --color-pewter-mist: #808080;
+  --color-platinum-white: #ffffff;
+  --color-silver-cloud: #999999;
+  --color-action-blue: #0078ff;
+  --color-rainbow-horizon: #ffb005;
+  --color-sunset-gradient: #fa3d1d;
+  --color-violet-skies: #c679c4;
+  --color-deep-space-purple: #b41380;
+  --color-electric-violet: #5507ff;
+  --color-skybound-blue: #11a8ff;
+  --font-apple-system: '-apple-system', Inter;
+  --font-apple-system: '-apple-system', Inter;
+  --font-apple-system: '-apple-system', Inter;
+  --font-system-ui: 'system-ui', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-subheading: 19px;
+  --leading-subheading: 1.2;
+  --text-heading: 26px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 30px;
+  --leading-heading-lg: 1.2;
+  --text-display: 40px;
+  --leading-display: 1;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-35: 35px;
+  --spacing-64: 64px;
+  --spacing-153: 153px;
+  --spacing-179: 179px;
+  --spacing-196: 196px;
+  --radius-cards: 32px;
+  --radius-buttons: 16px;
+  --surface-platinum-white-canvas: #ffffff;
+  --surface-raised-card-tint: #000000;
+}
+```

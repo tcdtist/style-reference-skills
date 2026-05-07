@@ -1,50 +1,134 @@
 ---
 version: alpha
-name: Uniswap Cup
-description: The Uniswap Cup design system evokes a digital battle arena with a high-contrast, almost monochrome palette punctuated by a single vibrant fuchsia. The aesthetic is clean and precise, leveraging stark black and white surfaces for visual clarity, while sharp corners and a compact density suggest a dynamic, competitive environment. Typography combines robust monospace with subtle sans-serifs, and layout is highly structured, emphasizing information readouts and tournament brackets over fluid narrative.
-colors:
-  canvas-white: "#f2f2f2"
-  midnight-ink: "#000000"
-  alabaster: "#ffffff"
-  graphite: "#222222"
-  linen-mist: "#fef4ff"
-  fuchsia-flare: "#f50db4"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.33
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-    letterSpacing: -0.64px
-spacing:
-  buttonRadius: 1.67772e+07px
-  elementGap: 8px
-  sectionGap: 48px
-components:
-  ghost-button:
-    role: Navigation and secondary actions
-  pill-button:
-    role: Call to action or key interactive elements
-  team-score-block:
-    role: Displays individual team scores in the bracket
-  active-team-score-element:
-    role: Highlights the winning team or active participant in a match
+name: "Uniswap Cup"
+description: "The Uniswap Cup design system evokes a digital battle arena with a high-contrast, almost monochrome palette punctuated by a single vibrant fuchsia. The aesthetic is clean and precise, leveraging stark black and white surfaces for visual clarity, while sharp corners and a compact density suggest a dynamic, competitive environment. Typography combines robust monospace with subtle sans-serifs, and layout is highly structured, emphasizing information readouts and tournament brackets over fluid narrative."
+theme: "light"
+industry: "crypto"
+source_url: "https://unicup.uniswap.org"
+refero_style_id: "fabb51a0-0f83-4177-b83e-4969705a389c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509008974-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509008974-thumb.jpg"
+extracted_at: "2026-04-30T00:30:35.154Z"
 ---
 
-## Overview
+# Uniswap Cup — Style Reference
 
-**North Star:** Fuchsia-accented data panel. Precise, high-contrast, and digitally sharp typography on a stark white canvas, with a single, vibrant fuchsia cutting through the cool neutrality.
+> Fuchsia-accented data panel. Precise, high-contrast, and digitally sharp typography on a stark white canvas, with a single, vibrant fuchsia cutting through the cool neutrality.
+
+**Theme:** light
+
+**Industry:** crypto
 
 The Uniswap Cup design system evokes a digital battle arena with a high-contrast, almost monochrome palette punctuated by a single vibrant fuchsia. The aesthetic is clean and precise, leveraging stark black and white surfaces for visual clarity, while sharp corners and a compact density suggest a dynamic, competitive environment. Typography combines robust monospace with subtle sans-serifs, and layout is highly structured, emphasizing information readouts and tournament brackets over fluid narrative.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #f2f2f2 | `--color-canvas-white` | Page backgrounds, structural UI element borders, default button borders |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, prominent headings, button text, illustration fills, active states |
+| Alabaster | #ffffff | `--color-alabaster` | Card backgrounds, section dividers, very subtle contrast surfaces |
+| Graphite | #222222 | `--color-graphite` | Secondary text, subtle background fills in structured blocks |
+| Linen Mist | #fef4ff | `--color-linen-mist` | Subtle background panels, light borders, underlying structural elements |
+| Fuchsia Flare | #f50db4 | `--color-fuchsia-flare` | Pink outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### ui-sans-serif
+
+- **Token:** `--font-ui-sans-serif`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 12px, 16px
+- **Line heights:** 1.33, 1.50
+- **Role:** Primary UI text for labels, descriptions, and button content. Its clean clarity supports structured information.
+
+### ui-monospace
+
+- **Token:** `--font-ui-monospace`
+- **Substitute:** Space Mono
+- **Weights:** 500, 700
+- **Sizes:** 12px, 32px
+- **Line heights:** 1.00, 1.33
+- **Letter spacing:** -0.0200em
+- **Role:** Data display and numerical figures, headlines, and critical status messages. Its fixed-width and slightly condensed tracking convey precision and technicality.
+
+### Basel
+
+- **Token:** `--font-basel`
+- **Weights:** 500
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Role:** Descriptive body copy and explanatory text. Its distinct character provides a subtle break from the technical feel of monospace, adding a touch of editorial warmth.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.33 | — | `--text-caption` |
+| body | 16px | 1.5 | — | `--text-body` |
+| display | 32px | 1 | -0.64px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 1.67772e+07px |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Navigation and secondary actions
+
+Visually subtle, with transparent background and Fuchsia Flare text. No padding or borders, using Fuchsia Flare for text color rgba(245, 13, 180).
+
+### Pill Button
+
+**Role:** Call to action or key interactive elements
+
+Features large border-radius (effectively a pill shape) with 16px padding on all sides. Background is transparent, text is Midnight Ink (#000000).
+
+### Team Score Block
+
+**Role:** Displays individual team scores in the bracket
+
+A compact block with Canvas White (#f2f2f2) border on all sides. It often contains a small icon and a score, using ui-monospace typography for numbers. Text is Midnight Ink (#000000).
+
+### Active Team Score Element
+
+**Role:** Highlights the winning team or active participant in a match
+
+Uses Fuchsia Flare (#f50db4) for background color, with contrasting Midnight Ink (#000000) or Alabaster (#ffffff) text to signify prominence.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize a stark, high-contrast palette of Midnight Ink (#000000) on Canvas White (#f2f2f2) for all core UI elements.
 - Use Fuchsia Flare (#f50db4) exclusively for accenting active states, score leaders, competitive highlights, and key interactive elements.
@@ -53,7 +137,7 @@ The Uniswap Cup design system evokes a digital battle arena with a high-contrast
 - Utilize 8px as the default element spacing for compact arrangement of UI items, such as scores and team logos.
 - Ensure headings and titles use `ui-monospace` weight 700 at 32px to convey importance and technical specificity.
 
-### Don'ts
+### Don't
 
 - Do not introduce additional chromatic colors; Fuchsia Flare (#f50db4) is the singular brand accent.
 - Avoid soft gradients or shadows; the aesthetic relies on flat, high-contrast surfaces and sharp edges.
@@ -62,10 +146,106 @@ The Uniswap Cup design system evokes a digital battle arena with a high-contrast
 - Do not deviate from the compact spacing unit of 8px for inter-element gaps; avoid excessive whitespace that would dilute the information density.
 - Do not apply padding to ghost buttons; they should remain minimalist and blend seamlessly into their surroundings.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas Background | #f2f2f2 | Dominant page background, foundational layer. |
+| 1 | Card Surface | #ffffff | Primary content areas, elevated panels, or interactive elements. |
+| 2 | Subtle Panel | #fef4ff | Ghosted backgrounds for labels or contextual blocks, providing very slight distinction. |
+| 3 | Interactive Block | #000000 | Dark mode background for functional elements or highlighted sections. |
+| 4 | Accent Block | #f50db4 | High-contrast backgrounds for active states, important labels, or winners. |
+
+## Imagery
+
+The visual language is purely functional and symbolic, primarily using monochrome icons and abstract representations for teams and game states. No photography or complex illustrations are present. Icons are typically black fills on either white or fuchsia backgrounds, adhering to a stark, outlined style or minimal block shapes. Imagery serves an explanatory and informative role, clearly denoting team identity, scores, and tournament progress, contributing to a data-heavy, minimalist interface.
+
+## Layout
 
 The page uses a full-bleed, unconstrained layout, allowing content to stretch across the viewport, though the core tournament bracket maintains a centered structure. The hero section features a central brand logo and descriptive text over a vast white space. Sections are defined by large, explicit bracket lines in Fuchsia Flare (#f50db4) against a Canvas White (#f2f2f2) background, creating a high-energy, competitive rhythm. Content is arranged in a clear, hierarchical grid, following the logical flow of a tournament, with dense informational blocks positioned adjacent to connection lines. Navigation elements ('Group Stage', 'Livestream') appear as minimalist text links or small buttons in the top bar.
 
-### Imagery
+## Similar Brands
 
-The visual language is purely functional and symbolic, primarily using monochrome icons and abstract representations for teams and game states. No photography or complex illustrations are present. Icons are typically black fills on either white or fuchsia backgrounds, adhering to a stark, outlined style or minimal block shapes. Imagery serves an explanatory and informative role, clearly denoting team identity, scores, and tournament progress, contributing to a data-heavy, minimalist interface.
+- **Etherscan** — High-contrast, data-dense display with minimal colors and structured information panels.
+- **TradingView (dark mode)** — Focus on charts and data visualization with a limited, functional color palette and clean lines.
+- **Zapper.xyz** — Crypto-native UI with an emphasis on numerical information and a strong brand accent color on a neutral background.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #f2f2f2;
+  --color-midnight-ink: #000000;
+  --color-alabaster: #ffffff;
+  --color-graphite: #222222;
+  --color-linen-mist: #fef4ff;
+  --color-fuchsia-flare: #f50db4;
+  --font-ui-sans-serif: 'ui-sans-serif', Inter;
+  --font-ui-monospace: 'ui-monospace', Space Mono;
+  --font-basel: 'Basel', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.33;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-display: 32px;
+  --leading-display: 1;
+  --tracking-display: -0.64px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --radius-buttons: 1.67772e+07px;
+  --radius-default: 0px;
+  --surface-canvas-background: #f2f2f2;
+  --surface-card-surface: #ffffff;
+  --surface-subtle-panel: #fef4ff;
+  --surface-interactive-block: #000000;
+  --surface-accent-block: #f50db4;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #f2f2f2;
+  --color-midnight-ink: #000000;
+  --color-alabaster: #ffffff;
+  --color-graphite: #222222;
+  --color-linen-mist: #fef4ff;
+  --color-fuchsia-flare: #f50db4;
+  --font-ui-sans-serif: 'ui-sans-serif', Inter;
+  --font-ui-monospace: 'ui-monospace', Space Mono;
+  --font-basel: 'Basel', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.33;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-display: 32px;
+  --leading-display: 1;
+  --tracking-display: -0.64px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --radius-buttons: 1.67772e+07px;
+  --radius-default: 0px;
+  --surface-canvas-background: #f2f2f2;
+  --surface-card-surface: #ffffff;
+  --surface-subtle-panel: #fef4ff;
+  --surface-interactive-block: #000000;
+  --surface-accent-block: #f50db4;
+}
+```
