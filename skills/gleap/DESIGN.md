@@ -1,75 +1,194 @@
 ---
 version: alpha
-name: Gleap
-description: Gleap's visual style operates on a high-contrast model, pairing crisp, modern sans-serifs with a single, highly saturated magenta-purple accent. The UI uses spacious layouts and soft, rounded containers on a light background, creating a calm yet energetic feel. Typography shifts from inviting, editorial display fonts for headlines to compact, functional system fonts for body text. Interaction elements prominently feature the brand's signature purple to guide user focus and denote primary actions.
-colors:
-  cloud-canvas: "#f5f2f0"
-  porcelain-surface: "#ffffff"
-  graphite-text: "#333333"
-  ink-text: "#000000"
-  platinum-border: "#d6d6d6"
-  silver-detail: "#bcbcbc"
-  deep-plum: "#7b7b7b"
-  amethyst-accent: "#f1ccff"
-  sky-blue-highlight: "#91e0ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.4
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.4px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.44
-    letterSpacing: -0.8px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.25
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 62px
-    lineHeight: 1.3
-    letterSpacing: 0px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 10px
-  elementGap: 16px
-  sectionGap: 30px
-components:
-  primary-action-button-amethyst:
-    role: Main call to action, filled with the brand's primary color.
-  secondary-action-button-outline:
-    role: Less prominent actions, using only a border to differentiate.
-  affirmative-action-button-dark:
-    role: Confirmation or direct action button, inverted color scheme from the page.
-  icon-button-dark-accent:
-    role: Compact button, often used for single actions or icon-only controls, with a distinctive larger radius.
-  product-feature-card:
-    role: Highlights key features or content, with subtle elevation.
-  informational-badge:
-    role: Categorizes or labels content with a soft, muted appearance.
+name: "Gleap"
+description: "Gleap's visual style operates on a high-contrast model, pairing crisp, modern sans-serifs with a single, highly saturated magenta-purple accent. The UI uses spacious layouts and soft, rounded containers on a light background, creating a calm yet energetic feel. Typography shifts from inviting, editorial display fonts for headlines to compact, functional system fonts for body text. Interaction elements prominently feature the brand's signature purple to guide user focus and denote primary actions."
+theme: "light"
+industry: "saas"
+source_url: "https://gleap.io"
+refero_style_id: "2eab438d-32cd-40c2-b160-1e4127dac569"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516289106-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516289106-thumb.jpg"
+extracted_at: "2026-04-30T02:31:49.218Z"
 ---
 
-## Overview
+# Gleap — Style Reference
 
-**North Star:** Crisp canvas, magenta highlight
+> Crisp canvas, magenta highlight
+
+**Theme:** light
+
+**Industry:** saas
 
 Gleap's visual style operates on a high-contrast model, pairing crisp, modern sans-serifs with a single, highly saturated magenta-purple accent. The UI uses spacious layouts and soft, rounded containers on a light background, creating a calm yet energetic feel. Typography shifts from inviting, editorial display fonts for headlines to compact, functional system fonts for body text. Interaction elements prominently feature the brand's signature purple to guide user focus and denote primary actions.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud Canvas | #f5f2f0 | `--color-cloud-canvas` | Primary page background, provides a soft, warm base for all content |
+| Porcelain Surface | #ffffff | `--color-porcelain-surface` | Card backgrounds, elevated content areas, ensuring high contrast with text |
+| Graphite Text | #333333 | `--color-graphite-text` | Primary text color for body copy, links, and detailed information |
+| Ink Text | #000000 | `--color-ink-text` | Headlines, navigation items, and strong textual elements for maximum emphasis |
+| Platinum Border | #d6d6d6 | `--color-platinum-border` | Subtle borders and dividers for UI separation without harsh lines |
+| Silver Detail | #bcbcbc | `--color-silver-detail` | Muted helper text, secondary borders, and subtle accent lines |
+| Deep Plum | #7b7b7b | `--color-deep-plum` | Tertiary text, less prominent links and meta information |
+| Amethyst Accent | #f1ccff | `--color-amethyst-accent` | Primary action buttons, prominent links, and accents within cards — it’s the brand’s signature interaction color, signaling interactivity |
+| Sky Blue Highlight | #91e0ff | `--color-sky-blue-highlight` | Decorative card backgrounds, highlighted sections or text within content — provides visual interest |
+
+## Tokens — Typography
+
+### PP Editorial New
+
+- **Token:** `--font-pp-editorial-new`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 48px, 62px
+- **Line heights:** 1.20, 1.25, 1.30
+- **Letter spacing:** normal
+- **Role:** Display headlines and prominent section titles. Its classical, editorial feel contrasts the modern sans-serifs, lending an authoritative yet approachable tone.
+
+### Switzer
+
+- **Token:** `--font-switzer`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600
+- **Sizes:** 13px, 14px, 16px, 20px, 32px
+- **Line heights:** 1.19, 1.20, 1.40, 1.43, 1.44
+- **Letter spacing:** -0.025em for 32px, -0.020em for 20px, -0.010em for 16px, normal for 13-14px
+- **Role:** All body text, subheadings, labels, and functional UI elements. Its clean, geometric form maintains readability and directness across the interface. Letter spacing is subtly tightened at larger sizes for visual density.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Roboto
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.25, 1.43
+- **Letter spacing:** normal
+- **Role:** Fallback and specific UI components where extreme simplicity and system-level rendering is preferred, such as internal tools or complex data displays.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** Segoe UI
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Used for highly compact labels or system messages where minimal footprint is critical.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.4 | 0px | `--text-caption` |
+| body | 16px | 1.4 | -0.16px | `--text-body` |
+| subheading | 20px | 1.2 | -0.4px | `--text-subheading` |
+| heading | 32px | 1.44 | -0.8px | `--text-heading` |
+| heading-lg | 48px | 1.25 | 0px | `--text-heading-lg` |
+| display | 62px | 1.3 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-116 | 116px | `--spacing-116` |
+| spacing-160 | 160px | `--spacing-160` |
+| spacing-215 | 215px | `--spacing-215` |
+| spacing-217 | 217px | `--spacing-217` |
+| spacing-220 | 220px | `--spacing-220` |
+| spacing-300 | 300px | `--spacing-300` |
+| spacing-314 | 314px | `--spacing-314` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 24px |
+| badges | 10px |
+| buttons | 10px |
+| largeElements | 42px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.04) 0px 8px 16px 0px | `--shadow-xl` |
+| xl-2 | rgba(16, 24, 40, 0.05) 0px 1px 2px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 30px |
+| cardPadding | 40px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Action Button (Amethyst)
+
+**Role:** Main call to action, filled with the brand's primary color.
+
+Background: #f1ccff (Amethyst Accent), Text: #000000 (Ink Text), Border: #f1ccff, Padding: 10px vertical, 15px horizontal, Border-radius: 10px.
+
+### Secondary Action Button (Outline)
+
+**Role:** Less prominent actions, using only a border to differentiate.
+
+Background: transparent, Text: #000000 (Ink Text), Border: 1px solid #000000, Padding: 17px vertical, 20px horizontal, Border-radius: 0px.
+
+### Affirmative Action Button (Dark)
+
+**Role:** Confirmation or direct action button, inverted color scheme from the page.
+
+Background: #000000 (Ink Text), Text: #ffffff (Porcelain Surface), Border: #000000, Padding: 10px vertical, 15px horizontal, Border-radius: 10px.
+
+### Icon Button (Dark Accent)
+
+**Role:** Compact button, often used for single actions or icon-only controls, with a distinctive larger radius.
+
+Background: #000000 (Ink Text), Text: #ffffff (Porcelain Surface), Border: #ffffff, Padding: 14px vertical, 16px horizontal, Border-radius: 16px.
+
+### Product Feature Card
+
+**Role:** Highlights key features or content, with subtle elevation.
+
+Background: #ffffff (Porcelain Surface), Padding: 40px, Border-radius: 24px, Shadow: rgba(0, 0, 0, 0.04) 0px 8px 16px 0px.
+
+### Informational Badge
+
+**Role:** Categorizes or labels content with a soft, muted appearance.
+
+Background: transparent, Text: #333333 (Graphite Text), Padding: 5px vertical, 12px horizontal, Border-radius: 10px, Border: 1px solid #f5f2f0 (Cloud Canvas).
+
+## Do's and Don'ts
+
+### Do
 
 - Use PP Editorial New (weight 400) for all display headlines, setting them at 48px or 62px with normal letter spacing for an elevated, editorial feel.
 - Apply Switzer (weights 400, 500, 600) for all body text, subheadings, and UI labels, adjusting letter spacing to -0.010em for 16px, -0.020em for 20px, and -0.025em for 32px to maintain visual compactness.
@@ -79,7 +198,7 @@ Gleap's visual style operates on a high-contrast model, pairing crisp, modern sa
 - Structure layout using a 1200px max-width container, centered on the Cloud Canvas (#f5f2f0) background, with a consistent 30px vertical gap between major sections.
 - Apply subtle elevation to key UI components like Product Feature Cards using rgba(0, 0, 0, 0.04) 0px 8px 16px 0px shadows, while keeping default backgrounds clean and shadow-less.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors for primary actions; Amethyst Accent (#f1ccff) is the singular brand color for interactive elements.
 - Do not introduce sharp corners or unrounded containers; enforce the 10px, 24px, or 42px border-radius system meticulously.
@@ -89,10 +208,179 @@ Gleap's visual style operates on a high-contrast model, pairing crisp, modern sa
 - Do not introduce new border colors for UI elements; stick to Platinum Border (#d6d6d6) or Ink Text (#000000) for subtle separation.
 - Resist dense layouts; ensure generous use of the 16px elementGap and 40px cardPadding to maintain a comfortable reading experience and visual breathing room.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Cloud Canvas | #f5f2f0 | Base page background, creating a soft, warm foundation for the entire interface. |
+| 1 | Porcelain Surface | #ffffff | Default background for UI cards, panels, and other contained content blocks resting on the base canvas. |
+
+## Elevation
+
+- **Product Feature Card:** `rgba(0, 0, 0, 0.04) 0px 8px 16px 0px`
+- **Navigation Bar Button:** `rgba(16, 24, 40, 0.05) 0px 1px 2px 0px`
+
+## Imagery
+
+The visual language predominantly features clean, product-focused screenshots of the software UI, often presented within rounded, slightly elevated containers. There's also use of abstract, gradient-rich backgrounds with subtle geometric shapes (like moons or soft hills) that provide atmospheric depth without competing with content. Iconography is generally monochromatic, using a filled style with clean lines. Imagery serves an explanatory and showcase role, demonstrating product functionality and providing decorative atmosphere rather than lifestyle context. Overall, it's a balance of functional UI demonstration and soft, atmospheric branding.
+
+## Layout
 
 The page employs a max-width 1200px centered layout with a dominant light theme. Hero sections often feature a centered headline in the distinct serif font over atmospheric, organic gradient backgrounds. Vertical rhythm is established with a significant 30px gap between sections. Content sections frequently use an alternating text-left/visual-right pattern, or stacked centered blocks for feature descriptions. Pricing and feature comparisons often fall into multi-column (3-column) card grids. Navigation is a sticky top bar with a left-aligned logo and right-aligned actions, often using a distinct dark pill-shaped button for 'Sign up'.
 
-### Imagery
+## Similar Brands
 
-The visual language predominantly features clean, product-focused screenshots of the software UI, often presented within rounded, slightly elevated containers. There's also use of abstract, gradient-rich backgrounds with subtle geometric shapes (like moons or soft hills) that provide atmospheric depth without competing with content. Iconography is generally monochromatic, using a filled style with clean lines. Imagery serves an explanatory and showcase role, demonstrating product functionality and providing decorative atmosphere rather than lifestyle context. Overall, it's a balance of functional UI demonstration and soft, atmospheric branding.
+- **Cal.com** — Clean, light UI with a single vibrant accent color for interactivity and a mix of modern sans-serif and more decorative typefaces for headlines.
+- **Linear** — Emphasis on crisp typography, generous spacing, and a functionally driven, often monochromatic palette punctuated by key accent colors.
+- **Pitch** — Uses soft rounded corners on cards and buttons, a light dominant background, and a single, strong brand color for primary actions.
+- **Vercel** — Modern and spacious interface, high contrast text on light backgrounds, and subtle use of shadows for depth rather than heavy components.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-canvas: #f5f2f0;
+  --color-porcelain-surface: #ffffff;
+  --color-graphite-text: #333333;
+  --color-ink-text: #000000;
+  --color-platinum-border: #d6d6d6;
+  --color-silver-detail: #bcbcbc;
+  --color-deep-plum: #7b7b7b;
+  --color-amethyst-accent: #f1ccff;
+  --color-sky-blue-highlight: #91e0ff;
+  --font-pp-editorial-new: 'PP Editorial New', Playfair Display;
+  --font-switzer: 'Switzer', Inter;
+  --font-arial: 'Arial', Roboto;
+  --font-system-ui: 'system-ui', Segoe UI;
+  --text-caption: 13px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.16px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.4px;
+  --text-heading: 32px;
+  --leading-heading: 1.44;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.25;
+  --tracking-heading-lg: 0px;
+  --text-display: 62px;
+  --leading-display: 1.3;
+  --tracking-display: 0px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-116: 116px;
+  --spacing-160: 160px;
+  --spacing-215: 215px;
+  --spacing-217: 217px;
+  --spacing-220: 220px;
+  --spacing-300: 300px;
+  --spacing-314: 314px;
+  --radius-cards: 24px;
+  --radius-badges: 10px;
+  --radius-buttons: 10px;
+  --radius-largeelements: 42px;
+  --shadow-xl: rgba(0, 0, 0, 0.04) 0px 8px 16px 0px;
+  --shadow-xl-2: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+  --surface-cloud-canvas: #f5f2f0;
+  --surface-porcelain-surface: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-canvas: #f5f2f0;
+  --color-porcelain-surface: #ffffff;
+  --color-graphite-text: #333333;
+  --color-ink-text: #000000;
+  --color-platinum-border: #d6d6d6;
+  --color-silver-detail: #bcbcbc;
+  --color-deep-plum: #7b7b7b;
+  --color-amethyst-accent: #f1ccff;
+  --color-sky-blue-highlight: #91e0ff;
+  --font-pp-editorial-new: 'PP Editorial New', Playfair Display;
+  --font-switzer: 'Switzer', Inter;
+  --font-arial: 'Arial', Roboto;
+  --font-system-ui: 'system-ui', Segoe UI;
+  --text-caption: 13px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.16px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.4px;
+  --text-heading: 32px;
+  --leading-heading: 1.44;
+  --tracking-heading: -0.8px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.25;
+  --tracking-heading-lg: 0px;
+  --text-display: 62px;
+  --leading-display: 1.3;
+  --tracking-display: 0px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-88: 88px;
+  --spacing-116: 116px;
+  --spacing-160: 160px;
+  --spacing-215: 215px;
+  --spacing-217: 217px;
+  --spacing-220: 220px;
+  --spacing-300: 300px;
+  --spacing-314: 314px;
+  --radius-cards: 24px;
+  --radius-badges: 10px;
+  --radius-buttons: 10px;
+  --radius-largeelements: 42px;
+  --shadow-xl: rgba(0, 0, 0, 0.04) 0px 8px 16px 0px;
+  --shadow-xl-2: rgba(16, 24, 40, 0.05) 0px 1px 2px 0px;
+  --surface-cloud-canvas: #f5f2f0;
+  --surface-porcelain-surface: #ffffff;
+}
+```

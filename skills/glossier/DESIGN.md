@@ -1,65 +1,172 @@
 ---
 version: alpha
-name: Glossier
-description: Glossier's visual style is a 'modern classic' — grounded in a stark, high-contrast black and white palette, then infused with bursts of vibrant, youthful color. The interplay of minimalist typography and photography, punctuated by a signature vivid yellow, creates an aspirational yet approachable feel. Sharp rectangular forms dominate the layout, establishing a sense of order, softened slightly by the inviting warmth of the product imagery.
-colors:
-  ink: "#000000"
-  snow: "#ffffff"
-  ash: "#666666"
-  fog: "#e8e8e8"
-  whisper: "#f7f7f7"
-  lemon-zest: "#fff116"
-  twilight-indigo: "#0600ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-    letterSpacing: 0.24px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: 0.42px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.23
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.09
-spacing:
-  elementGap: 8px
-  sectionGap: 40-80px
-components:
-  product-cards-with-new-badge:
-    role: 
-  promo-announcement-banner:
-    role: 
-  hero-promo-card-with-cta:
-    role: 
-  primary-action-button:
-    role: Main call-to-action
-  secondary-action-button:
-    role: Supporting call-to-action
-  outlined-product-card-button:
-    role: Product interaction button on cards
-  search-input-field:
-    role: Collecting user input for search
-  new-badge:
-    role: Highlighting new products or features
-  info-message-badge:
-    role: General information badge
+name: "Glossier"
+description: "Glossier's visual style is a 'modern classic' — grounded in a stark, high-contrast black and white palette, then infused with bursts of vibrant, youthful color. The interplay of minimalist typography and photography, punctuated by a signature vivid yellow, creates an aspirational yet approachable feel. Sharp rectangular forms dominate the layout, establishing a sense of order, softened slightly by the inviting warmth of the product imagery."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://glossier.com"
+refero_style_id: "efd8dda0-b7dc-4b0b-b65f-348849d2cd65"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924478857-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924478857-thumb.jpg"
+extracted_at: "2026-04-11T16:21:36.833Z"
 ---
 
-## Overview
+# Glossier — Style Reference
 
-**North Star:** Photographic vibrancy on crisp white canvas. Imagine a brightly lit product shot, vibrant and rich, placed on a pristine white gallery wall.
+> Photographic vibrancy on crisp white canvas. Imagine a brightly lit product shot, vibrant and rich, placed on a pristine white gallery wall.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Glossier's visual style is a 'modern classic' — grounded in a stark, high-contrast black and white palette, then infused with bursts of vibrant, youthful color. The interplay of minimalist typography and photography, punctuated by a signature vivid yellow, creates an aspirational yet approachable feel. Sharp rectangular forms dominate the layout, establishing a sense of order, softened slightly by the inviting warmth of the product imagery.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ink | #000000 | `--color-ink` | Primary text, iconography, solid button backgrounds, borders. Establishes a bold and clear presence against light backgrounds. |
+| Snow | #ffffff | `--color-snow` | Page backgrounds, card surfaces, button text. Provides a clean, expansive backdrop. |
+| Ash | #666666 | `--color-ash` | Secondary text, subtle instructional text, input placeholders. A softer contrast for less prominent information. |
+| Fog | #e8e8e8 | `--color-fog` | Badge backgrounds, input borders. Provides a subtle distinction without visual noise. |
+| Whisper | #f7f7f7 | `--color-whisper` | Subtle background for navigation or section dividers. Used for delicate background differentiation. |
+| Lemon Zest | #fff116 | `--color-lemon-zest` | Primary call-to-action buttons, accent highlights, brand logotype. Its vivid saturation provides energetic focal points. |
+| Twilight Indigo | #0600ff | `--color-twilight-indigo` | New product badges. Offers a clear, distinct visual indicator for new items. |
+
+## Tokens — Typography
+
+### Apercu
+
+- **Token:** `--font-apercu`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 700
+- **Sizes:** 12px, 14px, 16px, 20px, 32px
+- **Line heights:** 1.00, 1.09, 1.15, 1.17, 1.20, 1.23, 1.30, 1.40, 1.43, 1.46, 1.63, 1.67, 1.70
+- **Letter spacing:** 0.002em at 12px, 0.003em at 14px, 0.04em at 16px
+- **Role:** Primary typeface for all body text, headings, navigational elements, and buttons. Its clean, geometric sans-serif quality maintains a professional yet approachable tone.
+
+### Apercu Mono
+
+- **Token:** `--font-apercu-mono`
+- **Substitute:** monospace
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.40
+- **Letter spacing:** normal
+- **Role:** Used sparingly for technical or code-like elements where fixed-width spacing is desired, providing subtle typographic variation.
+
+### GTStandard-M
+
+- **Token:** `--font-gtstandard-m`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** A secondary display font, used for specific highlighted text blocks, contributing to a distinctive brand voice.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | 0.24px | `--text-caption` |
+| body | 14px | 1.43 | 0.42px | `--text-body` |
+| heading | 20px | 1.23 | — | `--text-heading` |
+| display | 32px | 1.09 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-60 | 60px | `--spacing-60` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40-80px |
+| cardPadding | 0px |
+| elementGap | 8px |
+
+## Components
+
+### Product Cards with NEW Badge
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Promo Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Hero Promo Card with CTA
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Main call-to-action
+
+Solid black background (Ink #000000), white text (Snow #FFFFFF), 0px border-radius, 8px vertical padding, 16px horizontal padding. Font: Apercu Bold 16px, normal letter-spacing, line-height 1.23.
+
+### Secondary Action Button
+
+**Role:** Supporting call-to-action
+
+Transparent background, black text (Ink #000000) and 1px bottom border. 0px padding. Font: Apercu Regular 16px, normal letter-spacing.
+
+### Outlined Product Card Button
+
+**Role:** Product interaction button on cards
+
+Faint gray background (240,240,240), black text (Ink #000000), 0px border-radius, 6px top padding, 5px right/bottom/left padding, 1px black border. Font: Apercu Bold 14px, normal letter-spacing.
+
+### Search Input Field
+
+**Role:** Collecting user input for search
+
+White background (Snow #FFFFFF), gray text (Ash #666666), 1px border with Fog (#e8e8e8) color, 0px border-radius, 22px top padding, 8px right/left padding, 6px bottom padding. Font: Apercu Regular 16px.
+
+### New Badge
+
+**Role:** Highlighting new products or features
+
+Dark blue background (Twilight Indigo #0600ff), black text (Ink #000000), 0px border-radius, 1px vertical padding, 8px horizontal padding. Font: Apercu Regular 12px.
+
+### Info Message Badge
+
+**Role:** General information badge
+
+Light gray background (Fog #e8e8e8), black text (Ink #000000), 0px border-radius, 1px vertical padding, 8px horizontal padding. Font: Apercu Regular 12px.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a primary color palette of Ink (#000000) for text and Snow (#FFFFFF) for backgrounds to ensure high contrast and readability.
 - Utilize Apercu for all text elements; vary weights (400, 500, 700) and sizes (12px, 14px, 16px, 20px, 32px) to establish clear hierarchy.
@@ -68,7 +175,7 @@ Glossier's visual style is a 'modern classic' — grounded in a stark, high-cont
 - Implement a consistent 0px border-radius across all buttons, cards, and input fields to uphold the sharp, modern aesthetic.
 - Use 8px for element spacing by default, increasing to 14px for more significant separations between related content blocks.
 
-### Don'ts
+### Don't
 
 - Avoid introducing gradients or shadows; the aesthetic relies on flat colors and crisp edges to define elements.
 - Do not use highly saturated colors other than Lemon Zest (#fff116) or Twilight Indigo (#0600ff) in prominent UI elements, as this dilutes brand identity.
@@ -77,10 +184,112 @@ Glossier's visual style is a 'modern classic' — grounded in a stark, high-cont
 - Avoid organic or highly decorative imagery; favor clean, product-focused photography or abstract visuals.
 - Do not dilute the Lemon Zest (#fff116) accent by applying it to secondary actions or informational text.
 
-### Layout
+## Imagery
+
+The visual language is characterized by high-key, product-focused photography and clean UI. Photography is typically full-bleed or large, emphasizing product details, often with strong directional light and rich but natural color saturation. Images are contained within sharp, rectangular forms, with no visible masking or overlapping. Illustrations, if present (not clearly visible in screenshots), adhere to a flat, clean aesthetic. Icons are simple, outlined, and monochromatic (Ink #000000). The imagery's primary role is to showcase products and evoke an aspirational, lifestyle mood without being overtly staged, balancing product focus with atmospheric context. Imagery dominates hero sections and category blocks, giving the site a visually rich yet uncluttered feel.
+
+## Layout
 
 The page primarily uses a max-width contained model for most content, centered on the page, with some full-bleed hero sections. The hero banner often features a large image with an overlaying text block or brand element, creating visual drama. Section rhythm is fluid, with consistent vertical spacing but alternating content arrangements—sometimes a large hero, then a two-column grid, followed by a multi-column product display. Content is arranged in alternating text-left/image-right or centered stacks. Product grids utilize a 4-column layout. Spacing between sections is comfortable, allowing elements to breathe. Navigation consists of a sticky top bar with clear product categories and utility icons.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by high-key, product-focused photography and clean UI. Photography is typically full-bleed or large, emphasizing product details, often with strong directional light and rich but natural color saturation. Images are contained within sharp, rectangular forms, with no visible masking or overlapping. Illustrations, if present (not clearly visible in screenshots), adhere to a flat, clean aesthetic. Icons are simple, outlined, and monochromatic (Ink #000000). The imagery's primary role is to showcase products and evoke an aspirational, lifestyle mood without being overtly staged, balancing product focus with atmospheric context. Imagery dominates hero sections and category blocks, giving the site a visually rich yet uncluttered feel.
+- **Fenty Beauty** — Shares a brand identity built on high-quality product photography and a strong, singular accent color against a clean, minimal backdrop.
+- **Aesop** — Exhibits a similar commitment to minimalist typography and high-contrast text on clean backgrounds, emphasizing product aesthetics over overly decorative UI.
+- **Drunk Elephant** — Utilizes a clean, white-dominant aesthetic with select vibrant color accents to highlight products and maintain a fresh, approachable feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ink: #000000;
+  --color-snow: #ffffff;
+  --color-ash: #666666;
+  --color-fog: #e8e8e8;
+  --color-whisper: #f7f7f7;
+  --color-lemon-zest: #fff116;
+  --color-twilight-indigo: #0600ff;
+  --font-apercu: 'Apercu', system-ui, sans-serif;
+  --font-apercu-mono: 'Apercu Mono', monospace;
+  --font-gtstandard-m: 'GTStandard-M', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.24px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0.42px;
+  --text-heading: 20px;
+  --leading-heading: 1.23;
+  --text-display: 32px;
+  --leading-display: 1.09;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-27: 27px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-41: 41px;
+  --spacing-60: 60px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ink: #000000;
+  --color-snow: #ffffff;
+  --color-ash: #666666;
+  --color-fog: #e8e8e8;
+  --color-whisper: #f7f7f7;
+  --color-lemon-zest: #fff116;
+  --color-twilight-indigo: #0600ff;
+  --font-apercu: 'Apercu', system-ui, sans-serif;
+  --font-apercu-mono: 'Apercu Mono', monospace;
+  --font-gtstandard-m: 'GTStandard-M', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.24px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: 0.42px;
+  --text-heading: 20px;
+  --leading-heading: 1.23;
+  --text-display: 32px;
+  --leading-display: 1.09;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-27: 27px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-40: 40px;
+  --spacing-41: 41px;
+  --spacing-60: 60px;
+  --radius-all: 0px;
+}
+```

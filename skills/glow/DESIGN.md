@@ -1,70 +1,136 @@
 ---
 version: alpha
-name: Glow
-description: Glow embraces a 'Solana future' aesthetic: clean, spacious interfaces with a vibrant gradient accent that hints at digital energy. The design uses a dominant neutral canvas to ground the playful purple-pink-orange color narrative, focusing attention on key actions and glowing interactive states. Typography is confident and impactful, balancing heavy headlines with readable body text, while generous spacing ensures content breathes and feels light.
-colors:
-  ghost-ink: "#131517"
-  cloud-canvas: "#f4f5f6"
-  snowdrift: "#ffffff"
-  stone-gray: "#737577"
-  soft-sterling: "#b3b5b7"
-  carbon: "#333537"
-  solana-grape: "#cc62d5"
-  alert-red: "#e83b47"
-  highlight-orange: "#ec660d"
-  glow-gradient: "#a732d6"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.99px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.28
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.28
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.17
-    letterSpacing: -0.43px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.72px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-    letterSpacing: -1px
-spacing:
-  cardRadius: 40px
-  buttonRadius: 19px
-  elementGap: 8px
-  sectionGap: 40px
-components:
-  primary-action-button:
-    role: Filled button
-  secondary-action-button:
-    role: Filled button
-  feature-card:
-    role: Informational display
-  badge-new:
-    role: Status indicator
+name: "Glow"
+description: "Glow embraces a 'Solana future' aesthetic: clean, spacious interfaces with a vibrant gradient accent that hints at digital energy. The design uses a dominant neutral canvas to ground the playful purple-pink-orange color narrative, focusing attention on key actions and glowing interactive states. Typography is confident and impactful, balancing heavy headlines with readable body text, while generous spacing ensures content breathes and feels light."
+theme: "light"
+industry: "fintech"
+source_url: "https://glow.app"
+refero_style_id: "6d9b6fe6-51f4-4978-82dd-a791c28db5cf"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514610102-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514610102-thumb.jpg"
+extracted_at: "2026-04-30T02:03:51.193Z"
 ---
 
-## Overview
+# Glow — Style Reference
 
-**North Star:** Vibrant crypto gradient on clean canvas
+> Vibrant crypto gradient on clean canvas
+
+**Theme:** light
+
+**Industry:** fintech
 
 Glow embraces a 'Solana future' aesthetic: clean, spacious interfaces with a vibrant gradient accent that hints at digital energy. The design uses a dominant neutral canvas to ground the playful purple-pink-orange color narrative, focusing attention on key actions and glowing interactive states. Typography is confident and impactful, balancing heavy headlines with readable body text, while generous spacing ensures content breathes and feels light.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ghost Ink | #131517 | `--color-ghost-ink` | Primary text, headings, dark icons, borders |
+| Cloud Canvas | #f4f5f6 | `--color-cloud-canvas` | Page backgrounds, elevated card surfaces |
+| Snowdrift | #ffffff | `--color-snowdrift` | Foreground elements, button text, badges |
+| Stone Gray | #737577 | `--color-stone-gray` | Muted text, secondary icons, subtle borders |
+| Soft Sterling | #b3b5b7 | `--color-soft-sterling` | Placeholder text, inactive state borders |
+| Carbon | #333537 | `--color-carbon` | Secondary button backgrounds, dark UI elements |
+| Solana Grape | #cc62d5 | `--color-solana-grape` | Primary action buttons, active links, interactive elements — a vivid purple that signifies activation |
+| Alert Red | #e83b47 | `--color-alert-red` | Red wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Use as a supporting accent, not as a status color |
+| Highlight Orange | #ec660d | `--color-highlight-orange` | New feature badges, inline alerts, and decorative accents |
+| Glow Gradient | #a732d6 | `--color-glow-gradient` | Decorative background element, brand identity visual |
+
+## Tokens — Typography
+
+### Roobert
+
+- **Token:** `--font-roobert`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 13px, 16px, 18px, 24px, 40px, 56px
+- **Line heights:** 1.00, 1.10, 1.17, 1.20, 1.28, 1.50
+- **Letter spacing:** -0.0180em, 0.0830em
+- **Role:** Primary brand typeface for all text. Its unique character delivers a modern, almost technical feel. Weight 700 is used for impactful headlines, while 400 maintains readability in body copy.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.5
+- **Role:** -apple-system — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.99px | `--text-caption` |
+| body | 16px | 1.28 | — | `--text-body` |
+| subheading | 18px | 1.28 | — | `--text-subheading` |
+| heading | 24px | 1.17 | -0.43px | `--text-heading` |
+| heading-lg | 40px | 1.1 | -0.72px | `--text-heading-lg` |
+| display | 56px | 1 | -1px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 40px |
+| icons | 100px |
+| badges | 4px |
+| buttons | 19px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 24px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Filled button
+
+Solid `Solana Grape` background (#cc62d5) with `Snowdrift` (#ffffff) text, rounded corners of 19px, and generous horizontal padding (14px). Used for primary calls to action like 'Get Browser Extension'.
+
+### Secondary Action Button
+
+**Role:** Filled button
+
+Solid `Carbon` (#333537) background with `Snowdrift` (#ffffff) text, rounded corners of 19px, and generous horizontal padding (14px). Used for secondary calls to action like 'Get for iOS'.
+
+### Feature Card
+
+**Role:** Informational display
+
+Large `Cloud Canvas` (#f4f5f6) background card with a dramatically rounded 40px border radius, typically used for showcasing product features. No internal padding is specified; content flows to the edges.
+
+### Badge (New)
+
+**Role:** Status indicator
+
+`Highlight Orange` (#ec660d) background with `Snowdrift` (#ffffff) text, small 4px border radius, and tight 2px vertical, 8px horizontal padding. Used to indicate new features or important states.
+
+## Do's and Don'ts
+
+### Do
 
 - Use `Solana Grape` (#cc62d5) exclusively for primary interactive elements, ensuring every click feels significant.
 - Apply `Roobert` with a 700 weight and `Ghost Ink` (#131517) for all main headlines to convey clarity and impact.
@@ -73,7 +139,7 @@ Glow embraces a 'Solana future' aesthetic: clean, spacious interfaces with a vib
 - Pad interactive elements like buttons and badges with at least `10px` vertical and `14px` horizontal padding, maintaining a `19px` border radius.
 - Utilize the `Glow Gradient` for decorative brand elements only, never for functional UI components.
 
-### Don'ts
+### Don't
 
 - Avoid using `Highlight Orange` (#ec660d) or `Alert Red` (#e83b47) for general UI backgrounds; reserve them for specific semantic alerts or decorative accents.
 - Do not introduce additional font families; `Roobert` is the sole brand typeface.
@@ -81,10 +147,118 @@ Glow embraces a 'Solana future' aesthetic: clean, spacious interfaces with a vib
 - Do not deviate from the established `40px` radius for cards and `19px` for buttons; consistency in shape defines component identity.
 - Avoid dense information blocks; instead, use the `8px` `elementGap` and clear typography to create spacious layouts.
 
-### Layout
+## Imagery
+
+The site predominantly uses product screenshots of the Glow wallet interface, presented on stark white or lightly textured surfaces. These are cleanly cropped and isolated, focusing on the UI in action rather than lifestyle. Abstract 3D elements, often in 'Solana Grape' or similar gradient hues (#cc62d5 gradient), float around the screenshots, acting as decorative accents without obscuring the product. Iconography is simple, outlined, and uses the neutral palette with occasional brand color fills for emphasis. The visual language emphasizes product functionality and a modern, slightly playful tech aesthetic over hyper-realistic or human-centric photography.
+
+## Layout
 
 The page primarily employs a max-width contained layout, though the hero section extends full-bleed across the screen with a light background and a left-aligned content block. Sections alternate between a prominent heading and explanatory text, often paired with product screenshots on the opposite side (text-left, image-right, then text-right, image-left). Vertical rhythm is established through consistent `40px` section gaps. Call-to-action buttons are clustered together. Feature showcases utilize card grids, while footer links are minimal and left-aligned. The overall density is comfortable, with ample white space around content blocks, creating an open and airy feel.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses product screenshots of the Glow wallet interface, presented on stark white or lightly textured surfaces. These are cleanly cropped and isolated, focusing on the UI in action rather than lifestyle. Abstract 3D elements, often in 'Solana Grape' or similar gradient hues (#cc62d5 gradient), float around the screenshots, acting as decorative accents without obscuring the product. Iconography is simple, outlined, and uses the neutral palette with occasional brand color fills for emphasis. The visual language emphasizes product functionality and a modern, slightly playful tech aesthetic over hyper-realistic or human-centric photography.
+- **Rainbow Wallet** — Vibrant, single-color brand accent against a clean, light UI background in the crypto space.
+- **Phantom Wallet** — Uses a similar confident, modern sans-serif typeface and a focus on clean product UI with minimal ornamentation.
+- **Linear** — Strict adherence to a well-defined type scale, subtle use of neutrals, and a single accent color for primary actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ghost-ink: #131517;
+  --color-cloud-canvas: #f4f5f6;
+  --color-snowdrift: #ffffff;
+  --color-stone-gray: #737577;
+  --color-soft-sterling: #b3b5b7;
+  --color-carbon: #333537;
+  --color-solana-grape: #cc62d5;
+  --color-alert-red: #e83b47;
+  --color-highlight-orange: #ec660d;
+  --color-glow-gradient: #a732d6;
+  --font-roobert: 'Roobert', Inter;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.99px;
+  --text-body: 16px;
+  --leading-body: 1.28;
+  --text-subheading: 18px;
+  --leading-subheading: 1.28;
+  --text-heading: 24px;
+  --leading-heading: 1.17;
+  --tracking-heading: -0.43px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 56px;
+  --leading-display: 1;
+  --tracking-display: -1px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --radius-cards: 40px;
+  --radius-icons: 100px;
+  --radius-badges: 4px;
+  --radius-buttons: 19px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ghost-ink: #131517;
+  --color-cloud-canvas: #f4f5f6;
+  --color-snowdrift: #ffffff;
+  --color-stone-gray: #737577;
+  --color-soft-sterling: #b3b5b7;
+  --color-carbon: #333537;
+  --color-solana-grape: #cc62d5;
+  --color-alert-red: #e83b47;
+  --color-highlight-orange: #ec660d;
+  --color-glow-gradient: #a732d6;
+  --font-roobert: 'Roobert', Inter;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.99px;
+  --text-body: 16px;
+  --leading-body: 1.28;
+  --text-subheading: 18px;
+  --leading-subheading: 1.28;
+  --text-heading: 24px;
+  --leading-heading: 1.17;
+  --tracking-heading: -0.43px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 56px;
+  --leading-display: 1;
+  --tracking-display: -1px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --radius-cards: 40px;
+  --radius-icons: 100px;
+  --radius-badges: 4px;
+  --radius-buttons: 19px;
+}
+```
