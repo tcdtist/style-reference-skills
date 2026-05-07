@@ -1,57 +1,137 @@
 ---
 version: alpha
-name: ADBC
-description: ADBC employs a high-contrast, minimalist visual language, emphasizing strong typography and monochromatic imagery over decorative elements. A stark white background acts as a clean canvas, creating sharp legibility for the almost black text. The design relies on generous whitespace and a precise typographic system to establish hierarchy and a sense of understated authority. Interaction is conveyed through subtle underlines rather than overt button styling, making the experience feel direct and content-focused.
-colors:
-  inkwell: "#111111"
-  canvas-white: "#ffffff"
-  pitch-black: "#000000"
-  sage-accent: "#778652"
-  muted-gray: "#cecece"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.25
-    letterSpacing: -0.45px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1.05
-    letterSpacing: -3.6px
-spacing:
-  elementGap: 24px
-  sectionGap: 42px
-components:
-  navigation-link:
-    role: Header and footer navigation items.
-  hero-headline:
-    role: Large, impactful text for hero sections.
-  body-text-block:
-    role: Standard paragraphs and descriptive text.
-  promotional-card:
-    role: Informational content blocks, featuring image and text.
-  section-heading:
-    role: Titles for content sections.
-  call-to-action-link:
-    role: Subtle calls to action embedded in text.
+name: "ADBC"
+description: "ADBC employs a high-contrast, minimalist visual language, emphasizing strong typography and monochromatic imagery over decorative elements. A stark white background acts as a clean canvas, creating sharp legibility for the almost black text. The design relies on generous whitespace and a precise typographic system to establish hierarchy and a sense of understated authority. Interaction is conveyed through subtle underlines rather than overt button styling, making the experience feel direct and content-focused."
+theme: "light"
+industry: "other"
+source_url: "https://www.adbc.studio"
+refero_style_id: "fe602c0f-2862-432b-88fc-fa5f9fbc3c78"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513449734-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513449734-thumb.jpg"
+extracted_at: "2026-04-30T01:44:28.580Z"
 ---
 
-## Overview
+# ADBC — Style Reference
 
-**North Star:** alpine starkness on white canvas
+> alpine starkness on white canvas
+
+**Theme:** light
+
+**Industry:** other
 
 ADBC employs a high-contrast, minimalist visual language, emphasizing strong typography and monochromatic imagery over decorative elements. A stark white background acts as a clean canvas, creating sharp legibility for the almost black text. The design relies on generous whitespace and a precise typographic system to establish hierarchy and a sense of understated authority. Interaction is conveyed through subtle underlines rather than overt button styling, making the experience feel direct and content-focused.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Inkwell | #111111 | `--color-inkwell` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, prominent surfaces. This bright white serves as the expansive, clean foundation for the entire layout |
+| Pitch Black | #000000 | `--color-pitch-black` | Decorative elements, iconography — used sparingly to punctuate specific UI elements |
+| Sage Accent | #778652 | `--color-sage-accent` | Decorative accents where a subtle, earthy color is desired, as indicated by CSS token hints |
+| Muted Gray | #cecece | `--color-muted-gray` | Subtle navigation text, as indicated by CSS token hints, providing a softer alternative to the main text color |
+
+## Tokens — Typography
+
+### Untitled Sans
+
+- **Token:** `--font-untitled-sans`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 16px, 24px, 36px, 72px
+- **Line heights:** 1.05, 1.25
+- **Letter spacing:** -0.0500em at 72px, -0.0250em at 36px, normal at 16px
+- **Role:** Primary headings, navigation, and most UI text. The custom sans-serif with subtle negative tracking on larger sizes delivers a clean, modern, and impactful statement.
+
+### Untitled Serif
+
+- **Token:** `--font-untitled-serif`
+- **Substitute:** Lora
+- **Weights:** 400
+- **Sizes:** 18px
+- **Line heights:** 1.25
+- **Letter spacing:** normal
+- **Role:** Body copy. This serif font provides a readable, considered voice for long-form content, contrasting with the sans-serif headlines but maintaining a similar understated character.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 18px | 1.25 | — | `--text-body` |
+| subheading | 24px | 1.25 | — | `--text-subheading` |
+| heading | 36px | 1.25 | -0.45px | `--text-heading` |
+| display | 72px | 1.05 | -3.6px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 42px |
+| cardPadding | 0px |
+| elementGap | 24px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Header and footer navigation items.
+
+Text: Untitled Sans, 16px, weight 400, color Inkwell (#111111). Underlined with a 1px border on hover, using Inkwell. Generous 42px horizontal padding to ensure distinct clickable areas.
+
+### Hero Headline
+
+**Role:** Large, impactful text for hero sections.
+
+Text: Untitled Sans, 72px, weight 400, color Inkwell (#111111), lineHeight 1.05, letterSpacing -0.0500em. Appears centered on a photographic background.
+
+### Body Text Block
+
+**Role:** Standard paragraphs and descriptive text.
+
+Text: Untitled Serif, 18px, weight 400, color Inkwell (#111111), lineHeight 1.25. The text flows within a comfortable content width with standard letter spacing.
+
+### Promotional Card
+
+**Role:** Informational content blocks, featuring image and text.
+
+Background: Canvas White (#ffffff). No border or shadow (0px borderRadius, none boxShadow). Content is flush with the edges (0px padding).
+
+### Section Heading
+
+**Role:** Titles for content sections.
+
+Text: Untitled Sans, 36px, weight 400, color Inkwell (#111111), lineHeight 1.25, letterSpacing -0.0250em. Followed by a 4px marginBottom.
+
+### Call to Action Link
+
+**Role:** Subtle calls to action embedded in text.
+
+Text: Untitled Sans, 16px, weight 400, color Inkwell (#111111). Underlined to indicate interactivity.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas White (#ffffff) as the primary background for all page sections to enforce a clean, spacious aesthetic.
 - Apply Inkwell (#111111) for all main text, ensuring maximum contrast and legibility.
@@ -61,7 +141,7 @@ ADBC employs a high-contrast, minimalist visual language, emphasizing strong typ
 - Use 42px for section spacing and significant vertical gaps to create a spacious, breathable layout.
 - Integrate photography full-bleed as background elements in hero sections, layering text with high contrast for readability.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or complex elevation; maintain a flat, almost two-dimensional interface design.
 - Do not introduce additional bright or saturated colors beyond the defined accent color for UI elements; keep the palette monochromatic.
@@ -71,10 +151,85 @@ ADBC employs a high-contrast, minimalist visual language, emphasizing strong typ
 - Do not use generic button styles with filled backgrounds, instead opt for text links with underlines to indicate interaction.
 - Do not use complex gradient backgrounds or overlays; stick to solid color backgrounds for clarity.
 
-### Layout
+## Imagery
+
+This site predominantly uses photography. Hero sections and content blocks often feature full-bleed, high-quality, desaturated or monochrome candid photography showing landscapes, events, and people in natural settings, sometimes with a subtle vintage or muted filter. Imagery serves as a rich atmospheric backdrop or contextual visual for content, rather than purely decorative. There are no illustrations or distinct icon styles visible; interaction is conveyed primarily through text and underlined links. Imagery usage is substantial, often framing entire sections and making the site feel image-heavy.
+
+## Layout
 
 The page primarily uses a max-width contained model within a full-bleed structure. The hero features a full-bleed background image with a large, centered headline. Content sections below alternate between full-width blocks and a centered single-column layout for extensive text. There's a subtle left-aligned feel for content within these single-column sections. Vertical rhythm is established by consistent 42px section gaps, with additional 56px gaps appearing for emphasis. A simple top navigation bar is used, featuring text links and a hamburger menu icon.
 
-### Imagery
+## Similar Brands
 
-This site predominantly uses photography. Hero sections and content blocks often feature full-bleed, high-quality, desaturated or monochrome candid photography showing landscapes, events, and people in natural settings, sometimes with a subtle vintage or muted filter. Imagery serves as a rich atmospheric backdrop or contextual visual for content, rather than purely decorative. There are no illustrations or distinct icon styles visible; interaction is conveyed primarily through text and underlined links. Imagery usage is substantial, often framing entire sections and making the site feel image-heavy.
+- **AIGA Design Archives** — High-contrast achromatic palette, emphasis on strong sans-serif typography, and generous whitespace for content focus.
+- **The New York Times** — Uses a classical serif for body text and a robust sans-serif for headlines, providing a stark typographic contrast on a white background.
+- **Apple (older branding)** — Lean, minimalist aesthetic with heavy reliance on black and white, oversized typography, and clean layouts over decorative UI elements.
+- **Dropbox (early design)** — Focus on clean, bright interfaces, ample whitespace, and direct, readable typography with minimal UI chrome.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-inkwell: #111111;
+  --color-canvas-white: #ffffff;
+  --color-pitch-black: #000000;
+  --color-sage-accent: #778652;
+  --color-muted-gray: #cecece;
+  --font-untitled-sans: 'Untitled Sans', Inter;
+  --font-untitled-serif: 'Untitled Serif', Lora;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --text-subheading: 24px;
+  --leading-subheading: 1.25;
+  --text-heading: 36px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.45px;
+  --text-display: 72px;
+  --leading-display: 1.05;
+  --tracking-display: -3.6px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-42: 42px;
+  --spacing-56: 56px;
+  --spacing-120: 120px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-inkwell: #111111;
+  --color-canvas-white: #ffffff;
+  --color-pitch-black: #000000;
+  --color-sage-accent: #778652;
+  --color-muted-gray: #cecece;
+  --font-untitled-sans: 'Untitled Sans', Inter;
+  --font-untitled-serif: 'Untitled Serif', Lora;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --text-subheading: 24px;
+  --leading-subheading: 1.25;
+  --text-heading: 36px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.45px;
+  --text-display: 72px;
+  --leading-display: 1.05;
+  --tracking-display: -3.6px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-42: 42px;
+  --spacing-56: 56px;
+  --spacing-120: 120px;
+  --radius-none: 0px;
+}
+```

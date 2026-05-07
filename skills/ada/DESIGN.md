@@ -1,52 +1,117 @@
 ---
 version: alpha
-name: Ada
-description: The Ada design system establishes a stark, information-first aesthetic built on high contrast and minimal ornamentation. Typography anchors the visual hierarchy, with a clear distinction between prominent headings and concise body text. Surfaces are flat and monochromatic, emphasizing content over decorative elements. Interaction is signaled through bold black borders and subtle background shifts, ensuring focus remains on actionable items.
-colors:
-  ghost-ink: "#000000"
-  canvas-white: "#FFFFFF"
-  fog-button: "#efefef"
-  subtle-link-blue: "#0000ee"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: 0px
-spacing:
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  ghost-button:
-    role: Interactive element for secondary actions.
-  navigation-link:
-    role: Primary navigation items.
-  information-card-unstyled:
-    role: General content container for text and images.
+name: "Ada"
+description: "The Ada design system establishes a stark, information-first aesthetic built on high contrast and minimal ornamentation. Typography anchors the visual hierarchy, with a clear distinction between prominent headings and concise body text. Surfaces are flat and monochromatic, emphasizing content over decorative elements. Interaction is signaled through bold black borders and subtle background shifts, ensuring focus remains on actionable items."
+theme: "light"
+industry: "ai"
+source_url: "https://www.ada.cx"
+refero_style_id: "30ebf167-9ad1-4b20-853c-2726f473f4c4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509256656-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509256656-thumb.jpg"
+extracted_at: "2026-04-30T00:34:39.320Z"
 ---
 
-## Overview
+# Ada — Style Reference
 
-**North Star:** Contrast-driven document
+> Contrast-driven document
+
+**Theme:** light
+
+**Industry:** ai
 
 The Ada design system establishes a stark, information-first aesthetic built on high contrast and minimal ornamentation. Typography anchors the visual hierarchy, with a clear distinction between prominent headings and concise body text. Surfaces are flat and monochromatic, emphasizing content over decorative elements. Interaction is signaled through bold black borders and subtle background shifts, ensuring focus remains on actionable items.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ghost Ink | #000000 | `--color-ghost-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #FFFFFF | `--color-canvas-white` | Page background, surface background for all content blocks. The primary color base for the entire system providing a clean, bright foundation |
+| Fog Button | #efefef | `--color-fog-button` | Background for secondary or ghost buttons, indicating an interactive but low-emphasis element |
+| Subtle Link Blue | #0000ee | `--color-subtle-link-blue` | Default browser link color, appears as informative text links |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** serif
+- **Weights:** 400, 700
+- **Sizes:** 16px, 19px, 24px, 32px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Core content font for headings, body text, links, and navigation. Its serifs lend a classic, authoritative feel, reinforcing the informative and research-heavy nature of the content. Headlines often use bolder weights to establish hierarchy, while body text maintains readability with the 400 weight. Used for most of the prominent text, including the brand name.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** sans-serif
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Supportive text for buttons, navigation sub-items, and small informational text. Its sans-serif nature provides a utilitarian contrast to the Times serif font, used for functional elements where clarity and conciseness are prioritized.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.2 | 0px | `--text-body` |
+| subheading | 19px | 1.2 | 0px | `--text-subheading` |
+| heading | 24px | 1.2 | 0px | `--text-heading` |
+| display | 32px | 1.2 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 0px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Interactive element for secondary actions.
+
+Background: Fog Button (#efefef), Text: Ghost Ink (#000000), Border: 1px Ghost Ink (#000000) on all sides, Padding: 1px top/bottom, 6px left/right. Radius: 0px.
+
+### Navigation Link
+
+**Role:** Primary navigation items.
+
+Text: Ghost Ink (#000000), Font: Times 16px, Line Height: 1.20. No padding or background by default, relies on text contrast. Links are underlined by default (browser behavior), this is not a custom style.
+
+### Information Card (Unstyled)
+
+**Role:** General content container for text and images.
+
+Background: Transparent (rgba(0, 0, 0, 0)), Border: None, Box Shadow: None, Padding: 0px, Radius: 0px. Acts as a simple wrapper for content without imposing visual style.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Times (serif) for all headings and primary body text to establish an authoritative tone.
 - Use Arial (sans-serif) only for functional elements like buttons or small navigational text, ensuring clear distinction from content.
@@ -56,7 +121,7 @@ The Ada design system establishes a stark, information-first aesthetic built on 
 - Adhere to 0px border-radius for all component corners, reinforcing a sharp, precise aesthetic.
 - Utilize 16px as the standard vertical element separation, with larger 40px gaps for section breaks.
 
-### Don'ts
+### Don't
 
 - Avoid using any colors other than Ghost Ink (#000000), Canvas White (#FFFFFF), Fog Button (#efefef), and the browser default blue link color in the UI.
 - Do not introduce rounded corners or box shadows, as the system relies on flat surfaces and sharp edges.
@@ -66,10 +131,85 @@ The Ada design system establishes a stark, information-first aesthetic built on 
 - Do not apply custom styling to links; allow the browser default underlined blue to indicate interactivity.
 - Never use less than 16px vertical element spacing, except for specific button padding.
 
-### Layout
+## Imagery
+
+The site predominantly uses abstract, textural imagery with a muted, often blurred aesthetic, serving as atmospheric backdrops rather than explicit content. Product screenshots are minimal. Icons are monochrome, often using Ghost Ink outlines, maintaining the stark, high-contrast feel. Imagery density is low, with visuals primarily serving as decorative accents or visual breaks rather than key information carriers.
+
+## Layout
 
 The page exhibits a full-bleed layout, maximizing screen width for content delivery. The hero section features a prominent, centered headline over a dark background. Content sections follow in a vertical stack, utilizing consistent vertical spacing. While the layout often features a single column for primary content, some areas suggest implicit two-column arrangements for text and visual pairings. Navigation primarily appears as a static top bar with interactive dropdowns, and occasional nested lists for sub-navigation. The overall density is comfortable, with ample breathing room between content blocks, but the information itself is presented concisely.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses abstract, textural imagery with a muted, often blurred aesthetic, serving as atmospheric backdrops rather than explicit content. Product screenshots are minimal. Icons are monochrome, often using Ghost Ink outlines, maintaining the stark, high-contrast feel. Imagery density is low, with visuals primarily serving as decorative accents or visual breaks rather than key information carriers.
+- **OpenAI** — Shares a high-contrast, text-dominant interface with minimal graphic elements and a focus on serious, functional typography.
+- **Notion** — Emphasizes a crisp, utility-first UI with extensive use of black text on white backgrounds and a clear hierarchy through font sizes and weights.
+- **Substack** — Features a strong emphasis on readability with classic serif typography for content, paired with minimalist UI elements.
+- **Linear** — Utilizes stark UI with high contrast, precise typography, and a lack of decorative flourish to convey efficiency and focus.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ghost-ink: #000000;
+  --color-canvas-white: #FFFFFF;
+  --color-fog-button: #efefef;
+  --color-subtle-link-blue: #0000ee;
+  --font-times: 'Times', serif;
+  --font-arial: 'Arial', sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0px;
+  --text-subheading: 19px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 0px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --tracking-display: 0px;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-40: 40px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ghost-ink: #000000;
+  --color-canvas-white: #FFFFFF;
+  --color-fog-button: #efefef;
+  --color-subtle-link-blue: #0000ee;
+  --font-times: 'Times', serif;
+  --font-arial: 'Arial', sans-serif;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0px;
+  --text-subheading: 19px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 0px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 32px;
+  --leading-display: 1.2;
+  --tracking-display: 0px;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-16: 16px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-40: 40px;
+  --radius-none: 0px;
+}
+```

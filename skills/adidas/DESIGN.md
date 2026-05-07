@@ -1,65 +1,150 @@
 ---
 version: alpha
-name: adidas
-description: This design system projects a direct, no-nonsense corporate voice, stripped down to essential communication. It uses a stark achromatic palette of black and white, punctuated by subtle gray accents to define secondary text and structural elements. The complete absence of visual flair—no shadows, gradients, or rounded corners beyond a minimal 3px—communicates efficiency and seriousness, while the custom 'adineue' typeface offers a distinct, yet understated, brand presence.
-colors:
-  absolute-zero: "#ffffff"
-  pitch-black: "#000000"
-  shadow-play: "#e0e0e0"
-  concrete-gray: "#999999"
-  pebble: "#cccccc"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-  body:
-    fontFamily: "system-ui"
-    fontSize: 17px
-    lineHeight: 1.4
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.4
-  display:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.4
-spacing:
-  elementGap: 8px
-  sectionGap: 40px
-components:
-  error-alert-banner:
-    role: 
-  two-column-info-cards:
-    role: 
-  primary-action-button-group:
-    role: 
-  primary-action-button:
-    role: Main call-to-action.
-  default-input-field:
-    role: Standard text input for forms.
-  section-heading:
-    role: Organizes content into clear sections.
-  body-text-paragraph:
-    role: Communicates detailed information.
-  reference-error-text:
-    role: Displays unique identifiers or technical details.
-  secondary-description-text:
-    role: Provides additional context or clarifies information.
+name: "adidas"
+description: "This design system projects a direct, no-nonsense corporate voice, stripped down to essential communication. It uses a stark achromatic palette of black and white, punctuated by subtle gray accents to define secondary text and structural elements. The complete absence of visual flair—no shadows, gradients, or rounded corners beyond a minimal 3px—communicates efficiency and seriousness, while the custom 'adineue' typeface offers a distinct, yet understated, brand presence."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://adidas.com"
+refero_style_id: "72340f0a-e7ea-4f9b-b683-19a1c3dcdc32"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933004482-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775933004482-thumb.jpg"
+extracted_at: "2026-04-11T18:43:39.762Z"
 ---
 
-## Overview
+# adidas — Style Reference
 
-**North Star:** monochromatic corporate directive
+> monochromatic corporate directive
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 This design system projects a direct, no-nonsense corporate voice, stripped down to essential communication. It uses a stark achromatic palette of black and white, punctuated by subtle gray accents to define secondary text and structural elements. The complete absence of visual flair—no shadows, gradients, or rounded corners beyond a minimal 3px—communicates efficiency and seriousness, while the custom 'adineue' typeface offers a distinct, yet understated, brand presence.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #ffffff | `--color-absolute-zero` | Page backgrounds, input fields, button text. |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, headings, button backgrounds, primary borders. |
+| Shadow Play | #e0e0e0 | `--color-shadow-play` | Subtle borders, non-interactive visual separation. |
+| Concrete Gray | #999999 | `--color-concrete-gray` | Secondary text, subtle borders on non-critical elements. |
+| Pebble | #cccccc | `--color-pebble` | Input field borders when not focused. |
+
+## Tokens — Typography
+
+### adineue
+
+- **Token:** `--font-adineue`
+- **Substitute:** system-ui
+- **Weights:** 400, 500, 700
+- **Sizes:** 14px, 17px, 20px, 23px, 25px
+- **Line heights:** 1.40
+- **Letter spacing:** normal
+- **Role:** Primary brand typeface for all headings and body text, conveying directness through its distinct but understated form.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 400, 500
+- **Sizes:** 15px, 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Used for interactive elements like buttons and input fields, providing broad system compatibility and legibility for functional UI.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.4 | — | `--text-caption` |
+| body | 17px | 1.4 | — | `--text-body` |
+| subheading | 20px | 1.4 | — | `--text-subheading` |
+| heading | 23px | 1.4 | — | `--text-heading` |
+| display | 25px | 1.4 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 3px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 8px |
+
+## Components
+
+### Error Alert Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Two-Column Info Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Main call-to-action.
+
+Background: Pitch Black (#000000). Text: Absolute Zero (#ffffff) Arial, weight 500, 16px. Border: Pitch Black (#000000). Radius: 3px. Padding: 14px top/bottom, 32px left/right.
+
+### Default Input Field
+
+**Role:** Standard text input for forms.
+
+Background: Absolute Zero (#ffffff). Text: Pitch Black (#000000) Arial, weight 400, 15px. Border: Pebble (#cccccc). Radius: 3px. Padding: 8px on all sides.
+
+### Section Heading
+
+**Role:** Organizes content into clear sections.
+
+Text: Pitch Black (#000000) adineue, weight 700, 23px. Line height 1.4. Margin bottom: 40px.
+
+### Body Text Paragraph
+
+**Role:** Communicates detailed information.
+
+Text: Pitch Black (#000000) adineue, weight 400, 17px. Line height 1.4. Margin bottom: 20px.
+
+### Reference Error Text
+
+**Role:** Displays unique identifiers or technical details.
+
+Text: Pitch Black (#000000) adineue, weight 400, 14px. Line height 1.4. Margin bottom: 20px.
+
+### Secondary Description Text
+
+**Role:** Provides additional context or clarifies information.
+
+Text: Pitch Black (#000000) adineue, weight 400, 14px. Line height 1.4. In some contexts (e.g., error messages), uses Concrete Gray (#999999).
+
+## Do's and Don'ts
+
+### Do
 
 - Use Pitch Black (#000000) for all primary text, headings, and interactive button backgrounds.
 - Maintain a minimal border-radius of 3px for all interactive elements like buttons and input fields.
@@ -69,7 +154,7 @@ This design system projects a direct, no-nonsense corporate voice, stripped down
 - Use Absolute Zero (#ffffff) as the primary page background and for input field backgrounds.
 - Apply Concrete Gray (#999999) only for secondary, less prominent text or muted borders.
 
-### Don'ts
+### Don't
 
 - Avoid using any colors outside the defined achromatic palette of Pitch Black, Absolute Zero, Shadow Play, Concrete Gray, and Pebble.
 - Do not introduce any drop shadows or complex elevation effects; the design relies on flat separation.
@@ -79,10 +164,84 @@ This design system projects a direct, no-nonsense corporate voice, stripped down
 - Avoid introducing images or graphics with vibrant colors; all visuals should either be monochromatic or integrate seamlessly with the achromatic theme.
 - Do not use letter spacing other than 'normal' for any text elements.
 
-### Layout
+## Imagery
+
+The site uses an 'icons-only' approach for branding, specifically the adidas logo. No other photography, illustrations, or complex graphics are present, emphasizing a purely functional and direct communication style. The logo is typically a contained graphic rather than full-bleed, serving as a clear brand mark without contributing to atmosphere or explanation. The absence of imagery focuses user attention entirely on text-based information.
+
+## Layout
 
 The page primarily uses a max-width contained model, centrally aligning content within a clear visual frame. The hero section is characterized by a centered headline and brand logo. Sections are composed of text blocks, often arranged in single or two-column layouts, with consistent vertical spacing (40px for major sections, 20px within text blocks) creating a strong rhythm. Content is generally stacked and centered for key messages, then shifts to a left-aligned, two-column structure for more detailed explanatory text. Navigation is not evident in the provided context, suggesting a minimal or absent global navigation for this specific page type. The layout density is comfortable, providing sufficient white space around text to avoid crowding.
 
-### Imagery
+## Similar Brands
 
-The site uses an 'icons-only' approach for branding, specifically the adidas logo. No other photography, illustrations, or complex graphics are present, emphasizing a purely functional and direct communication style. The logo is typically a contained graphic rather than full-bleed, serving as a clear brand mark without contributing to atmosphere or explanation. The absence of imagery focuses user attention entirely on text-based information.
+- **Nike** — Both brands use a stark black and white aesthetic with minimal UI embellishments to convey a strong, performance-oriented identity.
+- **Apple (older UI)** — Emphasizes clear typography and a lack of ornamental graphics, relying on strong content hierarchy in a monochromatic setting.
+- **Zara** — Features a direct, no-frills presentation with bold text and a black/white palette, prioritizing product visibility and efficiency.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #ffffff;
+  --color-pitch-black: #000000;
+  --color-shadow-play: #e0e0e0;
+  --color-concrete-gray: #999999;
+  --color-pebble: #cccccc;
+  --font-adineue: 'adineue', system-ui;
+  --font-arial: 'Arial', Arial;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 17px;
+  --leading-body: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 23px;
+  --leading-heading: 1.4;
+  --text-display: 25px;
+  --leading-display: 1.4;
+  --spacing-8: 8px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --radius-all: 3px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #ffffff;
+  --color-pitch-black: #000000;
+  --color-shadow-play: #e0e0e0;
+  --color-concrete-gray: #999999;
+  --color-pebble: #cccccc;
+  --font-adineue: 'adineue', system-ui;
+  --font-arial: 'Arial', Arial;
+  --text-caption: 14px;
+  --leading-caption: 1.4;
+  --text-body: 17px;
+  --leading-body: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 23px;
+  --leading-heading: 1.4;
+  --text-display: 25px;
+  --leading-display: 1.4;
+  --spacing-8: 8px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --radius-all: 3px;
+}
+```

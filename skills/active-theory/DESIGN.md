@@ -1,58 +1,151 @@
 ---
 version: alpha
-name: Active Theory
-description: This design system evokes a 'digital void' aesthetic, combining deep, dark backgrounds with subtle luminous elements. The sparsity of color and reliance on grayscale with minimal violet accents creates an atmosphere of focused, almost melancholic, precision. Custom typography and specific rounded forms (500px pill buttons contrasting with 5px or 12px radii elsewhere) carve out a unique identity, suggesting advanced technology with a touch of crafted elegance.
-colors:
-  void-black: "#000000"
-  ash-gray: "#4d4d4d"
-  pure-white: "#ffffff"
-  silver-mist: "#c6c6c6"
-  subtle-violet: "#343755"
-  highlight-violet: "#9cA5FF"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-spacing:
-  cardRadius: 12px
-  buttonRadius: 5px or 500px
-components:
-  cookie-consent-box:
-    role: 
-  button-group-ghost-primary-secondary:
-    role: 
-  navigation-bar-ghost-pill:
-    role: 
-  standard-ghost-button:
-    role: Navigation and secondary actions
-  primary-pill-button:
-    role: Key calls to action
-  secondary-pill-button:
-    role: Alternative actions or dismissals
-  cookie-consent-box:
-    role: Informational overlay
-  text-link-active:
-    role: Navigation and clickable text
-  text-link-inactive-secondary:
-    role: Less prominent links or unvisited status
+name: "Active Theory"
+description: "This design system evokes a 'digital void' aesthetic, combining deep, dark backgrounds with subtle luminous elements. The sparsity of color and reliance on grayscale with minimal violet accents creates an atmosphere of focused, almost melancholic, precision. Custom typography and specific rounded forms (500px pill buttons contrasting with 5px or 12px radii elsewhere) carve out a unique identity, suggesting advanced technology with a touch of crafted elegance."
+theme: "dark"
+industry: "agency"
+source_url: "https://activetheory.net"
+refero_style_id: "3416bd14-96bb-4c23-bd01-b2ea178ba5ce"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925461564-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925461564-thumb.jpg"
+extracted_at: "2026-04-11T16:38:03.788Z"
 ---
 
-## Overview
+# Active Theory — Style Reference
 
-**North Star:** Midnight Command Console. Deep, dark surfaces punctuated by precise, glowing UI elements.
+> Midnight Command Console. Deep, dark surfaces punctuated by precise, glowing UI elements.
+
+**Theme:** dark
+
+**Industry:** agency
 
 This design system evokes a 'digital void' aesthetic, combining deep, dark backgrounds with subtle luminous elements. The sparsity of color and reliance on grayscale with minimal violet accents creates an atmosphere of focused, almost melancholic, precision. Custom typography and specific rounded forms (500px pill buttons contrasting with 5px or 12px radii elsewhere) carve out a unique identity, suggesting advanced technology with a touch of crafted elegance.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Void Black | #000000 | `--color-void-black` | Primary background for pages and most components, creating a deep canvas for sparse UI elements. |
+| Ash Gray | #4d4d4d | `--color-ash-gray` | Subtle borders and minor UI elements, providing minimal contrast against Void Black. |
+| Pure White | #ffffff | `--color-pure-white` | Primary text color, ensuring AAA contrast against dark backgrounds; also used for active states. |
+| Silver Mist | #c6c6c6 | `--color-silver-mist` | Secondary text color, like links or non-critical information, offering softer readability than Pure White. |
+| Subtle Violet | #343755 | `--color-subtle-violet` | Rare background tint for interactive elements, lending a muted, almost invisible brand presence. |
+| Highlight Violet | #9cA5FF | `--color-highlight-violet` | Interactive elements, providing a soft glow that signals hover or active states without being overtly bright. Note: this color is only seen with transparency (33%) and is derived from `rgba(156, 165, 255, 0.333)` as the base color. |
+
+## Tokens — Typography
+
+### nbarchitekt
+
+- **Token:** `--font-nbarchitekt`
+- **Substitute:** Montserrat
+- **Weights:** 400, 700
+- **Sizes:** 10px, 12px, 14px
+- **Line heights:** 1.20, 1.50, 3.00
+- **Role:** The primary typeface for UI elements, body text, and prominent links. Its custom nature gives the interface a distinct, technically precise feel at smaller sizes and a bold presence at larger weights. Weight 700 is reserved for key labels and headings, while weight 400 maintains legibility for body and interactive components.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Role:** Used for specific button labels, providing a standard, legible base that subtly contrasts with the custom nbarchitekt font.
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20, 1.88
+- **Role:** Employed for less critical text and general content, specifically where a traditional serif style is desired. This choice introduces a classic counterpoint to the otherwise modern, technical aesthetic. Its inclusion suggests intentionality for specific content blocks like legal text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | — | `--text-caption` |
+| body-sm | 12px | 1.5 | — | `--text-body-sm` |
+| body | 14px | 1.5 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-28 | 28px | `--spacing-28` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| max | 500px |
+| min | 5px |
+| cards | 12px |
+| buttons | 5px or 500px |
+
+## Components
+
+### Cookie Consent Box
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group — Ghost + Primary + Secondary
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Bar — Ghost Pill
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Standard Ghost Button
+
+**Role:** Navigation and secondary actions
+
+Minimalist button with rgba(255, 255, 255, 0.1) background, Pure White text, and a 1px top border of rgba(255, 255, 255, 0.6). Uses 5px border radius. Padding is 1px vertical, 6px horizontal. Font is nbarchitekt 400, 14px.
+
+### Primary Pill Button
+
+**Role:** Key calls to action
+
+Distinctive pill-shaped button with rgba(156, 165, 255, 0.333) background, black text, and a top border of rgba(255, 255, 255, 0.5). Features a 500px border radius. Padding is 4px vertical, 18px horizontal. Font is Arial 400, 13px.
+
+### Secondary Pill Button
+
+**Role:** Alternative actions or dismissals
+
+Pill-shaped button with rgba(0, 0, 0, 0.333) background (transparent black), black text, and a top border of rgba(255, 255, 255, 0.5). Features a 500px border radius. Padding is 4px vertical, 18px horizontal. Font is Arial 400, 13px.
+
+### Cookie Consent Box
+
+**Role:** Informational overlay
+
+A dark, minimally bordered box with a 12px border radius. Contains body text in nbarchitekt 400, 12px, Pure White. Features two pill buttons for user interaction: Primary Pill Button and Secondary Pill Button, separated by horizontal internal spacing of 12px.
+
+### Text Link - Active
+
+**Role:** Navigation and clickable text
+
+Pure White text with an underline, using nbarchitekt 400, 14px. On hover, it likely retains color and adds a subtle visual change not captured in static data.
+
+### Text Link - Inactive/Secondary
+
+**Role:** Less prominent links or unvisited status
+
+Silver Mist text, nbarchitekt 400, 14px. Used for links within long-form text or less critical navigation items to differentiate from active states or primary links.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Void Black (#000000) for all main backgrounds to maintain the dark, immersive aesthetic.
 - Use Pure White (#ffffff) for primary text and controls, ensuring high contrast (AAA) against dark backgrounds.
@@ -62,7 +155,7 @@ This design system evokes a 'digital void' aesthetic, combining deep, dark backg
 - Allow a top border as a subtle interactive indicator for buttons, using rgba(255, 255, 255, 0.6) or rgba(255, 255, 255, 0.5).
 - Maintain minimal padding variations (e.g., 1px vertical/6px horizontal and 4px vertical/18px horizontal) across button types for a controlled, compact feel.
 
-### Don'ts
+### Don't
 
 - Avoid using bright, saturated colors extensively; limit chromatic accents to Subtle Violet (#343755) and Highlight Violet (rgba(156, 165, 255, 0.333)).
 - Do not introduce new font families beyond nbarchitekt, Arial, and Times to maintain typographic consistency.
@@ -72,10 +165,86 @@ This design system evokes a 'digital void' aesthetic, combining deep, dark backg
 - Do not overuse Pure White; reserve it for essential text and active states to preserve its visual impact.
 - Do not use generic system default styling for interactive elements; custom button styles are critical to the brand identity.
 
-### Layout
+## Imagery
+
+The visual language is abstract and evocative, entirely eschewing traditional photography or literal illustrations. Instead, it features 3D rendered, luminous abstract forms and particle effects, like glimmers of light and transparent, refractive objects. Imagery is always 'contained' within the dark canvas of the background, appearing to emit its own light. The effect is decorative and atmospheric, rather than explanatory, contributing to a sense of mystery and advanced technology. Icons, though not extensively present, would likely be outlined and mono-colored to blend with the minimalist UI.
+
+## Layout
 
 The site employs a full-bleed, dark canvas that extends to the edges of the viewport, creating an immersive, uncontained experience. The hero section is dominated by an abstract, luminous 3D graphic, centered vertically, with minimal UI elements (navigation, cookie consent) overlaid. Content appears to be presented sparsely and centrally, with elements spaced generously against the dark background. The navigation is a top-right, minimalist header, using subtle ghost buttons. The overall density is very low, prioritizing visual impact and a sense of 'space' as much as information delivery.
 
-### Imagery
+## Similar Brands
 
-The visual language is abstract and evocative, entirely eschewing traditional photography or literal illustrations. Instead, it features 3D rendered, luminous abstract forms and particle effects, like glimmers of light and transparent, refractive objects. Imagery is always 'contained' within the dark canvas of the background, appearing to emit its own light. The effect is decorative and atmospheric, rather than explanatory, contributing to a sense of mystery and advanced technology. Icons, though not extensively present, would likely be outlined and mono-colored to blend with the minimalist UI.
+- **Awwwards-winning portfolio sites** — Shares the dark, immersive background, custom typography, subtle interactive elements, and emphasis on visual experience over dense information.
+- **Google Arts & Culture** — Uses deep, dark backgrounds to showcase visual content and interactive elements, often with subtle glow effects.
+- **Obscura Digital** — Similar focus on creative digital experiences, often translating into interfaces that are more artistic and atmospheric than purely functional, with dark palettes and experimental typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-void-black: #000000;
+  --color-ash-gray: #4d4d4d;
+  --color-pure-white: #ffffff;
+  --color-silver-mist: #c6c6c6;
+  --color-subtle-violet: #343755;
+  --color-highlight-violet: #9cA5FF;
+  --font-nbarchitekt: 'nbarchitekt', Montserrat;
+  --font-arial: 'Arial', Arial;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.5;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-28: 28px;
+  --radius-max: 500px;
+  --radius-min: 5px;
+  --radius-cards: 12px;
+  --radius-buttons: 5px or 500px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-void-black: #000000;
+  --color-ash-gray: #4d4d4d;
+  --color-pure-white: #ffffff;
+  --color-silver-mist: #c6c6c6;
+  --color-subtle-violet: #343755;
+  --color-highlight-violet: #9cA5FF;
+  --font-nbarchitekt: 'nbarchitekt', Montserrat;
+  --font-arial: 'Arial', Arial;
+  --font-times: 'Times', Times New Roman;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.5;
+  --text-body: 14px;
+  --leading-body: 1.5;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-28: 28px;
+  --radius-max: 500px;
+  --radius-min: 5px;
+  --radius-cards: 12px;
+  --radius-buttons: 5px or 500px;
+}
+```
