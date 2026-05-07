@@ -1,84 +1,167 @@
 ---
 version: alpha
-name: Visitors
-description: The Visitors design system employs a crisp, analytical aesthetic with a playful edge. It balances substantial negative space and achromatic surfaces with a vibrant, gradient-infused purple as its primary brand color, punctuated by a suite of vivid secondary accents. Typography is compact and precise, maintaining readability while maximizing information density. Interactive elements often manifest as ghost buttons or subtle, rounded containers, giving a lightweight feel until the accent color 'switches on' for primary actions. The pervasive use of rounded corners softens the otherwise direct, functional presentation.
-colors:
-  canvas-white: "#ffffff"
-  slate-ink: "#181925"
-  medium-gray: "#666666"
-  muted-gray: "#999999"
-  light-gray: "#e8e8e8"
-  whisper-purple: "#dad9fc"
-  radiant-violet: "#918df6"
-  electric-blue: "#2c78fc"
-  success-green: "#33c758"
-  warning-yellow: "#ffa600"
-  accent-pink: "#d6409f"
-  pale-mint: "#def6e4"
-  deep-purple: "#9580ff"
-  vivid-orange: "#ff3e00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.56
-    letterSpacing: -0.05px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.025px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-    letterSpacing: -0.02px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.22
-    letterSpacing: -0.018px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.17
-    letterSpacing: -0.017px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.13
-    letterSpacing: -0.013px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 1.67772e+07px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  navigation-link:
-    role: Menu items, simple textual links
-  ghost-button:
-    role: Secondary actions, tertiary navigation items
-  pill-ghost-button:
-    role: Subtle filtering, small secondary actions
-  primary-action-button:
-    role: Main calls to action, clear user intent
-  accent-pill-button:
-    role: Prominent but compact actions like 'Register'
-  subtle-text-button:
-    role: Small, informative labels, often with an icon
-  feature-card:
-    role: Displaying key features or content blocks
-  elevated-content-card:
-    role: Prominent information display, often with more substantial content
+name: "Visitors"
+description: "The Visitors design system employs a crisp, analytical aesthetic with a playful edge. It balances substantial negative space and achromatic surfaces with a vibrant, gradient-infused purple as its primary brand color, punctuated by a suite of vivid secondary accents. Typography is compact and precise, maintaining readability while maximizing information density. Interactive elements often manifest as ghost buttons or subtle, rounded containers, giving a lightweight feel until the accent color 'switches on' for primary actions. The pervasive use of rounded corners softens the otherwise direct, functional presentation."
+theme: "light"
+industry: "saas"
+source_url: "https://visitors.now"
+refero_style_id: "e7876363-181a-44a9-9e5c-2255cf98aea5"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508553847-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508553847-thumb.jpg"
+extracted_at: "2026-04-30T00:23:03.554Z"
 ---
 
-## Overview
+# Visitors — Style Reference
 
-**North Star:** Analytical canvas vibrant spectrum
+> Analytical canvas vibrant spectrum
+
+**Theme:** light
+
+**Industry:** saas
 
 The Visitors design system employs a crisp, analytical aesthetic with a playful edge. It balances substantial negative space and achromatic surfaces with a vibrant, gradient-infused purple as its primary brand color, punctuated by a suite of vivid secondary accents. Typography is compact and precise, maintaining readability while maximizing information density. Interactive elements often manifest as ghost buttons or subtle, rounded containers, giving a lightweight feel until the accent color 'switches on' for primary actions. The pervasive use of rounded corners softens the otherwise direct, functional presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button backgrounds |
+| Slate Ink | #181925 | `--color-slate-ink` | Primary text, prominent headings, strong borders |
+| Medium Gray | #666666 | `--color-medium-gray` | Body text, secondary headings, default icon color |
+| Muted Gray | #999999 | `--color-muted-gray` | Muted text, helper text, inactive navigation items, dividers |
+| Light Gray | #e8e8e8 | `--color-light-gray` | Subtle borders, table dividers, ghost button borders |
+| Whisper Purple | #dad9fc | `--color-whisper-purple` | Subtle highlights, decorative borders, background accents |
+| Radiant Violet | #918df6 | `--color-radiant-violet` | Primary action backgrounds, interactive indicators, brand highlight color for icons and accent borders |
+| Electric Blue | #2c78fc | `--color-electric-blue` | Violet accent for outlined action borders, linked labels, and lightweight interactive emphasis; Decorative background gradients, hero element backgrounds |
+| Success Green | #33c758 | `--color-success-green` | Green outline accent for tags, dividers, and focused UI edges. Use as a supporting accent, not as a status color |
+| Warning Yellow | #ffa600 | `--color-warning-yellow` | Yellow decorative accent for icons, marks, and small graphic details. Use as a supporting accent, not as a status color |
+| Accent Pink | #d6409f | `--color-accent-pink` | Decorative icons, secondary brand accents |
+| Pale Mint | #def6e4 | `--color-pale-mint` | Soft section background, alternate surface, and quiet card fill |
+| Deep Purple | #9580ff | `--color-deep-purple` | Accent buttons, interactive elements (darker shade of brand purple) |
+| Vivid Orange | #ff3e00 | `--color-vivid-orange` | Decorative SVG fills, minor accents (used in product screenshots) |
+
+## Tokens — Typography
+
+### OpenRunde
+
+- **Token:** `--font-openrunde`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 12px, 13px, 14px, 16px, 18px, 20px, 24px, 36px, 48px, 60px
+- **Line heights:** 1.00, 1.11, 1.13, 1.17, 1.22, 1.33, 1.40, 1.43, 1.50, 1.56
+- **Letter spacing:** -0.0500em, -0.0270em, -0.0250em, -0.0230em, -0.0200em, -0.0180em, -0.0170em, -0.0160em, -0.0130em, -0.0090em, -0.0070em
+- **Role:** Primary typeface for all UI elements, headings, and body text. Its compact metrics and varied letter spacing across sizes reinforce the analytical yet modern feel of the interface.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.56 | -0.05px | `--text-caption` |
+| body | 14px | 1.43 | -0.025px | `--text-body` |
+| heading-sm | 18px | 1.33 | -0.02px | `--text-heading-sm` |
+| heading | 20px | 1.22 | -0.018px | `--text-heading` |
+| heading-lg | 24px | 1.17 | -0.017px | `--text-heading-lg` |
+| display | 48px | 1.13 | -0.013px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-201 | 201px | `--spacing-201` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 9999px |
+| cards | 16px |
+| large | 24px |
+| buttons | 1.67772e+07px |
+| default | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.08) 0px 1px 1px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.06) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 8px 16px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Menu items, simple textual links
+
+Typography: OpenRunde weight 400 at 16px, color: #181925. No background, no border, no padding. Hover state indicated by color change or underline.
+
+### Ghost Button
+
+**Role:** Secondary actions, tertiary navigation items
+
+Background: transparent (rgba(0,0,0,0)). Text color: #181925. No border. Padding: 0px vertical, 12px horizontal. Radius: 0px. Text is OpenRunde 16px weight 400.
+
+### Pill Ghost Button
+
+**Role:** Subtle filtering, small secondary actions
+
+Background: transparent (rgba(0,0,0,0)). Text color: #666666. Border: none. Padding: 0px. Radius: 1.67772e+07px (effectively full pill). Text is OpenRunde 14px weight 400.
+
+### Primary Action Button
+
+**Role:** Main calls to action, clear user intent
+
+Background: #918df6. Text color: #ffffff. Radius: 8px to 1.67772e+07px. Padding varies (e.g., 6px vertical, 10-12px horizontal). Text is OpenRunde 16px weight 500. Box shadow: rgba(0, 0, 0, 0.08) 0px 1px 1px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px. Example: 'Start 14 day free trial'.
+
+### Accent Pill Button
+
+**Role:** Prominent but compact actions like 'Register'
+
+Background: #9580ff. Text color: #ffffff. Radius: 1.67772e+07px. Padding: 0px vertical, 6px horizontal. Text is OpenRunde 16px weight 400. Example: 'Register' in nav.
+
+### Subtle Text Button
+
+**Role:** Small, informative labels, often with an icon
+
+Background: #ffffff. Text color: #181925. Radius: 1.67772e+07px. Padding: 0px vertical, 6-10px horizontal. Text is OpenRunde 12px weight 400. Example: 'new We hit $1K MRR'.
+
+### Feature Card
+
+**Role:** Displaying key features or content blocks
+
+Background: rgba(0,0,0,0.03) or #fafafa. Radius: 16px. No box shadow. Padding: 0px initially, but inner content typically uses 20-24px. Features a soft, nearly invisible background.
+
+### Elevated Content Card
+
+**Role:** Prominent information display, often with more substantial content
+
+Background: #ffffff or #fafafa. Radius: 24px. Box shadow: none for content isolation. Padding: 64px vertical, 32px horizontal. This card uses more internal space.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Radiant Violet (#918df6) exclusively for primary action backgrounds and brand-aligned interactive elements; avoid using it for decorative purposes.
 - Apply OpenRunde with specific letter-spacing values: -0.013em for 48px headlines, scaling down to -0.05em for 12px caption text.
@@ -88,7 +171,7 @@ The Visitors design system employs a crisp, analytical aesthetic with a playful 
 - Use Slate Ink (#181925) for all high-contrast, structural text, including main headings and primary body content, ensuring readability on light backgrounds.
 - Separate sections with a substantial 64px vertical `sectionGap` unless content dictates a continuous flow.
 
-### Don'ts
+### Don't
 
 - Do not use saturated colors for large background areas or extensive text; reserve them for accents and actionable components.
 - Avoid sharp corners; ensure all interactive elements and content containers have a minimum border-radius of 8px.
@@ -98,10 +181,162 @@ The Visitors design system employs a crisp, analytical aesthetic with a playful 
 - Do not apply `letter-spacing: normal` to display or large heading sizes; always use the specified negative tracking for OpenRunde.
 - Do not use multiple instances of distinct purple hues for primary actions; Radiant Violet (#918df6) is the definitive choice for filled buttons.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Base page background |
+| 1 | Subtle Accent | #fafafa | Slightly off-white sections, card backgrounds, or backgrounds for neutral elements |
+| 2 | Light Card | #00000008 | Default card backgrounds with minimal visual weight |
+| 3 | Pale Mint Overlay | #def6e4 | Highlight or success-related background washes for specific content blocks |
+
+## Elevation
+
+- **Interactive Button:** `rgba(0, 0, 0, 0.08) 0px 1px 1px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px`
+
+## Imagery
+
+The imagery style is a mix of product screenshots, abstract gradient backgrounds, and line art icons. Product screenshots are clean and direct, showcasing UI elements without heavy stylization. Abstract graphics are characterized by smooth, organic gradients, primarily in blues and purples, providing decorative atmosphere. Icons are minimalist, outlined, and often monochromatic or subtly tinted with accent colors like #33c758 (green), #ffa600 (yellow), or #d6409f (pink), serving as explanatory content or functional indicators. They possess a moderate stroke weight. The visual density is balanced, with imagery serving to break up text-heavy sections or highlight key data, rather than being overwhelming.
+
+## Layout
 
 The page primarily employs a max-width contained layout, approximately 1200px, horizontally centered. The hero section features a centered headline and description over a full-bleed gradient background that extends across the viewport. Below the hero, content typically alternates between full-width banner-like sections and narrower, contained blocks. Feature sections often use a multi-column grid (e.g., 3-column) for concise information. Vertical rhythm is established by consistent section gaps of 64px, with components and cards featuring internal padding. Navigation is a sticky top bar with a left-aligned brand logo, right-aligned navigation links, and accent-colored 'Login'/'Register' buttons, indicating a clear, un-cluttered approach to utility.
 
-### Imagery
+## Similar Brands
 
-The imagery style is a mix of product screenshots, abstract gradient backgrounds, and line art icons. Product screenshots are clean and direct, showcasing UI elements without heavy stylization. Abstract graphics are characterized by smooth, organic gradients, primarily in blues and purples, providing decorative atmosphere. Icons are minimalist, outlined, and often monochromatic or subtly tinted with accent colors like #33c758 (green), #ffa600 (yellow), or #d6409f (pink), serving as explanatory content or functional indicators. They possess a moderate stroke weight. The visual density is balanced, with imagery serving to break up text-heavy sections or highlight key data, rather than being overwhelming.
+- **Plausible Analytics** — Similar focus on privacy-friendly analytics with a clean, minimalist UI and a single primary accent color.
+- **Fathom Analytics** — Shares a compact, data-focused display on a light canvas, using clear typography and minimal decorative elements.
+- **Supabase** — Features a strong brand color (purple) against a light background, paired with crisp typography and subtle component styling.
+- **Linear** — Employs a highly functional, compact UI with a balance of neutral tones and occasional, precise color accents, along with soft rounded edges.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-slate-ink: #181925;
+  --color-medium-gray: #666666;
+  --color-muted-gray: #999999;
+  --color-light-gray: #e8e8e8;
+  --color-whisper-purple: #dad9fc;
+  --color-radiant-violet: #918df6;
+  --color-electric-blue: #2c78fc;
+  --color-success-green: #33c758;
+  --color-warning-yellow: #ffa600;
+  --color-accent-pink: #d6409f;
+  --color-pale-mint: #def6e4;
+  --color-deep-purple: #9580ff;
+  --color-vivid-orange: #ff3e00;
+  --font-openrunde: 'OpenRunde', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.56;
+  --tracking-caption: -0.05px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.025px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.33;
+  --tracking-heading-sm: -0.02px;
+  --text-heading: 20px;
+  --leading-heading: 1.22;
+  --tracking-heading: -0.018px;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.17;
+  --tracking-heading-lg: -0.017px;
+  --text-display: 48px;
+  --leading-display: 1.13;
+  --tracking-display: -0.013px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-201: 201px;
+  --radius-pill: 9999px;
+  --radius-cards: 16px;
+  --radius-large: 24px;
+  --radius-buttons: 1.67772e+07px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px 1px 1px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.06) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 8px 16px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+  --surface-canvas-white: #ffffff;
+  --surface-subtle-accent: #fafafa;
+  --surface-light-card: #00000008;
+  --surface-pale-mint-overlay: #def6e4;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-slate-ink: #181925;
+  --color-medium-gray: #666666;
+  --color-muted-gray: #999999;
+  --color-light-gray: #e8e8e8;
+  --color-whisper-purple: #dad9fc;
+  --color-radiant-violet: #918df6;
+  --color-electric-blue: #2c78fc;
+  --color-success-green: #33c758;
+  --color-warning-yellow: #ffa600;
+  --color-accent-pink: #d6409f;
+  --color-pale-mint: #def6e4;
+  --color-deep-purple: #9580ff;
+  --color-vivid-orange: #ff3e00;
+  --font-openrunde: 'OpenRunde', system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.56;
+  --tracking-caption: -0.05px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.025px;
+  --text-heading-sm: 18px;
+  --leading-heading-sm: 1.33;
+  --tracking-heading-sm: -0.02px;
+  --text-heading: 20px;
+  --leading-heading: 1.22;
+  --tracking-heading: -0.018px;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.17;
+  --tracking-heading-lg: -0.017px;
+  --text-display: 48px;
+  --leading-display: 1.13;
+  --tracking-display: -0.013px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-201: 201px;
+  --radius-pill: 9999px;
+  --radius-cards: 16px;
+  --radius-large: 24px;
+  --radius-buttons: 1.67772e+07px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px 1px 1px 1px, rgba(0, 0, 0, 0.06) 0px 0px 0px 0.5px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.06) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 8px 16px 0px, rgba(0, 0, 0, 0.02) 0px 0px 0px 1px;
+  --surface-canvas-white: #ffffff;
+  --surface-subtle-accent: #fafafa;
+  --surface-light-card: #00000008;
+  --surface-pale-mint-overlay: #def6e4;
+}
+```
