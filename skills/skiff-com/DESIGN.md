@@ -1,57 +1,166 @@
 ---
 version: alpha
-name: skiff.com
-description: Skiff adopts a crisp, functional aesthetic with a dominant light theme and a single vibrant orange as its brand accent. The design leans into distinct typographic contrasts using a custom sans-serif display font for impactful headlines and system fonts for readability in body text. UI elements are sharp and precise, avoiding heavy shadows or elaborate gradients, focusing instead on clear boundaries and ample negative space. The overall impression is one of modern utility with a hint of warm, energetic personality.
-colors:
-  pitch-black: "#000000"
-  deep-gray: "#303030"
-  medium-gray: "#505050"
-  muted-text: "#8f8f8f"
-  divider-gray: "#d6d6d6"
-  border-light: "#dfdfdf"
-  canvas-white: "#ffffff"
-  brand-orange: "#ef5a3c"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.35
-    letterSpacing: -0.14px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.16px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.95
-    letterSpacing: -0.64px
-spacing:
-  elementGap: 8px
-  sectionGap: 48px
-components:
-  navigation-menu-item:
-    role: Interactive menu item for top navigation or secondary links.
-  top-navigation-dropdown:
-    role: Contextual menu for product or resource groups.
-  accent-headline:
-    role: Primary headings with brand emphasis.
-  body-text-block:
-    role: Standard paragraph content and descriptive rich text.
-  informational-section-card:
-    role: Container for showcasing key information or logos.
-  pill-tag:
-    role: Small, semantic labels or interactive filters.
+name: "skiff.com"
+description: "Skiff adopts a crisp, functional aesthetic with a dominant light theme and a single vibrant orange as its brand accent. The design leans into distinct typographic contrasts using a custom sans-serif display font for impactful headlines and system fonts for readability in body text. UI elements are sharp and precise, avoiding heavy shadows or elaborate gradients, focusing instead on clear boundaries and ample negative space. The overall impression is one of modern utility with a hint of warm, energetic personality."
+theme: "light"
+industry: "productivity"
+source_url: "https://skiff.com"
+refero_style_id: "eb68b482-e9c5-4e82-90df-a1f37f28ac2f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512064008-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512064008-thumb.jpg"
+extracted_at: "2026-04-30T01:21:25.551Z"
 ---
 
-## Overview
+# skiff.com — Style Reference
 
-**North Star:** Crisp digital canvas with energetic orange
+> Crisp digital canvas with energetic orange
+
+**Theme:** light
+
+**Industry:** productivity
 
 Skiff adopts a crisp, functional aesthetic with a dominant light theme and a single vibrant orange as its brand accent. The design leans into distinct typographic contrasts using a custom sans-serif display font for impactful headlines and system fonts for readability in body text. UI elements are sharp and precise, avoiding heavy shadows or elaborate gradients, focusing instead on clear boundaries and ample negative space. The overall impression is one of modern utility with a hint of warm, energetic personality.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Primary text, icon fills, strong borders, dark overlay elements; Modal backgrounds, subtle overlay scrims. Note: uses rgba(0,0,0,.1); Slightly lighter modal backgrounds or overlay scrims. Note: uses rgba(0,0,0,.08); Very faint overlay for subtle elevation or hover states. Note: uses rgba(0,0,0,.04) |
+| Deep Gray | #303030 | `--color-deep-gray` | Secondary text, muted backgrounds for subtle contrast |
+| Medium Gray | #505050 | `--color-medium-gray` | Decorative borders not intended for high contrast |
+| Muted Text | #8f8f8f | `--color-muted-text` | Helper text, captions, secondary information |
+| Divider Gray | #d6d6d6 | `--color-divider-gray` | Hairline separators, subtle strokes, table borders |
+| Border Light | #dfdfdf | `--color-border-light` | Soft icon strokes, subtle dividers, and low-emphasis decorative details. Do not promote it to the primary CTA color |
+| Canvas White | #ffffff | `--color-canvas-white` | Page background, card surfaces, default UI element fills |
+| Brand Orange | #ef5a3c | `--color-brand-orange` | Headline accents, active states, decorative icons, and brand calls to attention |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Georgia
+- **Weights:** 380, 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.35, 1.50
+- **Letter spacing:** -0.0100em
+- **Role:** General body text and interface elements where readability is paramount. Its classic nature provides a counterpoint to the custom sans-serif.
+
+### Skiff Sans Text
+
+- **Token:** `--font-skiff-sans-text`
+- **Substitute:** Inter
+- **Weights:** 380
+- **Sizes:** 14px, 15px, 17px
+- **Line heights:** 1.30, 1.35, 1.50
+- **Letter spacing:** -0.0100em, -0.0050em
+- **Role:** Compact body text and descriptive UI labels. Its custom design provides brand personality at smaller scales.
+
+### Skiff Mono
+
+- **Token:** `--font-skiff-mono`
+- **Substitute:** JetBrains Mono
+- **Weights:** 380
+- **Sizes:** 13px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Code snippets, data displays, or specialized information ensuring precise alignment and distinct character forms.
+
+### Skiff Sans Display
+
+- **Token:** `--font-skiff-sans-display`
+- **Substitute:** Inter Display
+- **Weights:** 380
+- **Sizes:** 64px
+- **Line heights:** 0.95
+- **Letter spacing:** -0.0100em
+- **Role:** Hero headlines and impactful statements. The light weight and tight letter-spacing create a refined, impactful presence without being heavy.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.35 | -0.14px | `--text-body-sm` |
+| body | 16px | 1.5 | -0.16px | `--text-body` |
+| display | 64px | 0.95 | -0.64px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| lg | 16px |
+| md | 12px |
+| sm | 4px |
+| pill | 36px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 28px |
+| elementGap | 8px |
+
+## Components
+
+### Navigation Menu Item
+
+**Role:** Interactive menu item for top navigation or secondary links.
+
+Uses Skiff Sans Text, 16px, weight 380, Pitch Black text. On hover or active, underline with Border Light and change text color to Brand Orange.
+
+### Top Navigation Dropdown
+
+**Role:** Contextual menu for product or resource groups.
+
+Subtle dark overlay container (rgba(0,0,0,.08)) with 12px border radius. Menu items are Pitch Black text on Canvas White backgrounds, 14px Skiff Sans Text.
+
+### Accent Headline
+
+**Role:** Primary headings with brand emphasis.
+
+Mixed typography: initial text Pitch Black, 64px Skiff Sans Display weight 380; emphasized words Brand Orange, 64px Skiff Sans Display weight 380. Line height 0.95.
+
+### Body Text Block
+
+**Role:** Standard paragraph content and descriptive rich text.
+
+Times 16px weight 400, Pitch Black text for primary content. Muted Text for secondary or explanatory notes.
+
+### Informational Section Card
+
+**Role:** Container for showcasing key information or logos.
+
+Canvas White background with a Border Light 1px solid border. Padding 40px top/bottom and 160px left/right. 4px subtle border radius maintains crispness.
+
+### Pill Tag
+
+**Role:** Small, semantic labels or interactive filters.
+
+Dark Gray background with Canvas White text, 14px Times. Characterized by a 36px border radius, creating a distinct pill shape.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for page backgrounds and primary content surfaces.
 - Use Pitch Black (#000000) for all primary text and critical UI elements to ensure high contrast.
@@ -61,7 +170,7 @@ Skiff adopts a crisp, functional aesthetic with a dominant light theme and a sin
 - Maintain a comfortable density with an 8px elementGap and 48px sectionGap for clear content separation.
 - Use 4px border-radius for subtle component rounding, 12px or 16px for cards, and 36px for distinct pill shapes.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors; limit the accent palette strictly to variations of Brand Orange.
 - Do not introduce heavy shadows or complex gradients unless explicitly defined in component specifications.
@@ -71,10 +180,107 @@ Skiff adopts a crisp, functional aesthetic with a dominant light theme and a sin
 - Do not use any blue as an accent or primary color, as it would conflict with the brand's orange identity.
 - Do not use default browser link styling; all links should use Pitch Black text and Brand Orange on hover or active.
 
-### Layout
+## Imagery
+
+This design system primarily relies on icons and simple graphic elements. Where imagery is present for brand logos, it is simple, monochromatic (black on white), and contained within defined spaces. There is no large-scale photography or complex illustrations. Iconography is filled, in Pitch Black. The overall density of imagery is low, with text dominating the content areas.
+
+## Layout
 
 The page structure is primarily content-contained with no explicit `pageMaxWidth` suggesting a flexible, fluid-width approach, although content appears centered. The hero section features a prominent, often accented, headline. Sections are defined by consistent vertical spacing with ample padding, creating a comfortable density. Element layout is typically centered within content blocks or laid out side-by-side. Layout is generally linear and stacked, without complex grid systems or overlapping elements.
 
-### Imagery
+## Similar Brands
 
-This design system primarily relies on icons and simple graphic elements. Where imagery is present for brand logos, it is simple, monochromatic (black on white), and contained within defined spaces. There is no large-scale photography or complex illustrations. Iconography is filled, in Pitch Black. The overall density of imagery is low, with text dominating the content areas.
+- **Notion** — Shares a clean, modern interface with a dominant light theme and an emphasis on functional typography and clear content organization.
+- **Linear** — Similar strong focus on functional, almost monochromatic UI, with a single, clear brand accent color to draw attention to key interactions.
+- **Superhuman** — Deploys a minimalist aesthetic with high contrast text on light backgrounds and a reliance on subtle borders and precise typography for structure.
+- **Figma** — Utilizes a clean, white canvas approach for the interface, with clear, defined areas and a systematic use of neutrals and a few accent colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-deep-gray: #303030;
+  --color-medium-gray: #505050;
+  --color-muted-text: #8f8f8f;
+  --color-divider-gray: #d6d6d6;
+  --color-border-light: #dfdfdf;
+  --color-canvas-white: #ffffff;
+  --color-brand-orange: #ef5a3c;
+  --font-times: 'Times', Georgia;
+  --font-skiff-sans-text: 'Skiff Sans Text', Inter;
+  --font-skiff-mono: 'Skiff Mono', JetBrains Mono;
+  --font-skiff-sans-display: 'Skiff Sans Display', Inter Display;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.35;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-display: 64px;
+  --leading-display: 0.95;
+  --tracking-display: -0.64px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 4px;
+  --radius-pill: 36px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-deep-gray: #303030;
+  --color-medium-gray: #505050;
+  --color-muted-text: #8f8f8f;
+  --color-divider-gray: #d6d6d6;
+  --color-border-light: #dfdfdf;
+  --color-canvas-white: #ffffff;
+  --color-brand-orange: #ef5a3c;
+  --font-times: 'Times', Georgia;
+  --font-skiff-sans-text: 'Skiff Sans Text', Inter;
+  --font-skiff-mono: 'Skiff Mono', JetBrains Mono;
+  --font-skiff-sans-display: 'Skiff Sans Display', Inter Display;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.35;
+  --tracking-body-sm: -0.14px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.16px;
+  --text-display: 64px;
+  --leading-display: 0.95;
+  --tracking-display: -0.64px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --radius-lg: 16px;
+  --radius-md: 12px;
+  --radius-sm: 4px;
+  --radius-pill: 36px;
+}
+```

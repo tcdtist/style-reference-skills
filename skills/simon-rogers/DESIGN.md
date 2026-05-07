@@ -1,32 +1,100 @@
 ---
 version: alpha
-name: Simon Rogers
-description: Simon Rogers employs a minimalist, typographic-driven aesthetic, using a stark white canvas as a backdrop for highly expressive, diagonally-oriented text. The visual identity is built around a single vivid blue hue that establishes hierarchy and brand presence, contrasting sharply with the achromatic background. Typography takes center stage, with custom fonts and precise letter-spacing contributing to a distinctive, art-direction-focused feel. The system prioritizes visual impact and clarity through directness, eschewing complex componentry or superfluous ornamentation.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  designer-blue: "#3366ff"
-spacing:
-components:
-  headline-blue-text:
-    role: Primary section titles and key information
-  link-blue-text:
-    role: Interactive elements and primary navigation items
-  body-text-black:
-    role: Standard descriptive text and functional content
-  subtle-contextual-text:
-    role: Secondary information, dates, or explanatory notes
-  list-item:
-    role: Structured lists of content, such as experience entries
+name: "Simon Rogers"
+description: "Simon Rogers employs a minimalist, typographic-driven aesthetic, using a stark white canvas as a backdrop for highly expressive, diagonally-oriented text. The visual identity is built around a single vivid blue hue that establishes hierarchy and brand presence, contrasting sharply with the achromatic background. Typography takes center stage, with custom fonts and precise letter-spacing contributing to a distinctive, art-direction-focused feel. The system prioritizes visual impact and clarity through directness, eschewing complex componentry or superfluous ornamentation."
+theme: "light"
+industry: "design"
+source_url: "https://www.simonrogers.info"
+refero_style_id: "8f2285eb-d6b3-4221-8b46-ef9727c49431"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516815062-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516815062-thumb.jpg"
+extracted_at: "2026-04-30T02:40:30.013Z"
 ---
 
-## Overview
+# Simon Rogers — Style Reference
 
-**North Star:** typographic art installation
+> typographic art installation
+
+**Theme:** light
+
+**Industry:** design
 
 Simon Rogers employs a minimalist, typographic-driven aesthetic, using a stark white canvas as a backdrop for highly expressive, diagonally-oriented text. The visual identity is built around a single vivid blue hue that establishes hierarchy and brand presence, contrasting sharply with the achromatic background. Typography takes center stage, with custom fonts and precise letter-spacing contributing to a distinctive, art-direction-focused feel. The system prioritizes visual impact and clarity through directness, eschewing complex componentry or superfluous ornamentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, primary surface for content |
+| Ink Black | #000000 | `--color-ink-black` | Secondary text, subtle details, borders in some contexts |
+| Designer Blue | #3366ff | `--color-designer-blue` | Primary brand color for headings, links, active states, and decorative borders. Its vividness provides the main visual accent against the neutral background |
+
+## Tokens — Typography
+
+### Wazlon
+
+- **Token:** `--font-wazlon`
+- **Substitute:** Georgia
+- **Weights:** 400
+- **Sizes:** 18px, 36px
+- **Line heights:** 1.30
+- **Letter spacing:** -0.01em at 18px, -0.05em at 36px
+- **OpenType features:** 'onum', 'pnum'
+- **Role:** Primary display and content text, embodying the distinctive slanted, art-focused style. Its custom nature is central to the visual identity.
+
+### Caslon Ionic
+
+- **Token:** `--font-caslon-ionic`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 20px
+- **Line heights:** 1.35
+- **Letter spacing:** -0.01em at 20px
+- **Role:** An evocative secondary font for specific content blocks, offering a contrasting, perhaps more traditional textual texture.
+
+## Tokens — Spacing & Shapes
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+## Components
+
+### Headline Blue Text
+
+**Role:** Primary section titles and key information
+
+Uses 'Wazlon' at 36px, weight 400, in 'Designer Blue' (#3366ff), with precise letter-spacing to reinforce the brand's visual signature.
+
+### Link Blue Text
+
+**Role:** Interactive elements and primary navigation items
+
+Text rendered in 'Designer Blue' (#3366ff), primarily using 'Wazlon' at 18px weight 400, indicating clickable elements without needing traditional button fills.
+
+### Body Text Black
+
+**Role:** Standard descriptive text and functional content
+
+Appears in 'Ink Black' (#000000), using 'Wazlon' at 18px weight 400 for general information.
+
+### Subtle Contextual Text
+
+**Role:** Secondary information, dates, or explanatory notes
+
+Uses 'Caslon Ionic' at 20px weight 400, in 'Ink Black' (#000000), providing a stylistic contrast for less prominent content.
+
+### List Item
+
+**Role:** Structured lists of content, such as experience entries
+
+Comprised of an unformatted text block, often with two lines, where the first is a 'Link Blue Text' and the second is 'Body Text Black', both from the 'Wazlon' family, defining a clear hierarchical pairing.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Designer Blue' (#3366ff) for all headings, links, and any element requiring visual prominence.
 - Maintain a stark white background using 'Canvas White' (#ffffff) for all primary content areas.
@@ -36,7 +104,7 @@ Simon Rogers employs a minimalist, typographic-driven aesthetic, using a stark w
 - Use 'Ink Black' (#000000) sparingly for less prominent text elements or subtle borders, never as a primary brand color.
 - Embrace the overall 'comfortable' density by ensuring ample white space around typographic elements rather than compact layouts.
 
-### Don'ts
+### Don't
 
 - Avoid using any colors other than 'Designer Blue' or the neutrals (#ffffff, #000000) for UI elements.
 - Do not use traditional button components; rely on 'Link Blue Text' for interactive elements.
@@ -45,10 +113,45 @@ Simon Rogers employs a minimalist, typographic-driven aesthetic, using a stark w
 - Avoid generic imagery or illustrations; this site is text-dominant and graphically minimalist.
 - Do not introduce complex grid systems or multi-column layouts; content should largely follow a linear, stacked progression modulated by text orientation.
 
-### Layout
+## Imagery
+
+The site is imagery-light, focusing almost exclusively on typography as its primary visual element. No photography, illustrations, or product screenshots are present. The 'imagery' is the highly stylized, diagonally-oriented typography itself. If any icons were to be introduced, they would likely be minimalist, line-based, and in 'Designer Blue' or 'Ink Black', serving purely functional roles rather than decorative ones. The visual density is extremely low, with text dominating the canvas.
+
+## Layout
 
 The page exhibits a full-bleed, vertically scrolled content model with highly dynamic, rotated text blocks. There is no traditional hero section; instead, the initial content presents key information in the brand's unique typographic style. Section rhythm is dictated by the strategic placement and rotation of text, with no explicit visual dividers or alternating color bands. Content arrangement is primarily centered and stacked, but heavily influenced by the diagonal orientation, creating an asymmetric flow. No discernible fixed grid for cards or features is present; the layout is fluid and driven by the textual art direction. The density is very spacious, emphasizing negative space around content. Navigation, if present, is implicit through clickable text links rather than distinct navigation bars.
 
-### Imagery
+## Similar Brands
 
-The site is imagery-light, focusing almost exclusively on typography as its primary visual element. No photography, illustrations, or product screenshots are present. The 'imagery' is the highly stylized, diagonally-oriented typography itself. If any icons were to be introduced, they would likely be minimalist, line-based, and in 'Designer Blue' or 'Ink Black', serving purely functional roles rather than decorative ones. The visual density is extremely low, with text dominating the canvas.
+- **AIGA Eye on Design** — Shares a strong emphasis on experimental typography and a clear, minimal color palette as the primary design language.
+- **Certain graphic design portfolios** — Focus on bespoke typefaces and unconventional layouts to convey a specific artistic identity, using very limited color palettes.
+- **Some conceptual art websites** — Relies heavily on interaction with text and negative space to create visual interest rather than traditional imagery or componentry.
+- **Actual Source** — Uses custom, distinctive typography and a generally spartan, visually impactful aesthetic with minimal UI elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-designer-blue: #3366ff;
+  --font-wazlon: 'Wazlon', Georgia;
+  --font-caslon-ionic: 'Caslon Ionic', Playfair Display;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-designer-blue: #3366ff;
+  --font-wazlon: 'Wazlon', Georgia;
+  --font-caslon-ionic: 'Caslon Ionic', Playfair Display;
+  --radius-default: 0px;
+}
+```

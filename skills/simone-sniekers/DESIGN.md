@@ -1,39 +1,107 @@
 ---
 version: alpha
-name: Simone Sniekers
-description: Simone Sniekers' visual identity is a theatrical canvas for large-scale photography, characterized by bold, shifting background colors that act as dynamic stage backdrops. Minimalist typography and components recede to highlight the imagery, creating an immersive, editorial feel. The frequent full-page background color changes define each section as a distinct act within a larger portfolio narrative. White text and borders provide stark contrast against the vivid, unpredictable color shifts.
-colors:
-  ember-gradient: "#f9532d"
-  black-ink: "#000000"
-  winter-mist: "#bcbcbc"
-  pure-white: "#ffffff"
-  accelerator-yellow: "#eae800"
-  cloud-gray: "#cccbbb"
-  desert-rose: "#926560"
-  harvest-gold: "#d0a43e"
-  fiery-crimson: "#e01365"
-  ginger-bread: "#b18759"
-spacing:
-  elementGap: 16px
-  sectionGap: 48px
-components:
-  ghost-navigation-button:
-    role: Tertiary navigation element, typically found in footers or global info sections.
-  image-card:
-    role: Primary content display for portfolio pieces.
-  header-title:
-    role: Main brand identification and page title.
-  information-link:
-    role: General links for contact and external profiles.
+name: "Simone Sniekers"
+description: "Simone Sniekers' visual identity is a theatrical canvas for large-scale photography, characterized by bold, shifting background colors that act as dynamic stage backdrops. Minimalist typography and components recede to highlight the imagery, creating an immersive, editorial feel. The frequent full-page background color changes define each section as a distinct act within a larger portfolio narrative. White text and borders provide stark contrast against the vivid, unpredictable color shifts."
+theme: "mixed"
+industry: "design"
+source_url: "https://www.simonesniekers.com"
+refero_style_id: "017ce823-c338-417d-849d-497c97701c4c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513642454-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513642454-thumb.jpg"
+extracted_at: "2026-04-30T01:47:40.577Z"
 ---
 
-## Overview
+# Simone Sniekers — Style Reference
 
-**North Star:** Shifting theatrical backdrop.
+> Shifting theatrical backdrop.
+
+**Theme:** mixed
+
+**Industry:** design
 
 Simone Sniekers' visual identity is a theatrical canvas for large-scale photography, characterized by bold, shifting background colors that act as dynamic stage backdrops. Minimalist typography and components recede to highlight the imagery, creating an immersive, editorial feel. The frequent full-page background color changes define each section as a distinct act within a larger portfolio narrative. White text and borders provide stark contrast against the vivid, unpredictable color shifts.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ember Gradient | #f9532d | `--color-ember-gradient` | Supporting palette color for small decorative accents when the core palette needs contrast. |
+| Black Ink | #000000 | `--color-black-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Winter Mist | #bcbcbc | `--color-winter-mist` | Dominant background for the underlying canvas, appearing when richer color sections are not present or act as a default page fill |
+| Pure White | #ffffff | `--color-pure-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Accelerator Yellow | #eae800 | `--color-accelerator-yellow` | Vivid accent background for specific portfolio sections, providing a high-saturation, energetic shift from adjacent colors |
+| Cloud Gray | #cccbbb | `--color-cloud-gray` | Pale, near-achromatic background for portfolio sections, creating a soft, understated visual break |
+| Desert Rose | #926560 | `--color-desert-rose` | Deep, muted red background for specific portfolio sections, adding a warm and earthy tone |
+| Harvest Gold | #d0a43e | `--color-harvest-gold` | Vivid gold background for specific portfolio sections, providing a rich, autumnal accent |
+| Fiery Crimson | #e01365 | `--color-fiery-crimson` | Intense, vivid red background for specific portfolio sections, commanding attention |
+| Ginger Bread | #b18759 | `--color-ginger-bread` | Warm, moderate orange background for particular portfolio content, suggesting natural warmth |
+
+## Tokens — Typography
+
+### Neue Haas Grotesk
+
+- **Token:** `--font-neue-haas-grotesk`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.00, 1.20
+- **Role:** The singular typeface for all content and UI elements, conveying a consistent, modern editorial tone. Its presence at a single weight highlights the content and photography without typographic competition.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-310 | 310px | `--spacing-310` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 0px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Tertiary navigation element, typically found in footers or global info sections.
+
+Text in Pure White (#ffffff) with a 1px border in Pure White (#ffffff), no background or padding. Emphasizes content over interactive elements.
+
+### Image Card
+
+**Role:** Primary content display for portfolio pieces.
+
+Completely borderless and shadowless card with no padding, allowing the image to dominate the visual space. Relies on the background color shifts to delineate content blocks. The inner image is often bordered by Black Ink (#000000).
+
+### Header Title
+
+**Role:** Main brand identification and page title.
+
+Displays 'Simone Sniekers' at 16px, weight 400 (Neue Haas Grotesk / Helvetica Neue), in Black Ink (#000000) against light backgrounds or Pure White (#ffffff) against dark/colored backgrounds, with a line-height of 1.2.
+
+### Information Link
+
+**Role:** General links for contact and external profiles.
+
+Text is 16px, weight 400 (Neue Haas Grotesk / Helvetica Neue), with a line-height of 1.0. Color depends on context: Black Ink (#000000) on light backgrounds, Pure White (#ffffff) on dark/colored backgrounds.
+
+## Do's and Don'ts
+
+### Do
 
 - Use full-bleed background colors for distinct page sections, shifting between a vibrant palette and a restrained, almost achromatic set.
 - Prioritize large-scale, unadorned photography as the central content, with UI elements acting as minimal overlays.
@@ -43,7 +111,7 @@ Simone Sniekers' visual identity is a theatrical canvas for large-scale photogra
 - Use color purely for background statements and text contrast; avoid decorative or illustrative color. The page background is the primary color vehicle.
 - Employ 0px padding and margin on core content blocks like image cards, allowing images to extend to the visual edge of their containers.
 
-### Don'ts
+### Don't
 
 - Do not introduce multiple font families or weights; stick to Neue Haas Grotesk 400 for all text.
 - Avoid using box-shadows or any form of elevation except for subtle border shifts for interaction states.
@@ -53,10 +121,67 @@ Simone Sniekers' visual identity is a theatrical canvas for large-scale photogra
 - Do not use generic 'info', 'success', 'warning' semantic colors; the palette is exclusively brand and neutral tied to editorial sections.
 - Do not break the flat aesthetic with gradients or complex visual effects on components; gradients are reserved for the full-page background only.
 
-### Layout
+## Imagery
+
+This site features high-quality, professional photography, primarily editorial fashion and stylistic still lifes. Images are presented full-bleed within their sections or contained within a subtle border, serving as the absolute focal point of each content block. The treatment is direct and impactful, with strong stylistic choices in the photography itself, rather than complex digital manipulation on the site. There are no illustrations or abstract graphics; it's a showcase of photographic work. Iconography is absent, reinforcing a text-light, image-dominant presentation where visuals convey meaning and atmosphere.
+
+## Layout
 
 The page operates on a full-bleed, responsive model where each major section takes on a distinct background color, creating a dynamic progression down the page. There is no fixed max-width, allowing content to stretch across the viewport. The hero section prominently features a full-bleed gradient background that frames a central portfolio image. Subsequent sections alternate between large editorial photographs and minimal text, with wide vertical spacing (e.g., 48px) between these blocks. Content is generally centered or implicitly aligned by the full-bleed imagery, avoiding complex grid structures in favor of sequential, large-format presentations. Navigation is minimal, typically confined to small text links placed discretely at the bottom of the viewport or within the footer area, ensuring an uninterrupted focus on the visual content.
 
-### Imagery
+## Similar Brands
 
-This site features high-quality, professional photography, primarily editorial fashion and stylistic still lifes. Images are presented full-bleed within their sections or contained within a subtle border, serving as the absolute focal point of each content block. The treatment is direct and impactful, with strong stylistic choices in the photography itself, rather than complex digital manipulation on the site. There are no illustrations or abstract graphics; it's a showcase of photographic work. Iconography is absent, reinforcing a text-light, image-dominant presentation where visuals convey meaning and atmosphere.
+- **AIGA Eye on Design** — Features large images, a focus on impactful visuals, and a subtle UI that doesn't detract from the content.
+- **The Brand Identity** — Emphasizes full-bleed imagery and minimal typography, allowing the visual work to speak for itself.
+- **Vogue.com (editorial archives)** — Utilizes large-scale photography and editorial layouts with a clean, high-contrast text overlay, and occasional bold background color statements.
+- **Actual Source** — Known for unexpected color shifts and clean, modern typography that serves as a canvas for striking visual content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ember-gradient: #f9532d;
+  --color-black-ink: #000000;
+  --color-winter-mist: #bcbcbc;
+  --color-pure-white: #ffffff;
+  --color-accelerator-yellow: #eae800;
+  --color-cloud-gray: #cccbbb;
+  --color-desert-rose: #926560;
+  --color-harvest-gold: #d0a43e;
+  --color-fiery-crimson: #e01365;
+  --color-ginger-bread: #b18759;
+  --font-neue-haas-grotesk: 'Neue Haas Grotesk', Helvetica Neue;
+  --spacing-0: 0px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-48: 48px;
+  --spacing-310: 310px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ember-gradient: #f9532d;
+  --color-black-ink: #000000;
+  --color-winter-mist: #bcbcbc;
+  --color-pure-white: #ffffff;
+  --color-accelerator-yellow: #eae800;
+  --color-cloud-gray: #cccbbb;
+  --color-desert-rose: #926560;
+  --color-harvest-gold: #d0a43e;
+  --color-fiery-crimson: #e01365;
+  --color-ginger-bread: #b18759;
+  --font-neue-haas-grotesk: 'Neue Haas Grotesk', Helvetica Neue;
+  --spacing-0: 0px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-48: 48px;
+  --spacing-310: 310px;
+  --radius-none: 0px;
+}
+```

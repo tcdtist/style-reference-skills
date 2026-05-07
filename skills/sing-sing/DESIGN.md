@@ -1,49 +1,127 @@
 ---
 version: alpha
-name: Sing-sing
-description: Sing-Sing's visual system evokes a playful yet sophisticated modernity, built on a sparse layout and bold, contrasting color. A vibrant, sun-drenched yellow serves as the expansive canvas, punctuated by sharp black typography and a singular teal accent. The design feels like a curated exhibition space, where content is deliberately placed and given ample room to breathe, suggesting value through restraint and striking color choices.
-colors:
-  amber-canvas: "#fcd579"
-  midnight-ink: "#171717"
-  jade-accent: "#81d6b9"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.15
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.15
-    letterSpacing: -0.48px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 147px
-    lineHeight: 1
-    letterSpacing: -3.675px
-spacing:
-  elementGap: 5px
-  sectionGap: 35px
-components:
-  primary-navigation-link-default:
-    role: Interactive text link within the main navigation.
-  navigation-divider-active-state:
-    role: Subtle visual indicator for active or highlighted navigation items.
-  decorative-headline:
-    role: Large, attention-grabbing text for main titles or section headers.
-  body-text-block-untitled-sans:
-    role: Standard body copy for general information.
-  body-text-block-signifier:
-    role: Secondary body copy or descriptive text, often with a more traditional feel.
+name: "Sing-sing"
+description: "Sing-Sing's visual system evokes a playful yet sophisticated modernity, built on a sparse layout and bold, contrasting color. A vibrant, sun-drenched yellow serves as the expansive canvas, punctuated by sharp black typography and a singular teal accent. The design feels like a curated exhibition space, where content is deliberately placed and given ample room to breathe, suggesting value through restraint and striking color choices."
+theme: "light"
+industry: "design"
+source_url: "https://sing-sing.co"
+refero_style_id: "12b20c12-27f8-4938-89ba-569404d36fe8"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521062474-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521062474-thumb.jpg"
+extracted_at: "2026-04-30T03:51:20.740Z"
 ---
 
-## Overview
+# Sing-sing — Style Reference
 
-**North Star:** sunny minimal exhibition
+> sunny minimal exhibition
+
+**Theme:** light
+
+**Industry:** design
 
 Sing-Sing's visual system evokes a playful yet sophisticated modernity, built on a sparse layout and bold, contrasting color. A vibrant, sun-drenched yellow serves as the expansive canvas, punctuated by sharp black typography and a singular teal accent. The design feels like a curated exhibition space, where content is deliberately placed and given ample room to breathe, suggesting value through restraint and striking color choices.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Amber Canvas | #fcd579 | `--color-amber-canvas` | Dominant page background and primary surface color, providing a warm, inviting foundation for all content |
+| Midnight Ink | #171717 | `--color-midnight-ink` | Primary text, headings, and significant borders, establishing strong contrast against the warm canvas |
+| Jade Accent | #81d6b9 | `--color-jade-accent` | Navigation borders, active text states, and decorative elements; acts as the sole chromatic accent on the amber background; Background for full-width decorative elements and banners, blending the Jade Accent with the warmer tones of the canvas |
+
+## Tokens — Typography
+
+### untitledsans
+
+- **Token:** `--font-untitledsans`
+- **Substitute:** Arial
+- **Weights:** 400, 700
+- **Sizes:** 16px, 23px, 24px, 147px
+- **Line heights:** 1.00, 1.15, 1.22
+- **Letter spacing:** -0.0250em at 147px, -0.0200em at 24px
+- **OpenType features:** "kern"
+- **Role:** Used for all primary headings, body text, navigation elements, and links. Its semi-bold weights create a sense of directness in an otherwise sparse layout.
+
+### signifier
+
+- **Token:** `--font-signifier`
+- **Substitute:** Georgia
+- **Weights:** 400
+- **Sizes:** 20px, 21px
+- **Line heights:** 1.15, 1.20, 1.30
+- **Letter spacing:** normal
+- **OpenType features:** "kern"
+- **Role:** Used sparingly for italicized or more traditional text elements, providing a subtle counterpoint to the dominant sans-serif.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.15 | — | `--text-body` |
+| subheading | 24px | 1.15 | -0.48px | `--text-subheading` |
+| display | 147px | 1 | -3.675px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-53 | 53px | `--spacing-53` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 35px |
+| cardPadding | 23px |
+| elementGap | 5px |
+
+## Components
+
+### Primary Navigation Link (Default)
+
+**Role:** Interactive text link within the main navigation.
+
+Text uses Untitled Sans, weight 400, color Midnight Ink (#171717). No explicit padding listed, but context around 'Index' implies compact spacing, possibly a small margin-top of 5px and margin-bottom of 7px. No border or background.
+
+### Navigation Divider (Active State)
+
+**Role:** Subtle visual indicator for active or highlighted navigation items.
+
+A thin, prominent border. Color is Jade Accent (#81d6b9). Used below navigation text, often filling the width of the navigation area, with a substantial top padding of 35px.
+
+### Decorative Headline
+
+**Role:** Large, attention-grabbing text for main titles or section headers.
+
+Untitled Sans, weight 700, size 147px, line height 1.0, color Midnight Ink (#171717), letter-spacing -0.025em. Typically centered or left-aligned, occupying significant visual space.
+
+### Body Text Block (Untitled Sans)
+
+**Role:** Standard body copy for general information.
+
+Untitled Sans, weight 400, size 23px, line height 1.22, color Midnight Ink (#171717). Paragraphs have a 23px margin-bottom.
+
+### Body Text Block (Signifier)
+
+**Role:** Secondary body copy or descriptive text, often with a more traditional feel.
+
+Signifier, weight 400, size 20px, line height 1.3, color Midnight Ink (#171717).
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Amber Canvas (#fcd579) as the dominant background color for pages and sections.
 - Apply Midnight Ink (#171717) for all primary text, headings, and strong UI boundaries.
@@ -52,7 +130,7 @@ Sing-Sing's visual system evokes a playful yet sophisticated modernity, built on
 - Implement tight letter-spacing for large headlines (-0.025em at 147px) to maintain visual density.
 - Maintain a compact element spacing of 5px between closely related items, and generous section spacing of 35px for visual breathing room.
 
-### Don'ts
+### Don't
 
 - Do not introduce new chromatic colors; stick to Amber Canvas, Midnight Ink, and Jade Accent.
 - Avoid using drop shadows or complex elevation; the design relies on stark contrast and flat surfaces.
@@ -61,10 +139,71 @@ Sing-Sing's visual system evokes a playful yet sophisticated modernity, built on
 - Do not use rounded corners; all UI elements should maintain sharp, 0px radii.
 - Do not deviate from the specified font families; avoid system defaults or alternative sans-serif/serif fonts.
 
-### Layout
+## Imagery
+
+Imagery primarily consists of curated, somewhat abstracted artistic photographs or product shots, often showcasing interesting textures or compositions rather than explicit narratives. They are treated as embedded content blocks, flush with the Amber Canvas background and containing their own visual interest. There is a strong sense of a contained, editorial aesthetic. Icons are not a prominent feature, suggesting pure UI over symbolic graphics.
+
+## Layout
 
 The page uses a full-bleed layout, where the Amber Canvas background extends edge-to-edge. Content appears to be centered within this expansive space, often in simple, large blocks. The hero section features a very large, centered headline directly on the colored background. Section rhythm is minimal, relying on clear visual breaks rather than explicit dividers, allowing the large headlines and images to dictate the flow. The main body content tends to be single-column or two-column sections, with text and imagery given ample individual space, creating an airy, uncrowded feel. Navigation is a minimalist top-right 'Index' link, opening into an overlay or expanded menu.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of curated, somewhat abstracted artistic photographs or product shots, often showcasing interesting textures or compositions rather than explicit narratives. They are treated as embedded content blocks, flush with the Amber Canvas background and containing their own visual interest. There is a strong sense of a contained, editorial aesthetic. Icons are not a prominent feature, suggesting pure UI over symbolic graphics.
+- **AIGA** — Uses large, impactful typography on colored backgrounds with a curated, editorial layout.
+- **Frank, Chimero** — Employs a minimal, almost academic layout with a distinct color palette and careful typographic hierarchy.
+- **Studio Airport** — Features bold, often large-scale typography paired with a restricted color palette and sparse, artistic visuals.
+- **Build in Public (Li Jin)** — Minimalistic design with a strong, single accent color and clear, contrasting typography on a light background.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-amber-canvas: #fcd579;
+  --color-midnight-ink: #171717;
+  --color-jade-accent: #81d6b9;
+  --font-untitledsans: 'untitledsans', Arial;
+  --font-signifier: 'signifier', Georgia;
+  --text-body: 16px;
+  --leading-body: 1.15;
+  --text-subheading: 24px;
+  --leading-subheading: 1.15;
+  --tracking-subheading: -0.48px;
+  --text-display: 147px;
+  --leading-display: 1;
+  --tracking-display: -3.675px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-23: 23px;
+  --spacing-35: 35px;
+  --spacing-53: 53px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-amber-canvas: #fcd579;
+  --color-midnight-ink: #171717;
+  --color-jade-accent: #81d6b9;
+  --font-untitledsans: 'untitledsans', Arial;
+  --font-signifier: 'signifier', Georgia;
+  --text-body: 16px;
+  --leading-body: 1.15;
+  --text-subheading: 24px;
+  --leading-subheading: 1.15;
+  --tracking-subheading: -0.48px;
+  --text-display: 147px;
+  --leading-display: 1;
+  --tracking-display: -3.675px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-23: 23px;
+  --spacing-35: 35px;
+  --spacing-53: 53px;
+  --radius-none: 0px;
+}
+```
