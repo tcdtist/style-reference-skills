@@ -1,68 +1,171 @@
 ---
 version: alpha
-name: Julia Krantz
-description: Julia Krantz's portfolio operates like a darkroom contact sheet — dense grid of image tiles on near-black, with stark white typography hovering over photography. The canvas is #000000, surfaces are pure darkness, and the only warmth comes from the photographic content inside each tile. Typographic restraint is extreme: ClashDisplay at weight 300 for large display initials (the abbreviated project codes 'Se', 'Fd', 'Ga') creates a barely-there identity mark, while DM Sans at weight 300 handles all body and navigation at 10-14px with wide tracking. The grid is the interface — a mosaic of image tiles with 1px solid rgba(248,248,248,0.12) borders separating them, no rounded corners anywhere, no shadows, no gradients. Color is entirely absent from the UI layer; all chromatic interest is delegated to the photography.
-colors:
-  void: "#000000"
-  salt: "#f8f8f8"
-  ash: "#707070"
-  ghost-line: "#f8f8f8"
-  veil: "#f8f8f8"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.3
-    letterSpacing: 0.6px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 29px
-    lineHeight: 1
-    letterSpacing: -1.16px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1
-    letterSpacing: -1.76px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 6px
-  sectionGap: 30px
-components:
-  project-grid-tiles:
-    role: 
-  about-bio-block:
-    role: 
-  header-identity-email-cta:
-    role: 
-  project-grid-tile:
-    role: Primary portfolio navigation — each tile is a cropped photograph with abbreviated project code overlaid
-  name-logotype:
-    role: Primary identity mark in the top-left header
-  navigation-link:
-    role: Top-right global nav: Magic Fabric ↗, Bio, Contact
-  about-bio-block:
-    role: Multi-column text section with label headers
-  press-list-item:
-    role: Numbered external press links within the bio section
-  email-cta-link:
-    role: Contact email in the top-right of the header, the site's only direct CTA
-  section-divider:
-    role: Horizontal rule separating header from bio section and bio section from grid
-  category-label:
-    role: Small uppercase tag beneath project initials on tiles
-  archive-year-badge:
-    role: Year label on archive tiles (e.g. '· 2009', '· 2011')
+name: "Julia Krantz"
+description: "Julia Krantz's portfolio operates like a darkroom contact sheet — dense grid of image tiles on near-black, with stark white typography hovering over photography. The canvas is #000000, surfaces are pure darkness, and the only warmth comes from the photographic content inside each tile. Typographic restraint is extreme: ClashDisplay at weight 300 for large display initials (the abbreviated project codes 'Se', 'Fd', 'Ga') creates a barely-there identity mark, while DM Sans at weight 300 handles all body and navigation at 10-14px with wide tracking. The grid is the interface — a mosaic of image tiles with 1px solid rgba(248,248,248,0.12) borders separating them, no rounded corners anywhere, no shadows, no gradients. Color is entirely absent from the UI layer; all chromatic interest is delegated to the photography."
+theme: "dark"
+industry: "agency"
+source_url: "https://juliakrantz.com"
+refero_style_id: "92857b05-1c01-4c7a-b196-beb4e4871998"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777411901935-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777411901935-thumb.jpg"
+extracted_at: "2026-04-28T21:33:21.869Z"
 ---
 
-## Overview
+# Julia Krantz — Style Reference
 
-**North Star:** Darkroom contact sheet — a grid of photographic tiles on pure black, identity spelled in barely-visible weight-300 letterforms.
+> Darkroom contact sheet — a grid of photographic tiles on pure black, identity spelled in barely-visible weight-300 letterforms.
+
+**Theme:** dark
+
+**Industry:** agency
 
 Julia Krantz's portfolio operates like a darkroom contact sheet — dense grid of image tiles on near-black, with stark white typography hovering over photography. The canvas is #000000, surfaces are pure darkness, and the only warmth comes from the photographic content inside each tile. Typographic restraint is extreme: ClashDisplay at weight 300 for large display initials (the abbreviated project codes 'Se', 'Fd', 'Ga') creates a barely-there identity mark, while DM Sans at weight 300 handles all body and navigation at 10-14px with wide tracking. The grid is the interface — a mosaic of image tiles with 1px solid rgba(248,248,248,0.12) borders separating them, no rounded corners anywhere, no shadows, no gradients. Color is entirely absent from the UI layer; all chromatic interest is delegated to the photography.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Void | #000000 | `--color-void` | Page canvas, all section backgrounds — the true floor of the UI; every element floats above absolute black |
+| Salt | #f8f8f8 | `--color-salt` | All text, links, nav labels, borders, icons — the single foreground tone serving every text and UI edge function against black |
+| Ash | #707070 | `--color-ash` | Secondary labels, muted nav text, subdued body copy — mid-tone for visual hierarchy without introducing any hue |
+| Ghost Line | #f8f8f8 | `--color-ghost-line` | Grid tile borders, dividers — rgba(248,248,248,0.12) at 12% opacity; nearly invisible structural seams |
+| Veil | #f8f8f8 | `--color-veil` | Overlay labels, secondary text on image tiles — rgba(248,248,248,0.45) at 45% opacity for text sitting over photography |
+
+## Tokens — Typography
+
+### DM Sans
+
+- **Token:** `--font-dm-sans`
+- **Substitute:** DM Sans (Google Fonts — same family)
+- **Weights:** 300
+- **Sizes:** 10px, 12px, 13px, 14px
+- **Line heights:** 1.30 – 1.72
+- **Letter spacing:** 0.06em at small sizes (10-12px), 0.07em at 13-14px — wide tracking compensates for the light weight at small sizes
+- **Role:** All body copy, navigation labels, press list items, links, captions. Weight 300 across every size — the site refuses to bold anything in this family, keeping the text layer visually quiet against photography.
+
+### ClashDisplay
+
+- **Token:** `--font-clashdisplay`
+- **Substitute:** Cabinet Grotesk (Fontshare) or Space Grotesk (Google Fonts)
+- **Weights:** 300, 500
+- **Sizes:** 10px, 12px, 14px, 29px, 44px
+- **Line heights:** 1.00 at display / 1.72 at text sizes
+- **Letter spacing:** -0.04em at 44px display; +0.04em to +0.14em at 10-14px label sizes
+- **Role:** Project initials on tiles (44px weight 300, tracking -0.04em), section codes and labels (12-14px weight 300, tracking +0.05em to +0.14em), name logotype. The 44px weight-300 display setting — a nearly invisible letterform over a photograph — is the signature visual move of the portfolio.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.3 | 0.6px | `--text-caption` |
+| heading | 29px | 1 | -1.16px | `--text-heading` |
+| display | 44px | 1 | -1.76px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| tiles | 0px |
+| inputs | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| cardPadding | 16px |
+| elementGap | 6px |
+
+## Components
+
+### Project Grid Tiles
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### About Bio Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Header Identity + Email CTA
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Project Grid Tile
+
+**Role:** Primary portfolio navigation — each tile is a cropped photograph with abbreviated project code overlaid
+
+Full-bleed photograph filling the tile. No border-radius (0px). Border: 1px solid rgba(248,248,248,0.12). Project code (e.g. 'Cd', 'Ga') in ClashDisplay 44px weight 300, #f8f8f8, letter-spacing -0.04em, positioned top-left with 16px padding. Sequential number ('01', '02') in DM Sans 10px weight 300, #707070, top-left above the code. Practice/category label in DM Sans 10px weight 300, tracking 0.14em, #707070 below project name. Hover: filter: brightness(0.82) transition 0.4s ease.
+
+### Name Logotype
+
+**Role:** Primary identity mark in the top-left header
+
+ClashDisplay weight 500, approximately 29px, #f8f8f8, letter-spacing -0.04em. Sits against #000000 background with 16px left padding. No decoration, no logo mark — text is the entire brand.
+
+### Navigation Link
+
+**Role:** Top-right global nav: Magic Fabric ↗, Bio, Contact
+
+DM Sans 12px weight 300, #f8f8f8, letter-spacing 0.06em. External links include '↗' glyph appended directly. No underline by default. Color transitions to rgba(248,248,248,0.45) on hover over 0.2s ease. No background, no border, no padding block.
+
+### About Bio Block
+
+**Role:** Multi-column text section with label headers
+
+Background #000000. Column header label (e.g. 'ABOUT', 'PRESS') in DM Sans 10px weight 300, #707070, letter-spacing 0.07em, uppercase. Body text in DM Sans 13px weight 300, #f8f8f8, line-height 1.72. Paragraph margin-bottom 3px. Column gap 20-32px. Top border: 1px solid rgba(248,248,248,0.12) separating from header.
+
+### Press List Item
+
+**Role:** Numbered external press links within the bio section
+
+DM Sans 12px weight 300, #f8f8f8. Number prefix in #707070. '↗' arrow glyph after publication name. Spacing: margin-bottom 3-4px per item. On hover: color transitions from #f8f8f8 to rgba(248,248,248,0.45) over 0.2s ease.
+
+### Email CTA Link
+
+**Role:** Contact email in the top-right of the header, the site's only direct CTA
+
+DM Sans 12px weight 300, #f8f8f8. Followed by ' →' directional arrow. Letter-spacing 0.06em. Small dot indicator (8px circle, #f8f8f8) sits adjacent — likely an availability indicator. No button chrome — plain text link on black.
+
+### Section Divider
+
+**Role:** Horizontal rule separating header from bio section and bio section from grid
+
+1px solid rgba(248,248,248,0.12). Full-width of container. No margin offset — content begins immediately below.
+
+### Category Label
+
+**Role:** Small uppercase tag beneath project initials on tiles
+
+DM Sans 10px weight 300, #707070, letter-spacing 0.14em. Values: 'PRACTICE', 'ARCHIVE', 'BLOG'. All-caps text transform. No background, no border — pure typographic label.
+
+### Archive Year Badge
+
+**Role:** Year label on archive tiles (e.g. '· 2009', '· 2011')
+
+DM Sans 10px weight 300, rgba(248,248,248,0.45). Preceded by middot separator. Inline after project title on tile.
+
+## Do's and Don'ts
+
+### Do
 
 - Use #000000 for all backgrounds — the CSS token --bg: #000 is absolute; never substitute dark gray or near-black
 - Set all ClashDisplay display headings (44px tile codes) at weight 300 with letter-spacing -0.04em — the ultra-light setting against photography is the signature move
@@ -72,7 +175,7 @@ Julia Krantz's portfolio operates like a darkroom contact sheet — dense grid o
 - Maintain DM Sans weight 300 for all body, nav, and label text — no bold text anywhere in the UI layer
 - Express secondary hierarchy through #707070 (section labels, numbers, category tags) — never through size increases or weight changes
 
-### Don'ts
+### Don't
 
 - Never add any color to the UI chrome — buttons, links, labels, borders must remain in the #f8f8f8 / #707070 / rgba opacity system only
 - Never round corners — no border-radius on tiles, containers, or any interactive element; 0px is non-negotiable
@@ -82,14 +185,104 @@ Julia Krantz's portfolio operates like a darkroom contact sheet — dense grid o
 - Never introduce gradients, overlays, or tinted backgrounds — the CSS tokens confirm no gradient system exists; #000 is the only background
 - Never separate the category label from its tile project code with more than 4px margin — the tight stacking (4px marginBottom between elements) is the spatial rhythm
 
-### Layout
+## Surfaces
 
-Full-bleed, no max-width container. Header bar spans full width: name logotype pinned left, email and nav pinned right, both at 16px horizontal padding. Bio section below header uses a multi-column horizontal layout — approximately 4-5 text columns (About, Press, Speaking, Podcasts, Links) filling full width with 20-32px column gaps. Grid section below bio: 10-column mosaic of variable-width tiles in rows, each tile filled with photography. Tiles vary in width — some span one column, some two — creating a journalistic contact-sheet rhythm. No gutters visible between tiles except the 1px Ghost Line border. Navigation is a minimal top-right inline set of 3 links. No sidebar, no sticky header. The entire page scrolls vertically with no section anchoring or visual dividers beyond the Ghost Line horizontal rule.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| 1 | Void Canvas | #000000 | Base page background, section backgrounds, nav bar |
+| 2 | Image Tile | #111111 | Grid project tiles — filled with photography, bordered by Ghost Line 1px |
 
-### Imagery
+## Imagery
 
 Photography-dominant — every project grid tile is a full-bleed photographic crop: fashion portraiture, macro textile/material studies, AI-generated imagery, event photography. Photographs are raw-edged, sharp-cornered, zero border-radius. Images are not contained or padded — they fill their tile completely, edge to edge. No lifestyle staging context visible; images are treated as abstract color fields at tile scale, only readable as subjects when enlarged. Color in the UI exists exclusively within these photographs — from vivid AI-generated chromatics to desaturated fashion editorial. The photographic density IS the design: at the grid scale, the tiles form a chromatic mosaic against black. Icons: minimal use of directional glyphs ('↗', '→') inline with text, no standalone icon components. No illustrations, no 3D renders in the UI chrome.
 
-### Elevation
+## Layout
 
-Zero shadows across the entire system. Depth is created purely by the contrast between the black canvas and photographic tile content. No box-shadow values appear anywhere; the 1px rgba(248,248,248,0.12) border is the only surface separator. Hover states use filter: brightness(0.82) — darkening the image rather than lifting the element.
+Full-bleed, no max-width container. Header bar spans full width: name logotype pinned left, email and nav pinned right, both at 16px horizontal padding. Bio section below header uses a multi-column horizontal layout — approximately 4-5 text columns (About, Press, Speaking, Podcasts, Links) filling full width with 20-32px column gaps. Grid section below bio: 10-column mosaic of variable-width tiles in rows, each tile filled with photography. Tiles vary in width — some span one column, some two — creating a journalistic contact-sheet rhythm. No gutters visible between tiles except the 1px Ghost Line border. Navigation is a minimal top-right inline set of 3 links. No sidebar, no sticky header. The entire page scrolls vertically with no section anchoring or visual dividers beyond the Ghost Line horizontal rule.
+
+## Similar Brands
+
+- **Hiepler & Brunier (photographer portfolio)** — Same black-canvas grid-of-photographs approach where photography provides all color and UI chrome is pure white typography on black
+- **Bureau Borsche** — Identical ultra-light weight-300 display typography as identity mark, with text-only brand and no decorative UI elements
+- **Cargo Collective (minimal dark template)** — Same mosaic grid of full-bleed images with zero-radius tiles and typographic labels floating over photography
+- **Koto Studio portfolio** — Shared achromatic UI-layer philosophy where brand color is entirely absent from chrome and delegated to content imagery
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-void: #000000;
+  --color-salt: #f8f8f8;
+  --color-ash: #707070;
+  --color-ghost-line: #f8f8f8;
+  --color-veil: #f8f8f8;
+  --font-dm-sans: 'DM Sans', DM Sans (Google Fonts — same family);
+  --font-clashdisplay: 'ClashDisplay', Cabinet Grotesk (Fontshare) or Space Grotesk (Google Fonts);
+  --text-caption: 10px;
+  --leading-caption: 1.3;
+  --tracking-caption: 0.6px;
+  --text-heading: 29px;
+  --leading-heading: 1;
+  --tracking-heading: -1.16px;
+  --text-display: 44px;
+  --leading-display: 1;
+  --tracking-display: -1.76px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --radius-cards: 0px;
+  --radius-tiles: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+  --surface-void-canvas: #000000;
+  --surface-image-tile: #111111;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-void: #000000;
+  --color-salt: #f8f8f8;
+  --color-ash: #707070;
+  --color-ghost-line: #f8f8f8;
+  --color-veil: #f8f8f8;
+  --font-dm-sans: 'DM Sans', DM Sans (Google Fonts — same family);
+  --font-clashdisplay: 'ClashDisplay', Cabinet Grotesk (Fontshare) or Space Grotesk (Google Fonts);
+  --text-caption: 10px;
+  --leading-caption: 1.3;
+  --tracking-caption: 0.6px;
+  --text-heading: 29px;
+  --leading-heading: 1;
+  --tracking-heading: -1.16px;
+  --text-display: 44px;
+  --leading-display: 1;
+  --tracking-display: -1.76px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --radius-cards: 0px;
+  --radius-tiles: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+  --surface-void-canvas: #000000;
+  --surface-image-tile: #111111;
+}
+```
