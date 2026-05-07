@@ -1,67 +1,156 @@
 ---
 version: alpha
-name: Postevand
-description: Postevand presents a stark, almost architectural aesthetic using monochrome tones, precise typography, and a grid-based layout. The primary canvas is bright white, often overlaid with fine black lines, creating a blueprint-like impression. Components are flat and boxy, emphasizing content and function over decorative elements, with a notable absence of shadows or rounded corners. The visual system feels grounded and serious, utilizing strong contrast and clear visual hierarchy for a direct and impactful user experience.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-  whisper-gray: "#f0f1ef"
-  ash-slate: "#333333"
-  border-silver: "#d7d7d7"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.16px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: -0.32px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.2
-    letterSpacing: -0.56px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1.2
-    letterSpacing: -0.8px
-spacing:
-  elementGap: 20px
-  sectionGap: 60px
-components:
-  primary-filled-button:
-    role: Submit actions, main calls to action.
-  ghost-header-button:
-    role: Header links and navigation elements.
-  text-link-button:
-    role: Inline actions and secondary navigation at the bottom of sections.
-  default-card:
-    role: Content grouping without visual emphasis.
-  subtle-section-card:
-    role: Grouping related content with a slight background distinction.
-  elevated-content-card:
-    role: Promising focused content or interactive elements, visually separating from the background.
-  form-input-field:
-    role: User input fields.
-  newsletter-modal:
-    role: Interstitials for user engagement.
+name: "Postevand"
+description: "Postevand presents a stark, almost architectural aesthetic using monochrome tones, precise typography, and a grid-based layout. The primary canvas is bright white, often overlaid with fine black lines, creating a blueprint-like impression. Components are flat and boxy, emphasizing content and function over decorative elements, with a notable absence of shadows or rounded corners. The visual system feels grounded and serious, utilizing strong contrast and clear visual hierarchy for a direct and impactful user experience."
+theme: "light"
+industry: "other"
+source_url: "https://postevand.com"
+refero_style_id: "76bfda6b-125f-4d9b-96c0-356de1e9fc10"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512302056-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512302056-thumb.jpg"
+extracted_at: "2026-04-30T01:25:26.350Z"
 ---
 
-## Overview
+# Postevand — Style Reference
 
-**North Star:** Architectural blueprint on stark white canvas
+> Architectural blueprint on stark white canvas
+
+**Theme:** light
+
+**Industry:** other
 
 Postevand presents a stark, almost architectural aesthetic using monochrome tones, precise typography, and a grid-based layout. The primary canvas is bright white, often overlaid with fine black lines, creating a blueprint-like impression. Components are flat and boxy, emphasizing content and function over decorative elements, with a notable absence of shadows or rounded corners. The visual system feels grounded and serious, utilizing strong contrast and clear visual hierarchy for a direct and impactful user experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, form input backgrounds, navigation text. Provides a clean, expansive base |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, buttons, borders, and navigation elements. Creates strong contrast and visual anchors |
+| Whisper Gray | #f0f1ef | `--color-whisper-gray` | Subtle background for secondary sections or cards, offering a slight visual break from pure white without introducing color |
+| Ash Slate | #333333 | `--color-ash-slate` | Secondary text, muted borders, and less prominent UI elements. Offers a softer contrast than Midnight Ink while maintaining readability |
+| Border Silver | #d7d7d7 | `--color-border-silver` | Hairline borders for inputs and fine dividers, adding minimal separation |
+
+## Tokens — Typography
+
+### Nimbus Sans D OT
+
+- **Token:** `--font-nimbus-sans-d-ot`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 10px, 12px, 16px, 32px, 56px, 80px
+- **Line heights:** 1.00, 1.20, 1.40
+- **Letter spacing:** -0.0100em
+- **Role:** Primary typeface for headings, body text, navigation, and button labels. Its clean, geometric form supports the site's structured aesthetic, with a slightly condensed feel at certain sizes.
+
+### Helvetica
+
+- **Token:** `--font-helvetica`
+- **Substitute:** Arial
+- **Weights:** 300, 400
+- **Sizes:** 13px, 16px, 30px
+- **Line heights:** 1.00, 1.54, 1.60
+- **Letter spacing:** 0.0060em, 0.0080em
+- **Role:** Used for input fields and specific body text. Integrates a classic, readable sans-serif for functional text elements, presenting a lighter touch at weight 300.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| body | 16px | 1.4 | -0.16px | `--text-body` |
+| subheading | 32px | 1.2 | -0.32px | `--text-subheading` |
+| heading | 56px | 1.2 | -0.56px | `--text-heading` |
+| display | 80px | 1.2 | -0.8px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-180 | 180px | `--spacing-180` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Submit actions, main calls to action.
+
+Solid Midnight Ink background, Canvas White text. No border-radius, 12px vertical padding, 20px horizontal padding. Font: Nimbus Sans D OT, weight 400.
+
+### Ghost Header Button
+
+**Role:** Header links and navigation elements.
+
+Transparent background, Midnight Ink text and a 1px Midnight Ink top border for subtle separation. No border-radius, 0px vertical padding, 20px horizontal padding. Font: Nimbus Sans D OT, weight 400.
+
+### Text Link Button
+
+**Role:** Inline actions and secondary navigation at the bottom of sections.
+
+Transparent background, Midnight Ink text. No padding, no borders, no border-radius. Font: Nimbus Sans D OT, weight 400.
+
+### Default Card
+
+**Role:** Content grouping without visual emphasis.
+
+Transparent background, no borders, no shadows, 0px radius. No internal padding defined, relies on content spacing.
+
+### Subtle Section Card
+
+**Role:** Grouping related content with a slight background distinction.
+
+Whisper Gray background, no borders, no shadows, 0px radius. No internal padding defined, relies on content spacing.
+
+### Elevated Content Card
+
+**Role:** Promising focused content or interactive elements, visually separating from the background.
+
+Canvas White background, no borders, no shadows, 0px radius. Includes 20px padding on all sides. Font: Nimbus Sans D OT.
+
+### Form Input Field
+
+**Role:** User input fields.
+
+Transparent background, Midnight Ink text, Border Silver 1px top border. No radius. 12px vertical padding, 20px horizontal padding. Font: Helvetica, weight 400.
+
+### Newsletter Modal
+
+**Role:** Interstitials for user engagement.
+
+Canvas White background with no borders or shadows, 0px radius. Contains a heading, body copy, an input field (Form Input Field), and a Primary Filled Button.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a strict 0px border-radius across all components to preserve the rectilinear aesthetic.
 - Use Midnight Ink (#000000) for all primary text, headings, and borders to ensure strong contrast on Canvas White (#ffffff) backgrounds.
@@ -71,7 +160,7 @@ Postevand presents a stark, almost architectural aesthetic using monochrome tone
 - Employ Nimbus Sans D OT for all prominent text elements and maintain Helvetica for functional input fields.
 - Ensure all interactive elements have a clear visual state (e.g., color change on hover/focus) as elevation is absent.
 
-### Don'ts
+### Don't
 
 - Do not introduce any rounded corners; maintain hard edges for all elements.
 - Avoid using drop shadows or complex elevation techniques; rely on stark borders and background color changes for visual hierarchy.
@@ -80,10 +169,105 @@ Postevand presents a stark, almost architectural aesthetic using monochrome tone
 - Do not use generic system borders for inputs; always specify a Border Silver (#d7d7d7) 1px border at the top.
 - Avoid decorative imagery that competes with the strict grid and monochrome aesthetic; imagery should be contained or stark.
 
-### Layout
+## Imagery
+
+This site predominantly features high-contrast product photography, often tightly cropped or floating against a white background or atmospheric sky. Product images showcase the packaging itself with clean lines and minimal distractions. There are also abstract background images (like blue sky with clouds) used as hero elements, providing atmospheric context. Icons, where present, appear to be outlined and monochromatic (Midnight Ink). Imagery serves to illustrate product details and create a restrained, clean atmosphere, rather than providing extensive lifestyle context.
+
+## Layout
 
 The page structure follows a max-width contained model, centered on the screen, though the hero section can be full-bleed. The hero pattern often involves a large visual (photography) with minimal text overlaid or positioned clearly. Sections maintain a consistent vertical rhythm, primarily using a 60px section gap. Content is arranged in alternating patterns, such as text on one side and imagery/product on the other, or stacked centered blocks. A strong underlying grid is evident through the use of fine 1px Midnight Ink borders, which sometimes define content areas or act as visual dividers. The navigation is a minimalist top bar, likely sticky, with simple text links and a 'Bag' indicator. The overall density is comfortable, with ample white space.
 
-### Imagery
+## Similar Brands
 
-This site predominantly features high-contrast product photography, often tightly cropped or floating against a white background or atmospheric sky. Product images showcase the packaging itself with clean lines and minimal distractions. There are also abstract background images (like blue sky with clouds) used as hero elements, providing atmospheric context. Icons, where present, appear to be outlined and monochromatic (Midnight Ink). Imagery serves to illustrate product details and create a restrained, clean atmosphere, rather than providing extensive lifestyle context.
+- **Aarke** — Shares a stark, monochrome aesthetic with strong contrasting typography and a focus on product photography.
+- **Aesop** — Exhibits a similar sophisticated simplicity, relying on precise typography, minimal color, and a functional grid layout.
+- **B&O (Bang & Olufsen)** — Uses a clean, high-contrast visual style with a strong emphasis on product presentation and a lack of frivolous UI elements.
+- **Vitsoe** — Known for its strict adherence to modernism, using a grid-based system, monochrome palette, and a focus on clean lines and typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-whisper-gray: #f0f1ef;
+  --color-ash-slate: #333333;
+  --color-border-silver: #d7d7d7;
+  --font-nimbus-sans-d-ot: 'Nimbus Sans D OT', Inter;
+  --font-helvetica: 'Helvetica', Arial;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.16px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.32px;
+  --text-heading: 56px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.56px;
+  --text-display: 80px;
+  --leading-display: 1.2;
+  --tracking-display: -0.8px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-67: 67px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-180: 180px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-whisper-gray: #f0f1ef;
+  --color-ash-slate: #333333;
+  --color-border-silver: #d7d7d7;
+  --font-nimbus-sans-d-ot: 'Nimbus Sans D OT', Inter;
+  --font-helvetica: 'Helvetica', Arial;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.16px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.32px;
+  --text-heading: 56px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.56px;
+  --text-display: 80px;
+  --leading-display: 1.2;
+  --tracking-display: -0.8px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-67: 67px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-180: 180px;
+  --radius-all: 0px;
+}
+```

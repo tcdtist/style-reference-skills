@@ -1,33 +1,113 @@
 ---
 version: alpha
-name: Posthuman
-description: Posthuman presents a stark, high-contrast digital canvas, emphasizing bold typography and rich imagery. The visual system leverages pure black backgrounds and a limited grayscale palette to make product and art photography stand out. Subtle motion and interaction provide a sense of refined professionalism without detracting from the visual content.
-colors:
-  absolute-zero: "#000000"
-  graphite-static: "#0d0d0d"
-  fog-canvas: "#c9c9c9"
-  deep-ocean: "#0064E1"
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 20px
-  sectionGap: 65px
-components:
-  navigation-link:
-    role: Top-right navigation items
-  project-card-link:
-    role: Clickable image cards for work projects
-  branding-logo-text:
-    role: Site title in the header
+name: "Posthuman"
+description: "Posthuman presents a stark, high-contrast digital canvas, emphasizing bold typography and rich imagery. The visual system leverages pure black backgrounds and a limited grayscale palette to make product and art photography stand out. Subtle motion and interaction provide a sense of refined professionalism without detracting from the visual content."
+theme: "dark"
+industry: "design"
+source_url: "https://posthuman.studio"
+refero_style_id: "99820c01-a9a7-40a4-9d73-8c75b19e7e91"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520700757-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520700757-thumb.jpg"
+extracted_at: "2026-04-30T03:45:15.304Z"
 ---
 
-## Overview
+# Posthuman — Style Reference
 
-**North Star:** gallery on black velvet
+> gallery on black velvet
+
+**Theme:** dark
+
+**Industry:** design
 
 Posthuman presents a stark, high-contrast digital canvas, emphasizing bold typography and rich imagery. The visual system leverages pure black backgrounds and a limited grayscale palette to make product and art photography stand out. Subtle motion and interaction provide a sense of refined professionalism without detracting from the visual content.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Graphite Static | #0d0d0d | `--color-graphite-static` | Secondary background text, subtle text elements, some component borders — a slightly lighter black for nuanced text differentiation |
+| Fog Canvas | #c9c9c9 | `--color-fog-canvas` | Supporting neutral for secondary UI, dividers, and muted labels. Do not promote it to the primary CTA color |
+| Deep Ocean | #0064E1 | `--color-deep-ocean` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Diatype Variable
+
+- **Token:** `--font-diatype-variable`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 18px, 40px
+- **Line heights:** 1.30, 1.40
+- **Role:** Primary headings and navigation links — a confident, geometric sans-serif for striking titles and key navigational elements. Its variable nature suggests flexibility in weight for future applications.
+
+### Arizona Sans Variable
+
+- **Token:** `--font-arizona-sans-variable`
+- **Substitute:** Lexend Deca Light
+- **Weights:** 215
+- **Sizes:** 20px
+- **Role:** Secondary text and captions — a slender, modern sans-serif at a light weight (215) for descriptive text, giving content a sophisticated, airy feel that complements the bold imagery.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 15px
+- **Line heights:** 1.65
+- **Role:** Body copy and informational text — a robust system font for readable, functional text where clarity is paramount.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-49 | 49px | `--spacing-49` |
+| spacing-65 | 65px | `--spacing-65` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| images | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 65px |
+| cardPadding | 49px |
+| elementGap | 20px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top-right navigation items
+
+Uses Diatype Variable, weight 400, size 18px. Color is Fog Canvas (#c9c9c9) on hover and default, Absolute Zero (#000000) when active or primary. No visible padding, implicitly acts as text links.
+
+### Project Card Link
+
+**Role:** Clickable image cards for work projects
+
+These are essentially bare images with an overlaid text label. No explicit border, background, or radius. The text 'COSMIC DRIVE' or 'HELENE RUBINSTEIN' uses Arizona Sans Variable, weight 215, size 20px, color Absolute Zero (#000000). The cards are implied by image boundaries, arranged in a grid with 20px vertical gap.
+
+### Branding Logo (Text)
+
+**Role:** Site title in the header
+
+The 'POSTHUMAN' text logo is rendered in Diatype Variable, weight 400, size 18px, color Absolute Zero (#000000). Preceded by a small icon.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize image content: Most of the page should be dedicated to high-quality, full-bleed imagery, allowing generous space around product visuals.
 - Use pure black for backgrounds: All primary page backgrounds and image surrounds should be Absolute Zero (#000000) to create maximum contrast and focus on visuals.
@@ -36,7 +116,7 @@ Posthuman presents a stark, high-contrast digital canvas, emphasizing bold typog
 - Maintain strict spacing: Use 20px for vertical gaps between visual elements and 49px for internal padding within implicit card structures.
 - Keep all corners sharp: Employ a 0px border-radius for all visual elements, including images and any implied card borders.
 
-### Don'ts
+### Don't
 
 - Avoid decorative borders or shadows: Components should rely on content boundaries rather than explicit borders or drop shadows to define their space.
 - Do not introduce additional background colors unless specifically for a highlighted section: All backgrounds should be variations of black or the neutral Fog Canvas (#c9c9c9).
@@ -45,10 +125,61 @@ Posthuman presents a stark, high-contrast digital canvas, emphasizing bold typog
 - Do not deviate from the specified font families, weights, and sizes: The typographic hierarchy is minimalist and precise.
 - Avoid complex gradients or overlaid textures: Maintain a flat, dark canvas to highlight imagery.
 
-### Layout
+## Imagery
+
+This site prominently features high-fidelity 3D renders and product photography, often with a surreal or artistic treatment. Imagery is full-bleed or presented as isolated, perfectly framed pieces on a black canvas, with sharp, unrounded edges. The focus is on showcasing the intricate details of the work, often with dramatic lighting and color accents within the images themselves, rather than through external styling. Photography is product-focused, meticulously staged, and generally features a neutral background or abstract environment to highlight the subject. Icons, if present, appear to be minimal and monochromatic.
+
+## Layout
 
 The page primarily uses a max-width, center-aligned layout, with a clear header. The hero section is subtle, starting directly with the logo and navigation. The main content area is a dynamic two-column grid that uses implicit boundaries for project cards, allowing for varied aspect ratios within the grid cells. There is a consistent vertical rhythm created by the 20px element gap between these image cards and a 65px section gap where content blocks change. The overall density is spacious, giving each piece of visual content room to breathe.
 
-### Imagery
+## Similar Brands
 
-This site prominently features high-fidelity 3D renders and product photography, often with a surreal or artistic treatment. Imagery is full-bleed or presented as isolated, perfectly framed pieces on a black canvas, with sharp, unrounded edges. The focus is on showcasing the intricate details of the work, often with dramatic lighting and color accents within the images themselves, rather than through external styling. Photography is product-focused, meticulously staged, and generally features a neutral background or abstract environment to highlight the subject. Icons, if present, appear to be minimal and monochromatic.
+- **B&O (Bang & Olufsen)** — High-fidelity product photography, dark minimalist canvas, focus on artistic presentation.
+- **Apple (Product pages)** — Clean, full-bleed product showcases on dark or neutral backgrounds, emphasis on visual detail.
+- **Studio Fuksas** — Architectural portfolios often use a dark UI to highlight striking visual work, similar high-contrast aesthetic.
+- **Artemide Lighting** — Product imagery presented against dark backgrounds to emphasize form and light, sparse text.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-graphite-static: #0d0d0d;
+  --color-fog-canvas: #c9c9c9;
+  --color-deep-ocean: #0064E1;
+  --font-diatype-variable: 'Diatype Variable', Inter;
+  --font-arizona-sans-variable: 'Arizona Sans Variable', Lexend Deca Light;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-49: 49px;
+  --spacing-65: 65px;
+  --radius-cards: 0px;
+  --radius-images: 0px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-graphite-static: #0d0d0d;
+  --color-fog-canvas: #c9c9c9;
+  --color-deep-ocean: #0064E1;
+  --font-diatype-variable: 'Diatype Variable', Inter;
+  --font-arizona-sans-variable: 'Arizona Sans Variable', Lexend Deca Light;
+  --font-apple-system: '-apple-system', system-ui;
+  --spacing-20: 20px;
+  --spacing-26: 26px;
+  --spacing-49: 49px;
+  --spacing-65: 65px;
+  --radius-cards: 0px;
+  --radius-images: 0px;
+  --radius-buttons: 0px;
+}
+```

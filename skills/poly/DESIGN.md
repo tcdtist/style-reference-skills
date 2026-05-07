@@ -1,65 +1,154 @@
 ---
 version: alpha
-name: Poly
-description: Poly's visual system evokes a smart, understated productivity environment. It employs a near-monochromatic palette for structural elements, allowing a single vibrant orange-red gradient to serve as a focused accent for branding and calls to action. Typography balances a clean sans-serif for body text with distinctive custom display fonts for impact, featuring subtle letter-spacing for refined text blocks. Components are clean and minimal with soft rounded corners and a focus on clarity through considered use of shadows for depth.
-colors:
-  canvas-white: "#f4f4f4"
-  ink-black: "#000000"
-  steel-gray: "#292930"
-  shadow-tint: "#cccccc"
-  poly-gradient: "#f4824d"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.24px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-    letterSpacing: -0.3px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: -0.48px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.1
-    letterSpacing: -0.6px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.1
-    letterSpacing: -0.9px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 53px
-    lineHeight: 1.1
-    letterSpacing: -1.06px
-spacing:
-  elementGap: 12px
-  sectionGap: 48px
-components:
-  primary-call-to-action-button:
-    role: Interactive element
-  secondary-ghost-button:
-    role: Interactive element
-  navigation-link:
-    role: Interactive element
-  info-badge:
-    role: Informative label
+name: "Poly"
+description: "Poly's visual system evokes a smart, understated productivity environment. It employs a near-monochromatic palette for structural elements, allowing a single vibrant orange-red gradient to serve as a focused accent for branding and calls to action. Typography balances a clean sans-serif for body text with distinctive custom display fonts for impact, featuring subtle letter-spacing for refined text blocks. Components are clean and minimal with soft rounded corners and a focus on clarity through considered use of shadows for depth."
+theme: "light"
+industry: "ai"
+source_url: "https://poly.app"
+refero_style_id: "d8e01e43-d260-4fa3-8f42-ae39e5c6ac84"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508062780-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508062780-thumb.jpg"
+extracted_at: "2026-04-30T00:14:54.948Z"
 ---
 
-## Overview
+# Poly — Style Reference
 
-**North Star:** Subtle Depth, Focused Accent
+> Subtle Depth, Focused Accent
+
+**Theme:** light
+
+**Industry:** ai
 
 Poly's visual system evokes a smart, understated productivity environment. It employs a near-monochromatic palette for structural elements, allowing a single vibrant orange-red gradient to serve as a focused accent for branding and calls to action. Typography balances a clean sans-serif for body text with distinctive custom display fonts for impact, featuring subtle letter-spacing for refined text blocks. Components are clean and minimal with soft rounded corners and a focus on clarity through considered use of shadows for depth.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #f4f4f4 | `--color-canvas-white` | Page backgrounds, card surfaces, UI frames. Provides a bright, spacious backdrop |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, prominent icons, dark backgrounds for contrasting sections. Foundation for high-contrast interface elements |
+| Steel Gray | #292930 | `--color-steel-gray` | Secondary text, muted icons, subtle borders, and background elements in dark mode. Provides hierarchy with less visual weight than Ink Black |
+| Shadow Tint | #cccccc | `--color-shadow-tint` | Subtle shadow base for elevation effects |
+| Poly Gradient | #f4824d | `--color-poly-gradient` | Supporting palette color for small decorative accents when the core palette needs contrast. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 600
+- **Sizes:** 12px, 15px, 24px, 30px, 45px
+- **Line heights:** 1.10, 1.20, 1.50
+- **Letter spacing:** -0.0200em
+- **Role:** Primary UI text, body copy, link text. Its utilitarian clarity ensures readability across all functional elements.
+
+### Haffer Variable
+
+- **Token:** `--font-haffer-variable`
+- **Weights:** 450
+- **Sizes:** 24px, 30px, 45px, 53px
+- **Line heights:** 1.10
+- **Letter spacing:** -0.0200em
+- **OpenType features:** "liga", "ss04"
+- **Role:** Prominent headings and display text. The variable font offers dynamic sizing and a distinctive, semi-bold presence without being heavy.
+
+### Bogue
+
+- **Token:** `--font-bogue`
+- **Weights:** 400
+- **Sizes:** 24px, 30px, 45px, 53px
+- **Line heights:** 1.10, 1.50
+- **Letter spacing:** -0.0300em
+- **Role:** Attention-grabbing headlines and badge text. Features a tighter tracking for a more compact and impactful feel than other fonts.
+
+### Haffer
+
+- **Token:** `--font-haffer`
+- **Weights:** 400
+- **Sizes:** 15px, 24px
+- **Line heights:** 1.20, 1.50
+- **Letter spacing:** -0.0200em
+- **OpenType features:** "liga", "ss04"
+- **Role:** Secondary headings and stylized body sections, often within badges. Provides a slightly lighter alternative to Haffer Variable for text hierarchy.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.24px | `--text-caption` |
+| body | 15px | 1.5 | -0.3px | `--text-body` |
+| subheading | 24px | 1.2 | -0.48px | `--text-subheading` |
+| heading | 30px | 1.1 | -0.6px | `--text-heading` |
+| heading-lg | 45px | 1.1 | -0.9px | `--text-heading-lg` |
+| display | 53px | 1.1 | -1.06px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-69 | 69px | `--spacing-69` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.2) 2px 2px 5px 0px, rgba(0, 0, 0, 0.15) -2px -2px 4px 0px inset, rgba(255, 255, 255, 0.15) 2px 2px 4px 0px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1280px |
+| sectionGap | 48px |
+| cardPadding | 24px |
+| elementGap | 12px |
+
+## Components
+
+### Primary Call-to-Action Button
+
+**Role:** Interactive element
+
+Filled button with a vibrant gradient background and an 8px border-radius, using Ink Black text. Acts as the main prompt for user action. Example: 'Download Poly'.
+
+### Secondary Ghost Button
+
+**Role:** Interactive element
+
+Ghost button with an Ink Black border (1px solid), Ink Black text, and a transparent background. Features an 8px border-radius. Provides a secondary action without commanding primary focus. Example: 'Watch Video'.
+
+### Navigation Link
+
+**Role:** Interactive element
+
+Simple text link using Ink Black or Steel Gray text for header navigation items. Lightly shadowed on hover with #cccccc for a subtle lift. Example: 'Login', 'Join waitlist'.
+
+### Info Badge
+
+**Role:** Informative label
+
+Text badge with Canvas White text on a transparent background, sans padding or border-radius, often using the Bogue font for distinctiveness. Used for highlighting key phrases. Example: 'Preserve human knowledge with Poly.'
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Canvas White' #f4f4f4 as the primary background for most sections to maintain a bright, open feel.
 - Apply 'Ink Black' #000000 for all primary text and critical UI elements to ensure high contrast and readability.
@@ -69,7 +158,7 @@ Poly's visual system evokes a smart, understated productivity environment. It em
 - Utilize 12px for 'elementGap' to define comfortable spacing between interactive elements and components.
 - Introduce subtle elevation using rgba(0, 0, 0, 0.2) 2px 2px 5px 0px for interactive elements on hover, giving them a slight lift off the surface.
 
-### Don'ts
+### Don't
 
 - Do not use saturated colors other than the 'Poly Gradient' for interactive elements or brand accents.
 - Avoid arbitrary border-radius values; stick to the standard 8px for a cohesive look.
@@ -79,10 +168,112 @@ Poly's visual system evokes a smart, understated productivity environment. It em
 - Do not use more than two distinct font families on any single screen to avoid visual clutter.
 - Avoid dense information blocks; instead, use 'sectionGap' of 48px to create comfortable visual breaks between major content areas.
 
-### Layout
+## Elevation
+
+- **Interactive Link/Button:** `rgba(0, 0, 0, 0.2) 2px 2px 5px 0px, rgba(0, 0, 0, 0.15) -2px -2px 4px 0px inset, rgba(255, 255, 255, 0.15) 2px 2px 4px 0px inset`
+
+## Imagery
+
+The visual language for imagery is primarily functional and contextual, with product screenshots (like a laptop screen showing UI) or atmospheric photography setting a scene. The prominent hero image uses muted, desaturated, high-key photography of a desk setup, serving as a background for UI elements. There are no illustrations or highly stylized graphics, emphasizing a realistic and grounded aesthetic. Icons (e.g., play button triangle, download arrow) are minimal, filled, and monochromatic, integrated seamlessly into buttons. Imagery serves to establish a professional, productive atmosphere and demonstrate product interaction, rather than purely decorative or abstract concepts.
+
+## Layout
 
 The page primarily uses a contained layout within a 1280px max-width, centrally aligned. The hero section is full-bleed with the atmospheric photography, featuring centered main headlines and calls to action. Below the hero, content generally follows a clean, spacious vertical rhythm with a section gap of 48px. Specific content arrangements are not fully discernible from the provided data but suggest a focus on clear, stacked information blocks, likely with a single column. Navigation is a minimal top bar, featuring discrete 'Login' and 'Join waitlist' links.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery is primarily functional and contextual, with product screenshots (like a laptop screen showing UI) or atmospheric photography setting a scene. The prominent hero image uses muted, desaturated, high-key photography of a desk setup, serving as a background for UI elements. There are no illustrations or highly stylized graphics, emphasizing a realistic and grounded aesthetic. Icons (e.g., play button triangle, download arrow) are minimal, filled, and monochromatic, integrated seamlessly into buttons. Imagery serves to establish a professional, productive atmosphere and demonstrate product interaction, rather than purely decorative or abstract concepts.
+- **Raycast** — Monochromatic interface with a single vibrant accent color for interaction and branding, paired with minimal UI design.
+- **Warp terminal** — Focus on developer tooling with clean typography and a muted color palette, emphasizing function over decoration.
+- **Supabase** — Clear, modern UI with a strong emphasis on text hierarchy and structured layouts, offset by a distinctive brand color for CTAs.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #f4f4f4;
+  --color-ink-black: #000000;
+  --color-steel-gray: #292930;
+  --color-shadow-tint: #cccccc;
+  --color-poly-gradient: #f4824d;
+  --font-inter: 'Inter', system-ui;
+  --font-haffer-variable: 'Haffer Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-bogue: 'Bogue', ui-sans-serif, system-ui, sans-serif;
+  --font-haffer: 'Haffer', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.24px;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --tracking-body: -0.3px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.48px;
+  --text-heading: 30px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.9px;
+  --text-display: 53px;
+  --leading-display: 1.1;
+  --tracking-display: -1.06px;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-33: 33px;
+  --spacing-48: 48px;
+  --spacing-69: 69px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 2px 2px 5px 0px, rgba(0, 0, 0, 0.15) -2px -2px 4px 0px inset, rgba(255, 255, 255, 0.15) 2px 2px 4px 0px inset;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #f4f4f4;
+  --color-ink-black: #000000;
+  --color-steel-gray: #292930;
+  --color-shadow-tint: #cccccc;
+  --color-poly-gradient: #f4824d;
+  --font-inter: 'Inter', system-ui;
+  --font-haffer-variable: 'Haffer Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-bogue: 'Bogue', ui-sans-serif, system-ui, sans-serif;
+  --font-haffer: 'Haffer', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.24px;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --tracking-body: -0.3px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.48px;
+  --text-heading: 30px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.6px;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: -0.9px;
+  --text-display: 53px;
+  --leading-display: 1.1;
+  --tracking-display: -1.06px;
+  --spacing-6: 6px;
+  --spacing-9: 9px;
+  --spacing-12: 12px;
+  --spacing-18: 18px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-33: 33px;
+  --spacing-48: 48px;
+  --spacing-69: 69px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.2) 2px 2px 5px 0px, rgba(0, 0, 0, 0.15) -2px -2px 4px 0px inset, rgba(255, 255, 255, 0.15) 2px 2px 4px 0px inset;
+}
+```
