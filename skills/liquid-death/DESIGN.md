@@ -1,78 +1,178 @@
 ---
 version: alpha
-name: Liquid Death
-description: This design system feels like a heavy metal concert flyer brought to life as a direct-to-consumer brand. The aesthetic is built on brutalist principles: a stark palette of pure black and white, zero rounded corners, and aggressive, uppercase typography. This creates a hard, confrontational edge, deliberately rejecting the soft, approachable look of typical beverage companies. Splashes of antique gold in logos and links are the only moments of warmth, acting like a glint of metal on a matte black surface. The layout uses full-bleed, high-contrast sections, creating a jarring, powerful rhythm that mirrors the brand's 'Murder Your Thirst' tagline.
-colors:
-  death-black: "#000000"
-  bone-white: "#ffffff"
-  off-black: "#151515"
-  ash-gray: "#e3e3e3"
-  gravel-gray: "#727272"
-  light-ash: "#f5f5f5"
-  charcoal: "#232323"
-  input-border: "#999999"
-  polished-gold: "#d2ac5a"
-  antique-gold: "#8a6d35"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.67
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.13
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.05
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-components:
-  product-cards-beverage-grid:
-    role: 
-  merch-product-card-row:
-    role: 
-  full-width-banner-ctas-email-capture:
-    role: 
-  primary-action-button:
-    role: Key CTAs like 'Shop Now' or 'Add to Cart'.
-  secondary-action-button:
-    role: Less prominent actions like 'Join the Contest'.
-  full-width-banner-cta:
-    role: Major section-level calls to action, e.g., 'Join the Club'.
-  text-input-field:
-    role: For email capture and forms.
-  navigation-link:
-    role: Main site navigation items.
-  modal-overlay:
-    role: Popup for email signup or promotions.
+name: "Liquid Death"
+description: "This design system feels like a heavy metal concert flyer brought to life as a direct-to-consumer brand. The aesthetic is built on brutalist principles: a stark palette of pure black and white, zero rounded corners, and aggressive, uppercase typography. This creates a hard, confrontational edge, deliberately rejecting the soft, approachable look of typical beverage companies. Splashes of antique gold in logos and links are the only moments of warmth, acting like a glint of metal on a matte black surface. The layout uses full-bleed, high-contrast sections, creating a jarring, powerful rhythm that mirrors the brand's 'Murder Your Thirst' tagline."
+theme: "mixed"
+industry: "ecommerce"
+source_url: "https://liquiddeath.com"
+refero_style_id: "b6f2b036-e48e-452f-b003-941c491015c0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929859306-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929859306-thumb.jpg"
+extracted_at: "2026-04-11T17:51:51.532Z"
 ---
 
-## Overview
+# Liquid Death — Style Reference
 
-**North Star:** Heavy Metal Vending Machine
+> Heavy Metal Vending Machine
+
+**Theme:** mixed
+
+**Industry:** ecommerce
 
 This design system feels like a heavy metal concert flyer brought to life as a direct-to-consumer brand. The aesthetic is built on brutalist principles: a stark palette of pure black and white, zero rounded corners, and aggressive, uppercase typography. This creates a hard, confrontational edge, deliberately rejecting the soft, approachable look of typical beverage companies. Splashes of antique gold in logos and links are the only moments of warmth, acting like a glint of metal on a matte black surface. The layout uses full-bleed, high-contrast sections, creating a jarring, powerful rhythm that mirrors the brand's 'Murder Your Thirst' tagline.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Death Black | #000000 | `--color-death-black` | Primary text, core UI backgrounds, filled buttons. Establishes the dominant, aggressive tone. |
+| Bone White | #ffffff | `--color-bone-white` | Text on dark backgrounds, primary page backgrounds. |
+| Off-Black | #151515 | `--color-off-black` | Body copy on light backgrounds, secondary UI elements. |
+| Ash Gray | #e3e3e3 | `--color-ash-gray` | Product grid background, subtle dividers. |
+| Gravel Gray | #727272 | `--color-gravel-gray` | Secondary text, disabled states, placeholder text. |
+| Light Ash | #f5f5f5 | `--color-light-ash` | Alternative light background color for section differentiation. |
+| Charcoal | #232323 | `--color-charcoal` | Hover states on dark elements. |
+| Input Border | #999999 | `--color-input-border` | Default border color for text input fields. |
+| Polished Gold | #d2ac5a | `--color-polished-gold` | Accents, special links, logotype details — a premium, metallic highlight against the stark monochrome. |
+| Antique Gold | #8a6d35 | `--color-antique-gold` | Hover state for gold accents, secondary logotype details. |
+
+## Tokens — Typography
+
+### Acumin Pro
+
+- **Token:** `--font-acumin-pro`
+- **Substitute:** 'Inter', 'Roboto', sans-serif
+- **Weights:** 400, 500, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 24px, 32px, 36px, 40px, 56px, 60px
+- **Line heights:** 1.00, 1.05, 1.13, 1.20, 1.29, 1.50, 1.67, 2.00
+- **Letter spacing:** 0.0200em, 0.0310em, 0.0560em, 0.0630em
+- **Role:** The single, dominant typeface used for everything from massive uppercase headlines to body copy. Its clean, geometric form provides a brutalist, no-nonsense foundation. Extensive use of uppercase at 700 weight for headings is the brand's signature voice.
+
+### acumin-pro-condensed
+
+- **Token:** `--font-acumin-pro-condensed`
+- **Substitute:** 'Roboto Condensed', sans-serif
+- **Weights:** 400, 700
+- **Sizes:** 10px, 16px, 18px, 20px, 45px
+- **Line heights:** 1.00, 1.05, 1.20, 1.30
+- **Letter spacing:** 0.0560em
+- **Role:** Used sparingly for subtitles and calorie counts where horizontal space is limited. Maintains the core Acumin feel in a more compact format.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| body-sm | 14px | 1.5 | — | `--text-body-sm` |
+| body | 16px | 1.67 | — | `--text-body` |
+| subheading | 24px | 1.2 | — | `--text-subheading` |
+| heading-sm | 36px | 1.13 | — | `--text-heading-sm` |
+| heading | 45px | 1.05 | — | `--text-heading` |
+| display | 60px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-99 | 99px | `--spacing-99` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-195 | 195px | `--spacing-195` |
+| spacing-221 | 221px | `--spacing-221` |
+| spacing-238 | 238px | `--spacing-238` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 0px |
+| cards | 0px |
+| inputs | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 24px |
+
+## Components
+
+### Product Cards — Beverage Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Merch Product Card Row
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Full-Width Banner CTAs + Email Capture
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Key CTAs like 'Shop Now' or 'Add to Cart'.
+
+A solid rectangle with background: `Death Black` (#000000), text: `Bone White` (#ffffff), padding: 8px 16px, and border-radius: 0px. Text is uppercase `Acumin Pro`.
+
+### Secondary Action Button
+
+**Role:** Less prominent actions like 'Join the Contest'.
+
+An outlined rectangle with background: transparent, text & 1px border: `Death Black` (#000000), padding: 13px, and border-radius: 0px. Text is uppercase `Acumin Pro`.
+
+### Full-Width Banner CTA
+
+**Role:** Major section-level calls to action, e.g., 'Join the Club'.
+
+A full-width block link with background: `Death Black` (#000000), text: `Bone White` (#ffffff), and a right-aligned chevron. It is always rectangular with a 0px radius.
+
+### Text Input Field
+
+**Role:** For email capture and forms.
+
+A sharp-cornered field with background: `Bone White` (#ffffff), text: `Death Black` (#000000), and a 1px border in `Input Border` (#999999). Padding is typically 8px 12px with 0px radius.
+
+### Navigation Link
+
+**Role:** Main site navigation items.
+
+Uppercase text in `Acumin Pro` 500, color `Off-Black` (#151515). No underline or background decoration on hover.
+
+### Modal Overlay
+
+**Role:** Popup for email signup or promotions.
+
+A semi-transparent `Gravel Gray` (#727272) layer covers the page, with a centered rectangular container in `Ash Gray` (#e3e3e3) holding the content. All corners are sharp (0px radius).
+
+## Do's and Don'ts
+
+### Do
 
 - Use 0px border-radius for all buttons, inputs, cards, and containers.
 - Set all major headlines in uppercase `Acumin Pro`.
@@ -82,7 +182,7 @@ This design system feels like a heavy metal concert flyer brought to life as a d
 - Maintain high-contrast text accessibility (AAA) for all body copy.
 - Use sharp, rectangular product imagery on solid `Ash Gray` backgrounds.
 
-### Don'ts
+### Don't
 
 - Never use rounded corners on any element.
 - Do not use drop shadows or gradients for elevation.
@@ -92,14 +192,149 @@ This design system feels like a heavy metal concert flyer brought to life as a d
 - Avoid subtle gray-on-gray text combinations.
 - Don't use lifestyle photography; focus on the product or provocative concepts.
 
-### Layout
-
-The layout is built on a foundation of alternating, full-bleed content bands. The page structure often starts with a complex hero and transitions into a series of stark black, white, or light gray sections with a strong vertical rhythm. Content within sections is typically centered and max-width, creating a pillar of text and visuals down the screen. Grids are used for product listings, following a simple, rigid 3 or 4-column structure with no frills. The overall impression is one of powerful, rhythmic, and confrontational organization.
-
-### Imagery
+## Imagery
 
 The visual language is provocative and product-focused, mirroring a heavy-metal aesthetic. Photography is high-contrast, often featuring stark product shots on plain backgrounds, or humorous, slightly absurd concepts (like drinking from a faucet). Imagery is used in full-bleed sections or as contained, sharp-edged blocks. There are no lifestyle photos; the can is the hero. Graphic elements include detailed, skull-based logotypes reminiscent of band art, rendered in black, white, and gold.
 
-### Elevation
+## Layout
 
-This design actively avoids drop shadows. Depth and hierarchy are achieved exclusively through high-contrast color blocking—placing `Bone White` elements on `Death Black` backgrounds or vice versa. This creates a flat, graphic, and intentionally harsh layering style.
+The layout is built on a foundation of alternating, full-bleed content bands. The page structure often starts with a complex hero and transitions into a series of stark black, white, or light gray sections with a strong vertical rhythm. Content within sections is typically centered and max-width, creating a pillar of text and visuals down the screen. Grids are used for product listings, following a simple, rigid 3 or 4-column structure with no frills. The overall impression is one of powerful, rhythmic, and confrontational organization.
+
+## Similar Brands
+
+- **MSCHF** — Similar counter-culture, internet-native brand voice with a stark, often brutalist digital presence.
+- **Thrasher Magazine** — Shares a gritty, unapologetic aesthetic rooted in a subculture, with bold, often gothic typography.
+- **Balenciaga (under Demna)** — Employs a similar brutalist web design with stark typography, minimal color, and a focus on product in a harsh context.
+- **Kith** — High-end streetwear e-commerce with a similar product-first, grid-based layout and monochrome palette, though Kith is less aggressive.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-death-black: #000000;
+  --color-bone-white: #ffffff;
+  --color-off-black: #151515;
+  --color-ash-gray: #e3e3e3;
+  --color-gravel-gray: #727272;
+  --color-light-ash: #f5f5f5;
+  --color-charcoal: #232323;
+  --color-input-border: #999999;
+  --color-polished-gold: #d2ac5a;
+  --color-antique-gold: #8a6d35;
+  --font-acumin-pro: 'Acumin Pro', 'Inter', 'Roboto', sans-serif;
+  --font-acumin-pro-condensed: 'acumin-pro-condensed', 'Roboto Condensed', sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.67;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 36px;
+  --leading-heading-sm: 1.13;
+  --text-heading: 45px;
+  --leading-heading: 1.05;
+  --text-display: 60px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-99: 99px;
+  --spacing-150: 150px;
+  --spacing-195: 195px;
+  --spacing-221: 221px;
+  --spacing-238: 238px;
+  --radius-tags: 0px;
+  --radius-cards: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-death-black: #000000;
+  --color-bone-white: #ffffff;
+  --color-off-black: #151515;
+  --color-ash-gray: #e3e3e3;
+  --color-gravel-gray: #727272;
+  --color-light-ash: #f5f5f5;
+  --color-charcoal: #232323;
+  --color-input-border: #999999;
+  --color-polished-gold: #d2ac5a;
+  --color-antique-gold: #8a6d35;
+  --font-acumin-pro: 'Acumin Pro', 'Inter', 'Roboto', sans-serif;
+  --font-acumin-pro-condensed: 'acumin-pro-condensed', 'Roboto Condensed', sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.67;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 36px;
+  --leading-heading-sm: 1.13;
+  --text-heading: 45px;
+  --leading-heading: 1.05;
+  --text-display: 60px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-99: 99px;
+  --spacing-150: 150px;
+  --spacing-195: 195px;
+  --spacing-221: 221px;
+  --spacing-238: 238px;
+  --radius-tags: 0px;
+  --radius-cards: 0px;
+  --radius-inputs: 0px;
+  --radius-buttons: 0px;
+}
+```

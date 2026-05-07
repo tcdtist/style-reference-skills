@@ -1,58 +1,144 @@
 ---
 version: alpha
-name: Look inc
-description: Look.inc embraces a stark, high-contrast aesthetic, juxtaposing crisp black text against a pure white canvas. This foundation emphasizes editorial quality, reinforced by classic serif typography for headlines and clean sans-serif for body text. Thin borders and generous spacing create a sense of spaciousness, drawing focus to the content and imagery with minimal decorative interference. The design system is largely achromatic, relying on strong typographic hierarchy and clean visual separation.
-colors:
-  midnight-ink: "#000000"
-  paper-white: "#ffffff"
-  smoke-grey: "#878787"
-  whisper-white: "#e5e5e5"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.65
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.7
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1.4
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-    letterSpacing: 0px
-spacing:
-  elementGap: 19px
-  sectionGap: 64px
-components:
-  hero-headline:
-    role: Primary page title
-  navigation-link:
-    role: Top navigation item
-  info-block-text:
-    role: Descriptive text accompanying hero
-  project-card-title:
-    role: Title for individual portfolio projects
-  project-card-description:
-    role: Brief description of a portfolio project
-  horizontal-divider:
-    role: Visual separation between content blocks
+name: "Look inc"
+description: "Look.inc embraces a stark, high-contrast aesthetic, juxtaposing crisp black text against a pure white canvas. This foundation emphasizes editorial quality, reinforced by classic serif typography for headlines and clean sans-serif for body text. Thin borders and generous spacing create a sense of spaciousness, drawing focus to the content and imagery with minimal decorative interference. The design system is largely achromatic, relying on strong typographic hierarchy and clean visual separation."
+theme: "light"
+industry: "agency"
+source_url: "https://look.inc"
+refero_style_id: "ab1b113a-ed21-4512-acc2-d10c8927c410"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514997853-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514997853-thumb.jpg"
+extracted_at: "2026-04-30T02:10:33.474Z"
 ---
 
-## Overview
+# Look inc — Style Reference
 
-**North Star:** Editorial canvas, bold type
+> Editorial canvas, bold type
+
+**Theme:** light
+
+**Industry:** agency
 
 Look.inc embraces a stark, high-contrast aesthetic, juxtaposing crisp black text against a pure white canvas. This foundation emphasizes editorial quality, reinforced by classic serif typography for headlines and clean sans-serif for body text. Thin borders and generous spacing create a sense of spaciousness, drawing focus to the content and imagery with minimal decorative interference. The design system is largely achromatic, relying on strong typographic hierarchy and clean visual separation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, heavy borders and dividers — creates strong contrast and an authoritative tone |
+| Paper White | #ffffff | `--color-paper-white` | Page backgrounds, content surfaces — provides a clean, expansive canvas |
+| Smoke Grey | #878787 | `--color-smoke-grey` | Subtle borders, secondary text that needs less emphasis than primary |
+| Whisper White | #e5e5e5 | `--color-whisper-white` | Hairline separators for navigation elements — defines divisions without visual weight |
+
+## Tokens — Typography
+
+### Old Standard
+
+- **Token:** `--font-old-standard`
+- **Substitute:** Lora
+- **Weights:** 400
+- **Sizes:** 18px, 21px, 32px
+- **Line heights:** 1.10, 1.40
+- **Letter spacing:** normal
+- **Role:** Headlines and prominent text — its classic serif form lends an editorial, timeless quality.
+
+### GT America
+
+- **Token:** `--font-gt-america`
+- **Substitute:** Public Sans
+- **Weights:** 400, 700
+- **Sizes:** 18px, 21px, 23px
+- **Line heights:** 1.20, 1.30, 1.70
+- **Letter spacing:** normal
+- **Role:** Body copy, navigation links — a modern sans-serif that balances readability with a contemporary feel.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 15px
+- **Line heights:** 1.65
+- **Letter spacing:** normal
+- **Role:** Small body text, auxiliary information — relies on system fonts for efficiency and broad compatibility.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 15px | 1.65 | 0px | `--text-body-sm` |
+| body | 18px | 1.7 | 0px | `--text-body` |
+| subheading | 21px | 1.4 | 0px | `--text-subheading` |
+| heading | 32px | 1.1 | 0px | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 26px |
+| elementGap | 19px |
+
+## Components
+
+### Hero Headline
+
+**Role:** Primary page title
+
+Uses Old Standard 32px, weight 400, color Midnight Ink (#000000), with a line-height of 1.10. Presented with generous white space around it.
+
+### Navigation Link
+
+**Role:** Top navigation item
+
+Text in GT America 18px, weight 400, color Midnight Ink (#000000). Active and hover states are not explicitly defined, but implied by hover styling on the site, suggesting a border change.
+
+### Info Block Text
+
+**Role:** Descriptive text accompanying hero
+
+Appears in Old Standard 21px, weight 400, color Midnight Ink (#000000), with a line-height of 1.40. Used for longer descriptive paragraphs.
+
+### Project Card Title
+
+**Role:** Title for individual portfolio projects
+
+Uses GT America 21px, weight 400, color Midnight Ink (#000000), with a line-height of 1.30. Positioned directly below project imagery.
+
+### Project Card Description
+
+**Role:** Brief description of a portfolio project
+
+Uses -apple-system 15px, weight 400, color Midnight Ink (#000000), with a line-height of 1.65. Provides concise context for each project.
+
+### Horizontal Divider
+
+**Role:** Visual separation between content blocks
+
+A 1px solid border in Whisper White (#e5e5e5) used to subtly delineate sections, primarily navigation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Ink (#000000) for all main text and essential borders to maintain high contrast.
 - Use Paper White (#ffffff) as the dominant background color for all content areas.
@@ -62,7 +148,7 @@ Look.inc embraces a stark, high-contrast aesthetic, juxtaposing crisp black text
 - Apply hairline dividers at 1px solid in Whisper White (#e5e5e5) for subtle content separation.
 - Ensure all imagery is presented with sharp, unrounded corners, maintaining a crisp edges aesthetic.
 
-### Don'ts
+### Don't
 
 - Do not introduce highly saturated or vibrant colors for UI elements; maintain an achromatic palette for structure.
 - Avoid using rounded corners on any UI elements or imagery.
@@ -72,10 +158,84 @@ Look.inc embraces a stark, high-contrast aesthetic, juxtaposing crisp black text
 - Do not use gradients in UI backgrounds or overlays; stick to solid colors.
 - Do not introduce complex UI components that detract from the visual simplicity and focus on content.
 
-### Layout
+## Imagery
+
+The site heavily features photography of product and lifestyle contexts from brand campaigns. Images are high-resolution and displayed without any padding or rounded corners, often spanning full width within their grid containers. They serve primarily as content showcase and product examples, rather than decorative atmosphere. There are subtle visual effects like text overlays on some images, but the focus is on the raw visual impact of the photography. Iconography is minimal and not explicitly visible in its raw form.
+
+## Layout
 
 The page maintains a max-width centered layout for its primary content sections, though specific imagery blocks can break out to larger widths or full-bleed. The hero section features a prominent headline and descriptive text, with other content arranged in a clean, consistent grid pattern below. Image-heavy sections often use a 2-column grid. Vertical section rhythm is maintained by generous spacing, with subtle thin lines acting as minimal dividers for navigational links. The navigation is a fixed top bar on a white background, containing minimal links.
 
-### Imagery
+## Similar Brands
 
-The site heavily features photography of product and lifestyle contexts from brand campaigns. Images are high-resolution and displayed without any padding or rounded corners, often spanning full width within their grid containers. They serve primarily as content showcase and product examples, rather than decorative atmosphere. There are subtle visual effects like text overlays on some images, but the focus is on the raw visual impact of the photography. Iconography is minimal and not explicitly visible in its raw form.
+- **Basic Agency** — Shares a high-contrast, minimalist aesthetic with strong typography and large image showcases.
+- **Red Antler** — Employs an editorial layout, focusing on white space, sharp imagery, and bold headlines to highlight portfolio work.
+- **Gretel** — Similar use of classic serif typography for headlines alongside modern sans-serifs, with an emphasis on showcasing work through large, clean visuals.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-paper-white: #ffffff;
+  --color-smoke-grey: #878787;
+  --color-whisper-white: #e5e5e5;
+  --font-old-standard: 'Old Standard', Lora;
+  --font-gt-america: 'GT America', Public Sans;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.65;
+  --tracking-body-sm: 0px;
+  --text-body: 18px;
+  --leading-body: 1.7;
+  --tracking-body: 0px;
+  --text-subheading: 21px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading: 32px;
+  --leading-heading: 1.1;
+  --tracking-heading: 0px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-26: 26px;
+  --spacing-64: 64px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-paper-white: #ffffff;
+  --color-smoke-grey: #878787;
+  --color-whisper-white: #e5e5e5;
+  --font-old-standard: 'Old Standard', Lora;
+  --font-gt-america: 'GT America', Public Sans;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.65;
+  --tracking-body-sm: 0px;
+  --text-body: 18px;
+  --leading-body: 1.7;
+  --tracking-body: 0px;
+  --text-subheading: 21px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading: 32px;
+  --leading-heading: 1.1;
+  --tracking-heading: 0px;
+  --spacing-13: 13px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-26: 26px;
+  --spacing-64: 64px;
+  --radius-none: 0px;
+}
+```

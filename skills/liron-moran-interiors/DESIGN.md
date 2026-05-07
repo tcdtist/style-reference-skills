@@ -1,73 +1,159 @@
 ---
 version: alpha
-name: Liron Moran Interiors
-description: Liron Moran Interiors employs a bold, architectural visual style, characterized by a dominant dark canvas that creates a sophisticated, gallery-like setting for minimalist UI elements. Overlaid huge serif typography with transparent image cutouts defines an immersive and dramatic presentation. The sparse use of neutral colors and ample whitespace around oversized elements contributes to a feeling of premium, considered design where content is paramount and UI recedes until interaction.
-colors:
-  greyscale-canvas: "#41443e"
-  overlaid-paper: "#f2f0ed"
-  text-and-accent-light: "#eeeeee"
-  midnight-ink: "#000000"
-  deepest-black: "#050505"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 0.8
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 0.8
-    letterSpacing: -0.004px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 0.8
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 0.8
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 0.8
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 0.8
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 93px
-    lineHeight: 0.8
-  display-xxl:
-    fontFamily: "system-ui"
-    fontSize: 185px
-    lineHeight: 0.8
-  display-max:
-    fontFamily: "system-ui"
-    fontSize: 260px
-    lineHeight: 1
-spacing:
-  buttonRadius: 50%
-  elementGap: 5px
-  sectionGap: 89px
-components:
-  ghost-circular-button:
-    role: Interactive element (e.g., menu toggle, accessibility toggle)
-  dark-circular-button:
-    role: Interactive element (e.g., close button on overlay)
-  ghost-rectangular-button:
-    role: Text link or secondary action
-  main-navigation-link:
-    role: Top-level navigation items
+name: "Liron Moran Interiors"
+description: "Liron Moran Interiors employs a bold, architectural visual style, characterized by a dominant dark canvas that creates a sophisticated, gallery-like setting for minimalist UI elements. Overlaid huge serif typography with transparent image cutouts defines an immersive and dramatic presentation. The sparse use of neutral colors and ample whitespace around oversized elements contributes to a feeling of premium, considered design where content is paramount and UI recedes until interaction."
+theme: "dark"
+industry: "design"
+source_url: "https://www.lironmoran-interiors.com"
+refero_style_id: "43400d73-ca89-4750-8fa6-78cd2c661943"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516631449-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516631449-thumb.jpg"
+extracted_at: "2026-04-30T02:37:33.847Z"
 ---
 
-## Overview
+# Liron Moran Interiors — Style Reference
 
-**North Star:** Gallery backdrop with monumental typography
+> Gallery backdrop with monumental typography
+
+**Theme:** dark
+
+**Industry:** design
 
 Liron Moran Interiors employs a bold, architectural visual style, characterized by a dominant dark canvas that creates a sophisticated, gallery-like setting for minimalist UI elements. Overlaid huge serif typography with transparent image cutouts defines an immersive and dramatic presentation. The sparse use of neutral colors and ample whitespace around oversized elements contributes to a feeling of premium, considered design where content is paramount and UI recedes until interaction.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Greyscale Canvas | #41443e | `--color-greyscale-canvas` | Page background, primary content surface. This dark, desaturated gray provides a deep, sophisticated stage for the content |
+| Overlaid Paper | #f2f0ed | `--color-overlaid-paper` | Background for secondary content blocks and occasional text elements, providing a subtle contrast against the primary canvas |
+| Text and Accent Light | #eeeeee | `--color-text-and-accent-light` | Primary text color for headlines and body copy, borders for ghost buttons, navigation items when active, and icon fills |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Used for specific text elements, icon borders, and occasionally as a very dark background to create maximum contrast. Offers a grounding visual weight |
+| Deepest Black | #050505 | `--color-deepest-black` | Exclusive background for certain interactive elements, suggesting a distinct, albeit minimal, state differentiation |
+
+## Tokens — Typography
+
+### Lausanne-300
+
+- **Token:** `--font-lausanne-300`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 12px, 13px, 14px, 20px, 23px, 30px, 75px, 93px, 185px
+- **Line heights:** 0.80, 1.00
+- **Letter spacing:** normal
+- **Role:** Extensive use across all text roles from body to secondary headings. Its versatility and minimalist structure provide a contemporary counterpoint to the display serif.
+
+### cardinalfruit-regular
+
+- **Token:** `--font-cardinalfruit-regular`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 260px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Primary display font for colossal, impactful headlines. Its serif elegance is central to the brand's sophisticated aesthetic.
+
+### Metropolis
+
+- **Token:** `--font-metropolis`
+- **Substitute:** Open Sans
+- **Weights:** 500
+- **Sizes:** 14px
+- **Line heights:** 1.14
+- **Letter spacing:** -0.004
+- **Role:** Used sparingly for subtle text accents and helper text, its slightly wider tracking lends a distinct modern touch.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.2
+- **Role:** Arial — detected in extracted data but not described by AI
+
+### Times
+
+- **Token:** `--font-times`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.2
+- **Role:** Times — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 0.8 | — | `--text-caption` |
+| body | 14px | 0.8 | -0.004px | `--text-body` |
+| subheading | 20px | 0.8 | — | `--text-subheading` |
+| heading-sm | 23px | 0.8 | — | `--text-heading-sm` |
+| heading | 30px | 0.8 | — | `--text-heading` |
+| heading-lg | 75px | 0.8 | — | `--text-heading-lg` |
+| display-xl | 93px | 0.8 | — | `--text-display-xl` |
+| display-xxl | 185px | 0.8 | — | `--text-display-xxl` |
+| display-max | 260px | 1 | — | `--text-display-max` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-39 | 39px | `--spacing-39` |
+| spacing-89 | 89px | `--spacing-89` |
+| spacing-130 | 130px | `--spacing-130` |
+| spacing-173 | 173px | `--spacing-173` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 50% |
+| navigation | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 89px |
+| elementGap | 5px |
+
+## Components
+
+### Ghost Circular Button
+
+**Role:** Interactive element (e.g., menu toggle, accessibility toggle)
+
+Transparent background button with a 50% border radius creating a circular shape. Border and text color are #eeeeee. Padding is minimal (0px padding), creating a compact, unobtrusive control.
+
+### Dark Circular Button
+
+**Role:** Interactive element (e.g., close button on overlay)
+
+Solid background button with a 50% border radius creating a circular shape. Background is #050505, text color is #000000. Padding is minimal (0px padding), used for high-contrast, functionally distinct controls.
+
+### Ghost Rectangular Button
+
+**Role:** Text link or secondary action
+
+Transparent background button with 0px border radius, forming a sharp rectangular shape. Border and text color are #eeeeee. Minimal (0px) padding, used for 'View all projects' links.
+
+### Main Navigation Link
+
+**Role:** Top-level navigation items
+
+Text link using Lausanne-300 font at 14px, #eeeeee. These links are part of the header navigation, with generous right padding (130px) for spatial separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Greyscale Canvas (#41443e) as the dominant background color for most page sections.
 - Typography should prioritize cardinalfruit-regular for large, impactful headlines, leveraging its unique serif character.
@@ -77,7 +163,7 @@ Liron Moran Interiors employs a bold, architectural visual style, characterized 
 - For oversized display text, use Lausanne-300 at 185px with a line height of 0.8.
 - Apply 39px horizontal padding for contained content elements, complementing the spacious layout.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors; maintain a largely achromatic palette apart from imagery.
 - Do not introduce sharp, angular strokes or imagery against the soft, serif typography without a clear design rationale.
@@ -86,3 +172,110 @@ Liron Moran Interiors employs a bold, architectural visual style, characterized 
 - Do not deviate from circular or sharp rectangular shapes for buttons; avoid rounded corner treatments.
 - Do not use box shadows for elevation; rely on color contrast and spatial separation to differentiate elements.
 - Do not use dark text (Midnight Ink) on Greyscale Canvas (#41443e); it lacks sufficient contrast.
+
+## Similar Brands
+
+- **Norm Architects** — Monochromatic palette, emphasis on sophisticated typography, and minimalistic UIs with strong architectural photography.
+- **B&B Italia** — High-end product showcase, with dramatic visuals and a sparse, premium feel in their digital presence.
+- **Artemide** — Focus on singular, impactful product photography within a refined, often dark-themed, visual environment.
+- **Dezeen** — Sophisticated use of typography and ample negative space to frame content, often with a stark, modern aesthetic.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-greyscale-canvas: #41443e;
+  --color-overlaid-paper: #f2f0ed;
+  --color-text-and-accent-light: #eeeeee;
+  --color-midnight-ink: #000000;
+  --color-deepest-black: #050505;
+  --font-lausanne-300: 'Lausanne-300', Inter;
+  --font-cardinalfruit-regular: 'cardinalfruit-regular', Playfair Display;
+  --font-metropolis: 'Metropolis', Open Sans;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-times: 'Times', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 0.8;
+  --text-body: 14px;
+  --leading-body: 0.8;
+  --tracking-body: -0.004px;
+  --text-subheading: 20px;
+  --leading-subheading: 0.8;
+  --text-heading-sm: 23px;
+  --leading-heading-sm: 0.8;
+  --text-heading: 30px;
+  --leading-heading: 0.8;
+  --text-heading-lg: 75px;
+  --leading-heading-lg: 0.8;
+  --text-display-xl: 93px;
+  --leading-display-xl: 0.8;
+  --text-display-xxl: 185px;
+  --leading-display-xxl: 0.8;
+  --text-display-max: 260px;
+  --leading-display-max: 1;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-22: 22px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-39: 39px;
+  --spacing-89: 89px;
+  --spacing-130: 130px;
+  --spacing-173: 173px;
+  --radius-buttons: 50%;
+  --radius-navigation: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-greyscale-canvas: #41443e;
+  --color-overlaid-paper: #f2f0ed;
+  --color-text-and-accent-light: #eeeeee;
+  --color-midnight-ink: #000000;
+  --color-deepest-black: #050505;
+  --font-lausanne-300: 'Lausanne-300', Inter;
+  --font-cardinalfruit-regular: 'cardinalfruit-regular', Playfair Display;
+  --font-metropolis: 'Metropolis', Open Sans;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --font-times: 'Times', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 0.8;
+  --text-body: 14px;
+  --leading-body: 0.8;
+  --tracking-body: -0.004px;
+  --text-subheading: 20px;
+  --leading-subheading: 0.8;
+  --text-heading-sm: 23px;
+  --leading-heading-sm: 0.8;
+  --text-heading: 30px;
+  --leading-heading: 0.8;
+  --text-heading-lg: 75px;
+  --leading-heading-lg: 0.8;
+  --text-display-xl: 93px;
+  --leading-display-xl: 0.8;
+  --text-display-xxl: 185px;
+  --leading-display-xxl: 0.8;
+  --text-display-max: 260px;
+  --leading-display-max: 1;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-22: 22px;
+  --spacing-30: 30px;
+  --spacing-35: 35px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-39: 39px;
+  --spacing-89: 89px;
+  --spacing-130: 130px;
+  --spacing-173: 173px;
+  --radius-buttons: 50%;
+  --radius-navigation: 0px;
+}
+```
