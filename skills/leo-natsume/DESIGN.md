@@ -1,68 +1,185 @@
 ---
 version: alpha
-name: Leo Natsume
-description: The Leo Natsume design system employs a stark, almost monochromatic foundation, punctuated by a single vibrant red accent. Its visual identity relies on precise typography and the interplay of negative space to convey a high-end, minimalist aesthetic. The overall impression is one of restrained confidence, where visual information is carefully curated and presented without clutter. Components are lightweight, often outlined, and subtle surface variations define areas without heavy shadows.
-colors:
-  canvas-white: "#fafafa"
-  surface-cool: "#eeeeea"
-  ink-black: "#000000"
-  deep-graphite: "#1c1d20"
-  medium-gray: "#323232"
-  muted-silver: "#8b8b8b"
-  light-concrete: "#c7c7c7"
-  active-red: "#f41111"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.2
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.2
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.05
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 45px
-    lineHeight: 1.05
-  display:
-    fontFamily: "system-ui"
-    fontSize: 70px
-    lineHeight: 1.4
-spacing:
-  elementGap: 6px
-  sectionGap: 43px
-components:
-  ghost-navigation-link:
-    role: Primary navigation item and general interactive text link.
-  primary-branded-heading:
-    role: Large, eye-catching title for key sections.
-  horizontal-divider:
-    role: Visual separation for sections or content blocks.
-  work-showcase-card:
-    role: Container for showcasing project images.
-  minimalist-feature-text:
-    role: Descriptive text for featured sections.
-  small-label-text:
-    role: Contextual labels or meta-information.
-  outlined-input-field:
-    role: Standard text input field.
+name: "Leo Natsume"
+description: "The Leo Natsume design system employs a stark, almost monochromatic foundation, punctuated by a single vibrant red accent. Its visual identity relies on precise typography and the interplay of negative space to convey a high-end, minimalist aesthetic. The overall impression is one of restrained confidence, where visual information is carefully curated and presented without clutter. Components are lightweight, often outlined, and subtle surface variations define areas without heavy shadows."
+theme: "light"
+industry: "design"
+source_url: "https://www.leonatsume.com"
+refero_style_id: "80085ab0-3123-4bf3-85e0-ea9a1438c2ab"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516671554-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516671554-thumb.jpg"
+extracted_at: "2026-04-30T02:38:44.823Z"
 ---
 
-## Overview
+# Leo Natsume — Style Reference
 
-**North Star:** Gallery Wall Precision
+> Gallery Wall Precision
+
+**Theme:** light
+
+**Industry:** design
 
 The Leo Natsume design system employs a stark, almost monochromatic foundation, punctuated by a single vibrant red accent. Its visual identity relies on precise typography and the interplay of negative space to convey a high-end, minimalist aesthetic. The overall impression is one of restrained confidence, where visual information is carefully curated and presented without clutter. Components are lightweight, often outlined, and subtle surface variations define areas without heavy shadows.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #fafafa | `--color-canvas-white` | Primary page background, light surface |
+| Surface Cool | #eeeeea | `--color-surface-cool` | Secondary background, subtle surface elevations, muted text |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, prominent borders, high-contrast elements |
+| Deep Graphite | #1c1d20 | `--color-deep-graphite` | Heading text, important links, secondary borders — slightly softer than pure black but still commanding |
+| Medium Gray | #323232 | `--color-medium-gray` | Link borders, subtle text |
+| Muted Silver | #8b8b8b | `--color-muted-silver` | Body text, helper text, subdued borders |
+| Light Concrete | #c7c7c7 | `--color-light-concrete` | Hairline borders for navigational elements, dividers |
+| Active Red | #f41111 | `--color-active-red` | Red outline accent for tags, dividers, and focused UI edges. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Arial
+- **Weights:** 400
+- **Sizes:** 10px
+- **Line heights:** 1.20
+- **Role:** Utility text, small labels, and fallback for system elements.
+
+### wfont_b4f017_e9045633d52f4a2fa031ee07f7d9033d
+
+- **Token:** `--font-wfont-b4f017-e9045633d52f4a2fa031ee07f7d9033d`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 12px, 15px, 16px, 18px, 20px, 32px, 45px, 64px
+- **Line heights:** 1.05, 1.20, 1.30, 1.40, 1.60
+- **Role:** Primary headings and body text. Provides a clean, modern geometric feel.
+
+### wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c
+
+- **Token:** `--font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c`
+- **Substitute:** Source Sans Pro
+- **Weights:** 400
+- **Sizes:** 12px, 15px, 16px, 18px, 20px, 32px, 45px, 64px
+- **Line heights:** 1.05, 1.20, 1.30, 1.40, 1.60
+- **Role:** Display headings and subheadings, used for impactful statements. Offers an alternative large-scale presence.
+
+### helvetica-w01-roman
+
+- **Token:** `--font-helvetica-w01-roman`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.40
+- **Role:** Specific body text instances, contributing to subtle typographic variation.
+
+### wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c
+
+- **Token:** `--font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c`
+- **Weights:** 400
+- **Sizes:** 12px, 70px
+- **Line heights:** 1.4
+- **Role:** wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.2 | — | `--text-caption` |
+| body-lg | 15px | 1.2 | — | `--text-body-lg` |
+| subheading | 18px | 1.4 | — | `--text-subheading` |
+| heading | 32px | 1.05 | — | `--text-heading` |
+| heading-lg | 45px | 1.05 | — | `--text-heading-lg` |
+| display | 70px | 1.4 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-47 | 47px | `--spacing-47` |
+| spacing-57 | 57px | `--spacing-57` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-71 | 71px | `--spacing-71` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-200 | 200px | `--spacing-200` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| card | 20px |
+| logo | 15.0211px |
+| cardTop | 20px 20px 0px 0px |
+| default | 0px |
+| pillInteractive | 999px |
+| largeInteractive | 5.56676px |
+| smallInteractive | 3px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 43px |
+| cardPadding | 0px |
+| elementGap | 6px |
+
+## Components
+
+### Ghost Navigation Link
+
+**Role:** Primary navigation item and general interactive text link.
+
+Text only, `Ink Black` on `Canvas White` background, no padding or border. Hover states are implied by text color change or underscore, but not explicitly styled on base.
+
+### Primary Branded Heading
+
+**Role:** Large, eye-catching title for key sections.
+
+Uses `wfont_b4f017_e9045633d52f4a2fa031ee07f7d9033d` at `64px` for the main text in `Deep Graphite`, with an `Active Red` accent over 'Let's Create'. No letter-spacing adjustment.
+
+### Horizontal Divider
+
+**Role:** Visual separation for sections or content blocks.
+
+A `1px` high line using `Ink Black` as color, spanning the content width.
+
+### Work Showcase Card
+
+**Role:** Container for showcasing project images.
+
+A card with `0px` padding, a top-left and top-right `border-radius` of `20px`, and no shadow. The background is transparent `rgba(243, 248, 240, 0)` but implies a base of `Canvas White`.
+
+### Minimalist Feature Text
+
+**Role:** Descriptive text for featured sections.
+
+Uses `wfont_b4f017_e9045633d52f4a2fa031ee07f7d9033d` at `18px`, `Deep Graphite` color. It conveys important information without being a headline.
+
+### Small Label Text
+
+**Role:** Contextual labels or meta-information.
+
+Uses `Arial` at `10px`, `Muted Silver` color. Often found as metadata or subtle annotations.
+
+### Outlined Input Field
+
+**Role:** Standard text input field.
+
+Background `Canvas White`, border `1px` solid, color `Ink Black`. `Border-radius` varies for different interaction contexts (e.g. `999px` for pill-shaped email input, `5.56676px` for others).
+
+## Do's and Don'ts
+
+### Do
 
 - Use `Canvas White (#fafafa)` as the dominant background for all pages and most surfaces.
 - Emphasize content and hierarchy through `Ink Black (#000000)` for primary text and `Deep Graphite (#1c1d20)` for headings.
@@ -72,7 +189,7 @@ The Leo Natsume design system employs a stark, almost monochromatic foundation, 
 - Structure interactive elements like navigation items and input fields with thin `1px` borders, using `Light Concrete (#c7c7c7)` or `Ink Black (#000000)` depending on prominence.
 - Apply `20px` `border-radius` to the top corners of `Work Showcase Card` elements to create a subtle architectural detail.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or heavy elevation styles; rely on color and subtle borders to define surface levels.
 - Do not introduce additional vibrant colors beyond `Active Red (#f41111)` to maintain the high-contrast, minimalist palette.
@@ -82,14 +199,138 @@ The Leo Natsume design system employs a stark, almost monochromatic foundation, 
 - Avoid decorative gradients; surfaces should remain flat and monochromatic.
 - Do not use highly textured backgrounds; embrace clean, smooth surfaces characteristic of `Canvas White` and `Surface Cool`.
 
-### Layout
+## Surfaces
 
-The page primarily uses a full-bleed layout, particularly in the hero section, which features a large, striking visual with centered text. Content sections below often operate within a contained maximum width, centered on the screen. The section rhythm is quite open, defined by a generous `43px` vertical spacing between major blocks and often separated by `1px` `Ink Black` horizontal dividers. Content arrangements alternate between centered single-column text blocks and implicit two-column structures where an image is paired with text. Grid usage is visible in the form of work showcases. The overall density is spacious and clean, prioritizing breathing room. Primary navigation is a simple top bar, with ghost links to pages.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #fafafa | Base page background |
+| 1 | Surface Cool | #eeeeea | Subtle background for specific sections or meta-information areas. |
 
-### Imagery
+## Imagery
 
 The visual language for imagery is characterized by high-fidelity 3D renders or tightly cropped product screenshots, typically presented against a neutral or white background. Photography appears to be minimal or entirely absent in product showcases. Illustrations are dimensional and often highly customized, featuring organic shapes and vibrant, multi-colored accents (e.g., the coiled lines in the hero section). Icons are minimal, outlined, and monochromatic, used for navigation or social links. Imagery generally holds significant visual weight, often serving as hero elements or key content dividers, and is well-contained within defined areas, not bleeding into the UI. The density of images is moderate; they are used strategically to showcase work rather than as constant decorative elements.
 
-### Elevation
+## Layout
 
-This design system explicitly avoids complex shadows. Elevation is primarily conveyed through subtle background color shifts (`Canvas White` to `Surface Cool`) and precise `1px` borders, maintaining a flat and clean aesthetic.
+The page primarily uses a full-bleed layout, particularly in the hero section, which features a large, striking visual with centered text. Content sections below often operate within a contained maximum width, centered on the screen. The section rhythm is quite open, defined by a generous `43px` vertical spacing between major blocks and often separated by `1px` `Ink Black` horizontal dividers. Content arrangements alternate between centered single-column text blocks and implicit two-column structures where an image is paired with text. Grid usage is visible in the form of work showcases. The overall density is spacious and clean, prioritizing breathing room. Primary navigation is a simple top bar, with ghost links to pages.
+
+## Similar Brands
+
+- **Figma** — Shares a clean, minimalist aesthetic with high contrast text against a light background, and limited use of color for functional accents.
+- **Linear** — Employs precise typography, extensive use of neutral colors including dark grays for text, and a strong emphasis on negative space and clear hierarchy without heavy ornamentation.
+- **Stripe** — Features a modern, crisp UI with a predominantly white canvas, careful typographic pairing, and strategic use of a single accent color for calls to action or key indicators.
+- **Apple (Product Pages)** — Similar approach to showcasing product visuals against stark, clean backgrounds, with large, impactful typography and a focus on clarity through minimalism.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #fafafa;
+  --color-surface-cool: #eeeeea;
+  --color-ink-black: #000000;
+  --color-deep-graphite: #1c1d20;
+  --color-medium-gray: #323232;
+  --color-muted-silver: #8b8b8b;
+  --color-light-concrete: #c7c7c7;
+  --color-active-red: #f41111;
+  --font-arial: 'Arial', Arial;
+  --font-wfont-b4f017-e9045633d52f4a2fa031ee07f7d9033d: 'wfont_b4f017_e9045633d52f4a2fa031ee07f7d9033d', Montserrat;
+  --font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c: 'wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c', Source Sans Pro;
+  --font-helvetica-w01-roman: 'helvetica-w01-roman', Helvetica Neue;
+  --font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c: 'wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.2;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.2;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading: 32px;
+  --leading-heading: 1.05;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.05;
+  --text-display: 70px;
+  --leading-display: 1.4;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-43: 43px;
+  --spacing-47: 47px;
+  --spacing-57: 57px;
+  --spacing-67: 67px;
+  --spacing-71: 71px;
+  --spacing-86: 86px;
+  --spacing-200: 200px;
+  --radius-card: 20px;
+  --radius-logo: 15.0211px;
+  --radius-cardtop: 20px 20px 0px 0px;
+  --radius-default: 0px;
+  --radius-pillinteractive: 999px;
+  --radius-largeinteractive: 5.56676px;
+  --radius-smallinteractive: 3px;
+  --surface-canvas-white: #fafafa;
+  --surface-surface-cool: #eeeeea;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #fafafa;
+  --color-surface-cool: #eeeeea;
+  --color-ink-black: #000000;
+  --color-deep-graphite: #1c1d20;
+  --color-medium-gray: #323232;
+  --color-muted-silver: #8b8b8b;
+  --color-light-concrete: #c7c7c7;
+  --color-active-red: #f41111;
+  --font-arial: 'Arial', Arial;
+  --font-wfont-b4f017-e9045633d52f4a2fa031ee07f7d9033d: 'wfont_b4f017_e9045633d52f4a2fa031ee07f7d9033d', Montserrat;
+  --font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c: 'wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c', Source Sans Pro;
+  --font-helvetica-w01-roman: 'helvetica-w01-roman', Helvetica Neue;
+  --font-wfont-b4f017-1511f1af80db4e64b4e84b3f76de255c: 'wfont_b4f017_1511f1af80db4e64b4e84b3f76de255c', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.2;
+  --text-body-lg: 15px;
+  --leading-body-lg: 1.2;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading: 32px;
+  --leading-heading: 1.05;
+  --text-heading-lg: 45px;
+  --leading-heading-lg: 1.05;
+  --text-display: 70px;
+  --leading-display: 1.4;
+  --spacing-0: 0px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-43: 43px;
+  --spacing-47: 47px;
+  --spacing-57: 57px;
+  --spacing-67: 67px;
+  --spacing-71: 71px;
+  --spacing-86: 86px;
+  --spacing-200: 200px;
+  --radius-card: 20px;
+  --radius-logo: 15.0211px;
+  --radius-cardtop: 20px 20px 0px 0px;
+  --radius-default: 0px;
+  --radius-pillinteractive: 999px;
+  --radius-largeinteractive: 5.56676px;
+  --radius-smallinteractive: 3px;
+  --surface-canvas-white: #fafafa;
+  --surface-surface-cool: #eeeeea;
+}
+```

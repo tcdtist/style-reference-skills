@@ -1,68 +1,179 @@
 ---
 version: alpha
-name: Lazy
-description: Lazy operates with a 'stealth dark mode' aesthetic, prioritizing content through deep, muted surfaces and delicate typography. A subtle play of light against dark is achieved through soft, localized gradients and sharp, clean borders. The overall impression is one of quiet efficiency and focused productivity, where UI elements recede until interaction, brought to life by crisp text and carefully applied elevation.
-colors:
-  midnight-ink: "#0a0a0a"
-  carbon-gray: "#26272c"
-  slate-surface: "#1a1b1f"
-  ash-gray: "#3b3c3e"
-  ghost-border: "#8a8c93"
-  whisper-gray: "#62646a"
-  muted-text: "#535355"
-  callout-text: "#e0e0e0"
-  pure-white: "#ffffff"
-  cloud-burst-gradient-primary: "#b8b8b8"
-  deep-space-gradient: "#6c6d77"
-  graphite-gradient: "#8c8c93"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.5
-    letterSpacing: -0.004px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.031px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.23
-    letterSpacing: -0.036px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 58px
-    lineHeight: 1.09
-    letterSpacing: 0.048px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 4px
-  elementGap: 14px
-  sectionGap: 40px
-components:
-  input-field:
-    role: Primary interactive input element
-  elevated-tool-card:
-    role: Interactive content container with distinction
-  primary-ghost-button:
-    role: Call to action or navigation link
-  product-feature-card:
-    role: Neutral content display card
-  pill-badge:
-    role: Categorization or short label
-  navigation-link:
-    role: Header navigation item
+name: "Lazy"
+description: "Lazy operates with a 'stealth dark mode' aesthetic, prioritizing content through deep, muted surfaces and delicate typography. A subtle play of light against dark is achieved through soft, localized gradients and sharp, clean borders. The overall impression is one of quiet efficiency and focused productivity, where UI elements recede until interaction, brought to life by crisp text and carefully applied elevation."
+theme: "dark"
+industry: "productivity"
+source_url: "https://lazy.so"
+refero_style_id: "2b939c70-c08e-4bb6-8fac-ade99b0d1cf0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512197680-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512197680-thumb.jpg"
+extracted_at: "2026-04-30T01:23:42.232Z"
 ---
 
-## Overview
+# Lazy — Style Reference
 
-**North Star:** Subdued command center
+> Subdued command center
+
+**Theme:** dark
+
+**Industry:** productivity
 
 Lazy operates with a 'stealth dark mode' aesthetic, prioritizing content through deep, muted surfaces and delicate typography. A subtle play of light against dark is achieved through soft, localized gradients and sharp, clean borders. The overall impression is one of quiet efficiency and focused productivity, where UI elements recede until interaction, brought to life by crisp text and carefully applied elevation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #0a0a0a | `--color-midnight-ink` | Deepest surface background, text on light elements, subtle shadows |
+| Carbon Gray | #26272c | `--color-carbon-gray` | Primary page background, card backgrounds |
+| Slate Surface | #1a1b1f | `--color-slate-surface` | Elevated card backgrounds, input fields |
+| Ash Gray | #3b3c3e | `--color-ash-gray` | Subtle elevated surface (e.g., input active state) |
+| Ghost Border | #8a8c93 | `--color-ghost-border` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Whisper Gray | #62646a | `--color-whisper-gray` | Secondary text, link borders, icon strokes |
+| Muted Text | #535355 | `--color-muted-text` | Placeholder text, very subtle body text |
+| Callout Text | #e0e0e0 | `--color-callout-text` | Prominent body text, card content text |
+| Pure White | #ffffff | `--color-pure-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Cloud Burst Gradient Primary | #b8b8b8 | `--color-cloud-burst-gradient-primary` | Decorative gradients from near-white to medium gray |
+| Deep Space Gradient | #6c6d77 | `--color-deep-space-gradient` | Subtle background gradients for panels, header backgrounds |
+| Graphite Gradient | #8c8c93 | `--color-graphite-gradient` | Background gradients for large feature sections |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 300, 400, 500, 600
+- **Sizes:** 11px, 12px, 13px, 14px, 16px, 20px, 24px, 28px, 55px
+- **Line heights:** 1.09, 1.10, 1.20, 1.23, 1.25, 1.38, 1.43, 1.50, 1.57, 1.60, 1.83, 2.00
+- **Letter spacing:** -0.045em at 55px, -0.042em at 28px, -0.036em at 24px, -0.031em at 20px, -0.025em at 16px, -0.021em at 14px, -0.017em at 13px, -0.005em at 12px, -0.004em at 11px
+- **Role:** The primary typeface for all UI elements, body text, and most informational display. Its range of weights and precise letter-spacing contribute to the crisp, compact feel of the interface.
+
+### Migra
+
+- **Token:** `--font-migra`
+- **Substitute:** serif
+- **Weights:** 500
+- **Sizes:** 21px, 58px
+- **Line heights:** 1.09, 1.25
+- **Letter spacing:** 0.048em at 58px, 0.026em at 21px
+- **Role:** A decorative serif font used for select hero headlines and impactful statements. Its slightly wider tracking and unique character shapes provide a touch of distinctive elegance against the otherwise geometric UI.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.5 | -0.004px | `--text-caption` |
+| heading | 20px | 1.25 | -0.031px | `--text-heading` |
+| heading-lg | 24px | 1.23 | -0.036px | `--text-heading-lg` |
+| display | 58px | 1.09 | 0.048px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-53 | 53px | `--spacing-53` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-150 | 150px | `--spacing-150` |
+| spacing-168 | 168px | `--spacing-168` |
+| spacing-184 | 184px | `--spacing-184` |
+| spacing-190 | 190px | `--spacing-190` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 48px |
+| badge | 22px |
+| cards | 8px |
+| input | 4px |
+| buttons | 4px |
+| formControl | 22px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.12) 0px 12px 12px 0px | `--shadow-xl` |
+| xl-2 | rgba(4, 4, 7, 0.25) 0px 2px 4px 0px, rgba(4, 4, 7, 0.4) 0px 8px 24px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 40px |
+| cardPadding | 14px |
+| elementGap | 14px |
+
+## Components
+
+### Input Field
+
+**Role:** Primary interactive input element
+
+Background #1a1b1f, border 1px solid #8a8c93, text Pure White. Subtle blur(10px) backdrop effect.
+
+### Elevated Tool Card
+
+**Role:** Interactive content container with distinction
+
+Background #3b3c3, border 1px solid #8a8c93, radius 8px, padding 14px. Shadow: `rgba(0, 0, 0, 0.12) 0px 12px 12px 0px`.
+
+### Primary Ghost Button
+
+**Role:** Call to action or navigation link
+
+Text Pure White (or #e0e0e0) on transparent background, border 1px solid #8a8c93, radius 4px, padding 12px horizontal. Hover applies a gradient background.
+
+### Product Feature Card
+
+**Role:** Neutral content display card
+
+Background transparent, radius 8px, no explicit border on background. Text Callout Text (#e0e0e0) with supporting text in Whisper Gray (#62646a).
+
+### Pill Badge
+
+**Role:** Categorization or short label
+
+Background transparent, text Muted Text (#535355), border 1px solid #535355, radius 22px, padding varies 3px-6px.
+
+### Navigation Link
+
+**Role:** Header navigation item
+
+Text Whisper Gray (#62646a), interactive on hover/active with Pure White text. No distinct background or explicit padding, relies on elementGap for spacing.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Carbon Gray (#26272c) as the default background for all new sections.
 - Apply Ghost Border (#8a8c93) for hairline separation and subtle element distinction.
@@ -72,7 +183,7 @@ Lazy operates with a 'stealth dark mode' aesthetic, prioritizing content through
 - Text hierarchy should progress from Pure White (#ffffff) for primary headers to Callout Text (#e0e0e0) for body, and Whisper Gray (#62646a) or Muted Text (#535355) for secondary/helper text.
 - Ensure large headlines and display text receive negative letter-spacing from Inter, e.g., -0.045em at 55px, for visual density.
 
-### Don'ts
+### Don't
 
 - Do not introduce highly saturated colors for functional UI elements; reserve them for subtle decorative gradients or brand accents.
 - Avoid heavy drop shadows or strong visual separation between elements; prefer thin borders and subtle background shifts.
@@ -82,10 +193,183 @@ Lazy operates with a 'stealth dark mode' aesthetic, prioritizing content through
 - Avoid large blocks of plain, uncommented text; text should be broken up with clear headings and thoughtful spacing.
 - Do not use bright white as a general text color on dark backgrounds without specific contrast considerations; Callout Text (#e0e0e0) is preferred for most body content.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Base Canvas | #26272c | Main page background, primary canvas for content display. |
+| 1 | Input / Elevated Base | #1a1b1f | Default background for interactive inputs and slightly elevated content blocks. |
+| 2 | Interactive Card | #3b3c3 | Background for interactive cards, receiving subtle shadow and border. |
+| 3 | Overlay / Gradient Start | #ffffff | Used primarily as a starting point for gradients that lighten toward the top, or for highlight elements against very dark backgrounds. |
+
+## Elevation
+
+- **Elevated Tool Card:** `rgba(0, 0, 0, 0.12) 0px 12px 12px 0px`
+- **Input Field Focus:** `rgba(4, 4, 7, 0.25) 0px 2px 4px 0px, rgba(4, 4, 7, 0.4) 0px 8px 24px 0px`
+
+## Imagery
+
+The imagery is sparse, focusing on abstract graphic elements like blurred, light-emitting circles and radial gradients that give a sense of depth and focus, akin to a lens flare or spotlight. Product screenshots, when present, are tightly cropped, presented with a slight perspective, and encased within UI elements, never full-bleed. Icons are minimal, outlined, and monochromatic, maintaining a subtle presence. The visual language emphasizes UI over decorative graphics, with any non-UI visuals serving to enhance atmosphere rather than convey explicit information.
+
+## Layout
 
 The page primarily employs a max-width 1200px contained layout, centered on a dark background. The hero section is full-bleed, featuring a grand centered headline over an atmospheric radial gradient. Subsequent sections maintain a consistent vertical rhythm with Carbon Gray (#26272c) backgrounds, interspersed with subtle gradients or slightly lighter surface treatments. Content sections often feature centered typographic stacks for headlines and subheadings, followed by a product screenshot or input simulation. Navigation is a minimal top bar, sticky at scroll, with primary links and a subtle login/signup action.
 
-### Imagery
+## Similar Brands
 
-The imagery is sparse, focusing on abstract graphic elements like blurred, light-emitting circles and radial gradients that give a sense of depth and focus, akin to a lens flare or spotlight. Product screenshots, when present, are tightly cropped, presented with a slight perspective, and encased within UI elements, never full-bleed. Icons are minimal, outlined, and monochromatic, maintaining a subtle presence. The visual language emphasizes UI over decorative graphics, with any non-UI visuals serving to enhance atmosphere rather than convey explicit information.
+- **Superhuman** — Dark UI with strong emphasis on keyboard shortcuts, subtle gradients, and focused interactions on a deep background.
+- **Linear** — Minimalist dark layout, strong typographic hierarchy, and a quiet, efficient aesthetic for a productivity tool.
+- **Figma** — Productivity-focused dark UI, crisp text, and use of subtle surface differentiation and elevation for tools and panels.
+- **Raycast** — Command-line interface aesthetic adapted to a graphical UI, featuring dark surfaces, precise typography, and a blur effect behind interactive components.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #0a0a0a;
+  --color-carbon-gray: #26272c;
+  --color-slate-surface: #1a1b1f;
+  --color-ash-gray: #3b3c3e;
+  --color-ghost-border: #8a8c93;
+  --color-whisper-gray: #62646a;
+  --color-muted-text: #535355;
+  --color-callout-text: #e0e0e0;
+  --color-pure-white: #ffffff;
+  --color-cloud-burst-gradient-primary: #b8b8b8;
+  --color-deep-space-gradient: #6c6d77;
+  --color-graphite-gradient: #8c8c93;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-migra: 'Migra', serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.004px;
+  --text-heading: 20px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.031px;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.23;
+  --tracking-heading-lg: -0.036px;
+  --text-display: 58px;
+  --leading-display: 1.09;
+  --tracking-display: 0.048px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-53: 53px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-120: 120px;
+  --spacing-150: 150px;
+  --spacing-168: 168px;
+  --spacing-184: 184px;
+  --spacing-190: 190px;
+  --radius-pill: 48px;
+  --radius-badge: 22px;
+  --radius-cards: 8px;
+  --radius-input: 4px;
+  --radius-buttons: 4px;
+  --radius-formcontrol: 22px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 12px 12px 0px;
+  --shadow-xl-2: rgba(4, 4, 7, 0.25) 0px 2px 4px 0px, rgba(4, 4, 7, 0.4) 0px 8px 24px 0px;
+  --surface-base-canvas: #26272c;
+  --surface-input-elevated-base: #1a1b1f;
+  --surface-interactive-card: #3b3c3;
+  --surface-overlay-gradient-start: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #0a0a0a;
+  --color-carbon-gray: #26272c;
+  --color-slate-surface: #1a1b1f;
+  --color-ash-gray: #3b3c3e;
+  --color-ghost-border: #8a8c93;
+  --color-whisper-gray: #62646a;
+  --color-muted-text: #535355;
+  --color-callout-text: #e0e0e0;
+  --color-pure-white: #ffffff;
+  --color-cloud-burst-gradient-primary: #b8b8b8;
+  --color-deep-space-gradient: #6c6d77;
+  --color-graphite-gradient: #8c8c93;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-migra: 'Migra', serif;
+  --text-caption: 11px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.004px;
+  --text-heading: 20px;
+  --leading-heading: 1.25;
+  --tracking-heading: -0.031px;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1.23;
+  --tracking-heading-lg: -0.036px;
+  --text-display: 58px;
+  --leading-display: 1.09;
+  --tracking-display: 0.048px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-53: 53px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-120: 120px;
+  --spacing-150: 150px;
+  --spacing-168: 168px;
+  --spacing-184: 184px;
+  --spacing-190: 190px;
+  --radius-pill: 48px;
+  --radius-badge: 22px;
+  --radius-cards: 8px;
+  --radius-input: 4px;
+  --radius-buttons: 4px;
+  --radius-formcontrol: 22px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) 0px 12px 12px 0px;
+  --shadow-xl-2: rgba(4, 4, 7, 0.25) 0px 2px 4px 0px, rgba(4, 4, 7, 0.4) 0px 8px 24px 0px;
+  --surface-base-canvas: #26272c;
+  --surface-input-elevated-base: #1a1b1f;
+  --surface-interactive-card: #3b3c3;
+  --surface-overlay-gradient-start: #ffffff;
+}
+```
