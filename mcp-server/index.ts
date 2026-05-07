@@ -9,9 +9,28 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-// Log API requests
-app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+// Track API calls to Vercel Analytics
+app.use(async (req, res, next) => {
+  if (process.env.VERCEL_ENV === "production") {
+    try {
+      await fetch("https://vitals.vercel-analytics.com/v1/vitals", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          dsn: process.env.VERCEL_ANALYTICS_ID,
+          id: crypto.randomUUID(),
+          page: req.url,
+          href: req.url,
+          timestamp: Date.now(),
+          event_name: "api_call",
+        }),
+      });
+    } catch (err) {
+      console.error("Analytics tracking failed:", err);
+    }
+  }
   next();
 });
 
