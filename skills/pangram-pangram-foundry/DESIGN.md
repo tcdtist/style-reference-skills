@@ -1,91 +1,284 @@
 ---
 version: alpha
-name: Pangram Pangram Foundry
-description: Pangram Pangram champions a stark, high-contrast aesthetic with functional color accents. The UI features a bright, almost white canvas, broken by dark header sections and image-heavy content blocks. Typography is the primary visual element, bold and expansive, with interactions generally expressed through subtle changes in neutral buttons or vivid, distinct status badges. Surfaces are largely flat with soft, large corner radii, avoiding heavy shadows.
-colors:
-  ink: "#000000"
-  canvas: "#fafafa"
-  paper: "#ededed"
-  slate: "#666666"
-  alert-red: "#ff2f00"
-  update-yellow: "#ffb700"
-  early-access-blue: "#bfe0ff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-  subheading-sm:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.17
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.1
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 121px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 145px
-    lineHeight: 1
-spacing:
-  cardRadius: 20px
-  buttonRadius: 20px
-  elementGap: 8px
-  sectionGap: 92px
-components:
-  filled-button-dark:
-    role: Primary action button.
-  filled-button-light:
-    role: Secondary action button.
-  outlined-button-light:
-    role: Tertiary action button or alternative action.
-  outlined-button-accent:
-    role: Call-to-action with strong visual emphasis.
-  font-showcase-card-filled:
-    role: Displays font information within a contained content block.
-  font-showcase-card-transparent:
-    role: Showcases font information directly on a contrasting background, usually within a themed section.
-  text-input:
-    role: Form input field.
-  status-badge-alert-red:
-    role: Indicates 'New' status or a primary highlight.
-  status-badge-update-yellow:
-    role: Indicates 'Update' status.
-  status-badge-early-access-blue:
-    role: Indicates 'Early Access' status.
+name: "Pangram Pangram Foundry"
+description: "Pangram Pangram champions a stark, high-contrast aesthetic with functional color accents. The UI features a bright, almost white canvas, broken by dark header sections and image-heavy content blocks. Typography is the primary visual element, bold and expansive, with interactions generally expressed through subtle changes in neutral buttons or vivid, distinct status badges. Surfaces are largely flat with soft, large corner radii, avoiding heavy shadows."
+theme: "light"
+industry: "design"
+source_url: "https://pangrampangram.com"
+refero_style_id: "6d64a4da-ef40-453e-86f7-4bfabc0c9051"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512761408-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512761408-thumb.jpg"
+extracted_at: "2026-04-30T01:33:11.047Z"
 ---
 
-## Overview
+# Pangram Pangram Foundry — Style Reference
 
-**North Star:** Type foundry's bold canvas: white pages, dark headers, expressive typography, and soft, rounded containers.
+> Type foundry's bold canvas: white pages, dark headers, expressive typography, and soft, rounded containers.
+
+**Theme:** light
+
+**Industry:** design
 
 Pangram Pangram champions a stark, high-contrast aesthetic with functional color accents. The UI features a bright, almost white canvas, broken by dark header sections and image-heavy content blocks. Typography is the primary visual element, bold and expansive, with interactions generally expressed through subtle changes in neutral buttons or vivid, distinct status badges. Surfaces are largely flat with soft, large corner radii, avoiding heavy shadows.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ink | #000000 | `--color-ink` | Primary text, headers, icon strokes, borders, and some button fills. This is the dominant dark neutral, grounding the bright canvas |
+| Canvas | #fafafa | `--color-canvas` | Page backgrounds, card surfaces, and some light text |
+| Paper | #ededed | `--color-paper` | Secondary surface backgrounds, used for cards and some buttons, providing a subtle visual distinction from the main canvas |
+| Slate | #666666 | `--color-slate` | Muted text, secondary link color, and card text details |
+| Alert Red | #ff2f00 | `--color-alert-red` | Orange action color for filled buttons, selected navigation states, and focused conversion moments. |
+| Update Yellow | #ffb700 | `--color-update-yellow` | Yellow state accent for badges, validation surfaces, and short status labels. |
+| Early Access Blue | #bfe0ff | `--color-early-access-blue` | Blue state accent for badges, validation surfaces, and short status labels. |
+
+## Tokens — Typography
+
+### Neue Montreal
+
+- **Token:** `--font-neue-montreal`
+- **Substitute:** Inter
+- **Weights:** 400, 530, 600
+- **Sizes:** 12px, 14px, 16px, 18px, 20px, 22px, 24px, 36px, 48px, 121px, 145px
+- **Line heights:** 1.00, 1.10, 1.17, 1.20, 1.30
+- **Role:** The primary typeface for headings, body text, navigation, and interface elements. Its wide range of weights and sizes forms the core expressive character of the brand. Default letter spacing is normal.
+
+### neue-montreal-semibold
+
+- **Token:** `--font-neue-montreal-semibold`
+- **Substitute:** Inter
+- **Weights:** 600
+- **Sizes:** 103px, 121px
+- **Line heights:** 1.00
+- **Role:** A specific variant of Neue Montreal used for large, impactful display headings.
+
+### neue-york-normal-bold
+
+- **Token:** `--font-neue-york-normal-bold`
+- **Substitute:** Inter
+- **Weights:** 700
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A bold variant for display headings, adding weight and presence to feature titles.
+
+### neue-york-normal-normal-bold
+
+- **Token:** `--font-neue-york-normal-normal-bold`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 121px
+- **Line heights:** 1.00
+- **Role:** A normal weight variant for very large headings, providing a softer impact than its bold counterpart.
+
+### frama-semibold
+
+- **Token:** `--font-frama-semibold`
+- **Substitute:** Figtree
+- **Weights:** 580
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A unique semibold display font used for specific font showcase headings, reflecting individual font identities.
+
+### kyoto-semibold
+
+- **Token:** `--font-kyoto-semibold`
+- **Substitute:** DM Sans
+- **Weights:** 600
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** Another distinctive semibold display font chosen for font showcase headings, adding character diversity.
+
+### neue-gstaad-normal-bold
+
+- **Token:** `--font-neue-gstaad-normal-bold`
+- **Substitute:** Poppins
+- **Weights:** 700
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A bold display font for font showcase headings, conveying strength and impact.
+
+### palma-fizzy-heavy
+
+- **Token:** `--font-palma-fizzy-heavy`
+- **Substitute:** Montserrat
+- **Weights:** 800
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** An extra-bold display font for font showcase headings, used for maximum visual punch.
+
+### mori-bold
+
+- **Token:** `--font-mori-bold`
+- **Substitute:** Roboto
+- **Weights:** 700
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A bold display font for font showcase headings, sharp and clear.
+
+### museum-light
+
+- **Token:** `--font-museum-light`
+- **Substitute:** Open Sans Light
+- **Weights:** 300
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A light display font for specific font showcase headings, offering a delicate and refined touch.
+
+### neue-corp-normal-semibold
+
+- **Token:** `--font-neue-corp-normal-semibold`
+- **Substitute:** Titillium Web
+- **Weights:** 500
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A medium-semibold display font for font showcase headings, balancing authority with approachability.
+
+### watch-medium
+
+- **Token:** `--font-watch-medium`
+- **Substitute:** Lexend
+- **Weights:** 485
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A unique medium weight display font for font showcase headings, providing a distinct stylistic flair.
+
+### monument-narrow-medium
+
+- **Token:** `--font-monument-narrow-medium`
+- **Substitute:** IBM Plex Sans Condensed
+- **Weights:** 525
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A medium weight, narrow display font for font showcase headings, maintaining legibility while conserving horizontal space.
+
+### model-plastic-regular
+
+- **Token:** `--font-model-plastic-regular`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 103px
+- **Line heights:** 1.00
+- **Role:** A regular weight display font for font showcase headings, offering a clean, contemporary appearance.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | — | `--text-caption` |
+| body-sm | 14px | 1.2 | — | `--text-body-sm` |
+| body | 16px | 1.2 | — | `--text-body` |
+| subheading-sm | 18px | 1.2 | — | `--text-subheading-sm` |
+| subheading | 20px | 1.2 | — | `--text-subheading` |
+| heading-sm | 24px | 1.17 | — | `--text-heading-sm` |
+| heading | 36px | 1.1 | — | `--text-heading` |
+| heading-lg | 48px | 1.1 | — | `--text-heading-lg` |
+| display-sm | 121px | 1 | — | `--text-display-sm` |
+| display | 145px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-92 | 92px | `--spacing-92` |
+| spacing-103 | 103px | `--spacing-103` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 20px |
+| badges | 999px |
+| inputs | 20px |
+| buttons | 20px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 92px |
+| cardPadding | 26px |
+| elementGap | 8px |
+
+## Components
+
+### Filled Button - Dark
+
+**Role:** Primary action button.
+
+Background: Ink (#000000), Text: Canvas (#fafafa). Padding: 7.65px vertical, 22.95px horizontal. Radius: 20px.
+
+### Filled Button - Light
+
+**Role:** Secondary action button.
+
+Background: Paper (#ededed) or Canvas (#fafafa), Text: Ink (#000000). Padding: 7.65px vertical, 22.95px horizontal. Radius: 20px.
+
+### Outlined Button - Light
+
+**Role:** Tertiary action button or alternative action.
+
+Background: transparent, Text: Canvas (#fafafa), Border: 1px solid Canvas (#fafafa). Padding: 7.65px vertical, 22.95px horizontal. Radius: 20px.
+
+### Outlined Button - Accent
+
+**Role:** Call-to-action with strong visual emphasis.
+
+Background: transparent, Text: Alert Red (#ff2f00), Border: 1px Alert Red (#ff2f00). Padding: 7.65px vertical, 22.95px horizontal. Radius: 20px.
+
+### Font Showcase Card - Filled
+
+**Role:** Displays font information within a contained content block.
+
+Background: Paper (#ededed), Radius: 20px. Padding: 25.72px on all sides. No shadow.
+
+### Font Showcase Card - Transparent
+
+**Role:** Showcases font information directly on a contrasting background, usually within a themed section.
+
+Background: transparent, Radius: 20px. Padding: 25.72px on all sides. No shadow.
+
+### Text Input
+
+**Role:** Form input field.
+
+Background: Canvas (#fafafa), Text: Ink (#000000), Border: 1px Ink (#000000). Radius: 20px. Padding: 24px vertical, 45.9px right, 24px left.
+
+### Status Badge - Alert Red
+
+**Role:** Indicates 'New' status or a primary highlight.
+
+Background: Alert Red (#ff2f00), Text: Ink (#000000). Radius: 999px (pill shape). Padding: 4px vertical, 11.65px horizontal.
+
+### Status Badge - Update Yellow
+
+**Role:** Indicates 'Update' status.
+
+Background: Update Yellow (#ffb700), Text: Ink (#000000). Radius: 999px. Padding: 4px vertical, 11.65px horizontal.
+
+### Status Badge - Early Access Blue
+
+**Role:** Indicates 'Early Access' status.
+
+Background: Early Access Blue (#bfe0ff), Text: Ink (#000000). Radius: 999px. Padding: 4px vertical, 11.65px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Neue Montreal for all textual content, adjusting weights and sizes from the defined typescale for hierarchy.
 - Apply a 20px border radius to all interactive elements like buttons and input fields, and all elevated cards.
@@ -95,7 +288,7 @@ Pangram Pangram champions a stark, high-contrast aesthetic with functional color
 - Prioritize text and button padding of 7.65px vertical and 22.95px horizontal for a consistent comfortable density.
 - Employ the 999px radius for all badges to achieve a distinct pill-shaped visual for status indicators.
 
-### Don'ts
+### Don't
 
 - Do not use shadows; rely on background color changes, borders, and rounded corners for visual separation and depth.
 - Avoid using Alert Red (#ff2f00) for general body text or non-actionable elements, reserving its impact for specific functions.
@@ -105,10 +298,162 @@ Pangram Pangram champions a stark, high-contrast aesthetic with functional color
 - Do not use very thin strokes for borders; a 1px solid stroke in Ink (#000000) or Canvas (#fafafa) is typical for emphasis or separation.
 - Do not use letter-spacing values other than 'normal' for Neue Montreal, as this typeface relies on its natural spacing.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #fafafa | Primary page background and default card background. |
+| 1 | Paper | #ededed | Secondary lightweight surface for cards and some button backgrounds, subtle elevation. |
+
+## Imagery
+
+The visual language for imagery varies: hero sections feature large, atmospheric photography or blurred, abstract product shots, often with a dark overlay to provide contrast for white text. Other sections use product-focused imagery (e.g., food items relevant to font names) which are often full-bleed or large-scale background elements. Icons are minimal, typically outlined and black on light backgrounds, or white on dark sections, keeping focus on typography. Imagery serves as evocative atmosphere or direct content showcase rather than decorative flourishes.
+
+## Layout
 
 The page primarily uses a full-bleed layout for hero sections and large image blocks, with content centered within these expansive areas. Subsequent sections typically maintain a maximum content width, creating a spacious, readable flow. The hero pattern features large, centered headlines and calls-to-action over an image background. Vertical rhythm is established by section gaps around 92px. Content often alternates between large textual displays and visual blocks. There are instances of 4-column card grids for features, particularly for font showcases. Navigation is a sticky top bar, minimalist and un-intrusive.
 
-### Imagery
+## Similar Brands
 
-The visual language for imagery varies: hero sections feature large, atmospheric photography or blurred, abstract product shots, often with a dark overlay to provide contrast for white text. Other sections use product-focused imagery (e.g., food items relevant to font names) which are often full-bleed or large-scale background elements. Icons are minimal, typically outlined and black on light backgrounds, or white on dark sections, keeping focus on typography. Imagery serves as evocative atmosphere or direct content showcase rather than decorative flourishes.
+- **Fonts.com** — Similar focus on presenting typefaces with large visual examples and detailed information within a clean, primarily light interface.
+- **Google Fonts** — Emphasizes typography with expansive previews and clear, functional UI primarily on a white background, featuring minimal color for accents.
+- **Future Fonts** — Shares the use of large, experimental typography as hero elements and a similar card-based layout for font showcases on a light base.
+- **Displaay Type Foundry** — Utilizes a comparable monochromatic base with strong typographic hierarchy and specific color accents for status indicators or calls to action.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ink: #000000;
+  --color-canvas: #fafafa;
+  --color-paper: #ededed;
+  --color-slate: #666666;
+  --color-alert-red: #ff2f00;
+  --color-update-yellow: #ffb700;
+  --color-early-access-blue: #bfe0ff;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --font-neue-montreal-semibold: 'neue-montreal-semibold', Inter;
+  --font-neue-york-normal-bold: 'neue-york-normal-bold', Inter;
+  --font-neue-york-normal-normal-bold: 'neue-york-normal-normal-bold', Inter;
+  --font-frama-semibold: 'frama-semibold', Figtree;
+  --font-kyoto-semibold: 'kyoto-semibold', DM Sans;
+  --font-neue-gstaad-normal-bold: 'neue-gstaad-normal-bold', Poppins;
+  --font-palma-fizzy-heavy: 'palma-fizzy-heavy', Montserrat;
+  --font-mori-bold: 'mori-bold', Roboto;
+  --font-museum-light: 'museum-light', Open Sans Light;
+  --font-neue-corp-normal-semibold: 'neue-corp-normal-semibold', Titillium Web;
+  --font-watch-medium: 'watch-medium', Lexend;
+  --font-monument-narrow-medium: 'monument-narrow-medium', IBM Plex Sans Condensed;
+  --font-model-plastic-regular: 'model-plastic-regular', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --text-subheading-sm: 18px;
+  --leading-subheading-sm: 1.2;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.17;
+  --text-heading: 36px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 121px;
+  --leading-display-sm: 1;
+  --text-display: 145px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-31: 31px;
+  --spacing-36: 36px;
+  --spacing-83: 83px;
+  --spacing-92: 92px;
+  --spacing-103: 103px;
+  --radius-cards: 20px;
+  --radius-badges: 999px;
+  --radius-inputs: 20px;
+  --radius-buttons: 20px;
+  --surface-canvas: #fafafa;
+  --surface-paper: #ededed;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ink: #000000;
+  --color-canvas: #fafafa;
+  --color-paper: #ededed;
+  --color-slate: #666666;
+  --color-alert-red: #ff2f00;
+  --color-update-yellow: #ffb700;
+  --color-early-access-blue: #bfe0ff;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --font-neue-montreal-semibold: 'neue-montreal-semibold', Inter;
+  --font-neue-york-normal-bold: 'neue-york-normal-bold', Inter;
+  --font-neue-york-normal-normal-bold: 'neue-york-normal-normal-bold', Inter;
+  --font-frama-semibold: 'frama-semibold', Figtree;
+  --font-kyoto-semibold: 'kyoto-semibold', DM Sans;
+  --font-neue-gstaad-normal-bold: 'neue-gstaad-normal-bold', Poppins;
+  --font-palma-fizzy-heavy: 'palma-fizzy-heavy', Montserrat;
+  --font-mori-bold: 'mori-bold', Roboto;
+  --font-museum-light: 'museum-light', Open Sans Light;
+  --font-neue-corp-normal-semibold: 'neue-corp-normal-semibold', Titillium Web;
+  --font-watch-medium: 'watch-medium', Lexend;
+  --font-monument-narrow-medium: 'monument-narrow-medium', IBM Plex Sans Condensed;
+  --font-model-plastic-regular: 'model-plastic-regular', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --text-subheading-sm: 18px;
+  --leading-subheading-sm: 1.2;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.17;
+  --text-heading: 36px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.1;
+  --text-display-sm: 121px;
+  --leading-display-sm: 1;
+  --text-display: 145px;
+  --leading-display: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-31: 31px;
+  --spacing-36: 36px;
+  --spacing-83: 83px;
+  --spacing-92: 92px;
+  --spacing-103: 103px;
+  --radius-cards: 20px;
+  --radius-badges: 999px;
+  --radius-inputs: 20px;
+  --radius-buttons: 20px;
+  --surface-canvas: #fafafa;
+  --surface-paper: #ededed;
+}
+```

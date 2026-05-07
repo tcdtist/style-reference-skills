@@ -1,73 +1,225 @@
 ---
 version: alpha
-name: Pa'lais
-description: Pa'lais blends nourishing organics with a playful, hand-drawn aesthetic. The system features a bright white canvas interspersed with organic, flowing colored sections. Typography is confident and layered, mixing classic serif with modern sans-serif and whimsical display fonts. Components are subtly rounded and light, emphasizing a fresh, approachable brand identity, with an occasional bold accent color to draw attention.
-colors:
-  canvas-white: "#ffffff"
-  ghost-frost: "#fbf9f6"
-  midnight-ink: "#000000"
-  shadow-tint: "#d6d6d6"
-  ocean-blue: "#234386"
-  sunny-yellow: "#ffc400"
-  lagoon-blue: "#6aa8dc"
-  desert-ochre: "#d2b68c"
-  harvest-orange: "#ed7328"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-    letterSpacing: 0.267px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 0.9
-    letterSpacing: 0.031px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 0.87
-    letterSpacing: 0.043px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.14
-    letterSpacing: 0.031px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 0.73
-spacing:
-  cardRadius: 8px
-  buttonRadius: 32px
-  elementGap: 4px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Main call to action
-  secondary-outlined-button:
-    role: Alternative call to action, less prominent actions
-  neutral-outlined-button:
-    role: General informational or secondary navigations
-  text-link-button:
-    role: Inline actions or navigational links without a background
-  elevated-recipe-card:
-    role: Showcasing recipes or product features with a subtle lift
-  ghost-card:
-    role: Content container with minimal visual impact
-  input-field:
-    role: Standard form input or search field
-  outlined-input-field:
-    role: Alternative form input with full border, more explicit interaction area
+name: "Pa'lais"
+description: "Pa'lais blends nourishing organics with a playful, hand-drawn aesthetic. The system features a bright white canvas interspersed with organic, flowing colored sections. Typography is confident and layered, mixing classic serif with modern sans-serif and whimsical display fonts. Components are subtly rounded and light, emphasizing a fresh, approachable brand identity, with an occasional bold accent color to draw attention."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.palais.bio"
+refero_style_id: "5ef5e1ff-3cb3-4383-9f66-26474409d9ae"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520733117-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520733117-thumb.jpg"
+extracted_at: "2026-04-30T03:45:59.354Z"
 ---
 
-## Overview
+# Pa'lais — Style Reference
 
-**North Star:** organic, hand-drawn vitality
+> organic, hand-drawn vitality
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Pa'lais blends nourishing organics with a playful, hand-drawn aesthetic. The system features a bright white canvas interspersed with organic, flowing colored sections. Typography is confident and layered, mixing classic serif with modern sans-serif and whimsical display fonts. Components are subtly rounded and light, emphasizing a fresh, approachable brand identity, with an occasional bold accent color to draw attention.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, form input fields, button backgrounds for ghost buttons, primary text color for inverted sections |
+| Ghost Frost | #fbf9f6 | `--color-ghost-frost` | Subtle secondary background for hero sections, soft dividing background for content blocks, providing minimal surface elevation from Canvas White |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text across light backgrounds, main icon color, subtle borders for ghost elements, default form input text |
+| Shadow Tint | #d6d6d6 | `--color-shadow-tint` | Subtle shadow tint for elevated cards, hints of depth without heavy dark contrast |
+| Ocean Blue | #234386 | `--color-ocean-blue` | Primary action button backgrounds, navigation links, main headings, body text, form input borders — provides a deep, reassuring brand anchor |
+| Sunny Yellow | #ffc400 | `--color-sunny-yellow` | Decorative illustration fill, accent shapes, a bright, energetic touch within more muted compositions |
+| Lagoon Blue | #6aa8dc | `--color-lagoon-blue` | Decorative background splashes, secondary illustration fill, a lighter, more ethereal counterpart to Ocean Blue |
+| Desert Ochre | #d2b68c | `--color-desert-ochre` | Subtle decorative illustration fills, earth-toned accent for organic elements |
+| Harvest Orange | #ed7328 | `--color-harvest-orange` | Outlined button borders and text, highlights for calls to action — provides a warm, inviting contrast to Ocean Blue |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Serif
+- **Weights:** 400
+- **Sizes:** 8px
+- **Line heights:** 1.20
+- **Role:** Utility text, small print, often appearing as highly functional but subordinate information. The classic serif adds a touch of heritage or formal detail where needed, despite its small size.
+
+### Delivery Note DEMO
+
+- **Token:** `--font-delivery-note-demo`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 16px, 28px, 32px, 56px, 58px
+- **Line heights:** 0.86, 0.90, 0.91, 1.14, 1.20
+- **Letter spacing:** 0.031em at all sizes
+- **Role:** Body text and subheadings, offering a friendly and legible sans-serif. Its slightly open letterforms and moderate tracking contribute to an inviting tone.
+
+### hwt-artz
+
+- **Token:** `--font-hwt-artz`
+- **Substitute:** Playfair Display SC
+- **Weights:** 400
+- **Sizes:** 32px, 33px, 46px
+- **Line heights:** 0.87, 1.00, 1.18, 1.20
+- **Letter spacing:** 0.043em at all sizes
+- **Role:** Prominent headings and display text, characterized by its distinctive, almost whimsical nature. The wider letter spacing helps it stand out as a decorative yet legible element.
+
+### Axiforma
+
+- **Token:** `--font-axiforma`
+- **Substitute:** Open Sans
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 15px, 16px
+- **Line heights:** 1.00, 1.21, 1.60, 1.67, 1.75, 2.00, 2.17
+- **Letter spacing:** 0.063em at 12px, 0.071em at 14px, 0.139em at 15px, 0.267em at 16px
+- **Role:** Standard body text, links, and various informational elements, providing a clean, modern, highly readable sans-serif base. Its higher letter-spacing values ensure clarity even at smaller sizes.
+
+### ITC Avant Garde Std Bk
+
+- **Token:** `--font-itc-avant-garde-std-bk`
+- **Substitute:** Gotham
+- **Weights:** 400
+- **Sizes:** 12px, 16px, 24px
+- **Line heights:** 1.00, 1.50, 1.67
+- **Letter spacing:** 0.133em at 12px, 0.200em at 16px, 0.267em at 24px
+- **Role:** Used for specific links and concise body text, this font adds a touch of geometric modernism. The generous letter spacing contributes to its distinctive, clean look.
+
+### Sandman_Fill
+
+- **Token:** `--font-sandman-fill`
+- **Substitute:** Bangers
+- **Weights:** 400
+- **Sizes:** 86px, 88px
+- **Line heights:** 0.73, 0.82
+- **Role:** Hero headlines and large, impactful display text. This highly decorative, filled display font is a signature element, bringing playfulness and strong brand personality to key messages.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Role:** Standard button text and minor informational elements, acting as a robust system font default for critical UI text where consistency is paramount.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1 | 0.267px | `--text-body` |
+| subheading | 28px | 0.9 | 0.031px | `--text-subheading` |
+| heading | 32px | 0.87 | 0.043px | `--text-heading` |
+| heading-lg | 56px | 1.14 | 0.031px | `--text-heading-lg` |
+| display | 86px | 0.73 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-102 | 102px | `--spacing-102` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-134 | 134px | `--spacing-134` |
+| spacing-190 | 190px | `--spacing-190` |
+| spacing-255 | 255px | `--spacing-255` |
+| spacing-260 | 260px | `--spacing-260` |
+| spacing-276 | 276px | `--spacing-276` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 12px |
+| cards | 8px |
+| other | 16px |
+| buttons | 32px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.05) 0px 20px 27px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.16) -14px 10px 49px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 16px |
+| elementGap | 4px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call to action
+
+Background: Ocean Blue (#234386), Text: Canvas White (#ffffff), Border: Ocean Blue (#234386), Radius: 32px, Padding: 24px vertical, 48px horizontal.
+
+### Secondary Outlined Button
+
+**Role:** Alternative call to action, less prominent actions
+
+Background: Canvas White (#ffffff), Text: Harvest Orange (#ed7328), Border: Harvest Orange (#ed7328), Radius: 32px, Padding: 24px vertical, 48px horizontal.
+
+### Neutral Outlined Button
+
+**Role:** General informational or secondary navigations
+
+Background: Canvas White (#ffffff), Text: Ocean Blue (#234386), Border: Ocean Blue (#234386), Radius: 32px, Padding: 24px vertical, 48px horizontal.
+
+### Text Link Button
+
+**Role:** Inline actions or navigational links without a background
+
+Background: Transparent, Text: Midnight Ink (#000000), Border: Transparent, Radius: 0px, Padding: 0px.
+
+### Elevated Recipe Card
+
+**Role:** Showcasing recipes or product features with a subtle lift
+
+Background: Canvas White (#ffffff), Radius: 8px (top corners), Shadow: rgba(0, 0, 0, 0.16) -14px 10px 49px 0px, Padding: 0px on top/sides, 56px bottom.
+
+### Ghost Card
+
+**Role:** Content container with minimal visual impact
+
+Background: Transparent, Radius: 0px, Shadow: None, Padding: 0px.
+
+### Input Field
+
+**Role:** Standard form input or search field
+
+Background: Canvas White (#ffffff), Text: Ocean Blue (#234386), Border: Ocean Blue (#234386) bottom border only, Radius: 0px, Padding: 0px, 10px right.
+
+### Outlined Input Field
+
+**Role:** Alternative form input with full border, more explicit interaction area
+
+Background: Transparent, Text: Ocean Blue (#234386), Border: Ocean Blue (#234386) all around, Radius: 0px, Padding: 0px, 16px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Ocean Blue (#234386) for all primary action buttons, ensuring a consistent brand call to action.
 - Apply Canvas White (#ffffff) as the default background for most content sections, fostering a light and open feel.
@@ -77,7 +229,7 @@ Pa'lais blends nourishing organics with a playful, hand-drawn aesthetic. The sys
 - Maintain a clear visual hierarchy by using Harvest Orange (#ed7328) for outlined button text and borders, offering a warm secondary action.
 - Structure most UI elements with a base 4px spacing unit, using multiples for consistency (e.g., 4px, 8px, 16px, 24px, 40px).
 
-### Don'ts
+### Don't
 
 - Avoid using Harvest Orange (#ed7328) as a filled button background; reserve it for outlined button text and borders.
 - Do not use multiple shadow values on a single UI element; adhere to the specified card shadow only for cards.
@@ -87,10 +239,154 @@ Pa'lais blends nourishing organics with a playful, hand-drawn aesthetic. The sys
 - Do not condense letter spacing in display fonts; hwt-artz and ITC Avant Garde rely on wider tracking for their visual signature.
 - Do not introduce new color shades for accents or brand elements; stick to the defined palette of Sunny Yellow, Lagoon Blue, and Harvest Orange.
 
-### Layout
+## Elevation
+
+- **Shadow 1:** `rgba(0, 0, 0, 0.05) 0px 20px 27px 0px`
+- **Shadow 2:** `rgba(0, 0, 0, 0.16) -14px 10px 49px 0px`
+
+## Imagery
+
+The visual language is characterized by a blend of stylized, hand-drawn botanical illustrations and high-quality, vibrant product photography. Illustrations are often monochrome (Ocean Blue or deep gray) or feature soft, muted colors like Desert Ochre and Lagoon Blue, appearing as elegant background motifs, abstract shapes, or decorative elements. Photography focuses on appetizing, fresh food arrangements, often with ingredients in context, rich in color and texture. Both image types are often treated with organic, flowing masks or cut-outs, creating a soft, natural aesthetic. Icons are primarily line-based, monochrome, and have a medium stroke weight. Density is balanced, with imagery often serving as atmospheric background or contextual visual alongside text blocks, rather than dominating full screens.
+
+## Layout
 
 The page maintains a centered max-width content area for readability, framed by often full-bleed decorative elements. The hero section prominently features a large, decorative text headline centered over a background that combines a soft, off-white with organic color splashes and product imagery. Sections generally alternate between full-width decorative background elements (like the orange wave) and contained, white-background content blocks. Content arrangement often uses two-column layouts, pairing descriptive text with related visuals (such as product shots or illustrations). A feature grid is employed for showcasing recipes in distinctive, elevated cards. Navigation is handled by a discreet top-bar that remains relatively compact, alongside a sticky header that likely appears on scroll.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by a blend of stylized, hand-drawn botanical illustrations and high-quality, vibrant product photography. Illustrations are often monochrome (Ocean Blue or deep gray) or feature soft, muted colors like Desert Ochre and Lagoon Blue, appearing as elegant background motifs, abstract shapes, or decorative elements. Photography focuses on appetizing, fresh food arrangements, often with ingredients in context, rich in color and texture. Both image types are often treated with organic, flowing masks or cut-outs, creating a soft, natural aesthetic. Icons are primarily line-based, monochrome, and have a medium stroke weight. Density is balanced, with imagery often serving as atmospheric background or contextual visual alongside text blocks, rather than dominating full screens.
+- **Oatly** — Similar organic, playful branding with custom typography and a focus on natural, plant-based products, often using white space and accent colors.
+- **Minor Figures** — Shares a contemporary, illustrated aesthetic with custom design elements and a vibrant but tasteful color palette for food products.
+- **Seedlip** — Utilizes botanical illustrations and a clean, premium feel that combines natural elements with sophisticated typography and distinct brand colors.
+- **Chobani** — Connects with the theme of natural, healthy food through approachable design, clear typography, and a blend of photography and subtle graphic elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ghost-frost: #fbf9f6;
+  --color-midnight-ink: #000000;
+  --color-shadow-tint: #d6d6d6;
+  --color-ocean-blue: #234386;
+  --color-sunny-yellow: #ffc400;
+  --color-lagoon-blue: #6aa8dc;
+  --color-desert-ochre: #d2b68c;
+  --color-harvest-orange: #ed7328;
+  --font-times: 'Times', Serif;
+  --font-delivery-note-demo: 'Delivery Note DEMO', Montserrat;
+  --font-hwt-artz: 'hwt-artz', Playfair Display SC;
+  --font-axiforma: 'Axiforma', Open Sans;
+  --font-itc-avant-garde-std-bk: 'ITC Avant Garde Std Bk', Gotham;
+  --font-sandman-fill: 'Sandman_Fill', Bangers;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1;
+  --tracking-body: 0.267px;
+  --text-subheading: 28px;
+  --leading-subheading: 0.9;
+  --tracking-subheading: 0.031px;
+  --text-heading: 32px;
+  --leading-heading: 0.87;
+  --tracking-heading: 0.043px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.14;
+  --tracking-heading-lg: 0.031px;
+  --text-display: 86px;
+  --leading-display: 0.73;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-102: 102px;
+  --spacing-128: 128px;
+  --spacing-134: 134px;
+  --spacing-190: 190px;
+  --spacing-255: 255px;
+  --spacing-260: 260px;
+  --spacing-276: 276px;
+  --radius-tags: 12px;
+  --radius-cards: 8px;
+  --radius-other: 16px;
+  --radius-buttons: 32px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 20px 27px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.16) -14px 10px 49px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ghost-frost: #fbf9f6;
+  --color-midnight-ink: #000000;
+  --color-shadow-tint: #d6d6d6;
+  --color-ocean-blue: #234386;
+  --color-sunny-yellow: #ffc400;
+  --color-lagoon-blue: #6aa8dc;
+  --color-desert-ochre: #d2b68c;
+  --color-harvest-orange: #ed7328;
+  --font-times: 'Times', Serif;
+  --font-delivery-note-demo: 'Delivery Note DEMO', Montserrat;
+  --font-hwt-artz: 'hwt-artz', Playfair Display SC;
+  --font-axiforma: 'Axiforma', Open Sans;
+  --font-itc-avant-garde-std-bk: 'ITC Avant Garde Std Bk', Gotham;
+  --font-sandman-fill: 'Sandman_Fill', Bangers;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1;
+  --tracking-body: 0.267px;
+  --text-subheading: 28px;
+  --leading-subheading: 0.9;
+  --tracking-subheading: 0.031px;
+  --text-heading: 32px;
+  --leading-heading: 0.87;
+  --tracking-heading: 0.043px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.14;
+  --tracking-heading-lg: 0.031px;
+  --text-display: 86px;
+  --leading-display: 0.73;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-100: 100px;
+  --spacing-102: 102px;
+  --spacing-128: 128px;
+  --spacing-134: 134px;
+  --spacing-190: 190px;
+  --spacing-255: 255px;
+  --spacing-260: 260px;
+  --spacing-276: 276px;
+  --radius-tags: 12px;
+  --radius-cards: 8px;
+  --radius-other: 16px;
+  --radius-buttons: 32px;
+  --shadow-xl: rgba(0, 0, 0, 0.05) 0px 20px 27px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.16) -14px 10px 49px 0px;
+}
+```
