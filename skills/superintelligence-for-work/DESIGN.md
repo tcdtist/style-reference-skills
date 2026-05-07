@@ -1,77 +1,158 @@
 ---
 version: alpha
-name: Superintelligence for work
-description: Sana embodies a high-contrast, polished AI platform aesthetic: a largely white canvas punctuated by deep dark text and occasional vibrant accents. Components are lightweight and confident, favoring rounded shapes and minimal elevation. Typography is distinctive with a custom sans-serif that uses precise letter-spacing for a sophisticated, modern feel. Color appears primarily as functional cues, highlighting calls to action or distinguishing interactive elements within an otherwise achromatic UI.
-colors:
-  canvas-white: "#ffffff"
-  ghost-fog: "#efefed"
-  midnight-ink: "#090909"
-  abyssal-black: "#000000"
-  sterling-gray: "#d9d9d9"
-  action-blue: "#0057f3"
-  warning-orange: "#ff5102"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.49
-    letterSpacing: -0.056px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: -0.064px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.1
-    letterSpacing: -0.32px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.1
-    letterSpacing: -0.44px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.1
-    letterSpacing: -0.96px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 83px
-    lineHeight: 0.95
-    letterSpacing: -2.49px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 32px
-  elementGap: 16px
-  sectionGap: 64px
-components:
-  main-call-to-action-button:
-    role: Interactive element
-  secondary-call-to-action-button:
-    role: Interactive element
-  call-to-action-button-dark:
-    role: Interactive element
-  ghost-button-book-an-intro:
-    role: Interactive element
-  outlined-button-watch-video:
-    role: Interactive element
-  feature-card-subtle-bg:
-    role: Information display
-  feature-card-large-radius:
-    role: Information display
-  navigation-link:
-    role: Interactive element
+name: "Superintelligence for work"
+description: "Sana embodies a high-contrast, polished AI platform aesthetic: a largely white canvas punctuated by deep dark text and occasional vibrant accents. Components are lightweight and confident, favoring rounded shapes and minimal elevation. Typography is distinctive with a custom sans-serif that uses precise letter-spacing for a sophisticated, modern feel. Color appears primarily as functional cues, highlighting calls to action or distinguishing interactive elements within an otherwise achromatic UI."
+theme: "light"
+industry: "ai"
+source_url: "https://sanalabs.com"
+refero_style_id: "1db2adc9-2f10-4f20-af1b-27fa4b25f729"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508161966-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508161966-thumb.jpg"
+extracted_at: "2026-04-30T00:16:29.666Z"
 ---
 
-## Overview
+# Superintelligence for work — Style Reference
 
-**North Star:** AI Blueprint on Polished Glass
+> AI Blueprint on Polished Glass
+
+**Theme:** light
+
+**Industry:** ai
 
 Sana embodies a high-contrast, polished AI platform aesthetic: a largely white canvas punctuated by deep dark text and occasional vibrant accents. Components are lightweight and confident, favoring rounded shapes and minimal elevation. Typography is distinctive with a custom sans-serif that uses precise letter-spacing for a sophisticated, modern feel. Color appears primarily as functional cues, highlighting calls to action or distinguishing interactive elements within an otherwise achromatic UI.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card backgrounds, button backgrounds for ghost/outlined states, text on dark backgrounds |
+| Ghost Fog | #efefed | `--color-ghost-fog` | Subtle background for UI sections and elevated cards, providing gentle visual separation from the main canvas |
+| Midnight Ink | #090909 | `--color-midnight-ink` | Primary text, headings, most iconography, borders, and input text – a core color for content and structure |
+| Abyssal Black | #000000 | `--color-abyssal-black` | Headings on light backgrounds, filled button backgrounds, and strong accent borders for interactive elements |
+| Sterling Gray | #d9d9d9 | `--color-sterling-gray` | Subtle borders, dividers, and background elements, especially in footers or less prominent UI areas |
+| Action Blue | #0057f3 | `--color-action-blue` | Primary call-to-action buttons – a vivid, energetic blue that draws immediate attention |
+| Warning Orange | #ff5102 | `--color-warning-orange` | Orange action color for filled buttons, selected navigation states, and focused conversion moments |
+
+## Tokens — Typography
+
+### Sana Sans
+
+- **Token:** `--font-sana-sans`
+- **Substitute:** Inter
+- **Weights:** 400, 450, 500
+- **Sizes:** 14px, 15px, 16px, 32px, 40px, 48px, 83px
+- **Line heights:** 0.95, 1.00, 1.10, 1.23, 1.40, 1.49, 1.60
+- **Letter spacing:** -0.0300em (at 83px), -0.0200em (at 48px), -0.0110em (at 40px), -0.0100em (at 32px), -0.0040em (at 16px)
+- **OpenType features:** "kern"
+- **Role:** All textual elements on the site, from large display headings to fine print. The custom Sana Sans ensures a distinct brand voice through precise tracking and varied weights, establishing authority without formality. The tight letter-spacing on larger sizes creates a sense of precision and modernism.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.49 | -0.056px | `--text-caption` |
+| body | 16px | 1.4 | -0.064px | `--text-body` |
+| subheading | 32px | 1.1 | -0.32px | `--text-subheading` |
+| heading-sm | 40px | 1.1 | -0.44px | `--text-heading-sm` |
+| heading | 48px | 1.1 | -0.96px | `--text-heading` |
+| display | 83px | 0.95 | -2.49px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-182 | 182px | `--spacing-182` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| buttons | 32px |
+| navigation | 6px |
+| largeFeatures | 24px |
+| specialButtons | 36px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+| cardPadding | 40px |
+| elementGap | 16px |
+
+## Components
+
+### Main Call to Action Button
+
+**Role:** Interactive element
+
+Filled button with 'Action Blue' (#0057f3) background, 'Canvas White' text, and a generous 32px border-radius, giving it a soft, approachable feel. Padding is 10px vertical and 16px horizontal to ensure a comfortable tap target.
+
+### Secondary Call to Action Button
+
+**Role:** Interactive element
+
+Filled button with 'Warning Orange' (#ff5102) background, 'Canvas White' text, and 32px border-radius. Padding is 10px vertical and 16px horizontal.
+
+### Call to Action Button (Dark)
+
+**Role:** Interactive element
+
+Black filled button with 'Abyssal Black' (#000000) background, 'Canvas White' text, and 32px border-radius for high contrast. Padding is 10px vertical and 16px horizontal.
+
+### Ghost Button (Book an Intro)
+
+**Role:** Interactive element
+
+Black button with 'Abyssal Black' (#000000) background and 'Canvas White' text, but with a specific 36px border-radius and minimal vertical padding (4px top, 0px bottom), suggesting a smaller, more integrated control.
+
+### Outlined Button (Watch video)
+
+**Role:** Interactive element
+
+Button with 'Canvas White' (#ffffff) background, 'Abyssal Black' (#000000) text and border, maintaining a 32px border-radius and 10px vertical, 16px horizontal padding. Integrates into surfaces for less prominence than filled buttons.
+
+### Feature Card (Subtle BG)
+
+**Role:** Information display
+
+Card with 'Ghost Fog' (#efefed) background, 16px border-radius, and generous interior padding (64px top, 43px horizontal) for structured content presentation. No explicit shadow, relying on background color for elevation.
+
+### Feature Card (Large Radius)
+
+**Role:** Information display
+
+Card with no background, 24px border-radius, and internal padding of 40px on all sides, used for more prominent content blocks or to create internal grouping without a strong visual boundary.
+
+### Navigation Link
+
+**Role:** Interactive element
+
+Text link using 'Midnight Ink' (#090909) with Sana Sans font. Features a subtle 6px border-radius for containing small interactive elements within navigation, and horizontal padding of 8px to 16px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Midnight Ink' (#090909) and 'Abyssal Black' (#000000) for all primary text and headings, ensuring high contrast against light backgrounds.
 - Use 'Canvas White' (#ffffff) as the default page background and for ghost-style interactive elements.
@@ -81,7 +162,7 @@ Sana embodies a high-contrast, polished AI platform aesthetic: a largely white c
 - Employ rounded corners consistently: 32px for most buttons and 16px for cards, giving elements a soft, approachable character.
 - Utilize 16px as the primary value for horizontal and vertical spacing between related elements and for internal component padding to maintain comfortable density.
 
-### Don'ts
+### Don't
 
 - Avoid arbitrary color usage; limit chromatic colors strictly to 'Action Blue' (#0057f3) and 'Warning Orange' (#ff5102) for interactive elements.
 - Do not introduce strong shadows or complex elevation schemes; the design relies on subtle background color shifts for depth.
@@ -91,10 +172,131 @@ Sana embodies a high-contrast, polished AI platform aesthetic: a largely white c
 - Do not use dark backgrounds for large content areas; the system is designed for a light-themed interface with dark typography.
 - Do not use generic system fonts; the custom Sana Sans is integral to the brand's visual identity.
 
-### Layout
+## Imagery
+
+The site uses a mix of realistic product screenshots and staged photography. Product visuals often feature a clean, bright aesthetic against light backgrounds, emphasizing the UI. Photography includes close-ups of people, often with a natural, unposed style that conveys approachability and authentic engagement, rather than highly stylized studio shots. Illustrations are minimal and typically brand-aligned, such as simplified vector icons or subtle graphic elements within UI. Imagery serves both to showcase the product's functionality and to foster a sense of human connection, with a density that allows generous white space for a premium feel.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though the hero section can be full-bleed. The hero pattern prominently features a centered, bold headline over a clean background. Sections typically follow a consistent vertical rhythm with comfortable spacing, often alternating between a 'Canvas White' and 'Ghost Fog' background to delineate content blocks. Content arrangement favors a balanced, often centered, stacking of elements, occasionally incorporating two-column layouts for text-plus-image sections. There's a subtle use of a card-like grid for features, maintaining generous padding and rounded corners. Navigation is a simple, fixed top bar with minimal links.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of realistic product screenshots and staged photography. Product visuals often feature a clean, bright aesthetic against light backgrounds, emphasizing the UI. Photography includes close-ups of people, often with a natural, unposed style that conveys approachability and authentic engagement, rather than highly stylized studio shots. Illustrations are minimal and typically brand-aligned, such as simplified vector icons or subtle graphic elements within UI. Imagery serves both to showcase the product's functionality and to foster a sense of human connection, with a density that allows generous white space for a premium feel.
+- **Workday** — High-contrast typography, focus on structured content, and restrained use of color within an enterprise SaaS context.
+- **Stripe** — Clean, spacious layouts, strong typography, and a balance of technical and human elements, with a sophisticated but understated aesthetic.
+- **Linear** — Emphasis on precise typography and minimal UI, using subtle background shifts instead of heavy shadows for hierarchy.
+- **Amie** — Sunlit productivity workspace feel with white canvas, flat product surfaces, and one vivid accent color for key actions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ghost-fog: #efefed;
+  --color-midnight-ink: #090909;
+  --color-abyssal-black: #000000;
+  --color-sterling-gray: #d9d9d9;
+  --color-action-blue: #0057f3;
+  --color-warning-orange: #ff5102;
+  --font-sana-sans: 'Sana Sans', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.49;
+  --tracking-caption: -0.056px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.064px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.1;
+  --tracking-subheading: -0.32px;
+  --text-heading-sm: 40px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.44px;
+  --text-heading: 48px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.96px;
+  --text-display: 83px;
+  --leading-display: 0.95;
+  --tracking-display: -2.49px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-75: 75px;
+  --spacing-96: 96px;
+  --spacing-120: 120px;
+  --spacing-182: 182px;
+  --radius-cards: 16px;
+  --radius-buttons: 32px;
+  --radius-navigation: 6px;
+  --radius-largefeatures: 24px;
+  --radius-specialbuttons: 36px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ghost-fog: #efefed;
+  --color-midnight-ink: #090909;
+  --color-abyssal-black: #000000;
+  --color-sterling-gray: #d9d9d9;
+  --color-action-blue: #0057f3;
+  --color-warning-orange: #ff5102;
+  --font-sana-sans: 'Sana Sans', Inter;
+  --text-caption: 14px;
+  --leading-caption: 1.49;
+  --tracking-caption: -0.056px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: -0.064px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.1;
+  --tracking-subheading: -0.32px;
+  --text-heading-sm: 40px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.44px;
+  --text-heading: 48px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.96px;
+  --text-display: 83px;
+  --leading-display: 0.95;
+  --tracking-display: -2.49px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-43: 43px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-75: 75px;
+  --spacing-96: 96px;
+  --spacing-120: 120px;
+  --spacing-182: 182px;
+  --radius-cards: 16px;
+  --radius-buttons: 32px;
+  --radius-navigation: 6px;
+  --radius-largefeatures: 24px;
+  --radius-specialbuttons: 36px;
+}
+```

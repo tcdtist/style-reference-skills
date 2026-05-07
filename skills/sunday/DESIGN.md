@@ -1,83 +1,162 @@
 ---
 version: alpha
-name: sunday
-description: sunday's visual system evokes a sleek, high-tech interface with a strong sense of precision. Its foundation is a stark monochrome canvas, primarily white with deep black accents, creating high contrast. Interactivity is signaled by a singular, vibrant pinkish-purple hue, used sparingly for emphasis. Typography is impactful yet restrained, maintaining clarity in a compact layout. Components are lightweight, featuring soft rounded corners and subtle elevation for hierarchy, avoiding heavy visual elements to maintain an airy feel.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-  subtle-gray: "#736f7c"
-  border-ash: "#dedede"
-  accent-slate: "#7f7f7f"
-  ghost-shadow: "#8b8893"
-  divider-silver: "#bdbdbd"
-  vivid-orchid: "#ff17e9"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.78
-    letterSpacing: 0.96px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: 1.12px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.25
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.14
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.13
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.95
-    letterSpacing: -0.48px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.8
-    letterSpacing: -1.92px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 200px
-    lineHeight: 1
-    letterSpacing: -10px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 64px
-  elementGap: 8px
-  sectionGap: 56px
-components:
-  primary-filled-button:
-    role: Call to action
-  ghost-link-button:
-    role: Secondary action or link
-  standard-card:
-    role: Content container, feature display
-  asymmetric-section-card:
-    role: Prominent content section
-  text-input-field:
-    role: User data entry
-  navigation-bar:
-    role: Global navigation
-  highlight-badge:
-    role: Categorization, status indicator
+name: "sunday"
+description: "sunday's visual system evokes a sleek, high-tech interface with a strong sense of precision. Its foundation is a stark monochrome canvas, primarily white with deep black accents, creating high contrast. Interactivity is signaled by a singular, vibrant pinkish-purple hue, used sparingly for emphasis. Typography is impactful yet restrained, maintaining clarity in a compact layout. Components are lightweight, featuring soft rounded corners and subtle elevation for hierarchy, avoiding heavy visual elements to maintain an airy feel."
+theme: "light"
+industry: "fintech"
+source_url: "https://sundayapp.com"
+refero_style_id: "d703d9f7-4821-468e-8fe4-c8b5790b00ed"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521169635-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521169635-thumb.jpg"
+extracted_at: "2026-04-30T03:53:20.709Z"
 ---
 
-## Overview
+# sunday — Style Reference
 
-**North Star:** Monochromatic Precision, Neon Pulse
+> Monochromatic Precision, Neon Pulse
+
+**Theme:** light
+
+**Industry:** fintech
 
 sunday's visual system evokes a sleek, high-tech interface with a strong sense of precision. Its foundation is a stark monochrome canvas, primarily white with deep black accents, creating high contrast. Interactivity is signaled by a singular, vibrant pinkish-purple hue, used sparingly for emphasis. Typography is impactful yet restrained, maintaining clarity in a compact layout. Components are lightweight, featuring soft rounded corners and subtle elevation for hierarchy, avoiding heavy visual elements to maintain an airy feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, ghost button text and borders |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, button backgrounds, strong borders |
+| Subtle Gray | #736f7c | `--color-subtle-gray` | Muted text, placeholder text |
+| Border Ash | #dedede | `--color-border-ash` | Light border lines, input outlines |
+| Accent Slate | #7f7f7f | `--color-accent-slate` | Secondary navigation text, subtle icon accents |
+| Ghost Shadow | #8b8893 | `--color-ghost-shadow` | Tertiary navigation text, faint shadow tint |
+| Divider Silver | #bdbdbd | `--color-divider-silver` | Fine separators, very light text |
+| Vivid Orchid | #ff17e9 | `--color-vivid-orchid` | Pink state accent for badges, validation surfaces, and short status labels. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Helvetica Neue
+
+- **Token:** `--font-helvetica-neue`
+- **Substitute:** Arial, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 18px, 24px, 32px, 48px, 64px, 200px
+- **Line heights:** 0.80, 0.95, 1.00, 1.13, 1.14, 1.20, 1.25, 1.33, 1.78
+- **Letter spacing:** -0.0500em at 200px (display), -0.0300em at 64px (display-lg), -0.0100em at 48px (heading-lg), 0.0800em at 12-14px (caption/badge) and normal at other sizes.
+- **Role:** The sole typeface, Helvetica Neue, is used across all text elements. Its clean, geometric form supports the modern aesthetic. Varying weights, sizes, and a precise letter-spacing system create hierarchy, ensuring impact for headlines and legibility for body text without introducing visual noise.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.78 | 0.96px | `--text-caption` |
+| body-sm | 14px | 1.2 | 1.12px | `--text-body-sm` |
+| body | 16px | 1.25 | — | `--text-body` |
+| subheading | 18px | 1.14 | — | `--text-subheading` |
+| heading | 24px | 1.13 | — | `--text-heading` |
+| heading-lg | 48px | 0.95 | -0.48px | `--text-heading-lg` |
+| display-lg | 64px | 0.8 | -1.92px | `--text-display-lg` |
+| display | 200px | 1 | -10px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| badges | 100px |
+| inputs | 16px |
+| buttons | 64px |
+| large-cards | 48px 0px 0px 48px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.15) 0px 12px 60px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1328px |
+| sectionGap | 56px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action
+
+Filled button with 'Midnight Ink' background, 'Canvas White' text, and a distinctive pill-shaped '64px' border-radius. Padding is `0px` vertical and `28px` horizontal.
+
+### Ghost Link Button
+
+**Role:** Secondary action or link
+
+Text-only button with 'Midnight Ink' text, transparent background, and no border-radius. Used for navigation or less prominent actions. Padding is `0`.
+
+### Standard Card
+
+**Role:** Content container, feature display
+
+Card with a subtle light gray background 'rgba(14, 7, 29, 0.04)', '16px' border-radius, and generous '40px' padding on all sides. No shadow.
+
+### Asymmetric Section Card
+
+**Role:** Prominent content section
+
+Large card with 'rgba(14, 7, 29, 0.04)' background and an asymmetric '48px 0px 0px 48px' border-radius. Features substantial '80px' padding.
+
+### Text Input Field
+
+**Role:** User data entry
+
+Input field with transparent background, 'Midnight Ink' text, 'Subtle Gray' placeholder, a '16px' border-radius, and a '1px solid Border Ash' bottom border. '16px' padding on left, right, and top.
+
+### Navigation Bar
+
+**Role:** Global navigation
+
+Top fixed navigation with 'Canvas White' background and a subtle shadow 'rgba(0, 0, 0, 0.15) 0px 12px 60px 0px'. Elements spaced by `8px`. Interactive items use 'Midnight Ink' for primary, 'Accent Slate' for secondary.
+
+### Highlight Badge
+
+**Role:** Categorization, status indicator
+
+Text badge ('Vivid Orchid' text, transparent background) indicating a specific status or category, often seen in all caps with `0.08em` letter-spacing. Has a '100px' (pill-shaped) border-radius when actively used.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high-contrast text against backgrounds; use 'Midnight Ink' on 'Canvas White' or vice-versa.
 - Apply 'Vivid Orchid' sparingly, only for interactive elements, highlights, and status indicators to maintain its impact.
@@ -87,7 +166,7 @@ sunday's visual system evokes a sleek, high-tech interface with a strong sense o
 - Employ the navigation bar's shadow 'rgba(0, 0, 0, 0.15) 0px 12px 60px 0px' for key elevated elements only, such as fixed headers or modals.
 - Ensure section transitions are clear using '56px' vertical spacing between distinct content blocks or by alternating surface backgrounds.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional saturated colors; 'Vivid Orchid' is the sole accent color.
 - Do not use overly bold or heavy typography; 'Helvetica Neue' weight 400 is the standard, and heavier weights should be avoided even for large headlines.
@@ -97,10 +176,158 @@ sunday's visual system evokes a sleek, high-tech interface with a strong sense o
 - Do not vary line-height significantly from the established type scale; maintain a precise, compact rhythm.
 - Never use '0px' border-radius on interactive elements unless specifically for a ghost link, as all actionable components have distinct rounding.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #ffffff | Primary page background |
+| 1 | Standard Card Background | #0e071d0a | Content cards and feature blocks |
+
+## Elevation
+
+- **Navigation Bar:** `rgba(0, 0, 0, 0.15) 0px 12px 60px 0px`
+
+## Imagery
+
+The imagery features highly polished product screenshots and candid, high-quality photography, often depicting people interacting with the payment system in a restaurant setting. Product shots tend to be isolated or tightly cropped, emphasizing the device or app interface. Photography is realistic, well-lit, and clean, with a focus on human connection and ease of use. Icons, when present, are simple, outlined, and monochromatic, typically 'Midnight Ink' or 'Accent Slate'. The density of imagery is balanced, serving to punctuate text sections and demonstrate product features rather than overwhelming the page.
+
+## Layout
 
 The page maintains a centered, max-width '1328px' contained layout. The hero section features a left-aligned, commanding headline adjacent to a product visual on the right, creating an engaging split-layout. Subsequent sections largely follow a consistent vertical rhythm with '56px' section gaps. Content often alternates between dark and light backgrounds. Feature sections implement a card-grid pattern, sometimes with asymmetric '48px 0px 0px 48px' radii for visual distinction, presenting information in compact, digestible blocks. The navigation is a sticky top bar, providing global access with a subtle elevation shadow.
 
-### Imagery
+## Similar Brands
 
-The imagery features highly polished product screenshots and candid, high-quality photography, often depicting people interacting with the payment system in a restaurant setting. Product shots tend to be isolated or tightly cropped, emphasizing the device or app interface. Photography is realistic, well-lit, and clean, with a focus on human connection and ease of use. Icons, when present, are simple, outlined, and monochromatic, typically 'Midnight Ink' or 'Accent Slate'. The density of imagery is balanced, serving to punctuate text sections and demonstrate product features rather than overwhelming the page.
+- **Stripe** — Shares a sophisticated, high-contrast monochrome aesthetic with a strong focus on clean typography and functional UI.
+- **Revolut** — Exhibits a similar use of stark white/black backgrounds paired with a single, vibrant accent color to highlight interactivity.
+- **Linear** — Features precise, uncluttered layouts, a clear typographic hierarchy, and a restrained color palette primarily relying on neutrals with strategic color accents.
+- **Plaid** — Employs a professional, clean interface with strong emphasis on product visuals, high contrast, and refined typography over heavy decorative elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-subtle-gray: #736f7c;
+  --color-border-ash: #dedede;
+  --color-accent-slate: #7f7f7f;
+  --color-ghost-shadow: #8b8893;
+  --color-divider-silver: #bdbdbd;
+  --color-vivid-orchid: #ff17e9;
+  --font-helvetica-neue: 'Helvetica Neue', Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.78;
+  --tracking-caption: 0.96px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 1.12px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --text-subheading: 18px;
+  --leading-subheading: 1.14;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -0.48px;
+  --text-display-lg: 64px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -1.92px;
+  --text-display: 200px;
+  --leading-display: 1;
+  --tracking-display: -10px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-cards: 16px;
+  --radius-badges: 100px;
+  --radius-inputs: 16px;
+  --radius-buttons: 64px;
+  --radius-large-cards: 48px 0px 0px 48px;
+  --shadow-xl: rgba(0, 0, 0, 0.15) 0px 12px 60px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-standard-card-background: #0e071d0a;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --color-subtle-gray: #736f7c;
+  --color-border-ash: #dedede;
+  --color-accent-slate: #7f7f7f;
+  --color-ghost-shadow: #8b8893;
+  --color-divider-silver: #bdbdbd;
+  --color-vivid-orchid: #ff17e9;
+  --font-helvetica-neue: 'Helvetica Neue', Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.78;
+  --tracking-caption: 0.96px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 1.12px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --text-subheading: 18px;
+  --leading-subheading: 1.14;
+  --text-heading: 24px;
+  --leading-heading: 1.13;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -0.48px;
+  --text-display-lg: 64px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -1.92px;
+  --text-display: 200px;
+  --leading-display: 1;
+  --tracking-display: -10px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-cards: 16px;
+  --radius-badges: 100px;
+  --radius-inputs: 16px;
+  --radius-buttons: 64px;
+  --radius-large-cards: 48px 0px 0px 48px;
+  --shadow-xl: rgba(0, 0, 0, 0.15) 0px 12px 60px 0px;
+  --surface-canvas-white: #ffffff;
+  --surface-standard-card-background: #0e071d0a;
+}
+```

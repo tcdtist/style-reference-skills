@@ -1,104 +1,201 @@
 ---
 version: alpha
-name: Superhuman
-description: Superhuman feels like a cinematic productivity cockpit — moody atmospheric photography bleeds behind glassmorphic UI panels while the page itself stays anchored in warm parchment neutrals. The hero is a full-viewport dusk photograph with overlapping product panels floating at various depths, then the page snaps to a warm off-white (#f2f0eb) canvas for feature content. Custom variable font 'Super Sans VF' is the entire typographic system — tight negative tracking at display sizes (-0.028em at 64px) makes headlines feel compressed and urgent. Violet (#714cb6) is the sole chromatic system accent, appearing as outlined ghost buttons and focus rings against otherwise achromatic surfaces. The dark muted-red (#421d24) surfaces only in the announcement banner and footer, creating a bracketed frame around the entire page.
-colors:
-  parchment-canvas: "#f2f0eb"
-  ink: "#292827"
-  bone: "#ffffff"
-  fog: "#e3e3e2"
-  driftwood: "#dcd7d3"
-  graphite: "#666666"
-  aubergine: "#421d24"
-  aubergine-deep: "#4e242c"
-  iris: "#714cb6"
-  indigo-glow: "#353088"
-  lavender-chip: "#d4c7ff"
-  hero-dusk-gradient: "#a8a4d8"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.3
-    letterSpacing: -0.14px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.25
-    letterSpacing: -0.31px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.2
-    letterSpacing: -0.62px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -1.3px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 0.96
-    letterSpacing: -1.79px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 8px
-  elementGap: 8px
-  sectionGap: 64px
-components:
-  announcement-banner:
-    role: 
-  suite-tab-selector:
-    role: 
-  get-superhuman-cta-button-group:
-    role: 
-  announcement-banner:
-    role: Full-width top-of-page notification strip
-  primary-navigation:
-    role: Sticky top navigation bar
-  hero-section:
-    role: Full-viewport brand opening
-  get-superhuman-cta-button:
-    role: Primary hero call-to-action
-  sign-up-button:
-    role: Nav-level signup action
-  ghost-outlined-button-iris:
-    role: Secondary action on light surfaces
-  suite-tab-button:
-    role: Product switcher tabs (Mail / Grammarly / Coda / Go)
-  social-proof-logo-bar:
-    role: Trust logos strip
-  product-feature-card:
-    role: Per-product detail panel inside tab sections
-  glassmorphic-hero-panel:
-    role: Product UI preview panels floating in hero
-  footer:
-    role: Full-width site footer
+name: "Superhuman"
+description: "Superhuman feels like a cinematic productivity cockpit — moody atmospheric photography bleeds behind glassmorphic UI panels while the page itself stays anchored in warm parchment neutrals. The hero is a full-viewport dusk photograph with overlapping product panels floating at various depths, then the page snaps to a warm off-white (#f2f0eb) canvas for feature content. Custom variable font 'Super Sans VF' is the entire typographic system — tight negative tracking at display sizes (-0.028em at 64px) makes headlines feel compressed and urgent. Violet (#714cb6) is the sole chromatic system accent, appearing as outlined ghost buttons and focus rings against otherwise achromatic surfaces. The dark muted-red (#421d24) surfaces only in the announcement banner and footer, creating a bracketed frame around the entire page."
+theme: "mixed"
+industry: "saas"
+source_url: "https://superhuman.com"
+refero_style_id: "418b374a-be64-44f0-b17e-1d45308c7e62"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777418980534-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777418980534-thumb.jpg"
+extracted_at: "2026-04-28T23:31:39.739Z"
 ---
 
-## Overview
+# Superhuman — Style Reference
 
-**North Star:** Cinematic cockpit behind warm parchment — a productivity instrument panel where atmospheric photography meets structured cream-toned UI surfaces.
+> Cinematic cockpit behind warm parchment — a productivity instrument panel where atmospheric photography meets structured cream-toned UI surfaces.
+
+**Theme:** mixed
+
+**Industry:** saas
 
 Superhuman feels like a cinematic productivity cockpit — moody atmospheric photography bleeds behind glassmorphic UI panels while the page itself stays anchored in warm parchment neutrals. The hero is a full-viewport dusk photograph with overlapping product panels floating at various depths, then the page snaps to a warm off-white (#f2f0eb) canvas for feature content. Custom variable font 'Super Sans VF' is the entire typographic system — tight negative tracking at display sizes (-0.028em at 64px) makes headlines feel compressed and urgent. Violet (#714cb6) is the sole chromatic system accent, appearing as outlined ghost buttons and focus rings against otherwise achromatic surfaces. The dark muted-red (#421d24) surfaces only in the announcement banner and footer, creating a bracketed frame around the entire page.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment Canvas | #f2f0eb | `--color-parchment-canvas` | Primary page background below the hero; the warm, slightly toasted off-white that distinguishes this from sterile white SaaS canvases |
+| Ink | #292827 | `--color-ink` | Primary text, borders, nav labels — near-black with a warm brown undertone instead of pure black |
+| Bone | #ffffff | `--color-bone` | Card surfaces, hero text, button text on dark backgrounds |
+| Fog | #e3e3e2 | `--color-fog` | Subtle UI dividers, light button borders, tab backgrounds |
+| Driftwood | #dcd7d3 | `--color-driftwood` | Secondary dividers and section rule lines |
+| Graphite | #666666 | `--color-graphite` | Secondary body text — feature descriptions and supporting copy beneath headings |
+| Aubergine | #421d24 | `--color-aubergine` | Announcement banner background, footer background — deep muted red that brackets the page top and bottom |
+| Aubergine Deep | #4e242c | `--color-aubergine-deep` | SVG icon fills and border accents within dark brand surfaces |
+| Iris | #714cb6 | `--color-iris` | Ghost/outlined action borders, link text, focus rings — the only chromatic accent across light UI surfaces; outlined ghost 'Get the suite' button uses this as its border and text |
+| Indigo Glow | #353088 | `--color-indigo-glow` | Focus shadow on primary CTA links (inset ring depth cue) |
+| Lavender Chip | #d4c7ff | `--color-lavender-chip` | Sign-up button fill on dark hero — soft violet chip against dark photography |
+| Hero Dusk Gradient | #a8a4d8 | `--color-hero-dusk-gradient` | Full-viewport hero background gradient overlaying the dusk photography; pastel violet-to-blue-to-purple sweep |
+
+## Tokens — Typography
+
+### Super Sans VF
+
+- **Token:** `--font-super-sans-vf`
+- **Substitute:** Inter Variable or Neue Haas Grotesk
+- **Weights:** 460, 500, 540, 600, 700
+- **Sizes:** 12px, 14px, 16px, 18px, 19px, 20px, 22px, 26px, 28px, 48px, 64px
+- **Line heights:** 0.76–1.50 (0.76 at display, 1.20–1.50 at body)
+- **Letter spacing:** -0.028em at 64px, -0.027em at 48px, -0.022em at 28px, -0.020em at 26px, -0.014em at 22px, -0.008em at 18-20px
+- **Role:** The sole typeface for all text — headlines, body, nav, buttons, captions. Custom variable font with tight negative tracking baked into large sizes: -0.028em at 64px collapses letterforms until display text reads as a single compressed block. Weight 460 is the default body weight; 600–700 reserved for headlines. The variable weight axis allows granular fine-tuning not possible with static weights.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0px | `--text-caption` |
+| body-sm | 14px | 1.5 | 0px | `--text-body-sm` |
+| body | 16px | 1.5 | 0px | `--text-body` |
+| subheading | 18px | 1.3 | -0.14px | `--text-subheading` |
+| heading-sm | 22px | 1.25 | -0.31px | `--text-heading-sm` |
+| heading | 28px | 1.2 | -0.62px | `--text-heading` |
+| heading-lg | 48px | 1 | -1.3px | `--text-heading-lg` |
+| display | 64px | 0.96 | -1.79px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| links | 12px |
+| pills | 999px |
+| buttons | 8px |
+| cardsLarge | 24px |
+| announcementBanner | 16px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(113, 76, 182) 0px 0px 0px 1px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 64px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Announcement Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Suite Tab Selector
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Get Superhuman CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Announcement Banner
+
+**Role:** Full-width top-of-page notification strip
+
+Background #421d24, white text at 14px weight 500, 12px vertical padding, 16px radius on inner button. Contains ghost text link 'Learn more' with no border. Full bleed edge-to-edge above the nav.
+
+### Primary Navigation
+
+**Role:** Sticky top navigation bar
+
+White background, Ink (#292827) nav labels at 16px weight 460. Logo left-aligned. 'Sign up' uses Lavender Chip (#d4c7ff) background, Ink text, 8px radius, 6px/12px padding. 'Log in' and 'Contact sales' are ghost text links with no border. Nav transitions from transparent over hero to white with backdrop-blur on scroll (animation: page_header-fade-in).
+
+### Hero Section
+
+**Role:** Full-viewport brand opening
+
+Full-bleed dusk photography with linear-gradient(to left bottom, rgba(168,164,216,0.5), rgba(107,165,232,0.5), rgba(176,112,192,0.6), rgba(144,136,208,0.5)) overlay. White display text at 64px weight 600, line-height 0.96, letter-spacing -1.79px, centered. Subheadline at 18-20px weight 460. CTA 'Get Superhuman' is a white-background pill with Ink text, 8px radius, Iris inset shadow on focus, animated gradient rotation on hover (hero-button-gradient-angle-rotate).
+
+### Get Superhuman CTA Button
+
+**Role:** Primary hero call-to-action
+
+Background #ffffff, text #292827 at 16px weight 500, 8px radius, 12px vertical / 24px horizontal padding. Focus ring: rgb(113,76,182) 0px 0px 0px 1px inset. Includes a small arrow icon with Iris (#714cb6) tint. Animated gradient halo on hover.
+
+### Sign Up Button
+
+**Role:** Nav-level signup action
+
+Background #d4c7ff (Lavender Chip), text #292827 (Ink), 8px border-radius, 6px top/bottom padding, 12px left/right padding. No border. Sits in top-right nav cluster.
+
+### Ghost Outlined Button (Iris)
+
+**Role:** Secondary action on light surfaces
+
+Background transparent, border 1px solid #714cb6, text #714cb6, 8px radius, 6px/12px padding. Used for 'Get the suite' on the parchment canvas section.
+
+### Suite Tab Button
+
+**Role:** Product switcher tabs (Mail / Grammarly / Coda / Go)
+
+Active state: #e3e3e2 background, Ink text, 999px radius pill, 12px vertical padding. Inactive state: transparent background, Ink text, same radius. 16px horizontal padding. Icon precedes label at 16px.
+
+### Social Proof Logo Bar
+
+**Role:** Trust logos strip
+
+White card surface, 1px solid #e3e3e2 border, 0px radius (sharp edges), logos in Ink at roughly 80-120px wide each, evenly distributed in a single row. Parchment canvas background behind. 36px vertical padding.
+
+### Product Feature Card
+
+**Role:** Per-product detail panel inside tab sections
+
+White background, 16px radius, 16px padding all sides, 1px solid #e3e3e2 border. Contains product label at 12px weight 500 with Iris icon, heading at 28px weight 600, body at 16px Graphite (#666666), and a link at 14px Iris (#714cb6).
+
+### Glassmorphic Hero Panel
+
+**Role:** Product UI preview panels floating in hero
+
+Background rgba(255,255,255,0.13), backdrop-filter blur(12px), 999px radius on pill-shaped variants or 24px on rectangular panels, 12px/16px padding. White text inside. These appear as layered floating cards over the hero photograph.
+
+### Footer
+
+**Role:** Full-width site footer
+
+Background #421d24, white text throughout. Nav links at 14px weight 460. Brand logo top-left. Four column layout. 32px horizontal padding, 36px top/bottom padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use #f2f0eb as the page canvas for all content sections below the hero — never plain white (#ffffff) as the canvas background.
 - Apply Super Sans VF at weight 600–700 for all headings with letter-spacing -0.022em to -0.028em at sizes 28px and above.
@@ -108,7 +205,7 @@ Superhuman feels like a cinematic productivity cockpit — moody atmospheric pho
 - Use backdrop-filter: blur(12px) on any UI panel that overlaps the hero photography to maintain the glassmorphic depth effect.
 - Pair display headlines (64px) with line-height 0.96 — sub-1.0 line-height at display sizes is the signature compression of this system.
 
-### Don'ts
+### Don't
 
 - Don't use a pure white (#ffffff) page background for content sections — the parchment (#f2f0eb) canvas is what separates this from generic SaaS.
 - Don't apply #714cb6 as a filled button background — evidence shows it appears only as outlined borders and link text, never as a button fill.
@@ -118,14 +215,176 @@ Superhuman feels like a cinematic productivity cockpit — moody atmospheric pho
 - Don't place the aubergine (#421d24) in mid-page content sections, feature cards, or UI components — its role is structural framing (banner + footer) only.
 - Don't use rounded corners smaller than 8px on interactive elements — the minimum radius in this system is 8px; sharp 0px borders only appear on flat content containers and logo bars.
 
-### Layout
+## Surfaces
 
-Max-width approximately 1200px centered, but hero is full-bleed edge-to-edge with no container. Hero occupies 100vh with centered headline stack and CTA, product UI panels float asymmetrically left and right over the photography. Below hero: white/parchment alternating bands with 64px section gaps. Logo bar is a single full-width row with sharp borders. Suite section uses a tab switcher (pill tabs) above a large product panel — single column centered. Feature sections use 2-column text-left / product-right alternating layout. Navigation is a fixed top bar that starts transparent over the hero and fades to white with blur on scroll. Footer is 4-column grid at full width in dark aubergine. Overall rhythm is spacious with 64px between sections and 36px internal section padding.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Hero Photography | #421d24 | Full-viewport hero with dusk photography + translucent gradient overlay; dark surfaces here only |
+| 1 | Parchment Canvas | #f2f0eb | Primary content page background below hero for all feature sections |
+| 2 | Bone Card | #ffffff | Card and panel surfaces that lift off the parchment canvas |
+| 3 | Fog Divider | #e3e3e2 | Tab indicators, secondary separators, low-contrast borders on white surfaces |
 
-### Imagery
+## Elevation
+
+- **Outlined Ghost Button (Iris focus state):** `rgb(113, 76, 182) 0px 0px 0px 1px inset`
+
+## Imagery
 
 Superhuman uses full-bleed cinematic lifestyle photography in the hero — dark-toned dusk and evening skies with human subjects (woman looking upward, silhouetted figures) that read as contemplative rather than corporate. Photography is high-contrast with deep cool blues and magentas, treated with semi-transparent gradient overlays in pastel violet/blue/pink (the hero gradient system). Product UI screenshots are embedded as floating glassmorphic panels directly over the photography — not contained in device frames, just floating at depth. Below the hero, imagery shifts to pure product: email UI, document surfaces, and AI suggestions shown in white-background card panels. Illustrated abstract geometric compositions appear in promotional sections (stacked rectangle frames, golden-ratio wireframes) as editorial art rather than UI. Icons throughout are outlined mono-color at ~16-20px, using Iris (#714cb6) tint on light surfaces and white on dark surfaces. The design is moderately image-heavy in the hero and text-dominant in feature sections.
 
-### Elevation
+## Layout
 
-Superhuman uses no box-shadow elevation for cards or panels — depth is created through overlapping elements at the layout level (product UI panels floating over hero photography) and backdrop-filter: blur(12px) frosted glass on hero-overlapping panels. Shadow appears only as the Iris inset ring on the focused primary CTA.
+Max-width approximately 1200px centered, but hero is full-bleed edge-to-edge with no container. Hero occupies 100vh with centered headline stack and CTA, product UI panels float asymmetrically left and right over the photography. Below hero: white/parchment alternating bands with 64px section gaps. Logo bar is a single full-width row with sharp borders. Suite section uses a tab switcher (pill tabs) above a large product panel — single column centered. Feature sections use 2-column text-left / product-right alternating layout. Navigation is a fixed top bar that starts transparent over the hero and fades to white with blur on scroll. Footer is 4-column grid at full width in dark aubergine. Overall rhythm is spacious with 64px between sections and 36px internal section padding.
+
+## Similar Brands
+
+- **Linear** — Same single chromatic accent on ghost button borders against warm-neutral canvas, tight negative letter-spacing on display headlines, no shadow elevation
+- **Notion** — Warm off-white canvas (not pure white) as page background, sharp-edged logo strips, product UI as primary hero visual
+- **Loom** — Full-bleed dark photography hero transitioning to light content sections, glassmorphic floating UI panels over photography
+- **Arc Browser** — Muted violet/purple accent system against near-monochrome warm neutrals, cinematic lifestyle hero photography with product overlay
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment-canvas: #f2f0eb;
+  --color-ink: #292827;
+  --color-bone: #ffffff;
+  --color-fog: #e3e3e2;
+  --color-driftwood: #dcd7d3;
+  --color-graphite: #666666;
+  --color-aubergine: #421d24;
+  --color-aubergine-deep: #4e242c;
+  --color-iris: #714cb6;
+  --color-indigo-glow: #353088;
+  --color-lavender-chip: #d4c7ff;
+  --color-hero-dusk-gradient: #a8a4d8;
+  --font-super-sans-vf: 'Super Sans VF', Inter Variable or Neue Haas Grotesk;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.14px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: -0.31px;
+  --text-heading: 28px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.62px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.3px;
+  --text-display: 64px;
+  --leading-display: 0.96;
+  --tracking-display: -1.79px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --radius-cards: 16px;
+  --radius-links: 12px;
+  --radius-pills: 999px;
+  --radius-buttons: 8px;
+  --radius-cardslarge: 24px;
+  --radius-announcementbanner: 16px;
+  --shadow-xl: rgb(113, 76, 182) 0px 0px 0px 1px inset;
+  --surface-hero-photography: #421d24;
+  --surface-parchment-canvas: #f2f0eb;
+  --surface-bone-card: #ffffff;
+  --surface-fog-divider: #e3e3e2;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment-canvas: #f2f0eb;
+  --color-ink: #292827;
+  --color-bone: #ffffff;
+  --color-fog: #e3e3e2;
+  --color-driftwood: #dcd7d3;
+  --color-graphite: #666666;
+  --color-aubergine: #421d24;
+  --color-aubergine-deep: #4e242c;
+  --color-iris: #714cb6;
+  --color-indigo-glow: #353088;
+  --color-lavender-chip: #d4c7ff;
+  --color-hero-dusk-gradient: #a8a4d8;
+  --font-super-sans-vf: 'Super Sans VF', Inter Variable or Neue Haas Grotesk;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.14px;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: -0.31px;
+  --text-heading: 28px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.62px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.3px;
+  --text-display: 64px;
+  --leading-display: 0.96;
+  --tracking-display: -1.79px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-160: 160px;
+  --radius-cards: 16px;
+  --radius-links: 12px;
+  --radius-pills: 999px;
+  --radius-buttons: 8px;
+  --radius-cardslarge: 24px;
+  --radius-announcementbanner: 16px;
+  --shadow-xl: rgb(113, 76, 182) 0px 0px 0px 1px inset;
+  --surface-hero-photography: #421d24;
+  --surface-parchment-canvas: #f2f0eb;
+  --surface-bone-card: #ffffff;
+  --surface-fog-divider: #e3e3e2;
+}
+```
