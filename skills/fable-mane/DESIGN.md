@@ -1,76 +1,207 @@
 ---
 version: alpha
-name: Fable & Mane
-description: Fable & Mane evokes a spirited, naturalistic brand with a gentle, earthy canvas and flashes of energetic color. The visual system prioritizes warmth and comfort, achieved through rounded forms, soft background tones, and legible but characterful typography. Components feel approachable, often outlined or ghosted, reserving vibrant reds for clear calls to action that pop against muted surroundings. The overall effect is a clean, product-focused presentation softened by organic accents.
-colors:
-  maharaja-red: "#f9423a"
-  tiger-orange: "#f69f82"
-  sunburst-yellow: "#ffd100"
-  ocean-deep-blue: "#002e5d"
-  sky-blue: "#007aff"
-  midnight-ink: "#000000"
-  paper-bark: "#fff5ec"
-  snow-drift: "#ffffff"
-  smoky-quartz: "#1a243d"
-  pale-ash: "#bfb8b1"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: 0.042px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: 0.042px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-    letterSpacing: 0.01px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: -0.02px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: -0.021px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-    letterSpacing: -0.023px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 24px
-  elementGap: 22px
-  sectionGap: 30px
-components:
-  primary-action-button:
-    role: Filled button for main calls to action
-  secondary-action-button:
-    role: Filled button for alternative actions
-  ghost-button:
-    role: Outline button for less prominent actions, often within product listings
-  text-link-button:
-    role: Minimal button style for navigation or secondary actions, usually inline
-  elevated-marketing-card:
-    role: Informational pop-up or modal card for announcements
-  feature-badge:
-    role: Small, informative labels for product features
+name: "Fable & Mane"
+description: "Fable & Mane evokes a spirited, naturalistic brand with a gentle, earthy canvas and flashes of energetic color. The visual system prioritizes warmth and comfort, achieved through rounded forms, soft background tones, and legible but characterful typography. Components feel approachable, often outlined or ghosted, reserving vibrant reds for clear calls to action that pop against muted surroundings. The overall effect is a clean, product-focused presentation softened by organic accents."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://fableandmane.com"
+refero_style_id: "7ad912fd-e690-46e4-a5e5-e5b60be2dd70"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516253435-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516253435-thumb.jpg"
+extracted_at: "2026-04-30T02:31:16.357Z"
 ---
 
-## Overview
+# Fable & Mane — Style Reference
 
-**North Star:** Earthy radiance with vibrant pops
+> Earthy radiance with vibrant pops
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Fable & Mane evokes a spirited, naturalistic brand with a gentle, earthy canvas and flashes of energetic color. The visual system prioritizes warmth and comfort, achieved through rounded forms, soft background tones, and legible but characterful typography. Components feel approachable, often outlined or ghosted, reserving vibrant reds for clear calls to action that pop against muted surroundings. The overall effect is a clean, product-focused presentation softened by organic accents.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Maharaja Red | #f9423a | `--color-maharaja-red` | Primary action buttons, prominent alerts — a deep, energetic red that commands attention |
+| Tiger Orange | #f69f82 | `--color-tiger-orange` | Decorative accents in illustrations and brand elements |
+| Sunburst Yellow | #ffd100 | `--color-sunburst-yellow` | Decorative botanical fills and accent elements |
+| Ocean Deep Blue | #002e5d | `--color-ocean-deep-blue` | Decorative botanical fills and accent elements |
+| Sky Blue | #007aff | `--color-sky-blue` | Blue decorative accent for icons, marks, and small graphic details. Do not promote it to the primary CTA color |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, strong borders, and solid icon fills |
+| Paper Bark | #fff5ec | `--color-paper-bark` | Page background, light card surfaces, and ghost button backgrounds — creates a warm, soft base |
+| Snow Drift | #ffffff | `--color-snow-drift` | Elevated card backgrounds, product surfaces, and crisp text on dark backgrounds |
+| Smoky Quartz | #1a243d | `--color-smoky-quartz` | Muted text, placeholder text, and subtle outlined button borders |
+| Pale Ash | #bfb8b1 | `--color-pale-ash` | Very subtle elevation shadows, providing depth without harshness |
+
+## Tokens — Typography
+
+### Sofia Pro
+
+- **Token:** `--font-sofia-pro`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 20px, 24px, 56px
+- **Line heights:** 1.00, 1.14, 1.20, 1.33, 1.38, 1.40, 1.60
+- **Letter spacing:** 0.0420em
+- **Role:** Body copy, navigation links, and standard button text — friendly and highly readable.
+
+### Quincy CF
+
+- **Token:** `--font-quincy-cf`
+- **Substitute:** Merriweather
+- **Weights:** 400
+- **Sizes:** 20px, 24px, 48px, 56px, 72px
+- **Line heights:** 0.86, 0.89, 1.00, 1.17, 1.20
+- **Letter spacing:** -0.0230em at 72px, -0.0210em at 56px, -0.0200em at 48px
+- **Role:** Headings and display text — strong and characterful due to its extra-bold nature, balancing legibility with a distinctive presence.
+
+### Sofia Pro
+
+- **Token:** `--font-sofia-pro`
+- **Substitute:** Montserrat SemiBold
+- **Sizes:** 14px, 16px, 20px
+- **Line heights:** 1.00, 1.38, 1.40, 1.43
+- **Letter spacing:** 0.0100em
+- **Role:** Sub-headings, emphasized body text, and call-out text — provides visual weight for hierarchy.
+
+### Sofia Pro
+
+- **Token:** `--font-sofia-pro`
+- **Substitute:** Montserrat Bold
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Specific button text where a slightly bolder appearance is desired.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.4 | 0.042px | `--text-body-sm` |
+| body | 16px | 1.4 | 0.042px | `--text-body` |
+| subheading | 20px | 1.4 | 0.01px | `--text-subheading` |
+| heading | 24px | 1.2 | -0.02px | `--text-heading` |
+| heading-lg | 48px | 1 | -0.021px | `--text-heading-lg` |
+| display | 56px | 1 | -0.023px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-37 | 37px | `--spacing-37` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-49 | 49px | `--spacing-49` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-55 | 55px | `--spacing-55` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-57 | 57px | `--spacing-57` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-62 | 62px | `--spacing-62` |
+| spacing-63 | 63px | `--spacing-63` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-90 | 90px | `--spacing-90` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-189 | 189px | `--spacing-189` |
+| spacing-198 | 198px | `--spacing-198` |
+| spacing-215 | 215px | `--spacing-215` |
+| spacing-316 | 316px | `--spacing-316` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 24px |
+| badges | 24px |
+| buttons | 24px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.25) 0px 4px 20px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1760px |
+| sectionGap | 30px |
+| cardPadding | 22px |
+| elementGap | 22px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Filled button for main calls to action
+
+Background: Maharaja Red (#f9423a), Text: Snow Drift (#ffffff), Border Radius: 24px, Padding: 0px top/bottom, 56px left/right. Emphasized for high conversions.
+
+### Secondary Action Button
+
+**Role:** Filled button for alternative actions
+
+Background: Midnight Ink (#000000), Text: Snow Drift (#ffffff), Border Radius: 24px, Padding: 0px top/bottom, 45px left/right. Provides a strong alternative to the primary red.
+
+### Ghost Button
+
+**Role:** Outline button for less prominent actions, often within product listings
+
+Background: Paper Bark (#fff5ec), Text: Midnight Ink (#000000), Border: 1px solid Midnight Ink (#000000), Border Radius: 24px, Padding: 0px top/bottom, 22px left/right. Offers a softer interaction without distracting from content.
+
+### Text Link Button
+
+**Role:** Minimal button style for navigation or secondary actions, usually inline
+
+Background: Transparent, Text: Midnight Ink (#000000), Border: 1px solid Midnight Ink (#000000) for bottom-border effect, Border Radius: 0px, Padding: 0px top/bottom, 0px left/right; 8px bottom. Used for discreet interactions.
+
+### Elevated Marketing Card
+
+**Role:** Informational pop-up or modal card for announcements
+
+Background: Snow Drift (#ffffff), Text: Midnight Ink (#000000), Border Radius: 0px, Shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px. Used to draw immediate attention, as with the region selector.
+
+### Feature Badge
+
+**Role:** Small, informative labels for product features
+
+Background: Transparent, Text: Midnight Ink (#000000), Border Radius: 0px, Padding: 0px. Used for subtle labeling.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Paper Bark (#fff5ec) as the default page background to establish warmth and softness.
 - Use Maharaja Red (#f9423a) exclusively for primary action buttons and critical alerts to ensure maximum impact.
@@ -80,7 +211,7 @@ Fable & Mane evokes a spirited, naturalistic brand with a gentle, earthy canvas 
 - Elevate critical UI elements like modals and pop-ups with `box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px` for clear visual focus.
 - Reinforce the natural aesthetic with botanical SVG icons using Ocean Deep Blue (#002e5d) and Sunburst Yellow (#ffd100) as fill colors.
 
-### Don'ts
+### Don't
 
 - Do not introduce severe dark backgrounds or stark white elements except for highly elevated surfaces, to avoid disrupting the warm, natural theme.
 - Avoid using multiple colors for primary calls to action; Maharaja Red (#f9423a) is the singular choice for this function.
@@ -90,10 +221,208 @@ Fable & Mane evokes a spirited, naturalistic brand with a gentle, earthy canvas 
 - Avoid excessive use of shadows; reserve `box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px` for truly elevated or focused content only.
 - Do not dilute the brand's chromatic elements (Maharaja Red, Tiger Orange, Sunburst Yellow, Ocean Deep Blue) with overly desaturated variants or competing hues.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #fff5ec | The primary background for pages and general content areas, providing a warm, earthy foundation. |
+| 1 | Card | #ffffff | Used for product cards, information panels, and other elevated content blocks, creating contrast against the canvas. |
+
+## Elevation
+
+- **Marketing Card:** `rgba(0, 0, 0, 0.25) 0px 4px 20px 0px`
+
+## Imagery
+
+The site predominantly uses high-quality photography, often depicting tight crops of product usage (e.g., scalp massages, hair application) with minimal lifestyle context. Product photography features bottles cleanly presented, sometimes with a subtle highlight or blurred background. Illustrations are used for decorative elements, such as the prominent tiger head logo and small circular badges indicating product benefits (Vegan, Silicone-Free). These illustrations are flat, outlined, and directly integrate brand colors. Icons are minimalist and outlined, typically in Midnight Ink (#000000) for navigation and functional elements. Imagery serves a dual role: product showcase and aspirational demonstration of usage, with decorative elements reinforcing brand values. The density is image-heavy in product grids and hero sections, but balanced with structured typography.
+
+## Layout
 
 The page maintains a `1760px` max-width centered container, providing a spacious feel. The hero section often features a split layout: compelling lifestyle photography on one side and a prominent headline in Quincy CF (`56px`, `Midnight Ink`) with a direct call to action button (Primary Action Button in Maharaja Red) on the other, all against the warm Paper Bark background. Content sections follow a consistent vertical rhythm with a `30px` `sectionGap`, often alternating between single-column and multi-column arrangements. Product listings are presented in a responsive grid, with each product item including a clear `Add to Bag` ghost button. Navigation is a sticky top bar with prominent brand logo and essential links.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses high-quality photography, often depicting tight crops of product usage (e.g., scalp massages, hair application) with minimal lifestyle context. Product photography features bottles cleanly presented, sometimes with a subtle highlight or blurred background. Illustrations are used for decorative elements, such as the prominent tiger head logo and small circular badges indicating product benefits (Vegan, Silicone-Free). These illustrations are flat, outlined, and directly integrate brand colors. Icons are minimalist and outlined, typically in Midnight Ink (#000000) for navigation and functional elements. Imagery serves a dual role: product showcase and aspirational demonstration of usage, with decorative elements reinforcing brand values. The density is image-heavy in product grids and hero sections, but balanced with structured typography.
+- **Glossier** — Shares a similar soft, approachable color palette with emphasis on warm neutrals and a distinct, rounded component style.
+- **Olaplex** — Focuses on hair care with a clean, product-forward presentation, although with a more clinical aesthetic.
+- **Byredo** — Uses premium product photography and a refined, airy layout, but with a more minimalist and less 'warm' color palette.
+- **Drunk Elephant** — Features a playful, colorful accent system against a clean product display, using distinct shapes and strong branding.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-maharaja-red: #f9423a;
+  --color-tiger-orange: #f69f82;
+  --color-sunburst-yellow: #ffd100;
+  --color-ocean-deep-blue: #002e5d;
+  --color-sky-blue: #007aff;
+  --color-midnight-ink: #000000;
+  --color-paper-bark: #fff5ec;
+  --color-snow-drift: #ffffff;
+  --color-smoky-quartz: #1a243d;
+  --color-pale-ash: #bfb8b1;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --font-quincy-cf: 'Quincy CF', Merriweather;
+  --font-sofia-pro: 'Sofia Pro', Montserrat SemiBold;
+  --font-sofia-pro: 'Sofia Pro', Montserrat Bold;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.042px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.042px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.01px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.02px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.021px;
+  --text-display: 56px;
+  --leading-display: 1;
+  --tracking-display: -0.023px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-35: 35px;
+  --spacing-36: 36px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-45: 45px;
+  --spacing-49: 49px;
+  --spacing-52: 52px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-57: 57px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-62: 62px;
+  --spacing-63: 63px;
+  --spacing-70: 70px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-140: 140px;
+  --spacing-189: 189px;
+  --spacing-198: 198px;
+  --spacing-215: 215px;
+  --spacing-316: 316px;
+  --radius-cards: 24px;
+  --radius-badges: 24px;
+  --radius-buttons: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px;
+  --surface-canvas: #fff5ec;
+  --surface-card: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-maharaja-red: #f9423a;
+  --color-tiger-orange: #f69f82;
+  --color-sunburst-yellow: #ffd100;
+  --color-ocean-deep-blue: #002e5d;
+  --color-sky-blue: #007aff;
+  --color-midnight-ink: #000000;
+  --color-paper-bark: #fff5ec;
+  --color-snow-drift: #ffffff;
+  --color-smoky-quartz: #1a243d;
+  --color-pale-ash: #bfb8b1;
+  --font-sofia-pro: 'Sofia Pro', Montserrat;
+  --font-quincy-cf: 'Quincy CF', Merriweather;
+  --font-sofia-pro: 'Sofia Pro', Montserrat SemiBold;
+  --font-sofia-pro: 'Sofia Pro', Montserrat Bold;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.042px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.042px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0.01px;
+  --text-heading: 24px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.02px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.021px;
+  --text-display: 56px;
+  --leading-display: 1;
+  --tracking-display: -0.023px;
+  --spacing-5: 5px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-35: 35px;
+  --spacing-36: 36px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-45: 45px;
+  --spacing-49: 49px;
+  --spacing-52: 52px;
+  --spacing-55: 55px;
+  --spacing-56: 56px;
+  --spacing-57: 57px;
+  --spacing-58: 58px;
+  --spacing-60: 60px;
+  --spacing-62: 62px;
+  --spacing-63: 63px;
+  --spacing-70: 70px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-90: 90px;
+  --spacing-140: 140px;
+  --spacing-189: 189px;
+  --spacing-198: 198px;
+  --spacing-215: 215px;
+  --spacing-316: 316px;
+  --radius-cards: 24px;
+  --radius-badges: 24px;
+  --radius-buttons: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.25) 0px 4px 20px 0px;
+  --surface-canvas: #fff5ec;
+  --surface-card: #ffffff;
+}
+```

@@ -1,80 +1,177 @@
 ---
 version: alpha
-name: Fable
-description: Fable embraces a playful, illustrative aesthetic with strong, inviting typography and a limited but impactful color palette. Bold, contrasting backgrounds in rich greens and blues create distinct sections, often paired with white or near-black text for high readability. Imagery is organic and character-driven, feeling integrated rather than overlaid. Components feature generous padding and distinct, rounded shapes, projecting a friendly and approachable digital experience.
-colors:
-  forest-canopy: "#064c37"
-  ocean-deep: "#43a1d7"
-  midnight-ink: "#161015"
-  deep-space: "#070607"
-  slate-shadow: "#292229"
-  pearl-white: "#ffffff"
-  parchment: "#f7f4ee"
-  ghost-gray: "#ededed"
-  ink-wash: "#3f383d"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.43
-    letterSpacing: -0.11px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.14px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-    letterSpacing: -0.18px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.09
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.08
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.94
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 0.88
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 0.86
-spacing:
-  cardRadius: 12px
-  buttonRadius: 60px
-  elementGap: 24px
-  sectionGap: 24px
-components:
-  primary-filled-button:
-    role: Call to action button
-  navigation-link:
-    role: Header and footer navigation
-  light-theme-filled-button:
-    role: Secondary call to action, interactive elements on dark backgrounds
-  card-with-shadow:
-    role: Featured content card, elevated interactive elements
-  product-display-card:
-    role: Book cover display, content grid item
-  parchment-content-card:
-    role: Informational cards, content blocks
+name: "Fable"
+description: "Fable embraces a playful, illustrative aesthetic with strong, inviting typography and a limited but impactful color palette. Bold, contrasting backgrounds in rich greens and blues create distinct sections, often paired with white or near-black text for high readability. Imagery is organic and character-driven, feeling integrated rather than overlaid. Components feature generous padding and distinct, rounded shapes, projecting a friendly and approachable digital experience."
+theme: "light"
+industry: "media"
+source_url: "https://fable.co"
+refero_style_id: "ab650279-aa18-43e5-a998-34190d7bedc7"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520321292-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520321292-thumb.jpg"
+extracted_at: "2026-04-30T03:39:13.068Z"
 ---
 
-## Overview
+# Fable — Style Reference
 
-**North Star:** whimsical storybook canvas
+> whimsical storybook canvas
+
+**Theme:** light
+
+**Industry:** media
 
 Fable embraces a playful, illustrative aesthetic with strong, inviting typography and a limited but impactful color palette. Bold, contrasting backgrounds in rich greens and blues create distinct sections, often paired with white or near-black text for high readability. Imagery is organic and character-driven, feeling integrated rather than overlaid. Components feature generous padding and distinct, rounded shapes, projecting a friendly and approachable digital experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Forest Canopy | #064c37 | `--color-forest-canopy` | Hero section backgrounds, prominent page sections — grounding but vibrant, setting a rich, inviting tone |
+| Ocean Deep | #43a1d7 | `--color-ocean-deep` | Illustrative accents, secondary section backgrounds — a bright, moderating contrast to the darker greens |
+| Midnight Ink | #161015 | `--color-midnight-ink` | Primary text, darker card backgrounds, bold headings — provides strong contrast against lighter surfaces |
+| Deep Space | #070607 | `--color-deep-space` | Footer background, secondary text, accents against light backgrounds — nearly black, used for maximum contrast |
+| Slate Shadow | #292229 | `--color-slate-shadow` | Button backgrounds, dark text on lighter surfaces — a slightly softer dark than pure black |
+| Pearl White | #ffffff | `--color-pearl-white` | Primary background for cards and lighter sections, button text, body text on dark backgrounds — a stark contrast element |
+| Parchment | #f7f4ee | `--color-parchment` | Card backgrounds, secondary container surfaces — a subtle, warm off-white that adds depth without being stark |
+| Ghost Gray | #ededed | `--color-ghost-gray` | Subtle image backgrounds, borders for contained elements — a very light, almost invisible gray |
+| Ink Wash | #3f383d | `--color-ink-wash` | Muted body text, secondary icon colors — a dark gray for softer text details |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 500, 600, 700
+- **Sizes:** 8px, 10px, 12px, 14px, 15px, 16px, 18px, 20px, 24px, 30px
+- **Line heights:** 1.00, 1.13, 1.17, 1.25, 1.33, 1.42, 1.43, 1.50, 1.60
+- **Letter spacing:** -0.0420em at 30px, -0.0330em at 24px, -0.0200em at 20px, -0.0180em at 18px, -0.0170em at 16px, -0.0150em at 15px, -0.0140em at 14px, -0.0120em at 12px, -0.0110em at 10px, normal at 8px
+- **Role:** Primary body text, labels, small print, and various interface elements. The tight tracking at larger sizes gives it a modern, compact feel.
+
+### Heldane Display
+
+- **Token:** `--font-heldane-display`
+- **Substitute:** serif
+- **Weights:** 400, 500
+- **Sizes:** 22px, 26px, 48px, 72px, 80px
+- **Line heights:** 0.86, 0.88, 0.94, 1.08, 1.09
+- **Letter spacing:** normal
+- **Role:** Striking, large-scale headlines. The generous x-height and tight line-height create presence, conveying a sense of classic literature with a modern twist, especially effective at very large sizes like 72px and 80px for hero sections.
+
+### Aktiv Grotesk
+
+- **Token:** `--font-aktiv-grotesk`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Used sparingly for specific informational text, like small captions or sub-labels, complementing Inter without overtly competing.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.43 | -0.11px | `--text-caption` |
+| body | 14px | 1.43 | -0.14px | `--text-body` |
+| body-lg | 18px | 1.25 | -0.18px | `--text-body-lg` |
+| subheading | 22px | 1.09 | — | `--text-subheading` |
+| heading | 26px | 1.08 | — | `--text-heading` |
+| heading-lg | 48px | 0.94 | — | `--text-heading-lg` |
+| display | 72px | 0.88 | — | `--text-display` |
+| display-lg | 80px | 0.86 | — | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-53 | 53px | `--spacing-53` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-123 | 123px | `--spacing-123` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 12px |
+| buttons | 60px |
+| largeCards | 48px |
+| mediumCards | 24px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.4) 0px 4px 20px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.6) 0px 4px 20px 0px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 24px |
+| elementGap | 24px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button
+
+Solid background button for 'Get the app'. Background: Slate Shadow (#292229). Text: Pearl White (#ffffff). Radius: 60px (pill shape). Minimal padding is observed but contextually implies text is internally padded by font-size and line-height.
+
+### Navigation Link
+
+**Role:** Header and footer navigation
+
+Text link on transparent background. Text: Deep Space (#070607) on light backgrounds, Pearl White (#ffffff) on dark backgrounds. No explicit border or radius. Used for 'Join a club', 'Bookstore', 'Blog'.
+
+### Light Theme Filled Button
+
+**Role:** Secondary call to action, interactive elements on dark backgrounds
+
+Solid background button. Background: Pearl White (#ffffff). Text: Midnight Ink (#161015). Radius: 60px (pill shape).
+
+### Card with Shadow
+
+**Role:** Featured content card, elevated interactive elements
+
+Solid background card. Background: Midnight Ink (#161015). Radius: 12px. Shadow: rgba(0, 0, 0, 0.6) 0px 4px 20px 0px. No explicit padding.
+
+### Product Display Card
+
+**Role:** Book cover display, content grid item
+
+Transparent background card, typically used to display images. No explicit radius, shadow, or padding. Content is directly an image or specific product item. (e.g. book covers).
+
+### Parchment Content Card
+
+**Role:** Informational cards, content blocks
+
+Solid background card. Background: Parchment (#f7f4ee). Radius: 48px or 24px (depends on context). Padding: 40px top, 24px right, 34px bottom, 24px left for large cards; 12px all around for smaller cards.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Forest Canopy (#064c37) or Ocean Deep (#43a1d7) for full-width section backgrounds to establish clear visual breaks.
 - Apply Heldane Display for all headings, using sizes 48px, 72px, or 80px with weight 500 for maximum impact.
@@ -84,7 +181,7 @@ Fable embraces a playful, illustrative aesthetic with strong, inviting typograph
 - Use Slate Shadow (#292229) for primary button backgrounds with Pearl White (#ffffff) text.
 - Incorporate subtle shadows rgba(0, 0, 0, 0.6) 0px 4px 20px 0px for elevated cards, ensuring visual hierarchy without heavy bordering.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple chromatic colors in close proximity; the palette is designed for distinct section separation.
 - Do not use generic sans-serif fonts for headlines; Heldane Display is essential for brand personality.
@@ -94,10 +191,170 @@ Fable embraces a playful, illustrative aesthetic with strong, inviting typograph
 - Do not use letter-spacing: normal for text larger than 16px; Inter requires specific negative tracking for optimal appearance at varied sizes.
 - Do not use pure black body text on white backgrounds, opt for Midnight Ink (#161015) or Deep Space (#070607) for softer contrast.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Ocean Deep Canvas | #43a1d7 | Base background for prominent sections, providing a strong visual anchor. |
+| 1 | Parchment Surface | #f7f4ee | Primary card and content block background, offering a warm, light surface. |
+| 2 | Pearl White Element | #ffffff | Background for interactive elements, buttons, and focused content, providing highest contrast. |
+| 3 | Midnight Ink Elevated | #161015 | Background for deeply embedded cards or sections, using a dark tone to create visual depth, often with a shadow. |
+
+## Elevation
+
+- **Card with Shadow:** `rgba(0, 0, 0, 0.6) 0px 4px 20px 0px`
+- **Button Shadow:** `rgba(0, 0, 0, 0.4) 0px 4px 20px 0px`
+
+## Imagery
+
+The visual language is characterized by custom, expressive illustrations featuring human-like characters engaging with books or digital devices. These illustrations are typically full-color, organic, and often occupy significant visual space as hero elements or section dividers. They are not contained within strict bounding boxes but rather interact with the text and layout. Photography, when present, tends to be product-focused (e.g., book covers) or subtle lifestyle imagery. Icons are generally filled and have a moderate stroke weight, matching the friendly, approachable aesthetic. Imagery serves both decorative atmosphere and explanatory content, emphasizing community and product interaction, and contributes to a visual density that feels rich but not overwhelming.
+
+## Layout
 
 The page model alternates between full-bleed background sections (especially the hero) and maximum-width contained content blocks, creating a dynamic progression. The hero typically features a centered headline over a brand-colored background, accompanied by a large illustrative element. Section rhythm is established by alternating large blocks of Forest Canopy green and Ocean Deep blue with white or parchment-colored sections. Content is often arranged in a split text-left/image-right pattern or centered stacks. Book displays utilize a dense grid of product cards. The layout feels spacious with comfortable breathing room between sections, and the navigation is a minimal sticky header at the top.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by custom, expressive illustrations featuring human-like characters engaging with books or digital devices. These illustrations are typically full-color, organic, and often occupy significant visual space as hero elements or section dividers. They are not contained within strict bounding boxes but rather interact with the text and layout. Photography, when present, tends to be product-focused (e.g., book covers) or subtle lifestyle imagery. Icons are generally filled and have a moderate stroke weight, matching the friendly, approachable aesthetic. Imagery serves both decorative atmosphere and explanatory content, emphasizing community and product interaction, and contributes to a visual density that feels rich but not overwhelming.
+- **Goodreads** — Book-centric social platform, focuses on community and discovery but with a more utilitarian visual style compared to Fable's whimsy.
+- **Blinkist** — Content consumption app with bold, illustrative imagery and clear typographic hierarchy for showcasing books/summaries.
+- **Wattpad** — Reading app that combines user-generated content with a distinct, often playful, brand identity and strong community features.
+- **Headspace** — App-based service with distinctive, organic illustrations as core to its brand identity, using a controlled color palette.
+- **Calm** — App that uses evocative, often full-bleed illustrations and photography with a serene color palette to create an immersive experience.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-forest-canopy: #064c37;
+  --color-ocean-deep: #43a1d7;
+  --color-midnight-ink: #161015;
+  --color-deep-space: #070607;
+  --color-slate-shadow: #292229;
+  --color-pearl-white: #ffffff;
+  --color-parchment: #f7f4ee;
+  --color-ghost-gray: #ededed;
+  --color-ink-wash: #3f383d;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-heldane-display: 'Heldane Display', serif;
+  --font-aktiv-grotesk: 'Aktiv Grotesk', system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --tracking-caption: -0.11px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.14px;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.25;
+  --tracking-body-lg: -0.18px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.09;
+  --text-heading: 26px;
+  --leading-heading: 1.08;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.94;
+  --text-display: 72px;
+  --leading-display: 0.88;
+  --text-display-lg: 80px;
+  --leading-display-lg: 0.86;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-34: 34px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-52: 52px;
+  --spacing-53: 53px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-123: 123px;
+  --radius-cards: 12px;
+  --radius-buttons: 60px;
+  --radius-largecards: 48px;
+  --radius-mediumcards: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.4) 0px 4px 20px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.6) 0px 4px 20px 0px;
+  --surface-ocean-deep-canvas: #43a1d7;
+  --surface-parchment-surface: #f7f4ee;
+  --surface-pearl-white-element: #ffffff;
+  --surface-midnight-ink-elevated: #161015;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-forest-canopy: #064c37;
+  --color-ocean-deep: #43a1d7;
+  --color-midnight-ink: #161015;
+  --color-deep-space: #070607;
+  --color-slate-shadow: #292229;
+  --color-pearl-white: #ffffff;
+  --color-parchment: #f7f4ee;
+  --color-ghost-gray: #ededed;
+  --color-ink-wash: #3f383d;
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-heldane-display: 'Heldane Display', serif;
+  --font-aktiv-grotesk: 'Aktiv Grotesk', system-ui, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.43;
+  --tracking-caption: -0.11px;
+  --text-body: 14px;
+  --leading-body: 1.43;
+  --tracking-body: -0.14px;
+  --text-body-lg: 18px;
+  --leading-body-lg: 1.25;
+  --tracking-body-lg: -0.18px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.09;
+  --text-heading: 26px;
+  --leading-heading: 1.08;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.94;
+  --text-display: 72px;
+  --leading-display: 0.88;
+  --text-display-lg: 80px;
+  --leading-display-lg: 0.86;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-34: 34px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-52: 52px;
+  --spacing-53: 53px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-123: 123px;
+  --radius-cards: 12px;
+  --radius-buttons: 60px;
+  --radius-largecards: 48px;
+  --radius-mediumcards: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.4) 0px 4px 20px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.6) 0px 4px 20px 0px;
+  --surface-ocean-deep-canvas: #43a1d7;
+  --surface-parchment-surface: #f7f4ee;
+  --surface-pearl-white-element: #ffffff;
+  --surface-midnight-ink-elevated: #161015;
+}
+```

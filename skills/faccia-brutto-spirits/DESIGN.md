@@ -1,82 +1,166 @@
 ---
 version: alpha
-name: Faccia Brutto Spirits
-description: Faccia Brutto Spirits uses a rustic artisan aesthetic, blending a limited monochromatic palette with earthy tones and a single bold action color. Typography is condensed and authoritative, with strong uppercase headlines. Surfaces are clean and unembellished, relying on subtle textural nuances instead of gradients or heavy shadows. Components emphasize functionality with minimal styling, echoing a handcrafted yet direct approach.
-colors:
-  ink: "#181313"
-  stone-gray: "#4c4c4c"
-  canvas: "#fefefe"
-  mist: "#c5c3c3"
-  ash: "#b2b2b2"
-  charcoal: "#333333"
-  parchment: "#d4d4d4"
-  terra-cotta: "#e53d22"
-  ocean-blue: "#357fbd"
-  sage-bloom: "#a3a96f"
-  indigo: "#2858d5"
-  cream: "#dddeba"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 2
-    letterSpacing: 0.042px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.4
-    letterSpacing: 0.018px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: 0.01px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-    letterSpacing: 0.01px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.15
-    letterSpacing: -0.01px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1
-    letterSpacing: -0.01px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 4px
-  elementGap: 20px
-  sectionGap: 40px
-components:
-  ghost-button:
-    role: Navigation, secondary actions, and inline links that require minimal visual weight.
-  primary-action-button:
-    role: Main call to actions, such as 'Start Shopping'.
-  secondary-action-button:
-    role: Alternative or less prominent actions.
-  subscription-button:
-    role: Specific call to action for subscription forms, like in pop-up modals.
-  product-card:
-    role: Displaying individual product items on catalog pages.
-  modal-card:
-    role: Pop-up content like subscription forms or notifications.
-  pill-input-field:
-    role: Search bars or simple text inputs that need a soft, rounded appearance.
-  standard-input-field:
-    role: General form inputs.
+name: "Faccia Brutto Spirits"
+description: "Faccia Brutto Spirits uses a rustic artisan aesthetic, blending a limited monochromatic palette with earthy tones and a single bold action color. Typography is condensed and authoritative, with strong uppercase headlines. Surfaces are clean and unembellished, relying on subtle textural nuances instead of gradients or heavy shadows. Components emphasize functionality with minimal styling, echoing a handcrafted yet direct approach."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://facciabruttospirits.com"
+refero_style_id: "181a3e89-20cb-400a-8fa4-529acce7ca7d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518271470-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518271470-thumb.jpg"
+extracted_at: "2026-04-30T03:04:57.792Z"
 ---
 
-## Overview
+# Faccia Brutto Spirits — Style Reference
 
-**North Star:** Rustic Artisan Distillery – a raw, unfussy aesthetic of dark glass bottles and earthy craft paper
+> Rustic Artisan Distillery – a raw, unfussy aesthetic of dark glass bottles and earthy craft paper
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Faccia Brutto Spirits uses a rustic artisan aesthetic, blending a limited monochromatic palette with earthy tones and a single bold action color. Typography is condensed and authoritative, with strong uppercase headlines. Surfaces are clean and unembellished, relying on subtle textural nuances instead of gradients or heavy shadows. Components emphasize functionality with minimal styling, echoing a handcrafted yet direct approach.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ink | #181313 | `--color-ink` | Primary text, headings, dark backgrounds, navigation links, prominent borders |
+| Stone Gray | #4c4c4c | `--color-stone-gray` | Secondary text, muted borders, subtle button outlines |
+| Canvas | #fefefe | `--color-canvas` | Page backgrounds, card surfaces, ghost button text, light borders |
+| Mist | #c5c3c3 | `--color-mist` | Background for secondary sections or subtle surface differentiation |
+| Ash | #b2b2b2 | `--color-ash` | Input borders, subtle shadows |
+| Charcoal | #333333 | `--color-charcoal` | Headline text in off-white contexts, focused border states |
+| Parchment | #d4d4d4 | `--color-parchment` | Input field borders |
+| Terra Cotta | #e53d22 | `--color-terra-cotta` | Decorative background accents, highlight banners |
+| Ocean Blue | #357fbd | `--color-ocean-blue` | Decorative background accents |
+| Sage Bloom | #a3a96f | `--color-sage-bloom` | Primary action button background — a gentle, earthy accent |
+| Indigo | #2858d5 | `--color-indigo` | Subscription button background in modals — a distinct, authoritative call to action |
+| Cream | #dddeba | `--color-cream` | Secondary action button background, offering a soft, muted alternative |
+
+## Tokens — Typography
+
+### Ano
+
+- **Token:** `--font-ano`
+- **Substitute:** Montserrat
+- **Weights:** 400, 600, 700
+- **Sizes:** 12px, 15px, 16px, 20px, 24px, 25px, 28px, 30px, 40px, 50px
+- **Line heights:** 1.00, 1.10, 1.15, 1.20, 1.25, 1.40, 1.50, 2.00
+- **Letter spacing:** -0.0100em, 0.0100em, 0.0180em, 0.0200em, 0.0310em, 0.0420em
+- **Role:** All text elements, including headings, body, links, and buttons. Its condensed nature and varied weights provide a distinct, almost stamped quality to the brand's voice.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 2 | 0.042px | `--text-caption` |
+| body-sm | 15px | 1.4 | 0.018px | `--text-body-sm` |
+| subheading | 20px | 1.25 | 0.01px | `--text-subheading` |
+| heading-sm | 24px | 1.25 | 0.01px | `--text-heading-sm` |
+| heading | 30px | 1.15 | -0.01px | `--text-heading` |
+| display | 50px | 1 | -0.01px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-117 | 117px | `--spacing-117` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| pill | 16777215px |
+| cards | 8px |
+| inputs | 4px |
+| buttons | 4px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.3) 0px 10px 40px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Button
+
+**Role:** Navigation, secondary actions, and inline links that require minimal visual weight.
+
+Transparent background, Ink text (#181313), with Ink (#181313) border. No border radius. Padding is minimal (0px).
+
+### Primary Action Button
+
+**Role:** Main call to actions, such as 'Start Shopping'.
+
+Background is Sage Bloom (#a3a96f), text is Ink (#181313). Border radius is 0px. Padding is 18px vertical, 20px horizontal.
+
+### Secondary Action Button
+
+**Role:** Alternative or less prominent actions.
+
+Background is Cream (#dddeba), text is Ink (#181313). Border radius is 0px. Padding is 18px vertical, 0px horizontal.
+
+### Subscription Button
+
+**Role:** Specific call to action for subscription forms, like in pop-up modals.
+
+Background is Indigo (#2858d5), text is Canvas (#fefefe). Border radius is 4px. Padding is 14px vertical, 16px horizontal.
+
+### Product Card
+
+**Role:** Displaying individual product items on catalog pages.
+
+Transparent background, no box shadow or border. Padding is 0px. Border radius is 0px.
+
+### Modal Card
+
+**Role:** Pop-up content like subscription forms or notifications.
+
+White background (#fefefe), border radius 8px. Shadow: `rgba(0, 0, 0, 0.3) 0px 10px 40px 0px`. No internal padding specified.
+
+### Pill Input Field
+
+**Role:** Search bars or simple text inputs that need a soft, rounded appearance.
+
+Transparent background, Ink text (#181313), Ash border (#b2b2b2). Rounded with a large radius (16777215px, effectively a pill shape). Padding is 10px vertical, 40px horizontal.
+
+### Standard Input Field
+
+**Role:** General form inputs.
+
+Background is #f9f9f9, text is #4a4a4a (Stone Gray variant). Border is Parchment (#d4d4d4), radius 4px. Padding is 14px vertical, 16px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Ink (#181313) for all primary text, headings, and most clickable elements to maintain visual depth and contrast.
 - Prioritize Ano font at various weights and sizes for all textual content, ensuring consistency in typographic voice.
@@ -86,7 +170,7 @@ Faccia Brutto Spirits uses a rustic artisan aesthetic, blending a limited monoch
 - Apply the single modal shadow `rgba(0, 0, 0, 0.3) 0px 10px 40px 0px` only to modals or overlay cards to provide distinct elevation.
 - Implement Canvas (#fefefe) as the primary background for content areas, contrasting with Ink (#181313) text for high readability.
 
-### Don'ts
+### Don't
 
 - Avoid using gradients or complex inner shadows, as the system relies on flat surfaces and subtle material changes.
 - Do not introduce new vibrant or saturated colors outside of the defined accent palette; color should be used sparingly for impact.
@@ -96,10 +180,160 @@ Faccia Brutto Spirits uses a rustic artisan aesthetic, blending a limited monoch
 - Do not use transparent backgrounds for action buttons unless explicitly defined as a ghost button, to prevent visual ambiguity.
 - Never add unnecessary borders or decorative elements that detract from the functional, handcrafted feel.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #fefefe | Base page background and general content areas. |
+| 1 | Mist | #c5c3c3 | Secondary section backgrounds, subtly differentiating content blocks. |
+| 2 | Cream | #dddeba | Background for secondary action buttons, indicating a softer interaction. |
+| 3 | Sage Bloom | #a3a96f | Background for primary action buttons, signaling key interactions. |
+
+## Elevation
+
+- **Modal Card:** `rgba(0, 0, 0, 0.3) 0px 10px 40px 0px`
+
+## Imagery
+
+The site uses product photography featuring bottles in either crisp, high-key isolation against white or dark, moody settings for atmosphere. These images are typically full-bleed or large focal points. Graphics are predominantly typographical, using the Ano font for strong, brand-reinforcing statements. Icons, when present, are simple, monochromatic outlines, maintaining a minimalist and functional aesthetic. Imagery's role is primarily atmospheric and product showcase.
+
+## Layout
 
 The page primarily uses a full-bleed structure for hero sections and product photography, alternating with content sections that appear to be constrained to an unstated max-width. The hero features large product imagery with centered, strong headlines. Section rhythm is guided by background color changes, such as the terracotta band visible in the screenshot. Content is often presented in centered stacks or simple grid arrangements, with ample vertical spacing between blocks. Navigation is a simple, fixed top bar.
 
-### Imagery
+## Similar Brands
 
-The site uses product photography featuring bottles in either crisp, high-key isolation against white or dark, moody settings for atmosphere. These images are typically full-bleed or large focal points. Graphics are predominantly typographical, using the Ano font for strong, brand-reinforcing statements. Icons, when present, are simple, monochromatic outlines, maintaining a minimalist and functional aesthetic. Imagery's role is primarily atmospheric and product showcase.
+- **Aperol** — Similar focus on Italian heritage and spirit branding, with a rustic, authentic aesthetic.
+- **Seedlip** — Similar high-quality product photography and a refined, yet earthy brand feel for spirits.
+- **Death & Co** — Shares a sophisticated, dark liquor brand visual identity with strong typography and minimal embellishments.
+- **Kombucha Brands (e.g., Health-Ade)** — Emphasizes natural ingredients and a handcrafted feel through rustic colors and clear product focus.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ink: #181313;
+  --color-stone-gray: #4c4c4c;
+  --color-canvas: #fefefe;
+  --color-mist: #c5c3c3;
+  --color-ash: #b2b2b2;
+  --color-charcoal: #333333;
+  --color-parchment: #d4d4d4;
+  --color-terra-cotta: #e53d22;
+  --color-ocean-blue: #357fbd;
+  --color-sage-bloom: #a3a96f;
+  --color-indigo: #2858d5;
+  --color-cream: #dddeba;
+  --font-ano: 'Ano', Montserrat;
+  --text-caption: 12px;
+  --leading-caption: 2;
+  --tracking-caption: 0.042px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.018px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: 0.01px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: 0.01px;
+  --text-heading: 30px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.01px;
+  --text-display: 50px;
+  --leading-display: 1;
+  --tracking-display: -0.01px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-117: 117px;
+  --radius-pill: 16777215px;
+  --radius-cards: 8px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.3) 0px 10px 40px 0px;
+  --surface-canvas: #fefefe;
+  --surface-mist: #c5c3c3;
+  --surface-cream: #dddeba;
+  --surface-sage-bloom: #a3a96f;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ink: #181313;
+  --color-stone-gray: #4c4c4c;
+  --color-canvas: #fefefe;
+  --color-mist: #c5c3c3;
+  --color-ash: #b2b2b2;
+  --color-charcoal: #333333;
+  --color-parchment: #d4d4d4;
+  --color-terra-cotta: #e53d22;
+  --color-ocean-blue: #357fbd;
+  --color-sage-bloom: #a3a96f;
+  --color-indigo: #2858d5;
+  --color-cream: #dddeba;
+  --font-ano: 'Ano', Montserrat;
+  --text-caption: 12px;
+  --leading-caption: 2;
+  --tracking-caption: 0.042px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0.018px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: 0.01px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.25;
+  --tracking-heading-sm: 0.01px;
+  --text-heading: 30px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.01px;
+  --text-display: 50px;
+  --leading-display: 1;
+  --tracking-display: -0.01px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-80: 80px;
+  --spacing-117: 117px;
+  --radius-pill: 16777215px;
+  --radius-cards: 8px;
+  --radius-inputs: 4px;
+  --radius-buttons: 4px;
+  --shadow-xl: rgba(0, 0, 0, 0.3) 0px 10px 40px 0px;
+  --surface-canvas: #fefefe;
+  --surface-mist: #c5c3c3;
+  --surface-cream: #dddeba;
+  --surface-sage-bloom: #a3a96f;
+}
+```
