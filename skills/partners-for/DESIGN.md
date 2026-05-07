@@ -1,51 +1,117 @@
 ---
 version: alpha
-name: Partners for
-description: Sofinnova Partners operates on a stark, high-contrast monochrome aesthetic where bold black elements punctuate an expansive white canvas. Typography is the primary visual driver, with large, confident headings and precise letter-spacing establishing a sense of authority and clarity. Minimal use of color ensures that interactive elements stand out instantly. Layouts are clean and highly structured, relying on generous spacing to create visual hierarchy rather than shadows or complex component treatments.
-colors:
-  canvas-white: "#ffffff"
-  midnight-ink: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.45
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 59px
-    lineHeight: 1.1
-    letterSpacing: -0.472px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 188px
-    lineHeight: 1
-    letterSpacing: -1.504px
-spacing:
-  buttonRadius: 34.6354px
-  elementGap: 18px
-  sectionGap: 59px
-components:
-  filled-action-button:
-    role: Primary calls to action and submission buttons.
-  text-link-button:
-    role: Navigation items and secondary actions.
-  cookie-consent-panel:
-    role: Persistent banner for user consent.
-  floating-action-icon:
-    role: Search or utility icons in the header.
+name: "Partners for"
+description: "Sofinnova Partners operates on a stark, high-contrast monochrome aesthetic where bold black elements punctuate an expansive white canvas. Typography is the primary visual driver, with large, confident headings and precise letter-spacing establishing a sense of authority and clarity. Minimal use of color ensures that interactive elements stand out instantly. Layouts are clean and highly structured, relying on generous spacing to create visual hierarchy rather than shadows or complex component treatments."
+theme: "light"
+industry: "fintech"
+source_url: "https://sofinnovapartners.com"
+refero_style_id: "ac2e7d86-580e-48b9-bb68-d76297fb5957"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515349657-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515349657-thumb.jpg"
+extracted_at: "2026-04-30T02:16:18.886Z"
 ---
 
-## Overview
+# Partners for — Style Reference
 
-**North Star:** Monochrome Grid Authority: a high-contrast, text-driven system conveying precision and gravitas through sharp lines and ample white space.
+> Monochrome Grid Authority: a high-contrast, text-driven system conveying precision and gravitas through sharp lines and ample white space.
+
+**Theme:** light
+
+**Industry:** fintech
 
 Sofinnova Partners operates on a stark, high-contrast monochrome aesthetic where bold black elements punctuate an expansive white canvas. Typography is the primary visual driver, with large, confident headings and precise letter-spacing establishing a sense of authority and clarity. Minimal use of color ensures that interactive elements stand out instantly. Layouts are clean and highly structured, relying on generous spacing to create visual hierarchy rather than shadows or complex component treatments.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, navigation backgrounds, default surface color, inverse text for dark elements |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, outlines, filled button backgrounds, active navigation states, cookie banner background — the defining and dominant color |
+
+## Tokens — Typography
+
+### SuisseIntl
+
+- **Token:** `--font-suisseintl`
+- **Substitute:** Inter
+- **Weights:** 400, 600, 700
+- **Sizes:** 10px, 11px, 13px, 14px, 20px, 59px, 188px
+- **Line heights:** 1.00, 1.10, 1.20, 1.40, 1.45, 1.55
+- **Letter spacing:** -0.0400em, -0.0200em
+- **Role:** The sole typeface for all text elements. Its confident, modern sans-serif structure underpins the system's clarity. Varied letter-spacing introduces subtle rhythm for display and utility text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.45 | — | `--text-caption` |
+| subheading | 20px | 1.4 | — | `--text-subheading` |
+| heading | 59px | 1.1 | -0.472px | `--text-heading` |
+| display | 188px | 1 | -1.504px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-59 | 59px | `--spacing-59` |
+| spacing-154 | 154px | `--spacing-154` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 34.6354px |
+| circularElements | 49.4792px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 59px |
+| cardPadding | 18px |
+| elementGap | 18px |
+
+## Components
+
+### Filled Action Button
+
+**Role:** Primary calls to action and submission buttons.
+
+Filled with Midnight Ink (#000000) with Canvas White (#ffffff) text, utilizing generous horizontal padding (18px) and a highly rounded border-radius of 34.6354px. Font is SuisseIntl at varying sizes and weights depending on context.
+
+### Text Link Button
+
+**Role:** Navigation items and secondary actions.
+
+Ghost button with no background or border, using Midnight Ink (#000000) for text. Padding and radius are 0px, presenting as pure text links. Font is SuisseIntl.
+
+### Cookie Consent Panel
+
+**Role:** Persistent banner for user consent.
+
+Solid Midnight Ink (#000000) background with Canvas White (#ffffff) text. Features two highly rounded buttons: 'Accept' (Canvas White fill, Midnight Ink text) and 'Decline' (Midnight Ink fill, Canvas White text).
+
+### Floating Action Icon
+
+**Role:** Search or utility icons in the header.
+
+A square icon container with a 49.4792px border-radius making it circular, featuring a 1px solid Midnight Ink (#000000) border and a Canvas White (#ffffff) background. The icon itself is Midnight Ink.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize SuisseIntl typography as the primary driver of visual hierarchy and expression, using weights 400, 600, or 700.
 - Use Midnight Ink (#000000) for all semantic text and primary interactive elements, contrasting it directly against Canvas White (#ffffff) backgrounds.
@@ -54,7 +120,7 @@ Sofinnova Partners operates on a stark, high-contrast monochrome aesthetic where
 - Design elements with a focus on high contrast, utilizing the #000000 and #ffffff palette for all UI components.
 - Employ precise letter-spacing like -0.0400em or -0.0200em for display and specific body text to enhance legibility and visual tightness.
 
-### Don'ts
+### Don't
 
 - Do not introduce new colors; restrict the palette strictly to Canvas White (#ffffff) and Midnight Ink (#000000) for all UI elements.
 - Avoid using shadows or excessive elevation; rely on bold typography and high contrast for visual weight and hierarchy.
@@ -62,6 +128,83 @@ Sofinnova Partners operates on a stark, high-contrast monochrome aesthetic where
 - Do not use highly saturated or chromatic colors for interactive states or accents; maintain the monochrome identity.
 - Do not vary line-height arbitrarily; adhere to the specified line-heights (1.00, 1.10, 1.20, 1.40, 1.45, 1.55) from the typography scale.
 
-### Imagery
+## Imagery
 
 The site primarily uses abstract, subtle graphic patterns (like the dashed-line field in the hero) for decorative purposes rather than overt imagery. When present, imagery is minimal and functional, focusing on UI elements or simple icons. The overall density is text-dominant, with generous white space; visual elements serve to break up content or provide concise functional indicators.
+
+## Similar Brands
+
+- **Stripe** — Stark monochrome palette with strong typographic emphasis and a preference for clean, ghost-style components.
+- **Linear** — High-contrast UI, precise typography with functional letter-spacing, and minimal use of color to highlight active states.
+- **Figma** — Dominant white canvas with dark text, precise typographic scale, and compact functional UI elements.
+- **Revolut** — Focus on high-contrast, black and white aesthetic with strategic use of large, bold typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --font-suisseintl: 'SuisseIntl', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.45;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 59px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.472px;
+  --text-display: 188px;
+  --leading-display: 1;
+  --tracking-display: -1.504px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-59: 59px;
+  --spacing-154: 154px;
+  --radius-buttons: 34.6354px;
+  --radius-circularelements: 49.4792px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-ink: #000000;
+  --font-suisseintl: 'SuisseIntl', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.45;
+  --text-subheading: 20px;
+  --leading-subheading: 1.4;
+  --text-heading: 59px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.472px;
+  --text-display: 188px;
+  --leading-display: 1;
+  --tracking-display: -1.504px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-59: 59px;
+  --spacing-154: 154px;
+  --radius-buttons: 34.6354px;
+  --radius-circularelements: 49.4792px;
+}
+```

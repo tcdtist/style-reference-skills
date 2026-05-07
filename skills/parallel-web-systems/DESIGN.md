@@ -1,65 +1,163 @@
 ---
 version: alpha
-name: Parallel Web Systems
-description: This design system presents as a highly structured, data-driven interface, echoing the precision required in AI systems. Its palette is almost entirely achromatic, with a deliberate and minimal use of vivid orange and moderate blue to highlight interactive elements and key information. The signature move is the pairing of a classic humanist sans-serif with a mono-spaced font, creating an aesthetic that feels both approachable and technically rigorous. Underlying the visual clarity are subtle shadows and crisp borders, conveying a sense of engineered robustness.
-colors:
-  cloud-white: "#ffffff"
-  smoke-gray: "#f6f6f6"
-  whisper-gray: "#eeeeee"
-  light-concrete: "#e5e5e5"
-  medium-ash: "#858483"
-  charcoal-black: "#181818"
-  obsidian: "#000000"
-  ignite-orange: "#fb631b"
-  sky-blueprint: "#0d6ea5"
-  ocean-tint: "#6fa2e8"
-  sea-mist: "#8fb6cc"
-  success-green: "#69be78"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.11
-    letterSpacing: 0.26px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.11
-    letterSpacing: 0.36px
-spacing:
-  buttonRadius: 4px
-  elementGap: 8px
-  sectionGap: 80px
-components:
-  button-group:
-    role: 
-  feature-cards-grid:
-    role: 
-  announcement-banner-status-bar:
-    role: 
-  secondary-ghost-button:
-    role: Interactive element
-  neutral-button:
-    role: Interactive element
-  navigation-button:
-    role: Interactive element
-  elevated-information-card:
-    role: Information container
-  ghost-content-card:
-    role: Information container
+name: "Parallel Web Systems"
+description: "This design system presents as a highly structured, data-driven interface, echoing the precision required in AI systems. Its palette is almost entirely achromatic, with a deliberate and minimal use of vivid orange and moderate blue to highlight interactive elements and key information. The signature move is the pairing of a classic humanist sans-serif with a mono-spaced font, creating an aesthetic that feels both approachable and technically rigorous. Underlying the visual clarity are subtle shadows and crisp borders, conveying a sense of engineered robustness."
+theme: "light"
+industry: "devtools"
+source_url: "https://parallel.ai"
+refero_style_id: "32845f27-6b24-48be-af25-8e664f826b30"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775932620076-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775932620076-thumb.jpg"
+extracted_at: "2026-04-11T18:37:20.945Z"
 ---
 
-## Overview
+# Parallel Web Systems — Style Reference
 
-**North Star:** Architectural Blueprint; Grid-based precision with sparse, functional color accents.
+> Architectural Blueprint; Grid-based precision with sparse, functional color accents.
+
+**Theme:** light
+
+**Industry:** devtools
 
 This design system presents as a highly structured, data-driven interface, echoing the precision required in AI systems. Its palette is almost entirely achromatic, with a deliberate and minimal use of vivid orange and moderate blue to highlight interactive elements and key information. The signature move is the pairing of a classic humanist sans-serif with a mono-spaced font, creating an aesthetic that feels both approachable and technically rigorous. Underlying the visual clarity are subtle shadows and crisp borders, conveying a sense of engineered robustness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud White | #ffffff | `--color-cloud-white` | Page backgrounds, card surfaces, active states for subtle contrast. |
+| Smoke Gray | #f6f6f6 | `--color-smoke-gray` | Subtle background sections, hover states on neutral elements. |
+| Whisper Gray | #eeeeee | `--color-whisper-gray` | Alternate background for subtle section breaks. |
+| Light Concrete | #e5e5e5 | `--color-light-concrete` | Borders, dividers, and subtle outlines on UI elements. |
+| Medium Ash | #858483 | `--color-medium-ash` | Secondary text, descriptive labels, and subtle icons – providing visual hierarchy without stark contrast. |
+| Charcoal Black | #181818 | `--color-charcoal-black` | Primary text, headlines, and key UI elements for clear readability. |
+| Obsidian | #000000 | `--color-obsidian` | Critical text, strong accents, and high-contrast iconography, especially for logos. |
+| Ignite Orange | #fb631b | `--color-ignite-orange` | Primary call-to-action buttons, active navigation indicators, specific highlight text – a vivid mark against the neutral palette to drive action. |
+| Sky Blueprint | #0d6ea5 | `--color-sky-blueprint` | Secondary interactive elements, links, and system indicators – a cooler complement to the primary orange, maintaining a professional tone. |
+| Ocean Tint | #6fa2e8 | `--color-ocean-tint` | Used for background coloration in specific sections, creating a subtle visual break. |
+| Sea Mist | #8fb6cc | `--color-sea-mist` | Subtle background shading or very light accents. |
+| Success Green | #69be78 | `--color-success-green` | Semantic success indicators and notification backgrounds. |
+
+## Tokens — Typography
+
+### gerstnerProgramm
+
+- **Token:** `--font-gerstnerprogramm`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 11px, 13px, 14px, 16px, 26px, 36px
+- **Line heights:** 1.11, 1.23, 1.50
+- **Letter spacing:** 0.16, 0.14
+- **Role:** Primary text font for body copy, navigational elements, and most headers. Its slightly humanist curves temper the overall technical aesthetic, making information digestible.
+
+### ftSystemMono
+
+- **Token:** `--font-ftsystemmono`
+- **Substitute:** Roboto Mono
+- **Weights:** 400, 500
+- **Sizes:** 10px, 11px, 12px, 13px, 14px, 16px
+- **Line heights:** 1.00, 1.23, 1.33, 1.50
+- **Letter spacing:** 0.18, 0.24, 0.21
+- **Role:** Used for code snippets, data readouts, and UI elements like 'Human/Machine' toggles. The monospace nature reinforces the technical and data-driven identity of the platform.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| heading-lg | 26px | 1.11 | 0.26px | `--text-heading-lg` |
+| display | 36px | 1.11 | 0.36px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-132 | 132px | `--spacing-132` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 4px |
+| default | 2px |
+| card_large | 8px |
+| card_small | 4px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(229, 229, 229) 0px 0px 0px 0.5px | `--shadow-xl` |
+| xl-2 | rgb(229, 229, 229) 0px 0.5px 0px 0px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1600px |
+| sectionGap | 80px |
+| cardPadding | 8px |
+| elementGap | 8px |
+
+## Components
+
+### Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Announcement Banner + Status Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Secondary Ghost Button
+
+**Role:** Interactive element
+
+Subtle interactive button, uses brand blue for text. `backgroundColor: rgba(0, 0, 0, 0)`, `color: #0d6ea5`, `borderRadius: 0px`, `padding: 8px 8px`, `borderTopColor: #e5e5e5`.
+
+### Neutral Button
+
+**Role:** Interactive element
+
+General purpose button with a light background. `backgroundColor: #ffffff`, `color: #181818`, `borderRadius: 4px`, `padding: 8px 16px`, `borderTopColor: #e5e5e5`.
+
+### Navigation Button
+
+**Role:** Interactive element
+
+Slightly more rounded neutral button for navigation. `backgroundColor: #ffffff`, `color: #181818`, `borderRadius: 8px`, `padding: 8px 12px`, `borderTopColor: #e5e5e5`.
+
+### Elevated Information Card
+
+**Role:** Information container
+
+Displays content with a subtle shadow for elevation. `backgroundColor: #ffffff`, `borderRadius: 4px`, `boxShadow: rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px`, `padding: 8px`.
+
+### Ghost Content Card
+
+**Role:** Information container
+
+Transparent content card with no borders or shadows. `backgroundColor: rgba(0, 0, 0, 0)`, `borderRadius: 0px`, `boxShadow: none`, `padding: 0px`.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize `Charcoal Black (#181818)` for all primary headings and body text, ensuring high readability against light backgrounds.
 - Use `Ignite Orange (#fb631b)` exclusively for primary calls-to-action to maximize visual impact and direct user attention.
@@ -68,7 +166,7 @@ This design system presents as a highly structured, data-driven interface, echoi
 - Employ the `ftSystemMono` font for all technical data, code snippets, and UI toggles like 'Human/Machine' to reinforce the platform's technical nature.
 - Utilize `borderRadius: 4px` for primary buttons and elevated cards, and `borderRadius: 2px` for smaller controls and elements for a consistent, subtle softening of edges.
 
-### Don'ts
+### Don't
 
 - Do not introduce new saturated colors outside of `Ignite Orange (#fb631b)` and `Sky Blueprint (#0d6ea5)` to preserve the system's focused chromatic palette.
 - Avoid large, soft shadows; stick to the specified subtle box-shadows `rgba(0, 0, 0, 0.02) 0px 13px 8px 0px` for elevation, or thin borders for definition.
@@ -77,10 +175,115 @@ This design system presents as a highly structured, data-driven interface, echoi
 - Do not use `borderRadius: 0px` on interactive elements unless it is specifically a `Ghost Button` or part of a component designed for a stark, flat look.
 - Avoid dense sections of text; use `Medium Ash (#858483)` for secondary content and ensure adequate line-heights (e.g., 1.5 for body text) to maintain readability within the compact density.
 
-### Layout
+## Elevation
+
+- **Elevated Information Card:** `rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px`
+
+## Imagery
+
+This design primarily uses abstract graphics and iconography. The hero section features an animated code-like graphic of small randomized characters on a blue background, conveying a sense of data processing and complex systems. Brand logos are flat, monochrome where possible, and minimally treated, serving a functional rather than decorative role. Photography is absent; visuals are either abstract representations of data/code or clean UI elements. Density is moderate, with images/graphics serving as section dividers or thematic accents rather than illustrative content.
+
+## Layout
 
 The page adheres to a max-width of `1600px`, centrally aligned, creating a contained and structured feel. The hero section is a full-width blue banner containing animated, code-like graphics, with a centered headline stack. Content sections typically alternate between a background of `Cloud White` and a subtle `Whisper Gray`, providing a clear visual rhythm. Information is presented in organized blocks, often with left-aligned text and accompanying elements, or in distinct feature grids. Dense content blocks are offset by generous vertical spacing of `80px` between sections. The navigation is a fixed top bar, housing utilitarian links and distinctly colored CTA buttons.
 
-### Imagery
+## Similar Brands
 
-This design primarily uses abstract graphics and iconography. The hero section features an animated code-like graphic of small randomized characters on a blue background, conveying a sense of data processing and complex systems. Brand logos are flat, monochrome where possible, and minimally treated, serving a functional rather than decorative role. Photography is absent; visuals are either abstract representations of data/code or clean UI elements. Density is moderate, with images/graphics serving as section dividers or thematic accents rather than illustrative content.
+- **Vercel** — Similar focus on minimalist, high-contrast UI with strategic use of a single accent color (orange/blue) against a largely achromatic palette, often featuring technical fonts.
+- **Stripe** — Employs a clean, grid-based layout with subtle shadows and borders for information hierarchy. Typography is precise and functional, often mixing sans-serif with monospace elements.
+- **Linear** — High information density within a structured, minimalist interface. Strong emphasis on legibility through clear typography and distinct interactive states using a limited color palette.
+- **PlanetScale** — Dev-tool aesthetics with a strong emphasis on data, using technical visual elements and a restrained color palette to convey authority and precision.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-white: #ffffff;
+  --color-smoke-gray: #f6f6f6;
+  --color-whisper-gray: #eeeeee;
+  --color-light-concrete: #e5e5e5;
+  --color-medium-ash: #858483;
+  --color-charcoal-black: #181818;
+  --color-obsidian: #000000;
+  --color-ignite-orange: #fb631b;
+  --color-sky-blueprint: #0d6ea5;
+  --color-ocean-tint: #6fa2e8;
+  --color-sea-mist: #8fb6cc;
+  --color-success-green: #69be78;
+  --font-gerstnerprogramm: 'gerstnerProgramm', Inter;
+  --font-ftsystemmono: 'ftSystemMono', Roboto Mono;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-heading-lg: 26px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: 0.26px;
+  --text-display: 36px;
+  --leading-display: 1.11;
+  --tracking-display: 0.36px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-132: 132px;
+  --spacing-160: 160px;
+  --radius-buttons: 4px;
+  --radius-default: 2px;
+  --radius-card-large: 8px;
+  --radius-card-small: 4px;
+  --shadow-xl: rgb(229, 229, 229) 0px 0px 0px 0.5px;
+  --shadow-xl-2: rgb(229, 229, 229) 0px 0.5px 0px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-white: #ffffff;
+  --color-smoke-gray: #f6f6f6;
+  --color-whisper-gray: #eeeeee;
+  --color-light-concrete: #e5e5e5;
+  --color-medium-ash: #858483;
+  --color-charcoal-black: #181818;
+  --color-obsidian: #000000;
+  --color-ignite-orange: #fb631b;
+  --color-sky-blueprint: #0d6ea5;
+  --color-ocean-tint: #6fa2e8;
+  --color-sea-mist: #8fb6cc;
+  --color-success-green: #69be78;
+  --font-gerstnerprogramm: 'gerstnerProgramm', Inter;
+  --font-ftsystemmono: 'ftSystemMono', Roboto Mono;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-heading-lg: 26px;
+  --leading-heading-lg: 1.11;
+  --tracking-heading-lg: 0.26px;
+  --text-display: 36px;
+  --leading-display: 1.11;
+  --tracking-display: 0.36px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+  --spacing-80: 80px;
+  --spacing-132: 132px;
+  --spacing-160: 160px;
+  --radius-buttons: 4px;
+  --radius-default: 2px;
+  --radius-card-large: 8px;
+  --radius-card-small: 4px;
+  --shadow-xl: rgb(229, 229, 229) 0px 0px 0px 0.5px;
+  --shadow-xl-2: rgb(229, 229, 229) 0px 0.5px 0px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.02) 0px 13px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 6px 0px, rgba(0, 0, 0, 0.04) 0px 1px 3px 0px;
+}
+```
