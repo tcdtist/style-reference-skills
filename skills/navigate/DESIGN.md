@@ -1,75 +1,166 @@
 ---
 version: alpha
-name: Navigate
-description: Navigate employs a 'modern dark' aesthetic characterized by a dominant black canvas that grounds vivid, playful accent colors for interactive elements and decorative graphics. Typography is bold and confident, combining a precise sans-serif for body text with a dense, impactful sans-serif for headlines. Surfaces are either pure black or a light off-white, with a focus on rounded rectangular shapes for content containers, juxtaposed with abstract, often rounded, graphic elements that add an organic touch.
-colors:
-  midnight-abyss: "#141414"
-  ghost-white: "#fdf9f0"
-  lime-squeeze: "#c7ff69"
-  amethyst-glow: "#7a78ff"
-  sunset-orange: "#ff6d38"
-  emerald-sprint: "#00a652"
-  skybound-blue: "#478bff"
-  golden-rod: "#ffc412"
-  lavender-mist: "#ccccff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 0.85
-    letterSpacing: 0.165px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1
-    letterSpacing: 0.14px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: -0.36px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 0.8
-    letterSpacing: -0.44px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 0.9
-    letterSpacing: -0.72px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 165px
-    lineHeight: 0.8
-    letterSpacing: -6.6px
-spacing:
-  cardRadius: 43.2px
-  buttonRadius: 25.146px
-  elementGap: 18px
-  sectionGap: 27px
-components:
-  primary-action-button:
-    role: Interactive element
-  ghost-border-button:
-    role: Secondary action/button
-  navigation-link:
-    role: Navigation, inline interactive text
-  info-card-solid-color:
-    role: Content card
-  faq-accordion-card:
-    role: Content card for FAQs
-  small-decorative-rounded-card:
-    role: Decorative graphic container
+name: "Navigate"
+description: "Navigate employs a 'modern dark' aesthetic characterized by a dominant black canvas that grounds vivid, playful accent colors for interactive elements and decorative graphics. Typography is bold and confident, combining a precise sans-serif for body text with a dense, impactful sans-serif for headlines. Surfaces are either pure black or a light off-white, with a focus on rounded rectangular shapes for content containers, juxtaposed with abstract, often rounded, graphic elements that add an organic touch."
+theme: "dark"
+industry: "crypto"
+source_url: "https://nvg8.io"
+refero_style_id: "045e9f2b-91d3-44cc-bc99-1ce5f3fd4ed6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509644310-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509644310-thumb.jpg"
+extracted_at: "2026-04-30T00:41:15.079Z"
 ---
 
-## Overview
+# Navigate — Style Reference
 
-**North Star:** Neon Playroom
+> Neon Playroom
+
+**Theme:** dark
+
+**Industry:** crypto
 
 Navigate employs a 'modern dark' aesthetic characterized by a dominant black canvas that grounds vivid, playful accent colors for interactive elements and decorative graphics. Typography is bold and confident, combining a precise sans-serif for body text with a dense, impactful sans-serif for headlines. Surfaces are either pure black or a light off-white, with a focus on rounded rectangular shapes for content containers, juxtaposed with abstract, often rounded, graphic elements that add an organic touch.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Abyss | #141414 | `--color-midnight-abyss` | Page background, primary text, prominent borders, and deep element fills — provides a high-contrast dark foundation |
+| Ghost White | #fdf9f0 | `--color-ghost-white` | Secondary page and card backgrounds, body text on dark surfaces, border accents — offers a soft, warm contrast to Midnight Abyss |
+| Lime Squeeze | #c7ff69 | `--color-lime-squeeze` | Primary action buttons, active navigation elements, and interactive text links — creates a highly visible, energetic call to action |
+| Amethyst Glow | #7a78ff | `--color-amethyst-glow` | Decorative card backgrounds, abstract graphics, and illustrative elements — adds a vibrant, playful accent hue |
+| Sunset Orange | #ff6d38 | `--color-sunset-orange` | Illustrative fills, decorative backgrounds, and occasional icon strokes — provides warmth and visual interest |
+| Emerald Sprint | #00a652 | `--color-emerald-sprint` | Decorative card backgrounds and abstract graphics — delivers a fresh, natural accent |
+| Skybound Blue | #478bff | `--color-skybound-blue` | Illustrative elements and graphic fills — a cool, vivid complement to the warm accents |
+| Golden Rod | #ffc412 | `--color-golden-rod` | Illustrative elements and graphic fills — adds a touch of brightness and playful contrast |
+| Lavender Mist | #ccccff | `--color-lavender-mist` | Muted card background — a softer, desaturated variant of Amethyst Glow for subtle variations |
+
+## Tokens — Typography
+
+### Aeonik
+
+- **Token:** `--font-aeonik`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700
+- **Sizes:** 11px, 12px, 13px, 14px, 16px, 18px
+- **Line heights:** 0.85, 0.86, 1.00, 1.20
+- **Letter spacing:** 0.015em at 11px, 0.013em at 12px, 0.012em at 13px, 0.010em at 14px, 0.010em at 16px, -0.020em at 18px
+- **Role:** Primary body text, navigation links, and button labels — provides precise, legible information with a modern feel. The slight negative letter-spacing for larger body text sizes adds a compact aesthetic.
+
+### OldschoolGrotesk
+
+- **Token:** `--font-oldschoolgrotesk`
+- **Substitute:** Bebas Neue
+- **Weights:** 800, 900
+- **Sizes:** 22px, 32px, 36px, 54px, 83px, 108px, 117px, 135px, 165px
+- **Line heights:** 0.80, 0.90, 1.10
+- **Letter spacing:** -0.040em at 165px, -0.030em at 135px/117px/108px/83px/54px, -0.020em at 36px/32px/22px
+- **Role:** Dominant display and section headings — used for maximum impact and a compressed, bold presence. Negative letter spacing ensures text blocks remain dense and commanding.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 0.85 | 0.165px | `--text-caption` |
+| body | 14px | 1 | 0.14px | `--text-body` |
+| subheading | 18px | 1.2 | -0.36px | `--text-subheading` |
+| heading | 22px | 0.8 | -0.44px | `--text-heading` |
+| heading-lg | 36px | 0.9 | -0.72px | `--text-heading-lg` |
+| display | 165px | 0.8 | -6.6px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-41 | 41px | `--spacing-41` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-66 | 66px | `--spacing-66` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-108 | 108px | `--spacing-108` |
+| spacing-171 | 171px | `--spacing-171` |
+| spacing-270 | 270px | `--spacing-270` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 1000px |
+| cards | 43.2px |
+| links | 20.7px |
+| buttons | 25.146px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 27px |
+| cardPadding | 26px |
+| elementGap | 18px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Interactive element
+
+Filled button with Lime Squeeze background (#c7ff69), Midnight Abyss text (#141414), and a border radius of 25.146px. Padding is 8px vertical, 25.848px horizontal. Text uses Aeonik.
+
+### Ghost Border Button
+
+**Role:** Secondary action/button
+
+Transparent background, Midnight Abyss text (#141414), with a 1.5px Midnight Abyss border (#141414). Border radius is 25.146px. Padding is 0px vertical, 25.848px horizontal. Text uses Aeonik.
+
+### Navigation Link
+
+**Role:** Navigation, inline interactive text
+
+Midnight Abyss text (#141414) on Ghost White background (#fdf9f0). No padding, no border. Uses Aeonik font. Some links have a bottom border of 1.5px in Lime Squeeze (#c7ff69) or Midnight Abyss (#141414).
+
+### Info Card (Solid Color)
+
+**Role:** Content card
+
+Solid background color such as Amethyst Glow (#7a78ff), Emerald Sprint (#00a652), or Lavender Mist (#ccccff). Border radius is 43.2px. No explicit padding mentioned in data, implying content determines size.
+
+### FAQ Accordion Card
+
+**Role:** Content card for FAQs
+
+Ghost White background (#fdf9f0) with a large border radius of 64.8px. Internal padding is generous: 55.8px top, 65.7px horizontal, 108px bottom.
+
+### Small Decorative Rounded Card
+
+**Role:** Decorative graphic container
+
+Small background with a very large, asymmetric border radius of 82.2857px / 57.6px, e.g., Emerald Sprint (#00a652). Used for containing single icons or graphic elements.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Abyss (#141414) as the default background for sections, and Ghost White (#fdf9f0) for contrasting content areas.
 - Apply Aeonik for all body text, navigation elements, and button labels, prioritizing weights 400 and 500 for readability.
@@ -79,7 +170,7 @@ Navigate employs a 'modern dark' aesthetic characterized by a dominant black can
 - Implement consistent internal padding on cards (e.g., 55.8px top, 65.7px horizontal for large cards), creating ample breathing room.
 - Maintain negative letter spacing for display typography (-0.020em to -0.040em) to enhance its compact, impactful presence.
 
-### Don'ts
+### Don't
 
 - Avoid using saturated accent colors (Amethyst Glow, Sunset Orange, Emerald Sprint, Skybound Blue, Golden Rod) for text or primary UI functions; reserve them for decorative graphics and distinct card backgrounds.
 - Do not use generic square corners; adhere to the specified radii for buttons (25.146px) and cards (43.2px to 64.8px).
@@ -89,14 +180,169 @@ Navigate employs a 'modern dark' aesthetic characterized by a dominant black can
 - Do not use any shadows on cards or elements; the design relies on bold color blocks and borders for depth.
 - Do not vary the border width of ghost elements; maintain a consistent 1.5px solid border.
 
-### Layout
+## Surfaces
 
-The page primarily uses a full-bleed layout on a Midnight Abyss background, contrasting with occasional full-width Ghost White or accent-colored sections. The hero features a centered headline with a subtext and a prominent primary action button. Section rhythm is created through alternating background colors and distinct content blocks. Content is typically arranged in centered stacks or alternating text-left/visual-right patterns. The 'features' or 'about' sections use a dynamic grouping of colored, rounded cards. Navigation is a sticky top bar with neutral links and a prominent Lime Squeeze primary action button.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Canvas | #141414 | Primary page background for most sections, providing a deep, dark base. |
+| 1 | Ghost White Panel | #fdf9f0 | Secondary background for contrasting content blocks, such as FAQ sections or informational cards, offering visual relief. |
+| 2 | Accent Card Surface | #7a78ff | Used for distinctive, colorful content cards and decorative containers that stand out against the main canvas. |
 
-### Imagery
+## Imagery
 
 The visual language focuses on abstract, geometric, and occasionally figurative illustrations with a playful, slightly irreverent tone. These graphics are often contained within highly rounded or irregularly shaped color blocks, using the full spectrum of accent colors (Amethyst Glow, Sunset Orange, Emerald Sprint, Skybound Blue, Golden Rod). Icon styles are filled, bold, and monochrome (either Midnight Abyss or Ghost White), complementing the overall vibrant color palette. Imagery serves a decorative and atmospheric role, adding energy and playfulness rather than strict explanatory content, and is high-density in certain sections.
 
-### Elevation
+## Layout
 
-This design system intentionally avoids traditional shadows. Depth and hierarchy are established through stark color contrasts, bold background colors, and variations in border radii and element sizing, rather than layering with subtle drop shadows.
+The page primarily uses a full-bleed layout on a Midnight Abyss background, contrasting with occasional full-width Ghost White or accent-colored sections. The hero features a centered headline with a subtext and a prominent primary action button. Section rhythm is created through alternating background colors and distinct content blocks. Content is typically arranged in centered stacks or alternating text-left/visual-right patterns. The 'features' or 'about' sections use a dynamic grouping of colored, rounded cards. Navigation is a sticky top bar with neutral links and a prominent Lime Squeeze primary action button.
+
+## Similar Brands
+
+- **Rarible** — Shares a vibrant, playful dark mode aesthetic with animated, expressive graphics and bold typography on a dark canvas.
+- **Super.so** — Utilizes strong, geometric shapes with solid color fills and a high-contrast dark theme, emphasizing product interfaces with distinct, functional colors.
+- **Web3.js** — Exhibits a similar developer-focused dark environment with functional color highlights and a clear emphasis on sharp, modern sans-serif fonts for code and interface elements.
+- **Linear** — Uses a dark mode with focused accent colors to denote interactivity and status, combined with a precise, minimal typographic system.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-abyss: #141414;
+  --color-ghost-white: #fdf9f0;
+  --color-lime-squeeze: #c7ff69;
+  --color-amethyst-glow: #7a78ff;
+  --color-sunset-orange: #ff6d38;
+  --color-emerald-sprint: #00a652;
+  --color-skybound-blue: #478bff;
+  --color-golden-rod: #ffc412;
+  --color-lavender-mist: #ccccff;
+  --font-aeonik: 'Aeonik', Inter;
+  --font-oldschoolgrotesk: 'OldschoolGrotesk', Bebas Neue;
+  --text-caption: 11px;
+  --leading-caption: 0.85;
+  --tracking-caption: 0.165px;
+  --text-body: 14px;
+  --leading-body: 1;
+  --tracking-body: 0.14px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.36px;
+  --text-heading: 22px;
+  --leading-heading: 0.8;
+  --tracking-heading: -0.44px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 165px;
+  --leading-display: 0.8;
+  --tracking-display: -6.6px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-41: 41px;
+  --spacing-43: 43px;
+  --spacing-56: 56px;
+  --spacing-58: 58px;
+  --spacing-66: 66px;
+  --spacing-72: 72px;
+  --spacing-81: 81px;
+  --spacing-108: 108px;
+  --spacing-171: 171px;
+  --spacing-270: 270px;
+  --radius-tags: 1000px;
+  --radius-cards: 43.2px;
+  --radius-links: 20.7px;
+  --radius-buttons: 25.146px;
+  --surface-midnight-canvas: #141414;
+  --surface-ghost-white-panel: #fdf9f0;
+  --surface-accent-card-surface: #7a78ff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-abyss: #141414;
+  --color-ghost-white: #fdf9f0;
+  --color-lime-squeeze: #c7ff69;
+  --color-amethyst-glow: #7a78ff;
+  --color-sunset-orange: #ff6d38;
+  --color-emerald-sprint: #00a652;
+  --color-skybound-blue: #478bff;
+  --color-golden-rod: #ffc412;
+  --color-lavender-mist: #ccccff;
+  --font-aeonik: 'Aeonik', Inter;
+  --font-oldschoolgrotesk: 'OldschoolGrotesk', Bebas Neue;
+  --text-caption: 11px;
+  --leading-caption: 0.85;
+  --tracking-caption: 0.165px;
+  --text-body: 14px;
+  --leading-body: 1;
+  --tracking-body: 0.14px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.36px;
+  --text-heading: 22px;
+  --leading-heading: 0.8;
+  --tracking-heading: -0.44px;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -0.72px;
+  --text-display: 165px;
+  --leading-display: 0.8;
+  --tracking-display: -6.6px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-25: 25px;
+  --spacing-26: 26px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-41: 41px;
+  --spacing-43: 43px;
+  --spacing-56: 56px;
+  --spacing-58: 58px;
+  --spacing-66: 66px;
+  --spacing-72: 72px;
+  --spacing-81: 81px;
+  --spacing-108: 108px;
+  --spacing-171: 171px;
+  --spacing-270: 270px;
+  --radius-tags: 1000px;
+  --radius-cards: 43.2px;
+  --radius-links: 20.7px;
+  --radius-buttons: 25.146px;
+  --surface-midnight-canvas: #141414;
+  --surface-ghost-white-panel: #fdf9f0;
+  --surface-accent-card-surface: #7a78ff;
+}
+```

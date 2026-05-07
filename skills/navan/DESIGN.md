@@ -1,57 +1,207 @@
 ---
 version: alpha
-name: Navan
-description: This design system projects an image of sophisticated efficiency, using a deep violet primary, Navan Ink, grounded by a crisp white and muted grays. It achieves a balance between corporate authority and modern approachability through its meticulous typography, showcasing delicate letter-spacing on display fonts and precise line-heights. The overall impression is one of trusted expertise, made accessible by subtle gradients and refined component styling.
-colors:
-  navan-ink: "#15002c"
-  action-violet: "#6307f8"
-  hero-gradient-purple: "#410566"
-  highlight-pink: "#da9eff"
-  subtle-violet: "#e1e2fe"
-  paper-white: "#ffffff"
-  border-ash: "#c6c6d2"
-  graphite-text: "#000000"
-  body-black: "#060000"
-  slate-gray: "#5a5a72"
-  whisper-gray: "#8d8da5"
-  muted-stone: "#70708f"
-  warm-cream: "#f7eee8"
-  soft-off-white: "#f1f1f9"
-  gradient-transition-purple: "#7c51fa"
-  gradient-end-magenta: "#ffb5ce"
-spacing:
-  cardRadius: 14px
-  buttonRadius: 9999px
-components:
-  flight-booking-card:
-    role: 
-  hero-goal-selector-cards:
-    role: 
-  g2-rating-awards-banner:
-    role: 
-  primary-action-button:
-    role: Main call-to-action
-  outline-ghost-button:
-    role: Secondary action or navigation
-  subtle-information-button:
-    role: Tertiary action or information display
-  inline-text-link:
-    role: Navigation or contextual links
-  basic-content-card:
-    role: Container for grouped content
-  new-feature-badge:
-    role: Highlighting new features
-  hero-section-gradient-background:
-    role: Main visual element for banner sections
+name: "Navan"
+description: "This design system projects an image of sophisticated efficiency, using a deep violet primary, Navan Ink, grounded by a crisp white and muted grays. It achieves a balance between corporate authority and modern approachability through its meticulous typography, showcasing delicate letter-spacing on display fonts and precise line-heights. The overall impression is one of trusted expertise, made accessible by subtle gradients and refined component styling."
+theme: "light"
+industry: "saas"
+source_url: "https://navan.com"
+refero_style_id: "a5089389-4220-4fc2-82d9-973203d2e2f5"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943769063-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943769063-thumb.jpg"
+extracted_at: "2026-04-11T21:43:11.820Z"
 ---
 
-## Overview
+# Navan — Style Reference
 
-**North Star:** Deep Violet Efficiency – like a meticulously organized business travel brief, dark and precise yet subtly inviting.
+> Deep Violet Efficiency – like a meticulously organized business travel brief, dark and precise yet subtly inviting.
+
+**Theme:** light
+
+**Industry:** saas
 
 This design system projects an image of sophisticated efficiency, using a deep violet primary, Navan Ink, grounded by a crisp white and muted grays. It achieves a balance between corporate authority and modern approachability through its meticulous typography, showcasing delicate letter-spacing on display fonts and precise line-heights. The overall impression is one of trusted expertise, made accessible by subtle gradients and refined component styling.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Navan Ink | #15002c | `--color-navan-ink` | Primary brand color, darkest text, primary navigation background in footer – establishes a deep, authoritative base. |
+| Action Violet | #6307f8 | `--color-action-violet` | Dominant CTA button background – provides a vivid, energetic contrast against backgrounds to drive interaction. |
+| Hero Gradient Purple | #410566 | `--color-hero-gradient-purple` | Deepest color in the header radial gradient, establishing a rich foundation. |
+| Highlight Pink | #da9eff | `--color-highlight-pink` | Used for specific heading highlights – adds a touch of modern vibrancy. |
+| Subtle Violet | #e1e2fe | `--color-subtle-violet` | Background for less prominent buttons or interactive elements – a soft, supportive hue. |
+| Paper White | #ffffff | `--color-paper-white` | Page backgrounds, card surfaces, critical text on dark backgrounds – ensures maximum contrast and visual space. |
+| Border Ash | #c6c6d2 | `--color-border-ash` | Default border color, subtle dividers – provides structure without harshness. |
+| Graphite Text | #000000 | `--color-graphite-text` | Dominant text color for body copy and headings on light backgrounds – ensures readability. |
+| Body Black | #060000 | `--color-body-black` | Alternate dark text color, body text — a slightly softer black for extended reading. |
+| Slate Gray | #5a5a72 | `--color-slate-gray` | Secondary border color, subtle accents – provides a cool, subdued detail. |
+| Whisper Gray | #8d8da5 | `--color-whisper-gray` | Subtle text, contextual information – communicates secondary priority. |
+| Muted Stone | #70708f | `--color-muted-stone` | Icon fills, disabled text – blends into the background without disappearing. |
+| Warm Cream | #f7eee8 | `--color-warm-cream` | Accent background color for specific sections – introduces a subtle warmth. |
+| Soft Off-White | #f1f1f9 | `--color-soft-off-white` | Lightest background for elevated elements or hover states – minimal visual difference from Paper White. |
+| Gradient Transition Purple | #7c51fa | `--color-gradient-transition-purple` | Mid-point in the main header gradient, adding depth and chromatic range. |
+| Gradient End Magenta | #ffb5ce | `--color-gradient-end-magenta` | Lightest point in the header radial gradient, providing a soft edge. |
+
+## Tokens — Typography
+
+### Neue Hass Grotesk Text
+
+- **Token:** `--font-neue-hass-grotesk-text`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500
+- **Sizes:** 10px, 12px, 14px, 15px, 16px, 18px, 20px, 22px, 23px
+- **Line heights:** 1.00, 1.20, 1.27, 1.31, 1.36, 1.40, 1.50, 1.56, 1.78
+- **Role:** Primary typeface for body text, UI elements, navigation. Its clean, humanist sans-serif forms maintain a professional yet approachable tone across all information densities.
+
+### Neue Haas Grotesk Display Pro
+
+- **Token:** `--font-neue-haas-grotesk-display-pro`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500, 700
+- **Sizes:** 12px, 14px, 15px, 16px, 18px, 20px, 22px, 135px
+- **Line heights:** 0.87, 1.21, 1.25, 1.31, 1.33, 1.36, 1.40, 1.44, 1.50, 1.58, 1.71
+- **Letter spacing:** 0.0400em
+- **Role:** Used for display headings and emphasized text, where the subtle letter-spacing contributes to a refined, almost architectural feel for large typography.
+
+### Sanomat
+
+- **Token:** `--font-sanomat`
+- **Substitute:** Montserrat
+- **Weights:** 400, 500, 600
+- **Sizes:** 30px, 40px, 42px, 45px
+- **Line heights:** 1.00, 1.12, 1.20, 1.27, 1.35, 2.13
+- **Role:** Distinctive display font for main page headings, providing a unique personality and strong visual presence that differentiates prominent section titles. The varied weights allow for hierarchy within these larger forms.
+
+### Karla
+
+- **Token:** `--font-karla`
+- **Substitute:** Karla
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Role:** Used for specific contextual or descriptive text, providing a slightly softer, more approachable feel than Grotesk without clashing.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-37 | 37px | `--spacing-37` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-47 | 47px | `--spacing-47` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-53 | 53px | `--spacing-53` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-89 | 89px | `--spacing-89` |
+| spacing-109 | 109px | `--spacing-109` |
+| spacing-110 | 110px | `--spacing-110` |
+| spacing-125 | 125px | `--spacing-125` |
+| spacing-128 | 128px | `--spacing-128` |
+| spacing-140 | 140px | `--spacing-140` |
+| spacing-143 | 143px | `--spacing-143` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-156 | 156px | `--spacing-156` |
+| spacing-163 | 163px | `--spacing-163` |
+| spacing-190 | 190px | `--spacing-190` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 14px |
+| small | 4px |
+| badges | 10px |
+| buttons | 9999px |
+
+## Components
+
+### Flight Booking Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Hero Goal Selector Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### G2 Rating & Awards Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Main call-to-action
+
+Filled with Action Violet (#6307f8), white text, fully rounded (9999px radius), with 10px vertical and 28px horizontal padding. Font is Neue Hass Grotesk Text, weight 500.
+
+### Outline Ghost Button
+
+**Role:** Secondary action or navigation
+
+Transparent background, Navan Ink (#15002c) text and border, fully rounded (9999px radius), with 10px vertical and 54px horizontal padding. Font is Neue Hass Grotesk Text.
+
+### Subtle Information Button
+
+**Role:** Tertiary action or information display
+
+Filled with Subtle Violet (#e1e2fe), Graphite Text (#000000) text, 12px radius, zero padding for inline use. Font is Neue Hass Grotesk Text.
+
+### Inline Text Link
+
+**Role:** Navigation or contextual links
+
+Transparent background, Graphite Text (#000000) text, no border or radius, zero padding. Font is Neue Hass Grotesk Text.
+
+### Basic Content Card
+
+**Role:** Container for grouped content
+
+Paper White (#ffffff) background, 14px border radius, no shadow. Padding varies by content, typically 16px-20px.
+
+### New Feature Badge
+
+**Role:** Highlighting new features
+
+Transparent background, white text, 10px border radius, with 6px vertical and 16px horizontal padding. This specific badge uses a unique zero radius, suggesting inline application.
+
+### Hero Section Gradient Background
+
+**Role:** Main visual element for banner sections
+
+A radial gradient from Hero Gradient Purple (#410566) to Gradient End Magenta (#ffb5ce), positioned to create depth.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Navan Ink (#15002c) for primary dark text and key background elements.
 - Apply Action Violet (#6307f8) exclusively for primary interactive elements like main CTA buttons.
@@ -61,7 +211,7 @@ This design system projects an image of sophisticated efficiency, using a deep v
 - Ensure all body text uses Neue Hass Grotesk Text with a line-height appropriate to its size for optimal readability, such as 1.50 for 16px.
 - Use Border Ash (#c6c6d2) for all subtle divders and non-interactive borders.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors for large content blocks; reserve them for accents and interactive elements.
 - Do not introduce additional font families; stick to Neue Hass Grotesk (Text/Display) and Sanomat.
@@ -70,10 +220,173 @@ This design system projects an image of sophisticated efficiency, using a deep v
 - Avoid using custom letter-spacing on Neue Hass Grotesk Text body copy; it should remain 'normal'.
 - Don't deviate from the established padding values for interactive buttons (10px vertical, 28px-54px horizontal).
 
-### Layout
+## Imagery
+
+The visual language combines contextual product mockups and staged, professional photography. Photography often features diverse individuals in business settings, focusing on collaboration or travel scenarios, with a semi-desaturated, naturalistic color treatment. Mockups are contained, often overlapping, and feature realistic app interfaces. Icons appear filled, monochromatic, and with a moderate stroke weight, serving an explanatory and decorative role. The overall density of imagery is balanced, supporting text without dominating.
+
+## Layout
 
 The page model is primarily max-width contained, centered on the screen, with sections flowing vertically. The hero section is full-bleed, showcasing a dark, atmospheric gradient background with a prominent centered headline and product mockups. Subsequent sections alternate between two-column layouts (text on left, image/card on right or vice-versa) and centered text blocks. Card grids appear for features or choices. Vertical spacing between sections is generous, contributing to a spacious feel. Navigation is a sticky top bar, with prominent, distinct CTA buttons.
 
-### Imagery
+## Similar Brands
 
-The visual language combines contextual product mockups and staged, professional photography. Photography often features diverse individuals in business settings, focusing on collaboration or travel scenarios, with a semi-desaturated, naturalistic color treatment. Mockups are contained, often overlapping, and feature realistic app interfaces. Icons appear filled, monochromatic, and with a moderate stroke weight, serving an explanatory and decorative role. The overall density of imagery is balanced, supporting text without dominating.
+- **Rippling** — Shares the use of a deep purple/violet primary color with crisp white backgrounds and clean, precise sans-serif typography for a modern HR/fintech feel.
+- **Ramp** — Exhibits similar high-contrast light theme with a strong accent color (often blue/purple) for CTAs and emphasizes clean, legible text with minimal, effective imagery.
+- **Brex** — Utilizes a sophisticated dark base color combined with bright, inviting accents and uses subtle photographic elements to convey professionalism and approachability, similar to Navan's gradients and imagery style.
+- **Linear** — Demonstrates a design philosophy of quiet authority through meticulous typography, subtle gray scales, and minimal yet impactful use of brand colors, though Navan is lighter overall.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-navan-ink: #15002c;
+  --color-action-violet: #6307f8;
+  --color-hero-gradient-purple: #410566;
+  --color-highlight-pink: #da9eff;
+  --color-subtle-violet: #e1e2fe;
+  --color-paper-white: #ffffff;
+  --color-border-ash: #c6c6d2;
+  --color-graphite-text: #000000;
+  --color-body-black: #060000;
+  --color-slate-gray: #5a5a72;
+  --color-whisper-gray: #8d8da5;
+  --color-muted-stone: #70708f;
+  --color-warm-cream: #f7eee8;
+  --color-soft-off-white: #f1f1f9;
+  --color-gradient-transition-purple: #7c51fa;
+  --color-gradient-end-magenta: #ffb5ce;
+  --font-neue-hass-grotesk-text: 'Neue Hass Grotesk Text', Inter;
+  --font-neue-haas-grotesk-display-pro: 'Neue Haas Grotesk Display Pro', Inter;
+  --font-sanomat: 'Sanomat', Montserrat;
+  --font-karla: 'Karla', Karla;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-47: 47px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-53: 53px;
+  --spacing-54: 54px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-65: 65px;
+  --spacing-80: 80px;
+  --spacing-86: 86px;
+  --spacing-89: 89px;
+  --spacing-109: 109px;
+  --spacing-110: 110px;
+  --spacing-125: 125px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+  --spacing-143: 143px;
+  --spacing-144: 144px;
+  --spacing-156: 156px;
+  --spacing-163: 163px;
+  --spacing-190: 190px;
+  --radius-cards: 14px;
+  --radius-small: 4px;
+  --radius-badges: 10px;
+  --radius-buttons: 9999px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-navan-ink: #15002c;
+  --color-action-violet: #6307f8;
+  --color-hero-gradient-purple: #410566;
+  --color-highlight-pink: #da9eff;
+  --color-subtle-violet: #e1e2fe;
+  --color-paper-white: #ffffff;
+  --color-border-ash: #c6c6d2;
+  --color-graphite-text: #000000;
+  --color-body-black: #060000;
+  --color-slate-gray: #5a5a72;
+  --color-whisper-gray: #8d8da5;
+  --color-muted-stone: #70708f;
+  --color-warm-cream: #f7eee8;
+  --color-soft-off-white: #f1f1f9;
+  --color-gradient-transition-purple: #7c51fa;
+  --color-gradient-end-magenta: #ffb5ce;
+  --font-neue-hass-grotesk-text: 'Neue Hass Grotesk Text', Inter;
+  --font-neue-haas-grotesk-display-pro: 'Neue Haas Grotesk Display Pro', Inter;
+  --font-sanomat: 'Sanomat', Montserrat;
+  --font-karla: 'Karla', Karla;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-47: 47px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-53: 53px;
+  --spacing-54: 54px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-65: 65px;
+  --spacing-80: 80px;
+  --spacing-86: 86px;
+  --spacing-89: 89px;
+  --spacing-109: 109px;
+  --spacing-110: 110px;
+  --spacing-125: 125px;
+  --spacing-128: 128px;
+  --spacing-140: 140px;
+  --spacing-143: 143px;
+  --spacing-144: 144px;
+  --spacing-156: 156px;
+  --spacing-163: 163px;
+  --spacing-190: 190px;
+  --radius-cards: 14px;
+  --radius-small: 4px;
+  --radius-badges: 10px;
+  --radius-buttons: 9999px;
+}
+```
