@@ -1,89 +1,191 @@
 ---
 version: alpha
-name: Relume
-description: Relume uses a productivity-focused design vocabulary, built on a light, airy canvas with soft, rounded surfaces. Typography is compact and precise, maintaining clarity even at smaller scales. A vibrant purple serves as the primary accent, signaling interactive elements and brand presence against an otherwise subtle neutral palette. Components are lightweight with minimal elevation, emphasizing functionality over heavy visual ornamentation, often featuring a blend of pixel and percentage units for fluid responsiveness.
-colors:
-  canvas: "#f1f0ee"
-  surface-white: "#ffffff"
-  charcoal-text: "#161616"
-  dark-neutral-text: "#222222"
-  medium-gray-text: "#686868"
-  light-border: "#e4e2df"
-  primary-purple: "#6248ff"
-  muted-purple: "#e0daff"
-  light-purple-accent: "#b8adf5"
-  system-black: "#000000"
-  orange-to-purple-gradient: "#ff7448"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1
-    letterSpacing: -1.68px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 96px
-    lineHeight: 1.1
-    letterSpacing: -1.92px
-spacing:
-  cardRadius: 16px
-  buttonRadius: 8px
-  elementGap: 8px
-  sectionGap: 80px
-components:
-  ai-generate-input-bar:
-    role: 
-  feature-cards-plan-structure-conceptualise:
-    role: 
-  prompt-to-sitemap-feature-block:
-    role: 
-  primary-filled-button:
-    role: Signaling primary actions and calls to action.
-  secondary-outlined-button:
-    role: Neutral, supportive actions.
-  ghost-button:
-    role: Less prominent actions, often within navigation or secondary interaction.
-  feature-card:
-    role: Presenting key features or content blocks.
-  input-field:
-    role: User input for forms.
-  navigation-link:
-    role: Primary navigation items.
-  information-badge:
-    role: Small informational tags or labels.
+name: "Relume"
+description: "Relume uses a productivity-focused design vocabulary, built on a light, airy canvas with soft, rounded surfaces. Typography is compact and precise, maintaining clarity even at smaller scales. A vibrant purple serves as the primary accent, signaling interactive elements and brand presence against an otherwise subtle neutral palette. Components are lightweight with minimal elevation, emphasizing functionality over heavy visual ornamentation, often featuring a blend of pixel and percentage units for fluid responsiveness."
+theme: "light"
+industry: "ai"
+source_url: "https://relume.io"
+refero_style_id: "b2dab9ac-9e35-43f5-a8bb-dd9d6702acf0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777500516721-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777500516721-thumb.jpg"
+extracted_at: "2026-04-29T22:08:58.832Z"
 ---
 
-## Overview
+# Relume — Style Reference
 
-**North Star:** AI-powered architectural blueprint
+> AI-powered architectural blueprint
+
+**Theme:** light
+
+**Industry:** ai
 
 Relume uses a productivity-focused design vocabulary, built on a light, airy canvas with soft, rounded surfaces. Typography is compact and precise, maintaining clarity even at smaller scales. A vibrant purple serves as the primary accent, signaling interactive elements and brand presence against an otherwise subtle neutral palette. Components are lightweight with minimal elevation, emphasizing functionality over heavy visual ornamentation, often featuring a blend of pixel and percentage units for fluid responsiveness.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #f1f0ee | `--color-canvas` | Primary page background, subtly off-white to reduce glare |
+| Surface White | #ffffff | `--color-surface-white` | Card backgrounds, elevated UI elements, button fills for inverse states, input fields; Complex background fills and feature highlights, used sparingly for visual impact |
+| Charcoal Text | #161616 | `--color-charcoal-text` | Primary text color for headings and body content, high contrast against light backgrounds |
+| Dark Neutral Text | #222222 | `--color-dark-neutral-text` | Secondary text and general UI elements requiring good contrast |
+| Medium Gray Text | #686868 | `--color-medium-gray-text` | Muted text, helper text, inactive states, and link text that blends into the surrounding content |
+| Light Border | #e4e2df | `--color-light-border` | Subtle borders for cards, images, and other containment elements |
+| Primary Purple | #6248ff | `--color-primary-purple` | Primary button backgrounds, interactive elements, icons, and accent borders. This is the core brand color |
+| Muted Purple | #e0daff | `--color-muted-purple` | Soft accent for ghost buttons or background fills |
+| Light Purple Accent | #b8adf5 | `--color-light-purple-accent` | Decorative borders or subtle accents |
+| System Black | #000000 | `--color-system-black` | Input borders, decorative SVG fills, and high-contrast icon details |
+| Orange to Purple Gradient | #ff7448 | `--color-orange-to-purple-gradient` | Strategic decorative element, often seen in typographic flourishes or background treatments, representing dynamic energy |
+
+## Tokens — Typography
+
+### Relative
+
+- **Token:** `--font-relative`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 13px, 14px, 15px, 16px, 17px, 18px, 20px, 24px, 32px, 40px, 48px, 56px, 224px
+- **Line heights:** 1.00, 1.20, 1.40, 1.43, 1.50
+- **Letter spacing:** -0.0300em at 56px, -0.0200em at 48px, normal for other sizes
+- **Role:** Primary typeface for all content, from body text to large headlines. Its concise tracking even at display sizes ensures a compact and efficient visual presence.
+
+### Relative Faux
+
+- **Token:** `--font-relative-faux`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 96px
+- **Line heights:** 1.10
+- **Letter spacing:** -0.0200em
+- **Role:** Used for extremely large, impactful display headings. The specific tracking at this size enhances its visual presence.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | — | `--text-caption` |
+| body-sm | 14px | 1.4 | 0px | `--text-body-sm` |
+| body | 16px | 1.5 | 0px | `--text-body` |
+| subheading | 24px | 1.4 | 0px | `--text-subheading` |
+| heading | 40px | 1.2 | 0px | `--text-heading` |
+| heading-lg | 56px | 1 | -1.68px | `--text-heading-lg` |
+| display | 96px | 1.1 | -1.92px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-63 | 63px | `--spacing-63` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-73 | 73px | `--spacing-73` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-256 | 256px | `--spacing-256` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| pills | 320px |
+| buttons | 8px |
+| default | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.08) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 80px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### AI Generate Input Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards — Plan / Structure / Conceptualise
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Prompt to Sitemap — Feature Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Filled Button
+
+**Role:** Signaling primary actions and calls to action.
+
+Background: #6248ff (Primary Purple), Text: #ffffff (Surface White), Border: none, Radius: 10px, Padding: 9px vertical, 20px horizontal (with additional 28px left padding for icon/indicator space).
+
+### Secondary Outlined Button
+
+**Role:** Neutral, supportive actions.
+
+Background: #ffffff (Surface White), Text: #161616 (Charcoal Text), Border: 1px solid #161616, Radius: 16px, Padding: 20px all sides.
+
+### Ghost Button
+
+**Role:** Less prominent actions, often within navigation or secondary interaction.
+
+Background: transparent or #e0daff (Muted Purple), Text: #222222 (Dark Neutral Text), Border: 1px solid #222222, Radius: 8px, Padding: 8px vertical, 12px horizontal.
+
+### Feature Card
+
+**Role:** Presenting key features or content blocks.
+
+Background: #ffffff (Surface White), Border: 1px solid #e4e2df (Light Border), Radius: 16px, Padding: 16px all sides. Employs a soft shadow: `rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px`
+
+### Input Field
+
+**Role:** User input for forms.
+
+Background: #ffffff (Surface White), Text: #222222 (Dark Neutral Text), Border: 1px solid #000000 (System Black) for focus, default border likely inferred from context, Radius: 0px, Padding: 8px top, 8px left (variable right/bottom).
+
+### Navigation Link
+
+**Role:** Primary navigation items.
+
+Text: #222222 (Dark Neutral Text), No explicit background, Padding: variable from 8px to 12px horizontal.
+
+### Information Badge
+
+**Role:** Small informational tags or labels.
+
+Background: #f1f0ee (Canvas), Text: #161616 (Charcoal Text), Radius: 5px, Padding: 0px vertical, 4px horizontal.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Relume's Primary Purple (#6248ff) for all key interactive elements, including primary CTA buttons and critical icons.
 - Use Charcoal Text (#161616) as the default for all headings and primary body content, ensuring high readability.
@@ -93,7 +195,7 @@ Relume uses a productivity-focused design vocabulary, built on a light, airy can
 - Use the predefined soft shadow (`rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px`) selectively for cards and key components to provide subtle depth.
 - Structure page sections with a vertical spacing of 80px for ample breathing room.
 
-### Don'ts
+### Don't
 
 - Avoid introducing new primary colors; limit the palette to the defined brand and neutral tones.
 - Do not use sharp 0px corners on interactive elements or cards, as the design uses rounded edges (8px or 16px) consistently.
@@ -103,10 +205,175 @@ Relume uses a productivity-focused design vocabulary, built on a light, airy can
 - Do not overload pages with excessive box shadows, as the system relies on subtle elevation for focal elements.
 - Avoid using default system fonts; always specify 'Relative' or 'Relative Faux' (with Inter as a substitute) for all text elements.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #f1f0ee | Base page background, providing a warm, light foundation. |
+| 1 | Surface White | #ffffff | Primary surface for cards, buttons, modals, and input fields, appearing slightly elevated from the canvas. |
+
+## Elevation
+
+- **Button:** `rgba(0, 0, 0, 0.08) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px`
+- **Card:** `rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px`
+
+## Imagery
+
+The imagery primarily consists of product screenshots and abstract digital illustrations. Product screenshots are typically tightly cropped and isolated against clean backgrounds, often with soft drop shadows or contained within rounded card components. Illustrations are abstract, geometric, and occasionally feature human figures in an expressive, non-realistic style, typically using a brand-aligned or complementary color palette. Icons are predominantly outlined, featuring a moderate stroke weight, and are monochromatic in the Charcoal Text or System Black color, occasionally with the Primary Purple accent. Imagery serves both decorative atmosphere, product showcase, and explanatory content, occupying significant visual space in alternating text-image sections.
+
+## Layout
 
 The page model is contained within an implicit maximum width of approximately 1200px, centered on the screen. The hero section is a full-width experience, featuring a prominent centered headline over a dynamic, visually rich background. Subsequent sections follow a consistent rhythm of alternating blocks, often featuring two-column layouts with text and visuals side-by-side (text-left/image-right or vice versa). Feature lists and testimonials are presented in multi-column card grids. Vertical spacing between major sections is generous at 80px, creating a comfortable, uncrowded density. Navigation is a sticky top bar with a 'Start for free' button as the main CTA.
 
-### Imagery
+## Similar Brands
 
-The imagery primarily consists of product screenshots and abstract digital illustrations. Product screenshots are typically tightly cropped and isolated against clean backgrounds, often with soft drop shadows or contained within rounded card components. Illustrations are abstract, geometric, and occasionally feature human figures in an expressive, non-realistic style, typically using a brand-aligned or complementary color palette. Icons are predominantly outlined, featuring a moderate stroke weight, and are monochromatic in the Charcoal Text or System Black color, occasionally with the Primary Purple accent. Imagery serves both decorative atmosphere, product showcase, and explanatory content, occupying significant visual space in alternating text-image sections.
+- **Webflow** — Shares a similar clean, slightly playful SaaS aesthetic with a focus on product screenshots and light backgrounds.
+- **Framerm** — Features a light theme with well-defined cards, geometric illustrations, and a minimal approach to UI elements.
+- **Vercel** — Employs a clean, high-contrast typography, strategic use of brand-specific accent colors, and component-based organization on a light canvas.
+- **Linear** — Utilizes a highly structured grid, restrained use of color for functional elements, and an efficient information density on a light background.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #f1f0ee;
+  --color-surface-white: #ffffff;
+  --color-charcoal-text: #161616;
+  --color-dark-neutral-text: #222222;
+  --color-medium-gray-text: #686868;
+  --color-light-border: #e4e2df;
+  --color-primary-purple: #6248ff;
+  --color-muted-purple: #e0daff;
+  --color-light-purple-accent: #b8adf5;
+  --color-system-black: #000000;
+  --color-orange-to-purple-gradient: #ff7448;
+  --font-relative: 'Relative', Inter;
+  --font-relative-faux: 'Relative Faux', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.68px;
+  --text-display: 96px;
+  --leading-display: 1.1;
+  --tracking-display: -1.92px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-63: 63px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-112: 112px;
+  --spacing-120: 120px;
+  --spacing-256: 256px;
+  --radius-cards: 16px;
+  --radius-pills: 320px;
+  --radius-buttons: 8px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px;
+  --surface-canvas: #f1f0ee;
+  --surface-surface-white: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #f1f0ee;
+  --color-surface-white: #ffffff;
+  --color-charcoal-text: #161616;
+  --color-dark-neutral-text: #222222;
+  --color-medium-gray-text: #686868;
+  --color-light-border: #e4e2df;
+  --color-primary-purple: #6248ff;
+  --color-muted-purple: #e0daff;
+  --color-light-purple-accent: #b8adf5;
+  --color-system-black: #000000;
+  --color-orange-to-purple-gradient: #ff7448;
+  --font-relative: 'Relative', Inter;
+  --font-relative-faux: 'Relative Faux', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: 0px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --tracking-subheading: 0px;
+  --text-heading: 40px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.68px;
+  --text-display: 96px;
+  --leading-display: 1.1;
+  --tracking-display: -1.92px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-33: 33px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-63: 63px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-73: 73px;
+  --spacing-80: 80px;
+  --spacing-112: 112px;
+  --spacing-120: 120px;
+  --spacing-256: 256px;
+  --radius-cards: 16px;
+  --radius-pills: 320px;
+  --radius-buttons: 8px;
+  --radius-default: 8px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px 1px 3px 0px, rgba(0, 0, 0, 0.04) 0px 1px 2px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px 8px 10px -4px, rgba(0, 0, 0, 0.05) 0px 2px 10px 2px;
+  --surface-canvas: #f1f0ee;
+  --surface-surface-white: #ffffff;
+}
+```
