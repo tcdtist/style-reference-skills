@@ -1,80 +1,153 @@
 ---
 version: alpha
-name: Craft
-description: Craft presents a botanical elegance, marrying a muted, organic color palette with sharp, high-contrast typography. The design emphasizes natural greens and soft off-whites as background and text colors, contrasted by a single vibrant green for primary actions. Layouts are spacious, utilizing a comfortable density with ample negative space to allow content to breathe, fostering a calm yet authoritative feel. Visual details like crisp outlines and subtle off-white surfaces blend into a sophisticated, understated aesthetic.
-colors:
-  ink-bark: "#2a1a1d"
-  night-forest: "#1d3023"
-  deep-moss: "#0e634f"
-  garden-sprout: "#26d862"
-  linen-mist: "#eae6df"
-  parchment-white: "#f7f5f2"
-  ash-taupe: "#504344"
-  cloud-cement: "#d7d2cc"
-  stone-slate: "#645757"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.01px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-    letterSpacing: -0.01px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-    letterSpacing: -0.02px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.18
-    letterSpacing: -0.02px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.18
-    letterSpacing: -0.025px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.95
-    letterSpacing: -0.025px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 180px
-    lineHeight: 0.85
-    letterSpacing: -0.03px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 8px
-  elementGap: 16px
-  sectionGap: 56px
-components:
-  ghost-text-button:
-    role: Navigation, inline actions, and secondary calls-to-action.
-  primary-action-button:
-    role: Main calls-to-action.
-  subtle-pill-button:
-    role: Tertiary navigation or filter elements.
-  feature-card-transparent:
-    role: To group related content in a flexible layout.
-  content-block-card:
-    role: Informational cards or statistics.
-  dark-overlay-card:
-    role: Visual content containers, such as imagery or embedded media.
+name: "Craft"
+description: "Craft presents a botanical elegance, marrying a muted, organic color palette with sharp, high-contrast typography. The design emphasizes natural greens and soft off-whites as background and text colors, contrasted by a single vibrant green for primary actions. Layouts are spacious, utilizing a comfortable density with ample negative space to allow content to breathe, fostering a calm yet authoritative feel. Visual details like crisp outlines and subtle off-white surfaces blend into a sophisticated, understated aesthetic."
+theme: "light"
+industry: "agency"
+source_url: "https://itscraft.com"
+refero_style_id: "329075e8-97ed-4722-8952-d9bf001de233"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508580652-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508580652-thumb.jpg"
+extracted_at: "2026-04-30T00:23:24.558Z"
 ---
 
-## Overview
+# Craft — Style Reference
 
-**North Star:** Botanical elegance on linen
+> Botanical elegance on linen
+
+**Theme:** light
+
+**Industry:** agency
 
 Craft presents a botanical elegance, marrying a muted, organic color palette with sharp, high-contrast typography. The design emphasizes natural greens and soft off-whites as background and text colors, contrasted by a single vibrant green for primary actions. Layouts are spacious, utilizing a comfortable density with ample negative space to allow content to breathe, fostering a calm yet authoritative feel. Visual details like crisp outlines and subtle off-white surfaces blend into a sophisticated, understated aesthetic.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ink Bark | #2a1a1d | `--color-ink-bark` | Primary text, strong headings, button outlines on light backgrounds, dark accent borders that define content blocks |
+| Night Forest | #1d3023 | `--color-night-forest` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Deep Moss | #0e634f | `--color-deep-moss` | Accent text for financial figures or key statistics, decorative borders in specific content areas |
+| Garden Sprout | #26d862 | `--color-garden-sprout` | Primary action button backgrounds, vivid highlights for interactive elements, accent for navigation hovers and titles within specific data blocks |
+| Linen Mist | #eae6df | `--color-linen-mist` | Subtle background for UI elements, borders for ghost buttons, secondary text in specific contexts |
+| Parchment White | #f7f5f2 | `--color-parchment-white` | Dominant page background, card surfaces, pristine nav backgrounds |
+| Ash Taupe | #504344 | `--color-ash-taupe` | Muted headings, specific border colors for content separation |
+| Cloud Cement | #d7d2cc | `--color-cloud-cement` | Lightest separator lines, soft borders for structural elements |
+| Stone Slate | #645757 | `--color-stone-slate` | Body text for secondary content, subtle borders in various components |
+
+## Tokens — Typography
+
+### ABC Arizona Flare Variable
+
+- **Token:** `--font-abc-arizona-flare-variable`
+- **Substitute:** Playfair Display
+- **Weights:** 350, 400
+- **Sizes:** 12px, 13px, 15px, 16px, 18px, 32px
+- **Line heights:** 1.08, 1.18, 1.25, 1.50
+- **Letter spacing:** -0.03em, -0.02em, -0.01em
+- **Role:** Primary body text, navigation items, secondary headings, and general interface text. The subtle variations in weight and letter spacing create a refined and legible reading experience without being overly decorative.
+
+### ABC Arizona Flare Condensed Variable
+
+- **Token:** `--font-abc-arizona-flare-condensed-variable`
+- **Substitute:** Playfair Display Condensed
+- **Weights:** 300, 400
+- **Sizes:** 20px, 26px, 48px, 104px, 180px
+- **Line heights:** 0.85, 0.95, 1.18
+- **Letter spacing:** -0.03em, -0.025em, -0.02em
+- **Role:** Prominent headings and display text. The condensed form with specific letter spacing and light weights (especially 300) creates a distinctive, airy yet impactful typographic statement, signaling authority through restraint, not volume.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.01px | `--text-caption` |
+| body | 15px | 1.5 | -0.01px | `--text-body` |
+| subheading | 18px | 1.25 | -0.02px | `--text-subheading` |
+| heading-sm | 20px | 1.18 | -0.02px | `--text-heading-sm` |
+| heading | 26px | 1.18 | -0.025px | `--text-heading` |
+| heading-lg | 48px | 0.95 | -0.025px | `--text-heading-lg` |
+| display | 180px | 0.85 | -0.03px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-77 | 77px | `--spacing-77` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-167 | 167px | `--spacing-167` |
+| spacing-311 | 311px | `--spacing-311` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 4px |
+| cards | 8px |
+| buttons | 8px |
+| general | 4px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 56px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Text Button
+
+**Role:** Navigation, inline actions, and secondary calls-to-action.
+
+Completely transparent background, text color `Ink Bark` (#2a1a1d), no border, `ABC Arizona Flare Variable` font. Padding is 0px on all sides, ensuring a minimal footprint.
+
+### Primary Action Button
+
+**Role:** Main calls-to-action.
+
+Background `Garden Sprout` (#26d862), text color `Night Forest` (#1d3023), `ABC Arizona Flare Variable` font, with a `8px` border radius. 0px vertical padding, 24px horizontal padding.
+
+### Subtle Pill Button
+
+**Role:** Tertiary navigation or filter elements.
+
+Transparent background, text `Linen Mist` (#eae6df), `4px` border radius, `1px` border in `Linen Mist`. 8px padding on all sides. This button suggests interactivity without strong visual weight.
+
+### Feature Card - Transparent
+
+**Role:** To group related content in a flexible layout.
+
+Transparent background, `0px` border radius, no shadow. Bottom padding of `32px` for consistent vertical rhythm.
+
+### Content Block Card
+
+**Role:** Informational cards or statistics.
+
+Transparent background with a `8px` border radius. Features `16px` padding on all sides, visually containing information without heavy segmentation.
+
+### Dark Overlay Card
+
+**Role:** Visual content containers, such as imagery or embedded media.
+
+Background `Night Forest` (#1d3023), `8px` border radius, and `0px` padding, designed to have visual content bleed to its edges.
+
+## Do's and Don'ts
+
+### Do
 
 - Use `Parchment White` (#f7f5f2) as the default page background for clarity and spaciousness.
 - Apply `Ink Bark` (#2a1a1d) for primary body text and most headings to ensure high contrast and readability.
@@ -84,7 +157,7 @@ Craft presents a botanical elegance, marrying a muted, organic color palette wit
 - Employ a base `elementGap` of `16px` and `sectionGap` of `56px` to establish comfortable visual density.
 - Use `Night Forest` (#1d3023) as the default background for any visually dense sections or image backgrounds to create depth.
 
-### Don'ts
+### Don't
 
 - Avoid using `Garden Sprout` (#26d862) for non-interactive textual content; its high saturation is reserved for action.
 - Do not introduce sharp, angular edges; apply `8px` or `4px` radii consistently to all applicable components.
@@ -94,10 +167,147 @@ Craft presents a botanical elegance, marrying a muted, organic color palette wit
 - Do not embed imagery tightly; prioritize spacious layouts that give visuals room to breathe.
 - Avoid introducing additional chromatic colors; the palette is intentionally restrained, leveraging greens and earth tones.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Parchment White | #f7f5f2 | Dominant page and base canvas background. |
+| 1 | Linen Mist | #eae6df | Secondary background for subtle content grouping or ghost elements. |
+| 2 | Night Forest | #1d3023 | Darker card backgrounds, hero sections, and visual content containers. |
+
+## Imagery
+
+The site uses a mix of tightly cropped, natural photography with blurred effects and clean product-focused imagery. Photography often features organic subjects like plants or flowers, treated with motion blur to create an artistic, abstract feel rather than literal representation. Product-focused images (if present) are crisp and isolated. Iconography, visible in navigation, is minimal, using `Ink Bark` (#2a1a1d) stroke for abstract, outlined symbols that complement the typography. Imagery serves both decorative, atmospheric purposes and as a direct showcase for brand personality.
+
+## Layout
 
 The page primarily uses a contained layout with a comfortable max-width, allowing content to center. The hero section is full-bleed, featuring large, condensed typography centered over an abstract, blurred green background gradient. Subsequent sections generally alternate between bands of `Parchment White` (#f7f5f2) and `Linen Mist` (#eae6df), maintaining a consistent `56px` vertical `sectionGap`. Content within sections often follows a text-dominant, centered stack or a simple column grid (e.g., 2-column or 4-column cards for features or statistics), promoting a clean, organized flow. Navigation is a minimalist top bar, integrating subtle ghost buttons.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of tightly cropped, natural photography with blurred effects and clean product-focused imagery. Photography often features organic subjects like plants or flowers, treated with motion blur to create an artistic, abstract feel rather than literal representation. Product-focused images (if present) are crisp and isolated. Iconography, visible in navigation, is minimal, using `Ink Bark` (#2a1a1d) stroke for abstract, outlined symbols that complement the typography. Imagery serves both decorative, atmospheric purposes and as a direct showcase for brand personality.
+- **Figma** — Uses a similarly restrained color palette with a single bright accent color to draw attention to interactive elements, paired with clean, modern typography.
+- **Linear** — Employs a minimalist UI strategy with sharp type, generous spacing, and a limited color set where accents guide user interaction rather than decorative flair.
+- **Supabase** — Features a dark/light theme approach, but shares a core principle of using a single vivid green as a functional accent color against largely achromatic backgrounds.
+- **Kinsta** — Combines natural, organic-feeling imagery and a clean, spacious layout with strong contrasting typography for headlines, similar to Craft's design language.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ink-bark: #2a1a1d;
+  --color-night-forest: #1d3023;
+  --color-deep-moss: #0e634f;
+  --color-garden-sprout: #26d862;
+  --color-linen-mist: #eae6df;
+  --color-parchment-white: #f7f5f2;
+  --color-ash-taupe: #504344;
+  --color-cloud-cement: #d7d2cc;
+  --color-stone-slate: #645757;
+  --font-abc-arizona-flare-variable: 'ABC Arizona Flare Variable', Playfair Display;
+  --font-abc-arizona-flare-condensed-variable: 'ABC Arizona Flare Condensed Variable', Playfair Display Condensed;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.01px;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --tracking-body: -0.01px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.18;
+  --tracking-heading-sm: -0.02px;
+  --text-heading: 26px;
+  --leading-heading: 1.18;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 180px;
+  --leading-display: 0.85;
+  --tracking-display: -0.03px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-167: 167px;
+  --spacing-311: 311px;
+  --radius-tags: 4px;
+  --radius-cards: 8px;
+  --radius-buttons: 8px;
+  --radius-general: 4px;
+  --surface-parchment-white: #f7f5f2;
+  --surface-linen-mist: #eae6df;
+  --surface-night-forest: #1d3023;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ink-bark: #2a1a1d;
+  --color-night-forest: #1d3023;
+  --color-deep-moss: #0e634f;
+  --color-garden-sprout: #26d862;
+  --color-linen-mist: #eae6df;
+  --color-parchment-white: #f7f5f2;
+  --color-ash-taupe: #504344;
+  --color-cloud-cement: #d7d2cc;
+  --color-stone-slate: #645757;
+  --font-abc-arizona-flare-variable: 'ABC Arizona Flare Variable', Playfair Display;
+  --font-abc-arizona-flare-condensed-variable: 'ABC Arizona Flare Condensed Variable', Playfair Display Condensed;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.01px;
+  --text-body: 15px;
+  --leading-body: 1.5;
+  --tracking-body: -0.01px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 20px;
+  --leading-heading-sm: 1.18;
+  --tracking-heading-sm: -0.02px;
+  --text-heading: 26px;
+  --leading-heading: 1.18;
+  --tracking-heading: -0.025px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.95;
+  --tracking-heading-lg: -0.025px;
+  --text-display: 180px;
+  --leading-display: 0.85;
+  --tracking-display: -0.03px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-77: 77px;
+  --spacing-80: 80px;
+  --spacing-167: 167px;
+  --spacing-311: 311px;
+  --radius-tags: 4px;
+  --radius-cards: 8px;
+  --radius-buttons: 8px;
+  --radius-general: 4px;
+  --surface-parchment-white: #f7f5f2;
+  --surface-linen-mist: #eae6df;
+  --surface-night-forest: #1d3023;
+}
+```
