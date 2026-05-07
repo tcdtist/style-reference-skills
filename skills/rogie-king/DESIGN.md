@@ -1,56 +1,145 @@
 ---
 version: alpha
-name: Rogie King
-description: Rogie's personal site uses a warm, vintage digital aesthetic. Information is presented through structured lists and subtly outlined elements on a light parchment-like background. Typography is compact and precise, with distinct color accents highlighting interactive elements and key information, creating a personal yet organized feel. Custom icon borders and subtle gradients add an expressive, handcrafted touch.
-colors:
-  parchment: "#ededed"
-  graphite: "#101010"
-  mist: "#666666"
-  cloud: "#999999"
-  ghost-white: "#ffffff"
-  amber-dust: "#dabfa6"
-  clay-ochre: "#cebfb1"
-  forest-green: "#b9fd80"
-  terracotta: "#895d36"
-  deepwater-blue: "#00a2c2"
-  firebrick-red: "#ed2720"
-  blush-pink: "#f67777"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-spacing:
-  elementGap: 8px
-  sectionGap: 32px
-components:
-  project-list-item:
-    role: Organized display of project entries with year details.
-  segmented-input:
-    role: Stylized input or tag with rounded corners for visual distinction.
-  accent-outlined-link-deepwater-blue:
-    role: Interactive text link, drawing attention with an outlined style.
-  accent-outlined-link-firebrick-red:
-    role: Interactive text link, drawing strong attention for sensitive or key terms.
-  subtle-text-input:
-    role: Neutral input field for standard data entry.
+name: "Rogie King"
+description: "Rogie's personal site uses a warm, vintage digital aesthetic. Information is presented through structured lists and subtly outlined elements on a light parchment-like background. Typography is compact and precise, with distinct color accents highlighting interactive elements and key information, creating a personal yet organized feel. Custom icon borders and subtle gradients add an expressive, handcrafted touch."
+theme: "light"
+industry: "design"
+source_url: "https://rog.ie"
+refero_style_id: "2b67c471-ff5c-4443-9f8d-e704b6bb5236"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520511840-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520511840-thumb.jpg"
+extracted_at: "2026-04-30T03:42:12.100Z"
 ---
 
-## Overview
+# Rogie King — Style Reference
 
-**North Star:** Warm parchment memoir
+> Warm parchment memoir
+
+**Theme:** light
+
+**Industry:** design
 
 Rogie's personal site uses a warm, vintage digital aesthetic. Information is presented through structured lists and subtly outlined elements on a light parchment-like background. Typography is compact and precise, with distinct color accents highlighting interactive elements and key information, creating a personal yet organized feel. Custom icon borders and subtle gradients add an expressive, handcrafted touch.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Parchment | #ededed | `--color-parchment` | Page background canvas for a subtly aged, neutral base |
+| Graphite | #101010 | `--color-graphite` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Mist | #666666 | `--color-mist` | Secondary text for less prominent information and list item borders; Decorative background gradient used for visual separation or stylized elements |
+| Cloud | #999999 | `--color-cloud` | Tertiary text for metadata like years and minor details |
+| Ghost White | #ffffff | `--color-ghost-white` | Content background and accent text for high contrast elements |
+| Amber Dust | #dabfa6 | `--color-amber-dust` | Subtle background for input fields and other recessed surfaces |
+| Clay Ochre | #cebfb1 | `--color-clay-ochre` | Border color for input fields and decorative outlines |
+| Forest Green | #b9fd80 | `--color-forest-green` | General accent color as hinted by for dynamic states and highlights |
+| Terracotta | #895d36 | `--color-terracotta` | Decorative text and object borders, creating a warm, earthy emphasis |
+| Deepwater Blue | #00a2c2 | `--color-deepwater-blue` | Outlined links and icon borders, signifying interaction and emphasis with a cool contrast |
+| Firebrick Red | #ed2720 | `--color-firebrick-red` | Red accent for outlined action borders, linked labels, and lightweight interactive emphasis. |
+| Blush Pink | #f67777 | `--color-blush-pink` | Background for specific callouts or sections, adding a soft, vivid touch |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700
+- **Sizes:** 9px, 11px, 12px, 14px
+- **Line heights:** 1.00, 1.10, 1.14, 1.20, 1.45, 1.60
+- **Letter spacing:** 0.10em
+- **Role:** Primary typeface for all UI text, body copy, and less prominent headings, providing a contemporary, readable base.
+
+### isg
+
+- **Token:** `--font-isg`
+- **Substitute:** Montserrat
+- **Weights:** 500, 700
+- **Sizes:** 14px
+- **Line heights:** 0.86
+- **Letter spacing:** 0.10em
+- **Role:** Custom typeface for specific interactive links and callouts, featuring a tightly packed, distinctive character for emphasis without overwhelming.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.2 | — | `--text-caption` |
+| body-sm | 12px | 1.2 | — | `--text-body-sm` |
+| body | 14px | 1.2 | — | `--text-body` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| inputs | 40px |
+| default | 2px |
+| interactive | 8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(255, 255, 255, 0.35) 0px 1px 0.5px 0px, rgba(0, 0, 0, 0.15) 0px 0.5px 2px 0px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 400px |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Project List Item
+
+**Role:** Organized display of project entries with year details.
+
+Text in Graphite at 14px Inter with a 0.10em letter-spacing. Features a 1px solid Mist border on its bottom edge. Icons are left-aligned with 1px margin-right.
+
+### Segmented Input
+
+**Role:** Stylized input or tag with rounded corners for visual distinction.
+
+Background in Amber Dust with a 1px solid Clay Ochre top border and a 40px border-radius. Text is Graphite at 16px Inter, no padding. Includes an inset shadow: rgba(255, 255, 255, 0.35) 0px 1px 0.5px 0px, rgba(0, 0, 0, 0.15) 0px 0.5px 2px 0px inset.
+
+### Accent Outlined Link (Deepwater Blue)
+
+**Role:** Interactive text link, drawing attention with an outlined style.
+
+Text in Deepwater Blue with a 1px solid Deepwater Blue border. The typography uses the custom 'isg' font at 14px, weight 500, with 0.10em letter-spacing. Padding of 40px left and 12px right, with an 8px border-radius.
+
+### Accent Outlined Link (Firebrick Red)
+
+**Role:** Interactive text link, drawing strong attention for sensitive or key terms.
+
+Text in Firebrick Red with a 1px solid Firebrick Red border. The typography uses the custom 'isg' font at 14px, weight 500, with 0.10em letter-spacing. Padding of 40px left and 12px right, with an 8px border-radius.
+
+### Subtle Text Input
+
+**Role:** Neutral input field for standard data entry.
+
+Inherits default text color. Has no background color and uses a 1px solid Graphite border. No border-radius.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Parchment (#ededed) as the primary page background.
 - Apply Graphite (#101010) for main headings and interactive text to ensure strong contrast.
@@ -60,7 +149,7 @@ Rogie's personal site uses a warm, vintage digital aesthetic. Information is pre
 - Separate primary sections with a 32px vertical gap.
 - Use 8px radius for interactive elements and 40px radius for input fields to differentiate their feel.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated backgrounds for large content areas; reserve them for small accent callouts like Blush Pink (#f67777).
 - Do not deviate from the Inter and isg font families; generic system fonts will conflict with the precise letter-spacing.
@@ -69,10 +158,100 @@ Rogie's personal site uses a warm, vintage digital aesthetic. Information is pre
 - Do not create filled buttons or primary actions with backgrounds; interactive states are conveyed through text color changes and subtle borders.
 - Do not use letter-spacing values other than 0.10em for Inter and isg fonts for consistency.
 
-### Layout
+## Elevation
+
+- **Shadow 1:** `rgba(255, 255, 255, 0.35) 0px 1px 0.5px 0px, rgba(0, 0, 0, 0.15) 0px 0.5px 2px 0px inset`
+
+## Imagery
+
+Imagery is minimal and contextual, focused on clear, contained product shots or content previews (e.g., movie covers). Photography and illustrations are used as small, framed elements rather than full-bleed backgrounds. Corners are generally sharp, though some accent elements may feature rounded forms. Icons are typically monoline and subtle, often outlined in brand colors to provide functional cues without visual dominance. The role of imagery is primarily explanatory and decorative, providing visual breaks and context rather than leading the narrative. Visual density is text-dominant, with images serving as carefully placed punctuation.
+
+## Layout
 
 The page model is contained, centered within a max-width of 400px, which creates a focused, column-like reading experience. The hero consists of a centered text block with a prominent headline and supporting paragraphs. Sections are generally stacked vertically with a consistent 32px gap, often featuring a main heading followed by structured lists or content blocks. There are no alternating light/dark bands; the background remains consistently Parchment. Content arrangement is primarily vertical stacking of text and lists, with some exceptions like the movie cover carousel. Grid usage is visible in the movie flick display, though specific column counts are implied by image arrangement rather than explicit data. The layout is comfortable and intentionally uncrowded, allowing each content block to breathe. Navigation is minimal, likely a sticky header not fully visible here.
 
-### Imagery
+## Similar Brands
 
-Imagery is minimal and contextual, focused on clear, contained product shots or content previews (e.g., movie covers). Photography and illustrations are used as small, framed elements rather than full-bleed backgrounds. Corners are generally sharp, though some accent elements may feature rounded forms. Icons are typically monoline and subtle, often outlined in brand colors to provide functional cues without visual dominance. The role of imagery is primarily explanatory and decorative, providing visual breaks and context rather than leading the narrative. Visual density is text-dominant, with images serving as carefully placed punctuation.
+- **Are.na** — Minimal, text-focused content presentation on a light background, emphasizing information structure.
+- **Derek Sivers' Site** — Personal website aesthetic with simple typography and content-first layout, often on a subdued background.
+- **Notion** — Structured lists, subtle borders, and a focus on readable text hierarchy over heavy graphical elements.
+- **Readwise Reader** — Clean, light UI for reading with a strong emphasis on typography and minimal ornamental graphics.
+- **Substack** — Content-centric design, typically with a light theme, strong typography, and minimal interaction indicators.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-parchment: #ededed;
+  --color-graphite: #101010;
+  --color-mist: #666666;
+  --color-cloud: #999999;
+  --color-ghost-white: #ffffff;
+  --color-amber-dust: #dabfa6;
+  --color-clay-ochre: #cebfb1;
+  --color-forest-green: #b9fd80;
+  --color-terracotta: #895d36;
+  --color-deepwater-blue: #00a2c2;
+  --color-firebrick-red: #ed2720;
+  --color-blush-pink: #f67777;
+  --font-inter: 'Inter', Inter;
+  --font-isg: 'isg', Montserrat;
+  --text-caption: 11px;
+  --leading-caption: 1.2;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.2;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --radius-inputs: 40px;
+  --radius-default: 2px;
+  --radius-interactive: 8px;
+  --shadow-xl: rgba(255, 255, 255, 0.35) 0px 1px 0.5px 0px, rgba(0, 0, 0, 0.15) 0px 0.5px 2px 0px inset;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-parchment: #ededed;
+  --color-graphite: #101010;
+  --color-mist: #666666;
+  --color-cloud: #999999;
+  --color-ghost-white: #ffffff;
+  --color-amber-dust: #dabfa6;
+  --color-clay-ochre: #cebfb1;
+  --color-forest-green: #b9fd80;
+  --color-terracotta: #895d36;
+  --color-deepwater-blue: #00a2c2;
+  --color-firebrick-red: #ed2720;
+  --color-blush-pink: #f67777;
+  --font-inter: 'Inter', Inter;
+  --font-isg: 'isg', Montserrat;
+  --text-caption: 11px;
+  --leading-caption: 1.2;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1.2;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --radius-inputs: 40px;
+  --radius-default: 2px;
+  --radius-interactive: 8px;
+  --shadow-xl: rgba(255, 255, 255, 0.35) 0px 1px 0.5px 0px, rgba(0, 0, 0, 0.15) 0px 0.5px 2px 0px inset;
+}
+```

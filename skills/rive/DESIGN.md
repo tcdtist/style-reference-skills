@@ -1,77 +1,178 @@
 ---
 version: alpha
-name: Rive
-description: The design feels like a high-end piece of creative software, a focused digital workshop cloaked in darkness. A pure black #000000 canvas eliminates all distraction, forcing attention onto the content and UI. The technical, wide-set 'Tomorrow' typeface is the defining visual signature, establishing a futuristic, blueprint-like quality for all headings. A single, warm 'Ignition Orange' accent appears only on primary CTAs, acting as a functional guidance point in the monochromatic environment. Elevation is conveyed not by shadows but by subtle shifts in dark gray surfaces, creating depth like nested panels on a piece of precision hardware.
-colors:
-  ignition-orange: "#ffa41c"
-  obsidian: "#000000"
-  charcoal: "#111111"
-  graphite: "#1d1d1d"
-  tarmac: "#262626"
-  stark-white: "#ffffff"
-  cloud: "#f1f1f1"
-  ash: "#aaaaaa"
-  dusk-gray: "#999999"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.1
-    letterSpacing: 1.1px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.6
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.3
-    letterSpacing: 0.2px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: 0.19px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-    letterSpacing: -1.32px
-spacing:
-  cardRadius: 8px
-  buttonRadius: 8px
-  elementGap: 8-16px
-  sectionGap: 80-120px
-components:
-  cta-button-group:
-    role: 
-  rive-editor-feature-card:
-    role: 
-  category-tag-cards-grid:
-    role: 
-  primary-cta-button:
-    role: The main call to action in a view.
-  secondary-cta-button:
-    role: Secondary action, like downloads or alternative options.
-  tertiary-button:
-    role: Small, supplemental actions like 'Learn More' or 'Features'.
-  navigation-link:
-    role: Header and footer navigation items.
-  eyebrow-label:
-    role: A small label preceding a major headline.
-  category-tag-card:
-    role: Interactive tags for filtering or navigation, seen in a grid.
-  hero-headline:
-    role: The main H1 on the page.
+name: "Rive"
+description: "The design feels like a high-end piece of creative software, a focused digital workshop cloaked in darkness. A pure black #000000 canvas eliminates all distraction, forcing attention onto the content and UI. The technical, wide-set 'Tomorrow' typeface is the defining visual signature, establishing a futuristic, blueprint-like quality for all headings. A single, warm 'Ignition Orange' accent appears only on primary CTAs, acting as a functional guidance point in the monochromatic environment. Elevation is conveyed not by shadows but by subtle shifts in dark gray surfaces, creating depth like nested panels on a piece of precision hardware."
+theme: "dark"
+industry: "design"
+source_url: "https://rive.app"
+refero_style_id: "6323a42b-3b47-4774-92e4-15651a9ba2ac"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929279868-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775929279868-thumb.jpg"
+extracted_at: "2026-04-11T17:42:27.457Z"
 ---
 
-## Overview
+# Rive — Style Reference
 
-**North Star:** Precision Night Vision. The interface is a specialized lens, cutting through darkness to focus on technical details with absolute clarity.
+> Precision Night Vision. The interface is a specialized lens, cutting through darkness to focus on technical details with absolute clarity.
+
+**Theme:** dark
+
+**Industry:** design
 
 The design feels like a high-end piece of creative software, a focused digital workshop cloaked in darkness. A pure black #000000 canvas eliminates all distraction, forcing attention onto the content and UI. The technical, wide-set 'Tomorrow' typeface is the defining visual signature, establishing a futuristic, blueprint-like quality for all headings. A single, warm 'Ignition Orange' accent appears only on primary CTAs, acting as a functional guidance point in the monochromatic environment. Elevation is conveyed not by shadows but by subtle shifts in dark gray surfaces, creating depth like nested panels on a piece of precision hardware.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ignition Orange | #ffa41c | `--color-ignition-orange` | Primary CTAs and eyebrow labels — the sole warm accent, providing a clear, unmissable call to action. |
+| Obsidian | #000000 | `--color-obsidian` | Primary page background. |
+| Charcoal | #111111 | `--color-charcoal` | Secondary surfaces, like contained button backgrounds. |
+| Graphite | #1d1d1d | `--color-graphite` | Tertiary surfaces, small button backgrounds. |
+| Tarmac | #262626 | `--color-tarmac` | Interactive element backgrounds. |
+| Stark White | #ffffff | `--color-stark-white` | Headline text, icon fills. |
+| Cloud | #f1f1f1 | `--color-cloud` | High-emphasis body text. |
+| Ash | #aaaaaa | `--color-ash` | Standard body text. |
+| Dusk Gray | #999999 | `--color-dusk-gray` | Secondary text, navigation links. |
+
+## Tokens — Typography
+
+### Tomorrow
+
+- **Token:** `--font-tomorrow`
+- **Substitute:** Share Tech Mono, Roboto Mono
+- **Weights:** 400, 500
+- **Sizes:** 11px, 12px, 14px, 20px, 24px, 40px
+- **Line heights:** 1.00, 1.20, 1.30, 1.40, 1.60
+- **Letter spacing:** Negative at large sizes (-1.32px at 40px) for tight headlines, positive at small sizes (+1.1px at 11px) for legible UI labels.
+- **Role:** All headings, subheadings, and prominent UI labels. Its technical, semi-monospace structure and distinctive letter-spacing define the brand's futuristic, tool-like identity.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter, Roboto, sans-serif
+- **Weights:** 400, 500, 600
+- **Sizes:** 13px, 16px
+- **Line heights:** 1.20, 1.60, 1.70
+- **Role:** All body copy and long-form text. Its neutrality provides a readable foundation that complements the stylized 'Tomorrow' headlines.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** System UI
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Role:** Fallback and utilitarian text in less prominent contexts.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.1 | 1.1px | `--text-caption` |
+| body | 16px | 1.6 | — | `--text-body` |
+| subheading | 20px | 1.3 | 0.2px | `--text-subheading` |
+| heading-sm | 24px | 1.2 | 0.19px | `--text-heading-sm` |
+| heading-lg | 40px | 1 | -1.32px | `--text-heading-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-39 | 39px | `--spacing-39` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 4-8px |
+| cards | 8px |
+| inputs | 8px |
+| buttons | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80-120px |
+| cardPadding | 16px |
+| elementGap | 8-16px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Rive Editor Feature Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Category Tag Cards Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary CTA Button
+
+**Role:** The main call to action in a view.
+
+Background: Ignition Orange (#ffa41c). Text: Stark White (#ffffff). Padding: 12px 24px. Radius: 8px. Font: Inter Bold.
+
+### Secondary CTA Button
+
+**Role:** Secondary action, like downloads or alternative options.
+
+Background: Charcoal (#111111) or Graphite (#1d1d1d). Text: Stark White (#ffffff). Padding: 12px 24px. Radius: 8px. Font: Inter.
+
+### Tertiary Button
+
+**Role:** Small, supplemental actions like 'Learn More' or 'Features'.
+
+Background: Graphite (#1d1d1d). Text: Stark White (#ffffff) or Ash (#aaaaaa). Padding: 8px 10px. Radius: 8px. Font: Tomorrow or Inter, often with an icon.
+
+### Navigation Link
+
+**Role:** Header and footer navigation items.
+
+Text-only button. Text color: Dusk Gray (#999999). Hover/Active color: Stark White (#ffffff). Font: Tomorrow 500.
+
+### Eyebrow Label
+
+**Role:** A small label preceding a major headline.
+
+Text color: Ignition Orange (#ffa41c). Font: Tomorrow 500, all-caps. Often paired with a small icon.
+
+### Category Tag Card
+
+**Role:** Interactive tags for filtering or navigation, seen in a grid.
+
+Background: Graphite (#1d1d1d). Border: 1px solid Tarmac (#262626). Text: Dusk Gray (#999999). Radius: 8px. On hover, background lightens and text turns white.
+
+### Hero Headline
+
+**Role:** The main H1 on the page.
+
+Font: Tomorrow 500 at a large size (e.g., 40px+). Color: Stark White (#ffffff). Tightly tracked letter-spacing.
+
+## Do's and Don'ts
+
+### Do
 
 - Use the 'Tomorrow' font for all headings, subheadings, and nav items.
 - Reserve 'Ignition Orange' (#ffa41c) exclusively for a single primary CTA per view.
@@ -81,7 +182,7 @@ The design feels like a high-end piece of creative software, a focused digital w
 - Apply specific letter-spacing rules for the 'Tomorrow' font: negative for large sizes, positive for small.
 - Use 'Stark White' (#ffffff) for headlines and 'Ash' (#aaaaaa) or 'Dusk Gray' (#999999) for body copy.
 
-### Don'ts
+### Don't
 
 - Don't use drop shadows. Use colored surfaces for elevation.
 - Don't introduce any new saturated colors. The palette is strictly monochromatic plus one orange accent.
@@ -91,14 +192,137 @@ The design feels like a high-end piece of creative software, a focused digital w
 - Don't use 'Tomorrow' for long paragraphs of body text; use 'Inter'.
 - Don't use gradients. The aesthetic is solid color blocks.
 
-### Layout
+## Surfaces
 
-The layout is full-bleed and centered, creating an immersive, focused environment. The hero section occupies the entire viewport with a large, centered headline stack. Subsequent content is presented in simple, centered text blocks or contained grid-like structures for tags and categories. Vertical rhythm is spacious, allowing each piece of information to stand alone in the expansive dark space.
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Base | #000000 | Page background |
+| 1 | Raised | #111111 | Secondary interactive surfaces |
+| 2 | Overlay | #1d1d1d | Tertiary buttons and interactive tags |
 
-### Imagery
+## Imagery
 
 Imagery is minimal to non-existent, placing full emphasis on the product's UI and capabilities. The visual language is defined by typography and stark color contrasts, not photography or illustration. Dark, empty containers act as placeholders, suggesting potential for embedded animations or product demos, but the core identity remains text- and UI-centric.
 
-### Elevation
+## Layout
 
-Elevation is achieved through layered, near-black surfaces (#111111, #1d1d1d) on a pure black (#000000) base, not box shadows. This creates a subtle, self-contained depth reminiscent of physical hardware panels rather than floating UI cards.
+The layout is full-bleed and centered, creating an immersive, focused environment. The hero section occupies the entire viewport with a large, centered headline stack. Subsequent content is presented in simple, centered text blocks or contained grid-like structures for tags and categories. Vertical rhythm is spacious, allowing each piece of information to stand alone in the expansive dark space.
+
+## Similar Brands
+
+- **Linear** — Shares the developer-tool aesthetic with a dark-mode UI, sharp typography, and minimal accent colors.
+- **Vercel** — Similar use of a pitch-black background, sharp sans-serif typography, and a minimalist, tech-focused identity.
+- **Raycast** — Evokes a similar command-line utility feel with a dark UI, focus on function, and sparse use of color.
+- **GitHub Codespaces** — Also uses a dark, code-editor-inspired theme that prioritizes text and function over decorative elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ignition-orange: #ffa41c;
+  --color-obsidian: #000000;
+  --color-charcoal: #111111;
+  --color-graphite: #1d1d1d;
+  --color-tarmac: #262626;
+  --color-stark-white: #ffffff;
+  --color-cloud: #f1f1f1;
+  --color-ash: #aaaaaa;
+  --color-dusk-gray: #999999;
+  --font-tomorrow: 'Tomorrow', Share Tech Mono, Roboto Mono;
+  --font-inter: 'Inter', Inter, Roboto, sans-serif;
+  --font-sans-serif: 'sans-serif', System UI;
+  --text-caption: 11px;
+  --leading-caption: 1.1;
+  --tracking-caption: 1.1px;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --text-subheading: 20px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: 0.2px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: 0.19px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.32px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --radius-tags: 4-8px;
+  --radius-cards: 8px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --surface-base: #000000;
+  --surface-raised: #111111;
+  --surface-overlay: #1d1d1d;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ignition-orange: #ffa41c;
+  --color-obsidian: #000000;
+  --color-charcoal: #111111;
+  --color-graphite: #1d1d1d;
+  --color-tarmac: #262626;
+  --color-stark-white: #ffffff;
+  --color-cloud: #f1f1f1;
+  --color-ash: #aaaaaa;
+  --color-dusk-gray: #999999;
+  --font-tomorrow: 'Tomorrow', Share Tech Mono, Roboto Mono;
+  --font-inter: 'Inter', Inter, Roboto, sans-serif;
+  --font-sans-serif: 'sans-serif', System UI;
+  --text-caption: 11px;
+  --leading-caption: 1.1;
+  --tracking-caption: 1.1px;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --text-subheading: 20px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: 0.2px;
+  --text-heading-sm: 24px;
+  --leading-heading-sm: 1.2;
+  --tracking-heading-sm: 0.19px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -1.32px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-39: 39px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --radius-tags: 4-8px;
+  --radius-cards: 8px;
+  --radius-inputs: 8px;
+  --radius-buttons: 8px;
+  --surface-base: #000000;
+  --surface-raised: #111111;
+  --surface-overlay: #1d1d1d;
+}
+```

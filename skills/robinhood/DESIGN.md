@@ -1,73 +1,156 @@
 ---
 version: alpha
-name: Robinhood
-description: This system evokes a high-contrast, edgy digital experience, like a sleek command interface. Its stark visual identity is built on a limited palette of near-black, pure white, and a single, aggressive electric lime green. Typography plays a crucial role in establishing authority through custom typefaces, with a distinct serif for display headings creating a sense of luxury and importance, while a sans-serif maintains legibility for body text. Rounded pill-shaped buttons stand out against the predominantly angular design, providing clear interactive points.
-colors:
-  deep-space-black: "#110e08"
-  void-black: "#000000"
-  ghost-white: "#ffffff"
-  shadow-graphite: "#35322d"
-  rocket-lime: "#ccff00"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.26
-    letterSpacing: -0.077px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.008px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.09
-    letterSpacing: -0.011px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 31px
-    lineHeight: 1.2
-    letterSpacing: -0.019px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1.08
-    letterSpacing: -0.014px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1
-    letterSpacing: -0.014px
-spacing:
-  buttonRadius: 36px
-  elementGap: 8px
-components:
-  cta-button-group:
-    role: 
-  stock-token-feature-card:
-    role: 
-  asset-search-tab-bar:
-    role: 
-  primary-call-to-action-button:
-    role: Action
-  secondary-ghost-button:
-    role: Action
-  inline-text-link:
-    role: Navigation/Action
-  navigation-link:
-    role: Navigation
-  input-field-example:
-    role: Data Entry
+name: "Robinhood"
+description: "This system evokes a high-contrast, edgy digital experience, like a sleek command interface. Its stark visual identity is built on a limited palette of near-black, pure white, and a single, aggressive electric lime green. Typography plays a crucial role in establishing authority through custom typefaces, with a distinct serif for display headings creating a sense of luxury and importance, while a sans-serif maintains legibility for body text. Rounded pill-shaped buttons stand out against the predominantly angular design, providing clear interactive points."
+theme: "dark"
+industry: "fintech"
+source_url: "https://robinhood.com"
+refero_style_id: "48ba2283-13b5-423a-8742-390ea4e53c36"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924119623-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924119623-thumb.jpg"
+extracted_at: "2026-04-11T16:15:38.797Z"
 ---
 
-## Overview
+# Robinhood — Style Reference
 
-**North Star:** Electric lime on a dark canvas. The design feels like a financial dashboard powered by neon-green data points against a dark, responsive background.
+> Electric lime on a dark canvas. The design feels like a financial dashboard powered by neon-green data points against a dark, responsive background.
+
+**Theme:** dark
+
+**Industry:** fintech
 
 This system evokes a high-contrast, edgy digital experience, like a sleek command interface. Its stark visual identity is built on a limited palette of near-black, pure white, and a single, aggressive electric lime green. Typography plays a crucial role in establishing authority through custom typefaces, with a distinct serif for display headings creating a sense of luxury and importance, while a sans-serif maintains legibility for body text. Rounded pill-shaped buttons stand out against the predominantly angular design, providing clear interactive points.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Space Black | #110e08 | `--color-deep-space-black` | Page backgrounds, card surfaces, primary text on Rocket Lime background, button backgrounds for secondary actions. |
+| Void Black | #000000 | `--color-void-black` | Text color on Rocket Lime buttons, accents, footer background. |
+| Ghost White | #ffffff | `--color-ghost-white` | Primary text, informational text on Deep Space Black. |
+| Shadow Graphite | #35322d | `--color-shadow-graphite` | Subtle border colors, secondary text elements, minor outlines. |
+| Rocket Lime | #ccff00 | `--color-rocket-lime` | Call-to-action buttons, active states, key interactive elements, brand highlights — a potent, high-energy accent against dark neutrals. |
+
+## Tokens — Typography
+
+### Capsule Sans Text
+
+- **Token:** `--font-capsule-sans-text`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 13px, 16px, 31px, 72px, 80px
+- **Line heights:** 1.00, 1.08, 1.20, 1.26
+- **Letter spacing:** -0.077, -0.019, -0.014, -0.008
+- **Role:** Versatile sans-serif for body text, navigation, buttons, and some larger display elements. Its varied letter-spacing creates a distinct visual rhythm, tightening at larger sizes for impact and loosening for readability in smaller text.
+
+### Phonic
+
+- **Token:** `--font-phonic`
+- **Substitute:** Georgia
+- **Weights:** 400, 700
+- **Sizes:** 16px, 22px, 31px
+- **Line heights:** 1.09, 1.26, 1.50
+- **Letter spacing:** -0.016, -0.011, -0.008
+- **Role:** Secondary serif font for body and link text, providing a classic counterpoint to the sans-serif. Its heavier weights are used for more prominent text within content blocks, offering a subtle visual hierarchy.
+
+### Martina Plantijn
+
+- **Token:** `--font-martina-plantijn`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 72px, 80px
+- **Line heights:** 1.00, 1.08
+- **Letter spacing:** -0.014
+- **Role:** Signature serif font for primary headlines and display text. Its elegant, slightly condensed forms are central to the brand's sophisticated feel, creating a sense of established authority amidst the modern aesthetic.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.26 | -0.077px | `--text-caption` |
+| body | 16px | 1.5 | -0.008px | `--text-body` |
+| subheading | 22px | 1.09 | -0.011px | `--text-subheading` |
+| heading | 31px | 1.2 | -0.019px | `--text-heading` |
+| display | 72px | 1.08 | -0.014px | `--text-display` |
+| display-lg | 80px | 1 | -0.014px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-52 | 52px | `--spacing-52` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| inputs | 36px |
+| buttons | 36px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 24px |
+| elementGap | 8px |
+
+## Components
+
+### CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Stock Token Feature Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Asset Search & Tab Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Call-to-Action Button
+
+**Role:** Action
+
+Pill-shaped button with Rocket Lime (#ccff00) background, Void Black (#000000) text, 36px border-radius, and generous horizontal padding (32px left/right), vertical padding 0px. The leading action element.
+
+### Secondary Ghost Button
+
+**Role:** Action
+
+Minimalist button with transparent background, Deep Space Black (#110e08) text, 36px border-radius, and 32px horizontal padding. Offers an alternative action of lesser prominence.
+
+### Inline Text Link
+
+**Role:** Navigation/Action
+
+Ghost White (#ffffff) text using Phonic font, weight 400; no distinct background or padding, emphasizing its textual nature within content.
+
+### Navigation Link
+
+**Role:** Navigation
+
+Ghost White (#ffffff) text using Capsule Sans Text font, weight 400. Appears in the top navigation bar and footer with no background or border, relying on placement and color for distinction.
+
+### Input Field (example)
+
+**Role:** Data Entry
+
+Based on button radius, likely features 36px border-radius with a Deep Space Black (#110e08) background and Ghost White (#ffffff) text, or a Shadow Graphite (#35322d) border for definition.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Space Black (#110e08) for backgrounds and Ghost White (#ffffff) for primary text to maintain high contrast.
 - Use Rocket Lime (#ccff00) exclusively for primary CTA buttons and explicit accent elements, never for large blocks or generic text.
@@ -76,7 +159,7 @@ This system evokes a high-contrast, edgy digital experience, like a sleek comman
 - Ensure consistent spacing with the 8px base unit, particularly for element-to-element gaps.
 - Leverage Capsule Sans Text for all body copy and most UI elements, adjusting letter-spacing as per its defined profiles for optimal visual rhythm.
 
-### Don'ts
+### Don't
 
 - Do not introduce new vibrant colors outside of the Rocket Lime (#ccff00) accent.
 - Avoid using hard-edged rectangles for interactive elements; all buttons and input fields must be pill-shaped with 36px radius.
@@ -85,10 +168,108 @@ This system evokes a high-contrast, edgy digital experience, like a sleek comman
 - Refrain from heavy drop shadows or excessive elevation; the aesthetic relies on flat, high-contrast layers and typography for hierarchy.
 - Avoid using multiple line-heights or letter-spacings for the same font/size combination — adhere to the defined typographic profiles.
 
-### Layout
+## Imagery
+
+The visual language relies heavily on abstract graphics and product screenshots, with a notable absence of lifestyle photography. Product screenshots feature mobile interfaces in deep black, demonstrating app functionality clearly. Abstract graphics often use the brand's electric lime color to highlight key information or create dynamic backgrounds, particularly for the main hero section. Iconography is clean and minimal, appearing as monochrome outlines or fills, consistent with the overall UI. When imagery is present, it serves an explanatory or informational role rather than a decorative or aspirational one, contained within clear sections or device mockups, and never bleeding into the background.
+
+## Layout
 
 The page primarily employs a max-width contained layout, though the initial hero section is full-bleed with a deep black background and centered headline. Sections alternate between dark backgrounds (Deep Space Black) and lighter, usually Rocket Lime (#ccff00), for distinct content blocks, creating a strong visual rhythm without explicit dividers. Content is generally arranged in a centered stack for the hero, transitioning into two-column layouts (text beside device mockups) or stacked blocks for feature explanations. The footer is full-bleed deep black, echoing the hero. The navigation is a fixed top bar on a deep black background, centered with interactive elements.
 
-### Imagery
+## Similar Brands
 
-The visual language relies heavily on abstract graphics and product screenshots, with a notable absence of lifestyle photography. Product screenshots feature mobile interfaces in deep black, demonstrating app functionality clearly. Abstract graphics often use the brand's electric lime color to highlight key information or create dynamic backgrounds, particularly for the main hero section. Iconography is clean and minimal, appearing as monochrome outlines or fills, consistent with the overall UI. When imagery is present, it serves an explanatory or informational role rather than a decorative or aspirational one, contained within clear sections or device mockups, and never bleeding into the background.
+- **Revolut** — Dark UI with vibrant single accent color for financial tools.
+- **Monzo** — Focus on custom typography, clean interfaces, and bright accent colors within a fintech context.
+- **Linear** — Sophisticated dark theme, minimalist design with strong typographic hierarchy.
+- **Cash App** — Bold, custom typography and a strong brand color palette used aggressively for financial services.
+- **Figma** — Use of varied font weights and letter-spacing for UI elements creating a precise and modern feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-space-black: #110e08;
+  --color-void-black: #000000;
+  --color-ghost-white: #ffffff;
+  --color-shadow-graphite: #35322d;
+  --color-rocket-lime: #ccff00;
+  --font-capsule-sans-text: 'Capsule Sans Text', Inter;
+  --font-phonic: 'Phonic', Georgia;
+  --font-martina-plantijn: 'Martina Plantijn', Playfair Display;
+  --text-caption: 13px;
+  --leading-caption: 1.26;
+  --tracking-caption: -0.077px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.008px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.09;
+  --tracking-subheading: -0.011px;
+  --text-heading: 31px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.019px;
+  --text-display: 72px;
+  --leading-display: 1.08;
+  --tracking-display: -0.014px;
+  --text-display-lg: 80px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.014px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-52: 52px;
+  --radius-inputs: 36px;
+  --radius-buttons: 36px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-space-black: #110e08;
+  --color-void-black: #000000;
+  --color-ghost-white: #ffffff;
+  --color-shadow-graphite: #35322d;
+  --color-rocket-lime: #ccff00;
+  --font-capsule-sans-text: 'Capsule Sans Text', Inter;
+  --font-phonic: 'Phonic', Georgia;
+  --font-martina-plantijn: 'Martina Plantijn', Playfair Display;
+  --text-caption: 13px;
+  --leading-caption: 1.26;
+  --tracking-caption: -0.077px;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --tracking-body: -0.008px;
+  --text-subheading: 22px;
+  --leading-subheading: 1.09;
+  --tracking-subheading: -0.011px;
+  --text-heading: 31px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.019px;
+  --text-display: 72px;
+  --leading-display: 1.08;
+  --tracking-display: -0.014px;
+  --text-display-lg: 80px;
+  --leading-display-lg: 1;
+  --tracking-display-lg: -0.014px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-52: 52px;
+  --radius-inputs: 36px;
+  --radius-buttons: 36px;
+}
+```
