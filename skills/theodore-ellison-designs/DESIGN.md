@@ -1,73 +1,161 @@
 ---
 version: alpha
-name: Theodore Ellison Designs
-description: Theodore Ellison Designs evokes a historical, handcrafted luxury. Its visual style combines the warmth of natural materials with a sparse, deliberate layout. Typography utilizes a bespoke font with subtle letter-spacing for headlines and body text, maintaining an airy, refined feel. A muted chromatic palette, anchored by deep, earthy tones, defines backgrounds and highlights, allowing glass and light to become the true focal points. Components are minimal, often border-only or filled with soft, desaturated colors, emphasizing texture and form over bold graphics.
-colors:
-  mahogany-wood: "#413128"
-  desert-clay: "#d6926b"
-  forest-moss: "#3c4531"
-  ocean-slate: "#38506c"
-  lavender-mist: "#afa5b4"
-  charcoal-black: "#272729"
-  almond-canvas: "#fdfcf2"
-  stonewash-gray: "#cfcfcf"
-  pure-white: "#ffffff"
-  pale-sand: "#f2ede1"
-  muted-text: "#777777"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.2
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 20px
-  sectionGap: 180px
-components:
-  ghost-navigation-button:
-    role: Primary navigation links and interactive elements within headers/footers.
-  outlined-call-to-action-button:
-    role: Prominent calls to action, drawing attention through contrast.
-  filled-neutral-button:
-    role: Secondary actions or less prominent interactive elements.
-  section-divider-card:
-    role: Modular content blocks that visually separate information.
-  text-input-outlined:
-    role: Form fields for user data entry.
+name: "Theodore Ellison Designs"
+description: "Theodore Ellison Designs evokes a historical, handcrafted luxury. Its visual style combines the warmth of natural materials with a sparse, deliberate layout. Typography utilizes a bespoke font with subtle letter-spacing for headlines and body text, maintaining an airy, refined feel. A muted chromatic palette, anchored by deep, earthy tones, defines backgrounds and highlights, allowing glass and light to become the true focal points. Components are minimal, often border-only or filled with soft, desaturated colors, emphasizing texture and form over bold graphics."
+theme: "light"
+industry: "design"
+source_url: "https://theodoreellison.com"
+refero_style_id: "f6bcbb63-2925-4bee-a330-e5e770b94750"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514269861-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514269861-thumb.jpg"
+extracted_at: "2026-04-30T01:58:11.785Z"
 ---
 
-## Overview
+# Theodore Ellison Designs — Style Reference
 
-**North Star:** Warm earth-tones, artisan typography
+> Warm earth-tones, artisan typography
+
+**Theme:** light
+
+**Industry:** design
 
 Theodore Ellison Designs evokes a historical, handcrafted luxury. Its visual style combines the warmth of natural materials with a sparse, deliberate layout. Typography utilizes a bespoke font with subtle letter-spacing for headlines and body text, maintaining an airy, refined feel. A muted chromatic palette, anchored by deep, earthy tones, defines backgrounds and highlights, allowing glass and light to become the true focal points. Components are minimal, often border-only or filled with soft, desaturated colors, emphasizing texture and form over bold graphics.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Mahogany Wood | #413128 | `--color-mahogany-wood` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Desert Clay | #d6926b | `--color-desert-clay` | Primary section background, conveying warmth and natural material |
+| Forest Moss | #3c4531 | `--color-forest-moss` | Tertiary section background, a deep, muted green for variety |
+| Ocean Slate | #38506c | `--color-ocean-slate` | Accent background, a cool, muted blue-gray |
+| Lavender Mist | #afa5b4 | `--color-lavender-mist` | Accent background, a soft, desaturated purple for visual segmentation |
+| Charcoal Black | #272729 | `--color-charcoal-black` | Primary text, general borders, link text |
+| Almond Canvas | #fdfcf2 | `--color-almond-canvas` | Secondary background, ghost button background, footer background, provides a soft, warm white base |
+| Stonewash Gray | #cfcfcf | `--color-stonewash-gray` | Filled button background, providing a subtle, muted interactive state |
+| Pure White | #ffffff | `--color-pure-white` | Component backgrounds, button text, subtle borders, maintaining a clean contrast |
+| Pale Sand | #f2ede1 | `--color-pale-sand` | Card backgrounds, section separators, a very light, warm neutral surface |
+| Muted Text | #777777 | `--color-muted-text` | Muted helper text, secondary information |
+
+## Tokens — Typography
+
+### ModernEra-Regular
+
+- **Token:** `--font-modernera-regular`
+- **Weights:** 400, 500
+- **Sizes:** 16px, 20px, 24px, 26px, 30px, 36px, 40px
+- **Line heights:** 1, 1.2, 1.5
+- **Role:** ModernEra-Regular — detected in extracted data but not described by AI
+
+### ModernEra
+
+- **Token:** `--font-modernera`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Headlines, main body text components. The varied weights handle hierarchy with a consistent, classic serif feel, preventing overly bold elements.
+
+### ModernEra Mono
+
+- **Token:** `--font-modernera-mono`
+- **Substitute:** IBM Plex Mono
+- **Weights:** 400
+- **Sizes:** 14px, 16px
+- **Line heights:** 1.43, 1.50
+- **Letter spacing:** -0.0070em
+- **Role:** Subheadings, captions, secondary labels, and functional text like navigation. The monospace quality adds a technical, precise counterpoint to the main serif font, with tight tracking enhancing its crispness.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1.2 | — | `--text-caption` |
+| body-sm | 20px | 1.2 | — | `--text-body-sm` |
+| body | 24px | 1.2 | — | `--text-body` |
+| body-lg | 26px | 1.2 | — | `--text-body-lg` |
+| heading-sm | 30px | 1.2 | — | `--text-heading-sm` |
+| heading | 36px | 1.2 | — | `--text-heading` |
+| heading-lg | 40px | 1.2 | — | `--text-heading-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-115 | 115px | `--spacing-115` |
+| spacing-135 | 135px | `--spacing-135` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-241 | 241px | `--spacing-241` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| buttons | 0px |
+| textInputs | 0px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.25) 0px 0px 100px 0px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 180px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Primary navigation links and interactive elements within headers/footers.
+
+Text in Charcoal Black (#272729), no background, no border, with 14px padding. Utilizes ModernEra Mono weight 400 for a crisp, functional feel.
+
+### Outlined Call-to-Action Button
+
+**Role:** Prominent calls to action, drawing attention through contrast.
+
+Background Almond Canvas (#fdfcf2), text Mahogany Wood (#413128), and a 1px solid Mahogany Wood (#413128) border. Zero border-radius and 14px vertical, 22px horizontal padding. Uses ModernEra weight 400.
+
+### Filled Neutral Button
+
+**Role:** Secondary actions or less prominent interactive elements.
+
+Background Stonewash Gray (#cfcfcf), text Pure White (#ffffff). Zero border-radius and 14px vertical, 22px horizontal padding. Uses ModernEra weight 400.
+
+### Section Divider Card
+
+**Role:** Modular content blocks that visually separate information.
+
+Background Pale Sand (#f2ede1), with 20px padding. Zero border-radius, no visible border or shadow by default. Content typically centered and structured within this container.
+
+### Text Input (Outlined)
+
+**Role:** Form fields for user data entry.
+
+Background Pure White (#ffffff), with a 1px solid Charcoal Black (#272729) border. Zero border-radius, 15px vertical padding and 20px horizontal padding. Uses ModernEra Mono for input text.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize a maximalist approach to imagery, letting the visual assets command attention.
 - Maintain zero border-radius on all interactive elements and content containers for a sharp, architectural feel.
@@ -77,7 +165,7 @@ Theodore Ellison Designs evokes a historical, handcrafted luxury. Its visual sty
 - Use Charcoal Black (#272729) for primary text and border outlines to maintain strong contrast and definition.
 - Ensure generous top and bottom padding of 180px for major sections to create breathing room and gravitas.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows for elevation; instead, use subtle background color changes or inset shadows for depth.
 - Do not introduce rounded corners on any UI elements; the system explicitly uses sharp 0px radii.
@@ -87,10 +175,144 @@ Theodore Ellison Designs evokes a historical, handcrafted luxury. Its visual sty
 - Do not use generic system UI elements; components must reflect the custom, minimalist styling with specific colors and radii.
 - Do not apply `normal` letter-spacing to ModernEra Mono font; it should always carry the defined negative tracking.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Desert Clay Canvas | #d6926b | Primary page background for main content areas, conveying warmth. |
+| 1 | Almond Canvas | #fdfcf2 | Secondary page background for footers and some interactive surfaces, a soft, warm off-white. |
+| 2 | Pale Sand Card | #f2ede1 | Default background for content cards and modular sections, providing a subtle layer. |
+| 3 | Pure White Accent | #ffffff | Background for form inputs and some interactive elements, offering crispness. |
+
+## Elevation
+
+- **Gallery Image Modal:** `inset rgba(0, 0, 0, 0.25) 0px 0px 100px 0px`
+
+## Imagery
+
+Photography is paramount, often showcasing glasswork and interiors. Images tend to be full-bleed or large, emphasizing texture and light interaction as they would 'in situ'. There's a mix of detailed product shots and atmospheric context shots that capture mood and environment. Photography for products is direct and bright, highlighting the material. Illustrations are minimalist line-art for logos and icons, providing a clean, geometric contrast to the organic nature of the glass. Icons (visible in the header logo) are outlined with a fine stroke weight, maintaining a delicate, architectural feel. Imagery primarily serves to showcase the product and evoke a sense of crafted quality, occupying significant visual space.
+
+## Layout
 
 The page primarily uses a contained layout with some full-bleed sections. The hero section can be full-bleed with a prominent visual that takes up the entire viewport, featuring centered branding. Subsequent sections alternate between full-width color blocks and content blocks limited by an implicit max-width, maintaining comfortable internal padding. Content often arranges in dual-column structures (text-left/image-right or vice versa) or centered stacks. Vertical rhythm is established through generous and consistent section gaps of 180px between major blocks, creating a spacious and unhurried browsing experience. The navigation is a minimal top bar, with prominent branding and subtle ghost buttons on the right.
 
-### Imagery
+## Similar Brands
 
-Photography is paramount, often showcasing glasswork and interiors. Images tend to be full-bleed or large, emphasizing texture and light interaction as they would 'in situ'. There's a mix of detailed product shots and atmospheric context shots that capture mood and environment. Photography for products is direct and bright, highlighting the material. Illustrations are minimalist line-art for logos and icons, providing a clean, geometric contrast to the organic nature of the glass. Icons (visible in the header logo) are outlined with a fine stroke weight, maintaining a delicate, architectural feel. Imagery primarily serves to showcase the product and evoke a sense of crafted quality, occupying significant visual space.
+- **Ferm Living** — Shares the use of muted, earthy color palettes and a focus on natural materials, with a clean, unadorned aesthetic.
+- **Aesop** — Employs a sophisticated, minimalist typographic style with custom fonts and a preference for monochromatic or deeply muted color schemes, creating a sense of understated luxury.
+- **Carl Hansen & Søn** — Features high-quality product photography with a deep appreciation for craftsmanship, presented in a spacious, content-forward layout with restrained UI elements.
+- **The Future Kept** — Exhibits a similar design philosophy with a focus on handcrafted goods, using textured backgrounds, curated photography, and classic typography with modern spacing.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-mahogany-wood: #413128;
+  --color-desert-clay: #d6926b;
+  --color-forest-moss: #3c4531;
+  --color-ocean-slate: #38506c;
+  --color-lavender-mist: #afa5b4;
+  --color-charcoal-black: #272729;
+  --color-almond-canvas: #fdfcf2;
+  --color-stonewash-gray: #cfcfcf;
+  --color-pure-white: #ffffff;
+  --color-pale-sand: #f2ede1;
+  --color-muted-text: #777777;
+  --font-modernera-regular: 'ModernEra-Regular', ui-sans-serif, system-ui, sans-serif;
+  --font-modernera: 'ModernEra', Playfair Display;
+  --font-modernera-mono: 'ModernEra Mono', IBM Plex Mono;
+  --text-caption: 16px;
+  --leading-caption: 1.2;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.2;
+  --text-body: 24px;
+  --leading-body: 1.2;
+  --text-body-lg: 26px;
+  --leading-body-lg: 1.2;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.2;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-115: 115px;
+  --spacing-135: 135px;
+  --spacing-180: 180px;
+  --spacing-241: 241px;
+  --radius-cards: 0px;
+  --radius-buttons: 0px;
+  --radius-textinputs: 0px;
+  --shadow-xl: rgba(0, 0, 0, 0.25) 0px 0px 100px 0px inset;
+  --surface-desert-clay-canvas: #d6926b;
+  --surface-almond-canvas: #fdfcf2;
+  --surface-pale-sand-card: #f2ede1;
+  --surface-pure-white-accent: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-mahogany-wood: #413128;
+  --color-desert-clay: #d6926b;
+  --color-forest-moss: #3c4531;
+  --color-ocean-slate: #38506c;
+  --color-lavender-mist: #afa5b4;
+  --color-charcoal-black: #272729;
+  --color-almond-canvas: #fdfcf2;
+  --color-stonewash-gray: #cfcfcf;
+  --color-pure-white: #ffffff;
+  --color-pale-sand: #f2ede1;
+  --color-muted-text: #777777;
+  --font-modernera-regular: 'ModernEra-Regular', ui-sans-serif, system-ui, sans-serif;
+  --font-modernera: 'ModernEra', Playfair Display;
+  --font-modernera-mono: 'ModernEra Mono', IBM Plex Mono;
+  --text-caption: 16px;
+  --leading-caption: 1.2;
+  --text-body-sm: 20px;
+  --leading-body-sm: 1.2;
+  --text-body: 24px;
+  --leading-body: 1.2;
+  --text-body-lg: 26px;
+  --leading-body-lg: 1.2;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.2;
+  --text-heading: 36px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1.2;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-115: 115px;
+  --spacing-135: 135px;
+  --spacing-180: 180px;
+  --spacing-241: 241px;
+  --radius-cards: 0px;
+  --radius-buttons: 0px;
+  --radius-textinputs: 0px;
+  --shadow-xl: rgba(0, 0, 0, 0.25) 0px 0px 100px 0px inset;
+  --surface-desert-clay-canvas: #d6926b;
+  --surface-almond-canvas: #fdfcf2;
+  --surface-pale-sand-card: #f2ede1;
+  --surface-pure-white-accent: #ffffff;
+}
+```

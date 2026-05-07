@@ -1,53 +1,135 @@
 ---
 version: alpha
-name: Thisispam
-description: Thisispam uses a high-contrast, minimalist visual style featuring stark black and white elements set against a dominant, muted yellow canvas. Typography is compact and precise, often acting as a key visual element with its sharp weight and tightly tracked presentation. The design leverages strong lines and flat surfaces, with color appearing primarily as this signature background hue or as a hyper-minimal accent point, creating a sense of understated assertiveness and directness rather than decorative flourish.
-colors:
-  canvas-yellow: "#fff3b8"
-  midnight-black: "#000000"
-  paper-white: "#ffffff"
-  input-pale-yellow: "#f1e4a4"
-  accent-red: "#ff0000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.43
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 58px
-    lineHeight: 0.9
-spacing:
-  elementGap: 12px
-  sectionGap: 24px
-components:
-  ghost-navigation-button:
-    role: Primary site navigation and contextual actions where visual weight should be minimal.
-  primary-canvas-button:
-    role: Secondary action buttons, often appearing on the Canvas Yellow background.
-  inverse-ghost-button:
-    role: Buttons on dark backgrounds requiring a reversed text and outline color.
-  input-field:
-    role: Interactive text input fields.
-  feature-card:
-    role: Displaying project previews or feature blocks.
+name: "Thisispam"
+description: "Thisispam uses a high-contrast, minimalist visual style featuring stark black and white elements set against a dominant, muted yellow canvas. Typography is compact and precise, often acting as a key visual element with its sharp weight and tightly tracked presentation. The design leverages strong lines and flat surfaces, with color appearing primarily as this signature background hue or as a hyper-minimal accent point, creating a sense of understated assertiveness and directness rather than decorative flourish."
+theme: "light"
+industry: "design"
+source_url: "https://thisispam.com"
+refero_style_id: "f352b093-1ba7-49c7-9ce3-ad73cf9a1aee"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512034014-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512034014-thumb.jpg"
+extracted_at: "2026-04-30T01:20:54.856Z"
 ---
 
-## Overview
+# Thisispam — Style Reference
 
-**North Star:** Graphic Blueprint on Muted Yellow Canvas
+> Graphic Blueprint on Muted Yellow Canvas
+
+**Theme:** light
+
+**Industry:** design
 
 Thisispam uses a high-contrast, minimalist visual style featuring stark black and white elements set against a dominant, muted yellow canvas. Typography is compact and precise, often acting as a key visual element with its sharp weight and tightly tracked presentation. The design leverages strong lines and flat surfaces, with color appearing primarily as this signature background hue or as a hyper-minimal accent point, creating a sense of understated assertiveness and directness rather than decorative flourish.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Yellow | #fff3b8 | `--color-canvas-yellow` | Page backgrounds, card backgrounds, primary interactive accents – a muted sun-drenched yellow that forms the site's primary atmospheric color |
+| Midnight Black | #000000 | `--color-midnight-black` | Primary text, headers, icon fills, dominant borders, footer background – provides high contrast against the Canvas Yellow and Paper White |
+| Paper White | #ffffff | `--color-paper-white` | Secondary backgrounds, modal surfaces, some reversed text, and outlines against dark sections |
+| Input Pale Yellow | #f1e4a4 | `--color-input-pale-yellow` | Input field backgrounds – a slightly deeper, more saturated yellow than Canvas Yellow, providing subtle differentiation |
+| Accent Red | #ff0000 | `--color-accent-red` | Minimal punctuation for navigation and decorative dot elements – a vivid, singular color used sparingly for emphasis |
+
+## Tokens — Typography
+
+### OT Neue Montreal
+
+- **Token:** `--font-ot-neue-montreal`
+- **Substitute:** Montserrat
+- **Weights:** 500, 700
+- **Sizes:** 11px, 16px, 32px, 58px
+- **Line heights:** 0.90, 1.00, 1.20, 1.43, 2.55
+- **Letter spacing:** normal
+- **Role:** Primary headings, navigation, and prominent body text – characterized by its sharp, technical feel and tight leading, especially for larger sizes.
+
+### ABC Diatype
+
+- **Token:** `--font-abc-diatype`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 13px, 14px
+- **Line heights:** 1.20, 1.43, 2.15
+- **Letter spacing:** normal
+- **Role:** Body text, links, and secondary interface elements – provides a clear, legible counterpoint to Neue Montreal for functional details.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.43 | — | `--text-caption` |
+| body-lg | 14px | 1.2 | — | `--text-body-lg` |
+| heading | 32px | 1 | — | `--text-heading` |
+| display | 58px | 0.9 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+| small | 2px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 16px |
+| elementGap | 12px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Primary site navigation and contextual actions where visual weight should be minimal.
+
+Transparent background, Midnight Black text, 0px border radius, 0px padding. Uses OT Neue Montreal weight 500.
+
+### Primary Canvas Button
+
+**Role:** Secondary action buttons, often appearing on the Canvas Yellow background.
+
+Canvas Yellow background, Midnight Black text, 0px border radius, 8px vertical padding, 16px horizontal padding. Uses ABC Diatype weight 400.
+
+### Inverse Ghost Button
+
+**Role:** Buttons on dark backgrounds requiring a reversed text and outline color.
+
+Transparent background, Paper White text, Paper White 1px border, 0px border radius, 14px padding. Uses OT Neue Montreal.
+
+### Input Field
+
+**Role:** Interactive text input fields.
+
+Input Pale Yellow background, Midnight Black text, 1px Midnight Black border, 0px border radius, 16px padding. Uses ABC Diatype weight 400.
+
+### Feature Card
+
+**Role:** Displaying project previews or feature blocks.
+
+Transparent background, 0px border radius, no box shadow, 0px padding. Content typically relies on image and typography for definition.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Black (#000000) for all primary body text and headings for maximum contrast.
 - Implement Canvas Yellow (#fff3b8) as the dominant background color for most page sections, establishing the brand's unique atmosphere.
@@ -57,7 +139,7 @@ Thisispam uses a high-contrast, minimalist visual style featuring stark black an
 - Reserve Accent Red (#ff0000) for hyper-minimal decorative elements or specific active states, never for large blocks of color.
 - Use ABC Diatype for all body copy and secondary text elements, maintaining clear legibility at smaller sizes with its default line heights.
 
-### Don'ts
+### Don't
 
 - Avoid using rounded corners; the system's identity is built on sharp, angular forms.
 - Do not introduce gradients unless explicitly defined; surfaces are flat and monochrome.
@@ -67,10 +149,89 @@ Thisispam uses a high-contrast, minimalist visual style featuring stark black an
 - Do not use wide letter-spacing; typography is always compact and often normal or slightly negative.
 - Do not vary line-height extensively; the established values for OT Neue Montreal and ABC Diatype are crucial for the system's precise feel.
 
-### Layout
+## Imagery
+
+Imagery primarily consists of high-fidelity product mockups (phones/laptops showing websites) and carefully composed, often abstract or aesthetic, still-life photography. The treatment is direct and unadorned, often with raw edges and minimal masking, usually against a clean white or dark background. If photography is present, it tends to be crisp, high-contrast, and focused on texture or composition, acting as a backdrop or context rather than a narrative element. Icons are minimal, outlined, and monochromatic, inheriting the Midnight Black or Paper White palette with a medium stroke weight. Imagery acts as a showcase for product or an element of aesthetic atmosphere, rather than purely decorative content, and maintains a high density of visual information balanced with whitespace.
+
+## Layout
 
 The page primarily uses a max-width contained layout, though some hero sections, notably the initial brand video, can be full-bleed. The hero pattern features large, centered, stark typography over a dynamic background. Sections alternate between Canvas Yellow and Midnight Black backgrounds, creating strong visual segmentation. Content arrangement frequently uses a centered stacked approach for headlines and calls to action, or a two-column grid for showcasing projects (image/mockup on one side, text/label on the other). Vertical rhythm is established through consistent '24px' section gaps. Navigation is a minimal top bar with discreet links and a hamburger icon, suggesting content focus over complex routing.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of high-fidelity product mockups (phones/laptops showing websites) and carefully composed, often abstract or aesthetic, still-life photography. The treatment is direct and unadorned, often with raw edges and minimal masking, usually against a clean white or dark background. If photography is present, it tends to be crisp, high-contrast, and focused on texture or composition, acting as a backdrop or context rather than a narrative element. Icons are minimal, outlined, and monochromatic, inheriting the Midnight Black or Paper White palette with a medium stroke weight. Imagery acts as a showcase for product or an element of aesthetic atmosphere, rather than purely decorative content, and maintains a high density of visual information balanced with whitespace.
+- **AIGA** — Similar high-contrast typography presentation, stark black/white/single accent color palette, and a focus on geometric clean lines.
+- **Future Fonts** — Shares a direct, graphic design aesthetic with strong typography as a central visual element, often with a limited color palette and prominent use of black and white.
+- **Cargo Collective** — Emphasizes a portfolio-driven layout with muted backgrounds, strong typographic hierarchy, and a focus on showcasing visual work with minimal UI adornment.
+- **Manual (design studio)** — Uses a precise, almost architectural approach to layout and typography, often with a monochromatic base and a singular highlight color if any.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-yellow: #fff3b8;
+  --color-midnight-black: #000000;
+  --color-paper-white: #ffffff;
+  --color-input-pale-yellow: #f1e4a4;
+  --color-accent-red: #ff0000;
+  --font-ot-neue-montreal: 'OT Neue Montreal', Montserrat;
+  --font-abc-diatype: 'ABC Diatype', Inter;
+  --text-caption: 11px;
+  --leading-caption: 1.43;
+  --text-body-lg: 14px;
+  --leading-body-lg: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1;
+  --text-display: 58px;
+  --leading-display: 0.9;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-160: 160px;
+  --radius-none: 0px;
+  --radius-small: 2px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-yellow: #fff3b8;
+  --color-midnight-black: #000000;
+  --color-paper-white: #ffffff;
+  --color-input-pale-yellow: #f1e4a4;
+  --color-accent-red: #ff0000;
+  --font-ot-neue-montreal: 'OT Neue Montreal', Montserrat;
+  --font-abc-diatype: 'ABC Diatype', Inter;
+  --text-caption: 11px;
+  --leading-caption: 1.43;
+  --text-body-lg: 14px;
+  --leading-body-lg: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1;
+  --text-display: 58px;
+  --leading-display: 0.9;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-56: 56px;
+  --spacing-160: 160px;
+  --radius-none: 0px;
+  --radius-small: 2px;
+}
+```

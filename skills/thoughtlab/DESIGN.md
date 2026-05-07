@@ -1,66 +1,124 @@
 ---
 version: alpha
-name: ThoughtLab
-description: ThoughtLab's design system evokes a dark, cerebral command center. Bold typography punches through deep black backgrounds, while a singular vibrant red accent highlights critical calls-to-action. The spatial experience is generous, allowing components to breathe within wide page margins, contributing to an atmosphere of focused, high-stakes digital experience.
-colors:
-  midnight-black: "#000000"
-  stone-grey: "#4c4c4c"
-  ghost-white: "#cccccc"
-  snow-drift: "#ffffff"
-  action-red: "#fc1c46"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-    letterSpacing: -0.009px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.25
-    letterSpacing: -0.009px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.2
-    letterSpacing: -0.02px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.15
-    letterSpacing: -0.02px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 0.96
-    letterSpacing: -0.067px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 198px
-    lineHeight: 0.92
-    letterSpacing: -0.067px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 9px
-  sectionGap: 65px
-components:
-  primary-action-button:
-    role: Main call-to-action.
-  ghost-nav-link:
-    role: Header and navigation links.
-  text-input:
-    role: Standard input fields.
-  content-card:
-    role: Information grouping.
+name: "ThoughtLab"
+description: "ThoughtLab's design system evokes a dark, cerebral command center. Bold typography punches through deep black backgrounds, while a singular vibrant red accent highlights critical calls-to-action. The spatial experience is generous, allowing components to breathe within wide page margins, contributing to an atmosphere of focused, high-stakes digital experience."
+theme: "dark"
+industry: "design"
+source_url: "https://www.thoughtlab.com"
+refero_style_id: "82d52a5f-b1bb-4a69-91a3-15a7eb8bbe99"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514496944-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514496944-thumb.jpg"
+extracted_at: "2026-04-30T02:01:52.422Z"
 ---
 
-## Overview
+# ThoughtLab — Style Reference
 
-**North Star:** Midnight Command Center
+> Midnight Command Center
+
+**Theme:** dark
+
+**Industry:** design
 
 ThoughtLab's design system evokes a dark, cerebral command center. Bold typography punches through deep black backgrounds, while a singular vibrant red accent highlights critical calls-to-action. The spatial experience is generous, allowing components to breathe within wide page margins, contributing to an atmosphere of focused, high-stakes digital experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Black | #000000 | `--color-midnight-black` | Page backgrounds, button text, icon fills |
+| Stone Grey | #4c4c4c | `--color-stone-grey` | Muted body text, subtle link borders |
+| Ghost White | #cccccc | `--color-ghost-white` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Snow Drift | #ffffff | `--color-snow-drift` | Header links, occasionally used as an elevated background color for content sections contrasting the dark base |
+| Action Red | #fc1c46 | `--color-action-red` | Primary call-to-action buttons – a forceful, vivid accent against dark surfaces |
+
+## Tokens — Typography
+
+### sui
+
+- **Token:** `--font-sui`
+- **Substitute:** Arial, Helvetica, sans-serif
+- **Weights:** 300, 400, 500, 700
+- **Sizes:** 10px, 14px, 15px, 17px, 18px, 27px, 72px, 91px, 198px
+- **Line heights:** 0.92, 0.96, 1.00, 1.10, 1.15, 1.20, 1.25, 1.50, 2.14
+- **Letter spacing:** -0.0670em, -0.0200em, -0.0090em
+- **Role:** Captures a versatile brand voice, ranging from expansive, large-scale headlines to functional body text across various digital experiences. The tighter letter spacing on larger sizes adds to the brand's sharp, modern feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | -0.009px | `--text-caption` |
+| body-sm | 14px | 1.25 | -0.009px | `--text-body-sm` |
+| subheading | 18px | 1.2 | -0.02px | `--text-subheading` |
+| heading | 27px | 1.15 | -0.02px | `--text-heading` |
+| heading-lg | 72px | 0.96 | -0.067px | `--text-heading-lg` |
+| display | 198px | 0.92 | -0.067px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-108 | 108px | `--spacing-108` |
+| spacing-126 | 126px | `--spacing-126` |
+| spacing-180 | 180px | `--spacing-180` |
+| spacing-198 | 198px | `--spacing-198` |
+| spacing-216 | 216px | `--spacing-216` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 65px |
+| cardPadding | 22px |
+| elementGap | 9px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call-to-action.
+
+Filled with Action Red (#fc1c46), using Snow Drift (#ffffff) text, with a full pill radius of 9999px. Padding is 0px top/bottom and 30px left/right. Text uses sui font.
+
+### Ghost Nav Link
+
+**Role:** Header and navigation links.
+
+Transparent background, Midnight Black (#000000) text. No border or radius. Padding is 0px. Text is sui font.
+
+### Text Input
+
+**Role:** Standard input fields.
+
+Transparent background, Snow Drift (#ffffff) text and border. No radius. Padding is 7.2px top/bottom and 21.6px left/right. Uses sui font.
+
+### Content Card
+
+**Role:** Information grouping.
+
+Transparent background, no border, no shadow, and no radius. Padding is 0. Content within it typically leverages standard text and link styles.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Black (#000000) as the primary background color for all main sections and canvases.
 - Apply Action Red (#fc1c46) exclusively for primary action buttons, ensuring a visible contrast and clear hierarchy.
@@ -70,7 +128,7 @@ ThoughtLab's design system evokes a dark, cerebral command center. Bold typograp
 - Employ Ghost White (#cccccc) for primary text elements against dark backgrounds.
 - Employ transparent cards with no visible borders or shadows to maintain flat product surfaces.
 
-### Don'ts
+### Don't
 
 - Do not use accent colors for descriptive text or non-interactive elements; reserve them for direct action.
 - Avoid applying heavy shadows or complex elevation to components, as the system favors a flat, minimalist aesthetic.
@@ -80,10 +138,127 @@ ThoughtLab's design system evokes a dark, cerebral command center. Bold typograp
 - Avoid adding unnecessary decorative borders or fills to cards; they should maintain a transparent, subtle presence.
 - Do not use tight spatial arrangements; ensure all elements have sufficient breathing room guided by the 9px element gap.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Primary Canvas | #000000 | Dominant background for the entire application, creating a deep, dark environment. |
+| 1 | Subtle Surface | #cccccc | Used for content backgrounds or subtle visual breaks within the dark canvas, maintaining high contrast. |
+| 2 | Elevated Surface | #ffffff | Occasional background for sections or components that require higher visual prominence against a subtly lighter backdrop, or as a direct contrast to the Midnight Black. |
+
+## Imagery
+
+The imagery primarily features abstract, organic 3D rendered forms with luminous, iridescent edges, positioned centrally as a visual anchor. These graphics are contained and serve a decorative, atmospheric role rather than explanatory content. There are minimal other images; the focus is on UI and text, making the 3D element a powerful, singular visual statement.
+
+## Layout
 
 The page employs a full-bleed dark background with a max-width content container, likely around 1200px, but it's not explicitly fixed, allowing for flexibility. The hero section is full-bleed, featuring large, centered headlines over an abstract 3D graphic. Content beneath the hero generally follows a spacious, centered vertical stack with generous section gaps. The navigation is a minimalist top bar with a clear 'Contact Us' primary action button on the right and a hamburger menu icon.
 
-### Imagery
+## Similar Brands
 
-The imagery primarily features abstract, organic 3D rendered forms with luminous, iridescent edges, positioned centrally as a visual anchor. These graphics are contained and serve a decorative, atmospheric role rather than explanatory content. There are minimal other images; the focus is on UI and text, making the 3D element a powerful, singular visual statement.
+- **Stripe** — Shares a sophisticated dark mode UI, minimalist aesthetic, and heavy reliance on strong typography combined with subtle, high-quality visual elements.
+- **Linear** — Features a dark interface with a single vibrant accent color to highlight interactive elements and status, often using spacious layouts.
+- **Framer** — Employs an editorial layout reminiscent of design portfolios, with large typography, dark backgrounds, and strategically placed visual accents.
+- **Supabase** — Uses dark backgrounds, stark typography, and a distinct single-color accent for branding and interactive states.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-black: #000000;
+  --color-stone-grey: #4c4c4c;
+  --color-ghost-white: #cccccc;
+  --color-snow-drift: #ffffff;
+  --color-action-red: #fc1c46;
+  --font-sui: 'sui', Arial, Helvetica, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.009px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.25;
+  --tracking-body-sm: -0.009px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.02px;
+  --text-heading: 27px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.02px;
+  --text-heading-lg: 72px;
+  --leading-heading-lg: 0.96;
+  --tracking-heading-lg: -0.067px;
+  --text-display: 198px;
+  --leading-display: 0.92;
+  --tracking-display: -0.067px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-22: 22px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-65: 65px;
+  --spacing-72: 72px;
+  --spacing-86: 86px;
+  --spacing-108: 108px;
+  --spacing-126: 126px;
+  --spacing-180: 180px;
+  --spacing-198: 198px;
+  --spacing-216: 216px;
+  --radius-buttons: 9999px;
+  --surface-primary-canvas: #000000;
+  --surface-subtle-surface: #cccccc;
+  --surface-elevated-surface: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-black: #000000;
+  --color-stone-grey: #4c4c4c;
+  --color-ghost-white: #cccccc;
+  --color-snow-drift: #ffffff;
+  --color-action-red: #fc1c46;
+  --font-sui: 'sui', Arial, Helvetica, sans-serif;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.009px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.25;
+  --tracking-body-sm: -0.009px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.02px;
+  --text-heading: 27px;
+  --leading-heading: 1.15;
+  --tracking-heading: -0.02px;
+  --text-heading-lg: 72px;
+  --leading-heading-lg: 0.96;
+  --tracking-heading-lg: -0.067px;
+  --text-display: 198px;
+  --leading-display: 0.92;
+  --tracking-display: -0.067px;
+  --spacing-7: 7px;
+  --spacing-9: 9px;
+  --spacing-22: 22px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-36: 36px;
+  --spacing-43: 43px;
+  --spacing-65: 65px;
+  --spacing-72: 72px;
+  --spacing-86: 86px;
+  --spacing-108: 108px;
+  --spacing-126: 126px;
+  --spacing-180: 180px;
+  --spacing-198: 198px;
+  --spacing-216: 216px;
+  --radius-buttons: 9999px;
+  --surface-primary-canvas: #000000;
+  --surface-subtle-surface: #cccccc;
+  --surface-elevated-surface: #ffffff;
+}
+```

@@ -1,73 +1,180 @@
 ---
 version: alpha
-name: Things
-description: This design system evokes a sense of calm efficiency, like a meticulously organized desktop with clean lines and subtle visual cues. The primary visual identity is built around shades of cool gray and a vibrant, yet restrained, blue. High contrast text on light backgrounds prioritizes readability, while carefully applied rounded corners and a singular, subtle shadow provide a touch of visual softness without compromising the overall crispness. The experience feels grounded and clear, guiding the user with precision.
-colors:
-  midnight-ink: "#303336"
-  charcoal-text: "#44474b"
-  storm-gray: "#55606"
-  subtle-ash: "#838b96"
-  silver-mist: "#9299a4"
-  off-white-canvas: "#ffffff"
-  cloud-gray: "#f2f5f7"
-  frost-border: "#dfe3e8"
-  ocean-blue: "#2576eb"
-  sky-link-blue: "#5c9cf5"
-  action-button-blue: "#4f91fb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.4
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.6
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.35
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.25
-  display:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.2
-spacing:
-  cardRadius: 18px
-  buttonRadius: 6px
-  elementGap: 4-14px
-  sectionGap: 48px
-components:
-  watch-introduction-video-button:
-    role: 
-  simply-powerful-section-card:
-    role: 
-  app-sidebar-navigation-card:
-    role: 
-  primary-action-button:
-    role: Call to action.
-  section-separator-card:
-    role: Organizing content blocks.
-  default-card:
-    role: General content display.
-  text-input-field:
-    role: User data input.
-  navigation-link:
-    role: Top navigation.
-  watch-video-button:
-    role: Auxiliary action, media launch.
+name: "Things"
+description: "This design system evokes a sense of calm efficiency, like a meticulously organized desktop with clean lines and subtle visual cues. The primary visual identity is built around shades of cool gray and a vibrant, yet restrained, blue. High contrast text on light backgrounds prioritizes readability, while carefully applied rounded corners and a singular, subtle shadow provide a touch of visual softness without compromising the overall crispness. The experience feels grounded and clear, guiding the user with precision."
+theme: "light"
+industry: "productivity"
+source_url: "https://culturedcode.com/things"
+refero_style_id: "ec0f5bca-8367-49e7-b8aa-73b3fa09a4a0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926077211-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926077211-thumb.jpg"
+extracted_at: "2026-04-11T16:48:13.143Z"
 ---
 
-## Overview
+# Things — Style Reference
 
-**North Star:** organized desktop, clean and bright
+> organized desktop, clean and bright
+
+**Theme:** light
+
+**Industry:** productivity
 
 This design system evokes a sense of calm efficiency, like a meticulously organized desktop with clean lines and subtle visual cues. The primary visual identity is built around shades of cool gray and a vibrant, yet restrained, blue. High contrast text on light backgrounds prioritizes readability, while carefully applied rounded corners and a singular, subtle shadow provide a touch of visual softness without compromising the overall crispness. The experience feels grounded and clear, guiding the user with precision.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #303336 | `--color-midnight-ink` | Primary text, deep accents, interactive states for headings. |
+| Charcoal Text | #44474b | `--color-charcoal-text` | Secondary text, descriptive body copy. |
+| Storm Gray | #55606 | `--color-storm-gray` | Tertiary text, subtle borders, inactive link states. |
+| Subtle Ash | #838b96 | `--color-subtle-ash` | Placeholder text, minor labels, light gray borders for contrast. |
+| Silver Mist | #9299a4 | `--color-silver-mist` | Fainter secondary text, subtle dividers. |
+| Off-White Canvas | #ffffff | `--color-off-white-canvas` | Main page backgrounds, input fields, primary elevated surfaces. |
+| Cloud Gray | #f2f5f7 | `--color-cloud-gray` | Card backgrounds, section separators, subtle background shifts. |
+| Frost Border | #dfe3e8 | `--color-frost-border` | Input element borders, subtle separators. |
+| Ocean Blue | #2576eb | `--color-ocean-blue` | Active link states, primary interactive elements, icon accents — a vivid anchor. |
+| Sky Link Blue | #5c9cf5 | `--color-sky-link-blue` | Hover states for links, secondary interactive elements — a slightly softer, yet still vibrant, indicator. |
+| Action Button Blue | #4f91fb | `--color-action-button-blue` | Primary Call-to-Action button background — a stable, deep blue that signifies action. |
+
+## Tokens — Typography
+
+### ui-sans-serif
+
+- **Token:** `--font-ui-sans-serif`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 600, 700, 800
+- **Sizes:** 13px, 14px, 15px, 16px, 17px, 18px, 20px, 24px, 36px
+- **Line heights:** 1.00, 1.20, 1.25, 1.30, 1.35, 1.40, 1.60
+- **Letter spacing:** normal
+- **Role:** The sole typeface, maintaining visual unity across all elements from headings to body text and UI components. Its system-font nature provides native OS feel and fast loading.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.4 | — | `--text-caption` |
+| body | 16px | 1.6 | — | `--text-body` |
+| subheading | 18px | 1.35 | — | `--text-subheading` |
+| heading | 24px | 1.25 | — | `--text-heading` |
+| display | 36px | 1.2 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-57 | 57px | `--spacing-57` |
+| spacing-81 | 81px | `--spacing-81` |
+| spacing-95 | 95px | `--spacing-95` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-206 | 206px | `--spacing-206` |
+| spacing-230 | 230px | `--spacing-230` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 18px |
+| icons | 3px |
+| inputs | 6px |
+| buttons | 6px |
+| hero-label | 12.8px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 2px 8px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 900px |
+| sectionGap | 48px |
+| cardPadding | 18px |
+| elementGap | 4-14px |
+
+## Components
+
+### Watch Introduction Video Button
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Simply Powerful Section Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### App Sidebar Navigation Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Call to action.
+
+Background: Action Button Blue (#4f91fb), text: Off-White Canvas (#ffffff), border-radius: 6px, padding: 7px 17px.
+
+### Section Separator Card
+
+**Role:** Organizing content blocks.
+
+Background: Cloud Gray (#f2f5f7), border-radius: 18px, padding: 18px.
+
+### Default Card
+
+**Role:** General content display.
+
+Background: transparent, border-radius: 0px, no box-shadow, no padding.
+
+### Text Input Field
+
+**Role:** User data input.
+
+Background: Off-White Canvas (#ffffff), text color: Midnight Ink (#000000), border-color: Frost Border (#dfe3e8), border-radius: 6px, padding: 8px.
+
+### Navigation Link
+
+**Role:** Top navigation.
+
+Text color: Storm Gray (#55606e) for inactive, Ocean Blue (#2576eb) for active/hover. Font size 15px, weight 600, line height 1.3.
+
+### Watch Video Button
+
+**Role:** Auxiliary action, media launch.
+
+Text: Ocean Blue (#2576eb), includes an icon, font size 18px, weight 600, line height 1.35.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Ink (#303336) for all primary headings and major text elements to maintain high contrast and visual weight.
 - Apply Cloud Gray (#f2f5f7) as a background for distinct content sections or cards to create clear visual separation.
@@ -75,7 +182,7 @@ This design system evokes a sense of calm efficiency, like a meticulously organi
 - Use a consistent border-radius of 6px for all functional elements like buttons and input fields to ensure a cohesive interactive experience.
 - Ensure generous vertical spacing between sections, using multiples of the 12px token to establish a comfortable content density.
 
-### Don'ts
+### Don't
 
 - Do not introduce new color hues; strictly adhere to the defined grays and blues to preserve the system’s crisp and minimalist aesthetic.
 - Avoid arbitrary border-radii; use 3px for icons, 6px for buttons/inputs, and 18px for cards, and 12.8px for select larger elements.
@@ -83,14 +190,154 @@ This design system evokes a sense of calm efficiency, like a meticulously organi
 - Do not vary font families; maintain the system's reliance on ui-sans-serif for all text to ensure consistent typography and OS integration.
 - Avoid dense packing of content; ensure minimum element gaps of 4px and significant section gaps with 48px to allow content to breathe.
 
-### Layout
+## Elevation
 
-The page adheres to a centered maximum-width model of 900px, providing ample negative space on wider screens. The hero section features a large, centered product icon above a headline and subtext, followed by a video link, establishing a clear hierarchy. Subsequent sections alternate between text-heavy descriptions and product screenshots, often in a stacked, centered arrangement. The overall section rhythm is consistent, separated by substantial vertical spacing (approximately 48px), creating a sense of calm and clarity. Navigation is a simple top bar with minimal links, complementing the uncluttered feel.
+- **Elevated Box:** `rgba(0, 0, 0, 0.1) 0px 2px 8px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px`
 
-### Imagery
+## Imagery
 
 The visual language consists primarily of highly polished, dimensional 3D app icons and product screenshots. These visuals are meticulously crafted, featuring a subtle gloss and depth that convey precision and quality. Photography is absent; instead, product screenshots showcase the UI in-situ on devices like Macs and iPhones, often with a slightly angled perspective. Illustrations are used sparingly, for instance, a small, multi-colored abstract graphic for 'Simply Powerful' — these are flat, geometric, and isolated, acting as decorative flourishes rather than primary content. The imagery's role is to explicitly showcase the product and its interface, emphasizing functionality and aesthetic quality.
 
-### Elevation
+## Layout
 
-Elevation is used sparingly and subtly, providing just enough visual separation to indicate a raised element without heavy shadows. The primary technique involves a soft, diffused shadow to gently lift content, maintaining the design's overall lightness and crispness rather than creating deep spatial depth.
+The page adheres to a centered maximum-width model of 900px, providing ample negative space on wider screens. The hero section features a large, centered product icon above a headline and subtext, followed by a video link, establishing a clear hierarchy. Subsequent sections alternate between text-heavy descriptions and product screenshots, often in a stacked, centered arrangement. The overall section rhythm is consistent, separated by substantial vertical spacing (approximately 48px), creating a sense of calm and clarity. Navigation is a simple top bar with minimal links, complementing the uncluttered feel.
+
+## Similar Brands
+
+- **Apple's product pages** — Shares the clean, bright aesthetic, use of system-like fonts, generous white space, and focus on showcasing product visuals and UI screenshots.
+- **Superhuman** — Employs high-contrast text on light backgrounds and a restrained use of a single vibrant accent color (blue), paired with a focused, efficient UI.
+- **Linear** — Features a strong emphasis on clean typography, precise spacing, and subtle UI elements over heavy graphical adornments, paired with a distinct blue accent.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #303336;
+  --color-charcoal-text: #44474b;
+  --color-storm-gray: #55606;
+  --color-subtle-ash: #838b96;
+  --color-silver-mist: #9299a4;
+  --color-off-white-canvas: #ffffff;
+  --color-cloud-gray: #f2f5f7;
+  --color-frost-border: #dfe3e8;
+  --color-ocean-blue: #2576eb;
+  --color-sky-link-blue: #5c9cf5;
+  --color-action-button-blue: #4f91fb;
+  --font-ui-sans-serif: 'ui-sans-serif', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --text-subheading: 18px;
+  --leading-subheading: 1.35;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --text-display: 36px;
+  --leading-display: 1.2;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-57: 57px;
+  --spacing-81: 81px;
+  --spacing-95: 95px;
+  --spacing-200: 200px;
+  --spacing-206: 206px;
+  --spacing-230: 230px;
+  --radius-cards: 18px;
+  --radius-icons: 3px;
+  --radius-inputs: 6px;
+  --radius-buttons: 6px;
+  --radius-hero-label: 12.8px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #303336;
+  --color-charcoal-text: #44474b;
+  --color-storm-gray: #55606;
+  --color-subtle-ash: #838b96;
+  --color-silver-mist: #9299a4;
+  --color-off-white-canvas: #ffffff;
+  --color-cloud-gray: #f2f5f7;
+  --color-frost-border: #dfe3e8;
+  --color-ocean-blue: #2576eb;
+  --color-sky-link-blue: #5c9cf5;
+  --color-action-button-blue: #4f91fb;
+  --font-ui-sans-serif: 'ui-sans-serif', system-ui, sans-serif;
+  --text-caption: 13px;
+  --leading-caption: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --text-subheading: 18px;
+  --leading-subheading: 1.35;
+  --text-heading: 24px;
+  --leading-heading: 1.25;
+  --text-display: 36px;
+  --leading-display: 1.2;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-27: 27px;
+  --spacing-28: 28px;
+  --spacing-29: 29px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-50: 50px;
+  --spacing-57: 57px;
+  --spacing-81: 81px;
+  --spacing-95: 95px;
+  --spacing-200: 200px;
+  --spacing-206: 206px;
+  --spacing-230: 230px;
+  --radius-cards: 18px;
+  --radius-icons: 3px;
+  --radius-inputs: 6px;
+  --radius-buttons: 6px;
+  --radius-hero-label: 12.8px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 2px 8px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px;
+}
+```
