@@ -1,61 +1,182 @@
 ---
 version: alpha
-name: Artisans d'idées
-description: Artisans d'idées employs a stark, high-contrast dark theme with minimal elements, creating a focused and atmospheric experience. Typography is extremely compact and tightly tracked, contributing to a sense of precision and restraint. The visual style revolves around black backgrounds, white text, and thin borders, ensuring all focus remains on the content through absence of distraction. Components are almost entirely conceptual, relying on typography and tight spacing rather than background fills or elevation to define boundaries.
-colors:
-  midnight-void: "#000000"
-  ghost-white: "#ffffff"
-  cinder-gray: "#bbbab2"
-  warning-red: "#ff0000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1
-spacing:
-  elementGap: 1px
-  sectionGap: 200px
-components:
-  navigation-link:
-    role: Top navigation items.
-  body-text-block:
-    role: Primary content display.
-  icon-only-button:
-    role: Minimal interactive elements.
-  information-block:
-    role: Structural content divider.
+name: "Artisans d'idées"
+description: "Artisans d'idées employs a stark, high-contrast dark theme with minimal elements, creating a focused and atmospheric experience. Typography is extremely compact and tightly tracked, contributing to a sense of precision and restraint. The visual style revolves around black backgrounds, white text, and thin borders, ensuring all focus remains on the content through absence of distraction. Components are almost entirely conceptual, relying on typography and tight spacing rather than background fills or elevation to define boundaries."
+theme: "dark"
+industry: "agency"
+source_url: "https://www.artisansdidees.com/en"
+refero_style_id: "4067a82e-c6fe-4236-9487-805f25c11864"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517018826-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517018826-thumb.jpg"
+extracted_at: "2026-04-30T02:43:52.536Z"
 ---
 
-## Overview
+# Artisans d'idées — Style Reference
 
-**North Star:** Minimalist digital canvas
+> Minimalist digital canvas
+
+**Theme:** dark
+
+**Industry:** agency
 
 Artisans d'idées employs a stark, high-contrast dark theme with minimal elements, creating a focused and atmospheric experience. Typography is extremely compact and tightly tracked, contributing to a sense of precision and restraint. The visual style revolves around black backgrounds, white text, and thin borders, ensuring all focus remains on the content through absence of distraction. Components are almost entirely conceptual, relying on typography and tight spacing rather than background fills or elevation to define boundaries.
 
-### Layout
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Primary background for all pages and sections, deep, absorbing black |
+| Ghost White | #ffffff | `--color-ghost-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Cinder Gray | #bbbab2 | `--color-cinder-gray` | Muted secondary text, subtle decorative lines |
+| Warning Red | #ff0000 | `--color-warning-red` | Red wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Use as a supporting accent, not as a status color |
+
+## Tokens — Typography
+
+### Barlow
+
+- **Token:** `--font-barlow`
+- **Substitute:** Inter
+- **Weights:** 300, 400
+- **Sizes:** 10px, 12px, 13px, 14px, 15px, 18px
+- **Line heights:** 0.80, 0.90, 1.00, 1.20, 1.60
+- **Letter spacing:** 0.1000em, 0.2000em, 0.3000em
+- **Role:** All textual content from large headlines to smallest body text, driving a consistent, tight-knit visual rhythm. The extremely low line-heights and tight letter-spacing are a signature element, creating dense blocks of text.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1 | — | `--text-caption` |
+| body-sm | 12px | 1 | — | `--text-body-sm` |
+| body | 13px | 1 | — | `--text-body` |
+| body-lg | 14px | 1 | — | `--text-body-lg` |
+| heading-sm | 15px | 1 | — | `--text-heading-sm` |
+| heading | 18px | 1 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-1 | 1px | `--spacing-1` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-300 | 300px | `--spacing-300` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1026px |
+| sectionGap | 200px |
+| cardPadding | 24px |
+| elementGap | 1px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Top navigation items.
+
+Ghost White text at 14px Barlow weight 400, on Midnight Void background. Interacts through text-only presentation without background or border emphasis.
+
+### Body Text Block
+
+**Role:** Primary content display.
+
+Ghost White text, typically at 15px Barlow weight 400, on Midnight Void background. Characterized by extremely tight line-heights (0.80-1.20).
+
+### Icon-only Button
+
+**Role:** Minimal interactive elements.
+
+Ghost White icons, with subtle 1px Ghost White border on hover. Typically 14px size, no background fill.
+
+### Information Block
+
+**Role:** Structural content divider.
+
+Implicit structure using large vertical gaps (200px) between content, with no visible borders, backgrounds, or shadows to define sections. Content is centered within the Midnight Void canvas.
+
+## Do's and Don'ts
+
+## Imagery
+
+No imagery is present aside from simple UI icons. The visual language is pure interface, relying entirely on typography, color contrast, and extreme spacing. Icons are minimal, outlined, and monochromatic (Ghost White). The design is completely text-dominant with no decorative visual elements.
+
+## Layout
 
 The page uses a maximum content width of 1026px, with content centered. The hero section is full-bleed black with minimal, centered text. Sections are primarily defined by generous 200px vertical gaps and seamless full-bleed 'Midnight Void' backgrounds, leading to a very spacious and un-crowded experience. Content generally appears as centered text blocks or very simple conceptual clusters. There is a sticky top navigation that appears as text-only links.
 
-### Imagery
+## Similar Brands
 
-No imagery is present aside from simple UI icons. The visual language is pure interface, relying entirely on typography, color contrast, and extreme spacing. Icons are minimal, outlined, and monochromatic (Ghost White). The design is completely text-dominant with no decorative visual elements.
+- **Awwwards-winning portfolio sites (some)** — Stark black backgrounds, minimal text, and high contrast for dramatic effect.
+- **Some conceptual art galleries** — Focus on content through absence of decorative UI, using ample empty space.
+- **Terminal Mode UIs** — Text-heavy, fixed-width, and monochromatic aesthetic.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-cinder-gray: #bbbab2;
+  --color-warning-red: #ff0000;
+  --font-barlow: 'Barlow', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1;
+  --text-body: 13px;
+  --leading-body: 1;
+  --text-body-lg: 14px;
+  --leading-body-lg: 1;
+  --text-heading-sm: 15px;
+  --leading-heading-sm: 1;
+  --text-heading: 18px;
+  --leading-heading: 1;
+  --spacing-1: 1px;
+  --spacing-24: 24px;
+  --spacing-200: 200px;
+  --spacing-300: 300px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-cinder-gray: #bbbab2;
+  --color-warning-red: #ff0000;
+  --font-barlow: 'Barlow', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1;
+  --text-body-sm: 12px;
+  --leading-body-sm: 1;
+  --text-body: 13px;
+  --leading-body: 1;
+  --text-body-lg: 14px;
+  --leading-body-lg: 1;
+  --text-heading-sm: 15px;
+  --leading-heading-sm: 1;
+  --text-heading: 18px;
+  --leading-heading: 1;
+  --spacing-1: 1px;
+  --spacing-24: 24px;
+  --spacing-200: 200px;
+  --spacing-300: 300px;
+  --radius-none: 0px;
+}
+```
