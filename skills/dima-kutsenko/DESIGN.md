@@ -1,61 +1,139 @@
 ---
 version: alpha
-name: Dima Kutsenko
-description: Dmitrkutsenko.com uses a muted, high-contrast dark aesthetic that highlights content through stark value differences rather than color. The design feels photographic, focusing on bold typography and subtle interactive elements against a deep gray canvas. White is reserved primarily for high-impact headlines and functional UI elements, creating a clear visual hierarchy. Interactions are minimal, often relying on border changes or text color shifts to signify state.
-colors:
-  obsidian-slate: "#1d1d1f"
-  ghost-white: "#f1f1f1"
-  muted-ash: "#656565"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.39
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 0.95
-    letterSpacing: 0px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 0.95
-    letterSpacing: -0.48px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 75px
-    lineHeight: 0.95
-    letterSpacing: -1.5px
-spacing:
-  elementGap: 7px
-components:
-  dark-circular-card:
-    role: Decorative card container
-  light-circular-card:
-    role: Decorative card container
-  primary-display-text:
-    role: Main page headlines and focal points
-  secondary-body-text:
-    role: General content and supporting copy
-  auxiliary-label:
-    role: Small, functional labels
-  outline-ghost-button:
-    role: Subtle interactive element
+name: "Dima Kutsenko"
+description: "Dmitrkutsenko.com uses a muted, high-contrast dark aesthetic that highlights content through stark value differences rather than color. The design feels photographic, focusing on bold typography and subtle interactive elements against a deep gray canvas. White is reserved primarily for high-impact headlines and functional UI elements, creating a clear visual hierarchy. Interactions are minimal, often relying on border changes or text color shifts to signify state."
+theme: "dark"
+industry: "design"
+source_url: "https://www.dmitrkutsenko.com"
+refero_style_id: "e7231719-564c-42b7-998f-2e97986fb26c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518818277-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518818277-thumb.jpg"
+extracted_at: "2026-04-30T03:13:57.301Z"
 ---
 
-## Overview
+# Dima Kutsenko — Style Reference
 
-**North Star:** Midnight gallery wall.
+> Midnight gallery wall.
+
+**Theme:** dark
+
+**Industry:** design
 
 Dmitrkutsenko.com uses a muted, high-contrast dark aesthetic that highlights content through stark value differences rather than color. The design feels photographic, focusing on bold typography and subtle interactive elements against a deep gray canvas. White is reserved primarily for high-impact headlines and functional UI elements, creating a clear visual hierarchy. Interactions are minimal, often relying on border changes or text color shifts to signify state.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Obsidian Slate | #1d1d1f | `--color-obsidian-slate` | Page background, card background for dark-themed elements |
+| Ghost White | #f1f1f1 | `--color-ghost-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Muted Ash | #656565 | `--color-muted-ash` | Secondary text, subtle borders, helper text |
+
+## Tokens — Typography
+
+### Greycliff
+
+- **Token:** `--font-greycliff`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 24px, 75px
+- **Line heights:** 0.95
+- **Letter spacing:** -0.0200em
+- **Role:** Headlines and prominent display text, using a wide letter-spacing for impact and a modern, angular feel.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 14px
+- **Line heights:** 1.39
+- **Letter spacing:** normal
+- **Role:** Minimal functional text, typically for small auxiliary information like labels or navigation hints.
+
+### Corradine
+
+- **Token:** `--font-corradine`
+- **Substitute:** Georgia
+- **Weights:** 400
+- **Sizes:** 20px, 32px
+- **Line heights:** 0.95, 1.20
+- **Letter spacing:** normal
+- **Role:** Body text and less prominent headlines, providing contrast to the display font with its slightly more traditional character.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.39 | 0px | `--text-caption` |
+| body | 20px | 0.95 | 0px | `--text-body` |
+| subheading | 24px | 0.95 | -0.48px | `--text-subheading` |
+| heading | 32px | 1.2 | 0px | `--text-heading` |
+| display | 75px | 0.95 | -1.5px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-7 | 7px | `--spacing-7` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| circular | 100% |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 7px |
+
+## Components
+
+### Dark Circular Card
+
+**Role:** Decorative card container
+
+A circular card with an Obsidian Slate (#1d1d1f) background and no box shadow, borders, or internal padding. Primarily used for visual separation.
+
+### Light Circular Card
+
+**Role:** Decorative card container
+
+A circular card with a Ghost White (#f1f1f1) background and no box shadow, borders, or internal padding. Used for visual contrast in specific areas.
+
+### Primary Display Text
+
+**Role:** Main page headlines and focal points
+
+Text rendered in Greycliff, weight 400, color Ghost White (#f1f1f1), with sizes 75px and letter-spacing -0.0200em, line-height 0.95. Used for impactful, large headings.
+
+### Secondary Body Text
+
+**Role:** General content and supporting copy
+
+Text rendered in Corradine, weight 400, color Ghost White (#f1f1f1), with sizes 20px and 32px, and line-heights 0.95 and 1.20. Provides clear, readable content.
+
+### Auxiliary Label
+
+**Role:** Small, functional labels
+
+Text rendered in Arial, weight 400, color Muted Ash (#656565), size 14px, line-height 1.39. Used for navigation hints or secondary information.
+
+### Outline Ghost Button
+
+**Role:** Subtle interactive element
+
+A button with a Ghost White (#f1f1f1) border, transparent background, and Ghost White (#f1f1f1) text. Text is in Arial, 14px. Used only for discrete actions like navigation or 'click to continue' prompts.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Obsidian Slate (#1d1d1f) as the primary background color for pages and dark-themed components.
 - Reserve Ghost White (#f1f1f1) for primary text, interactive states, and outlined borders to ensure high contrast.
@@ -64,7 +142,7 @@ Dmitrkutsenko.com uses a muted, high-contrast dark aesthetic that highlights con
 - Utilize circular shapes (100% border-radius) for decorative card elements, creating soft visual accents.
 - Maintain a compact layout, prioritizing content density while providing sufficient visual breathing room through minimal element spacing (e.g. 7px for tight groups).
 
-### Don'ts
+### Don't
 
 - Do not introduce additional saturated colors; the palette is strictly achromatic with high contrast.
 - Avoid using box shadows for elevation; rely on color contrast and direct sizing for visual hierarchy.
@@ -73,10 +151,81 @@ Dmitrkutsenko.com uses a muted, high-contrast dark aesthetic that highlights con
 - Avoid decorative gradients; the visual system is flat and relies on solid color blocks.
 - Do not over-space elements; the design emphasizes a compact and focused presentation.
 
-### Layout
+## Imagery
+
+No direct imagery or photography is shown in the provided context, suggesting a UI-heavy or content-dominant approach where imagery might appear within content sections rather than as part of the core UI. If imagery were to be introduced, it would likely be full-bleed, high-contrast photography to align with the stark, minimalist aesthetic, or tight product crops.
+
+## Layout
 
 The page exhibits a full-bleed structure with a dark background, establishing a vast canvas. The hero section features a centered, high-impact headline using large, bold typography. Navigation elements are minimal and positioned discretely in the top right, creating an uncluttered and focused visual field. Content is arranged either in a large, centered block for textual emphasis or within subtle geometric shapes (circular cards) that act as visual anchors.
 
-### Imagery
+## Similar Brands
 
-No direct imagery or photography is shown in the provided context, suggesting a UI-heavy or content-dominant approach where imagery might appear within content sections rather than as part of the core UI. If imagery were to be introduced, it would likely be full-bleed, high-contrast photography to align with the stark, minimalist aesthetic, or tight product crops.
+- **Aytm.com** — Shares a monochromatic dark theme with bold white typography for headlines and minimal use of color for functional elements.
+- **Squarespace (certain portfolio templates)** — Uses large, impactful typography, often monochrome, against dark or light canvases, focusing on content showcase.
+- **B&O (Bang & Olufsen)** — Employs a minimalist, high-contrast aesthetic, prioritizing product visuals and bold type over excessive UI elements or vibrant colors.
+- **Acme.com** — Features a strong emphasis on typography as a primary design element within a stark, dark-mode environment.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-obsidian-slate: #1d1d1f;
+  --color-ghost-white: #f1f1f1;
+  --color-muted-ash: #656565;
+  --font-greycliff: 'Greycliff', Montserrat;
+  --font-arial: 'Arial', Helvetica Neue;
+  --font-corradine: 'Corradine', Georgia;
+  --text-caption: 14px;
+  --leading-caption: 1.39;
+  --tracking-caption: 0px;
+  --text-body: 20px;
+  --leading-body: 0.95;
+  --tracking-body: 0px;
+  --text-subheading: 24px;
+  --leading-subheading: 0.95;
+  --tracking-subheading: -0.48px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 75px;
+  --leading-display: 0.95;
+  --tracking-display: -1.5px;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --radius-circular: 100%;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-obsidian-slate: #1d1d1f;
+  --color-ghost-white: #f1f1f1;
+  --color-muted-ash: #656565;
+  --font-greycliff: 'Greycliff', Montserrat;
+  --font-arial: 'Arial', Helvetica Neue;
+  --font-corradine: 'Corradine', Georgia;
+  --text-caption: 14px;
+  --leading-caption: 1.39;
+  --tracking-caption: 0px;
+  --text-body: 20px;
+  --leading-body: 0.95;
+  --tracking-body: 0px;
+  --text-subheading: 24px;
+  --leading-subheading: 0.95;
+  --tracking-subheading: -0.48px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 75px;
+  --leading-display: 0.95;
+  --tracking-display: -1.5px;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --radius-circular: 100%;
+}
+```

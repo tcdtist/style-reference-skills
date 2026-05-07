@@ -1,42 +1,101 @@
 ---
 version: alpha
-name: Diogo Akio
-description: Diogo Akio's design system evokes a minimalist gallery experience. It operates on a dark canvas, providing a stark backdrop for high-contrast white typography and isolated portfolio pieces. The aesthetic prioritizes clarity and directness through generous spacing and a strong typographic focus, with minimal use of color or elaborate components. The system is designed to showcase content without visual distraction, relying on subtle interactions and precise spatial relationships.
-colors:
-  pitch-black: "#000000"
-  slate-canvas: "#151515"
-  deep-plum: "#1c2763"
-  canvas-white: "#ffffff"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: 0.32px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 34px
-    lineHeight: 1.2
-    letterSpacing: -0.31px
-spacing:
-  elementGap: 19px
-  sectionGap: 30px
-components:
-  ghost-header-cta-button:
-    role: Primary call to action in the header.
-  project-card:
-    role: Showcases individual portfolio projects.
-  footer-detail-list:
-    role: Provides secondary navigation and information at the page bottom.
+name: "Diogo Akio"
+description: "Diogo Akio's design system evokes a minimalist gallery experience. It operates on a dark canvas, providing a stark backdrop for high-contrast white typography and isolated portfolio pieces. The aesthetic prioritizes clarity and directness through generous spacing and a strong typographic focus, with minimal use of color or elaborate components. The system is designed to showcase content without visual distraction, relying on subtle interactions and precise spatial relationships."
+theme: "dark"
+industry: "design"
+source_url: "https://www.diogoakio.com.br"
+refero_style_id: "55509c15-4b34-489e-9a81-bfa5468ffd37"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516943716-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777516943716-thumb.jpg"
+extracted_at: "2026-04-30T02:42:43.860Z"
 ---
 
-## Overview
+# Diogo Akio — Style Reference
 
-**North Star:** Shadowbox gallery display
+> Shadowbox gallery display
+
+**Theme:** dark
+
+**Industry:** design
 
 Diogo Akio's design system evokes a minimalist gallery experience. It operates on a dark canvas, providing a stark backdrop for high-contrast white typography and isolated portfolio pieces. The aesthetic prioritizes clarity and directness through generous spacing and a strong typographic focus, with minimal use of color or elaborate components. The system is designed to showcase content without visual distraction, relying on subtle interactions and precise spatial relationships.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Pitch Black | #000000 | `--color-pitch-black` | Page backgrounds, large container fills, the primary canvas for all content |
+| Slate Canvas | #151515 | `--color-slate-canvas` | Subtle background for UI elements or secondary content blocks, providing a slight elevation from the Pitch Black canvas |
+| Deep Plum | #1c2763 | `--color-deep-plum` | Accent surface that offers a rich, cool-toned break from the dominant neutrals, used sparingly for depth |
+| Canvas White | #ffffff | `--color-canvas-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Helvetica Neue LT Pro
+
+- **Token:** `--font-helvetica-neue-lt-pro`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 16px, 34px
+- **Line heights:** 1.20, 1.40
+- **Letter spacing:** -0.009, 0.02
+- **Role:** The sole typeface, used for all textual content from headings to body text. Its neutral yet precise character supports the minimalist aesthetic. A subtle negative letter-spacing for larger sizes enhances visual density for headings, while a slightly positive one for smaller text improves legibility.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.4 | 0.32px | `--text-body` |
+| heading | 34px | 1.2 | -0.31px | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-19 | 19px | `--spacing-19` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 30px |
+| cardPadding | 20px |
+| elementGap | 19px |
+
+## Components
+
+### Ghost Header CTA Button
+
+**Role:** Primary call to action in the header.
+
+Ghost button with a 1px Canvas White border, no background, and Canvas White text. Uses Helvetica Neue LT Pro Roman at 16px, line height 1.4, with 0.02em letter spacing. Padding creates ample interactive area.
+
+### Project Card
+
+**Role:** Showcases individual portfolio projects.
+
+Full-bleed image container with text overlaid. Text uses Helvetica Neue LT Pro Roman, 16px for category and 34px for title, all in Canvas White. Cards have no explicit border or shadow, relying on the image for definition against the Pitch Black background. Padding is minimal internal to the card.
+
+### Footer Detail List
+
+**Role:** Provides secondary navigation and information at the page bottom.
+
+List items separated by 1px Canvas White borders, 128px long. Each item contains Helvetica Neue LT Pro Roman text in Canvas White at 16px, line height 1.4, with 0.02em letter spacing. Items are arranged in columns with a 20px gap.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Pitch Black, Slate Canvas, and Canvas White as the core color palette; avoid introducing additional saturated colors.
 - Use Helvetica Neue LT Pro Roman at 16px (line height 1.4, letter spacing 0.02em) for all body text and small UI elements.
@@ -46,7 +105,7 @@ Diogo Akio's design system evokes a minimalist gallery experience. It operates o
 - Employ consistent 0px border-radius across all UI elements for a sharp, rectilinear aesthetic.
 - Maintain an element gap of 19px for consistent horizontal and vertical spacing between most UI components.
 
-### Don'ts
+### Don't
 
 - Do not introduce complex shadows or gradients; rely on color contrast and spatial arrangement for visual hierarchy.
 - Avoid using multiple font families or excessive font weights; Helvetica Neue LT Pro Roman 400 is the only typeface.
@@ -56,10 +115,63 @@ Diogo Akio's design system evokes a minimalist gallery experience. It operates o
 - Avoid inconsistent spacing, as precise and generous spacing is critical to the system's minimalist identity.
 - Do not use rounded corners on any UI elements; all shapes should be rectilinear and sharp.
 
-### Layout
+## Imagery
+
+The site's imagery consists of high-quality product design visuals and atmospheric architectural photography. These images are large, often full-bleed within their respective containers, and act as primary visual anchors. They are rendered with realistic textures and lighting, presenting content as a focal point. There is no consistent icon style revealed, but the '+' icon in the header suggests a minimal, outlined approach for functional iconography. Imagery serves to showcase portfolio work and establish visual atmosphere rather than being purely decorative.
+
+## Layout
 
 The page employs a full-bleed layout for its main content, with a centered max-width constraint for text elements like the header and footer. The hero section is characterized by a prominent centered headline over a dark background. Content areas for portfolio pieces are presented as large, often full-width image blocks. The overall rhythm is established by consistent vertical spacing (30px section gaps) and horizontal consistency in text elements. Navigation is minimal, limited to text links and a ghost 'menu' indicator in the top right. The layout is spacious, giving visual elements ample room to breathe against the dark canvas.
 
-### Imagery
+## Similar Brands
 
-The site's imagery consists of high-quality product design visuals and atmospheric architectural photography. These images are large, often full-bleed within their respective containers, and act as primary visual anchors. They are rendered with realistic textures and lighting, presenting content as a focal point. There is no consistent icon style revealed, but the '+' icon in the header suggests a minimal, outlined approach for functional iconography. Imagery serves to showcase portfolio work and establish visual atmosphere rather than being purely decorative.
+- **B&B Studio** — Dark, minimalist background with white typography and a focus on high-quality visual content.
+- **Basic (Design Agency)** — Emphasis on stark contrast, generous negative space, and large, impactful imagery for portfolio display.
+- **Minimalissimo** — Strict adherence to a monochrome palette, geometric layouts, and minimal UI elements.
+- **ACNE Production** — Focus on large project visuals and strong, simple typography against dark foundations.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-pitch-black: #000000;
+  --color-slate-canvas: #151515;
+  --color-deep-plum: #1c2763;
+  --color-canvas-white: #ffffff;
+  --font-helvetica-neue-lt-pro: 'Helvetica Neue LT Pro', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.32px;
+  --text-heading: 34px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.31px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-pitch-black: #000000;
+  --color-slate-canvas: #151515;
+  --color-deep-plum: #1c2763;
+  --color-canvas-white: #ffffff;
+  --font-helvetica-neue-lt-pro: 'Helvetica Neue LT Pro', Helvetica Neue;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 0.32px;
+  --text-heading: 34px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.31px;
+  --spacing-19: 19px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-default: 0px;
+}
+```

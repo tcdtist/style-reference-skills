@@ -1,96 +1,191 @@
 ---
 version: alpha
-name: Ditto
-description: Ditto uses an 'architectural blueprint on white marble' visual language, combining a refined, nearly monochromatic canvas with precise geometric typography and a vibrant, playful accent color for highlights and interactive elements. Surfaces are clean and untextured, serving as a bright foundation for highly legible black text. Strategic splashes of saturated color are used for emphasis, badges, or outlined elements, creating an energetic yet organized feel. Components are lightweight and often feature large border-radii, giving a soft, approachable edge to the otherwise crisp design.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#f7f5f3"
-  graphite: "#6a6559"
-  warm-gray: "#e2e2e2"
-  pure-white: "#ffffff"
-  harvest-gold: "#ffdd33"
-  power-red: "#ff6137"
-  royal-blue: "#0097e6"
-  fresh-green: "#3e6b15"
-  rich-violet: "#b26dc2"
-  mustard-seed: "#bbb809"
-  blush-pink: "#f5c4cc"
-  electric-blue: "#1345eb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.43
-    letterSpacing: 0.01px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.43
-    letterSpacing: 0.008px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.43
-    letterSpacing: -0.01px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.2
-    letterSpacing: -0.011px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.2
-    letterSpacing: -0.014px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 43px
-    lineHeight: 1.05
-    letterSpacing: -0.022px
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 72px
-    lineHeight: 1
-    letterSpacing: -0.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 86px
-    lineHeight: 0.88
-    letterSpacing: -0.023px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 108px
-    lineHeight: 0.89
-    letterSpacing: -0.04px
-spacing:
-  cardRadius: 1000px
-  buttonRadius: 100px
-  elementGap: 20px
-  sectionGap: 60px
-components:
-  primary-filled-button:
-    role: Main call to action button.
-  ghost-outline-button:
-    role: Secondary call to action, less prominent than primary.
-  ghost-border-button-pill:
-    role: Tertiary action or navigational elements requiring minimal visual weight.
-  badge-with-background:
-    role: Highlighting status or keyword.
-  success-status-badge:
-    role: Indicating a positive status.
-  circular-card-highlight:
-    role: Decorative element or visual accent.
-  text-input-field:
-    role: User input for forms.
+name: "Ditto"
+description: "Ditto uses an 'architectural blueprint on white marble' visual language, combining a refined, nearly monochromatic canvas with precise geometric typography and a vibrant, playful accent color for highlights and interactive elements. Surfaces are clean and untextured, serving as a bright foundation for highly legible black text. Strategic splashes of saturated color are used for emphasis, badges, or outlined elements, creating an energetic yet organized feel. Components are lightweight and often feature large border-radii, giving a soft, approachable edge to the otherwise crisp design."
+theme: "light"
+industry: "productivity"
+source_url: "https://www.dittowords.com"
+refero_style_id: "2db41cd9-c898-4f59-b704-3042c0d87f45"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508108336-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508108336-thumb.jpg"
+extracted_at: "2026-04-30T00:15:34.997Z"
 ---
 
-## Overview
+# Ditto — Style Reference
 
-**North Star:** Architectural blueprint on white marble
+> Architectural blueprint on white marble
+
+**Theme:** light
+
+**Industry:** productivity
 
 Ditto uses an 'architectural blueprint on white marble' visual language, combining a refined, nearly monochromatic canvas with precise geometric typography and a vibrant, playful accent color for highlights and interactive elements. Surfaces are clean and untextured, serving as a bright foundation for highly legible black text. Strategic splashes of saturated color are used for emphasis, badges, or outlined elements, creating an energetic yet organized feel. Components are lightweight and often feature large border-radii, giving a soft, approachable edge to the otherwise crisp design.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, deep backgrounds for contrast, primary filled buttons, strong borders for UI elements |
+| Canvas White | #f7f5f3 | `--color-canvas-white` | Dominant page background, card surfaces, ghost button text |
+| Graphite | #6a6559 | `--color-graphite` | Muted text, secondary navigation, subtle button borders and iconography |
+| Warm Gray | #e2e2e2 | `--color-warm-gray` | Subtle dividers, borders, and light interaction states |
+| Pure White | #ffffff | `--color-pure-white` | Text on dark backgrounds, badges, and internal accents |
+| Harvest Gold | #ffdd33 | `--color-harvest-gold` | Accent for highlighted content, badges, and occasional backgrounds |
+| Power Red | #ff6137 | `--color-power-red` | Striking accents, outlines, and decorative elements to draw attention |
+| Royal Blue | #0097e6 | `--color-royal-blue` | Accent for links, outlines, and decorative elements |
+| Fresh Green | #3e6b15 | `--color-fresh-green` | Success states, badges, and outlined elements for positive reinforcement |
+| Rich Violet | #b26dc2 | `--color-rich-violet` | Decorative highlights and abstract graphic accents |
+| Mustard Seed | #bbb809 | `--color-mustard-seed` | Decorative outlines and highlights |
+| Blush Pink | #f5c4cc | `--color-blush-pink` | Decorative outlines and highlights |
+| Electric Blue | #1345eb | `--color-electric-blue` | Violet wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### ABC Social
+
+- **Token:** `--font-abc-social`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 700
+- **Sizes:** 13px, 16px, 18px, 25px, 26px, 35px, 72px, 108px
+- **Line heights:** 0.89, 1.00, 1.05, 1.10, 1.20, 1.43
+- **Letter spacing:** -0.0400em at 108px, -0.0200em at 72px, -0.0140em at 35px, -0.0120em at 26px, -0.0110em at 25px, -0.0100em at 18px, 0.0080em at 16px, 0.0100em at 13px
+- **OpenType features:** 'ss07'
+- **Role:** Primary typeface for most UI elements including body text, links, buttons, and smaller headings. The light weights (300, 400) maintain an airy, modern feel, while the generous letter-spacing for smaller text ensures readability.
+
+### ABC Social Extended
+
+- **Token:** `--font-abc-social-extended`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 16px, 18px, 24px, 36px, 40px, 43px, 86px
+- **Line heights:** 0.88, 1.00, 1.05, 2.63
+- **Letter spacing:** -0.0230em at 86px, -0.0220em at 43px, -0.0100em at 36px, 0.0200em at 16px
+- **OpenType features:** 'ss07'
+- **Role:** Reserved for large, impactful headlines, where its extended proportions demand attention. Its tight letter-spacing at larger sizes contributes to a bold, confident statement, often appearing as fragmented highlights.
+
+### ABC Social Condensed
+
+- **Token:** `--font-abc-social-condensed`
+- **Substitute:** Inter Condensed
+- **Weights:** 900
+- **Sizes:** 35px
+- **Line heights:** 1.20
+- **Letter spacing:** -0.0100em
+- **OpenType features:** 'ss07'
+- **Role:** Used sparingly for very specific, emphasized text such as badges or callouts. Its heavy weight and condensed form provide strong visual punch and contrast against the lighter primary typeface.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.43 | 0.01px | `--text-caption` |
+| body-sm | 16px | 1.43 | 0.008px | `--text-body-sm` |
+| body | 18px | 1.43 | -0.01px | `--text-body` |
+| subheading | 25px | 1.2 | -0.011px | `--text-subheading` |
+| heading | 35px | 1.2 | -0.014px | `--text-heading` |
+| heading-lg | 43px | 1.05 | -0.022px | `--text-heading-lg` |
+| display-sm | 72px | 1 | -0.02px | `--text-display-sm` |
+| display | 86px | 0.88 | -0.023px | `--text-display` |
+| display-lg | 108px | 0.89 | -0.04px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-31 | 31px | `--spacing-31` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-54 | 54px | `--spacing-54` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-192 | 192px | `--spacing-192` |
+| spacing-196 | 196px | `--spacing-196` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-203 | 203px | `--spacing-203` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 1000px |
+| images | 12px |
+| inputs | 28px |
+| buttons | 100px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Main call to action button.
+
+Solid Midnight Ink (#000000) background with Pure White (#ffffff) text. Features a full pill shape with 1000px border-radius, 15px vertical and horizontal padding, using ABC Social Regular at 16px.
+
+### Ghost Outline Button
+
+**Role:** Secondary call to action, less prominent than primary.
+
+Transparent background with Graphite (#6a6559) text and a matching 1px border. Pill-shaped with 100px border-radius, 8px vertical and 10px horizontal padding, using ABC Social Regular at 16px.
+
+### Ghost Border Button (Pill)
+
+**Role:** Tertiary action or navigational elements requiring minimal visual weight.
+
+Transparent background with Graphite (#6a6559) text and a matching 1px border. Full pill shape with 1000px border-radius, 15px vertical and horizontal padding, using ABC Social Regular at 16px.
+
+### Badge with Background
+
+**Role:** Highlighting status or keyword.
+
+Harvest Gold (#ffdd33) background with Midnight Ink (#000000) text. No border-radius or padding observed directly as a consistent component style, appearing as an inline visual highlight.
+
+### Success Status Badge
+
+**Role:** Indicating a positive status.
+
+Fresh Green (#3e6b15) background with Pure White (#ffffff) text. No border-radius, 6px vertical and 10px horizontal padding, using ABC Social Regular.
+
+### Circular Card Highlight
+
+**Role:** Decorative element or visual accent.
+
+Harvest Gold (#ffdd33) background with a 1000px border-radius, appearing as a large circular shape with no discernible padding, creating a cut-out or background effect rather than a contained card.
+
+### Text Input Field
+
+**Role:** User input for forms.
+
+Pure White (#ffffff) background with Midnight Ink (#000000) text. Border is 1px Midnight Ink (#000000). Features a generous 28px border-radius, 0px vertical and 20px horizontal padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Midnight Ink (#000000) for all primary text and important headings to ensure high legibility against the light canvas.
 - Apply Canvas White (#f7f5f3) as the default background for all page sections and elevated surfaces.
@@ -100,7 +195,7 @@ Ditto uses an 'architectural blueprint on white marble' visual language, combini
 - Structure content with a consistent 20px element gap and 60px section gap for a comfortable, organized layout.
 - Use ABC Social weights 300 and 400 for most text, reserving 700 for strong emphasis within body copy or bold components.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple accent colors in close proximity; stick to one or two per view to maintain visual clarity.
 - Do not introduce heavy shadows or gradients on surfaces; components should remain flat and minimal.
@@ -110,10 +205,195 @@ Ditto uses an 'architectural blueprint on white marble' visual language, combini
 - Resist adding additional padding or margins that break the 4px grid and established spacing tokens.
 - Do not use dark backgrounds for large content areas; the system is designed for a light theme with dark text.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #f7f5f3 | Dominant page background. |
+| 1 | Pure White | #ffffff | Background for elevated elements like certain inputs or overlay content. |
+| 2 | Harvest Gold | #ffdd33 | Background for specific highlighted cards or decorative elements. |
+
+## Imagery
+
+This site prominently features highly stylized, abstract graphic elements and product screenshots. The graphics are often playful and dimensional, using the accent color palette to create visual interest rather than realistic representations. Overlapping, torn-paper, or distressed effects are common for accent shapes, giving a handcrafted feel. Product screenshots are clean, high-fidelity, and typically contained within a well-defined UI, focusing on clarity over extensive context. Icons are simple, outlined, and monochromatic, used for navigation or feature delineation, prioritizing function without visual distraction.
+
+## Layout
 
 The page primarily uses a max-width contained layout, with content segments often centered or adopting clean two-column text-left/image-right (or vice-versa) arrangements. The hero section establishes a clear centered headline over a subtle background. Sections alternate between a base Canvas White and occasional Harvest Gold backgrounds for emphasis, creating a clear visual rhythm. Vertical spacing between sections is generous, contributing to a comfortable density. Navigation is a sticky top bar with clearly defined links and primary/secondary call-to-action buttons.
 
-### Imagery
+## Similar Brands
 
-This site prominently features highly stylized, abstract graphic elements and product screenshots. The graphics are often playful and dimensional, using the accent color palette to create visual interest rather than realistic representations. Overlapping, torn-paper, or distressed effects are common for accent shapes, giving a handcrafted feel. Product screenshots are clean, high-fidelity, and typically contained within a well-defined UI, focusing on clarity over extensive context. Icons are simple, outlined, and monochromatic, used for navigation or feature delineation, prioritizing function without visual distraction.
+- **Figma** — Dominant white canvas with dark, highly legible text and a few strong accent colors for UI elements.
+- **Linear** — Minimalist, high-contrast typography, focus on structured UIs on light backgrounds, and precise spacing.
+- **Notion** — Clean, neutral canvas, emphasis on readability, with a subtle use of color for functional highlights.
+- **Webflow** — Bold geometric typography for headlines, spacious layouts, and a blend of achromatic and vibrant accent colors.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #f7f5f3;
+  --color-graphite: #6a6559;
+  --color-warm-gray: #e2e2e2;
+  --color-pure-white: #ffffff;
+  --color-harvest-gold: #ffdd33;
+  --color-power-red: #ff6137;
+  --color-royal-blue: #0097e6;
+  --color-fresh-green: #3e6b15;
+  --color-rich-violet: #b26dc2;
+  --color-mustard-seed: #bbb809;
+  --color-blush-pink: #f5c4cc;
+  --color-electric-blue: #1345eb;
+  --font-abc-social: 'ABC Social', Inter;
+  --font-abc-social-extended: 'ABC Social Extended', Inter;
+  --font-abc-social-condensed: 'ABC Social Condensed', Inter Condensed;
+  --text-caption: 13px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.01px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: 0.008px;
+  --text-body: 18px;
+  --leading-body: 1.43;
+  --tracking-body: -0.01px;
+  --text-subheading: 25px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.011px;
+  --text-heading: 35px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.014px;
+  --text-heading-lg: 43px;
+  --leading-heading-lg: 1.05;
+  --tracking-heading-lg: -0.022px;
+  --text-display-sm: 72px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: -0.02px;
+  --text-display: 86px;
+  --leading-display: 0.88;
+  --tracking-display: -0.023px;
+  --text-display-lg: 108px;
+  --leading-display-lg: 0.89;
+  --tracking-display-lg: -0.04px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-192: 192px;
+  --spacing-196: 196px;
+  --spacing-200: 200px;
+  --spacing-203: 203px;
+  --radius-cards: 1000px;
+  --radius-images: 12px;
+  --radius-inputs: 28px;
+  --radius-buttons: 100px;
+  --surface-canvas-white: #f7f5f3;
+  --surface-pure-white: #ffffff;
+  --surface-harvest-gold: #ffdd33;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #f7f5f3;
+  --color-graphite: #6a6559;
+  --color-warm-gray: #e2e2e2;
+  --color-pure-white: #ffffff;
+  --color-harvest-gold: #ffdd33;
+  --color-power-red: #ff6137;
+  --color-royal-blue: #0097e6;
+  --color-fresh-green: #3e6b15;
+  --color-rich-violet: #b26dc2;
+  --color-mustard-seed: #bbb809;
+  --color-blush-pink: #f5c4cc;
+  --color-electric-blue: #1345eb;
+  --font-abc-social: 'ABC Social', Inter;
+  --font-abc-social-extended: 'ABC Social Extended', Inter;
+  --font-abc-social-condensed: 'ABC Social Condensed', Inter Condensed;
+  --text-caption: 13px;
+  --leading-caption: 1.43;
+  --tracking-caption: 0.01px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: 0.008px;
+  --text-body: 18px;
+  --leading-body: 1.43;
+  --tracking-body: -0.01px;
+  --text-subheading: 25px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.011px;
+  --text-heading: 35px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.014px;
+  --text-heading-lg: 43px;
+  --leading-heading-lg: 1.05;
+  --tracking-heading-lg: -0.022px;
+  --text-display-sm: 72px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: -0.02px;
+  --text-display: 86px;
+  --leading-display: 0.88;
+  --tracking-display: -0.023px;
+  --text-display-lg: 108px;
+  --leading-display-lg: 0.89;
+  --tracking-display-lg: -0.04px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-30: 30px;
+  --spacing-31: 31px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-54: 54px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --spacing-72: 72px;
+  --spacing-80: 80px;
+  --spacing-100: 100px;
+  --spacing-192: 192px;
+  --spacing-196: 196px;
+  --spacing-200: 200px;
+  --spacing-203: 203px;
+  --radius-cards: 1000px;
+  --radius-images: 12px;
+  --radius-inputs: 28px;
+  --radius-buttons: 100px;
+  --surface-canvas-white: #f7f5f3;
+  --surface-pure-white: #ffffff;
+  --surface-harvest-gold: #ffdd33;
+}
+```
