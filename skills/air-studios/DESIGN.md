@@ -1,42 +1,89 @@
 ---
 version: alpha
-name: AIR Studios
-description: AIR Studios employs a spare, conceptual UI, prioritizing content over ornamental elements. Bold background colors serve as the primary visual anchor, punctuated by fine line art and stark monochrome typography. Interaction is subtle, using ghost borders and minimal hover effects. The system feels direct and unencumbered, focusing attention on the brand's creative output rather than the interface itself.
-colors:
-  deep-raspberry: "#b42c4b"
-  charcoal-slate: "#1a1b1b"
-  midnight-void: "#000000"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.33
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.14
-spacing:
-  elementGap: 16px
-components:
-  ghost-border-link:
-    role: Navigation and footer links
+name: "AIR Studios"
+description: "AIR Studios employs a spare, conceptual UI, prioritizing content over ornamental elements. Bold background colors serve as the primary visual anchor, punctuated by fine line art and stark monochrome typography. Interaction is subtle, using ghost borders and minimal hover effects. The system feels direct and unencumbered, focusing attention on the brand's creative output rather than the interface itself."
+theme: "dark"
+industry: "media"
+source_url: "https://airstudios.com"
+refero_style_id: "8038983d-8aa9-485f-88fe-2ff696b9ff27"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521038854-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521038854-thumb.jpg"
+extracted_at: "2026-04-30T03:51:13.656Z"
 ---
 
-## Overview
+# AIR Studios — Style Reference
 
-**North Star:** Crimson Canvas, Dark Ink
+> Crimson Canvas, Dark Ink
+
+**Theme:** dark
+
+**Industry:** media
 
 AIR Studios employs a spare, conceptual UI, prioritizing content over ornamental elements. Bold background colors serve as the primary visual anchor, punctuated by fine line art and stark monochrome typography. Interaction is subtle, using ghost borders and minimal hover effects. The system feels direct and unencumbered, focusing attention on the brand's creative output rather than the interface itself.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Raspberry | #b42c4b | `--color-deep-raspberry` | Primary background color, dominant page canvas |
+| Charcoal Slate | #1a1b1b | `--color-charcoal-slate` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Midnight Void | #000000 | `--color-midnight-void` | Decorative icon fills, subtle background elements |
+
+## Tokens — Typography
+
+### akzidenz-grotesk
+
+- **Token:** `--font-akzidenz-grotesk`
+- **Substitute:** Inter
+- **Weights:** 300, 400
+- **Sizes:** 14px, 16px, 18px, 20px
+- **Line heights:** 1.14, 1.33, 1.50
+- **Role:** Primary typeface for all UI elements, headings, body text, and links. Its utilitarian feel contributes to the system's directness.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.5 | — | `--text-body-sm` |
+| body | 16px | 1.5 | — | `--text-body` |
+| subheading | 18px | 1.33 | — | `--text-subheading` |
+| heading | 20px | 1.14 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 20px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Border Link
+
+**Role:** Navigation and footer links
+
+Text in Charcoal Slate (#1a1b1b) with a 1px border on interaction. No background, no padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Raspberry (#b42c4b) for large background areas to set the primary mood.
 - Use akzidenz-grotesk at weight 400 for all primary text content and headings.
@@ -45,7 +92,7 @@ AIR Studios employs a spare, conceptual UI, prioritizing content over ornamental
 - Maintain minimal padding (10px or 20px) around elements only where essential for legibility, avoiding excessive whitespace.
 - Utilize 0px border-radius across all components to reinforce the sharp, conceptual aesthetic.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong accent colors or gradients; color should be used sparingly and functionally.
 - Avoid decorative shadows or complex elevation schemes; interfaces should remain flat and direct.
@@ -54,10 +101,66 @@ AIR Studios employs a spare, conceptual UI, prioritizing content over ornamental
 - Do not apply rounded corners to any UI elements; maintain sharp, angular forms.
 - Avoid prominent call-to-action buttons with solid backgrounds; interactive elements should be understated.
 
-### Layout
+## Imagery
+
+The site uses minimal imagery, primarily relying on fine, geometric line art as a central visual motif. This abstract graphic is integrated directly into the background, providing texture and movement without depicting specific objects or people. Icons are monochrome, simple, and functional, maintaining the stark visual vocabulary. The approach is graphics-dominant rather than image-dominant, using abstract forms to convey mood.
+
+## Layout
 
 The page operates on a full-bleed layout, where the dominant background color (Deep Raspberry) extends to the edges of the viewport. Content is subtly constrained by implied margins, giving the impression of a single, expansive canvas. The hero section is characterized by a full-viewport, centered abstract graphic. Navigation is sparse, positioned at the top-left and top-right, while social links are tucked into the bottom-right. The overall density is low, emphasizing breathing room and the visual impact of the central graphic.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, primarily relying on fine, geometric line art as a central visual motif. This abstract graphic is integrated directly into the background, providing texture and movement without depicting specific objects or people. Icons are monochrome, simple, and functional, maintaining the stark visual vocabulary. The approach is graphics-dominant rather than image-dominant, using abstract forms to convey mood.
+- **A24** — Similar focus on bold, singular background colors, minimal typography, and understated navigation.
+- **Pentagram (select projects)** — Uses strong typographic statements and a conceptual color palette over heavy imagery.
+- **The Designer's Studio** — Emphasizes a clean, black-and-white aesthetic with minimal, high-contrast UI elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-raspberry: #b42c4b;
+  --color-charcoal-slate: #1a1b1b;
+  --color-midnight-void: #000000;
+  --font-akzidenz-grotesk: 'akzidenz-grotesk', Inter;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.33;
+  --text-heading: 20px;
+  --leading-heading: 1.14;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-raspberry: #b42c4b;
+  --color-charcoal-slate: #1a1b1b;
+  --color-midnight-void: #000000;
+  --font-akzidenz-grotesk: 'akzidenz-grotesk', Inter;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.5;
+  --text-body: 16px;
+  --leading-body: 1.5;
+  --text-subheading: 18px;
+  --leading-subheading: 1.33;
+  --text-heading: 20px;
+  --leading-heading: 1.14;
+  --spacing-10: 10px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --radius-none: 0px;
+}
+```

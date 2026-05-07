@@ -1,72 +1,164 @@
 ---
 version: alpha
-name: Afterglo
-description: Afterglo employs a visual style of subtle, almost clinical minimalism overlaid with soft, muted sensuality. Its design language combines stark achromatic typography and UI elements with warm, skin-toned imagery and a single vibrant accent color. Surfaces are clean and often borderless, maintaining a spacious, uncluttered presentation. The overall impression is one of grounded, refined intimacy where visual texture comes from photography rather than heavy UI treatments.
-colors:
-  canvas-white: "#f3f2ec"
-  deep-charcoal: "#131313"
-  pure-black: "#000000"
-  platinum-gray: "#e3e4df"
-  faded-stone: "#cbc9bd"
-  snow-white: "#ffffff"
-  terra-cotta: "#f68e6d"
-  sky-mist: "#7faad2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.3
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.1
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 33px
-    lineHeight: 1.1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 42px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 1
-  display:
-    fontFamily: "system-ui"
-    fontSize: 132px
-    lineHeight: 0.8
-spacing:
-  elementGap: 4px
-  sectionGap: 25px
-components:
-  primary-filled-button:
-    role: Call to action button
-  ghost-button:
-    role: Secondary action or navigation
-  default-card:
-    role: Content container
-  badge-out-of-stock:
-    role: Informational label
-  badge-team-fav:
-    role: Highlight label
-  badge-best-seller:
-    role: Semantic info label
-  form-input:
-    role: User entry field
+name: "Afterglo"
+description: "Afterglo employs a visual style of subtle, almost clinical minimalism overlaid with soft, muted sensuality. Its design language combines stark achromatic typography and UI elements with warm, skin-toned imagery and a single vibrant accent color. Surfaces are clean and often borderless, maintaining a spacious, uncluttered presentation. The overall impression is one of grounded, refined intimacy where visual texture comes from photography rather than heavy UI treatments."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://myafterglo.com"
+refero_style_id: "b13069df-7475-4b51-a734-621e3da75f8b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520978125-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520978125-thumb.jpg"
+extracted_at: "2026-04-30T03:50:16.742Z"
 ---
 
-## Overview
+# Afterglo — Style Reference
 
-**North Star:** Warm Minimalism
+> Warm Minimalism
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Afterglo employs a visual style of subtle, almost clinical minimalism overlaid with soft, muted sensuality. Its design language combines stark achromatic typography and UI elements with warm, skin-toned imagery and a single vibrant accent color. Surfaces are clean and often borderless, maintaining a spacious, uncluttered presentation. The overall impression is one of grounded, refined intimacy where visual texture comes from photography rather than heavy UI treatments.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #f3f2ec | `--color-canvas-white` | Primary page background, card surfaces, and form inputs. Establishes a bright and airy base |
+| Deep Charcoal | #131313 | `--color-deep-charcoal` | Most black text, primary button backgrounds, and strong borders. Provides high contrast against light surfaces |
+| Pure Black | #000000 | `--color-pure-black` | Navigation text, icons, and significant text elements. Used for ultimate contrast with light backgrounds |
+| Platinum Gray | #e3e4df | `--color-platinum-gray` | Subtle borders and dividers, providing visual separation without harsh lines |
+| Faded Stone | #cbc9bd | `--color-faded-stone` | Secondary background color for subtle differentiation of sections or components, contributing to the muted palette |
+| Snow White | #ffffff | `--color-snow-white` | Text on dark backgrounds, selected badge backgrounds |
+| Terra Cotta | #f68e6d | `--color-terra-cotta` | Accent for decorative elements in the footer, providing a singular point of warm color |
+| Sky Mist | #7faad2 | `--color-sky-mist` | Informational badges and subtle background hints for specific content |
+
+## Tokens — Typography
+
+### Aeonik
+
+- **Token:** `--font-aeonik`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 13px, 15px, 22px, 33px, 50px, 132px
+- **Line heights:** 0.80, 0.90, 1.00, 1.10, 1.20, 1.30
+- **Letter spacing:** normal
+- **Role:** Primary sans-serif font for all body text, navigational elements, and most headings. Its clean, geometric nature provides a modern and understated readability across the interface.
+
+### Cardinal Fruit
+
+- **Token:** `--font-cardinal-fruit`
+- **Substitute:** Playfair Display
+- **Weights:** 400, 500
+- **Sizes:** 33px, 42px, 54px, 187px
+- **Line heights:** 1.00, 1.10
+- **Letter spacing:** normal
+- **Role:** Decorative serif font used for select display headlines, adding a touch of classic sophistication and visual intrigue. Its unique character breaks the geometric monotony of Aeonik.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.3 | — | `--text-caption` |
+| body-sm | 15px | 1.2 | — | `--text-body-sm` |
+| body | 22px | 1.1 | — | `--text-body` |
+| subheading | 33px | 1.1 | — | `--text-subheading` |
+| heading | 42px | 1.1 | — | `--text-heading` |
+| heading-lg | 50px | 1 | — | `--text-heading-lg` |
+| display | 132px | 0.8 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-58 | 58px | `--spacing-58` |
+| spacing-67 | 67px | `--spacing-67` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-216 | 216px | `--spacing-216` |
+| spacing-231 | 231px | `--spacing-231` |
+| spacing-274 | 274px | `--spacing-274` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 5px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgb(243, 242, 236) 0px 0px 0px 1000px inset | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 25px |
+| cardPadding | 29px |
+| elementGap | 4px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button
+
+Solid Deep Charcoal background (#131313) with Snow White text (#ffffff), 5px border-radius, and 10px vertical, 17px horizontal padding. Delivers a clear, confident action prompt.
+
+### Ghost Button
+
+**Role:** Secondary action or navigation
+
+Transparent background with Pure Black text (#000000) and border, no explicit padding, and 0px border-radius, maintaining a lightweight feel for less prominent actions.
+
+### Default Card
+
+**Role:** Content container
+
+Canvas White background (#f3f2ec) with 5px border-radius and 29px padding on all sides, used for containing product information or feature blocks.
+
+### Badge (Out of Stock)
+
+**Role:** Informational label
+
+Solid Pure Black background (#000000) with Snow White text (#ffffff), 5px border-radius, and 3px vertical, 5px horizontal padding. Indicates unavailability clearly.
+
+### Badge (Team Fav)
+
+**Role:** Highlight label
+
+Solid Snow White background (#ffffff) with Pure Black text (#000000), 5px border-radius, and 3px vertical, 5px horizontal padding. Signals curated content.
+
+### Badge (Best Seller)
+
+**Role:** Semantic info label
+
+Solid Sky Mist background (#7faad2) with Snow White text (#ffffff), 5px border-radius, and 3px vertical, 5px horizontal padding. Highlights popular items.
+
+### Form Input
+
+**Role:** User entry field
+
+Canvas White background (#f3f2ec) with a 1px solid Pure Black border (#000000) at 0px border-radius. Inset box-shadow using Canvas White effectively creates a subtle internal highlight.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#f3f2ec) for primary backgrounds and surfaces.
 - Use Deep Charcoal (#131313) for most primary button fills and strong text accents.
@@ -76,7 +168,7 @@ Afterglo employs a visual style of subtle, almost clinical minimalism overlaid w
 - Employ Platinum Gray (#e3e4df) for subtle visual separation, like horizontal dividers or soft borders.
 - Integrate warm, neutral-toned photography to add sensuality without overwhelming the minimal UI.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple accent colors; rely on Terra Cotta (#f68e6d) or Sky Mist (#7faad2) as single points of color.
 - Do not use heavy shadows or gradients; subtle elevation or inset effects are preferred.
@@ -86,10 +178,137 @@ Afterglo employs a visual style of subtle, almost clinical minimalism overlaid w
 - Do not clutter layouts; ensure ample whitespace and compact component spacing.
 - Avoid purely decorative icons; use icons sparingly and primarily for functional purposes.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas White | #f3f2ec | Base page background and general content area. |
+| 1 | Default Card | #f3f2ec | Standard raised content containers, visually identical to the canvas but conceptually a distinct layer. |
+| 2 | Faded Stone | #cbc9bd | Subtle background shifts for alternate sections, providing gentle visual rhythm. |
+
+## Elevation
+
+- **Shadow 1:** `rgb(243, 242, 236) 0px 0px 0px 1000px inset`
+
+## Imagery
+
+Imagery primarily consists of high-quality, artfully composed photography featuring product shots or abstract and sensual human forms. When product-focused, they are typically tightly cropped on neutral backgrounds, highlighting texture and design. Abstract and human form photography uses muted, soft-focus, and skin-toned palettes, often with blurred elements or partial views, creating a sense of intimacy and softness. There are no explicit illustrations. Icons are minimal, outlined, and monochromatic, maintaining a clean, functional UI presence and supporting navigation rather than decorative flair. Imagery is dense, often occupying significant visual space and serving as a key textural and emotional component of the brand, contrasting with the stark UI.
+
+## Layout
 
 The page layout utilizes a contained, centered model, likely within a fluid max-width that isn't strictly fixed due to detected `null` but follows common web patterns. The hero section often features full-bleed, visually rich photography or abstract graphics acting as a background, with overlaying, large-format type. Content sections generally alternate between text-left/image-right or image-left/text-right patterns, creating a balanced visual flow. A prominent card grid system is used for product display, typically in multiple columns. Vertical spacing is consistent but compact, creating an information-rich yet breathable experience. Navigation is handled by a sticky top bar, featuring a minimal aesthetic with ghost controls and a sub-navigation menu for product categories.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily consists of high-quality, artfully composed photography featuring product shots or abstract and sensual human forms. When product-focused, they are typically tightly cropped on neutral backgrounds, highlighting texture and design. Abstract and human form photography uses muted, soft-focus, and skin-toned palettes, often with blurred elements or partial views, creating a sense of intimacy and softness. There are no explicit illustrations. Icons are minimal, outlined, and monochromatic, maintaining a clean, functional UI presence and supporting navigation rather than decorative flair. Imagery is dense, often occupying significant visual space and serving as a key textural and emotional component of the brand, contrasting with the stark UI.
+- **Maude** — Shares a similar minimal aesthetic with high-quality, sensual product photography and a clean, almost clinical UI contrasted by warm imagery.
+- **Dame Products** — Employs an achromatic UI with subtle accent colors and sophisticated typography to convey a modern, intimate brand.
+- **Necessaire** — Features a strong focus on muted, clean design, premium product photography, and functional typography with a limited color palette.
+- **Parade** — Uses bold, large-scale typography for headlines alongside clean, product-focused imagery and a simple UI with subtle color accents.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #f3f2ec;
+  --color-deep-charcoal: #131313;
+  --color-pure-black: #000000;
+  --color-platinum-gray: #e3e4df;
+  --color-faded-stone: #cbc9bd;
+  --color-snow-white: #ffffff;
+  --color-terra-cotta: #f68e6d;
+  --color-sky-mist: #7faad2;
+  --font-aeonik: 'Aeonik', Inter;
+  --font-cardinal-fruit: 'Cardinal Fruit', Playfair Display;
+  --text-caption: 13px;
+  --leading-caption: 1.3;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.2;
+  --text-body: 22px;
+  --leading-body: 1.1;
+  --text-subheading: 33px;
+  --leading-subheading: 1.1;
+  --text-heading: 42px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1;
+  --text-display: 132px;
+  --leading-display: 0.8;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-17: 17px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-33: 33px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-67: 67px;
+  --spacing-83: 83px;
+  --spacing-216: 216px;
+  --spacing-231: 231px;
+  --spacing-274: 274px;
+  --radius-default: 5px;
+  --shadow-xl: rgb(243, 242, 236) 0px 0px 0px 1000px inset;
+  --surface-canvas-white: #f3f2ec;
+  --surface-default-card: #f3f2ec;
+  --surface-faded-stone: #cbc9bd;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #f3f2ec;
+  --color-deep-charcoal: #131313;
+  --color-pure-black: #000000;
+  --color-platinum-gray: #e3e4df;
+  --color-faded-stone: #cbc9bd;
+  --color-snow-white: #ffffff;
+  --color-terra-cotta: #f68e6d;
+  --color-sky-mist: #7faad2;
+  --font-aeonik: 'Aeonik', Inter;
+  --font-cardinal-fruit: 'Cardinal Fruit', Playfair Display;
+  --text-caption: 13px;
+  --leading-caption: 1.3;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.2;
+  --text-body: 22px;
+  --leading-body: 1.1;
+  --text-subheading: 33px;
+  --leading-subheading: 1.1;
+  --text-heading: 42px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 1;
+  --text-display: 132px;
+  --leading-display: 0.8;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-17: 17px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-33: 33px;
+  --spacing-44: 44px;
+  --spacing-50: 50px;
+  --spacing-58: 58px;
+  --spacing-67: 67px;
+  --spacing-83: 83px;
+  --spacing-216: 216px;
+  --spacing-231: 231px;
+  --spacing-274: 274px;
+  --radius-default: 5px;
+  --shadow-xl: rgb(243, 242, 236) 0px 0px 0px 1000px inset;
+  --surface-canvas-white: #f3f2ec;
+  --surface-default-card: #f3f2ec;
+  --surface-faded-stone: #cbc9bd;
+}
+```
