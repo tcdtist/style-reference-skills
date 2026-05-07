@@ -1,83 +1,191 @@
 ---
 version: alpha
-name: Daniel Sun
-description: This design system feels like a bold, sunny declaration. It pairs extreme typographic scale with a soft, limited color palette focused on vivid yellow and stark black and white. The visual identity hinges on the tension between playful handwritten accents and massive, condensed sans-serif headlines, creating a brand that feels both approachable and impactful.
-colors:
-  sunbeam-yellow: "#ffd500"
-  pitch-black: "#000000"
-  canvas-white: "#ffffff"
-  pale-gray: "#f5f5f5"
-  ash-gray: "#808080"
-  silver-mist: "#a6a6a6"
-  shadow-gradient: "#e6e6e6"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: -0.48px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.1
-    letterSpacing: -0.648px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.72px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.35
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 0.9
-    letterSpacing: -2.628px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 88px
-    lineHeight: 0.96
-    letterSpacing: -2.992px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 246px
-    lineHeight: 1
-    letterSpacing: -6.888px
-spacing:
-  buttonRadius: 32px
-  sectionGap: 64px
-components:
-  navigation-bar:
-    role: 
-  work-showcase-card:
-    role: 
-  button-group-cta-strip:
-    role: 
-  navigation-button:
-    role: Interactive element
-  work-showcase-card:
-    role: Content display
-  primary-heading-sectional:
-    role: Information hierarchy
-  sub-heading-descriptor:
-    role: Contextual information
-  hero-display-text:
-    role: Brand statement
+name: "Daniel Sun"
+description: "This design system feels like a bold, sunny declaration. It pairs extreme typographic scale with a soft, limited color palette focused on vivid yellow and stark black and white. The visual identity hinges on the tension between playful handwritten accents and massive, condensed sans-serif headlines, creating a brand that feels both approachable and impactful."
+theme: "light"
+industry: "agency"
+source_url: "https://danielsun.space"
+refero_style_id: "8d1b6c70-e045-4ce6-891d-aba5d5c00e0d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925594833-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925594833-thumb.jpg"
+extracted_at: "2026-04-11T16:40:13.816Z"
 ---
 
-## Overview
+# Daniel Sun — Style Reference
 
-**North Star:** Solar Flare Canvas. A radiant yellow burst on a clean, stark white backdrop defines the visual energy.
+> Solar Flare Canvas. A radiant yellow burst on a clean, stark white backdrop defines the visual energy.
+
+**Theme:** light
+
+**Industry:** agency
 
 This design system feels like a bold, sunny declaration. It pairs extreme typographic scale with a soft, limited color palette focused on vivid yellow and stark black and white. The visual identity hinges on the tension between playful handwritten accents and massive, condensed sans-serif headlines, creating a brand that feels both approachable and impactful.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Sunbeam Yellow | #ffd500 | `--color-sunbeam-yellow` | Decorative elements, subtle highlights, active button indicators — a burst of vivid energy in an otherwise neutral palette. |
+| Pitch Black | #000000 | `--color-pitch-black` | Most prominent text color for headings and body, providing stark contrast against white backgrounds. |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary page background, card surfaces, and text color on dark elements. |
+| Pale Gray | #f5f5f5 | `--color-pale-gray` | Secondary background color for sections and cards, providing a subtle differentiation from pure white. |
+| Ash Gray | #808080 | `--color-ash-gray` | Secondary text, descriptive elements. Offers softer contrast than Pitch Black, maintaining legibility. |
+| Silver Mist | #a6a6a6 | `--color-silver-mist` | Subtle text and borders, creating visual texture without distraction. |
+| Shadow Gradient | #e6e6e6 | `--color-shadow-gradient` | Background for subtle elevation or depth, usually found in larger UI sections or shadowed elements. |
+
+## Tokens — Typography
+
+### Reddit Sans Condensed
+
+- **Token:** `--font-reddit-sans-condensed`
+- **Substitute:** Bebas Neue
+- **Weights:** 900
+- **Sizes:** 36px, 88px, 246px
+- **Line heights:** 0.90, 0.96, 1.00
+- **Letter spacing:** -0.0730em, -0.0340em, -0.0280em
+- **OpenType features:** "cpsp"; "liga" 0
+- **Role:** Dominant display font for headlines and impactful statements. Its condensed, ultra-bold presence with tight letter-spacing is a signature visual identity marker, creating strong, almost architectural text blocks.
+
+### Inter Display
+
+- **Token:** `--font-inter-display`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 18px, 20px, 26px, 30px
+- **Line heights:** 1.10, 1.30, 1.35
+- **Role:** Primary font for body text, subheadings, and medium-sized informational content. Its clarity and moderate weight provide a clean balance to the condensed headlines.
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 14px, 20px, 128px
+- **Line heights:** 1.20
+- **Letter spacing:** -0.0360em, -0.0160em
+- **Role:** Used for smaller body text, captions, and occasionally for very large, specific type treatments. The tighter letter-spacing subtly adds to its readability in dense contexts.
+
+### sans-serif
+
+- **Token:** `--font-sans-serif`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.20
+- **Role:** Utility font for the smallest text elements like tags, metadata, and default browser text. Its neutrality ensures it doesn't compete with brand fonts.
+
+### Caveat
+
+- **Token:** `--font-caveat`
+- **Substitute:** Dancing Script
+- **Weights:** 700
+- **Sizes:** 18px, 28px
+- **Line heights:** 0.96, 1.20
+- **Letter spacing:** -0.0360em
+- **Role:** Accent font for playful, humanistic touches, often used for dates or call-outs like 'from 2020 'til today'. Its handwritten feel provides a stark, warm contrast to the geometric sans-serifs.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | — | `--text-caption` |
+| body-sm | 14px | 1.2 | -0.48px | `--text-body-sm` |
+| body | 18px | 1.1 | -0.648px | `--text-body` |
+| subheading | 20px | 1.2 | -0.72px | `--text-subheading` |
+| heading | 30px | 1.35 | — | `--text-heading` |
+| heading-lg | 36px | 0.9 | -2.628px | `--text-heading-lg` |
+| display | 88px | 0.96 | -2.992px | `--text-display` |
+| display-xl | 246px | 1 | -6.888px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 32px |
+| default | 14px |
+| heroElement | 110px |
+| largeImages | 24px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.12) -2px 3px 3px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 64px |
+
+## Components
+
+### Navigation Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Work Showcase Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group & CTA Strip
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Navigation Button
+
+**Role:** Interactive element
+
+Rounded button with rgba(255, 213, 0, 0.15) background, rgb(0, 0, 238) text color and border. Uses 32px border-radius, 6px vertical padding, 14px horizontal padding. The transparent yellow background with a blue border creates a subtle, interactive state contrasting a vivid yellow accent.
+
+### Work Showcase Card
+
+**Role:** Content display
+
+Background is Pale Gray (#f5f5f5) or Canvas White (#ffffff). Features a drop shadow: rgba(0, 0, 0, 0.12) -2px 3px 3px 0px. Rounded corners at 14px. Inner content has padding of 16px. Imagery within may have 14px radius.
+
+### Primary Heading (Sectional)
+
+**Role:** Information hierarchy
+
+Uses Reddit Sans Condensed, weight 900, size 36px, lineHeight 0.90, letterSpacing -2.628px. Color Pitch Black (#000000). Establishes major section titles with high impact.
+
+### Sub-heading / Descriptor
+
+**Role:** Contextual information
+
+Uses Caveat, weight 700, size 18px, lineHeight 0.96, letterSpacing -0.648px. Color Ash Gray (#808080). Provides a warm, casual tone to introduce sections or add emphasis.
+
+### Hero Display Text
+
+**Role:** Brand statement
+
+Uses Reddit Sans Condensed, weight 900, size 246px, lineHeight 1.00, letterSpacing -6.888px for 'Daniel Sun'. Pitch Black (#000000) text on Canvas White (#ffffff) background. The immense scale creates an immediate, unforgettable brand presence.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Reddit Sans Condensed (weight 900) for all main headlines and significant display text to maintain the strong, condensed visual identity.
 - Pair the bold Reddit Sans Condensed with Inter Display (weight 500) for body text to ensure readability and balance.
@@ -87,7 +195,7 @@ This design system feels like a bold, sunny declaration. It pairs extreme typogr
 - Use 32px border-radius for all primary buttons and interactive elements, giving them a distinct pill-like shape.
 - Apply 14px border-radius consistently to all image containers and content cards (like Work Showcase Cards).
 
-### Don'ts
+### Don't
 
 - Do not use generic sans-serif fonts for headlines; always default to Reddit Sans Condensed for brand consistency.
 - Avoid overusing Sunbeam Yellow (#ffd500); its impact comes from its scarcity and specific application.
@@ -97,10 +205,142 @@ This design system feels like a bold, sunny declaration. It pairs extreme typogr
 - Do not introduce new border radii values; stick to 14px for cards/images and 32px for buttons.
 - Avoid heavily stylized backgrounds or textures that detract from the clean canvas aesthetic.
 
-### Layout
+## Elevation
+
+- **Shadow 1:** `rgba(0, 0, 0, 0.12) -2px 3px 3px 0px`
+
+## Imagery
+
+The site uses a mix of photographic hero elements (the sunbeam graphic) and product screenshots within a clean UI. Photography is treated as a full-bleed background for the hero, creating an atmospheric backdrop. Product screenshots are contained within rounded (14px radius) card components, presented clearly with minimal embellishment, serving an explanatory and showcasing role. Icons are minimal, monochromatic, and likely part of a utility set, primarily functional rather than decorative. The overall density is balanced, with imagery serving as clear illustrative content contrasted against large type.
+
+## Layout
 
 The page primarily uses a full-bleed design, allowing the striking yellow sunbeam graphic to dominate the initial viewport. Content sections generally appear centered but without a strict max-width, allowing for large-scale typography and images to stretch. The rhythm is characterized by distinct, vertically stacked sections, often alternating between stark white backgrounds and subtle Pale Gray (#f5f5f5). Content is arranged in prominent stacks of headline-level text, followed by descriptive copy and product showcases. There's a strong emphasis on spaciousness, with ample vertical padding between sections (implied by 'sectionGap' and general visual breaks).
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of photographic hero elements (the sunbeam graphic) and product screenshots within a clean UI. Photography is treated as a full-bleed background for the hero, creating an atmospheric backdrop. Product screenshots are contained within rounded (14px radius) card components, presented clearly with minimal embellishment, serving an explanatory and showcasing role. Icons are minimal, monochromatic, and likely part of a utility set, primarily functional rather than decorative. The overall density is balanced, with imagery serving as clear illustrative content contrasted against large type.
+- **AIGA** — Exploits oversized, condensed typography for high impact and modern aesthetic.
+- **Superside** — Uses a similar approach of clean layouts with impactful, often colorful, hero sections with stark typography.
+- **Frank Digital** — Combines a minimalist aesthetic with a single strong accent color and bold, modern typefaces.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-sunbeam-yellow: #ffd500;
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pale-gray: #f5f5f5;
+  --color-ash-gray: #808080;
+  --color-silver-mist: #a6a6a6;
+  --color-shadow-gradient: #e6e6e6;
+  --font-reddit-sans-condensed: 'Reddit Sans Condensed', Bebas Neue;
+  --font-inter-display: 'Inter Display', Inter;
+  --font-inter: 'Inter', Inter;
+  --font-sans-serif: 'sans-serif', system-ui, sans-serif;
+  --font-caveat: 'Caveat', Dancing Script;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: -0.48px;
+  --text-body: 18px;
+  --leading-body: 1.1;
+  --tracking-body: -0.648px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.72px;
+  --text-heading: 30px;
+  --leading-heading: 1.35;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -2.628px;
+  --text-display: 88px;
+  --leading-display: 0.96;
+  --tracking-display: -2.992px;
+  --text-display-xl: 246px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -6.888px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-160: 160px;
+  --radius-buttons: 32px;
+  --radius-default: 14px;
+  --radius-heroelement: 110px;
+  --radius-largeimages: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) -2px 3px 3px 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-sunbeam-yellow: #ffd500;
+  --color-pitch-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-pale-gray: #f5f5f5;
+  --color-ash-gray: #808080;
+  --color-silver-mist: #a6a6a6;
+  --color-shadow-gradient: #e6e6e6;
+  --font-reddit-sans-condensed: 'Reddit Sans Condensed', Bebas Neue;
+  --font-inter-display: 'Inter Display', Inter;
+  --font-inter: 'Inter', Inter;
+  --font-sans-serif: 'sans-serif', system-ui, sans-serif;
+  --font-caveat: 'Caveat', Dancing Script;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: -0.48px;
+  --text-body: 18px;
+  --leading-body: 1.1;
+  --tracking-body: -0.648px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.72px;
+  --text-heading: 30px;
+  --leading-heading: 1.35;
+  --text-heading-lg: 36px;
+  --leading-heading-lg: 0.9;
+  --tracking-heading-lg: -2.628px;
+  --text-display: 88px;
+  --leading-display: 0.96;
+  --tracking-display: -2.992px;
+  --text-display-xl: 246px;
+  --leading-display-xl: 1;
+  --tracking-display-xl: -6.888px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-160: 160px;
+  --radius-buttons: 32px;
+  --radius-default: 14px;
+  --radius-heroelement: 110px;
+  --radius-largeimages: 24px;
+  --shadow-xl: rgba(0, 0, 0, 0.12) -2px 3px 3px 0px;
+}
+```

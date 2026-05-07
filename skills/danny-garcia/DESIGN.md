@@ -1,64 +1,120 @@
 ---
 version: alpha
-name: Danny Garcia
-description: Danny Garcia's portfolio uses a dark, atmospheric canvas with subtle surface variations and vibrant, ethereal gradients. Typography is confident and substantial on dark backdrops, using a limited color palette featuring a warm gray for primary text and a distinct golden-beige for interactive elements. The aesthetic combines a sense of digital craftsmanship with a touch of modern artistry, allowing gradients to provide visual interest and surface hierarchy rather than heavy shadows or borders.
-colors:
-  ebon-night: "#10120d"
-  deep-forest: "#161912"
-  ash-gray: "#c8c8c8"
-  warm-parchment: "#d1c5ad"
-  twilight-gradient: "#30263f"
-  chromatic-orb-gradient-1: "#2a5482"
-  chromatic-orb-gradient-2: "#40e4f7"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.5
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.4
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.8
-  display:
-    fontFamily: "system-ui"
-    fontSize: 104px
-    lineHeight: 0.8
-spacing:
-  cardRadius: 96px 96px 96px 96px
-  elementGap: 24px
-  sectionGap: 48px
-components:
-  card-with-gradient-backdrop:
-    role: Content container with an ethereal gradient background.
-  text-link:
-    role: Interactive text elements.
-  section-heading:
-    role: Title for content sections.
-  main-hero-headline:
-    role: Prominent display text for the hero section.
-  primary-body-text:
-    role: Main narrative content.
+name: "Danny Garcia"
+description: "Danny Garcia's portfolio uses a dark, atmospheric canvas with subtle surface variations and vibrant, ethereal gradients. Typography is confident and substantial on dark backdrops, using a limited color palette featuring a warm gray for primary text and a distinct golden-beige for interactive elements. The aesthetic combines a sense of digital craftsmanship with a touch of modern artistry, allowing gradients to provide visual interest and surface hierarchy rather than heavy shadows or borders."
+theme: "dark"
+industry: "other"
+source_url: "https://danny-garcia.com"
+refero_style_id: "08b780cc-0fe3-4c53-8e93-27369bd7b032"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517615961-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517615961-thumb.jpg"
+extracted_at: "2026-04-30T02:54:00.036Z"
 ---
 
-## Overview
+# Danny Garcia — Style Reference
 
-**North Star:** Midnight gradient canvas
+> Midnight gradient canvas
+
+**Theme:** dark
+
+**Industry:** other
 
 Danny Garcia's portfolio uses a dark, atmospheric canvas with subtle surface variations and vibrant, ethereal gradients. Typography is confident and substantial on dark backdrops, using a limited color palette featuring a warm gray for primary text and a distinct golden-beige for interactive elements. The aesthetic combines a sense of digital craftsmanship with a touch of modern artistry, allowing gradients to provide visual interest and surface hierarchy rather than heavy shadows or borders.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ebon Night | #10120d | `--color-ebon-night` | Page background, primary canvas |
+| Deep Forest | #161912 | `--color-deep-forest` | Card surfaces, subtle elevation above the canvas |
+| Ash Gray | #c8c8c8 | `--color-ash-gray` | Primary text, headings, general content |
+| Warm Parchment | #d1c5ad | `--color-warm-parchment` | Links, interactive elements, outlined action borders — a warm accent against the dark neutrals |
+| Twilight Gradient | #30263f | `--color-twilight-gradient` | Decorative background gradients for sections and cards — creating visual depth and soft light sources |
+| Chromatic Orb Gradient 1 | #2a5482 | `--color-chromatic-orb-gradient-1` | Abstract object accents and background blur effects, adding vivid but muted color |
+| Chromatic Orb Gradient 2 | #40e4f7 | `--color-chromatic-orb-gradient-2` | Abstract object accents and background blur effects, adding vivid but muted color |
+
+## Tokens — Typography
+
+### Avenir Next
+
+- **Token:** `--font-avenir-next`
+- **Substitute:** system-ui, sans-serif
+- **Weights:** 400, 600, 700
+- **Sizes:** 16px, 22px, 24px, 32px, 48px, 104px
+- **Line heights:** 0.80, 1.40, 1.50
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all content. Its presence across all sizes and weights emphasizes a cohesive and solid textual voice. Larger headlines often use lower line height to appear as a dense block, while body text uses a generous line height for readability.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 16px | 1.5 | — | `--text-body-sm` |
+| body | 22px | 1.5 | — | `--text-body` |
+| subheading | 24px | 1.4 | — | `--text-subheading` |
+| heading | 32px | 1.4 | — | `--text-heading` |
+| heading-lg | 48px | 0.8 | — | `--text-heading-lg` |
+| display | 104px | 0.8 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-96 | 96px | `--spacing-96` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 96px 96px 96px 96px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 48px |
+| elementGap | 24px |
+
+## Components
+
+### Card with Gradient Backdrop
+
+**Role:** Content container with an ethereal gradient background.
+
+Background color rgba(29, 35, 21, 0.5) with backdrop filters saturate(1.8) blur(60px), and often an underlying gradient like linear-gradient(90deg, #30263f 0%, #30263f 100%). Uses asymmetric top-left/top-right border-radius 96px for visual distinction, or no radius. Padding: 48px top, 0px sides, 96px bottom. No box-shadow.
+
+### Text Link
+
+**Role:** Interactive text elements.
+
+Text color Warm Parchment (#d1c5ad) at normal weight. Underlined by default, with cursor hover revealing interaction.
+
+### Section Heading
+
+**Role:** Title for content sections.
+
+Avenir Next, weight 400 or 600, color Ash Gray (#c8c8c8), size 24px or 32px. Set with 48px top and 24px bottom margins.
+
+### Main Hero Headline
+
+**Role:** Prominent display text for the hero section.
+
+Avenir Next, weight 700, color Ash Gray (#c8c8c8), size 104px, line-height 0.8. Creates a dense visual block of text.
+
+### Primary Body Text
+
+**Role:** Main narrative content.
+
+Avenir Next, weight 400, color Ash Gray (#c8c8c8), size 22px, line-height 1.5. Uses 24px top and bottom margins for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Ebon Night (#10120d) for page backgrounds and Deep Forest (#161912) for subtly elevated card surfaces.
 - Use Ash Gray (#c8c8c8) for all primary static text, ensuring high contrast and readability on dark backgrounds.
@@ -68,7 +124,7 @@ Danny Garcia's portfolio uses a dark, atmospheric canvas with subtle surface var
 - Incorporate the gradient backdrops and blurred orb accents to add diffuse color and depth, especially behind cards and hero content.
 - Apply asymmetric border-radius (e.g., 0px 0px 96px 96px) to cards where visual distinction is desired, otherwise use 0px.
 
-### Don'ts
+### Don't
 
 - Avoid using harsh, solid colors for backgrounds; lean into soft, dark neutrals and gradients for visual depth.
 - Do not introduce sharp shadows or overly defined borders, as the system relies on gradients and slight color shifts for depth.
@@ -78,10 +134,92 @@ Danny Garcia's portfolio uses a dark, atmospheric canvas with subtle surface var
 - Do not use highly saturated, non-gradient colors for large blocks; vivid hues are for subtle accents and blurred effects.
 - Do not use generic, symmetrical radii on cards, except for explicit no-radius cases; embrace the distinctive larger asymmetric radii for character.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Ebon Night Canvas | #10120d | Base page background. |
+| 1 | Deep Forest Card | #161912 | Elevated card surfaces, often with backdrop filters and gradients. |
+
+## Imagery
+
+This site features abstract, vibrant 3D orbs and diffused gradient effects that provide visual interest and depth against the dark background. The orbs are multi-colored (e.g., from #2a5482 to #f74577, or #40e4f7 to #db1885) and appear as blurred, textural elements that break the monotony of the dark canvas without being distracting. These graphics serve a decorative and atmospheric role, adding a sense of modern artistry and dynamism. Imagery is medium density, often supporting textual content rather than dominating it, with a focus on color and abstract form.
+
+## Layout
 
 The page primarily uses a full-bleed layout, allowing background gradients and blurred orb effects to extend across the width. Content sections maintain consistent vertical spacing of 48px, with alternating text-left/text-right arrangements and centered stacks for headings and short descriptions. There's a strong emphasis on spaciousness, with ample negative space around content blocks. Navigation is minimal, likely integrated into the overall flow or accessed via implicit interactive elements, rather than a fixed header bar. The hero section features a prominent, centered headline over abstract, full-bleed gradient graphics.
 
-### Imagery
+## Similar Brands
 
-This site features abstract, vibrant 3D orbs and diffused gradient effects that provide visual interest and depth against the dark background. The orbs are multi-colored (e.g., from #2a5482 to #f74577, or #40e4f7 to #db1885) and appear as blurred, textural elements that break the monotony of the dark canvas without being distracting. These graphics serve a decorative and atmospheric role, adding a sense of modern artistry and dynamism. Imagery is medium density, often supporting textual content rather than dominating it, with a focus on color and abstract form.
+- **Figma** — Dark UI with vibrant, sometimes blurred, gradient accents and a strong focus on minimalist typography.
+- **Linear** — Dark-themed interface with high contrast text and a preference for subtle, integrated accent colors over obvious call-to-actions.
+- **Arc Browser** — Usage of evocative gradients as primary visual elements and for subtle background effects, alongside dark surfaces and clear typography.
+- **Stripe** — High-quality, spacious dark interfaces balanced with sophisticated typography and subtle background gradients for depth.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ebon-night: #10120d;
+  --color-deep-forest: #161912;
+  --color-ash-gray: #c8c8c8;
+  --color-warm-parchment: #d1c5ad;
+  --color-twilight-gradient: #30263f;
+  --color-chromatic-orb-gradient-1: #2a5482;
+  --color-chromatic-orb-gradient-2: #40e4f7;
+  --font-avenir-next: 'Avenir Next', system-ui, sans-serif;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --text-body: 22px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.8;
+  --text-display: 104px;
+  --leading-display: 0.8;
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --radius-cards: 96px 96px 96px 96px;
+  --surface-ebon-night-canvas: #10120d;
+  --surface-deep-forest-card: #161912;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ebon-night: #10120d;
+  --color-deep-forest: #161912;
+  --color-ash-gray: #c8c8c8;
+  --color-warm-parchment: #d1c5ad;
+  --color-twilight-gradient: #30263f;
+  --color-chromatic-orb-gradient-1: #2a5482;
+  --color-chromatic-orb-gradient-2: #40e4f7;
+  --font-avenir-next: 'Avenir Next', system-ui, sans-serif;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --text-body: 22px;
+  --leading-body: 1.5;
+  --text-subheading: 24px;
+  --leading-subheading: 1.4;
+  --text-heading: 32px;
+  --leading-heading: 1.4;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 0.8;
+  --text-display: 104px;
+  --leading-display: 0.8;
+  --spacing-24: 24px;
+  --spacing-48: 48px;
+  --spacing-96: 96px;
+  --radius-cards: 96px 96px 96px 96px;
+  --surface-ebon-night-canvas: #10120d;
+  --surface-deep-forest-card: #161912;
+}
+```

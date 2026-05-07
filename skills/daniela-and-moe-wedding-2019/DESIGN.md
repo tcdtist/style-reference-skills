@@ -1,75 +1,156 @@
 ---
 version: alpha
-name: Daniela and Moe Wedding 2019
-description: Daniela and Moe embodies a whimsical, botanical garden aesthetic with a light, airy canvas and expressive organic illustrations. Typography balances classic elegance with contemporary readability. The color palette is driven by natural, muted tones with a singular bold accent orange that brings vitality to interactive elements and key details. Components are visually light, often appearing as ghost elements or subtly differentiated surfaces, ensuring the lush imagery takes center stage.
-colors:
-  canvas-petal: "#fef1ec"
-  paper-white: "#ffffff"
-  midnight-ink: "#11223f"
-  sunset-blush: "#ff5734"
-  mossy-green: "#7e813c"
-  deep-forest: "#193c35"
-  coral-haze: "#f6bba4"
-  dusty-sage: "#c6d7d0"
-  azure-whisper: "#092a49"
-  sunbeam-gold: "#e5ba2b"
-  crimson-bloom: "#ec4f22"
-  dark-fern: "#003322"
-  shadow: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-    letterSpacing: 2.4px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-    letterSpacing: 3.2px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-    letterSpacing: 4.8px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1
-    letterSpacing: 9.6px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 120px
-    lineHeight: 0.85
-spacing:
-  cardRadius: 0px
-  buttonRadius: 0px
-  elementGap: 20px
-  sectionGap: 32px
-components:
-  primary-action-button:
-    role: Call to action button
-  transparent-content-card:
-    role: Content container for detailed information
-  white-content-card:
-    role: Elevated content container
-  text-input-field:
-    role: Form input element
-  navigation-link:
-    role: Global navigation item
+name: "Daniela and Moe Wedding 2019"
+description: "Daniela and Moe embodies a whimsical, botanical garden aesthetic with a light, airy canvas and expressive organic illustrations. Typography balances classic elegance with contemporary readability. The color palette is driven by natural, muted tones with a singular bold accent orange that brings vitality to interactive elements and key details. Components are visually light, often appearing as ghost elements or subtly differentiated surfaces, ensuring the lush imagery takes center stage."
+theme: "light"
+industry: "other"
+source_url: "https://danielaandmoe.com"
+refero_style_id: "0f1b3cd0-de5a-4418-8711-0e1afe04707c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518320607-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518320607-thumb.jpg"
+extracted_at: "2026-04-30T03:05:43.442Z"
 ---
 
-## Overview
+# Daniela and Moe Wedding 2019 — Style Reference
 
-**North Star:** Whimsical Botanical Canvas
+> Whimsical Botanical Canvas
+
+**Theme:** light
+
+**Industry:** other
 
 Daniela and Moe embodies a whimsical, botanical garden aesthetic with a light, airy canvas and expressive organic illustrations. Typography balances classic elegance with contemporary readability. The color palette is driven by natural, muted tones with a singular bold accent orange that brings vitality to interactive elements and key details. Components are visually light, often appearing as ghost elements or subtly differentiated surfaces, ensuring the lush imagery takes center stage.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas Petal | #fef1ec | `--color-canvas-petal` | Page background, primary surface for sections |
+| Paper White | #ffffff | `--color-paper-white` | Card backgrounds, input fields, navigation hover states |
+| Midnight Ink | #11223f | `--color-midnight-ink` | Primary text, headings, input text, borders, navigation links |
+| Sunset Blush | #ff5734 | `--color-sunset-blush` | Primary action button background, accented headings, link accents, decorative elements — a warm, vivid contrast to the muted palette |
+| Mossy Green | #7e813c | `--color-mossy-green` | Decorative illustration fill and stroke |
+| Deep Forest | #193c35 | `--color-deep-forest` | Decorative illustration fill and stroke |
+| Coral Haze | #f6bba4 | `--color-coral-haze` | Decorative illustration fill and stroke |
+| Dusty Sage | #c6d7d0 | `--color-dusty-sage` | Decorative illustration stroke and fill |
+| Azure Whisper | #092a49 | `--color-azure-whisper` | Decorative illustration stroke |
+| Sunbeam Gold | #e5ba2b | `--color-sunbeam-gold` | Decorative illustration fill and stroke |
+| Crimson Bloom | #ec4f22 | `--color-crimson-bloom` | Decorative illustration fill and stroke |
+| Dark Fern | #003322 | `--color-dark-fern` | Decorative illustration fill |
+| Shadow | #000000 | `--color-shadow` | Decorative illustration fill, icons |
+
+## Tokens — Typography
+
+### Canela Web
+
+- **Token:** `--font-canela-web`
+- **Substitute:** serif
+- **Weights:** 100, 400, 500
+- **Sizes:** 24px, 28px, 32px, 48px, 120px
+- **Line heights:** 0.85, 1.00, 1.20, 1.30, 1.40, 1.60, 2.00
+- **Letter spacing:** normal
+- **Role:** Primary headings and display text, lending a refined, editorial feel. The range of weights and ample line-height for larger sizes allows for expressive yet legible headlines.
+
+### calibre
+
+- **Token:** `--font-calibre`
+- **Substitute:** sans-serif
+- **Weights:** 300, 400, 500
+- **Sizes:** 12px, 16px, 20px, 24px, 36px, 48px
+- **Line heights:** 1.20, 1.40, 1.60, 2.00
+- **Letter spacing:** 0.2000em
+- **Role:** Body text, links, smaller headings, navigation items, and button text. Its subtle letter-spacing provides an open, airy feel, enhancing readability for longer passages.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | 2.4px | `--text-caption` |
+| body | 16px | 1.4 | 3.2px | `--text-body` |
+| subheading | 24px | 1.2 | 4.8px | `--text-subheading` |
+| heading | 32px | 1.2 | — | `--text-heading` |
+| heading-lg | 48px | 1 | 9.6px | `--text-heading-lg` |
+| display | 120px | 0.85 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-66 | 66px | `--spacing-66` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-143 | 143px | `--spacing-143` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| other | 200px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Call to action button
+
+A filled button with 'Sunset Blush' background, 'Paper White' text, 0px border-radius, and generous horizontal padding. text-transform is uppercase and letter spacing is wide, indicating an active control and creating a playful contrast against the classic headline font.
+
+### Transparent Content Card
+
+**Role:** Content container for detailed information
+
+Transparent background with 10px horizontal padding. Borders and shadow are absent, allowing content to float on the 'Canvas Petal' background. Used for quiz items and secondary informational blocks.
+
+### White Content Card
+
+**Role:** Elevated content container
+
+'Paper White' background with 0px border-radius, no shadow, and generous internal padding (40px left, 20px right, 60px bottom). Used for prominent content sections like 'Fun Facts'.
+
+### Text Input Field
+
+**Role:** Form input element
+
+'Paper White' background, 'Midnight Ink' text color and border. Padding is 20px on all sides, with 0px border-radius. Font is calibre regular at 20px, ensuring clear input.
+
+### Navigation Link
+
+**Role:** Global navigation item
+
+calibre font, Midnight Ink text color, 0px border-radius. On hover, the link shows a subtle underline. It is designed to be lightweight and textual, integrating seamlessly with the page header.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Canvas Petal' (#fef1ec) as the default page background for all new sections, fostering an airy, consistent base.
 - Use 'Midnight Ink' (#11223f) for all body text, headings, and primary UI elements to ensure high contrast and readability.
@@ -79,7 +160,7 @@ Daniela and Moe embodies a whimsical, botanical garden aesthetic with a light, a
 - Utilize 'Paper White' (#ffffff) for card and input backgrounds, providing a lighter surface against the primary canvas.
 - Maintain a clear visual hierarchy by using Canela Web for all headlines and display text, allowing calibre for supporting content.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated colors other than 'Sunset Blush' (#ff5734) for functional UI elements; other vivid colors are reserved for illustrations.
 - Avoid applying drop shadows or strong elevation to components; maintain a flat, layered aesthetic as seen on cards.
@@ -89,10 +170,142 @@ Daniela and Moe embodies a whimsical, botanical garden aesthetic with a light, a
 - Avoid tight letter-spacing for calibre font; ensure a consistent 0.2000em tracking to preserve its signature open feel.
 - Do not use generic system fonts; always specify 'Canela Web' for headlines and 'calibre' for body text and interactive elements.
 
-### Layout
+## Imagery
+
+The site features abstract, organic botanical illustrations as the primary visual element, characterized by flat, filled shapes with occasional outlines. Colors within these illustrations leverage a diverse, muted palette of greens, yellows, corals, and subtle grays. These graphics are largely decorative and atmospheric, forming a lush, full-bleed backdrop in hero sections and serving as contained accents within content blocks. They create a consistent visual theme of a whimsical, natural garden. Icons, where present, are line-drawn with a delicate stroke weight and often adopt the 'Sunset Blush' accent color, serving explanatory roles without overwhelming the design.
+
+## Layout
 
 The page primarily uses a full-bleed layout, particularly for hero sections, allowing the botanical illustrations to extend to the edges. Content sections tend to be centered, but with no fixed `pageMaxWidth`, they adapt to viewport width. The hero features a large, centered headline over an illustrative background. Subsequent sections follow a consistent vertical rhythm with 'Canvas Petal' backgrounds. Content arrangement often utilizes a multi-column grid, particularly for displaying 'Fun Facts' cards, which are organized in a 4-column layout. Navigation is a simple, sticky top bar with centered text links. The overall density is comfortable, ensuring ample negative space around content blocks.
 
-### Imagery
+## Similar Brands
 
-The site features abstract, organic botanical illustrations as the primary visual element, characterized by flat, filled shapes with occasional outlines. Colors within these illustrations leverage a diverse, muted palette of greens, yellows, corals, and subtle grays. These graphics are largely decorative and atmospheric, forming a lush, full-bleed backdrop in hero sections and serving as contained accents within content blocks. They create a consistent visual theme of a whimsical, natural garden. Icons, where present, are line-drawn with a delicate stroke weight and often adopt the 'Sunset Blush' accent color, serving explanatory roles without overwhelming the design.
+- **Paperless Post** — Shares a focus on event stationery and invitations with elegant typography and custom illustrations.
+- **Minted** — Comparable emphasis on personalized event design, often featuring softer color palettes and illustrative motifs.
+- **Greenvelope** — Offers online invitations with a similar aesthetic leaning towards sophisticated, design-forward stationery.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-petal: #fef1ec;
+  --color-paper-white: #ffffff;
+  --color-midnight-ink: #11223f;
+  --color-sunset-blush: #ff5734;
+  --color-mossy-green: #7e813c;
+  --color-deep-forest: #193c35;
+  --color-coral-haze: #f6bba4;
+  --color-dusty-sage: #c6d7d0;
+  --color-azure-whisper: #092a49;
+  --color-sunbeam-gold: #e5ba2b;
+  --color-crimson-bloom: #ec4f22;
+  --color-dark-fern: #003322;
+  --color-shadow: #000000;
+  --font-canela-web: 'Canela Web', serif;
+  --font-calibre: 'calibre', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: 2.4px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 3.2px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 4.8px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: 9.6px;
+  --text-display: 120px;
+  --leading-display: 0.85;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-143: 143px;
+  --spacing-160: 160px;
+  --radius-cards: 0px;
+  --radius-other: 200px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-petal: #fef1ec;
+  --color-paper-white: #ffffff;
+  --color-midnight-ink: #11223f;
+  --color-sunset-blush: #ff5734;
+  --color-mossy-green: #7e813c;
+  --color-deep-forest: #193c35;
+  --color-coral-haze: #f6bba4;
+  --color-dusty-sage: #c6d7d0;
+  --color-azure-whisper: #092a49;
+  --color-sunbeam-gold: #e5ba2b;
+  --color-crimson-bloom: #ec4f22;
+  --color-dark-fern: #003322;
+  --color-shadow: #000000;
+  --font-canela-web: 'Canela Web', serif;
+  --font-calibre: 'calibre', sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --tracking-caption: 2.4px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --tracking-body: 3.2px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: 4.8px;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: 9.6px;
+  --text-display: 120px;
+  --leading-display: 0.85;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-66: 66px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-143: 143px;
+  --spacing-160: 160px;
+  --radius-cards: 0px;
+  --radius-other: 200px;
+  --radius-buttons: 0px;
+}
+```
