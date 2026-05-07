@@ -1,53 +1,133 @@
 ---
 version: alpha
-name: INO
-description: INO embraces a minimalist, gallery-like aesthetic, presenting fine jewelry as art objects on a clean, muted canvas. The design emphasizes precise typography, subtle interactions, and a focus on product photography, creating an atmosphere of understated luxury. Typography is used sparingly but with impact, while subtle grays and whites provide a refined backdrop for the metallic luster of the jewelry. Components are lightweight, often outlined or ghosted, conveying a sophisticated restraint.
-colors:
-  obsidian: "#212123"
-  canvas-white: "#ffffff"
-  filter-gray: "#999999"
-  subtle-ash: "#a6a6a7"
-  ink-black: "#000000"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.3
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.5
-spacing:
-  cardRadius: 50.4px
-  buttonRadius: 0px
-  elementGap: 9-11px
-  sectionGap: 36-38px
-components:
-  ghost-category-button:
-    role: Category navigation, filter options
-  underlined-nav-link:
-    role: Primary navigation, collection links
-  product-card:
-    role: Display individual jewelry products
-  filter-input:
-    role: Input for filtering product listings
+name: "INO"
+description: "INO embraces a minimalist, gallery-like aesthetic, presenting fine jewelry as art objects on a clean, muted canvas. The design emphasizes precise typography, subtle interactions, and a focus on product photography, creating an atmosphere of understated luxury. Typography is used sparingly but with impact, while subtle grays and whites provide a refined backdrop for the metallic luster of the jewelry. Components are lightweight, often outlined or ghosted, conveying a sophisticated restraint."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://ino.jewelry"
+refero_style_id: "57388b47-f789-441f-8b8d-13f1838a9ac6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514287026-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514287026-thumb.jpg"
+extracted_at: "2026-04-30T01:58:27.156Z"
 ---
 
-## Overview
+# INO — Style Reference
 
-**North Star:** Gallery Plinth Refinement
+> Gallery Plinth Refinement
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 INO embraces a minimalist, gallery-like aesthetic, presenting fine jewelry as art objects on a clean, muted canvas. The design emphasizes precise typography, subtle interactions, and a focus on product photography, creating an atmosphere of understated luxury. Typography is used sparingly but with impact, while subtle grays and whites provide a refined backdrop for the metallic luster of the jewelry. Components are lightweight, often outlined or ghosted, conveying a sophisticated restraint.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Obsidian | #212123 | `--color-obsidian` | Primary text, strong borders, icon fills. The core color for content and structure, presenting a near-black against the light canvas |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, pristine backdrop for product display |
+| Filter Gray | #999999 | `--color-filter-gray` | Muted text for inactive buttons, less prominent links, and ghost button borders. Provides subtle visual hierarchy |
+| Subtle Ash | #a6a6a7 | `--color-subtle-ash` | Secondary body text, smaller price details. A lighter gray for quieter information |
+| Ink Black | #000000 | `--color-ink-black` | Used for product card borders and occasional icon fills, providing sharp contrast |
+
+## Tokens — Typography
+
+### Sequel100Wide
+
+- **Token:** `--font-sequel100wide`
+- **Substitute:** Montserrat
+- **Weights:** 400
+- **Sizes:** 11px, 14px, 16px, 18px
+- **Line heights:** 1.00, 1.20, 1.30, 1.50, 1.60
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all headings, body text, links, and buttons. Its wide, uniform character sets the brand's distinctive, minimalist, and slightly architectural tone.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 11px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **Role:** Fallback font, specifically for certain button contexts where a system default is used.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1 | — | `--text-caption` |
+| body-sm | 14px | 1.2 | — | `--text-body-sm` |
+| body | 16px | 1.3 | — | `--text-body` |
+| subheading | 18px | 1.5 | — | `--text-subheading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-38 | 38px | `--spacing-38` |
+| spacing-43 | 43px | `--spacing-43` |
+| spacing-63 | 63px | `--spacing-63` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-144 | 144px | `--spacing-144` |
+| spacing-146 | 146px | `--spacing-146` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| body | 7.8768px |
+| cards | 50.4px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 36-38px |
+| cardPadding | 34px |
+| elementGap | 9-11px |
+
+## Components
+
+### Ghost Category Button
+
+**Role:** Category navigation, filter options
+
+Text: Filter Gray (#999999), Weight 400, Size 11px. Background: transparent. Border: 0px. Padding: 13.5px vertical, 0px horizontal.
+
+### Underlined Nav Link
+
+**Role:** Primary navigation, collection links
+
+Text: Obsidian (#212123), Weight 400, Size 11px. Background: transparent. Bottom border: 1px solid Obsidian (#212123). Padding: 0px.
+
+### Product Card
+
+**Role:** Display individual jewelry products
+
+Background: Canvas White (#ffffff). Border radius: 50.4px. Padding: 43px vertical, 34px horizontal. No shadow. Product image centered.
+
+### Filter Input
+
+**Role:** Input for filtering product listings
+
+Background: transparent. Text: Obsidian (#212123). Border: 1px solid Obsidian (#212123) with 0px radius. No internal padding specified for input element itself, but appears contained by larger layout padding.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize product photography as the primary visual element, ensuring high contrast and clean presentation against muted backgrounds.
 - Use Sequel100Wide throughout for all textual elements to maintain typographical consistency and brand identity.
@@ -57,7 +137,7 @@ INO embraces a minimalist, gallery-like aesthetic, presenting fine jewelry as ar
 - Maintain a comfortable density with element gaps between 9-11px and generous section gaps of 36-38px.
 - Use a border radius of 50.4px for product cards to give them a distinctive, soft, and substantial appearance.
 
-### Don'ts
+### Don't
 
 - Avoid strong accent colors; the palette should remain largely achromatic to keep focus on the product.
 - Do not use heavy shadows or gradients; elevation should be minimal to maintain a flat, modern aesthetic.
@@ -66,6 +146,95 @@ INO embraces a minimalist, gallery-like aesthetic, presenting fine jewelry as ar
 - Do not introduce complex UI elements; keep interactive components minimal and direct.
 - Do not use rounded corners on buttons or input fields, maintaining their sharp, geometric forms.
 
-### Imagery
+## Imagery
 
 This site predominantly uses studio product photography featuring jewelry in clean, isolated contexts, often on neutral backgrounds or minimalist props like grass-lined boxes or human skin, with extreme focus on the object itself. Photography is high-key, with no lifestyle or editorial compositions. There are also occasional monochromatic, high-contrast, zoomed-in photographic details used as decorative elements. Icons are minimalist, outlined, and monochromatic, typically Obsidian (#212123). Imagery is central to the product showcase, heavily impacting layout and content density.
+
+## Similar Brands
+
+- **Mejuri** — Similar minimalist display of fine jewelry, focusing on product isolation and a clean, light aesthetic.
+- **Everlane** — Emphasizes clean typography, muted color palettes, and structured, content-focused layouts for product display.
+- **Aesop** — Uses a highly considered approach to typography and strict grid layouts on a light background, conveying understated luxury.
+- **The Row** — Refined minimalism, high-quality product photography, and a subdued color palette to convey exclusivity and timelessness.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-obsidian: #212123;
+  --color-canvas-white: #ffffff;
+  --color-filter-gray: #999999;
+  --color-subtle-ash: #a6a6a7;
+  --color-ink-black: #000000;
+  --font-sequel100wide: 'Sequel100Wide', Montserrat;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --spacing-4: 4px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-23: 23px;
+  --spacing-28: 28px;
+  --spacing-34: 34px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-43: 43px;
+  --spacing-63: 63px;
+  --spacing-72: 72px;
+  --spacing-144: 144px;
+  --spacing-146: 146px;
+  --radius-body: 7.8768px;
+  --radius-cards: 50.4px;
+  --radius-buttons: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-obsidian: #212123;
+  --color-canvas-white: #ffffff;
+  --color-filter-gray: #999999;
+  --color-subtle-ash: #a6a6a7;
+  --color-ink-black: #000000;
+  --font-sequel100wide: 'Sequel100Wide', Montserrat;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 11px;
+  --leading-caption: 1;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 18px;
+  --leading-subheading: 1.5;
+  --spacing-4: 4px;
+  --spacing-9: 9px;
+  --spacing-11: 11px;
+  --spacing-14: 14px;
+  --spacing-18: 18px;
+  --spacing-23: 23px;
+  --spacing-28: 28px;
+  --spacing-34: 34px;
+  --spacing-36: 36px;
+  --spacing-38: 38px;
+  --spacing-43: 43px;
+  --spacing-63: 63px;
+  --spacing-72: 72px;
+  --spacing-144: 144px;
+  --spacing-146: 146px;
+  --radius-body: 7.8768px;
+  --radius-cards: 50.4px;
+  --radius-buttons: 0px;
+}
+```

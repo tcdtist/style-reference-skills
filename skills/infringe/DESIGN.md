@@ -1,66 +1,128 @@
 ---
 version: alpha
-name: INFRINGE
-description: INFRINGE presents a stark, high-contrast editorial aesthetic, driven by large-format imagery and bold, condensed typography. The design operates on a black and white canvas, punctuated dramatically by a single vivid yellow accent that captures attention without softening the overall hard-edged feel. Layouts are dynamic, often utilizing split screens and full-bleed visuals, with text acting as an integrated, graphic element rather than a separate content block. Visual density is high, with a deliberate lack of soft spacing or subtle visual cues, creating a distinct, impactful browsing experience.
-colors:
-  canvas-white: "#ffffff"
-  midnight-black: "#000000"
-  ash-gray: "#666666"
-  vivid-marigold: "#ffff01"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-    letterSpacing: 0.276px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0.052px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-    letterSpacing: -0.992px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 0.8
-    letterSpacing: -1.488px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 108px
-    lineHeight: 0.8
-    letterSpacing: -3.348px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 252px
-    lineHeight: 0.8
-    letterSpacing: -7.812px
-spacing:
-  elementGap: 16px
-  sectionGap: 32px
-components:
-  mega-headline-block:
-    role: Primary page titles and section headers
-  navigation-link:
-    role: Primary navigation and interactive menu items
-  content-block-headline:
-    role: Headings within content sections
-  muted-input-field:
-    role: Form input elements
-  footer-link-item:
-    role: Informational or secondary navigation links in the footer
+name: "INFRINGE"
+description: "INFRINGE presents a stark, high-contrast editorial aesthetic, driven by large-format imagery and bold, condensed typography. The design operates on a black and white canvas, punctuated dramatically by a single vivid yellow accent that captures attention without softening the overall hard-edged feel. Layouts are dynamic, often utilizing split screens and full-bleed visuals, with text acting as an integrated, graphic element rather than a separate content block. Visual density is high, with a deliberate lack of soft spacing or subtle visual cues, creating a distinct, impactful browsing experience."
+theme: "light"
+industry: "media"
+source_url: "https://www.infringe.com"
+refero_style_id: "36e7c3f9-b7cb-48a2-9695-db726e3dccdb"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520269682-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520269682-thumb.jpg"
+extracted_at: "2026-04-30T03:38:06.214Z"
 ---
 
-## Overview
+# INFRINGE — Style Reference
 
-**North Star:** Graphic Brutalism, Yellow Accent
+> Graphic Brutalism, Yellow Accent
+
+**Theme:** light
+
+**Industry:** media
 
 INFRINGE presents a stark, high-contrast editorial aesthetic, driven by large-format imagery and bold, condensed typography. The design operates on a black and white canvas, punctuated dramatically by a single vivid yellow accent that captures attention without softening the overall hard-edged feel. Layouts are dynamic, often utilizing split screens and full-bleed visuals, with text acting as an integrated, graphic element rather than a separate content block. Visual density is high, with a deliberate lack of soft spacing or subtle visual cues, creating a distinct, impactful browsing experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, large content blocks, primary surface |
+| Midnight Black | #000000 | `--color-midnight-black` | Neutral form states, badge text, and quiet UI feedback where color should stay understated. Do not promote it to the primary CTA color |
+| Ash Gray | #666666 | `--color-ash-gray` | Input borders and placeholder text, secondary textual elements within interfaces |
+| Vivid Marigold | #ffff01 | `--color-vivid-marigold` | Yellow wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Archivo Black
+
+- **Token:** `--font-archivo-black`
+- **Substitute:** Anton
+- **Weights:** 100, 400, 700
+- **Sizes:** 12px, 16px, 32px, 48px, 108px, 252px
+- **Line heights:** 0.80, 1.00, 1.20
+- **Letter spacing:** 0.276, 0.052, -0.992, -1.488, -3.348, -7.812
+- **Role:** All textual content, from headlines to body copy and navigation. Its condensed, heavy form is central to the graphic, editorial aesthetic.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | 0.276px | `--text-caption` |
+| body-sm | 16px | 1.2 | 0.052px | `--text-body-sm` |
+| subheading | 32px | 1.2 | -0.992px | `--text-subheading` |
+| heading | 48px | 0.8 | -1.488px | `--text-heading` |
+| display-lg | 108px | 0.8 | -3.348px | `--text-display-lg` |
+| display-xl | 252px | 0.8 | -7.812px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Mega Headline Block
+
+**Role:** Primary page titles and section headers
+
+Large-format Archivo Black, #000000 on a #ffffff or #ffff01 background. Text is often uppercase, full-width, and can be split across contrasting background blocks. Sizes range from 108px to 252px with a line height of 0.8.
+
+### Navigation Link
+
+**Role:** Primary navigation and interactive menu items
+
+Archivo Black, 16px, #000000 on #ffffff. Vertical stacking with tight spacing, borders often present on hover or active states. Letter spacing 0.052px.
+
+### Content Block Headline
+
+**Role:** Headings within content sections
+
+Archivo Black, 48px, #000000, line height 0.8. Often offset visually against large images or solid colored backgrounds. Letter spacing -1.488px.
+
+### Muted Input Field
+
+**Role:** Form input elements
+
+Text color #666666, border-bottom #666666. No padding or radius beyond content. Archivo Black font.
+
+### Footer Link/Item
+
+**Role:** Informational or secondary navigation links in the footer
+
+Archivo Black, typically 12px or 16px, #000000. Closely spaced, often in a list format. Letter spacing 0.276px for 12px, 0.052px for 16px.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Archivo Black for all text elements to maintain a unified graphic aesthetic.
 - Use Midnight Black (#000000) for primary text and borders, establishing strong contrast against Canvas White (#ffffff).
@@ -69,7 +131,7 @@ INFRINGE presents a stark, high-contrast editorial aesthetic, driven by large-fo
 - Utilize 0px border-radius consistently across all UI elements for a sharp, unyielding aesthetic, matching the site's brutalist tone.
 - Ensure all interactive elements, even if ghost-like, have a clear #000000 border for definition, with no distinct fill color.
 
-### Don'ts
+### Don't
 
 - Avoid using soft shadows or gentle gradients; the design relies on flat, high-contrast forms.
 - Do not introduce additional chromatic colors (e.g., blue, green, red) beyond Vivid Marigold (#ffff01); maintain the restricted color palette.
@@ -78,10 +140,108 @@ INFRINGE presents a stark, high-contrast editorial aesthetic, driven by large-fo
 - Avoid subtle text distinctions (e.g., light gray on white for secondary text); maintain strong contrast for all textual content.
 - Do not feature generic stock photography; all imagery should be bold, fashion-forward, and integrated as a graphic element.
 
-### Layout
+## Imagery
+
+Photography is dominant and serves as a primary content vehicle, often full-bleed or split-screen. Images are bold, conceptual, and highly stylized, showcasing hair culture with an artistic, unconventional lens. They frequently feature strong composition, high impact, and a clear editorial sensibility, often with figures making direct eye contact or striking unusual poses. No product shots, purely editorial and artistic. Icons are minimal, primarily utility-focused, and starkly black on white.
+
+## Layout
 
 The page model is full-bleed, expanding to the edges of the viewport, with a strong emphasis on split-screen layouts and large, impactful visual blocks. The hero section often features a massive, all-caps headline integrated directly into high-contrast black or white background areas, often juxtaposed with large, conceptual photography. Section rhythm is driven by alternating high-contrast panels (black on white, white on black, or vivid yellow accents), with content blocks frequently appearing side-by-side rather than in a single column. Content arrangement is dynamic, with text tightly integrated into graphic areas, sometimes vertically oriented or overlapping, functioning as visual elements themselves. There's a notable absence of traditional grid systems for content, instead favoring an asymmetric, collage-like feel.
 
-### Imagery
+## Similar Brands
 
-Photography is dominant and serves as a primary content vehicle, often full-bleed or split-screen. Images are bold, conceptual, and highly stylized, showcasing hair culture with an artistic, unconventional lens. They frequently feature strong composition, high impact, and a clear editorial sensibility, often with figures making direct eye contact or striking unusual poses. No product shots, purely editorial and artistic. Icons are minimal, primarily utility-focused, and starkly black on white.
+- **032c** — Shares a brutalist, editorial aesthetic with bold, all-caps typography and high-contrast layouts.
+- **Dover Street Market** — Features a strong graphic identity, often using stark black and white, unconventional layouts, and integrated large typography.
+- **AWAY Journal** — Employs an experimental, magazine-like feel with oversized typography and compelling photography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-ash-gray: #666666;
+  --color-vivid-marigold: #ffff01;
+  --font-archivo-black: 'Archivo Black', Anton;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0.276px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 0.052px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.992px;
+  --text-heading: 48px;
+  --leading-heading: 0.8;
+  --tracking-heading: -1.488px;
+  --text-display-lg: 108px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -3.348px;
+  --text-display-xl: 252px;
+  --leading-display-xl: 0.8;
+  --tracking-display-xl: -7.812px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-32: 32px;
+  --spacing-50: 50px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-midnight-black: #000000;
+  --color-ash-gray: #666666;
+  --color-vivid-marigold: #ffff01;
+  --font-archivo-black: 'Archivo Black', Anton;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0.276px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 0.052px;
+  --text-subheading: 32px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.992px;
+  --text-heading: 48px;
+  --leading-heading: 0.8;
+  --tracking-heading: -1.488px;
+  --text-display-lg: 108px;
+  --leading-display-lg: 0.8;
+  --tracking-display-lg: -3.348px;
+  --text-display-xl: 252px;
+  --leading-display-xl: 0.8;
+  --tracking-display-xl: -7.812px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-32: 32px;
+  --spacing-50: 50px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-none: 0px;
+}
+```
