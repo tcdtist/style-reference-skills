@@ -1,54 +1,118 @@
 ---
 version: alpha
-name: Design Full-Time
-description: Design Full-Time employs a dark, pragmatic aesthetic for a focused learning environment. The palette centers around deep blacks and charcoals, accented by bright whites for primary text and a distinct orange-to-red gradient for calls to action. Typography is functional and compact, prioritizing direct communication without flourishes. Components are understated, relying on subtle borders and minimal elevation to define interactive elements against the dark background, creating an efficient and professional feel.
-colors:
-  absolute-zero: "#000000"
-  charcoal-black: "#111111"
-  whisper-white: "#ffffff"
-  slate-gray: "#888888"
-  cool-steel: "#a0a0a0"
-  faded-ink: "#2c3e50"
-  midnight-graphite: "#343434"
-  sunset-fire-light: "#ffc840"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.56
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.4
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.33
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1
-spacing:
-  elementGap: 8px
-  sectionGap: 48px
-components:
-  primary-filled-button:
-    role: Interactive element for key actions
-  coming-soon-tag:
-    role: Informational label
-  promotional-banner:
-    role: Highlighting special offers
-  video-thumbnail-card:
-    role: Container for video content
+name: "Design Full-Time"
+description: "Design Full-Time employs a dark, pragmatic aesthetic for a focused learning environment. The palette centers around deep blacks and charcoals, accented by bright whites for primary text and a distinct orange-to-red gradient for calls to action. Typography is functional and compact, prioritizing direct communication without flourishes. Components are understated, relying on subtle borders and minimal elevation to define interactive elements against the dark background, creating an efficient and professional feel."
+theme: "dark"
+industry: "design"
+source_url: "https://designfulltime.com"
+refero_style_id: "80b2cc74-62c5-4898-bc2b-12aa94ed2943"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518953327-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518953327-thumb.jpg"
+extracted_at: "2026-04-30T03:16:15.407Z"
 ---
 
-## Overview
+# Design Full-Time — Style Reference
 
-**North Star:** Dark mode command center
+> Dark mode command center
+
+**Theme:** dark
+
+**Industry:** design
 
 Design Full-Time employs a dark, pragmatic aesthetic for a focused learning environment. The palette centers around deep blacks and charcoals, accented by bright whites for primary text and a distinct orange-to-red gradient for calls to action. Typography is functional and compact, prioritizing direct communication without flourishes. Components are understated, relying on subtle borders and minimal elevation to define interactive elements against the dark background, creating an efficient and professional feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Page backgrounds, card surfaces, primary text on light backgrounds, element borders |
+| Charcoal Black | #111111 | `--color-charcoal-black` | Secondary surface background for elevated components like cards and buttons, providing a slight distinction from the main canvas |
+| Whisper White | #ffffff | `--color-whisper-white` | Primary text across dark backgrounds, navigation links, and button text |
+| Slate Gray | #888888 | `--color-slate-gray` | Muted text, secondary navigation items, subtle borders |
+| Cool Steel | #a0a0a0 | `--color-cool-steel` | Medium-contrast borders, control outlines, and structural separators. Do not promote it to the primary CTA color |
+| Faded Ink | #2c3e50 | `--color-faded-ink` | Dark borders and separators for elevated surfaces and inverted UI. |
+| Midnight Graphite | #343434 | `--color-midnight-graphite` | Subtle fill for decorative SVG elements, barely visible against the dark background |
+| Sunset Fire Light | #ffc840 | `--color-sunset-fire-light` | Subtle background for promotional banners, indicating importance without being as visually heavy as the solid accent |
+
+## Tokens — Typography
+
+### Inter
+
+- **Token:** `--font-inter`
+- **Substitute:** system-ui
+- **Weights:** 400, 600, 700, 800
+- **Sizes:** 15px, 16px, 18px, 20px, 24px
+- **Line heights:** 1.00, 1.33, 1.40, 1.50, 1.56
+- **Letter spacing:** normal
+- **Role:** The primary typeface for all text elements. Its straightforward and efficient appearance supports the platform's professional and instructional context. Weights 400 and 600 handle body text and subheadings, while 700 and 800 are reserved for prominent headings, maintaining compact energy.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 15px | 1.56 | — | `--text-body-sm` |
+| subheading | 18px | 1.4 | — | `--text-subheading` |
+| heading | 20px | 1.33 | — | `--text-heading` |
+| heading-lg | 24px | 1 | — | `--text-heading-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 16px |
+| elementGap | 8px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Interactive element for key actions
+
+Solid Charcoal Black (#111111) background with Whisper White (#ffffff) text. No border-radius, giving it a stark, immediate presence. Padding is 12px vertical and 40px horizontal for a substantial feel, or a more compact 8px vertical and 16px horizontal for secondary actions.
+
+### Coming Soon Tag
+
+**Role:** Informational label
+
+Small label with a Faded Ink (#2c3e50) text and border, providing a subtle highlight for upcoming features against the dark background. 4px vertical padding and 16px horizontal.
+
+### Promotional Banner
+
+**Role:** Highlighting special offers
+
+A full-width banner featuring a Sunset Fire Light (#ffc84e) gradient background from rgba(255, 200, 78, 0.12) to rgba(250, 58, 25, 0.1), with prominent white text. Text for critical info is Whisper White (#ffffff), while 'Save 60%' is a specific orange-yellow for impact. A solid Sunset Fire (#ff8a00) Call to Action button is embedded within it.
+
+### Video Thumbnail Card
+
+**Role:** Container for video content
+
+Uses the main Absolute Zero (#000000) background to blend seamlessly. Video titles are Whisper White (#ffffff) with descriptive text in Slate Gray (#888888). No explicit border or radius for these content cards, relying on spacing for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Absolute Zero (#000000) as the canvas and Charcoal Black (#111111) for elevated surfaces, maintaining a dark base.
 - Use Whisper White (#ffffff) for all primary headings and body text on dark backgrounds to ensure high contrast.
@@ -57,7 +121,7 @@ Design Full-Time employs a dark, pragmatic aesthetic for a focused learning envi
 - Maintain a clear hierarchy using Inter font weights: 400 for body, 600 for subheadings, and 700-800 for prominent headlines.
 - Separate content blocks and components primarily through generous vertical spacing, using 32px marginBottom on sections or elements.
 
-### Don'ts
+### Don't
 
 - Avoid using any rounded corners; all elements should have a 0px border-radius.
 - Do not introduce light backgrounds beyond Whisper White text; the theme is strictly dark with minimal surface variation.
@@ -66,10 +130,85 @@ Design Full-Time employs a dark, pragmatic aesthetic for a focused learning envi
 - Avoid decorative illustrations or organic shapes; prioritize clear, functional UI elements and direct photography/video thumbnails.
 - Do not use generic blue for links or interactive elements; all interactive accents should derive from the Sunset Fire gradient.
 
-### Layout
+## Imagery
+
+The site primarily uses product-focused video thumbnails featuring a single speaker in a studio setting. Photography is candid, focused on a person, and not treated with filters. Icons are minimal, utility-driven, and typically white against the dark background. Imagery's role is explanatory and informative, directly showcasing the content. The layout is text-dominant, with images serving as embedded content blocks rather than full-bleed decorative elements.
+
+## Layout
 
 The page adheres to a max-width contained layout, with content centered. The hero section is full-bleed black with a centered brand logo and tagline, followed by a full-width promotional banner. Content sections below are primarily dark, arranged in a single column of stacked blocks. Video lessons are presented in a responsive grid, with each video card having a title and subtitle. Navigation is a simple top bar, fixed at the top, offering minimal options and a 'Student Login' button.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses product-focused video thumbnails featuring a single speaker in a studio setting. Photography is candid, focused on a person, and not treated with filters. Icons are minimal, utility-driven, and typically white against the dark background. Imagery's role is explanatory and informative, directly showcasing the content. The layout is text-dominant, with images serving as embedded content blocks rather than full-bleed decorative elements.
+- **Level Up Tutorials** — Similar dark, focused UI with practical content and reliance on video thumbnails.
+- **Egghead.io** — Monochromatic dark theme, emphasis on concise technical video lessons, functional typography.
+- **Wes Bos** — Strong brand accent color against a dark or mostly neutral background for courses and calls to action.
+- **DesignCode.io** — Dark UI trend, high contrast text, and a minimalist design to focus on educational content with distinct CTA styling.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-charcoal-black: #111111;
+  --color-whisper-white: #ffffff;
+  --color-slate-gray: #888888;
+  --color-cool-steel: #a0a0a0;
+  --color-faded-ink: #2c3e50;
+  --color-midnight-graphite: #343434;
+  --color-sunset-fire-light: #ffc840;
+  --font-inter: 'Inter', system-ui;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.56;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading: 20px;
+  --leading-heading: 1.33;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-charcoal-black: #111111;
+  --color-whisper-white: #ffffff;
+  --color-slate-gray: #888888;
+  --color-cool-steel: #a0a0a0;
+  --color-faded-ink: #2c3e50;
+  --color-midnight-graphite: #343434;
+  --color-sunset-fire-light: #ffc840;
+  --font-inter: 'Inter', system-ui;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.56;
+  --text-subheading: 18px;
+  --leading-subheading: 1.4;
+  --text-heading: 20px;
+  --leading-heading: 1.33;
+  --text-heading-lg: 24px;
+  --leading-heading-lg: 1;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-none: 0px;
+}
+```

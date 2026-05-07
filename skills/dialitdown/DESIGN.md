@@ -1,62 +1,125 @@
 ---
 version: alpha
-name: Dialitdown
-description: Dialitdown embraces a playful, illustrative aesthetic with a vibrant main canvas and classic serif typography. The design feels like an interactive storybook, using ample white space (as light blue) around content blocks to emphasize readability. Illustrations provide a friendly and approachable tone, with text rendered cleanly atop a single, bright background color. The visual identity prioritizes clarity and a distinctive, whimsical character over complex UI elements.
-colors:
-  sky-canvas: "#a3f7f7"
-  ink-text: "#222222"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-    letterSpacing: 0.167px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0.167px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.2
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 1.2
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.2
-  display:
-    fontFamily: "system-ui"
-    fontSize: 66px
-    lineHeight: 1.2
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 68px
-    lineHeight: 1.2
-spacing:
-  elementGap: 20px
-  sectionGap: 50px
-components:
-  primary-heading:
-    role: Page titles and large section headers
-  body-text-block:
-    role: Main informational content
-  illustration-container:
-    role: Houses custom cartoon illustrations
-  link-text:
-    role: Interactive text elements
+name: "Dialitdown"
+description: "Dialitdown embraces a playful, illustrative aesthetic with a vibrant main canvas and classic serif typography. The design feels like an interactive storybook, using ample white space (as light blue) around content blocks to emphasize readability. Illustrations provide a friendly and approachable tone, with text rendered cleanly atop a single, bright background color. The visual identity prioritizes clarity and a distinctive, whimsical character over complex UI elements."
+theme: "light"
+industry: "other"
+source_url: "https://www.dialitdown.co.nz"
+refero_style_id: "21dc0b3a-3b67-449e-b1a9-e71598c882d6"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512816332-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512816332-thumb.jpg"
+extracted_at: "2026-04-30T01:34:06.458Z"
 ---
 
-## Overview
+# Dialitdown — Style Reference
 
-**North Star:** Whimsical Storybook Canvas
+> Whimsical Storybook Canvas
+
+**Theme:** light
+
+**Industry:** other
 
 Dialitdown embraces a playful, illustrative aesthetic with a vibrant main canvas and classic serif typography. The design feels like an interactive storybook, using ample white space (as light blue) around content blocks to emphasize readability. Illustrations provide a friendly and approachable tone, with text rendered cleanly atop a single, bright background color. The visual identity prioritizes clarity and a distinctive, whimsical character over complex UI elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Sky Canvas | #a3f7f7 | `--color-sky-canvas` | Page background, primary surface for all content blocks and illustrations — creates an airy, friendly atmosphere |
+| Ink Text | #222222 | `--color-ink-text` | Primary text color for headings, body text, and links. Also used for decorative border strokes on illustrations and in footers, providing strong contrast against the Sky Canvas |
+
+## Tokens — Typography
+
+### Feijoa display
+
+- **Token:** `--font-feijoa-display`
+- **Substitute:** Playfair Display
+- **Weights:** 400, 700
+- **Sizes:** 16px, 24px, 32px, 60px, 66px, 68px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Headlines and emphasis text — its custom, decorative serif character defines the brand's unique voice. The varying weights and generous sizes establish a clear hierarchy and visual playfulness.
+
+### system-ui
+
+- **Token:** `--font-system-ui`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 16px
+- **Line heights:** 1.20
+- **Letter spacing:** 0.1670em
+- **Role:** Body text and functional UI elements — a clean, readable sans-serif that balances the distinct Feijoa display. The slight letter-spacing aids legibility for smaller text blocks.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | 0.167px | `--text-caption` |
+| body | 16px | 1.2 | 0.167px | `--text-body` |
+| subheading | 24px | 1.2 | — | `--text-subheading` |
+| heading | 32px | 1.2 | — | `--text-heading` |
+| display-sm | 60px | 1.2 | — | `--text-display-sm` |
+| display | 66px | 1.2 | — | `--text-display` |
+| display-lg | 68px | 1.2 | — | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-143 | 143px | `--spacing-143` |
+| spacing-200 | 200px | `--spacing-200` |
+| spacing-214 | 214px | `--spacing-214` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 20px |
+| elementGap | 20px |
+
+## Components
+
+### Primary Heading
+
+**Role:** Page titles and large section headers
+
+Uses Feijoa display, weight 400 or 700, at sizes from 32px to 68px. Text color is Ink Text (#222222). Margin-top of 200px and padding-bottom of 100px for generous vertical spacing.
+
+### Body Text Block
+
+**Role:** Main informational content
+
+Uses system-ui, weight 400, at 16px. Line height 1.20, letter spacing 0.1670em. Text color is Ink Text (#222222). Content is often contained within generous horizontal margins (113px or 143px).
+
+### Illustration Container
+
+**Role:** Houses custom cartoon illustrations
+
+Illustrations are typically contained within a div with a 1px solid Ink Text (#222222) border. Generous margin-top of 25px or 50px separates them from surrounding content.
+
+### Link Text
+
+**Role:** Interactive text elements
+
+Uses Feijoa display or system-ui, depending on context (Feijoa for prominent links, system-ui for inline). Text color is Ink Text (#222222). No distinct hover or underline styling is apparent from the data, maintaining the monochromatic palette.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Sky Canvas (#a3f7f7) as the background for all main content areas.
 - Employ Feijoa display for all headings and prominent text to establish brand personality, varying weight between 400 and 700.
@@ -65,10 +128,90 @@ Dialitdown embraces a playful, illustrative aesthetic with a vibrant main canvas
 - Ensure all textual content, including links, is rendered in Ink Text (#222222) for maximum contrast and brand consistency.
 - Frame significant visual content, such as illustrations, with a 1px solid Ink Text (#222222) border.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional background colors; maintain the primary Sky Canvas (#a3f7f7) backdrop throughout the design.
 - Do not use highly saturated chromatic colors for text or primary UI elements; stick to the Ink Text (#222222) for all text.
 - Refrain from complex shadow effects or gradients; the design thrives on flat surfaces and clear visual separation.
 - Do not break the established typographic scale; use the defined Feijoa display and system-ui sizes and weights strictly.
 - Avoid tight content packing; always provide ample padding and margin, using 20px as a minimum element separation.
+
+## Similar Brands
+
+- **Mailchimp** — Uses custom, playful illustrations and a bright, distinct background color to create a friendly, approachable brand identity.
+- **Intercom** — Combines a custom serif typeface for headings with a clean sans-serif for body text, creating a unique yet readable system.
+- **Basecamp** — Features a strong brand color as the dominant background and emphasizes spacious layout with minimal UI chrome.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-sky-canvas: #a3f7f7;
+  --color-ink-text: #222222;
+  --font-feijoa-display: 'Feijoa display', Playfair Display;
+  --font-system-ui: 'system-ui', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0.167px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0.167px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-display-sm: 60px;
+  --leading-display-sm: 1.2;
+  --text-display: 66px;
+  --leading-display: 1.2;
+  --text-display-lg: 68px;
+  --leading-display-lg: 1.2;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-113: 113px;
+  --spacing-143: 143px;
+  --spacing-200: 200px;
+  --spacing-214: 214px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-sky-canvas: #a3f7f7;
+  --color-ink-text: #222222;
+  --font-feijoa-display: 'Feijoa display', Playfair Display;
+  --font-system-ui: 'system-ui', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: 0.167px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0.167px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.2;
+  --text-heading: 32px;
+  --leading-heading: 1.2;
+  --text-display-sm: 60px;
+  --leading-display-sm: 1.2;
+  --text-display: 66px;
+  --leading-display: 1.2;
+  --text-display-lg: 68px;
+  --leading-display-lg: 1.2;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-50: 50px;
+  --spacing-100: 100px;
+  --spacing-113: 113px;
+  --spacing-143: 143px;
+  --spacing-200: 200px;
+  --spacing-214: 214px;
+  --radius-default: 0px;
+}
+```
