@@ -1,80 +1,163 @@
 ---
 version: alpha
-name: Bryn Taylor
-description: Bryn Taylor's design system is a monochrome, content-first experience, akin to a meticulous architect's portfolio. Its character emerges from sharp typographic forms against subtle, almost imperceptible greys. Interactivity is defined by a deep ink-black paired with crisp white, creating a high-contrast focal point for user actions. The visual system prioritizes clarity and directness, using minimal adornment and robust typography to convey expertise.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#eff0fc"
-  surface-frost: "#ffffff"
-  muted-ash: "#575757"
-  ghost-tint: "#0000000a"
-  faint-grey: "#00000014"
-  line-grey: "#0000001f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.001px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.6
-    letterSpacing: 0.001px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.6
-    letterSpacing: 0.006px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1.35
-    letterSpacing: 0.015px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.2
-    letterSpacing: 0.015px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 56px
-    lineHeight: 1.1
-    letterSpacing: 0.025px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 80px
-    lineHeight: 1.05
-    letterSpacing: 0.03px
-spacing:
-  cardRadius: 12px
-  buttonRadius: 1.67772e+07px
-  elementGap: 16px
-  sectionGap: 32px
-components:
-  filled-primary-button:
-    role: Call to action button for primary actions.
-  ghost-secondary-button:
-    role: Secondary action button, providing a subtle interactive element.
-  card-accent-background:
-    role: Background for feature blocks or highlighted content sections.
-  card-white-background:
-    role: Standard content card, used within sections.
-  input-field:
-    role: Text input areas for forms.
-  badge:
-    role: Small informational tags or labels.
-  menu-item-highlight:
-    role: Indicator for active navigation items.
+name: "Bryn Taylor"
+description: "Bryn Taylor's design system is a monochrome, content-first experience, akin to a meticulous architect's portfolio. Its character emerges from sharp typographic forms against subtle, almost imperceptible greys. Interactivity is defined by a deep ink-black paired with crisp white, creating a high-contrast focal point for user actions. The visual system prioritizes clarity and directness, using minimal adornment and robust typography to convey expertise."
+theme: "light"
+industry: "design"
+source_url: "https://www.bryntaylor.co.uk"
+refero_style_id: "5297b1bf-5001-4421-83ca-cc327877c858"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520231922-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520231922-thumb.jpg"
+extracted_at: "2026-04-30T03:37:31.199Z"
 ---
 
-## Overview
+# Bryn Taylor — Style Reference
 
-**North Star:** Architectural blueprint on white marble.
+> Architectural blueprint on white marble.
+
+**Theme:** light
+
+**Industry:** design
 
 Bryn Taylor's design system is a monochrome, content-first experience, akin to a meticulous architect's portfolio. Its character emerges from sharp typographic forms against subtle, almost imperceptible greys. Interactivity is defined by a deep ink-black paired with crisp white, creating a high-contrast focal point for user actions. The visual system prioritizes clarity and directness, using minimal adornment and robust typography to convey expertise.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, headings, button backgrounds, outline borders for ghost components, active state indicators. It signifies action and primary information |
+| Canvas White | #eff0fc | `--color-canvas-white` | Main page background, providing a clean, almost off-white canvas for content |
+| Surface Frost | #ffffff | `--color-surface-frost` | Card backgrounds, input fills, and text on Midnight Ink backgrounds. It serves as a secondary background and prominent foreground text color |
+| Muted Ash | #575757 | `--color-muted-ash` | Secondary text, weaker borders, and subtle descriptive elements |
+| Ghost Tint | #0000000a | `--color-ghost-tint` | Subtle background for ghost button hovers and soft dividers |
+| Faint Grey | #00000014 | `--color-faint-grey` | Lighter borders, very subtle surface tint for background elements |
+| Line Grey | #0000001f | `--color-line-grey` | Hairline borders and separators, slightly stronger than Faint Grey |
+
+## Tokens — Typography
+
+### Neue Montreal
+
+- **Token:** `--font-neue-montreal`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 15px, 16px, 17px, 18px, 20px, 24px, 28px, 30px, 56px, 80px
+- **Line heights:** 1.05, 1.10, 1.20, 1.35, 1.40, 1.50, 1.60, 1.63
+- **Letter spacing:** 0.0010em (for small text), 0.0060em, 0.0080em, 0.0100em, 0.0140em, 0.0150em, 0.0200em, 0.0250em, 0.0300em (for large displays)
+- **Role:** The sole typeface, Neue Montreal, carries the entire visual voice. Its clean, geometric forms provide a confident, no-nonsense readability for all content, from large commanding headlines to detailed body text. The tight line heights, especially for larger sizes, reinforce a compact and efficient presentation.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.001px | `--text-caption` |
+| body-sm | 14px | 1.6 | 0.001px | `--text-body-sm` |
+| body | 16px | 1.6 | 0.006px | `--text-body` |
+| subheading | 24px | 1.35 | 0.015px | `--text-subheading` |
+| heading | 30px | 1.2 | 0.015px | `--text-heading` |
+| heading-lg | 56px | 1.1 | 0.025px | `--text-heading-lg` |
+| display | 80px | 1.05 | 0.03px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-26 | 26px | `--spacing-26` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-112 | 112px | `--spacing-112` |
+| spacing-160 | 160px | `--spacing-160` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+| badge | 12px |
+| cards | 12px |
+| small | 8px |
+| buttons | 1.67772e+07px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.08) 0px -2px 0px 0px inset | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.08) 0px -3px 0px 0px inset | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.08) 0px -3.5px 0px 0px inset | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Filled Primary Button
+
+**Role:** Call to action button for primary actions.
+
+Background: Midnight Ink (#000000). Text: Surface Frost (#ffffff). Border radius: 1.67772e+07px (pill shape). Padding: 0px vertical, 18px horizontal. Uses Neue Montreal.
+
+### Ghost Secondary Button
+
+**Role:** Secondary action button, providing a subtle interactive element.
+
+Background: Ghost Tint (#0000000a), Text: Midnight Ink (#000000). Border radius: 1.67772e+07px (pill shape). Padding: 0px vertical, 18px horizontal. Uses Neue Montreal.
+
+### Card, Accent Background
+
+**Role:** Background for feature blocks or highlighted content sections.
+
+Background: Faint Grey (#00000014). Border radius: 12px. No shadow. No intrinsic padding.
+
+### Card, White Background
+
+**Role:** Standard content card, used within sections.
+
+Background: Surface Frost (#ffffff). Border radius: 12px. No shadow. No intrinsic padding.
+
+### Input Field
+
+**Role:** Text input areas for forms.
+
+Background: Surface Frost (#ffffff). Text: Midnight Ink (#000000). Border: 1px solid Faint Grey (#00000014). Border radius: 12px. Padding: 0px vertical, 23px horizontal. Uses Neue Montreal.
+
+### Badge
+
+**Role:** Small informational tags or labels.
+
+Background: Surface Frost (#ffffff). Text: Midnight Ink (#000000). Border radius: 12px. Padding: 5.6px vertical, 12px horizontal. Uses Neue Montreal.
+
+### Menu Item Highlight
+
+**Role:** Indicator for active navigation items.
+
+Inset shadow: rgba(0, 0, 0, 0.08) 0px -2px 0px 0px. This creates a subtle bottom border for active navigation links.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Neue Montreal for all text content; do not introduce other typefaces.
 - Utilize Midnight Ink (#000000) for all primary text, headings, and active elements to maintain strong contrast.
@@ -84,7 +167,7 @@ Bryn Taylor's design system is a monochrome, content-first experience, akin to a
 - Employ the subtle inset shadow `rgba(0, 0, 0, 0.08) 0px -2px 0px 0px` for active navigation items.
 - Introduce Surface Frost (#ffffff) as background for interactive components like inputs and cards, providing a hierarchical distinction from Canvas White.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors; the palette is almost entirely achromatic with subtle tints.
 - Do not deviate from the specified 'Neue Montreal' typeface, weights, and letter-spacing values.
@@ -93,3 +176,148 @@ Bryn Taylor's design system is a monochrome, content-first experience, akin to a
 - Do not introduce complex gradient fills; the system relies on solid colors and subtle color differences for depth.
 - Do not use generic border radii; adhere to 1.67772e+07px for buttons and 12px for cards/badges.
 - Do not use different fonts for headings and body text; the same family with varying sizes and weights is the established pattern.
+
+## Elevation
+
+- **Shadow 1:** `rgba(0, 0, 0, 0.08) 0px -2px 0px 0px inset`
+- **Shadow 2:** `rgba(0, 0, 0, 0.08) 0px -3px 0px 0px inset`
+- **Shadow 3:** `rgba(0, 0, 0, 0.08) 0px -3.5px 0px 0px inset`
+
+## Similar Brands
+
+- **Linear** — Monochromatic interface with a strong focus on minimalist typography and high-contrast interactive elements.
+- **Stripe** — Clean, spacious layouts, strong typographic hierarchy, and limited color palette to highlight product features.
+- **Superhuman** — Emphasis on efficiency, clean UI, and using dark grays and blacks for primary actions against a light background.
+- **Figma** — Interface design with a neutral background, clear component separation, and high-contrast text and action elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #eff0fc;
+  --color-surface-frost: #ffffff;
+  --color-muted-ash: #575757;
+  --color-ghost-tint: #0000000a;
+  --color-faint-grey: #00000014;
+  --color-line-grey: #0000001f;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.001px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.6;
+  --tracking-body-sm: 0.001px;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --tracking-body: 0.006px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.35;
+  --tracking-subheading: 0.015px;
+  --text-heading: 30px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0.015px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: 0.025px;
+  --text-display: 80px;
+  --leading-display: 1.05;
+  --tracking-display: 0.03px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-160: 160px;
+  --radius-none: 0px;
+  --radius-badge: 12px;
+  --radius-cards: 12px;
+  --radius-small: 8px;
+  --radius-buttons: 1.67772e+07px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px -2px 0px 0px inset;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px -3px 0px 0px inset;
+  --shadow-xl-3: rgba(0, 0, 0, 0.08) 0px -3.5px 0px 0px inset;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #eff0fc;
+  --color-surface-frost: #ffffff;
+  --color-muted-ash: #575757;
+  --color-ghost-tint: #0000000a;
+  --color-faint-grey: #00000014;
+  --color-line-grey: #0000001f;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.001px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.6;
+  --tracking-body-sm: 0.001px;
+  --text-body: 16px;
+  --leading-body: 1.6;
+  --tracking-body: 0.006px;
+  --text-subheading: 24px;
+  --leading-subheading: 1.35;
+  --tracking-subheading: 0.015px;
+  --text-heading: 30px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0.015px;
+  --text-heading-lg: 56px;
+  --leading-heading-lg: 1.1;
+  --tracking-heading-lg: 0.025px;
+  --text-display: 80px;
+  --leading-display: 1.05;
+  --tracking-display: 0.03px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-22: 22px;
+  --spacing-23: 23px;
+  --spacing-24: 24px;
+  --spacing-26: 26px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-112: 112px;
+  --spacing-160: 160px;
+  --radius-none: 0px;
+  --radius-badge: 12px;
+  --radius-cards: 12px;
+  --radius-small: 8px;
+  --radius-buttons: 1.67772e+07px;
+  --shadow-xl: rgba(0, 0, 0, 0.08) 0px -2px 0px 0px inset;
+  --shadow-xl-2: rgba(0, 0, 0, 0.08) 0px -3px 0px 0px inset;
+  --shadow-xl-3: rgba(0, 0, 0, 0.08) 0px -3.5px 0px 0px inset;
+}
+```

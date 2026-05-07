@@ -1,55 +1,137 @@
 ---
 version: alpha
-name: Boutique8888
-description: Boutique8888 features a clean, high-contrast aesthetic with a distinct focus on clarity and directness. The visual system leverages a light canvas over a subtle background gradient, grounding prominent dark typography and dark-filled or light-outlined components. Interaction elements are clearly delineated through strong black and white contrast and rounded shapes, creating a focused and accessible user experience.
-colors:
-  midnight: "#000000"
-  storm-gray: "#5b5b5b"
-  canvas-white: "#ffffff"
-  sky-wash: "#c1e9ff"
-typography:
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: 0px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.2
-    letterSpacing: 0px
-spacing:
-  buttonRadius: 20px
-  elementGap: 10px
-  sectionGap: 27px
-components:
-  primary-filled-button:
-    role: Call to action
-  outlined-button:
-    role: Secondary action
-  subtle-callout-card:
-    role: Informational container
-  text-link:
-    role: Inline navigation or reference
+name: "Boutique8888"
+description: "Boutique8888 features a clean, high-contrast aesthetic with a distinct focus on clarity and directness. The visual system leverages a light canvas over a subtle background gradient, grounding prominent dark typography and dark-filled or light-outlined components. Interaction elements are clearly delineated through strong black and white contrast and rounded shapes, creating a focused and accessible user experience."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://boutique8888.com"
+refero_style_id: "56e48057-de3e-47b6-8e59-772440703f0a"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517548444-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517548444-thumb.jpg"
+extracted_at: "2026-04-30T02:52:46.669Z"
 ---
 
-## Overview
+# Boutique8888 — Style Reference
 
-**North Star:** Crisp monochrome canvas.
+> Crisp monochrome canvas.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Boutique8888 features a clean, high-contrast aesthetic with a distinct focus on clarity and directness. The visual system leverages a light canvas over a subtle background gradient, grounding prominent dark typography and dark-filled or light-outlined components. Interaction elements are clearly delineated through strong black and white contrast and rounded shapes, creating a focused and accessible user experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight | #000000 | `--color-midnight` | Primary text, button backgrounds, interactive link color, primary iconography. Establishes strong contrast |
+| Storm Gray | #5b5b5b | `--color-storm-gray` | Secondary text, subtle borders, inactive elements, supporting information. Provides visual hierarchy without harshness |
+| Canvas White | #ffffff | `--color-canvas-white` | Button text on dark backgrounds, outlined button strokes, primary surface color |
+| Sky Wash | #c1e9ff | `--color-sky-wash` | Subtle background gradient base forming a diffused halo effect |
+
+## Tokens — Typography
+
+### Shopify Sans
+
+- **Token:** `--font-shopify-sans`
+- **Substitute:** Inter
+- **Weights:** 400, 700
+- **Sizes:** 14px, 16px, 20px, 40px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Primary brand typeface for headings, body text, buttons, and links. Its custom nature reinforces brand identity.
+
+### Shopify Sans
+
+- **Token:** `--font-shopify-sans`
+- **Substitute:** Inter
+- **Sizes:** 16px
+- **Line heights:** 1.50
+- **Letter spacing:** normal
+- **Role:** Extended reading text and supporting content. Slightly increased line-height aids readability in longer blocks.
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Fallback and specialized legal/footer text, providing a classic, authoritative counterpoint to the sans-serif.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body-sm | 14px | 1.2 | 0px | `--text-body-sm` |
+| body | 16px | 1.2 | 0px | `--text-body` |
+| heading | 20px | 1.2 | 0px | `--text-heading` |
+| display | 40px | 1.2 | 0px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-35 | 35px | `--spacing-35` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-70 | 70px | `--spacing-70` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| links | 20px |
+| buttons | 20px |
+| containers | 25px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1296px |
+| sectionGap | 27px |
+| cardPadding | 20px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action
+
+Solid 'Midnight' background with 'Canvas White' text, 20px border-radius, and generous horizontal padding of 60px. Text uses Shopify Sans at 16px.
+
+### Outlined Button
+
+**Role:** Secondary action
+
+Transparent background with a 2px 'Canvas White' border and 'Midnight' text. 20px border-radius and 60px horizontal padding. Text uses Shopify Sans at 16px.
+
+### Subtle Callout Card
+
+**Role:** Informational container
+
+A container with a 25px border-radius, likely used for the main content block. Contains text and buttons.
+
+### Text Link
+
+**Role:** Inline navigation or reference
+
+Uses 'Midnight' text and is underlined by default. Inherits Shopify Sans font styles.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Midnight' (#000000) for all primary text and button backgrounds to ensure high contrast.
 - Apply 'Canvas White' (#ffffff) for text on dark backgrounds and as a 2px border for outlined components.
@@ -58,7 +140,7 @@ Boutique8888 features a clean, high-contrast aesthetic with a distinct focus on 
 - Structure page content within a max-width of 1296px for consistent presentation.
 - Employ the 'Sky Wash' gradient as a subtle background element where diffused light is desired, not as a primary content surface.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple shades of gray for primary text; stick to 'Midnight' for focus and 'Storm Gray' for secondary details.
 - Do not deviate from the specified border-radii of 20px for interactive elements and 25px for containers.
@@ -67,10 +149,106 @@ Boutique8888 features a clean, high-contrast aesthetic with a distinct focus on 
 - Avoid applying solid background colors to large sections when the subtle 'Sky Wash' gradient is intended to provide a soft aesthetic.
 - Do not use Times for primary headlines or UI elements; reserve it for specific legal or footer content.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Page Background | #f4f5f6 | The base canvas of the page, diffused by a subtle blue-tinted gradient for a light, ethereal feel. |
+| 1 | Content Card | #ffffff | Elevated white surface for primary content blocks, such as the main unavailable store message. |
+
+## Imagery
+
+The site uses minimal imagery, focusing on UI elements. The Shopify logo is crisp and monochrome. Icons are simple, outlined, and monochromatic, like the 'back' arrow. When present, imagery (like the Shopify logo at the bottom) appears self-contained, using strict brand colors and avoiding complex photographic elements. The primary visual weight is carried by typography and strong component shapes.
+
+## Layout
 
 The page adheres to a max-width of 1296px, centered on the screen, creating a contained and structured feel. The hero content is a prominent, centrally aligned text block with two call-to-action buttons. Below this, content is arranged in a three-column grid, with left-aligned subordinate text blocks. Vertical spacing is consistent but not excessively dense. The footer is minimal, centered at the bottom. The overall pattern is a clear hierarchy of information presented in distinct, well-separated blocks.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, focusing on UI elements. The Shopify logo is crisp and monochrome. Icons are simple, outlined, and monochromatic, like the 'back' arrow. When present, imagery (like the Shopify logo at the bottom) appears self-contained, using strict brand colors and avoiding complex photographic elements. The primary visual weight is carried by typography and strong component shapes.
+- **Stripe** — Similar high-contrast monochrome palette with focus on typography and geometric shapes.
+- **Linear** — Clean, spacious layouts with strong hierarchy and well-defined interactive components.
+- **Vercel** — Minimalist aesthetic using subtle background gradients and strong dark text on light backgrounds.
+- **Apple (services)** — Use of soft, almost imperceptible background gradients and a clear, functional component language.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight: #000000;
+  --color-storm-gray: #5b5b5b;
+  --color-canvas-white: #ffffff;
+  --color-sky-wash: #c1e9ff;
+  --font-shopify-sans: 'Shopify Sans', Inter;
+  --font-shopify-sans: 'Shopify Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: 0px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-27: 27px;
+  --spacing-35: 35px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --radius-links: 20px;
+  --radius-buttons: 20px;
+  --radius-containers: 25px;
+  --surface-page-background: #f4f5f6;
+  --surface-content-card: #ffffff;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight: #000000;
+  --color-storm-gray: #5b5b5b;
+  --color-canvas-white: #ffffff;
+  --color-sky-wash: #c1e9ff;
+  --font-shopify-sans: 'Shopify Sans', Inter;
+  --font-shopify-sans: 'Shopify Sans', Inter;
+  --font-times: 'Times', Times New Roman;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.2;
+  --tracking-body-sm: 0px;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: 0px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 0px;
+  --text-display: 40px;
+  --leading-display: 1.2;
+  --tracking-display: 0px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-27: 27px;
+  --spacing-35: 35px;
+  --spacing-60: 60px;
+  --spacing-70: 70px;
+  --radius-links: 20px;
+  --radius-buttons: 20px;
+  --radius-containers: 25px;
+  --surface-page-background: #f4f5f6;
+  --surface-content-card: #ffffff;
+}
+```
