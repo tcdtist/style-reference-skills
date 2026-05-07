@@ -8,7 +8,7 @@ This repository aggregates design system references (`DESIGN.md`) from popular b
 
 ## Repository Structure
 
-```
+```text
 style-reference-skills/
 ├── skills/              # DESIGN.md files organized by brand
 │   ├── apple/
@@ -25,8 +25,9 @@ style-reference-skills/
 │   └── package.json
 ├── scripts/             # Ingestion & maintenance scripts
 │   ├── fetch-design-mds.js
+│   ├── convert-refero-to-design-md.js
 │   ├── build-index.js
-│   ├── convert-format.js
+│   ├── validate-design-md.js
 │   └── test-workflow.js
 ├── index.json           # Searchable index of all style references
 ├── vercel.json          # Vercel deployment config
@@ -62,14 +63,17 @@ node scripts/fetch-design-mds.js
 # Ingest with pagination / sorting
 node scripts/fetch-design-mds.js --page=2 --sort=latest
 
+# Convert Refero JSON snapshots to rich normalized skills/*/DESIGN.md
+node scripts/convert-refero-to-design-md.js
+
+# Iterate on one Refero-backed brand without writing files
+node scripts/convert-refero-to-design-md.js --brand=cursor --dry-run
+
 # Rebuild index.json from skills/*/DESIGN.md
 node scripts/build-index.js
 
-# Convert DESIGN.md to extended format (dry-run)
-node scripts/convert-format.js
-
-# Apply conversion
-node scripts/convert-format.js --write
+# Validate DESIGN.md structure and index mappings
+node scripts/validate-design-md.js
 
 # Test end-to-end workflow
 node scripts/test-workflow.js --base-url=https://style-reference-skills.vercel.app
@@ -78,6 +82,8 @@ node scripts/test-workflow.js --base-url=https://style-reference-skills.vercel.a
 ## Usage for AI Agents
 
 Copy a brand's `DESIGN.md` into your project root. The agent reads it before generating UI to stay on-brand.
+
+For Refero-derived entries, the `DESIGN.md` body is the authoritative style reference. Frontmatter is intentionally small and is used for discovery, provenance, and indexing fields such as `source_url`, `refero_style_id`, `screenshot_url`, `thumbnail_url`, and `extracted_at`.
 
 ## Sources
 
@@ -91,4 +97,4 @@ Copy a brand's `DESIGN.md` into your project root. The agent reads it before gen
 
 ---
 
-_Maintained by Antigravity Toolkit_
+Maintained by Antigravity Toolkit.

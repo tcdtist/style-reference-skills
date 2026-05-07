@@ -13,7 +13,7 @@ const scenarios = [
   {
     name: "Fintech landing page",
     query: "linear",
-    expectedBrand: "linear.app",
+    expectedBrand: "linear",
   },
   { name: "E-commerce dashboard", query: "apple", expectedBrand: "apple" },
   { name: "SaaS marketing page", query: "vercel", expectedBrand: "vercel" },
