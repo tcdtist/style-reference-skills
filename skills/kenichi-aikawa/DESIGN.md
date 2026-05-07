@@ -1,36 +1,119 @@
 ---
 version: alpha
-name: Kenichi Aikawa
-description: The Kenichi Aikawa design system embodies a minimal, high-contrast aesthetic that privileges content. It balances the starkness of dark text on a pure white canvas with the understated elegance of custom typography. Spacing is generous, creating a spacious, uncluttered environment where photographic works are given ample room to breathe. Interactions are subtle, using faint borders and text changes rather than overt color or heavy components, focusing attention on the visual artistry.
-colors:
-  basalt-black: "#2d2926"
-  canvas-white: "#ffffff"
-  ash-gray: "#7c8780"
-  whisper-gray: "#c1c6c8"
-  pale-silver: "#d0d3d4"
-spacing:
-  elementGap: 15px
-  sectionGap: 75px
-components:
-  navigation-link:
-    role: Interactive text link within the header and navigation menus.
-  body-text-block:
-    role: Standard paragraph text and small informational labels.
-  heading-large:
-    role: Primary headline for sections, providing visual emphasis.
-  heading-medium:
-    role: Secondary headline for subsections or categorized content.
-  interactive-border:
-    role: Outline indicator for hover or focus states on navigation items and other interactive elements.
+name: "Kenichi Aikawa"
+description: "The Kenichi Aikawa design system embodies a minimal, high-contrast aesthetic that privileges content. It balances the starkness of dark text on a pure white canvas with the understated elegance of custom typography. Spacing is generous, creating a spacious, uncluttered environment where photographic works are given ample room to breathe. Interactions are subtle, using faint borders and text changes rather than overt color or heavy components, focusing attention on the visual artistry."
+theme: "light"
+industry: "design"
+source_url: "https://aikawakenichi.com"
+refero_style_id: "721794e8-16f6-4044-9fb8-548f5279819d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514082577-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777514082577-thumb.jpg"
+extracted_at: "2026-04-30T01:55:16.633Z"
 ---
 
-## Overview
+# Kenichi Aikawa — Style Reference
 
-**North Star:** Photographic gallery on crisp paper. A precise grid with generous negative space showcases imagery and text like exhibits in a minimalist art gallery.
+> Photographic gallery on crisp paper. A precise grid with generous negative space showcases imagery and text like exhibits in a minimalist art gallery.
+
+**Theme:** light
+
+**Industry:** design
 
 The Kenichi Aikawa design system embodies a minimal, high-contrast aesthetic that privileges content. It balances the starkness of dark text on a pure white canvas with the understated elegance of custom typography. Spacing is generous, creating a spacious, uncluttered environment where photographic works are given ample room to breathe. Interactions are subtle, using faint borders and text changes rather than overt color or heavy components, focusing attention on the visual artistry.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Basalt Black | #2d2926 | `--color-basalt-black` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #ffffff | `--color-canvas-white` | Dominant background for the entire application, providing a clean, bright stage for content and typography |
+| Ash Gray | #7c8780 | `--color-ash-gray` | Secondary text for less prominent information or subtle informational accents |
+| Whisper Gray | #c1c6c8 | `--color-whisper-gray` | Subtle border color for UI elements and dividers, allowing for visual separation without introducing harsh lines |
+| Pale Silver | #d0d3d4 | `--color-pale-silver` | Placeholder or preloader stroke color; a very light, almost imperceptible shade |
+
+## Tokens — Typography
+
+### PP Editorial New
+
+- **Token:** `--font-pp-editorial-new`
+- **Weights:** 400
+- **Sizes:** 20px, 58px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0500em at 58px, -0.0300em at 20px
+- **OpenType features:** "palt"
+- **Role:** Used for distinctive headings and prominent text elements. Its serif nature provides a classic, editorial feel, while tight letter-spacing at larger sizes maintains a composed, elegant presence.
+
+### PP Neue Montreal
+
+- **Token:** `--font-pp-neue-montreal`
+- **Weights:** 400
+- **Sizes:** 13px, 15px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **OpenType features:** "palt"
+- **Role:** Primary sans-serif typeface for body text, navigation items, and functional labels. Its neutrality and legibility support a clean, modern aesthetic.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-75 | 75px | `--spacing-75` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 75px |
+| cardPadding | 25px |
+| elementGap | 15px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Interactive text link within the header and navigation menus.
+
+Appears as 15px PP Neue Montreal, weight 400, Basalt Black text on Canvas White. On hover, a 1px Basalt Black bottom border appears. Padding is 15px vertical, with 50px horizontal inherited from the parent container.
+
+### Body Text Block
+
+**Role:** Standard paragraph text and small informational labels.
+
+Rendered in 13px PP Neue Montreal, weight 400, Basalt Black. Line height is 1, with normal letter spacing.
+
+### Heading - Large
+
+**Role:** Primary headline for sections, providing visual emphasis.
+
+Displayed in 58px PP Editorial New, weight 400, Basalt Black. Letter spacing is -0.0500em, creating a sophisticated condensed look. Features 'palt' setting for proportional alternative spacing.
+
+### Heading - Medium
+
+**Role:** Secondary headline for subsections or categorized content.
+
+Uses 20px PP Editorial New, weight 400, Basalt Black. Letter spacing is -0.0300em, maintaining the tight, elegant feel of the larger headings. Features 'palt' setting.
+
+### Interactive Border
+
+**Role:** Outline indicator for hover or focus states on navigation items and other interactive elements.
+
+A 1px solid border in Basalt Black (#2d2926) appears on interaction. This keeps the visual feedback subtle and aligned with the high-contrast monochrome design.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Basalt Black (#2d2926) for primary text on Canvas White (#ffffff) backgrounds to maintain high contrast.
 - Apply PP Editorial New, weight 400 for all headings to establish a distinct editorial tone, with `letter-spacing: -0.0500em` for 58px and `-0.0300em` for 20px text.
@@ -39,7 +122,7 @@ The Kenichi Aikawa design system embodies a minimal, high-contrast aesthetic tha
 - Maintain generous spacing between content sections (e.g., sectionGap: 75px) to achieve a spacious and uncluttered page density.
 - Implement 1px Basalt Black (#2d2926) borders as subtle accent or hover states, avoiding any filled button backgrounds or heavy visual indicators.
 
-### Don'ts
+### Don't
 
 - Do not introduce strong accent colors; the palette should remain predominantly monochrome with subtle grays.
 - Avoid using shadows or gradients; rely on contrast and spacing for visual hierarchy rather than elevation effects.
@@ -47,10 +130,59 @@ The Kenichi Aikawa design system embodies a minimal, high-contrast aesthetic tha
 - Do not use heavy, filled button styles; all interactive elements should be text-based or use subtle borders.
 - Do not create dense blocks of text or tightly packed UI; prioritize spacious layouts and ample negative space.
 
-### Layout
+## Imagery
+
+This design system primarily utilizes photography as its visual language, given the photographer's portfolio nature. The treatment of images, which are not explicitly provided in the token data but implied by the system's aesthetic, would be full-bleed or large contained crops. Imagery is the hero, framed by abundant negative space. Product photography or lifestyle shots (depending on the project) would be the focus, with minimal overlays or complex masking, allowing the inherent qualities of the photograph to shine. Icons, if present, are minimal, likely outlined with a fine stroke, adhering to the monochrome palette. The density is image-heavy, with text serving to label and contextualize the visuals.
+
+## Layout
 
 The page model is a max-width contained layout in certain sections, but primarily presents imagery in a full-bleed or near full-bleed manner. The hero section often features large photographic content with centered, minimal text. Section rhythm is characterized by consistent vertical spacing (implied 75px sectionGap) and a seamless flow between content blocks, with no hard visual dividers like alternating colored bands. Content arrangement likely follows a grid system for portfolio items, where images are primary and text is secondary, providing labels or brief descriptions. The overall density is spacious, reflecting an exhibition-like presentation. Navigation is a compact top bar which seems to be sticky, allowing for persistent access while maintaining a clean aesthetic.
 
-### Imagery
+## Similar Brands
 
-This design system primarily utilizes photography as its visual language, given the photographer's portfolio nature. The treatment of images, which are not explicitly provided in the token data but implied by the system's aesthetic, would be full-bleed or large contained crops. Imagery is the hero, framed by abundant negative space. Product photography or lifestyle shots (depending on the project) would be the focus, with minimal overlays or complex masking, allowing the inherent qualities of the photograph to shine. Icons, if present, are minimal, likely outlined with a fine stroke, adhering to the monochrome palette. The density is image-heavy, with text serving to label and contextualize the visuals.
+- **AIGA Design Archives** — Monochromatic palette, emphasis on high-quality visuals, and refined typography.
+- **The New York Times Online** — High contrast black-on-white text, elegant serif headlines, and strong focus on content.
+- **Squarespace templates (certain portfolios)** — Spacious layouts, minimal UI, and a focus on presenting imagery without distraction.
+- **Vogue Online (text-heavy content)** — Editorial serif typography for headlines, with clean sans-serif for body, creating a sophisticated journal-like feel.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-basalt-black: #2d2926;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #7c8780;
+  --color-whisper-gray: #c1c6c8;
+  --color-pale-silver: #d0d3d4;
+  --font-pp-editorial-new: 'PP Editorial New', ui-sans-serif, system-ui, sans-serif;
+  --font-pp-neue-montreal: 'PP Neue Montreal', ui-sans-serif, system-ui, sans-serif;
+  --spacing-7: 7px;
+  --spacing-15: 15px;
+  --spacing-25: 25px;
+  --spacing-50: 50px;
+  --spacing-75: 75px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-basalt-black: #2d2926;
+  --color-canvas-white: #ffffff;
+  --color-ash-gray: #7c8780;
+  --color-whisper-gray: #c1c6c8;
+  --color-pale-silver: #d0d3d4;
+  --font-pp-editorial-new: 'PP Editorial New', ui-sans-serif, system-ui, sans-serif;
+  --font-pp-neue-montreal: 'PP Neue Montreal', ui-sans-serif, system-ui, sans-serif;
+  --spacing-7: 7px;
+  --spacing-15: 15px;
+  --spacing-25: 25px;
+  --spacing-50: 50px;
+  --spacing-75: 75px;
+  --radius-none: 0px;
+}
+```

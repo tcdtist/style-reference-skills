@@ -1,96 +1,197 @@
 ---
 version: alpha
-name: Kalstore®
-description: Kalstore® exudes a calm and focused aesthetic, built on a clean canvas of soft, near-white neutrals. Color is used sparingly but effectively, primarily through a vivid golden yellow for key actions and branding, and a palette of muted, earthy tones for a sophisticated accent. Typography is a key element, utilizing a custom geometric sans-serif with precise letter-spacing to convey a refined, authoritative, yet approachable tone. Components are lightweight with minimal borders and subtle radii, allowing content to take center stage.
-colors:
-  canvas: "#faf9f7"
-  surface-white: "#ffffff"
-  text-primary: "#242424"
-  text-secondary: "#585a5a"
-  text-muted: "#727272"
-  border-light: "#d3d3d3"
-  border-pale: "#edecea"
-  action-gold: "#f1ba35"
-  info-text: "#30250b"
-  card-accent-red: "#6c3c3c"
-  card-accent-blue: "#90abc8"
-  card-accent-green: "#458e71"
-  card-accent-orange: "#d26c46"
-  card-accent-violet: "#3b59a3"
-  card-background-orange: "#8a4d40"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.35
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.3
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.25
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 21px
-    lineHeight: 1.25
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.2
-  display-sm:
-    fontFamily: "system-ui"
-    fontSize: 71px
-    lineHeight: 1
-    letterSpacing: -0.04px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 82px
-    lineHeight: 0.93
-    letterSpacing: -0.04px
-  display-lg:
-    fontFamily: "system-ui"
-    fontSize: 140px
-    lineHeight: 0.93
-    letterSpacing: -0.04px
-spacing:
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  primary-action-button:
-    role: Main call to action button.
-  ghost-button:
-    role: Secondary action or navigational link button.
-  text-button:
-    role: Minimal link-style button for secondary actions or navigation within content.
-  newsletter-input-field-dark:
-    role: Input element for forms within dark-themed sections (newsletter popup).
-  product-card-full-width:
-    role: Card for displaying product images, often full bleeding.
-  product-card-standard:
-    role: Standard product display card with subtle containment.
-  product-card-placeholder:
-    role: Placeholder card with an aspect ratio for images.
-  badge-neutral:
-    role: Informational tag or label.
-  badge-accent:
-    role: Prominent informational tag, such as for 'Sold out' or discounts.
-  newsletter-popup-card:
-    role: Modal or dialog card for newsletter sign-up.
+name: "Kalstore®"
+description: "Kalstore® exudes a calm and focused aesthetic, built on a clean canvas of soft, near-white neutrals. Color is used sparingly but effectively, primarily through a vivid golden yellow for key actions and branding, and a palette of muted, earthy tones for a sophisticated accent. Typography is a key element, utilizing a custom geometric sans-serif with precise letter-spacing to convey a refined, authoritative, yet approachable tone. Components are lightweight with minimal borders and subtle radii, allowing content to take center stage."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://kal-store.com"
+refero_style_id: "e854a4f7-4243-44a7-92e2-e22db22bef1b"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508184959-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777508184959-thumb.jpg"
+extracted_at: "2026-04-30T00:16:55.021Z"
 ---
 
-## Overview
+# Kalstore® — Style Reference
 
-**North Star:** Warm minimal gallery
+> Warm minimal gallery
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Kalstore® exudes a calm and focused aesthetic, built on a clean canvas of soft, near-white neutrals. Color is used sparingly but effectively, primarily through a vivid golden yellow for key actions and branding, and a palette of muted, earthy tones for a sophisticated accent. Typography is a key element, utilizing a custom geometric sans-serif with precise letter-spacing to convey a refined, authoritative, yet approachable tone. Components are lightweight with minimal borders and subtle radii, allowing content to take center stage.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #faf9f7 | `--color-canvas` | Primary background for pages and main content areas, creating a soft, warm base |
+| Surface White | #ffffff | `--color-surface-white` | Background for elevated elements like cards and navigation bars, providing subtle contrast against the canvas |
+| Text Primary | #242424 | `--color-text-primary` | Dominant text color for headings, body text, and primary information, ensuring high contrast |
+| Text Secondary | #585a5a | `--color-text-secondary` | Secondary text color for navigation items, less prominent headings, and supporting details, offering a slightly softer presence |
+| Text Muted | #727272 | `--color-text-muted` | Muted text for helper lines, metadata, and placeholder text, providing good readability without being dominant |
+| Border Light | #d3d3d3 | `--color-border-light` | Soft borders for dividing lines, input fields, and subtle structural elements |
+| Border Pale | #edecea | `--color-border-pale` | Very light borders and backgrounds for subtle separation, such as navigation item Hover states |
+| Action Gold | #f1ba35 | `--color-action-gold` | Primary accent color for calls to action, active states, and brand highlights, creating a warm, inviting focus |
+| Info Text | #30250b | `--color-info-text` | Text color used within semantic badges or secondary alerts, a muddy gold providing contrast against lighter accents |
+| Card Accent Red | #6c3c3c | `--color-card-accent-red` | Background for specific product feature cards, a muted, sophisticated red |
+| Card Accent Blue | #90abc8 | `--color-card-accent-blue` | Background for specific product feature cards, a soft, muted blue |
+| Card Accent Green | #458e71 | `--color-card-accent-green` | Border and text color for specific cards, a vibrant, moderate green |
+| Card Accent Orange | #d26c46 | `--color-card-accent-orange` | Border and text color for specific cards, a vivid, warm orange |
+| Card Accent Violet | #3b59a3 | `--color-card-accent-violet` | Border and text color for specific cards, a vivid, rich violet |
+| Card Background Orange | #8a4d40 | `--color-card-background-orange` | Background for specific product feature cards, a moderate, earthy orange |
+
+## Tokens — Typography
+
+### ABCDiatype
+
+- **Token:** `--font-abcdiatype`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 16px, 19px, 21px, 22px, 25px, 71px, 82px, 140px
+- **Line heights:** 0.93, 1.00, 1.20, 1.25, 1.30, 1.35, 1.40
+- **Letter spacing:** -0.0400em for display text, -0.0300em for large headings, -0.0200em for medium headings, -0.0020em for body text, 0.1000em for uppercase elements
+- **Role:** The primary typeface for all textual content, offering a refined geometric sans-serif aesthetic. Its precise letter-spacing maintains legibility at small sizes and gives a distinctive crispness to larger headlines. Weight 500 is used for emphasis in navigation and headings, while 400 covers body text.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 13px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Fallback font, used sparingly for very small utility text where system font rendering is acceptable.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | — | `--text-caption` |
+| body-sm | 14px | 1.35 | — | `--text-body-sm` |
+| body | 16px | 1.3 | — | `--text-body` |
+| subheading | 19px | 1.25 | — | `--text-subheading` |
+| heading-sm | 21px | 1.25 | — | `--text-heading-sm` |
+| heading-lg | 25px | 1.2 | — | `--text-heading-lg` |
+| display-sm | 71px | 1 | -0.04px | `--text-display-sm` |
+| display | 82px | 0.93 | -0.04px | `--text-display` |
+| display-lg | 140px | 0.93 | -0.04px | `--text-display-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-46 | 46px | `--spacing-46` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| badges | 4px |
+| default | 8px |
+| bodyElements | 1px |
+| asymmetricCards | 16px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.01) 0px 24px 10px 0px, rgba(0, 0, 0, 0.05) 0px 13px 8px 0px, rgba(0, 0, 0, 0.09) 0px 6px 6px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px | `--shadow-xl` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 12px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Main call to action button.
+
+Filled with Action Gold (#f1ba35) background, Text Primary (#242424) for text. Border radius 8px. Text is ABCDiatype 400, 16px. Padding typically 0px top/bottom, 20px left/right, and 12px for subscribe buttons.
+
+### Ghost Button
+
+**Role:** Secondary action or navigational link button.
+
+Transparent background (rgba(0,0,0,0)), Text Primary (#242424) for text, 1px Border Light (#d3d3d3) border. Border radius 0px. Padding 15px top/bottom, 24px left/right.
+
+### Text Button
+
+**Role:** Minimal link-style button for secondary actions or navigation within content.
+
+Transparent background, Text Secondary (#585a5a) for text. No visible border. Border radius 0px. Minimal padding around text.
+
+### Newsletter Input Field (Dark)
+
+**Role:** Input element for forms within dark-themed sections (newsletter popup).
+
+Transparent background (rgba(0,0,0,0)), Text Primary (#faf9f7) for text, 1px Border Light (#727272) border. Border radius 8px. Padding 12px top/bottom, 20px left/right.
+
+### Product Card (Full Width)
+
+**Role:** Card for displaying product images, often full bleeding.
+
+Transparent background, no border, no shadow, 0px border radius. Padding 0px.
+
+### Product Card (Standard)
+
+**Role:** Standard product display card with subtle containment.
+
+Transparent background, no border, no shadow. Border radius 8px. Padding 0px.
+
+### Product Card (Placeholder)
+
+**Role:** Placeholder card with an aspect ratio for images.
+
+Background Border Pale (#edecea), 8px border radius, no shadow. Intrinsic padding for aspect ratio (e.g., 550.797px top padding for aspect ratio).
+
+### Badge (Neutral)
+
+**Role:** Informational tag or label.
+
+Transparent background, Text Primary (#363636) for text. Border radius 0px. Padding 0px.
+
+### Badge (Accent)
+
+**Role:** Prominent informational tag, such as for 'Sold out' or discounts.
+
+Background is usually Surface White (#ffffff) or Action Gold (#f1ba35). Text color is Info Text (#48250b). Border radius 4px. Padding 0px top/bottom, 8px left/right.
+
+### Newsletter Popup Card
+
+**Role:** Modal or dialog card for newsletter sign-up.
+
+Background is black (#242424), 8px border radius, with a subtle shadow (rgba(0, 0, 0, 0.01) 0px 24px 10px 0px, etc.). Padding 64px top/bottom, 20px left/right.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas (#faf9f7) as the default page background to maintain consistent visual warmth.
 - Apply ABCDiatype with specific letter-spacing: -0.0400em for display headings (71px+), -0.0300em for large headings, -0.0200em for medium headings, -0.0020em for body text, and 0.1000em for uppercase elements.
@@ -100,7 +201,7 @@ Kalstore® exudes a calm and focused aesthetic, built on a clean canvas of soft,
 - Separate sections with a vertical gap of 40px, and ensure a default element gap of 10px between inline items.
 - Accentuate product feature cards using the specific muted and vivid accent colors (e.g., Card Accent Red #6c3c3c, Card Accent Green #458e71) as background or border/text colors.
 
-### Don'ts
+### Don't
 
 - Avoid generic blue for links; instead use Text Primary (#242424) with a specific underline style, or Action Gold (#f1ba35) for explicit call-to-action links.
 - Do not introduce new border radii beyond 8px, 4px, 1px or 16px (for specific card asymmetry), as this will break the consistent feel.
@@ -110,10 +211,180 @@ Kalstore® exudes a calm and focused aesthetic, built on a clean canvas of soft,
 - Do not deviate from the defined letter-spacing values for ABCDiatype; these are crucial for the brand's typographic identity.
 - Never use the default browser link color (#0000ee) in any context.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Canvas | #faf9f7 | Base background for the entire page, providing a warm, unobtrusive backdrop. |
+| 1 | Surface White | #ffffff | Background for cards and primary navigational elements, slightly elevating content from the canvas. |
+| 2 | Border Pale | #edecea | Background for subtle highlights, specific card variants (e.g., placeholders), and hover states. |
+
+## Elevation
+
+- **Newsletter Popup Card:** `rgba(0, 0, 0, 0.01) 0px 24px 10px 0px, rgba(0, 0, 0, 0.05) 0px 13px 8px 0px, rgba(0, 0, 0, 0.09) 0px 6px 6px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px`
+
+## Imagery
+
+The site predominantly uses high-quality product photography, often featuring products in a lifestyle context, sometimes with models. Images are typically contained within their card boundaries, with generally rounded 8px corners (but also 0px for full-bleed examples). The photography style is warm and natural, emphasizing the product's practicality and aesthetic integration into everyday life. Icons are generally outlined, dark, and minimal, serving functional navigation or decorative elements without competing with the photography. Imagery serves both to showcase products and to establish a gentle, aspirational lifestyle.
+
+## Layout
 
 The page primarily uses a contained layout within a soft, almost full-bleed Canvas background. The hero section often features a split layout or a full-width video, sometimes with large, repeating text patterns as a strong visual element. Content sections typically follow a consistent vertical rhythm with 40px section gaps, alternating between text-left/image-right and text-right/image-left patterns or centered stacks. Product listings often use a multi-column card grid. The navigation is a sticky top bar, minimal and icon-driven, with clear text links.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses high-quality product photography, often featuring products in a lifestyle context, sometimes with models. Images are typically contained within their card boundaries, with generally rounded 8px corners (but also 0px for full-bleed examples). The photography style is warm and natural, emphasizing the product's practicality and aesthetic integration into everyday life. Icons are generally outlined, dark, and minimal, serving functional navigation or decorative elements without competing with the photography. Imagery serves both to showcase products and to establish a gentle, aspirational lifestyle.
+- **Stripe** — Shares a sophisticated, modern minimalist aesthetic with a strong emphasis on clean typography and subtle use of accent colors.
+- **Figma** — Exhibits a similar approach to white space, structured layouts, and using a single vibrant accent color (though blue for Figma, yellow for Kalstore®) for interactive elements.
+- **Evernote** — Uses a highly functional, understated UI with clear typographic hierarchy and minimal decorative elements, focusing on content over chrome.
+- **Monzo** — Shares a clean, modern aesthetic with careful use of photography and a distinctive brand color for primary actions, contrasting with a largely neutral palette.
+- **Moleskine (ecommerce)** — Similar focus on product-centric imagery within a clean, curated e-commerce experience, prioritizing visual order and quality of goods.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #faf9f7;
+  --color-surface-white: #ffffff;
+  --color-text-primary: #242424;
+  --color-text-secondary: #585a5a;
+  --color-text-muted: #727272;
+  --color-border-light: #d3d3d3;
+  --color-border-pale: #edecea;
+  --color-action-gold: #f1ba35;
+  --color-info-text: #30250b;
+  --color-card-accent-red: #6c3c3c;
+  --color-card-accent-blue: #90abc8;
+  --color-card-accent-green: #458e71;
+  --color-card-accent-orange: #d26c46;
+  --color-card-accent-violet: #3b59a3;
+  --color-card-background-orange: #8a4d40;
+  --font-abcdiatype: 'ABCDiatype', Inter;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.35;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.25;
+  --text-heading-lg: 25px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 71px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: -0.04px;
+  --text-display: 82px;
+  --leading-display: 0.93;
+  --tracking-display: -0.04px;
+  --text-display-lg: 140px;
+  --leading-display-lg: 0.93;
+  --tracking-display-lg: -0.04px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-badges: 4px;
+  --radius-default: 8px;
+  --radius-bodyelements: 1px;
+  --radius-asymmetriccards: 16px;
+  --shadow-xl: rgba(0, 0, 0, 0.01) 0px 24px 10px 0px, rgba(0, 0, 0, 0.05) 0px 13px 8px 0px, rgba(0, 0, 0, 0.09) 0px 6px 6px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+  --surface-canvas: #faf9f7;
+  --surface-surface-white: #ffffff;
+  --surface-border-pale: #edecea;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #faf9f7;
+  --color-surface-white: #ffffff;
+  --color-text-primary: #242424;
+  --color-text-secondary: #585a5a;
+  --color-text-muted: #727272;
+  --color-border-light: #d3d3d3;
+  --color-border-pale: #edecea;
+  --color-action-gold: #f1ba35;
+  --color-info-text: #30250b;
+  --color-card-accent-red: #6c3c3c;
+  --color-card-accent-blue: #90abc8;
+  --color-card-accent-green: #458e71;
+  --color-card-accent-orange: #d26c46;
+  --color-card-accent-violet: #3b59a3;
+  --color-card-background-orange: #8a4d40;
+  --font-abcdiatype: 'ABCDiatype', Inter;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.35;
+  --text-body: 16px;
+  --leading-body: 1.3;
+  --text-subheading: 19px;
+  --leading-subheading: 1.25;
+  --text-heading-sm: 21px;
+  --leading-heading-sm: 1.25;
+  --text-heading-lg: 25px;
+  --leading-heading-lg: 1.2;
+  --text-display-sm: 71px;
+  --leading-display-sm: 1;
+  --tracking-display-sm: -0.04px;
+  --text-display: 82px;
+  --leading-display: 0.93;
+  --tracking-display: -0.04px;
+  --text-display-lg: 140px;
+  --leading-display-lg: 0.93;
+  --tracking-display-lg: -0.04px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-46: 46px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --radius-badges: 4px;
+  --radius-default: 8px;
+  --radius-bodyelements: 1px;
+  --radius-asymmetriccards: 16px;
+  --shadow-xl: rgba(0, 0, 0, 0.01) 0px 24px 10px 0px, rgba(0, 0, 0, 0.05) 0px 13px 8px 0px, rgba(0, 0, 0, 0.09) 0px 6px 6px 0px, rgba(0, 0, 0, 0.1) 0px 1px 3px 0px;
+  --surface-canvas: #faf9f7;
+  --surface-surface-white: #ffffff;
+  --surface-border-pale: #edecea;
+}
+```
