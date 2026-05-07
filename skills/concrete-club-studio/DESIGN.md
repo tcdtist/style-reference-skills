@@ -1,71 +1,144 @@
 ---
 version: alpha
-name: Concrete Club Studio
-description: This design system evokes a raw, almost deconstructed gallery experience, where content is paramount and design elements serve as subtle frames. The stark contrast between graphic Tangerine Flash and deep neutrals, combined with the unexpected juxtaposition of a classic serif with a minimalist sans-serif, creates a tension that is both playful and sophisticated. The heavy reliance on large, almost architectural typography and minimal component styling puts the focus entirely on the message and visual art direction, creating a distinctive aesthetic that feels both rebellious and highly curated.
-colors:
-  midnight-ink: "#000000"
-  onyx-canvas: "#212121"
-  frost-canvas: "#f5f6f5"
-  gallery-white: "#ffffff"
-  tangerine-flash: "#d9462b"
-  rose-bloom: "#e296bb"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.17
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.19
-    letterSpacing: -0.42px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.19
-    letterSpacing: -0.48px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 1.15
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.15
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 112px
-    lineHeight: 1.15
-  display:
-    fontFamily: "system-ui"
-    fontSize: 300px
-    lineHeight: 1.14
-    letterSpacing: -9px
-spacing:
-components:
-  hero-display-text-block:
-    role: 
-  dark-story-section-block:
-    role: 
-  ghost-navigation-header:
-    role: 
-  ghost-navigation-link:
-    role: Primary navigation elements
-  hero-display-text:
-    role: Main page headline
-  section-heading:
-    role: Secondary section titles
-  informational-text-block:
-    role: Contextual details and metadata
+name: "Concrete Club Studio"
+description: "This design system evokes a raw, almost deconstructed gallery experience, where content is paramount and design elements serve as subtle frames. The stark contrast between graphic Tangerine Flash and deep neutrals, combined with the unexpected juxtaposition of a classic serif with a minimalist sans-serif, creates a tension that is both playful and sophisticated. The heavy reliance on large, almost architectural typography and minimal component styling puts the focus entirely on the message and visual art direction, creating a distinctive aesthetic that feels both rebellious and highly curated."
+theme: "mixed"
+industry: "agency"
+source_url: "https://concreteclub.studio"
+refero_style_id: "f8ab25e8-87c1-4d7b-a633-daf3ea39b916"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925298318-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925298318-thumb.jpg"
+extracted_at: "2026-04-11T16:35:13.030Z"
 ---
 
-## Overview
+# Concrete Club Studio — Style Reference
 
-**North Star:** Gallery Wall Typography
+> Gallery Wall Typography
+
+**Theme:** mixed
+
+**Industry:** agency
 
 This design system evokes a raw, almost deconstructed gallery experience, where content is paramount and design elements serve as subtle frames. The stark contrast between graphic Tangerine Flash and deep neutrals, combined with the unexpected juxtaposition of a classic serif with a minimalist sans-serif, creates a tension that is both playful and sophisticated. The heavy reliance on large, almost architectural typography and minimal component styling puts the focus entirely on the message and visual art direction, creating a distinctive aesthetic that feels both rebellious and highly curated.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, borders, accents on light backgrounds. |
+| Onyx Canvas | #212121 | `--color-onyx-canvas` | Dark mode background, contrast element against lighter text. |
+| Frost Canvas | #f5f6f5 | `--color-frost-canvas` | Hero background, general background surfaces. |
+| Gallery White | #ffffff | `--color-gallery-white` | General background, text on dark surfaces. |
+| Tangerine Flash | #d9462b | `--color-tangerine-flash` | Brand accent, prominent headings, interactive states – a vibrant statement against muted backgrounds. |
+| Rose Bloom | #e296bb | `--color-rose-bloom` | Ephemeral background element; suggests a soft, temporary stage. |
+
+## Tokens — Typography
+
+### TRJN DaVinci
+
+- **Token:** `--font-trjn-davinci`
+- **Substitute:** Georgia Pro
+- **Weights:** 400
+- **Sizes:** 14px, 16px, 300px
+- **Line heights:** 1.14, 1.19
+- **Letter spacing:** -0.03
+- **Role:** Display headings and primary content; its unique serifs and tight letter spacing at large sizes give the brand its distinct voice.
+
+### HelveticaNeue-Light
+
+- **Token:** `--font-helveticaneue-light`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400
+- **Sizes:** 26px, 48px, 112px
+- **Line heights:** 1.15
+- **Role:** Navigation, subtle branding elements, and large-scale, airy headlines; provides a modern counterpoint to the more classic serif.
+
+### Neue Montreal
+
+- **Token:** `--font-neue-montreal`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 12px
+- **Line heights:** 1.17
+- **Role:** Body text and small informational snippets; its neutral presence supports the more expressive display fonts.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.17 | — | `--text-caption` |
+| body | 14px | 1.19 | -0.42px | `--text-body` |
+| body-lg | 16px | 1.19 | -0.48px | `--text-body-lg` |
+| subheading | 26px | 1.15 | — | `--text-subheading` |
+| heading | 48px | 1.15 | — | `--text-heading` |
+| heading-lg | 112px | 1.15 | — | `--text-heading-lg` |
+| display | 300px | 1.14 | -9px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-230 | 230px | `--spacing-230` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| elements | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 30px |
+
+## Components
+
+### Hero Display Text Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Dark Story Section Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Ghost Navigation Header
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Ghost Navigation Link
+
+**Role:** Primary navigation elements
+
+Styled as a `button` with `backgroundColor: rgba(0, 0, 0, 0)`, `color: rgb(0, 0, 0)`, `borderTopColor: rgb(0, 0, 0)`, `borderRadius: 0px`, `padding: 0px`. Uses HelveticaNeue-Light 26px for subtle presence.
+
+### Hero Display Text
+
+**Role:** Main page headline
+
+TRJN DaVinci 300px, weight 400, lineHeight 1.14, letterSpacing -0.03em. Commands attention with massive scale.
+
+### Section Heading
+
+**Role:** Secondary section titles
+
+TRJN DaVinci 48px, weight 400, lineHeight 1.14, letterSpacing -0.03em. Maintains the brand's serif voice at a more manageable size.
+
+### Informational Text Block
+
+**Role:** Contextual details and metadata
+
+Neue Montreal 12px, weight 400, lineHeight 1.17. Provides unobtrusive body copy.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize TRJN DaVinci for all headlines and brand-critical text, ensuring its unique character defines the typography.
 - Use Tangerine Flash (#d9462b) sparingly as a high-impact accent, primarily for interactive elements or key brand statements.
@@ -73,7 +146,7 @@ This design system evokes a raw, almost deconstructed gallery experience, where 
 - Employ Frost Canvas (#f5f6f5) or Gallery White (#ffffff) as dominant background surfaces to provide a crisp, gallery-like setting for content.
 - Utilize large spacing values like `230px` for `sectionGap` to break content and create significant visual breathing room between major sections.
 
-### Don'ts
+### Don't
 
 - Avoid using generic button styles or heavy paddings; interaction cues are minimal and baked into the content itself.
 - Do not introduce additional border radii; the design relies on sharp edges (`0px`) for its distinctive aesthetic.
@@ -81,10 +154,97 @@ This design system evokes a raw, almost deconstructed gallery experience, where 
 - Do not introduce additional font families or weights beyond the defined HelveticaNeue-Light, TRJN DaVinci, and Neue Montreal.
 - Avoid over-saturating the layout with Tangerine Flash (#d9462b); its impact comes from its scarcity.
 
-### Layout
+## Imagery
+
+The visual language is characterized by sparse, line-art or sketch-style illustrations that are organic and slightly whimsical, appearing mostly in white on dark backgrounds or as outlines. They function as decorative accents or subtle contextual hints rather than central content. Photography is absent, replaced by abstract, graphic elements such as colored backgrounds (e.g., Rose Bloom) or playful, deconstructed textual compositions. The imagery is highly stylized, never realistic, and always serves to complement the strong typographic statements, often with a raw, unfinished quality. Icons, if present, align with the line-art aesthetic.
+
+## Layout
 
 The page model is full-bleed, using the entire viewport width, with content often centered but without a strict max-width container, allowing for vast negative space. The hero sections are typically monoscape, dominated by large, centered typography or a single graphic element against a solid color background. Sections often create a distinct rhythm by alternating between light (Frost Canvas) and dark (Onyx Canvas) backgrounds. Content arrangement is typically centered or uses a simple, stark block layout, with abundant `sectionGap` (230px) creating significant vertical separation. The navigation is a minimalist top-right cluster of text links, appearing as 'ghost' elements. The overall density is very spacious, emphasizing individual elements rather than dense information.
 
-### Imagery
+## Similar Brands
 
-The visual language is characterized by sparse, line-art or sketch-style illustrations that are organic and slightly whimsical, appearing mostly in white on dark backgrounds or as outlines. They function as decorative accents or subtle contextual hints rather than central content. Photography is absent, replaced by abstract, graphic elements such as colored backgrounds (e.g., Rose Bloom) or playful, deconstructed textual compositions. The imagery is highly stylized, never realistic, and always serves to complement the strong typographic statements, often with a raw, unfinished quality. Icons, if present, align with the line-art aesthetic.
+- **AIGA Journal** — Uses large display typography and a minimal color palette with strong accent colors for a bold, editorial feel.
+- **Certain graphic design portfolios** — Employs an experimental, deconstructed aesthetic with custom typefaces and minimal component styling.
+- **Independent art galleries** — Focuses on content as art, using stark backgrounds and dramatic typography to frame works rather than adorn them.
+- **Early 2000s experimental web design** — Embraces a raw, almost 'anti-design' sensibility with unusual type pairings and a rejection of conventional UI patterns.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-onyx-canvas: #212121;
+  --color-frost-canvas: #f5f6f5;
+  --color-gallery-white: #ffffff;
+  --color-tangerine-flash: #d9462b;
+  --color-rose-bloom: #e296bb;
+  --font-trjn-davinci: 'TRJN DaVinci', Georgia Pro;
+  --font-helveticaneue-light: 'HelveticaNeue-Light', Helvetica Neue;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.17;
+  --text-body: 14px;
+  --leading-body: 1.19;
+  --tracking-body: -0.42px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.19;
+  --tracking-body-lg: -0.48px;
+  --text-subheading: 26px;
+  --leading-subheading: 1.15;
+  --text-heading: 48px;
+  --leading-heading: 1.15;
+  --text-heading-lg: 112px;
+  --leading-heading-lg: 1.15;
+  --text-display: 300px;
+  --leading-display: 1.14;
+  --tracking-display: -9px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-230: 230px;
+  --radius-elements: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-onyx-canvas: #212121;
+  --color-frost-canvas: #f5f6f5;
+  --color-gallery-white: #ffffff;
+  --color-tangerine-flash: #d9462b;
+  --color-rose-bloom: #e296bb;
+  --font-trjn-davinci: 'TRJN DaVinci', Georgia Pro;
+  --font-helveticaneue-light: 'HelveticaNeue-Light', Helvetica Neue;
+  --font-neue-montreal: 'Neue Montreal', Inter;
+  --text-caption: 12px;
+  --leading-caption: 1.17;
+  --text-body: 14px;
+  --leading-body: 1.19;
+  --tracking-body: -0.42px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.19;
+  --tracking-body-lg: -0.48px;
+  --text-subheading: 26px;
+  --leading-subheading: 1.15;
+  --text-heading: 48px;
+  --leading-heading: 1.15;
+  --text-heading-lg: 112px;
+  --leading-heading-lg: 1.15;
+  --text-display: 300px;
+  --leading-display: 1.14;
+  --tracking-display: -9px;
+  --spacing-5: 5px;
+  --spacing-10: 10px;
+  --spacing-30: 30px;
+  --spacing-60: 60px;
+  --spacing-230: 230px;
+  --radius-elements: 0px;
+}
+```
