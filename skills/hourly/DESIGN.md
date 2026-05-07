@@ -1,53 +1,125 @@
 ---
 version: alpha
-name: hourly
-description: The hourly app design system presents an audacious, high-contrast aesthetic, built on a foundation of deep black, bold cream, and urgent red. Typography, dominated by a heavy grotesque sans-serif, takes center stage with dramatic scale and tight tracking. Information is presented densely, pushing content to the edges of a constrained layout without relying on traditional spacing cues. A distinct lack of visual hierarchy via elevation or subtle neutrals focuses attention through sheer presence and high-impact color pairing.
-colors:
-  absolute-zero: "#000000"
-  paper-white: "#eee3c1"
-  alert-red: "#d0021b"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: -0.72px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1
-    letterSpacing: -0.99px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 44px
-    lineHeight: 1
-    letterSpacing: -1.98px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 217px
-    lineHeight: 1
-    letterSpacing: -9.77px
-spacing:
-  elementGap: 4px
-  sectionGap: 37px
-components:
-  display-headline:
-    role: Hero headline, section titles
-  sub-headline-box:
-    role: Descriptive text blocks under main titles
-  link-button:
-    role: Primary calls to action, navigation elements
-  horizontal-divider:
-    role: Section break for tables or content grouping
+name: "hourly"
+description: "The hourly app design system presents an audacious, high-contrast aesthetic, built on a foundation of deep black, bold cream, and urgent red. Typography, dominated by a heavy grotesque sans-serif, takes center stage with dramatic scale and tight tracking. Information is presented densely, pushing content to the edges of a constrained layout without relying on traditional spacing cues. A distinct lack of visual hierarchy via elevation or subtle neutrals focuses attention through sheer presence and high-impact color pairing."
+theme: "dark"
+industry: "productivity"
+source_url: "https://hourly-app.com"
+refero_style_id: "1b4c8933-32b5-427d-9906-28574d1076cc"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520909072-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520909072-thumb.jpg"
+extracted_at: "2026-04-30T03:48:50.123Z"
 ---
 
-## Overview
+# hourly — Style Reference
 
-**North Star:** Type-forward, high-contrast, black-red-cream. A vintage subway poster come to life.
+> Type-forward, high-contrast, black-red-cream. A vintage subway poster come to life.
+
+**Theme:** dark
+
+**Industry:** productivity
 
 The hourly app design system presents an audacious, high-contrast aesthetic, built on a foundation of deep black, bold cream, and urgent red. Typography, dominated by a heavy grotesque sans-serif, takes center stage with dramatic scale and tight tracking. Information is presented densely, pushing content to the edges of a constrained layout without relying on traditional spacing cues. A distinct lack of visual hierarchy via elevation or subtle neutrals focuses attention through sheer presence and high-impact color pairing.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Absolute Zero | #000000 | `--color-absolute-zero` | Page background, primary text – establishes a deep, absorbing canvas |
+| Paper White | #eee3c1 | `--color-paper-white` | Display text, prominent headings, key information blocks, UI borders – serves as the primary contrasting element against the dark background, evoking printed paper |
+| Alert Red | #d0021b | `--color-alert-red` | Interactive elements, large emphatic headings, critical highlights – this vivid red introduces urgency and draws immediate attention |
+
+## Tokens — Typography
+
+### Neue Haas Grotesk Text Bd
+
+- **Token:** `--font-neue-haas-grotesk-text-bd`
+- **Substitute:** System Helvetica, Arial
+- **Weights:** 700
+- **Sizes:** 16px, 22px, 44px, 217px
+- **Line heights:** 1.00
+- **Letter spacing:** -0.0450em
+- **Role:** All primary textual content: headings, body text, links. Its heavy weight and tight tracking convey authority and impact, especially at large sizes.
+
+### Helvetica
+
+- **Token:** `--font-helvetica`
+- **Substitute:** System Helvetica, Arial
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Supporting text for smaller details and descriptive content, primarily to accommodate system defaults or less emphasized content where the bold grotesque might be overbearing.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.2 | -0.72px | `--text-body` |
+| subheading | 22px | 1 | -0.99px | `--text-subheading` |
+| heading | 44px | 1 | -1.98px | `--text-heading` |
+| display | 217px | 1 | -9.77px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-37 | 37px | `--spacing-37` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1184px |
+| sectionGap | 37px |
+| cardPadding | 10px |
+| elementGap | 4px |
+
+## Components
+
+### Display Headline
+
+**Role:** Hero headline, section titles
+
+Large scale text at 217px Neue Haas Grotesk Text Bd weight 700, with aggressive letter-spacing of -0.0450em. Rendered in Paper White (#eee3c1) or Alert Red (#d0021b) on an Absolute Zero (#000000) background.
+
+### Sub-Headline Box
+
+**Role:** Descriptive text blocks under main titles
+
+Text at 16px Neue Haas Grotesk Text Bd weight 700 in Paper White (#eee3c1) with -0.0450em letter-spacing. Contained within an implied box, often with 10px vertical padding. Creates a dense, informational module.
+
+### Link Button
+
+**Role:** Primary calls to action, navigation elements
+
+Text in Neue Haas Grotesk Text Bd weight 700. For filled buttons, the background is Alert Red (#d0021b) with Paper White (#eee3c1) text. For outlined links, it's Paper White (#eee3c1) text with a 1px Paper White (#eee3c1) border. Minimal padding, relying on the visual weight of the text and color to define interaction.
+
+### Horizontal Divider
+
+**Role:** Section break for tables or content grouping
+
+A 1px solid line in Paper White (#eee3c1) used to visually separate content blocks, such as table rows. There are no vertical dividers evident.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize text as the primary visual element; use Neue Haas Grotesk Text Bd at weight 700 for almost all content, embracing its inherent impact.
 - Utilize the high-contrast pairing of Absolute Zero (#000000) and Paper White (#eee3c1) to establish bold visual rhythm and emphasize content.
@@ -57,7 +129,7 @@ The hourly app design system presents an audacious, high-contrast aesthetic, bui
 - Embrace a dense information layout, minimizing whitespace and relying on typography and strong color contrast for organization rather than ample padding.
 - Adhere to the pageMaxWidth of 1184px for all main content, ensuring a consistently contained and structured layout.
 
-### Don'ts
+### Don't
 
 - Avoid subtle color variations or gradients; the system relies on stark, flat color blocks.
 - Do not introduce shadows or complex elevation; the design operates on a flat, print-like plane.
@@ -66,3 +138,95 @@ The hourly app design system presents an audacious, high-contrast aesthetic, bui
 - Avoid decorative imagery or abstract graphics; content is king, presented directly.
 - Do not create tertiary UI elements or secondary action styles; focus on a clear, singular interaction path.
 - Refrain from deviating from the Absolute Zero (#000000) background for core content areas; it is foundational to the dark theme.
+
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Absolute Canvas | #000000 | The foundational dark background for all content, creating depth and contrast. |
+| 1 | Paper Block | #eee3c1 | Used for large areas of text, cards, or implied content blocks where a strong visual break from the black background is desired. |
+| 2 | Alert Surface | #d0021b | Emphatic backgrounds for calls to action or dominant visual statements, overriding other surfaces with its urgency. |
+
+## Similar Brands
+
+- **ESPN 30 for 30 (visual identity)** — Bold, graphic, type-forward aesthetic with limited color palette and dramatic scale.
+- **Bloomberg Businessweek (magazine design)** — Emphasis on impactful, tightly tracked sans-serif typography and a stark, high-contrast visual approach.
+- **Are.na** — Minimalist UI with sharp edges, strong typographic focus, and a direct, functional presentation of content.
+- **Some vintage protest posters** — High-contrast, limited color palette (red/black/cream), and large, blocky typography to convey an urgent message.
+- **Telegram (dark mode)** — Interface relies on deep black backgrounds with stark contrasting text and a single strong accent color for interactive elements.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-absolute-zero: #000000;
+  --color-paper-white: #eee3c1;
+  --color-alert-red: #d0021b;
+  --font-neue-haas-grotesk-text-bd: 'Neue Haas Grotesk Text Bd', System Helvetica, Arial;
+  --font-helvetica: 'Helvetica', System Helvetica, Arial;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: -0.72px;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.99px;
+  --text-heading: 44px;
+  --leading-heading: 1;
+  --tracking-heading: -1.98px;
+  --text-display: 217px;
+  --leading-display: 1;
+  --tracking-display: -9.77px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-128: 128px;
+  --radius-default: 0px;
+  --surface-absolute-canvas: #000000;
+  --surface-paper-block: #eee3c1;
+  --surface-alert-surface: #d0021b;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-absolute-zero: #000000;
+  --color-paper-white: #eee3c1;
+  --color-alert-red: #d0021b;
+  --font-neue-haas-grotesk-text-bd: 'Neue Haas Grotesk Text Bd', System Helvetica, Arial;
+  --font-helvetica: 'Helvetica', System Helvetica, Arial;
+  --text-body: 16px;
+  --leading-body: 1.2;
+  --tracking-body: -0.72px;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --tracking-subheading: -0.99px;
+  --text-heading: 44px;
+  --leading-heading: 1;
+  --tracking-heading: -1.98px;
+  --text-display: 217px;
+  --leading-display: 1;
+  --tracking-display: -9.77px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-37: 37px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-128: 128px;
+  --radius-default: 0px;
+  --surface-absolute-canvas: #000000;
+  --surface-paper-block: #eee3c1;
+  --surface-alert-surface: #d0021b;
+}
+```

@@ -1,49 +1,117 @@
 ---
 version: alpha
-name: homunculus Inc.
-description: Homunculus operates as a nocturnal canvas, utilizing deep charcoal and stark black surfaces as its primary landscape. Text and interactive elements are rendered in crisp white, creating sharp, high-contrast points of interest. Typography is compact and precise, emphasizing an understated, almost technical aesthetic. Visual interest is introduced through subtle, organic, iridescent forms that hint at movement and depth, acting as the site's sole chromatic accent.
-colors:
-  midnight-base: "#000000"
-  ghost: "#ffffff"
-  dark-slate: "#383838"
-  light-asphalt: "#6f6f6f"
-  silver-dust: "#dddddd"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.2
-    letterSpacing: -0.96px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.2
-    letterSpacing: 2.8px
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.2
-    letterSpacing: 0px
-spacing:
-  elementGap: 10px
-components:
-  navigation-link:
-    role: Interactive text link for site navigation and social media.
-  logo-site-identity:
-    role: Brand mark for the website.
-  section-divider-rule:
-    role: Subtle visual separation between content blocks.
-  scroll-indicator:
-    role: Call-to-action for scrolling down the page.
+name: "homunculus Inc."
+description: "Homunculus operates as a nocturnal canvas, utilizing deep charcoal and stark black surfaces as its primary landscape. Text and interactive elements are rendered in crisp white, creating sharp, high-contrast points of interest. Typography is compact and precise, emphasizing an understated, almost technical aesthetic. Visual interest is introduced through subtle, organic, iridescent forms that hint at movement and depth, acting as the site's sole chromatic accent."
+theme: "dark"
+industry: "agency"
+source_url: "https://homunculus.jp"
+refero_style_id: "68076c4e-f1a6-4d31-9629-cc1af14d9dc5"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517993966-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777517993966-thumb.jpg"
+extracted_at: "2026-04-30T03:00:10.431Z"
 ---
 
-## Overview
+# homunculus Inc. — Style Reference
 
-**North Star:** Shimmering digital night
+> Shimmering digital night
+
+**Theme:** dark
+
+**Industry:** agency
 
 Homunculus operates as a nocturnal canvas, utilizing deep charcoal and stark black surfaces as its primary landscape. Text and interactive elements are rendered in crisp white, creating sharp, high-contrast points of interest. Typography is compact and precise, emphasizing an understated, almost technical aesthetic. Visual interest is introduced through subtle, organic, iridescent forms that hint at movement and depth, acting as the site's sole chromatic accent.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Base | #000000 | `--color-midnight-base` | Page background, primary surface, deep shadow base for visual elements |
+| Ghost | #ffffff | `--color-ghost` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Dark Slate | #383838 | `--color-dark-slate` | Secondary background layer, subtle surface elevation, muted text |
+| Light Asphalt | #6f6f6f | `--color-light-asphalt` | Tertiary text, subtle dividers, inactive states |
+| Silver Dust | #dddddd | `--color-silver-dust` | Subtle background accents, very faint borders, ghost element outlines |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** serif
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Standard body text, often used for content and paragraphs where traditional readability is key. Its serif nature provides a classic counterpoint to the site's modern structure.
+
+### urw-din
+
+- **Token:** `--font-urw-din`
+- **Substitute:** Segoe UI, Arial, sans-serif
+- **Weights:** 400
+- **Sizes:** 12px, 13px, 14px
+- **Line heights:** 1.20
+- **Letter spacing:** -0.08em at 12px, 0.20em at 14px
+- **Role:** Functional text for navigation, labels, and small UI details. Its consistent, condensed letterforms enable a compact and precise display across varying sizes. Some uses feature increased letter-spacing to emphasize small, all-caps elements.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.2 | -0.96px | `--text-caption` |
+| body | 14px | 1.2 | 2.8px | `--text-body` |
+| body-lg | 16px | 1.2 | 0px | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 8px |
+| elementGap | 10px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Interactive text link for site navigation and social media.
+
+Uses 'Ghost' text color (#ffffff) with 'urw-din' font at 13px (0.20em letter-spacing) for primary nav and 12px (0.08em letter-spacing) for social links. The active or hovered state typically involves a subtle border or underline animation, derived from primary elements.
+
+### Logo / Site Identity
+
+**Role:** Brand mark for the website.
+
+A 'Ghost' colored (#ffffff) circular shape containing a stylized 'h' in 'urw-din' font, typically positioned at the top-left of the viewport. A primary, unobtrusive visual anchor.
+
+### Section Divider / Rule
+
+**Role:** Subtle visual separation between content blocks.
+
+A single hairline stroke, using 'Ghost' color (#ffffff) or 'Light Asphalt' (#6f6f6f), acting as a minimal horizontal or vertical separator. Used for visual rhythm without heavy framing.
+
+### Scroll Indicator
+
+**Role:** Call-to-action for scrolling down the page.
+
+Minimal text 'scroll' in 'Ghost' color (#ffffff) using 'urw-din' font, accompanied by a subtle animated visual cue like a downward arrow or line animation. Often placed vertically and subtly.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize 'Midnight Base' (#000000) for all large background areas to maintain the dark, immersive aesthetic.
 - Use 'Ghost' (#ffffff) for all primary text and interactive elements to ensure high contrast and legibility.
@@ -52,7 +120,7 @@ Homunculus operates as a nocturnal canvas, utilizing deep charcoal and stark bla
 - Maintain a compact horizontal spacing of 10px between inline elements like navigation links.
 - When placing small elements within a larger container, ensure 8px vertical padding to create minimal breathing room.
 
-### Don'ts
+### Don't
 
 - Avoid introducing bright or saturated colors except for the organic graphic elements or as very subtle, functional accents.
 - Do not use heavy shadows or gradients on UI elements; the design emphasizes flatness and subtle contrast.
@@ -61,10 +129,84 @@ Homunculus operates as a nocturnal canvas, utilizing deep charcoal and stark bla
 - Avoid complex, multi-level card structures or panels that add visual bulk; surfaces should remain understated.
 - Do not employ radii on UI elements; corners should remain sharp to maintain a precise, technical feel.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Base Canvas | #000000 | The foundational background for all content, providing a deep, immersive dark theme. |
+| 1 | Muted Surface | #383838 | Subtle elevated surface for grouping content or providing a slight depth contrast against the base canvas. |
+| 2 | Highlight Surface | #dddddd | Used sparingly for very light accents or background patterns, offering the highest contrast within the neutral palette. |
+
+## Imagery
+
+This site features abstract, organic, fluid forms with iridescent, swirling colors. These visuals serve as atmospheric, decorative elements rather than explanatory content. They are full-bleed against the dark background, with soft, undefined edges, creating a sense of subtle movement and depth. There is no traditional photography, illustration, or product imagery. Icons are minimal, represented by the 'h' logo and simple lines for navigation.
+
+## Layout
 
 The page uses a full-bleed layout, stretching content to the viewport edges without a dedicated max-width container, creating an immersive experience. The hero section is full-viewport, featuring the subtle, dark-on-dark branding and abstract graphics with minimal text elements positioned for high impact. Overall section rhythm is fluid and seamless, with subtle horizontal lines serving as dividers. Content typically stacks in a single, focused column or uses implicit spacing for element arrangement. Navigation is a minimalist top-right cluster of 'CONTACT' and social links, alongside a top-left brand mark. Density is spacious, emphasizing the abstract background rather than information overload.
 
-### Imagery
+## Similar Brands
 
-This site features abstract, organic, fluid forms with iridescent, swirling colors. These visuals serve as atmospheric, decorative elements rather than explanatory content. They are full-bleed against the dark background, with soft, undefined edges, creating a sense of subtle movement and depth. There is no traditional photography, illustration, or product imagery. Icons are minimal, represented by the 'h' logo and simple lines for navigation.
+- **Stripe (early dark mode)** — Monochrome base with minimal, focused typographic hierarchy and abstract background patterns.
+- **Awwwards Nominees (some portfolios)** — Dark, immersive canvases with sparse, precise typography and abstract, often animated, background visuals.
+- **Active Theory** — Emphasis on experiential, full-bleed dark visuals with minimal UI and abstract, flowing graphics.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-base: #000000;
+  --color-ghost: #ffffff;
+  --color-dark-slate: #383838;
+  --color-light-asphalt: #6f6f6f;
+  --color-silver-dust: #dddddd;
+  --font-times: 'Times', serif;
+  --font-urw-din: 'urw-din', Segoe UI, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.96px;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: 2.8px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.2;
+  --tracking-body-lg: 0px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --radius-default: 0px;
+  --surface-base-canvas: #000000;
+  --surface-muted-surface: #383838;
+  --surface-highlight-surface: #dddddd;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-base: #000000;
+  --color-ghost: #ffffff;
+  --color-dark-slate: #383838;
+  --color-light-asphalt: #6f6f6f;
+  --color-silver-dust: #dddddd;
+  --font-times: 'Times', serif;
+  --font-urw-din: 'urw-din', Segoe UI, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.96px;
+  --text-body: 14px;
+  --leading-body: 1.2;
+  --tracking-body: 2.8px;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.2;
+  --tracking-body-lg: 0px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --radius-default: 0px;
+  --surface-base-canvas: #000000;
+  --surface-muted-surface: #383838;
+  --surface-highlight-surface: #dddddd;
+}
+```

@@ -1,52 +1,118 @@
 ---
 version: alpha
-name: HTWKR
-description: HTWKR uses a somber, monastic aesthetic with a dominant dark canvas, allowing text to surface as quiet epigraphs. The visual style feels sparse and contemplative, relying on delicate typography and a restrained palette of deep blacks and subtle grays. Content is primarily text-based, presented with ample negative space. The overall impression is one of respectful seriousness, with a focus on intellectual engagement over dynamic interaction.
-colors:
-  ebon: "#000000"
-  chalk: "#ffffff"
-  muted-ash: "#5f5f5f"
-  pale-stone: "#8f8f8f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.87
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.6
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-spacing:
-  elementGap: 10px
-  sectionGap: 60px
-components:
-  site-title-link:
-    role: Top-level navigational link, prominent, centered.
-  primary-body-text:
-    role: Informational text presented centrally.
-  muted-body-text:
-    role: Secondary informational text, for quieter messages.
-  footer-link:
-    role: Subtle navigational or informational links in the footer.
-  text-section-divider:
-    role: Visual separation between text blocks, used sparingly.
+name: "HTWKR"
+description: "HTWKR uses a somber, monastic aesthetic with a dominant dark canvas, allowing text to surface as quiet epigraphs. The visual style feels sparse and contemplative, relying on delicate typography and a restrained palette of deep blacks and subtle grays. Content is primarily text-based, presented with ample negative space. The overall impression is one of respectful seriousness, with a focus on intellectual engagement over dynamic interaction."
+theme: "dark"
+industry: "other"
+source_url: "https://howtotalktowhitekidsaboutracism.com"
+refero_style_id: "219890bb-aa52-46cb-89a0-459d0519ad04"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512600151-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512600151-thumb.jpg"
+extracted_at: "2026-04-30T01:30:17.514Z"
 ---
 
-## Overview
+# HTWKR — Style Reference
 
-**North Star:** Shadowed typographic canvas
+> Shadowed typographic canvas
+
+**Theme:** dark
+
+**Industry:** other
 
 HTWKR uses a somber, monastic aesthetic with a dominant dark canvas, allowing text to surface as quiet epigraphs. The visual style feels sparse and contemplative, relying on delicate typography and a restrained palette of deep blacks and subtle grays. Content is primarily text-based, presented with ample negative space. The overall impression is one of respectful seriousness, with a focus on intellectual engagement over dynamic interaction.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Ebon | #000000 | `--color-ebon` | Page and section backgrounds, creating a deep, uniform expanse |
+| Chalk | #ffffff | `--color-chalk` | Primary text across all elements (body, links, other text) and for borders signaling interaction or framing. This is the luminous foreground against the deep Ebon background |
+| Muted Ash | #5f5f5f | `--color-muted-ash` | Secondary body text and subtle borders, providing a softer contrast for less prominent information |
+| Pale Stone | #8f8f8f | `--color-pale-stone` | Tertiary text and very faint borders, used for ancillary information or as a subtle structural cue |
+
+## Tokens — Typography
+
+### Canela Web
+
+- **Token:** `--font-canela-web`
+- **Substitute:** serif
+- **Weights:** 300, 400
+- **Sizes:** 12px, 14px, 16px, 20px
+- **Line heights:** 1.00, 1.12, 1.20, 1.40, 1.60, 1.87
+- **Letter spacing:** 0.0200em, 0.0240em, 0.0300em, 0.0340em, 0.0400em
+- **Role:** The sole typeface, used for all textual content from headings to body text and links. Its elegant serif forms and range of weights, particularly the lighter 300 and 400, contribute to the site's contemplative and refined character, ensuring that text feels legible without being stark.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.87 | — | `--text-caption` |
+| body | 14px | 1.4 | — | `--text-body` |
+| body-lg | 16px | 1.6 | — | `--text-body-lg` |
+| heading | 20px | 1.2 | — | `--text-heading` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-33 | 33px | `--spacing-33` |
+| spacing-60 | 60px | `--spacing-60` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 393px |
+| sectionGap | 60px |
+| cardPadding | 0px |
+| elementGap | 10px |
+
+## Components
+
+### Site Title Link
+
+**Role:** Top-level navigational link, prominent, centered.
+
+Text in Chalk (#ffffff), Canela Web, weight 400, size 20px, letter-spacing 0.0200em. Underlined on hover with a Chalk (#ffffff) border.
+
+### Primary Body Text
+
+**Role:** Informational text presented centrally.
+
+Text in Chalk (#ffffff), Canela Web, weight 400, size 16px, line-height 1.60.
+
+### Muted Body Text
+
+**Role:** Secondary informational text, for quieter messages.
+
+Text in Muted Ash (#5f5f5f), Canela Web, weight 400, size 14px, line-height 1.40.
+
+### Footer Link
+
+**Role:** Subtle navigational or informational links in the footer.
+
+Text in Pale Stone (#8f8f8f), Canela Web, weight 300, size 12px, line-height 1.87.
+
+### Text Section Divider
+
+**Role:** Visual separation between text blocks, used sparingly.
+
+A faint border line of Chalk (#ffffff) applied as a bottom border to elements, often implicitly. Its presence is subtle but indicates distinct content zones.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain the page background as solid Ebon (#000000) for all main content areas.
 - Use Chalk (#ffffff) for all primary readable text, ensuring maximum contrast and legibility.
@@ -56,7 +122,7 @@ HTWKR uses a somber, monastic aesthetic with a dominant dark canvas, allowing te
 - Utilize Muted Ash (#5f5f5f) for secondary textual elements that require slightly less prominence than primary text.
 - Incorporate Pale Stone (#8f8f8f) only for discreet, peripheral information like footer links, maintaining a subdued presence.
 
-### Don'ts
+### Don't
 
 - Do not introduce any vibrant or saturated colors; the palette is strictly achromatic and subtle.
 - Avoid using heavy shadows or elevation; the design system favors a flat, understated aesthetic.
@@ -66,10 +132,71 @@ HTWKR uses a somber, monastic aesthetic with a dominant dark canvas, allowing te
 - Do not break the symmetrical, centered content flow with asymmetric layouts or sidebars.
 - Do not use large, bold headlines; text prominence is achieved through subtle size variations and deliberate spacing, not aggressive weight.
 
-### Layout
+## Imagery
+
+The site's visual language is almost entirely UI-driven, with no prominent photography, illustrations, or complex graphics. The only 'imagery' is the textual content itself, treated with careful typography. The single product visual (a book) is presented as a realistic, isolated object on the Ebon background, serving a symbolic rather than decorative role. The background itself features a subtle, almost imperceptible texture or pattern, adding depth without distraction.
+
+## Layout
 
 The page adheres to a centered, constrained layout with a maximal width of 393px, creating a narrow, focused reading column. The hero features a centered main title over the dark background, with a core object (book) placed centrally. Sections are visually distinct through consistent vertical spacing (60px section gap) and minimal visual dividers. Content is primarily arranged in centered, stacked blocks of text, giving a sense of gravitas and contemplation. Navigation is highly minimal, with subtle links in the header and footer, all following the centered alignment.
 
-### Imagery
+## Similar Brands
 
-The site's visual language is almost entirely UI-driven, with no prominent photography, illustrations, or complex graphics. The only 'imagery' is the textual content itself, treated with careful typography. The single product visual (a book) is presented as a realistic, isolated object on the Ebon background, serving a symbolic rather than decorative role. The background itself features a subtle, almost imperceptible texture or pattern, adding depth without distraction.
+- **AIGA Design Archives** — Uses a similar minimalist dark aesthetic with a strong focus on elegant typography and minimal imagery.
+- **The New York Times (some feature articles)** — Employs an editorial style with extensive use of serif typography on dark backgrounds for a serious, contemplative mood.
+- **Are.na** — Features a quiet, almost monochrome interface where content curation and typography take precedence over decorative elements.
+- **Readymag (certain minimalist templates)** — Offers layouts that prioritize centered, text-heavy designs with generous white/dark space and sophisticated serif fonts.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-ebon: #000000;
+  --color-chalk: #ffffff;
+  --color-muted-ash: #5f5f5f;
+  --color-pale-stone: #8f8f8f;
+  --font-canela-web: 'Canela Web', serif;
+  --text-caption: 12px;
+  --leading-caption: 1.87;
+  --text-body: 14px;
+  --leading-body: 1.4;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.6;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --spacing-0: 0px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-33: 33px;
+  --spacing-60: 60px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-ebon: #000000;
+  --color-chalk: #ffffff;
+  --color-muted-ash: #5f5f5f;
+  --color-pale-stone: #8f8f8f;
+  --font-canela-web: 'Canela Web', serif;
+  --text-caption: 12px;
+  --leading-caption: 1.87;
+  --text-body: 14px;
+  --leading-body: 1.4;
+  --text-body-lg: 16px;
+  --leading-body-lg: 1.6;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --spacing-0: 0px;
+  --spacing-10: 10px;
+  --spacing-14: 14px;
+  --spacing-33: 33px;
+  --spacing-60: 60px;
+  --radius-none: 0px;
+}
+```
