@@ -1,83 +1,176 @@
 ---
 version: alpha
-name: Yellowbird®
-description: Yellowbird® utilizes a high-contrast, playful aesthetic, rooted in an energetic yellow canvas and bold black typography. The system leans into strong visual boundaries with thick black outlines and defined shapes, avoiding subtle gradients or shadows. Typography, featuring custom display fonts, is a primary expressive element, varying dramatically in size and tracking to create a dynamic hierarchy. Components are chunky and direct, maintaining the brand's unapologetic visual presence through stark color blocking and distinct border treatments.
-colors:
-  yellowbird-yellow: "#ffe845"
-  midnight-black: "#000000"
-  canvas-white: "#ffffff"
-  warm-paper: "#fbfaf2"
-  electric-blue: "#007aff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.67
-    letterSpacing: -0.48px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.46
-    letterSpacing: -0.496px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.3
-    letterSpacing: -0.558px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 27px
-    lineHeight: 1.2
-    letterSpacing: -0.378px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.1
-    letterSpacing: -0.33px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 41px
-    lineHeight: 1.2
-    letterSpacing: -0.287px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 61px
-    lineHeight: 0.78
-    letterSpacing: -0.244px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 91px
-    lineHeight: 1.05
-    letterSpacing: -0.255px
-spacing:
-  cardRadius: 30px
-  buttonRadius: 6px
-  elementGap: 24px
-  sectionGap: 80px
-components:
-  outline-navigation-link:
-    role: Global navigation item
-  primary-call-to-action-button:
-    role: Emphasized action
-  ghost-call-to-action-button:
-    role: Secondary action or link
-  category-filter-button:
-    role: Product filtering or classification
-  product-card:
-    role: Display individual product items
-  rounded-quote-card:
-    role: Highlighting testimonials or key messages
-  text-input-search:
-    role: User text entry field
+name: "Yellowbird®"
+description: "Yellowbird® utilizes a high-contrast, playful aesthetic, rooted in an energetic yellow canvas and bold black typography. The system leans into strong visual boundaries with thick black outlines and defined shapes, avoiding subtle gradients or shadows. Typography, featuring custom display fonts, is a primary expressive element, varying dramatically in size and tracking to create a dynamic hierarchy. Components are chunky and direct, maintaining the brand's unapologetic visual presence through stark color blocking and distinct border treatments."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.yellowbirdfoods.com"
+refero_style_id: "22cc86bc-6c5f-4413-a4a2-66b8ddc82ad0"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509142316-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509142316-thumb.jpg"
+extracted_at: "2026-04-30T00:32:56.908Z"
 ---
 
-## Overview
+# Yellowbird® — Style Reference
 
-**North Star:** Bold yellow manifesto
+> Bold yellow manifesto
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Yellowbird® utilizes a high-contrast, playful aesthetic, rooted in an energetic yellow canvas and bold black typography. The system leans into strong visual boundaries with thick black outlines and defined shapes, avoiding subtle gradients or shadows. Typography, featuring custom display fonts, is a primary expressive element, varying dramatically in size and tracking to create a dynamic hierarchy. Components are chunky and direct, maintaining the brand's unapologetic visual presence through stark color blocking and distinct border treatments.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Yellowbird Yellow | #ffe845 | `--color-yellowbird-yellow` | Primary background, primary action background, highlight accents in text and icons. This vivid yellow is foundational to the brand's energetic and unmissable presence |
+| Midnight Black | #000000 | `--color-midnight-black` | Text, borders, icons, secondary action backgrounds. Provides high contrast and defines all structural elements, grounding the vibrant yellow |
+| Canvas White | #ffffff | `--color-canvas-white` | Internal surface backgrounds for components, icon fills, secondary text on dark backgrounds. Offers a crisp contrast against Yellowbird Yellow and Midnight Black |
+| Warm Paper | #fbfaf2 | `--color-warm-paper` | Card backgrounds, subtle secondary surface areas, offering a softer alternative to pure white while maintaining high contrast with text |
+| Electric Blue | #007aff | `--color-electric-blue` | Accent border for interactive elements, link rollovers. Used sparingly to denote interactive states against dark backgrounds, providing a jolt of color |
+
+## Tokens — Typography
+
+### ABC Monument Grotesk
+
+- **Token:** `--font-abc-monument-grotesk`
+- **Weights:** 400
+- **Sizes:** 14px, 18px, 27px, 30px, 41px, 45px, 61px
+- **Line heights:** 0.78, 0.87, 0.90, 1.00, 1.10, 1.20, 1.30, 1.67, 2.14
+- **Letter spacing:** -0.0400em, -0.0300em, -0.0140em, -0.0110em, -0.0070em, -0.0060em
+- **Role:** Primary text, navigation, marketing copy, and subheadings. Its strong, geometric character at various sizes, often with tight tracking, conveys a confident and direct brand voice. Substitute: 'Montserrat' or 'Inter' with custom letter-spacing.
+
+### Pitch Sans
+
+- **Token:** `--font-pitch-sans`
+- **Weights:** 400, 600
+- **Sizes:** 16px, 18px, 27px
+- **Line heights:** 0.84, 1.00, 1.20, 1.30, 1.46
+- **Letter spacing:** -0.0310em, -0.0120em, -0.0110em, 0.0500em
+- **Role:** Body copy, captions, supporting text, and small interactive elements. Its slightly more conventional humanist sans-serif shape balances the rigidity of Monument Grotesk, improving readability for longer form content. Substitute: 'Open Sans' or 'Lato'.
+
+### Gooper
+
+- **Token:** `--font-gooper`
+- **Weights:** 400, 700
+- **Sizes:** 91px
+- **Line heights:** 1.05
+- **Letter spacing:** -0.0280em
+- **Role:** Distinctive display headlines, especially for brand hero sections or major statements. Its rounded, heavy forms give a playful yet authoritative impression, creating strong visual anchors. Substitute: 'Bebas Neue' or 'Impact' for a similar bold presence, though the curved aspects would be lost.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.67 | -0.48px | `--text-caption` |
+| body-sm | 16px | 1.46 | -0.496px | `--text-body-sm` |
+| body | 18px | 1.3 | -0.558px | `--text-body` |
+| subheading | 27px | 1.2 | -0.378px | `--text-subheading` |
+| heading-sm | 30px | 1.1 | -0.33px | `--text-heading-sm` |
+| heading | 41px | 1.2 | -0.287px | `--text-heading` |
+| heading-lg | 61px | 0.78 | -0.244px | `--text-heading-lg` |
+| display | 91px | 1.05 | -0.255px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-17 | 17px | `--spacing-17` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-27 | 27px | `--spacing-27` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-65 | 65px | `--spacing-65` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-83 | 83px | `--spacing-83` |
+| spacing-86 | 86px | `--spacing-86` |
+| spacing-210 | 210px | `--spacing-210` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 30px |
+| buttons | 6px |
+| default | 0px |
+| largeCards | 36px |
+| smallButtons | 14px |
+| interactiveElements | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 80px |
+| cardPadding | 20px |
+| elementGap | 24px |
+
+## Components
+
+### Outline Navigation Link
+
+**Role:** Global navigation item
+
+Text link, outlined with a 1px black border. `ABC Monument Grotesk` at 18px / 1.0lh, `Midnight Black` text. No padding, but the bounding box expands on hover. The border defines the clickable area without filling it.
+
+### Primary Call to Action Button
+
+**Role:** Emphasized action
+
+Filled button with `Yellowbird Yellow` background and `Midnight Black` text. Uses `ABC Monument Grotesk` 400 at sizes 16px/1.3lh or 18px/1.3lh. Features a 6px border-radius and 6px padding on all sides, creating a compact, direct appearance.
+
+### Ghost Call to Action Button
+
+**Role:** Secondary action or link
+
+Essentially a text button with `Midnight Black` text, `ABC Monument Grotesk` 400, usually 14-18px. Minimal padding on smaller contexts (e.g. 0-6px), but can have larger padding of 20px on all sides when functioning as block elements. This component offers interaction without visual weight, relying on text and occasional borders.
+
+### Category Filter Button
+
+**Role:** Product filtering or classification
+
+A ghost button with a thick (3px) `Midnight Black` border, `Yellowbird Yellow` background with `Midnight Black` text. `ABC Monument Grotesk` 400, 27px font size. Features an irregular, organic-like 30px border-radius, giving it a playful, hand-drawn aesthetic. Padding of 20px on all sides.
+
+### Product Card
+
+**Role:** Display individual product items
+
+Features a `Warm Paper` (#fbfaf2) background with a large `36px` border-radius. Primarily a content container; padding is implicit from how elements within are spaced but can be 20px. Borders are typically defined by inner content rather than the card itself.
+
+### Rounded Quote Card
+
+**Role:** Highlighting testimonials or key messages
+
+A `Yellowbird Yellow` (#ffe845) background with a `30px` border-radius, providing a soft, friendly container for text. Features 20px padding on all sides, creating a clear visual break and focus for the content.
+
+### Text Input (Search)
+
+**Role:** User text entry field
+
+Transparent background (`rgba(0,0,0,0)`) with `Midnight Black` text and a defined `Midnight Black` border. Features 15px vertical padding and 32px right padding, but no left padding, hinting at internal icon placement. 0px border-radius makes it sharp and direct.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use 'Yellowbird Yellow' (#ffe845) as the dominant background color for full-bleed sections, establishing brand identity immediately.
 - Define all interactive area boundaries and critical visual separations with a 3px 'Midnight Black' (#000000) solid border.
@@ -87,7 +180,7 @@ Yellowbird® utilizes a high-contrast, playful aesthetic, rooted in an energetic
 - Utilize 'Midnight Black' (#000000) for all primary text and secondary button backgrounds, ensuring high contrast against the bright yellow and white surfaces.
 - Use 20px as a recurring padding unit for cards, buttons, and larger content blocks to create generous internal space.
 
-### Don'ts
+### Don't
 
 - Avoid using gradients or drop shadows for elevation; rely on thick borders and color blocking to define dimensional relationships.
 - Do not introduce subtle gray tones or desaturated colors outside of 'Warm Paper' (#fbfaf2); the palette is designed for high-contrast chromaticity.
@@ -97,10 +190,159 @@ Yellowbird® utilizes a high-contrast, playful aesthetic, rooted in an energetic
 - Do not use letter-spacing values approaching normal (0em) for headings or large text; the system explicitly uses compressed tracking to maintain its distinctive look.
 - Do not place text directly on top of visually noisy product imagery; always ensure content has a solid color background for legibility and to maintain the brand's graphic quality.
 
-### Layout
+## Imagery
+
+The imagery aesthetic is bold and graphic, primarily featuring product photography against a pure white background, isolating the product as the hero. Illustrations are organic, thick-outlined, and often incorporate the brand's 'sun' character, providing a playful and energetic visual counterpart to the product. Icons are filled with 'Midnight Black' (#000000) and have a thick, confident stroke weight. Visuals serve to showcase the product, add brand personality, and explain content, maintaining an image-text balance where visuals occupy significant space but never overlap or bleed into text content.
+
+## Layout
 
 The page uses a full-bleed structure that largely contains content within a central, implicit max-width rather than a strict container. The hero section establishes a clear brand identity with a large, centered headline (`Gooper`, 91px) and vibrant 'Yellowbird Yellow' background, featuring the brand's signature outlined illustration. Section rhythm is highly consistent, dominated by large blocks of 'Yellowbird Yellow' with occasional 'Warm Paper' (#fbfaf2) cards, and thick 3px 'Midnight Black' borders visually separating content blocks. Content is arranged in alternating text-heavy and visual-heavy sections, often centered stacks or a 3-column card grid for features. The overall density is spacious with generous padding and ample vertical separation between sections, reinforcing the bold and direct visual communication. A sticky top navigation offers shop, about, and find us links, along with search, login, and cart actions.
 
-### Imagery
+## Similar Brands
 
-The imagery aesthetic is bold and graphic, primarily featuring product photography against a pure white background, isolating the product as the hero. Illustrations are organic, thick-outlined, and often incorporate the brand's 'sun' character, providing a playful and energetic visual counterpart to the product. Icons are filled with 'Midnight Black' (#000000) and have a thick, confident stroke weight. Visuals serve to showcase the product, add brand personality, and explain content, maintaining an image-text balance where visuals occupy significant space but never overlap or bleed into text content.
+- **Oatly** — Uses bright, unconventional colors (often green/blue) with bold, often quirky typography and thick borders for a distinct, playful brand identity.
+- **Liquid Death** — Employs strong, graphic black and white elements with minimal color accents, relying on bold typography and illustrative elements for edgy brand messaging.
+- **Chobani (some campaigns)** — Utilizes a bright, dominant background color (often white or light pastel) with large, friendly display typography and clean product photography.
+- **Mailchimp (old branding)** — Known for a distinct yellow color, playful illustrations, and strong, characterful typography, creating a memorable and friendly, yet professional, tone.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-yellowbird-yellow: #ffe845;
+  --color-midnight-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-warm-paper: #fbfaf2;
+  --color-electric-blue: #007aff;
+  --font-abc-monument-grotesk: 'ABC Monument Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-pitch-sans: 'Pitch Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-gooper: 'Gooper', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.67;
+  --tracking-caption: -0.48px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.46;
+  --tracking-body-sm: -0.496px;
+  --text-body: 18px;
+  --leading-body: 1.3;
+  --tracking-body: -0.558px;
+  --text-subheading: 27px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.378px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.33px;
+  --text-heading: 41px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.287px;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 0.78;
+  --tracking-heading-lg: -0.244px;
+  --text-display: 91px;
+  --leading-display: 1.05;
+  --tracking-display: -0.255px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-75: 75px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-86: 86px;
+  --spacing-210: 210px;
+  --radius-cards: 30px;
+  --radius-buttons: 6px;
+  --radius-default: 0px;
+  --radius-largecards: 36px;
+  --radius-smallbuttons: 14px;
+  --radius-interactiveelements: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-yellowbird-yellow: #ffe845;
+  --color-midnight-black: #000000;
+  --color-canvas-white: #ffffff;
+  --color-warm-paper: #fbfaf2;
+  --color-electric-blue: #007aff;
+  --font-abc-monument-grotesk: 'ABC Monument Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-pitch-sans: 'Pitch Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-gooper: 'Gooper', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 14px;
+  --leading-caption: 1.67;
+  --tracking-caption: -0.48px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.46;
+  --tracking-body-sm: -0.496px;
+  --text-body: 18px;
+  --leading-body: 1.3;
+  --tracking-body: -0.558px;
+  --text-subheading: 27px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.378px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.33px;
+  --text-heading: 41px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.287px;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 0.78;
+  --tracking-heading-lg: -0.244px;
+  --text-display: 91px;
+  --leading-display: 1.05;
+  --tracking-display: -0.255px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-13: 13px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-17: 17px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-27: 27px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-65: 65px;
+  --spacing-75: 75px;
+  --spacing-80: 80px;
+  --spacing-83: 83px;
+  --spacing-86: 86px;
+  --spacing-210: 210px;
+  --radius-cards: 30px;
+  --radius-buttons: 6px;
+  --radius-default: 0px;
+  --radius-largecards: 36px;
+  --radius-smallbuttons: 14px;
+  --radius-interactiveelements: 10px;
+}
+```

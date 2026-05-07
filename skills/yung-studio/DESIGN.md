@@ -1,74 +1,155 @@
 ---
 version: alpha
-name: Yung Studio
-description: This design system presents a stark, high-contrast aesthetic, mimicking a digital command console. Its core identity is built on pure black and white, creating immediate visual impact. The generous negative space and tight letter-spacing in headlines maintain an air of intentional precision, while the signature 9999px pill-shaped buttons introduce a single, playful soft edge.
-colors:
-  midnight-void: "#000000"
-  ghost-white: "#ffffff"
-  accent-violet: "#c692ff"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.35
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.1
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.01
-    letterSpacing: -0.28px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.1
-    letterSpacing: -0.3px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-    letterSpacing: -0.4px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 0.9
-    letterSpacing: -1.2px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 160px
-    lineHeight: 0.9
-    letterSpacing: -3.2px
-spacing:
-  cardRadius: 0px
-  buttonRadius: 9999px
-  elementGap: 20-24px
-  sectionGap: 60-124px
-components:
-  primary-action-button-group:
-    role: 
-  stat-metric-block:
-    role: 
-  service-feature-cards:
-    role: 
-  primary-action-button:
-    role: Interactive element
-  naked-content-card:
-    role: Content container
-  text-link:
-    role: Navigation/Internal link
-  header-logo:
-    role: Brand identity
+name: "Yung Studio"
+description: "This design system presents a stark, high-contrast aesthetic, mimicking a digital command console. Its core identity is built on pure black and white, creating immediate visual impact. The generous negative space and tight letter-spacing in headlines maintain an air of intentional precision, while the signature 9999px pill-shaped buttons introduce a single, playful soft edge."
+theme: "dark"
+industry: "agency"
+source_url: "https://yung.studio"
+refero_style_id: "2d43b251-ad01-4e59-9068-502457aa0592"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925291436-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775925291436-thumb.jpg"
+extracted_at: "2026-04-11T16:35:12.450Z"
 ---
 
-## Overview
+# Yung Studio — Style Reference
 
-**North Star:** Monochromatic Command Center. Pure black canvas where sharp white elements punctuate with precision and ample negative space.
+> Monochromatic Command Center. Pure black canvas where sharp white elements punctuate with precision and ample negative space.
+
+**Theme:** dark
+
+**Industry:** agency
 
 This design system presents a stark, high-contrast aesthetic, mimicking a digital command console. Its core identity is built on pure black and white, creating immediate visual impact. The generous negative space and tight letter-spacing in headlines maintain an air of intentional precision, while the signature 9999px pill-shaped buttons introduce a single, playful soft edge.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page backgrounds, card backgrounds, text on white buttons – the foundational darkness. |
+| Ghost White | #ffffff | `--color-ghost-white` | Primary text, button backgrounds, interactive elements – the dominant light element creating high contrast. |
+| Accent Violet | #c692ff | `--color-accent-violet` | Subtle background accents, specific contextual highlights; provides the only chromatic color for visual differentiation. |
+
+## Tokens — Typography
+
+### PolySans-Slim
+
+- **Token:** `--font-polysans-slim`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 16px, 20px, 30px, 40px
+- **Line heights:** 1.00, 1.10, 1.35
+- **Letter spacing:** -0.0100em
+- **Role:** Body text, smaller headings, supporting information, links, and various content elements. Its uniform weight contributes to a calm, readable tone across varied text sizes.
+
+### PolySans-Neutral
+
+- **Token:** `--font-polysans-neutral`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 60px, 160px
+- **Line heights:** 0.90, 1.10
+- **Letter spacing:** -0.0200em
+- **Role:** Display headings and prominent interactive elements like buttons. The extremely tight letter-spacing at large sizes creates a dense, impactful visual block rather than sprawling text, like a bold declaration.
+
+### PolySans-Bulky
+
+- **Token:** `--font-polysans-bulky`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 28px
+- **Line heights:** 1.01
+- **Letter spacing:** -0.0100em
+- **Role:** Specialized links and secondary headings. This family variation offers a bulkier form factor for specific emphasis at a mid-range size.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 16px | 1.35 | — | `--text-body` |
+| body-lg | 20px | 1.1 | — | `--text-body-lg` |
+| subheading | 28px | 1.01 | -0.28px | `--text-subheading` |
+| heading | 30px | 1.1 | -0.3px | `--text-heading` |
+| heading-lg | 40px | 1 | -0.4px | `--text-heading-lg` |
+| display | 60px | 0.9 | -1.2px | `--text-display` |
+| display-xl | 160px | 0.9 | -3.2px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-22 | 22px | `--spacing-22` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-68 | 68px | `--spacing-68` |
+| spacing-110 | 110px | `--spacing-110` |
+| spacing-124 | 124px | `--spacing-124` |
+| spacing-222 | 222px | `--spacing-222` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 0px |
+| buttons | 9999px |
+| default | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60-124px |
+| cardPadding | 0px |
+| elementGap | 20-24px |
+
+## Components
+
+### Primary Action Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Stat / Metric Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Service / Feature Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Button
+
+**Role:** Interactive element
+
+White background (`#ffffff`), black text (`#000000`). Fully rounded with `9999px` border-radius. Generous padding: `31.968px` top, `22.032px` bottom, `49.968px` sides. Uses PolySans-Neutral font, weight 400, for clear call to action.
+
+### Naked Content Card
+
+**Role:** Content container
+
+Transparent background (`rgba(0, 0, 0, 0)`) with `0px` border-radius. No box-shadow or padding, integrating seamlessly into the negative space. Used for showcasing work items or article previews.
+
+### Text Link
+
+**Role:** Navigation/Internal link
+
+Uses PolySans-Slim for general links, or PolySans-Bulky at 28px for prominent links. Text color is `Ghost White` (`#ffffff`) against `Midnight Void` (`#000000`), no underline by default.
+
+### Header Logo
+
+**Role:** Brand identity
+
+Uses PolySans-Slim at a 20px size, weight 400, `Ghost White` (`#ffffff`), positioned top-left on the `Midnight Void` (`#000000`) background.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a strict achromatic palette, using only `Midnight Void` (#000000) for backgrounds and `Ghost White` (#ffffff) for primary foreground elements.
 - Apply `9999px` border-radius to all interactive element buttons for a consistent pill shape.
@@ -77,7 +158,7 @@ This design system presents a stark, high-contrast aesthetic, mimicking a digita
 - Ensure generous `50px` horizontal padding for content sections and `20-24px` vertical spacing between elements to preserve ample negative space.
 - Employ PolySans-Slim as the default font for all body copy and most secondary text at weight 400, ensuring clear readability across sizes.
 
-### Don'ts
+### Don't
 
 - Avoid introducing any additional saturated colors beyond the designated `--ube` (#c692ff) to prevent diluting the distinct monochrome aesthetic.
 - Do not use box-shadows or drop shadows; depth is implied solely through stark contrast and generous negative space.
@@ -86,6 +167,111 @@ This design system presents a stark, high-contrast aesthetic, mimicking a digita
 - Avoid using radii other than `0px` for content containers and `9999px` for buttons, to maintain precision and the signature rounded forms.
 - Do not clutter content sections; maintain the spacious `50px` horizontal padding and ample vertical element gaps to preserve legibility and impact.
 
-### Imagery
+## Imagery
 
 This site features a clean visual language predominantly based on illustration and graphic elements, with minimal and direct application. The hero section displays large, custom, playful illustrations in pure white on a black background, with a hand-drawn, almost explosive quality, acting as a direct visual representation of the 'Yung' brand. The overall impression is that imagery serves a decorative, brand-identity building purpose rather than explanatory content, with a high visual density only in a dedicated hero area, transitioning to text-dominant content. Icons are minimal, represented by the white hamburger menu, suggesting a clean, outlined style. No photography is visible, reinforcing a graphic-first approach.
+
+## Similar Brands
+
+- **Akin Gump** — Stark black and white color scheme; emphasis on strong typography and ample negative space for a premium, editorial feel.
+- **Baidu Ventures** — Dominant dark background with high-contrast white text, using spacious layouts and minimal visual clutter.
+- **Huge Inc.** — Bold, expressive typography at large sizes often against a dark background, asserting brand identity through text.
+- **Figma (dark mode)** — Monochromatic focus with a single accent color for interactive elements, maintaining clarity within a dark interface.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-accent-violet: #c692ff;
+  --font-polysans-slim: 'PolySans-Slim', Inter;
+  --font-polysans-neutral: 'PolySans-Neutral', Inter;
+  --font-polysans-bulky: 'PolySans-Bulky', Inter;
+  --text-body: 16px;
+  --leading-body: 1.35;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.1;
+  --text-subheading: 28px;
+  --leading-subheading: 1.01;
+  --tracking-subheading: -0.28px;
+  --text-heading: 30px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.3px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.4px;
+  --text-display: 60px;
+  --leading-display: 0.9;
+  --tracking-display: -1.2px;
+  --text-display-xl: 160px;
+  --leading-display-xl: 0.9;
+  --tracking-display-xl: -3.2px;
+  --spacing-0: 0px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-68: 68px;
+  --spacing-110: 110px;
+  --spacing-124: 124px;
+  --spacing-222: 222px;
+  --radius-cards: 0px;
+  --radius-buttons: 9999px;
+  --radius-default: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-ghost-white: #ffffff;
+  --color-accent-violet: #c692ff;
+  --font-polysans-slim: 'PolySans-Slim', Inter;
+  --font-polysans-neutral: 'PolySans-Neutral', Inter;
+  --font-polysans-bulky: 'PolySans-Bulky', Inter;
+  --text-body: 16px;
+  --leading-body: 1.35;
+  --text-body-lg: 20px;
+  --leading-body-lg: 1.1;
+  --text-subheading: 28px;
+  --leading-subheading: 1.01;
+  --tracking-subheading: -0.28px;
+  --text-heading: 30px;
+  --leading-heading: 1.1;
+  --tracking-heading: -0.3px;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -0.4px;
+  --text-display: 60px;
+  --leading-display: 0.9;
+  --tracking-display: -1.2px;
+  --text-display-xl: 160px;
+  --leading-display-xl: 0.9;
+  --tracking-display-xl: -3.2px;
+  --spacing-0: 0px;
+  --spacing-14: 14px;
+  --spacing-20: 20px;
+  --spacing-22: 22px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-50: 50px;
+  --spacing-60: 60px;
+  --spacing-68: 68px;
+  --spacing-110: 110px;
+  --spacing-124: 124px;
+  --spacing-222: 222px;
+  --radius-cards: 0px;
+  --radius-buttons: 9999px;
+  --radius-default: 10px;
+}
+```

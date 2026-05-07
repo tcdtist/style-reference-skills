@@ -1,42 +1,128 @@
 ---
 version: alpha
-name: Ysl
-description: This design system projects a mood of stark, high-fashion minimalism through a monochromatic palette. Visual energy stems from deep photographic imagery rather than UI ornamentation. The rigid, unforgiving aesthetic is defined by zero border radius and a strict black-and-white color scheme, creating a canvas where product photography and brand typography command full attention. Subtle spacing maintains a sense of luxury without clutter, allowing each element to breathe within a visually demanding context.
-colors:
-  midnight-ink: "#000000"
-  polar-white: "#ffffff"
-  accent-blue: "#007aff"
-spacing:
-  elementGap: 4px
-  sectionGap: 68px
-components:
-  product-card:
-    role: 
-  button-group:
-    role: 
-  campaign-caption-banner:
-    role: 
-  primary-navigation-link:
-    role: Header and footer navigation elements.
-  standard-button-default:
-    role: Interactive elements, calls to action.
-  standard-button-inverted:
-    role: Primary calls to action on dark backgrounds.
-  filled-primary-button:
-    role: Key action buttons, such as 'Add to Cart' or 'Explore'.
-  product-card:
-    role: Displaying product listings.
-  section-heading:
-    role: Primary titles for content blocks.
+name: "Ysl"
+description: "This design system projects a mood of stark, high-fashion minimalism through a monochromatic palette. Visual energy stems from deep photographic imagery rather than UI ornamentation. The rigid, unforgiving aesthetic is defined by zero border radius and a strict black-and-white color scheme, creating a canvas where product photography and brand typography command full attention. Subtle spacing maintains a sense of luxury without clutter, allowing each element to breathe within a visually demanding context."
+theme: "dark"
+industry: "ecommerce"
+source_url: "https://ysl.com"
+refero_style_id: "bb2a2b0b-c84e-48ee-9dd9-7b623f81a422"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943840081-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775943840081-thumb.jpg"
+extracted_at: "2026-04-11T21:44:16.301Z"
 ---
 
-## Overview
+# Ysl — Style Reference
 
-**North Star:** Black Tie Photography — a high-contrast canvas for arresting visuals.
+> Black Tie Photography — a high-contrast canvas for arresting visuals.
+
+**Theme:** dark
+
+**Industry:** ecommerce
 
 This design system projects a mood of stark, high-fashion minimalism through a monochromatic palette. Visual energy stems from deep photographic imagery rather than UI ornamentation. The rigid, unforgiving aesthetic is defined by zero border radius and a strict black-and-white color scheme, creating a canvas where product photography and brand typography command full attention. Subtle spacing maintains a sense of luxury without clutter, allowing each element to breathe within a visually demanding context.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Primary text, navigation links, button borders, page backgrounds for specific sections. |
+| Polar White | #ffffff | `--color-polar-white` | Page backgrounds, card surfaces, primary button text, prominent headings. |
+| Accent Blue | #007aff | `--color-accent-blue` | Internal UI elements like sliders (swiper-theme-color), but not directly used for prominent branding or CTAs. |
+
+## Tokens — Typography
+
+### SaintLaurent sans-serif
+
+- **Token:** `--font-saintlaurent-sans-serif`
+- **Substitute:** Arial, Helvetica, sans-serif
+- **Sizes:** 12px, 14px
+- **Line heights:** 1
+- **Role:** Primary text for navigation, body text, and button labels. Its understated presence ensures brand imagery maintains dominance.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-11 | 11px | `--spacing-11` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-34 | 34px | `--spacing-34` |
+| spacing-68 | 68px | `--spacing-68` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| all | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 68px |
+| cardPadding | 0px |
+| elementGap | 4px |
+
+## Components
+
+### Product Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Campaign Caption Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Navigation Link
+
+**Role:** Header and footer navigation elements.
+
+Text only, `Midnight Ink` (#000000) or `Polar White` (#ffffff) depending on background. No background, no border, no padding. Font: SaintLaurent sans-serif, 12px, weight 400.
+
+### Standard Button - Default
+
+**Role:** Interactive elements, calls to action.
+
+Transparent background (`rgba(0, 0, 0, 0)`) with `Midnight Ink` (#000000) text and a `Midnight Ink` (#000000) border. No padding, no border radius. Font: SaintLaurent sans-serif, 12px, weight 400.
+
+### Standard Button - Inverted
+
+**Role:** Primary calls to action on dark backgrounds.
+
+Transparent background (`rgba(0, 0, 0, 0)`) with `Polar White` (#ffffff) text and a `Polar White` (#ffffff) border. No padding, no border radius. Font: SaintLaurent sans-serif, 12px, weight 400.
+
+### Filled Primary Button
+
+**Role:** Key action buttons, such as 'Add to Cart' or 'Explore'.
+
+Solid `Midnight Ink` (#000000) background, `Polar White` (#ffffff) text, and `Polar White` (#ffffff) border. Padding: 10px top/bottom, 20px left/right. No border radius. Font: SaintLaurent sans-serif, 12px, weight 400.
+
+### Product Card
+
+**Role:** Displaying product listings.
+
+Completely borderless and shadowless, with `Polar White` (#ffffff) background. Content is usually an image followed by text. No padding, 0px border radius.
+
+### Section Heading
+
+**Role:** Primary titles for content blocks.
+
+Typically `Midnight Ink` (#000000) or `Polar White` (#ffffff) depending on context. Font: SaintLaurent sans-serif, likely larger size like 18-24px, weight 400 with potential letter spacing for emphasis.
+
+## Do's and Don'ts
+
+### Do
 
 - Maintain a monochromatic palette of `Midnight Ink` (#000000) and `Polar White` (#ffffff) for all core UI elements.
 - Use 0px for all border radius values across buttons, cards, and interactive elements to preserve angularity.
@@ -45,7 +131,7 @@ This design system projects a mood of stark, high-fashion minimalism through a m
 - Ensure generous spacing: `sectionGap` of 68px and standard `elementGap` of 4px between smaller components.
 - Utilize transparent backgrounds for border-only buttons unless a primary, filled action is required (`Midnight Ink` background, `Polar White` text).
 
-### Don'ts
+### Don't
 
 - Avoid decorative shadows or complex gradients; rely on photography for depth perception.
 - Do not introduce rounded corners on any UI elements; maintain sharp, crisp edges.
@@ -54,10 +140,63 @@ This design system projects a mood of stark, high-fashion minimalism through a m
 - Avoid dense UI layouts; allow ample white/black space around elements to convey luxury.
 - Do not use multiple font families or weights outside of SaintLaurent sans-serif 400.
 
-### Layout
+## Imagery
+
+The visual language is dominated by high-impact, editorial photography, often dark and moody, shot at night or in dramatically lit environments. Photography is typically full-bleed, immersive, and features models or products in a stylized, high-fashion context. Images serve a decorative and brand-building role, conveying atmosphere and aspiration rather than purely explanatory content. Product shots are embedded within these rich compositions, often featuring metallic or reflective elements that catch subtle light. There are no illustrations or abstract graphics; the focus is exclusively on realistic yet highly curated photography. Icons are minimal, represented by simple monochrome outlines (e.g., search, cart).
+
+## Layout
 
 The page primarily uses a full-bleed layout, where hero imagery extends to the edges of the viewport, particularly on the initial screen. Content sections often alternate between these dark, immersive visual blocks and more functional, information-dense areas. The overall structure favors a centered stacking of content, especially for headings and short descriptions overlaying images, with a clear vertical rhythm. Navigation is a minimalist top bar, split into left and right groups of text links, suggesting a clear brand hierarchy. Content arrangement within sections appears to be flexible, supporting large hero images, product grids (not explicitly visible but implied by e-commerce nature), and simple text blocks. Density is spacious, emphasizing individual elements and imagery rather than compact information.
 
-### Imagery
+## Similar Brands
 
-The visual language is dominated by high-impact, editorial photography, often dark and moody, shot at night or in dramatically lit environments. Photography is typically full-bleed, immersive, and features models or products in a stylized, high-fashion context. Images serve a decorative and brand-building role, conveying atmosphere and aspiration rather than purely explanatory content. Product shots are embedded within these rich compositions, often featuring metallic or reflective elements that catch subtle light. There are no illustrations or abstract graphics; the focus is exclusively on realistic yet highly curated photography. Icons are minimal, represented by simple monochrome outlines (e.g., search, cart).
+- **Louis Vuitton** — Similar reliance on stark product photography and minimal UI in a luxury context.
+- **Gucci** — High-fashion aesthetic with a strong emphasis on brand imagery over complex interactive elements.
+- **Dior** — Utilizes a monochromatic base to highlight luxury products and photography, often with a similar sense of restraint and elegance in UI.
+- **Balenciaga** — Often employs dark, moody photography and a minimalist, almost brutalist, UI where typography and visuals are paramount.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-polar-white: #ffffff;
+  --color-accent-blue: #007aff;
+  --font-saintlaurent-sans-serif: 'SaintLaurent sans-serif', Arial, Helvetica, sans-serif;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-68: 68px;
+  --radius-all: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-polar-white: #ffffff;
+  --color-accent-blue: #007aff;
+  --font-saintlaurent-sans-serif: 'SaintLaurent sans-serif', Arial, Helvetica, sans-serif;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-32: 32px;
+  --spacing-34: 34px;
+  --spacing-68: 68px;
+  --radius-all: 0px;
+}
+```

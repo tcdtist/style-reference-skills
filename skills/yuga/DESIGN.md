@@ -1,71 +1,122 @@
 ---
 version: alpha
-name: Yuga
-description: Yuga Labs employs a high-contrast digital-native aesthetic, leveraging stark black and white with minimal color accents. Typography is compact and commanding, featuring a proprietary heavy sans-serif that defines the brand's voice. Surfaces are predominantly flat, and interactivity is signaled through subtle highlights and generous border radii, resulting in a bold, direct, and slightly playful presentation.
-colors:
-  midnight-void: "#000000"
-  cloud-canvas: "#ffffff"
-  digital-gray: "#131313"
-  lime-glow: "#d3de5d"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.1
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.1
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 0.94
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 26px
-    lineHeight: 0.94
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 32px
-    lineHeight: 0.9
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 0.83
-    letterSpacing: -0.83px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 102px
-    lineHeight: 0.82
-    letterSpacing: -2.04px
-  display-xl:
-    fontFamily: "system-ui"
-    fontSize: 160px
-    lineHeight: 0.78
-    letterSpacing: -3.2px
-spacing:
-  cardRadius: 30px
-  buttonRadius: 90px
-  elementGap: 15px
-  sectionGap: 40px
-components:
-  primary-filled-button:
-    role: Call to action button
-  navigation-link:
-    role: Primary navigation item
-  product-display-card:
-    role: Container for product imagery or information
-  footer-link:
-    role: Secondary navigation or informational link
+name: "Yuga"
+description: "Yuga Labs employs a high-contrast digital-native aesthetic, leveraging stark black and white with minimal color accents. Typography is compact and commanding, featuring a proprietary heavy sans-serif that defines the brand's voice. Surfaces are predominantly flat, and interactivity is signaled through subtle highlights and generous border radii, resulting in a bold, direct, and slightly playful presentation."
+theme: "dark"
+industry: "crypto"
+source_url: "https://yuga.com"
+refero_style_id: "5f2dd17d-72e6-4aa4-88e6-6be9e41299ab"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512338722-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512338722-thumb.jpg"
+extracted_at: "2026-04-30T01:25:55.713Z"
 ---
 
-## Overview
+# Yuga — Style Reference
 
-**North Star:** Blocky digital canvas
+> Blocky digital canvas
+
+**Theme:** dark
+
+**Industry:** crypto
 
 Yuga Labs employs a high-contrast digital-native aesthetic, leveraging stark black and white with minimal color accents. Typography is compact and commanding, featuring a proprietary heavy sans-serif that defines the brand's voice. Surfaces are predominantly flat, and interactivity is signaled through subtle highlights and generous border radii, resulting in a bold, direct, and slightly playful presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Void | #000000 | `--color-midnight-void` | Page backgrounds, card surfaces, primary text, button backgrounds, interactive borders |
+| Cloud Canvas | #ffffff | `--color-cloud-canvas` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+| Digital Gray | #131313 | `--color-digital-gray` | Subtle surface differentiation for elevated elements |
+| Lime Glow | #d3de5d | `--color-lime-glow` | Accent for graphical elements, occasional background tint, or highlights. Its low contrast against white suggests decorative use rather than functional text |
+
+## Tokens — Typography
+
+### AK Monument Grotesk
+
+- **Token:** `--font-ak-monument-grotesk`
+- **Substitute:** Monument Extended or Space Grotesk
+- **Weights:** 200, 400, 700, 800
+- **Sizes:** 14px, 16px, 24px, 26px, 32px, 52px, 102px, 160px
+- **Line heights:** 0.78, 0.82, 0.83, 0.90, 0.94, 1.00, 1.10
+- **Letter spacing:** -0.0300em at large sizes, -0.0200em at intermediate sizes
+- **Role:** All text elements from body to display headlines. Its proprietary nature and wide range of weights allow for high-impact brand expression.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 14px | 1.1 | — | `--text-caption` |
+| body | 16px | 1.1 | — | `--text-body` |
+| subheading | 24px | 0.94 | — | `--text-subheading` |
+| heading-sm | 26px | 0.94 | — | `--text-heading-sm` |
+| heading | 32px | 0.9 | — | `--text-heading` |
+| heading-lg | 52px | 0.83 | -0.83px | `--text-heading-lg` |
+| display | 102px | 0.82 | -2.04px | `--text-display` |
+| display-xl | 160px | 0.78 | -3.2px | `--text-display-xl` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 30px |
+| links | 40px |
+| buttons | 90px |
+| elements | 30px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 20px |
+| elementGap | 15px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button
+
+Black background (#000000) with white text (#ffffff) using AK Monument Grotesk. Full pill shape with a 90px border-radius, 20px horizontal padding, and minimal vertical padding (0px) for a compact and bold look.
+
+### Navigation Link
+
+**Role:** Primary navigation item
+
+White text (#ffffff) on a dark background, in AK Monument Grotesk at 16px. Can have underline or border on hover and active states. Uses a 40px radius when used as a rounded interactive element.
+
+### Product Display Card
+
+**Role:** Container for product imagery or information
+
+Black background (#000000) with generous 30px border-radius. Contains white or inverse-color content. Padding is likely 20px, giving content breathing room.
+
+### Footer Link
+
+**Role:** Secondary navigation or informational link
+
+White text (#ffffff) in AK Monument Grotesk at smaller sizes (e.g., 14px or 16px). Frequently accompanied by an underline or subtle border on hover.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize high contrast between foreground (#ffffff) and background (#000000) for all primary content.
 - Apply AK Monument Grotesk consistently across all typographic elements, leveraging its varying weights for hierarchy.
@@ -73,7 +124,7 @@ Yuga Labs employs a high-contrast digital-native aesthetic, leveraging stark bla
 - Maintain a comfortable information density with `elementGap` of 15px and `cardPadding` of 20px.
 - Use the Lime Glow accent color (#d3de5d) sparingly for decorative elements or subtle brand highlights, not for essential text or interactive states.
 
-### Don'ts
+### Don't
 
 - Avoid using the Lime Glow accent color (#d3de5d) for large blocks of text or critical interface elements due to its low contrast against light backgrounds.
 - Do not introduce additional custom fonts; 'AK Monument Grotesk' is the singular typographic voice.
@@ -81,10 +132,107 @@ Yuga Labs employs a high-contrast digital-native aesthetic, leveraging stark bla
 - Avoid using standard square or lightly rounded corners; consistently apply 30px-90px radii for a specific blocky-yet-rounded aesthetic.
 - Do not deviate from the predominantly dark theme; light sections should be exceptions, not the rule.
 
-### Layout
+## Imagery
+
+The visual language focuses on bold, abstract, and often monochromatic graphics with a pixelated or blocky aesthetic, reminiscent of early digital art or NFT styles. The Yuga Labs logo itself exemplifies this blocky, 'building block' approach. Product imagery, when present, is tightly cropped and often isolated on black backgrounds, showcasing the asset (e.g., NFT artwork) as the central focus without much context. Icons are simple, outlined, and monochromatic, aligning with the overall high-contrast theme. Imagery plays a decorative and brand-reinforcing role, rather than purely informational or product showcase.
+
+## Layout
 
 The page primarily uses a full-bleed structure, often with the main content centered within a maximum-width constraint. The hero section frequently features large, centered headlines over a dark background with dynamic, pixel-like graphic treatments. Sections are distinctly separated, often by background color changes (though mostly black and dark grays). Content arrangement favors centered stacks for headlines and buttons, with multi-column card grids (e.g., 2-column for collections) for showcasing items. Vertical spacing between sections is consistent and generous, creating a spacious and airy feel.
 
-### Imagery
+## Similar Brands
 
-The visual language focuses on bold, abstract, and often monochromatic graphics with a pixelated or blocky aesthetic, reminiscent of early digital art or NFT styles. The Yuga Labs logo itself exemplifies this blocky, 'building block' approach. Product imagery, when present, is tightly cropped and often isolated on black backgrounds, showcasing the asset (e.g., NFT artwork) as the central focus without much context. Icons are simple, outlined, and monochromatic, aligning with the overall high-contrast theme. Imagery plays a decorative and brand-reinforcing role, rather than purely informational or product showcase.
+- **OpenSea** — Dark-mode UI with high-contrast text and prominent visual assets, often in square or rounded containers.
+- **Rarible** — Blockchain-focused platform with a minimalist dark theme, bold typography, and emphasis on digital collectibles.
+- **Foundation** — Artist-focused NFT marketplace sharing a dark, high-contrast aesthetic and strong visual branding.
+- **Dapper Labs** — Web3 company with a dark, modern interface and focus on digital ownership and community.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-void: #000000;
+  --color-cloud-canvas: #ffffff;
+  --color-digital-gray: #131313;
+  --color-lime-glow: #d3de5d;
+  --font-ak-monument-grotesk: 'AK Monument Grotesk', Monument Extended or Space Grotesk;
+  --text-caption: 14px;
+  --leading-caption: 1.1;
+  --text-body: 16px;
+  --leading-body: 1.1;
+  --text-subheading: 24px;
+  --leading-subheading: 0.94;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 0.94;
+  --text-heading: 32px;
+  --leading-heading: 0.9;
+  --text-heading-lg: 52px;
+  --leading-heading-lg: 0.83;
+  --tracking-heading-lg: -0.83px;
+  --text-display: 102px;
+  --leading-display: 0.82;
+  --tracking-display: -2.04px;
+  --text-display-xl: 160px;
+  --leading-display-xl: 0.78;
+  --tracking-display-xl: -3.2px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --radius-cards: 30px;
+  --radius-links: 40px;
+  --radius-buttons: 90px;
+  --radius-elements: 30px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-void: #000000;
+  --color-cloud-canvas: #ffffff;
+  --color-digital-gray: #131313;
+  --color-lime-glow: #d3de5d;
+  --font-ak-monument-grotesk: 'AK Monument Grotesk', Monument Extended or Space Grotesk;
+  --text-caption: 14px;
+  --leading-caption: 1.1;
+  --text-body: 16px;
+  --leading-body: 1.1;
+  --text-subheading: 24px;
+  --leading-subheading: 0.94;
+  --text-heading-sm: 26px;
+  --leading-heading-sm: 0.94;
+  --text-heading: 32px;
+  --leading-heading: 0.9;
+  --text-heading-lg: 52px;
+  --leading-heading-lg: 0.83;
+  --tracking-heading-lg: -0.83px;
+  --text-display: 102px;
+  --leading-display: 0.82;
+  --tracking-display: -2.04px;
+  --text-display-xl: 160px;
+  --leading-display-xl: 0.78;
+  --tracking-display-xl: -3.2px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --radius-cards: 30px;
+  --radius-links: 40px;
+  --radius-buttons: 90px;
+  --radius-elements: 30px;
+}
+```
