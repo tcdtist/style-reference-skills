@@ -1,86 +1,223 @@
 ---
 version: alpha
-name: Isla Beauty
-description: Isla Beauty presents a clinical-minimal aesthetic: clean white and cream surfaces, precise typography pairing classic serifs with modern sans-serifs, and a bold, singular red accent. Content is structured with a comfortable density, relying on generous spacing and subtle surface variations rather than heavy dividers. The overall impression is one of trusted efficacy and understated luxury.
-colors:
-  isla-red: "#e4263d"
-  pure-black: "#000000"
-  ink-grey: "#1a1a1a"
-  cream-canvas: "#f8f6f3"
-  white-surface: "#ffffff"
-  deep-grey: "#2e2e2e"
-  warm-grey-border: "#e4dfd9"
-  muted-text-grey: "#6f6f6f"
-  stone-grey: "#8a8580"
-  minimal-border-grey: "#212121"
-  soft-peach: "#f5e7df"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.55
-    letterSpacing: 0.04px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.2
-    letterSpacing: 0.005px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.02px
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.1
-    letterSpacing: -0.01px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.05
-    letterSpacing: -0.01px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 54px
-    lineHeight: 1.05
-    letterSpacing: -0.02px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 68px
-    lineHeight: 1
-    letterSpacing: -0.03px
-spacing:
-  cardRadius: 3px
-  buttonRadius: 3px
-  elementGap: 10px
-  sectionGap: 50px
-components:
-  primary-action-button:
-    role: Primary Call to Action
-  ghost-button:
-    role: Secondary Action, Navigation
-  subtle-link-button:
-    role: Tertiary Action, Inline Navigation
-  product-card:
-    role: Display individual products or features.
-  cream-information-card:
-    role: Informational panels or content blocks.
-  standard-input-field:
-    role: User input for forms.
-  minimal-badge:
-    role: Categorization or lightweight labels.
-  highlight-badge:
-    role: Emphasized categories or informational tags.
+name: "Isla Beauty"
+description: "Isla Beauty presents a clinical-minimal aesthetic: clean white and cream surfaces, precise typography pairing classic serifs with modern sans-serifs, and a bold, singular red accent. Content is structured with a comfortable density, relying on generous spacing and subtle surface variations rather than heavy dividers. The overall impression is one of trusted efficacy and understated luxury."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://isla-beauty.com"
+refero_style_id: "0b9da6ef-bec5-4073-90af-66c67e72f2a4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521547914-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521547914-thumb.jpg"
+extracted_at: "2026-04-30T03:59:35.363Z"
 ---
 
-## Overview
+# Isla Beauty — Style Reference
 
-**North Star:** Clinical purity on a canvas.
+> Clinical purity on a canvas.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Isla Beauty presents a clinical-minimal aesthetic: clean white and cream surfaces, precise typography pairing classic serifs with modern sans-serifs, and a bold, singular red accent. Content is structured with a comfortable density, relying on generous spacing and subtle surface variations rather than heavy dividers. The overall impression is one of trusted efficacy and understated luxury.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Isla Red | #e4263d | `--color-isla-red` | Primary action buttons, critical links, brand accents, small heading underlines. It provides a confident punctuation to the otherwise neutral palette |
+| Pure Black | #000000 | `--color-pure-black` | Primary text, core borders, header elements. It grounds the design with strong contrast |
+| Ink Grey | #1a1a1a | `--color-ink-grey` | Secondary text, subheadings, badge text, and deeper neutral components. Offers a softer alternative to Pure Black for text |
+| Cream Canvas | #f8f6f3 | `--color-cream-canvas` | Dominant page background, soft card backgrounds, and subtle badges. Establishes the light, welcoming tone |
+| White Surface | #ffffff | `--color-white-surface` | Main card backgrounds, elevated sections, and button text when paired with Isla Red. Provides bright contrast |
+| Deep Grey | #2e2e2e | `--color-deep-grey` | Muted text in navigation and other secondary UI elements. Darker than Ink Grey, yet lighter than Pure Black, providing a specific hierarchy |
+| Warm Grey Border | #e4dfd9 | `--color-warm-grey-border` | Subtle borders on ghost buttons and delicate dividing lines. Adds texture without strong visual weight |
+| Muted Text Grey | #6f6f6f | `--color-muted-text-grey` | Fine print, helper text, and secondary badge text where readability is paramount but visual hierarchy needs to be lower than primary text |
+| Stone Grey | #8a8580 | `--color-stone-grey` | Tertiary text, descriptive labels, and badge text when a warmer, softer tone is needed |
+| Minimal Border Grey | #212121 | `--color-minimal-border-grey` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Soft Peach | #f5e7df | `--color-soft-peach` | Subtle background for informational badges or highlight areas. Adds a touch of warmth to the neutral palette |
+
+## Tokens — Typography
+
+### Soehne Buch
+
+- **Token:** `--font-soehne-buch`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 12px, 13px, 15px, 16px
+- **Line heights:** 1.00, 1.20, 1.40
+- **Letter spacing:** normal
+- **Role:** Standard body text, navigation links, and smaller UI elements. Its clean, readable nature handles the bulk of informational content.
+
+### Nimbus Sans
+
+- **Token:** `--font-nimbus-sans`
+- **Substitute:** Roboto
+- **Weights:** 400, 500, 700
+- **Sizes:** 10px, 11px, 13px, 14px, 15px, 16px, 17px, 30px, 36px, 54px, 68px
+- **Line heights:** 1.00, 1.05, 1.10, 1.20, 1.55
+- **Letter spacing:** -0.0300em at 68px, -0.0200em at 54px, -0.0100em at 36px, 0.0050em at 17px, 0.0400em at 11px
+- **OpenType features:** "lnum", "tnum"
+- **Role:** Headlines, product titles, and key UI elements requiring precise tracking and strong hierarchy. The varied weights and condensed letter spacing create a modern, efficient voice.
+
+### Soehne Kraftig
+
+- **Token:** `--font-soehne-kraftig`
+- **Substitute:** Inter
+- **Weights:** 400, 500
+- **Sizes:** 11px, 12px, 14px, 60px
+- **Line heights:** 0.98, 1.00, 1.20, 1.40
+- **Letter spacing:** -0.0250em at 60px, 0.0700em at 14px, 0.1000em at 12px
+- **OpenType features:** "lnum", "tnum"
+- **Role:** Brand elements and impactful statements, using a more robust sans-serif character. The tighter tracking for larger sizes reinforces a sense of directness.
+
+### AGaramondPro
+
+- **Token:** `--font-agaramondpro`
+- **Substitute:** IBM Plex Serif
+- **Weights:** 600
+- **Sizes:** 14px, 17px, 20px, 26px, 54px
+- **Line heights:** 1.05, 1.25, 1.30, 1.35
+- **Letter spacing:** -0.0200em
+- **Role:** Elegant, editorial headings and block quotes. The subtle negative letter spacing at this weight gives a refined, composed feel.
+
+### EB Garamond
+
+- **Token:** `--font-eb-garamond`
+- **Substitute:** Garamond
+- **Weights:** 500, 600
+- **Sizes:** 14px, 19px
+- **Line heights:** 1.20, 1.40
+- **Letter spacing:** -0.0100em
+- **Role:** Refined secondary headings and descriptive text, adding an approachable, classic touch.
+
+### Garamond Italic
+
+- **Token:** `--font-garamond-italic`
+- **Substitute:** Garamond
+- **Weights:** 400
+- **Sizes:** 13px, 16px
+- **Line heights:** 1.20, 1.55
+- **Letter spacing:** 0.0050em
+- **OpenType features:** "lnum", "tnum"
+- **Role:** Emphasized body copy, subtle quotes, and small contextual asides. The slight positive tracking ensures legibility at smaller italic sizes alongside the serifs.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.55 | 0.04px | `--text-caption` |
+| body | 15px | 1.2 | 0.005px | `--text-body` |
+| subheading | 20px | 1.25 | -0.02px | `--text-subheading` |
+| heading-sm | 30px | 1.1 | -0.01px | `--text-heading-sm` |
+| heading | 36px | 1.05 | -0.01px | `--text-heading` |
+| heading-lg | 54px | 1.05 | -0.02px | `--text-heading-lg` |
+| display | 68px | 1 | -0.03px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-29 | 29px | `--spacing-29` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-50 | 50px | `--spacing-50` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-88 | 88px | `--spacing-88` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-100 | 100px | `--spacing-100` |
+| spacing-240 | 240px | `--spacing-240` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 3px |
+| pills | 999px |
+| badges | 3px |
+| inputs | 3px |
+| buttons | 3px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 50px |
+| cardPadding | 15px |
+| elementGap | 10px |
+
+## Components
+
+### Primary Action Button
+
+**Role:** Primary Call to Action
+
+Solid Isla Red (#e4263d) background with White Surface text (#ffffff). Features a 3px border-radius and 15px padding for a prominent, direct interaction.
+
+### Ghost Button
+
+**Role:** Secondary Action, Navigation
+
+Transparent background with Pure Black (#000000) text and a 1px Pure Black border. Has 1px padding for a minimal, integrated look.
+
+### Subtle Link Button
+
+**Role:** Tertiary Action, Inline Navigation
+
+Transparent background with Pure Black (#000000) text, no border. Offers minimal styling for less critical actions, using 1px vertical and 6px horizontal padding.
+
+### Product Card
+
+**Role:** Display individual products or features.
+
+White Surface (#ffffff) background with 32px padding, 4px border-radius, and no box-shadow to maintain a flat, clean presentation.
+
+### Cream Information Card
+
+**Role:** Informational panels or content blocks.
+
+Cream Canvas (#f8f6f3) background with 32px padding, 4px border-radius, and no box-shadow. Provides a slightly warmer surface for content.
+
+### Standard Input Field
+
+**Role:** User input for forms.
+
+Transparent background with a 1px Pure Black (#000000) bottom border. Uses 12px vertical padding and 20px right padding with a 3px border-radius.
+
+### Minimal Badge
+
+**Role:** Categorization or lightweight labels.
+
+Cream Canvas (#f8f6f3) background with Ink Grey (#1a1a1a) text and 0px border-radius. Padding is 0px, creating a compact label.
+
+### Highlight Badge
+
+**Role:** Emphasized categories or informational tags.
+
+Soft Peach (#f5e7df) background with Muted Text Grey (#6f6f6f) text. Features a 2px border-radius and 3px vertical, 8px horizontal padding for a soft, distinct look.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Cream Canvas (#f8f6f3) as the default background for large content areas to establish the light, clinical tone.
 - Apply Isla Red (#e4263d) exclusively for primary action buttons, critical links, and subtle brand accents, ensuring its impact is reserved and clear.
@@ -90,7 +227,7 @@ Isla Beauty presents a clinical-minimal aesthetic: clean white and cream surface
 - Use Pure Black (#000000) for primary text and critical borders to ensure high contrast and readability on light backgrounds.
 - For emphasized body copy or quotes, use Garamond Italic at weight 400 with a slight positive letter spacing of 0.0050em for legibility at small sizes.
 
-### Don'ts
+### Don't
 
 - Do not use Isla Red (#e4263d) for non-interactive elements or large background areas; its impact should be limited to actions and key highlights.
 - Avoid strong shadows or heavy borders on cards and components; rely on background color variations and generous spacing for visual separation.
@@ -99,3 +236,178 @@ Isla Beauty presents a clinical-minimal aesthetic: clean white and cream surface
 - Do not use a border-radius value other than 3px for interactive elements and cards, or 999px for pill-shaped elements, as this will disrupt the system's geometric consistency.
 - Avoid using multiple different sans-serif families that conflict with Soehne or Nimbus Sans; these two families dictate the modern typographic voice.
 - Do not use a strong background image or pattern that competes with the clean surfaces; imagery should be contained and product-focused.
+
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Cream Canvas | #f8f6f3 | Base page background and soft foundational surfaces. |
+| 1 | White Surface | #ffffff | Elevated cards, component backgrounds, and areas requiring higher contrast. |
+| 2 | Soft Peach | #f5e7df | Informational accent surfaces, such as subtle badge backgrounds. |
+
+## Similar Brands
+
+- **Glossier** — Shares a clean, minimalist aesthetic with a dominant neutral palette and pops of color for branding/accents, and a focus on product photography.
+- **Peach & Lily** — Similar approach to skincare branding with light backgrounds, clear product imagery, and a precise, approachable typographic hierarchy.
+- **Drunk Elephant** — Uses bright, saturated brand colors as specific accents against largely neutral and white surfaces, with clean, direct product visuals.
+- **Aesop** — Employs a sophisticated, minimalist design, relying on premium typography, a restrained color palette, and high-quality product presentation.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-isla-red: #e4263d;
+  --color-pure-black: #000000;
+  --color-ink-grey: #1a1a1a;
+  --color-cream-canvas: #f8f6f3;
+  --color-white-surface: #ffffff;
+  --color-deep-grey: #2e2e2e;
+  --color-warm-grey-border: #e4dfd9;
+  --color-muted-text-grey: #6f6f6f;
+  --color-stone-grey: #8a8580;
+  --color-minimal-border-grey: #212121;
+  --color-soft-peach: #f5e7df;
+  --font-soehne-buch: 'Soehne Buch', Inter;
+  --font-nimbus-sans: 'Nimbus Sans', Roboto;
+  --font-soehne-kraftig: 'Soehne Kraftig', Inter;
+  --font-agaramondpro: 'AGaramondPro', IBM Plex Serif;
+  --font-eb-garamond: 'EB Garamond', Garamond;
+  --font-garamond-italic: 'Garamond Italic', Garamond;
+  --text-caption: 10px;
+  --leading-caption: 1.55;
+  --tracking-caption: 0.04px;
+  --text-body: 15px;
+  --leading-body: 1.2;
+  --tracking-body: 0.005px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.01px;
+  --text-heading: 36px;
+  --leading-heading: 1.05;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1.05;
+  --tracking-heading-lg: -0.02px;
+  --text-display: 68px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-240: 240px;
+  --radius-cards: 3px;
+  --radius-pills: 999px;
+  --radius-badges: 3px;
+  --radius-inputs: 3px;
+  --radius-buttons: 3px;
+  --surface-cream-canvas: #f8f6f3;
+  --surface-white-surface: #ffffff;
+  --surface-soft-peach: #f5e7df;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-isla-red: #e4263d;
+  --color-pure-black: #000000;
+  --color-ink-grey: #1a1a1a;
+  --color-cream-canvas: #f8f6f3;
+  --color-white-surface: #ffffff;
+  --color-deep-grey: #2e2e2e;
+  --color-warm-grey-border: #e4dfd9;
+  --color-muted-text-grey: #6f6f6f;
+  --color-stone-grey: #8a8580;
+  --color-minimal-border-grey: #212121;
+  --color-soft-peach: #f5e7df;
+  --font-soehne-buch: 'Soehne Buch', Inter;
+  --font-nimbus-sans: 'Nimbus Sans', Roboto;
+  --font-soehne-kraftig: 'Soehne Kraftig', Inter;
+  --font-agaramondpro: 'AGaramondPro', IBM Plex Serif;
+  --font-eb-garamond: 'EB Garamond', Garamond;
+  --font-garamond-italic: 'Garamond Italic', Garamond;
+  --text-caption: 10px;
+  --leading-caption: 1.55;
+  --tracking-caption: 0.04px;
+  --text-body: 15px;
+  --leading-body: 1.2;
+  --tracking-body: 0.005px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.02px;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.1;
+  --tracking-heading-sm: -0.01px;
+  --text-heading: 36px;
+  --leading-heading: 1.05;
+  --tracking-heading: -0.01px;
+  --text-heading-lg: 54px;
+  --leading-heading-lg: 1.05;
+  --tracking-heading-lg: -0.02px;
+  --text-display: 68px;
+  --leading-display: 1;
+  --tracking-display: -0.03px;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-25: 25px;
+  --spacing-29: 29px;
+  --spacing-30: 30px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-45: 45px;
+  --spacing-50: 50px;
+  --spacing-56: 56px;
+  --spacing-60: 60px;
+  --spacing-88: 88px;
+  --spacing-96: 96px;
+  --spacing-100: 100px;
+  --spacing-240: 240px;
+  --radius-cards: 3px;
+  --radius-pills: 999px;
+  --radius-badges: 3px;
+  --radius-inputs: 3px;
+  --radius-buttons: 3px;
+  --surface-cream-canvas: #f8f6f3;
+  --surface-white-surface: #ffffff;
+  --surface-soft-peach: #f5e7df;
+}
+```

@@ -1,82 +1,181 @@
 ---
 version: alpha
-name: ISO Meet
-description: ISO Meet establishes a focused, minimalist aesthetic with a canvas of crisp whites and soft grays, punctuated by precise black typography. The layout emphasizes breathing room and clear functional separation, using soft card shadows for subtle hierarchy. Components lean towards understated, adaptive forms with generous padding, making the interface feel spacious and inviting. The visual system supports a 'work-focused yet approachable' atmosphere, with hints of gentle gradient accents as stylistic touches rather than dominant features.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  ghost-gray: "#f2f2f2"
-  muted-stone: "#999999"
-  outline-gray: "#cccccc"
-  subtle-black: "#222222"
-  placeholder-dusky: "#808080"
-  lavender-mist-gradient: "#e5d7ff"
-  mint-whisper-gradient: "#b3e2cf"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.12px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.5
-    letterSpacing: -0.21px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.67
-    letterSpacing: -0.29px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: -0.26px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.2
-    letterSpacing: -0.36px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 48px
-    lineHeight: 1.12
-    letterSpacing: -0.96px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 60px
-    lineHeight: 1.12
-    letterSpacing: -1.2px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 160px
-  elementGap: 18px
-  sectionGap: 48px
-components:
-  ghost-navigation-button:
-    role: Primary navigation links and secondary actions
-  pill-button:
-    role: Call-to-action button for primary actions
-  monochrome-filled-button:
-    role: Important secondary actions or form submissions
-  feature-card:
-    role: Grouping related information or showcasing features
-  input-field:
-    role: Standard input for text or data entry
-  information-badge:
-    role: Categorization or short status labels
-  elevated-content-card:
-    role: Highlighting key information or interactive elements, like a tooltip or special offer.
+name: "ISO Meet"
+description: "ISO Meet establishes a focused, minimalist aesthetic with a canvas of crisp whites and soft grays, punctuated by precise black typography. The layout emphasizes breathing room and clear functional separation, using soft card shadows for subtle hierarchy. Components lean towards understated, adaptive forms with generous padding, making the interface feel spacious and inviting. The visual system supports a 'work-focused yet approachable' atmosphere, with hints of gentle gradient accents as stylistic touches rather than dominant features."
+theme: "light"
+industry: "design"
+source_url: "https://www.isomeet.com"
+refero_style_id: "c11797c6-ceb2-4b57-a0ea-0c349d13b38c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507936863-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777507936863-thumb.jpg"
+extracted_at: "2026-04-30T00:12:42.271Z"
 ---
 
-## Overview
+# ISO Meet — Style Reference
 
-**North Star:** White canvas, crisp black ink
+> White canvas, crisp black ink
+
+**Theme:** light
+
+**Industry:** design
 
 ISO Meet establishes a focused, minimalist aesthetic with a canvas of crisp whites and soft grays, punctuated by precise black typography. The layout emphasizes breathing room and clear functional separation, using soft card shadows for subtle hierarchy. Components lean towards understated, adaptive forms with generous padding, making the interface feel spacious and inviting. The visual system supports a 'work-focused yet approachable' atmosphere, with hints of gentle gradient accents as stylistic touches rather than dominant features.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Primary page background, elevated card surfaces, clean default background for many components |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, headers, and essential structural borders. This color anchors the monochrome palette |
+| Ghost Gray | #f2f2f2 | `--color-ghost-gray` | Secondary background for cards, input fields, and badge backgrounds. Provides subtle surface distinction from the main canvas |
+| Muted Stone | #999999 | `--color-muted-stone` | Secondary text (e.g., helper text), muted links, and subtle borders. Offers softer contrast for less prominent information |
+| Outline Gray | #cccccc | `--color-outline-gray` | Hairline borders and separators, creating division without visual weight |
+| Subtle Black | #222222 | `--color-subtle-black` | Button text and borders with slightly softer contrast than Ink Black |
+| Placeholder Dusky | #808080 | `--color-placeholder-dusky` | Placeholder text in input fields |
+| Lavender Mist Gradient | #e5d7ff | `--color-lavender-mist-gradient` | Decorative background for featured sections or special content cards, adding a soft, ethereal touch |
+| Mint Whisper Gradient | #b3e2cf | `--color-mint-whisper-gradient` | Decorative background for callouts or illustrative sections, providing a gentle organic feel |
+
+## Tokens — Typography
+
+### Instrument Sans
+
+- **Token:** `--font-instrument-sans`
+- **Substitute:** Inter
+- **Weights:** 400, 500, 700
+- **Sizes:** 12px, 16px, 18px, 20px, 28px, 48px, 60px
+- **Line heights:** 1.00, 1.12, 1.20, 1.50, 1.67
+- **Letter spacing:** -0.010em at 12px, -0.013em at 16px, -0.016em at 18px
+- **Role:** The primary typeface for all UI elements, body text, and some headings. Its clean, geometric forms maintain a professional yet approachable tone. Sizes 12-28px are used for body content and smaller headings, while larger sizes are for impactful headlines.
+
+### Instrument Serif
+
+- **Token:** `--font-instrument-serif`
+- **Substitute:** Playfair Display
+- **Weights:** 400
+- **Sizes:** 48px, 60px
+- **Line heights:** 1.12, 1.20
+- **Letter spacing:** -0.020em at 48px, -0.010em at 60px
+- **Role:** Used for distinctive, large headlines to add a touch of classic sophistication against the modern sans-serif body. The serif provides visual contrast and a hint of gravitas without being heavy.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.12px | `--text-caption` |
+| body-sm | 16px | 1.5 | -0.21px | `--text-body-sm` |
+| body | 18px | 1.67 | -0.29px | `--text-body` |
+| subheading | 20px | 1.2 | -0.26px | `--text-subheading` |
+| heading | 28px | 1.2 | -0.36px | `--text-heading` |
+| heading-lg | 48px | 1.12 | -0.96px | `--text-heading-lg` |
+| display | 60px | 1.12 | -1.2px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-14 | 14px | `--spacing-14` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-18 | 18px | `--spacing-18` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-36 | 36px | `--spacing-36` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-44 | 44px | `--spacing-44` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-56 | 56px | `--spacing-56` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-72 | 72px | `--spacing-72` |
+| spacing-74 | 74px | `--spacing-74` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-107 | 107px | `--spacing-107` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-132 | 132px | `--spacing-132` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 24px |
+| small | 8px |
+| badges | 50px |
+| inputs | 80px |
+| buttons | 160px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(13, 32, 47, 0.04) 0px 0px 14px 0px | `--shadow-xl` |
+| xl-2 | rgba(0, 0, 0, 0.09) 4px 12px 12px 0px, rgba(0, 0, 0, 0.1) 1px 3px 7px 0px | `--shadow-xl-2` |
+| xl-3 | rgba(0, 0, 0, 0.1) 2px 7px 15px 0px, rgba(0, 0, 0, 0.09) 8px 27px 28px 0px | `--shadow-xl-3` |
+| xl-4 | rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px | `--shadow-xl-4` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1328px |
+| sectionGap | 48px |
+| cardPadding | 40px |
+| elementGap | 18px |
+
+## Components
+
+### Ghost Navigation Button
+
+**Role:** Primary navigation links and secondary actions
+
+Text-only button with Ink Black text, Instrument Sans 400, 16px. No background or borders by default, but reveals a subtle underline or different text color on hover/active states.
+
+### Pill Button
+
+**Role:** Call-to-action button for primary actions
+
+A very rounded button with Subtle Black text (#222222), on a transparent background, with a 1px solid border of Subtle Black. Padding is 10px vertically and 16px horizontally. Uses Instrument Sans 400, 16px.
+
+### Monochrome Filled Button
+
+**Role:** Important secondary actions or form submissions
+
+Solid black background (#000000) with white text (#ffffff), extremely rounded corners at 160px. Uses Instrument Sans 400, 16px. Padding is 10px vertically and 16px horizontally.
+
+### Feature Card
+
+**Role:** Grouping related information or showcasing features
+
+Ghost Gray background, 24px border radius. Padding of 40px on all sides. No visible border or shadow by default, relying on background contrast for definition.
+
+### Input Field
+
+**Role:** Standard input for text or data entry
+
+Ghost Gray background, 80px border-radius, giving it a pill-like shape. Black text and placeholder text using Placeholder Dusky. Padding of 8px vertical, 18px horizontal. Inherits Instrument Sans.
+
+### Information Badge
+
+**Role:** Categorization or short status labels
+
+Ghost Gray background with Ink Black text. Very rounded, 50px border-radius. Padding 10px vertical, 16px horizontal.
+
+### Elevated Content Card
+
+**Role:** Highlighting key information or interactive elements, like a tooltip or special offer.
+
+Canvas White background (#ffffff) with a soft shadow for subtle elevation: rgba(13, 32, 47, 0.04) 0px 0px 14px 0px. Rounded corners (12px radius, but specific cards use 24px and 32px based on context).
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Canvas White (#ffffff) for all main backgrounds to maintain a clean, open feel.
 - Use Ink Black (#000000) for primary text, headings, and interactive elements to ensure strong contrast and visual hierarchy.
@@ -87,7 +186,7 @@ ISO Meet establishes a focused, minimalist aesthetic with a canvas of crisp whit
 - Use soft, subtle shadows like `rgba(13, 32, 47, 0.04) 0px 0px 14px 0px` for elevation, avoiding harsh or opaque shadow effects.
 - Ensure letter-spacing is applied per the typography specification, particularly for headlines, to achieve the intended precision and feel.
 
-### Don'ts
+### Don't
 
 - Avoid using highly saturated colors. The palette is intentionally monochrome with accent gradients reserved for decorative or atmospheric purposes.
 - Do not use heavy, dark shadows. Elevation should be subtle, created with low-opacity, diffused shadows.
@@ -97,10 +196,172 @@ ISO Meet establishes a focused, minimalist aesthetic with a canvas of crisp whit
 - Refrain from using color to indicate states unless explicitly defined (e.g., success/error shades are not part of this system). Rely on opacity or border changes instead.
 - Never override the letter-spacing values specified in the typography section, as they are crucial for the distinct feel of the headlines.
 
-### Layout
+## Elevation
+
+- **Elevated Content Card:** `rgba(13, 32, 47, 0.04) 0px 0px 14px 0px`
+- **Hover/Active States:** `rgba(0, 0, 0, 0.09) 4px 12px 12px 0px, rgba(0, 0, 0, 0.1) 1px 3px 7px 0px`
+- **Highlight/Focus State:** `rgba(0, 0, 0, 0.1) 2px 7px 15px 0px, rgba(0, 0, 0, 0.09) 8px 27px 28px 0px`
+- **Button Focus:** `rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px`
+
+## Imagery
+
+The site predominantly uses photography, with a focus on abstract or artfully composed shots featuring creative professionals in motion or thoughtful poses. Imagery often has a desaturated, slightly moody quality with soft lighting, avoiding overly vibrant colors. Images are typically contained within rounded containers or serve as atmospheric backgrounds rather than raw, full-bleed elements. Icons are minimal, outlined, and monochromatic, with a thin stroke weight that aligns with the overall refined aesthetic. The imagery serves to create an atmosphere of modern creativity and quiet professionalism.
+
+## Layout
 
 The page adheres to a max-width 1328px centered container, providing a structured and spacious canvas. Hero sections often feature a split-screen or centered headline over an evocative background image. Content typically arranges in alternating text and visual sections, creating a dynamic yet balanced rhythm. Feature displays regularly use card grids (e.g., 3-column) with consistent vertical spacing between sections (sectionGap: 48px). The navigation is a minimalist top bar with ghost links, maintaining a light header footprint. The overall density feels comfortable and open, prioritizing clear information delivery over cramped layouts.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses photography, with a focus on abstract or artfully composed shots featuring creative professionals in motion or thoughtful poses. Imagery often has a desaturated, slightly moody quality with soft lighting, avoiding overly vibrant colors. Images are typically contained within rounded containers or serve as atmospheric backgrounds rather than raw, full-bleed elements. Icons are minimal, outlined, and monochromatic, with a thin stroke weight that aligns with the overall refined aesthetic. The imagery serves to create an atmosphere of modern creativity and quiet professionalism.
+- **Superhuman** — Monochromatic interface with crisp typography and subtle use of elevation.
+- **Linear.app** — Clean whitespace, tight typographic details, and functional, understated UI elements.
+- **Figma** — Emphasis on clear UI, generous spacing, and a focus on content through minimalist design.
+- **Notion** — White background, black text, with a strong focus on information hierarchy and readability through typography.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-ghost-gray: #f2f2f2;
+  --color-muted-stone: #999999;
+  --color-outline-gray: #cccccc;
+  --color-subtle-black: #222222;
+  --color-placeholder-dusky: #808080;
+  --color-lavender-mist-gradient: #e5d7ff;
+  --color-mint-whisper-gradient: #b3e2cf;
+  --font-instrument-sans: 'Instrument Sans', Inter;
+  --font-instrument-serif: 'Instrument Serif', Playfair Display;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: -0.21px;
+  --text-body: 18px;
+  --leading-body: 1.67;
+  --tracking-body: -0.29px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.26px;
+  --text-heading: 28px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.36px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.12;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 60px;
+  --leading-display: 1.12;
+  --tracking-display: -1.2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-107: 107px;
+  --spacing-120: 120px;
+  --spacing-132: 132px;
+  --radius-cards: 24px;
+  --radius-small: 8px;
+  --radius-badges: 50px;
+  --radius-inputs: 80px;
+  --radius-buttons: 160px;
+  --shadow-xl: rgba(13, 32, 47, 0.04) 0px 0px 14px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.09) 4px 12px 12px 0px, rgba(0, 0, 0, 0.1) 1px 3px 7px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.1) 2px 7px 15px 0px, rgba(0, 0, 0, 0.09) 8px 27px 28px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-ghost-gray: #f2f2f2;
+  --color-muted-stone: #999999;
+  --color-outline-gray: #cccccc;
+  --color-subtle-black: #222222;
+  --color-placeholder-dusky: #808080;
+  --color-lavender-mist-gradient: #e5d7ff;
+  --color-mint-whisper-gradient: #b3e2cf;
+  --font-instrument-sans: 'Instrument Sans', Inter;
+  --font-instrument-serif: 'Instrument Serif', Playfair Display;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.12px;
+  --text-body-sm: 16px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: -0.21px;
+  --text-body: 18px;
+  --leading-body: 1.67;
+  --tracking-body: -0.29px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.2;
+  --tracking-subheading: -0.26px;
+  --text-heading: 28px;
+  --leading-heading: 1.2;
+  --tracking-heading: -0.36px;
+  --text-heading-lg: 48px;
+  --leading-heading-lg: 1.12;
+  --tracking-heading-lg: -0.96px;
+  --text-display: 60px;
+  --leading-display: 1.12;
+  --tracking-display: -1.2px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-14: 14px;
+  --spacing-16: 16px;
+  --spacing-18: 18px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-44: 44px;
+  --spacing-48: 48px;
+  --spacing-56: 56px;
+  --spacing-64: 64px;
+  --spacing-72: 72px;
+  --spacing-74: 74px;
+  --spacing-80: 80px;
+  --spacing-107: 107px;
+  --spacing-120: 120px;
+  --spacing-132: 132px;
+  --radius-cards: 24px;
+  --radius-small: 8px;
+  --radius-badges: 50px;
+  --radius-inputs: 80px;
+  --radius-buttons: 160px;
+  --shadow-xl: rgba(13, 32, 47, 0.04) 0px 0px 14px 0px;
+  --shadow-xl-2: rgba(0, 0, 0, 0.09) 4px 12px 12px 0px, rgba(0, 0, 0, 0.1) 1px 3px 7px 0px;
+  --shadow-xl-3: rgba(0, 0, 0, 0.1) 2px 7px 15px 0px, rgba(0, 0, 0, 0.09) 8px 27px 28px 0px;
+  --shadow-xl-4: rgba(0, 0, 0, 0.08) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.04) 0px 0px 0px 0.5px;
+}
+```

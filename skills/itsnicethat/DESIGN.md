@@ -1,72 +1,179 @@
 ---
 version: alpha
-name: Itsnicethat
-description: This design system feels like a carefully curated art zine, balancing disciplined, editorial typography with unexpected splashes of vivid, almost childlike color. The overall impression is one of approachable creativity and intellectual curiosity. Sharp corners dominate the UI, making the few instances of extreme roundedness (75px) feel like deliberate, playful exceptions. This tension between strict layout and spontaneous color creates a dynamic, engaging experience.
-colors:
-  black-ink: "#2b2b2b"
-  pure-white: "#ffffff"
-  frost-gray: "#f0efef"
-  medium-gray: "#676767"
-  muted-taupe: "#faead9"
-  electric-purple: "#8147ff"
-  sunshine-yellow: "#ffd519"
-  deep-indigo: "#6219ff"
-  risograph-gradient: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.4
-    letterSpacing: 0.005px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.47
-    letterSpacing: 0.008px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 25px
-    lineHeight: 1.46
-    letterSpacing: 0.077px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.73
-    letterSpacing: 0.091px
-spacing:
-  buttonRadius: 75px
-  elementGap: 10px
-  sectionGap: 40px
-components:
-  the-nice-feed-article-feed-strip:
-    role: 
-  article-card-with-tags:
-    role: 
-  floating-navigation-bar:
-    role: 
-  primary-ghost-button:
-    role: Call to action, navigation
-  category-label-button:
-    role: Informational grouping, filtering
-  pill-accent-button:
-    role: Primary call to action (floating nav)
-  highlighted-button:
-    role: Prominent action
-  badge-tag:
-    role: Content categorization
-  article-card:
-    role: Content listing
-  search-input-field:
-    role: User input
+name: "Itsnicethat"
+description: "This design system feels like a carefully curated art zine, balancing disciplined, editorial typography with unexpected splashes of vivid, almost childlike color. The overall impression is one of approachable creativity and intellectual curiosity. Sharp corners dominate the UI, making the few instances of extreme roundedness (75px) feel like deliberate, playful exceptions. This tension between strict layout and spontaneous color creates a dynamic, engaging experience."
+theme: "light"
+industry: "media"
+source_url: "https://itsnicethat.com"
+refero_style_id: "3e70af05-a07f-4c11-98ca-6ecb4765e967"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924802520-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775924802520-thumb.jpg"
+extracted_at: "2026-04-11T16:27:03.874Z"
 ---
 
-## Overview
+# Itsnicethat — Style Reference
 
-**North Star:** Artist's sketchbook, bursting with vibrant scraps and precise typography.
+> Artist's sketchbook, bursting with vibrant scraps and precise typography.
+
+**Theme:** light
+
+**Industry:** media
 
 This design system feels like a carefully curated art zine, balancing disciplined, editorial typography with unexpected splashes of vivid, almost childlike color. The overall impression is one of approachable creativity and intellectual curiosity. Sharp corners dominate the UI, making the few instances of extreme roundedness (75px) feel like deliberate, playful exceptions. This tension between strict layout and spontaneous color creates a dynamic, engaging experience.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Black Ink | #2b2b2b | `--color-black-ink` | Primary text, main headings, icons, borders – creates a sharp, authoritative presence against the light background. |
+| Pure White | #ffffff | `--color-pure-white` | Page backgrounds, card surfaces, button text – the dominant canvas for content. |
+| Frost Gray | #f0efef | `--color-frost-gray` | Subtle background for badges and secondary elements, offering a softer lift than Pure White. |
+| Medium Gray | #676767 | `--color-medium-gray` | Secondary text, less prominent borders and icons, receding slightly from Black Ink. |
+| Muted Taupe | #faead9 | `--color-muted-taupe` | Background for specific content blocks, providing a warm, subtle shift. |
+| Electric Purple | #8147ff | `--color-electric-purple` | Primary brand accent, used for prominent interactive elements like call-to-action buttons – vibrant and energetic. |
+| Sunshine Yellow | #ffd519 | `--color-sunshine-yellow` | Secondary accent for interactive elements and highlighted content – adds a warm, optimistic pop. |
+| Deep Indigo | #6219ff | `--color-deep-indigo` | Prominent links, suggesting interactivity - a slightly darker, more saturated version of Electric Purple. |
+| Risograph Gradient | #ffffff | `--color-risograph-gradient` | Subtle background gradient for specific sections, adding a textural feel. |
+
+## Tokens — Typography
+
+### Bradford
+
+- **Token:** `--font-bradford`
+- **Substitute:** Georgia
+- **Weights:** 400, 500
+- **Sizes:** 11px, 15px, 17px
+- **Line heights:** 1.15, 1.47, 1.53, 2.27
+- **Letter spacing:** -0.005em at 11px, 0.008em at 15px, 0.027em at 17px
+- **Role:** Body text, article content, component labels — its slightly condensed, serif form reinforces the editorial, artistic feel, making long-form content engaging.
+
+### LabilVariable
+
+- **Token:** `--font-labilvariable`
+- **Substitute:** Open Sans
+- **Weights:** 400
+- **Sizes:** 11px, 13px, 15px, 18px, 25px, 40px
+- **Line heights:** 1.20, 1.28, 1.40, 1.45, 1.46, 1.73
+- **Letter spacing:** 0.025em at 11px, 0.032em at 13px, 0.056em at 15px, 0.067em at 18px, 0.077em at 25px, 0.091em at 40px
+- **Role:** Prominent headings, titles, and key UI elements — its variable nature and wider letter spacing provides a distinct, modern counterbalance to Bradford's classic feel, adding visual breathing room to larger text blocks.
+
+### Labil
+
+- **Token:** `--font-labil`
+- **Substitute:** Open Sans
+- **Weights:** 400, 500
+- **Sizes:** 11px, 13px, 17px
+- **Line heights:** 1.40, 1.45, 1.47
+- **Letter spacing:** 0.005em at 11px, 0.091em at 13px
+- **Role:** Secondary headings, metadata, and smaller UI labels — a more compact, structured sans-serif that aids readability in informational contexts.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.4 | 0.005px | `--text-caption` |
+| body | 15px | 1.47 | 0.008px | `--text-body` |
+| heading | 25px | 1.46 | 0.077px | `--text-heading` |
+| display | 40px | 1.73 | 0.091px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-13 | 13px | `--spacing-13` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-191 | 191px | `--spacing-191` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 75px |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 40px |
+| cardPadding | 0px |
+| elementGap | 10px |
+
+## Components
+
+### The Nice Feed — Article Feed Strip
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Article Card with Tags
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Floating Navigation Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Ghost Button
+
+**Role:** Call to action, navigation
+
+Transparent background, Black Ink text (#2b2b2b), Black Ink border (#2b2b2b). Text uses Bradford font, weight 400. No border radius. Padding 12.5px vertically, 12.5px horizontally.
+
+### Category Label Button
+
+**Role:** Informational grouping, filtering
+
+Muted Taupe background (#faead9), Black Ink text (#2b2b2b), Black Ink border (#2b2b2b). Text uses Bradford font, weight 400. No border radius. Padding 12.5px vertically, 12.5px horizontally.
+
+### Pill Accent Button
+
+**Role:** Primary call to action (floating nav)
+
+Electric Purple background (#8147ff), Pure White text (#ffffff), Pure White border (#ffffff). Text uses LabilVariable font, weight 400. Border radius 75px. Padding 0px vertically, 20px horizontally.
+
+### Highlighted Button
+
+**Role:** Prominent action
+
+Transparent background, Sunshine Yellow text (#ffd519), Sunshine Yellow border (#ffd519). Text uses LabilVariable font, weight 400. No border radius. Padding 15px top, 16px bottom, 20px horizontally.
+
+### Badge Tag
+
+**Role:** Content categorization
+
+Transparent background, Frost Gray text (#f0efef). Text uses Bradford font, weight 400. No border radius. Padding 5px vertically, 10px horizontally.
+
+### Article Card
+
+**Role:** Content listing
+
+Transparent background, no shadow, no border radius. Padded at 0px. Content is structured within this transparent bounding box, images are essential for visual interest.
+
+### Search Input Field
+
+**Role:** User input
+
+Pure White background (#ffffff), Black Ink text (#000000), Black Ink border (#000000). No border radius. Text uses LabilVariable font, weight 400. Padding 15px top, 16px bottom, 20px horizontally.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Electric Purple (#8147ff) for primary interactive elements to ensure visual magnetism.
 - Maintain 0px border-radius for all structural elements and standard buttons to reinforce the sharp, editorial aesthetic.
@@ -76,7 +183,7 @@ This design system feels like a carefully curated art zine, balancing discipline
 - Leverage the Bradford font for body text and descriptive elements, ensuring readability and an editorial tone.
 - Apply 10px element gap as a default for horizontal and vertical spacing between most inline content elements.
 
-### Don'ts
+### Don't
 
 - Avoid using shadows for elevation; rely on color and spacing hierarchy instead.
 - Do not deviate from the 0px border-radius for anything other than specific navigation pill buttons.
@@ -85,10 +192,116 @@ This design system feels like a carefully curated art zine, balancing discipline
 - Avoid generic 'modern' or 'sleek' visual tropes; the system's character is in its eclectic editorial feel.
 - Do not introduce gradients unless they mirror the subtle 'Risograph Gradient' pattern; avoid complex, multi-stop gradients.
 
-### Layout
+## Imagery
+
+The site primarily uses diverse, high-quality photography and static illustrations to showcase creative work. Imagery is mostly contained within distinct blocks, without significant masks or overlaps, maintaining a structured presentation. Photographs are often bright and product-focused, displaying artworks or designs clearly. Illustrations are varied in style, ranging from whimsical and organic to geometric and flat, always serving to represent artistic content. There's a high density of imagery, particularly within content listings, making the site visually rich and appealing to a creative audience. Icons are minimal, subtle, and outline-based, mostly functional.
+
+## Layout
 
 The page adheres to a max-width, center-aligned model of 1200px, providing structured content presentation. The hero section often features a large headline centered over a background or a split layout with prominent text. Content sections maintain a consistent vertical rhythm, with generous section spacing of 40px. The main content flows in a series of stacked, full-width blocks, often alternating between text-dominant sections and grid-like arrangements of images/cards. Feature sections frequently exhibit a three-column grid for articles. Navigation is a combination of a fixed top bar and a floating pill-shaped menu at the bottom, offering both persistent and contextual navigation.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses diverse, high-quality photography and static illustrations to showcase creative work. Imagery is mostly contained within distinct blocks, without significant masks or overlaps, maintaining a structured presentation. Photographs are often bright and product-focused, displaying artworks or designs clearly. Illustrations are varied in style, ranging from whimsical and organic to geometric and flat, always serving to represent artistic content. There's a high density of imagery, particularly within content listings, making the site visually rich and appealing to a creative audience. Icons are minimal, subtle, and outline-based, mostly functional.
+- **AIGA Eye on Design** — Shares a focus on editorial content for creatives, a mixture of sharp-cornered UI with colorful accents, and distinctive typography.
+- **Communication Arts** — Exhibits a similar editorial structure for showcasing creative work, relying on strong imagery and clear, structured layouts.
+- **Design Milk** — Utilizes a clean, image-heavy grid layout with a strong editorial voice and occasional bold color usage for impact.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-black-ink: #2b2b2b;
+  --color-pure-white: #ffffff;
+  --color-frost-gray: #f0efef;
+  --color-medium-gray: #676767;
+  --color-muted-taupe: #faead9;
+  --color-electric-purple: #8147ff;
+  --color-sunshine-yellow: #ffd519;
+  --color-deep-indigo: #6219ff;
+  --color-risograph-gradient: #ffffff;
+  --font-bradford: 'Bradford', Georgia;
+  --font-labilvariable: 'LabilVariable', Open Sans;
+  --font-labil: 'Labil', Open Sans;
+  --text-caption: 11px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.005px;
+  --text-body: 15px;
+  --leading-body: 1.47;
+  --tracking-body: 0.008px;
+  --text-heading: 25px;
+  --leading-heading: 1.46;
+  --tracking-heading: 0.077px;
+  --text-display: 40px;
+  --leading-display: 1.73;
+  --tracking-display: 0.091px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-113: 113px;
+  --spacing-191: 191px;
+  --radius-buttons: 75px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-black-ink: #2b2b2b;
+  --color-pure-white: #ffffff;
+  --color-frost-gray: #f0efef;
+  --color-medium-gray: #676767;
+  --color-muted-taupe: #faead9;
+  --color-electric-purple: #8147ff;
+  --color-sunshine-yellow: #ffd519;
+  --color-deep-indigo: #6219ff;
+  --color-risograph-gradient: #ffffff;
+  --font-bradford: 'Bradford', Georgia;
+  --font-labilvariable: 'LabilVariable', Open Sans;
+  --font-labil: 'Labil', Open Sans;
+  --text-caption: 11px;
+  --leading-caption: 1.4;
+  --tracking-caption: 0.005px;
+  --text-body: 15px;
+  --leading-body: 1.47;
+  --tracking-body: 0.008px;
+  --text-heading: 25px;
+  --leading-heading: 1.46;
+  --tracking-heading: 0.077px;
+  --text-display: 40px;
+  --leading-display: 1.73;
+  --tracking-display: 0.091px;
+  --spacing-0: 0px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-60: 60px;
+  --spacing-80: 80px;
+  --spacing-113: 113px;
+  --spacing-191: 191px;
+  --radius-buttons: 75px;
+  --radius-default: 0px;
+}
+```
