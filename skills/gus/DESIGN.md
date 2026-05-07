@@ -1,53 +1,127 @@
 ---
 version: alpha
-name: Gus
-description: The Gus design system evokes a playful, almost retro, digital workspace. A dominant, vibrant teal acts as the primary canvas, overlaid with a subtle grid pattern, giving the impression of an engineering blueprint or a pixel art canvas. Typography is minimal and pragmatic, with an emphasis on system fonts, contrasting sharply with occasional bursts of bright, primary accent colors that draw attention to key interactive elements. Visual treatments are flat with sharply defined shapes, avoiding shadows or complex gradients.
-colors:
-  grid-canvas: "#008263"
-  grid-line: "#050000"
-  midnight-ink: "#000000"
-  paper-white: "#ffffff"
-  scroll-highlight: "#f5c04f"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 13px
-    lineHeight: 1.25
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.25
-  body:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-  body-lg:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.25
-spacing:
-  buttonRadius: 9999px
-  elementGap: 0px
-components:
-  ghost-header-navigation-link:
-    role: Navigation element
-  menu-toggle-button:
-    role: Toggle control
-  scroll-call-to-action:
-    role: Interactive indicator
-  starburst-logo-placeholder:
-    role: Brand mark
-  adage-award-banner:
-    role: Informational banner
+name: "Gus"
+description: "The Gus design system evokes a playful, almost retro, digital workspace. A dominant, vibrant teal acts as the primary canvas, overlaid with a subtle grid pattern, giving the impression of an engineering blueprint or a pixel art canvas. Typography is minimal and pragmatic, with an emphasis on system fonts, contrasting sharply with occasional bursts of bright, primary accent colors that draw attention to key interactive elements. Visual treatments are flat with sharply defined shapes, avoiding shadows or complex gradients."
+theme: "dark"
+industry: "agency"
+source_url: "https://gus.biz"
+refero_style_id: "3ec00801-59b9-4c1f-af33-429642c186d4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520816605-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777520816605-thumb.jpg"
+extracted_at: "2026-04-30T03:47:16.760Z"
 ---
 
-## Overview
+# Gus — Style Reference
 
-**North Star:** Pixelated grid playground.
+> Pixelated grid playground.
+
+**Theme:** dark
+
+**Industry:** agency
 
 The Gus design system evokes a playful, almost retro, digital workspace. A dominant, vibrant teal acts as the primary canvas, overlaid with a subtle grid pattern, giving the impression of an engineering blueprint or a pixel art canvas. Typography is minimal and pragmatic, with an emphasis on system fonts, contrasting sharply with occasional bursts of bright, primary accent colors that draw attention to key interactive elements. Visual treatments are flat with sharply defined shapes, avoiding shadows or complex gradients.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Grid Canvas | #008263 | `--color-grid-canvas` | Primary page background, underlying grid color |
+| Grid Line | #050000 | `--color-grid-line` | Subtle dark lines for the background grid pattern, primary body text, divider lines |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Text color for primary content, icon outlines, button borders, default element outlines |
+| Paper White | #ffffff | `--color-paper-white` | Highlight text, link text on dark backgrounds, secondary element outlines |
+| Scroll Highlight | #f5c04f | `--color-scroll-highlight` | Yellow wash for highlight backgrounds, decorative bands, and soft emphasis behind content. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Times
+
+- **Token:** `--font-times`
+- **Substitute:** Times New Roman
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.20
+- **Letter spacing:** normal
+- **Role:** Body text and standard informational content. Its serif nature provides a grounding contrast to the pixelated grid background.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Substitute:** Helvetica Neue
+- **Weights:** 400, 700
+- **Sizes:** 13px, 15px, 20px, 28px
+- **Line heights:** 1.20, 1.25, 1.50
+- **Letter spacing:** normal
+- **Role:** UI labels, button text, and headings. Its clean sans-serif form ensures clarity in interactive elements and titles.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 13px | 1.25 | — | `--text-caption` |
+| body-sm | 15px | 1.25 | — | `--text-body-sm` |
+| body | 20px | 1.25 | — | `--text-body` |
+| body-lg | 28px | 1.25 | — | `--text-body-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-7 | 7px | `--spacing-7` |
+| spacing-10 | 10px | `--spacing-10` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| buttons | 9999px |
+| starburst | 0px |
+| scrollButton | 9999px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 0px |
+
+## Components
+
+### Ghost Header Navigation Link
+
+**Role:** Navigation element
+
+Transparent background, #ffffff text on `Grid Canvas`, no padding or border, 0px radius. Used for top-level navigation items. Text uses Arial, weight 400.
+
+### Menu Toggle Button
+
+**Role:** Toggle control
+
+Black square with two white horizontal lines, 0px radius. No discernible padding. Functions as a hamburger menu icon.
+
+### Scroll Call to Action
+
+**Role:** Interactive indicator
+
+Circular button with a '#f5c04f' background and '#000000' text. 9999px radius to create a perfect circle. Arial, weight 400, size 15px. Text 'Scroll' is centered within. No padding visible.
+
+### Starburst Logo Placeholder
+
+**Role:** Brand mark
+
+A red starburst shape, '#ff0000', with the word 'gus' in white, '#ffffff'. This element acts as a distinctive and playful brand identifier. The edges are sharp; 0px radius.
+
+### AdAge Award Banner
+
+**Role:** Informational banner
+
+Horizontal strip at the top. White text, '#ffffff', on the 'Grid Canvas' background '#008263'. Text '🏆 Ad Age Small Agency of the Year Winner'. Uses Times, weight 400, size 16px. No extra padding or borders.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize '#008263' for large background areas, emphasizing the grid pattern with '#050000' lines.
 - Use 'Times' for paragraph text and 'Arial' for all UI labels, headings, and buttons.
@@ -57,7 +131,7 @@ The Gus design system evokes a playful, almost retro, digital workspace. A domin
 - Use '#000000' for primary text on light backgrounds and '#ffffff' on dark backgrounds or highlights.
 - Ensure interactive elements like buttons and links use distinct accent colors or clear text-on-background contrast.
 
-### Don'ts
+### Don't
 
 - Avoid using any form of drop shadows or box shadows, as the system relies on flat aesthetics.
 - Do not introduce gradients; the visual system is strictly flat color.
@@ -66,6 +140,67 @@ The Gus design system evokes a playful, almost retro, digital workspace. A domin
 - Avoid mixing primary and secondary fonts unnecessarily; adhere strictly to their defined roles.
 - Do not use subtle color variations for interactive states; rely on direct background or text color changes.
 
-### Elevation
+## Similar Brands
 
-The design intentionally avoids shadows and any form of visual elevation. All elements lie flat against the page, adhering to a two-dimensional, pixel-art inspired aesthetic. This creates a direct, unfussy user experience where clarity comes from color contrast and strong outlines rather than depth cues.
+- **Neocities** — Embraces a retro, pixelated aesthetic with simple shapes and bold primary colors.
+- **MS Paint** — Visual style of flat colors, strong outlines, and basic geometry without gradients or shadows.
+- **Command Line Interface (CLI) tools** — Minimalist visual language, often monochrome with occasional bright highlights, focusing on direct interaction.
+- **Early web design (1990s)** — Characterized by grid backgrounds, system fonts, and stark color contrasts, avoiding complex visual effects.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-grid-canvas: #008263;
+  --color-grid-line: #050000;
+  --color-midnight-ink: #000000;
+  --color-paper-white: #ffffff;
+  --color-scroll-highlight: #f5c04f;
+  --font-times: 'Times', Times New Roman;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-caption: 13px;
+  --leading-caption: 1.25;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.25;
+  --text-body: 20px;
+  --leading-body: 1.25;
+  --text-body-lg: 28px;
+  --leading-body-lg: 1.25;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --radius-buttons: 9999px;
+  --radius-starburst: 0px;
+  --radius-scrollbutton: 9999px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-grid-canvas: #008263;
+  --color-grid-line: #050000;
+  --color-midnight-ink: #000000;
+  --color-paper-white: #ffffff;
+  --color-scroll-highlight: #f5c04f;
+  --font-times: 'Times', Times New Roman;
+  --font-arial: 'Arial', Helvetica Neue;
+  --text-caption: 13px;
+  --leading-caption: 1.25;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.25;
+  --text-body: 20px;
+  --leading-body: 1.25;
+  --text-body-lg: 28px;
+  --leading-body-lg: 1.25;
+  --spacing-0: 0px;
+  --spacing-7: 7px;
+  --spacing-10: 10px;
+  --radius-buttons: 9999px;
+  --radius-starburst: 0px;
+  --radius-scrollbutton: 9999px;
+}
+```

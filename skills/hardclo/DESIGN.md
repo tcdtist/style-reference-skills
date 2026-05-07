@@ -1,37 +1,102 @@
 ---
 version: alpha
-name: HARDCLO
-description: HARDCLO uses a stark, high-contrast dark mode aesthetic, emphasizing content through pure black backgrounds and clean white typography. The design language is minimal and direct, leveraging large, expressive serif typography for brand identity and a single sans-serif family for all functional text. The intentional lack of color creates a raw, utilitarian feel, where the product imagery is the only source of visual vibrancy. Layouts are spacious and structured, preventing the high contrast from becoming overwhelming.
-colors:
-  midnight-noir: "#000000"
-  polar-white: "#ffffff"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.2
-    letterSpacing: -0.5px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 101px
-    lineHeight: 1
-spacing:
-  elementGap: 12px
-  sectionGap: 40px
-components:
-  navigation-link:
-    role: Primary site navigation, sub-navigation items.
-  underlined-text-link:
-    role: Interactive text anywhere on the canvas.
+name: "HARDCLO"
+description: "HARDCLO uses a stark, high-contrast dark mode aesthetic, emphasizing content through pure black backgrounds and clean white typography. The design language is minimal and direct, leveraging large, expressive serif typography for brand identity and a single sans-serif family for all functional text. The intentional lack of color creates a raw, utilitarian feel, where the product imagery is the only source of visual vibrancy. Layouts are spacious and structured, preventing the high contrast from becoming overwhelming."
+theme: "dark"
+industry: "ecommerce"
+source_url: "https://hardclo.com"
+refero_style_id: "c3cf4acc-da7a-4496-8c4b-aa89a7c9e36c"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513593408-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777513593408-thumb.jpg"
+extracted_at: "2026-04-30T01:46:48.558Z"
 ---
 
-## Overview
+# HARDCLO — Style Reference
 
-**North Star:** monochrome cinematic canvas — stark black and white drama
+> monochrome cinematic canvas — stark black and white drama
+
+**Theme:** dark
+
+**Industry:** ecommerce
 
 HARDCLO uses a stark, high-contrast dark mode aesthetic, emphasizing content through pure black backgrounds and clean white typography. The design language is minimal and direct, leveraging large, expressive serif typography for brand identity and a single sans-serif family for all functional text. The intentional lack of color creates a raw, utilitarian feel, where the product imagery is the only source of visual vibrancy. Layouts are spacious and structured, preventing the high contrast from becoming overwhelming.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Noir | #000000 | `--color-midnight-noir` | Page backgrounds, element backgrounds, primary canvas for content, creates depth for crisp white typography |
+| Polar White | #ffffff | `--color-polar-white` | Hairline borders, dividers, input outlines, and card edges on light surfaces. Do not promote it to the primary CTA color |
+
+## Tokens — Typography
+
+### Playfair Display
+
+- **Token:** `--font-playfair-display`
+- **Substitute:** serif
+- **Weights:** normal
+- **Role:** Decorative brand headings and primary hero text, conveying a sense of classic elegance and bold presence. The size and weight make it a dominant visual element.
+
+### Haas Grot Disp 65
+
+- **Token:** `--font-haas-grot-disp-65`
+- **Substitute:** Helvetica Neue, Arial
+- **Weights:** 400, 500
+- **Sizes:** 10px, 101px
+- **Line heights:** 1.00, 1.20, 1.40
+- **Letter spacing:** -0.5
+- **Role:** All functional text including navigation, body text, links, and product details. Its compact, slightly tracked-in nature reinforces the efficient, direct aesthetic.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.2 | -0.5px | `--text-caption` |
+| display | 101px | 1 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-213 | 213px | `--spacing-213` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| none | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 40px |
+| cardPadding | 12px |
+| elementGap | 12px |
+
+## Components
+
+### Navigation Link
+
+**Role:** Primary site navigation, sub-navigation items.
+
+Text link using Haas Grot Disp 65, size 10px, weight 400, color Polar White (#ffffff). Hover state involves an underline. Tightly tracked at -0.5px.
+
+### Underlined Text Link
+
+**Role:** Interactive text anywhere on the canvas.
+
+Text link on Midnight Noir background. Text color Polar White (#ffffff), Haas Grot Disp 65, size 10px, weight 400. Features a bottom border of 1px Polar White (#ffffff); often used for secondary interactive elements or footers.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Midnight Noir (#000000) for all significant background areas to maintain the stark, high-contrast dark theme.
 - Use Polar White (#ffffff) for all interactive text, primary content, and headlines to ensure maximum readability against the dark background.
@@ -40,7 +105,7 @@ HARDCLO uses a stark, high-contrast dark mode aesthetic, emphasizing content thr
 - Maintain a clear visual hierarchy by limiting color primarily to the achromatic scale, allowing imagery to be the only source of vividness.
 - Utilize 1px Polar White (#ffffff) solid borders for interactive elements requiring emphasis, such as links or outlined buttons.
 
-### Don'ts
+### Don't
 
 - Avoid introducing additional chromatic colors for UI elements; color should be reserved for product imagery.
 - Do not use generic system fonts for branding or display text; stick to Playfair Display for visual impact.
@@ -49,10 +114,63 @@ HARDCLO uses a stark, high-contrast dark mode aesthetic, emphasizing content thr
 - Do not break the compact letter spacing of -0.5px for Haas Grot Disp 65 text, as this is integral to its visual character.
 - Do not use excessive radii; components should retain a crisp, sharp edge without rounded corners.
 
-### Layout
+## Imagery
+
+The site uses photography extensively, often featuring full-bleed, striking product or lifestyle shots. The imagery is central to the visual identity, providing the main source of color and visual interest against the monochrome UI. Photos appear to be minimally treated, maintaining a raw, authentic feel, and are frequently used to fill significant portions of the screen, creating an immersive experience.
+
+## Layout
 
 The page primarily uses a split, full-bleed layout. The left side is a pure black canvas for UI and typography, while the right side is dominated by large, immersive, full-height product or lifestyle photography. Content often stacks vertically within these sections. Navigation is minimal, presented as a compact list. The layout feels spacious, with significant vertical and horizontal gaps, allowing elements to breathe within the high-contrast environment. The overall page avoids a defined max-width, embracing the full viewport.
 
-### Imagery
+## Similar Brands
 
-The site uses photography extensively, often featuring full-bleed, striking product or lifestyle shots. The imagery is central to the visual identity, providing the main source of color and visual interest against the monochrome UI. Photos appear to be minimally treated, maintaining a raw, authentic feel, and are frequently used to fill significant portions of the screen, creating an immersive experience.
+- **Yeezy Supply** — Similar minimalist dark mode with heavy reliance on product photography as the primary source of color and a stark UX.
+- **Acne Studios** — Employs high-contrast typography, often large display fonts, on minimal backgrounds, letting fashion photography dictate mood.
+- **Balenciaga (certain collections)** — Utilizes raw, utilitarian aesthetic with strong photographic presence and minimal, often monochrome, UI elements.
+- **A-COLD-WALL*** — Similar stark, industrial aesthetic with emphasis on texture, contrast, and photography as hero content.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-noir: #000000;
+  --color-polar-white: #ffffff;
+  --font-playfair-display: 'Playfair Display', serif;
+  --font-haas-grot-disp-65: 'Haas Grot Disp 65', Helvetica Neue, Arial;
+  --text-caption: 10px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.5px;
+  --text-display: 101px;
+  --leading-display: 1;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-40: 40px;
+  --spacing-213: 213px;
+  --radius-none: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-noir: #000000;
+  --color-polar-white: #ffffff;
+  --font-playfair-display: 'Playfair Display', serif;
+  --font-haas-grot-disp-65: 'Haas Grot Disp 65', Helvetica Neue, Arial;
+  --text-caption: 10px;
+  --leading-caption: 1.2;
+  --tracking-caption: -0.5px;
+  --text-display: 101px;
+  --leading-display: 1;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-20: 20px;
+  --spacing-40: 40px;
+  --spacing-213: 213px;
+  --radius-none: 0px;
+}
+```

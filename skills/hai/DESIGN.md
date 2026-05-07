@@ -1,62 +1,131 @@
 ---
 version: alpha
-name: Hai
-description: Hai employs a minimalist aesthetic that centers on a clean, almost stark white canvas providing ample negative space for product photography and subtle typography. Contrasting with the light backdrop, all text and interactive elements are rendered in a deep, absolute black, creating sophisticated definition. The brand's distinctive visual identity is further characterized by the use of custom serif and sans-serif fonts with unique letter-spacing, giving a sense of exclusivity and handcrafted precision. Buttons feature a refined, subtle outline rather than bold fills, maintaining the quiet luxury feel.
-colors:
-  midnight-ink: "#000000"
-  canvas-white: "#FFFFFF"
-  ferry-red: "#CF2442"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-    letterSpacing: 0.8px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.25
-    letterSpacing: -0.8px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1
-    letterSpacing: -1.65px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 24px
-    lineHeight: 1
-    letterSpacing: -2.06px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 31px
-    lineHeight: 0.8
-    letterSpacing: -1.92px
-spacing:
-  cardRadius: 50%
-  buttonRadius: 10px
-  elementGap: 16px
-  sectionGap: 32px
-components:
-  ghost-outline-button:
-    role: Primary action button
-  product-title-forma-nuovo:
-    role: Product listing headline
-  product-link-times-now:
-    role: Product detail link
-  circular-card:
-    role: Decorative or featured product card
-  navigation-link:
-    role: Top-level navigation item
+name: "Hai"
+description: "Hai employs a minimalist aesthetic that centers on a clean, almost stark white canvas providing ample negative space for product photography and subtle typography. Contrasting with the light backdrop, all text and interactive elements are rendered in a deep, absolute black, creating sophisticated definition. The brand's distinctive visual identity is further characterized by the use of custom serif and sans-serif fonts with unique letter-spacing, giving a sense of exclusivity and handcrafted precision. Buttons feature a refined, subtle outline rather than bold fills, maintaining the quiet luxury feel."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.homeofhai.com"
+refero_style_id: "5efde7b1-008b-484c-82b1-d2628dccf855"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519912976-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777519912976-thumb.jpg"
+extracted_at: "2026-04-30T03:32:09.836Z"
 ---
 
-## Overview
+# Hai — Style Reference
 
-**North Star:** white gallery, black ink
+> white gallery, black ink
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 Hai employs a minimalist aesthetic that centers on a clean, almost stark white canvas providing ample negative space for product photography and subtle typography. Contrasting with the light backdrop, all text and interactive elements are rendered in a deep, absolute black, creating sophisticated definition. The brand's distinctive visual identity is further characterized by the use of custom serif and sans-serif fonts with unique letter-spacing, giving a sense of exclusivity and handcrafted precision. Buttons feature a refined, subtle outline rather than bold fills, maintaining the quiet luxury feel.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Ink | #000000 | `--color-midnight-ink` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Canvas White | #FFFFFF | `--color-canvas-white` | Page backgrounds, card surfaces, default UI elements. Establishes a bright, expansive visual field |
+| Ferry Red | #CF2442 | `--color-ferry-red` | Alerts, notifications, and potentially subtle brand accents. A secondary, reserved accent color |
+
+## Tokens — Typography
+
+### Forma Nuovo
+
+- **Token:** `--font-forma-nuovo`
+- **Substitute:** Montserrat
+- **Weights:** 400, 600
+- **Sizes:** 16px, 22px, 24px, 28px, 32px
+- **Line heights:** 0.80, 0.98, 1.00, 1.15, 1.25
+- **Letter spacing:** -0.15em at 32px, -0.10em at 28px, -0.086em at 24px, -0.075em at 22px, -0.062em at 16px
+- **Role:** Headlines and prominent UI elements. Its confident but finely-tracked presence creates a modern, architectural feel.
+
+### Times Now
+
+- **Token:** `--font-times-now`
+- **Substitute:** Lora
+- **Weights:** 400
+- **Sizes:** 16px, 18px, 24px, 26px, 31px, 32px
+- **Line heights:** 0.80, 1.00, 1.15, 1.25
+- **Letter spacing:** 0.05em at 16px, -0.027em at 18px, -0.037em at 24px, -0.05em at 26px, -0.062em at 31px
+- **Role:** Body copy, product descriptions, and subheadings. The serif provides a classic, luxurious counterpoint to the sans-serif headlines, with tight tracking adding to its refined character.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 16px | 1 | 0.8px | `--text-caption` |
+| body | 18px | 1.25 | -0.8px | `--text-body` |
+| subheading | 22px | 1 | -1.65px | `--text-subheading` |
+| heading | 24px | 1 | -2.06px | `--text-heading` |
+| heading-lg | 31px | 0.8 | -1.92px | `--text-heading-lg` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-64 | 64px | `--spacing-64` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 50% |
+| links | 10px |
+| buttons | 10px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 32px |
+| cardPadding | 32px |
+| elementGap | 16px |
+
+## Components
+
+### Ghost Outline Button
+
+**Role:** Primary action button
+
+Transparent background, a 1px solid Midnight Ink border, 10px border radius, and Midnight Ink text. Padding is generous at 16px vertical and 32px horizontal. This button style reinforces the elegant, understated aesthetic.
+
+### Product Title (Forma Nuovo)
+
+**Role:** Product listing headline
+
+Forma Nuovo typeface at 32px, weight 400, with a tight letter-spacing of -0.15em, rendered in Midnight Ink. Provides a bold but not shouting presence for product names.
+
+### Product Link (Times Now)
+
+**Role:** Product detail link
+
+Times Now typeface at 18px, weight 400, with letter-spacing -0.027em, rendered in Midnight Ink. Used for descriptive links, maintaining a classic, legible feel.
+
+### Circular Card
+
+**Role:** Decorative or featured product card
+
+A unique card style with a 50% border-radius, effectively making it circular or an oval depending on content. Background is Canvas White with no box shadow, padding of 32px on all sides. Used for visual distinction.
+
+### Navigation Link
+
+**Role:** Top-level navigation item
+
+Forma Nuovo typeface at 16px, weight 400, with a letter-spacing of -0.062em, in Midnight Ink. These links are minimal, direct, and rely on spacing for separation.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize ample negative space around all elements to maintain a clean, high-end feel.
 - Use Midnight Ink (#000000) for all text and UI outlines to ensure stark contrast and definition.
@@ -66,7 +135,7 @@ Hai employs a minimalist aesthetic that centers on a clean, almost stark white c
 - Maintain a clear visual hierarchy by limiting saturated colors; reserve Ferry Red (#CF2442) for highly specific and subtle accents if needed.
 - Ensure all buttons and links utilize a 10px border-radius, while specialized circular cards use a 50% radius for distinctiveness.
 
-### Don'ts
+### Don't
 
 - Avoid using harsh drop shadows or heavy backgrounds; maintain the light and airy feel.
 - Do not introduce new typefaces, as the chosen custom fonts are core to the brand's identity.
@@ -76,10 +145,93 @@ Hai employs a minimalist aesthetic that centers on a clean, almost stark white c
 - Do not use gradients unless explicitly part of the design system beyond the current data.
 - Avoid using any color other than Midnight Ink for borders on interactive elements, or for primary text.
 
-### Layout
+## Imagery
+
+The site predominantly uses high-key product photography, often featuring candid-style models in lifestyle shots or tightly cropped product details (e.g., shoes). Imagery is integrated seamlessly into the white canvas, frequently appearing as full-bleed sections or subtly framed without strong borders. The visual focus is on the product and its texture, often with a raw, authentic feel. Icons, if present, are likely minimal, outlined, and monochromatic, matching the overall stark aesthetic. Imagery plays an atmospheric and showcase role, with a strong emphasis on texture and natural light.
+
+## Layout
 
 The page primarily employs a full-bleed layout for hero sections featuring large imagery, while internal content often adheres to a max-width contained model. The hero section frequently presents a large visual on one side (e.g., a model) and a distinct brand element or text on the other. Vertical rhythm is characterized by comfortable, consistent section gaps, creating a spacious feel. Content arrangement often alternates between imagery and text, with text labels positioned deliberately adjacent to products. Navigation is a minimal top bar, displaying key links without overwhelming the header space. The overall density is light, with significant breathing room.
 
-### Imagery
+## Similar Brands
 
-The site predominantly uses high-key product photography, often featuring candid-style models in lifestyle shots or tightly cropped product details (e.g., shoes). Imagery is integrated seamlessly into the white canvas, frequently appearing as full-bleed sections or subtly framed without strong borders. The visual focus is on the product and its texture, often with a raw, authentic feel. Icons, if present, are likely minimal, outlined, and monochromatic, matching the overall stark aesthetic. Imagery plays an atmospheric and showcase role, with a strong emphasis on texture and natural light.
+- **Acne Studios** — Minimalist aesthetic with a strong emphasis on photography and muted color palettes, featuring custom typography.
+- **Arket** — Clean, almost sparse layouts, strong focus on product presentation, and a limited, high-contrast color scheme.
+- **CDLP** — High-end fashion ecommerce with a white background, black text, and subtle interactive elements, relying on fine typography.
+- **Totême** — Understated luxury, heavy use of negative space, large product imagery, and a monochrome palette with precise typographic details.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #FFFFFF;
+  --color-ferry-red: #CF2442;
+  --font-forma-nuovo: 'Forma Nuovo', Montserrat;
+  --font-times-now: 'Times Now', Lora;
+  --text-caption: 16px;
+  --leading-caption: 1;
+  --tracking-caption: 0.8px;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --tracking-body: -0.8px;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --tracking-subheading: -1.65px;
+  --text-heading: 24px;
+  --leading-heading: 1;
+  --tracking-heading: -2.06px;
+  --text-heading-lg: 31px;
+  --leading-heading-lg: 0.8;
+  --tracking-heading-lg: -1.92px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-64: 64px;
+  --radius-cards: 50%;
+  --radius-links: 10px;
+  --radius-buttons: 10px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-ink: #000000;
+  --color-canvas-white: #FFFFFF;
+  --color-ferry-red: #CF2442;
+  --font-forma-nuovo: 'Forma Nuovo', Montserrat;
+  --font-times-now: 'Times Now', Lora;
+  --text-caption: 16px;
+  --leading-caption: 1;
+  --tracking-caption: 0.8px;
+  --text-body: 18px;
+  --leading-body: 1.25;
+  --tracking-body: -0.8px;
+  --text-subheading: 22px;
+  --leading-subheading: 1;
+  --tracking-subheading: -1.65px;
+  --text-heading: 24px;
+  --leading-heading: 1;
+  --tracking-heading: -2.06px;
+  --text-heading-lg: 31px;
+  --leading-heading-lg: 0.8;
+  --tracking-heading-lg: -1.92px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-32: 32px;
+  --spacing-64: 64px;
+  --radius-cards: 50%;
+  --radius-links: 10px;
+  --radius-buttons: 10px;
+}
+```

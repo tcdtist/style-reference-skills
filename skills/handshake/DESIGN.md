@@ -1,75 +1,171 @@
 ---
 version: alpha
-name: Handshake
-description: Handshake employs a dark, dynamic canvas lit by a vibrant, shifting gradient backdrop, creating a sense of energy and opportunity. Bold, blocky typography ensures high impact against this fluid background, while UI elements are purposefully minimal, often appearing as ghost outlines or subtle containers. The prominent use of a single vivid green accent ensures calls to action pop with urgency, contrasting sharply with the deep dark base.
-colors:
-  deep-space: "#000000"
-  midnight-core: "#14151c"
-  cosmic-gray: "#052326"
-  stardust: "#ffffff"
-  guidepost-green: "#d3fb52"
-  muted-text: "#666666"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.4
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.4
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.4
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.1
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 28px
-    lineHeight: 1.1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 0.85
-  display:
-    fontFamily: "system-ui"
-    fontSize: 201px
-    lineHeight: 0.8
-    letterSpacing: -4.02px
-spacing:
-  cardRadius: 24px
-  buttonRadius: 8px
-  elementGap: 16px
-  sectionGap: 24px
-components:
-  primary-ghost-button:
-    role: Call to action variant
-  navigation-ghost-button:
-    role: Navigation and secondary actions
-  primary-filled-button:
-    role: High-priority, primary action.
-  filter-tag:
-    role: Interactive content categorization
-  search-input:
-    role: Primary form input for search queries.
-  feature-card:
-    role: Content grouping for features or testimonials.
+name: "Handshake"
+description: "Handshake employs a dark, dynamic canvas lit by a vibrant, shifting gradient backdrop, creating a sense of energy and opportunity. Bold, blocky typography ensures high impact against this fluid background, while UI elements are purposefully minimal, often appearing as ghost outlines or subtle containers. The prominent use of a single vivid green accent ensures calls to action pop with urgency, contrasting sharply with the deep dark base."
+theme: "light"
+industry: "ai"
+source_url: "https://joinhandshake.com"
+refero_style_id: "dba3eb4f-c1c2-437f-beb2-708e9d074729"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509615658-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777509615658-thumb.jpg"
+extracted_at: "2026-04-30T00:40:56.992Z"
 ---
 
-## Overview
+# Handshake — Style Reference
 
-**North Star:** Shifting gradient nebula
+> Shifting gradient nebula
+
+**Theme:** light
+
+**Industry:** ai
 
 Handshake employs a dark, dynamic canvas lit by a vibrant, shifting gradient backdrop, creating a sense of energy and opportunity. Bold, blocky typography ensures high impact against this fluid background, while UI elements are purposefully minimal, often appearing as ghost outlines or subtle containers. The prominent use of a single vivid green accent ensures calls to action pop with urgency, contrasting sharply with the deep dark base.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Space | #000000 | `--color-deep-space` | Primary text, deep shadow, content background on footer, icon fill |
+| Midnight Core | #14151c | `--color-midnight-core` | Placeholder text, subtle background for dark ghost buttons, input borders |
+| Cosmic Gray | #052326 | `--color-cosmic-gray` | Footer background |
+| Stardust | #ffffff | `--color-stardust` | Heading text, body text, canvas for forms, ghost button backgrounds, input background |
+| Guidepost Green | #d3fb52 | `--color-guidepost-green` | Primary action background, active navigation indicator, sign-up button, decorative accents — a vibrant beacon against the dark UI; Hero background creating a dynamic, almost ethereal feel, blending blues and greens |
+| Muted Text | #666666 | `--color-muted-text` | Secondary body text, helper text |
+
+## Tokens — Typography
+
+### NoiGrotesk
+
+- **Token:** `--font-noigrotesk`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 12px, 14px, 16px, 20px, 22px, 28px, 40px
+- **Line heights:** 0.85, 1.10, 1.40, 1.50
+- **Letter spacing:** -0.0250em at large sizes, -0.0200em, -0.0150em at smaller sizes
+- **OpenType features:** "ss03" on, "ss06" on, "ss12" on
+- **Role:** All body text, navigation links, buttons, and most UI elements. Its slightly condensed feel at various weights maintains compactness.
+
+### NoiGrotesk
+
+- **Token:** `--font-noigrotesk`
+- **Substitute:** Inter
+- **Weights:** 500
+- **Sizes:** 12px, 14px, 16px, 20px, 22px, 28px, 40px
+- **Line heights:** 0.85, 1.10, 1.40, 1.50
+- **Letter spacing:** -0.0250em at large sizes, -0.0200em, -0.0150em at smaller sizes
+- **OpenType features:** "ss03" on, "ss06" on, "ss12" on
+- **Role:** Used for button labels, and emphasized text segments where a subtle increase in visual weight is needed without feeling heavy.
+
+### SansPlomb
+
+- **Token:** `--font-sansplomb`
+- **Substitute:** Anton
+- **Weights:** 600
+- **Sizes:** 201px
+- **Line heights:** 0.80
+- **Letter spacing:** -0.0200em
+- **Role:** Large display headings — the extreme size and tight letter spacing create a commanding, impactful presence that emphasizes the brand's bold statement.
+
+### Arial
+
+- **Token:** `--font-arial`
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.5
+- **OpenType features:** "ss03", "ss06", "ss12"
+- **Role:** Arial — detected in extracted data but not described by AI
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.4 | — | `--text-caption` |
+| body-sm | 14px | 1.4 | — | `--text-body-sm` |
+| body | 16px | 1.4 | — | `--text-body` |
+| subheading | 20px | 1.1 | — | `--text-subheading` |
+| heading-sm | 22px | 1.1 | — | `--text-heading-sm` |
+| heading | 28px | 1.1 | — | `--text-heading` |
+| heading-lg | 40px | 0.85 | — | `--text-heading-lg` |
+| display | 201px | 0.8 | -4.02px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-120 | 120px | `--spacing-120` |
+| spacing-177 | 177px | `--spacing-177` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| cards | 24px |
+| inputs | 24px |
+| buttons | 8px |
+| buttons-large | 12px |
+| navigationItems | 8px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 24px |
+| cardPadding | 16px |
+| elementGap | 16px |
+
+## Components
+
+### Primary Ghost Button
+
+**Role:** Call to action variant
+
+Ghost button with no background, 'Stardust' #ffffff text, and a 'Guidepost Green' #d3fb52 1px border, 8px radius, with 12px vertical and 16px horizontal padding. Prompts interaction without visual weight.
+
+### Navigation Ghost Button
+
+**Role:** Navigation and secondary actions
+
+Ghost button with no background, 'Stardust' #ffffff text, and a 'Midnight Core' oklab(1 0 5.96046e-8 / 0.2) 1px border, 8px radius. Padding 16px all sides.
+
+### Primary Filled Button
+
+**Role:** High-priority, primary action.
+
+Filled with 'Guidepost Green' #d3fb52, 'Stardust' #ffffff text, 8px radius, and 12px vertical, 16px horizontal padding. Used for the prominent 'Sign up' action.
+
+### Filter Tag
+
+**Role:** Interactive content categorization
+
+Background oklab(0.19794 0.0021212 -0.0139539 / 0.1), 'Stardust' #ffffff text, with a 12px radius, and no explicit padding. Used for 'AI trainer', 'Full-time' etc.
+
+### Search Input
+
+**Role:** Primary form input for search queries.
+
+Rounded input with 'Stardust' #ffffff background, 'Deep Space' #000000 text and placeholder, 'Midnight Core' #14151c 1px border, 24px radius. Left padding 64px to accommodate the search icon.
+
+### Feature Card
+
+**Role:** Content grouping for features or testimonials.
+
+Background oklab(1 0 5.96046e-8 / 0.06), no shadow, and 24px border radius. Used for cards that group information.
+
+## Do's and Don'ts
+
+### Do
 
 - Use 'Stardust' #ffffff for all primary text content and 'Deep Space' #000000 for secondary text and sub-headings to maximize contrast against the dynamic backgrounds.
 - Apply 'Guidepost Green' #d3fb52 strictly for primary calls-to-action like 'Sign up' and navigational highlights to draw immediate attention. Do not use for generic elements.
@@ -79,7 +175,7 @@ Handshake employs a dark, dynamic canvas lit by a vibrant, shifting gradient bac
 - Use the Base Unit 8px for all spacing decisions, creating consistent element gaps of 16px horizontally and vertically, and section gaps of 24px.
 - Employ ghost button styles (no background, white text, defined border) for secondary actions like 'Log In', making the primary 'Sign up' button stand out distinctly.
 
-### Don'ts
+### Don't
 
 - Do not introduce new vibrant colors outside of the 'Guidepost Green' #d3fb52 accent, or the blue component of the 'Nebula Gradation', to avoid diluting the brand's energetic yet focused palette.
 - Avoid generic box shadows or heavy borders on background elements; components should breathe and appear lightweight against the fluid gradient.
@@ -89,10 +185,120 @@ Handshake employs a dark, dynamic canvas lit by a vibrant, shifting gradient bac
 - Do not create completely flat design elements. Even ghost buttons and inputs should retain a subtle border or background transparency as defined.
 - Do not use generic system fonts for body or UI text; NoiGrotesk with its feature settings is fundamental to the brand's typographic tone.
 
-### Layout
+## Imagery
+
+The site uses minimal imagery, primarily focusing on abstract, atmospheric radial gradients as backgrounds. There are no photographs or complex illustrations. Icons are simple, outlined, and monochromatic, primarily using 'Stardust' #ffffff or 'Deep Space' #000000, serving purely functional roles like search or navigation prompts rather than decorative ones.
+
+## Layout
 
 The page structure is full-bleed, with content centered but not strictly constrained by a fixed max-width, allowing the background gradients to stretch across the viewport. The hero section is characterized by a central, bold headline over a gradient background, followed by an input field. Sections are distinct but flow seamlessly, often with ample vertical spacing. Content is generally stacked centrally or in simple text-right/image-left type patterns, ensuring focus on typography and the dynamic backdrop. Navigation is a sticky top bar with ghost controls, and a prominent green primary action button.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, primarily focusing on abstract, atmospheric radial gradients as backgrounds. There are no photographs or complex illustrations. Icons are simple, outlined, and monochromatic, primarily using 'Stardust' #ffffff or 'Deep Space' #000000, serving purely functional roles like search or navigation prompts rather than decorative ones.
+- **Rive** — Dynamic, vibrant gradient backgrounds with bold typography and minimal, ghost-like UI elements.
+- **Pitch** — Prominent use of a single, vivid accent color against a dark or mostly neutral UI, paired with impactful display typography.
+- **Linear** — Emphasis on functional, lightweight UI components, often with subtle borders or transparent backgrounds, against a generally dark theme.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-space: #000000;
+  --color-midnight-core: #14151c;
+  --color-cosmic-gray: #052326;
+  --color-stardust: #ffffff;
+  --color-guidepost-green: #d3fb52;
+  --color-muted-text: #666666;
+  --font-noigrotesk: 'NoiGrotesk', Inter;
+  --font-noigrotesk: 'NoiGrotesk', Inter;
+  --font-sansplomb: 'SansPlomb', Anton;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.1;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 28px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 0.85;
+  --text-display: 201px;
+  --leading-display: 0.8;
+  --tracking-display: -4.02px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-177: 177px;
+  --radius-tags: 9999px;
+  --radius-cards: 24px;
+  --radius-inputs: 24px;
+  --radius-buttons: 8px;
+  --radius-buttons-large: 12px;
+  --radius-navigationitems: 8px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-space: #000000;
+  --color-midnight-core: #14151c;
+  --color-cosmic-gray: #052326;
+  --color-stardust: #ffffff;
+  --color-guidepost-green: #d3fb52;
+  --color-muted-text: #666666;
+  --font-noigrotesk: 'NoiGrotesk', Inter;
+  --font-noigrotesk: 'NoiGrotesk', Inter;
+  --font-sansplomb: 'SansPlomb', Anton;
+  --font-arial: 'Arial', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.4;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.4;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-subheading: 20px;
+  --leading-subheading: 1.1;
+  --text-heading-sm: 22px;
+  --leading-heading-sm: 1.1;
+  --text-heading: 28px;
+  --leading-heading: 1.1;
+  --text-heading-lg: 40px;
+  --leading-heading-lg: 0.85;
+  --text-display: 201px;
+  --leading-display: 0.8;
+  --tracking-display: -4.02px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-177: 177px;
+  --radius-tags: 9999px;
+  --radius-cards: 24px;
+  --radius-inputs: 24px;
+  --radius-buttons: 8px;
+  --radius-buttons-large: 12px;
+  --radius-navigationitems: 8px;
+}
+```

@@ -1,50 +1,123 @@
 ---
 version: alpha
-name: GUSTAVO Faria ©
-description: Gustavo Faria's portfolio website presents an austere, high-contrast, text-dominant canvas. Information is structured rigidly with subtle typographic variations to create hierarchy rather than color or extensive spacing. The design emphasizes content clarity and directness through a near-monochromatic palette and a compact layout, punctuated by a single, striking personal image that challenges the otherwise stark presentation.
-colors:
-  canvas-white: "#ffffff"
-  ink-black: "#000000"
-  graphite: "#282828"
-  pale-ash: "#dcdcdc"
-  blush-tone: "#efc4b2"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.17
-    letterSpacing: -0.047px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 125px
-    lineHeight: 1.02
-  display:
-    fontFamily: "system-ui"
-    fontSize: 142px
-    lineHeight: 0.81
-    letterSpacing: -0.047px
-spacing:
-  elementGap: 1px
-components:
-  work-entry-link:
-    role: Interactive list item
-  navigation-link:
-    role: Top-level navigation
-  year-range-display:
-    role: Large decorative heading
+name: "GUSTAVO Faria ©"
+description: "Gustavo Faria's portfolio website presents an austere, high-contrast, text-dominant canvas. Information is structured rigidly with subtle typographic variations to create hierarchy rather than color or extensive spacing. The design emphasizes content clarity and directness through a near-monochromatic palette and a compact layout, punctuated by a single, striking personal image that challenges the otherwise stark presentation."
+theme: "light"
+industry: "design"
+source_url: "https://gustavo.work"
+refero_style_id: "cd3546fc-b6d0-4ec9-8624-580549af347d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518467404-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777518467404-thumb.jpg"
+extracted_at: "2026-04-30T03:08:02.245Z"
 ---
 
-## Overview
+# GUSTAVO Faria © — Style Reference
 
-**North Star:** Minimalist gallery wall
+> Minimalist gallery wall
+
+**Theme:** light
+
+**Industry:** design
 
 Gustavo Faria's portfolio website presents an austere, high-contrast, text-dominant canvas. Information is structured rigidly with subtle typographic variations to create hierarchy rather than color or extensive spacing. The design emphasizes content clarity and directness through a near-monochromatic palette and a compact layout, punctuated by a single, striking personal image that challenges the otherwise stark presentation.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces |
+| Ink Black | #000000 | `--color-ink-black` | Primary text, prominent headings |
+| Graphite | #282828 | `--color-graphite` | Dark borders and separators for elevated surfaces and inverted UI. Do not promote it to the primary CTA color |
+| Pale Ash | #dcdcdc | `--color-pale-ash` | Muted secondary text, subtle dividers, inactive states |
+| Blush Tone | #efc4b2 | `--color-blush-tone` | Background for personal imagery |
+
+## Tokens — Typography
+
+### custom_21879
+
+- **Token:** `--font-custom-21879`
+- **Weights:** 400, 700
+- **Sizes:** 12px, 142px
+- **Line heights:** 0.81, 1.00, 1.17, 1.67
+- **Letter spacing:** -0.0470em at sizes >= 12px
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Primary headings and interactive links. The tight letter spacing for large text creates a condensed, impactful visual.
+
+### custom_49610
+
+- **Token:** `--font-custom-49610`
+- **Weights:** 400
+- **Sizes:** 125px
+- **Line heights:** 1.02
+- **Letter spacing:** normal
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** Large display headings, specifically for the year range. Its imposing size commands attention in an otherwise subdued layout.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Substitute:** system-ui
+- **Weights:** 400
+- **Sizes:** 16px
+- **Line heights:** 1.00
+- **Letter spacing:** normal
+- **OpenType features:** "dlig" 0, "hlig" 0, "liga" 0, "rlig" 0, "smcp" 0
+- **Role:** All body text and descriptive information, providing clarity and system-level familiarity.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.17 | -0.047px | `--text-caption` |
+| body | 16px | 1 | — | `--text-body` |
+| heading | 125px | 1.02 | — | `--text-heading` |
+| display | 142px | 0.81 | -0.047px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-0 | 0px | `--spacing-token` |
+| spacing-1 | 1px | `--spacing-1` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 0px |
+| elementGap | 1px |
+
+## Components
+
+### Work Entry Link
+
+**Role:** Interactive list item
+
+Text link using custom_21879, weight 400 for primary text and Pale Ash for secondary descriptor. Underlined with graphite on hover (or current selected item). No padding, using negative letter-spacing for visual density.
+
+### Navigation Link
+
+**Role:** Top-level navigation
+
+Simple text link in Ink Black, using custom_21879 at 12px, weight 400, with tight letter-spacing. Minimal padding around text.
+
+### Year Range Display
+
+**Role:** Large decorative heading
+
+Large text element using custom_49610, 125px for individual years and custom_21879, 142px for the dash, both in Ink Black, normal letter spacing. Forms a prominent visual anchor on the page.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize text as the primary vehicle for information and hierarchy, using color only for stark contrast or subtle guidance.
 - Maintain a monochromatic palette with Canvas White backgrounds, Ink Black for primary text, and Graphite or Pale Ash for secondary details.
@@ -53,7 +126,7 @@ Gustavo Faria's portfolio website presents an austere, high-contrast, text-domin
 - Ensure horizontal lines or borders are 1px thick and use Pale Ash for subtle visual separation between list items or sections.
 - Keep spacing between elements minimal, often 1px, to create a compact and dense information display.
 
-### Don'ts
+### Don't
 
 - Avoid colorful or decorative elements outside of explicit imagery; the interface should remain stark and functional.
 - Do not introduce soft shadows or gradients, as the system relies on flat surfaces and hard edges.
@@ -61,10 +134,75 @@ Gustavo Faria's portfolio website presents an austere, high-contrast, text-domin
 - Refrain from generous padding or excessive white space between repeating elements to maintain the compact presentation.
 - Do not use bold weights indiscriminately; reserve weight 700 for specific high-emphasis elements identified in `custom_21879` roles.
 
-### Layout
+## Imagery
+
+The site primarily uses idiosyncratic, distorted photography of faces, specifically a self-portrait, contained within irregular, organic cutouts. These images are not product showcases but serve as a strong personal brand statement, directly contrasting the minimalist UI. They operate decoratively and as a focal point, occupying a significant visual area and bringing an element of surrealism to the otherwise structured page. Icons are absent, and UI elements are purely textual or geometric.
+
+## Layout
 
 The page adheres to a predominantly full-bleed model, with a centered content block for the bio and navigation. The hero section features a large, horizontally dominant year range (2019-2025) at the top right, contrasting with the bio on the left. Content is primarily organized into two main columns: a left column for bio text (and a personal image) and a right column for the 'Work Selection' list. The work list items are presented in a compact, vertically stacked format, separated by 1px Pale Ash lines. There is no explicit max-width constraint; content adapts to the viewport. A sticky top navigation containing 'Gustavo Faria', 'Info', and 'Instagram' seems present.
 
-### Imagery
+## Similar Brands
 
-The site primarily uses idiosyncratic, distorted photography of faces, specifically a self-portrait, contained within irregular, organic cutouts. These images are not product showcases but serve as a strong personal brand statement, directly contrasting the minimalist UI. They operate decoratively and as a focal point, occupying a significant visual area and bringing an element of surrealism to the otherwise structured page. Icons are absent, and UI elements are purely textual or geometric.
+- **Rik Lomas** — Monochromatic palette, text-heavy layout, and distinct visual identity through unique imagery.
+- **Julien Van Havere** — Stark white background, strong typographic hierarchy, and minimalist content presentation with bold graphic elements.
+- **Studio Fnt** — Emphasis on black and white, unconventional use of typography, and a strong, almost brutalist approach to visual design.
+- **Active Theory** — High-contrast, text-forward design with sparse but impactful visual interruptions, often with a surreal or artistic bent.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-graphite: #282828;
+  --color-pale-ash: #dcdcdc;
+  --color-blush-tone: #efc4b2;
+  --font-custom-21879: 'custom_21879', ui-sans-serif, system-ui, sans-serif;
+  --font-custom-49610: 'custom_49610', ui-sans-serif, system-ui, sans-serif;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.17;
+  --tracking-caption: -0.047px;
+  --text-body: 16px;
+  --leading-body: 1;
+  --text-heading: 125px;
+  --leading-heading: 1.02;
+  --text-display: 142px;
+  --leading-display: 0.81;
+  --tracking-display: -0.047px;
+  --spacing-0: 0px;
+  --spacing-1: 1px;
+  --radius-default: 0px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-ink-black: #000000;
+  --color-graphite: #282828;
+  --color-pale-ash: #dcdcdc;
+  --color-blush-tone: #efc4b2;
+  --font-custom-21879: 'custom_21879', ui-sans-serif, system-ui, sans-serif;
+  --font-custom-49610: 'custom_49610', ui-sans-serif, system-ui, sans-serif;
+  --font-apple-system: '-apple-system', system-ui;
+  --text-caption: 12px;
+  --leading-caption: 1.17;
+  --tracking-caption: -0.047px;
+  --text-body: 16px;
+  --leading-body: 1;
+  --text-heading: 125px;
+  --leading-heading: 1.02;
+  --text-display: 142px;
+  --leading-display: 0.81;
+  --tracking-display: -0.047px;
+  --spacing-0: 0px;
+  --spacing-1: 1px;
+  --radius-default: 0px;
+}
+```
