@@ -1,63 +1,142 @@
 ---
 version: alpha
-name: FORA
-description: This design evokes a sense of playful architectural structure by organizing content into distinct, brightly colored blocks. The deliberate use of stark white and black typography against saturated, pastel-like backgrounds creates a high-contrast, graphic quality. Each large content area acts as a 'room' with its own color and function, where the delicate, custom serif wordmark provides an unexpected counterpoint to the bold, blocky layout and muted, modern sans-serif body text. This interplay between classical typography and contemporary, segmented color fields distinguishes the visual style.
-colors:
-  canvas-white: "#ffffff"
-  deepest-ink: "#000000"
-  terracotta-bold: "#a9553c"
-  terracotta-muted: "#a04d35"
-  lavender-haze: "#ddbdea"
-  highlight-white: "#ffffff59"
-typography:
-  body:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.33
-    letterSpacing: 0.36px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 18px
-    lineHeight: 1.53
-    letterSpacing: 0.43px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 23px
-    lineHeight: 1.3
-    letterSpacing: 0.46px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 35px
-    lineHeight: 1.17
-    letterSpacing: 0.42px
-spacing:
-  buttonRadius: 0px (primary), 5px (secondary)
-components:
-  primary-action-block:
-    role: 
-  newsfeed-block:
-    role: 
-  subtle-tag-button-bottom-bar:
-    role: 
-  primary-action-block:
-    role: Interactive content section
-  secondary-action-block:
-    role: Interactive content section
-  ghost-link-button:
-    role: Navigational link
-  subtle-tag-button:
-    role: Informational tag or filter
-  newsfeed-item-card:
-    role: Content preview
+name: "FORA"
+description: "This design evokes a sense of playful architectural structure by organizing content into distinct, brightly colored blocks. The deliberate use of stark white and black typography against saturated, pastel-like backgrounds creates a high-contrast, graphic quality. Each large content area acts as a 'room' with its own color and function, where the delicate, custom serif wordmark provides an unexpected counterpoint to the bold, blocky layout and muted, modern sans-serif body text. This interplay between classical typography and contemporary, segmented color fields distinguishes the visual style."
+theme: "light"
+industry: "agency"
+source_url: "https://fora-concept.com"
+refero_style_id: "9929101b-90d4-4306-bc4a-4d8f65b527f5"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926165654-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775926165654-thumb.jpg"
+extracted_at: "2026-04-11T16:49:45.709Z"
 ---
 
-## Overview
+# FORA — Style Reference
 
-**North Star:** Color-blocked gallery walls
+> Color-blocked gallery walls
+
+**Theme:** light
+
+**Industry:** agency
 
 This design evokes a sense of playful architectural structure by organizing content into distinct, brightly colored blocks. The deliberate use of stark white and black typography against saturated, pastel-like backgrounds creates a high-contrast, graphic quality. Each large content area acts as a 'room' with its own color and function, where the delicate, custom serif wordmark provides an unexpected counterpoint to the bold, blocky layout and muted, modern sans-serif body text. This interplay between classical typography and contemporary, segmented color fields distinguishes the visual style.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas White | #ffffff | `--color-canvas-white` | Page backgrounds, card surfaces, typography contrast backdrop |
+| Deepest Ink | #000000 | `--color-deepest-ink` | All text elements, borders, icons, providing sharp contrast against vibrant backgrounds |
+| Terracotta Bold | #a9553c | `--color-terracotta-bold` | Prominent interactive blocks, section backgrounds, accentuating key messages with a warm, earthy tone |
+| Terracotta Muted | #a04d35 | `--color-terracotta-muted` | Subtle background for themed sections, providing a slightly darker variant of the primary brand red |
+| Lavender Haze | #ddbdea | `--color-lavender-haze` | Interactive content blocks, background for newsfeed sections, offering a soft, creative accent |
+| Highlight White | #ffffff59 | `--color-highlight-white` | Subtle button backgrounds, offering a translucent option for interaction states |
+
+## Tokens — Typography
+
+### Theinhardt
+
+- **Token:** `--font-theinhardt`
+- **Substitute:** Open Sans, Montserrat
+- **Weights:** 400
+- **Sizes:** 15px, 18px, 23px, 35px
+- **Line heights:** 1.17, 1.30, 1.33, 1.53
+- **Letter spacing:** 0.36, 0.36, 0.46, 0.42
+- **Role:** Body text, navigation items, general content, and small headings. Its neutral stance allows the color blocks to dominate.
+
+### Theinhardt Medium
+
+- **Token:** `--font-theinhardt-medium`
+- **Substitute:** Open Sans, Montserrat
+- **Weights:** 700
+- **Sizes:** 15px
+- **Line heights:** 1.33
+- **Letter spacing:** 0.36
+- **Role:** Used for emphasis within body copy, drawing attention to specific phrases without changing color.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| body | 15px | 1.33 | 0.36px | `--text-body` |
+| subheading | 18px | 1.53 | 0.43px | `--text-subheading` |
+| heading | 23px | 1.3 | 0.46px | `--text-heading` |
+| display | 35px | 1.17 | 0.42px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-25 | 25px | `--spacing-25` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-50 | 50px | `--spacing-50` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| tags | 9999px |
+| buttons | 0px (primary), 5px (secondary) |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| cardPadding | 25px |
+
+## Components
+
+### Primary Action Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Newsfeed Block
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Subtle Tag Button & Bottom Bar
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary Action Block
+
+**Role:** Interactive content section
+
+Full-bleed button block with background #a9553c, text #000000, 30px top padding, 25px right/bottom/left padding, 0px border radius. Used for prominent calls to action.
+
+### Secondary Action Block
+
+**Role:** Interactive content section
+
+Full-bleed button block with background #ddbdea, text #000000, 25px uniform padding, 0px border radius. Used for secondary content highlights.
+
+### Ghost Link Button
+
+**Role:** Navigational link
+
+Button with transparent background, #000000 text, no padding, 0px border radius. Used for navigation and inline actions.
+
+### Subtle Tag Button
+
+**Role:** Informational tag or filter
+
+Button with background rgba(255, 255, 255, 0.35), text #000000, 5px uniform padding, 5px border radius. Used for small labels like 'Meet our Team'.
+
+### Newsfeed Item Card
+
+**Role:** Content preview
+
+Small card nested within a larger content block; likely has a white background (not explicitly detected in this variant but implied by screenshot), #000000 text, with an internal padding of around 10-20px based on general element spacing.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use Deepest Ink (#000000) for all text against Canvas White (#ffffff) or any chromatic background.
 - Utilize Terracotta Bold (#a9553c) and Lavender Haze (#ddbdea) as solid, full-bleed background blocks to create distinct content zones.
@@ -67,7 +146,7 @@ This design evokes a sense of playful architectural structure by organizing cont
 - Employ the Subtle Tag Button style (background rgba(255, 255, 255, 0.35), 5px radius) for small, informational labels.
 - Use 'Theinhardt Medium' (700 weight, 15px) for emphasizing text within paragraphs with 0.36px letterSpacing.
 
-### Don'ts
+### Don't
 
 - Avoid using multiple border radii values; stick to 0px for main blocks and 5px for small tags/elements.
 - Do not introduce gradients; the design relies on solid, flat color fields for its visual impact.
@@ -77,10 +156,91 @@ This design evokes a sense of playful architectural structure by organizing cont
 - Do not use highly saturated or vivid colors outside of the defined brand and accent palette for main content blocks.
 - Avoid padding within primary interaction blocks that isn't either 25px or 30px as designated for visual consistency.
 
-### Layout
+## Imagery
+
+The site uses a mix of photography and stylized abstract visuals. Photography, when present (e.g., 'Meet our Team'), tends to be bright and clear, often with a soft-focus background or natural lighting. Other visuals appear to be artistic compositions of objects (e.g., 'Our Projects'), resembling still-life paintings with muted colors and interesting shadow play, suggesting a creative and design-oriented approach. Images are contained within their color blocks, often with raw, un-masked rectangular edges, blending seamlessly into the blocky layout. There are also small, contained product screenshots/person images embedded within text blocks, acting as visual anchors for content. The density is moderate; images are used intentionally to break up text and color fields.
+
+## Layout
 
 The page primarily utilizes a full-bleed grid layout with no discernible pageMaxWidth. It's structured as a series of vertically stacked, alternating horizontal color blocks, each block serving as a distinct content section. The hero appears to be a two-column or multi-column arrangement of these blocks, featuring a large, stylized wordmark on white adjacent to a solid color block with text. Subsequent sections follow a similar pattern, creating a mosaic-like effect. Content within these blocks is often left-aligned or centered, creating a strong visual hierarchy through the block structure itself. There are instances of small elements like circular 'bullet' points (9999px radius) for emphasis. Navigation is a simple bottom bar with ghost links, consistent with the minimal aesthetic.
 
-### Imagery
+## Similar Brands
 
-The site uses a mix of photography and stylized abstract visuals. Photography, when present (e.g., 'Meet our Team'), tends to be bright and clear, often with a soft-focus background or natural lighting. Other visuals appear to be artistic compositions of objects (e.g., 'Our Projects'), resembling still-life paintings with muted colors and interesting shadow play, suggesting a creative and design-oriented approach. Images are contained within their color blocks, often with raw, un-masked rectangular edges, blending seamlessly into the blocky layout. There are also small, contained product screenshots/person images embedded within text blocks, acting as visual anchors for content. The density is moderate; images are used intentionally to break up text and color fields.
+- **AIGA Design** — Uses color blocking and strong typography with a classic-modern interplay.
+- **The Brand Agency** — Employs a similar structured, block-based layout with distinct content areas.
+- **Pentagram** — Known for bold, graphic layouts and a strong focus on typography and color to define sections.
+- **Frank Body** — Utilizes a clean, high-contrast aesthetic with prominent type and defined content sections.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas-white: #ffffff;
+  --color-deepest-ink: #000000;
+  --color-terracotta-bold: #a9553c;
+  --color-terracotta-muted: #a04d35;
+  --color-lavender-haze: #ddbdea;
+  --color-highlight-white: #ffffff59;
+  --font-theinhardt: 'Theinhardt', Open Sans, Montserrat;
+  --font-theinhardt-medium: 'Theinhardt Medium', Open Sans, Montserrat;
+  --text-body: 15px;
+  --leading-body: 1.33;
+  --tracking-body: 0.36px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.53;
+  --tracking-subheading: 0.43px;
+  --text-heading: 23px;
+  --leading-heading: 1.3;
+  --tracking-heading: 0.46px;
+  --text-display: 35px;
+  --leading-display: 1.17;
+  --tracking-display: 0.42px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --radius-tags: 9999px;
+  --radius-buttons: 0px (primary), 5px (secondary);
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas-white: #ffffff;
+  --color-deepest-ink: #000000;
+  --color-terracotta-bold: #a9553c;
+  --color-terracotta-muted: #a04d35;
+  --color-lavender-haze: #ddbdea;
+  --color-highlight-white: #ffffff59;
+  --font-theinhardt: 'Theinhardt', Open Sans, Montserrat;
+  --font-theinhardt-medium: 'Theinhardt Medium', Open Sans, Montserrat;
+  --text-body: 15px;
+  --leading-body: 1.33;
+  --tracking-body: 0.36px;
+  --text-subheading: 18px;
+  --leading-subheading: 1.53;
+  --tracking-subheading: 0.43px;
+  --text-heading: 23px;
+  --leading-heading: 1.3;
+  --tracking-heading: 0.46px;
+  --text-display: 35px;
+  --leading-display: 1.17;
+  --tracking-display: 0.42px;
+  --spacing-5: 5px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-25: 25px;
+  --spacing-30: 30px;
+  --spacing-50: 50px;
+  --radius-tags: 9999px;
+  --radius-buttons: 0px (primary), 5px (secondary);
+}
+```

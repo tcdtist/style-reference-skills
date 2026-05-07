@@ -1,88 +1,189 @@
 ---
 version: alpha
-name: Fly.io
-description: This design orchestrates a playful yet competent aesthetic, combining whimsical hand-drawn illustrations with a structured technical layout. Its mood is one of approachable innovation, where complex systems are presented with a friendly, inviting tone. The foundation is a clean, bright canvas, subtly enhanced by soft, multi-color gradients that hint at dynamism and possibility without visual noise. Muted violet tones dominate text and interactive elements, providing a consistent brand presence that is distinctive but not overwhelming.
-colors:
-  cloud-white: "#ffffff"
-  ghost-gray: "#e7e6f4"
-  lavender-mist: "#f1f2f9"
-  ash-charcoal: "#000000"
-  grape-vine: "#281950"
-  lavender-bloom: "#a39ac1"
-  muted-violet: "#5e537c"
-  electric-violet: "#7c3aed"
-  deep-plum: "#191034"
-  success-green: "#10b981"
-  info-blue: "#3b82f6"
-  warning-orange: "#f59e0b"
-  accent-gradient-hero: "#7dd3fc"
-  accent-gradient-hero-transparent: "#7dd3fc"
-  primary-cta-gradient: "#8b5cf6"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: 0.025px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 15px
-    lineHeight: 1.5
-    letterSpacing: 0.025px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 19px
-    lineHeight: 1.66
-    letterSpacing: 0.05px
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 22px
-    lineHeight: 1.33
-    letterSpacing: -0.45px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 36px
-    lineHeight: 1.15
-    letterSpacing: -0.25px
-  hero-display:
-    fontFamily: "system-ui"
-    fontSize: 64px
-    lineHeight: 1.15
-    letterSpacing: -0.45px
-spacing:
-  buttonRadius: 9999px
-  elementGap: 16px
-  sectionGap: 40px
-components:
-  deploy-cta-button-group:
-    role: 
-  enterprise-ready-feature-card:
-    role: 
-  trusted-by-banner:
-    role: 
-  primary-cta-button:
-    role: Call to action
-  outline-ghost-button:
-    role: Secondary action
-  pill-ghost-button:
-    role: Tertiary action, navigation
-  light-pill-button:
-    role: Contextual action
-  navigation-link:
-    role: Global navigation
-  header-logo:
-    role: Brand identity
-  hero-section-header:
-    role: Primary page message
+name: "Fly.io"
+description: "This design orchestrates a playful yet competent aesthetic, combining whimsical hand-drawn illustrations with a structured technical layout. Its mood is one of approachable innovation, where complex systems are presented with a friendly, inviting tone. The foundation is a clean, bright canvas, subtly enhanced by soft, multi-color gradients that hint at dynamism and possibility without visual noise. Muted violet tones dominate text and interactive elements, providing a consistent brand presence that is distinctive but not overwhelming."
+theme: "light"
+industry: "devtools"
+source_url: "https://fly.io"
+refero_style_id: "0c77bb2a-c7cd-499b-b5cd-90268eefe906"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923289442-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775923289442-thumb.jpg"
+extracted_at: "2026-04-11T16:01:53.138Z"
 ---
 
-## Overview
+# Fly.io — Style Reference
 
-**North Star:** Whimsical tech playground. Muted violet meets playful pastels on a clean white backdrop.
+> Whimsical tech playground. Muted violet meets playful pastels on a clean white backdrop.
+
+**Theme:** light
+
+**Industry:** devtools
 
 This design orchestrates a playful yet competent aesthetic, combining whimsical hand-drawn illustrations with a structured technical layout. Its mood is one of approachable innovation, where complex systems are presented with a friendly, inviting tone. The foundation is a clean, bright canvas, subtly enhanced by soft, multi-color gradients that hint at dynamism and possibility without visual noise. Muted violet tones dominate text and interactive elements, providing a consistent brand presence that is distinctive but not overwhelming.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Cloud White | #ffffff | `--color-cloud-white` | Page backgrounds, card surfaces, primary text on dark accents, inactive button backgrounds. |
+| Ghost Gray | #e7e6f4 | `--color-ghost-gray` | Subtle borders, divider lines, light background accents, hero section tint. |
+| Lavender Mist | #f1f2f9 | `--color-lavender-mist` | Lightest background for subtle differentiation, similar to Cloud White but with a warmer undertone. |
+| Ash Charcoal | #000000 | `--color-ash-charcoal` | Primary text for maximum contrast on light backgrounds, navigation elements. |
+| Grape Vine | #281950 | `--color-grape-vine` | Primary headings, important text, interactive elements in high contrast areas. |
+| Lavender Bloom | #a39ac1 | `--color-lavender-bloom` | Secondary text, footer links, subtle icons, provides a softer contrast. |
+| Muted Violet | #5e537c | `--color-muted-violet` | Body text, general information, ensuring readability while maintaining brand tone. |
+| Electric Violet | #7c3aed | `--color-electric-violet` | Primary CTA buttons, active state indicators in navigation, drawing immediate attention. |
+| Deep Plum | #191034 | `--color-deep-plum` | Darkest background for footer, creating a grounded visual anchor. |
+| Success Green | #10b981 | `--color-success-green` | Success states, checklist icons, indicating positive feedback. |
+| Info Blue | #3b82f6 | `--color-info-blue` | Informational icons, secondary accent where a cooler tone is needed. |
+| Warning Orange | #f59e0b | `--color-warning-orange` | Warning icons, drawing attention to non-critical alerts. |
+| Accent Gradient Hero | #7dd3fc | `--color-accent-gradient-hero` | Large background sections, especially hero and feature areas, providing a soft, shifting visual backdrop. |
+| Accent Gradient Hero Transparent | #7dd3fc | `--color-accent-gradient-hero-transparent` | Subtle overlay gradients for texture or nuanced background effects. |
+| Primary CTA Gradient | #8b5cf6 | `--color-primary-cta-gradient` | Highlighting primary calls to action with an evocative, vibrant purple. |
+
+## Tokens — Typography
+
+### Mackinac
+
+- **Token:** `--font-mackinac`
+- **Substitute:** Georgia, serif
+- **Weights:** 500
+- **Sizes:** 22px, 36px, 64px
+- **Line heights:** 1.15, 1.33
+- **Letter spacing:** -0.45, -0.25
+- **Role:** Display headings and section titles. The slightly condensed, elegant serif face adds a touch of bespoke craftsmanship against the clean modern body text. Negative letter spacing at larger sizes pulls text together, creating a distinguished presence.
+
+### Fricolage Grotesque
+
+- **Token:** `--font-fricolage-grotesque`
+- **Substitute:** Inter, Arial, sans-serif
+- **Weights:** 325, 450, 500, 575
+- **Sizes:** 12px, 15px, 16px, 17px, 18px, 19px
+- **Line heights:** 1.50, 1.66
+- **Letter spacing:** 0.025, 0.05
+- **Role:** Body text, navigation items, buttons, and all smaller textual elements. Its variable weights provide a broad spectrum for hierarchy within UI components, maintaining legibility and a consistent modern feel. The subtle positive letter spacing improves readability in smaller blocks.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | 0.025px | `--text-caption` |
+| body-sm | 15px | 1.5 | 0.025px | `--text-body-sm` |
+| heading | 19px | 1.66 | 0.05px | `--text-heading` |
+| heading-lg | 22px | 1.33 | -0.45px | `--text-heading-lg` |
+| display | 36px | 1.15 | -0.25px | `--text-display` |
+| hero-display | 64px | 1.15 | -0.45px | `--text-hero-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-21 | 21px | `--spacing-21` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-28 | 28px | `--spacing-28` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-96 | 96px | `--spacing-96` |
+| spacing-113 | 113px | `--spacing-113` |
+| spacing-116 | 116px | `--spacing-116` |
+| spacing-128 | 128px | `--spacing-128` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| subtle | 4px |
+| buttons | 9999px |
+| navItems | 10px |
+| defaultComponent | 16px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(91, 33, 182, 0.1) 0px 5px 5px -2px, rgba(91, 33, 182, 0.1) 0px 2px 4px -2px | `--shadow-xl` |
+| xl-2 | rgba(67, 56, 202, 0.25) 0px 0px 0px 1px inset | `--shadow-xl-2` |
+| xl-3 | rgba(32, 34, 55, 0.075) 0px 0px 0px 1px, rgba(32, 34, 55, 0.05) 0px 10px 15px -3px, rgba(32, 34, 55, 0.05) 0px 4px 6px -4px | `--shadow-xl-3` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| pageMaxWidth | 1200px |
+| sectionGap | 40px |
+| cardPadding | 24px |
+| elementGap | 16px |
+
+## Components
+
+### Deploy CTA Button Group
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Enterprise-Ready Feature Card
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Trusted By Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Primary CTA Button
+
+**Role:** Call to action
+
+Rounded pill shape with `Electric Violet` background (#7c3aed) and `Cloud White` text (#ffffff), `padding` of 0px vertical and 20px horizontal. Uses `Fricolage Grotesque` at `weight 450`.
+
+### Outline Ghost Button
+
+**Role:** Secondary action
+
+Transparent background with `Cloud White` text (#ffffff) and a `0.25` opacity `Cloud White` (#ffffff) border. `Padding 32px` vertical and `16px` horizontal, `borderRadius` 16px. Uses `Fricolage Grotesque` at `weight 450`.
+
+### Pill Ghost Button
+
+**Role:** Tertiary action, navigation
+
+Transparent background with `Cloud White` text (#ffffff) and a `0.25` opacity `Cloud White` (#ffffff) border. `Padding 0px` vertical and `20px` horizontal, `borderRadius` 9999px. Uses `Fricolage Grotesque` at `weight 450`.
+
+### Light Pill Button
+
+**Role:** Contextual action
+
+`Cloud White` background (#ffffff) with `Grape Vine` text (#281950). Features a subtle shadow `rgba(91, 33, 182, 0.125) 0px 0px 0px 0px`. `Padding 0px` vertical and `20px` horizontal, `borderRadius` 9999px.
+
+### Navigation Link
+
+**Role:** Global navigation
+
+Text link using `Fricolage Grotesque` `weight 450` in `Muted Violet` (#5e537c). Hover states likely involve color change or subtle underlines, but not explicitly defined in data.
+
+### Header Logo
+
+**Role:** Brand identity
+
+Vector graphic logo using `Grape Vine` (#281950) with `Cloud White` (#ffffff) as background, positioned within the header bar.
+
+### Hero Section Header
+
+**Role:** Primary page message
+
+Heavy header text using `Mackinac` `weight 500` at `64px` in `Grape Vine` (#281950), with negative letter-spacing for impact.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize `Fricolage Grotesque` for all body text and UI labels, ensuring consistent `letter-spacing` as defined in the type scale.
 - Apply `Electric Violet` (#7c3aed) as the singular background color for primary call-to-action buttons, pairing it always with `Cloud White` text (#ffffff).
@@ -92,7 +193,7 @@ This design orchestrates a playful yet competent aesthetic, combining whimsical 
 - Utilize `Ghost Gray` (#e7e6f4) for subtle borders and dividers, providing visual structure without harsh lines.
 - Incorporate the `Accent Gradient Hero` (linear-gradient(to right, rgb(125, 211, 252), rgb(165, 180, 252), rgb(249, 168, 212))) sparingly for wide background sections to add a dynamic, pastel highlight.
 
-### Don'ts
+### Don't
 
 - Avoid using `Electric Violet` (#7c3aed) for non-interactive text elements; reserve it strictly for primary calls to action.
 - Do not introduce sharp corners on any interactive components; adhere to a minimum of `16px` radius for structural elements and `9999px` for buttons.
@@ -101,10 +202,160 @@ This design orchestrates a playful yet competent aesthetic, combining whimsical 
 - Ensure all text blocks maintain generous line heights from the type scale (`1.5` or `1.66`) to prevent dense, hard-to-read paragraphs.
 - Avoid arbitrary use of the accent `linear-gradient` for small elements; it is designed for large background areas to provide a subtle, atmospheric shift.
 
-### Layout
+## Elevation
+
+- **Light Pill Button:** `rgba(91, 33, 182, 0.1) 0px 5px 5px -2px, rgba(91, 33, 182, 0.1) 0px 2px 4px -2px`
+- **Navigation Item Active State:** `rgba(67, 56, 202, 0.25) 0px 0px 0px 1px inset`
+- **Card/Container Subtle Shadow:** `rgba(32, 34, 55, 0.075) 0px 0px 0px 1px, rgba(32, 34, 55, 0.05) 0px 10px 15px -3px, rgba(32, 34, 55, 0.05) 0px 4px 6px -4px`
+
+## Imagery
+
+The visual language is dominantly characterized by whimsical, hand-drawn vector illustrations featuring pastel color palettes and abstract, flowing forms. These illustrations are not masked or cropped but appear to organically 'spill' across sections or hover as isolated, narrative elements. They are used decoratively to evoke imagination and approachability for complex technical concepts, rather than literal product depiction. Iconography, when present, is simple, filled, and uses the defined accent/semantic colors. The overall density leans towards image-heavy, with illustrations taking significant visual space and often serving as backdrops or scene-setters alongside textual content.
+
+## Layout
 
 The page primarily uses a max-width `1200px` centered container for content, presenting a structured column layout. The hero section breaks this with a full-bleed application of the `Accent Gradient Hero` background, featuring a centered, prominent headline. Subsequent sections often employ a clean, white background with generous vertical spacing (`40px sectionGap`). A common content arrangement is a split layout, featuring text on one side and an accompanying illustration or feature visual on the other, creating a balance between information and visual interest. Navigation is a sticky top bar, containing both textual links and a prominent `Primary CTA Button`. The design feels spacious, with ample breathing room around elements.
 
-### Imagery
+## Similar Brands
 
-The visual language is dominantly characterized by whimsical, hand-drawn vector illustrations featuring pastel color palettes and abstract, flowing forms. These illustrations are not masked or cropped but appear to organically 'spill' across sections or hover as isolated, narrative elements. They are used decoratively to evoke imagination and approachability for complex technical concepts, rather than literal product depiction. Iconography, when present, is simple, filled, and uses the defined accent/semantic colors. The overall density leans towards image-heavy, with illustrations taking significant visual space and often serving as backdrops or scene-setters alongside textual content.
+- **Vercel** — Clean, light UI with strong brand color accents and focus on developer tools. Subtle use of gradients.
+- **Linear** — Sophisticated typography and sparse, intentional visual elements on a primarily light background. Focus on productivity tools.
+- **Raycast** — Developer-focused product with a polished, approachable UI that doesn't overwhelm, featuring subtle background textures/gradients.
+- **Figma** — Playful yet powerful design, leveraging custom illustrations and a vibrant color palette against a clean interface.
+- **PlanetScale** — Modern developer platform with a clean, light aesthetic and a distinctive brand color palette used strategically for impact.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-cloud-white: #ffffff;
+  --color-ghost-gray: #e7e6f4;
+  --color-lavender-mist: #f1f2f9;
+  --color-ash-charcoal: #000000;
+  --color-grape-vine: #281950;
+  --color-lavender-bloom: #a39ac1;
+  --color-muted-violet: #5e537c;
+  --color-electric-violet: #7c3aed;
+  --color-deep-plum: #191034;
+  --color-success-green: #10b981;
+  --color-info-blue: #3b82f6;
+  --color-warning-orange: #f59e0b;
+  --color-accent-gradient-hero: #7dd3fc;
+  --color-accent-gradient-hero-transparent: #7dd3fc;
+  --color-primary-cta-gradient: #8b5cf6;
+  --font-mackinac: 'Mackinac', Georgia, serif;
+  --font-fricolage-grotesque: 'Fricolage Grotesque', Inter, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.025px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0.025px;
+  --text-heading: 19px;
+  --leading-heading: 1.66;
+  --tracking-heading: 0.05px;
+  --text-heading-lg: 22px;
+  --leading-heading-lg: 1.33;
+  --tracking-heading-lg: -0.45px;
+  --text-display: 36px;
+  --leading-display: 1.15;
+  --tracking-display: -0.25px;
+  --text-hero-display: 64px;
+  --leading-hero-display: 1.15;
+  --tracking-hero-display: -0.45px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-113: 113px;
+  --spacing-116: 116px;
+  --spacing-128: 128px;
+  --radius-subtle: 4px;
+  --radius-buttons: 9999px;
+  --radius-navitems: 10px;
+  --radius-defaultcomponent: 16px;
+  --shadow-xl: rgba(91, 33, 182, 0.1) 0px 5px 5px -2px, rgba(91, 33, 182, 0.1) 0px 2px 4px -2px;
+  --shadow-xl-2: rgba(67, 56, 202, 0.25) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgba(32, 34, 55, 0.075) 0px 0px 0px 1px, rgba(32, 34, 55, 0.05) 0px 10px 15px -3px, rgba(32, 34, 55, 0.05) 0px 4px 6px -4px;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-cloud-white: #ffffff;
+  --color-ghost-gray: #e7e6f4;
+  --color-lavender-mist: #f1f2f9;
+  --color-ash-charcoal: #000000;
+  --color-grape-vine: #281950;
+  --color-lavender-bloom: #a39ac1;
+  --color-muted-violet: #5e537c;
+  --color-electric-violet: #7c3aed;
+  --color-deep-plum: #191034;
+  --color-success-green: #10b981;
+  --color-info-blue: #3b82f6;
+  --color-warning-orange: #f59e0b;
+  --color-accent-gradient-hero: #7dd3fc;
+  --color-accent-gradient-hero-transparent: #7dd3fc;
+  --color-primary-cta-gradient: #8b5cf6;
+  --font-mackinac: 'Mackinac', Georgia, serif;
+  --font-fricolage-grotesque: 'Fricolage Grotesque', Inter, Arial, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: 0.025px;
+  --text-body-sm: 15px;
+  --leading-body-sm: 1.5;
+  --tracking-body-sm: 0.025px;
+  --text-heading: 19px;
+  --leading-heading: 1.66;
+  --tracking-heading: 0.05px;
+  --text-heading-lg: 22px;
+  --leading-heading-lg: 1.33;
+  --tracking-heading-lg: -0.45px;
+  --text-display: 36px;
+  --leading-display: 1.15;
+  --tracking-display: -0.25px;
+  --text-hero-display: 64px;
+  --leading-hero-display: 1.15;
+  --tracking-hero-display: -0.45px;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-21: 21px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-96: 96px;
+  --spacing-113: 113px;
+  --spacing-116: 116px;
+  --spacing-128: 128px;
+  --radius-subtle: 4px;
+  --radius-buttons: 9999px;
+  --radius-navitems: 10px;
+  --radius-defaultcomponent: 16px;
+  --shadow-xl: rgba(91, 33, 182, 0.1) 0px 5px 5px -2px, rgba(91, 33, 182, 0.1) 0px 2px 4px -2px;
+  --shadow-xl-2: rgba(67, 56, 202, 0.25) 0px 0px 0px 1px inset;
+  --shadow-xl-3: rgba(32, 34, 55, 0.075) 0px 0px 0px 1px, rgba(32, 34, 55, 0.05) 0px 10px 15px -3px, rgba(32, 34, 55, 0.05) 0px 4px 6px -4px;
+}
+```
