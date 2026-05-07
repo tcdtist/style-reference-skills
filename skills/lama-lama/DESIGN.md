@@ -1,61 +1,129 @@
 ---
 version: alpha
-name: Lama Lama
-description: Lama Lama employs a dark mode aesthetic with a rich, immersive character, balancing deep charcoal backgrounds with luminous, near-white typography for high contrast. The visual system is defined by its understated UI elements, which often surface through subtle borders rather than solid fills, allowing content such as photography and video to dominate. Typography is compact and precise, maintaining clarity within the spacious, uncrowded layouts. Components are minimal, relying on rounded corners and ghost-like interactions to suggest functionality without visual clutter.
-colors:
-  deep-charcoal: "#111314"
-  polar-mist: "#d7f3f5"
-  void-black: "#020203"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 10px
-    lineHeight: 1.5
-  body:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.22
-  heading-sm:
-    fontFamily: "system-ui"
-    fontSize: 30px
-    lineHeight: 1.06
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 50px
-    lineHeight: 0.86
-  display:
-    fontFamily: "system-ui"
-    fontSize: 134px
-    lineHeight: 0.86
-spacing:
-  cardRadius: 15px
-  buttonRadius: 8px
-  elementGap: 8-10px
-  sectionGap: 60-80px
-components:
-  ghost-action-button:
-    role: Primary interactive control for calls to action or navigation.
-  feature-card:
-    role: Container for project highlights or content blocks.
-  navigation-link:
-    role: Interactive text link within headers and footers.
-  hero-headline:
-    role: Prominent headline for introductory sections.
-  play-showreel-button:
-    role: Specific action button for media playback.
+name: "Lama Lama"
+description: "Lama Lama employs a dark mode aesthetic with a rich, immersive character, balancing deep charcoal backgrounds with luminous, near-white typography for high contrast. The visual system is defined by its understated UI elements, which often surface through subtle borders rather than solid fills, allowing content such as photography and video to dominate. Typography is compact and precise, maintaining clarity within the spacious, uncrowded layouts. Components are minimal, relying on rounded corners and ghost-like interactions to suggest functionality without visual clutter."
+theme: "dark"
+industry: "agency"
+source_url: "https://lamalama.nl"
+refero_style_id: "8e26bf8a-44b8-4fe1-9b4b-188dd5827c0f"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515967562-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777515967562-thumb.jpg"
+extracted_at: "2026-04-30T02:26:26.789Z"
 ---
 
-## Overview
+# Lama Lama — Style Reference
 
-**North Star:** Midnight theater with luminous text
+> Midnight theater with luminous text
+
+**Theme:** dark
+
+**Industry:** agency
 
 Lama Lama employs a dark mode aesthetic with a rich, immersive character, balancing deep charcoal backgrounds with luminous, near-white typography for high contrast. The visual system is defined by its understated UI elements, which often surface through subtle borders rather than solid fills, allowing content such as photography and video to dominate. Typography is compact and precise, maintaining clarity within the spacious, uncrowded layouts. Components are minimal, relying on rounded corners and ghost-like interactions to suggest functionality without visual clutter.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Deep Charcoal | #111314 | `--color-deep-charcoal` | Page backgrounds, card surfaces, primary text for some inverted sections |
+| Polar Mist | #d7f3f5 | `--color-polar-mist` | Primary text, ghost button borders and text, interactive element accents, subtle decorative strokes |
+| Void Black | #020203 | `--color-void-black` | Deepest canvas background, secondary card surfaces providing subtle layering |
+
+## Tokens — Typography
+
+### SuisseIntl
+
+- **Token:** `--font-suisseintl`
+- **Substitute:** Inter
+- **Weights:** 300, 400, 500, 700
+- **Sizes:** 10px, 12px, 14px, 16px, 30px, 40px, 50px, 134px
+- **Line heights:** 0.86, 1.00, 1.06, 1.17, 1.22, 1.25, 1.38, 1.50, 1.56
+- **Letter spacing:** normal
+- **Role:** Primary typeface for all headings, body text, navigation, and interactive elements. Its range from light (300) to bold (700) supports a nuanced hierarchy within a compact line height for a dense, editorial feel.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 10px | 1.5 | — | `--text-caption` |
+| body | 14px | 1.22 | — | `--text-body` |
+| heading-sm | 30px | 1.06 | — | `--text-heading-sm` |
+| heading | 40px | 1 | — | `--text-heading` |
+| heading-lg | 50px | 0.86 | — | `--text-heading-lg` |
+| display | 134px | 0.86 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-30 | 30px | `--spacing-30` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-60 | 60px | `--spacing-60` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-119 | 119px | `--spacing-119` |
+| spacing-144 | 144px | `--spacing-144` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 15px |
+| buttons | 8px |
+| interactiveElements | 15px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 60-80px |
+| cardPadding | 40px |
+| elementGap | 8-10px |
+
+## Components
+
+### Ghost Action Button
+
+**Role:** Primary interactive control for calls to action or navigation.
+
+Text in Polar Mist (#d7f3f5), no background fill, bordered with a 1.5px solid Polar Mist (#d7f3f5) stroke. Features an 8px border-radius, maintaining a subtle pill-like shape only on active button.
+
+### Feature Card
+
+**Role:** Container for project highlights or content blocks.
+
+Void Black (#020203) background, text in Polar Mist (#d7f3f5). Features a 15px border-radius without explicit borders or shadows, relying on background contrast for separation.
+
+### Navigation Link
+
+**Role:** Interactive text link within headers and footers.
+
+Text in Polar Mist (#d7f3f5) with no background. Underlined on hover or active state with Polar Mist (#d7f3f5).
+
+### Hero Headline
+
+**Role:** Prominent headline for introductory sections.
+
+Utilizes SuisseIntl at large sizes (40px, 50px, 134px) with weight 300, text in Polar Mist (#d7f3f5). Line height is compacted to create a dense, impactful block of text.
+
+### Play Showreel Button
+
+**Role:** Specific action button for media playback.
+
+Polar Mist (#d7f3f5) text on a transparent background, with a 1.5px solid Polar Mist (#d7f3f5) border. 8px border-radius for a slightly rounded rectangular form. Inner padding is minimal to keep it compact.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize Deep Charcoal (#111314) and Void Black (#020203) for backgrounds, establishing a dark, immersive canvas.
 - Use Polar Mist (#d7f3f5) for all primary text, ghost button borders, and interactive accents to ensure high contrast.
@@ -64,7 +132,7 @@ Lama Lama employs a dark mode aesthetic with a rich, immersive character, balanc
 - When creating cards or interactive elements, use a 15px border-radius for a consistent soft-edged appearance.
 - For all primary action buttons, employ the ghost style using Polar Mist (#d7f3f5) for text and border, with an 8px border-radius.
 
-### Don'ts
+### Don't
 
 - Avoid using bright or vivid colors for large background areas; reserve chromatic accents for subtle interactive states or small functional elements.
 - Do not introduce heavy drop shadows or busy decorative elements that would disrupt the understated, contained aesthetic.
@@ -73,10 +141,109 @@ Lama Lama employs a dark mode aesthetic with a rich, immersive character, balanc
 - Avoid tight spacing for content blocks or sections; maintain generous padding to uphold the design's comfortable density.
 - Do not use black for text on a deep charcoal background; ensure sufficient contrast by using Polar Mist (#d7f3f5).
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Void Black | #020203 | Base page background and secondary surface level for cards or content blocks. |
+| 1 | Deep Charcoal | #111314 | Primary content surface background, used for significant sections and card backgrounds against the base. |
+
+## Imagery
+
+Imagery primarily features product/project videos and still photography presented within rounded containers. The treatment suggests a focus on the subject, often with a slight vignette or deep, rich tones that blend with the dark background. Photography is mostly product-focused or environmental, avoiding overt lifestyle shots. Small illustrative icons are outlined and monochrome, matching the Polar Mist (#d7f3f5) accent color. Imagery generally serves to showcase work and provide atmospheric context, while maintaining a balanced density with text.
+
+## Layout
 
 The page uses a full-bleed layout on a dark canvas, primarily centered content sections within an implied max-width. The hero section features a centered headline over a video or prominent visual, with supporting text below. Subsequent sections often use split-pane layouts, presenting visuals on one side and text on the other, or a dynamic grid for featured projects. Vertical rhythm is established by consistent large section gaps (60-80px), creating a sense of spaciousness. Navigation is a minimalist top bar, with a persistent footer at the bottom containing utility links.
 
-### Imagery
+## Similar Brands
 
-Imagery primarily features product/project videos and still photography presented within rounded containers. The treatment suggests a focus on the subject, often with a slight vignette or deep, rich tones that blend with the dark background. Photography is mostly product-focused or environmental, avoiding overt lifestyle shots. Small illustrative icons are outlined and monochrome, matching the Polar Mist (#d7f3f5) accent color. Imagery generally serves to showcase work and provide atmospheric context, while maintaining a balanced density with text.
+- **Huge Inc.** — Shares a sophisticated, spacious dark mode aesthetic with prominent content showcases.
+- **Locomotive** — Uses a dark background, minimal UI, and focuses on showcasing creative work with a subtle accent color.
+- **Basic Theory** — Exhibits a similar art-directed editorial feel, with large typography and ample whitespace on dark canvases.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-deep-charcoal: #111314;
+  --color-polar-mist: #d7f3f5;
+  --color-void-black: #020203;
+  --font-suisseintl: 'SuisseIntl', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body: 14px;
+  --leading-body: 1.22;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.06;
+  --text-heading: 40px;
+  --leading-heading: 1;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 0.86;
+  --text-display: 134px;
+  --leading-display: 0.86;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-119: 119px;
+  --spacing-144: 144px;
+  --radius-cards: 15px;
+  --radius-buttons: 8px;
+  --radius-interactiveelements: 15px;
+  --surface-void-black: #020203;
+  --surface-deep-charcoal: #111314;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-deep-charcoal: #111314;
+  --color-polar-mist: #d7f3f5;
+  --color-void-black: #020203;
+  --font-suisseintl: 'SuisseIntl', Inter;
+  --text-caption: 10px;
+  --leading-caption: 1.5;
+  --text-body: 14px;
+  --leading-body: 1.22;
+  --text-heading-sm: 30px;
+  --leading-heading-sm: 1.06;
+  --text-heading: 40px;
+  --leading-heading: 1;
+  --text-heading-lg: 50px;
+  --leading-heading-lg: 0.86;
+  --text-display: 134px;
+  --leading-display: 0.86;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-20: 20px;
+  --spacing-30: 30px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-119: 119px;
+  --spacing-144: 144px;
+  --radius-cards: 15px;
+  --radius-buttons: 8px;
+  --radius-interactiveelements: 15px;
+  --surface-void-black: #020203;
+  --surface-deep-charcoal: #111314;
+}
+```
