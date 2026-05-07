@@ -1,32 +1,104 @@
 ---
 version: alpha
-name: HLE
-description: HLE employs a grayscale retro-digital aesthetic, presenting an interface that feels like a vintage computer terminal. The design is characterized by its high contrast starkness and extremely compact, monochromatic typography with a distinct pixelated mono-space flair. Functional elements appear as subtle text-based interactions or simple toggle switches, maintaining an atmosphere of focused, understated utility rather than modern graphical richness. Surface treatments are minimal, relying on subtle background shifts and hard-edged borders for separation, eschewing shadows or complex gradients.
-colors:
-  midnight-base: "#101011"
-  ghost-canvas: "#ffffff"
-  slate-highlight: "#bbbbbb"
-  elevated-panel: "#313131"
-  subtle-gray: "#8a8a8a"
-  medium-gray: "#717172"
-  toggle-blue: "#32A4C3"
-spacing:
-  elementGap: 8px
-  sectionGap: 48px
-components:
-  text-link-ghost-button:
-    role: Interactive element for navigation and actions that appears as simple text. It has a subtle 4px internal padding, drawing a thin line around itself on hover or focus using the text color to maintain its ghost-like appearance.
-  navigation-toggle-switch:
-    role: Binary control for activating or deactivating features, like sound. Styled as a small, pill-shaped switch with a distinct accent color for its active state.
+name: "HLE"
+description: "HLE employs a grayscale retro-digital aesthetic, presenting an interface that feels like a vintage computer terminal. The design is characterized by its high contrast starkness and extremely compact, monochromatic typography with a distinct pixelated mono-space flair. Functional elements appear as subtle text-based interactions or simple toggle switches, maintaining an atmosphere of focused, understated utility rather than modern graphical richness. Surface treatments are minimal, relying on subtle background shifts and hard-edged borders for separation, eschewing shadows or complex gradients."
+theme: "dark"
+industry: "media"
+source_url: "https://hle.io"
+refero_style_id: "5abe1239-79b9-4ebc-b4d1-9b2a85dc29a4"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512139092-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777512139092-thumb.jpg"
+extracted_at: "2026-04-30T01:22:36.290Z"
 ---
 
-## Overview
+# HLE — Style Reference
 
-**North Star:** grayscale retro-digital terminal
+> grayscale retro-digital terminal
+
+**Theme:** dark
+
+**Industry:** media
 
 HLE employs a grayscale retro-digital aesthetic, presenting an interface that feels like a vintage computer terminal. The design is characterized by its high contrast starkness and extremely compact, monochromatic typography with a distinct pixelated mono-space flair. Functional elements appear as subtle text-based interactions or simple toggle switches, maintaining an atmosphere of focused, understated utility rather than modern graphical richness. Surface treatments are minimal, relying on subtle background shifts and hard-edged borders for separation, eschewing shadows or complex gradients.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Base | #101011 | `--color-midnight-base` | Primary page background, most text, inactive navigation text |
+| Ghost Canvas | #ffffff | `--color-ghost-canvas` | Tertiary background sections, primary text for dark backgrounds, button text on dark. Also used for focus borders and outline styles |
+| Slate Highlight | #bbbbbb | `--color-slate-highlight` | Secondary background surfaces and occasional text accents. Creates a subtle tonal shift against the primary backgrounds |
+| Elevated Panel | #313131 | `--color-elevated-panel` | Background for elevated panels or containers, offering a darker gray for layered content |
+| Subtle Gray | #8a8a8a | `--color-subtle-gray` | Faint backgrounds or very muted text |
+| Medium Gray | #717172 | `--color-medium-gray` | Navigation panel background |
+| Toggle Blue | #32A4C3 | `--color-toggle-blue` | On/active state for toggle switches and potential accent elements — a cool, utilitarian highlight |
+
+## Tokens — Typography
+
+### PPSupplySansRegular
+
+- **Token:** `--font-ppsupplysansregular`
+- **Substitute:** Inter
+- **Weights:** 400
+- **Sizes:** 10px, 118px
+- **Line heights:** 0.99, 1.20
+- **Letter spacing:** normal
+- **Role:** Primary sans-serif font for general UI text, headings, and larger display elements. Its sparse size data suggests highly specific usage for key visual elements.
+
+### PPSupplyMonoRegular
+
+- **Token:** `--font-ppsupplymonoregular`
+- **Substitute:** IBM Plex Mono
+- **Weights:** 400
+- **Sizes:** 15px
+- **Line heights:** 1.30
+- **Letter spacing:** normal
+- **Role:** Monospaced font for body text, navigation items, buttons, and code-like snippets. This typeface defines the site's retro-digital character, reinforcing the terminal aesthetic.
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| default | 0px |
+| containers | 12px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| elementGap | 8px |
+
+## Components
+
+### Text Link / Ghost Button
+
+**Role:** Interactive element for navigation and actions that appears as simple text. It has a subtle 4px internal padding, drawing a thin line around itself on hover or focus using the text color to maintain its ghost-like appearance.
+
+text-based interaction; text color #101011 or #ffffff; transparent background; no explicit border-radius; 4px padding.
+
+### Navigation Toggle Switch
+
+**Role:** Binary control for activating or deactivating features, like sound. Styled as a small, pill-shaped switch with a distinct accent color for its active state.
+
+Pill-shaped toggle with a #717172 track background and a #101011 thumb when inactive; active state uses #32A4C3.
+
+## Do's and Don'ts
+
+### Do
 
 - Prioritize PPSupplyMonoRegular (or IBM Plex Mono) for all body text, navigation, and button labels to establish the core retro-digital aesthetic, using 15px/1.3 line height.
 - Implement Ghost Canvas #ffffff as the primary text color on Midnight Base #101011 backgrounds, reserving Midnight Base #101011 for text on lighter backgrounds.
@@ -36,7 +108,7 @@ HLE employs a grayscale retro-digital aesthetic, presenting an interface that fe
 - Section spacing should consistently use 48px vertical padding to create clear content blocks without feeling overly dense.
 - When a container needs subtle differentiation, use Elevated Panel #313131 as the background color, indicating a layered context without heavy visual weight.
 
-### Don'ts
+### Don't
 
 - Avoid using drop shadows or complex gradients; the system relies on flat colors, stark contrast, and minimal shifts between grayscale tones for visual depth.
 - Do not introduce bright, saturated colors unless explicitly tied to an accent or semantic role defined in the color palette (e.g., Toggle Blue, Alert Red).
@@ -45,10 +117,80 @@ HLE employs a grayscale retro-digital aesthetic, presenting an interface that fe
 - Avoid decorative imagery or illustrations; imagery should be minimal and either abstract or product-focused to align with the technical, terminal-like atmosphere.
 - Do not use multiple font families beyond PPSupplySansRegular and PPSupplyMonoRegular, as this dilutes the distinctive typographic identity.
 
-### Layout
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Midnight Base | #101011 | Dominant background for the entire page, providing a dark, immersive canvas. |
+| 1 | Elevated Panel | #313131 | Secondary background for subtly separated content blocks or containers. |
+| 2 | Medium Gray | #717172 | Background for primary navigation areas or distinct, slightly raised components within the interface. |
+
+## Imagery
+
+The site uses minimal imagery, primarily focusing on abstract or product-focused visuals such as the retro CRT monitor. There are no expansive photographs or complex illustrations. Iconography, like the current time display, is simple, mono-color, and uses a thick stroke weight to match the overall aesthetic. Imagery serves an explanatory or atmospheric role, not a decorative one, and is always isolated rather than overlapping, integrated seamlessly into the monochromatic UI.
+
+## Layout
 
 The page uses a full-bleed layout, with content often centered but without a fixed `pageMaxWidth` value, adapting responsively to the viewport. The hero section features a central, symbolic graphic (the retro monitor) that acts as an anchor for the primary interaction text 'Switch Day 'N' Night'. Sections are delineated by consistent vertical spacing of 48px, creating clear, distinct blocks without overt visual dividers. Content elements, such as the navigation in the top-left, tend to be anchored to screen corners. The layout is sparse and text-dominant, with a clear bottom-aligned footer containing utilitarian information. The overall rhythm is calm and deliberate, guiding the eye vertically.
 
-### Imagery
+## Similar Brands
 
-The site uses minimal imagery, primarily focusing on abstract or product-focused visuals such as the retro CRT monitor. There are no expansive photographs or complex illustrations. Iconography, like the current time display, is simple, mono-color, and uses a thick stroke weight to match the overall aesthetic. Imagery serves an explanatory or atmospheric role, not a decorative one, and is always isolated rather than overlapping, integrated seamlessly into the monochromatic UI.
+- **Are.na** — Monochromatic, content-focused layout with minimal ornamentation and a strong emphasis on typography, particularly for navigation and interactive elements.
+- **Terminal.com** — Heavy reliance on monospace typography, dark mode, and a utilitarian, code-editor-like aesthetic across the UI.
+- **Read.cv** — High-contrast text-heavy design with a focus on simple borders, clear hierarchy through spacing, and a lack of overt visual flair.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-base: #101011;
+  --color-ghost-canvas: #ffffff;
+  --color-slate-highlight: #bbbbbb;
+  --color-elevated-panel: #313131;
+  --color-subtle-gray: #8a8a8a;
+  --color-medium-gray: #717172;
+  --color-toggle-blue: #32A4C3;
+  --font-ppsupplysansregular: 'PPSupplySansRegular', Inter;
+  --font-ppsupplymonoregular: 'PPSupplyMonoRegular', IBM Plex Mono;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-default: 0px;
+  --radius-containers: 12px;
+  --surface-midnight-base: #101011;
+  --surface-elevated-panel: #313131;
+  --surface-medium-gray: #717172;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-base: #101011;
+  --color-ghost-canvas: #ffffff;
+  --color-slate-highlight: #bbbbbb;
+  --color-elevated-panel: #313131;
+  --color-subtle-gray: #8a8a8a;
+  --color-medium-gray: #717172;
+  --color-toggle-blue: #32A4C3;
+  --font-ppsupplysansregular: 'PPSupplySansRegular', Inter;
+  --font-ppsupplymonoregular: 'PPSupplyMonoRegular', IBM Plex Mono;
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --radius-default: 0px;
+  --radius-containers: 12px;
+  --surface-midnight-base: #101011;
+  --surface-elevated-panel: #313131;
+  --surface-medium-gray: #717172;
+}
+```

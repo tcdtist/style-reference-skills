@@ -1,55 +1,136 @@
 ---
 version: alpha
-name: HNST Studio
-description: HNST features a clean, high-contrast aesthetic with a warm off-white canvas and stark black text. A single vivid red accent color draws attention to key brand elements and interactive states, cutting through the otherwise muted palette. Typography balances classic readability with a contemporary, open feel, maintaining a sense of refined utility. Components are minimal, relying on strong borders and generous internal spacing rather than shadows for definition.
-colors:
-  canvas: "#ffffff"
-  soft-mist: "#f9f6f2"
-  desert-sand: "#eee5d9"
-  graphite: "#0e0e0e"
-  ash: "#868686"
-  silver: "#b7b7b7"
-  crimson: "#892500"
-  rose-blush: "#ea9195"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 11px
-    lineHeight: 1.25
-    letterSpacing: 0.55px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.2
-    letterSpacing: 1.82px
-  display:
-    fontFamily: "system-ui"
-    fontSize: 62px
-    lineHeight: 1.15
-    letterSpacing: 9.548px
-spacing:
-  cardRadius: 10px
-  buttonRadius: 0px
-  elementGap: 15px
-  sectionGap: 75px
-components:
-  primary-filled-button:
-    role: Call to action button
-  image-overlay-badge:
-    role: Informational overlay on images
-  product-category-badge:
-    role: Categorization tag for products
-  navigation-link:
-    role: Main navigation item
+name: "HNST Studio"
+description: "HNST features a clean, high-contrast aesthetic with a warm off-white canvas and stark black text. A single vivid red accent color draws attention to key brand elements and interactive states, cutting through the otherwise muted palette. Typography balances classic readability with a contemporary, open feel, maintaining a sense of refined utility. Components are minimal, relying on strong borders and generous internal spacing rather than shadows for definition."
+theme: "light"
+industry: "ecommerce"
+source_url: "https://www.letsbehonest.eu"
+refero_style_id: "7de578bc-9fbd-4664-a731-6223515bb601"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521265204-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1777521265204-thumb.jpg"
+extracted_at: "2026-04-30T03:54:49.969Z"
 ---
 
-## Overview
+# HNST Studio — Style Reference
 
-**North Star:** Warm minimum, strong accent — natural fibers on a stark, bright loom.
+> Warm minimum, strong accent — natural fibers on a stark, bright loom.
+
+**Theme:** light
+
+**Industry:** ecommerce
 
 HNST features a clean, high-contrast aesthetic with a warm off-white canvas and stark black text. A single vivid red accent color draws attention to key brand elements and interactive states, cutting through the otherwise muted palette. Typography balances classic readability with a contemporary, open feel, maintaining a sense of refined utility. Components are minimal, relying on strong borders and generous internal spacing rather than shadows for definition.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Canvas | #ffffff | `--color-canvas` | Page backgrounds, critical surfaces, contrast for dark text |
+| Soft Mist | #f9f6f2 | `--color-soft-mist` | Subtle background surfaces, section dividers |
+| Desert Sand | #eee5d9 | `--color-desert-sand` | Elevated surfaces, decorative backgrounds, badge bases |
+| Graphite | #0e0e0e | `--color-graphite` | Primary text, button backgrounds, strong borders |
+| Ash | #868686 | `--color-ash` | Secondary text, muted links, subtle borders |
+| Silver | #b7b7b7 | `--color-silver` | Light gray text, subtle decorative elements, hairline borders |
+| Crimson | #892500 | `--color-crimson` | Brand accent for navigation hovers, headers, and decorative highlights. Its deep hue provides visual weight without being overly aggressive |
+| Rose Blush | #ea9195 | `--color-rose-blush` | Subtle accent for navigation hovers, a lighter variant of Crimson |
+
+## Tokens — Typography
+
+### Poppins
+
+- **Token:** `--font-poppins`
+- **Substitute:** system-ui
+- **Weights:** 500, 600, 700
+- **Sizes:** 11px, 13px, 16px, 20px, 62px
+- **Line heights:** 1.15, 1.20, 1.25, 2.27
+- **Letter spacing:** -0.55px at 11px, -0.819px at 13px, -1.04px at 16px, -1.82px at 20px, -9.548px at 62px
+- **Role:** Headings and prominent display text — the higher weights and deliberate letter spacing create a bold, modern voice.
+
+### Raleway
+
+- **Token:** `--font-raleway`
+- **Substitute:** system-ui
+- **Weights:** 400, 600, 700
+- **Sizes:** 12px, 13px, 14px, 15px, 16px
+- **Line heights:** 1.20, 1.67, 1.70, 1.79
+- **Letter spacing:** -0.2304px at 12px, -0.3003px at 13px, -0.3456px at 14px, -0.3744px at 15px, -0.416px at 16px
+- **Role:** Body text, navigation, and detailed information — its wider stance and generous line-height ensure readability in smaller contexts.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 11px | 1.25 | 0.55px | `--text-caption` |
+| heading | 20px | 1.2 | 1.82px | `--text-heading` |
+| display | 62px | 1.15 | 9.548px | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-5 | 5px | `--spacing-5` |
+| spacing-9 | 9px | `--spacing-9` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-15 | 15px | `--spacing-15` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-23 | 23px | `--spacing-23` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-42 | 42px | `--spacing-42` |
+| spacing-45 | 45px | `--spacing-45` |
+| spacing-75 | 75px | `--spacing-75` |
+| spacing-114 | 114px | `--spacing-114` |
+| spacing-170 | 170px | `--spacing-170` |
+| spacing-185 | 185px | `--spacing-185` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 10px |
+| badges | 0px |
+| buttons | 0px |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 75px |
+| cardPadding | 42px |
+| elementGap | 15px |
+
+## Components
+
+### Primary Filled Button
+
+**Role:** Call to action button
+
+Solid Graphite background (#0e0e0e) with Canvas text (#ffffff). No border-radius for a stark, confident appearance. Padding is 0px top/bottom, 45px left/right. Font is Raleway at 16px, weight 400.
+
+### Image Overlay Badge
+
+**Role:** Informational overlay on images
+
+Transparent background with Canvas text (#ffffff). Used without padding or border-radius, acting as pure text label. Font is Raleway or Poppins, size varies based on context.
+
+### Product Category Badge
+
+**Role:** Categorization tag for products
+
+Desert Sand background (#eee5d9) with Canvas text (#ffffff). No padding or border-radius, similar to Image Overlay Badge for a clean, integrated look. Font is Raleway or Poppins, size varies.
+
+### Navigation Link
+
+**Role:** Main navigation item
+
+Ash text (#868686), changing to Rose Blush (#ea9195) or Crimson (#892500) on hover. Underlined on hover with a thin border color. Font is Raleway or Poppins, 16px for primary items, varying for sub-items.
+
+## Do's and Don'ts
+
+### Do
 
 - Use Canvas (#ffffff) sparingly for core backgrounds, defaulting to Soft Mist (#f9f6f2) for primary content areas to maintain warmth.
 - Apply Graphite (#0e0e0e) for all primary text and critical interactive elements like button backgrounds.
@@ -57,7 +138,7 @@ HNST features a clean, high-contrast aesthetic with a warm off-white canvas and 
 - Maintain a zero border-radius for buttons and badges to reinforce the sharp, precise brand identity.
 - Prioritize Raleway for body copy and general UI text, emphasizing its generous line height and neutral tracking for readability.
 
-### Don'ts
+### Don't
 
 - Avoid using shadows for element elevation; rely on color contrast transitions between Canvas, Soft Mist, and Desert Sand instead.
 - Do not introduce additional bright, saturated colors outside the defined Crimson and Rose Blush palette.
@@ -65,6 +146,119 @@ HNST features a clean, high-contrast aesthetic with a warm off-white canvas and 
 - Avoid tight letter-spacing for body text; Raleway's default open-ness is part of the brand's readability.
 - Do not use subtle gradients; the system relies on solid colors and sharp contrasts for definition.
 
-### Imagery
+## Surfaces
+
+| Level | Name | Value | Purpose |
+| --- | --- | --- | --- |
+| — | Base Canvas | #ffffff | Primary page background, high-contrast areas. |
+| 1 | Content Surface | #f9f6f2 | Main content backgrounds, providing a subtle shift from the base canvas. |
+| 2 | Elevated Card | #eee5d9 | Backgrounds for cards, badges, and other distinct content blocks. |
+| 3 | Deep Accent | #0e0e0 | Darkest surface, used for button backgrounds and strong visual anchors. |
+
+## Imagery
 
 This site prominently features lifestyle photography for its hero sections and product photography for showcasing items. Photography is natural, candid, and often high-key, using soft light and muted tones, focusing on human connection or authentic product details rather than stylized glamour. Product shots are typically tight crops, emphasizing texture and form. Imagery serves both decorative atmosphere in hero areas and explanatory content on product pages, occupying significant visual space in alternating text/image sections.
+
+## Similar Brands
+
+- **Everlane** — Shares a clean, minimalist aesthetic with high-quality photography and a focus on natural textures and muted palettes.
+- **COS** — Employs a similar high-contrast black and white typography paired with a subtle accent color and a focus on product purity.
+- **Arket** — Uses off-white backgrounds, strong photography, and a sophisticated, unadorned component style for e-commerce.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-canvas: #ffffff;
+  --color-soft-mist: #f9f6f2;
+  --color-desert-sand: #eee5d9;
+  --color-graphite: #0e0e0e;
+  --color-ash: #868686;
+  --color-silver: #b7b7b7;
+  --color-crimson: #892500;
+  --color-rose-blush: #ea9195;
+  --font-poppins: 'Poppins', system-ui;
+  --font-raleway: 'Raleway', system-ui;
+  --text-caption: 11px;
+  --leading-caption: 1.25;
+  --tracking-caption: 0.55px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 1.82px;
+  --text-display: 62px;
+  --leading-display: 1.15;
+  --tracking-display: 9.548px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-45: 45px;
+  --spacing-75: 75px;
+  --spacing-114: 114px;
+  --spacing-170: 170px;
+  --spacing-185: 185px;
+  --radius-cards: 10px;
+  --radius-badges: 0px;
+  --radius-buttons: 0px;
+  --surface-base-canvas: #ffffff;
+  --surface-content-surface: #f9f6f2;
+  --surface-elevated-card: #eee5d9;
+  --surface-deep-accent: #0e0e0;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-canvas: #ffffff;
+  --color-soft-mist: #f9f6f2;
+  --color-desert-sand: #eee5d9;
+  --color-graphite: #0e0e0e;
+  --color-ash: #868686;
+  --color-silver: #b7b7b7;
+  --color-crimson: #892500;
+  --color-rose-blush: #ea9195;
+  --font-poppins: 'Poppins', system-ui;
+  --font-raleway: 'Raleway', system-ui;
+  --text-caption: 11px;
+  --leading-caption: 1.25;
+  --tracking-caption: 0.55px;
+  --text-heading: 20px;
+  --leading-heading: 1.2;
+  --tracking-heading: 1.82px;
+  --text-display: 62px;
+  --leading-display: 1.15;
+  --tracking-display: 9.548px;
+  --spacing-4: 4px;
+  --spacing-5: 5px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-15: 15px;
+  --spacing-20: 20px;
+  --spacing-23: 23px;
+  --spacing-40: 40px;
+  --spacing-42: 42px;
+  --spacing-45: 45px;
+  --spacing-75: 75px;
+  --spacing-114: 114px;
+  --spacing-170: 170px;
+  --spacing-185: 185px;
+  --radius-cards: 10px;
+  --radius-badges: 0px;
+  --radius-buttons: 0px;
+  --surface-base-canvas: #ffffff;
+  --surface-content-surface: #f9f6f2;
+  --surface-elevated-card: #eee5d9;
+  --surface-deep-accent: #0e0e0;
+}
+```
