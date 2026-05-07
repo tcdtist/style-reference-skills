@@ -1,89 +1,196 @@
 ---
 version: alpha
-name: Klarna
-description: This design system feels like a friendly, yet sophisticated, financial advisor — welcoming and trustworthy. It achieves this through a vibrant, playful pink accent ('Bubblegum Pop') against a deep 'Midnight Plum' background in hero sections and a clean, accessible light gray elsewhere. The strategic use of large, rounded corners on buttons ('Pill Button') and cards ('Soft Square Card') softens the interface, making financial tools feel less intimidating. Headline typography is a signature element: 'Klarna Title' at heavy weights creates a bold, almost assertive voice, balanced by the friendly curvature of the other elements.
-colors:
-  midnight-plum: "#0b051d"
-  bubblegum-pop: "#ffa8cd"
-  candy-floss: "#ffd0e2"
-  amethyst: "#2c2242"
-  lavender-mist: "#aa89f2"
-  mint-leaf: "#e6ffa9"
-  off-white-canvas: "#f9f8f5"
-  pure-white: "#ffffff"
-  stone-gray: "#e2e2e7"
-  medium-gray: "#615f6d"
-  dark-gray: "#373544"
-typography:
-  caption:
-    fontFamily: "system-ui"
-    fontSize: 12px
-    lineHeight: 1.5
-    letterSpacing: -0.003px
-  body-sm:
-    fontFamily: "system-ui"
-    fontSize: 14px
-    lineHeight: 1.43
-    letterSpacing: -0.003px
-  body:
-    fontFamily: "system-ui"
-    fontSize: 16px
-    lineHeight: 1.25
-    letterSpacing: -0.003px
-  subheading:
-    fontFamily: "system-ui"
-    fontSize: 20px
-    lineHeight: 1.25
-    letterSpacing: -0.003px
-  heading:
-    fontFamily: "system-ui"
-    fontSize: 40px
-    lineHeight: 1.14
-  heading-lg:
-    fontFamily: "system-ui"
-    fontSize: 52px
-    lineHeight: 1.06
-  display:
-    fontFamily: "system-ui"
-    fontSize: 90px
-    lineHeight: 1.05
-spacing:
-  cardRadius: 16px
-  buttonRadius: 100px
-  elementGap: 16px
-  sectionGap: 48px
-components:
-  payment-options-cards:
-    role: 
-  feature-cards-grid:
-    role: 
-  app-rating-cta-banner:
-    role: 
-  pill-accent-button:
-    role: Primary Call to Action
-  ghost-border-button:
-    role: Secondary Action
-  pill-border-button:
-    role: Tertiary / Navigation Action
-  default-card:
-    role: Content Container
-  vibrant-card-amethyst:
-    role: Showcasing Diverse Content
-  vibrant-card-lavender-mist:
-    role: Showcasing Diverse Content
-  vibrant-card-mint-leaf:
-    role: Showcasing Diverse Content
-  text-input-default:
-    role: User Data Entry
+name: "Klarna"
+description: "This design system feels like a friendly, yet sophisticated, financial advisor — welcoming and trustworthy. It achieves this through a vibrant, playful pink accent ('Bubblegum Pop') against a deep 'Midnight Plum' background in hero sections and a clean, accessible light gray elsewhere. The strategic use of large, rounded corners on buttons ('Pill Button') and cards ('Soft Square Card') softens the interface, making financial tools feel less intimidating. Headline typography is a signature element: 'Klarna Title' at heavy weights creates a bold, almost assertive voice, balanced by the friendly curvature of the other elements."
+theme: "light"
+industry: "fintech"
+source_url: "https://klarna.com"
+refero_style_id: "49dba9e1-0d9d-4997-805a-bfea7525252d"
+screenshot_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775927560372-screenshot.jpg"
+thumbnail_url: "https://ysxnuuuj3kqhdyj2.public.blob.vercel-storage.com/1775927560372-thumb.jpg"
+extracted_at: "2026-04-11T17:13:03.445Z"
 ---
 
-## Overview
+# Klarna — Style Reference
 
-**North Star:** Friendly finance. A vibrant pink against deep violet, like a surprising bloom in a nighttime garden.
+> Friendly finance. A vibrant pink against deep violet, like a surprising bloom in a nighttime garden.
+
+**Theme:** light
+
+**Industry:** fintech
 
 This design system feels like a friendly, yet sophisticated, financial advisor — welcoming and trustworthy. It achieves this through a vibrant, playful pink accent ('Bubblegum Pop') against a deep 'Midnight Plum' background in hero sections and a clean, accessible light gray elsewhere. The strategic use of large, rounded corners on buttons ('Pill Button') and cards ('Soft Square Card') softens the interface, making financial tools feel less intimidating. Headline typography is a signature element: 'Klarna Title' at heavy weights creates a bold, almost assertive voice, balanced by the friendly curvature of the other elements.
 
-### Do's
+## Tokens — Colors
+
+| Name | Value | Token | Role |
+| --- | --- | --- | --- |
+| Midnight Plum | #0b051d | `--color-midnight-plum` | Primary text, prominent page backgrounds (hero), interaction states for links and buttons. It creates a sense of depth and sophistication. |
+| Bubblegum Pop | #ffa8cd | `--color-bubblegum-pop` | Call-to-action buttons, prominent accents, and brand elements. This color provides a high-contrast, energetic focal point against both dark and light backgrounds. |
+| Candy Floss | #ffd0e2 | `--color-candy-floss` | Subtle background accents, often used in smaller blocks or to hint at interactive states. A lighter, softer version of the brand pink. |
+| Amethyst | #2c2242 | `--color-amethyst` | The darkest of the card background colors, used for a soft, elevated look. |
+| Lavender Mist | #aa89f2 | `--color-lavender-mist` | A vibrant card background, suggesting freshness and modernity. |
+| Mint Leaf | #e6ffa9 | `--color-mint-leaf` | A bright, energetic card background, adding a touch of playfulness. |
+| Off-White Canvas | #f9f8f5 | `--color-off-white-canvas` | Main page background, default card surfaces. Provides a soft, clean base for content. |
+| Pure White | #ffffff | `--color-pure-white` | Navigation backgrounds, key content containers, elevated card surfaces. Offers crisp contrast and a sense of lightness. |
+| Stone Gray | #e2e2e7 | `--color-stone-gray` | Neutral button borders, inactive states, subtle dividers. A soft, light gray for secondary boundaries. |
+| Medium Gray | #615f6d | `--color-medium-gray` | Secondary text, subtle navigation links, placeholder text in inputs. Provides readability without competing with primary content. |
+| Dark Gray | #373544 | `--color-dark-gray` | Ghost button text, subtle navigational elements. Offers a slightly darker contrast on light backgrounds. |
+
+## Tokens — Typography
+
+### Klarna Title
+
+- **Token:** `--font-klarna-title`
+- **Substitute:** Montserrat
+- **Weights:** 500, 700
+- **Sizes:** 40px, 41px, 52px, 58px, 90px
+- **Line heights:** 1.05, 1.06, 1.10
+- **Role:** Display headlines and primary section titles. Its heavy weights establish a bold and direct brand voice.
+
+### Klarna Text
+
+- **Token:** `--font-klarna-text`
+- **Substitute:** Open Sans
+- **Weights:** 400, 500, 700
+- **Sizes:** 14px, 16px, 20px
+- **Line heights:** 1.05, 1.20, 1.30
+- **Letter spacing:** -0.0100em, -0.0030em
+- **Role:** Navigation links, input fields, and some subheadings. The custom letter-spacing gives it a unique, open feel.
+
+### -apple-system
+
+- **Token:** `--font-apple-system`
+- **Weights:** 400, 500
+- **Sizes:** 12px, 14px, 16px, 20px
+- **Line heights:** 1.00, 1.05, 1.14, 1.20, 1.25, 1.43, 1.50
+- **Letter spacing:** -0.0030em
+- **Role:** Body text, captions, and secondary links. Prioritizes system defaults for ubiquitous readability across devices.
+
+### Type Scale
+
+| Role | Size | Line Height | Letter Spacing | Token |
+| --- | --- | --- | --- | --- |
+| caption | 12px | 1.5 | -0.003px | `--text-caption` |
+| body-sm | 14px | 1.43 | -0.003px | `--text-body-sm` |
+| body | 16px | 1.25 | -0.003px | `--text-body` |
+| subheading | 20px | 1.25 | -0.003px | `--text-subheading` |
+| heading | 40px | 1.14 | — | `--text-heading` |
+| heading-lg | 52px | 1.06 | — | `--text-heading-lg` |
+| display | 90px | 1.05 | — | `--text-display` |
+
+## Tokens — Spacing & Shapes
+
+### Spacing Scale
+
+| Name | Value | Token |
+| --- | --- | --- |
+| spacing-4 | 4px | `--spacing-4` |
+| spacing-6 | 6px | `--spacing-6` |
+| spacing-8 | 8px | `--spacing-8` |
+| spacing-10 | 10px | `--spacing-10` |
+| spacing-12 | 12px | `--spacing-12` |
+| spacing-16 | 16px | `--spacing-16` |
+| spacing-20 | 20px | `--spacing-20` |
+| spacing-24 | 24px | `--spacing-24` |
+| spacing-32 | 32px | `--spacing-32` |
+| spacing-40 | 40px | `--spacing-40` |
+| spacing-48 | 48px | `--spacing-48` |
+| spacing-52 | 52px | `--spacing-52` |
+| spacing-64 | 64px | `--spacing-64` |
+| spacing-80 | 80px | `--spacing-80` |
+| spacing-92 | 92px | `--spacing-92` |
+| spacing-143 | 143px | `--spacing-143` |
+
+### Border Radius
+
+| Element | Value |
+| --- | --- |
+| cards | 16px |
+| input | 0px |
+| buttons | 100px |
+| pillButtons | 999px |
+
+### Shadows
+
+| Name | Value | Token |
+| --- | --- | --- |
+| xl | rgba(0, 0, 0, 0.1) 0px 2px 4px 0px | `--shadow-xl` |
+| xl-2 | rgb(228, 227, 223) 0px 0px 0px 1px inset | `--shadow-xl-2` |
+
+### Layout Tokens
+
+| Name | Value |
+| --- | --- |
+| sectionGap | 48px |
+| cardPadding | 32px |
+| elementGap | 16px |
+
+## Components
+
+### Payment Options Cards
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Feature Cards Grid
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### App Rating & CTA Banner
+
+Captured as a source example component. Use the structure and token choices as a reference for implementation.
+
+### Pill Accent Button
+
+**Role:** Primary Call to Action
+
+A 'Bubblegum Pop' (ffa8cd) background with 'Midnight Plum' (0b051d) text. Features strongly rounded corners (100px radius) and padding of 12px vertical, 20px horizontal. This button creates high visual impact and encourages interaction.
+
+### Ghost Border Button
+
+**Role:** Secondary Action
+
+Transparent background with a 'Dark Gray' (373544) border and text. Rounded corners (20px radius) and padding of 8px vertical, 12px horizontal. It offers a subtle action without distracting from primary CTAs.
+
+### Pill Border Button
+
+**Role:** Tertiary / Navigation Action
+
+Transparent background with 'Midnight Plum' (0b051d) text and a 'Stone Gray' (e2e2e7) border, with a fully rounded (`999px`) radius. This button type is used for less prominent actions, like navigation items, offering a clean, modern look.
+
+### Default Card
+
+**Role:** Content Container
+
+Uses 'Off-White Canvas' (f9f8f5) as a background with a 16px border-radius, no shadow. Typically used for feature sections or information blocks, keeping the layout clean and organized.
+
+### Vibrant Card - Amethyst
+
+**Role:** Showcasing Diverse Content
+
+A 'Amethyst' (2c2242) background with a 24px border-radius and a subtle shadow (rgba(0,0,0,0.1) 0px 2px 4px 0px). Padding is consistent at 32px on all sides. Used to visually differentiate various offerings or features, adding depth.
+
+### Vibrant Card - Lavender Mist
+
+**Role:** Showcasing Diverse Content
+
+A 'Lavender Mist' (aa89f2) background with a 24px border-radius and a subtle shadow (rgba(0,0,0,0.1) 0px 2px 4px 0px). Padding is consistent at 32px on all sides. Used to add visual variety and highlight specific content.
+
+### Vibrant Card - Mint Leaf
+
+**Role:** Showcasing Diverse Content
+
+A 'Mint Leaf' (e6ffa9) background with a 24px border-radius and a subtle shadow (rgba(0,0,0,0.1) 0px 2px 4px 0px). Padding is consistent at 32px on all sides. Used for playful or attention-grabbing content blocks.
+
+### Text Input (Default)
+
+**Role:** User Data Entry
+
+Transparent background with 'Medium Gray' (615f6d) text and border. No border-radius. Padding is 8px vertical, 12px horizontal. The stark, unrounded input provides a functional contrast to the softer button and card aesthetics.
+
+## Do's and Don'ts
+
+### Do
 
 - Always use 'Midnight Plum' (#0b051d) for primary headings and important text on light backgrounds to maintain brand authority.
 - Apply 'Bubblegum Pop' (#ffa8cd) for all primary call-to-action buttons to ensure maximum visibility and encourage clicks.
@@ -92,7 +199,7 @@ This design system feels like a friendly, yet sophisticated, financial advisor �
 - Employ `Klarna Title` font with weights 500-700 for all large headlines, providing a bold, direct brand voice.
 - Use 32px as the standard padding within card components to ensure generous content spacing.
 
-### Don'ts
+### Don't
 
 - Do not use highly saturated colors for large text blocks; reserve them for interactive elements or accents.
 - Avoid using hard-edged rectangles for content cards; always feature a 16px or 24px border-radius to maintain approachability.
@@ -101,10 +208,145 @@ This design system feels like a friendly, yet sophisticated, financial advisor �
 - Avoid shadows on default content cards; only use the specified subtle shadow (rgba(0,0,0,0.1) 0px 2px 4px 0px) on elevated, vibrant cards.
 - Do not use dark backgrounds for main content sections; reserve 'Midnight Plum' for hero or impactful introductory blocks.
 
-### Layout
+## Elevation
+
+- **Vibrant Card:** `rgba(0, 0, 0, 0.1) 0px 2px 4px 0px`
+
+## Imagery
+
+The visual language mixes product-centric photography with abstract, brand-colored graphics. Photography features close-up, cropped shots of a hand holding a mobile phone displaying the Klarna app, with a subtle glow or atmospheric lighting. The treatment is focused on showcasing functionality, not lifestyle. Illustrations use a flat, almost ethereal style, with soft gradients of brand colors. Icons are outlined, simple, and mono-color, typically 'Midnight Plum' on light backgrounds. The density is moderate; imagery serves to illustrate features rather than purely decorate, with a balance between visual elements and descriptive text.
+
+## Layout
 
 The layout is primarily max-width contained, centered on the page, creating a structured and focused experience. The hero section is full-bleed, using a dark 'Midnight Plum' background with bold, centered 'Klarna Title' typography on the left and a prominent product visual on the right. Subsequent sections alternate between feature blocks with text-left/image-right or image-left/text-right arrangements. There's a 4-column card grid used for showcasing different service aspects, with each card featuring unique vibrant background colors. The rhythm between sections is consistent, typically separated by 48px, lending a spacious and readable flow. The header is a sticky top navigation bar.
 
-### Imagery
+## Similar Brands
 
-The visual language mixes product-centric photography with abstract, brand-colored graphics. Photography features close-up, cropped shots of a hand holding a mobile phone displaying the Klarna app, with a subtle glow or atmospheric lighting. The treatment is focused on showcasing functionality, not lifestyle. Illustrations use a flat, almost ethereal style, with soft gradients of brand colors. Icons are outlined, simple, and mono-color, typically 'Midnight Plum' on light backgrounds. The density is moderate; imagery serves to illustrate features rather than purely decorate, with a balance between visual elements and descriptive text.
+- **Apple Pay (some marketing pages)** — Shares the use of vibrant, often pastel or saturated, accent colors against clean white or dark backgrounds, promoting a modern and accessible feel.
+- **Monzo** — Its brand aesthetic also incorporates bold, custom typography and a distinct, playful color palette (hot pink as a primary accent) to make banking feel less formal.
+- **Revolut** — Utilizes a similar blend of deep, saturated brand colors with clean layouts and strong, geometric typefaces to convey a cutting-edge financial service.
+- **Square** — Employs clean, high-contrast layouts with rounded UI elements and prominent brand colors to project simplicity and trustworthiness in financial transactions.
+
+## Quick Start
+
+### CSS Custom Properties
+
+```css
+:root {
+  --color-midnight-plum: #0b051d;
+  --color-bubblegum-pop: #ffa8cd;
+  --color-candy-floss: #ffd0e2;
+  --color-amethyst: #2c2242;
+  --color-lavender-mist: #aa89f2;
+  --color-mint-leaf: #e6ffa9;
+  --color-off-white-canvas: #f9f8f5;
+  --color-pure-white: #ffffff;
+  --color-stone-gray: #e2e2e7;
+  --color-medium-gray: #615f6d;
+  --color-dark-gray: #373544;
+  --font-klarna-title: 'Klarna Title', Montserrat;
+  --font-klarna-text: 'Klarna Text', Open Sans;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.003px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.003px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: -0.003px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.003px;
+  --text-heading: 40px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 52px;
+  --leading-heading-lg: 1.06;
+  --text-display: 90px;
+  --leading-display: 1.05;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-92: 92px;
+  --spacing-143: 143px;
+  --radius-cards: 16px;
+  --radius-input: 0px;
+  --radius-buttons: 100px;
+  --radius-pillbuttons: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  --shadow-xl-2: rgb(228, 227, 223) 0px 0px 0px 1px inset;
+}
+```
+
+### Tailwind v4
+
+```css
+@theme {
+  --color-midnight-plum: #0b051d;
+  --color-bubblegum-pop: #ffa8cd;
+  --color-candy-floss: #ffd0e2;
+  --color-amethyst: #2c2242;
+  --color-lavender-mist: #aa89f2;
+  --color-mint-leaf: #e6ffa9;
+  --color-off-white-canvas: #f9f8f5;
+  --color-pure-white: #ffffff;
+  --color-stone-gray: #e2e2e7;
+  --color-medium-gray: #615f6d;
+  --color-dark-gray: #373544;
+  --font-klarna-title: 'Klarna Title', Montserrat;
+  --font-klarna-text: 'Klarna Text', Open Sans;
+  --font-apple-system: '-apple-system', ui-sans-serif, system-ui, sans-serif;
+  --text-caption: 12px;
+  --leading-caption: 1.5;
+  --tracking-caption: -0.003px;
+  --text-body-sm: 14px;
+  --leading-body-sm: 1.43;
+  --tracking-body-sm: -0.003px;
+  --text-body: 16px;
+  --leading-body: 1.25;
+  --tracking-body: -0.003px;
+  --text-subheading: 20px;
+  --leading-subheading: 1.25;
+  --tracking-subheading: -0.003px;
+  --text-heading: 40px;
+  --leading-heading: 1.14;
+  --text-heading-lg: 52px;
+  --leading-heading-lg: 1.06;
+  --text-display: 90px;
+  --leading-display: 1.05;
+  --spacing-4: 4px;
+  --spacing-6: 6px;
+  --spacing-8: 8px;
+  --spacing-10: 10px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-52: 52px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-92: 92px;
+  --spacing-143: 143px;
+  --radius-cards: 16px;
+  --radius-input: 0px;
+  --radius-buttons: 100px;
+  --radius-pillbuttons: 999px;
+  --shadow-xl: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px;
+  --shadow-xl-2: rgb(228, 227, 223) 0px 0px 0px 1px inset;
+}
+```
