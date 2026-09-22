@@ -1,4 +1,3 @@
 {
-  "buildCommand": "cd mcp-server && npm run build",
   "outputDirectory": "."
 }
