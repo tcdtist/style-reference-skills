@@ -9,6 +9,14 @@
     "forceConsistentCasingInFileNames": true,
     "noEmit": true
   },
-  "include": ["api/**/*.ts", "api/**/*.d.ts"],
-  "exclude": ["node_modules", "mcp-server", "dist"]
+  "include": [
+    "api/**/*.ts",
+    "api/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "mcp-server",
+    "dist",
+    "scripts"
+  ]
 }

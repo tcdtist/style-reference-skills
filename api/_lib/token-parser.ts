@@ -1,10 +1,11 @@
-// @ts-nocheck
 /**
- * Universal token parser for DESIGN.md files
+ * Universal token parser for DESIGN.md files (Vercel API version - CommonJS)
+ * Canonical TypeScript source. ESM mirror lives at mcp-server/token-parser.ts
  */
+import type { ParsedTokens } from "./types.js";
 
-function parseMarkdownTokens(content) {
-  const tokens = {
+export function parseMarkdownTokens(content: string): ParsedTokens {
+  const tokens: ParsedTokens = {
     colors: [],
     typography: [],
     spacing: [],
@@ -32,7 +33,6 @@ function parseMarkdownTokens(content) {
         const val = cells[1];
         const tok = cells[2].replace(/`/g, "").trim();
         const role = cells[3] || "";
-
         const cleanName = name
           .toLowerCase()
           .replace(/[^a-z0-9]+/g, "-")
@@ -95,7 +95,3 @@ function parseMarkdownTokens(content) {
 
   return tokens;
 }
-
-module.exports = {
-  parseMarkdownTokens,
-};

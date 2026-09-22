@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node scripts/test-api-local.js",
     "type-check": "tsc --noEmit",
-    "build:index": "node scripts/build-index.js",
+    "build:index": "node --import tsx/esm scripts/build-index.ts",
     "build:mcp": "pnpm --filter style-reference-mcp run build",
     "cli": "python3 scripts/style_ref.py"
   },
@@ -15,12 +15,16 @@
     "design-tokens",
     "ai-agent",
     "style-reference",
-    "mcp"
+    "mcp",
+    "model-context-protocol",
+    "typescript"
   ],
   "author": "tcdtist",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.14.0",
+    "@vercel/node": "^5.0.0",
+    "tsx": "^4.0.0",
     "typescript": "^5.4.0"
   }
 }

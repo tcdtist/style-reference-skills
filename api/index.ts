@@ -1,6 +1,6 @@
-// @ts-nocheck
-// Vercel serverless function for API root — lists available endpoints
-module.exports = (req, res) => {
+import type { VercelRequest, VercelResponse } from "@vercel/node";
+
+export default function handler(_req: VercelRequest, res: VercelResponse): void {
   res.json({
     name: "style-reference-skills",
     version: "1.1.0",
@@ -15,4 +15,4 @@ module.exports = (req, res) => {
     },
     docs: "https://github.com/tcdtist/style-reference-skills",
   });
-};
+}
