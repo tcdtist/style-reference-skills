@@ -1,150 +1,240 @@
-# Style Reference Skills
+<div align="center">
 
-Curated `DESIGN.md` style references from 1,300+ real-world brands for AI agents to build consistent, brand-aligned user interfaces.
+# 🎨 Style Reference Skills
 
-## Overview
+**1,300+ curated brand design systems for AI agents**
 
-This repository aggregates design system references (`DESIGN.md`) extracted from top modern products and brands (Apple, Stripe, Linear, Vercel, Wise, Airbnb, etc.). AI agents consume these files to understand aesthetic vibes, extract CSS tokens (colors, typography, spacing, radius, shadows), and replicate specific visual styles without generic AI slop.
+Search, extract, and apply real-world design tokens from Apple, Stripe, Linear, Vercel, Airbnb, and hundreds more — via REST API, MCP Server, or Python CLI.
 
-## Repository Structure
+[![Vercel](https://img.shields.io/badge/API-Vercel-black?logo=vercel)](https://style-reference-skills.vercel.app)
+[![MCP](https://img.shields.io/badge/MCP-Compatible-5A67D8?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTEyIDJMNCAxMmw4IDEwIDgtMTB6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg==)](https://modelcontextprotocol.io)
+[![Python](https://img.shields.io/badge/CLI-Python_3-3776AB?logo=python&logoColor=white)]()
+[![TypeScript](https://img.shields.io/badge/Types-TypeScript-3178C6?logo=typescript&logoColor=white)]()
+[![License](https://img.shields.io/badge/License-MIT-green.svg)]()
 
-```text
-style-reference-skills/
-├── skills/              # 1,300+ DESIGN.md files organized by brand
-│   ├── apple/
-│   ├── linear/
-│   ├── vercel/
-│   ├── stripe/
-│   └── ...
-├── api/                 # Vercel Serverless API routes (Cached & Optimized)
-│   ├── _lib/            # Shared index loader, types, and token parser
-│   ├── brands/          # /api/brands, :brandId/design, and :brandId/tokens
-│   ├── industries.js    # /api/industries
-│   ├── search.js        # /api/search with industry, theme, and pagination
-│   └── health.js        # Service health check
-├── mcp-server/          # Standard Model Context Protocol (MCP) server (stdio)
-│   ├── index.ts         # MCP Server implementation (@modelcontextprotocol/sdk)
-│   ├── dist/            # Compiled ESM JavaScript executable
-│   └── package.json
-├── scripts/             # Python 3 CLI SDK & Node.js maintenance tools
-│   ├── style_ref.py     # Python 3 offline CLI & SDK for AI agents (zero-deps)
-│   ├── test_style_ref.py# Unit tests for Python CLI & SDK
-│   ├── test-api-local.js# Local test suite for API endpoints
-│   ├── build-index.js   # Rebuild index.json with industry, media, and tokens
-│   └── validate-design-md.js
-├── index.json           # Searchable index of all 1,304 style references
-└── README.md
-```
+</div>
 
 ---
 
-## 🐍 Python 3 CLI & SDK for AI Agents (Local-First & Offline)
+## Why This Exists
 
-For local AI agents and shell automation without internet dependencies, the repository provides [`scripts/style_ref.py`](file:///Users/tcdtist/dev/me/style-reference-skills/scripts/style_ref.py) (pure Python 3 standard library, zero dependencies):
+AI agents often produce generic, inconsistent UIs — "AI slop." This repository solves that by providing **structured design references** (`DESIGN.md`) from 1,300+ real-world products, each containing:
+
+- **Color tokens** with CSS variable names and hex values
+- **Typography** with font families, weights, and scale tokens
+- **Spacing & radius** scales with semantic naming
+- **Component patterns**, dos and don'ts
+- **Industry classification** for targeted style matching
+
+Agents consume these references to understand aesthetic vibes and replicate specific visual styles with production-quality tokens.
+
+---
+
+## Quick Start
+
+### Python CLI (Zero Dependencies)
 
 ```bash
-# 1. Search brands by keyword & industry (Output: Table or JSON)
+# Search fintech brands with dark themes
 python3 scripts/style_ref.py search "fintech" --theme dark --limit 5
-python3 scripts/style_ref.py search "ecommerce" --format json
 
-# 2. Extract tokens directly as CSS variables (:root stylesheet)
+# Extract CSS variables for Linear
 python3 scripts/style_ref.py tokens linear --format css
 
-# 3. Extract tokens directly as Tailwind config snippet (theme.extend)
+# Get Tailwind config snippet for Stripe
 python3 scripts/style_ref.py tokens stripe --format tailwind
 
-# 4. Extract structured JSON tokens
-python3 scripts/style_ref.py tokens apple --format json
-
-# 5. List all 11+ industry distributions
+# List all industry categories
 python3 scripts/style_ref.py industries
 ```
 
----
-
-## 🌐 REST API
-
-Publicly deployed at `https://style-reference-skills.vercel.app`. All endpoints are optimized with Edge CDN caching (`s-maxage=86400, stale-while-revalidate=604800`).
-
-| Endpoint | Method | Params / Query | Description |
-|---|---|---|---|
-| `/api/health` | `GET` | — | Health check and total brand count |
-| `/api/industries` | `GET` | — | List all industry categories and counts |
-| `/api/brands` | `GET` | `?fields=summary&industry=&theme=&limit=&page=` | List brands (supports lightweight `fields=summary`) |
-| `/api/brands/:brandId` | `GET` | — | Get complete metadata for a specific brand |
-| `/api/brands/:brandId/design` | `GET` | — | Load full raw `DESIGN.md` markdown content |
-| `/api/brands/:brandId/tokens` | `GET` | `?format=json\|css\|tailwind` | **(NEW)** Machine-readable tokens (JSON, CSS, or Tailwind) |
-| `/api/search` | `GET` | `?q=&industry=&theme=&limit=&page=` | Search brands by keyword, industry, theme, or ID |
-
-### REST Usage Examples
+### REST API
 
 ```bash
-# 1. Get machine-readable tokens as CSS variables
-curl "https://style-reference-skills.vercel.app/api/brands/linear/tokens?format=css"
-
-# 2. Get machine-readable tokens for Tailwind
-curl "https://style-reference-skills.vercel.app/api/brands/stripe/tokens?format=tailwind"
-
-# 3. Search ecommerce brands with limit
+# Search by industry with pagination
 curl "https://style-reference-skills.vercel.app/api/search?industry=ecommerce&limit=5"
 
-# 4. Explore available industry categories
+# Get machine-readable tokens as CSS
+curl "https://style-reference-skills.vercel.app/api/brands/linear/tokens?format=css"
+
+# Explore available industries
 curl "https://style-reference-skills.vercel.app/api/industries"
 ```
 
----
+### MCP Server (Claude, Cursor, Windsurf, Antigravity)
 
-## 🤖 Model Context Protocol (MCP) Server
-
-The repository includes a production-grade MCP server using the official `@modelcontextprotocol/sdk` communicating via `stdio` transport. It allows Claude Code, Antigravity IDE, Cursor, and Windsurf to search styles and fetch tokens directly as native tool calls.
-
-### Configuration
-
-Add to your IDE's MCP config file (e.g. `~/.gemini/antigravity-ide/mcp_config.json`, `~/.claude/claude_desktop_config.json`, or `.cursor/mcp.json`):
+Add to your IDE's MCP config:
 
 ```json
 {
   "mcpServers": {
     "style-reference": {
       "command": "node",
-      "args": ["/absolute/path/to/style-reference-skills/mcp-server/dist/index.js"]
+      "args": ["/path/to/style-reference-skills/mcp-server/dist/index.js"]
     }
   }
 }
 ```
 
-### Available MCP Tools
-
-1. **`search_styles`**: Search through 1,304 brands by keyword, industry, theme, and limit.
-2. **`get_brand_tokens`**: **(NEW)** Extract structured design tokens (colors, typography, spacing, CSS variables, Tailwind theme snippet) directly as machine-readable JSON or CSS.
-3. **`get_brand_design`**: Retrieve full raw `DESIGN.md` markdown content.
-4. **`list_industries`**: List all industry categories and counts.
-
-### MCP Resources
-
-- `style://brands/{brand_id}`: Direct access to any brand's `DESIGN.md` as an MCP resource.
+Then use the tools directly in your AI IDE:
+- `search_styles` — Find brands by keyword, industry, or theme
+- `get_brand_design` — Full DESIGN.md specification
+- `get_brand_tokens` — Structured tokens as JSON, CSS, or Tailwind
+- `list_industries` — Browse 11 industry categories
 
 ---
 
-## 🧪 Testing & Maintenance Scripts
+## Architecture
+
+```
+style-reference-skills/
+├── skills/                  # 1,304 brand directories, each with DESIGN.md
+│   ├── apple/DESIGN.md
+│   ├── stripe/DESIGN.md
+│   ├── linear/DESIGN.md
+│   └── ...
+├── api/                     # Vercel Serverless REST API
+│   ├── _lib/                # Shared loader, types, token parser
+│   ├── brands/              # /brands, /brands/:id, /brands/:id/design, /brands/:id/tokens
+│   ├── search.js            # Multi-filter search with pagination
+│   ├── industries.js        # Industry aggregation
+│   └── health.js            # Health check
+├── mcp-server/              # Model Context Protocol server (stdio)
+│   ├── index.ts             # MCP implementation (@modelcontextprotocol/sdk)
+│   ├── token-parser.ts      # Shared token extraction module
+│   └── dist/                # Compiled ESM bundle
+├── scripts/                 # Tooling
+│   ├── style_ref.py         # Python 3 CLI & SDK (zero-deps)
+│   ├── test_style_ref.py    # Python unit tests
+│   ├── build-index.js       # Rebuild index.json from DESIGN.md files
+│   └── test-api-local.js    # API integration tests
+└── index.json               # Searchable metadata index (1,304 brands)
+```
+
+---
+
+## REST API Reference
+
+All endpoints are deployed at `https://style-reference-skills.vercel.app` with Edge CDN caching (`s-maxage=86400, stale-while-revalidate=604800`).
+
+| Endpoint | Description | Key Params |
+|----------|-------------|------------|
+| `GET /api/health` | Service health + brand count | — |
+| `GET /api/industries` | All industry categories with counts | — |
+| `GET /api/search` | Search brands by keyword, industry, theme | `q`, `industry`, `theme`, `limit`, `page` |
+| `GET /api/brands` | List all brands with optional filtering | `fields=summary`, `industry`, `theme`, `limit`, `page` |
+| `GET /api/brands/:id` | Full metadata for a specific brand | — |
+| `GET /api/brands/:id/design` | Raw DESIGN.md markdown content | — |
+| `GET /api/brands/:id/tokens` | Machine-readable design tokens | `format=json\|css\|tailwind` |
+
+### Token Output Formats
+
+**JSON** (default) — Structured object with colors, typography, spacing, CSS variables, and Tailwind mappings.
+
+**CSS** — Ready-to-use `:root` stylesheet with CSS custom properties.
+
+**Tailwind** — `theme.extend` snippet for `tailwind.config.js`.
+
+---
+
+## MCP Server
+
+The MCP server implements the [Model Context Protocol](https://modelcontextprotocol.io) (2024-11-05) with `stdio` transport. It exposes 4 tools and 1 resource template.
+
+### Tools
+
+| Tool | Description |
+|------|-------------|
+| `search_styles` | Search 1,304 brands by query, industry, theme, with configurable limit |
+| `get_brand_design` | Retrieve full raw DESIGN.md for a brand |
+| `get_brand_tokens` | Extract structured tokens in JSON, CSS, or Tailwind format |
+| `list_industries` | List all 11 industry categories with brand counts |
+
+### Resources
+
+| URI Template | Description |
+|---|---|
+| `style://brands/{brand_id}` | Direct access to any brand's DESIGN.md |
+
+### Build & Run
 
 ```bash
-# Run Python CLI & SDK unit tests
-python3 scripts/test_style_ref.py
+cd mcp-server
+pnpm install
+pnpm run build    # Compile TypeScript → dist/
+pnpm run start    # Run via stdio
+pnpm run dev      # Dev mode with tsx watch
+```
 
-# Run local API test suite
-node scripts/test-api-local.js
+---
 
-# Rebuild index.json from skills/*/DESIGN.md
+## Python CLI & SDK
+
+[`scripts/style_ref.py`](scripts/style_ref.py) — Pure Python 3 standard library, zero external dependencies. Works offline against the local `index.json` and `skills/` directory.
+
+### Commands
+
+| Command | Description | Example |
+|---------|-------------|---------|
+| `search` | Find brands by keyword, industry, theme | `search "fintech" --theme dark -f json` |
+| `tokens` | Extract design tokens | `tokens stripe --format css` |
+| `industries` | List industry categories | `industries --format json` |
+| `get` | Print raw DESIGN.md content | `get linear` |
+
+### As a Library
+
+```python
+from scripts.style_ref import get_brand_data, load_index, parse_markdown_tokens
+
+# Get full brand data with tokens
+data = get_brand_data("linear")
+print(data["tokens"]["css_variables"])
+
+# Search programmatically
+index = load_index()
+fintech = [b for b in index["brands"] if b.get("industry") == "fintech"]
+```
+
+---
+
+## Industry Distribution
+
+| Industry | Brands | Examples |
+|----------|--------|---------|
+| Design | 301 | Figma, Framer, Sketch, Dribbble |
+| Ecommerce | 148 | Apple, Airbnb, Zara, Nike |
+| Agency | 138 | Pentagram, Collins, Porto Rocha |
+| AI | 97 | OpenAI, Anthropic, Midjourney |
+| Media | 97 | Netflix, Spotify, YouTube |
+| SaaS | 84 | Linear, Notion, Slack |
+| Productivity | 77 | Todoist, Cal.com, Asana |
+| Fintech | 73 | Stripe, Wise, Coinbase |
+| DevTools | 65 | Vercel, Supabase, Railway |
+| Crypto | 29 | Uniswap, Metamask, Solana |
+
+---
+
+## Development
+
+```bash
+# Rebuild index from DESIGN.md files
 node scripts/build-index.js
 
-# Build MCP server TypeScript bundle
-cd mcp-server && pnpm run build
+# Run Python SDK tests
+python3 scripts/test_style_ref.py
 
-# Validate DESIGN.md structure
-node scripts/validate-design-md.js
+# Run API integration tests
+node scripts/test-api-local.js
+
+# Type-check MCP server
+cd mcp-server && npx tsc --noEmit
+
+# Build MCP server
+cd mcp-server && pnpm run build
 ```
+
+---
 
 ## License
 
-`DESIGN.md` files belong to their respective brands. This repository aggregates them solely for AI agent design guidance and token consumption.
+MIT. Individual `DESIGN.md` files reference their respective brands' visual systems and are aggregated solely for AI agent design guidance and token consumption.
