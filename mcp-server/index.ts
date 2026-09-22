@@ -2,18 +2,13 @@
 
 import * as fs from "fs";
 import * as path from "path";
-import express from "express";
-import cors from "cors";
+import { fileURLToPath } from "url";
+import { McpServer, ResourceTemplate } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { z } from "zod";
 
-const app = express();
-app.use(cors());
-app.use(express.json());
-
-// Log API requests
-app.use((req, res, next) => {
-  console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
-  next();
-});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 function resolveExistingPath(candidates: string[]): string {
   for (const candidate of candidates) {
@@ -37,79 +32,222 @@ const INDEX_FILE = resolveExistingPath([
   path.join(__dirname, "../../index.json"),
 ]);
 
-// Load index
-let index: any = { brands: [] };
-try {
-  const indexContent = fs.readFileSync(INDEX_FILE, "utf-8");
-  index = JSON.parse(indexContent);
-} catch (err) {
-  console.error("Failed to load index.json:", err);
+interface BrandMetadata {
+  id: string;
+  name: string;
+  description: string;
+  theme?: string;
+  industry?: string;
+  source_url?: string;
+  screenshot_url?: string;
+  thumbnail_url?: string;
+  refero_style_id?: string;
+  extracted_at?: string;
+  path: string;
 }
 
-// HTTP API endpoints
-app.get("/api/brands", (req, res) => {
-  res.json(index.brands);
-});
-
-app.get("/api/brands/:brandId", (req, res) => {
-  const brandId = req.params.brandId;
-  const brand = index.brands.find((b: any) => b.id === brandId);
-
-  if (!brand) {
-    return res.status(404).json({ error: `Brand ${brandId} not found` });
-  }
-
-  res.json(brand);
-});
-
-app.get("/api/brands/:brandId/design", (req, res) => {
-  const brandId = req.params.brandId;
-  const designMdPath = path.join(SKILLS_DIR, brandId, "DESIGN.md");
-
-  if (!fs.existsSync(designMdPath)) {
-    return res
-      .status(404)
-      .json({ error: `DESIGN.md not found for ${brandId}` });
-  }
-
-  const content = fs.readFileSync(designMdPath, "utf-8");
-  res.type("text/markdown").send(content);
-});
-
-app.get("/api/search", (req, res) => {
-  const query = req.query.q as string;
-  if (!query) {
-    return res.status(400).json({ error: 'Query parameter "q" is required' });
-  }
-
-  const lowerQuery = query.toLowerCase();
-  const results = index.brands.filter((brand: any) => {
-    return (
-      brand.name.toLowerCase().includes(lowerQuery) ||
-      brand.description.toLowerCase().includes(lowerQuery) ||
-      brand.id.toLowerCase().includes(lowerQuery)
-    );
-  });
-
-  res.json(results);
-});
-
-// Health check
-app.get("/health", (req, res) => {
-  res.json({ status: "ok", brands: index.brands.length });
-});
-
-app.get("/api/health", (req, res) => {
-  res.json({ status: "ok", brands: index.brands.length });
-});
-
-// Start server
-const PORT = process.env.PORT || 3000;
-
-if (require.main === module) {
-  app.listen(PORT, () => {
-    console.error(`Style Reference API server running on port ${PORT}`);
-  });
+interface IndexFile {
+  version: string;
+  brands: BrandMetadata[];
 }
 
-export default app;
+function loadIndex(): IndexFile {
+  try {
+    const content = fs.readFileSync(INDEX_FILE, "utf-8");
+    return JSON.parse(content);
+  } catch (err) {
+    console.error("Failed to load index.json:", err);
+    return { version: "1.0.0", brands: [] };
+  }
+}
+
+// Create MCP Server instance
+const server = new McpServer({
+  name: "style-reference-skills",
+  version: "1.1.0",
+});
+
+// Tool 1: search_styles
+server.tool(
+  "search_styles",
+  "Search through 1304 curated brand design systems by keyword, industry, or theme. Returns matched brands with metadata, tokens summary, and preview URLs.",
+  {
+    query: z
+      .string()
+      .optional()
+      .describe(
+        "Search keyword matched against brand name, description, and industry"
+      ),
+    industry: z
+      .string()
+      .optional()
+      .describe(
+        "Filter by industry category (e.g. ecommerce, fintech, saas, ai, devtools, design, agency)"
+      ),
+    theme: z
+      .enum(["light", "dark"])
+      .optional()
+      .describe("Filter by visual theme (light or dark)"),
+    limit: z
+      .number()
+      .optional()
+      .default(10)
+      .describe("Maximum number of brand styles to return (default: 10, max: 50)"),
+  },
+  async ({ query, industry, theme, limit = 10 }) => {
+    const index = loadIndex();
+    const q = query ? query.toLowerCase().trim() : "";
+    const filterInd = industry ? industry.toLowerCase().trim() : "";
+    const filterTheme = theme ? theme.toLowerCase().trim() : "";
+
+    const matched = index.brands.filter((brand) => {
+      const name = (brand.name || "").toLowerCase();
+      const desc = (brand.description || "").toLowerCase();
+      const id = (brand.id || "").toLowerCase();
+      const ind = (brand.industry || "").toLowerCase();
+      const th = (brand.theme || "").toLowerCase();
+
+      if (q) {
+        const matchesText =
+          name.includes(q) || desc.includes(q) || id.includes(q) || ind.includes(q);
+        if (!matchesText) return false;
+      }
+
+      if (filterInd && ind !== filterInd) return false;
+      if (filterTheme && th !== filterTheme) return false;
+
+      return true;
+    });
+
+    const cappedLimit = Math.min(Math.max(limit, 1), 50);
+    const results = matched.slice(0, cappedLimit);
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(
+            {
+              total_matched: matched.length,
+              returned_count: results.length,
+              brands: results,
+            },
+            null,
+            2
+          ),
+        },
+      ],
+    };
+  }
+);
+
+// Tool 2: get_brand_design
+server.tool(
+  "get_brand_design",
+  "Retrieve the complete DESIGN.md specification (color tokens, typography, spacing, radius, component patterns, dos and don'ts) for a specific brand.",
+  {
+    brand_id: z
+      .string()
+      .describe("The unique brand slug/id (e.g. 'linear', 'apple', 'stripe', 'vercel', 'airbnb')"),
+  },
+  async ({ brand_id }) => {
+    const cleanId = brand_id.toLowerCase().trim();
+    const designMdPath = path.join(SKILLS_DIR, cleanId, "DESIGN.md");
+
+    if (!fs.existsSync(designMdPath)) {
+      return {
+        isError: true,
+        content: [
+          {
+            type: "text",
+            text: `Brand design '${cleanId}' not found. Please verify the brand_id using the 'search_styles' tool.`,
+          },
+        ],
+      };
+    }
+
+    const content = fs.readFileSync(designMdPath, "utf-8");
+    return {
+      content: [
+        {
+          type: "text",
+          text: content,
+        },
+      ],
+    };
+  }
+);
+
+// Tool 3: list_industries
+server.tool(
+  "list_industries",
+  "List all available design system industries with brand counts across the 1304 indexed brands.",
+  {},
+  async () => {
+    const index = loadIndex();
+    const industriesMap: Record<string, number> = {};
+
+    for (const brand of index.brands) {
+      const ind = (brand.industry || "other").toLowerCase().trim();
+      industriesMap[ind] = (industriesMap[ind] || 0) + 1;
+    }
+
+    const sorted = Object.entries(industriesMap)
+      .map(([name, count]) => ({ name, count }))
+      .sort((a, b) => b.count - a.count);
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(
+            {
+              total_brands: index.brands.length,
+              total_industries: sorted.length,
+              industries: sorted,
+            },
+            null,
+            2
+          ),
+        },
+      ],
+    };
+  }
+);
+
+// Resource: style://brands/{brand_id}
+server.resource(
+  "brand-design",
+  new ResourceTemplate("style://brands/{brand_id}", { list: undefined }),
+  async (uri, variables) => {
+    const brand_id = variables.brand_id;
+    const cleanId = String(brand_id).toLowerCase().trim();
+    const designMdPath = path.join(SKILLS_DIR, cleanId, "DESIGN.md");
+
+    if (!fs.existsSync(designMdPath)) {
+      throw new Error(`DESIGN.md not found for brand: ${cleanId}`);
+    }
+
+    const content = fs.readFileSync(designMdPath, "utf-8");
+    return {
+      contents: [
+        {
+          uri: uri.href,
+          text: content,
+          mimeType: "text/markdown",
+        },
+      ],
+    };
+  }
+);
+
+async function main() {
+  const transport = new StdioServerTransport();
+  await server.connect(transport);
+  console.error("Style Reference MCP Server connected via stdio transport");
+}
+
+main().catch((err) => {
+  console.error("Fatal error running MCP server:", err);
+  process.exit(1);
+});

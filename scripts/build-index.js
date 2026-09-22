@@ -133,6 +133,12 @@ function extractMetadata(brandDir) {
     name,
     description: description || fallbackDescription,
     theme: metadata.theme || "",
+    industry: (metadata.industry || "").toLowerCase().trim(),
+    source_url: metadata.source_url || "",
+    screenshot_url: metadata.screenshot_url || "",
+    thumbnail_url: metadata.thumbnail_url || "",
+    refero_style_id: metadata.refero_style_id || "",
+    extracted_at: metadata.extracted_at || "",
     path: `skills/${brandDir}/DESIGN.md`,
   };
 }

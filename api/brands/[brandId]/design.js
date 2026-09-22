@@ -6,6 +6,9 @@ const {
   normalizeBrandId,
 } = require("../../_lib/style-index");
 
+const CACHE_HEADER =
+  "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800";
+
 module.exports = (req, res) => {
   try {
     const brandId = normalizeBrandId(req.query.brandId);
@@ -23,6 +26,7 @@ module.exports = (req, res) => {
     }
 
     const content = loadDesignContent(brandId);
+    res.setHeader("Cache-Control", CACHE_HEADER);
     res.setHeader("Content-Type", "text/markdown; charset=utf-8");
     res.status(200).send(content);
   } catch (err) {

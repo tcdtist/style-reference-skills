@@ -5,6 +5,9 @@ const {
   normalizeBrandId,
 } = require("../_lib/style-index");
 
+const CACHE_HEADER =
+  "public, max-age=3600, s-maxage=86400, stale-while-revalidate=604800";
+
 module.exports = (req, res) => {
   try {
     const brandId = normalizeBrandId(req.query.brandId);
@@ -21,6 +24,7 @@ module.exports = (req, res) => {
       return res.status(404).json({ error: `Brand ${brandId} not found` });
     }
 
+    res.setHeader("Cache-Control", CACHE_HEADER);
     res.json(brand);
   } catch (err) {
     res.status(500).json({ error: "Failed to load brand" });
