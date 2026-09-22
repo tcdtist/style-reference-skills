@@ -1,13 +1,20 @@
 #!/usr/bin/env node
-// @ts-nocheck
+/**
+ * Validate DESIGN.md files and index.json consistency
+ */
 
-const fs = require("fs");
-const path = require("path");
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const ROOT_DIR = path.join(__dirname, "..");
 const SKILLS_DIR = path.join(ROOT_DIR, "skills");
 const INDEX_FILE = path.join(ROOT_DIR, "index.json");
-const REQUIRED_PATTERNS = [
+
+const REQUIRED_PATTERNS: RegExp[] = [
   /^#\s+.+Style Reference/m,
   /^## Tokens — Colors/m,
   /^## Tokens — Typography/m,
@@ -16,18 +23,36 @@ const REQUIRED_PATTERNS = [
   /^## Quick Start/m,
 ];
 
-function fail(errors, message) {
-  errors.push(message);
+interface ValidationStats {
+  files: number;
+  richFiles: number;
+  legacyFiles: number;
+  emptyTableRows: number;
 }
 
-function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+interface IndexBrand {
+  id: string;
+  name: string;
+  path: string;
+  [key: string]: unknown;
 }
 
-function validateDesignFile(brandDir, errors, stats) {
+interface IndexFile {
+  brands: IndexBrand[];
+}
+
+function readJson<T>(filePath: string): T {
+  return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
+}
+
+function validateDesignFile(
+  brandDir: string,
+  errors: string[],
+  stats: ValidationStats
+): void {
   const filePath = path.join(SKILLS_DIR, brandDir, "DESIGN.md");
   if (!fs.existsSync(filePath)) {
-    fail(errors, `${brandDir}: missing DESIGN.md`);
+    errors.push(`${brandDir}: missing DESIGN.md`);
     return;
   }
 
@@ -39,7 +64,7 @@ function validateDesignFile(brandDir, errors, stats) {
   const hasBasicStructure = hasFrontmatter || /^#\s+/m.test(content);
 
   if (!hasBasicStructure) {
-    fail(errors, `${brandDir}: missing both frontmatter and heading`);
+    errors.push(`${brandDir}: missing both frontmatter and heading`);
   }
 
   if (!isReferoRich) {
@@ -51,16 +76,12 @@ function validateDesignFile(brandDir, errors, stats) {
 
   for (const pattern of REQUIRED_PATTERNS) {
     if (!pattern.test(content)) {
-      fail(errors, `${brandDir}: missing required pattern ${pattern}`);
+      errors.push(`${brandDir}: missing required pattern ${pattern}`);
     }
   }
 
-  if (
-    /\[object Object\]|:\s*undefined\b|\|\s*undefined\s*\||`undefined`/.test(
-      content,
-    )
-  ) {
-    fail(errors, `${brandDir}: contains unresolved generated value`);
+  if (/\[object Object\]|:\s*undefined\b|\|\s*undefined\s*\||`undefined`/.test(content)) {
+    errors.push(`${brandDir}: contains unresolved generated value`);
   }
 
   if (/^\|\s*(?:\|\s*)+$/m.test(content)) {
@@ -68,22 +89,22 @@ function validateDesignFile(brandDir, errors, stats) {
   }
 }
 
-function validateIndex(errors) {
+function validateIndex(errors: string[]): void {
   if (!fs.existsSync(INDEX_FILE)) {
-    fail(errors, "index.json missing");
+    errors.push("index.json missing");
     return;
   }
 
-  const index = readJson(INDEX_FILE);
+  const index = readJson<IndexFile>(INDEX_FILE);
   const indexedPaths = new Set((index.brands || []).map((brand) => brand.path));
+
   for (const brand of index.brands || []) {
     if (!brand.id || !brand.name || !brand.path) {
-      fail(errors, `index: incomplete brand metadata ${JSON.stringify(brand)}`);
+      errors.push(`index: incomplete brand metadata ${JSON.stringify(brand)}`);
       continue;
     }
-
     if (!fs.existsSync(path.join(ROOT_DIR, brand.path))) {
-      fail(errors, `index: missing mapped file ${brand.path}`);
+      errors.push(`index: missing mapped file ${brand.path}`);
     }
   }
 
@@ -98,14 +119,20 @@ function validateIndex(errors) {
       fs.existsSync(path.join(ROOT_DIR, relativePath)) &&
       !indexedPaths.has(relativePath)
     ) {
-      fail(errors, `index: missing brand path ${relativePath}`);
+      errors.push(`index: missing brand path ${relativePath}`);
     }
   }
 }
 
-function main() {
-  const errors = [];
-  const stats = { files: 0, richFiles: 0, legacyFiles: 0, emptyTableRows: 0 };
+function main(): void {
+  const errors: string[] = [];
+  const stats: ValidationStats = {
+    files: 0,
+    richFiles: 0,
+    legacyFiles: 0,
+    emptyTableRows: 0,
+  };
+
   const brandDirs = fs
     .readdirSync(SKILLS_DIR, { withFileTypes: true })
     .filter((dirent) => dirent.isDirectory())
@@ -133,9 +160,7 @@ function main() {
   console.log(`Rich Refero files: ${stats.richFiles}`);
   console.log(`Legacy/basic files: ${stats.legacyFiles}`);
   if (stats.emptyTableRows) {
-    console.log(
-      `Warning: ${stats.emptyTableRows} files may contain empty table cells`,
-    );
+    console.log(`Warning: ${stats.emptyTableRows} files may contain empty table cells`);
   }
 }
 
