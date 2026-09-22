@@ -117,6 +117,37 @@ async function runTests() {
     console.log(`✓ Test 6 Passed: brand design for linear returned valid markdown tokens`);
   }
 
+  // Test 7: brand tokens endpoint (json, css, tailwind formats)
+  {
+    const tokensHandler = require("../api/brands/[brandId]/tokens");
+    
+    // 7a: JSON format
+    const resJson = createMockRes();
+    tokensHandler({ query: { brandId: "linear" } }, resJson);
+    assert.strictEqual(resJson.getStatusCode(), 200);
+    const dataJson = resJson.getData();
+    assert.strictEqual(dataJson.brand, "linear");
+    assert(dataJson.tokens.colors.length >= 10, "Should extract color tokens");
+    assert(dataJson.tokens.css_variables["--color-pitch-black"], "Should have pitch-black CSS var");
+    console.log(`✓ Test 7a Passed: tokens endpoint returned structured JSON tokens for linear`);
+
+    // 7b: CSS format
+    const resCss = createMockRes();
+    tokensHandler({ query: { brandId: "linear", format: "css" } }, resCss);
+    assert.strictEqual(resCss.getStatusCode(), 200);
+    assert.strictEqual(resCss.getHeaders()["content-type"], "text/css; charset=utf-8");
+    assert(resCss.getData().includes(":root {"), "Should format as CSS root block");
+    console.log(`✓ Test 7b Passed: tokens endpoint returned CSS stylesheet for linear`);
+
+    // 7c: Tailwind format
+    const resTw = createMockRes();
+    tokensHandler({ query: { brandId: "stripe", format: "tailwind" } }, resTw);
+    assert.strictEqual(resTw.getStatusCode(), 200);
+    const dataTw = resTw.getData();
+    assert(dataTw.colors && Object.keys(dataTw.colors).length > 5, "Should have Tailwind colors");
+    console.log(`✓ Test 7c Passed: tokens endpoint returned Tailwind theme config for stripe`);
+  }
+
   console.log("\nALL API TESTS PASSED SUCCESSFULLY! ✓✓✓\n");
 }
 

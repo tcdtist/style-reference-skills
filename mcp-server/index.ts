@@ -61,6 +61,78 @@ function loadIndex(): IndexFile {
   }
 }
 
+function parseMarkdownTokens(content: string) {
+  const tokens = {
+    colors: [] as any[],
+    typography: [] as any[],
+    spacing: [] as any[],
+    css_variables: {} as Record<string, string>,
+    tailwind: { colors: {} as Record<string, string>, fontFamily: {} as Record<string, string[]> },
+  };
+
+  if (!content) return tokens;
+
+  // 1. Colors Table: | Name | Value | Token | Role |
+  const colorTableMatch = content.match(
+    /## Tokens — Colors\s*\n\s*\|[^\n]+\|\s*\n\s*\|[^\n]+\|\s*\n((?:\|[^\n]+\|\s*\n?)+)/
+  );
+  if (colorTableMatch) {
+    const rows = colorTableMatch[1].trim().split("\n");
+    for (const row of rows) {
+      const cells = row.split("|").slice(1, -1).map((c) => c.trim());
+      if (cells.length >= 3) {
+        const name = cells[0];
+        const val = cells[1];
+        const tok = cells[2].replace(/`/g, "").trim();
+        const role = cells[3] || "";
+        const cleanName = name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+        tokens.colors.push({ name, value: val, token: tok, role });
+        if (tok.startsWith("--")) {
+          tokens.css_variables[tok] = val;
+          tokens.tailwind.colors[cleanName] = `var(${tok}, ${val})`;
+        }
+      }
+    }
+  }
+
+  // 2. Typography
+  const fontRegex = /###\s+([^\n]+)\s*\n[\s\S]*?- \*\*Token:\*\*\s*`?([^\n`]+)`?[\s\S]*?- \*\*Weights:\*\*\s*([^\n]+)/g;
+  let fontMatch;
+  while ((fontMatch = fontRegex.exec(content)) !== null) {
+    const fontName = fontMatch[1].trim();
+    const tok = fontMatch[2].trim();
+    const weights = fontMatch[3].split(",").map((w) => w.trim()).filter(Boolean);
+
+    tokens.typography.push({ font_family: fontName, token: tok, weights });
+    if (tok.startsWith("--")) {
+      tokens.css_variables[tok] = `"${fontName}", sans-serif`;
+      const slug = fontName.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+      tokens.tailwind.fontFamily[slug] = [`var(${tok})`, fontName, "sans-serif"];
+    }
+  }
+
+  // 3. Spacing Scale
+  const spacingMatch = content.match(/### Spacing Scale\s*\n\s*\|[^\n]+\|\s*\n\s*\|[^\n]+\|\s*\n((?:\|[^\n]+\|\s*\n?)+)/);
+  if (spacingMatch) {
+    const rows = spacingMatch[1].trim().split("\n");
+    for (const row of rows) {
+      const cells = row.split("|").slice(1, -1).map((c) => c.trim());
+      if (cells.length >= 3) {
+        const name = cells[0];
+        const val = cells[1];
+        const tok = cells[2].replace(/`/g, "").trim();
+        tokens.spacing.push({ name, value: val, token: tok });
+        if (tok.startsWith("--")) {
+          tokens.css_variables[tok] = val;
+        }
+      }
+    }
+  }
+
+  return tokens;
+}
+
 // Create MCP Server instance
 const server = new McpServer({
   name: "style-reference-skills",
@@ -178,7 +250,94 @@ server.tool(
   }
 );
 
-// Tool 3: list_industries
+// Tool 3: get_brand_tokens (Machine-readable)
+server.tool(
+  "get_brand_tokens",
+  "Extract structured design tokens (colors, typography, spacing, CSS variables, Tailwind theme snippet) for a brand directly as machine-readable JSON or CSS string.",
+  {
+    brand_id: z
+      .string()
+      .describe("The unique brand identifier (e.g. 'linear', 'stripe', 'apple')"),
+    format: z
+      .enum(["json", "css", "tailwind"])
+      .optional()
+      .default("json")
+      .describe("Output format: 'json', 'css', or 'tailwind'"),
+  },
+  async ({ brand_id, format = "json" }) => {
+    const cleanId = brand_id.toLowerCase().trim();
+    const designMdPath = path.join(SKILLS_DIR, cleanId, "DESIGN.md");
+
+    if (!fs.existsSync(designMdPath)) {
+      return {
+        isError: true,
+        content: [
+          {
+            type: "text",
+            text: `Brand design '${cleanId}' not found.`,
+          },
+        ],
+      };
+    }
+
+    const content = fs.readFileSync(designMdPath, "utf-8");
+    const tokens = parseMarkdownTokens(content);
+    const index = loadIndex();
+    const brand: BrandMetadata = index.brands.find((b) => b.id === cleanId) || {
+      id: cleanId,
+      name: cleanId,
+      description: "",
+      theme: "light",
+      industry: "other",
+      path: "",
+    };
+
+    if (format === "css") {
+      let css = `/* CSS Tokens for ${brand.name} (${brand.theme || "light"}) */\n:root {\n`;
+      for (const [k, v] of Object.entries(tokens.css_variables)) {
+        css += `  ${k}: ${v};\n`;
+      }
+      css += `}\n`;
+      return { content: [{ type: "text", text: css }] };
+    }
+
+    if (format === "tailwind") {
+      const snippet = {
+        colors: tokens.tailwind.colors,
+        fontFamily: tokens.tailwind.fontFamily,
+      };
+      return {
+        content: [
+          {
+            type: "text",
+            text: JSON.stringify(snippet, null, 2),
+          },
+        ],
+      };
+    }
+
+    return {
+      content: [
+        {
+          type: "text",
+          text: JSON.stringify(
+            {
+              brand: brand.id,
+              name: brand.name,
+              theme: brand.theme,
+              industry: brand.industry,
+              tokens,
+            },
+            null,
+            2
+          ),
+        },
+      ],
+    };
+  }
+);
+
+// Tool 4: list_industries
 server.tool(
   "list_industries",
   "List all available design system industries with brand counts across the 1304 indexed brands.",

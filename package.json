@@ -1,0 +1,26 @@
+{
+  "name": "style-reference-skills",
+  "version": "1.1.0",
+  "description": "Curated DESIGN.md style references from 1,300+ real-world brands for AI agents",
+  "private": true,
+  "scripts": {
+    "test": "node scripts/test-api-local.js",
+    "type-check": "tsc --noEmit",
+    "build:index": "node scripts/build-index.js",
+    "build:mcp": "pnpm --filter style-reference-mcp run build",
+    "cli": "python3 scripts/style_ref.py"
+  },
+  "keywords": [
+    "design-system",
+    "design-tokens",
+    "ai-agent",
+    "style-reference",
+    "mcp"
+  ],
+  "author": "tcdtist",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.4.0"
+  }
+}
